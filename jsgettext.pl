@@ -54,8 +54,10 @@ PVE::Tools::run_command($findcmd, outfunc => sub {
 my $header = <<__EOD;
 Proxmox message catalog.
 Copyright (C) 2011-2017 Proxmox Server Solutions GmbH
-This file is distributed under the same license as the proxmox-mailgateway 
-package.
+This file is free software: you can redistribute it and\/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
 Proxmox Support Team <support\@proxmox.com>, 2017.
 __EOD
 
