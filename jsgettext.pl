@@ -10,7 +10,7 @@ use Encode;
 
 my $options = {};
 
-getopts('o:b:', $options) ||
+getopts('o:b:p:', $options) ||
     die "unable to parse options\n";
 
 my $dirs = [@ARGV];
@@ -20,6 +20,8 @@ die "no directory specified\n" if !scalar(@$dirs);
 foreach my $dir (@$dirs) {
     die "no such directory '$dir'\n" if ! -d $dir;
 }
+
+my $projectId = $options->{p} || die "missing project ID\n";
 
 my $basehref = {};
 if (my $base = $options->{b}) {
@@ -68,7 +70,7 @@ my $po = new Locale::PO(-msgid=> '',
 			-comment=> $header,
 			-fuzzy=> 1,
 			-msgstr=>
-			"Project-Id-Version: proxmox-mailgateway 5.0\n" .
+			"Project-Id-Version: $projectId\n" .
 			"Report-Msgid-Bugs-To: <support\@proxmox.com>\n" .
 			"POT-Creation-Date: $ctime\n" .
 			"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n" .

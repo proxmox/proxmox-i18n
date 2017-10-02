@@ -43,9 +43,9 @@ pve-lang-%.js: proxmox-widget-toolkit-%.po pve-manager-%.po
 
 .PHONY: update
 update:
-	./jsgettext.pl -o proxmox-widget-toolkit.pot proxmox-widget-toolkit/ 
-	./jsgettext.pl -o proxmox-mailgateway.pot -b proxmox-widget-toolkit.pot proxmox-mailgateway-gui/js/
-	./jsgettext.pl -o pve-manager.pot -b proxmox-widget-toolkit.pot pve-manager/www/manager6/
+	./jsgettext.pl -p "proxmox-widget-toolkit 1.0" -o proxmox-widget-toolkit.pot proxmox-widget-toolkit/ 
+	./jsgettext.pl -p "proxmox-mailgateway 5.0" -o proxmox-mailgateway.pot -b proxmox-widget-toolkit.pot proxmox-mailgateway-gui/js/
+	./jsgettext.pl -p "pve-manager 5.0" -o pve-manager.pot -b proxmox-widget-toolkit.pot pve-manager/www/manager6/
 	for j in proxmox-widget-toolkit proxmox-mailgateway pve-manager; do for i in $(LINGUAS); do echo -n "$$j-$$i: ";msgmerge -s -v $$j-$$i.po $$j.pot >$$j-$$i.po.tmp && mv $$j-$$i.po.tmp $$j-$$i.po; done; done
 
 # try to generate po files when someone add a new language
@@ -58,7 +58,7 @@ proxmox-mailgateway-%.po: proxmox-mailgateway.pot
 	msginit -i proxmox-mailgateway.pot -l $* -o proxmox-mailgateway-$*.po
 
 .SECONDARY: # do not delete generated intermediate file
-pve-manager-%.po:p ve-manager.pot
+pve-manager-%.po: pve-manager.pot
 	msginit -i pve-manager.pot -l $* -o pve-manager-$*.po
 
 .PHONY: clean
