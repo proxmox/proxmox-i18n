@@ -2,7 +2,7 @@
 
 use strict;
 use warnings;
-
+use Getopt::Std;
 use Locale::PO;
 use JSON;
 use Encode;
@@ -10,6 +10,11 @@ use Encode;
 # current limits:
 # - we do not support plural. forms
 # - no message content support
+
+my $options = {};
+
+getopts('o:', $options) ||
+    die "unable to parse options\n";
 
 die "no files specified\n" if !scalar(@ARGV);
 
@@ -76,8 +81,14 @@ foreach my $filename (@ARGV) {
 
 my $json = to_json($catalog, {canonical => 1, utf8 => 1});
 
-print <<__EOD
-PVE = { i18n_msgcat: $json }
+my $content = '';
+
+my $outfile = $options->{o};
+
+$content .= "// Proxmox Message Catalog: $outfile\n" if $outfile;
+
+$content .= <<__EOD;
+Proxmox = { i18n_msgcat: $json }
 
 function fnv31a(text) {
     var len = text.length;
@@ -93,12 +104,18 @@ function fnv31a(text) {
 
 function gettext(buf) {
     var digest = fnv31a(buf);
-    var data = PVE.i18n_msgcat[digest];
+    var data = Proxmox.i18n_msgcat[digest];
     if (!data) {
 	return buf;
     }
     return data[0] || buf;
 }
-
 __EOD
 
+if ($outfile) {
+    open(my $fh, '>', $outfile) ||
+	die "unable to open '$outfile' - $!\n";
+    print $fh $content;
+} else {
+    print $content;
+}

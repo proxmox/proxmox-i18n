@@ -36,11 +36,10 @@ install: ${PMG_LANG_FILES} ${PVE_LANG_FILES}
 
 
 pmg-lang-%.js: proxmox-widget-toolkit-%.po proxmox-mailgateway-%.po
-	./po2js.pl $? > pmg-lang-$*.js
+	./po2js.pl -o pmg-lang-$*.js $?
 
 pve-lang-%.js: proxmox-widget-toolkit-%.po pve-manager-%.po
-	./po2js.pl $? > pve-lang-$*.js
-
+	./po2js.pl -o pve-lang-$*.js $?
 
 .PHONY: update
 update:
