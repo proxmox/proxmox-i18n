@@ -49,9 +49,17 @@ update:
 	for j in proxmox-widget-toolkit proxmox-mailgateway pve-manager; do for i in $(LINGUAS); do echo -n "$$j-$$i: ";msgmerge -s -v $$j-$$i.po $$j.pot >$$j-$$i.po.tmp && mv $$j-$$i.po.tmp $$j-$$i.po; done; done
 
 # try to generate po files when someone add a new language
-#.SECONDARY: # do not delete generated intermediate file
-#%.po:
-#	msginit -i messages.pot -l $*
+.SECONDARY: # do not delete generated intermediate file
+proxmox-widget-toolkit-%.po: proxmox-widget-toolkit.pot
+	msginit -i proxmox-widget-toolkit.pot -l $* -o proxmox-widget-toolkit-$*.po
+
+.SECONDARY: # do not delete generated intermediate file
+proxmox-mailgateway-%.po: proxmox-mailgateway.pot
+	msginit -i proxmox-mailgateway.pot -l $* -o proxmox-mailgateway-$*.po
+
+.SECONDARY: # do not delete generated intermediate file
+pve-manager-%.po:p ve-manager.pot
+	msginit -i pve-manager.pot -l $* -o pve-manager-$*.po
 
 .PHONY: clean
 clean:
