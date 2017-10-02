@@ -39,7 +39,7 @@ sub fnv31a {
     return $hval & 0x7fffffff;
 }
 
-my $catalog;
+my $catalog = {};
 
 foreach my $filename (@ARGV) {
     my $href = Locale::PO->load_file_ashash($filename) ||
@@ -68,7 +68,7 @@ foreach my $filename (@ARGV) {
 
 	next if !length($msgid); # skip header
 	
-	#next if !length($msgstr); # skip untranslated entries
+	next if !length($msgstr); # skip untranslated entries
 
 	my $digest = fnv31a($msgid);
 
