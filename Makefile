@@ -14,11 +14,11 @@ PVELOCALEDIR=${DESTDIR}/usr/share/pve-i18n
 PMG_LANG_FILES=$(patsubst %, pmg-lang-%.js, $(LINGUAS))
 PVE_LANG_FILES=$(patsubst %, pve-lang-%.js, $(LINGUAS))
 
-all:
+all: | submodule
 
 .PHONY: deb
 deb: $(DEBS)
-$(DEBS):
+$(DEBS): | submodule
 	rm -rf dest
 	mkdir dest
 	rsync -a debian dest
@@ -26,6 +26,10 @@ $(DEBS):
 	cd dest; dpkg-buildpackage -b -us -uc
 	lintian ${PMG_I18N_DEB}
 	lintian ${PVE_I18N_DEB}
+
+.PHONY: submodule
+submodule:
+	test -f "proxmox-mailgateway-gui/Makefile" || git submodule update --init
 
 .PHONY: install
 install: ${PMG_LANG_FILES} ${PVE_LANG_FILES} 
