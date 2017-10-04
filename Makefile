@@ -1,4 +1,4 @@
-LINGUAS=de
+LINGUAS=de fr es it
 
 VERSION=1.0
 PKGREL=1
