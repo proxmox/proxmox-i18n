@@ -65,7 +65,19 @@ proxmox-mailgateway-%.po: proxmox-mailgateway.pot
 pve-manager-%.po: pve-manager.pot
 	msginit -i pve-manager.pot -l $* -o pve-manager-$*.po
 
+
+.PHONY: distclean
+distclean: clean
+
 .PHONY: clean
 clean:
 	find . -name '*~' -exec rm {} ';'
 	rm -rf dest *.po.tmp *.js.tmp *.deb *.buildinfo *.changes pve-lang-*.js pmg-lang-*.js
+
+.PHONY: upload-pve
+upload-pve: ${PVE_I18N_DEB}
+	tar cf - ${PVE_I18N_DEB}|ssh repoman@repo.proxmox.com -- upload --product pve --dist stretch
+
+.PHONY: upload-pmg
+upload-pmg: ${PMG_I18N_DEB}
+	tar cf - ${PMG_I18N_DEB}|ssh repoman@repo.proxmox.com -- upload --product pmg --dist stretch
