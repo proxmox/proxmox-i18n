@@ -88,7 +88,7 @@ my $outfile = $options->{o};
 $content .= "// Proxmox Message Catalog: $outfile\n" if $outfile;
 
 $content .= <<__EOD;
-Proxmox = { i18n_msgcat: $json }
+__proxmox_i18n_msgcat__ = $json;
 
 function fnv31a(text) {
     var len = text.length;
@@ -104,7 +104,7 @@ function fnv31a(text) {
 
 function gettext(buf) {
     var digest = fnv31a(buf);
-    var data = Proxmox.i18n_msgcat[digest];
+    var data = __proxmox_i18n_msgcat__[digest];
     if (!data) {
 	return buf;
     }
