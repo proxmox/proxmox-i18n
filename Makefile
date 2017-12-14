@@ -29,7 +29,7 @@ $(DEBS): | submodule
 
 .PHONY: submodule
 submodule:
-	test -f "proxmox-mailgateway-gui/Makefile" || git submodule update --init
+	test -f "pmg-gui/Makefile" || git submodule update --init
 
 .PHONY: install
 install: ${PMG_LANG_FILES} ${PVE_LANG_FILES} 
@@ -48,7 +48,7 @@ pve-lang-%.js: proxmox-widget-toolkit-%.po pve-manager-%.po
 .PHONY: update
 update:
 	./jsgettext.pl -p "proxmox-widget-toolkit 1.0" -o proxmox-widget-toolkit.pot proxmox-widget-toolkit/ 
-	./jsgettext.pl -p "proxmox-mailgateway 5.0" -o proxmox-mailgateway.pot -b proxmox-widget-toolkit.pot proxmox-mailgateway-gui/js/
+	./jsgettext.pl -p "proxmox-mailgateway 5.0" -o proxmox-mailgateway.pot -b proxmox-widget-toolkit.pot pmg-gui/js/
 	./jsgettext.pl -p "pve-manager 5.0" -o pve-manager.pot -b proxmox-widget-toolkit.pot pve-manager/www/manager6/
 	for j in proxmox-widget-toolkit proxmox-mailgateway pve-manager; do for i in $(LINGUAS); do echo -n "$$j-$$i: ";msgmerge -s -v $$j-$$i.po $$j.pot >$$j-$$i.po.tmp && mv $$j-$$i.po.tmp $$j-$$i.po; done; done
 
