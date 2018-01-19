@@ -13,7 +13,7 @@ use Encode;
 
 my $options = {};
 
-getopts('o:', $options) ||
+getopts('t:o:v:', $options) ||
     die "unable to parse options\n";
 
 die "no files specified\n" if !scalar(@ARGV);
@@ -59,6 +59,13 @@ foreach my $filename (@ARGV) {
 	my $po = $href->{$k};
 	next if $po->fuzzy(); # skip fuzzy entries
 	my $ref = $po->reference();
+
+	# skip unused entries
+	next if !$ref;
+
+	# skip entries if t is defined (pve/pmg) and the string is
+	# not used there or in the widget toolkit
+	next if $options->{t} && $ref !~ m/($options->{t}|proxmox)\-/;
     
 	my $qmsgid = decode($charset, $po->msgid);
 	my $msgid = $po->dequote($qmsgid);
@@ -81,7 +88,7 @@ foreach my $filename (@ARGV) {
 
 my $json = to_json($catalog, {canonical => 1, utf8 => 1});
 
-my $content = '';
+my $content = "// $options->{v}\n"; # write version to beginning
 
 my $outfile = $options->{o};
 

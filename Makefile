@@ -39,32 +39,35 @@ install: ${PMG_LANG_FILES} ${PVE_LANG_FILES}
 	install -m 0644 ${PVE_LANG_FILES} ${PVELOCALEDIR}
 
 
-pmg-lang-%.js: proxmox-widget-toolkit-%.po proxmox-mailgateway-%.po
-	./po2js.pl -o pmg-lang-$*.js $?
+pmg-lang-%.js: %.po
+	./po2js.pl -t pmg -v "${VERSION}-${PKGREL}" -o pmg-lang-$*.js $?
 
-pve-lang-%.js: proxmox-widget-toolkit-%.po pve-manager-%.po
-	./po2js.pl -o pve-lang-$*.js $?
+pve-lang-%.js: %.po
+	./po2js.pl -t pve -v "${VERSION}-${PKGREL}" -o pve-lang-$*.js $?
+
+# parameter 1 is the name
+# parameter 2 is the directory
+define potupdate
+    ./jsgettext.pl -p "$(1) $(shell cd $(2);git rev-parse HEAD)" -o $(1).pot $(2)
+endef
 
 .PHONY: update
 update:
-	./jsgettext.pl -p "proxmox-widget-toolkit 1.0" -o proxmox-widget-toolkit.pot proxmox-widget-toolkit/ 
-	./jsgettext.pl -p "proxmox-mailgateway 5.0" -o proxmox-mailgateway.pot -b proxmox-widget-toolkit.pot pmg-gui/js/
-	./jsgettext.pl -p "pve-manager 5.0" -o pve-manager.pot -b proxmox-widget-toolkit.pot pve-manager/www/manager6/
-	for j in proxmox-widget-toolkit proxmox-mailgateway pve-manager; do for i in $(LINGUAS); do echo -n "$$j-$$i: ";msgmerge -s -v $$j-$$i.po $$j.pot >$$j-$$i.po.tmp && mv $$j-$$i.po.tmp $$j-$$i.po; done; done
+	git submodule foreach 'git pull --ff-only origin master'
+	$(call potupdate,proxmox-widget-toolkit,proxmox-widget-toolkit/)
+	$(call potupdate,pve-manager,pve-manager/www/manager6/)
+	$(call potupdate,proxmox-mailgateway,pmg-gui/js/)
+	msgcat proxmox-widget-toolkit.pot proxmox-mailgateway.pot pve-manager.pot > messages.pot.tmp
+	mv messages.pot.tmp messages.pot
+	for i in $(LINGUAS); do echo -n "$$i: "; msgmerge -s -v $$i.po messages.pot >$$i.po.tmp && mv $$i.po.tmp $$i.po; done;
+	rm messages.pot
 
 # try to generate po files when someone add a new language
 .SECONDARY: # do not delete generated intermediate file
-proxmox-widget-toolkit-%.po: proxmox-widget-toolkit.pot
-	msginit -i proxmox-widget-toolkit.pot -l $* -o proxmox-widget-toolkit-$*.po
-
-.SECONDARY: # do not delete generated intermediate file
-proxmox-mailgateway-%.po: proxmox-mailgateway.pot
-	msginit -i proxmox-mailgateway.pot -l $* -o proxmox-mailgateway-$*.po
-
-.SECONDARY: # do not delete generated intermediate file
-pve-manager-%.po: pve-manager.pot
-	msginit -i pve-manager.pot -l $* -o pve-manager-$*.po
-
+%.po: proxmox-widget-toolkit.pot proxmox-mailgateway.pot pve-manager.pot
+	msgcat $+ > $*.pot
+	msginit -i $*.pot -l $* -o $*.po
+	rm $*.pot
 
 .PHONY: distclean
 distclean: clean
