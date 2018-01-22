@@ -24,8 +24,7 @@ $(DEBS): | submodule
 	rsync -a debian dest
 	make DESTDIR=dest install 
 	cd dest; dpkg-buildpackage -b -us -uc
-	lintian ${PMG_I18N_DEB}
-	lintian ${PVE_I18N_DEB}
+	lintian $@
 
 .PHONY: submodule
 submodule:
