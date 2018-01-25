@@ -6,7 +6,9 @@ PKGREL=4
 PVE_I18N_DEB=pve-i18n_${VERSION}-${PKGREL}_all.deb
 PMG_I18N_DEB=pmg-i18n_${VERSION}-${PKGREL}_all.deb
 
-DEBS=${PMG_I18N_DEB} ${PVE_I18N_DEB}
+DEB1=${PMG_I18N_DEB}
+DEB2=$(PVE_I18N_DEB)
+DEBS=$(DEB1) $(DEB2)
 
 PMGLOCALEDIR=${DESTDIR}/usr/share/pmg-i18n
 PVELOCALEDIR=${DESTDIR}/usr/share/pve-i18n
@@ -18,7 +20,8 @@ all:
 
 .PHONY: deb
 deb: $(DEBS)
-$(DEBS): | submodule
+$(DEB2): $(DEB1)
+$(DEB1): | submodule
 	rm -rf dest
 	rsync -a * dest
 	cd dest; dpkg-buildpackage -b -us -uc
