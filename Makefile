@@ -1,4 +1,4 @@
-LINGUAS=de it fr ja es sv ru tr zh_CN da ca pl sl nb nn pt_BR eu fa gl hu
+LINGUAS=de it fr ja es sv ru tr zh_CN zh_TW da ca pl sl nb nn pt_BR eu fa gl hu
 
 VERSION=1.0
 PKGREL=5
