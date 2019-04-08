@@ -1,7 +1,7 @@
 LINGUAS=de it fr ja es sv ru tr zh_CN zh_TW da ca pl sl nb nn pt_BR eu fa gl hu
 
 VERSION=1.1
-PKGREL=2
+PKGREL=3
 
 PVE_I18N_DEB=pve-i18n_${VERSION}-${PKGREL}_all.deb
 PMG_I18N_DEB=pmg-i18n_${VERSION}-${PKGREL}_all.deb
