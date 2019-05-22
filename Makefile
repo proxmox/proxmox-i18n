@@ -77,7 +77,7 @@ clean:
 
 .PHONY: upload-pve
 upload-pve: ${PVE_I18N_DEB}
-	tar cf - ${PVE_I18N_DEB}|ssh -X repoman@repo.proxmox.com -- upload --product pve --dist stretch
+	tar cf - ${PVE_I18N_DEB}|ssh -X repoman@repo.proxmox.com -- upload --product pve --dist buster
 
 .PHONY: upload-pmg
 upload-pmg: ${PMG_I18N_DEB}
