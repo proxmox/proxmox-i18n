@@ -1,10 +1,9 @@
+include /usr/share/dpkg/pkg-info.mk
+
 LINGUAS=de it fr ja es sv ru tr zh_CN zh_TW da ca pl sl nb nn pt_BR eu fa gl hu
 
-VERSION=1.1
-PKGREL=4
-
-PVE_I18N_DEB=pve-i18n_${VERSION}-${PKGREL}_all.deb
-PMG_I18N_DEB=pmg-i18n_${VERSION}-${PKGREL}_all.deb
+PVE_I18N_DEB=pve-i18n_${DEB_VERSION_UPSTREAM_REVISION}_all.deb
+PMG_I18N_DEB=pmg-i18n_${DEB_VERSION_UPSTREAM_REVISION}_all.deb
 
 DEB1=${PMG_I18N_DEB}
 DEB2=$(PVE_I18N_DEB)
