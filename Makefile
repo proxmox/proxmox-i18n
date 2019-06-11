@@ -60,6 +60,9 @@ update_pot: submodule
 update: | update_pot messages.pot
 	for i in $(LINGUAS); do echo -n "$$i: "; msgmerge -s -v $$i.po messages.pot >$$i.po.tmp && mv $$i.po.tmp $$i.po; done;
 
+stats:
+	@for i in $(LINGUAS); do echo -n "$$i: "; msgfmt --statistics -o /dev/null $$i.po; done
+
 init-%.po: messages.pot
 	msginit -i $^ -l $^ -o $*.po --no-translator
 
