@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pve-manager 3.0\n"
 "Report-Msgid-Bugs-To: <support@proxmox.com>\n"
-"POT-Creation-Date: Tue Dec 17 09:38:46 2019\n"
+"POT-Creation-Date: Tue Mar 31 18:07:44 2020\n"
 "PO-Revision-Date: 2020-02-06 11:23+0800\n"
 "Last-Translator: Jason Cheng <sanyu3u@gmail.com>\n"
 "Language-Team: Traditional Chinese (Taiwan) <>\n"
@@ -72,7 +72,7 @@ msgid "Action Objects"
 msgstr "動作物件"
 
 #: proxmox-widget-toolkit/form/NetworkSelector.js:112
-#: proxmox-widget-toolkit/node/NetworkView.js:331 pmg-gui/js/RuleEditor.js:45
+#: proxmox-widget-toolkit/node/NetworkView.js:349 pmg-gui/js/RuleEditor.js:45
 #: pmg-gui/js/RuleInfo.js:256
 #: pve-manager/www/manager6/form/BridgeSelector.js:28
 #: pve-manager/www/manager6/storage/StatusView.js:31
@@ -84,25 +84,27 @@ msgstr "運作中"
 msgid "Active Directory Server"
 msgstr "AD 伺服器"
 
-#: proxmox-widget-toolkit/Utils.js:423
-#: proxmox-widget-toolkit/window/Edit.js:253 pmg-gui/js/ActionList.js:103
+#: proxmox-widget-toolkit/Utils.js:425
+#: proxmox-widget-toolkit/window/Edit.js:257 pmg-gui/js/ActionList.js:103
 #: pmg-gui/js/ClusterAdministration.js:208 pmg-gui/js/FetchmailView.js:71
 #: pmg-gui/js/ObjectGroup.js:188 pmg-gui/js/RuleConfiguration.js:166
-#: pmg-gui/js/RuleInfo.js:365 pmg-gui/js/UserBlackWhiteList.js:161
+#: pmg-gui/js/RuleInfo.js:365 pmg-gui/js/UserBlackWhiteList.js:160
 #: pmg-gui/js/UserView.js:99 pve-manager/www/manager6/dc/ACLView.js:195
 #: pve-manager/www/manager6/dc/AuthView.js:62
 #: pve-manager/www/manager6/dc/Backup.js:532
 #: pve-manager/www/manager6/dc/StorageView.js:100
-#: pve-manager/www/manager6/dc/UserView.js:100
-#: pve-manager/www/manager6/grid/FirewallAliases.js:145
+#: pve-manager/www/manager6/dc/UserView.js:112
+#: pve-manager/www/manager6/grid/FirewallAliases.js:147
 #: pve-manager/www/manager6/grid/FirewallRules.js:533
 #: pve-manager/www/manager6/grid/PoolMembers.js:211
 #: pve-manager/www/manager6/grid/Replication.js:245
 #: pve-manager/www/manager6/ha/Resources.js:97
-#: pve-manager/www/manager6/lxc/Network.js:466
+#: pve-manager/www/manager6/lxc/Network.js:473
 #: pve-manager/www/manager6/lxc/Resources.js:286
 #: pve-manager/www/manager6/panel/IPSet.js:324
-#: pve-manager/www/manager6/qemu/HardwareView.js:602
+#: pve-manager/www/manager6/qemu/HardwareView.js:619
+#: pve-manager/www/manager6/sdn/ControllerView.js:99
+#: pve-manager/www/manager6/sdn/ZoneView.js:99
 msgid "Add"
 msgstr "增加"
 
@@ -140,7 +142,7 @@ msgid ""
 "Monitor tab."
 msgstr "建議增加監控器 (Monitor)。您可以隨時在監控器頁籤建立。"
 
-#: pmg-gui/js/UserBlackWhiteList.js:34 pmg-gui/js/UserBlackWhiteList.js:195
+#: pmg-gui/js/UserBlackWhiteList.js:34 pmg-gui/js/UserBlackWhiteList.js:194
 #: pve-manager/www/manager6/ceph/ServiceList.js:287
 #: pve-manager/www/manager6/ceph/Services.js:182
 msgid "Address"
@@ -162,27 +164,31 @@ msgstr "管理者"
 msgid "Administrator EMail"
 msgstr "管理者 EMail"
 
-#: proxmox-widget-toolkit/window/Edit.js:334
+#: proxmox-widget-toolkit/window/Edit.js:338
 #: pve-manager/www/manager6/window/Wizard.js:162
 msgid "Advanced"
 msgstr "進階"
 
-#: pve-manager/www/manager6/dc/Config.js:166
-#: pve-manager/www/manager6/grid/FirewallAliases.js:48
-#: pve-manager/www/manager6/grid/FirewallAliases.js:85
-#: pve-manager/www/manager6/lxc/Config.js:298
-#: pve-manager/www/manager6/qemu/Config.js:330
+#: pve-manager/www/manager6/dc/Config.js:201
+#: pve-manager/www/manager6/grid/FirewallAliases.js:50
+#: pve-manager/www/manager6/grid/FirewallAliases.js:87
+#: pve-manager/www/manager6/lxc/Config.js:299
+#: pve-manager/www/manager6/qemu/Config.js:331
 msgid "Alias"
 msgstr "別名"
 
 #: pve-manager/www/manager6/dc/Backup.js:33
 #: pve-manager/www/manager6/dc/Backup.js:148
 #: pve-manager/www/manager6/dc/Backup.js:387
+#: pve-manager/www/manager6/sdn/zones/EvpnEdit.js:57
+#: pve-manager/www/manager6/sdn/zones/QinQEdit.js:54
+#: pve-manager/www/manager6/sdn/zones/VlanEdit.js:38
+#: pve-manager/www/manager6/sdn/zones/VxlanEdit.js:50
 #: pve-manager/www/manager6/storage/Base.js:40
 msgid "All"
 msgstr "所有"
 
-#: pve-manager/www/manager6/qemu/PCIEdit.js:156
+#: pve-manager/www/manager6/qemu/PCIEdit.js:159
 msgid "All Functions"
 msgstr "所有功能"
 
@@ -203,8 +209,8 @@ msgstr "允許超連結"
 msgid "Allow local disk migration"
 msgstr "允許本地磁碟遷移"
 
-#: proxmox-widget-toolkit/Toolkit.js:91 proxmox-widget-toolkit/Toolkit.js:99
-#: proxmox-widget-toolkit/Toolkit.js:107
+#: proxmox-widget-toolkit/Toolkit.js:104 proxmox-widget-toolkit/Toolkit.js:112
+#: proxmox-widget-toolkit/Toolkit.js:120
 msgid "Allowed characters"
 msgstr "允許的字元"
 
@@ -213,7 +219,8 @@ msgid "Always"
 msgstr "總是"
 
 #: pmg-gui/js/SpamDetectorCustom.js:80 pve-manager/www/manager6/ceph/OSD.js:178
-#: pve-manager/www/manager6/dc/TFAEdit.js:493
+#: pve-manager/www/manager6/dc/TFAEdit.js:511
+#: pve-manager/www/manager6/sdn/StatusView.js:43
 msgid "Apply"
 msgstr "套用"
 
@@ -233,24 +240,23 @@ msgstr "架構"
 msgid "Archive Filter"
 msgstr "壓縮檔篩選器"
 
-#: pve-manager/www/manager6/qemu/HardwareView.js:445
+#: pve-manager/www/manager6/qemu/HardwareView.js:452
 msgid "Are you sure you want to detach entry {0}"
 msgstr "您確定您要中斷 {0} 的連結嗎？"
 
-#: pve-manager/www/manager6/StateProvider.js:184
+#: pve-manager/www/manager6/StateProvider.js:186
 msgid "Are you sure you want to navigate away from this page?"
 msgstr "您確定要離開這一頁嗎？"
 
 #: proxmox-widget-toolkit/button/Button.js:130 pmg-gui/js/RuleInfo.js:44
-#: pmg-gui/js/UserBlackWhiteList.js:182
-#: pve-manager/www/manager6/grid/BackupView.js:164
+#: pmg-gui/js/UserBlackWhiteList.js:181
+#: pve-manager/www/manager6/grid/BackupView.js:160
 #: pve-manager/www/manager6/grid/PoolMembers.js:178
-#: pve-manager/www/manager6/lxc/Network.js:409
+#: pve-manager/www/manager6/lxc/Network.js:416
 #: pve-manager/www/manager6/lxc/Resources.js:199
-#: pve-manager/www/manager6/lxc/SnapshotTree.js:204
 #: pve-manager/www/manager6/qemu/CloudInit.js:14
-#: pve-manager/www/manager6/qemu/HardwareView.js:443
-#: pve-manager/www/manager6/qemu/SnapshotTree.js:194
+#: pve-manager/www/manager6/qemu/HardwareView.js:450
+#: pve-manager/www/manager6/tree/SnapshotTree.js:278
 msgid "Are you sure you want to remove entry {0}"
 msgstr "您確定您要刪除項目{0}嗎？"
 
@@ -258,11 +264,11 @@ msgstr "您確定您要刪除項目{0}嗎？"
 msgid "Are you sure you want to remove this entry"
 msgstr "您確定要移除這個項目"
 
-#: pmg-gui/js/UserBlackWhiteList.js:177
+#: pmg-gui/js/UserBlackWhiteList.js:176
 msgid "Are you sure you want to remove {0} entries"
 msgstr "您確定要移除 {0} 個項目"
 
-#: pve-manager/www/manager6/dc/ClusterEdit.js:271
+#: pve-manager/www/manager6/dc/ClusterEdit.js:284
 msgid ""
 "Assisted join: Paste encoded cluster join information and enter password."
 msgstr "加入說明: 請貼上編碼過的叢集加入資訊，以及輸入密碼。"
@@ -282,7 +288,7 @@ msgstr "屬性"
 #: pve-manager/www/manager6/qemu/AudioEdit.js:24
 #: pve-manager/www/manager6/qemu/AudioEdit.js:44
 #: pve-manager/www/manager6/qemu/HardwareView.js:292
-#: pve-manager/www/manager6/qemu/HardwareView.js:702
+#: pve-manager/www/manager6/qemu/HardwareView.js:721
 msgid "Audio Device"
 msgstr "音效裝置"
 
@@ -290,7 +296,7 @@ msgstr "音效裝置"
 msgid "Auditor"
 msgstr "稽核員"
 
-#: pve-manager/www/manager6/dc/Config.js:113
+#: pve-manager/www/manager6/dc/Config.js:114
 msgid "Authentication"
 msgstr "驗證"
 
@@ -312,8 +318,8 @@ msgstr "自動"
 msgid "Automatic (Storage used by the VM, or 'local')"
 msgstr "自動 (VM 要使用的儲存區或本地)"
 
-#: proxmox-widget-toolkit/node/NetworkEdit.js:49
-#: proxmox-widget-toolkit/node/NetworkView.js:341
+#: proxmox-widget-toolkit/node/NetworkEdit.js:52
+#: proxmox-widget-toolkit/node/NetworkView.js:359
 msgid "Autostart"
 msgstr "自動啓動"
 
@@ -351,11 +357,11 @@ msgstr ""
 msgid "Backscatter Score"
 msgstr "退信攻擊計分"
 
-#: proxmox-widget-toolkit/Utils.js:525 pmg-gui/js/BackupRestore.js:73
-#: pmg-gui/js/BackupRestore.js:120 pve-manager/www/manager6/dc/Config.js:63
-#: pve-manager/www/manager6/lxc/Config.js:253
+#: proxmox-widget-toolkit/Utils.js:527 pmg-gui/js/BackupRestore.js:73
+#: pmg-gui/js/BackupRestore.js:120 pve-manager/www/manager6/dc/Config.js:64
+#: pve-manager/www/manager6/lxc/Config.js:252
 #: pve-manager/www/manager6/lxc/MPEdit.js:248
-#: pve-manager/www/manager6/qemu/Config.js:285
+#: pve-manager/www/manager6/qemu/Config.js:284
 #: pve-manager/www/manager6/qemu/HDEdit.js:294
 #: pve-manager/www/manager6/window/Backup.js:63
 #: pve-manager/www/manager6/window/Backup.js:116
@@ -366,15 +372,15 @@ msgstr "備份"
 msgid "Backup Job"
 msgstr "備份作業"
 
-#: pve-manager/www/manager6/dc/OptionView.js:182
+#: pve-manager/www/manager6/dc/OptionView.js:194
 msgid "Backup Restore"
 msgstr "備份還原"
 
-#: pve-manager/www/manager6/grid/BackupView.js:120
+#: pve-manager/www/manager6/grid/BackupView.js:116
 msgid "Backup now"
 msgstr "立即備份"
 
-#: pve-manager/www/manager6/Utils.js:906
+#: pve-manager/www/manager6/Utils.js:984
 msgid "Bad Request"
 msgstr "錯誤的要求"
 
@@ -386,7 +392,7 @@ msgstr "Ballooning 裝置"
 msgid "Bandwidth Limit"
 msgstr "頻寬限制"
 
-#: pve-manager/www/manager6/dc/OptionView.js:166
+#: pve-manager/www/manager6/dc/OptionView.js:177
 msgid "Bandwidth Limits"
 msgstr "頻寬限制"
 
@@ -416,7 +422,7 @@ msgstr "基本"
 
 #: pmg-gui/js/QuarantineView.js:29 pmg-gui/js/SpamContextMenu.js:37
 #: pmg-gui/js/SpamQuarantine.js:334 pmg-gui/js/UserBlackWhiteList.js:55
-#: pmg-gui/js/UserBlackWhiteList.js:207 pmg-gui/js/mobile/mailview.js:29
+#: pmg-gui/js/UserBlackWhiteList.js:206 pmg-gui/js/mobile/mailview.js:29
 #: pmg-gui/js/mobile/quarantineview.js:93
 msgid "Blacklist"
 msgstr "黑名單"
@@ -434,7 +440,7 @@ msgstr "封鎖已加密的壓縮檔與文件檔"
 msgid "Body"
 msgstr "本文"
 
-#: proxmox-widget-toolkit/node/NetworkView.js:365
+#: proxmox-widget-toolkit/node/NetworkView.js:383
 msgid "Bond Mode"
 msgstr "Bond 模式"
 
@@ -463,13 +469,13 @@ msgstr "退信"
 
 #: pve-manager/www/manager6/form/BridgeSelector.js:22
 #: pve-manager/www/manager6/lxc/Network.js:132
-#: pve-manager/www/manager6/lxc/Network.js:495
+#: pve-manager/www/manager6/lxc/Network.js:502
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:69
 msgid "Bridge"
 msgstr "橋接"
 
-#: proxmox-widget-toolkit/node/NetworkEdit.js:65
-#: proxmox-widget-toolkit/node/NetworkEdit.js:71
+#: proxmox-widget-toolkit/node/NetworkEdit.js:68
+#: proxmox-widget-toolkit/node/NetworkEdit.js:74
 msgid "Bridge ports"
 msgstr "橋接連接埠"
 
@@ -506,17 +512,17 @@ msgstr "批次啓動"
 msgid "Bulk Stop"
 msgstr "批次停止"
 
-#: pve-manager/www/manager6/form/ControllerSelector.js:95
+#: pve-manager/www/manager6/form/ControllerSelector.js:75
 msgid "Bus/Device"
 msgstr "匯流排/裝置"
 
 #: pve-manager/www/manager6/qemu/HardwareView.js:233
-#: pve-manager/www/manager6/qemu/HardwareView.js:619
+#: pve-manager/www/manager6/qemu/HardwareView.js:637
 msgid "CD/DVD Drive"
 msgstr "CD/DVD 裝置"
 
 #: proxmox-widget-toolkit/form/NetworkSelector.js:95
-#: proxmox-widget-toolkit/node/NetworkView.js:391
+#: proxmox-widget-toolkit/node/NetworkView.js:409
 msgid "CIDR"
 msgstr "CIDR"
 
@@ -553,7 +559,7 @@ msgstr "CPU 權重"
 msgid "CPU usage"
 msgstr "CPU 使用量"
 
-#: pve-manager/www/manager6/Utils.js:854
+#: pve-manager/www/manager6/Utils.js:932
 #: pve-manager/www/manager6/node/StatusView.js:95
 msgid "CPU(s)"
 msgstr "CPU"
@@ -570,7 +576,7 @@ msgstr "快取"
 msgid "Cancel"
 msgstr "取消"
 
-#: pve-manager/www/manager6/qemu/AgentIPView.js:161
+#: pve-manager/www/manager6/qemu/AgentIPView.js:160
 msgid "Cannot get info from Guest Agent<br>Error: {0}"
 msgstr "無法從 Guest Agent 讀取資訊<br>錯誤: {0}"
 
@@ -582,7 +588,7 @@ msgstr "無法移除磁碟映像。"
 msgid "Cannot remove image, a guest with VMID '{0}' exists!"
 msgstr "無法移除磁碟映像，已經有 VMID '{0}' 存在"
 
-#: pve-manager/www/manager6/dc/ClusterEdit.js:157
+#: pve-manager/www/manager6/dc/ClusterEdit.js:161
 msgid "Cannot use default address safely"
 msgstr "無法安全的使用預設位址"
 
@@ -665,13 +671,13 @@ msgstr "客戶端連線速率限制"
 msgid "Client Message Rate Limit"
 msgstr "客戶端訊息速率限制"
 
-#: proxmox-widget-toolkit/Utils.js:471 proxmox-widget-toolkit/Utils.js:490
-#: pve-manager/www/manager6/dc/OptionView.js:194
+#: proxmox-widget-toolkit/Utils.js:473 proxmox-widget-toolkit/Utils.js:492
+#: pve-manager/www/manager6/dc/OptionView.js:208
 #: pve-manager/www/manager6/lxc/CmdMenu.js:136
-#: pve-manager/www/manager6/lxc/Config.js:108
+#: pve-manager/www/manager6/lxc/Config.js:109
 #: pve-manager/www/manager6/menu/TemplateMenu.js:53
 #: pve-manager/www/manager6/qemu/CmdMenu.js:170
-#: pve-manager/www/manager6/qemu/Config.js:84
+#: pve-manager/www/manager6/qemu/Config.js:85
 #: pve-manager/www/manager6/window/Clone.js:297
 msgid "Clone"
 msgstr "複製"
@@ -684,7 +690,7 @@ msgstr "關閉"
 #: pve-manager/www/manager6/qemu/CIDriveEdit.js:41
 #: pve-manager/www/manager6/qemu/CIDriveEdit.js:61
 #: pve-manager/www/manager6/qemu/HardwareView.js:234
-#: pve-manager/www/manager6/qemu/HardwareView.js:688
+#: pve-manager/www/manager6/qemu/HardwareView.js:707
 msgid "CloudInit Drive"
 msgstr "CloudInit 裝置"
 
@@ -706,24 +712,24 @@ msgstr "叢集資訊"
 
 #: pmg-gui/js/ClusterAdministration.js:34
 #: pmg-gui/js/ClusterAdministration.js:71
-#: pve-manager/www/manager6/dc/ClusterEdit.js:130
+#: pve-manager/www/manager6/dc/ClusterEdit.js:131
 msgid "Cluster Join"
 msgstr "加入叢集"
 
-#: pve-manager/www/manager6/dc/ClusterEdit.js:57
+#: pve-manager/www/manager6/dc/ClusterEdit.js:58
 msgid "Cluster Join Information"
 msgstr "加入叢集資訊"
 
-#: pve-manager/www/manager6/dc/Cluster.js:166
+#: pve-manager/www/manager6/dc/Cluster.js:170
 #: pve-manager/www/manager6/dc/ClusterEdit.js:22
 msgid "Cluster Name"
 msgstr "叢集名稱"
 
-#: pve-manager/www/manager6/dc/Cluster.js:204
+#: pve-manager/www/manager6/dc/Cluster.js:208
 msgid "Cluster Nodes"
 msgstr "叢集節點"
 
-#: pve-manager/www/manager6/dc/ClusterEdit.js:245
+#: pve-manager/www/manager6/dc/ClusterEdit.js:262
 msgid ""
 "Cluster join task finished, node certificate may have changed, reload GUI!"
 msgstr "加入叢集作業完成，此節點的憑證已經改變，請重新整理瀏覽器"
@@ -737,15 +743,15 @@ msgid "Command"
 msgstr "指令"
 
 #: proxmox-widget-toolkit/form/NetworkSelector.js:124
-#: proxmox-widget-toolkit/node/NetworkEdit.js:158
-#: proxmox-widget-toolkit/node/NetworkView.js:405 pmg-gui/js/ActionList.js:143
+#: proxmox-widget-toolkit/node/NetworkEdit.js:225
+#: proxmox-widget-toolkit/node/NetworkView.js:423 pmg-gui/js/ActionList.js:143
 #: pmg-gui/js/LDAPConfig.js:174 pmg-gui/js/LDAPConfig.js:591
 #: pmg-gui/js/LDAPProfileSelector.js:42 pmg-gui/js/MyNetworks.js:60
 #: pmg-gui/js/MyNetworks.js:99 pmg-gui/js/MyNetworks.js:131
 #: pmg-gui/js/RelayDomains.js:65 pmg-gui/js/RelayDomains.js:104
 #: pmg-gui/js/RelayDomains.js:136 pmg-gui/js/SpamDetectorCustom.js:131
 #: pmg-gui/js/SpamDetectorCustom.js:175 pmg-gui/js/SpamDetectorCustom.js:279
-#: pmg-gui/js/Transport.js:65 pmg-gui/js/Transport.js:169
+#: pmg-gui/js/Transport.js:108 pmg-gui/js/Transport.js:195
 #: pmg-gui/js/UserEdit.js:149 pmg-gui/js/UserView.js:167
 #: pmg-gui/js/Utils.js:483 pmg-gui/js/Utils.js:540 pmg-gui/js/Utils.js:573
 #: pmg-gui/js/Utils.js:609 pmg-gui/js/Utils.js:648
@@ -758,15 +764,15 @@ msgstr "指令"
 #: pve-manager/www/manager6/dc/SecurityGroups.js:37
 #: pve-manager/www/manager6/dc/SecurityGroups.js:169
 #: pve-manager/www/manager6/dc/UserEdit.js:148
-#: pve-manager/www/manager6/dc/UserView.js:180
+#: pve-manager/www/manager6/dc/UserView.js:192
 #: pve-manager/www/manager6/form/BridgeSelector.js:34
 #: pve-manager/www/manager6/form/GroupSelector.js:28
 #: pve-manager/www/manager6/form/IPRefSelector.js:69
 #: pve-manager/www/manager6/form/PoolSelector.js:29
 #: pve-manager/www/manager6/form/SecurityGroupSelector.js:35
 #: pve-manager/www/manager6/form/UserSelector.js:42
-#: pve-manager/www/manager6/grid/FirewallAliases.js:38
-#: pve-manager/www/manager6/grid/FirewallAliases.js:169
+#: pve-manager/www/manager6/grid/FirewallAliases.js:40
+#: pve-manager/www/manager6/grid/FirewallAliases.js:180
 #: pve-manager/www/manager6/grid/FirewallRules.js:222
 #: pve-manager/www/manager6/grid/FirewallRules.js:358
 #: pve-manager/www/manager6/grid/FirewallRules.js:753
@@ -795,7 +801,7 @@ msgstr "社群"
 msgid "Compression"
 msgstr "壓縮"
 
-#: pve-manager/www/manager6/dc/Cluster.js:175
+#: pve-manager/www/manager6/dc/Cluster.js:179
 msgid "Config Version"
 msgstr "設定版本"
 
@@ -814,11 +820,11 @@ msgstr "設定"
 msgid "Configuration Database"
 msgstr "設定資料庫"
 
-#: pve-manager/www/manager6/Utils.js:907
+#: pve-manager/www/manager6/Utils.js:985
 msgid "Configuration Unsupported"
 msgstr "未支援的設定"
 
-#: proxmox-widget-toolkit/Utils.js:482
+#: proxmox-widget-toolkit/Utils.js:484
 msgid "Configure"
 msgstr "設定"
 
@@ -857,10 +863,10 @@ msgstr "確認"
 msgid "Confirm password"
 msgstr "確認密碼"
 
-#: proxmox-widget-toolkit/Utils.js:266 proxmox-widget-toolkit/Utils.js:340
-#: proxmox-widget-toolkit/Utils.js:342 proxmox-widget-toolkit/Utils.js:344
-#: proxmox-widget-toolkit/Utils.js:346 pve-manager/www/manager6/Utils.js:505
-#: pve-manager/www/manager6/Utils.js:1242
+#: proxmox-widget-toolkit/Utils.js:268 proxmox-widget-toolkit/Utils.js:342
+#: proxmox-widget-toolkit/Utils.js:344 proxmox-widget-toolkit/Utils.js:346
+#: proxmox-widget-toolkit/Utils.js:348 pve-manager/www/manager6/Utils.js:505
+#: pve-manager/www/manager6/Utils.js:1327
 msgid "Connection error"
 msgstr "連線錯誤"
 
@@ -868,17 +874,17 @@ msgstr "連線錯誤"
 msgid "Connection failure. Network error or Proxmox VE services not running?"
 msgstr "連線失敗。網路錯誤或是 Proxmox VE 服務沒有正常執行？"
 
-#: proxmox-widget-toolkit/Utils.js:460 proxmox-widget-toolkit/Utils.js:461
+#: proxmox-widget-toolkit/Utils.js:462 proxmox-widget-toolkit/Utils.js:463
 #: pmg-gui/js/ServerStatus.js:51
 #: pve-manager/www/manager6/button/ConsoleButton.js:20
 #: pve-manager/www/manager6/lxc/CmdMenu.js:178
-#: pve-manager/www/manager6/lxc/Config.js:203
+#: pve-manager/www/manager6/lxc/Config.js:202
 #: pve-manager/www/manager6/qemu/CmdMenu.js:200
-#: pve-manager/www/manager6/qemu/Config.js:235
+#: pve-manager/www/manager6/qemu/Config.js:234
 msgid "Console"
 msgstr "主控台"
 
-#: pve-manager/www/manager6/dc/OptionView.js:74
+#: pve-manager/www/manager6/dc/OptionView.js:85
 msgid "Console Viewer"
 msgstr "主控台檢視器"
 
@@ -902,11 +908,12 @@ msgstr "容器"
 msgid "Container template"
 msgstr "容器範本"
 
-#: pve-manager/www/manager6/lxc/Config.js:185
+#: pve-manager/www/manager6/lxc/Config.js:184
 msgid "Container {0} on node '{1}'"
 msgstr "節點 {1} 上的容器 {0}"
 
 #: pve-manager/www/manager6/dc/StorageView.js:123
+#: pve-manager/www/manager6/sdn/Browser.js:31
 #: pve-manager/www/manager6/storage/Browser.js:43
 #: pve-manager/www/manager6/storage/CIFSEdit.js:173
 #: pve-manager/www/manager6/storage/CephFSEdit.js:72
@@ -930,11 +937,22 @@ msgstr "內容類型"
 msgid "Content Type Filter"
 msgstr "內容類型篩選"
 
-#: proxmox-widget-toolkit/Utils.js:473 proxmox-widget-toolkit/Utils.js:491
+#: pve-manager/www/manager6/form/SDNControllerSelector.js:26
+#: pve-manager/www/manager6/sdn/zones/EvpnEdit.js:38
+#, fuzzy
+msgid "Controller"
+msgstr "SCSI 控制器"
+
+#: pve-manager/www/manager6/dc/Config.js:151
+#, fuzzy
+msgid "Controllers"
+msgstr "SCSI 控制器"
+
+#: proxmox-widget-toolkit/Utils.js:475 proxmox-widget-toolkit/Utils.js:493
 #: pve-manager/www/manager6/lxc/CmdMenu.js:157
-#: pve-manager/www/manager6/lxc/Config.js:116
+#: pve-manager/www/manager6/lxc/Config.js:117
 #: pve-manager/www/manager6/qemu/CmdMenu.js:178
-#: pve-manager/www/manager6/qemu/Config.js:92
+#: pve-manager/www/manager6/qemu/Config.js:93
 msgid "Convert to template"
 msgstr "轉換成範本"
 
@@ -942,11 +960,11 @@ msgstr "轉換成範本"
 msgid "Copy"
 msgstr "複製"
 
-#: pve-manager/www/manager6/dc/ClusterEdit.js:121
+#: pve-manager/www/manager6/dc/ClusterEdit.js:122
 msgid "Copy Information"
 msgstr "複製資訊"
 
-#: proxmox-widget-toolkit/Utils.js:521
+#: proxmox-widget-toolkit/Utils.js:523
 msgid "Copy data"
 msgstr "複製資料"
 
@@ -954,7 +972,7 @@ msgstr "複製資料"
 msgid "Copy orignal mail to Attachment Quarantine"
 msgstr "將原始郵件複製到附件隔離區"
 
-#: pve-manager/www/manager6/dc/ClusterEdit.js:70
+#: pve-manager/www/manager6/dc/ClusterEdit.js:71
 msgid "Copy the Join Information here and use it on the node you want to add."
 msgstr "複製此處的加入資訊，並在要加入叢集的節點貼上它。"
 
@@ -972,19 +990,19 @@ msgstr "核心"
 msgid "Count"
 msgstr "數量"
 
-#: proxmox-widget-toolkit/Utils.js:425 proxmox-widget-toolkit/Utils.js:467
-#: proxmox-widget-toolkit/Utils.js:486 proxmox-widget-toolkit/Utils.js:510
-#: proxmox-widget-toolkit/Utils.js:512 proxmox-widget-toolkit/Utils.js:514
-#: proxmox-widget-toolkit/Utils.js:516 proxmox-widget-toolkit/Utils.js:518
-#: proxmox-widget-toolkit/Utils.js:519 proxmox-widget-toolkit/Utils.js:530
-#: proxmox-widget-toolkit/Utils.js:531 proxmox-widget-toolkit/Utils.js:532
-#: proxmox-widget-toolkit/Utils.js:533
-#: proxmox-widget-toolkit/node/NetworkView.js:280
-#: proxmox-widget-toolkit/window/Edit.js:257
+#: proxmox-widget-toolkit/Utils.js:427 proxmox-widget-toolkit/Utils.js:469
+#: proxmox-widget-toolkit/Utils.js:488 proxmox-widget-toolkit/Utils.js:512
+#: proxmox-widget-toolkit/Utils.js:514 proxmox-widget-toolkit/Utils.js:516
+#: proxmox-widget-toolkit/Utils.js:518 proxmox-widget-toolkit/Utils.js:520
+#: proxmox-widget-toolkit/Utils.js:521 proxmox-widget-toolkit/Utils.js:532
+#: proxmox-widget-toolkit/Utils.js:533 proxmox-widget-toolkit/Utils.js:534
+#: proxmox-widget-toolkit/Utils.js:535
+#: proxmox-widget-toolkit/node/NetworkView.js:298
+#: proxmox-widget-toolkit/window/Edit.js:261
 #: pmg-gui/js/ClusterAdministration.js:200 pmg-gui/js/LDAPConfig.js:535
-#: pmg-gui/js/MailProxyTLSDomains.js:129 pmg-gui/js/MyNetworks.js:81
+#: pmg-gui/js/MailProxyTLSDestinations.js:129 pmg-gui/js/MyNetworks.js:81
 #: pmg-gui/js/ObjectGroupList.js:115 pmg-gui/js/RelayDomains.js:86
-#: pmg-gui/js/SpamDetectorCustom.js:224 pmg-gui/js/Transport.js:113
+#: pmg-gui/js/SpamDetectorCustom.js:224 pmg-gui/js/Transport.js:58
 #: pve-manager/www/manager6/ceph/OSD.js:667
 #: pve-manager/www/manager6/ceph/Pool.js:196
 #: pve-manager/www/manager6/ceph/ServiceList.js:221
@@ -998,10 +1016,11 @@ msgstr "數量"
 #: pve-manager/www/manager6/node/LVMThin.js:131
 #: pve-manager/www/manager6/node/ZFS.js:369
 #: pve-manager/www/manager6/panel/IPSet.js:103
+#: pve-manager/www/manager6/sdn/VnetView.js:62
 msgid "Create"
 msgstr "建立"
 
-#: pve-manager/www/manager6/Workspace.js:259
+#: pve-manager/www/manager6/Workspace.js:275
 #: pve-manager/www/manager6/node/CmdMenu.js:21
 msgid "Create CT"
 msgstr "建立 CT"
@@ -1010,13 +1029,18 @@ msgstr "建立 CT"
 msgid "Create CephFS"
 msgstr "建立 CephFS"
 
-#: proxmox-widget-toolkit/Utils.js:457
-#: pve-manager/www/manager6/dc/Cluster.js:137
+#: proxmox-widget-toolkit/Utils.js:459
+#: pve-manager/www/manager6/dc/Cluster.js:141
 #: pve-manager/www/manager6/dc/ClusterEdit.js:6
 msgid "Create Cluster"
 msgstr "建立叢集"
 
-#: pve-manager/www/manager6/Workspace.js:246
+#: pve-manager/www/manager6/lxc/FeaturesEdit.js:67
+#, fuzzy
+msgid "Create Device Nodes"
+msgstr "Mediated 裝置"
+
+#: pve-manager/www/manager6/Workspace.js:262
 #: pve-manager/www/manager6/node/CmdMenu.js:9
 msgid "Create VM"
 msgstr "建立 VM"
@@ -1029,7 +1053,7 @@ msgstr "建立"
 msgid "Custom"
 msgstr "自訂"
 
-#: pve-manager/www/manager6/dc/TFAEdit.js:151
+#: pve-manager/www/manager6/dc/TFAEdit.js:167
 msgid ""
 "Custom 2nd factor configuration is not supported on realms with '{0}' TFA."
 msgstr "'{0}' 不支援自訂雙因素驗證。"
@@ -1061,7 +1085,7 @@ msgstr ""
 
 #: proxmox-widget-toolkit/node/DNSEdit.js:43
 #: pmg-gui/js/SystemConfiguration.js:37
-#: pve-manager/www/manager6/lxc/Config.js:230
+#: pve-manager/www/manager6/lxc/Config.js:229
 #: pve-manager/www/manager6/lxc/CreateWizard.js:232
 #: pve-manager/www/manager6/node/Config.js:187
 msgid "DNS"
@@ -1073,7 +1097,7 @@ msgstr "DNS TXT 記錄"
 
 #: pve-manager/www/manager6/lxc/DNS.js:37
 #: pve-manager/www/manager6/lxc/DNS.js:148
-#: pve-manager/www/manager6/qemu/CloudInit.js:239
+#: pve-manager/www/manager6/qemu/CloudInit.js:243
 msgid "DNS domain"
 msgstr "DNS 網域名稱"
 
@@ -1088,7 +1112,7 @@ msgid "DNS server"
 msgstr "DNS 伺服器"
 
 #: pve-manager/www/manager6/lxc/DNS.js:43
-#: pve-manager/www/manager6/qemu/CloudInit.js:246
+#: pve-manager/www/manager6/qemu/CloudInit.js:250
 msgid "DNS servers"
 msgstr "DNS 伺服器"
 
@@ -1108,7 +1132,7 @@ msgstr "儀表板"
 msgid "Dashboard Options"
 msgstr "儀表板選項"
 
-#: pve-manager/www/manager6/window/Settings.js:195
+#: pve-manager/www/manager6/window/Settings.js:202
 msgid "Dashboard Storages"
 msgstr "儀表板顯示的儲存"
 
@@ -1117,17 +1141,17 @@ msgid "Database Mirror"
 msgstr "資料庫鏡像"
 
 #: pve-manager/www/manager6/dc/Config.js:19
-#: pve-manager/www/manager6/tree/ResourceTree.js:238
-#: pve-manager/www/manager6/tree/ResourceTree.js:439
+#: pve-manager/www/manager6/tree/ResourceTree.js:242
+#: pve-manager/www/manager6/tree/ResourceTree.js:443
 msgid "Datacenter"
 msgstr "資料中心"
 
 #: pmg-gui/js/AttachmentQuarantine.js:129 pmg-gui/js/ContactStatistics.js:78
 #: pmg-gui/js/ReceiverStatistics.js:78 pmg-gui/js/SenderStatistics.js:78
 #: pmg-gui/js/SpamQuarantine.js:273 pmg-gui/js/VirusQuarantine.js:132
-#: pve-manager/www/manager6/lxc/SnapshotTree.js:286
-#: pve-manager/www/manager6/qemu/SnapshotTree.js:276
+#: pve-manager/www/manager6/grid/BackupView.js:209
 #: pve-manager/www/manager6/storage/ContentView.js:592
+#: pve-manager/www/manager6/tree/SnapshotTree.js:349
 msgid "Date"
 msgstr "日期"
 
@@ -1141,7 +1165,7 @@ msgstr "日"
 msgid "Day of week"
 msgstr "週"
 
-#: proxmox-widget-toolkit/Utils.js:451
+#: proxmox-widget-toolkit/Utils.js:453
 msgid "Deactivate"
 msgstr "停用"
 
@@ -1157,11 +1181,11 @@ msgstr ""
 msgid "Deep Scrub OSD.{0}"
 msgstr ""
 
-#: proxmox-widget-toolkit/Utils.js:47
+#: proxmox-widget-toolkit/Utils.js:48
 #: proxmox-widget-toolkit/grid/ObjectGrid.js:144 pmg-gui/js/LDAPConfig.js:98
 #: pve-manager/www/manager6/dc/AuthEdit.js:87
 #: pve-manager/www/manager6/dc/AuthEdit.js:114
-#: pve-manager/www/manager6/dc/OptionView.js:176
+#: pve-manager/www/manager6/dc/OptionView.js:187
 #: pve-manager/www/manager6/form/Boolean.js:6
 #: pve-manager/www/manager6/grid/FirewallOptions.js:109
 #: pve-manager/www/manager6/lxc/Options.js:90
@@ -1172,15 +1196,15 @@ msgstr "預設"
 msgid "Default Relay"
 msgstr "預設轉送"
 
-#: pve-manager/www/manager6/dc/ClusterEdit.js:159
+#: pve-manager/www/manager6/dc/ClusterEdit.js:163
 msgid "Default: IP resolved by node's hostname"
 msgstr "預設：由節點主機名稱反解 IP"
 
-#: pve-manager/www/manager6/dc/OptionView.js:144
+#: pve-manager/www/manager6/dc/OptionView.js:155
 msgid "Defaults to origin"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/OptionView.js:154
+#: pve-manager/www/manager6/dc/OptionView.js:165
 msgid "Defaults to requesting host URI"
 msgstr ""
 
@@ -1199,7 +1223,7 @@ msgstr "延遲警告時間 (時)"
 #: pmg-gui/js/AttachmentQuarantine.js:169 pmg-gui/js/SpamContextMenu.js:24
 #: pmg-gui/js/SpamQuarantine.js:346 pmg-gui/js/VirusQuarantine.js:172
 #: pmg-gui/js/mobile/mailview.js:43 pmg-gui/js/mobile/quarantineview.js:98
-#: pve-manager/www/manager6/dc/TFAEdit.js:510
+#: pve-manager/www/manager6/dc/TFAEdit.js:528
 msgid "Delete"
 msgstr "刪除"
 
@@ -1207,7 +1231,7 @@ msgstr "刪除"
 msgid "Delete Custom Certificate"
 msgstr "刪除自訂憑證"
 
-#: proxmox-widget-toolkit/Utils.js:466 proxmox-widget-toolkit/Utils.js:485
+#: proxmox-widget-toolkit/Utils.js:468 proxmox-widget-toolkit/Utils.js:487
 msgid "Delete Snapshot"
 msgstr "刪除快照"
 
@@ -1240,11 +1264,9 @@ msgstr "傳遞至"
 #: pve-manager/www/manager6/form/MDevSelector.js:31
 #: pve-manager/www/manager6/grid/FirewallRules.js:17
 #: pve-manager/www/manager6/ha/Resources.js:174
-#: pve-manager/www/manager6/lxc/Snapshot.js:98
-#: pve-manager/www/manager6/lxc/SnapshotTree.js:300
-#: pve-manager/www/manager6/qemu/Snapshot.js:107
-#: pve-manager/www/manager6/qemu/SnapshotTree.js:289
 #: pve-manager/www/manager6/storage/ContentView.js:81
+#: pve-manager/www/manager6/tree/SnapshotTree.js:362
+#: pve-manager/www/manager6/window/Snapshot.js:93
 msgid "Description"
 msgstr "說明"
 
@@ -1253,15 +1275,17 @@ msgstr "說明"
 msgid "Dest. port"
 msgstr "目標連接埠"
 
+#: pmg-gui/js/MailProxyTLSDestinations.js:35
+#: pmg-gui/js/MailProxyTLSDestinations.js:77
 #: pve-manager/www/manager6/grid/FirewallRules.js:147
 #: pve-manager/www/manager6/grid/FirewallRules.js:713
 msgid "Destination"
 msgstr "目標位址"
 
-#: proxmox-widget-toolkit/Utils.js:469 proxmox-widget-toolkit/Utils.js:488
-#: proxmox-widget-toolkit/Utils.js:511 proxmox-widget-toolkit/Utils.js:513
-#: proxmox-widget-toolkit/Utils.js:515 proxmox-widget-toolkit/Utils.js:517
-#: proxmox-widget-toolkit/Utils.js:520 pve-manager/www/manager6/ceph/OSD.js:156
+#: proxmox-widget-toolkit/Utils.js:471 proxmox-widget-toolkit/Utils.js:490
+#: proxmox-widget-toolkit/Utils.js:513 proxmox-widget-toolkit/Utils.js:515
+#: proxmox-widget-toolkit/Utils.js:517 proxmox-widget-toolkit/Utils.js:519
+#: proxmox-widget-toolkit/Utils.js:522 pve-manager/www/manager6/ceph/OSD.js:156
 #: pve-manager/www/manager6/ceph/OSD.js:769
 #: pve-manager/www/manager6/ceph/Pool.js:209
 #: pve-manager/www/manager6/ceph/ServiceList.js:226
@@ -1272,11 +1296,11 @@ msgstr "銷毀"
 msgid "Destroy '{0}'"
 msgstr "銷毀 '{0}'"
 
-#: proxmox-widget-toolkit/Utils.js:523
+#: proxmox-widget-toolkit/Utils.js:525
 msgid "Destroy image from unknown guest"
 msgstr "從未知的 Guest 銷毀映像"
 
-#: pve-manager/www/manager6/qemu/HardwareView.js:437
+#: pve-manager/www/manager6/qemu/HardwareView.js:444
 msgid "Detach"
 msgstr "中斷連結"
 
@@ -1296,11 +1320,11 @@ msgstr "詳細內容"
 #: pve-manager/www/manager6/node/Directory.js:75
 #: pve-manager/www/manager6/node/Disks.js:12
 #: pve-manager/www/manager6/node/ZFS.js:124
-#: pve-manager/www/manager6/qemu/PCIEdit.js:84
+#: pve-manager/www/manager6/qemu/PCIEdit.js:87
 msgid "Device"
 msgstr "裝置"
 
-#: pve-manager/www/manager6/Utils.js:908
+#: pve-manager/www/manager6/Utils.js:986
 msgid "Device Ineligible"
 msgstr "裝置不符"
 
@@ -1308,7 +1332,7 @@ msgstr "裝置不符"
 msgid "Devices"
 msgstr "裝置"
 
-#: pve-manager/www/manager6/dc/TFAEdit.js:411
+#: pve-manager/www/manager6/dc/TFAEdit.js:422
 msgid "Digits"
 msgstr "位數"
 
@@ -1317,22 +1341,29 @@ msgstr "位數"
 msgid "Direction"
 msgstr "方向"
 
-#: proxmox-widget-toolkit/Utils.js:55 pve-manager/www/manager6/node/ACME.js:188
+#: proxmox-widget-toolkit/Utils.js:56 pve-manager/www/manager6/node/ACME.js:188
 #: pve-manager/www/manager6/storage/DirEdit.js:14
 msgid "Directory"
 msgstr "Directory"
 
-#: proxmox-widget-toolkit/Utils.js:530
+#: proxmox-widget-toolkit/Utils.js:532
 msgid "Directory Storage"
 msgstr "Directory 儲存"
 
-#: pmg-gui/js/MailProxyRelaying.js:18
-msgid "Disable MX lookup"
+#: pmg-gui/js/MailProxyRelaying.js:29
+#, fuzzy
+msgid "Disable MX lookup (SMTP)"
 msgstr "取消 MX 反查"
 
 #: proxmox-widget-toolkit/Utils.js:43 pve-manager/www/manager6/Utils.js:237
 msgid "Disabled"
 msgstr "停用"
+
+#: pve-manager/www/manager6/qemu/RNGEdit.js:91
+msgid ""
+"Disabling the limiter can potentially allow a guest to overload the host. "
+"Proceed with caution."
+msgstr ""
 
 #: pve-manager/www/manager6/qemu/HDEdit.js:230
 msgid "Discard"
@@ -1366,7 +1397,7 @@ msgstr "磁碟"
 msgid "Disk IO"
 msgstr "磁碟 IO"
 
-#: pve-manager/www/manager6/dc/OptionView.js:200
+#: pve-manager/www/manager6/dc/OptionView.js:215
 msgid "Disk Move"
 msgstr "磁碟移動"
 
@@ -1402,17 +1433,16 @@ msgstr "顯示卡"
 msgid "Do not use any media"
 msgstr "不要使用任何媒體"
 
-#: pmg-gui/js/MainView.js:180 pve-manager/www/manager6/Workspace.js:315
+#: pmg-gui/js/MainView.js:180 pve-manager/www/manager6/Workspace.js:331
 msgid "Documentation"
 msgstr "說明文件"
 
-#: pve-manager/www/manager6/dc/ClusterEdit.js:282
+#: pve-manager/www/manager6/dc/ClusterEdit.js:295
 msgid "Does not seem like a valid encoded Cluster Information!"
 msgstr "這看起來不是有效的叢集編碼資訊"
 
 #: pmg-gui/js/DomainStatistics.js:6 pmg-gui/js/DomainStatistics.js:73
-#: pmg-gui/js/DomainStatistics.js:117 pmg-gui/js/MailProxyTLSDomains.js:35
-#: pmg-gui/js/MailProxyTLSDomains.js:77 pmg-gui/js/NavigationTree.js:172
+#: pmg-gui/js/DomainStatistics.js:117 pmg-gui/js/NavigationTree.js:172
 #: pmg-gui/js/PostfixQShape.js:117 pmg-gui/js/Utils.js:220
 #: pmg-gui/js/Utils.js:226 pmg-gui/js/Utils.js:235 pmg-gui/js/Utils.js:242
 #: pve-manager/www/manager6/dc/AuthEdit.js:41
@@ -1430,7 +1460,7 @@ msgstr "網域"
 msgid "Down"
 msgstr "離線"
 
-#: proxmox-widget-toolkit/Utils.js:524 pmg-gui/js/AttachmentGrid.js:50
+#: proxmox-widget-toolkit/Utils.js:526 pmg-gui/js/AttachmentGrid.js:50
 #: pmg-gui/js/BackupRestore.js:174 pmg-gui/js/SpamQuarantine.js:315
 #: pmg-gui/js/Subscription.js:61
 #: pve-manager/www/manager6/node/Subscription.js:61
@@ -1468,7 +1498,7 @@ msgstr "郵件位址於 '{0}'"
 
 #: pve-manager/www/manager6/qemu/HDEfi.js:64
 #: pve-manager/www/manager6/qemu/HardwareView.js:253
-#: pve-manager/www/manager6/qemu/HardwareView.js:508
+#: pve-manager/www/manager6/qemu/HardwareView.js:515
 msgid "EFI Disk"
 msgstr "EFI 磁碟"
 
@@ -1480,50 +1510,51 @@ msgstr "郵件 '從:'"
 msgid "EMail attribute name(s)"
 msgstr "郵件屬性名稱"
 
-#: proxmox-widget-toolkit/Utils.js:428
+#: proxmox-widget-toolkit/Utils.js:430
 #: proxmox-widget-toolkit/node/DNSView.js:46
 #: proxmox-widget-toolkit/node/NetworkView.js:97
 #: proxmox-widget-toolkit/node/TimeView.js:43 pmg-gui/js/ActionList.js:110
-#: pmg-gui/js/ClamAVDatabase.js:163 pmg-gui/js/DKIMSettings.js:176
+#: pmg-gui/js/ClamAVDatabase.js:163 pmg-gui/js/DKIMSettings.js:205
 #: pmg-gui/js/FetchmailView.js:77 pmg-gui/js/LDAPConfig.js:530
 #: pmg-gui/js/MailProxyOptions.js:83 pmg-gui/js/MailProxyPorts.js:33
-#: pmg-gui/js/MailProxyRelaying.js:80 pmg-gui/js/MailProxyTLS.js:22
-#: pmg-gui/js/MailProxyTLSDomains.js:125 pmg-gui/js/MyNetworks.js:75
+#: pmg-gui/js/MailProxyRelaying.js:91 pmg-gui/js/MailProxyTLS.js:22
+#: pmg-gui/js/MailProxyTLSDestinations.js:125 pmg-gui/js/MyNetworks.js:75
 #: pmg-gui/js/ObjectGroup.js:197 pmg-gui/js/ObjectGroupList.js:109
 #: pmg-gui/js/RelayDomains.js:80 pmg-gui/js/SpamDetectorCustom.js:219
 #: pmg-gui/js/SpamDetectorOptions.js:51 pmg-gui/js/SpamQuarantineOptions.js:75
-#: pmg-gui/js/SystemOptions.js:26 pmg-gui/js/Transport.js:107
+#: pmg-gui/js/SystemOptions.js:26 pmg-gui/js/Transport.js:52
 #: pmg-gui/js/UserView.js:105 pmg-gui/js/VirusDetectorOptions.js:39
 #: pmg-gui/js/VirusQuarantineOptions.js:26
 #: pve-manager/www/manager6/dc/AuthView.js:43
 #: pve-manager/www/manager6/dc/Backup.js:481
 #: pve-manager/www/manager6/dc/GroupView.js:50
-#: pve-manager/www/manager6/dc/OptionView.js:209
+#: pve-manager/www/manager6/dc/OptionView.js:231
 #: pve-manager/www/manager6/dc/PoolView.js:50
 #: pve-manager/www/manager6/dc/RoleView.js:107
 #: pve-manager/www/manager6/dc/SecurityGroups.js:136
 #: pve-manager/www/manager6/dc/StorageView.js:61
 #: pve-manager/www/manager6/dc/UserView.js:60
-#: pve-manager/www/manager6/grid/FirewallAliases.js:138
+#: pve-manager/www/manager6/grid/FirewallAliases.js:140
 #: pve-manager/www/manager6/grid/FirewallOptions.js:152
 #: pve-manager/www/manager6/grid/FirewallRules.js:526
 #: pve-manager/www/manager6/grid/Replication.js:251
 #: pve-manager/www/manager6/ha/Groups.js:48
 #: pve-manager/www/manager6/ha/Resources.js:83
 #: pve-manager/www/manager6/lxc/DNS.js:206
-#: pve-manager/www/manager6/lxc/Network.js:449
+#: pve-manager/www/manager6/lxc/Network.js:456
 #: pve-manager/www/manager6/lxc/Options.js:154
 #: pve-manager/www/manager6/lxc/Resources.js:173
-#: pve-manager/www/manager6/lxc/Snapshot.js:129
-#: pve-manager/www/manager6/lxc/SnapshotTree.js:149
 #: pve-manager/www/manager6/panel/IPSet.js:96
 #: pve-manager/www/manager6/panel/IPSet.js:317
-#: pve-manager/www/manager6/panel/NotesView.js:15
-#: pve-manager/www/manager6/qemu/CloudInit.js:72
-#: pve-manager/www/manager6/qemu/HardwareView.js:414
+#: pve-manager/www/manager6/panel/NotesView.js:16
+#: pve-manager/www/manager6/qemu/CloudInit.js:76
+#: pve-manager/www/manager6/qemu/HardwareView.js:421
 #: pve-manager/www/manager6/qemu/Options.js:329
-#: pve-manager/www/manager6/qemu/Snapshot.js:138
-#: pve-manager/www/manager6/qemu/SnapshotTree.js:147
+#: pve-manager/www/manager6/sdn/ControllerView.js:59
+#: pve-manager/www/manager6/sdn/VnetView.js:41
+#: pve-manager/www/manager6/sdn/ZoneView.js:59
+#: pve-manager/www/manager6/tree/SnapshotTree.js:26
+#: pve-manager/www/manager6/tree/SnapshotTree.js:286
 msgid "Edit"
 msgstr "編輯"
 
@@ -1539,12 +1570,12 @@ msgstr "編輯"
 msgid "Egress"
 msgstr "輸出"
 
-#: proxmox-widget-toolkit/node/NetworkView.js:424
+#: proxmox-widget-toolkit/node/NetworkView.js:442
 msgid ""
 "Either reboot or use 'Apply Configuration' (needs ifupdown2) to activate"
 msgstr "重新開機或者使用「套用設定」(需有 ifupdown2) 以啟用新設定"
 
-#: pve-manager/www/manager6/dc/OptionView.js:80
+#: pve-manager/www/manager6/dc/OptionView.js:91
 msgid "Email from address"
 msgstr "寄件人郵件位址"
 
@@ -1562,7 +1593,7 @@ msgstr "郵件提醒"
 msgid "Enable"
 msgstr "啓用"
 
-#: pmg-gui/js/DKIMSettings.js:101
+#: pmg-gui/js/DKIMSettings.js:127
 msgid "Enable DKIM Signing"
 msgstr "啟用 DKIM 簽署"
 
@@ -1589,7 +1620,7 @@ msgstr "啓用配額"
 #: pve-manager/www/manager6/dc/Backup.js:547
 #: pve-manager/www/manager6/dc/StorageView.js:149
 #: pve-manager/www/manager6/dc/UserEdit.js:96
-#: pve-manager/www/manager6/dc/UserView.js:143
+#: pve-manager/www/manager6/dc/UserView.js:155
 #: pve-manager/www/manager6/grid/Replication.js:59
 #: pve-manager/www/manager6/grid/Replication.js:289
 #: pve-manager/www/manager6/lxc/Options.js:129
@@ -1614,21 +1645,25 @@ msgstr "結束"
 msgid "End Time"
 msgstr "結束時間"
 
-#: proxmox-widget-toolkit/Utils.js:522
+#: pve-manager/www/manager6/qemu/RNGEdit.js:53
+msgid "Entropy source"
+msgstr ""
+
+#: proxmox-widget-toolkit/Utils.js:524
 msgid "Erase data"
 msgstr "抹除資料"
 
-#: proxmox-widget-toolkit/Utils.js:45 proxmox-widget-toolkit/Utils.js:375
+#: proxmox-widget-toolkit/Utils.js:46 proxmox-widget-toolkit/Utils.js:377
 #: proxmox-widget-toolkit/button/Button.js:151
 #: proxmox-widget-toolkit/node/APT.js:99 proxmox-widget-toolkit/node/APT.js:156
-#: proxmox-widget-toolkit/node/NetworkEdit.js:261
+#: proxmox-widget-toolkit/node/NetworkEdit.js:358
 #: proxmox-widget-toolkit/node/NetworkView.js:123
 #: proxmox-widget-toolkit/node/NetworkView.js:150
-#: proxmox-widget-toolkit/node/NetworkView.js:298
+#: proxmox-widget-toolkit/node/NetworkView.js:316
 #: proxmox-widget-toolkit/node/ServiceView.js:68
-#: proxmox-widget-toolkit/window/Edit.js:142
-#: proxmox-widget-toolkit/window/Edit.js:203
-#: proxmox-widget-toolkit/window/TaskViewer.js:164
+#: proxmox-widget-toolkit/window/Edit.js:146
+#: proxmox-widget-toolkit/window/Edit.js:207
+#: proxmox-widget-toolkit/window/TaskViewer.js:167
 #: pmg-gui/js/BackupRestore.js:85 pmg-gui/js/ClamAVDatabase.js:147
 #: pmg-gui/js/ClusterAdministration.js:162 pmg-gui/js/DKIMSettings.js:26
 #: pmg-gui/js/Dashboard.js:169 pmg-gui/js/LDAPConfig.js:508
@@ -1641,10 +1676,10 @@ msgstr "抹除資料"
 #: pmg-gui/js/RuleInfo.js:56 pmg-gui/js/RuleInfo.js:78
 #: pmg-gui/js/ServerStatus.js:35 pmg-gui/js/SpamDetectorStatus.js:71
 #: pmg-gui/js/Subscription.js:90 pmg-gui/js/Subscription.js:171
-#: pmg-gui/js/UserBlackWhiteList.js:90 pmg-gui/js/Utils.js:730
+#: pmg-gui/js/UserBlackWhiteList.js:89 pmg-gui/js/Utils.js:730
 #: pmg-gui/js/ViewMailHeaders.js:51 pmg-gui/js/mobile/utils.js:44
 #: pmg-gui/js/mobile/utils.js:47 pmg-gui/js/mobile/utils.js:58
-#: pve-manager/www/manager6/Utils.js:1146
+#: pve-manager/www/manager6/Utils.js:1224
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:294
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:299
 #: pve-manager/www/manager6/ceph/Config.js:79
@@ -1661,10 +1696,11 @@ msgstr "抹除資料"
 #: pve-manager/www/manager6/dc/Support.js:59
 #: pve-manager/www/manager6/dc/TFAEdit.js:44
 #: pve-manager/www/manager6/dc/TFAEdit.js:94
-#: pve-manager/www/manager6/dc/TFAEdit.js:149
-#: pve-manager/www/manager6/dc/TFAEdit.js:259
-#: pve-manager/www/manager6/dc/TFAEdit.js:285
-#: pve-manager/www/manager6/dc/TFAEdit.js:330
+#: pve-manager/www/manager6/dc/TFAEdit.js:165
+#: pve-manager/www/manager6/dc/TFAEdit.js:209
+#: pve-manager/www/manager6/dc/TFAEdit.js:264
+#: pve-manager/www/manager6/dc/TFAEdit.js:290
+#: pve-manager/www/manager6/dc/TFAEdit.js:335
 #: pve-manager/www/manager6/form/PrivilegesSelector.js:33
 #: pve-manager/www/manager6/grid/FirewallRules.js:443
 #: pve-manager/www/manager6/grid/FirewallRules.js:470
@@ -1676,13 +1712,8 @@ msgstr "抹除資料"
 #: pve-manager/www/manager6/lxc/CreateWizard.js:320
 #: pve-manager/www/manager6/lxc/MPEdit.js:382
 #: pve-manager/www/manager6/lxc/MPResize.js:16
-#: pve-manager/www/manager6/lxc/Network.js:350
-#: pve-manager/www/manager6/lxc/Network.js:422
-#: pve-manager/www/manager6/lxc/Snapshot.js:25
-#: pve-manager/www/manager6/lxc/Snapshot.js:45
-#: pve-manager/www/manager6/lxc/Snapshot.js:182
-#: pve-manager/www/manager6/lxc/SnapshotTree.js:188
-#: pve-manager/www/manager6/lxc/SnapshotTree.js:224
+#: pve-manager/www/manager6/lxc/Network.js:357
+#: pve-manager/www/manager6/lxc/Network.js:429
 #: pve-manager/www/manager6/menu/TemplateMenu.js:32
 #: pve-manager/www/manager6/node/ACME.js:119
 #: pve-manager/www/manager6/node/ACME.js:292
@@ -1693,23 +1724,23 @@ msgstr "抹除資料"
 #: pve-manager/www/manager6/node/Subscription.js:90
 #: pve-manager/www/manager6/node/Subscription.js:175
 #: pve-manager/www/manager6/node/Summary.js:41
-#: pve-manager/www/manager6/panel/NotesView.js:41
+#: pve-manager/www/manager6/panel/NotesView.js:42
 #: pve-manager/www/manager6/qemu/CreateWizard.js:251
 #: pve-manager/www/manager6/qemu/HDEdit.js:403
 #: pve-manager/www/manager6/qemu/HDResize.js:16
 #: pve-manager/www/manager6/qemu/IPConfigEdit.js:230
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:208
 #: pve-manager/www/manager6/qemu/Smbios1Edit.js:117
-#: pve-manager/www/manager6/qemu/Snapshot.js:25
-#: pve-manager/www/manager6/qemu/Snapshot.js:45
-#: pve-manager/www/manager6/qemu/Snapshot.js:191
-#: pve-manager/www/manager6/qemu/SnapshotTree.js:178
-#: pve-manager/www/manager6/qemu/SnapshotTree.js:214
+#: pve-manager/www/manager6/sdn/ControllerView.js:117
+#: pve-manager/www/manager6/sdn/StatusView.js:50
+#: pve-manager/www/manager6/sdn/VnetView.js:84
+#: pve-manager/www/manager6/sdn/ZoneView.js:117
 #: pve-manager/www/manager6/storage/ContentView.js:142
 #: pve-manager/www/manager6/storage/ContentView.js:245
 #: pve-manager/www/manager6/storage/ContentView.js:299
 #: pve-manager/www/manager6/storage/ContentView.js:305
 #: pve-manager/www/manager6/storage/ContentView.js:313
+#: pve-manager/www/manager6/tree/SnapshotTree.js:83
 #: pve-manager/www/manager6/window/FirewallEnableEdit.js:41
 #: pve-manager/www/manager6/window/LoginWindow.js:72
 #: pve-manager/www/manager6/window/LoginWindow.js:114
@@ -1736,12 +1767,12 @@ msgstr "每 2 小時"
 msgid "Every {0} minutes"
 msgstr "每 {0} 分鐘"
 
-#: proxmox-widget-toolkit/Toolkit.js:11 proxmox-widget-toolkit/Toolkit.js:20
-#: proxmox-widget-toolkit/Toolkit.js:26 proxmox-widget-toolkit/Toolkit.js:35
-#: proxmox-widget-toolkit/Toolkit.js:41 proxmox-widget-toolkit/Toolkit.js:47
-#: proxmox-widget-toolkit/Toolkit.js:63 proxmox-widget-toolkit/Toolkit.js:70
-#: proxmox-widget-toolkit/Toolkit.js:76 proxmox-widget-toolkit/Toolkit.js:114
-#: proxmox-widget-toolkit/Toolkit.js:125 pve-manager/www/manager6/Toolkit.js:27
+#: proxmox-widget-toolkit/Toolkit.js:16 proxmox-widget-toolkit/Toolkit.js:25
+#: proxmox-widget-toolkit/Toolkit.js:31 proxmox-widget-toolkit/Toolkit.js:40
+#: proxmox-widget-toolkit/Toolkit.js:46 proxmox-widget-toolkit/Toolkit.js:52
+#: proxmox-widget-toolkit/Toolkit.js:68 proxmox-widget-toolkit/Toolkit.js:75
+#: proxmox-widget-toolkit/Toolkit.js:81 proxmox-widget-toolkit/Toolkit.js:127
+#: proxmox-widget-toolkit/Toolkit.js:138 pve-manager/www/manager6/Toolkit.js:27
 msgid "Example"
 msgstr "範例"
 
@@ -1757,9 +1788,13 @@ msgstr "現有 LDAP 位址"
 msgid "Existing volume groups"
 msgstr "現有的磁區群組"
 
+#: pve-manager/www/manager6/lxc/FeaturesEdit.js:68
+msgid "Experimental"
+msgstr ""
+
 #: pmg-gui/js/UserEdit.js:99 pmg-gui/js/UserView.js:153
 #: pve-manager/www/manager6/dc/UserEdit.js:92
-#: pve-manager/www/manager6/dc/UserView.js:150
+#: pve-manager/www/manager6/dc/UserView.js:162
 msgid "Expire"
 msgstr "有效期限"
 
@@ -1788,12 +1823,12 @@ msgstr "備援伺服器"
 msgid "Family"
 msgstr "系列"
 
-#: pve-manager/www/manager6/lxc/FeaturesEdit.js:113
+#: pve-manager/www/manager6/lxc/FeaturesEdit.js:119
 #: pve-manager/www/manager6/lxc/Options.js:139
 msgid "Features"
 msgstr "功能"
 
-#: pve-manager/www/manager6/dc/Config.js:132
+#: pve-manager/www/manager6/dc/Config.js:133
 msgid "Fencing"
 msgstr "隔離"
 
@@ -1824,8 +1859,8 @@ msgstr "篩選器"
 
 #: pmg-gui/js/ClusterAdministration.js:56
 #: pmg-gui/js/ClusterAdministration.js:98
-#: pve-manager/www/manager6/dc/ClusterEdit.js:86
-#: pve-manager/www/manager6/dc/ClusterEdit.js:343
+#: pve-manager/www/manager6/dc/ClusterEdit.js:87
+#: pve-manager/www/manager6/dc/ClusterEdit.js:356
 #: pve-manager/www/manager6/node/Certificates.js:47
 #: pve-manager/www/manager6/node/Certificates.js:337
 msgid "Fingerprint"
@@ -1836,15 +1871,15 @@ msgstr "指紋"
 msgid "Finish"
 msgstr "完成"
 
-#: pve-manager/www/manager6/dc/Config.js:140
+#: pve-manager/www/manager6/dc/Config.js:175
 #: pve-manager/www/manager6/grid/FirewallOptions.js:68
 #: pve-manager/www/manager6/grid/FirewallOptions.js:89
 #: pve-manager/www/manager6/grid/FirewallOptions.js:104
-#: pve-manager/www/manager6/lxc/Config.js:279
+#: pve-manager/www/manager6/lxc/Config.js:280
 #: pve-manager/www/manager6/lxc/Network.js:153
-#: pve-manager/www/manager6/lxc/Network.js:500
+#: pve-manager/www/manager6/lxc/Network.js:507
 #: pve-manager/www/manager6/node/Config.js:250
-#: pve-manager/www/manager6/qemu/Config.js:311
+#: pve-manager/www/manager6/qemu/Config.js:312
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:84
 #: pve-manager/www/manager6/window/FirewallEnableEdit.js:7
 #: pve-manager/www/manager6/window/FirewallEnableEdit.js:23
@@ -1875,11 +1910,11 @@ msgstr "重送佇列"
 msgid "Folder View"
 msgstr "資料夾檢視"
 
-#: pve-manager/www/manager6/window/Settings.js:326
+#: pve-manager/www/manager6/window/Settings.js:345
 msgid "Font-Family"
 msgstr "字型系列"
 
-#: pve-manager/www/manager6/window/Settings.js:334
+#: pve-manager/www/manager6/window/Settings.js:353
 msgid "Font-Size"
 msgstr "字型大小"
 
@@ -1891,11 +1926,11 @@ msgstr "強制"
 msgid "Form fields may not be submitted with invalid values"
 msgstr "無法提交，其中可能有無效值"
 
-#: proxmox-widget-toolkit/Toolkit.js:81 proxmox-widget-toolkit/Toolkit.js:86
+#: proxmox-widget-toolkit/Toolkit.js:94 proxmox-widget-toolkit/Toolkit.js:99
 #: pve-manager/www/manager6/Toolkit.js:11
 #: pve-manager/www/manager6/form/DiskStorageSelector.js:155
 #: pve-manager/www/manager6/form/FileSelector.js:73
-#: pve-manager/www/manager6/grid/BackupView.js:213
+#: pve-manager/www/manager6/grid/BackupView.js:214
 #: pve-manager/www/manager6/storage/ContentView.js:597
 msgid "Format"
 msgstr "格式"
@@ -1931,15 +1966,20 @@ msgstr "上傳檔案"
 msgid "Full Clone"
 msgstr "完整複製"
 
-#: proxmox-widget-toolkit/node/NetworkEdit.js:220
-#: proxmox-widget-toolkit/node/NetworkEdit.js:234
-#: proxmox-widget-toolkit/node/NetworkView.js:398
-#: pve-manager/www/manager6/lxc/Network.js:223
-#: pve-manager/www/manager6/lxc/Network.js:289
-#: pve-manager/www/manager6/lxc/Network.js:530
+#: proxmox-widget-toolkit/node/NetworkEdit.js:303
+#: proxmox-widget-toolkit/node/NetworkEdit.js:317
+#: proxmox-widget-toolkit/node/NetworkView.js:416
+#: pve-manager/www/manager6/lxc/Network.js:227
+#: pve-manager/www/manager6/lxc/Network.js:297
+#: pve-manager/www/manager6/lxc/Network.js:537
 #: pve-manager/www/manager6/qemu/IPConfigEdit.js:119
 #: pve-manager/www/manager6/qemu/IPConfigEdit.js:177
 msgid "Gateway"
+msgstr "閘道"
+
+#: pve-manager/www/manager6/sdn/controllers/EvpnEdit.js:40
+#, fuzzy
+msgid "Gateway nodes"
 msgstr "閘道"
 
 #: pve-manager/www/manager6/lxc/CreateWizard.js:23
@@ -1960,7 +2000,7 @@ msgstr "顯示卡"
 msgid "Greylisted Mails"
 msgstr "列入灰名單郵件"
 
-#: proxmox-widget-toolkit/Utils.js:57 pmg-gui/js/LDAPGroupEditor.js:89
+#: proxmox-widget-toolkit/Utils.js:58 pmg-gui/js/LDAPGroupEditor.js:89
 #: pve-manager/www/manager6/dc/ACLView.js:28
 #: pve-manager/www/manager6/dc/ACLView.js:119
 #: pve-manager/www/manager6/dc/GroupEdit.js:22
@@ -1988,8 +2028,8 @@ msgstr "群組成員"
 msgid "Group objectclass"
 msgstr "群組 objectclass"
 
-#: pmg-gui/js/LDAPConfig.js:610 pve-manager/www/manager6/dc/Config.js:92
-#: pve-manager/www/manager6/dc/Config.js:125
+#: pmg-gui/js/LDAPConfig.js:610 pve-manager/www/manager6/dc/Config.js:93
+#: pve-manager/www/manager6/dc/Config.js:126
 msgid "Groups"
 msgstr "群組"
 
@@ -2005,10 +2045,15 @@ msgstr "客體"
 msgid "Guest Agent Network Information"
 msgstr "Guest Agent 網路資訊"
 
-#: pve-manager/www/manager6/qemu/AgentIPView.js:152
-#: pve-manager/www/manager6/qemu/AgentIPView.js:165
+#: pve-manager/www/manager6/qemu/AgentIPView.js:151
+#: pve-manager/www/manager6/qemu/AgentIPView.js:164
 msgid "Guest Agent not running"
 msgstr "Guest Agent 未執行"
+
+#: pve-manager/www/manager6/window/Settings.js:299
+#, fuzzy
+msgid "Guest Notes"
+msgstr "客體"
 
 #: pve-manager/www/manager6/qemu/OSTypeEdit.js:52
 msgid "Guest OS"
@@ -2026,14 +2071,14 @@ msgstr "客體"
 msgid "HA Group"
 msgstr "HA 群組"
 
-#: pve-manager/www/manager6/dc/OptionView.js:112
+#: pve-manager/www/manager6/dc/OptionView.js:123
 msgid "HA Settings"
 msgstr "HA 設定"
 
 #: pve-manager/www/manager6/data/ResourceStore.js:261
 #: pve-manager/www/manager6/panel/GuestStatusView.js:49
 #: pve-manager/www/manager6/panel/TemplateStatusView.js:23
-#: pve-manager/www/manager6/tree/ResourceTree.js:144
+#: pve-manager/www/manager6/tree/ResourceTree.js:148
 msgid "HA State"
 msgstr "HA 狀態"
 
@@ -2042,7 +2087,7 @@ msgstr "HA 狀態"
 msgid "HD space"
 msgstr "硬碟空間"
 
-#: pmg-gui/js/SystemOptions.js:79 pve-manager/www/manager6/dc/OptionView.js:69
+#: pmg-gui/js/SystemOptions.js:79 pve-manager/www/manager6/dc/OptionView.js:80
 msgid "HTTP proxy"
 msgstr "HTTP 代理"
 
@@ -2050,19 +2095,19 @@ msgstr "HTTP 代理"
 #: pve-manager/www/manager6/qemu/HDEdit.js:384
 #: pve-manager/www/manager6/qemu/HDEdit.js:386
 #: pve-manager/www/manager6/qemu/HardwareView.js:232
-#: pve-manager/www/manager6/qemu/HardwareView.js:606
+#: pve-manager/www/manager6/qemu/HardwareView.js:624
 msgid "Hard Disk"
 msgstr "硬碟"
 
-#: pve-manager/www/manager6/qemu/Config.js:247
+#: pve-manager/www/manager6/qemu/Config.js:246
 msgid "Hardware"
 msgstr "硬體"
 
-#: proxmox-widget-toolkit/node/NetworkView.js:370
+#: proxmox-widget-toolkit/node/NetworkView.js:388
 msgid "Hash Policy"
 msgstr "Hash 原則"
 
-#: proxmox-widget-toolkit/node/NetworkEdit.js:107
+#: proxmox-widget-toolkit/node/NetworkEdit.js:158
 msgid "Hash policy"
 msgstr "Hash 原則"
 
@@ -2098,9 +2143,9 @@ msgstr "技術支援者"
 msgid "Heuristic Score"
 msgstr "啟發式學習計分"
 
-#: proxmox-widget-toolkit/Utils.js:479
+#: proxmox-widget-toolkit/Utils.js:481
 #: pve-manager/www/manager6/qemu/CmdMenu.js:82
-#: pve-manager/www/manager6/qemu/Config.js:163
+#: pve-manager/www/manager6/qemu/Config.js:164
 msgid "Hibernate"
 msgstr "休眠"
 
@@ -2117,7 +2162,7 @@ msgstr "隱藏內部主機"
 msgid "Hookscript"
 msgstr ""
 
-#: pmg-gui/js/Transport.js:45 pmg-gui/js/Transport.js:150
+#: pmg-gui/js/Transport.js:87 pmg-gui/js/Transport.js:156
 #: pve-manager/www/manager6/ceph/ServiceList.js:21
 #: pve-manager/www/manager6/ceph/ServiceList.js:272
 #: pve-manager/www/manager6/ceph/Services.js:181
@@ -2160,7 +2205,7 @@ msgid "Hours to show"
 msgstr "要顯示幾小時"
 
 #: pmg-gui/js/ClusterAdministration.js:236
-#: pve-manager/www/manager6/dc/Cluster.js:245
+#: pve-manager/www/manager6/dc/Cluster.js:277
 msgid "ID"
 msgstr "ID"
 
@@ -2180,11 +2225,11 @@ msgid "IP"
 msgstr "IP"
 
 #: pmg-gui/js/ClusterAdministration.js:92 pmg-gui/js/Utils.js:251
-#: pmg-gui/js/Utils.js:257 pve-manager/www/manager6/dc/ClusterEdit.js:80
+#: pmg-gui/js/Utils.js:257 pve-manager/www/manager6/dc/ClusterEdit.js:81
 msgid "IP Address"
 msgstr "IP 位址"
 
-#: pve-manager/www/manager6/qemu/CloudInit.js:304
+#: pve-manager/www/manager6/qemu/CloudInit.js:308
 msgid "IP Config"
 msgstr "IP 設定"
 
@@ -2192,8 +2237,8 @@ msgstr "IP 設定"
 msgid "IP Network"
 msgstr "IP 網路"
 
-#: proxmox-widget-toolkit/node/NetworkView.js:375
-#: pve-manager/www/manager6/lxc/Network.js:516
+#: proxmox-widget-toolkit/node/NetworkView.js:393
+#: pve-manager/www/manager6/lxc/Network.js:523
 #: pve-manager/www/manager6/qemu/AgentIPView.js:28
 msgid "IP address"
 msgstr "IP 位址"
@@ -2202,8 +2247,8 @@ msgstr "IP 位址"
 msgid "IP filter"
 msgstr "IP 篩選器"
 
-#: pve-manager/www/manager6/grid/FirewallAliases.js:32
-#: pve-manager/www/manager6/grid/FirewallAliases.js:168
+#: pve-manager/www/manager6/grid/FirewallAliases.js:34
+#: pve-manager/www/manager6/grid/FirewallAliases.js:175
 #: pve-manager/www/manager6/panel/IPSet.js:200
 #: pve-manager/www/manager6/panel/IPSet.js:207
 #: pve-manager/www/manager6/panel/IPSet.js:234
@@ -2211,8 +2256,8 @@ msgstr "IP 篩選器"
 msgid "IP/CIDR"
 msgstr "IP/CIDR"
 
-#: pve-manager/www/manager6/lxc/Config.js:306
-#: pve-manager/www/manager6/qemu/Config.js:338
+#: pve-manager/www/manager6/lxc/Config.js:307
+#: pve-manager/www/manager6/qemu/Config.js:339
 msgid "IPSet"
 msgstr "IP 集合"
 
@@ -2255,7 +2300,7 @@ msgstr "包括空寄件者"
 msgid "Include Greylist"
 msgstr "包括灰名單"
 
-#: pve-manager/www/manager6/qemu/Snapshot.js:99
+#: pve-manager/www/manager6/window/Snapshot.js:86
 msgid "Include RAM"
 msgstr "包括記憶體"
 
@@ -2291,7 +2336,7 @@ msgid "Info"
 msgstr "資訊"
 
 #: pmg-gui/js/ClusterAdministration.js:71
-#: pve-manager/www/manager6/dc/ClusterEdit.js:278
+#: pve-manager/www/manager6/dc/ClusterEdit.js:291
 msgid "Information"
 msgstr "資訊"
 
@@ -2299,7 +2344,7 @@ msgstr "資訊"
 msgid "Ingress"
 msgstr "輸入"
 
-#: proxmox-widget-toolkit/Utils.js:459
+#: proxmox-widget-toolkit/Utils.js:461
 #: pve-manager/www/manager6/node/Disks.js:181
 msgid "Initialize Disk with GPT"
 msgstr "以 GPT 初始化磁碟"
@@ -2342,12 +2387,11 @@ msgid "Interval"
 msgstr "頻率"
 
 #: proxmox-widget-toolkit/form/ComboGrid.js:375
-#: proxmox-widget-toolkit/form/ComboGrid.js:465
 #: pve-manager/www/manager6/form/USBSelector.js:23
 msgid "Invalid Value"
 msgstr "無效的數值"
 
-#: pve-manager/www/manager6/Utils.js:1146
+#: pve-manager/www/manager6/Utils.js:1224
 msgid "Invalid file size: "
 msgstr "無效的檔案大小: "
 
@@ -2356,30 +2400,37 @@ msgstr "無效的檔案大小: "
 msgid "Issuer"
 msgstr "簽發者"
 
-#: pve-manager/www/manager6/dc/TFAEdit.js:422
+#: pve-manager/www/manager6/dc/TFAEdit.js:433
 msgid "Issuer Name"
 msgstr "簽發者"
+
+#: pve-manager/www/manager6/window/Snapshot.js:100
+msgid ""
+"It is recommended to either include the RAM or use the QEMU Guest Agent when "
+"taking a snapshot of a running VM to avoid inconsistencies."
+msgstr ""
 
 #: pve-manager/www/manager6/grid/Replication.js:307
 msgid "Job"
 msgstr "作業"
 
 #: pmg-gui/js/ClusterAdministration.js:216
-#: pve-manager/www/manager6/dc/ClusterEdit.js:138
+#: pve-manager/www/manager6/dc/ClusterEdit.js:169
+#: pve-manager/www/manager6/dc/ClusterEdit.js:171
 msgid "Join"
 msgstr "加入"
 
-#: proxmox-widget-toolkit/Utils.js:458
-#: pve-manager/www/manager6/dc/Cluster.js:153
+#: proxmox-widget-toolkit/Utils.js:460
+#: pve-manager/www/manager6/dc/Cluster.js:157
 msgid "Join Cluster"
 msgstr "加入叢集"
 
-#: pve-manager/www/manager6/dc/Cluster.js:145
-#: pve-manager/www/manager6/dc/ClusterEdit.js:93
+#: pve-manager/www/manager6/dc/Cluster.js:149
+#: pve-manager/www/manager6/dc/ClusterEdit.js:94
 msgid "Join Information"
 msgstr "加入資訊"
 
-#: pve-manager/www/manager6/dc/ClusterEdit.js:250
+#: pve-manager/www/manager6/dc/ClusterEdit.js:267
 msgid "Join Task Finished"
 msgstr "加入作業完成"
 
@@ -2405,8 +2456,7 @@ msgstr "保留舊郵件"
 msgid "Kernel Version"
 msgstr "Linux 核心版本"
 
-#: pve-manager/www/manager6/lxc/Snapshot.js:108
-#: pve-manager/www/manager6/qemu/Snapshot.js:117
+#: pve-manager/www/manager6/window/Snapshot.js:123
 msgid "Key"
 msgstr ""
 
@@ -2414,12 +2464,12 @@ msgstr ""
 msgid "Key IDs"
 msgstr ""
 
-#: pmg-gui/js/DKIMSettings.js:66 pmg-gui/js/DKIMSettings.js:140
+#: pmg-gui/js/DKIMSettings.js:66 pmg-gui/js/DKIMSettings.js:164
 msgid "Key Size"
 msgstr "金鑰大小"
 
 #: proxmox-widget-toolkit/grid/ObjectGrid.js:7
-#: pve-manager/www/manager6/dc/OptionView.js:63
+#: pve-manager/www/manager6/dc/OptionView.js:74
 #: pve-manager/www/manager6/qemu/KeyboardEdit.js:8
 #: pve-manager/www/manager6/qemu/KeyboardEdit.js:13
 msgid "Keyboard Layout"
@@ -2442,11 +2492,11 @@ msgstr "LDAP 使用者"
 msgid "LDAP filter"
 msgstr "IP 篩選器"
 
-#: proxmox-widget-toolkit/Utils.js:531
+#: proxmox-widget-toolkit/Utils.js:533
 msgid "LVM Storage"
 msgstr "LVM 儲存"
 
-#: proxmox-widget-toolkit/Utils.js:532
+#: proxmox-widget-toolkit/Utils.js:534
 msgid "LVM-Thin Storage"
 msgstr "LVM-Thin 儲存"
 
@@ -2456,7 +2506,7 @@ msgstr "LVM-Thin 儲存"
 #: pve-manager/www/manager6/form/VMSelector.js:286
 #: pve-manager/www/manager6/form/VMSelector.js:296
 #: pve-manager/www/manager6/lxc/CreateWizard.js:18
-#: pve-manager/www/manager6/tree/ResourceTree.js:29
+#: pve-manager/www/manager6/tree/ResourceTree.js:33
 msgid "LXC Container"
 msgstr "LXC 容器"
 
@@ -2486,11 +2536,11 @@ msgstr "上次更新"
 msgid "Last checked"
 msgstr "上次檢查時間"
 
-#: pve-manager/www/manager6/window/Settings.js:261
+#: pve-manager/www/manager6/window/Settings.js:268
 msgid "Layout"
 msgstr "配置"
 
-#: pve-manager/www/manager6/window/Settings.js:341
+#: pve-manager/www/manager6/window/Settings.js:360
 msgid "Letter Spacing"
 msgstr "字元間距"
 
@@ -2503,16 +2553,26 @@ msgstr "等級"
 msgid "Lifetime (days)"
 msgstr "存留時間 (日)"
 
-#: pve-manager/www/manager6/window/Settings.js:349
+#: pve-manager/www/manager6/qemu/RNGEdit.js:68
+msgid "Limit (Bytes/Period)"
+msgstr ""
+
+#: pve-manager/www/manager6/window/Settings.js:368
 msgid "Line Height"
 msgstr "行高"
 
-#: pve-manager/www/manager6/dc/Cluster.js:255
-#: pve-manager/www/manager6/dc/Cluster.js:260
-#: pve-manager/www/manager6/dc/ClusterEdit.js:28
-#: pve-manager/www/manager6/dc/ClusterEdit.js:38
-#: pve-manager/www/manager6/dc/ClusterEdit.js:315
+#: pve-manager/www/manager6/dc/Cluster.js:293
+#: pve-manager/www/manager6/dc/Cluster.js:298
+#: pve-manager/www/manager6/dc/Cluster.js:303
+#: pve-manager/www/manager6/dc/Cluster.js:308
+#: pve-manager/www/manager6/dc/Cluster.js:313
+#: pve-manager/www/manager6/dc/Cluster.js:318
+#: pve-manager/www/manager6/dc/Cluster.js:323
+#: pve-manager/www/manager6/dc/Cluster.js:328
+#: pve-manager/www/manager6/dc/ClusterEdit.js:29
+#: pve-manager/www/manager6/dc/ClusterEdit.js:39
 #: pve-manager/www/manager6/dc/ClusterEdit.js:328
+#: pve-manager/www/manager6/dc/ClusterEdit.js:341
 msgid "Link {0}"
 msgstr "連結 {0}"
 
@@ -2539,7 +2599,7 @@ msgstr "平均負載"
 msgid "Loading"
 msgstr "載入中"
 
-#: proxmox-widget-toolkit/Utils.js:229
+#: proxmox-widget-toolkit/Utils.js:231
 msgid "Loading..."
 msgstr "載入中..."
 
@@ -2552,10 +2612,10 @@ msgid "Lock"
 msgstr "鎖定"
 
 #: pve-manager/www/manager6/grid/Replication.js:265
-#: pve-manager/www/manager6/lxc/Config.js:314
+#: pve-manager/www/manager6/lxc/Config.js:315
 #: pve-manager/www/manager6/node/Config.js:365
 #: pve-manager/www/manager6/node/Config.js:373
-#: pve-manager/www/manager6/qemu/Config.js:346
+#: pve-manager/www/manager6/qemu/Config.js:347
 msgid "Log"
 msgstr "記錄"
 
@@ -2567,7 +2627,7 @@ msgstr "登入"
 msgid "Log burst limit"
 msgstr "記錄突發限制"
 
-#: pve-manager/www/manager6/Utils.js:1265
+#: pve-manager/www/manager6/Utils.js:1350
 msgid "Log in as root to install."
 msgstr "請以 root 登入進行安裝。"
 
@@ -2593,22 +2653,23 @@ msgid "Login failed. Please try again"
 msgstr "登入失敗，請重新登入"
 
 #: pmg-gui/js/MainView.js:192 pmg-gui/js/QuarantineView.js:220
-#: pve-manager/www/manager6/Workspace.js:364
+#: pve-manager/www/manager6/Workspace.js:380
 msgid "Logout"
 msgstr "登出"
 
-#: pve-manager/www/manager6/Workspace.js:427
+#: pve-manager/www/manager6/Workspace.js:443
 msgid "Logs"
 msgstr "記錄"
 
 #: pve-manager/www/manager6/lxc/Network.js:122
-#: pve-manager/www/manager6/lxc/Network.js:511
+#: pve-manager/www/manager6/lxc/Network.js:518
 #: pve-manager/www/manager6/qemu/AgentIPView.js:23
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:139
+#: pve-manager/www/manager6/sdn/VnetEdit.js:81
 msgid "MAC address"
 msgstr "MAC 位址"
 
-#: pve-manager/www/manager6/dc/OptionView.js:85
+#: pve-manager/www/manager6/dc/OptionView.js:96
 msgid "MAC address prefix"
 msgstr "MAC 位址首碼"
 
@@ -2616,7 +2677,7 @@ msgstr "MAC 位址首碼"
 msgid "MAC filter"
 msgstr "MAC 篩選"
 
-#: pve-manager/www/manager6/qemu/PCIEdit.js:166
+#: pve-manager/www/manager6/qemu/PCIEdit.js:169
 msgid "MDev Type"
 msgstr "MDev 類型"
 
@@ -2659,8 +2720,8 @@ msgstr "請確認 VM 裡已有安裝 QEMU Guest Agent"
 msgid "Make sure the SPICE WebDav daemon is installed in the VM."
 msgstr "請確認 VM 裡已有安裝 SPICE WevDav 服務。"
 
-#: pve-manager/www/manager6/lxc/Config.js:136
-#: pve-manager/www/manager6/qemu/Config.js:112
+#: pve-manager/www/manager6/lxc/Config.js:137
+#: pve-manager/www/manager6/qemu/Config.js:113
 msgid "Manage HA"
 msgstr "受 HA 管理"
 
@@ -2736,7 +2797,11 @@ msgstr "最多重新遷移"
 msgid "Max. Restart"
 msgstr "最多重新啟動"
 
-#: proxmox-widget-toolkit/Toolkit.js:93
+#: pve-manager/www/manager6/dc/OptionView.js:220
+msgid "Maximal Workers/bulk-action"
+msgstr ""
+
+#: proxmox-widget-toolkit/Toolkit.js:106
 msgid "Maximum characters"
 msgstr "最大字元數"
 
@@ -2809,29 +2874,29 @@ msgstr "Metadata 使用量"
 msgid "Metadata Used"
 msgstr "Metadata 已使用"
 
-#: proxmox-widget-toolkit/Utils.js:470 proxmox-widget-toolkit/Utils.js:489
-#: proxmox-widget-toolkit/Utils.js:502
+#: proxmox-widget-toolkit/Utils.js:472 proxmox-widget-toolkit/Utils.js:491
+#: proxmox-widget-toolkit/Utils.js:504
 #: pve-manager/www/manager6/lxc/CmdMenu.js:144
-#: pve-manager/www/manager6/lxc/Config.js:90
+#: pve-manager/www/manager6/lxc/Config.js:91
 #: pve-manager/www/manager6/menu/TemplateMenu.js:41
 #: pve-manager/www/manager6/node/CmdMenu.js:72
 #: pve-manager/www/manager6/node/Config.js:73
 #: pve-manager/www/manager6/qemu/CmdMenu.js:157
-#: pve-manager/www/manager6/qemu/Config.js:66
+#: pve-manager/www/manager6/qemu/Config.js:67
 #: pve-manager/www/manager6/window/Migrate.js:97
 #: pve-manager/www/manager6/window/Migrate.js:432
 msgid "Migrate"
 msgstr "遷移"
 
-#: proxmox-widget-toolkit/Utils.js:529
+#: proxmox-widget-toolkit/Utils.js:531
 msgid "Migrate all VMs and Containers"
 msgstr "遷移所有虛擬機和容器"
 
-#: pve-manager/www/manager6/dc/OptionView.js:188
+#: pve-manager/www/manager6/dc/OptionView.js:201
 msgid "Migration"
 msgstr "遷移"
 
-#: pve-manager/www/manager6/dc/OptionView.js:90
+#: pve-manager/www/manager6/dc/OptionView.js:101
 msgid "Migration Settings"
 msgstr "遷移設定"
 
@@ -2839,8 +2904,8 @@ msgstr "遷移設定"
 msgid "Min. Size"
 msgstr "最小"
 
-#: proxmox-widget-toolkit/Toolkit.js:92 proxmox-widget-toolkit/Toolkit.js:100
-#: proxmox-widget-toolkit/Toolkit.js:108
+#: proxmox-widget-toolkit/Toolkit.js:105 proxmox-widget-toolkit/Toolkit.js:113
+#: proxmox-widget-toolkit/Toolkit.js:121
 msgid "Minimum characters"
 msgstr "最小字元數"
 
@@ -2848,12 +2913,12 @@ msgstr "最小字元數"
 msgid "Minimum memory"
 msgstr "最小記憶體"
 
-#: pve-manager/www/manager6/dc/Summary.js:270
+#: pve-manager/www/manager6/dc/Summary.js:269
 msgid "Mixed Subscriptions"
 msgstr "綜合技術支援合約"
 
-#: proxmox-widget-toolkit/node/NetworkEdit.js:115
-#: proxmox-widget-toolkit/node/NetworkEdit.js:195
+#: proxmox-widget-toolkit/node/NetworkEdit.js:173
+#: proxmox-widget-toolkit/node/NetworkEdit.js:278
 #: pve-manager/www/manager6/dc/Backup.js:214
 #: pve-manager/www/manager6/window/Backup.js:41
 #: pve-manager/www/manager6/window/Clone.js:209
@@ -2874,7 +2939,7 @@ msgstr "週一至週五"
 
 #: pve-manager/www/manager6/ceph/Monitor.js:36
 #: pve-manager/www/manager6/node/Config.js:331
-#: pve-manager/www/manager6/qemu/Config.js:276
+#: pve-manager/www/manager6/qemu/Config.js:275
 msgid "Monitor"
 msgstr "監控器"
 
@@ -2892,13 +2957,13 @@ msgid "Month"
 msgstr "月"
 
 #: pve-manager/www/manager6/ceph/OSD.js:746
-#: pve-manager/www/manager6/lxc/Config.js:105
+#: pve-manager/www/manager6/lxc/Config.js:106
 #: pve-manager/www/manager6/qemu/AgentIPView.js:96
-#: pve-manager/www/manager6/qemu/Config.js:81
+#: pve-manager/www/manager6/qemu/Config.js:82
 msgid "More"
 msgstr "更多"
 
-#: proxmox-widget-toolkit/Utils.js:494
+#: proxmox-widget-toolkit/Utils.js:496
 msgid "Mount"
 msgstr "掛載"
 
@@ -2918,15 +2983,15 @@ msgstr "掛接點 ID"
 msgid "Mount options"
 msgstr "掛接選項"
 
-#: proxmox-widget-toolkit/Utils.js:456
+#: proxmox-widget-toolkit/Utils.js:458
 #: pve-manager/www/manager6/lxc/Resources.js:211
 #: pve-manager/www/manager6/qemu/HDMove.js:105
 msgid "Move Volume"
 msgstr "遷移磁區"
 
-#: proxmox-widget-toolkit/Utils.js:472
+#: proxmox-widget-toolkit/Utils.js:474
 #: pve-manager/www/manager6/qemu/HDMove.js:105
-#: pve-manager/www/manager6/qemu/HardwareView.js:428
+#: pve-manager/www/manager6/qemu/HardwareView.js:435
 msgid "Move disk"
 msgstr "遷移磁碟"
 
@@ -2934,21 +2999,21 @@ msgstr "遷移磁碟"
 msgid "Multiple E-Mails selected"
 msgstr "已選擇多筆郵件"
 
-#: proxmox-widget-toolkit/Toolkit.js:102
+#: proxmox-widget-toolkit/Toolkit.js:115
 msgid "Must end with"
 msgstr ""
 
-#: proxmox-widget-toolkit/Toolkit.js:94 proxmox-widget-toolkit/Toolkit.js:101
-#: proxmox-widget-toolkit/Toolkit.js:109
+#: proxmox-widget-toolkit/Toolkit.js:107 proxmox-widget-toolkit/Toolkit.js:114
+#: proxmox-widget-toolkit/Toolkit.js:122
 msgid "Must start with"
 msgstr ""
 
-#: pve-manager/www/manager6/Workspace.js:335
+#: pve-manager/www/manager6/Workspace.js:351
 #: pve-manager/www/manager6/window/Settings.js:5
 msgid "My Settings"
 msgstr "我的設定"
 
-#: pve-manager/www/manager6/Utils.js:859
+#: pve-manager/www/manager6/Utils.js:937
 msgid "N/A"
 msgstr "無"
 
@@ -2956,13 +3021,17 @@ msgstr "無"
 msgid "NFS Version"
 msgstr "NFS 版本"
 
-#: pve-manager/www/manager6/dc/OptionView.js:163
+#: pve-manager/www/manager6/dc/OptionView.js:174
 msgid "NOTE: Changing an AppID breaks existing U2F registrations!"
 msgstr "注意：變更 AppID 將會導致現有已註冊的 U2F 失效！"
 
+#: pve-manager/www/manager6/tree/SnapshotTree.js:326
+msgid "NOW"
+msgstr ""
+
 #: proxmox-widget-toolkit/grid/ObjectGrid.js:302
-#: proxmox-widget-toolkit/node/NetworkEdit.js:183
-#: proxmox-widget-toolkit/node/NetworkView.js:318
+#: proxmox-widget-toolkit/node/NetworkEdit.js:249
+#: proxmox-widget-toolkit/node/NetworkView.js:336
 #: proxmox-widget-toolkit/node/ServiceView.js:161 pmg-gui/js/ActionList.js:129
 #: pmg-gui/js/ClamAVDatabase.js:83 pmg-gui/js/ObjectGroupList.js:36
 #: pmg-gui/js/ObjectGroupList.js:145 pmg-gui/js/RuleEditor.js:19
@@ -2987,22 +3056,20 @@ msgstr "注意：變更 AppID 將會導致現有已註冊的 U2F 失效！"
 #: pve-manager/www/manager6/dc/RoleEdit.js:33
 #: pve-manager/www/manager6/dc/RoleView.js:76
 #: pve-manager/www/manager6/dc/SecurityGroups.js:30
-#: pve-manager/www/manager6/dc/UserView.js:157
+#: pve-manager/www/manager6/dc/UserView.js:169
 #: pve-manager/www/manager6/form/FileSelector.js:67
 #: pve-manager/www/manager6/form/IPRefSelector.js:63
 #: pve-manager/www/manager6/form/StorageSelector.js:12
 #: pve-manager/www/manager6/form/UserSelector.js:35
 #: pve-manager/www/manager6/form/VMSelector.js:47
 #: pve-manager/www/manager6/form/VMSelector.js:252
-#: pve-manager/www/manager6/grid/BackupView.js:206
-#: pve-manager/www/manager6/grid/FirewallAliases.js:26
-#: pve-manager/www/manager6/grid/FirewallAliases.js:167
+#: pve-manager/www/manager6/grid/BackupView.js:202
+#: pve-manager/www/manager6/grid/FirewallAliases.js:28
+#: pve-manager/www/manager6/grid/FirewallAliases.js:170
 #: pve-manager/www/manager6/grid/PoolMembers.js:79
 #: pve-manager/www/manager6/ha/Resources.js:145
 #: pve-manager/www/manager6/lxc/Network.js:95
-#: pve-manager/www/manager6/lxc/Network.js:490
-#: pve-manager/www/manager6/lxc/Snapshot.js:79
-#: pve-manager/www/manager6/lxc/SnapshotTree.js:262
+#: pve-manager/www/manager6/lxc/Network.js:497
 #: pve-manager/www/manager6/node/ACME.js:82
 #: pve-manager/www/manager6/node/Certificates.js:42
 #: pve-manager/www/manager6/node/Directory.js:46
@@ -3020,11 +3087,12 @@ msgstr "注意：變更 AppID 將會導致現有已註冊的 U2F 失效！"
 #: pve-manager/www/manager6/qemu/Options.js:28
 #: pve-manager/www/manager6/qemu/Options.js:31
 #: pve-manager/www/manager6/qemu/Options.js:39
-#: pve-manager/www/manager6/qemu/Snapshot.js:79
-#: pve-manager/www/manager6/qemu/SnapshotTree.js:252
+#: pve-manager/www/manager6/sdn/VnetEdit.js:38
 #: pve-manager/www/manager6/storage/ContentView.js:585
+#: pve-manager/www/manager6/tree/SnapshotTree.js:321
 #: pve-manager/www/manager6/window/Clone.js:196
-#: pve-manager/www/manager6/window/Settings.js:207
+#: pve-manager/www/manager6/window/Settings.js:214
+#: pve-manager/www/manager6/window/Snapshot.js:65
 msgid "Name"
 msgstr "名稱"
 
@@ -3033,9 +3101,9 @@ msgid "Nesting"
 msgstr "巢狀"
 
 #: pve-manager/www/manager6/Utils.js:248
-#: pve-manager/www/manager6/dc/OptionView.js:105
+#: pve-manager/www/manager6/dc/OptionView.js:116
 #: pve-manager/www/manager6/form/HotplugFeatureSelector.js:19
-#: pve-manager/www/manager6/lxc/Config.js:224
+#: pve-manager/www/manager6/lxc/Config.js:223
 #: pve-manager/www/manager6/lxc/CreateWizard.js:223
 #: pve-manager/www/manager6/node/Config.js:169
 #: pve-manager/www/manager6/qemu/BootOrderEdit.js:35
@@ -3047,10 +3115,10 @@ msgstr "網路"
 msgid "Network Config"
 msgstr "網路設定"
 
-#: proxmox-widget-toolkit/Utils.js:433
-#: pve-manager/www/manager6/lxc/Network.js:322
+#: proxmox-widget-toolkit/Utils.js:435
+#: pve-manager/www/manager6/lxc/Network.js:329
 #: pve-manager/www/manager6/qemu/HardwareView.js:245
-#: pve-manager/www/manager6/qemu/HardwareView.js:632
+#: pve-manager/www/manager6/qemu/HardwareView.js:650
 #: pve-manager/www/manager6/qemu/IPConfigEdit.js:66
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:194
 msgid "Network Device"
@@ -3093,7 +3161,7 @@ msgstr "否"
 msgid "No Attachments"
 msgstr "沒有附件"
 
-#: pve-manager/www/manager6/qemu/CloudInit.js:144
+#: pve-manager/www/manager6/qemu/CloudInit.js:148
 msgid "No CloudInit Drive found"
 msgstr "未找到 CloudInit Drive"
 
@@ -3110,7 +3178,7 @@ msgstr "沒有未使用的磁碟"
 msgid "No E-Mail address selected"
 msgstr "沒有選擇郵件位址"
 
-#: pve-manager/www/manager6/qemu/AgentIPView.js:167
+#: pve-manager/www/manager6/qemu/AgentIPView.js:166
 msgid "No Guest Agent configured"
 msgstr "未設定 Guest Agent"
 
@@ -3138,7 +3206,7 @@ msgstr "無 S.M.A.R.T 數值"
 msgid "No Spam Info"
 msgstr "沒有 Spam 資訊"
 
-#: pve-manager/www/manager6/dc/Summary.js:263
+#: pve-manager/www/manager6/dc/Summary.js:262
 msgid "No Subscription"
 msgstr "沒有技術支援合約"
 
@@ -3164,7 +3232,7 @@ msgid "No change"
 msgstr "沒有修改"
 
 #: proxmox-widget-toolkit/node/NetworkView.js:65
-#: proxmox-widget-toolkit/node/NetworkView.js:429
+#: proxmox-widget-toolkit/node/NetworkView.js:447
 msgid "No changes"
 msgstr "沒有修改"
 
@@ -3174,7 +3242,7 @@ msgstr "沒有修改"
 #: pmg-gui/js/LDAPConfig.js:416 pmg-gui/js/MailTracker.js:220
 #: pmg-gui/js/QuarantineList.js:13 pmg-gui/js/QuarantineList.js:245
 #: pmg-gui/js/ReceiverStatistics.js:116 pmg-gui/js/SenderStatistics.js:108
-#: pmg-gui/js/UserBlackWhiteList.js:17 pmg-gui/js/UserBlackWhiteList.js:155
+#: pmg-gui/js/UserBlackWhiteList.js:17 pmg-gui/js/UserBlackWhiteList.js:154
 #: pmg-gui/js/VirusCharts.js:13 pmg-gui/js/VirusQuarantine.js:94
 msgid "No data in database"
 msgstr "資料庫中無資料"
@@ -3184,10 +3252,14 @@ msgid "No network device"
 msgstr "無網路裝置"
 
 #: pve-manager/www/manager6/qemu/AgentIPView.js:14
-#: pve-manager/www/manager6/qemu/AgentIPView.js:149
+#: pve-manager/www/manager6/qemu/AgentIPView.js:148
 msgid "No network information"
 msgstr "無網路資訊"
 
+#: pve-manager/www/manager6/sdn/zones/EvpnEdit.js:57
+#: pve-manager/www/manager6/sdn/zones/QinQEdit.js:54
+#: pve-manager/www/manager6/sdn/zones/VlanEdit.js:38
+#: pve-manager/www/manager6/sdn/zones/VxlanEdit.js:50
 #: pve-manager/www/manager6/storage/Base.js:40
 msgid "No restrictions"
 msgstr "無限制"
@@ -3204,7 +3276,7 @@ msgstr "沒有找到 thinpools"
 msgid "No updates available."
 msgstr "沒有可用的更新。"
 
-#: proxmox-widget-toolkit/Utils.js:382 pmg-gui/js/mobile/quarantineview.js:50
+#: proxmox-widget-toolkit/Utils.js:384 pmg-gui/js/mobile/quarantineview.js:50
 #: pmg-gui/js/mobile/utils.js:137 pmg-gui/js/mobile/utils.js:143
 msgid "No valid subscription"
 msgstr "目前沒有技術支援合約"
@@ -3236,7 +3308,7 @@ msgstr ""
 #: pve-manager/www/manager6/panel/GuestStatusView.js:58
 #: pve-manager/www/manager6/panel/TemplateStatusView.js:31
 #: pve-manager/www/manager6/qemu/CreateWizard.js:38
-#: pve-manager/www/manager6/window/Settings.js:211
+#: pve-manager/www/manager6/window/Settings.js:218
 msgid "Node"
 msgstr "節點"
 
@@ -3248,7 +3320,7 @@ msgstr "節點資源"
 msgid "Node is offline"
 msgstr "節點離線"
 
-#: pve-manager/www/manager6/dc/Cluster.js:240
+#: pve-manager/www/manager6/dc/Cluster.js:272
 msgid "Nodename"
 msgstr "節點名稱"
 
@@ -3257,12 +3329,18 @@ msgstr "節點名稱"
 #: pve-manager/www/manager6/dc/NodeView.js:5
 #: pve-manager/www/manager6/ha/GroupSelector.js:18
 #: pve-manager/www/manager6/ha/Groups.js:94
+#: pve-manager/www/manager6/sdn/ZoneView.js:138
+#: pve-manager/www/manager6/sdn/zones/EvpnEdit.js:56
+#: pve-manager/www/manager6/sdn/zones/QinQEdit.js:53
+#: pve-manager/www/manager6/sdn/zones/VlanEdit.js:37
+#: pve-manager/www/manager6/sdn/zones/VxlanEdit.js:49
 #: pve-manager/www/manager6/storage/Base.js:39
 #: pve-manager/www/manager6/tree/ResourceTree.js:12
 msgid "Nodes"
 msgstr "節點"
 
-#: pve-manager/www/manager6/dc/OptionView.js:167
+#: proxmox-widget-toolkit/Utils.js:45
+#: pve-manager/www/manager6/dc/OptionView.js:60
 msgid "None"
 msgstr "無"
 
@@ -3270,17 +3348,13 @@ msgstr "無"
 msgid "Normalized"
 msgstr "正常"
 
-#: proxmox-widget-toolkit/Toolkit.js:135
+#: proxmox-widget-toolkit/Toolkit.js:148
 msgid "Not a valid DNS name or IP address."
 msgstr "這不是一個有效的 DNS 或 IP 位址。"
 
-#: proxmox-widget-toolkit/Toolkit.js:154
+#: proxmox-widget-toolkit/Toolkit.js:167
 msgid "Not a valid list of hosts"
 msgstr "列表中沒有可用的主機"
-
-#: pve-manager/www/manager6/lxc/SnapshotTree.js:169
-msgid "Note: Rollback stops CT"
-msgstr "注意：倒回操作將會停止 CT"
 
 #: pve-manager/www/manager6/node/Config.js:130
 #: pve-manager/www/manager6/panel/NotesView.js:5
@@ -3300,11 +3374,11 @@ msgstr "埠號"
 msgid "Number of LVs"
 msgstr "LVs 數量"
 
-#: pve-manager/www/manager6/dc/Cluster.js:184
+#: pve-manager/www/manager6/dc/Cluster.js:188
 msgid "Number of Nodes"
 msgstr "節點數量"
 
-#: proxmox-widget-toolkit/window/Edit.js:260 pmg-gui/js/RegexTester.js:48
+#: proxmox-widget-toolkit/window/Edit.js:264 pmg-gui/js/RegexTester.js:48
 #: pmg-gui/js/mobile/quarantineview.js:35
 #: pve-manager/www/manager6/grid/Replication.js:359
 msgid "OK"
@@ -3319,9 +3393,9 @@ msgstr "作業系統"
 msgid "OS Type"
 msgstr "作業系統類型"
 
-#: proxmox-widget-toolkit/node/NetworkEdit.js:76
-#: proxmox-widget-toolkit/node/NetworkEdit.js:96
-#: proxmox-widget-toolkit/node/NetworkEdit.js:151
+#: proxmox-widget-toolkit/node/NetworkEdit.js:79
+#: proxmox-widget-toolkit/node/NetworkEdit.js:99
+#: proxmox-widget-toolkit/node/NetworkEdit.js:218
 msgid "OVS options"
 msgstr "OVS 選項"
 
@@ -3345,11 +3419,11 @@ msgstr "上線"
 msgid "Only Errors"
 msgstr "只顯示錯誤"
 
-#: pve-manager/www/manager6/dc/ClusterEdit.js:39
+#: pve-manager/www/manager6/dc/ClusterEdit.js:40
 msgid "Optional second link for redundancy"
 msgstr "選用的第二備援連結"
 
-#: pve-manager/www/manager6/dc/ClusterEdit.js:29
+#: pve-manager/www/manager6/dc/ClusterEdit.js:30
 msgid "Optional, defaults to IP resolved by node's hostname"
 msgstr "非必要，預設會用 IP 來反解節點的主機名稱"
 
@@ -3358,13 +3432,13 @@ msgstr "非必要，預設會用 IP 來反解節點的主機名稱"
 #: pmg-gui/js/SystemConfiguration.js:50
 #: pmg-gui/js/VirusDetectorConfiguration.js:13
 #: pve-manager/www/manager6/dc/Config.js:44
-#: pve-manager/www/manager6/dc/Config.js:149
-#: pve-manager/www/manager6/lxc/Config.js:236
-#: pve-manager/www/manager6/lxc/Config.js:291
+#: pve-manager/www/manager6/dc/Config.js:184
+#: pve-manager/www/manager6/lxc/Config.js:235
+#: pve-manager/www/manager6/lxc/Config.js:292
 #: pve-manager/www/manager6/node/Config.js:258
 #: pve-manager/www/manager6/node/Directory.js:85
-#: pve-manager/www/manager6/qemu/Config.js:259
-#: pve-manager/www/manager6/qemu/Config.js:323
+#: pve-manager/www/manager6/qemu/Config.js:258
+#: pve-manager/www/manager6/qemu/Config.js:324
 msgid "Options"
 msgstr "選項"
 
@@ -3372,12 +3446,12 @@ msgstr "選項"
 msgid "Order"
 msgstr "順序"
 
-#: proxmox-widget-toolkit/Utils.js:449
+#: proxmox-widget-toolkit/Utils.js:451
 #: pve-manager/www/manager6/node/ACME.js:272
 msgid "Order Certificate"
 msgstr "訂閱憑證"
 
-#: pve-manager/www/manager6/Utils.js:905
+#: pve-manager/www/manager6/Utils.js:983
 msgid "Other Error"
 msgstr "其它錯誤"
 
@@ -3413,7 +3487,7 @@ msgstr "外寄郵件流量"
 msgid "Outgoing Mails"
 msgstr "外寄郵件"
 
-#: proxmox-widget-toolkit/window/TaskViewer.js:191
+#: proxmox-widget-toolkit/window/TaskViewer.js:194
 msgid "Output"
 msgstr "輸出"
 
@@ -3423,9 +3497,13 @@ msgstr "輸出"
 msgid "Output Policy"
 msgstr "輸出原則"
 
+#: pmg-gui/js/DKIMSettings.js:180
+msgid "Overwrite existing file"
+msgstr ""
+
 #: pve-manager/www/manager6/qemu/HardwareView.js:274
-#: pve-manager/www/manager6/qemu/HardwareView.js:661
-#: pve-manager/www/manager6/qemu/PCIEdit.js:219
+#: pve-manager/www/manager6/qemu/HardwareView.js:680
+#: pve-manager/www/manager6/qemu/PCIEdit.js:222
 msgid "PCI Device"
 msgstr "PCI 裝置"
 
@@ -3465,40 +3543,41 @@ msgstr "Passthrough  指定裝置"
 #: pmg-gui/js/LDAPConfig.js:115 pmg-gui/js/LoginView.js:154
 #: pmg-gui/js/UserEdit.js:53 pmg-gui/js/UserView.js:118
 #: pmg-gui/js/mobile/loginscreen.js:28
-#: pve-manager/www/manager6/Workspace.js:342
-#: pve-manager/www/manager6/dc/ClusterEdit.js:307
-#: pve-manager/www/manager6/dc/TFAEdit.js:477
+#: pve-manager/www/manager6/Workspace.js:358
+#: pve-manager/www/manager6/dc/ClusterEdit.js:320
+#: pve-manager/www/manager6/dc/TFAEdit.js:495
 #: pve-manager/www/manager6/dc/UserEdit.js:46
 #: pve-manager/www/manager6/dc/UserView.js:70
 #: pve-manager/www/manager6/lxc/CreateWizard.js:80
-#: pve-manager/www/manager6/qemu/CloudInit.js:217
-#: pve-manager/www/manager6/qemu/CloudInit.js:222
-#: pve-manager/www/manager6/qemu/CloudInit.js:229
+#: pve-manager/www/manager6/qemu/CloudInit.js:221
+#: pve-manager/www/manager6/qemu/CloudInit.js:226
+#: pve-manager/www/manager6/qemu/CloudInit.js:233
 #: pve-manager/www/manager6/storage/CIFSEdit.js:92
 #: pve-manager/www/manager6/window/LoginWindow.js:225
 msgid "Password"
 msgstr "密碼"
 
-#: proxmox-widget-toolkit/Toolkit.js:165
+#: proxmox-widget-toolkit/Toolkit.js:178
 #: pve-manager/www/manager6/dc/UserEdit.js:29
 msgid "Passwords do not match"
 msgstr "密碼不符"
 
-#: pve-manager/www/manager6/dc/ClusterEdit.js:279
+#: pve-manager/www/manager6/dc/ClusterEdit.js:292
 msgid "Paste encoded Cluster Information here"
 msgstr "在此貼上編碼過的叢集資訊"
 
 #: pve-manager/www/manager6/dc/ACLView.js:19
 #: pve-manager/www/manager6/dc/ACLView.js:135
+#: pve-manager/www/manager6/dc/PermissionView.js:110
 #: pve-manager/www/manager6/dc/StorageView.js:130
 #: pve-manager/www/manager6/lxc/MPEdit.js:239
 #: pve-manager/www/manager6/node/Directory.js:70
 msgid "Path"
 msgstr "路徑"
 
-#: proxmox-widget-toolkit/Utils.js:480
+#: proxmox-widget-toolkit/Utils.js:482
 #: pve-manager/www/manager6/qemu/CmdMenu.js:67
-#: pve-manager/www/manager6/qemu/Config.js:155
+#: pve-manager/www/manager6/qemu/Config.js:156
 msgid "Pause"
 msgstr "暫停"
 
@@ -3507,15 +3586,15 @@ msgstr "暫停"
 msgid "Paused"
 msgstr "已暫停"
 
-#: pve-manager/www/manager6/dc/ClusterEdit.js:295
+#: pve-manager/www/manager6/dc/ClusterEdit.js:308
 msgid "Peer Address"
 msgstr "節點位址"
 
-#: pve-manager/www/manager6/dc/ClusterEdit.js:306
+#: pve-manager/www/manager6/dc/ClusterEdit.js:319
 msgid "Peer's root password"
 msgstr "節點 root 密碼"
 
-#: proxmox-widget-toolkit/node/NetworkView.js:423
+#: proxmox-widget-toolkit/node/NetworkView.js:441
 #: pmg-gui/js/SpamDetectorCustom.js:304
 msgid "Pending changes"
 msgstr "修改擱置中"
@@ -3528,10 +3607,22 @@ msgstr "百分比"
 msgid "Performance"
 msgstr "效能"
 
-#: pve-manager/www/manager6/dc/Config.js:74
-#: pve-manager/www/manager6/lxc/Config.js:328
+#: pve-manager/www/manager6/qemu/RNGEdit.js:77
+msgid "Period"
+msgstr ""
+
+#: pve-manager/www/manager6/dc/PermissionView.js:110
+#, fuzzy
+msgid "Permission"
+msgstr "權限"
+
+#: pve-manager/www/manager6/dc/Config.js:75
+#: pve-manager/www/manager6/dc/PermissionView.js:160
+#: pve-manager/www/manager6/dc/UserView.js:99
+#: pve-manager/www/manager6/lxc/Config.js:329
 #: pve-manager/www/manager6/pool/Config.js:34
-#: pve-manager/www/manager6/qemu/Config.js:360
+#: pve-manager/www/manager6/qemu/Config.js:361
+#: pve-manager/www/manager6/sdn/Browser.js:40
 #: pve-manager/www/manager6/storage/Browser.js:52
 msgid "Permissions"
 msgstr "權限"
@@ -3580,7 +3671,7 @@ msgid ""
 "following IP address and fingerprint."
 msgstr "請在您想要使用的節點按下 '加入' 按鈕，並使用以下的 IP 位址與指紋資訊。"
 
-#: proxmox-widget-toolkit/Utils.js:299 pmg-gui/js/LoginView.js:47
+#: proxmox-widget-toolkit/Utils.js:301 pmg-gui/js/LoginView.js:47
 #: pmg-gui/js/LoginView.js:73 pve-manager/www/manager6/dc/Backup.js:450
 #: pve-manager/www/manager6/window/LoginWindow.js:21
 #: pve-manager/www/manager6/window/LoginWindow.js:124
@@ -3588,7 +3679,8 @@ msgstr "請在您想要使用的節點按下 '加入' 按鈕，並使用以下�
 msgid "Please wait..."
 msgstr "請稍候..."
 
-#: pmg-gui/js/MailProxyTLSDomains.js:40 pmg-gui/js/MailProxyTLSDomains.js:83
+#: pmg-gui/js/MailProxyTLSDestinations.js:40
+#: pmg-gui/js/MailProxyTLSDestinations.js:83
 msgid "Policy"
 msgstr "原則"
 
@@ -3617,13 +3709,13 @@ msgstr ""
 msgid "Pool to backup"
 msgstr "要備份的儲存集區"
 
-#: pve-manager/www/manager6/dc/Config.js:99
+#: pve-manager/www/manager6/dc/Config.js:100
 msgid "Pools"
 msgstr "集區"
 
 #: pmg-gui/js/FetchmailEdit.js:55 pmg-gui/js/LDAPConfig.js:102
-#: pmg-gui/js/MailProxyRelaying.js:66 pmg-gui/js/Transport.js:53
-#: pmg-gui/js/Transport.js:156 pve-manager/www/manager6/dc/AuthEdit.js:111
+#: pmg-gui/js/MailProxyRelaying.js:77 pmg-gui/js/Transport.js:97
+#: pmg-gui/js/Transport.js:179 pve-manager/www/manager6/dc/AuthEdit.js:111
 #: pve-manager/www/manager6/form/USBSelector.js:65
 msgid "Port"
 msgstr "連接埠"
@@ -3636,7 +3728,7 @@ msgstr "入口"
 msgid "Ports"
 msgstr "連接埠"
 
-#: proxmox-widget-toolkit/node/NetworkView.js:360
+#: proxmox-widget-toolkit/node/NetworkView.js:378
 msgid "Ports/Slaves"
 msgstr "橋接連接埠"
 
@@ -3652,7 +3744,7 @@ msgstr "進階"
 msgid "Primary E-Mail"
 msgstr "主要郵件"
 
-#: pve-manager/www/manager6/qemu/PCIEdit.js:180
+#: pve-manager/www/manager6/qemu/PCIEdit.js:183
 msgid "Primary GPU"
 msgstr "主要 GPU"
 
@@ -3695,6 +3787,7 @@ msgstr "設定檔名稱"
 
 #: pve-manager/www/manager6/dc/ACLView.js:54
 #: pve-manager/www/manager6/dc/ACLView.js:141
+#: pve-manager/www/manager6/dc/PermissionView.js:116
 msgid "Propagate"
 msgstr "繼承"
 
@@ -3707,6 +3800,7 @@ msgstr "保護"
 
 #: pmg-gui/js/FetchmailEdit.js:44 pmg-gui/js/FetchmailView.js:103
 #: pmg-gui/js/LDAPConfig.js:63 pmg-gui/js/LDAPConfig.js:567
+#: pmg-gui/js/Transport.js:92 pmg-gui/js/Transport.js:161
 #: pve-manager/www/manager6/form/IPProtocolSelector.js:9
 #: pve-manager/www/manager6/grid/FirewallRules.js:189
 #: pve-manager/www/manager6/grid/FirewallRules.js:721
@@ -3734,7 +3828,7 @@ msgstr "公鑰大小"
 msgid "Public Key Type"
 msgstr "公鑰類型"
 
-#: proxmox-widget-toolkit/Utils.js:501
+#: proxmox-widget-toolkit/Utils.js:503
 msgid "Pull file"
 msgstr "拉取檔案"
 
@@ -3742,11 +3836,11 @@ msgstr "拉取檔案"
 msgid "Purge"
 msgstr "清除"
 
-#: proxmox-widget-toolkit/Utils.js:500
+#: proxmox-widget-toolkit/Utils.js:502
 msgid "Push file"
 msgstr "推送檔案"
 
-#: pve-manager/www/manager6/qemu/PCIEdit.js:29
+#: pve-manager/www/manager6/qemu/PCIEdit.js:32
 msgid "Q35 only"
 msgstr "僅限 Q35"
 
@@ -3792,8 +3886,7 @@ msgstr "仲裁"
 msgid "RAID Level"
 msgstr "RAID 等級"
 
-#: pve-manager/www/manager6/lxc/SnapshotTree.js:274
-#: pve-manager/www/manager6/qemu/SnapshotTree.js:264
+#: pve-manager/www/manager6/tree/SnapshotTree.js:333
 msgid "RAM"
 msgstr "記憶體"
 
@@ -3810,7 +3903,7 @@ msgstr "記憶體使用量"
 msgid "RTC start date"
 msgstr "RTC 開始日期"
 
-#: pve-manager/www/manager6/dc/TFAEdit.js:393
+#: pve-manager/www/manager6/dc/TFAEdit.js:404
 msgid "Randomize"
 msgstr "隨機產生"
 
@@ -3855,21 +3948,21 @@ msgstr "讀取"
 #: pmg-gui/js/UserView.js:133 pve-manager/www/manager6/dc/AuthEdit.js:28
 #: pve-manager/www/manager6/dc/AuthView.js:100
 #: pve-manager/www/manager6/dc/UserEdit.js:127
-#: pve-manager/www/manager6/dc/UserView.js:136
+#: pve-manager/www/manager6/dc/UserView.js:148
 #: pve-manager/www/manager6/form/RealmComboBox.js:31
 msgid "Realm"
 msgstr "隸屬"
 
-#: pmg-gui/js/PostfixMailQueue.js:164
+#: pmg-gui/js/PostfixMailQueue.js:165
 msgid "Reason"
 msgstr "原因"
 
-#: proxmox-widget-toolkit/Utils.js:478 proxmox-widget-toolkit/Utils.js:497
+#: proxmox-widget-toolkit/Utils.js:480 proxmox-widget-toolkit/Utils.js:499
 #: pve-manager/www/manager6/lxc/CmdMenu.js:116
-#: pve-manager/www/manager6/lxc/Config.js:65
+#: pve-manager/www/manager6/lxc/Config.js:66
 #: pve-manager/www/manager6/node/Config.js:84
 #: pve-manager/www/manager6/qemu/CmdMenu.js:137
-#: pve-manager/www/manager6/qemu/Config.js:146
+#: pve-manager/www/manager6/qemu/Config.js:147
 msgid "Reboot"
 msgstr "重新啟動"
 
@@ -3878,7 +3971,7 @@ msgid "Reboot node '{0}'?"
 msgstr "重新啟動節點 '{0}'?"
 
 #: pve-manager/www/manager6/lxc/CmdMenu.js:119
-#: pve-manager/www/manager6/lxc/Config.js:68
+#: pve-manager/www/manager6/lxc/Config.js:69
 #: pve-manager/www/manager6/qemu/CmdMenu.js:140
 msgid "Reboot {0}"
 msgstr "重新啟動 {0}"
@@ -3886,22 +3979,22 @@ msgstr "重新啟動 {0}"
 #: pmg-gui/js/ContactStatistics.js:103 pmg-gui/js/Dashboard.js:459
 #: pmg-gui/js/DomainStatistics.js:74 pmg-gui/js/DomainStatistics.js:118
 #: pmg-gui/js/MailTracker.js:72 pmg-gui/js/NavigationTree.js:184
-#: pmg-gui/js/PostfixMailQueue.js:159 pmg-gui/js/ReceiverStatistics.js:110
+#: pmg-gui/js/PostfixMailQueue.js:160 pmg-gui/js/ReceiverStatistics.js:110
 #: pmg-gui/js/ReceiverStatistics.js:157 pmg-gui/js/ReceiverStatistics.js:221
 #: pmg-gui/js/SenderStatistics.js:65 pmg-gui/js/Utils.js:13
 #: pmg-gui/js/Utils.js:490
 msgid "Receiver"
 msgstr "收件者"
 
-#: proxmox-widget-toolkit/Utils.js:453 proxmox-widget-toolkit/node/APT.js:116
+#: proxmox-widget-toolkit/Utils.js:455 proxmox-widget-toolkit/node/APT.js:116
 msgid "Refresh"
 msgstr "重新整理"
 
-#: pve-manager/www/manager6/qemu/CloudInit.js:78
+#: pve-manager/www/manager6/qemu/CloudInit.js:82
 msgid "Regenerate Image"
 msgstr "重新產生映像"
 
-#: proxmox-widget-toolkit/Utils.js:450 pve-manager/www/manager6/node/ACME.js:54
+#: proxmox-widget-toolkit/Utils.js:452 pve-manager/www/manager6/node/ACME.js:54
 msgid "Register"
 msgstr "註冊"
 
@@ -3910,7 +4003,7 @@ msgstr "註冊"
 msgid "Register Account"
 msgstr "註冊帳號"
 
-#: pve-manager/www/manager6/dc/TFAEdit.js:502
+#: pve-manager/www/manager6/dc/TFAEdit.js:520
 msgid "Register U2F Device"
 msgstr "註冊 U2F 裝置"
 
@@ -3932,8 +4025,7 @@ msgid "Rejects"
 msgstr "拒絕"
 
 #: pmg-gui/js/RelayDomains.js:13 pmg-gui/js/RelayDomains.js:94
-#: pmg-gui/js/Transport.js:73 pmg-gui/js/Transport.js:80
-#: pmg-gui/js/Transport.js:144
+#: pmg-gui/js/Transport.js:82 pmg-gui/js/Transport.js:151
 msgid "Relay Domain"
 msgstr "轉送網域"
 
@@ -3941,11 +4033,21 @@ msgstr "轉送網域"
 msgid "Relay Domains"
 msgstr "轉送網域"
 
+#: pmg-gui/js/MailProxyRelaying.js:14
+#, fuzzy
+msgid "Relay Port"
+msgstr "序列埠"
+
+#: pmg-gui/js/MailProxyRelaying.js:21
+#, fuzzy
+msgid "Relay Protocol"
+msgstr "協定"
+
 #: pmg-gui/js/MailProxyConfiguration.js:14
 msgid "Relaying"
 msgstr "轉送"
 
-#: proxmox-widget-toolkit/Utils.js:509 pve-manager/www/manager6/ceph/OSD.js:661
+#: proxmox-widget-toolkit/Utils.js:511 pve-manager/www/manager6/ceph/OSD.js:661
 #: pve-manager/www/manager6/node/Directory.js:101
 #: pve-manager/www/manager6/node/Disks.js:156
 #: pve-manager/www/manager6/node/Disks.js:295
@@ -3963,21 +4065,20 @@ msgstr "移除排程作業"
 
 #: proxmox-widget-toolkit/button/Button.js:103
 #: proxmox-widget-toolkit/node/NetworkView.js:103
-#: proxmox-widget-toolkit/window/Edit.js:255
+#: proxmox-widget-toolkit/window/Edit.js:259
 #: pmg-gui/js/RuleConfiguration.js:172 pmg-gui/js/RuleInfo.js:314
-#: pmg-gui/js/UserBlackWhiteList.js:166
+#: pmg-gui/js/UserBlackWhiteList.js:165
 #: pve-manager/www/manager6/dc/ACLView.js:155
 #: pve-manager/www/manager6/grid/PoolMembers.js:174
-#: pve-manager/www/manager6/lxc/Config.js:147
-#: pve-manager/www/manager6/lxc/Network.js:402
+#: pve-manager/www/manager6/lxc/Config.js:148
+#: pve-manager/www/manager6/lxc/Network.js:409
 #: pve-manager/www/manager6/lxc/Resources.js:194
-#: pve-manager/www/manager6/lxc/SnapshotTree.js:200
 #: pve-manager/www/manager6/qemu/CloudInit.js:63
-#: pve-manager/www/manager6/qemu/Config.js:122
-#: pve-manager/www/manager6/qemu/HardwareView.js:435
-#: pve-manager/www/manager6/qemu/HardwareView.js:436
-#: pve-manager/www/manager6/qemu/SnapshotTree.js:190
+#: pve-manager/www/manager6/qemu/Config.js:123
+#: pve-manager/www/manager6/qemu/HardwareView.js:442
+#: pve-manager/www/manager6/qemu/HardwareView.js:443
 #: pve-manager/www/manager6/storage/ContentView.js:453
+#: pve-manager/www/manager6/tree/SnapshotTree.js:269
 #: pve-manager/www/manager6/window/SafeDestroy.js:146
 msgid "Remove"
 msgstr "移除"
@@ -3994,14 +4095,14 @@ msgstr "移除所有附件"
 msgid "Remove from replication and backup jobs"
 msgstr "從複寫與備份作業中移除"
 
-#: proxmox-widget-toolkit/Utils.js:454
+#: proxmox-widget-toolkit/Utils.js:456
 msgid "Renew Certificate"
 msgstr "更新憑證"
 
-#: pve-manager/www/manager6/dc/Config.js:69
-#: pve-manager/www/manager6/lxc/Config.js:259
+#: pve-manager/www/manager6/dc/Config.js:70
+#: pve-manager/www/manager6/lxc/Config.js:258
 #: pve-manager/www/manager6/node/Config.js:319
-#: pve-manager/www/manager6/qemu/Config.js:291
+#: pve-manager/www/manager6/qemu/Config.js:290
 msgid "Replication"
 msgstr "複寫"
 
@@ -4022,19 +4123,19 @@ msgstr "複寫功能至少需要兩個節點"
 msgid "Request State"
 msgstr "需求狀態"
 
-#: pve-manager/www/manager6/qemu/AgentIPView.js:135
+#: pve-manager/www/manager6/qemu/AgentIPView.js:134
 msgid "Requires '{0}' Privileges"
 msgstr "需要 '{0}' 權限"
 
-#: proxmox-widget-toolkit/Utils.js:476
-#: pve-manager/www/manager6/qemu/Config.js:182
-#: pve-manager/www/manager6/window/Settings.js:246
-#: pve-manager/www/manager6/window/Settings.js:267
-#: pve-manager/www/manager6/window/Settings.js:365
+#: proxmox-widget-toolkit/Utils.js:478
+#: pve-manager/www/manager6/qemu/Config.js:183
+#: pve-manager/www/manager6/window/Settings.js:253
+#: pve-manager/www/manager6/window/Settings.js:274
+#: pve-manager/www/manager6/window/Settings.js:384
 msgid "Reset"
 msgstr "重置"
 
-#: pve-manager/www/manager6/window/Settings.js:268
+#: pve-manager/www/manager6/window/Settings.js:275
 msgid "Reset all layout changes (for example, column widths)"
 msgstr "重置所有配置變更 (例如欄位寬度)"
 
@@ -4042,7 +4143,7 @@ msgstr "重置所有配置變更 (例如欄位寬度)"
 msgid "Reset rule database to factory defaults?"
 msgstr "是否將規則資料庫重置回到出廠預設值？"
 
-#: pve-manager/www/manager6/qemu/Config.js:184
+#: pve-manager/www/manager6/qemu/Config.js:185
 msgid "Reset {0} immediately"
 msgstr "立即重置 {0}"
 
@@ -4051,7 +4152,7 @@ msgstr "立即重置 {0}"
 #: pve-manager/www/manager6/lxc/Resources.js:187
 #: pve-manager/www/manager6/qemu/HDResize.js:72
 #: pve-manager/www/manager6/qemu/HDResize.js:74
-#: pve-manager/www/manager6/qemu/HardwareView.js:421
+#: pve-manager/www/manager6/qemu/HardwareView.js:428
 msgid "Resize disk"
 msgstr "調整磁碟大小"
 
@@ -4069,12 +4170,12 @@ msgstr "資源集區"
 
 #: pve-manager/www/manager6/dc/Summary.js:26
 #: pve-manager/www/manager6/ha/Status.js:36
-#: pve-manager/www/manager6/lxc/Config.js:217
+#: pve-manager/www/manager6/lxc/Config.js:216
 #: pve-manager/www/manager6/lxc/DNS.js:71
 msgid "Resources"
 msgstr "資源"
 
-#: proxmox-widget-toolkit/Utils.js:508
+#: proxmox-widget-toolkit/Utils.js:510
 #: proxmox-widget-toolkit/node/ServiceView.js:100 pmg-gui/js/ServerStatus.js:57
 #: pmg-gui/js/ServerStatus.js:59 pve-manager/www/manager6/ceph/OSD.js:714
 #: pve-manager/www/manager6/ceph/ServiceList.js:210
@@ -4089,31 +4190,34 @@ msgstr "重新啟動模式"
 msgid "Restart pmg-smtp-filter"
 msgstr "重新啟動 pmg-smtp-filter"
 
-#: proxmox-widget-toolkit/Utils.js:468 proxmox-widget-toolkit/Utils.js:487
+#: proxmox-widget-toolkit/Utils.js:470 proxmox-widget-toolkit/Utils.js:489
 #: pmg-gui/js/BackupRestore.js:23 pmg-gui/js/BackupRestore.js:26
 #: pmg-gui/js/BackupRestore.js:73 pmg-gui/js/BackupRestore.js:126
-#: pve-manager/www/manager6/grid/BackupView.js:138
+#: pve-manager/www/manager6/grid/BackupView.js:134
 #: pve-manager/www/manager6/storage/ContentView.js:514
 #: pve-manager/www/manager6/window/Restore.js:136
 #: pve-manager/www/manager6/window/Restore.js:187
 msgid "Restore"
 msgstr "還原"
 
-#: proxmox-widget-toolkit/Utils.js:481 proxmox-widget-toolkit/Utils.js:499
+#: proxmox-widget-toolkit/Utils.js:483 proxmox-widget-toolkit/Utils.js:501
 #: pve-manager/www/manager6/lxc/CmdMenu.js:77
 #: pve-manager/www/manager6/qemu/CmdMenu.js:98
-#: pve-manager/www/manager6/qemu/Config.js:46
+#: pve-manager/www/manager6/qemu/Config.js:47
 msgid "Resume"
 msgstr "繼續"
 
 #: proxmox-widget-toolkit/node/HostsView.js:35
-#: proxmox-widget-toolkit/node/NetworkView.js:287
+#: proxmox-widget-toolkit/node/NetworkView.js:305
 #: pmg-gui/js/SpamDetectorCustom.js:241
 #: pve-manager/www/manager6/button/Revert.js:5
+#: pve-manager/www/manager6/sdn/ControllerView.js:107
+#: pve-manager/www/manager6/sdn/VnetView.js:74
+#: pve-manager/www/manager6/sdn/ZoneView.js:107
 msgid "Revert"
 msgstr "還原"
 
-#: proxmox-widget-toolkit/Utils.js:455
+#: proxmox-widget-toolkit/Utils.js:457
 msgid "Revoke Certificate"
 msgstr "撤銷憑證"
 
@@ -4125,13 +4229,12 @@ msgstr "撤銷憑證"
 msgid "Role"
 msgstr "角色"
 
-#: pve-manager/www/manager6/dc/Config.js:106
+#: pve-manager/www/manager6/dc/Config.js:107
 msgid "Roles"
 msgstr "角色"
 
-#: proxmox-widget-toolkit/Utils.js:465 proxmox-widget-toolkit/Utils.js:484
-#: pve-manager/www/manager6/lxc/SnapshotTree.js:157
-#: pve-manager/www/manager6/qemu/SnapshotTree.js:155
+#: proxmox-widget-toolkit/Utils.js:467 proxmox-widget-toolkit/Utils.js:486
+#: pve-manager/www/manager6/tree/SnapshotTree.js:253
 msgid "Rollback"
 msgstr "倒回"
 
@@ -4185,6 +4288,11 @@ msgstr "SCSI 控制器"
 msgid "SCSI Controller Type"
 msgstr "SCSI 控制器類型"
 
+#: pve-manager/www/manager6/dc/Config.js:142
+#, fuzzy
+msgid "SDN"
+msgstr "DNS"
+
 #: pve-manager/www/manager6/qemu/Options.js:249
 #: pve-manager/www/manager6/qemu/Smbios1Edit.js:102
 msgid "SMBIOS settings (type1)"
@@ -4193,10 +4301,6 @@ msgstr "SMBIOS 設定 (type1)"
 #: pmg-gui/js/MailProxyOptions.js:19
 msgid "SMTP HELO checks"
 msgstr "SMTP HELO 檢查"
-
-#: pmg-gui/js/MailProxyRelaying.js:14
-msgid "SMTP Port"
-msgstr "SMTP 連接埠"
 
 #: pmg-gui/js/MailProxyOptions.js:68
 msgid "SMTPD Banner"
@@ -4219,7 +4323,7 @@ msgid "SSH Keys"
 msgstr "SSH 金鑰"
 
 #: pve-manager/www/manager6/lxc/CreateWizard.js:109
-#: pve-manager/www/manager6/qemu/CloudInit.js:253
+#: pve-manager/www/manager6/qemu/CloudInit.js:257
 msgid "SSH public key"
 msgstr "SSH 公開金鑰"
 
@@ -4237,7 +4341,7 @@ msgid "Same as source"
 msgstr "與來源相同"
 
 #: proxmox-widget-toolkit/node/HostsView.js:12 pmg-gui/js/Dashboard.js:42
-#: pve-manager/www/manager6/window/Settings.js:371
+#: pve-manager/www/manager6/window/Settings.js:390
 msgid "Save"
 msgstr "儲存"
 
@@ -4245,11 +4349,11 @@ msgstr "儲存"
 msgid "Save User name"
 msgstr "記住帳號"
 
-#: pve-manager/www/manager6/window/Settings.js:236
+#: pve-manager/www/manager6/window/Settings.js:243
 msgid "Saved User Name"
 msgstr "已記住帳號"
 
-#: pve-manager/www/manager6/window/Settings.js:383
+#: pve-manager/www/manager6/window/Settings.js:402
 msgid "Scaling mode"
 msgstr "縮放模式"
 
@@ -4257,7 +4361,7 @@ msgstr "縮放模式"
 msgid "Scan"
 msgstr "掃描"
 
-#: pve-manager/www/manager6/dc/TFAEdit.js:446
+#: pve-manager/www/manager6/dc/TFAEdit.js:464
 msgid "Scan QR code and enter TOTP auth. code to verify"
 msgstr "請掃描 QR Code 後將 TOTP 在此輸入，以確認授權"
 
@@ -4295,8 +4399,12 @@ msgstr ""
 msgid "Scrub OSD.{0}"
 msgstr ""
 
+#: pve-manager/www/manager6/tree/ResourceTree.js:24
+msgid "Sdn"
+msgstr ""
+
 #: pve-manager/www/manager6/form/GlobalSearchField.js:16
-#: pve-manager/www/manager6/grid/BackupView.js:99
+#: pve-manager/www/manager6/grid/BackupView.js:95
 #: pve-manager/www/manager6/grid/ResourceGrid.js:154
 #: pve-manager/www/manager6/panel/ConfigPanel.js:212
 #: pve-manager/www/manager6/storage/ContentView.js:45
@@ -4312,11 +4420,11 @@ msgstr "搜尋域名"
 msgid "Second Server"
 msgstr "第二伺服器"
 
-#: pve-manager/www/manager6/dc/TFAEdit.js:381
+#: pve-manager/www/manager6/dc/TFAEdit.js:389
 msgid "Secret"
 msgstr "私鑰"
 
-#: pve-manager/www/manager6/dc/Config.js:159
+#: pve-manager/www/manager6/dc/Config.js:194
 #: pve-manager/www/manager6/dc/SecurityGroups.js:42
 #: pve-manager/www/manager6/dc/SecurityGroups.js:44
 #: pve-manager/www/manager6/form/SecurityGroupSelector.js:29
@@ -4333,7 +4441,7 @@ msgstr "選擇檔案..."
 msgid "Select Timespan"
 msgstr "選擇時間範圍"
 
-#: pve-manager/www/manager6/dc/ClusterEdit.js:269
+#: pve-manager/www/manager6/dc/ClusterEdit.js:282
 msgid ""
 "Select if join information should be extracted from pasted cluster "
 "information, deselect for manual entering"
@@ -4353,7 +4461,7 @@ msgid "Selection mode"
 msgstr "選擇模式"
 
 #: pmg-gui/js/DKIMSettings.js:53 pmg-gui/js/DKIMSettings.js:61
-#: pmg-gui/js/DKIMSettings.js:113
+#: pmg-gui/js/DKIMSettings.js:139
 msgid "Selector"
 msgstr "選取器"
 
@@ -4371,7 +4479,7 @@ msgid "Send email to"
 msgstr "發送郵件到"
 
 #: pmg-gui/js/ContactStatistics.js:65 pmg-gui/js/MailTracker.js:66
-#: pmg-gui/js/NavigationTree.js:178 pmg-gui/js/PostfixMailQueue.js:154
+#: pmg-gui/js/NavigationTree.js:178 pmg-gui/js/PostfixMailQueue.js:155
 #: pmg-gui/js/ReceiverStatistics.js:65 pmg-gui/js/SenderStatistics.js:102
 #: pmg-gui/js/SenderStatistics.js:149 pmg-gui/js/SenderStatistics.js:209
 #: pmg-gui/js/Utils.js:12
@@ -4391,7 +4499,7 @@ msgid "Serial"
 msgstr "序號"
 
 #: pve-manager/www/manager6/qemu/HardwareView.js:284
-#: pve-manager/www/manager6/qemu/HardwareView.js:675
+#: pve-manager/www/manager6/qemu/HardwareView.js:694
 #: pve-manager/www/manager6/qemu/SerialEdit.js:34
 #: pve-manager/www/manager6/qemu/SerialEdit.js:59
 msgid "Serial Port"
@@ -4444,14 +4552,18 @@ msgstr "伺服器時間"
 msgid "Service"
 msgstr "服務"
 
+#: pve-manager/www/manager6/sdn/zones/QinQEdit.js:37
+#, fuzzy
+msgid "Service vlan"
+msgstr "服務"
+
 #: pmg-gui/js/ServerAdministration.js:27
 #: pve-manager/www/manager6/ceph/Status.js:135
 msgid "Services"
 msgstr "服務"
 
 #: pmg-gui/js/MailProxyDKIMPanel.js:30 pmg-gui/js/MailProxyTLSPanel.js:21
-#: pve-manager/www/manager6/lxc/Snapshot.js:103
-#: pve-manager/www/manager6/qemu/Snapshot.js:112
+#: pve-manager/www/manager6/window/Snapshot.js:106
 msgid "Settings"
 msgstr "設定"
 
@@ -4475,7 +4587,7 @@ msgstr "共用"
 msgid "Shares"
 msgstr "共用"
 
-#: proxmox-widget-toolkit/Utils.js:462 proxmox-widget-toolkit/Utils.js:463
+#: proxmox-widget-toolkit/Utils.js:464 proxmox-widget-toolkit/Utils.js:465
 #: pve-manager/www/manager6/node/CmdMenu.js:80
 #: pve-manager/www/manager6/node/Config.js:107
 #: pve-manager/www/manager6/node/Config.js:141
@@ -4486,7 +4598,7 @@ msgstr "命令列"
 msgid "Short"
 msgstr "簡短"
 
-#: pve-manager/www/manager6/grid/BackupView.js:180
+#: pve-manager/www/manager6/grid/BackupView.js:176
 #: pve-manager/www/manager6/storage/ContentView.js:546
 msgid "Show Configuration"
 msgstr "顯示設定內容"
@@ -4507,17 +4619,17 @@ msgstr "顯示帳號"
 msgid "Show details"
 msgstr "顯示細節"
 
-#: proxmox-widget-toolkit/Utils.js:477 proxmox-widget-toolkit/Utils.js:496
-#: proxmox-widget-toolkit/Utils.js:505 pmg-gui/js/ServerStatus.js:65
+#: proxmox-widget-toolkit/Utils.js:479 proxmox-widget-toolkit/Utils.js:498
+#: proxmox-widget-toolkit/Utils.js:507 pmg-gui/js/ServerStatus.js:65
 #: pmg-gui/js/ServerStatus.js:67 pve-manager/www/manager6/lxc/CmdMenu.js:85
-#: pve-manager/www/manager6/lxc/Config.js:56
+#: pve-manager/www/manager6/lxc/Config.js:57
 #: pve-manager/www/manager6/node/Config.js:95
 #: pve-manager/www/manager6/qemu/CmdMenu.js:106
-#: pve-manager/www/manager6/qemu/Config.js:137
+#: pve-manager/www/manager6/qemu/Config.js:138
 msgid "Shutdown"
 msgstr "關機"
 
-#: pve-manager/www/manager6/dc/OptionView.js:121
+#: pve-manager/www/manager6/dc/OptionView.js:132
 msgid "Shutdown Policy"
 msgstr "關機原則"
 
@@ -4530,7 +4642,7 @@ msgstr "將節點 {0} 關機？"
 msgid "Shutdown timeout"
 msgstr "關機超時"
 
-#: pve-manager/www/manager6/qemu/Config.js:148
+#: pve-manager/www/manager6/qemu/Config.js:149
 msgid "Shutdown, apply pending changes and reboot {0}"
 msgstr "關機，套用擱置的變更並重新啟動 {0}"
 
@@ -4546,7 +4658,7 @@ msgstr "簽署網域"
 msgid "Sign Outgoing Mails"
 msgstr "簽署外寄郵件"
 
-#: pmg-gui/js/DKIMSettings.js:157
+#: pmg-gui/js/DKIMSettings.js:186
 msgid "Sign all Outgoing Mail"
 msgstr "簽署所有外寄郵件"
 
@@ -4572,7 +4684,7 @@ msgstr "單一磁碟"
 #: pve-manager/www/manager6/ceph/Pool.js:101
 #: pve-manager/www/manager6/form/DiskSelector.js:24
 #: pve-manager/www/manager6/form/FileSelector.js:78
-#: pve-manager/www/manager6/grid/BackupView.js:218
+#: pve-manager/www/manager6/grid/BackupView.js:219
 #: pve-manager/www/manager6/node/Disks.js:71
 #: pve-manager/www/manager6/node/LVM.js:81
 #: pve-manager/www/manager6/node/LVMThin.js:75
@@ -4592,22 +4704,22 @@ msgstr "增加大小"
 msgid "Skip replication"
 msgstr "不要複寫"
 
-#: proxmox-widget-toolkit/node/NetworkEdit.js:102
-#: proxmox-widget-toolkit/node/NetworkEdit.js:203
+#: proxmox-widget-toolkit/node/NetworkEdit.js:153
+#: proxmox-widget-toolkit/node/NetworkEdit.js:286
 msgid "Slaves"
 msgstr "附掛網路卡"
 
-#: pmg-gui/js/MailProxyRelaying.js:23 pmg-gui/js/MailProxyRelaying.js:47
-#: pmg-gui/js/MailProxyRelaying.js:57
+#: pmg-gui/js/MailProxyRelaying.js:34 pmg-gui/js/MailProxyRelaying.js:58
+#: pmg-gui/js/MailProxyRelaying.js:68
 msgid "Smarthost"
 msgstr ""
 
-#: proxmox-widget-toolkit/Utils.js:464 proxmox-widget-toolkit/Utils.js:483
+#: proxmox-widget-toolkit/Utils.js:466 proxmox-widget-toolkit/Utils.js:485
 #: pve-manager/www/manager6/form/BackupModeSelector.js:5
 #: pve-manager/www/manager6/form/SnapshotSelector.js:56
-#: pve-manager/www/manager6/lxc/Snapshot.js:129
-#: pve-manager/www/manager6/qemu/Snapshot.js:138
 #: pve-manager/www/manager6/window/Clone.js:227
+#: pve-manager/www/manager6/window/Snapshot.js:140
+#: pve-manager/www/manager6/window/Snapshot.js:144
 msgid "Snapshot"
 msgstr "快照"
 
@@ -4692,7 +4804,7 @@ msgstr "Spice 增強功能"
 msgid "Spice Port"
 msgstr "Spice 連接埠"
 
-#: pve-manager/www/manager6/dc/Cluster.js:194
+#: pve-manager/www/manager6/dc/Cluster.js:198
 #: pve-manager/www/manager6/dc/Health.js:33
 msgid "Standalone node - no cluster defined"
 msgstr "獨立節點：未建立或加入叢集"
@@ -4705,22 +4817,22 @@ msgstr "標準"
 msgid "Standard VGA"
 msgstr "標準 VGA"
 
-#: proxmox-widget-toolkit/Utils.js:474 proxmox-widget-toolkit/Utils.js:492
-#: proxmox-widget-toolkit/Utils.js:503 proxmox-widget-toolkit/Utils.js:506
+#: proxmox-widget-toolkit/Utils.js:476 proxmox-widget-toolkit/Utils.js:494
+#: proxmox-widget-toolkit/Utils.js:505 proxmox-widget-toolkit/Utils.js:508
 #: proxmox-widget-toolkit/node/ServiceView.js:84 pmg-gui/js/MailTracker.js:95
 #: pve-manager/www/manager6/ceph/OSD.js:694
 #: pve-manager/www/manager6/ceph/ServiceList.js:187
 #: pve-manager/www/manager6/lxc/CmdMenu.js:53
-#: pve-manager/www/manager6/lxc/Config.js:46
+#: pve-manager/www/manager6/lxc/Config.js:47
 #: pve-manager/www/manager6/node/CmdMenu.js:42
 #: pve-manager/www/manager6/node/Config.js:47
 #: pve-manager/www/manager6/qemu/CmdMenu.js:58
-#: pve-manager/www/manager6/qemu/Config.js:56
+#: pve-manager/www/manager6/qemu/Config.js:57
 msgid "Start"
 msgstr "啓動"
 
 #: proxmox-widget-toolkit/node/Tasks.js:117
-#: proxmox-widget-toolkit/window/TaskViewer.js:141 pmg-gui/js/Utils.js:287
+#: proxmox-widget-toolkit/window/TaskViewer.js:144 pmg-gui/js/Utils.js:287
 #: pve-manager/www/manager6/dc/Backup.js:181
 #: pve-manager/www/manager6/dc/Backup.js:614
 #: pve-manager/www/manager6/dc/Tasks.js:71
@@ -4736,7 +4848,7 @@ msgstr "建立完成後開機"
 msgid "Start after restore"
 msgstr "還原完成後啟動"
 
-#: proxmox-widget-toolkit/Utils.js:527
+#: proxmox-widget-toolkit/Utils.js:529
 msgid "Start all VMs and Containers"
 msgstr "啓動所有虛擬機與容器"
 
@@ -4771,13 +4883,13 @@ msgstr "啓動/關機順序"
 msgid "Startup delay"
 msgstr "啓動延遲"
 
-#: proxmox-widget-toolkit/Utils.js:56 pmg-gui/js/ClusterAdministration.js:247
+#: proxmox-widget-toolkit/Utils.js:57 pmg-gui/js/ClusterAdministration.js:247
 #: pve-manager/www/manager6/ha/Resources.js:116
 msgid "State"
 msgstr "狀態"
 
 #: pve-manager/www/manager6/lxc/Network.js:187
-#: pve-manager/www/manager6/lxc/Network.js:245
+#: pve-manager/www/manager6/lxc/Network.js:249
 #: pve-manager/www/manager6/qemu/IPConfigEdit.js:83
 #: pve-manager/www/manager6/qemu/IPConfigEdit.js:141
 msgid "Static"
@@ -4799,7 +4911,7 @@ msgstr "統計資料"
 #: proxmox-widget-toolkit/node/ServiceView.js:167
 #: proxmox-widget-toolkit/node/Tasks.js:149
 #: proxmox-widget-toolkit/window/TaskViewer.js:109
-#: proxmox-widget-toolkit/window/TaskViewer.js:182
+#: proxmox-widget-toolkit/window/TaskViewer.js:185
 #: pmg-gui/js/ClamAVDatabase.js:54 pmg-gui/js/MailTracker.js:339
 #: pmg-gui/js/ServerStatus.js:6 pmg-gui/js/SpamDetectorConfiguration.js:23
 #: pmg-gui/js/SpamDetectorStatus.js:16 pmg-gui/js/Subscription.js:127
@@ -4822,7 +4934,6 @@ msgstr "統計資料"
 #: pve-manager/www/manager6/grid/Replication.js:331
 #: pve-manager/www/manager6/ha/Status.js:27
 #: pve-manager/www/manager6/ha/StatusView.js:53
-#: pve-manager/www/manager6/lxc/SnapshotTree.js:286
 #: pve-manager/www/manager6/node/ACME.js:183
 #: pve-manager/www/manager6/node/Subscription.js:131
 #: pve-manager/www/manager6/node/ZFS.js:292
@@ -4830,37 +4941,45 @@ msgstr "統計資料"
 #: pve-manager/www/manager6/panel/GuestStatusView.js:32
 #: pve-manager/www/manager6/panel/StatusView.js:9
 #: pve-manager/www/manager6/pool/StatusView.js:6
-#: pve-manager/www/manager6/qemu/SnapshotTree.js:276
+#: pve-manager/www/manager6/sdn/Status.js:26
+#: pve-manager/www/manager6/sdn/StatusView.js:71
+#: pve-manager/www/manager6/sdn/ZoneContentView.js:66
 #: pve-manager/www/manager6/storage/StatusView.js:6
-#: pve-manager/www/manager6/tree/ResourceTree.js:139
+#: pve-manager/www/manager6/tree/ResourceTree.js:143
+#: pve-manager/www/manager6/tree/SnapshotTree.js:349
 msgid "Status"
 msgstr "狀態"
 
-#: proxmox-widget-toolkit/Utils.js:475 proxmox-widget-toolkit/Utils.js:493
-#: proxmox-widget-toolkit/Utils.js:504 proxmox-widget-toolkit/Utils.js:507
+#: pve-manager/www/manager6/sdn/ZoneContentView.js:71
+#, fuzzy
+msgid "Status details"
+msgstr "顯示細節"
+
+#: proxmox-widget-toolkit/Utils.js:477 proxmox-widget-toolkit/Utils.js:495
+#: proxmox-widget-toolkit/Utils.js:506 proxmox-widget-toolkit/Utils.js:509
 #: proxmox-widget-toolkit/node/ServiceView.js:92
-#: proxmox-widget-toolkit/window/TaskViewer.js:170
-#: proxmox-widget-toolkit/window/TaskViewer.js:176
+#: proxmox-widget-toolkit/window/TaskViewer.js:173
+#: proxmox-widget-toolkit/window/TaskViewer.js:179
 #: pve-manager/www/manager6/ceph/OSD.js:704
 #: pve-manager/www/manager6/ceph/ServiceList.js:199
 #: pve-manager/www/manager6/form/BackupModeSelector.js:7
 #: pve-manager/www/manager6/lxc/CmdMenu.js:100
-#: pve-manager/www/manager6/lxc/Config.js:75
+#: pve-manager/www/manager6/lxc/Config.js:76
 #: pve-manager/www/manager6/node/CmdMenu.js:57
 #: pve-manager/www/manager6/node/Config.js:60
 #: pve-manager/www/manager6/qemu/CmdMenu.js:121
-#: pve-manager/www/manager6/qemu/Config.js:172
+#: pve-manager/www/manager6/qemu/Config.js:173
 msgid "Stop"
 msgstr "停止"
 
-#: proxmox-widget-toolkit/Utils.js:528
+#: proxmox-widget-toolkit/Utils.js:530
 msgid "Stop all VMs and Containers"
 msgstr "停止所有虛擬機和容器"
 
 #: pve-manager/www/manager6/lxc/CmdMenu.js:103
-#: pve-manager/www/manager6/lxc/Config.js:78
+#: pve-manager/www/manager6/lxc/Config.js:79
 #: pve-manager/www/manager6/qemu/CmdMenu.js:124
-#: pve-manager/www/manager6/qemu/Config.js:175
+#: pve-manager/www/manager6/qemu/Config.js:176
 msgid "Stop {0} immediately"
 msgstr "立即停止 {0}"
 
@@ -4877,7 +4996,7 @@ msgstr "已停止"
 #: pve-manager/www/manager6/dc/Config.js:53
 #: pve-manager/www/manager6/dc/Summary.js:45
 #: pve-manager/www/manager6/form/DiskStorageSelector.js:11
-#: pve-manager/www/manager6/grid/BackupView.js:87
+#: pve-manager/www/manager6/grid/BackupView.js:83
 #: pve-manager/www/manager6/grid/PoolMembers.js:116
 #: pve-manager/www/manager6/grid/PoolMembers.js:125
 #: pve-manager/www/manager6/grid/PoolMembers.js:224
@@ -4908,7 +5027,7 @@ msgstr "主體"
 msgid "Subject Alternative Names"
 msgstr "主體別名"
 
-#: proxmox-widget-toolkit/node/NetworkView.js:383
+#: proxmox-widget-toolkit/node/NetworkView.js:401
 msgid "Subnet mask"
 msgstr "子網路遮罩"
 
@@ -4933,22 +5052,22 @@ msgstr "技術支援合約"
 msgid "Success"
 msgstr "成功"
 
-#: proxmox-widget-toolkit/Utils.js:273
+#: proxmox-widget-toolkit/Utils.js:275
 msgid "Successful"
 msgstr "成功"
 
 #: pmg-gui/js/QueueAdministration.js:40
 #: pve-manager/www/manager6/ceph/Status.js:78
 #: pve-manager/www/manager6/dc/Config.js:25
-#: pve-manager/www/manager6/lxc/Config.js:192
+#: pve-manager/www/manager6/lxc/Config.js:191
 #: pve-manager/www/manager6/node/Config.js:124
 #: pve-manager/www/manager6/pool/Config.js:20
-#: pve-manager/www/manager6/qemu/Config.js:225
+#: pve-manager/www/manager6/qemu/Config.js:224
 #: pve-manager/www/manager6/storage/Browser.js:23
 msgid "Summary"
 msgstr "概觀"
 
-#: pve-manager/www/manager6/window/Settings.js:279
+#: pve-manager/www/manager6/window/Settings.js:286
 msgid "Summary columns"
 msgstr "概觀欄位"
 
@@ -4960,19 +5079,19 @@ msgstr "週日"
 msgid "Superuser"
 msgstr "超級使用者"
 
-#: pve-manager/www/manager6/dc/Config.js:183
+#: pve-manager/www/manager6/dc/Config.js:218
 #: pve-manager/www/manager6/dc/NodeView.js:33
 msgid "Support"
 msgstr "支援"
 
-#: proxmox-widget-toolkit/Utils.js:498
+#: proxmox-widget-toolkit/Utils.js:500
 #: pve-manager/www/manager6/form/BackupModeSelector.js:6
 #: pve-manager/www/manager6/lxc/CmdMenu.js:61
 msgid "Suspend"
 msgstr "暫停"
 
 #: pve-manager/www/manager6/qemu/CmdMenu.js:86
-#: pve-manager/www/manager6/qemu/Config.js:166
+#: pve-manager/www/manager6/qemu/Config.js:167
 msgid "Suspend to disk"
 msgstr "暫停至磁碟"
 
@@ -5028,10 +5147,11 @@ msgid "TLS"
 msgstr "TLS"
 
 #: pmg-gui/js/MailProxyTLSPanel.js:25
-msgid "TLS Domain Policy"
+#, fuzzy
+msgid "TLS Destination Policy"
 msgstr "TLS 網域原則"
 
-#: pmg-gui/js/MailProxyTLSDomains.js:21
+#: pmg-gui/js/MailProxyTLSDestinations.js:21
 msgid "TLS Policy"
 msgstr "TLS 原則"
 
@@ -5041,12 +5161,8 @@ msgstr "TLS 原則"
 msgid "TTY count"
 msgstr "TTY 數量"
 
-#: pve-manager/www/manager6/lxc/Snapshot.js:140
-#: pve-manager/www/manager6/lxc/Snapshot.js:142
-#: pve-manager/www/manager6/lxc/SnapshotTree.js:237
-#: pve-manager/www/manager6/qemu/Snapshot.js:149
-#: pve-manager/www/manager6/qemu/Snapshot.js:151
-#: pve-manager/www/manager6/qemu/SnapshotTree.js:227
+#: pve-manager/www/manager6/tree/SnapshotTree.js:56
+#: pve-manager/www/manager6/tree/SnapshotTree.js:243
 msgid "Take Snapshot"
 msgstr "製作快照"
 
@@ -5084,11 +5200,16 @@ msgstr "目標儲存"
 msgid "Task"
 msgstr "作業"
 
-#: pve-manager/www/manager6/lxc/Config.js:242
+#: pve-manager/www/manager6/lxc/Config.js:241
 #: pve-manager/www/manager6/node/Config.js:386
-#: pve-manager/www/manager6/qemu/Config.js:265
+#: pve-manager/www/manager6/qemu/Config.js:264
 msgid "Task History"
 msgstr "作業記錄"
+
+#: proxmox-widget-toolkit/window/TaskViewer.js:141
+#, fuzzy
+msgid "Task ID"
+msgstr "作業"
 
 #: proxmox-widget-toolkit/window/TaskViewer.js:125
 msgid "Task type"
@@ -5132,6 +5253,10 @@ msgstr "測試字串"
 msgid "Text Replacement"
 msgstr "文字取代"
 
+#: pve-manager/www/manager6/tree/SnapshotTree.js:297
+msgid "The current guest configuration does not support taking new snapshots"
+msgstr ""
+
 #: pve-manager/www/manager6/qemu/HardwareView.js:191
 msgid "The saved VM state will be permanently lost."
 msgstr "已儲存的 VM 狀態將永遠遺失。"
@@ -5146,11 +5271,11 @@ msgstr "Thin Pool"
 msgid "Thin provision"
 msgstr "Thin provision"
 
-#: proxmox-widget-toolkit/Toolkit.js:119
+#: proxmox-widget-toolkit/Toolkit.js:132
 msgid "This is not a valid DNS name"
 msgstr "這是不是一個有效的 DNS 名稱"
 
-#: pve-manager/www/manager6/grid/BackupView.js:166
+#: pve-manager/www/manager6/grid/BackupView.js:162
 #: pve-manager/www/manager6/lxc/Resources.js:202
 #: pve-manager/www/manager6/qemu/HardwareView.js:299
 msgid "This will permanently erase all data."
@@ -5182,7 +5307,7 @@ msgstr "閥值"
 msgid "Time"
 msgstr "時間"
 
-#: pve-manager/www/manager6/dc/TFAEdit.js:401
+#: pve-manager/www/manager6/dc/TFAEdit.js:412
 msgid "Time period"
 msgstr "時段"
 
@@ -5196,12 +5321,11 @@ msgstr "時區"
 msgid "TimeFrame"
 msgstr "時間範圍"
 
-#: pve-manager/www/manager6/Utils.js:909
+#: pve-manager/www/manager6/Utils.js:987
 msgid "Timeout"
 msgstr "逾時"
 
-#: pve-manager/www/manager6/lxc/Snapshot.js:90
-#: pve-manager/www/manager6/qemu/Snapshot.js:90
+#: pve-manager/www/manager6/window/Snapshot.js:75
 msgid "Timestamp"
 msgstr "時間戳記"
 
@@ -5212,7 +5336,7 @@ msgstr "時間戳記"
 msgid "To"
 msgstr "到"
 
-#: pve-manager/www/manager6/dc/TFAEdit.js:468
+#: pve-manager/www/manager6/dc/TFAEdit.js:486
 msgid ""
 "To register a U2F device, connect the device, then click the button and "
 "follow the instructions."
@@ -5241,7 +5365,7 @@ msgstr "切換垃圾郵件資訊"
 msgid "Top Receivers"
 msgstr "收件者排行榜"
 
-#: proxmox-widget-toolkit/Utils.js:53 pmg-gui/js/PostfixQShape.js:122
+#: proxmox-widget-toolkit/Utils.js:54 pmg-gui/js/PostfixQShape.js:122
 #: pmg-gui/js/ServerStatus.js:134 pmg-gui/js/ServerStatus.js:142
 #: pmg-gui/js/ServerStatus.js:158 pve-manager/www/manager6/ceph/OSD.js:642
 #: pve-manager/www/manager6/ceph/Pool.js:149
@@ -5289,7 +5413,7 @@ msgstr "追蹤中心"
 msgid "Traffic"
 msgstr "流量"
 
-#: pmg-gui/js/Transport.js:93 pmg-gui/js/Transport.js:120
+#: pmg-gui/js/Transport.js:142
 msgid "Transport"
 msgstr "轉送"
 
@@ -5307,12 +5431,12 @@ msgid "Two Factor Authentication"
 msgstr "雙因素驗證"
 
 #: proxmox-widget-toolkit/form/NetworkSelector.js:118
-#: proxmox-widget-toolkit/node/NetworkView.js:323 pmg-gui/js/ObjectGroup.js:82
+#: proxmox-widget-toolkit/node/NetworkView.js:341 pmg-gui/js/ObjectGroup.js:82
 #: pmg-gui/js/RuleInfo.js:297 pmg-gui/js/Subscription.js:121
 #: pve-manager/www/manager6/data/ResourceStore.js:64
 #: pve-manager/www/manager6/dc/AuthView.js:106
 #: pve-manager/www/manager6/dc/Backup.js:109
-#: pve-manager/www/manager6/dc/OptionView.js:99
+#: pve-manager/www/manager6/dc/OptionView.js:110
 #: pve-manager/www/manager6/dc/StorageView.js:116
 #: pve-manager/www/manager6/form/GlobalSearchField.js:80
 #: pve-manager/www/manager6/form/IPRefSelector.js:54
@@ -5329,13 +5453,15 @@ msgstr "雙因素驗證"
 #: pve-manager/www/manager6/qemu/OSTypeEdit.js:59
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:106
 #: pve-manager/www/manager6/qemu/ScsiHwEdit.js:13
+#: pve-manager/www/manager6/sdn/ControllerView.js:131
+#: pve-manager/www/manager6/sdn/ZoneView.js:131
 #: pve-manager/www/manager6/storage/ContentView.js:66
 #: pve-manager/www/manager6/storage/ContentView.js:602
 #: pve-manager/www/manager6/storage/StatusView.js:45
 msgid "Type"
 msgstr "類別"
 
-#: pve-manager/www/manager6/dc/OptionView.js:143
+#: pve-manager/www/manager6/dc/OptionView.js:154
 msgid "U2F AppID URL"
 msgstr ""
 
@@ -5343,11 +5469,11 @@ msgstr ""
 msgid "U2F Device successfully connected."
 msgstr "U2F 裝置已成功連接。"
 
-#: pve-manager/www/manager6/dc/OptionView.js:153
+#: pve-manager/www/manager6/dc/OptionView.js:164
 msgid "U2F Origin"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/OptionView.js:134
+#: pve-manager/www/manager6/dc/OptionView.js:145
 msgid "U2F Settings"
 msgstr "U2F 設定"
 
@@ -5356,7 +5482,7 @@ msgid "URL"
 msgstr "URL"
 
 #: pve-manager/www/manager6/qemu/HardwareView.js:263
-#: pve-manager/www/manager6/qemu/HardwareView.js:647
+#: pve-manager/www/manager6/qemu/HardwareView.js:666
 #: pve-manager/www/manager6/qemu/USBEdit.js:122
 msgid "USB Device"
 msgstr "USB 裝置"
@@ -5365,7 +5491,7 @@ msgstr "USB 裝置"
 msgid "Unable to parse network configuration"
 msgstr "無法解析網路設定"
 
-#: pve-manager/www/manager6/dc/TFAEdit.js:382
+#: pve-manager/www/manager6/dc/TFAEdit.js:390
 msgid "Unchanged"
 msgstr "未修改"
 
@@ -5377,7 +5503,7 @@ msgstr "復原縮放"
 msgid "Unique"
 msgstr "唯一"
 
-#: proxmox-widget-toolkit/window/TaskViewer.js:146
+#: proxmox-widget-toolkit/window/TaskViewer.js:149
 msgid "Unique task ID"
 msgstr "唯一作業 ID"
 
@@ -5385,7 +5511,7 @@ msgstr "唯一作業 ID"
 msgid "Unit File"
 msgstr ""
 
-#: proxmox-widget-toolkit/Utils.js:46
+#: proxmox-widget-toolkit/Utils.js:47
 #: pmg-gui/js/dashboard/SubscriptionInfo.js:7
 #: pve-manager/www/manager6/ceph/StatusDetail.js:171
 #: pve-manager/www/manager6/node/Disks.js:30
@@ -5396,7 +5522,7 @@ msgstr "未知"
 msgid "Unknown LDAP address"
 msgstr "未知的 LDAP 位址"
 
-#: proxmox-widget-toolkit/Utils.js:276
+#: proxmox-widget-toolkit/Utils.js:278
 msgid "Unknown error"
 msgstr "未知錯誤"
 
@@ -5404,7 +5530,7 @@ msgstr "未知錯誤"
 msgid "Unkown"
 msgstr "未知"
 
-#: proxmox-widget-toolkit/Utils.js:495
+#: proxmox-widget-toolkit/Utils.js:497
 msgid "Unmount"
 msgstr "取消掛載"
 
@@ -5433,9 +5559,7 @@ msgstr "未使用的磁碟"
 msgid "Up"
 msgstr "上線"
 
-#: proxmox-widget-toolkit/Utils.js:452
-#: pve-manager/www/manager6/lxc/Snapshot.js:131
-#: pve-manager/www/manager6/qemu/Snapshot.js:140
+#: proxmox-widget-toolkit/Utils.js:454 pmg-gui/js/DKIMSettings.js:149
 msgid "Update"
 msgstr "更新"
 
@@ -5451,7 +5575,7 @@ msgstr "立即更新"
 msgid "Update now"
 msgstr "立即更新"
 
-#: proxmox-widget-toolkit/Utils.js:526
+#: proxmox-widget-toolkit/Utils.js:528
 msgid "Update package database"
 msgstr "更新套件資料庫"
 
@@ -5524,7 +5648,7 @@ msgstr "使用灰名單"
 msgid "Use LUNs directly"
 msgstr "直接使用 LUNs"
 
-#: pmg-gui/js/Transport.js:60 pmg-gui/js/Transport.js:162
+#: pmg-gui/js/Transport.js:102 pmg-gui/js/Transport.js:190
 msgid "Use MX"
 msgstr "使用 MX"
 
@@ -5591,7 +5715,7 @@ msgstr "使用平版游標模式"
 msgid "Use {0}"
 msgstr "使用 {0}"
 
-#: proxmox-widget-toolkit/Utils.js:54 pmg-gui/js/ServerStatus.js:134
+#: proxmox-widget-toolkit/Utils.js:55 pmg-gui/js/ServerStatus.js:134
 #: pmg-gui/js/ServerStatus.js:142 pmg-gui/js/ServerStatus.js:158
 #: pve-manager/www/manager6/ceph/OSD.js:630
 #: pve-manager/www/manager6/ceph/Pool.js:132
@@ -5607,9 +5731,9 @@ msgstr "已使用物件"
 #: pve-manager/www/manager6/dc/ACLView.js:119
 #: pve-manager/www/manager6/dc/UserEdit.js:177
 #: pve-manager/www/manager6/form/UserSelector.js:29
-#: pve-manager/www/manager6/qemu/CloudInit.js:195
-#: pve-manager/www/manager6/qemu/CloudInit.js:201
-#: pve-manager/www/manager6/qemu/CloudInit.js:207
+#: pve-manager/www/manager6/qemu/CloudInit.js:199
+#: pve-manager/www/manager6/qemu/CloudInit.js:205
+#: pve-manager/www/manager6/qemu/CloudInit.js:211
 msgid "User"
 msgstr "帳號"
 
@@ -5644,10 +5768,10 @@ msgstr "使用者白名單"
 #: pmg-gui/js/FetchmailView.js:107 pmg-gui/js/LDAPConfig.js:108
 #: pmg-gui/js/LoginView.js:146 pmg-gui/js/UserEdit.js:41
 #: pmg-gui/js/UserView.js:126 pve-manager/www/manager6/dc/Log.js:69
-#: pve-manager/www/manager6/dc/TFAEdit.js:370
+#: pve-manager/www/manager6/dc/TFAEdit.js:378
 #: pve-manager/www/manager6/dc/Tasks.js:102
 #: pve-manager/www/manager6/dc/UserEdit.js:73
-#: pve-manager/www/manager6/dc/UserView.js:129
+#: pve-manager/www/manager6/dc/UserView.js:141
 #: pve-manager/www/manager6/storage/CephFSEdit.js:63
 #: pve-manager/www/manager6/storage/RBDEdit.js:171
 #: pve-manager/www/manager6/window/LoginWindow.js:216
@@ -5663,7 +5787,9 @@ msgstr "使用者統計資料存留期 (日)"
 msgid "Username"
 msgstr "帳號名稱"
 
-#: pve-manager/www/manager6/dc/Config.js:85
+#: pve-manager/www/manager6/dc/Config.js:86
+#: pve-manager/www/manager6/dc/GroupView.js:92
+#: pve-manager/www/manager6/form/GroupSelector.js:35
 msgid "Users"
 msgstr "帳號"
 
@@ -5671,17 +5797,24 @@ msgstr "帳號"
 msgid "Users of '{0}'"
 msgstr "使用者於 '{0}'"
 
+#: pve-manager/www/manager6/qemu/RNGEdit.js:84
+msgid ""
+"Using /dev/random as entropy source is discouraged, as it can lead to host "
+"entropy starvation. /dev/urandom is preferred, and does not lead to a "
+"decrease in security in practice."
+msgstr ""
+
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:123
 msgid "VCPUs"
 msgstr "VCPUs"
 
 #: pve-manager/www/manager6/form/VLanField.js:9
-#: pve-manager/www/manager6/lxc/Network.js:506
+#: pve-manager/www/manager6/lxc/Network.js:513
 msgid "VLAN Tag"
 msgstr "VLAN Tag"
 
-#: proxmox-widget-toolkit/node/NetworkEdit.js:59
-#: proxmox-widget-toolkit/node/NetworkView.js:351
+#: proxmox-widget-toolkit/node/NetworkEdit.js:62
+#: proxmox-widget-toolkit/node/NetworkView.js:369
 msgid "VLAN aware"
 msgstr "VLAN aware"
 
@@ -5702,7 +5835,7 @@ msgstr "VMware 映像格式"
 msgid "VZDump backup file"
 msgstr "VZDump 備份檔案"
 
-#: proxmox-widget-toolkit/Toolkit.js:20 proxmox-widget-toolkit/Toolkit.js:35
+#: proxmox-widget-toolkit/Toolkit.js:25 proxmox-widget-toolkit/Toolkit.js:40
 msgid "Valid CIDR Range"
 msgstr "可用 CIDR 區段"
 
@@ -5713,9 +5846,8 @@ msgstr "有效起始日"
 
 #: proxmox-widget-toolkit/grid/ObjectGrid.js:309 pmg-gui/js/ObjectGroup.js:99
 #: pmg-gui/js/Utils.js:348 pmg-gui/js/Utils.js:393 pmg-gui/js/Utils.js:460
-#: pmg-gui/js/Utils.js:553 pve-manager/www/manager6/lxc/Snapshot.js:109
-#: pve-manager/www/manager6/node/Disks.js:270
-#: pve-manager/www/manager6/qemu/Snapshot.js:118
+#: pmg-gui/js/Utils.js:553 pve-manager/www/manager6/node/Disks.js:270
+#: pve-manager/www/manager6/window/Snapshot.js:128
 msgid "Value"
 msgstr "數值"
 
@@ -5733,7 +5865,7 @@ msgstr "詳細資訊"
 msgid "Verification"
 msgstr "驗證"
 
-#: pve-manager/www/manager6/dc/TFAEdit.js:442
+#: pve-manager/www/manager6/dc/TFAEdit.js:456
 msgid "Verification Code"
 msgstr "驗證碼"
 
@@ -5756,6 +5888,7 @@ msgid "Version"
 msgstr "版本"
 
 #: proxmox-widget-toolkit/node/Tasks.js:68
+#: pve-manager/www/manager6/tree/SnapshotTree.js:26
 msgid "View"
 msgstr "檢視"
 
@@ -5767,7 +5900,7 @@ msgstr "檢視帳號"
 msgid "View Certificate"
 msgstr "檢視憑證"
 
-#: pmg-gui/js/DKIMSettings.js:165
+#: pmg-gui/js/DKIMSettings.js:194
 msgid "View DNS Record"
 msgstr "檢視 DNS 記錄"
 
@@ -5775,6 +5908,12 @@ msgstr "檢視 DNS 記錄"
 #: pmg-gui/js/VirusQuarantineOptions.js:14
 msgid "View images"
 msgstr "檢視影像"
+
+#: pve-manager/www/manager6/qemu/HardwareView.js:309
+#: pve-manager/www/manager6/qemu/HardwareView.js:736
+#: pve-manager/www/manager6/qemu/RNGEdit.js:100
+msgid "VirtIO RNG"
+msgstr ""
 
 #: pve-manager/www/manager6/form/VMSelector.js:67
 #: pve-manager/www/manager6/form/VMSelector.js:78
@@ -5784,11 +5923,11 @@ msgstr "檢視影像"
 #: pve-manager/www/manager6/grid/PoolMembers.js:215
 #: pve-manager/www/manager6/ha/ResourceEdit.js:186
 #: pve-manager/www/manager6/qemu/CreateWizard.js:20
-#: pve-manager/www/manager6/tree/ResourceTree.js:24
+#: pve-manager/www/manager6/tree/ResourceTree.js:28
 msgid "Virtual Machine"
 msgstr "虛擬機"
 
-#: pve-manager/www/manager6/qemu/Config.js:218
+#: pve-manager/www/manager6/qemu/Config.js:217
 msgid "Virtual Machine {0} on node '{1}'"
 msgstr "節點 {1} 上的虛擬機 {0}"
 
@@ -5837,6 +5976,19 @@ msgstr "病毒郵件隔離"
 msgid "Virus info"
 msgstr "病毒郵件資訊"
 
+#: proxmox-widget-toolkit/node/NetworkEdit.js:131
+msgid "Vlan raw device"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/VnetEdit.js:117
+#: pve-manager/www/manager6/sdn/ZoneContentView.js:60
+msgid "Vnet"
+msgstr ""
+
+#: pve-manager/www/manager6/dc/Config.js:167
+msgid "Vnets"
+msgstr ""
+
 #: pve-manager/www/manager6/storage/LVMEdit.js:101
 #: pve-manager/www/manager6/storage/LVMEdit.js:108
 #: pve-manager/www/manager6/storage/LvmThinEdit.js:109
@@ -5844,7 +5996,7 @@ msgstr "病毒郵件資訊"
 msgid "Volume group"
 msgstr "磁區群組"
 
-#: pve-manager/www/manager6/dc/Cluster.js:250
+#: pve-manager/www/manager6/dc/Cluster.js:285
 msgid "Votes"
 msgstr "票數"
 
@@ -5872,17 +6024,17 @@ msgstr "警告：防火牆在資料中心等級仍然設定為關閉。"
 msgid "Warning: The VM currently does not uses 'OVMF (UEFI)' as BIOS."
 msgstr "警告：VM 目前沒有使用 'OVMF (UEFI)' 做為 BIOS。"
 
-#: pmg-gui/js/DKIMSettings.js:128
+#: pmg-gui/js/DKIMSettings.js:155
 msgid ""
 "Warning: You need to update the _domainkey DNS records of all signed domains!"
 msgstr "警告：您需要更新所有已簽署的 _domainkey DNS 記錄！"
 
 #: pmg-gui/js/dashboard/SubscriptionInfo.js:25
-#: pve-manager/www/manager6/dc/Summary.js:272
+#: pve-manager/www/manager6/dc/Summary.js:271
 msgid "Warning: Your subscription levels are not the same."
 msgstr "警告：您的技術支援合約等級不同。"
 
-#: pve-manager/www/manager6/window/Settings.js:182
+#: pve-manager/www/manager6/window/Settings.js:189
 msgid "Webinterface Settings"
 msgstr "網頁介面設定"
 
@@ -5909,7 +6061,7 @@ msgstr "時間物件"
 
 #: pmg-gui/js/MailProxyConfiguration.js:54 pmg-gui/js/QuarantineView.js:23
 #: pmg-gui/js/SpamContextMenu.js:31 pmg-gui/js/SpamQuarantine.js:328
-#: pmg-gui/js/UserBlackWhiteList.js:57 pmg-gui/js/UserBlackWhiteList.js:244
+#: pmg-gui/js/UserBlackWhiteList.js:57 pmg-gui/js/UserBlackWhiteList.js:243
 #: pmg-gui/js/mobile/mailview.js:36 pmg-gui/js/mobile/quarantineview.js:86
 msgid "Whitelist"
 msgstr "白名單"
@@ -5926,13 +6078,13 @@ msgstr "整月"
 msgid "Whole year"
 msgstr "整年"
 
-#: pmg-gui/js/UserBlackWhiteList.js:268
+#: pmg-gui/js/UserBlackWhiteList.js:267
 msgid ""
 "With this feature, you can manually bypass spam checking for certain domains "
 "or E-mail addresses."
 msgstr "此功能可以讓您手動將指定網域或郵件位址略過檢查。"
 
-#: pmg-gui/js/UserBlackWhiteList.js:231
+#: pmg-gui/js/UserBlackWhiteList.js:230
 msgid ""
 "With this feature, you can manually mark E-mails from certain domains or "
 "addresses as spam."
@@ -5979,8 +6131,7 @@ msgstr "年"
 msgid "Yes"
 msgstr "是"
 
-#: pve-manager/www/manager6/lxc/SnapshotTree.js:305
-#: pve-manager/www/manager6/qemu/SnapshotTree.js:294
+#: pve-manager/www/manager6/tree/SnapshotTree.js:367
 msgid "You are here!"
 msgstr "您在這裡！"
 
@@ -5993,7 +6144,7 @@ msgid "You can delete the image from the guest's hardware pane"
 msgstr "您可以從客體的硬體面板中刪除這個映像"
 
 #: pmg-gui/js/dashboard/SubscriptionInfo.js:29
-#: pve-manager/www/manager6/dc/Summary.js:265
+#: pve-manager/www/manager6/dc/Summary.js:264
 msgid "You have at least one node without subscription."
 msgstr "您的節點沒有購買技術支援合約"
 
@@ -6012,7 +6163,7 @@ msgid "You need to create a initial config once."
 msgstr "您需要建立一個初始設定。"
 
 #: pmg-gui/js/dashboard/SubscriptionInfo.js:21
-#: pve-manager/www/manager6/dc/Summary.js:279
+#: pve-manager/www/manager6/dc/Summary.js:278
 msgid "Your subscription status is valid."
 msgstr "您的技術支援合約狀態目前有效。"
 
@@ -6021,13 +6172,38 @@ msgstr "您的技術支援合約狀態目前有效。"
 msgid "ZFS Pool"
 msgstr "ZFS Pool"
 
-#: proxmox-widget-toolkit/Utils.js:533
+#: proxmox-widget-toolkit/Utils.js:535
 msgid "ZFS Storage"
 msgstr "ZFS 儲存"
+
+#: pve-manager/www/manager6/form/SDNZoneSelector.js:26
+#: pve-manager/www/manager6/sdn/VnetEdit.js:48
+msgid "Zone"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/Browser.js:23
+#, fuzzy
+msgid "Zone {0} on node {1}"
+msgstr "節點 {1} 上的儲存 {0}"
+
+#: pve-manager/www/manager6/dc/Config.js:159
+msgid "Zones"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/VnetEdit.js:43
+#: pve-manager/www/manager6/sdn/VnetView.js:99
+#, fuzzy
+msgid "alias"
+msgstr "別名"
 
 #: pve-manager/www/manager6/node/ZFS.js:99
 msgid "ashift"
 msgstr ""
+
+#: pve-manager/www/manager6/sdn/controllers/EvpnEdit.js:22
+#, fuzzy
+msgid "asn"
+msgstr "原因"
 
 #: proxmox-widget-toolkit/form/RRDTypeSelector.js:18
 #: proxmox-widget-toolkit/form/RRDTypeSelector.js:22
@@ -6037,22 +6213,32 @@ msgstr ""
 msgid "average"
 msgstr "平均"
 
+#: proxmox-widget-toolkit/node/NetworkEdit.js:165
+msgid "bond-primary"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/zones/QinQEdit.js:31
+#: pve-manager/www/manager6/sdn/zones/VlanEdit.js:31
+#, fuzzy
+msgid "bridge"
+msgstr "橋接"
+
 #: proxmox-widget-toolkit/node/APT.js:26
 msgid "current"
 msgstr "目前"
 
-#: proxmox-widget-toolkit/Utils.js:49
+#: proxmox-widget-toolkit/Utils.js:50
 msgid "day"
 msgstr "日"
 
-#: proxmox-widget-toolkit/Utils.js:48
+#: proxmox-widget-toolkit/Utils.js:49
 msgid "days"
 msgstr "日"
 
-#: pve-manager/www/manager6/dc/OptionView.js:183
-#: pve-manager/www/manager6/dc/OptionView.js:189
 #: pve-manager/www/manager6/dc/OptionView.js:195
-#: pve-manager/www/manager6/dc/OptionView.js:201
+#: pve-manager/www/manager6/dc/OptionView.js:202
+#: pve-manager/www/manager6/dc/OptionView.js:209
+#: pve-manager/www/manager6/dc/OptionView.js:216
 #: pve-manager/www/manager6/qemu/HDEdit.js:318
 #: pve-manager/www/manager6/qemu/HDEdit.js:327
 #: pve-manager/www/manager6/qemu/HDEdit.js:336
@@ -6063,6 +6249,10 @@ msgstr "預設"
 #: pve-manager/www/manager6/form/CompressionSelector.js:6
 msgid "fast"
 msgstr "壓縮速度較快"
+
+#: pve-manager/www/manager6/sdn/controllers/EvpnEdit.js:34
+msgid "gateway-external-peers"
+msgstr ""
 
 #: pve-manager/www/manager6/form/CompressionSelector.js:7
 msgid "good"
@@ -6076,13 +6266,27 @@ msgstr "時"
 msgid "iSCSI Provider"
 msgstr "iSCSI 提供者"
 
+#: pve-manager/www/manager6/sdn/VnetEdit.js:65
+#: pve-manager/www/manager6/sdn/VnetView.js:117
+msgid "ipv4"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/VnetView.js:123
+msgid "ipv6"
+msgstr ""
+
 #: pve-manager/www/manager6/lxc/FeaturesEdit.js:29
 msgid "keyctl"
 msgstr ""
 
-#: proxmox-widget-toolkit/Toolkit.js:109
+#: proxmox-widget-toolkit/Toolkit.js:122
 msgid "letter"
 msgstr ""
+
+#: pve-manager/www/manager6/sdn/VnetView.js:129
+#, fuzzy
+msgid "mac"
+msgstr "最多 CPU"
 
 #: pve-manager/www/manager6/data/ResourceStore.js:187
 msgid "maxcpu"
@@ -6096,7 +6300,14 @@ msgstr "最多 CPU"
 msgid "maximum"
 msgstr "最大"
 
-#: proxmox-widget-toolkit/Utils.js:52
+#: pve-manager/www/manager6/sdn/VnetView.js:135
+#: pve-manager/www/manager6/sdn/zones/EvpnEdit.js:48
+#: pve-manager/www/manager6/sdn/zones/QinQEdit.js:45
+#: pve-manager/www/manager6/sdn/zones/VxlanEdit.js:41
+msgid "mtu"
+msgstr ""
+
+#: proxmox-widget-toolkit/Utils.js:53
 msgid "never"
 msgstr "永遠"
 
@@ -6104,26 +6315,39 @@ msgstr "永遠"
 msgid "new"
 msgstr "最新"
 
-#: pve-manager/www/manager6/window/Settings.js:379
+#: pve-manager/www/manager6/window/Settings.js:398
 msgid "noVNC Settings"
 msgstr "noVNC 設定"
 
+#: pve-manager/www/manager6/sdn/StatusView.js:66
+msgid "node"
+msgstr ""
+
 #: proxmox-widget-toolkit/Utils.js:44
-#: pve-manager/www/manager6/dc/OptionView.js:177
+#: pve-manager/www/manager6/dc/OptionView.js:188
 msgid "none"
 msgstr "無"
 
-#: pve-manager/www/manager6/dc/Summary.js:210
+#: pve-manager/www/manager6/dc/Summary.js:209
 msgid "of {0} CPU(s)"
 msgstr "於 {0} CPU 數"
 
-#: proxmox-widget-toolkit/Toolkit.js:76
+#: proxmox-widget-toolkit/Toolkit.js:81
 msgid "only unicast addresses are allowed"
 msgstr "僅允許單點傳播位址"
 
 #: pve-manager/www/manager6/form/NetworkCardSelector.js:6
 msgid "paravirtualized"
 msgstr "半虛擬化"
+
+#: pve-manager/www/manager6/sdn/controllers/EvpnEdit.js:28
+msgid "peers"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/zones/VxlanEdit.js:33
+#, fuzzy
+msgid "peers address list"
+msgstr "節點位址"
 
 #: pve-manager/www/manager6/grid/Replication.js:400
 msgid "pending"
@@ -6140,21 +6364,31 @@ msgid ""
 "pveproxy will be restarted with new certificates, please reload the GUI!"
 msgstr "pveproxy 將於重新啟動後套用新的憑證，請重新整理瀏覽器。"
 
-#: proxmox-widget-toolkit/Utils.js:50
+#: proxmox-widget-toolkit/Utils.js:51
 msgid "running"
 msgstr "運作中"
+
+#: pve-manager/www/manager6/sdn/StatusView.js:61
+msgid "sdn"
+msgstr ""
 
 #: pmg-gui/js/Utils.js:585
 msgid "send orig. Mail"
 msgstr "寄送原始郵件"
 
-#: proxmox-widget-toolkit/Utils.js:51
+#: proxmox-widget-toolkit/Utils.js:52
 msgid "stopped"
 msgstr "已停止"
 
 #: pve-manager/www/manager6/grid/Replication.js:375
 msgid "syncing"
 msgstr "同步中"
+
+#: pve-manager/www/manager6/sdn/VnetEdit.js:58
+#: pve-manager/www/manager6/sdn/VnetView.js:111
+#, fuzzy
+msgid "tag"
+msgstr "儲存"
 
 #: pve-manager/www/manager6/grid/Replication.js:46
 #: pve-manager/www/manager6/grid/Replication.js:420
@@ -6166,6 +6400,7 @@ msgstr "同步中"
 #: pve-manager/www/manager6/qemu/HDEdit.js:278
 #: pve-manager/www/manager6/qemu/HDEdit.js:287
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:137
+#: pve-manager/www/manager6/qemu/RNGEdit.js:70
 msgid "unlimited"
 msgstr "不限制"
 
@@ -6181,22 +6416,31 @@ msgstr "較不安全"
 #: pve-manager/www/manager6/lxc/DNS.js:46
 #: pve-manager/www/manager6/lxc/DNS.js:152
 #: pve-manager/www/manager6/lxc/DNS.js:160
-#: pve-manager/www/manager6/qemu/CloudInit.js:243
-#: pve-manager/www/manager6/qemu/CloudInit.js:250
+#: pve-manager/www/manager6/qemu/CloudInit.js:247
+#: pve-manager/www/manager6/qemu/CloudInit.js:254
 msgid "use host settings"
 msgstr "使用 Host 設定"
 
-#: pve-manager/www/manager6/dc/TFAEdit.js:483
+#: pve-manager/www/manager6/dc/TFAEdit.js:501
 msgid "verify current password"
 msgstr "確認目前密碼"
 
-#: pve-manager/www/manager6/qemu/CloudInit.js:270
+#: pve-manager/www/manager6/sdn/zones/EvpnEdit.js:33
+msgid "vrf vxlan tag"
+msgstr ""
+
+#: pve-manager/www/manager6/qemu/CloudInit.js:274
 msgid "with options"
 msgstr ""
 
-#: pve-manager/www/manager6/window/Settings.js:307
+#: pve-manager/www/manager6/window/Settings.js:326
 msgid "xterm.js Settings"
 msgstr "xterm.js 瀏覽器設定"
+
+#: pve-manager/www/manager6/sdn/VnetView.js:105
+#, fuzzy
+msgid "zone"
+msgstr "時區"
 
 #: pmg-gui/js/Dashboard.js:291
 msgid "{0} hours"
@@ -6210,14 +6454,14 @@ msgstr "{0} 沒有初始化。"
 msgid "{0} is not installed on this node."
 msgstr "{0} 沒有安裝在這個節點。"
 
-#: pve-manager/www/manager6/Utils.js:1264
+#: pve-manager/www/manager6/Utils.js:1349
 msgid "{0} not installed."
 msgstr "{0} 沒有安裝。"
 
-#: pve-manager/www/manager6/Utils.js:862
+#: pve-manager/www/manager6/Utils.js:940
 #: pve-manager/www/manager6/ceph/Status.js:265
-#: pve-manager/www/manager6/dc/Summary.js:213
-#: pve-manager/www/manager6/dc/Summary.js:216
+#: pve-manager/www/manager6/dc/Summary.js:212
+#: pve-manager/www/manager6/dc/Summary.js:215
 msgid "{0} of {1}"
 msgstr "{0} 於 {1}"
 
@@ -6229,11 +6473,7 @@ msgstr "{0} 代理者 {1}"
 msgid "{0} seconds"
 msgstr "{0} 秒"
 
-#: pve-manager/www/manager6/lxc/SnapshotTree.js:167
-msgid "{0} to {1} ({2})"
-msgstr "{0} 到 {1} ({2})"
-
-#: pve-manager/www/manager6/Utils.js:853
+#: pve-manager/www/manager6/Utils.js:931
 msgid "{0}% of {1}"
 msgstr "{0}% 於 {1}"
 
@@ -6488,6 +6728,9 @@ msgstr "{0}% 於 {1}"
 #~ msgid "Not Current Version, please upgrade"
 #~ msgstr "不是最新版本，請升級"
 
+#~ msgid "Note: Rollback stops CT"
+#~ msgstr "注意：倒回操作將會停止 CT"
+
 #~ msgid "OTP"
 #~ msgstr "OTP"
 
@@ -6544,6 +6787,9 @@ msgstr "{0}% 於 {1}"
 
 #~ msgid "Ring 1"
 #~ msgstr "Ring 1"
+
+#~ msgid "SMTP Port"
+#~ msgstr "SMTP 連接埠"
 
 #, fuzzy
 #~ msgid "Start All VMs"
@@ -6612,3 +6858,6 @@ msgstr "{0}% 於 {1}"
 #, fuzzy
 #~ msgid "version"
 #~ msgstr "版本"
+
+#~ msgid "{0} to {1} ({2})"
+#~ msgstr "{0} 到 {1} ({2})"
