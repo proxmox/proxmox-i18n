@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pve-manager 31813246103b2582162f422dc34d8077eaee1e01\n"
 "Report-Msgid-Bugs-To: <support@proxmox.com>\n"
-"POT-Creation-Date: Tue Apr 21 10:25:59 2020\n"
+"POT-Creation-Date: Wed Apr 22 15:07:47 2020\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <support@proxmox.com>\n"
@@ -107,7 +107,7 @@ msgstr "خادم Active Directory"
 #: pve-manager/www/manager6/lxc/Resources.js:286
 #: pve-manager/www/manager6/panel/IPSet.js:324
 #: pve-manager/www/manager6/qemu/HardwareView.js:619
-#: pve-manager/www/manager6/sdn/ControllerView.js:99
+#: pve-manager/www/manager6/sdn/ControllerView.js:98
 #: pve-manager/www/manager6/sdn/ZoneView.js:99
 msgid "Add"
 msgstr "اضافة"
@@ -180,6 +180,8 @@ msgstr "متقدم"
 #: pve-manager/www/manager6/grid/FirewallAliases.js:87
 #: pve-manager/www/manager6/lxc/Config.js:299
 #: pve-manager/www/manager6/qemu/Config.js:331
+#: pve-manager/www/manager6/sdn/VnetEdit.js:39
+#: pve-manager/www/manager6/sdn/VnetView.js:94
 msgid "Alias"
 msgstr "الاسم المستعار"
 
@@ -1035,7 +1037,7 @@ msgstr "عدد"
 #: pve-manager/www/manager6/node/LVMThin.js:131
 #: pve-manager/www/manager6/node/ZFS.js:369
 #: pve-manager/www/manager6/panel/IPSet.js:103
-#: pve-manager/www/manager6/sdn/VnetView.js:62
+#: pve-manager/www/manager6/sdn/VnetView.js:59
 msgid "Create"
 msgstr "إنشاء"
 
@@ -1330,6 +1332,7 @@ msgid "Detail"
 msgstr "التفاصيل"
 
 #: proxmox-widget-toolkit/window/TaskViewer.js:64
+#: pve-manager/www/manager6/sdn/ZoneContentView.js:70
 msgid "Details"
 msgstr "تفاصيل"
 
@@ -1569,8 +1572,8 @@ msgstr "اسم(اسماء) خصائص البريد الإلكتروني"
 #: pve-manager/www/manager6/qemu/CloudInit.js:76
 #: pve-manager/www/manager6/qemu/HardwareView.js:421
 #: pve-manager/www/manager6/qemu/Options.js:329
-#: pve-manager/www/manager6/sdn/ControllerView.js:59
-#: pve-manager/www/manager6/sdn/VnetView.js:41
+#: pve-manager/www/manager6/sdn/ControllerView.js:58
+#: pve-manager/www/manager6/sdn/VnetView.js:38
 #: pve-manager/www/manager6/sdn/ZoneView.js:59
 #: pve-manager/www/manager6/tree/SnapshotTree.js:26
 #: pve-manager/www/manager6/tree/SnapshotTree.js:286
@@ -1751,9 +1754,9 @@ msgstr "محو البيانات"
 #: pve-manager/www/manager6/qemu/IPConfigEdit.js:230
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:208
 #: pve-manager/www/manager6/qemu/Smbios1Edit.js:117
-#: pve-manager/www/manager6/sdn/ControllerView.js:117
+#: pve-manager/www/manager6/sdn/ControllerView.js:116
 #: pve-manager/www/manager6/sdn/StatusView.js:50
-#: pve-manager/www/manager6/sdn/VnetView.js:84
+#: pve-manager/www/manager6/sdn/VnetView.js:81
 #: pve-manager/www/manager6/sdn/ZoneView.js:117
 #: pve-manager/www/manager6/storage/ContentView.js:142
 #: pve-manager/www/manager6/storage/ContentView.js:245
@@ -2690,11 +2693,15 @@ msgstr "تسجيل خروج"
 msgid "Logs"
 msgstr "سجلات"
 
+#: pve-manager/www/manager6/sdn/VnetEdit.js:76
+#, fuzzy
+msgid "MAC Address"
+msgstr "عنوان MAC"
+
 #: pve-manager/www/manager6/lxc/Network.js:122
 #: pve-manager/www/manager6/lxc/Network.js:518
 #: pve-manager/www/manager6/qemu/AgentIPView.js:23
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:139
-#: pve-manager/www/manager6/sdn/VnetEdit.js:81
 msgid "MAC address"
 msgstr "عنوان MAC"
 
@@ -3121,7 +3128,7 @@ msgstr ""
 #: pve-manager/www/manager6/qemu/Options.js:28
 #: pve-manager/www/manager6/qemu/Options.js:31
 #: pve-manager/www/manager6/qemu/Options.js:39
-#: pve-manager/www/manager6/sdn/VnetEdit.js:38
+#: pve-manager/www/manager6/sdn/VnetEdit.js:34
 #: pve-manager/www/manager6/storage/ContentView.js:585
 #: pve-manager/www/manager6/tree/SnapshotTree.js:321
 #: pve-manager/www/manager6/window/Clone.js:196
@@ -3352,6 +3359,7 @@ msgstr "لم يتم تكوين {0}."
 #: pve-manager/www/manager6/panel/GuestStatusView.js:58
 #: pve-manager/www/manager6/panel/TemplateStatusView.js:31
 #: pve-manager/www/manager6/qemu/CreateWizard.js:38
+#: pve-manager/www/manager6/sdn/StatusView.js:66
 #: pve-manager/www/manager6/window/Settings.js:218
 msgid "Node"
 msgstr "عقده"
@@ -3373,7 +3381,7 @@ msgstr "اسم العقدة"
 #: pve-manager/www/manager6/dc/NodeView.js:5
 #: pve-manager/www/manager6/ha/GroupSelector.js:18
 #: pve-manager/www/manager6/ha/Groups.js:94
-#: pve-manager/www/manager6/sdn/ZoneView.js:138
+#: pve-manager/www/manager6/sdn/ZoneView.js:136
 #: pve-manager/www/manager6/sdn/zones/EvpnEdit.js:56
 #: pve-manager/www/manager6/sdn/zones/QinQEdit.js:53
 #: pve-manager/www/manager6/sdn/zones/VlanEdit.js:37
@@ -4268,8 +4276,8 @@ msgstr "استئنف"
 #: proxmox-widget-toolkit/node/NetworkView.js:305
 #: pmg-gui/js/SpamDetectorCustom.js:241
 #: pve-manager/www/manager6/button/Revert.js:5
-#: pve-manager/www/manager6/sdn/ControllerView.js:107
-#: pve-manager/www/manager6/sdn/VnetView.js:74
+#: pve-manager/www/manager6/sdn/ControllerView.js:106
+#: pve-manager/www/manager6/sdn/VnetView.js:71
 #: pve-manager/www/manager6/sdn/ZoneView.js:107
 msgid "Revert"
 msgstr "تراجع"
@@ -5003,17 +5011,12 @@ msgstr "الإحصاء"
 #: pve-manager/www/manager6/pool/StatusView.js:6
 #: pve-manager/www/manager6/sdn/Status.js:26
 #: pve-manager/www/manager6/sdn/StatusView.js:71
-#: pve-manager/www/manager6/sdn/ZoneContentView.js:66
+#: pve-manager/www/manager6/sdn/ZoneContentView.js:65
 #: pve-manager/www/manager6/storage/StatusView.js:6
 #: pve-manager/www/manager6/tree/ResourceTree.js:143
 #: pve-manager/www/manager6/tree/SnapshotTree.js:349
 msgid "Status"
 msgstr "الحالة"
-
-#: pve-manager/www/manager6/sdn/ZoneContentView.js:71
-#, fuzzy
-msgid "Status details"
-msgstr "إظهار التفاصيل"
 
 #: proxmox-widget-toolkit/Utils.js:478 proxmox-widget-toolkit/Utils.js:496
 #: proxmox-widget-toolkit/Utils.js:507 proxmox-widget-toolkit/Utils.js:510
@@ -5226,6 +5229,12 @@ msgstr "سياسة TLS"
 #: pve-manager/www/manager6/lxc/Options.js:89
 msgid "TTY count"
 msgstr "عدد TTY"
+
+#: pve-manager/www/manager6/sdn/VnetEdit.js:54
+#: pve-manager/www/manager6/sdn/VnetView.js:104
+#, fuzzy
+msgid "Tag"
+msgstr "تخزين"
 
 #: pve-manager/www/manager6/tree/SnapshotTree.js:56
 #: pve-manager/www/manager6/tree/SnapshotTree.js:243
@@ -5523,8 +5532,8 @@ msgstr "مصادقة الاستيثاق الثنائي (2FA)"
 #: pve-manager/www/manager6/qemu/OSTypeEdit.js:59
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:106
 #: pve-manager/www/manager6/qemu/ScsiHwEdit.js:13
-#: pve-manager/www/manager6/sdn/ControllerView.js:131
-#: pve-manager/www/manager6/sdn/ZoneView.js:131
+#: pve-manager/www/manager6/sdn/ControllerView.js:130
+#: pve-manager/www/manager6/sdn/ZoneView.js:130
 #: pve-manager/www/manager6/storage/ContentView.js:66
 #: pve-manager/www/manager6/storage/ContentView.js:602
 #: pve-manager/www/manager6/storage/StatusView.js:45
@@ -5908,6 +5917,10 @@ msgstr "متوافق مع VMware"
 msgid "VMware image format"
 msgstr "تنسيق صورة VMware"
 
+#: pve-manager/www/manager6/sdn/VnetEdit.js:88
+msgid "VNet"
+msgstr ""
+
 #: pve-manager/www/manager6/Utils.js:554
 msgid "VZDump backup file"
 msgstr "VZDump ملف النسخ الاحتياطي"
@@ -6055,11 +6068,6 @@ msgstr "معلومات الفيروسات"
 
 #: proxmox-widget-toolkit/node/NetworkEdit.js:131
 msgid "Vlan raw device"
-msgstr ""
-
-#: pve-manager/www/manager6/sdn/VnetEdit.js:117
-#: pve-manager/www/manager6/sdn/ZoneContentView.js:60
-msgid "Vnet"
 msgstr ""
 
 #: pve-manager/www/manager6/dc/Config.js:167
@@ -6256,7 +6264,8 @@ msgid "ZFS Storage"
 msgstr "تخزين ZFS"
 
 #: pve-manager/www/manager6/form/SDNZoneSelector.js:26
-#: pve-manager/www/manager6/sdn/VnetEdit.js:48
+#: pve-manager/www/manager6/sdn/VnetEdit.js:44
+#: pve-manager/www/manager6/sdn/VnetView.js:99
 msgid "Zone"
 msgstr ""
 
@@ -6268,12 +6277,6 @@ msgstr "{0} التخزين على {1} العقدة"
 #: pve-manager/www/manager6/dc/Config.js:159
 msgid "Zones"
 msgstr ""
-
-#: pve-manager/www/manager6/sdn/VnetEdit.js:43
-#: pve-manager/www/manager6/sdn/VnetView.js:99
-#, fuzzy
-msgid "alias"
-msgstr "الاسم المستعار"
 
 #: pve-manager/www/manager6/node/ZFS.js:99
 msgid "ashift"
@@ -6345,15 +6348,6 @@ msgstr "ساعيا"
 msgid "iSCSI Provider"
 msgstr "مزود iSCSI"
 
-#: pve-manager/www/manager6/sdn/VnetEdit.js:65
-#: pve-manager/www/manager6/sdn/VnetView.js:117
-msgid "ipv4"
-msgstr ""
-
-#: pve-manager/www/manager6/sdn/VnetView.js:123
-msgid "ipv6"
-msgstr ""
-
 #: pve-manager/www/manager6/lxc/FeaturesEdit.js:29
 msgid "keyctl"
 msgstr "مفتاح keyctl"
@@ -6361,11 +6355,6 @@ msgstr "مفتاح keyctl"
 #: proxmox-widget-toolkit/Toolkit.js:122
 msgid "letter"
 msgstr "رسالة"
-
-#: pve-manager/www/manager6/sdn/VnetView.js:129
-#, fuzzy
-msgid "mac"
-msgstr "الحد الأقصى لوحدة المعالجة المركزية"
 
 #: pve-manager/www/manager6/data/ResourceStore.js:187
 msgid "maxcpu"
@@ -6379,7 +6368,6 @@ msgstr "الحد الأقصى لوحدة المعالجة المركزية"
 msgid "maximum"
 msgstr "الحد الاقصى"
 
-#: pve-manager/www/manager6/sdn/VnetView.js:135
 #: pve-manager/www/manager6/sdn/zones/EvpnEdit.js:48
 #: pve-manager/www/manager6/sdn/zones/QinQEdit.js:45
 #: pve-manager/www/manager6/sdn/zones/VxlanEdit.js:41
@@ -6397,10 +6385,6 @@ msgstr "جديد"
 #: pve-manager/www/manager6/window/Settings.js:398
 msgid "noVNC Settings"
 msgstr "إعدادات noVNC"
-
-#: pve-manager/www/manager6/sdn/StatusView.js:66
-msgid "node"
-msgstr ""
 
 #: proxmox-widget-toolkit/Utils.js:44
 #: pve-manager/www/manager6/dc/OptionView.js:184
@@ -6449,10 +6433,6 @@ msgstr ""
 msgid "running"
 msgstr "قيد التشغيل"
 
-#: pve-manager/www/manager6/sdn/StatusView.js:61
-msgid "sdn"
-msgstr ""
-
 #: pmg-gui/js/Utils.js:610
 msgid "send orig. Mail"
 msgstr "إرسال orig. البريد"
@@ -6464,12 +6444,6 @@ msgstr "توقفت"
 #: pve-manager/www/manager6/grid/Replication.js:375
 msgid "syncing"
 msgstr "المزامنة"
-
-#: pve-manager/www/manager6/sdn/VnetEdit.js:58
-#: pve-manager/www/manager6/sdn/VnetView.js:111
-#, fuzzy
-msgid "tag"
-msgstr "تخزين"
 
 #: pve-manager/www/manager6/grid/Replication.js:46
 #: pve-manager/www/manager6/grid/Replication.js:420
@@ -6518,11 +6492,6 @@ msgstr "مع خيارات"
 msgid "xterm.js Settings"
 msgstr "إعدادات xterm.js"
 
-#: pve-manager/www/manager6/sdn/VnetView.js:105
-#, fuzzy
-msgid "zone"
-msgstr "المنطقة الزمنية"
-
 #: pmg-gui/js/Dashboard.js:291
 msgid "{0} hours"
 msgstr "{0} ساعة"
@@ -6564,8 +6533,24 @@ msgstr "{0}% من {1}"
 #~ msgid "SMTP Port"
 #~ msgstr "منفذ SMTP"
 
+#, fuzzy
+#~ msgid "Status details"
+#~ msgstr "إظهار التفاصيل"
+
 #~ msgid "You are logged in as {0}"
 #~ msgstr "يتم تسجيل الدخول كـ {0}"
+
+#, fuzzy
+#~ msgid "alias"
+#~ msgstr "الاسم المستعار"
+
+#, fuzzy
+#~ msgid "mac"
+#~ msgstr "الحد الأقصى لوحدة المعالجة المركزية"
+
+#, fuzzy
+#~ msgid "zone"
+#~ msgstr "المنطقة الزمنية"
 
 #~ msgid "{0} to {1} ({2})"
 #~ msgstr "{0} إلى {1} ({2})"
