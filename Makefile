@@ -30,7 +30,8 @@ $(PVE_I18N_DEB): | submodule
 
 .PHONY: submodule
 submodule:
-	test -f "pmg-gui/Makefile" || git submodule update --init
+	test  -f pmg-gui/Makefile -a -f proxmox-backup/Makefile -a -f pve-manager/Makefile \
+	    || git submodule update --init
 
 .PHONY: install
 install: ${PMG_LANG_FILES} ${PVE_LANG_FILES} ${PBS_LANG_FILES}
