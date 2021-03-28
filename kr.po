@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: proxmox translations\n"
 "Report-Msgid-Bugs-To: <support@proxmox.com>\n"
-"POT-Creation-Date: Tue Mar  9 16:46:03 2021\n"
+"POT-Creation-Date: Sun Mar 28 17:00:33 2021\n"
 "PO-Revision-Date: 2021-03-08 17:02+0900\n"
 "Last-Translator: Jucheol Kim <jucheol.kim@bitclue.co.kr>\n"
 "Language-Team: BitClue\n"
@@ -44,6 +44,12 @@ msgid ""
 "A newer version was installed but old version still running, please restart"
 msgstr "새 버전이 설치되었으나 이전 버전이 아직 실행중이므로 재시작하십시오"
 
+#: pmg-gui/js/Certificates.js:78
+#, fuzzy
+msgid "ACME Accounts/Challenges"
+msgstr "ACME 계정 추가"
+
+#: proxmox-widget-toolkit/src/window/ACMEAccount.js:40
 #: pve-manager/www/manager6/node/ACME.js:37
 msgid "ACME Directory"
 msgstr "ACME 디렉토리"
@@ -53,9 +59,14 @@ msgstr "ACME 디렉토리"
 msgid "ACPI support"
 msgstr "ACPI 지원"
 
+#: proxmox-widget-toolkit/src/window/ACMEPluginEdit.js:208
 #: pve-manager/www/manager6/dc/ACMEPluginEdit.js:192
 msgid "API Data"
 msgstr "API 데이터"
+
+#: pve-manager/www/manager6/dc/MetricServerView.js:307
+msgid "API Path Prefix"
+msgstr ""
 
 #: proxmox-widget-toolkit/src/window/TaskViewer.js:141
 #: pve-manager/www/manager6/dc/ACLView.js:41
@@ -82,6 +93,15 @@ msgstr "API 토큰 권한허가"
 msgid "API Tokens"
 msgstr "API 토큰"
 
+#: proxmox-widget-toolkit/src/panel/ACMEDomains.js:211
+#: proxmox-widget-toolkit/src/panel/Certificates.js:90
+#: proxmox-widget-toolkit/src/window/Certificates.js:126
+#, fuzzy
+msgid ""
+"API server will be restarted to use new certificates, please reload web-"
+"interface!"
+msgstr "pveproxy가 새 인증서로 다시 시작되므로 GUI를 다시 로드하십시오!"
+
 #: proxmox-backup/www/window/TokenEdit.js:15
 msgid "API token"
 msgstr "API 토큰"
@@ -90,6 +110,7 @@ msgstr "API 토큰"
 msgid "Abort"
 msgstr "중지"
 
+#: proxmox-widget-toolkit/src/window/ACMEAccount.js:116
 #: pve-manager/www/manager6/node/ACME.js:113
 msgid "Accept TOS"
 msgstr "TOS 수락"
@@ -99,11 +120,13 @@ msgstr "TOS 수락"
 msgid "Access Control"
 msgstr "접근관리"
 
+#: proxmox-widget-toolkit/src/window/ACMEAccount.js:154
 #: pmg-gui/js/LDAPConfig.js:242 pmg-gui/js/LDAPUserEditor.js:43
 #: pmg-gui/js/LDAPUserSelector.js:26 pve-manager/www/manager6/node/ACME.js:134
 msgid "Account"
 msgstr "계정"
 
+#: proxmox-widget-toolkit/src/window/ACMEAccount.js:19
 #: pve-manager/www/manager6/node/ACME.js:17
 msgid "Account Name"
 msgstr "계정 이름"
@@ -112,6 +135,7 @@ msgstr "계정 이름"
 msgid "Account attribute name"
 msgstr "계정 속성 이름"
 
+#: proxmox-widget-toolkit/src/panel/ACMEAccount.js:5
 #: pmg-gui/js/LDAPConfig.js:590
 #: pve-manager/www/manager6/dc/ACMEClusterView.js:25
 msgid "Accounts"
@@ -125,26 +149,26 @@ msgstr "계정"
 msgid "Action"
 msgstr "작업"
 
-#: pmg-gui/js/SpamQuarantine.js:128
+#: pmg-gui/js/SpamQuarantine.js:125
 msgid "Action '{0}' for '{1}' items"
 msgstr "'{1}' 항목을 위한 '{0}' 작업"
 
-#: pmg-gui/js/Utils.js:751
+#: pmg-gui/js/Utils.js:778 pmg-gui/js/Utils.js:882
 msgid "Action '{0}' for '{1}' items successful"
 msgstr "'{1}' 항목을 위한 '{0}' 작업 성공"
 
-#: pmg-gui/js/Utils.js:752
+#: pmg-gui/js/Utils.js:779 pmg-gui/js/Utils.js:883
 msgid "Action '{0}' successful"
 msgstr "'{0}' 작업 성공"
 
-#: pmg-gui/js/NavigationTree.js:22 pmg-gui/js/Utils.js:31
+#: pmg-gui/js/NavigationTree.js:22 pmg-gui/js/Utils.js:58
 msgid "Action Objects"
 msgstr "작업 오브젝트"
 
 #: proxmox-backup/www/datastore/Content.js:591
-#: proxmox-backup/www/tape/ChangerStatus.js:578
-#: proxmox-backup/www/tape/ChangerStatus.js:706
-#: proxmox-backup/www/tape/ChangerStatus.js:774
+#: proxmox-backup/www/tape/ChangerStatus.js:633
+#: proxmox-backup/www/tape/ChangerStatus.js:761
+#: proxmox-backup/www/tape/ChangerStatus.js:829
 msgid "Actions"
 msgstr "작업"
 
@@ -162,7 +186,10 @@ msgstr "활성"
 msgid "Active Directory Server"
 msgstr "Active Directory 서버"
 
-#: proxmox-widget-toolkit/src/Utils.js:532
+#: proxmox-widget-toolkit/src/Utils.js:544
+#: proxmox-widget-toolkit/src/panel/ACMEAccount.js:95
+#: proxmox-widget-toolkit/src/panel/ACMEDomains.js:243
+#: proxmox-widget-toolkit/src/panel/ACMEPlugin.js:94
 #: proxmox-widget-toolkit/src/window/Edit.js:288 pmg-gui/js/ActionList.js:101
 #: pmg-gui/js/ClusterAdministration.js:206 pmg-gui/js/FetchmailView.js:70
 #: pmg-gui/js/ObjectGroup.js:183 pmg-gui/js/RuleConfiguration.js:160
@@ -197,13 +224,14 @@ msgstr "Active Directory 서버"
 #: proxmox-backup/www/config/UserView.js:127
 #: proxmox-backup/www/config/VerifyView.js:141
 #: proxmox-backup/www/tape/BackupJobs.js:144
-#: proxmox-backup/www/tape/ChangerConfig.js:81
-#: proxmox-backup/www/tape/DriveConfig.js:117
+#: proxmox-backup/www/tape/ChangerConfig.js:87
+#: proxmox-backup/www/tape/DriveConfig.js:123
 #: proxmox-backup/www/tape/EncryptionKeys.js:99
 #: proxmox-backup/www/tape/PoolConfig.js:90
 msgid "Add"
 msgstr "추가"
 
+#: proxmox-widget-toolkit/src/panel/ACMEDomains.js:310
 #: pve-manager/www/manager6/node/ACME.js:628
 msgid "Add ACME Account"
 msgstr "ACME 계정 추가"
@@ -278,11 +306,11 @@ msgstr "주소"
 msgid "Addresses"
 msgstr "주소"
 
-#: pmg-gui/js/NavigationTree.js:98 proxmox-backup/www/NavigationTree.js:62
+#: pmg-gui/js/NavigationTree.js:104 proxmox-backup/www/NavigationTree.js:62
 msgid "Administration"
 msgstr "관리"
 
-#: pmg-gui/js/Utils.js:17
+#: pmg-gui/js/Utils.js:44
 msgid "Administrator"
 msgstr "관리자"
 
@@ -348,9 +376,9 @@ msgstr "할당됨"
 
 #: proxmox-backup/www/tape/PoolConfig.js:116
 #: proxmox-backup/www/tape/form/PoolSelector.js:30
-#: proxmox-backup/www/tape/window/PoolEdit.js:36
+#: proxmox-backup/www/tape/window/PoolEdit.js:38
 #, fuzzy
-msgid "Allocation"
+msgid "Allocation Policy"
 msgstr "작업"
 
 #: pmg-gui/js/SpamQuarantineOptions.js:66
@@ -398,7 +426,7 @@ msgstr "구성 적용"
 msgid "Apply Custom Scores"
 msgstr "사용자 지정 스코어 적용"
 
-#: pmg-gui/js/Utils.js:823
+#: pmg-gui/js/Utils.js:850
 msgid "Apply custom SpamAssassin scores"
 msgstr "사용자 지정 SpamAssassin 스코어 적용"
 
@@ -406,7 +434,7 @@ msgstr "사용자 지정 SpamAssassin 스코어 적용"
 msgid "Architecture"
 msgstr "아키텍처"
 
-#: pmg-gui/js/Utils.js:430
+#: pmg-gui/js/Utils.js:457
 msgid "Archive Filter"
 msgstr "아카이브 필터"
 
@@ -417,6 +445,11 @@ msgstr "구독 키를 제거하겠습니까?"
 #: pve-manager/www/manager6/qemu/HardwareView.js:445
 msgid "Are you sure you want to detach entry {0}"
 msgstr "{0} 항목을 분리하겠습니까"
+
+#: proxmox-backup/www/tape/DriveStatus.js:220
+#, fuzzy
+msgid "Are you sure you want to erase the inserted tape?"
+msgstr "Ziur zaude VM hau berrezarri nahi duzula?"
 
 #: pmg-gui/js/PBSSnapshotView.js:224
 msgid "Are you sure you want to forget snapshot {0}"
@@ -441,6 +474,11 @@ msgstr "{0} 항목을 제거하겠습니까"
 #: proxmox-backup/www/datastore/Content.js:388
 msgid "Are you sure you want to remove snapshot {0}"
 msgstr "{0} 스냅샷을 제거하겠습니까"
+
+#: proxmox-widget-toolkit/src/panel/Certificates.js:241
+#, fuzzy
+msgid "Are you sure you want to remove the certificate used for {0}"
+msgstr "{0}을 위한 스케줄을 제거하겠습니까"
 
 #: pmg-gui/js/PBSSnapshotView.js:152
 msgid "Are you sure you want to remove the schedule for {0}"
@@ -469,11 +507,11 @@ msgid ""
 "Assisted join: Paste encoded cluster join information and enter password."
 msgstr "가입 지원: 인코딩된 클러스터 조인 정보를 붙여넣고 암호를 입력하시오."
 
-#: pmg-gui/js/Utils.js:544
+#: pmg-gui/js/Utils.js:571
 msgid "Attach orig. Mail"
 msgstr "원본 메일 첨부"
 
-#: pmg-gui/js/AttachmentQuarantine.js:96 pmg-gui/js/NavigationTree.js:116
+#: pmg-gui/js/AttachmentQuarantine.js:96 pmg-gui/js/NavigationTree.js:122
 msgid "Attachment Quarantine"
 msgstr "첨부자료 격리소"
 
@@ -488,7 +526,7 @@ msgstr "속성"
 msgid "Audio Device"
 msgstr "오디오 장치"
 
-#: pmg-gui/js/Utils.js:20
+#: pmg-gui/js/Utils.js:47
 msgid "Auditor"
 msgstr "감사자"
 
@@ -516,7 +554,7 @@ msgstr ""
 msgid "Auto-generate a client encryption key"
 msgstr "클라이언트 암호 키 자동생성"
 
-#: pve-manager/www/manager6/window/Restore.js:80
+#: pve-manager/www/manager6/window/Restore.js:81
 msgid "Autogenerate unique properties, e.g., MAC addresses"
 msgstr "MAC 주소와 같은 고유 속성 자동 생성"
 
@@ -562,7 +600,7 @@ msgstr "TFA 복구 키 추가"
 msgid "Avg. Mail Processing Time"
 msgstr "평균 메일 처리 시간"
 
-#: pmg-gui/js/Utils.js:585
+#: pmg-gui/js/Utils.js:612
 msgid "BCC"
 msgstr "BCC"
 
@@ -585,7 +623,7 @@ msgstr "백스캐터 스코어"
 
 #: pmg-gui/js/BackupConfiguration.js:5 pmg-gui/js/BackupRestore.js:78
 #: pmg-gui/js/BackupRestore.js:81 pmg-gui/js/BackupRestore.js:102
-#: pmg-gui/js/Utils.js:825 pve-manager/www/manager6/Utils.js:1826
+#: pmg-gui/js/Utils.js:852 pve-manager/www/manager6/Utils.js:1826
 #: pve-manager/www/manager6/dc/Config.js:64
 #: pve-manager/www/manager6/lxc/Config.js:254
 #: pve-manager/www/manager6/lxc/MPEdit.js:246
@@ -678,6 +716,7 @@ msgid "Ballooning Device"
 msgstr "벌룬 장치"
 
 #: pve-manager/www/manager6/dc/StorageView.js:156
+#: pve-manager/www/manager6/window/Restore.js:63
 msgid "Bandwidth Limit"
 msgstr "대역폭 제한"
 
@@ -685,14 +724,15 @@ msgstr "대역폭 제한"
 msgid "Bandwidth Limits"
 msgstr "대역폭 제한"
 
-#: proxmox-backup/www/tape/ChangerStatus.js:253
-#: proxmox-backup/www/tape/ChangerStatus.js:519
+#: proxmox-backup/www/tape/ChangerStatus.js:282
+#: proxmox-backup/www/tape/ChangerStatus.js:574
 #, fuzzy
 msgid "Barcode Label"
 msgstr "바코드 레이블 미디어"
 
-#: proxmox-backup/www/Utils.js:375
-msgid "Barcode label media"
+#: proxmox-backup/www/Utils.js:372
+#, fuzzy
+msgid "Barcode-Label Media"
 msgstr "바코드 레이블 미디어"
 
 #: pmg-gui/js/LDAPConfig.js:124
@@ -719,7 +759,7 @@ msgstr "기본 볼륨"
 msgid "Basic"
 msgstr "기본"
 
-#: pve-manager/www/manager6/dc/MetricServerView.js:320
+#: pve-manager/www/manager6/dc/MetricServerView.js:331
 msgid "Batch Size (b)"
 msgstr ""
 
@@ -736,7 +776,7 @@ msgid "Bind User"
 msgstr "사용자 바인드"
 
 #: pmg-gui/js/QuarantineView.js:28 pmg-gui/js/SpamContextMenu.js:37
-#: pmg-gui/js/SpamQuarantine.js:336 pmg-gui/js/UserBlackWhiteList.js:54
+#: pmg-gui/js/SpamQuarantine.js:356 pmg-gui/js/UserBlackWhiteList.js:54
 #: pmg-gui/js/UserBlackWhiteList.js:204 pmg-gui/js/mobile/mailview.js:29
 #: pmg-gui/js/mobile/quarantineview.js:94
 msgid "Blacklist"
@@ -748,6 +788,7 @@ msgstr "블록 디바이스"
 
 #: pve-manager/www/manager6/storage/ZFSEdit.js:68
 #: pve-manager/www/manager6/storage/ZFSPoolEdit.js:86
+#: proxmox-backup/www/tape/DriveStatus.js:308
 msgid "Block Size"
 msgstr "블록 크기"
 
@@ -756,12 +797,7 @@ msgstr "블록 크기"
 msgid "Block encrypted archives and documents"
 msgstr "암호화된 보관 파일 및 문서 차단"
 
-#: proxmox-backup/www/tape/DriveStatus.js:278
-#, fuzzy
-msgid "Blocksize"
-msgstr "블록 크기"
-
-#: pmg-gui/js/Utils.js:539
+#: pmg-gui/js/Utils.js:566
 msgid "Body"
 msgstr "본체"
 
@@ -802,7 +838,7 @@ msgstr "브릿지 포트"
 msgid "Browse"
 msgstr "브라우즈"
 
-#: pve-manager/www/manager6/dc/MetricServerView.js:280
+#: pve-manager/www/manager6/dc/MetricServerView.js:281
 #, fuzzy
 msgid "Bucket"
 msgstr "소킷"
@@ -936,20 +972,21 @@ msgstr ""
 msgid "Capacity"
 msgstr "용량"
 
-#: proxmox-backup/www/Utils.js:487 proxmox-backup/www/tape/ChangerStatus.js:718
-#: proxmox-backup/www/tape/DriveStatus.js:227
+#: proxmox-backup/www/Utils.js:487 proxmox-backup/www/tape/ChangerStatus.js:773
+#: proxmox-backup/www/tape/DriveStatus.js:257
 msgid "Cartridge Memory"
 msgstr ""
 
-#: proxmox-backup/www/tape/ChangerStatus.js:633
-#: proxmox-backup/www/tape/DriveStatus.js:197
+#: proxmox-backup/www/tape/ChangerStatus.js:688
+#: proxmox-backup/www/tape/DriveStatus.js:227
 #: proxmox-backup/www/tape/TapeInventory.js:264
 #, fuzzy
 msgid "Catalog"
 msgstr "카탈로그 미디어"
 
-#: proxmox-backup/www/Utils.js:385
-msgid "Catalog media"
+#: proxmox-backup/www/Utils.js:373
+#, fuzzy
+msgid "Catalog Media"
 msgstr "카탈로그 미디어"
 
 #: pve-manager/www/manager6/ceph/Status.js:57
@@ -972,23 +1009,29 @@ msgstr "설치할 Ceph 버전"
 msgid "CephFS"
 msgstr "CephFS"
 
+#: proxmox-widget-toolkit/src/window/Certificates.js:5
+#: proxmox-widget-toolkit/src/window/Certificates.js:67
 #: pve-manager/www/manager6/node/Certificates.js:31
 #: pve-manager/www/manager6/node/Certificates.js:93
 msgid "Certificate"
 msgstr "인증서"
 
+#: proxmox-widget-toolkit/src/window/Certificates.js:166
 #: pve-manager/www/manager6/node/Certificates.js:183
 msgid "Certificate Chain"
 msgstr "인증서 체인"
 
-#: pve-manager/www/manager6/node/Config.js:183
+#: pmg-gui/js/Certificates.js:5 pmg-gui/js/Certificates.js:28
+#: pmg-gui/js/NavigationTree.js:96 pve-manager/www/manager6/node/Config.js:183
 msgid "Certificates"
 msgstr "인증서"
 
+#: proxmox-widget-toolkit/src/panel/ACMEPlugin.js:5
 #: pve-manager/www/manager6/dc/ACMEClusterView.js:126
 msgid "Challenge Plugins"
 msgstr "챌린지 플러그인"
 
+#: proxmox-widget-toolkit/src/window/ACMEDomains.js:98
 #: pve-manager/www/manager6/node/ACME.js:253
 msgid "Challenge Type"
 msgstr "챌린지 유형"
@@ -1012,7 +1055,7 @@ msgstr "'{0}'의 소유자 변경"
 msgid "Changelog"
 msgstr "변경 로그"
 
-#: proxmox-backup/www/tape/ChangerStatus.js:500
+#: proxmox-backup/www/tape/ChangerStatus.js:555
 #: proxmox-backup/www/tape/window/ChangerEdit.js:8
 #: proxmox-backup/www/tape/window/DriveEdit.js:34
 #, fuzzy
@@ -1054,7 +1097,7 @@ msgstr "포트 선택"
 msgid "ClamAV"
 msgstr "ClamAV"
 
-#: pmg-gui/js/Utils.js:824
+#: pmg-gui/js/Utils.js:851
 msgid "ClamAV update"
 msgstr "ClamAV 업데이트"
 
@@ -1066,7 +1109,7 @@ msgstr "클래스"
 msgid "Clean"
 msgstr "소거"
 
-#: proxmox-backup/www/tape/ChangerStatus.js:641
+#: proxmox-backup/www/tape/ChangerStatus.js:696
 #, fuzzy
 msgid "Clean Drive"
 msgstr "CloudInit 드라이브"
@@ -1193,8 +1236,8 @@ msgstr "명령어"
 #: pmg-gui/js/SpamDetectorCustom.js:132 pmg-gui/js/SpamDetectorCustom.js:176
 #: pmg-gui/js/SpamDetectorCustom.js:280 pmg-gui/js/Transport.js:107
 #: pmg-gui/js/Transport.js:194 pmg-gui/js/UserEdit.js:146
-#: pmg-gui/js/UserView.js:164 pmg-gui/js/Utils.js:507 pmg-gui/js/Utils.js:564
-#: pmg-gui/js/Utils.js:597 pmg-gui/js/Utils.js:633 pmg-gui/js/Utils.js:672
+#: pmg-gui/js/UserView.js:164 pmg-gui/js/Utils.js:534 pmg-gui/js/Utils.js:591
+#: pmg-gui/js/Utils.js:624 pmg-gui/js/Utils.js:660 pmg-gui/js/Utils.js:699
 #: pve-manager/www/manager6/dc/AuthEditBase.js:57
 #: pve-manager/www/manager6/dc/AuthView.js:35
 #: pve-manager/www/manager6/dc/GroupEdit.js:35
@@ -1245,7 +1288,7 @@ msgstr "명령어"
 #: proxmox-backup/www/form/UserSelector.js:42
 #: proxmox-backup/www/tape/BackupJobs.js:259
 #: proxmox-backup/www/tape/PoolConfig.js:135
-#: proxmox-backup/www/tape/window/PoolEdit.js:75
+#: proxmox-backup/www/tape/window/PoolEdit.js:77
 #: proxmox-backup/www/tape/window/TapeBackupJob.js:126
 #: proxmox-backup/www/window/DataStoreEdit.js:157
 #: proxmox-backup/www/window/RemoteEdit.js:124
@@ -1311,7 +1354,7 @@ msgstr "스케쥴 백업구성"
 #: proxmox-widget-toolkit/src/button/Button.js:49
 #: proxmox-widget-toolkit/src/window/SafeDestroy.js:9
 #: pmg-gui/js/RuleConfiguration.js:98 pmg-gui/js/RuleInfo.js:39
-#: pmg-gui/js/SpamQuarantine.js:126 pmg-gui/js/mobile/app.js:31
+#: pmg-gui/js/SpamQuarantine.js:123 pmg-gui/js/mobile/app.js:31
 #: pve-manager/www/manager6/button/Split.js:41
 #: pve-manager/www/manager6/ceph/OSD.js:386
 #: pve-manager/www/manager6/dc/Backup.js:1002
@@ -1329,7 +1372,7 @@ msgstr "스케쥴 백업구성"
 #: pve-manager/www/manager6/qemu/CmdMenu.js:143
 #: pve-manager/www/manager6/qemu/CmdMenu.js:183
 #: pve-manager/www/manager6/qemu/CreateWizard.js:184
-#: pve-manager/www/manager6/window/Restore.js:172
+#: pve-manager/www/manager6/window/Restore.js:173
 #: pve-manager/www/manager6/window/SafeDestroy.js:9
 #: proxmox-backup/www/datastore/Content.js:386
 msgid "Confirm"
@@ -1364,11 +1407,11 @@ msgstr "패스워드 확인"
 msgid "Confirm your ({0}) password"
 msgstr "패스워드 확인"
 
-#: proxmox-widget-toolkit/src/Utils.js:299
-#: proxmox-widget-toolkit/src/Utils.js:417
-#: proxmox-widget-toolkit/src/Utils.js:419
-#: proxmox-widget-toolkit/src/Utils.js:421
-#: proxmox-widget-toolkit/src/Utils.js:423
+#: proxmox-widget-toolkit/src/Utils.js:300
+#: proxmox-widget-toolkit/src/Utils.js:418
+#: proxmox-widget-toolkit/src/Utils.js:420
+#: proxmox-widget-toolkit/src/Utils.js:422
+#: proxmox-widget-toolkit/src/Utils.js:424
 #: pve-manager/www/manager6/Utils.js:664 pve-manager/www/manager6/Utils.js:1628
 msgid "Connection error"
 msgstr "접속 오류"
@@ -1378,7 +1421,7 @@ msgid "Connection failure. Network error or Proxmox VE services not running?"
 msgstr ""
 "접속 실패. 네트워크 오류이거나 Proxmox VE 서비스가 실행되고 있지 않습니다?"
 
-#: proxmox-widget-toolkit/src/Utils.js:565 pmg-gui/js/ServerStatus.js:50
+#: proxmox-widget-toolkit/src/Utils.js:577 pmg-gui/js/ServerStatus.js:50
 #: pve-manager/www/manager6/Utils.js:1815
 #: pve-manager/www/manager6/Utils.js:1820
 #: pve-manager/www/manager6/button/ConsoleButton.js:20
@@ -1401,7 +1444,7 @@ msgid "Console mode"
 msgstr "콘솔 모드"
 
 #: pmg-gui/js/ContactStatistics.js:99 pmg-gui/js/ContactStatistics.js:146
-#: pmg-gui/js/ContactStatistics.js:206 pmg-gui/js/NavigationTree.js:196
+#: pmg-gui/js/ContactStatistics.js:206 pmg-gui/js/NavigationTree.js:202
 msgid "Contact"
 msgstr "연락처"
 
@@ -1433,18 +1476,18 @@ msgstr "{1} 노드의 {0} 컨테이너"
 #: pve-manager/www/manager6/storage/StatusView.js:38
 #: pve-manager/www/manager6/storage/ZFSPoolEdit.js:68
 #: proxmox-backup/www/datastore/Content.js:54
-#: proxmox-backup/www/tape/ChangerStatus.js:566
-#: proxmox-backup/www/tape/ChangerStatus.js:656
-#: proxmox-backup/www/tape/ChangerStatus.js:762
+#: proxmox-backup/www/tape/ChangerStatus.js:621
+#: proxmox-backup/www/tape/ChangerStatus.js:711
+#: proxmox-backup/www/tape/ChangerStatus.js:817
 #: proxmox-backup/www/tape/TapeManagement.js:18
 msgid "Content"
 msgstr "콘텐트"
 
-#: pmg-gui/js/Utils.js:380 pmg-gui/js/Utils.js:447
+#: pmg-gui/js/Utils.js:407 pmg-gui/js/Utils.js:474
 msgid "Content Type"
 msgstr "콘텐트 유형"
 
-#: pmg-gui/js/Utils.js:363
+#: pmg-gui/js/Utils.js:390
 msgid "Content Type Filter"
 msgstr "콘텐트 유형 필터"
 
@@ -1499,7 +1542,7 @@ msgstr "비밀 값 복사"
 msgid "Copy data"
 msgstr "데이터 복사"
 
-#: pmg-gui/js/Utils.js:652
+#: pmg-gui/js/Utils.js:679
 msgid "Copy orignal mail to Attachment Quarantine"
 msgstr "원본 메일을 첨부자료 격리소로 복사"
 
@@ -1526,7 +1569,7 @@ msgstr "클러스터에 Ceph 설치를 확인할 수 없습니다"
 msgid "Count"
 msgstr "카운트"
 
-#: proxmox-widget-toolkit/src/Utils.js:534
+#: proxmox-widget-toolkit/src/Utils.js:546
 #: proxmox-widget-toolkit/src/node/NetworkView.js:308
 #: proxmox-widget-toolkit/src/window/Edit.js:292
 #: pmg-gui/js/ClusterAdministration.js:198 pmg-gui/js/LDAPConfig.js:527
@@ -1559,7 +1602,7 @@ msgstr "카운트"
 #: pve-manager/www/manager6/node/ZFS.js:377
 #: pve-manager/www/manager6/panel/IPSet.js:102
 #: pve-manager/www/manager6/sdn/VnetView.js:61
-#: proxmox-backup/www/DirectoryList.js:49 proxmox-backup/www/Utils.js:376
+#: proxmox-backup/www/DirectoryList.js:49 proxmox-backup/www/Utils.js:374
 #: proxmox-backup/www/Utils.js:396 proxmox-backup/www/ZFSList.js:113
 msgid "Create"
 msgstr "생성"
@@ -1573,7 +1616,7 @@ msgstr "CT 생성"
 msgid "Create CephFS"
 msgstr "CephFS 생성"
 
-#: pmg-gui/js/Utils.js:826 pve-manager/www/manager6/Utils.js:1779
+#: pmg-gui/js/Utils.js:853 pve-manager/www/manager6/Utils.js:1779
 #: pve-manager/www/manager6/dc/Cluster.js:145
 #: pve-manager/www/manager6/dc/ClusterEdit.js:5
 msgid "Create Cluster"
@@ -1588,6 +1631,7 @@ msgstr "장치 노드 생성"
 msgid "Create VM"
 msgstr "VM 생성"
 
+#: proxmox-widget-toolkit/src/window/ACMEAccount.js:164
 #: pve-manager/www/manager6/node/ACME.js:144
 #: proxmox-backup/www/config/TfaView.js:208
 #: proxmox-backup/www/config/TfaView.js:366
@@ -1595,7 +1639,8 @@ msgstr "VM 생성"
 msgid "Created"
 msgstr "생성됨"
 
-#: proxmox-backup/www/tape/window/TapeRestore.js:48
+#: proxmox-backup/www/tape/window/TapeRestore.js:70
+#: proxmox-backup/www/tape/window/TapeRestore.js:80
 #, fuzzy
 msgid "Current User"
 msgstr "현재"
@@ -1654,6 +1699,7 @@ msgstr "DKIM"
 msgid "DNS"
 msgstr "DNS"
 
+#: proxmox-widget-toolkit/src/form/ACME.js:5
 #: pve-manager/www/manager6/form/ACMEAPISelector.js:15
 msgid "DNS API"
 msgstr "DNS API"
@@ -1726,11 +1772,17 @@ msgstr "데이터센터"
 #: proxmox-backup/www/panel/Tasks.js:283
 #: proxmox-backup/www/tape/BackupJobs.js:187
 #: proxmox-backup/www/tape/window/TapeBackup.js:19
-#: proxmox-backup/www/tape/window/TapeRestore.js:36
+#: proxmox-backup/www/tape/window/TapeRestore.js:88
+#: proxmox-backup/www/tape/window/TapeRestore.js:130
 #: proxmox-backup/www/window/DataStoreEdit.js:74
 #: proxmox-backup/www/window/SyncJobEdit.js:17
 msgid "Datastore"
 msgstr "데이터스토어"
+
+#: proxmox-backup/www/tape/window/TapeRestore.js:103
+#, fuzzy
+msgid "Datastore Mapping"
+msgstr "데이터스토어 선택항목"
 
 #: proxmox-backup/www/window/NotifyOptions.js:26
 msgid "Datastore Options"
@@ -1746,8 +1798,8 @@ msgstr "데이터스토어"
 
 #: pmg-gui/js/AttachmentQuarantine.js:130 pmg-gui/js/ContactStatistics.js:75
 #: pmg-gui/js/ReceiverStatistics.js:75 pmg-gui/js/SenderStatistics.js:75
-#: pmg-gui/js/SpamQuarantine.js:275 pmg-gui/js/VirusQuarantine.js:139
-#: pve-manager/www/manager6/grid/BackupView.js:299
+#: pmg-gui/js/SpamQuarantine.js:295 pmg-gui/js/VirusQuarantine.js:139
+#: pve-manager/www/manager6/grid/BackupView.js:289
 #: pve-manager/www/manager6/storage/ContentView.js:343
 #: pve-manager/www/manager6/tree/SnapshotTree.js:351
 msgid "Date"
@@ -1793,7 +1845,7 @@ msgstr "전체 삭제"
 msgid "Deep Scrub OSD.{0}"
 msgstr "OSD.{0} 전체 삭제"
 
-#: proxmox-widget-toolkit/src/Utils.js:52
+#: proxmox-widget-toolkit/src/Utils.js:53
 #: proxmox-widget-toolkit/src/grid/ObjectGrid.js:148
 #: pmg-gui/js/LDAPConfig.js:90 pve-manager/www/manager6/dc/AuthEditAD.js:41
 #: pve-manager/www/manager6/dc/AuthEditBase.js:43
@@ -1808,6 +1860,11 @@ msgstr "기본"
 #: proxmox-backup/www/window/NotifyOptions.js:6
 msgid "Default (Always)"
 msgstr "기본 (항상)"
+
+#: proxmox-backup/www/tape/window/TapeRestore.js:137
+#, fuzzy
+msgid "Default Datastore"
+msgstr "로컬 데이터스토어"
 
 #: pmg-gui/js/MailProxyRelaying.js:10
 msgid "Default Relay"
@@ -1829,7 +1886,7 @@ msgstr "원보에 대한 기본"
 msgid "Defaults to requesting host URI"
 msgstr "호스트 URI 요청 기본"
 
-#: pve-manager/www/manager6/window/Restore.js:63
+#: pve-manager/www/manager6/window/Restore.js:64
 msgid "Defaults to target storage restore limit"
 msgstr "타겟 스토리지 복원 제한 기본"
 
@@ -1846,12 +1903,13 @@ msgid "Delay Warning Time (hours)"
 msgstr "지연 경고 시간 (시간)"
 
 #: pmg-gui/js/AttachmentQuarantine.js:170 pmg-gui/js/SpamContextMenu.js:24
-#: pmg-gui/js/SpamQuarantine.js:348 pmg-gui/js/VirusQuarantine.js:179
+#: pmg-gui/js/SpamQuarantine.js:368 pmg-gui/js/VirusQuarantine.js:179
 #: pmg-gui/js/mobile/mailview.js:43 pmg-gui/js/mobile/quarantineview.js:99
 #: pve-manager/www/manager6/dc/TFAEdit.js:531
 msgid "Delete"
 msgstr "삭제"
 
+#: proxmox-widget-toolkit/src/panel/Certificates.js:239
 #: pve-manager/www/manager6/node/Certificates.js:257
 msgid "Delete Custom Certificate"
 msgstr "사용자 지정 인증서 삭제"
@@ -1881,7 +1939,7 @@ msgstr ""
 "암호 키를 삭제 또는 교체하면 그 키로 생성한 백업을 복구할 수 없을 것입니다!"
 
 #: pmg-gui/js/AttachmentQuarantine.js:164 pmg-gui/js/SpamContextMenu.js:18
-#: pmg-gui/js/SpamQuarantine.js:342 pmg-gui/js/VirusQuarantine.js:173
+#: pmg-gui/js/SpamQuarantine.js:362 pmg-gui/js/VirusQuarantine.js:173
 #: pmg-gui/js/mobile/mailview.js:50 pmg-gui/js/mobile/quarantineview.js:82
 msgid "Deliver"
 msgstr "전달"
@@ -1891,7 +1949,7 @@ msgid "Deliver to"
 msgstr "전달지"
 
 #: proxmox-widget-toolkit/src/node/APT.js:40
-#: proxmox-widget-toolkit/src/node/ServiceView.js:169
+#: proxmox-widget-toolkit/src/node/ServiceView.js:168
 #: proxmox-widget-toolkit/src/node/Tasks.js:186 pmg-gui/js/ActionList.js:134
 #: pmg-gui/js/ObjectGroupList.js:40 pmg-gui/js/SpamInfoGrid.js:54
 #: pve-manager/www/manager6/data/ResourceStore.js:88
@@ -1998,15 +2056,16 @@ msgstr "숫자"
 msgid "Direction"
 msgstr "지침"
 
-#: proxmox-widget-toolkit/src/Utils.js:60
+#: proxmox-widget-toolkit/src/Utils.js:61
+#: proxmox-widget-toolkit/src/window/ACMEAccount.js:174
 #: pve-manager/www/manager6/Utils.js:1782
 #: pve-manager/www/manager6/node/ACME.js:154
 #: pve-manager/www/manager6/storage/DirEdit.js:14
-#: proxmox-backup/www/Utils.js:377 proxmox-backup/www/window/FileBrowser.js:230
+#: proxmox-backup/www/Utils.js:375 proxmox-backup/www/window/FileBrowser.js:230
 msgid "Directory"
 msgstr "디렉토리"
 
-#: pve-manager/www/manager6/Utils.js:1781 proxmox-backup/www/Utils.js:376
+#: pve-manager/www/manager6/Utils.js:1781 proxmox-backup/www/Utils.js:374
 msgid "Directory Storage"
 msgstr "디렉토리 스토리지"
 
@@ -2035,7 +2094,7 @@ msgstr "폐기처리"
 msgid "Discard address verification database"
 msgstr "주소 검증 데이터베이스 폐기처리"
 
-#: pmg-gui/js/Utils.js:660 pmg-gui/js/Utils.js:679
+#: pmg-gui/js/Utils.js:687 pmg-gui/js/Utils.js:706
 msgid "Disclaimer"
 msgstr "면책"
 
@@ -2121,10 +2180,13 @@ msgstr "인코딩된 클러스터 정보가 유효한 것 같지 않습니다!"
 msgid "Does not seem like a valid encoded Cluster Information!"
 msgstr "인코딩된 클러스터 정보가 유효한 것 같지 않습니다!"
 
+#: proxmox-widget-toolkit/src/panel/ACMEDomains.js:382
+#: proxmox-widget-toolkit/src/window/ACMEDomains.js:6
+#: proxmox-widget-toolkit/src/window/ACMEDomains.js:155
 #: pmg-gui/js/DomainStatistics.js:5 pmg-gui/js/DomainStatistics.js:72
-#: pmg-gui/js/DomainStatistics.js:116 pmg-gui/js/NavigationTree.js:178
-#: pmg-gui/js/PostfixQShape.js:116 pmg-gui/js/Utils.js:219
-#: pmg-gui/js/Utils.js:225 pmg-gui/js/Utils.js:234 pmg-gui/js/Utils.js:241
+#: pmg-gui/js/DomainStatistics.js:116 pmg-gui/js/NavigationTree.js:184
+#: pmg-gui/js/PostfixQShape.js:116 pmg-gui/js/Utils.js:246
+#: pmg-gui/js/Utils.js:252 pmg-gui/js/Utils.js:261 pmg-gui/js/Utils.js:268
 #: pve-manager/www/manager6/dc/AuthEditAD.js:16
 #: pve-manager/www/manager6/node/ACME.js:196
 #: pve-manager/www/manager6/node/ACME.js:307
@@ -2138,7 +2200,7 @@ msgid "Down"
 msgstr "아래로"
 
 #: pmg-gui/js/AttachmentGrid.js:50 pmg-gui/js/BackupRestore.js:190
-#: pmg-gui/js/SpamQuarantine.js:317 pmg-gui/js/Subscription.js:60
+#: pmg-gui/js/SpamQuarantine.js:337 pmg-gui/js/Subscription.js:60
 #: pve-manager/www/manager6/Utils.js:1783
 #: pve-manager/www/manager6/node/Subscription.js:59
 #: pve-manager/www/manager6/storage/PBSEdit.js:79
@@ -2166,14 +2228,14 @@ msgstr "안전한 저장소에 보관한 USB (펜) 드라이브로 키를 다운
 msgid "Drag and drop to reorder"
 msgstr "재정렬을 하려면 드래그앤드롭하시오"
 
-#: proxmox-backup/www/Utils.js:182 proxmox-backup/www/Utils.js:375
-#: proxmox-backup/www/Utils.js:379 proxmox-backup/www/Utils.js:380
-#: proxmox-backup/www/Utils.js:381 proxmox-backup/www/Utils.js:383
-#: proxmox-backup/www/Utils.js:384 proxmox-backup/www/Utils.js:385
-#: proxmox-backup/www/Utils.js:389 proxmox-backup/www/tape/BackupJobs.js:199
-#: proxmox-backup/www/tape/ChangerStatus.js:158
-#: proxmox-backup/www/tape/ChangerStatus.js:266
-#: proxmox-backup/www/tape/ChangerStatus.js:303
+#: proxmox-backup/www/Utils.js:182 proxmox-backup/www/Utils.js:372
+#: proxmox-backup/www/Utils.js:373 proxmox-backup/www/Utils.js:376
+#: proxmox-backup/www/Utils.js:377 proxmox-backup/www/Utils.js:379
+#: proxmox-backup/www/Utils.js:380 proxmox-backup/www/Utils.js:385
+#: proxmox-backup/www/Utils.js:391 proxmox-backup/www/tape/BackupJobs.js:199
+#: proxmox-backup/www/tape/ChangerStatus.js:187
+#: proxmox-backup/www/tape/ChangerStatus.js:295
+#: proxmox-backup/www/tape/ChangerStatus.js:332
 #: proxmox-backup/www/tape/DriveStatus.js:10
 #: proxmox-backup/www/tape/EncryptionKeys.js:47
 #: proxmox-backup/www/tape/form/PoolSelector.js:26
@@ -2182,11 +2244,11 @@ msgstr "재정렬을 하려면 드래그앤드롭하시오"
 #: proxmox-backup/www/tape/window/LabelMedia.js:39
 #: proxmox-backup/www/tape/window/TapeBackup.js:29
 #: proxmox-backup/www/tape/window/TapeBackupJob.js:64
-#: proxmox-backup/www/tape/window/TapeRestore.js:41
+#: proxmox-backup/www/tape/window/TapeRestore.js:60
 msgid "Drive"
 msgstr "드라이브"
 
-#: proxmox-backup/www/tape/DriveConfig.js:162
+#: proxmox-backup/www/tape/DriveConfig.js:168
 #: proxmox-backup/www/tape/window/DriveEdit.js:56
 #, fuzzy
 msgid "Drive Number"
@@ -2196,7 +2258,7 @@ msgstr "번호"
 msgid "Drive is busy"
 msgstr ""
 
-#: proxmox-backup/www/tape/ChangerStatus.js:614
+#: proxmox-backup/www/tape/ChangerStatus.js:669
 #: proxmox-backup/www/tape/TapeManagement.js:36
 #, fuzzy
 msgid "Drives"
@@ -2227,13 +2289,15 @@ msgstr "링수 번호의 중복이 허용되지 않습니다."
 msgid "Duration"
 msgstr "지속기간"
 
-#: proxmox-backup/www/tape/DriveStatus.js:281
+#: proxmox-backup/www/tape/DriveStatus.js:311
 msgid "Dynamic"
 msgstr ""
 
+#: proxmox-widget-toolkit/src/window/ACMEAccount.js:31
+#: proxmox-widget-toolkit/src/window/ACMEAccount.js:159
 #: pmg-gui/js/LDAPUserSelector.js:32 pmg-gui/js/UserEdit.js:134
-#: pmg-gui/js/Utils.js:188 pmg-gui/js/Utils.js:194 pmg-gui/js/Utils.js:203
-#: pmg-gui/js/Utils.js:210 pve-manager/www/manager6/dc/UserEdit.js:114
+#: pmg-gui/js/Utils.js:215 pmg-gui/js/Utils.js:221 pmg-gui/js/Utils.js:230
+#: pmg-gui/js/Utils.js:237 pve-manager/www/manager6/dc/UserEdit.js:114
 #: pve-manager/www/manager6/node/ACME.js:29
 #: pve-manager/www/manager6/node/ACME.js:139
 #: proxmox-backup/www/window/UserEdit.js:118
@@ -2278,21 +2342,23 @@ msgstr "이메일 '발신:'"
 msgid "EMail attribute name(s)"
 msgstr "이메일 속성 이름"
 
-#: proxmox-widget-toolkit/src/Utils.js:537
+#: proxmox-widget-toolkit/src/Utils.js:549
 #: proxmox-widget-toolkit/src/node/DNSView.js:46
 #: proxmox-widget-toolkit/src/node/NetworkView.js:106
-#: proxmox-widget-toolkit/src/node/TimeView.js:43 pmg-gui/js/ActionList.js:108
-#: pmg-gui/js/ClamAVDatabase.js:158 pmg-gui/js/DKIMSettings.js:205
-#: pmg-gui/js/FetchmailView.js:76 pmg-gui/js/LDAPConfig.js:522
-#: pmg-gui/js/MailProxyOptions.js:89 pmg-gui/js/MailProxyPorts.js:33
-#: pmg-gui/js/MailProxyRelaying.js:90 pmg-gui/js/MailProxyTLS.js:22
-#: pmg-gui/js/MailProxyTLSDestinations.js:124 pmg-gui/js/MyNetworks.js:74
-#: pmg-gui/js/ObjectGroup.js:192 pmg-gui/js/ObjectGroupList.js:108
-#: pmg-gui/js/PBSConfig.js:118 pmg-gui/js/RelayDomains.js:79
-#: pmg-gui/js/SpamDetectorCustom.js:220 pmg-gui/js/SpamDetectorOptions.js:57
-#: pmg-gui/js/SpamQuarantineOptions.js:75 pmg-gui/js/SystemOptions.js:25
-#: pmg-gui/js/Transport.js:51 pmg-gui/js/UserView.js:102
-#: pmg-gui/js/VirusDetectorOptions.js:49
+#: proxmox-widget-toolkit/src/node/TimeView.js:43
+#: proxmox-widget-toolkit/src/panel/ACMEDomains.js:249
+#: proxmox-widget-toolkit/src/panel/ACMEPlugin.js:100
+#: pmg-gui/js/ActionList.js:108 pmg-gui/js/ClamAVDatabase.js:158
+#: pmg-gui/js/DKIMSettings.js:205 pmg-gui/js/FetchmailView.js:76
+#: pmg-gui/js/LDAPConfig.js:522 pmg-gui/js/MailProxyOptions.js:89
+#: pmg-gui/js/MailProxyPorts.js:33 pmg-gui/js/MailProxyRelaying.js:90
+#: pmg-gui/js/MailProxyTLS.js:22 pmg-gui/js/MailProxyTLSDestinations.js:124
+#: pmg-gui/js/MyNetworks.js:74 pmg-gui/js/ObjectGroup.js:192
+#: pmg-gui/js/ObjectGroupList.js:108 pmg-gui/js/PBSConfig.js:118
+#: pmg-gui/js/RelayDomains.js:79 pmg-gui/js/SpamDetectorCustom.js:220
+#: pmg-gui/js/SpamDetectorOptions.js:57 pmg-gui/js/SpamQuarantineOptions.js:75
+#: pmg-gui/js/SystemOptions.js:25 pmg-gui/js/Transport.js:51
+#: pmg-gui/js/UserView.js:102 pmg-gui/js/VirusDetectorOptions.js:49
 #: pmg-gui/js/VirusQuarantineOptions.js:28
 #: pve-manager/www/manager6/dc/ACMEClusterView.js:189
 #: pve-manager/www/manager6/dc/AuthView.js:113
@@ -2339,8 +2405,8 @@ msgstr "이메일 속성 이름"
 #: proxmox-backup/www/datastore/OptionView.js:29
 #: proxmox-backup/www/datastore/PruneAndGC.js:45
 #: proxmox-backup/www/tape/BackupJobs.js:150
-#: proxmox-backup/www/tape/ChangerConfig.js:88
-#: proxmox-backup/www/tape/DriveConfig.js:124
+#: proxmox-backup/www/tape/ChangerConfig.js:94
+#: proxmox-backup/www/tape/DriveConfig.js:130
 #: proxmox-backup/www/tape/PoolConfig.js:97
 msgid "Edit"
 msgstr "편집"
@@ -2371,20 +2437,16 @@ msgid ""
 msgstr "재부팅하거나 '구성 적용'(Ifupdown2)을 사용하여 활성화하십시오"
 
 #: proxmox-backup/www/tape/BackupJobs.js:205
-#: proxmox-backup/www/tape/DriveStatus.js:187
+#: proxmox-backup/www/tape/DriveStatus.js:205
 #, fuzzy
 msgid "Eject"
 msgstr "거부"
 
+#: proxmox-backup/www/Utils.js:376
 #: proxmox-backup/www/tape/window/TapeBackup.js:50
 #: proxmox-backup/www/tape/window/TapeBackupJob.js:107
 #, fuzzy
 msgid "Eject Media"
-msgstr "미디어 지우기"
-
-#: proxmox-backup/www/Utils.js:380
-#, fuzzy
-msgid "Eject media"
 msgstr "미디어 지우기"
 
 #: pve-manager/www/manager6/dc/OptionView.js:90
@@ -2443,8 +2505,8 @@ msgstr "할당량 사용"
 #: pve-manager/www/manager6/dc/Backup.js:658
 #: pve-manager/www/manager6/dc/Backup.js:1074
 #: pve-manager/www/manager6/dc/MetricServerView.js:75
-#: pve-manager/www/manager6/dc/MetricServerView.js:262
-#: pve-manager/www/manager6/dc/MetricServerView.js:393
+#: pve-manager/www/manager6/dc/MetricServerView.js:263
+#: pve-manager/www/manager6/dc/MetricServerView.js:404
 #: pve-manager/www/manager6/dc/StorageView.js:149
 #: pve-manager/www/manager6/dc/UserEdit.js:92
 #: pve-manager/www/manager6/dc/UserView.js:154
@@ -2475,7 +2537,7 @@ msgid "Encrypt OSD"
 msgstr "OSD 암호화"
 
 #: pve-manager/www/manager6/Utils.js:242
-#: pve-manager/www/manager6/grid/BackupView.js:320
+#: pve-manager/www/manager6/grid/BackupView.js:310
 #: pve-manager/www/manager6/storage/BackupView.js:123
 #: proxmox-backup/www/Utils.js:27 proxmox-backup/www/datastore/Content.js:684
 #: proxmox-backup/www/window/BackupFileDownloader.js:110
@@ -2503,7 +2565,7 @@ msgstr "지문 보기"
 
 #: pve-manager/www/manager6/storage/PBSEdit.js:251
 #: proxmox-backup/www/tape/window/EncryptionEdit.js:8
-#: proxmox-backup/www/tape/window/PoolEdit.js:61
+#: proxmox-backup/www/tape/window/PoolEdit.js:63
 msgid "Encryption Key"
 msgstr "암호화 키"
 
@@ -2517,7 +2579,7 @@ msgid "End"
 msgstr "종료"
 
 #: proxmox-widget-toolkit/src/node/Tasks.js:147
-#: proxmox-widget-toolkit/src/window/TaskViewer.js:173 pmg-gui/js/Utils.js:292
+#: proxmox-widget-toolkit/src/window/TaskViewer.js:173 pmg-gui/js/Utils.js:319
 #: pve-manager/www/manager6/dc/Tasks.js:80
 #: proxmox-backup/www/panel/Tasks.js:326
 msgid "End Time"
@@ -2527,23 +2589,27 @@ msgstr "종료 시간"
 msgid "Entropy source"
 msgstr "엔트로피 소스"
 
-#: proxmox-backup/www/tape/ChangerStatus.js:591
+#: proxmox-backup/www/tape/ChangerStatus.js:646
+#: proxmox-backup/www/tape/DriveStatus.js:215
 #: proxmox-backup/www/tape/TapeInventory.js:205
 #: proxmox-backup/www/tape/window/Erase.js:14
 #, fuzzy
 msgid "Erase"
 msgstr "데이터 지우기"
 
+#: proxmox-backup/www/Utils.js:377
+#, fuzzy
+msgid "Erase Media"
+msgstr "미디어 지우기"
+
 #: pve-manager/www/manager6/Utils.js:1789
 msgid "Erase data"
 msgstr "데이터 지우기"
 
-#: proxmox-backup/www/Utils.js:381
-msgid "Erase media"
-msgstr "미디어 지우기"
-
 #: proxmox-widget-toolkit/src/Utils.js:50
-#: proxmox-widget-toolkit/src/Utils.js:452
+#: proxmox-widget-toolkit/src/Utils.js:453
+#: proxmox-widget-toolkit/src/Utils.js:464
+#: proxmox-widget-toolkit/src/Utils.js:847
 #: proxmox-widget-toolkit/src/button/Button.js:156
 #: proxmox-widget-toolkit/src/node/APT.js:99
 #: proxmox-widget-toolkit/src/node/APT.js:156
@@ -2551,8 +2617,13 @@ msgstr "미디어 지우기"
 #: proxmox-widget-toolkit/src/node/NetworkView.js:132
 #: proxmox-widget-toolkit/src/node/NetworkView.js:159
 #: proxmox-widget-toolkit/src/node/NetworkView.js:326
-#: proxmox-widget-toolkit/src/node/ServiceView.js:70
+#: proxmox-widget-toolkit/src/node/ServiceView.js:69
+#: proxmox-widget-toolkit/src/panel/ACMEDomains.js:139
+#: proxmox-widget-toolkit/src/panel/ACMEDomains.js:178
+#: proxmox-widget-toolkit/src/panel/ACMEDomains.js:202
+#: proxmox-widget-toolkit/src/panel/Certificates.js:98
 #: proxmox-widget-toolkit/src/panel/DiskList.js:101
+#: proxmox-widget-toolkit/src/window/ACMEAccount.js:96
 #: proxmox-widget-toolkit/src/window/Edit.js:162
 #: proxmox-widget-toolkit/src/window/Edit.js:234
 #: proxmox-widget-toolkit/src/window/TaskViewer.js:206
@@ -2568,7 +2639,7 @@ msgstr "미디어 지우기"
 #: pmg-gui/js/RuleInfo.js:75 pmg-gui/js/ServerStatus.js:34
 #: pmg-gui/js/SpamDetectorStatus.js:70 pmg-gui/js/Subscription.js:89
 #: pmg-gui/js/Subscription.js:177 pmg-gui/js/UserBlackWhiteList.js:88
-#: pmg-gui/js/Utils.js:746 pmg-gui/js/ViewMailHeaders.js:48
+#: pmg-gui/js/Utils.js:773 pmg-gui/js/ViewMailHeaders.js:48
 #: pmg-gui/js/mobile/utils.js:44 pmg-gui/js/mobile/utils.js:47
 #: pmg-gui/js/mobile/utils.js:58 pve-manager/www/manager6/Utils.js:1494
 #: pve-manager/www/manager6/Utils.js:1510
@@ -2640,7 +2711,7 @@ msgstr "미디어 지우기"
 #: pve-manager/www/manager6/window/Migrate.js:144
 #: pve-manager/www/manager6/window/Migrate.js:197
 #: pve-manager/www/manager6/window/Prune.js:108
-#: pve-manager/www/manager6/window/Restore.js:123
+#: pve-manager/www/manager6/window/Restore.js:124
 #: proxmox-backup/www/LoginView.js:54 proxmox-backup/www/ServerStatus.js:103
 #: proxmox-backup/www/ServerStatus.js:136 proxmox-backup/www/Subscription.js:90
 #: proxmox-backup/www/Subscription.js:164 proxmox-backup/www/Utils.js:439
@@ -2655,7 +2726,7 @@ msgstr "미디어 지우기"
 #: proxmox-backup/www/datastore/Prune.js:130
 #: proxmox-backup/www/datastore/PruneAndGC.js:31
 #: proxmox-backup/www/tape/BackupJobs.js:102
-#: proxmox-backup/www/tape/ChangerStatus.js:181
+#: proxmox-backup/www/tape/ChangerStatus.js:210
 #: proxmox-backup/www/window/AddWebauthn.js:145
 msgid "Error"
 msgstr "오류"
@@ -2763,6 +2834,8 @@ msgstr "실험적인"
 msgid "Expire"
 msgstr "만료"
 
+#: proxmox-widget-toolkit/src/panel/Certificates.js:46
+#: proxmox-widget-toolkit/src/window/Certificates.js:52
 #: pve-manager/www/manager6/node/Certificates.js:78
 #: pve-manager/www/manager6/node/Certificates.js:325
 msgid "Expires"
@@ -2816,10 +2889,11 @@ msgstr "특징"
 msgid "Fencing"
 msgstr "차폐"
 
-#: pmg-gui/js/Utils.js:339 pmg-gui/js/Utils.js:570
+#: pmg-gui/js/Utils.js:366 pmg-gui/js/Utils.js:597
 msgid "Field"
 msgstr "필드"
 
+#: proxmox-widget-toolkit/src/panel/Certificates.js:13
 #: pve-manager/www/manager6/node/Certificates.js:292
 #: proxmox-backup/www/window/BackupFileDownloader.js:90
 #: proxmox-backup/www/window/FileBrowser.js:231
@@ -2827,7 +2901,7 @@ msgid "File"
 msgstr "파일"
 
 #: pmg-gui/js/AttachmentGrid.js:33 pmg-gui/js/BackupRestore.js:168
-#: pmg-gui/js/Utils.js:411 pmg-gui/js/Utils.js:478
+#: pmg-gui/js/Utils.js:438 pmg-gui/js/Utils.js:505
 #: proxmox-backup/www/window/BackupFileDownloader.js:99
 msgid "Filename"
 msgstr "파일 이름"
@@ -2851,6 +2925,8 @@ msgstr "필터"
 msgid "Filter VMID"
 msgstr "VMID 필터"
 
+#: proxmox-widget-toolkit/src/panel/Certificates.js:58
+#: proxmox-widget-toolkit/src/window/Certificates.js:21
 #: pmg-gui/js/ClusterAdministration.js:57
 #: pmg-gui/js/ClusterAdministration.js:99 pmg-gui/js/PBSRemoteEdit.js:116
 #: pve-manager/www/manager6/dc/ClusterEdit.js:79
@@ -2901,7 +2977,7 @@ msgstr "이름"
 msgid "First day of the year"
 msgstr "한 해의 첫 날"
 
-#: proxmox-backup/www/tape/DriveStatus.js:283
+#: proxmox-backup/www/tape/DriveStatus.js:313
 #, fuzzy
 msgid "Fixed"
 msgstr "혼용"
@@ -2962,7 +3038,7 @@ msgstr "양식 필드에 잘못된 값으로 제출할 수 없습니다"
 #: pve-manager/www/manager6/Toolkit.js:11
 #: pve-manager/www/manager6/form/DiskStorageSelector.js:155
 #: pve-manager/www/manager6/form/FileSelector.js:73
-#: pve-manager/www/manager6/grid/BackupView.js:304
+#: pve-manager/www/manager6/grid/BackupView.js:294
 #: pve-manager/www/manager6/storage/ContentView.js:348
 msgid "Format"
 msgstr "형식"
@@ -2984,17 +3060,19 @@ msgstr "시작할 때 CPU 일시 중지"
 
 #: pmg-gui/js/MailInfo.js:31 pmg-gui/js/MailTracker.js:367
 #: pmg-gui/js/ObjectGroupSelector.js:23 pmg-gui/js/RuleInfo.js:375
-#: pmg-gui/js/Utils.js:32 pmg-gui/js/ViewMailHeaders.js:57
+#: pmg-gui/js/Utils.js:59 pmg-gui/js/ViewMailHeaders.js:57
 msgid "From"
 msgstr "발신"
 
+#: proxmox-widget-toolkit/src/window/Certificates.js:143
+#: proxmox-widget-toolkit/src/window/Certificates.js:174
 #: pve-manager/www/manager6/node/Certificates.js:164
 #: pve-manager/www/manager6/node/Certificates.js:191
 msgid "From File"
 msgstr "파일로부터"
 
-#: proxmox-backup/www/tape/ChangerStatus.js:40
-#: proxmox-backup/www/tape/ChangerStatus.js:73
+#: proxmox-backup/www/tape/ChangerStatus.js:63
+#: proxmox-backup/www/tape/ChangerStatus.js:99
 #, fuzzy
 msgid "From Slot"
 msgstr "파일로부터"
@@ -3019,6 +3097,11 @@ msgstr "전체 클론"
 msgid "GC Schedule"
 msgstr "GC 스케줄"
 
+#: proxmox-backup/www/Utils.js:378
+#, fuzzy
+msgid "Garbage Collect"
+msgstr "GC (Garbage Collection)"
+
 #: proxmox-backup/www/window/NotifyOptions.js:78
 msgid "Garbage Collection"
 msgstr "GC (Garbage Collection)"
@@ -3026,10 +3109,6 @@ msgstr "GC (Garbage Collection)"
 #: proxmox-backup/www/datastore/PruneAndGC.js:69
 msgid "Garbage Collection Schedule"
 msgstr "GC 스케줄"
-
-#: proxmox-backup/www/Utils.js:382
-msgid "Garbage collect"
-msgstr "GC (Garbage Collection)"
 
 #: proxmox-backup/www/dashboard/TaskSummary.js:29
 msgid "Garbage collections"
@@ -3076,7 +3155,7 @@ msgstr "그래픽카드"
 msgid "Greylisted Mails"
 msgstr "그레이리스트 메일"
 
-#: proxmox-widget-toolkit/src/Utils.js:62 pmg-gui/js/LDAPGroupEditor.js:89
+#: proxmox-widget-toolkit/src/Utils.js:63 pmg-gui/js/LDAPGroupEditor.js:89
 #: pve-manager/www/manager6/dc/ACLView.js:27
 #: pve-manager/www/manager6/dc/ACLView.js:125
 #: pve-manager/www/manager6/dc/GroupEdit.js:22
@@ -3217,7 +3296,7 @@ msgstr "해시 정책"
 msgid "Header"
 msgstr "헤더"
 
-#: pmg-gui/js/Utils.js:552
+#: pmg-gui/js/Utils.js:579
 msgid "Header Attribute"
 msgstr "헤더 속성"
 
@@ -3234,11 +3313,11 @@ msgid "Health"
 msgstr "건강"
 
 #: proxmox-widget-toolkit/src/button/HelpButton.js:8
-#: proxmox-widget-toolkit/src/button/HelpButton.js:73
+#: proxmox-widget-toolkit/src/button/HelpButton.js:73 pmg-gui/js/Utils.js:23
 msgid "Help"
 msgstr "도움말"
 
-#: pmg-gui/js/Utils.js:18
+#: pmg-gui/js/Utils.js:45
 msgid "Help Desk"
 msgstr "헬프 데스크"
 
@@ -3260,6 +3339,7 @@ msgstr "최대 절전 모드 VM 상태"
 msgid "Hide Internal Hosts"
 msgstr "내부 호스트 숨김"
 
+#: proxmox-widget-toolkit/src/window/ACMEPluginEdit.js:214
 #: pve-manager/www/manager6/dc/ACMEPluginEdit.js:198
 #: proxmox-backup/www/tape/EncryptionKeys.js:120
 #: proxmox-backup/www/tape/form/KeySelector.js:24
@@ -3328,7 +3408,7 @@ msgstr "핫플러그"
 msgid "Hour"
 msgstr "시간"
 
-#: pmg-gui/js/HourlyMailDistribution.js:68 pmg-gui/js/NavigationTree.js:166
+#: pmg-gui/js/HourlyMailDistribution.js:68 pmg-gui/js/NavigationTree.js:172
 msgid "Hourly Distribution"
 msgstr "시간별 분포"
 
@@ -3338,9 +3418,10 @@ msgstr "표시할 시간"
 
 #: pmg-gui/js/ClusterAdministration.js:234 pmg-gui/js/PBSRemoteEdit.js:35
 #: pve-manager/www/manager6/dc/Cluster.js:281 proxmox-backup/www/Utils.js:501
-#: proxmox-backup/www/tape/ChangerStatus.js:561
-#: proxmox-backup/www/tape/ChangerStatus.js:650
-#: proxmox-backup/www/tape/ChangerStatus.js:757
+#: proxmox-backup/www/tape/ChangerStatus.js:25
+#: proxmox-backup/www/tape/ChangerStatus.js:616
+#: proxmox-backup/www/tape/ChangerStatus.js:705
+#: proxmox-backup/www/tape/ChangerStatus.js:812
 msgid "ID"
 msgstr "ID"
 
@@ -3372,8 +3453,8 @@ msgstr "IOMMU 그룹"
 msgid "IP"
 msgstr "IP"
 
-#: pmg-gui/js/ClusterAdministration.js:93 pmg-gui/js/Utils.js:250
-#: pmg-gui/js/Utils.js:256 pve-manager/www/manager6/dc/ClusterEdit.js:71
+#: pmg-gui/js/ClusterAdministration.js:93 pmg-gui/js/Utils.js:277
+#: pmg-gui/js/Utils.js:283 pve-manager/www/manager6/dc/ClusterEdit.js:71
 msgid "IP Address"
 msgstr "IP 주소"
 
@@ -3381,7 +3462,7 @@ msgstr "IP 주소"
 msgid "IP Config"
 msgstr "IP 구성"
 
-#: pmg-gui/js/Utils.js:265 pmg-gui/js/Utils.js:271
+#: pmg-gui/js/Utils.js:292 pmg-gui/js/Utils.js:298
 msgid "IP Network"
 msgstr "IP 네트워크"
 
@@ -3444,18 +3525,18 @@ msgstr "ISO 이미지"
 msgid "Idle"
 msgstr ""
 
-#: proxmox-backup/www/tape/ChangerStatus.js:29
-#: proxmox-backup/www/tape/ChangerStatus.js:780
+#: proxmox-backup/www/tape/ChangerStatus.js:52
+#: proxmox-backup/www/tape/ChangerStatus.js:835
 #, fuzzy
 msgid "Import"
 msgstr "지원"
 
-#: proxmox-backup/www/tape/ChangerStatus.js:754
+#: proxmox-backup/www/tape/ChangerStatus.js:809
 #: proxmox-backup/www/tape/window/ChangerEdit.js:41
 msgid "Import-Export Slots"
 msgstr ""
 
-#: proxmox-backup/www/tape/ChangerConfig.js:126
+#: proxmox-backup/www/tape/ChangerConfig.js:132
 msgid "Import/Export Slots"
 msgstr ""
 
@@ -3463,12 +3544,12 @@ msgstr ""
 msgid "Important: Save your Encryption Key"
 msgstr "중요: 암호화 키를 저장하십시오"
 
-#: pmg-gui/js/Utils.js:87 pve-manager/www/manager6/ceph/StatusDetail.js:37
+#: pmg-gui/js/Utils.js:114 pve-manager/www/manager6/ceph/StatusDetail.js:37
 #, fuzzy
 msgid "In"
 msgstr "들임"
 
-#: pmg-gui/js/Utils.js:89
+#: pmg-gui/js/Utils.js:116
 #, fuzzy
 msgid "In & Out"
 msgstr "들임과 나감"
@@ -3531,7 +3612,7 @@ msgstr "정보"
 
 #: pmg-gui/js/ClusterAdministration.js:72
 #: pve-manager/www/manager6/dc/ClusterEdit.js:307
-#: proxmox-backup/www/tape/DriveStatus.js:334
+#: proxmox-backup/www/tape/DriveStatus.js:364
 msgid "Information"
 msgstr "정보"
 
@@ -3539,7 +3620,7 @@ msgstr "정보"
 msgid "Ingress"
 msgstr "진입"
 
-#: proxmox-widget-toolkit/src/Utils.js:559
+#: proxmox-widget-toolkit/src/Utils.js:571
 #: proxmox-widget-toolkit/src/panel/DiskList.js:197
 msgid "Initialize Disk with GPT"
 msgstr "디스크를 GPT로 초기화"
@@ -3590,6 +3671,7 @@ msgstr "간격"
 msgid "Invalid Value"
 msgstr "잘못된 값"
 
+#: proxmox-widget-toolkit/src/Utils.js:847
 #: pve-manager/www/manager6/Utils.js:1494
 #: pve-manager/www/manager6/Utils.js:1510
 msgid "Invalid file size: "
@@ -3599,24 +3681,27 @@ msgstr "잘못된 파일 크기 "
 msgid "Invalid permission path."
 msgstr "무효한 권한 경로."
 
-#: proxmox-backup/www/tape/ChangerStatus.js:290
-#: proxmox-backup/www/tape/ChangerStatus.js:525
-#: proxmox-backup/www/tape/ChangerStatus.js:572
-#: proxmox-backup/www/tape/ChangerStatus.js:662
-#: proxmox-backup/www/tape/ChangerStatus.js:768
+#: proxmox-backup/www/tape/ChangerStatus.js:319
+#: proxmox-backup/www/tape/ChangerStatus.js:580
+#: proxmox-backup/www/tape/ChangerStatus.js:627
+#: proxmox-backup/www/tape/ChangerStatus.js:717
+#: proxmox-backup/www/tape/ChangerStatus.js:823
 #: proxmox-backup/www/tape/TapeManagement.js:24
 #, fuzzy
 msgid "Inventory"
 msgstr "인벤토리 업데이트"
 
-#: proxmox-backup/www/Utils.js:383
-msgid "Inventory update"
+#: proxmox-backup/www/Utils.js:379
+#, fuzzy
+msgid "Inventory Update"
 msgstr "인벤토리 업데이트"
 
 #: proxmox-backup/www/window/AddWebauthn.js:105
 msgid "Is this token already registered?"
 msgstr ""
 
+#: proxmox-widget-toolkit/src/panel/Certificates.js:18
+#: proxmox-widget-toolkit/src/window/Certificates.js:26
 #: pve-manager/www/manager6/node/Certificates.js:52
 #: pve-manager/www/manager6/node/Certificates.js:297
 msgid "Issuer"
@@ -3661,7 +3746,7 @@ msgstr "작업 ID"
 msgid "Join"
 msgstr "가입하기"
 
-#: pmg-gui/js/Utils.js:827 pve-manager/www/manager6/Utils.js:1780
+#: pmg-gui/js/Utils.js:854 pve-manager/www/manager6/Utils.js:1780
 #: pve-manager/www/manager6/dc/Cluster.js:161
 msgid "Join Cluster"
 msgstr "클러스터 가입"
@@ -3783,7 +3868,7 @@ msgstr "키 크기"
 msgid "Keyboard Layout"
 msgstr "키보드 레이아웃"
 
-#: pmg-gui/js/Utils.js:157
+#: pmg-gui/js/Utils.js:184
 msgid "LDAP Group"
 msgstr "LDAP 그룹"
 
@@ -3791,7 +3876,7 @@ msgstr "LDAP 그룹"
 msgid "LDAP Server"
 msgstr "LDAP 서버"
 
-#: pmg-gui/js/Utils.js:164
+#: pmg-gui/js/Utils.js:191
 msgid "LDAP User"
 msgstr "LDAP 사용자"
 
@@ -3828,15 +3913,11 @@ msgstr "레이블 미디어"
 msgid "Label Information"
 msgstr "정보"
 
-#: proxmox-backup/www/tape/ChangerStatus.js:625
-#: proxmox-backup/www/tape/DriveStatus.js:177
+#: proxmox-backup/www/Utils.js:380 proxmox-backup/www/tape/ChangerStatus.js:680
+#: proxmox-backup/www/tape/DriveStatus.js:195
 #: proxmox-backup/www/tape/window/LabelMedia.js:8
 #, fuzzy
 msgid "Label Media"
-msgstr "레이블 미디어"
-
-#: proxmox-backup/www/Utils.js:384
-msgid "Label media"
 msgstr "레이블 미디어"
 
 #: proxmox-widget-toolkit/src/window/LanguageEdit.js:30
@@ -3908,7 +3989,7 @@ msgstr "사용할 수 있는 복구 키가 부족합니다. 새 세트를 생성
 msgid "Letter Spacing"
 msgstr "문자 간격"
 
-#: pmg-gui/js/Utils.js:308
+#: pmg-gui/js/Utils.js:335
 msgid "Level"
 msgstr "레벨"
 
@@ -3945,12 +4026,17 @@ msgstr "연결된 클론"
 msgid "Live Mode"
 msgstr "라이브 모드"
 
-#: proxmox-backup/www/tape/ChangerStatus.js:597
+#: proxmox-backup/www/tape/ChangerStatus.js:652
 #, fuzzy
 msgid "Load"
 msgstr "로드하는 중"
 
-#: proxmox-backup/www/tape/ChangerStatus.js:140
+#: proxmox-backup/www/Utils.js:381
+#, fuzzy
+msgid "Load Media"
+msgstr "레이블 미디어"
+
+#: proxmox-backup/www/tape/ChangerStatus.js:169
 msgid "Load Media into Drive"
 msgstr ""
 
@@ -3966,16 +4052,12 @@ msgstr "SSH 키 파일 로드"
 msgid "Load average"
 msgstr "평균 부하"
 
-#: proxmox-backup/www/Utils.js:378
-#, fuzzy
-msgid "Load media"
-msgstr "레이블 미디어"
-
+#: proxmox-widget-toolkit/src/window/ACMEAccount.js:79
 #: pve-manager/www/manager6/node/ACME.js:76
 msgid "Loading"
 msgstr "로드하는 중"
 
-#: proxmox-widget-toolkit/src/Utils.js:291
+#: proxmox-widget-toolkit/src/Utils.js:292
 msgid "Loading..."
 msgstr "로드하는 중..."
 
@@ -4022,7 +4104,7 @@ msgstr "로그"
 msgid "Log In"
 msgstr "로그 인"
 
-#: proxmox-backup/www/Utils.js:386
+#: proxmox-backup/www/Utils.js:382
 msgid "Log Rotation"
 msgstr "로그 회전"
 
@@ -4177,15 +4259,15 @@ msgstr "제조업체"
 msgid "Match"
 msgstr "일치"
 
-#: pmg-gui/js/Utils.js:472
+#: pmg-gui/js/Utils.js:499
 msgid "Match Archive Filename"
 msgstr "아카이브 파일 이름 일치"
 
-#: pmg-gui/js/Utils.js:331
+#: pmg-gui/js/Utils.js:358
 msgid "Match Field"
 msgstr "필드 일치"
 
-#: pmg-gui/js/Utils.js:405
+#: pmg-gui/js/Utils.js:432
 msgid "Match Filename"
 msgstr "파일 이름 일치"
 
@@ -4231,7 +4313,7 @@ msgstr "최대 작업자/벌크 작업"
 msgid "Maximum characters"
 msgstr "최대 문자 수"
 
-#: proxmox-backup/www/tape/ChangerStatus.js:154
+#: proxmox-backup/www/tape/ChangerStatus.js:183
 #: proxmox-backup/www/tape/TapeInventory.js:86
 #: proxmox-backup/www/tape/TapeInventory.js:127
 #: proxmox-backup/www/tape/window/Erase.js:37
@@ -4240,7 +4322,7 @@ msgstr ""
 
 #: proxmox-backup/www/tape/BackupJobs.js:193
 #: proxmox-backup/www/tape/window/LabelMedia.js:61
-#: proxmox-backup/www/tape/window/PoolEdit.js:8
+#: proxmox-backup/www/tape/window/PoolEdit.js:10
 #: proxmox-backup/www/tape/window/TapeBackup.js:24
 #: proxmox-backup/www/tape/window/TapeBackupJob.js:59
 #, fuzzy
@@ -4253,12 +4335,12 @@ msgid "Media Pools"
 msgstr "풀"
 
 #: proxmox-backup/www/tape/TapeInventory.js:249
-#: proxmox-backup/www/tape/window/TapeRestore.js:20
+#: proxmox-backup/www/tape/window/TapeRestore.js:44
 msgid "Media Set"
 msgstr ""
 
-#: proxmox-backup/www/tape/BackupOverview.js:255
-#: proxmox-backup/www/tape/window/TapeRestore.js:27
+#: proxmox-backup/www/tape/BackupOverview.js:286
+#: proxmox-backup/www/tape/window/TapeRestore.js:51
 msgid "Media Set UUID"
 msgstr ""
 
@@ -4402,10 +4484,10 @@ msgstr "모드"
 #: pve-manager/www/manager6/form/CPUModelSelector.js:31
 #: pve-manager/www/manager6/node/ZFS.js:130
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:132
-#: proxmox-backup/www/tape/ChangerConfig.js:116
-#: proxmox-backup/www/tape/ChangerStatus.js:689
-#: proxmox-backup/www/tape/DriveConfig.js:152
-#: proxmox-backup/www/tape/DriveStatus.js:376
+#: proxmox-backup/www/tape/ChangerConfig.js:122
+#: proxmox-backup/www/tape/ChangerStatus.js:744
+#: proxmox-backup/www/tape/DriveConfig.js:158
+#: proxmox-backup/www/tape/DriveStatus.js:406
 #: proxmox-backup/www/tape/form/ChangerSelector.js:45
 #: proxmox-backup/www/tape/form/DriveSelector.js:36
 #: proxmox-backup/www/tape/form/TapeDevicePathSelector.js:29
@@ -4531,15 +4613,18 @@ msgstr "현재"
 #: proxmox-widget-toolkit/src/grid/ObjectGrid.js:306
 #: proxmox-widget-toolkit/src/node/NetworkEdit.js:244
 #: proxmox-widget-toolkit/src/node/NetworkView.js:346
-#: proxmox-widget-toolkit/src/node/ServiceView.js:157
+#: proxmox-widget-toolkit/src/node/ServiceView.js:156
+#: proxmox-widget-toolkit/src/panel/ACMEAccount.js:61
+#: proxmox-widget-toolkit/src/window/ACMEAccount.js:54
+#: proxmox-widget-toolkit/src/window/Certificates.js:16
 #: proxmox-widget-toolkit/src/window/ZFSDetail.js:124
 #: pmg-gui/js/ActionList.js:127 pmg-gui/js/ClamAVDatabase.js:81
 #: pmg-gui/js/ObjectGroupList.js:35 pmg-gui/js/ObjectGroupList.js:144
 #: pmg-gui/js/RuleEditor.js:19 pmg-gui/js/RuleInfo.js:295
 #: pmg-gui/js/RuleInfo.js:346 pmg-gui/js/SpamDetectorCustom.js:120
 #: pmg-gui/js/SpamDetectorCustom.js:164 pmg-gui/js/SpamDetectorCustom.js:268
-#: pmg-gui/js/UserView.js:157 pmg-gui/js/Utils.js:502 pmg-gui/js/Utils.js:559
-#: pmg-gui/js/Utils.js:592 pmg-gui/js/Utils.js:628 pmg-gui/js/Utils.js:667
+#: pmg-gui/js/UserView.js:157 pmg-gui/js/Utils.js:529 pmg-gui/js/Utils.js:586
+#: pmg-gui/js/Utils.js:619 pmg-gui/js/Utils.js:655 pmg-gui/js/Utils.js:694
 #: pmg-gui/js/VirusCharts.js:25 pve-manager/www/manager6/ceph/FS.js:25
 #: pve-manager/www/manager6/ceph/FS.js:177
 #: pve-manager/www/manager6/ceph/Pool.js:14
@@ -4554,7 +4639,7 @@ msgstr "현재"
 #: pve-manager/www/manager6/dc/GroupView.js:79
 #: pve-manager/www/manager6/dc/MetricServerView.js:64
 #: pve-manager/www/manager6/dc/MetricServerView.js:208
-#: pve-manager/www/manager6/dc/MetricServerView.js:374
+#: pve-manager/www/manager6/dc/MetricServerView.js:385
 #: pve-manager/www/manager6/dc/NodeView.js:11
 #: pve-manager/www/manager6/dc/PoolEdit.js:22
 #: pve-manager/www/manager6/dc/PoolView.js:79
@@ -4568,7 +4653,7 @@ msgstr "현재"
 #: pve-manager/www/manager6/form/UserSelector.js:36
 #: pve-manager/www/manager6/form/VMSelector.js:46
 #: pve-manager/www/manager6/form/VMSelector.js:251
-#: pve-manager/www/manager6/grid/BackupView.js:286
+#: pve-manager/www/manager6/grid/BackupView.js:276
 #: pve-manager/www/manager6/grid/FirewallAliases.js:27
 #: pve-manager/www/manager6/grid/FirewallAliases.js:168
 #: pve-manager/www/manager6/grid/PoolMembers.js:78
@@ -4602,17 +4687,17 @@ msgstr "현재"
 #: proxmox-backup/www/config/UserView.js:195
 #: proxmox-backup/www/dashboard/DataStoreStatistics.js:57
 #: proxmox-backup/www/form/UserSelector.js:33
-#: proxmox-backup/www/tape/ChangerConfig.js:101
-#: proxmox-backup/www/tape/ChangerStatus.js:668
-#: proxmox-backup/www/tape/DriveConfig.js:137
-#: proxmox-backup/www/tape/DriveStatus.js:358
+#: proxmox-backup/www/tape/ChangerConfig.js:107
+#: proxmox-backup/www/tape/ChangerStatus.js:723
+#: proxmox-backup/www/tape/DriveConfig.js:143
+#: proxmox-backup/www/tape/DriveStatus.js:388
 #: proxmox-backup/www/tape/PoolConfig.js:111
 #: proxmox-backup/www/tape/form/ChangerSelector.js:24
 #: proxmox-backup/www/tape/form/DriveSelector.js:22
 #: proxmox-backup/www/tape/form/PoolSelector.js:22
 #: proxmox-backup/www/tape/window/ChangerEdit.js:24
 #: proxmox-backup/www/tape/window/DriveEdit.js:24
-#: proxmox-backup/www/tape/window/PoolEdit.js:26
+#: proxmox-backup/www/tape/window/PoolEdit.js:28
 #: proxmox-backup/www/window/CreateDirectory.js:38
 #: proxmox-backup/www/window/DataStoreEdit.js:117
 #: proxmox-backup/www/window/FileBrowser.js:199
@@ -4623,6 +4708,10 @@ msgstr "이름"
 #: pve-manager/www/manager6/storage/ContentView.js:291
 msgid "Name, Format"
 msgstr "이름, 형식"
+
+#: proxmox-backup/www/tape/window/TapeRestore.js:225
+msgid "Need at least one mapping"
+msgstr ""
 
 #: pve-manager/www/manager6/lxc/FeaturesEdit.js:37
 msgid "Nesting"
@@ -4650,7 +4739,7 @@ msgstr "네트워크"
 msgid "Network Config"
 msgstr "네트워크 구성"
 
-#: proxmox-widget-toolkit/src/Utils.js:542
+#: proxmox-widget-toolkit/src/Utils.js:554
 #: pve-manager/www/manager6/lxc/Network.js:328
 #: pve-manager/www/manager6/qemu/HardwareView.js:238
 #: pve-manager/www/manager6/qemu/HardwareView.js:655
@@ -4685,7 +4774,7 @@ msgstr "네크워크"
 msgid "Never"
 msgstr "절대 안 함"
 
-#: proxmox-backup/www/tape/BackupOverview.js:223
+#: proxmox-backup/www/tape/BackupOverview.js:254
 #, fuzzy
 msgid "New Backup"
 msgstr "테이프 백업"
@@ -4727,10 +4816,12 @@ msgstr "다음 만기 일자"
 msgid "No"
 msgstr "아니오"
 
+#: proxmox-widget-toolkit/src/panel/ACMEDomains.js:301
 #: pve-manager/www/manager6/node/ACME.js:619
 msgid "No Account available."
 msgstr "사용 가능한 계정 없음."
 
+#: proxmox-widget-toolkit/src/panel/ACMEAccount.js:56
 #: pve-manager/www/manager6/dc/ACMEClusterView.js:73
 msgid "No Accounts configured"
 msgstr "구성한 계정 없음"
@@ -4776,6 +4867,7 @@ msgstr "찾는 디스크가 없음"
 msgid "No Disks unused"
 msgstr "미사용 디스크가 없음"
 
+#: proxmox-widget-toolkit/src/panel/ACMEDomains.js:15
 #: pve-manager/www/manager6/node/ACME.js:354
 msgid "No Domains configured"
 msgstr "도메인 구성이 없음"
@@ -4804,6 +4896,7 @@ msgstr "선택한 OSD가 없음"
 msgid "No Objects"
 msgstr "객체가 없음"
 
+#: proxmox-widget-toolkit/src/panel/ACMEPlugin.js:47
 #: pve-manager/www/manager6/dc/ACMEClusterView.js:163
 msgid "No Plugins configured"
 msgstr "플러그인 구성이 없음"
@@ -4853,6 +4946,7 @@ msgstr "원격 백업이 없음"
 msgid "No cache"
 msgstr "캐시가 없음"
 
+#: proxmox-widget-toolkit/src/window/Certificates.js:137
 #: pve-manager/www/manager6/node/Certificates.js:158
 msgid "No change"
 msgstr "변경 없음"
@@ -4866,7 +4960,7 @@ msgstr "변경 없음"
 #: pmg-gui/js/Dashboard.js:431 pmg-gui/js/DomainStatistics.js:66
 #: pmg-gui/js/DomainStatistics.js:110 pmg-gui/js/LDAPConfig.js:228
 #: pmg-gui/js/LDAPConfig.js:408 pmg-gui/js/MailTracker.js:264
-#: pmg-gui/js/QuarantineList.js:12 pmg-gui/js/QuarantineList.js:245
+#: pmg-gui/js/QuarantineList.js:12 pmg-gui/js/QuarantineList.js:315
 #: pmg-gui/js/ReceiverStatistics.js:113 pmg-gui/js/SenderStatistics.js:105
 #: pmg-gui/js/UserBlackWhiteList.js:16 pmg-gui/js/UserBlackWhiteList.js:153
 #: pmg-gui/js/VirusCharts.js:12 pmg-gui/js/VirusQuarantine.js:101
@@ -4882,6 +4976,11 @@ msgstr "사용 가능한 기본값이 없음"
 #: proxmox-backup/www/window/BackupFileDownloader.js:89
 msgid "No file selected"
 msgstr "선택한 파일이 없음"
+
+#: pmg-gui/js/QuarantineList.js:251
+#, fuzzy
+msgid "No match found"
+msgstr "찾는 태스크가 없음"
 
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:103
 msgid "No network device"
@@ -4921,7 +5020,7 @@ msgstr "찾는 씬 풀이 없음"
 msgid "No updates available."
 msgstr "가능한 업데이트가 없음."
 
-#: proxmox-widget-toolkit/src/Utils.js:459
+#: proxmox-widget-toolkit/src/Utils.js:471
 #: pmg-gui/js/mobile/quarantineview.js:51 pmg-gui/js/mobile/utils.js:145
 #: pmg-gui/js/mobile/utils.js:151 proxmox-backup/www/Dashboard.js:398
 msgid "No valid subscription"
@@ -5005,7 +5104,7 @@ msgstr "없음"
 msgid "Normalized"
 msgstr "정규화"
 
-#: proxmox-backup/www/tape/ChangerStatus.js:464
+#: proxmox-backup/www/tape/ChangerStatus.js:519
 #, fuzzy
 msgid "Not Labeled"
 msgstr "레이블 미디어"
@@ -5051,8 +5150,8 @@ msgstr ""
 "참고: 서명한 피일의 시그니처는 서버에서 검증할 수 없습니다. 이 작업을 할 클라"
 "이언트를 사용하십시오."
 
-#: pve-manager/www/manager6/grid/BackupView.js:260
-#: pve-manager/www/manager6/grid/BackupView.js:293
+#: pve-manager/www/manager6/grid/BackupView.js:250
+#: pve-manager/www/manager6/grid/BackupView.js:283
 #: pve-manager/www/manager6/node/Config.js:133
 #: pve-manager/www/manager6/panel/NotesView.js:5
 #: pve-manager/www/manager6/storage/ContentView.js:337
@@ -5061,26 +5160,19 @@ msgstr ""
 msgid "Notes"
 msgstr "노트"
 
-#: proxmox-backup/www/datastore/OptionView.js:45
-msgid "Notfiy"
-msgstr "알림"
-
-#: proxmox-backup/www/datastore/OptionView.js:62
-msgid "Notfiy User"
-msgstr "알림 사용자"
-
-#: pmg-gui/js/Utils.js:495
+#: pmg-gui/js/Utils.js:522
 msgid "Notification"
 msgstr "알림"
 
-#: pmg-gui/js/PBSRemoteEdit.js:60
+#: pmg-gui/js/PBSRemoteEdit.js:60 proxmox-backup/www/datastore/OptionView.js:45
 #, fuzzy
 msgid "Notify"
 msgstr "알림 사용자"
 
+#: proxmox-backup/www/datastore/OptionView.js:62
 #: proxmox-backup/www/tape/window/TapeBackup.js:55
 #: proxmox-backup/www/tape/window/TapeBackupJob.js:70
-#: proxmox-backup/www/tape/window/TapeRestore.js:47
+#: proxmox-backup/www/tape/window/TapeRestore.js:69
 #: proxmox-backup/www/window/NotifyOptions.js:54
 msgid "Notify User"
 msgstr "알림 사용자"
@@ -5104,9 +5196,9 @@ msgstr "노드 수"
 #: proxmox-backup/www/Utils.js:220
 #: proxmox-backup/www/dashboard/TaskSummary.js:163
 #: proxmox-backup/www/panel/Tasks.js:259
-#: proxmox-backup/www/tape/ChangerStatus.js:31
-#: proxmox-backup/www/tape/ChangerStatus.js:64
-#: proxmox-backup/www/tape/ChangerStatus.js:139
+#: proxmox-backup/www/tape/ChangerStatus.js:54
+#: proxmox-backup/www/tape/ChangerStatus.js:90
+#: proxmox-backup/www/tape/ChangerStatus.js:168
 #: proxmox-backup/www/tape/window/LabelMedia.js:9
 msgid "OK"
 msgstr "확인"
@@ -5159,6 +5251,7 @@ msgstr ""
 msgid "Online"
 msgstr "온라인"
 
+#: proxmox-widget-toolkit/src/window/ACMEDomains.js:119
 #: pve-manager/www/manager6/node/ACME.js:274
 msgid "Only 5 Domains with type DNS can be configured"
 msgstr "DNS 유형의 도메인을 5개만 구성할 수 있습니다"
@@ -5187,7 +5280,7 @@ msgstr "태스트 열기"
 #: pve-manager/www/manager6/qemu/Config.js:326
 #: proxmox-backup/www/DirectoryList.js:71
 #: proxmox-backup/www/datastore/Panel.js:90
-#: proxmox-backup/www/tape/DriveStatus.js:288
+#: proxmox-backup/www/tape/DriveStatus.js:318
 msgid "Options"
 msgstr "옵션"
 
@@ -5202,11 +5295,13 @@ msgstr "주문하기"
 msgid "Order Certificate"
 msgstr "인증서 주문하기"
 
+#: proxmox-widget-toolkit/src/panel/ACMEDomains.js:461
+#: proxmox-widget-toolkit/src/panel/ACMEDomains.js:475
 #: pve-manager/www/manager6/node/ACME.js:574
 msgid "Order Certificates Now"
 msgstr "지금 인증서 주문하기"
 
-#: pve-manager/www/manager6/dc/MetricServerView.js:270
+#: pve-manager/www/manager6/dc/MetricServerView.js:271
 #, fuzzy
 msgid "Organization"
 msgstr "파편화"
@@ -5229,7 +5324,7 @@ msgstr ""
 "다른 클러스터 구성원이 이 서비스의 최신 버전을 사용하므로 업그레이드한 후 다"
 "시 시작하십시오"
 
-#: pmg-gui/js/Utils.js:88 pve-manager/www/manager6/ceph/StatusDetail.js:40
+#: pmg-gui/js/Utils.js:115 pve-manager/www/manager6/ceph/StatusDetail.js:40
 msgid "Out"
 msgstr "나감"
 
@@ -5275,6 +5370,7 @@ msgstr "기존 파일 덮어쓰기"
 
 #: proxmox-backup/www/config/SyncView.js:211
 #: proxmox-backup/www/datastore/Content.js:679
+#: proxmox-backup/www/tape/window/TapeRestore.js:79
 msgid "Owner"
 msgstr "소유자"
 
@@ -5284,6 +5380,7 @@ msgstr "소유자"
 msgid "PCI Device"
 msgstr "PCI 장치"
 
+#: proxmox-widget-toolkit/src/panel/Certificates.js:63
 #: pve-manager/www/manager6/node/Certificates.js:342
 msgid "PEM"
 msgstr "PEM"
@@ -5355,16 +5452,16 @@ msgstr "여기에 암호화한 클러스터 정보를 붙여넣으십시오"
 #: proxmox-widget-toolkit/src/panel/PermissionView.js:27
 #: pve-manager/www/manager6/dc/ACLView.js:18
 #: pve-manager/www/manager6/dc/ACLView.js:141
-#: pve-manager/www/manager6/dc/MetricServerView.js:408
+#: pve-manager/www/manager6/dc/MetricServerView.js:419
 #: pve-manager/www/manager6/dc/PermissionView.js:26
 #: pve-manager/www/manager6/dc/StorageView.js:130
 #: pve-manager/www/manager6/lxc/MPEdit.js:237
 #: pve-manager/www/manager6/node/Directory.js:70
 #: proxmox-backup/www/DirectoryList.js:56
 #: proxmox-backup/www/config/ACLView.js:178
-#: proxmox-backup/www/tape/ChangerConfig.js:106
-#: proxmox-backup/www/tape/DriveConfig.js:142
-#: proxmox-backup/www/tape/DriveStatus.js:394
+#: proxmox-backup/www/tape/ChangerConfig.js:112
+#: proxmox-backup/www/tape/DriveConfig.js:148
+#: proxmox-backup/www/tape/DriveStatus.js:424
 #: proxmox-backup/www/tape/form/ChangerSelector.js:31
 #: proxmox-backup/www/tape/form/TapeDevicePathSelector.js:15
 #: proxmox-backup/www/tape/window/ChangerEdit.js:34
@@ -5526,7 +5623,7 @@ msgid ""
 msgstr ""
 "다음 IP 주소와 지문을 사용하여 추가할 노드에서 '가입' 버튼을 사용하십시오."
 
-#: proxmox-widget-toolkit/src/Utils.js:374
+#: proxmox-widget-toolkit/src/Utils.js:375
 #: proxmox-widget-toolkit/src/window/LanguageEdit.js:23
 #: pmg-gui/js/LoginView.js:51 pmg-gui/js/LoginView.js:101
 #: pve-manager/www/manager6/dc/Backup.js:926
@@ -5539,12 +5636,16 @@ msgstr ""
 msgid "Please wait..."
 msgstr "기다리십시오..."
 
+#: proxmox-widget-toolkit/src/form/ACME.js:84
+#: proxmox-widget-toolkit/src/panel/ACMEDomains.js:400
+#: proxmox-widget-toolkit/src/panel/ACMEPlugin.js:52
 #: pve-manager/www/manager6/dc/ACMEClusterView.js:168
 #: pve-manager/www/manager6/form/ACMEPluginSelector.js:5
 #: pve-manager/www/manager6/node/ACME.js:710
 msgid "Plugin"
 msgstr "플러그인"
 
+#: proxmox-widget-toolkit/src/window/ACMEPluginEdit.js:178
 #: pve-manager/www/manager6/dc/ACMEPluginEdit.js:165
 msgid "Plugin ID"
 msgstr "클러그인 ID"
@@ -5564,7 +5665,7 @@ msgstr "정책"
 #: pve-manager/www/manager6/storage/RBDEdit.js:125
 #: pve-manager/www/manager6/storage/RBDEdit.js:133
 #: pve-manager/www/manager6/storage/ZFSEdit.js:61
-#: proxmox-backup/www/tape/ChangerStatus.js:272
+#: proxmox-backup/www/tape/ChangerStatus.js:301
 msgid "Pool"
 msgstr "풀"
 
@@ -5582,7 +5683,7 @@ msgstr "풀 기반"
 msgid "Pool to backup"
 msgstr "백업할 풀"
 
-#: proxmox-backup/www/tape/BackupOverview.js:239
+#: proxmox-backup/www/tape/BackupOverview.js:270
 msgid "Pool/Media Set/Snapshot"
 msgstr ""
 
@@ -5596,7 +5697,7 @@ msgstr "풀"
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:45
 #: pve-manager/www/manager6/dc/MetricServerView.js:86
 #: pve-manager/www/manager6/dc/MetricServerView.js:224
-#: pve-manager/www/manager6/dc/MetricServerView.js:401
+#: pve-manager/www/manager6/dc/MetricServerView.js:412
 #: pve-manager/www/manager6/form/USBSelector.js:65
 msgid "Port"
 msgstr "포트"
@@ -5613,7 +5714,7 @@ msgstr "포트"
 msgid "Ports/Slaves"
 msgstr "포트/슬래이브"
 
-#: pmg-gui/js/NavigationTree.js:172 pmg-gui/js/RBLStatistics.js:10
+#: pmg-gui/js/NavigationTree.js:178 pmg-gui/js/RBLStatistics.js:10
 msgid "Postscreen"
 msgstr "포스트스크린"
 
@@ -5650,6 +5751,7 @@ msgstr "용지에 인쇄하고 라미네이트 처리하여 안전한 장소에 
 msgid "Priority"
 msgstr "우선 순위"
 
+#: proxmox-widget-toolkit/src/window/Certificates.js:135
 #: pve-manager/www/manager6/node/Certificates.js:156
 msgid "Private Key (Optional)"
 msgstr "개인 키 (선택)"
@@ -5668,6 +5770,11 @@ msgstr "권한"
 #: proxmox-widget-toolkit/src/window/TaskViewer.js:150
 msgid "Process ID"
 msgstr "프로세스 ID"
+
+#: pmg-gui/js/SpamQuarantine.js:133
+#, fuzzy
+msgid "Processing..."
+msgstr "이메일 처리"
 
 #: pve-manager/www/manager6/panel/TemplateStatusView.js:40
 #: pve-manager/www/manager6/qemu/HardwareView.js:94
@@ -5715,7 +5822,7 @@ msgstr "보호"
 #: pmg-gui/js/LDAPConfig.js:55 pmg-gui/js/LDAPConfig.js:559
 #: pmg-gui/js/Transport.js:91 pmg-gui/js/Transport.js:160
 #: pve-manager/www/manager6/dc/MetricServerView.js:233
-#: pve-manager/www/manager6/dc/MetricServerView.js:422
+#: pve-manager/www/manager6/dc/MetricServerView.js:433
 #: pve-manager/www/manager6/form/IPProtocolSelector.js:9
 #: pve-manager/www/manager6/grid/FirewallRules.js:189
 #: pve-manager/www/manager6/grid/FirewallRules.js:710
@@ -5734,7 +5841,7 @@ msgstr "Proxmox 메일 게이트웨이 로그인"
 msgid "Proxmox VE Login"
 msgstr "Proxmox VE 로그인"
 
-#: pve-manager/www/manager6/window/Prune.js:210 proxmox-backup/www/Utils.js:387
+#: pve-manager/www/manager6/window/Prune.js:210 proxmox-backup/www/Utils.js:383
 msgid "Prune"
 msgstr "프룬"
 
@@ -5778,15 +5885,19 @@ msgstr "프룬 그룹"
 msgid "Prunes"
 msgstr "프룬"
 
+#: proxmox-widget-toolkit/src/panel/Certificates.js:28
 #: pve-manager/www/manager6/node/Certificates.js:307
 msgid "Public Key Alogrithm"
 msgstr "공개 키 알고리즘"
 
+#: proxmox-widget-toolkit/src/panel/Certificates.js:34
+#: proxmox-widget-toolkit/src/window/Certificates.js:41
 #: pve-manager/www/manager6/node/Certificates.js:67
 #: pve-manager/www/manager6/node/Certificates.js:313
 msgid "Public Key Size"
 msgstr "공개 키 크기"
 
+#: proxmox-widget-toolkit/src/window/Certificates.js:36
 #: pve-manager/www/manager6/node/Certificates.js:62
 msgid "Public Key Type"
 msgstr "공개 키 유형"
@@ -5831,7 +5942,7 @@ msgstr "격리방역"
 msgid "Quarantine Host"
 msgstr "격리방역 호스트"
 
-#: pmg-gui/js/Utils.js:19
+#: pmg-gui/js/Utils.js:46
 msgid "Quarantine Manager"
 msgstr "격리방역 관리자"
 
@@ -5843,7 +5954,7 @@ msgstr "격리방역 포트"
 msgid "Queue Administration"
 msgstr "큐 관리"
 
-#: pmg-gui/js/NavigationTree.js:140
+#: pmg-gui/js/NavigationTree.js:146
 msgid "Queues"
 msgstr "큐"
 
@@ -5917,15 +6028,16 @@ msgstr "나중에 인증서 재 검증 (일 수)"
 msgid "Read"
 msgstr "읽기"
 
-#: proxmox-backup/www/tape/ChangerStatus.js:730
-#: proxmox-backup/www/tape/DriveStatus.js:207
+#: proxmox-backup/www/tape/ChangerStatus.js:785
+#: proxmox-backup/www/tape/DriveStatus.js:237
 #, fuzzy
 msgid "Read Label"
 msgstr "객체 읽ㄱ"
 
-#: pve-manager/www/manager6/window/Restore.js:62
-msgid "Read Limit"
-msgstr "읽기 제헌"
+#: proxmox-backup/www/Utils.js:384
+#, fuzzy
+msgid "Read Objects"
+msgstr "객체 읽ㄱ"
 
 #: pve-manager/www/manager6/qemu/HDEdit.js:257
 #: pve-manager/www/manager6/qemu/HDEdit.js:275
@@ -5936,10 +6048,6 @@ msgstr "읽기 제한"
 #: pve-manager/www/manager6/qemu/HDEdit.js:333
 msgid "Read max burst"
 msgstr "최대 버스트 읽기"
-
-#: proxmox-backup/www/Utils.js:388
-msgid "Read objects"
-msgstr "객체 읽ㄱ"
 
 #: pve-manager/www/manager6/lxc/MPEdit.js:282
 msgid "Read-only"
@@ -6000,11 +6108,11 @@ msgstr "{0} 재부팅"
 
 #: pmg-gui/js/ContactStatistics.js:100 pmg-gui/js/Dashboard.js:448
 #: pmg-gui/js/DomainStatistics.js:73 pmg-gui/js/DomainStatistics.js:117
-#: pmg-gui/js/MailTracker.js:75 pmg-gui/js/NavigationTree.js:190
+#: pmg-gui/js/MailTracker.js:75 pmg-gui/js/NavigationTree.js:196
 #: pmg-gui/js/PostfixMailQueue.js:160 pmg-gui/js/ReceiverStatistics.js:107
 #: pmg-gui/js/ReceiverStatistics.js:154 pmg-gui/js/ReceiverStatistics.js:218
-#: pmg-gui/js/SenderStatistics.js:62 pmg-gui/js/Utils.js:12
-#: pmg-gui/js/Utils.js:514
+#: pmg-gui/js/SenderStatistics.js:62 pmg-gui/js/Utils.js:39
+#: pmg-gui/js/Utils.js:541
 msgid "Receiver"
 msgstr "받는 사람"
 
@@ -6032,11 +6140,13 @@ msgstr "새로 고침"
 msgid "Regenerate Image"
 msgstr "이미지 재생성하기"
 
+#: proxmox-widget-toolkit/src/window/ACMEAccount.js:12
 #: pve-manager/www/manager6/Utils.js:1762
 #: pve-manager/www/manager6/node/ACME.js:9
 msgid "Register"
 msgstr "등록"
 
+#: proxmox-widget-toolkit/src/window/ACMEAccount.js:9
 #: pve-manager/www/manager6/node/ACME.js:6
 msgid "Register Account"
 msgstr "계정 등록"
@@ -6049,8 +6159,8 @@ msgstr "U2F 장치 등록"
 msgid "Register Webauthn Device"
 msgstr "Webauthn 장치 등록"
 
-#: pmg-gui/js/Utils.js:133 pmg-gui/js/Utils.js:141 pmg-gui/js/Utils.js:171
-#: pmg-gui/js/Utils.js:179
+#: pmg-gui/js/Utils.js:160 pmg-gui/js/Utils.js:168 pmg-gui/js/Utils.js:198
+#: pmg-gui/js/Utils.js:206
 msgid "Regular Expression"
 msgstr "정규식"
 
@@ -6087,7 +6197,7 @@ msgstr "중계 프로토콜"
 msgid "Relaying"
 msgstr "중계하기"
 
-#: proxmox-widget-toolkit/src/Utils.js:561
+#: proxmox-widget-toolkit/src/Utils.js:573
 #: proxmox-widget-toolkit/src/panel/DiskList.js:178
 #: proxmox-widget-toolkit/src/window/DiskSmart.js:46
 #: proxmox-widget-toolkit/src/window/ZFSDetail.js:65
@@ -6101,9 +6211,9 @@ msgstr "중계하기"
 #: proxmox-backup/www/DirectoryList.js:44 proxmox-backup/www/ZFSList.js:108
 #: proxmox-backup/www/datastore/Content.js:786
 #: proxmox-backup/www/panel/Tasks.js:155
-#: proxmox-backup/www/tape/BackupOverview.js:218
-#: proxmox-backup/www/tape/ChangerStatus.js:512
-#: proxmox-backup/www/tape/DriveStatus.js:169
+#: proxmox-backup/www/tape/BackupOverview.js:249
+#: proxmox-backup/www/tape/ChangerStatus.js:567
+#: proxmox-backup/www/tape/DriveStatus.js:187
 #: proxmox-backup/www/tape/TapeInventory.js:182
 msgid "Reload"
 msgstr "다시 로드"
@@ -6127,7 +6237,7 @@ msgstr "원격"
 msgid "Remote Store"
 msgstr "원격 스토어"
 
-#: proxmox-backup/www/Utils.js:390 proxmox-backup/www/Utils.js:391
+#: proxmox-backup/www/Utils.js:386 proxmox-backup/www/Utils.js:387
 msgid "Remote Sync"
 msgstr "원격 동기화"
 
@@ -6159,11 +6269,11 @@ msgstr "제거 스케줄"
 #: pve-manager/www/manager6/storage/ImageView.js:33
 #: pve-manager/www/manager6/tree/SnapshotTree.js:281
 #: pve-manager/www/manager6/window/SafeDestroy.js:146
-#: proxmox-backup/www/Utils.js:377 proxmox-backup/www/config/TfaView.js:262
+#: proxmox-backup/www/Utils.js:375 proxmox-backup/www/config/TfaView.js:262
 msgid "Remove"
 msgstr "제거"
 
-#: pmg-gui/js/Utils.js:618
+#: pmg-gui/js/Utils.js:645
 msgid "Remove Attachments"
 msgstr "첨부 제거하기"
 
@@ -6177,7 +6287,7 @@ msgstr "스케줄 제거"
 msgid "Remove Subscription"
 msgstr "서브스크립션 제거하기"
 
-#: pmg-gui/js/Utils.js:646
+#: pmg-gui/js/Utils.js:673
 msgid "Remove all attachments"
 msgstr "모든 첨부 제거하기"
 
@@ -6297,8 +6407,8 @@ msgstr "리소스 풀"
 msgid "Resources"
 msgstr "리소스"
 
-#: proxmox-widget-toolkit/src/Utils.js:562
-#: proxmox-widget-toolkit/src/node/ServiceView.js:102
+#: proxmox-widget-toolkit/src/Utils.js:574
+#: proxmox-widget-toolkit/src/node/ServiceView.js:101
 #: pmg-gui/js/ServerStatus.js:56 pmg-gui/js/ServerStatus.js:58
 #: pve-manager/www/manager6/ceph/OSD.js:728
 #: pve-manager/www/manager6/ceph/ServiceList.js:265
@@ -6315,13 +6425,13 @@ msgstr "재시작 pmg-smtp-filter"
 
 #: pmg-gui/js/BackupRestore.js:22 pmg-gui/js/BackupRestore.js:25
 #: pmg-gui/js/BackupRestore.js:102 pmg-gui/js/BackupRestore.js:142
-#: pmg-gui/js/PBSSnapshotView.js:206 pmg-gui/js/Utils.js:828
+#: pmg-gui/js/PBSSnapshotView.js:206 pmg-gui/js/Utils.js:855
 #: pve-manager/www/manager6/Utils.js:1806
 #: pve-manager/www/manager6/Utils.js:1830
 #: pve-manager/www/manager6/grid/BackupView.js:166
 #: pve-manager/www/manager6/storage/BackupView.js:80
-#: pve-manager/www/manager6/window/Restore.js:138
-#: pve-manager/www/manager6/window/Restore.js:188
+#: pve-manager/www/manager6/window/Restore.js:139
+#: pve-manager/www/manager6/window/Restore.js:189
 #: proxmox-backup/www/tape/EncryptionKeys.js:36
 msgid "Restore"
 msgstr "복원"
@@ -6332,7 +6442,7 @@ msgstr "복원"
 msgid "Restore Key"
 msgstr "복원"
 
-#: proxmox-backup/www/tape/BackupOverview.js:229
+#: proxmox-backup/www/tape/BackupOverview.js:260
 #: proxmox-backup/www/tape/window/TapeRestore.js:7
 #, fuzzy
 msgid "Restore Media Set"
@@ -6348,10 +6458,10 @@ msgstr "재개하기"
 
 #: proxmox-backup/www/tape/PoolConfig.js:120
 #: proxmox-backup/www/tape/form/PoolSelector.js:34
-#: proxmox-backup/www/tape/window/PoolEdit.js:47
+#: proxmox-backup/www/tape/window/PoolEdit.js:49
 #, fuzzy
-msgid "Retention"
-msgstr "백업 보존"
+msgid "Retention Policy"
+msgstr "TLS 대상 정책"
 
 #: proxmox-backup/www/tape/TapeInventory.js:139
 msgid "Retired"
@@ -6368,8 +6478,9 @@ msgstr "되돌리기"
 msgid "Revoke Certificate"
 msgstr "인증서 해지"
 
-#: proxmox-backup/www/Utils.js:389
-msgid "Rewind media"
+#: proxmox-backup/www/Utils.js:385
+#, fuzzy
+msgid "Rewind Media"
 msgstr "미디어 되감기"
 
 #: proxmox-widget-toolkit/src/form/RoleSelector.js:23
@@ -6593,7 +6704,7 @@ msgstr "즉시 스케줄"
 msgid "Schedule on '{0}'"
 msgstr "'{0}'에 스케줄"
 
-#: proxmox-backup/www/Utils.js:395
+#: proxmox-backup/www/Utils.js:392
 msgid "Scheduled Verification"
 msgstr "검증 스케줄"
 
@@ -6604,8 +6715,8 @@ msgstr "범위"
 
 #: pmg-gui/js/ReceiverStatistics.js:90 pmg-gui/js/SpamDetectorCustom.js:126
 #: pmg-gui/js/SpamDetectorCustom.js:170 pmg-gui/js/SpamDetectorCustom.js:274
-#: pmg-gui/js/SpamInfoGrid.js:45 pmg-gui/js/SpamQuarantine.js:262
-#: pmg-gui/js/Utils.js:13
+#: pmg-gui/js/SpamInfoGrid.js:45 pmg-gui/js/SpamQuarantine.js:282
+#: pmg-gui/js/Utils.js:40
 msgid "Score"
 msgstr "스코어"
 
@@ -6617,7 +6728,7 @@ msgstr "제거하기"
 msgid "Scrub OSD.{0}"
 msgstr "OSD.{0} 제거하기"
 
-#: pve-manager/www/manager6/dc/Backup.js:508
+#: pmg-gui/js/QuarantineList.js:350 pve-manager/www/manager6/dc/Backup.js:508
 #: pve-manager/www/manager6/dc/Backup.js:754
 #: pve-manager/www/manager6/form/GlobalSearchField.js:16
 #: pve-manager/www/manager6/grid/BackupView.js:118
@@ -6681,7 +6792,7 @@ msgstr ""
 "붙여넣은 클러스터 정보에서 가입 정보를 추출하는 경우 선택하고, 수동 입력하려"
 "면 선택을 취소하십시오"
 
-#: pmg-gui/js/AttachmentQuarantine.js:143 pmg-gui/js/SpamQuarantine.js:288
+#: pmg-gui/js/AttachmentQuarantine.js:143 pmg-gui/js/SpamQuarantine.js:308
 #: pmg-gui/js/VirusQuarantine.js:152
 msgid "Selected Mail"
 msgstr "선택한 메일"
@@ -6715,19 +6826,19 @@ msgid "Send email to"
 msgstr "이메일 수신처"
 
 #: pmg-gui/js/ContactStatistics.js:62 pmg-gui/js/MailTracker.js:69
-#: pmg-gui/js/NavigationTree.js:184 pmg-gui/js/PostfixMailQueue.js:155
+#: pmg-gui/js/NavigationTree.js:190 pmg-gui/js/PostfixMailQueue.js:155
 #: pmg-gui/js/ReceiverStatistics.js:62 pmg-gui/js/SenderStatistics.js:99
 #: pmg-gui/js/SenderStatistics.js:146 pmg-gui/js/SenderStatistics.js:206
-#: pmg-gui/js/Utils.js:11
+#: pmg-gui/js/Utils.js:38
 msgid "Sender"
 msgstr "보낸 사람"
 
-#: pmg-gui/js/AttachmentQuarantine.js:117 pmg-gui/js/SpamQuarantine.js:256
+#: pmg-gui/js/AttachmentQuarantine.js:117 pmg-gui/js/SpamQuarantine.js:276
 #: pmg-gui/js/VirusQuarantine.js:120
 msgid "Sender/Subject"
 msgstr "보낸 사람/제목"
 
-#: proxmox-backup/www/tape/BackupOverview.js:250
+#: proxmox-backup/www/tape/BackupOverview.js:281
 msgid "Seq. Nr."
 msgstr ""
 
@@ -6736,10 +6847,10 @@ msgstr ""
 #: proxmox-widget-toolkit/src/panel/DiskList.js:294
 #: pve-manager/www/manager6/node/ZFS.js:135
 #: pve-manager/www/manager6/qemu/Smbios1Edit.js:63
-#: proxmox-backup/www/tape/ChangerConfig.js:121
-#: proxmox-backup/www/tape/ChangerStatus.js:697
-#: proxmox-backup/www/tape/DriveConfig.js:157
-#: proxmox-backup/www/tape/DriveStatus.js:385
+#: proxmox-backup/www/tape/ChangerConfig.js:127
+#: proxmox-backup/www/tape/ChangerStatus.js:752
+#: proxmox-backup/www/tape/DriveConfig.js:163
+#: proxmox-backup/www/tape/DriveStatus.js:415
 #: proxmox-backup/www/tape/form/ChangerSelector.js:52
 #: proxmox-backup/www/tape/form/DriveSelector.js:43
 #: proxmox-backup/www/tape/form/TapeDevicePathSelector.js:36
@@ -6769,7 +6880,7 @@ msgstr "직렬 터미널"
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:32
 #: pve-manager/www/manager6/dc/MetricServerView.js:81
 #: pve-manager/www/manager6/dc/MetricServerView.js:218
-#: pve-manager/www/manager6/dc/MetricServerView.js:384
+#: pve-manager/www/manager6/dc/MetricServerView.js:395
 #: pve-manager/www/manager6/storage/CIFSEdit.js:131
 #: pve-manager/www/manager6/storage/GlusterFsEdit.js:73
 #: pve-manager/www/manager6/storage/NFSEdit.js:117
@@ -6890,8 +7001,8 @@ msgstr "공유"
 msgid "Shares"
 msgstr "공유"
 
-#: proxmox-widget-toolkit/src/Utils.js:560
-#: proxmox-widget-toolkit/src/Utils.js:566
+#: proxmox-widget-toolkit/src/Utils.js:572
+#: proxmox-widget-toolkit/src/Utils.js:578
 #: pve-manager/www/manager6/Utils.js:1816
 #: pve-manager/www/manager6/Utils.js:1821
 #: pve-manager/www/manager6/node/CmdMenu.js:80
@@ -7015,7 +7126,7 @@ msgid "Signed"
 msgstr "서명한"
 
 #: proxmox-widget-toolkit/src/panel/JournalView.js:296
-#: pmg-gui/js/QuarantineList.js:224 pmg-gui/js/mobile/quarantineview.js:21
+#: pmg-gui/js/QuarantineList.js:296 pmg-gui/js/mobile/quarantineview.js:21
 #: proxmox-backup/www/panel/Tasks.js:212
 msgid "Since"
 msgstr "이후로"
@@ -7033,11 +7144,11 @@ msgstr "단일 디스크"
 #: pmg-gui/js/ContactStatistics.js:171 pmg-gui/js/MailTracker.js:406
 #: pmg-gui/js/ReceiverStatistics.js:69 pmg-gui/js/ReceiverStatistics.js:183
 #: pmg-gui/js/SenderStatistics.js:69 pmg-gui/js/SenderStatistics.js:171
-#: pmg-gui/js/SpamQuarantine.js:268 pmg-gui/js/VirusQuarantine.js:132
+#: pmg-gui/js/SpamQuarantine.js:288 pmg-gui/js/VirusQuarantine.js:132
 #: pve-manager/www/manager6/ceph/Pool.js:20
 #: pve-manager/www/manager6/ceph/Pool.js:114
 #: pve-manager/www/manager6/form/FileSelector.js:78
-#: pve-manager/www/manager6/grid/BackupView.js:309
+#: pve-manager/www/manager6/grid/BackupView.js:299
 #: pve-manager/www/manager6/node/LVM.js:81
 #: pve-manager/www/manager6/node/LVMThin.js:75
 #: pve-manager/www/manager6/node/ZFS.js:140
@@ -7074,7 +7185,7 @@ msgstr "검증한 스냅샷 건너뛰기"
 msgid "Slaves"
 msgstr "슬래이브"
 
-#: proxmox-backup/www/tape/ChangerStatus.js:548
+#: proxmox-backup/www/tape/ChangerStatus.js:603
 msgid "Slots"
 msgstr ""
 
@@ -7131,6 +7242,7 @@ msgstr "일부 게스트가 모든 백업작업에서 제외되어 있습니다.
 msgid "Source"
 msgstr "소스"
 
+#: proxmox-backup/www/tape/window/TapeRestore.js:258
 #: proxmox-backup/www/window/SyncJobEdit.js:182
 msgid "Source Datastore"
 msgstr "소스 데이터스토어"
@@ -7159,7 +7271,7 @@ msgstr "스팸 / 최소"
 msgid "Spam Detector"
 msgstr "스팸 탐지기"
 
-#: pmg-gui/js/Utils.js:301
+#: pmg-gui/js/Utils.js:328
 msgid "Spam Filter"
 msgstr "스팸 필터"
 
@@ -7167,16 +7279,16 @@ msgstr "스팸 필터"
 msgid "Spam Mails"
 msgstr "스팸 메일"
 
-#: pmg-gui/js/NavigationTree.js:104 pmg-gui/js/QuarantineView.js:16
-#: pmg-gui/js/SpamQuarantine.js:235
+#: pmg-gui/js/NavigationTree.js:110 pmg-gui/js/QuarantineView.js:16
+#: pmg-gui/js/SpamQuarantine.js:255
 msgid "Spam Quarantine"
 msgstr "스팸 격리방역"
 
-#: pmg-gui/js/NavigationTree.js:154 pmg-gui/js/SpamScoreDistribution.js:8
+#: pmg-gui/js/NavigationTree.js:160 pmg-gui/js/SpamScoreDistribution.js:8
 msgid "Spam Scores"
 msgstr "스팸 스코어"
 
-#: pmg-gui/js/Utils.js:829
+#: pmg-gui/js/Utils.js:856
 msgid "SpamAssassin update"
 msgstr "SpamAssassin 업데이트"
 
@@ -7211,8 +7323,8 @@ msgstr "표준"
 msgid "Standard VGA"
 msgstr "표준 VGA"
 
-#: proxmox-widget-toolkit/src/Utils.js:563
-#: proxmox-widget-toolkit/src/node/ServiceView.js:86
+#: proxmox-widget-toolkit/src/Utils.js:575
+#: proxmox-widget-toolkit/src/node/ServiceView.js:85
 #: pmg-gui/js/MailTracker.js:97 pve-manager/www/manager6/Utils.js:1786
 #: pve-manager/www/manager6/Utils.js:1811
 #: pve-manager/www/manager6/Utils.js:1835
@@ -7232,7 +7344,7 @@ msgid "Start Garbage Collection"
 msgstr "GC 시작"
 
 #: proxmox-widget-toolkit/src/node/Tasks.js:139
-#: proxmox-widget-toolkit/src/window/TaskViewer.js:157 pmg-gui/js/Utils.js:286
+#: proxmox-widget-toolkit/src/window/TaskViewer.js:157 pmg-gui/js/Utils.js:313
 #: pve-manager/www/manager6/dc/Backup.js:194
 #: pve-manager/www/manager6/dc/Backup.js:594
 #: pve-manager/www/manager6/dc/Backup.js:1103
@@ -7251,7 +7363,7 @@ msgstr ""
 msgid "Start after created"
 msgstr "생성 후 시작"
 
-#: pve-manager/www/manager6/window/Restore.js:88
+#: pve-manager/www/manager6/window/Restore.js:89
 msgid "Start after restore"
 msgstr "복원 후 시작"
 
@@ -7295,11 +7407,11 @@ msgstr "시작 시간"
 msgid "Startup delay"
 msgstr "시작 지연"
 
-#: proxmox-widget-toolkit/src/Utils.js:61
+#: proxmox-widget-toolkit/src/Utils.js:62
 #: pmg-gui/js/ClusterAdministration.js:245
 #: pve-manager/www/manager6/ha/Resources.js:116
-#: proxmox-backup/www/tape/ChangerStatus.js:675
-#: proxmox-backup/www/tape/DriveStatus.js:403
+#: proxmox-backup/www/tape/ChangerStatus.js:730
+#: proxmox-backup/www/tape/DriveStatus.js:434
 msgid "State"
 msgstr "상태"
 
@@ -7316,7 +7428,7 @@ msgstr "통계"
 
 #: pmg-gui/js/ContactStatistics.js:99 pmg-gui/js/DomainStatistics.js:5
 #: pmg-gui/js/GeneralMailStatistics.js:16
-#: pmg-gui/js/HourlyMailDistribution.js:68 pmg-gui/js/NavigationTree.js:148
+#: pmg-gui/js/HourlyMailDistribution.js:68 pmg-gui/js/NavigationTree.js:154
 #: pmg-gui/js/RBLStatistics.js:10 pmg-gui/js/ReceiverStatistics.js:107
 #: pmg-gui/js/SenderStatistics.js:99 pmg-gui/js/SpamScoreDistribution.js:8
 #: pmg-gui/js/VirusCharts.js:5
@@ -7327,8 +7439,9 @@ msgstr "통계"
 msgid "Stats from last Garbage Collection"
 msgstr "최근 GC의 상태"
 
-#: proxmox-widget-toolkit/src/node/ServiceView.js:163
+#: proxmox-widget-toolkit/src/node/ServiceView.js:162
 #: proxmox-widget-toolkit/src/node/Tasks.js:192
+#: proxmox-widget-toolkit/src/window/ACMEAccount.js:169
 #: proxmox-widget-toolkit/src/window/TaskViewer.js:108
 #: proxmox-widget-toolkit/src/window/TaskViewer.js:224
 #: proxmox-widget-toolkit/src/window/ZFSDetail.js:11
@@ -7374,16 +7487,16 @@ msgstr "최근 GC의 상태"
 #: proxmox-backup/www/dashboard/LongestTasks.js:91
 #: proxmox-backup/www/panel/Tasks.js:366
 #: proxmox-backup/www/tape/BackupJobs.js:246
-#: proxmox-backup/www/tape/ChangerStatus.js:735
-#: proxmox-backup/www/tape/DriveStatus.js:273
-#: proxmox-backup/www/tape/DriveStatus.js:293
+#: proxmox-backup/www/tape/ChangerStatus.js:790
+#: proxmox-backup/www/tape/DriveStatus.js:303
+#: proxmox-backup/www/tape/DriveStatus.js:323
 #: proxmox-backup/www/tape/TapeInventory.js:131
 #: proxmox-backup/www/tape/TapeInventory.js:289
 msgid "Status"
 msgstr "상태"
 
-#: proxmox-widget-toolkit/src/Utils.js:564
-#: proxmox-widget-toolkit/src/node/ServiceView.js:94
+#: proxmox-widget-toolkit/src/Utils.js:576
+#: proxmox-widget-toolkit/src/node/ServiceView.js:93
 #: proxmox-widget-toolkit/src/window/TaskViewer.js:212
 #: proxmox-widget-toolkit/src/window/TaskViewer.js:218
 #: pve-manager/www/manager6/Utils.js:1787
@@ -7460,17 +7573,26 @@ msgstr "스토리지 사용율 (Bytes)"
 msgid "Storage {0} on node {1}"
 msgstr "{1} 노드의 {0} 스토리지"
 
-#: pmg-gui/js/MailInfo.js:32 pmg-gui/js/Utils.js:521
+#: proxmox-widget-toolkit/src/panel/Certificates.js:23
+#: proxmox-widget-toolkit/src/window/Certificates.js:31
+#: pmg-gui/js/MailInfo.js:32 pmg-gui/js/Utils.js:548
 #: pmg-gui/js/ViewMailHeaders.js:71
 #: pve-manager/www/manager6/node/Certificates.js:57
 #: pve-manager/www/manager6/node/Certificates.js:302
 msgid "Subject"
 msgstr "제목"
 
+#: proxmox-widget-toolkit/src/panel/Certificates.js:52
+#: proxmox-widget-toolkit/src/window/Certificates.js:58
 #: pve-manager/www/manager6/node/Certificates.js:84
 #: pve-manager/www/manager6/node/Certificates.js:331
 msgid "Subject Alternative Names"
 msgstr "제목 대체 이름"
+
+#: pmg-gui/js/QuarantineList.js:351
+#, fuzzy
+msgid "Subject, Sender"
+msgstr "제목"
 
 #: proxmox-widget-toolkit/src/node/NetworkView.js:411
 msgid "Subnet mask"
@@ -7500,7 +7622,7 @@ msgstr "서브스크립션"
 msgid "Success"
 msgstr "성공"
 
-#: proxmox-widget-toolkit/src/Utils.js:349
+#: proxmox-widget-toolkit/src/Utils.js:350
 msgid "Successful"
 msgstr "성공"
 
@@ -7525,7 +7647,7 @@ msgstr "요약 열"
 msgid "Sunday"
 msgstr "일요일"
 
-#: pmg-gui/js/Utils.js:16
+#: pmg-gui/js/Utils.js:43
 msgid "Superuser"
 msgstr "수퍼유저"
 
@@ -7563,7 +7685,7 @@ msgstr "스왑 사용율"
 msgid "Sync"
 msgstr "동기화"
 
-#: proxmox-backup/www/Utils.js:391
+#: proxmox-backup/www/Utils.js:387
 msgid "Sync Job"
 msgstr "동기화 작업"
 
@@ -7596,8 +7718,8 @@ msgstr "동기화"
 msgid "Syncs"
 msgstr "동기화"
 
-#: proxmox-widget-toolkit/src/node/ServiceView.js:48
-#: proxmox-widget-toolkit/src/node/ServiceView.js:110
+#: proxmox-widget-toolkit/src/node/ServiceView.js:47
+#: proxmox-widget-toolkit/src/node/ServiceView.js:109
 #: pmg-gui/js/MailTracker.js:163 pmg-gui/js/ServerAdministration.js:53
 #: pve-manager/www/manager6/ceph/ServiceList.js:211
 #: pve-manager/www/manager6/ceph/ServiceList.js:310
@@ -7623,7 +7745,7 @@ msgstr "시스템 구성"
 msgid "System Report"
 msgstr "시스템 보고서"
 
-#: pve-manager/www/manager6/dc/MetricServerView.js:456
+#: pve-manager/www/manager6/dc/MetricServerView.js:467
 msgid "TCP Timeout"
 msgstr "TCP 시간초과"
 
@@ -7685,11 +7807,11 @@ msgstr "태그"
 msgid "Take Snapshot"
 msgstr "스냅샷 만들기"
 
-#: proxmox-backup/www/Utils.js:372 proxmox-backup/www/tape/TapeManagement.js:5
+#: proxmox-backup/www/Utils.js:388 proxmox-backup/www/tape/TapeManagement.js:5
 msgid "Tape Backup"
 msgstr "테이프 백업"
 
-#: proxmox-backup/www/Utils.js:373
+#: proxmox-backup/www/Utils.js:389
 #: proxmox-backup/www/tape/window/TapeBackupJob.js:10
 #, fuzzy
 msgid "Tape Backup Job"
@@ -7700,49 +7822,54 @@ msgstr "테이프 백업"
 msgid "Tape Backup Jobs"
 msgstr "테이프 백업"
 
-#: proxmox-backup/www/tape/DriveStatus.js:296
+#: proxmox-backup/www/tape/DriveStatus.js:326
 #, fuzzy
 msgid "Tape Density"
 msgstr "테이프 복구"
 
-#: proxmox-backup/www/tape/DriveStatus.js:299
+#: proxmox-backup/www/tape/DriveStatus.js:329
 #, fuzzy
 msgid "Tape Manufacture Date"
 msgstr "제조업체"
 
-#: proxmox-backup/www/tape/DriveStatus.js:316
+#: proxmox-backup/www/tape/DriveStatus.js:346
 #, fuzzy
 msgid "Tape Passes"
 msgstr "테이프 복구"
 
-#: proxmox-backup/www/tape/DriveStatus.js:308
+#: proxmox-backup/www/tape/DriveStatus.js:338
 #, fuzzy
 msgid "Tape Read"
 msgstr "테이프 복구"
 
-#: proxmox-backup/www/Utils.js:374
+#: proxmox-backup/www/Utils.js:390
 msgid "Tape Restore"
 msgstr "테이프 복구"
 
-#: proxmox-backup/www/tape/DriveStatus.js:319
+#: proxmox-backup/www/tape/DriveStatus.js:349
 #, fuzzy
 msgid "Tape Wearout"
 msgstr "테이프 백업"
 
-#: proxmox-backup/www/tape/DriveStatus.js:312
+#: proxmox-backup/www/tape/DriveStatus.js:342
 msgid "Tape Written"
 msgstr ""
 
-#: proxmox-backup/www/tape/BackupOverview.js:245
+#: proxmox-backup/www/tape/BackupOverview.js:276
 msgid "Tapes"
 msgstr ""
 
-#: pmg-gui/js/Utils.js:603 pve-manager/www/manager6/dc/StorageView.js:130
+#: pmg-gui/js/Utils.js:630 pve-manager/www/manager6/dc/StorageView.js:130
 #: pve-manager/www/manager6/grid/Replication.js:33
 #: pve-manager/www/manager6/grid/Replication.js:310
 #: pve-manager/www/manager6/storage/ZFSEdit.js:75
 msgid "Target"
 msgstr "대상"
+
+#: proxmox-backup/www/tape/window/TapeRestore.js:263
+#, fuzzy
+msgid "Target Datastore"
+msgstr "대상 스토로지"
 
 #: pve-manager/www/manager6/qemu/HDMove.js:76
 #: pve-manager/www/manager6/window/Clone.js:247
@@ -7822,6 +7949,7 @@ msgstr "템플릿"
 msgid "Templates"
 msgstr "템플릿"
 
+#: proxmox-widget-toolkit/src/window/ACMEAccount.js:180
 #: pve-manager/www/manager6/node/ACME.js:160
 msgid "Terms of Services"
 msgstr "서비스 약관"
@@ -7830,12 +7958,12 @@ msgstr "서비스 약관"
 msgid "Test Name"
 msgstr "테스트 이름"
 
-#: pmg-gui/js/Utils.js:145 pmg-gui/js/Utils.js:351 pmg-gui/js/Utils.js:417
-#: pmg-gui/js/Utils.js:484
+#: pmg-gui/js/Utils.js:172 pmg-gui/js/Utils.js:378 pmg-gui/js/Utils.js:444
+#: pmg-gui/js/Utils.js:511
 msgid "Test String"
 msgstr "테스트 문자열"
 
-#: pmg-gui/js/Utils.js:640
+#: pmg-gui/js/Utils.js:667
 msgid "Text Replacement"
 msgstr "텍스트 대체"
 
@@ -7871,7 +7999,7 @@ msgstr "유효한 DNS 이름이 아닙니다"
 msgid "This will permanently erase all data."
 msgstr "이것은 모든 데이터를 영구적으로 삭제합니다."
 
-#: pve-manager/www/manager6/window/Restore.js:171
+#: pve-manager/www/manager6/window/Restore.js:172
 msgid "This will permanently erase current VM data."
 msgstr "이것은 현재 VM 데이터를 영구적으로 삭제합니다."
 
@@ -7890,7 +8018,7 @@ msgstr "임계값"
 #: pmg-gui/js/AttachmentQuarantine.js:136 pmg-gui/js/BackupRestore.js:176
 #: pmg-gui/js/ContactStatistics.js:81 pmg-gui/js/MailTracker.js:361
 #: pmg-gui/js/PostfixMailQueue.js:143 pmg-gui/js/ReceiverStatistics.js:81
-#: pmg-gui/js/SenderStatistics.js:81 pmg-gui/js/SpamQuarantine.js:281
+#: pmg-gui/js/SenderStatistics.js:81 pmg-gui/js/SpamQuarantine.js:301
 #: pmg-gui/js/SystemConfiguration.js:41 pmg-gui/js/VirusQuarantine.js:145
 #: pve-manager/www/manager6/dc/Log.js:46
 #: pve-manager/www/manager6/node/Config.js:209
@@ -7914,7 +8042,7 @@ msgstr "기간"
 msgid "Time zone"
 msgstr "시간대"
 
-#: pmg-gui/js/Utils.js:280
+#: pmg-gui/js/Utils.js:307
 msgid "TimeFrame"
 msgstr "타임프레임"
 
@@ -7922,7 +8050,7 @@ msgstr "타임프레임"
 msgid "Timeout"
 msgstr "타임아웃"
 
-#: pve-manager/www/manager6/dc/MetricServerView.js:306
+#: pve-manager/www/manager6/dc/MetricServerView.js:317
 #, fuzzy
 msgid "Timeout (s)"
 msgstr "타임아웃"
@@ -7932,14 +8060,14 @@ msgid "Timestamp"
 msgstr "타임스탬프"
 
 #: pmg-gui/js/MailTracker.js:373 pmg-gui/js/ObjectGroupSelector.js:26
-#: pmg-gui/js/RuleInfo.js:383 pmg-gui/js/Utils.js:33
+#: pmg-gui/js/RuleInfo.js:383 pmg-gui/js/Utils.js:60
 #: pmg-gui/js/ViewMailHeaders.js:64
 #, fuzzy
 msgid "To"
 msgstr "수신"
 
-#: proxmox-backup/www/tape/ChangerStatus.js:45
-#: proxmox-backup/www/tape/ChangerStatus.js:78
+#: proxmox-backup/www/tape/ChangerStatus.js:68
+#: proxmox-backup/www/tape/ChangerStatus.js:104
 msgid "To Slot"
 msgstr ""
 
@@ -7958,16 +8086,16 @@ msgstr ""
 "이러한 기능을 사용하려면 VM의 하드웨어 설정에서 디스플레이를 SPICE로 설정하십"
 "시오."
 
-#: pmg-gui/js/AttachmentQuarantine.js:157 pmg-gui/js/SpamQuarantine.js:302
+#: pmg-gui/js/AttachmentQuarantine.js:157 pmg-gui/js/SpamQuarantine.js:322
 #: pmg-gui/js/VirusQuarantine.js:166
 msgid "Toggle Raw"
 msgstr "로 전환"
 
-#: pmg-gui/js/SpamQuarantine.js:309
+#: pmg-gui/js/SpamQuarantine.js:329
 msgid "Toggle Spam Info"
 msgstr "스팸 정보 전환"
 
-#: pve-manager/www/manager6/dc/MetricServerView.js:290
+#: pve-manager/www/manager6/dc/MetricServerView.js:291
 #: pve-manager/www/manager6/dc/TokenEdit.js:6
 msgid "Token"
 msgstr "토큰"
@@ -7996,7 +8124,7 @@ msgstr "토큰 이름"
 msgid "Top Receivers"
 msgstr "토큰 수신자"
 
-#: proxmox-widget-toolkit/src/Utils.js:58 pmg-gui/js/PostfixQShape.js:121
+#: proxmox-widget-toolkit/src/Utils.js:59 pmg-gui/js/PostfixQShape.js:121
 #: pmg-gui/js/ServerStatus.js:133 pmg-gui/js/ServerStatus.js:141
 #: pmg-gui/js/ServerStatus.js:157 pve-manager/www/manager6/ceph/OSD.js:656
 #: pve-manager/www/manager6/ceph/Pool.js:169
@@ -8039,7 +8167,7 @@ msgstr "NetOut 합계"
 msgid "Total cores"
 msgstr "코어 합계"
 
-#: pmg-gui/js/MailTracker.js:228 pmg-gui/js/NavigationTree.js:134
+#: pmg-gui/js/MailTracker.js:228 pmg-gui/js/NavigationTree.js:140
 msgid "Tracking Center"
 msgstr "추적 센터"
 
@@ -8048,8 +8176,8 @@ msgstr "추적 센터"
 msgid "Traffic"
 msgstr "트래픽"
 
-#: proxmox-backup/www/tape/ChangerStatus.js:62
-#: proxmox-backup/www/tape/ChangerStatus.js:585
+#: proxmox-backup/www/tape/ChangerStatus.js:88
+#: proxmox-backup/www/tape/ChangerStatus.js:640
 #, fuzzy
 msgid "Transfer"
 msgstr "운송"
@@ -8078,6 +8206,7 @@ msgstr "이중 인자 인증"
 
 #: proxmox-widget-toolkit/src/form/NetworkSelector.js:117
 #: proxmox-widget-toolkit/src/node/NetworkView.js:351
+#: proxmox-widget-toolkit/src/panel/ACMEDomains.js:395
 #: proxmox-widget-toolkit/src/panel/DiskList.js:221
 #: pmg-gui/js/ObjectGroup.js:78 pmg-gui/js/RuleInfo.js:290
 #: pmg-gui/js/Subscription.js:118
@@ -8111,6 +8240,7 @@ msgstr "이중 인자 인증"
 #: proxmox-backup/www/Subscription.js:108
 #: proxmox-backup/www/config/TfaView.js:350
 #: proxmox-backup/www/form/AuthidSelector.js:72
+#: proxmox-backup/www/tape/ChangerStatus.js:30
 #: proxmox-backup/www/window/FileBrowser.js:224
 msgid "Type"
 msgstr "유형"
@@ -8131,6 +8261,7 @@ msgstr "U2F 기원"
 msgid "U2F Settings"
 msgstr "U2F 설정"
 
+#: proxmox-widget-toolkit/src/window/ACMEAccount.js:59
 #: pve-manager/www/manager6/node/ACME.js:59
 msgid "URL"
 msgstr "URL"
@@ -8157,7 +8288,7 @@ msgstr "변경되지 않음"
 msgid "Undo Zoom"
 msgstr "확대 취소"
 
-#: pve-manager/www/manager6/window/Restore.js:75
+#: pve-manager/www/manager6/window/Restore.js:76
 msgid "Unique"
 msgstr "고유의"
 
@@ -8170,7 +8301,7 @@ msgstr "고유 태스크 ID"
 msgid "Unit File"
 msgstr "유닛 파일"
 
-#: proxmox-widget-toolkit/src/Utils.js:51
+#: proxmox-widget-toolkit/src/Utils.js:52
 #: pmg-gui/js/dashboard/SubscriptionInfo.js:7
 #: pve-manager/www/manager6/ceph/StatusDetail.js:171
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:89
@@ -8182,7 +8313,7 @@ msgstr "알 수 없음"
 msgid "Unknown LDAP address"
 msgstr "알 수 없는 LDAP 주소"
 
-#: proxmox-widget-toolkit/src/Utils.js:352
+#: proxmox-widget-toolkit/src/Utils.js:353
 msgid "Unknown error"
 msgstr "알 수 없는 오류"
 
@@ -8190,14 +8321,14 @@ msgstr "알 수 없는 오류"
 msgid "Unkown"
 msgstr "알 수 없는"
 
-#: proxmox-backup/www/tape/ChangerStatus.js:712
+#: proxmox-backup/www/tape/ChangerStatus.js:767
 #, fuzzy
 msgid "Unload"
 msgstr "업로드"
 
-#: proxmox-backup/www/Utils.js:379
+#: proxmox-backup/www/Utils.js:391
 #, fuzzy
-msgid "Unload media"
+msgid "Unload Media"
 msgstr "미디어 되감기"
 
 #: pve-manager/www/manager6/Utils.js:1839
@@ -8210,12 +8341,12 @@ msgstr "언플러그드"
 
 #: pve-manager/www/manager6/lxc/CreateWizard.js:63
 #: pve-manager/www/manager6/lxc/Options.js:133
-#: pve-manager/www/manager6/window/Restore.js:100
+#: pve-manager/www/manager6/window/Restore.js:101
 msgid "Unprivileged container"
 msgstr "권한 없는 컨테이너"
 
 #: proxmox-widget-toolkit/src/panel/JournalView.js:312
-#: pmg-gui/js/QuarantineList.js:231 pmg-gui/js/mobile/quarantineview.js:29
+#: pmg-gui/js/QuarantineList.js:303 pmg-gui/js/mobile/quarantineview.js:29
 #: proxmox-backup/www/panel/Tasks.js:223
 msgid "Until"
 msgstr "까지"
@@ -8247,7 +8378,7 @@ msgstr "지금 업데이트"
 msgid "Update now"
 msgstr "지금 업데이트"
 
-#: proxmox-widget-toolkit/src/Utils.js:558
+#: proxmox-widget-toolkit/src/Utils.js:570
 msgid "Update package database"
 msgstr "패키지 데이터베이스 업데이트"
 
@@ -8263,6 +8394,7 @@ msgstr "업데이트"
 msgid "Upgrade"
 msgstr "업그레이드"
 
+#: proxmox-widget-toolkit/src/window/Certificates.js:111
 #: pve-manager/www/manager6/node/Certificates.js:137
 #: pve-manager/www/manager6/storage/ContentView.js:112
 #: pve-manager/www/manager6/storage/ContentView.js:177
@@ -8270,6 +8402,9 @@ msgstr "업그레이드"
 msgid "Upload"
 msgstr "업로드"
 
+#: proxmox-widget-toolkit/src/panel/Certificates.js:175
+#: proxmox-widget-toolkit/src/panel/Certificates.js:227
+#: proxmox-widget-toolkit/src/window/Certificates.js:108
 #: pve-manager/www/manager6/node/Certificates.js:134
 #: pve-manager/www/manager6/node/Certificates.js:244
 msgid "Upload Custom Certificate"
@@ -8298,7 +8433,9 @@ msgstr "파일 업로드 중..."
 msgid "Uptime"
 msgstr "가동 시간"
 
+#: proxmox-widget-toolkit/src/panel/ACMEDomains.js:387
 #: proxmox-widget-toolkit/src/panel/DiskList.js:236
+#: proxmox-widget-toolkit/src/window/ACMEDomains.js:162
 #: pve-manager/www/manager6/ceph/Status.js:197
 #: pve-manager/www/manager6/node/LVM.js:71
 #: pve-manager/www/manager6/node/LVMThin.js:65
@@ -8316,7 +8453,7 @@ msgstr "사용율 %"
 msgid "Usage History"
 msgstr "사용율 이력"
 
-#: pve-manager/www/manager6/window/Restore.js:66
+#: pve-manager/www/manager6/window/Restore.js:67
 msgid "Use '0' to disable all bandwidth limits."
 msgstr "모든 대역폭 제한을 사용하지 않으려면 '0'을 사용하십시오."
 
@@ -8407,7 +8544,7 @@ msgstr "포인터에 태블릿 사용"
 msgid "Use {0}"
 msgstr "{0} 사용"
 
-#: proxmox-widget-toolkit/src/Utils.js:59 pmg-gui/js/ServerStatus.js:133
+#: proxmox-widget-toolkit/src/Utils.js:60 pmg-gui/js/ServerStatus.js:133
 #: pmg-gui/js/ServerStatus.js:141 pmg-gui/js/ServerStatus.js:157
 #: pve-manager/www/manager6/ceph/OSD.js:644
 #: pve-manager/www/manager6/ceph/Pool.js:156
@@ -8447,7 +8584,7 @@ msgstr "사용자"
 msgid "User Attribute Name"
 msgstr "사용자 속성 이름"
 
-#: pmg-gui/js/NavigationTree.js:128
+#: pmg-gui/js/NavigationTree.js:134
 msgid "User Blacklist"
 msgstr "사용자 블랙리스트"
 
@@ -8479,7 +8616,7 @@ msgstr "사용자 권한허가"
 msgid "User Spamreport Style"
 msgstr "사용자 스팸 보고서 스타일"
 
-#: pmg-gui/js/NavigationTree.js:122
+#: pmg-gui/js/NavigationTree.js:128
 msgid "User Whitelist"
 msgstr "사용자 화이트리스트"
 
@@ -8555,6 +8692,7 @@ msgstr ""
 "있기 때문에 금한다. 더 나은 것은 /dev/urandom으로, 실제로 보안 약화를 초래하"
 "지도 않는다."
 
+#: proxmox-widget-toolkit/src/panel/ACMEDomains.js:262
 #: pve-manager/www/manager6/node/ACME.js:583
 msgid "Using Account"
 msgstr "계정 사용"
@@ -8592,7 +8730,7 @@ msgid "VM State storage"
 msgstr "VM 상태 스토리지"
 
 #: pve-manager/www/manager6/dc/Backup.js:731
-#: pve-manager/www/manager6/grid/BackupView.js:315
+#: pve-manager/www/manager6/grid/BackupView.js:305
 msgid "VMID"
 msgstr "VMID"
 
@@ -8617,20 +8755,23 @@ msgstr "VZDump 백업 파일"
 msgid "Valid CIDR Range"
 msgstr "CIDR 유효 범위"
 
+#: proxmox-widget-toolkit/src/panel/Certificates.js:40
+#: proxmox-widget-toolkit/src/window/Certificates.js:46
 #: pve-manager/www/manager6/node/Certificates.js:72
 #: pve-manager/www/manager6/node/Certificates.js:319
 #, fuzzy
 msgid "Valid Since"
 msgstr "유효 시작"
 
+#: proxmox-widget-toolkit/src/window/ACMEPluginEdit.js:184
 #: pve-manager/www/manager6/dc/ACMEPluginEdit.js:171
 msgid "Validation Delay"
 msgstr "유효성 검사 지연"
 
 #: proxmox-widget-toolkit/src/grid/ObjectGrid.js:313
 #: proxmox-widget-toolkit/src/window/DiskSmart.js:21
-#: pmg-gui/js/ObjectGroup.js:95 pmg-gui/js/Utils.js:347 pmg-gui/js/Utils.js:392
-#: pmg-gui/js/Utils.js:459 pmg-gui/js/Utils.js:577
+#: pmg-gui/js/ObjectGroup.js:95 pmg-gui/js/Utils.js:374 pmg-gui/js/Utils.js:419
+#: pmg-gui/js/Utils.js:486 pmg-gui/js/Utils.js:604
 #: pve-manager/www/manager6/window/Snapshot.js:128
 #: proxmox-backup/www/Utils.js:475 proxmox-backup/www/Utils.js:512
 #: proxmox-backup/www/Utils.js:555 proxmox-backup/www/Utils.js:597
@@ -8646,10 +8787,10 @@ msgstr "기본"
 #: proxmox-widget-toolkit/src/panel/DiskList.js:279
 #: pve-manager/www/manager6/form/CPUModelSelector.js:38
 #: pve-manager/www/manager6/form/PCISelector.js:38
-#: proxmox-backup/www/tape/ChangerConfig.js:111
-#: proxmox-backup/www/tape/ChangerStatus.js:681
-#: proxmox-backup/www/tape/DriveConfig.js:147
-#: proxmox-backup/www/tape/DriveStatus.js:367
+#: proxmox-backup/www/tape/ChangerConfig.js:117
+#: proxmox-backup/www/tape/ChangerStatus.js:736
+#: proxmox-backup/www/tape/DriveConfig.js:153
+#: proxmox-backup/www/tape/DriveStatus.js:397
 #: proxmox-backup/www/tape/form/ChangerSelector.js:38
 #: proxmox-backup/www/tape/form/DriveSelector.js:29
 #: proxmox-backup/www/tape/form/TapeDevicePathSelector.js:22
@@ -8661,14 +8802,19 @@ msgid "Verbose"
 msgstr "버보스"
 
 #: pve-manager/www/manager6/window/LoginWindow.js:100
-#: proxmox-backup/www/Utils.js:392 proxmox-backup/www/Utils.js:393
-#: proxmox-backup/www/Utils.js:394
+#: proxmox-backup/www/Utils.js:393 proxmox-backup/www/Utils.js:394
+#: proxmox-backup/www/Utils.js:395
 msgid "Verification"
 msgstr "검증"
 
 #: pve-manager/www/manager6/dc/TFAEdit.js:459
 msgid "Verification Code"
 msgstr "검증 코드"
+
+#: proxmox-backup/www/window/VerifyJobEdit.js:12
+#, fuzzy
+msgid "Verification Job"
+msgstr "검증 작업"
 
 #: proxmox-backup/www/window/NotifyOptions.js:64
 msgid "Verification Jobs"
@@ -8696,7 +8842,7 @@ msgstr "인증서 검증"
 msgid "Verify Code"
 msgstr "작업 검증"
 
-#: proxmox-backup/www/Utils.js:395
+#: proxmox-backup/www/Utils.js:392
 msgid "Verify Job"
 msgstr "작업 검증"
 
@@ -8728,7 +8874,7 @@ msgstr "수신자 검증"
 msgid "Verify SSL certificate of the server"
 msgstr "서버의 SSL 인증서 검증"
 
-#: pve-manager/www/manager6/grid/BackupView.js:325
+#: pve-manager/www/manager6/grid/BackupView.js:315
 #: pve-manager/www/manager6/storage/BackupView.js:128
 #: proxmox-backup/www/datastore/Content.js:711
 msgid "Verify State"
@@ -8737,10 +8883,6 @@ msgstr "상태 검증"
 #: proxmox-backup/www/datastore/OptionView.js:79
 msgid "Verify new backups immediately after completion"
 msgstr "새 백업 완료 즉시 검증"
-
-#: proxmox-backup/www/window/VerifyJobEdit.js:12
-msgid "VerifyJob"
-msgstr "작업 검증"
 
 #: proxmox-widget-toolkit/src/node/APT.js:23 pmg-gui/js/ClamAVDatabase.js:93
 #: pmg-gui/js/SpamDetectorStatus.js:34 pve-manager/www/manager6/ceph/OSD.js:624
@@ -8754,12 +8896,14 @@ msgid "Version"
 msgstr "버전"
 
 #: proxmox-widget-toolkit/src/node/Tasks.js:77
+#: proxmox-widget-toolkit/src/panel/ACMEAccount.js:101
 #: pve-manager/www/manager6/dc/ACMEClusterView.js:93
 #: pve-manager/www/manager6/tree/SnapshotTree.js:26
 #: proxmox-backup/www/panel/Tasks.js:148
 msgid "View"
 msgstr "조회"
 
+#: proxmox-widget-toolkit/src/panel/Certificates.js:255
 #: pve-manager/www/manager6/node/Certificates.js:282
 msgid "View Certificate"
 msgstr "인증서 조회"
@@ -8805,7 +8949,7 @@ msgstr "가상머신"
 msgid "Virus"
 msgstr "바이러스"
 
-#: pmg-gui/js/NavigationTree.js:160
+#: pmg-gui/js/NavigationTree.js:166
 msgid "Virus  Charts"
 msgstr "바이러스 차트"
 
@@ -8817,7 +8961,7 @@ msgstr "바이러스 차트"
 msgid "Virus Detector"
 msgstr "바이러스 탐지기"
 
-#: pmg-gui/js/Utils.js:317
+#: pmg-gui/js/Utils.js:344
 msgid "Virus Filter"
 msgstr "바이러스 필터"
 
@@ -8832,7 +8976,7 @@ msgstr "바이러스 메일"
 msgid "Virus Outbreaks"
 msgstr "바이러스 발생"
 
-#: pmg-gui/js/NavigationTree.js:110 pmg-gui/js/VirusQuarantine.js:99
+#: pmg-gui/js/NavigationTree.js:116 pmg-gui/js/VirusQuarantine.js:99
 msgid "Virus Quarantine"
 msgstr "바이러스 격리방역"
 
@@ -8848,8 +8992,8 @@ msgstr "VLAN 로 디바이스"
 msgid "Vnets"
 msgstr "Vnets"
 
-#: proxmox-backup/www/Utils.js:536 proxmox-backup/www/tape/ChangerStatus.js:724
-#: proxmox-backup/www/tape/DriveStatus.js:217
+#: proxmox-backup/www/Utils.js:536 proxmox-backup/www/tape/ChangerStatus.js:779
+#: proxmox-backup/www/tape/DriveStatus.js:247
 #, fuzzy
 msgid "Volume Statistics"
 msgstr "통계"
@@ -8922,7 +9066,7 @@ msgstr ""
 msgid "Warning: Your subscription levels are not the same."
 msgstr "주의: 서브스크립션 수준이 동일하지 않습니다."
 
-#: proxmox-backup/www/panel/Tasks.js:261
+#: proxmox-widget-toolkit/src/Utils.js:51 proxmox-backup/www/panel/Tasks.js:261
 msgid "Warnings"
 msgstr "주의"
 
@@ -8954,7 +9098,7 @@ msgstr "주"
 msgid "What"
 msgstr "무엇"
 
-#: pmg-gui/js/NavigationTree.js:34 pmg-gui/js/Utils.js:29
+#: pmg-gui/js/NavigationTree.js:34 pmg-gui/js/Utils.js:56
 msgid "What Objects"
 msgstr "What 객체"
 
@@ -8962,18 +9106,18 @@ msgstr "What 객체"
 msgid "When"
 msgstr "언제"
 
-#: pmg-gui/js/NavigationTree.js:40 pmg-gui/js/Utils.js:30
+#: pmg-gui/js/NavigationTree.js:40 pmg-gui/js/Utils.js:57
 msgid "When Objects"
 msgstr "When 객체"
 
 #: pmg-gui/js/MailProxyConfiguration.js:54 pmg-gui/js/QuarantineView.js:22
-#: pmg-gui/js/SpamContextMenu.js:31 pmg-gui/js/SpamQuarantine.js:330
+#: pmg-gui/js/SpamContextMenu.js:31 pmg-gui/js/SpamQuarantine.js:350
 #: pmg-gui/js/UserBlackWhiteList.js:56 pmg-gui/js/UserBlackWhiteList.js:240
 #: pmg-gui/js/mobile/mailview.js:36 pmg-gui/js/mobile/quarantineview.js:87
 msgid "Whitelist"
 msgstr "화이트리스트"
 
-#: pmg-gui/js/NavigationTree.js:28 pmg-gui/js/Utils.js:28
+#: pmg-gui/js/NavigationTree.js:28 pmg-gui/js/Utils.js:55
 msgid "Who Objects"
 msgstr "Who 객체"
 
@@ -9155,11 +9299,11 @@ msgstr "현재"
 msgid "daily"
 msgstr "일일"
 
-#: proxmox-widget-toolkit/src/Utils.js:54
+#: proxmox-widget-toolkit/src/Utils.js:55
 msgid "day"
 msgstr "일"
 
-#: proxmox-widget-toolkit/src/Utils.js:53
+#: proxmox-widget-toolkit/src/Utils.js:54
 msgid "days"
 msgstr "일 수"
 
@@ -9261,7 +9405,7 @@ msgstr "최대값"
 msgid "missing"
 msgstr "권한허가"
 
-#: proxmox-widget-toolkit/src/Utils.js:57
+#: proxmox-widget-toolkit/src/Utils.js:58
 msgid "never"
 msgstr "결코 하지 않음"
 
@@ -9320,15 +9464,15 @@ msgid ""
 "pveproxy will be restarted with new certificates, please reload the GUI!"
 msgstr "pveproxy가 새 인증서로 다시 시작되므로 GUI를 다시 로드하십시오!"
 
-#: proxmox-widget-toolkit/src/Utils.js:55
+#: proxmox-widget-toolkit/src/Utils.js:56
 msgid "running"
 msgstr "실행중"
 
-#: pmg-gui/js/Utils.js:609
+#: pmg-gui/js/Utils.js:636
 msgid "send orig. Mail"
 msgstr "기업 메일 전송"
 
-#: proxmox-widget-toolkit/src/Utils.js:56
+#: proxmox-widget-toolkit/src/Utils.js:57
 msgid "stopped"
 msgstr "정지됨"
 
@@ -9391,6 +9535,10 @@ msgstr "xterm.js 설정"
 msgid "{0} ({1})"
 msgstr "{0} ({1})"
 
+#: pmg-gui/js/Utils.js:887
+msgid "{0} ({1}/{2}) successful"
+msgstr ""
+
 #: proxmox-backup/www/Dashboard.js:320 proxmox-backup/www/Dashboard.js:332
 #: proxmox-backup/www/datastore/DataStoreListSummary.js:163
 #: proxmox-backup/www/tape/form/RetentionSelector.js:11
@@ -9432,13 +9580,18 @@ msgstr "{0}이(가) 설치되지 않음."
 msgid "{0} of {1}"
 msgstr "{1}의 {0}"
 
-#: pmg-gui/js/Utils.js:812
+#: pmg-gui/js/Utils.js:839
 msgid "{0} on behalf of {1}"
 msgstr "{1} 대신 {0}"
 
 #: pmg-gui/js/GeneralMailStatistics.js:120
 msgid "{0} seconds"
 msgstr "{0} 초"
+
+#: pmg-gui/js/Utils.js:888
+#, fuzzy
+msgid "{0} successful"
+msgstr "'{0}' 작업 성공"
 
 #: proxmox-backup/www/tape/form/RetentionSelector.js:12
 #, fuzzy
@@ -9486,9 +9639,6 @@ msgstr "{1}의 {0}%"
 #~ "Ziur zaude {0} VM ezabatu nahi duzula? Datu guztiak betirako ezabatuko "
 #~ "dira. "
 
-#~ msgid "Are you sure you want to restore this VM?"
-#~ msgstr "Ziur zaude VM hau berrezarri nahi duzula?"
-
 #~ msgid "Are you sure you want to revert your changes"
 #~ msgstr "Ziur zaude zure aldaketak leheneratu nahi dituzula?"
 
@@ -9500,6 +9650,10 @@ msgstr "{1}의 {0}%"
 
 #~ msgid "Barrier"
 #~ msgstr "Hesia"
+
+#, fuzzy
+#~ msgid "Blocksize"
+#~ msgstr "블록 크기"
 
 #~ msgid "Boot device"
 #~ msgstr "부트 장치"
@@ -9645,6 +9799,10 @@ msgstr "{1}의 {0}%"
 #~ msgstr "Domeinua"
 
 #, fuzzy
+#~ msgid "Eject media"
+#~ msgstr "미디어 지우기"
+
+#, fuzzy
 #~ msgid "Enable DHCP"
 #~ msgstr "Gaitu"
 
@@ -9684,6 +9842,9 @@ msgstr "{1}의 {0}%"
 #, fuzzy
 #~ msgid "Keyboard"
 #~ msgstr "Teclado"
+
+#~ msgid "Label media"
+#~ msgstr "레이블 미디어"
 
 #, fuzzy
 #~ msgid "Last"
@@ -9737,6 +9898,12 @@ msgstr "{1}의 {0}%"
 #~ msgid "Not a valid hosts"
 #~ msgstr "호스트 목록이 유효하지 않습니다"
 
+#~ msgid "Notfiy"
+#~ msgstr "알림"
+
+#~ msgid "Notfiy User"
+#~ msgstr "알림 사용자"
+
 #, fuzzy
 #~ msgid "Number of replicas"
 #~ msgstr "Kideak"
@@ -9769,6 +9936,9 @@ msgstr "{1}의 {0}%"
 #~ msgid "Quota UGID limit"
 #~ msgstr "Quota UGID muga"
 
+#~ msgid "Read Limit"
+#~ msgstr "읽기 제헌"
+
 #, fuzzy
 #~ msgid "Read Limit (MiB/s)"
 #~ msgstr "Irakurketa muga"
@@ -9782,6 +9952,10 @@ msgstr "{1}의 {0}%"
 
 #~ msgid "Restore CT"
 #~ msgstr "CT berrezarri"
+
+#, fuzzy
+#~ msgid "Retention"
+#~ msgstr "백업 보존"
 
 #~ msgid "Revert changes"
 #~ msgstr "Aldaketak leheneratu"
@@ -9863,6 +10037,9 @@ msgstr "{1}의 {0}%"
 #, fuzzy
 #~ msgid "VM protection"
 #~ msgstr "Direktorioa"
+
+#~ msgid "VerifyJob"
+#~ msgstr "작업 검증"
 
 #, fuzzy
 #~ msgid "Weekly"

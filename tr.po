@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: proxmox translations\n"
 "Report-Msgid-Bugs-To: <support@proxmox.com>\n"
-"POT-Creation-Date: Tue Mar  9 16:46:03 2021\n"
+"POT-Creation-Date: Sun Mar 28 17:00:33 2021\n"
 "PO-Revision-Date: 2021-03-10 13:56+0100\n"
 "Last-Translator: Oguz Bektas <o.bektas@proxmox.com>\n"
 "Language-Team: Turkish\n"
@@ -44,6 +44,12 @@ msgid ""
 msgstr ""
 "Yeni bir versiyon yüklü, ama eski versiyon çalışıyor. Lütfen yeniden başlatın"
 
+#: pmg-gui/js/Certificates.js:78
+#, fuzzy
+msgid "ACME Accounts/Challenges"
+msgstr "ACME hesabı ekle"
+
+#: proxmox-widget-toolkit/src/window/ACMEAccount.js:40
 #: pve-manager/www/manager6/node/ACME.js:37
 msgid "ACME Directory"
 msgstr "ACME Dizini"
@@ -53,8 +59,13 @@ msgstr "ACME Dizini"
 msgid "ACPI support"
 msgstr "ACPI"
 
+#: proxmox-widget-toolkit/src/window/ACMEPluginEdit.js:208
 #: pve-manager/www/manager6/dc/ACMEPluginEdit.js:192
 msgid "API Data"
+msgstr ""
+
+#: pve-manager/www/manager6/dc/MetricServerView.js:307
+msgid "API Path Prefix"
 msgstr ""
 
 #: proxmox-widget-toolkit/src/window/TaskViewer.js:141
@@ -82,6 +93,15 @@ msgstr "API anahtar izni"
 msgid "API Tokens"
 msgstr "API anahtarları"
 
+#: proxmox-widget-toolkit/src/panel/ACMEDomains.js:211
+#: proxmox-widget-toolkit/src/panel/Certificates.js:90
+#: proxmox-widget-toolkit/src/window/Certificates.js:126
+#, fuzzy
+msgid ""
+"API server will be restarted to use new certificates, please reload web-"
+"interface!"
+msgstr "pveproxy yeni sertifikalarla başlatılacak, lütfen sayfayı yenileyin!"
+
 #: proxmox-backup/www/window/TokenEdit.js:15
 msgid "API token"
 msgstr "API anahtarı"
@@ -90,6 +110,7 @@ msgstr "API anahtarı"
 msgid "Abort"
 msgstr "İptal et"
 
+#: proxmox-widget-toolkit/src/window/ACMEAccount.js:116
 #: pve-manager/www/manager6/node/ACME.js:113
 msgid "Accept TOS"
 msgstr "Kullanım Şartları'nı kabul et"
@@ -99,11 +120,13 @@ msgstr "Kullanım Şartları'nı kabul et"
 msgid "Access Control"
 msgstr ""
 
+#: proxmox-widget-toolkit/src/window/ACMEAccount.js:154
 #: pmg-gui/js/LDAPConfig.js:242 pmg-gui/js/LDAPUserEditor.js:43
 #: pmg-gui/js/LDAPUserSelector.js:26 pve-manager/www/manager6/node/ACME.js:134
 msgid "Account"
 msgstr "Hesap"
 
+#: proxmox-widget-toolkit/src/window/ACMEAccount.js:19
 #: pve-manager/www/manager6/node/ACME.js:17
 msgid "Account Name"
 msgstr "Hesap adı"
@@ -112,6 +135,7 @@ msgstr "Hesap adı"
 msgid "Account attribute name"
 msgstr ""
 
+#: proxmox-widget-toolkit/src/panel/ACMEAccount.js:5
 #: pmg-gui/js/LDAPConfig.js:590
 #: pve-manager/www/manager6/dc/ACMEClusterView.js:25
 msgid "Accounts"
@@ -125,26 +149,26 @@ msgstr "Hesaplar"
 msgid "Action"
 msgstr "Aksiyon"
 
-#: pmg-gui/js/SpamQuarantine.js:128
+#: pmg-gui/js/SpamQuarantine.js:125
 msgid "Action '{0}' for '{1}' items"
 msgstr ""
 
-#: pmg-gui/js/Utils.js:751
+#: pmg-gui/js/Utils.js:778 pmg-gui/js/Utils.js:882
 msgid "Action '{0}' for '{1}' items successful"
 msgstr ""
 
-#: pmg-gui/js/Utils.js:752
+#: pmg-gui/js/Utils.js:779 pmg-gui/js/Utils.js:883
 msgid "Action '{0}' successful"
 msgstr ""
 
-#: pmg-gui/js/NavigationTree.js:22 pmg-gui/js/Utils.js:31
+#: pmg-gui/js/NavigationTree.js:22 pmg-gui/js/Utils.js:58
 msgid "Action Objects"
 msgstr "Aksiyon Objeleri"
 
 #: proxmox-backup/www/datastore/Content.js:591
-#: proxmox-backup/www/tape/ChangerStatus.js:578
-#: proxmox-backup/www/tape/ChangerStatus.js:706
-#: proxmox-backup/www/tape/ChangerStatus.js:774
+#: proxmox-backup/www/tape/ChangerStatus.js:633
+#: proxmox-backup/www/tape/ChangerStatus.js:761
+#: proxmox-backup/www/tape/ChangerStatus.js:829
 msgid "Actions"
 msgstr "Aksiyonlar"
 
@@ -162,7 +186,10 @@ msgstr "Aktif"
 msgid "Active Directory Server"
 msgstr "Active Directory Sunucusu"
 
-#: proxmox-widget-toolkit/src/Utils.js:532
+#: proxmox-widget-toolkit/src/Utils.js:544
+#: proxmox-widget-toolkit/src/panel/ACMEAccount.js:95
+#: proxmox-widget-toolkit/src/panel/ACMEDomains.js:243
+#: proxmox-widget-toolkit/src/panel/ACMEPlugin.js:94
 #: proxmox-widget-toolkit/src/window/Edit.js:288 pmg-gui/js/ActionList.js:101
 #: pmg-gui/js/ClusterAdministration.js:206 pmg-gui/js/FetchmailView.js:70
 #: pmg-gui/js/ObjectGroup.js:183 pmg-gui/js/RuleConfiguration.js:160
@@ -197,13 +224,14 @@ msgstr "Active Directory Sunucusu"
 #: proxmox-backup/www/config/UserView.js:127
 #: proxmox-backup/www/config/VerifyView.js:141
 #: proxmox-backup/www/tape/BackupJobs.js:144
-#: proxmox-backup/www/tape/ChangerConfig.js:81
-#: proxmox-backup/www/tape/DriveConfig.js:117
+#: proxmox-backup/www/tape/ChangerConfig.js:87
+#: proxmox-backup/www/tape/DriveConfig.js:123
 #: proxmox-backup/www/tape/EncryptionKeys.js:99
 #: proxmox-backup/www/tape/PoolConfig.js:90
 msgid "Add"
 msgstr "Ekle"
 
+#: proxmox-widget-toolkit/src/panel/ACMEDomains.js:310
 #: pve-manager/www/manager6/node/ACME.js:628
 msgid "Add ACME Account"
 msgstr "ACME hesabı ekle"
@@ -279,11 +307,11 @@ msgstr "IP adresi"
 msgid "Addresses"
 msgstr "IP adresleri"
 
-#: pmg-gui/js/NavigationTree.js:98 proxmox-backup/www/NavigationTree.js:62
+#: pmg-gui/js/NavigationTree.js:104 proxmox-backup/www/NavigationTree.js:62
 msgid "Administration"
 msgstr "Yönetim"
 
-#: pmg-gui/js/Utils.js:17
+#: pmg-gui/js/Utils.js:44
 msgid "Administrator"
 msgstr "Yönetici"
 
@@ -350,9 +378,9 @@ msgstr "Ayrılan"
 
 #: proxmox-backup/www/tape/PoolConfig.js:116
 #: proxmox-backup/www/tape/form/PoolSelector.js:30
-#: proxmox-backup/www/tape/window/PoolEdit.js:36
+#: proxmox-backup/www/tape/window/PoolEdit.js:38
 #, fuzzy
-msgid "Allocation"
+msgid "Allocation Policy"
 msgstr "Aksiyon"
 
 #: pmg-gui/js/SpamQuarantineOptions.js:66
@@ -400,7 +428,7 @@ msgstr "Ayarları uygula"
 msgid "Apply Custom Scores"
 msgstr "Özelleştirilmiş spam skorlarını uygula"
 
-#: pmg-gui/js/Utils.js:823
+#: pmg-gui/js/Utils.js:850
 msgid "Apply custom SpamAssassin scores"
 msgstr "Özelleştirilmiş SpamAssassin skorlarını uygula"
 
@@ -408,7 +436,7 @@ msgstr "Özelleştirilmiş SpamAssassin skorlarını uygula"
 msgid "Architecture"
 msgstr "Mimari"
 
-#: pmg-gui/js/Utils.js:430
+#: pmg-gui/js/Utils.js:457
 msgid "Archive Filter"
 msgstr "Arşiv filtresi"
 
@@ -419,6 +447,11 @@ msgstr "Aboneliği kaldırmak istediğinize emin misiniz?"
 #: pve-manager/www/manager6/qemu/HardwareView.js:445
 msgid "Are you sure you want to detach entry {0}"
 msgstr "{0} kaydını kaldırmak istediğinizden emin misiniz?"
+
+#: proxmox-backup/www/tape/DriveStatus.js:220
+#, fuzzy
+msgid "Are you sure you want to erase the inserted tape?"
+msgstr "Bu VM geri yüklemek istediğinizden emin misiniz?"
 
 #: pmg-gui/js/PBSSnapshotView.js:224
 msgid "Are you sure you want to forget snapshot {0}"
@@ -443,6 +476,11 @@ msgstr "{0} kaydını kaldırmak istediğinizden emin misiniz?"
 #: proxmox-backup/www/datastore/Content.js:388
 msgid "Are you sure you want to remove snapshot {0}"
 msgstr "{0} snapshot'u kaldırmak istediğinizden emin misiniz?"
+
+#: proxmox-widget-toolkit/src/panel/Certificates.js:241
+#, fuzzy
+msgid "Are you sure you want to remove the certificate used for {0}"
+msgstr "{0} kayıdı için zamanlamayı kaldırmak istediğinizden emin misiniz?"
 
 #: pmg-gui/js/PBSSnapshotView.js:152
 msgid "Are you sure you want to remove the schedule for {0}"
@@ -472,11 +510,11 @@ msgstr ""
 "Yardımlı Katılım: Kodlanmış Cluster Katılım Bilgisi'ni yapıştırın ve "
 "şifrenizi girin."
 
-#: pmg-gui/js/Utils.js:544
+#: pmg-gui/js/Utils.js:571
 msgid "Attach orig. Mail"
 msgstr "Orijinal mail'i ekle"
 
-#: pmg-gui/js/AttachmentQuarantine.js:96 pmg-gui/js/NavigationTree.js:116
+#: pmg-gui/js/AttachmentQuarantine.js:96 pmg-gui/js/NavigationTree.js:122
 msgid "Attachment Quarantine"
 msgstr "Ek dosya karantinası"
 
@@ -491,7 +529,7 @@ msgstr ""
 msgid "Audio Device"
 msgstr "Ses cihazı"
 
-#: pmg-gui/js/Utils.js:20
+#: pmg-gui/js/Utils.js:47
 msgid "Auditor"
 msgstr "Denetçi"
 
@@ -519,7 +557,7 @@ msgstr ""
 msgid "Auto-generate a client encryption key"
 msgstr ""
 
-#: pve-manager/www/manager6/window/Restore.js:80
+#: pve-manager/www/manager6/window/Restore.js:81
 msgid "Autogenerate unique properties, e.g., MAC addresses"
 msgstr "Özgün özellikleri tut, MAC adresi vb."
 
@@ -565,7 +603,7 @@ msgstr "Mevcut kurtarma anatharları:"
 msgid "Avg. Mail Processing Time"
 msgstr "Ortalama E-Posta Işleme Süresi"
 
-#: pmg-gui/js/Utils.js:585
+#: pmg-gui/js/Utils.js:612
 msgid "BCC"
 msgstr ""
 
@@ -588,7 +626,7 @@ msgstr ""
 
 #: pmg-gui/js/BackupConfiguration.js:5 pmg-gui/js/BackupRestore.js:78
 #: pmg-gui/js/BackupRestore.js:81 pmg-gui/js/BackupRestore.js:102
-#: pmg-gui/js/Utils.js:825 pve-manager/www/manager6/Utils.js:1826
+#: pmg-gui/js/Utils.js:852 pve-manager/www/manager6/Utils.js:1826
 #: pve-manager/www/manager6/dc/Config.js:64
 #: pve-manager/www/manager6/lxc/Config.js:254
 #: pve-manager/www/manager6/lxc/MPEdit.js:246
@@ -682,6 +720,7 @@ msgid "Ballooning Device"
 msgstr ""
 
 #: pve-manager/www/manager6/dc/StorageView.js:156
+#: pve-manager/www/manager6/window/Restore.js:63
 msgid "Bandwidth Limit"
 msgstr "Bant genişliği limiti"
 
@@ -689,14 +728,15 @@ msgstr "Bant genişliği limiti"
 msgid "Bandwidth Limits"
 msgstr "Bant genişliği limitleri"
 
-#: proxmox-backup/www/tape/ChangerStatus.js:253
-#: proxmox-backup/www/tape/ChangerStatus.js:519
+#: proxmox-backup/www/tape/ChangerStatus.js:282
+#: proxmox-backup/www/tape/ChangerStatus.js:574
 msgid "Barcode Label"
 msgstr ""
 
-#: proxmox-backup/www/Utils.js:375
-msgid "Barcode label media"
-msgstr ""
+#: proxmox-backup/www/Utils.js:372
+#, fuzzy
+msgid "Barcode-Label Media"
+msgstr "Verileri sil"
 
 #: pmg-gui/js/LDAPConfig.js:124
 msgid "Base DN"
@@ -722,7 +762,7 @@ msgstr "Temel volume"
 msgid "Basic"
 msgstr "Temel"
 
-#: pve-manager/www/manager6/dc/MetricServerView.js:320
+#: pve-manager/www/manager6/dc/MetricServerView.js:331
 msgid "Batch Size (b)"
 msgstr ""
 
@@ -739,7 +779,7 @@ msgid "Bind User"
 msgstr "Bind Kullanıcısı"
 
 #: pmg-gui/js/QuarantineView.js:28 pmg-gui/js/SpamContextMenu.js:37
-#: pmg-gui/js/SpamQuarantine.js:336 pmg-gui/js/UserBlackWhiteList.js:54
+#: pmg-gui/js/SpamQuarantine.js:356 pmg-gui/js/UserBlackWhiteList.js:54
 #: pmg-gui/js/UserBlackWhiteList.js:204 pmg-gui/js/mobile/mailview.js:29
 #: pmg-gui/js/mobile/quarantineview.js:94
 msgid "Blacklist"
@@ -751,6 +791,7 @@ msgstr "Blok cihazı"
 
 #: pve-manager/www/manager6/storage/ZFSEdit.js:68
 #: pve-manager/www/manager6/storage/ZFSPoolEdit.js:86
+#: proxmox-backup/www/tape/DriveStatus.js:308
 msgid "Block Size"
 msgstr "Blok boyutu"
 
@@ -758,11 +799,7 @@ msgstr "Blok boyutu"
 msgid "Block encrypted archives and documents"
 msgstr "Şifrelenmiş arşivleri ve dökümanları engelle"
 
-#: proxmox-backup/www/tape/DriveStatus.js:278
-msgid "Blocksize"
-msgstr "Blok boyutu"
-
-#: pmg-gui/js/Utils.js:539
+#: pmg-gui/js/Utils.js:566
 msgid "Body"
 msgstr ""
 
@@ -803,7 +840,7 @@ msgstr "Bridge portları"
 msgid "Browse"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/MetricServerView.js:280
+#: pve-manager/www/manager6/dc/MetricServerView.js:281
 msgid "Bucket"
 msgstr ""
 
@@ -935,20 +972,21 @@ msgstr "İmaj silinemiyor, {0} numaralı bir Sanal Makine var!"
 msgid "Capacity"
 msgstr "Kapasite"
 
-#: proxmox-backup/www/Utils.js:487 proxmox-backup/www/tape/ChangerStatus.js:718
-#: proxmox-backup/www/tape/DriveStatus.js:227
+#: proxmox-backup/www/Utils.js:487 proxmox-backup/www/tape/ChangerStatus.js:773
+#: proxmox-backup/www/tape/DriveStatus.js:257
 msgid "Cartridge Memory"
 msgstr ""
 
-#: proxmox-backup/www/tape/ChangerStatus.js:633
-#: proxmox-backup/www/tape/DriveStatus.js:197
+#: proxmox-backup/www/tape/ChangerStatus.js:688
+#: proxmox-backup/www/tape/DriveStatus.js:227
 #: proxmox-backup/www/tape/TapeInventory.js:264
 msgid "Catalog"
 msgstr ""
 
-#: proxmox-backup/www/Utils.js:385
-msgid "Catalog media"
-msgstr ""
+#: proxmox-backup/www/Utils.js:373
+#, fuzzy
+msgid "Catalog Media"
+msgstr "Verileri sil"
 
 #: pve-manager/www/manager6/ceph/Status.js:57
 msgid "Ceph Version"
@@ -971,23 +1009,29 @@ msgstr "Yüklenecek Ceph versiyonu"
 msgid "CephFS"
 msgstr ""
 
+#: proxmox-widget-toolkit/src/window/Certificates.js:5
+#: proxmox-widget-toolkit/src/window/Certificates.js:67
 #: pve-manager/www/manager6/node/Certificates.js:31
 #: pve-manager/www/manager6/node/Certificates.js:93
 msgid "Certificate"
 msgstr "Sertifika"
 
+#: proxmox-widget-toolkit/src/window/Certificates.js:166
 #: pve-manager/www/manager6/node/Certificates.js:183
 msgid "Certificate Chain"
 msgstr "Sertifika zinciri"
 
-#: pve-manager/www/manager6/node/Config.js:183
+#: pmg-gui/js/Certificates.js:5 pmg-gui/js/Certificates.js:28
+#: pmg-gui/js/NavigationTree.js:96 pve-manager/www/manager6/node/Config.js:183
 msgid "Certificates"
 msgstr "Sertifikalar"
 
+#: proxmox-widget-toolkit/src/panel/ACMEPlugin.js:5
 #: pve-manager/www/manager6/dc/ACMEClusterView.js:126
 msgid "Challenge Plugins"
 msgstr ""
 
+#: proxmox-widget-toolkit/src/window/ACMEDomains.js:98
 #: pve-manager/www/manager6/node/ACME.js:253
 #, fuzzy
 msgid "Challenge Type"
@@ -1011,7 +1055,7 @@ msgstr "{0} sahibini değiştir"
 msgid "Changelog"
 msgstr "Değişiklik günlüğü"
 
-#: proxmox-backup/www/tape/ChangerStatus.js:500
+#: proxmox-backup/www/tape/ChangerStatus.js:555
 #: proxmox-backup/www/tape/window/ChangerEdit.js:8
 #: proxmox-backup/www/tape/window/DriveEdit.js:34
 #, fuzzy
@@ -1054,7 +1098,7 @@ msgstr "Port Seçin"
 msgid "ClamAV"
 msgstr ""
 
-#: pmg-gui/js/Utils.js:824
+#: pmg-gui/js/Utils.js:851
 msgid "ClamAV update"
 msgstr ""
 
@@ -1066,7 +1110,7 @@ msgstr ""
 msgid "Clean"
 msgstr "Temiz"
 
-#: proxmox-backup/www/tape/ChangerStatus.js:641
+#: proxmox-backup/www/tape/ChangerStatus.js:696
 #, fuzzy
 msgid "Clean Drive"
 msgstr "Cloudinit Diski"
@@ -1192,8 +1236,8 @@ msgstr "Komut"
 #: pmg-gui/js/SpamDetectorCustom.js:132 pmg-gui/js/SpamDetectorCustom.js:176
 #: pmg-gui/js/SpamDetectorCustom.js:280 pmg-gui/js/Transport.js:107
 #: pmg-gui/js/Transport.js:194 pmg-gui/js/UserEdit.js:146
-#: pmg-gui/js/UserView.js:164 pmg-gui/js/Utils.js:507 pmg-gui/js/Utils.js:564
-#: pmg-gui/js/Utils.js:597 pmg-gui/js/Utils.js:633 pmg-gui/js/Utils.js:672
+#: pmg-gui/js/UserView.js:164 pmg-gui/js/Utils.js:534 pmg-gui/js/Utils.js:591
+#: pmg-gui/js/Utils.js:624 pmg-gui/js/Utils.js:660 pmg-gui/js/Utils.js:699
 #: pve-manager/www/manager6/dc/AuthEditBase.js:57
 #: pve-manager/www/manager6/dc/AuthView.js:35
 #: pve-manager/www/manager6/dc/GroupEdit.js:35
@@ -1244,7 +1288,7 @@ msgstr "Komut"
 #: proxmox-backup/www/form/UserSelector.js:42
 #: proxmox-backup/www/tape/BackupJobs.js:259
 #: proxmox-backup/www/tape/PoolConfig.js:135
-#: proxmox-backup/www/tape/window/PoolEdit.js:75
+#: proxmox-backup/www/tape/window/PoolEdit.js:77
 #: proxmox-backup/www/tape/window/TapeBackupJob.js:126
 #: proxmox-backup/www/window/DataStoreEdit.js:157
 #: proxmox-backup/www/window/RemoteEdit.js:124
@@ -1308,7 +1352,7 @@ msgstr "Zamanlanmış yedekleme yapılandır"
 #: proxmox-widget-toolkit/src/button/Button.js:49
 #: proxmox-widget-toolkit/src/window/SafeDestroy.js:9
 #: pmg-gui/js/RuleConfiguration.js:98 pmg-gui/js/RuleInfo.js:39
-#: pmg-gui/js/SpamQuarantine.js:126 pmg-gui/js/mobile/app.js:31
+#: pmg-gui/js/SpamQuarantine.js:123 pmg-gui/js/mobile/app.js:31
 #: pve-manager/www/manager6/button/Split.js:41
 #: pve-manager/www/manager6/ceph/OSD.js:386
 #: pve-manager/www/manager6/dc/Backup.js:1002
@@ -1326,7 +1370,7 @@ msgstr "Zamanlanmış yedekleme yapılandır"
 #: pve-manager/www/manager6/qemu/CmdMenu.js:143
 #: pve-manager/www/manager6/qemu/CmdMenu.js:183
 #: pve-manager/www/manager6/qemu/CreateWizard.js:184
-#: pve-manager/www/manager6/window/Restore.js:172
+#: pve-manager/www/manager6/window/Restore.js:173
 #: pve-manager/www/manager6/window/SafeDestroy.js:9
 #: proxmox-backup/www/datastore/Content.js:386
 msgid "Confirm"
@@ -1359,11 +1403,11 @@ msgstr "Şifreyi onayla"
 msgid "Confirm your ({0}) password"
 msgstr "({0}) şifrenizi onaylayın"
 
-#: proxmox-widget-toolkit/src/Utils.js:299
-#: proxmox-widget-toolkit/src/Utils.js:417
-#: proxmox-widget-toolkit/src/Utils.js:419
-#: proxmox-widget-toolkit/src/Utils.js:421
-#: proxmox-widget-toolkit/src/Utils.js:423
+#: proxmox-widget-toolkit/src/Utils.js:300
+#: proxmox-widget-toolkit/src/Utils.js:418
+#: proxmox-widget-toolkit/src/Utils.js:420
+#: proxmox-widget-toolkit/src/Utils.js:422
+#: proxmox-widget-toolkit/src/Utils.js:424
 #: pve-manager/www/manager6/Utils.js:664 pve-manager/www/manager6/Utils.js:1628
 msgid "Connection error"
 msgstr "İletişim hatası"
@@ -1372,7 +1416,7 @@ msgstr "İletişim hatası"
 msgid "Connection failure. Network error or Proxmox VE services not running?"
 msgstr "Bağlantı hatası. Ağ problemi veya Proxmox VE servisleri çalışmıyor mu?"
 
-#: proxmox-widget-toolkit/src/Utils.js:565 pmg-gui/js/ServerStatus.js:50
+#: proxmox-widget-toolkit/src/Utils.js:577 pmg-gui/js/ServerStatus.js:50
 #: pve-manager/www/manager6/Utils.js:1815
 #: pve-manager/www/manager6/Utils.js:1820
 #: pve-manager/www/manager6/button/ConsoleButton.js:20
@@ -1395,7 +1439,7 @@ msgid "Console mode"
 msgstr "Konsol modu"
 
 #: pmg-gui/js/ContactStatistics.js:99 pmg-gui/js/ContactStatistics.js:146
-#: pmg-gui/js/ContactStatistics.js:206 pmg-gui/js/NavigationTree.js:196
+#: pmg-gui/js/ContactStatistics.js:206 pmg-gui/js/NavigationTree.js:202
 msgid "Contact"
 msgstr ""
 
@@ -1427,18 +1471,18 @@ msgstr "Sunucu {1} üzerindeki Container {0}"
 #: pve-manager/www/manager6/storage/StatusView.js:38
 #: pve-manager/www/manager6/storage/ZFSPoolEdit.js:68
 #: proxmox-backup/www/datastore/Content.js:54
-#: proxmox-backup/www/tape/ChangerStatus.js:566
-#: proxmox-backup/www/tape/ChangerStatus.js:656
-#: proxmox-backup/www/tape/ChangerStatus.js:762
+#: proxmox-backup/www/tape/ChangerStatus.js:621
+#: proxmox-backup/www/tape/ChangerStatus.js:711
+#: proxmox-backup/www/tape/ChangerStatus.js:817
 #: proxmox-backup/www/tape/TapeManagement.js:18
 msgid "Content"
 msgstr "İçerik"
 
-#: pmg-gui/js/Utils.js:380 pmg-gui/js/Utils.js:447
+#: pmg-gui/js/Utils.js:407 pmg-gui/js/Utils.js:474
 msgid "Content Type"
 msgstr "İçerik Tipi"
 
-#: pmg-gui/js/Utils.js:363
+#: pmg-gui/js/Utils.js:390
 msgid "Content Type Filter"
 msgstr "İçerik Tipi Filtesi"
 
@@ -1491,7 +1535,7 @@ msgstr "Gizli değeri kopyala"
 msgid "Copy data"
 msgstr "Veri kopyala"
 
-#: pmg-gui/js/Utils.js:652
+#: pmg-gui/js/Utils.js:679
 msgid "Copy orignal mail to Attachment Quarantine"
 msgstr "Asıl e-postayı karantinaya kopyala"
 
@@ -1520,7 +1564,7 @@ msgstr ""
 msgid "Count"
 msgstr "Sayaç"
 
-#: proxmox-widget-toolkit/src/Utils.js:534
+#: proxmox-widget-toolkit/src/Utils.js:546
 #: proxmox-widget-toolkit/src/node/NetworkView.js:308
 #: proxmox-widget-toolkit/src/window/Edit.js:292
 #: pmg-gui/js/ClusterAdministration.js:198 pmg-gui/js/LDAPConfig.js:527
@@ -1553,7 +1597,7 @@ msgstr "Sayaç"
 #: pve-manager/www/manager6/node/ZFS.js:377
 #: pve-manager/www/manager6/panel/IPSet.js:102
 #: pve-manager/www/manager6/sdn/VnetView.js:61
-#: proxmox-backup/www/DirectoryList.js:49 proxmox-backup/www/Utils.js:376
+#: proxmox-backup/www/DirectoryList.js:49 proxmox-backup/www/Utils.js:374
 #: proxmox-backup/www/Utils.js:396 proxmox-backup/www/ZFSList.js:113
 msgid "Create"
 msgstr "Oluştur"
@@ -1567,7 +1611,7 @@ msgstr "CT Oluştur"
 msgid "Create CephFS"
 msgstr "CephFS Oluştur"
 
-#: pmg-gui/js/Utils.js:826 pve-manager/www/manager6/Utils.js:1779
+#: pmg-gui/js/Utils.js:853 pve-manager/www/manager6/Utils.js:1779
 #: pve-manager/www/manager6/dc/Cluster.js:145
 #: pve-manager/www/manager6/dc/ClusterEdit.js:5
 msgid "Create Cluster"
@@ -1582,6 +1626,7 @@ msgstr "Device node oluştur"
 msgid "Create VM"
 msgstr "VM Oluştur"
 
+#: proxmox-widget-toolkit/src/window/ACMEAccount.js:164
 #: pve-manager/www/manager6/node/ACME.js:144
 #: proxmox-backup/www/config/TfaView.js:208
 #: proxmox-backup/www/config/TfaView.js:366
@@ -1589,7 +1634,8 @@ msgstr "VM Oluştur"
 msgid "Created"
 msgstr "Oluşturuldu"
 
-#: proxmox-backup/www/tape/window/TapeRestore.js:48
+#: proxmox-backup/www/tape/window/TapeRestore.js:70
+#: proxmox-backup/www/tape/window/TapeRestore.js:80
 msgid "Current User"
 msgstr "Mevcut kullanıcı"
 
@@ -1647,6 +1693,7 @@ msgstr ""
 msgid "DNS"
 msgstr ""
 
+#: proxmox-widget-toolkit/src/form/ACME.js:5
 #: pve-manager/www/manager6/form/ACMEAPISelector.js:15
 msgid "DNS API"
 msgstr ""
@@ -1718,11 +1765,17 @@ msgstr "Verimerkezi"
 #: proxmox-backup/www/panel/Tasks.js:283
 #: proxmox-backup/www/tape/BackupJobs.js:187
 #: proxmox-backup/www/tape/window/TapeBackup.js:19
-#: proxmox-backup/www/tape/window/TapeRestore.js:36
+#: proxmox-backup/www/tape/window/TapeRestore.js:88
+#: proxmox-backup/www/tape/window/TapeRestore.js:130
 #: proxmox-backup/www/window/DataStoreEdit.js:74
 #: proxmox-backup/www/window/SyncJobEdit.js:17
 msgid "Datastore"
 msgstr "Datastore"
+
+#: proxmox-backup/www/tape/window/TapeRestore.js:103
+#, fuzzy
+msgid "Datastore Mapping"
+msgstr "Datastore seçenekleri"
 
 #: proxmox-backup/www/window/NotifyOptions.js:26
 msgid "Datastore Options"
@@ -1738,8 +1791,8 @@ msgstr ""
 
 #: pmg-gui/js/AttachmentQuarantine.js:130 pmg-gui/js/ContactStatistics.js:75
 #: pmg-gui/js/ReceiverStatistics.js:75 pmg-gui/js/SenderStatistics.js:75
-#: pmg-gui/js/SpamQuarantine.js:275 pmg-gui/js/VirusQuarantine.js:139
-#: pve-manager/www/manager6/grid/BackupView.js:299
+#: pmg-gui/js/SpamQuarantine.js:295 pmg-gui/js/VirusQuarantine.js:139
+#: pve-manager/www/manager6/grid/BackupView.js:289
 #: pve-manager/www/manager6/storage/ContentView.js:343
 #: pve-manager/www/manager6/tree/SnapshotTree.js:351
 msgid "Date"
@@ -1785,7 +1838,7 @@ msgstr ""
 msgid "Deep Scrub OSD.{0}"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/Utils.js:52
+#: proxmox-widget-toolkit/src/Utils.js:53
 #: proxmox-widget-toolkit/src/grid/ObjectGrid.js:148
 #: pmg-gui/js/LDAPConfig.js:90 pve-manager/www/manager6/dc/AuthEditAD.js:41
 #: pve-manager/www/manager6/dc/AuthEditBase.js:43
@@ -1800,6 +1853,11 @@ msgstr "Varsayılan"
 #: proxmox-backup/www/window/NotifyOptions.js:6
 msgid "Default (Always)"
 msgstr "Varsayılan (her zaman)"
+
+#: proxmox-backup/www/tape/window/TapeRestore.js:137
+#, fuzzy
+msgid "Default Datastore"
+msgstr "Datastore"
 
 #: pmg-gui/js/MailProxyRelaying.js:10
 msgid "Default Relay"
@@ -1821,7 +1879,7 @@ msgstr ""
 msgid "Defaults to requesting host URI"
 msgstr ""
 
-#: pve-manager/www/manager6/window/Restore.js:63
+#: pve-manager/www/manager6/window/Restore.js:64
 msgid "Defaults to target storage restore limit"
 msgstr "Varsayılan: Hedef depolama restore sınırı"
 
@@ -1838,12 +1896,13 @@ msgid "Delay Warning Time (hours)"
 msgstr ""
 
 #: pmg-gui/js/AttachmentQuarantine.js:170 pmg-gui/js/SpamContextMenu.js:24
-#: pmg-gui/js/SpamQuarantine.js:348 pmg-gui/js/VirusQuarantine.js:179
+#: pmg-gui/js/SpamQuarantine.js:368 pmg-gui/js/VirusQuarantine.js:179
 #: pmg-gui/js/mobile/mailview.js:43 pmg-gui/js/mobile/quarantineview.js:99
 #: pve-manager/www/manager6/dc/TFAEdit.js:531
 msgid "Delete"
 msgstr "Sil"
 
+#: proxmox-widget-toolkit/src/panel/Certificates.js:239
 #: pve-manager/www/manager6/node/Certificates.js:257
 msgid "Delete Custom Certificate"
 msgstr "Özel sertifika sil"
@@ -1872,7 +1931,7 @@ msgid ""
 msgstr ""
 
 #: pmg-gui/js/AttachmentQuarantine.js:164 pmg-gui/js/SpamContextMenu.js:18
-#: pmg-gui/js/SpamQuarantine.js:342 pmg-gui/js/VirusQuarantine.js:173
+#: pmg-gui/js/SpamQuarantine.js:362 pmg-gui/js/VirusQuarantine.js:173
 #: pmg-gui/js/mobile/mailview.js:50 pmg-gui/js/mobile/quarantineview.js:82
 msgid "Deliver"
 msgstr "Teslim et"
@@ -1882,7 +1941,7 @@ msgid "Deliver to"
 msgstr "Kime teslim:"
 
 #: proxmox-widget-toolkit/src/node/APT.js:40
-#: proxmox-widget-toolkit/src/node/ServiceView.js:169
+#: proxmox-widget-toolkit/src/node/ServiceView.js:168
 #: proxmox-widget-toolkit/src/node/Tasks.js:186 pmg-gui/js/ActionList.js:134
 #: pmg-gui/js/ObjectGroupList.js:40 pmg-gui/js/SpamInfoGrid.js:54
 #: pve-manager/www/manager6/data/ResourceStore.js:88
@@ -1990,15 +2049,16 @@ msgstr ""
 msgid "Direction"
 msgstr "Yön"
 
-#: proxmox-widget-toolkit/src/Utils.js:60
+#: proxmox-widget-toolkit/src/Utils.js:61
+#: proxmox-widget-toolkit/src/window/ACMEAccount.js:174
 #: pve-manager/www/manager6/Utils.js:1782
 #: pve-manager/www/manager6/node/ACME.js:154
 #: pve-manager/www/manager6/storage/DirEdit.js:14
-#: proxmox-backup/www/Utils.js:377 proxmox-backup/www/window/FileBrowser.js:230
+#: proxmox-backup/www/Utils.js:375 proxmox-backup/www/window/FileBrowser.js:230
 msgid "Directory"
 msgstr "Dizin"
 
-#: pve-manager/www/manager6/Utils.js:1781 proxmox-backup/www/Utils.js:376
+#: pve-manager/www/manager6/Utils.js:1781 proxmox-backup/www/Utils.js:374
 msgid "Directory Storage"
 msgstr "Klasör depolama"
 
@@ -2025,7 +2085,7 @@ msgstr ""
 msgid "Discard address verification database"
 msgstr ""
 
-#: pmg-gui/js/Utils.js:660 pmg-gui/js/Utils.js:679
+#: pmg-gui/js/Utils.js:687 pmg-gui/js/Utils.js:706
 msgid "Disclaimer"
 msgstr "Feragatname"
 
@@ -2110,10 +2170,13 @@ msgstr "Geçerli bir kurtarma anahtarına benzemiyor"
 msgid "Does not seem like a valid encoded Cluster Information!"
 msgstr "Geçerli bir Kodlanmış Cluster Katılım Bilgisi'ne benzemiyor!"
 
+#: proxmox-widget-toolkit/src/panel/ACMEDomains.js:382
+#: proxmox-widget-toolkit/src/window/ACMEDomains.js:6
+#: proxmox-widget-toolkit/src/window/ACMEDomains.js:155
 #: pmg-gui/js/DomainStatistics.js:5 pmg-gui/js/DomainStatistics.js:72
-#: pmg-gui/js/DomainStatistics.js:116 pmg-gui/js/NavigationTree.js:178
-#: pmg-gui/js/PostfixQShape.js:116 pmg-gui/js/Utils.js:219
-#: pmg-gui/js/Utils.js:225 pmg-gui/js/Utils.js:234 pmg-gui/js/Utils.js:241
+#: pmg-gui/js/DomainStatistics.js:116 pmg-gui/js/NavigationTree.js:184
+#: pmg-gui/js/PostfixQShape.js:116 pmg-gui/js/Utils.js:246
+#: pmg-gui/js/Utils.js:252 pmg-gui/js/Utils.js:261 pmg-gui/js/Utils.js:268
 #: pve-manager/www/manager6/dc/AuthEditAD.js:16
 #: pve-manager/www/manager6/node/ACME.js:196
 #: pve-manager/www/manager6/node/ACME.js:307
@@ -2127,7 +2190,7 @@ msgid "Down"
 msgstr ""
 
 #: pmg-gui/js/AttachmentGrid.js:50 pmg-gui/js/BackupRestore.js:190
-#: pmg-gui/js/SpamQuarantine.js:317 pmg-gui/js/Subscription.js:60
+#: pmg-gui/js/SpamQuarantine.js:337 pmg-gui/js/Subscription.js:60
 #: pve-manager/www/manager6/Utils.js:1783
 #: pve-manager/www/manager6/node/Subscription.js:59
 #: pve-manager/www/manager6/storage/PBSEdit.js:79
@@ -2155,14 +2218,14 @@ msgstr ""
 msgid "Drag and drop to reorder"
 msgstr ""
 
-#: proxmox-backup/www/Utils.js:182 proxmox-backup/www/Utils.js:375
-#: proxmox-backup/www/Utils.js:379 proxmox-backup/www/Utils.js:380
-#: proxmox-backup/www/Utils.js:381 proxmox-backup/www/Utils.js:383
-#: proxmox-backup/www/Utils.js:384 proxmox-backup/www/Utils.js:385
-#: proxmox-backup/www/Utils.js:389 proxmox-backup/www/tape/BackupJobs.js:199
-#: proxmox-backup/www/tape/ChangerStatus.js:158
-#: proxmox-backup/www/tape/ChangerStatus.js:266
-#: proxmox-backup/www/tape/ChangerStatus.js:303
+#: proxmox-backup/www/Utils.js:182 proxmox-backup/www/Utils.js:372
+#: proxmox-backup/www/Utils.js:373 proxmox-backup/www/Utils.js:376
+#: proxmox-backup/www/Utils.js:377 proxmox-backup/www/Utils.js:379
+#: proxmox-backup/www/Utils.js:380 proxmox-backup/www/Utils.js:385
+#: proxmox-backup/www/Utils.js:391 proxmox-backup/www/tape/BackupJobs.js:199
+#: proxmox-backup/www/tape/ChangerStatus.js:187
+#: proxmox-backup/www/tape/ChangerStatus.js:295
+#: proxmox-backup/www/tape/ChangerStatus.js:332
 #: proxmox-backup/www/tape/DriveStatus.js:10
 #: proxmox-backup/www/tape/EncryptionKeys.js:47
 #: proxmox-backup/www/tape/form/PoolSelector.js:26
@@ -2171,11 +2234,11 @@ msgstr ""
 #: proxmox-backup/www/tape/window/LabelMedia.js:39
 #: proxmox-backup/www/tape/window/TapeBackup.js:29
 #: proxmox-backup/www/tape/window/TapeBackupJob.js:64
-#: proxmox-backup/www/tape/window/TapeRestore.js:41
+#: proxmox-backup/www/tape/window/TapeRestore.js:60
 msgid "Drive"
 msgstr ""
 
-#: proxmox-backup/www/tape/DriveConfig.js:162
+#: proxmox-backup/www/tape/DriveConfig.js:168
 #: proxmox-backup/www/tape/window/DriveEdit.js:56
 msgid "Drive Number"
 msgstr ""
@@ -2184,7 +2247,7 @@ msgstr ""
 msgid "Drive is busy"
 msgstr ""
 
-#: proxmox-backup/www/tape/ChangerStatus.js:614
+#: proxmox-backup/www/tape/ChangerStatus.js:669
 #: proxmox-backup/www/tape/TapeManagement.js:36
 msgid "Drives"
 msgstr ""
@@ -2214,13 +2277,15 @@ msgstr ""
 msgid "Duration"
 msgstr "Süre"
 
-#: proxmox-backup/www/tape/DriveStatus.js:281
+#: proxmox-backup/www/tape/DriveStatus.js:311
 msgid "Dynamic"
 msgstr ""
 
+#: proxmox-widget-toolkit/src/window/ACMEAccount.js:31
+#: proxmox-widget-toolkit/src/window/ACMEAccount.js:159
 #: pmg-gui/js/LDAPUserSelector.js:32 pmg-gui/js/UserEdit.js:134
-#: pmg-gui/js/Utils.js:188 pmg-gui/js/Utils.js:194 pmg-gui/js/Utils.js:203
-#: pmg-gui/js/Utils.js:210 pve-manager/www/manager6/dc/UserEdit.js:114
+#: pmg-gui/js/Utils.js:215 pmg-gui/js/Utils.js:221 pmg-gui/js/Utils.js:230
+#: pmg-gui/js/Utils.js:237 pve-manager/www/manager6/dc/UserEdit.js:114
 #: pve-manager/www/manager6/node/ACME.js:29
 #: pve-manager/www/manager6/node/ACME.js:139
 #: proxmox-backup/www/window/UserEdit.js:118
@@ -2266,21 +2331,23 @@ msgstr ""
 msgid "EMail attribute name(s)"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/Utils.js:537
+#: proxmox-widget-toolkit/src/Utils.js:549
 #: proxmox-widget-toolkit/src/node/DNSView.js:46
 #: proxmox-widget-toolkit/src/node/NetworkView.js:106
-#: proxmox-widget-toolkit/src/node/TimeView.js:43 pmg-gui/js/ActionList.js:108
-#: pmg-gui/js/ClamAVDatabase.js:158 pmg-gui/js/DKIMSettings.js:205
-#: pmg-gui/js/FetchmailView.js:76 pmg-gui/js/LDAPConfig.js:522
-#: pmg-gui/js/MailProxyOptions.js:89 pmg-gui/js/MailProxyPorts.js:33
-#: pmg-gui/js/MailProxyRelaying.js:90 pmg-gui/js/MailProxyTLS.js:22
-#: pmg-gui/js/MailProxyTLSDestinations.js:124 pmg-gui/js/MyNetworks.js:74
-#: pmg-gui/js/ObjectGroup.js:192 pmg-gui/js/ObjectGroupList.js:108
-#: pmg-gui/js/PBSConfig.js:118 pmg-gui/js/RelayDomains.js:79
-#: pmg-gui/js/SpamDetectorCustom.js:220 pmg-gui/js/SpamDetectorOptions.js:57
-#: pmg-gui/js/SpamQuarantineOptions.js:75 pmg-gui/js/SystemOptions.js:25
-#: pmg-gui/js/Transport.js:51 pmg-gui/js/UserView.js:102
-#: pmg-gui/js/VirusDetectorOptions.js:49
+#: proxmox-widget-toolkit/src/node/TimeView.js:43
+#: proxmox-widget-toolkit/src/panel/ACMEDomains.js:249
+#: proxmox-widget-toolkit/src/panel/ACMEPlugin.js:100
+#: pmg-gui/js/ActionList.js:108 pmg-gui/js/ClamAVDatabase.js:158
+#: pmg-gui/js/DKIMSettings.js:205 pmg-gui/js/FetchmailView.js:76
+#: pmg-gui/js/LDAPConfig.js:522 pmg-gui/js/MailProxyOptions.js:89
+#: pmg-gui/js/MailProxyPorts.js:33 pmg-gui/js/MailProxyRelaying.js:90
+#: pmg-gui/js/MailProxyTLS.js:22 pmg-gui/js/MailProxyTLSDestinations.js:124
+#: pmg-gui/js/MyNetworks.js:74 pmg-gui/js/ObjectGroup.js:192
+#: pmg-gui/js/ObjectGroupList.js:108 pmg-gui/js/PBSConfig.js:118
+#: pmg-gui/js/RelayDomains.js:79 pmg-gui/js/SpamDetectorCustom.js:220
+#: pmg-gui/js/SpamDetectorOptions.js:57 pmg-gui/js/SpamQuarantineOptions.js:75
+#: pmg-gui/js/SystemOptions.js:25 pmg-gui/js/Transport.js:51
+#: pmg-gui/js/UserView.js:102 pmg-gui/js/VirusDetectorOptions.js:49
 #: pmg-gui/js/VirusQuarantineOptions.js:28
 #: pve-manager/www/manager6/dc/ACMEClusterView.js:189
 #: pve-manager/www/manager6/dc/AuthView.js:113
@@ -2327,8 +2394,8 @@ msgstr ""
 #: proxmox-backup/www/datastore/OptionView.js:29
 #: proxmox-backup/www/datastore/PruneAndGC.js:45
 #: proxmox-backup/www/tape/BackupJobs.js:150
-#: proxmox-backup/www/tape/ChangerConfig.js:88
-#: proxmox-backup/www/tape/DriveConfig.js:124
+#: proxmox-backup/www/tape/ChangerConfig.js:94
+#: proxmox-backup/www/tape/DriveConfig.js:130
 #: proxmox-backup/www/tape/PoolConfig.js:97
 msgid "Edit"
 msgstr "Düzenle"
@@ -2359,20 +2426,16 @@ msgid ""
 msgstr ""
 
 #: proxmox-backup/www/tape/BackupJobs.js:205
-#: proxmox-backup/www/tape/DriveStatus.js:187
+#: proxmox-backup/www/tape/DriveStatus.js:205
 #, fuzzy
 msgid "Eject"
 msgstr "Konu"
 
+#: proxmox-backup/www/Utils.js:376
 #: proxmox-backup/www/tape/window/TapeBackup.js:50
 #: proxmox-backup/www/tape/window/TapeBackupJob.js:107
 #, fuzzy
 msgid "Eject Media"
-msgstr "Verileri sil"
-
-#: proxmox-backup/www/Utils.js:380
-#, fuzzy
-msgid "Eject media"
 msgstr "Verileri sil"
 
 #: pve-manager/www/manager6/dc/OptionView.js:90
@@ -2433,8 +2496,8 @@ msgstr "Kota Etkinleştir"
 #: pve-manager/www/manager6/dc/Backup.js:658
 #: pve-manager/www/manager6/dc/Backup.js:1074
 #: pve-manager/www/manager6/dc/MetricServerView.js:75
-#: pve-manager/www/manager6/dc/MetricServerView.js:262
-#: pve-manager/www/manager6/dc/MetricServerView.js:393
+#: pve-manager/www/manager6/dc/MetricServerView.js:263
+#: pve-manager/www/manager6/dc/MetricServerView.js:404
 #: pve-manager/www/manager6/dc/StorageView.js:149
 #: pve-manager/www/manager6/dc/UserEdit.js:92
 #: pve-manager/www/manager6/dc/UserView.js:154
@@ -2465,7 +2528,7 @@ msgid "Encrypt OSD"
 msgstr "OSD'yi şifrele"
 
 #: pve-manager/www/manager6/Utils.js:242
-#: pve-manager/www/manager6/grid/BackupView.js:320
+#: pve-manager/www/manager6/grid/BackupView.js:310
 #: pve-manager/www/manager6/storage/BackupView.js:123
 #: proxmox-backup/www/Utils.js:27 proxmox-backup/www/datastore/Content.js:684
 #: proxmox-backup/www/window/BackupFileDownloader.js:110
@@ -2490,7 +2553,7 @@ msgstr "Şifreleme fingerprint"
 
 #: pve-manager/www/manager6/storage/PBSEdit.js:251
 #: proxmox-backup/www/tape/window/EncryptionEdit.js:8
-#: proxmox-backup/www/tape/window/PoolEdit.js:61
+#: proxmox-backup/www/tape/window/PoolEdit.js:63
 msgid "Encryption Key"
 msgstr "Şifreleme Anahtarı"
 
@@ -2503,7 +2566,7 @@ msgid "End"
 msgstr "Son"
 
 #: proxmox-widget-toolkit/src/node/Tasks.js:147
-#: proxmox-widget-toolkit/src/window/TaskViewer.js:173 pmg-gui/js/Utils.js:292
+#: proxmox-widget-toolkit/src/window/TaskViewer.js:173 pmg-gui/js/Utils.js:319
 #: pve-manager/www/manager6/dc/Tasks.js:80
 #: proxmox-backup/www/panel/Tasks.js:326
 msgid "End Time"
@@ -2513,22 +2576,26 @@ msgstr "Bitiş Saati"
 msgid "Entropy source"
 msgstr ""
 
-#: proxmox-backup/www/tape/ChangerStatus.js:591
+#: proxmox-backup/www/tape/ChangerStatus.js:646
+#: proxmox-backup/www/tape/DriveStatus.js:215
 #: proxmox-backup/www/tape/TapeInventory.js:205
 #: proxmox-backup/www/tape/window/Erase.js:14
 msgid "Erase"
 msgstr "Sil"
 
+#: proxmox-backup/www/Utils.js:377
+#, fuzzy
+msgid "Erase Media"
+msgstr "Medyayı sil"
+
 #: pve-manager/www/manager6/Utils.js:1789
 msgid "Erase data"
 msgstr "Verileri sil"
 
-#: proxmox-backup/www/Utils.js:381
-msgid "Erase media"
-msgstr "Medyayı sil"
-
 #: proxmox-widget-toolkit/src/Utils.js:50
-#: proxmox-widget-toolkit/src/Utils.js:452
+#: proxmox-widget-toolkit/src/Utils.js:453
+#: proxmox-widget-toolkit/src/Utils.js:464
+#: proxmox-widget-toolkit/src/Utils.js:847
 #: proxmox-widget-toolkit/src/button/Button.js:156
 #: proxmox-widget-toolkit/src/node/APT.js:99
 #: proxmox-widget-toolkit/src/node/APT.js:156
@@ -2536,8 +2603,13 @@ msgstr "Medyayı sil"
 #: proxmox-widget-toolkit/src/node/NetworkView.js:132
 #: proxmox-widget-toolkit/src/node/NetworkView.js:159
 #: proxmox-widget-toolkit/src/node/NetworkView.js:326
-#: proxmox-widget-toolkit/src/node/ServiceView.js:70
+#: proxmox-widget-toolkit/src/node/ServiceView.js:69
+#: proxmox-widget-toolkit/src/panel/ACMEDomains.js:139
+#: proxmox-widget-toolkit/src/panel/ACMEDomains.js:178
+#: proxmox-widget-toolkit/src/panel/ACMEDomains.js:202
+#: proxmox-widget-toolkit/src/panel/Certificates.js:98
 #: proxmox-widget-toolkit/src/panel/DiskList.js:101
+#: proxmox-widget-toolkit/src/window/ACMEAccount.js:96
 #: proxmox-widget-toolkit/src/window/Edit.js:162
 #: proxmox-widget-toolkit/src/window/Edit.js:234
 #: proxmox-widget-toolkit/src/window/TaskViewer.js:206
@@ -2553,7 +2625,7 @@ msgstr "Medyayı sil"
 #: pmg-gui/js/RuleInfo.js:75 pmg-gui/js/ServerStatus.js:34
 #: pmg-gui/js/SpamDetectorStatus.js:70 pmg-gui/js/Subscription.js:89
 #: pmg-gui/js/Subscription.js:177 pmg-gui/js/UserBlackWhiteList.js:88
-#: pmg-gui/js/Utils.js:746 pmg-gui/js/ViewMailHeaders.js:48
+#: pmg-gui/js/Utils.js:773 pmg-gui/js/ViewMailHeaders.js:48
 #: pmg-gui/js/mobile/utils.js:44 pmg-gui/js/mobile/utils.js:47
 #: pmg-gui/js/mobile/utils.js:58 pve-manager/www/manager6/Utils.js:1494
 #: pve-manager/www/manager6/Utils.js:1510
@@ -2625,7 +2697,7 @@ msgstr "Medyayı sil"
 #: pve-manager/www/manager6/window/Migrate.js:144
 #: pve-manager/www/manager6/window/Migrate.js:197
 #: pve-manager/www/manager6/window/Prune.js:108
-#: pve-manager/www/manager6/window/Restore.js:123
+#: pve-manager/www/manager6/window/Restore.js:124
 #: proxmox-backup/www/LoginView.js:54 proxmox-backup/www/ServerStatus.js:103
 #: proxmox-backup/www/ServerStatus.js:136 proxmox-backup/www/Subscription.js:90
 #: proxmox-backup/www/Subscription.js:164 proxmox-backup/www/Utils.js:439
@@ -2640,7 +2712,7 @@ msgstr "Medyayı sil"
 #: proxmox-backup/www/datastore/Prune.js:130
 #: proxmox-backup/www/datastore/PruneAndGC.js:31
 #: proxmox-backup/www/tape/BackupJobs.js:102
-#: proxmox-backup/www/tape/ChangerStatus.js:181
+#: proxmox-backup/www/tape/ChangerStatus.js:210
 #: proxmox-backup/www/window/AddWebauthn.js:145
 msgid "Error"
 msgstr "Hata"
@@ -2748,6 +2820,8 @@ msgstr ""
 msgid "Expire"
 msgstr "Sona erme"
 
+#: proxmox-widget-toolkit/src/panel/Certificates.js:46
+#: proxmox-widget-toolkit/src/window/Certificates.js:52
 #: pve-manager/www/manager6/node/Certificates.js:78
 #: pve-manager/www/manager6/node/Certificates.js:325
 msgid "Expires"
@@ -2801,10 +2875,11 @@ msgstr "Özellikler"
 msgid "Fencing"
 msgstr ""
 
-#: pmg-gui/js/Utils.js:339 pmg-gui/js/Utils.js:570
+#: pmg-gui/js/Utils.js:366 pmg-gui/js/Utils.js:597
 msgid "Field"
 msgstr ""
 
+#: proxmox-widget-toolkit/src/panel/Certificates.js:13
 #: pve-manager/www/manager6/node/Certificates.js:292
 #: proxmox-backup/www/window/BackupFileDownloader.js:90
 #: proxmox-backup/www/window/FileBrowser.js:231
@@ -2812,7 +2887,7 @@ msgid "File"
 msgstr "Dosya"
 
 #: pmg-gui/js/AttachmentGrid.js:33 pmg-gui/js/BackupRestore.js:168
-#: pmg-gui/js/Utils.js:411 pmg-gui/js/Utils.js:478
+#: pmg-gui/js/Utils.js:438 pmg-gui/js/Utils.js:505
 #: proxmox-backup/www/window/BackupFileDownloader.js:99
 msgid "Filename"
 msgstr "Dosya adı"
@@ -2836,6 +2911,8 @@ msgstr "Filtre"
 msgid "Filter VMID"
 msgstr "VMID Filtrele"
 
+#: proxmox-widget-toolkit/src/panel/Certificates.js:58
+#: proxmox-widget-toolkit/src/window/Certificates.js:21
 #: pmg-gui/js/ClusterAdministration.js:57
 #: pmg-gui/js/ClusterAdministration.js:99 pmg-gui/js/PBSRemoteEdit.js:116
 #: pve-manager/www/manager6/dc/ClusterEdit.js:79
@@ -2886,7 +2963,7 @@ msgstr "Adı"
 msgid "First day of the year"
 msgstr ""
 
-#: proxmox-backup/www/tape/DriveStatus.js:283
+#: proxmox-backup/www/tape/DriveStatus.js:313
 msgid "Fixed"
 msgstr ""
 
@@ -2946,7 +3023,7 @@ msgstr "Form alanları geçersiz değerler ile birlikte gönderilemez"
 #: pve-manager/www/manager6/Toolkit.js:11
 #: pve-manager/www/manager6/form/DiskStorageSelector.js:155
 #: pve-manager/www/manager6/form/FileSelector.js:73
-#: pve-manager/www/manager6/grid/BackupView.js:304
+#: pve-manager/www/manager6/grid/BackupView.js:294
 #: pve-manager/www/manager6/storage/ContentView.js:348
 msgid "Format"
 msgstr "Format"
@@ -2968,17 +3045,19 @@ msgstr "Başlangıçta CPU'yu dondur"
 
 #: pmg-gui/js/MailInfo.js:31 pmg-gui/js/MailTracker.js:367
 #: pmg-gui/js/ObjectGroupSelector.js:23 pmg-gui/js/RuleInfo.js:375
-#: pmg-gui/js/Utils.js:32 pmg-gui/js/ViewMailHeaders.js:57
+#: pmg-gui/js/Utils.js:59 pmg-gui/js/ViewMailHeaders.js:57
 msgid "From"
 msgstr "Kimden"
 
+#: proxmox-widget-toolkit/src/window/Certificates.js:143
+#: proxmox-widget-toolkit/src/window/Certificates.js:174
 #: pve-manager/www/manager6/node/Certificates.js:164
 #: pve-manager/www/manager6/node/Certificates.js:191
 msgid "From File"
 msgstr "Dosyadan..."
 
-#: proxmox-backup/www/tape/ChangerStatus.js:40
-#: proxmox-backup/www/tape/ChangerStatus.js:73
+#: proxmox-backup/www/tape/ChangerStatus.js:63
+#: proxmox-backup/www/tape/ChangerStatus.js:99
 msgid "From Slot"
 msgstr "Bu slottan"
 
@@ -3002,6 +3081,11 @@ msgstr "Tam Klon"
 msgid "GC Schedule"
 msgstr "GC Zamanlaması"
 
+#: proxmox-backup/www/Utils.js:378
+#, fuzzy
+msgid "Garbage Collect"
+msgstr "Garbage collection başlat"
+
 #: proxmox-backup/www/window/NotifyOptions.js:78
 msgid "Garbage Collection"
 msgstr ""
@@ -3009,10 +3093,6 @@ msgstr ""
 #: proxmox-backup/www/datastore/PruneAndGC.js:69
 msgid "Garbage Collection Schedule"
 msgstr "Garbage Collection Zamanlaması"
-
-#: proxmox-backup/www/Utils.js:382
-msgid "Garbage collect"
-msgstr ""
 
 #: proxmox-backup/www/dashboard/TaskSummary.js:29
 msgid "Garbage collections"
@@ -3060,7 +3140,7 @@ msgstr "Grafik kartı"
 msgid "Greylisted Mails"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/Utils.js:62 pmg-gui/js/LDAPGroupEditor.js:89
+#: proxmox-widget-toolkit/src/Utils.js:63 pmg-gui/js/LDAPGroupEditor.js:89
 #: pve-manager/www/manager6/dc/ACLView.js:27
 #: pve-manager/www/manager6/dc/ACLView.js:125
 #: pve-manager/www/manager6/dc/GroupEdit.js:22
@@ -3203,7 +3283,7 @@ msgstr ""
 msgid "Header"
 msgstr ""
 
-#: pmg-gui/js/Utils.js:552
+#: pmg-gui/js/Utils.js:579
 msgid "Header Attribute"
 msgstr ""
 
@@ -3220,11 +3300,11 @@ msgid "Health"
 msgstr "Sağlık"
 
 #: proxmox-widget-toolkit/src/button/HelpButton.js:8
-#: proxmox-widget-toolkit/src/button/HelpButton.js:73
+#: proxmox-widget-toolkit/src/button/HelpButton.js:73 pmg-gui/js/Utils.js:23
 msgid "Help"
 msgstr "Yardım"
 
-#: pmg-gui/js/Utils.js:18
+#: pmg-gui/js/Utils.js:45
 msgid "Help Desk"
 msgstr ""
 
@@ -3247,6 +3327,7 @@ msgstr "Hazırda beklet"
 msgid "Hide Internal Hosts"
 msgstr "İç sunucuları gizle"
 
+#: proxmox-widget-toolkit/src/window/ACMEPluginEdit.js:214
 #: pve-manager/www/manager6/dc/ACMEPluginEdit.js:198
 #: proxmox-backup/www/tape/EncryptionKeys.js:120
 #: proxmox-backup/www/tape/form/KeySelector.js:24
@@ -3313,7 +3394,7 @@ msgstr ""
 msgid "Hour"
 msgstr "Saat"
 
-#: pmg-gui/js/HourlyMailDistribution.js:68 pmg-gui/js/NavigationTree.js:166
+#: pmg-gui/js/HourlyMailDistribution.js:68 pmg-gui/js/NavigationTree.js:172
 msgid "Hourly Distribution"
 msgstr "Saatlik dağılım"
 
@@ -3323,9 +3404,10 @@ msgstr "Gösterilecek saatler"
 
 #: pmg-gui/js/ClusterAdministration.js:234 pmg-gui/js/PBSRemoteEdit.js:35
 #: pve-manager/www/manager6/dc/Cluster.js:281 proxmox-backup/www/Utils.js:501
-#: proxmox-backup/www/tape/ChangerStatus.js:561
-#: proxmox-backup/www/tape/ChangerStatus.js:650
-#: proxmox-backup/www/tape/ChangerStatus.js:757
+#: proxmox-backup/www/tape/ChangerStatus.js:25
+#: proxmox-backup/www/tape/ChangerStatus.js:616
+#: proxmox-backup/www/tape/ChangerStatus.js:705
+#: proxmox-backup/www/tape/ChangerStatus.js:812
 msgid "ID"
 msgstr ""
 
@@ -3357,8 +3439,8 @@ msgstr "IOMMU grubu"
 msgid "IP"
 msgstr ""
 
-#: pmg-gui/js/ClusterAdministration.js:93 pmg-gui/js/Utils.js:250
-#: pmg-gui/js/Utils.js:256 pve-manager/www/manager6/dc/ClusterEdit.js:71
+#: pmg-gui/js/ClusterAdministration.js:93 pmg-gui/js/Utils.js:277
+#: pmg-gui/js/Utils.js:283 pve-manager/www/manager6/dc/ClusterEdit.js:71
 msgid "IP Address"
 msgstr "IP adresi"
 
@@ -3366,7 +3448,7 @@ msgstr "IP adresi"
 msgid "IP Config"
 msgstr "IP yapılandırması"
 
-#: pmg-gui/js/Utils.js:265 pmg-gui/js/Utils.js:271
+#: pmg-gui/js/Utils.js:292 pmg-gui/js/Utils.js:298
 msgid "IP Network"
 msgstr "IP ağı"
 
@@ -3429,17 +3511,17 @@ msgstr "Disk Imajı (ISO)"
 msgid "Idle"
 msgstr ""
 
-#: proxmox-backup/www/tape/ChangerStatus.js:29
-#: proxmox-backup/www/tape/ChangerStatus.js:780
+#: proxmox-backup/www/tape/ChangerStatus.js:52
+#: proxmox-backup/www/tape/ChangerStatus.js:835
 msgid "Import"
 msgstr "İçe aktar"
 
-#: proxmox-backup/www/tape/ChangerStatus.js:754
+#: proxmox-backup/www/tape/ChangerStatus.js:809
 #: proxmox-backup/www/tape/window/ChangerEdit.js:41
 msgid "Import-Export Slots"
 msgstr "Slotları iç/dış aktar"
 
-#: proxmox-backup/www/tape/ChangerConfig.js:126
+#: proxmox-backup/www/tape/ChangerConfig.js:132
 msgid "Import/Export Slots"
 msgstr "Slotları iç/dış aktar"
 
@@ -3447,11 +3529,11 @@ msgstr "Slotları iç/dış aktar"
 msgid "Important: Save your Encryption Key"
 msgstr "Önemli: Şifreleme anahtarınızı kaydedin"
 
-#: pmg-gui/js/Utils.js:87 pve-manager/www/manager6/ceph/StatusDetail.js:37
+#: pmg-gui/js/Utils.js:114 pve-manager/www/manager6/ceph/StatusDetail.js:37
 msgid "In"
 msgstr ""
 
-#: pmg-gui/js/Utils.js:89
+#: pmg-gui/js/Utils.js:116
 msgid "In & Out"
 msgstr ""
 
@@ -3512,7 +3594,7 @@ msgstr "Bilgi"
 
 #: pmg-gui/js/ClusterAdministration.js:72
 #: pve-manager/www/manager6/dc/ClusterEdit.js:307
-#: proxmox-backup/www/tape/DriveStatus.js:334
+#: proxmox-backup/www/tape/DriveStatus.js:364
 msgid "Information"
 msgstr "Bilgi"
 
@@ -3520,7 +3602,7 @@ msgstr "Bilgi"
 msgid "Ingress"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/Utils.js:559
+#: proxmox-widget-toolkit/src/Utils.js:571
 #: proxmox-widget-toolkit/src/panel/DiskList.js:197
 msgid "Initialize Disk with GPT"
 msgstr "Diski GPT ile oluştur"
@@ -3571,6 +3653,7 @@ msgstr ""
 msgid "Invalid Value"
 msgstr "Geçersiz değer"
 
+#: proxmox-widget-toolkit/src/Utils.js:847
 #: pve-manager/www/manager6/Utils.js:1494
 #: pve-manager/www/manager6/Utils.js:1510
 msgid "Invalid file size: "
@@ -3580,23 +3663,25 @@ msgstr "Geçersiz dosya boyutu:"
 msgid "Invalid permission path."
 msgstr ""
 
-#: proxmox-backup/www/tape/ChangerStatus.js:290
-#: proxmox-backup/www/tape/ChangerStatus.js:525
-#: proxmox-backup/www/tape/ChangerStatus.js:572
-#: proxmox-backup/www/tape/ChangerStatus.js:662
-#: proxmox-backup/www/tape/ChangerStatus.js:768
+#: proxmox-backup/www/tape/ChangerStatus.js:319
+#: proxmox-backup/www/tape/ChangerStatus.js:580
+#: proxmox-backup/www/tape/ChangerStatus.js:627
+#: proxmox-backup/www/tape/ChangerStatus.js:717
+#: proxmox-backup/www/tape/ChangerStatus.js:823
 #: proxmox-backup/www/tape/TapeManagement.js:24
 msgid "Inventory"
 msgstr ""
 
-#: proxmox-backup/www/Utils.js:383
-msgid "Inventory update"
+#: proxmox-backup/www/Utils.js:379
+msgid "Inventory Update"
 msgstr ""
 
 #: proxmox-backup/www/window/AddWebauthn.js:105
 msgid "Is this token already registered?"
 msgstr "Bu anahtar çoktan kayıtlı mı?"
 
+#: proxmox-widget-toolkit/src/panel/Certificates.js:18
+#: proxmox-widget-toolkit/src/window/Certificates.js:26
 #: pve-manager/www/manager6/node/Certificates.js:52
 #: pve-manager/www/manager6/node/Certificates.js:297
 msgid "Issuer"
@@ -3639,7 +3724,7 @@ msgstr "Görev ID"
 msgid "Join"
 msgstr "Katıl"
 
-#: pmg-gui/js/Utils.js:827 pve-manager/www/manager6/Utils.js:1780
+#: pmg-gui/js/Utils.js:854 pve-manager/www/manager6/Utils.js:1780
 #: pve-manager/www/manager6/dc/Cluster.js:161
 msgid "Join Cluster"
 msgstr "Cluster'a Katıl"
@@ -3759,7 +3844,7 @@ msgstr "Anahtar boyutu"
 msgid "Keyboard Layout"
 msgstr "Klavye Düzeni"
 
-#: pmg-gui/js/Utils.js:157
+#: pmg-gui/js/Utils.js:184
 msgid "LDAP Group"
 msgstr "LDAP Grubu"
 
@@ -3767,7 +3852,7 @@ msgstr "LDAP Grubu"
 msgid "LDAP Server"
 msgstr "LDAP Sunucusu"
 
-#: pmg-gui/js/Utils.js:164
+#: pmg-gui/js/Utils.js:191
 msgid "LDAP User"
 msgstr "LDAP Kullanıcı"
 
@@ -3803,16 +3888,12 @@ msgstr ""
 msgid "Label Information"
 msgstr "Bilgi"
 
-#: proxmox-backup/www/tape/ChangerStatus.js:625
-#: proxmox-backup/www/tape/DriveStatus.js:177
+#: proxmox-backup/www/Utils.js:380 proxmox-backup/www/tape/ChangerStatus.js:680
+#: proxmox-backup/www/tape/DriveStatus.js:195
 #: proxmox-backup/www/tape/window/LabelMedia.js:8
 #, fuzzy
 msgid "Label Media"
 msgstr "Verileri sil"
-
-#: proxmox-backup/www/Utils.js:384
-msgid "Label media"
-msgstr ""
 
 #: proxmox-widget-toolkit/src/window/LanguageEdit.js:30
 #: proxmox-widget-toolkit/src/window/LanguageEdit.js:37
@@ -3880,7 +3961,7 @@ msgstr ""
 msgid "Letter Spacing"
 msgstr ""
 
-#: pmg-gui/js/Utils.js:308
+#: pmg-gui/js/Utils.js:335
 msgid "Level"
 msgstr ""
 
@@ -3917,11 +3998,16 @@ msgstr "Bağlantılı Klon"
 msgid "Live Mode"
 msgstr "Canlı mod"
 
-#: proxmox-backup/www/tape/ChangerStatus.js:597
+#: proxmox-backup/www/tape/ChangerStatus.js:652
 msgid "Load"
 msgstr "Yükle"
 
-#: proxmox-backup/www/tape/ChangerStatus.js:140
+#: proxmox-backup/www/Utils.js:381
+#, fuzzy
+msgid "Load Media"
+msgstr "Medya yükle"
+
+#: proxmox-backup/www/tape/ChangerStatus.js:169
 msgid "Load Media into Drive"
 msgstr ""
 
@@ -3937,15 +4023,12 @@ msgstr "SSH Anahtarı yükle"
 msgid "Load average"
 msgstr "Ortalama Yük"
 
-#: proxmox-backup/www/Utils.js:378
-msgid "Load media"
-msgstr "Medya yükle"
-
+#: proxmox-widget-toolkit/src/window/ACMEAccount.js:79
 #: pve-manager/www/manager6/node/ACME.js:76
 msgid "Loading"
 msgstr "Yükleniyor..."
 
-#: proxmox-widget-toolkit/src/Utils.js:291
+#: proxmox-widget-toolkit/src/Utils.js:292
 msgid "Loading..."
 msgstr "Yükleniyor..."
 
@@ -3991,7 +4074,7 @@ msgstr "Kayıt"
 msgid "Log In"
 msgstr "Giriş"
 
-#: proxmox-backup/www/Utils.js:386
+#: proxmox-backup/www/Utils.js:382
 msgid "Log Rotation"
 msgstr "Log döndürme"
 
@@ -4145,16 +4228,16 @@ msgstr ""
 msgid "Match"
 msgstr ""
 
-#: pmg-gui/js/Utils.js:472
+#: pmg-gui/js/Utils.js:499
 #, fuzzy
 msgid "Match Archive Filename"
 msgstr "Arşiv filtresi"
 
-#: pmg-gui/js/Utils.js:331
+#: pmg-gui/js/Utils.js:358
 msgid "Match Field"
 msgstr ""
 
-#: pmg-gui/js/Utils.js:405
+#: pmg-gui/js/Utils.js:432
 msgid "Match Filename"
 msgstr ""
 
@@ -4200,7 +4283,7 @@ msgstr ""
 msgid "Maximum characters"
 msgstr "Maks. karakter"
 
-#: proxmox-backup/www/tape/ChangerStatus.js:154
+#: proxmox-backup/www/tape/ChangerStatus.js:183
 #: proxmox-backup/www/tape/TapeInventory.js:86
 #: proxmox-backup/www/tape/TapeInventory.js:127
 #: proxmox-backup/www/tape/window/Erase.js:37
@@ -4209,7 +4292,7 @@ msgstr ""
 
 #: proxmox-backup/www/tape/BackupJobs.js:193
 #: proxmox-backup/www/tape/window/LabelMedia.js:61
-#: proxmox-backup/www/tape/window/PoolEdit.js:8
+#: proxmox-backup/www/tape/window/PoolEdit.js:10
 #: proxmox-backup/www/tape/window/TapeBackup.js:24
 #: proxmox-backup/www/tape/window/TapeBackupJob.js:59
 msgid "Media Pool"
@@ -4220,12 +4303,12 @@ msgid "Media Pools"
 msgstr ""
 
 #: proxmox-backup/www/tape/TapeInventory.js:249
-#: proxmox-backup/www/tape/window/TapeRestore.js:20
+#: proxmox-backup/www/tape/window/TapeRestore.js:44
 msgid "Media Set"
 msgstr ""
 
-#: proxmox-backup/www/tape/BackupOverview.js:255
-#: proxmox-backup/www/tape/window/TapeRestore.js:27
+#: proxmox-backup/www/tape/BackupOverview.js:286
+#: proxmox-backup/www/tape/window/TapeRestore.js:51
 msgid "Media Set UUID"
 msgstr ""
 
@@ -4369,10 +4452,10 @@ msgstr "Mod"
 #: pve-manager/www/manager6/form/CPUModelSelector.js:31
 #: pve-manager/www/manager6/node/ZFS.js:130
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:132
-#: proxmox-backup/www/tape/ChangerConfig.js:116
-#: proxmox-backup/www/tape/ChangerStatus.js:689
-#: proxmox-backup/www/tape/DriveConfig.js:152
-#: proxmox-backup/www/tape/DriveStatus.js:376
+#: proxmox-backup/www/tape/ChangerConfig.js:122
+#: proxmox-backup/www/tape/ChangerStatus.js:744
+#: proxmox-backup/www/tape/DriveConfig.js:158
+#: proxmox-backup/www/tape/DriveStatus.js:406
 #: proxmox-backup/www/tape/form/ChangerSelector.js:45
 #: proxmox-backup/www/tape/form/DriveSelector.js:36
 #: proxmox-backup/www/tape/form/TapeDevicePathSelector.js:29
@@ -4498,15 +4581,18 @@ msgstr "ŞİMDİ"
 #: proxmox-widget-toolkit/src/grid/ObjectGrid.js:306
 #: proxmox-widget-toolkit/src/node/NetworkEdit.js:244
 #: proxmox-widget-toolkit/src/node/NetworkView.js:346
-#: proxmox-widget-toolkit/src/node/ServiceView.js:157
+#: proxmox-widget-toolkit/src/node/ServiceView.js:156
+#: proxmox-widget-toolkit/src/panel/ACMEAccount.js:61
+#: proxmox-widget-toolkit/src/window/ACMEAccount.js:54
+#: proxmox-widget-toolkit/src/window/Certificates.js:16
 #: proxmox-widget-toolkit/src/window/ZFSDetail.js:124
 #: pmg-gui/js/ActionList.js:127 pmg-gui/js/ClamAVDatabase.js:81
 #: pmg-gui/js/ObjectGroupList.js:35 pmg-gui/js/ObjectGroupList.js:144
 #: pmg-gui/js/RuleEditor.js:19 pmg-gui/js/RuleInfo.js:295
 #: pmg-gui/js/RuleInfo.js:346 pmg-gui/js/SpamDetectorCustom.js:120
 #: pmg-gui/js/SpamDetectorCustom.js:164 pmg-gui/js/SpamDetectorCustom.js:268
-#: pmg-gui/js/UserView.js:157 pmg-gui/js/Utils.js:502 pmg-gui/js/Utils.js:559
-#: pmg-gui/js/Utils.js:592 pmg-gui/js/Utils.js:628 pmg-gui/js/Utils.js:667
+#: pmg-gui/js/UserView.js:157 pmg-gui/js/Utils.js:529 pmg-gui/js/Utils.js:586
+#: pmg-gui/js/Utils.js:619 pmg-gui/js/Utils.js:655 pmg-gui/js/Utils.js:694
 #: pmg-gui/js/VirusCharts.js:25 pve-manager/www/manager6/ceph/FS.js:25
 #: pve-manager/www/manager6/ceph/FS.js:177
 #: pve-manager/www/manager6/ceph/Pool.js:14
@@ -4521,7 +4607,7 @@ msgstr "ŞİMDİ"
 #: pve-manager/www/manager6/dc/GroupView.js:79
 #: pve-manager/www/manager6/dc/MetricServerView.js:64
 #: pve-manager/www/manager6/dc/MetricServerView.js:208
-#: pve-manager/www/manager6/dc/MetricServerView.js:374
+#: pve-manager/www/manager6/dc/MetricServerView.js:385
 #: pve-manager/www/manager6/dc/NodeView.js:11
 #: pve-manager/www/manager6/dc/PoolEdit.js:22
 #: pve-manager/www/manager6/dc/PoolView.js:79
@@ -4535,7 +4621,7 @@ msgstr "ŞİMDİ"
 #: pve-manager/www/manager6/form/UserSelector.js:36
 #: pve-manager/www/manager6/form/VMSelector.js:46
 #: pve-manager/www/manager6/form/VMSelector.js:251
-#: pve-manager/www/manager6/grid/BackupView.js:286
+#: pve-manager/www/manager6/grid/BackupView.js:276
 #: pve-manager/www/manager6/grid/FirewallAliases.js:27
 #: pve-manager/www/manager6/grid/FirewallAliases.js:168
 #: pve-manager/www/manager6/grid/PoolMembers.js:78
@@ -4569,17 +4655,17 @@ msgstr "ŞİMDİ"
 #: proxmox-backup/www/config/UserView.js:195
 #: proxmox-backup/www/dashboard/DataStoreStatistics.js:57
 #: proxmox-backup/www/form/UserSelector.js:33
-#: proxmox-backup/www/tape/ChangerConfig.js:101
-#: proxmox-backup/www/tape/ChangerStatus.js:668
-#: proxmox-backup/www/tape/DriveConfig.js:137
-#: proxmox-backup/www/tape/DriveStatus.js:358
+#: proxmox-backup/www/tape/ChangerConfig.js:107
+#: proxmox-backup/www/tape/ChangerStatus.js:723
+#: proxmox-backup/www/tape/DriveConfig.js:143
+#: proxmox-backup/www/tape/DriveStatus.js:388
 #: proxmox-backup/www/tape/PoolConfig.js:111
 #: proxmox-backup/www/tape/form/ChangerSelector.js:24
 #: proxmox-backup/www/tape/form/DriveSelector.js:22
 #: proxmox-backup/www/tape/form/PoolSelector.js:22
 #: proxmox-backup/www/tape/window/ChangerEdit.js:24
 #: proxmox-backup/www/tape/window/DriveEdit.js:24
-#: proxmox-backup/www/tape/window/PoolEdit.js:26
+#: proxmox-backup/www/tape/window/PoolEdit.js:28
 #: proxmox-backup/www/window/CreateDirectory.js:38
 #: proxmox-backup/www/window/DataStoreEdit.js:117
 #: proxmox-backup/www/window/FileBrowser.js:199
@@ -4590,6 +4676,10 @@ msgstr "Adı"
 #: pve-manager/www/manager6/storage/ContentView.js:291
 msgid "Name, Format"
 msgstr "Ad, Format"
+
+#: proxmox-backup/www/tape/window/TapeRestore.js:225
+msgid "Need at least one mapping"
+msgstr ""
 
 #: pve-manager/www/manager6/lxc/FeaturesEdit.js:37
 msgid "Nesting"
@@ -4617,7 +4707,7 @@ msgstr "Ağ"
 msgid "Network Config"
 msgstr "Ağ Yapılandırması"
 
-#: proxmox-widget-toolkit/src/Utils.js:542
+#: proxmox-widget-toolkit/src/Utils.js:554
 #: pve-manager/www/manager6/lxc/Network.js:328
 #: pve-manager/www/manager6/qemu/HardwareView.js:238
 #: pve-manager/www/manager6/qemu/HardwareView.js:655
@@ -4652,7 +4742,7 @@ msgstr "Ağlar"
 msgid "Never"
 msgstr "Asla"
 
-#: proxmox-backup/www/tape/BackupOverview.js:223
+#: proxmox-backup/www/tape/BackupOverview.js:254
 msgid "New Backup"
 msgstr "Yeni yedekleme"
 
@@ -4693,10 +4783,12 @@ msgstr "Bitiş tarihi"
 msgid "No"
 msgstr "Hayır"
 
+#: proxmox-widget-toolkit/src/panel/ACMEDomains.js:301
 #: pve-manager/www/manager6/node/ACME.js:619
 msgid "No Account available."
 msgstr "Hesap bulunamadı."
 
+#: proxmox-widget-toolkit/src/panel/ACMEAccount.js:56
 #: pve-manager/www/manager6/dc/ACMEClusterView.js:73
 msgid "No Accounts configured"
 msgstr "Hesap ayarlanmamış"
@@ -4742,6 +4834,7 @@ msgstr "Disk Bulunamadı"
 msgid "No Disks unused"
 msgstr "Kullanılmayan Disk yok"
 
+#: proxmox-widget-toolkit/src/panel/ACMEDomains.js:15
 #: pve-manager/www/manager6/node/ACME.js:354
 msgid "No Domains configured"
 msgstr "Alan adı ayarlanmamış"
@@ -4770,6 +4863,7 @@ msgstr "OSD Seçili değil"
 msgid "No Objects"
 msgstr ""
 
+#: proxmox-widget-toolkit/src/panel/ACMEPlugin.js:47
 #: pve-manager/www/manager6/dc/ACMEClusterView.js:163
 msgid "No Plugins configured"
 msgstr "Eklentiler ayarlanmamış"
@@ -4819,6 +4913,7 @@ msgstr "Remote üzerinde yedekleme mevcut değil"
 msgid "No cache"
 msgstr "Ön bellek yok"
 
+#: proxmox-widget-toolkit/src/window/Certificates.js:137
 #: pve-manager/www/manager6/node/Certificates.js:158
 msgid "No change"
 msgstr "Değişiklik yok"
@@ -4832,7 +4927,7 @@ msgstr "Değişiklik yok"
 #: pmg-gui/js/Dashboard.js:431 pmg-gui/js/DomainStatistics.js:66
 #: pmg-gui/js/DomainStatistics.js:110 pmg-gui/js/LDAPConfig.js:228
 #: pmg-gui/js/LDAPConfig.js:408 pmg-gui/js/MailTracker.js:264
-#: pmg-gui/js/QuarantineList.js:12 pmg-gui/js/QuarantineList.js:245
+#: pmg-gui/js/QuarantineList.js:12 pmg-gui/js/QuarantineList.js:315
 #: pmg-gui/js/ReceiverStatistics.js:113 pmg-gui/js/SenderStatistics.js:105
 #: pmg-gui/js/UserBlackWhiteList.js:16 pmg-gui/js/UserBlackWhiteList.js:153
 #: pmg-gui/js/VirusCharts.js:12 pmg-gui/js/VirusQuarantine.js:101
@@ -4848,6 +4943,11 @@ msgstr "Varsayılan mevcut değil"
 #: proxmox-backup/www/window/BackupFileDownloader.js:89
 msgid "No file selected"
 msgstr "Dosya seçilmemiş"
+
+#: pmg-gui/js/QuarantineList.js:251
+#, fuzzy
+msgid "No match found"
+msgstr "Görev bulunamadı"
 
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:103
 msgid "No network device"
@@ -4887,7 +4987,7 @@ msgstr "Thinpool bulunamadı"
 msgid "No updates available."
 msgstr "Güncelleme bulunamadı."
 
-#: proxmox-widget-toolkit/src/Utils.js:459
+#: proxmox-widget-toolkit/src/Utils.js:471
 #: pmg-gui/js/mobile/quarantineview.js:51 pmg-gui/js/mobile/utils.js:145
 #: pmg-gui/js/mobile/utils.js:151 proxmox-backup/www/Dashboard.js:398
 msgid "No valid subscription"
@@ -4970,7 +5070,7 @@ msgstr ""
 msgid "Normalized"
 msgstr "Normalleştirilmiş"
 
-#: proxmox-backup/www/tape/ChangerStatus.js:464
+#: proxmox-backup/www/tape/ChangerStatus.js:519
 #, fuzzy
 msgid "Not Labeled"
 msgstr "Temel volume"
@@ -5013,8 +5113,8 @@ msgstr ""
 "Not: İmzalanmış dosyalar sunucu tarafından doğrulanmayacak. Bunun için "
 "istemciyi kullanın."
 
-#: pve-manager/www/manager6/grid/BackupView.js:260
-#: pve-manager/www/manager6/grid/BackupView.js:293
+#: pve-manager/www/manager6/grid/BackupView.js:250
+#: pve-manager/www/manager6/grid/BackupView.js:283
 #: pve-manager/www/manager6/node/Config.js:133
 #: pve-manager/www/manager6/panel/NotesView.js:5
 #: pve-manager/www/manager6/storage/ContentView.js:337
@@ -5023,26 +5123,18 @@ msgstr ""
 msgid "Notes"
 msgstr "Notlar"
 
-#: proxmox-backup/www/datastore/OptionView.js:45
-msgid "Notfiy"
-msgstr ""
-
-#: proxmox-backup/www/datastore/OptionView.js:62
-#, fuzzy
-msgid "Notfiy User"
-msgstr "Kullanıcı"
-
-#: pmg-gui/js/Utils.js:495
+#: pmg-gui/js/Utils.js:522
 msgid "Notification"
 msgstr "Bildirim"
 
-#: pmg-gui/js/PBSRemoteEdit.js:60
+#: pmg-gui/js/PBSRemoteEdit.js:60 proxmox-backup/www/datastore/OptionView.js:45
 msgid "Notify"
 msgstr "Bildir"
 
+#: proxmox-backup/www/datastore/OptionView.js:62
 #: proxmox-backup/www/tape/window/TapeBackup.js:55
 #: proxmox-backup/www/tape/window/TapeBackupJob.js:70
-#: proxmox-backup/www/tape/window/TapeRestore.js:47
+#: proxmox-backup/www/tape/window/TapeRestore.js:69
 #: proxmox-backup/www/window/NotifyOptions.js:54
 msgid "Notify User"
 msgstr "Kullanıcıya bildir"
@@ -5066,9 +5158,9 @@ msgstr "Sunucu sayısı"
 #: proxmox-backup/www/Utils.js:220
 #: proxmox-backup/www/dashboard/TaskSummary.js:163
 #: proxmox-backup/www/panel/Tasks.js:259
-#: proxmox-backup/www/tape/ChangerStatus.js:31
-#: proxmox-backup/www/tape/ChangerStatus.js:64
-#: proxmox-backup/www/tape/ChangerStatus.js:139
+#: proxmox-backup/www/tape/ChangerStatus.js:54
+#: proxmox-backup/www/tape/ChangerStatus.js:90
+#: proxmox-backup/www/tape/ChangerStatus.js:168
 #: proxmox-backup/www/tape/window/LabelMedia.js:9
 msgid "OK"
 msgstr "Tamam"
@@ -5121,6 +5213,7 @@ msgstr ""
 msgid "Online"
 msgstr "Çevrimiçi"
 
+#: proxmox-widget-toolkit/src/window/ACMEDomains.js:119
 #: pve-manager/www/manager6/node/ACME.js:274
 msgid "Only 5 Domains with type DNS can be configured"
 msgstr ""
@@ -5149,7 +5242,7 @@ msgstr "Görevi göster"
 #: pve-manager/www/manager6/qemu/Config.js:326
 #: proxmox-backup/www/DirectoryList.js:71
 #: proxmox-backup/www/datastore/Panel.js:90
-#: proxmox-backup/www/tape/DriveStatus.js:288
+#: proxmox-backup/www/tape/DriveStatus.js:318
 msgid "Options"
 msgstr "Seçenekler"
 
@@ -5162,11 +5255,13 @@ msgstr ""
 msgid "Order Certificate"
 msgstr ""
 
+#: proxmox-widget-toolkit/src/panel/ACMEDomains.js:461
+#: proxmox-widget-toolkit/src/panel/ACMEDomains.js:475
 #: pve-manager/www/manager6/node/ACME.js:574
 msgid "Order Certificates Now"
 msgstr "Sertifikaları iste"
 
-#: pve-manager/www/manager6/dc/MetricServerView.js:270
+#: pve-manager/www/manager6/dc/MetricServerView.js:271
 msgid "Organization"
 msgstr "Organizasyon"
 
@@ -5187,7 +5282,7 @@ msgstr ""
 "Diğer cluster üyeleri bu servisin başla bir versiyonunu kullanıyor, lütfen "
 "güncelleyip yeniden başlatın"
 
-#: pmg-gui/js/Utils.js:88 pve-manager/www/manager6/ceph/StatusDetail.js:40
+#: pmg-gui/js/Utils.js:115 pve-manager/www/manager6/ceph/StatusDetail.js:40
 msgid "Out"
 msgstr ""
 
@@ -5233,6 +5328,7 @@ msgstr ""
 
 #: proxmox-backup/www/config/SyncView.js:211
 #: proxmox-backup/www/datastore/Content.js:679
+#: proxmox-backup/www/tape/window/TapeRestore.js:79
 msgid "Owner"
 msgstr "Sahibi"
 
@@ -5242,6 +5338,7 @@ msgstr "Sahibi"
 msgid "PCI Device"
 msgstr "PCI cihazı"
 
+#: proxmox-widget-toolkit/src/panel/Certificates.js:63
 #: pve-manager/www/manager6/node/Certificates.js:342
 msgid "PEM"
 msgstr ""
@@ -5313,16 +5410,16 @@ msgstr "Kodlanmış Cluster Bilgisini buraya yapıştırın"
 #: proxmox-widget-toolkit/src/panel/PermissionView.js:27
 #: pve-manager/www/manager6/dc/ACLView.js:18
 #: pve-manager/www/manager6/dc/ACLView.js:141
-#: pve-manager/www/manager6/dc/MetricServerView.js:408
+#: pve-manager/www/manager6/dc/MetricServerView.js:419
 #: pve-manager/www/manager6/dc/PermissionView.js:26
 #: pve-manager/www/manager6/dc/StorageView.js:130
 #: pve-manager/www/manager6/lxc/MPEdit.js:237
 #: pve-manager/www/manager6/node/Directory.js:70
 #: proxmox-backup/www/DirectoryList.js:56
 #: proxmox-backup/www/config/ACLView.js:178
-#: proxmox-backup/www/tape/ChangerConfig.js:106
-#: proxmox-backup/www/tape/DriveConfig.js:142
-#: proxmox-backup/www/tape/DriveStatus.js:394
+#: proxmox-backup/www/tape/ChangerConfig.js:112
+#: proxmox-backup/www/tape/DriveConfig.js:148
+#: proxmox-backup/www/tape/DriveStatus.js:424
 #: proxmox-backup/www/tape/form/ChangerSelector.js:31
 #: proxmox-backup/www/tape/form/TapeDevicePathSelector.js:15
 #: proxmox-backup/www/tape/window/ChangerEdit.js:34
@@ -5482,7 +5579,7 @@ msgid ""
 msgstr ""
 "Aşağıdaki bilgilerle katılmak istediğiniz sunucudaki 'Katıl' tuşuna basın."
 
-#: proxmox-widget-toolkit/src/Utils.js:374
+#: proxmox-widget-toolkit/src/Utils.js:375
 #: proxmox-widget-toolkit/src/window/LanguageEdit.js:23
 #: pmg-gui/js/LoginView.js:51 pmg-gui/js/LoginView.js:101
 #: pve-manager/www/manager6/dc/Backup.js:926
@@ -5495,12 +5592,16 @@ msgstr ""
 msgid "Please wait..."
 msgstr "Lütfen bekleyin..."
 
+#: proxmox-widget-toolkit/src/form/ACME.js:84
+#: proxmox-widget-toolkit/src/panel/ACMEDomains.js:400
+#: proxmox-widget-toolkit/src/panel/ACMEPlugin.js:52
 #: pve-manager/www/manager6/dc/ACMEClusterView.js:168
 #: pve-manager/www/manager6/form/ACMEPluginSelector.js:5
 #: pve-manager/www/manager6/node/ACME.js:710
 msgid "Plugin"
 msgstr ""
 
+#: proxmox-widget-toolkit/src/window/ACMEPluginEdit.js:178
 #: pve-manager/www/manager6/dc/ACMEPluginEdit.js:165
 msgid "Plugin ID"
 msgstr ""
@@ -5520,7 +5621,7 @@ msgstr ""
 #: pve-manager/www/manager6/storage/RBDEdit.js:125
 #: pve-manager/www/manager6/storage/RBDEdit.js:133
 #: pve-manager/www/manager6/storage/ZFSEdit.js:61
-#: proxmox-backup/www/tape/ChangerStatus.js:272
+#: proxmox-backup/www/tape/ChangerStatus.js:301
 msgid "Pool"
 msgstr ""
 
@@ -5538,7 +5639,7 @@ msgstr ""
 msgid "Pool to backup"
 msgstr ""
 
-#: proxmox-backup/www/tape/BackupOverview.js:239
+#: proxmox-backup/www/tape/BackupOverview.js:270
 msgid "Pool/Media Set/Snapshot"
 msgstr ""
 
@@ -5552,7 +5653,7 @@ msgstr ""
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:45
 #: pve-manager/www/manager6/dc/MetricServerView.js:86
 #: pve-manager/www/manager6/dc/MetricServerView.js:224
-#: pve-manager/www/manager6/dc/MetricServerView.js:401
+#: pve-manager/www/manager6/dc/MetricServerView.js:412
 #: pve-manager/www/manager6/form/USBSelector.js:65
 msgid "Port"
 msgstr "Port"
@@ -5569,7 +5670,7 @@ msgstr "Portlar"
 msgid "Ports/Slaves"
 msgstr ""
 
-#: pmg-gui/js/NavigationTree.js:172 pmg-gui/js/RBLStatistics.js:10
+#: pmg-gui/js/NavigationTree.js:178 pmg-gui/js/RBLStatistics.js:10
 msgid "Postscreen"
 msgstr ""
 
@@ -5605,6 +5706,7 @@ msgstr ""
 msgid "Priority"
 msgstr "Öncelik"
 
+#: proxmox-widget-toolkit/src/window/Certificates.js:135
 #: pve-manager/www/manager6/node/Certificates.js:156
 msgid "Private Key (Optional)"
 msgstr ""
@@ -5623,6 +5725,11 @@ msgstr "Haklar"
 #: proxmox-widget-toolkit/src/window/TaskViewer.js:150
 msgid "Process ID"
 msgstr ""
+
+#: pmg-gui/js/SpamQuarantine.js:133
+#, fuzzy
+msgid "Processing..."
+msgstr "E-Posta İşleme"
 
 #: pve-manager/www/manager6/panel/TemplateStatusView.js:40
 #: pve-manager/www/manager6/qemu/HardwareView.js:94
@@ -5669,7 +5776,7 @@ msgstr "Korunma"
 #: pmg-gui/js/LDAPConfig.js:55 pmg-gui/js/LDAPConfig.js:559
 #: pmg-gui/js/Transport.js:91 pmg-gui/js/Transport.js:160
 #: pve-manager/www/manager6/dc/MetricServerView.js:233
-#: pve-manager/www/manager6/dc/MetricServerView.js:422
+#: pve-manager/www/manager6/dc/MetricServerView.js:433
 #: pve-manager/www/manager6/form/IPProtocolSelector.js:9
 #: pve-manager/www/manager6/grid/FirewallRules.js:189
 #: pve-manager/www/manager6/grid/FirewallRules.js:710
@@ -5688,7 +5795,7 @@ msgstr "Proxmox MG Giriş"
 msgid "Proxmox VE Login"
 msgstr "Proxmox VE Giriş"
 
-#: pve-manager/www/manager6/window/Prune.js:210 proxmox-backup/www/Utils.js:387
+#: pve-manager/www/manager6/window/Prune.js:210 proxmox-backup/www/Utils.js:383
 msgid "Prune"
 msgstr ""
 
@@ -5732,15 +5839,19 @@ msgstr "Prune grubu"
 msgid "Prunes"
 msgstr ""
 
+#: proxmox-widget-toolkit/src/panel/Certificates.js:28
 #: pve-manager/www/manager6/node/Certificates.js:307
 msgid "Public Key Alogrithm"
 msgstr ""
 
+#: proxmox-widget-toolkit/src/panel/Certificates.js:34
+#: proxmox-widget-toolkit/src/window/Certificates.js:41
 #: pve-manager/www/manager6/node/Certificates.js:67
 #: pve-manager/www/manager6/node/Certificates.js:313
 msgid "Public Key Size"
 msgstr ""
 
+#: proxmox-widget-toolkit/src/window/Certificates.js:36
 #: pve-manager/www/manager6/node/Certificates.js:62
 msgid "Public Key Type"
 msgstr ""
@@ -5785,7 +5896,7 @@ msgstr "Karantina"
 msgid "Quarantine Host"
 msgstr "Karantina sunucusu"
 
-#: pmg-gui/js/Utils.js:19
+#: pmg-gui/js/Utils.js:46
 msgid "Quarantine Manager"
 msgstr "Karantina yönetimi"
 
@@ -5797,7 +5908,7 @@ msgstr "Karantina portu"
 msgid "Queue Administration"
 msgstr ""
 
-#: pmg-gui/js/NavigationTree.js:140
+#: pmg-gui/js/NavigationTree.js:146
 msgid "Queues"
 msgstr ""
 
@@ -5873,15 +5984,16 @@ msgstr ""
 msgid "Read"
 msgstr "Salt-okunur"
 
-#: proxmox-backup/www/tape/ChangerStatus.js:730
-#: proxmox-backup/www/tape/DriveStatus.js:207
+#: proxmox-backup/www/tape/ChangerStatus.js:785
+#: proxmox-backup/www/tape/DriveStatus.js:237
 #, fuzzy
 msgid "Read Label"
 msgstr "Kullanılan objeler"
 
-#: pve-manager/www/manager6/window/Restore.js:62
-msgid "Read Limit"
-msgstr "Okuma sınırı"
+#: proxmox-backup/www/Utils.js:384
+#, fuzzy
+msgid "Read Objects"
+msgstr "Kullanılan objeler"
 
 #: pve-manager/www/manager6/qemu/HDEdit.js:257
 #: pve-manager/www/manager6/qemu/HDEdit.js:275
@@ -5892,11 +6004,6 @@ msgstr ""
 #: pve-manager/www/manager6/qemu/HDEdit.js:333
 msgid "Read max burst"
 msgstr ""
-
-#: proxmox-backup/www/Utils.js:388
-#, fuzzy
-msgid "Read objects"
-msgstr "Kullanılan objeler"
 
 #: pve-manager/www/manager6/lxc/MPEdit.js:282
 msgid "Read-only"
@@ -5958,11 +6065,11 @@ msgstr "Yeniden başlat: {0}"
 
 #: pmg-gui/js/ContactStatistics.js:100 pmg-gui/js/Dashboard.js:448
 #: pmg-gui/js/DomainStatistics.js:73 pmg-gui/js/DomainStatistics.js:117
-#: pmg-gui/js/MailTracker.js:75 pmg-gui/js/NavigationTree.js:190
+#: pmg-gui/js/MailTracker.js:75 pmg-gui/js/NavigationTree.js:196
 #: pmg-gui/js/PostfixMailQueue.js:160 pmg-gui/js/ReceiverStatistics.js:107
 #: pmg-gui/js/ReceiverStatistics.js:154 pmg-gui/js/ReceiverStatistics.js:218
-#: pmg-gui/js/SenderStatistics.js:62 pmg-gui/js/Utils.js:12
-#: pmg-gui/js/Utils.js:514
+#: pmg-gui/js/SenderStatistics.js:62 pmg-gui/js/Utils.js:39
+#: pmg-gui/js/Utils.js:541
 msgid "Receiver"
 msgstr "Alıcı"
 
@@ -5989,11 +6096,13 @@ msgstr "Yenile"
 msgid "Regenerate Image"
 msgstr "İmajı tekrar oluştur"
 
+#: proxmox-widget-toolkit/src/window/ACMEAccount.js:12
 #: pve-manager/www/manager6/Utils.js:1762
 #: pve-manager/www/manager6/node/ACME.js:9
 msgid "Register"
 msgstr "Kayıt"
 
+#: proxmox-widget-toolkit/src/window/ACMEAccount.js:9
 #: pve-manager/www/manager6/node/ACME.js:6
 msgid "Register Account"
 msgstr "Hesap aç"
@@ -6006,8 +6115,8 @@ msgstr "U2F cihazını kaydet"
 msgid "Register Webauthn Device"
 msgstr "Webauthn cihazını kaydet"
 
-#: pmg-gui/js/Utils.js:133 pmg-gui/js/Utils.js:141 pmg-gui/js/Utils.js:171
-#: pmg-gui/js/Utils.js:179
+#: pmg-gui/js/Utils.js:160 pmg-gui/js/Utils.js:168 pmg-gui/js/Utils.js:198
+#: pmg-gui/js/Utils.js:206
 msgid "Regular Expression"
 msgstr ""
 
@@ -6045,7 +6154,7 @@ msgstr "Protokol"
 msgid "Relaying"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/Utils.js:561
+#: proxmox-widget-toolkit/src/Utils.js:573
 #: proxmox-widget-toolkit/src/panel/DiskList.js:178
 #: proxmox-widget-toolkit/src/window/DiskSmart.js:46
 #: proxmox-widget-toolkit/src/window/ZFSDetail.js:65
@@ -6059,9 +6168,9 @@ msgstr ""
 #: proxmox-backup/www/DirectoryList.js:44 proxmox-backup/www/ZFSList.js:108
 #: proxmox-backup/www/datastore/Content.js:786
 #: proxmox-backup/www/panel/Tasks.js:155
-#: proxmox-backup/www/tape/BackupOverview.js:218
-#: proxmox-backup/www/tape/ChangerStatus.js:512
-#: proxmox-backup/www/tape/DriveStatus.js:169
+#: proxmox-backup/www/tape/BackupOverview.js:249
+#: proxmox-backup/www/tape/ChangerStatus.js:567
+#: proxmox-backup/www/tape/DriveStatus.js:187
 #: proxmox-backup/www/tape/TapeInventory.js:182
 msgid "Reload"
 msgstr "Yeniden yükle"
@@ -6084,7 +6193,7 @@ msgstr ""
 msgid "Remote Store"
 msgstr ""
 
-#: proxmox-backup/www/Utils.js:390 proxmox-backup/www/Utils.js:391
+#: proxmox-backup/www/Utils.js:386 proxmox-backup/www/Utils.js:387
 msgid "Remote Sync"
 msgstr ""
 
@@ -6116,11 +6225,11 @@ msgstr "Kaldırma belirli"
 #: pve-manager/www/manager6/storage/ImageView.js:33
 #: pve-manager/www/manager6/tree/SnapshotTree.js:281
 #: pve-manager/www/manager6/window/SafeDestroy.js:146
-#: proxmox-backup/www/Utils.js:377 proxmox-backup/www/config/TfaView.js:262
+#: proxmox-backup/www/Utils.js:375 proxmox-backup/www/config/TfaView.js:262
 msgid "Remove"
 msgstr "Kaldır"
 
-#: pmg-gui/js/Utils.js:618
+#: pmg-gui/js/Utils.js:645
 msgid "Remove Attachments"
 msgstr "Ek dosyaları kaldır"
 
@@ -6134,7 +6243,7 @@ msgstr "Zamanlamayı kaldır"
 msgid "Remove Subscription"
 msgstr "Aboneliği kaldır"
 
-#: pmg-gui/js/Utils.js:646
+#: pmg-gui/js/Utils.js:673
 msgid "Remove all attachments"
 msgstr "Tüm ek dosyaları kaldır"
 
@@ -6254,8 +6363,8 @@ msgstr "Kaynak Havuzu"
 msgid "Resources"
 msgstr "Kaynaklar"
 
-#: proxmox-widget-toolkit/src/Utils.js:562
-#: proxmox-widget-toolkit/src/node/ServiceView.js:102
+#: proxmox-widget-toolkit/src/Utils.js:574
+#: proxmox-widget-toolkit/src/node/ServiceView.js:101
 #: pmg-gui/js/ServerStatus.js:56 pmg-gui/js/ServerStatus.js:58
 #: pve-manager/www/manager6/ceph/OSD.js:728
 #: pve-manager/www/manager6/ceph/ServiceList.js:265
@@ -6272,13 +6381,13 @@ msgstr ""
 
 #: pmg-gui/js/BackupRestore.js:22 pmg-gui/js/BackupRestore.js:25
 #: pmg-gui/js/BackupRestore.js:102 pmg-gui/js/BackupRestore.js:142
-#: pmg-gui/js/PBSSnapshotView.js:206 pmg-gui/js/Utils.js:828
+#: pmg-gui/js/PBSSnapshotView.js:206 pmg-gui/js/Utils.js:855
 #: pve-manager/www/manager6/Utils.js:1806
 #: pve-manager/www/manager6/Utils.js:1830
 #: pve-manager/www/manager6/grid/BackupView.js:166
 #: pve-manager/www/manager6/storage/BackupView.js:80
-#: pve-manager/www/manager6/window/Restore.js:138
-#: pve-manager/www/manager6/window/Restore.js:188
+#: pve-manager/www/manager6/window/Restore.js:139
+#: pve-manager/www/manager6/window/Restore.js:189
 #: proxmox-backup/www/tape/EncryptionKeys.js:36
 msgid "Restore"
 msgstr "Geri yükle"
@@ -6288,7 +6397,7 @@ msgstr "Geri yükle"
 msgid "Restore Key"
 msgstr "Anahtarı geri yükle"
 
-#: proxmox-backup/www/tape/BackupOverview.js:229
+#: proxmox-backup/www/tape/BackupOverview.js:260
 #: proxmox-backup/www/tape/window/TapeRestore.js:7
 msgid "Restore Media Set"
 msgstr "Medya geri yükle"
@@ -6303,9 +6412,10 @@ msgstr "Sürdür"
 
 #: proxmox-backup/www/tape/PoolConfig.js:120
 #: proxmox-backup/www/tape/form/PoolSelector.js:34
-#: proxmox-backup/www/tape/window/PoolEdit.js:47
-msgid "Retention"
-msgstr ""
+#: proxmox-backup/www/tape/window/PoolEdit.js:49
+#, fuzzy
+msgid "Retention Policy"
+msgstr "Hedef"
 
 #: proxmox-backup/www/tape/TapeInventory.js:139
 msgid "Retired"
@@ -6322,9 +6432,10 @@ msgstr "Geri al"
 msgid "Revoke Certificate"
 msgstr "Sertifikayı iptal et"
 
-#: proxmox-backup/www/Utils.js:389
-msgid "Rewind media"
-msgstr ""
+#: proxmox-backup/www/Utils.js:385
+#, fuzzy
+msgid "Rewind Media"
+msgstr "Verileri sil"
 
 #: proxmox-widget-toolkit/src/form/RoleSelector.js:23
 #: pmg-gui/js/ClusterAdministration.js:229 pmg-gui/js/UserEdit.js:85
@@ -6545,7 +6656,7 @@ msgstr "Şimdi zamanla"
 msgid "Schedule on '{0}'"
 msgstr ""
 
-#: proxmox-backup/www/Utils.js:395
+#: proxmox-backup/www/Utils.js:392
 msgid "Scheduled Verification"
 msgstr "Zamanlanmış Doğrulama"
 
@@ -6556,8 +6667,8 @@ msgstr ""
 
 #: pmg-gui/js/ReceiverStatistics.js:90 pmg-gui/js/SpamDetectorCustom.js:126
 #: pmg-gui/js/SpamDetectorCustom.js:170 pmg-gui/js/SpamDetectorCustom.js:274
-#: pmg-gui/js/SpamInfoGrid.js:45 pmg-gui/js/SpamQuarantine.js:262
-#: pmg-gui/js/Utils.js:13
+#: pmg-gui/js/SpamInfoGrid.js:45 pmg-gui/js/SpamQuarantine.js:282
+#: pmg-gui/js/Utils.js:40
 msgid "Score"
 msgstr "Skor"
 
@@ -6569,7 +6680,7 @@ msgstr ""
 msgid "Scrub OSD.{0}"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Backup.js:508
+#: pmg-gui/js/QuarantineList.js:350 pve-manager/www/manager6/dc/Backup.js:508
 #: pve-manager/www/manager6/dc/Backup.js:754
 #: pve-manager/www/manager6/form/GlobalSearchField.js:16
 #: pve-manager/www/manager6/grid/BackupView.js:118
@@ -6633,7 +6744,7 @@ msgstr ""
 "Cluster Katılım Bilgisi'nin yapıştırılandan alınmasını istiyorsanız seçin, "
 "elle girmek için devre dışı bırakın"
 
-#: pmg-gui/js/AttachmentQuarantine.js:143 pmg-gui/js/SpamQuarantine.js:288
+#: pmg-gui/js/AttachmentQuarantine.js:143 pmg-gui/js/SpamQuarantine.js:308
 #: pmg-gui/js/VirusQuarantine.js:152
 msgid "Selected Mail"
 msgstr "Seçili Posta"
@@ -6668,19 +6779,19 @@ msgid "Send email to"
 msgstr "E-Posta adresi"
 
 #: pmg-gui/js/ContactStatistics.js:62 pmg-gui/js/MailTracker.js:69
-#: pmg-gui/js/NavigationTree.js:184 pmg-gui/js/PostfixMailQueue.js:155
+#: pmg-gui/js/NavigationTree.js:190 pmg-gui/js/PostfixMailQueue.js:155
 #: pmg-gui/js/ReceiverStatistics.js:62 pmg-gui/js/SenderStatistics.js:99
 #: pmg-gui/js/SenderStatistics.js:146 pmg-gui/js/SenderStatistics.js:206
-#: pmg-gui/js/Utils.js:11
+#: pmg-gui/js/Utils.js:38
 msgid "Sender"
 msgstr "Gönderen"
 
-#: pmg-gui/js/AttachmentQuarantine.js:117 pmg-gui/js/SpamQuarantine.js:256
+#: pmg-gui/js/AttachmentQuarantine.js:117 pmg-gui/js/SpamQuarantine.js:276
 #: pmg-gui/js/VirusQuarantine.js:120
 msgid "Sender/Subject"
 msgstr "Gönderen/Konu"
 
-#: proxmox-backup/www/tape/BackupOverview.js:250
+#: proxmox-backup/www/tape/BackupOverview.js:281
 msgid "Seq. Nr."
 msgstr ""
 
@@ -6689,10 +6800,10 @@ msgstr ""
 #: proxmox-widget-toolkit/src/panel/DiskList.js:294
 #: pve-manager/www/manager6/node/ZFS.js:135
 #: pve-manager/www/manager6/qemu/Smbios1Edit.js:63
-#: proxmox-backup/www/tape/ChangerConfig.js:121
-#: proxmox-backup/www/tape/ChangerStatus.js:697
-#: proxmox-backup/www/tape/DriveConfig.js:157
-#: proxmox-backup/www/tape/DriveStatus.js:385
+#: proxmox-backup/www/tape/ChangerConfig.js:127
+#: proxmox-backup/www/tape/ChangerStatus.js:752
+#: proxmox-backup/www/tape/DriveConfig.js:163
+#: proxmox-backup/www/tape/DriveStatus.js:415
 #: proxmox-backup/www/tape/form/ChangerSelector.js:52
 #: proxmox-backup/www/tape/form/DriveSelector.js:43
 #: proxmox-backup/www/tape/form/TapeDevicePathSelector.js:36
@@ -6722,7 +6833,7 @@ msgstr ""
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:32
 #: pve-manager/www/manager6/dc/MetricServerView.js:81
 #: pve-manager/www/manager6/dc/MetricServerView.js:218
-#: pve-manager/www/manager6/dc/MetricServerView.js:384
+#: pve-manager/www/manager6/dc/MetricServerView.js:395
 #: pve-manager/www/manager6/storage/CIFSEdit.js:131
 #: pve-manager/www/manager6/storage/GlusterFsEdit.js:73
 #: pve-manager/www/manager6/storage/NFSEdit.js:117
@@ -6841,8 +6952,8 @@ msgstr "Paylaşılan"
 msgid "Shares"
 msgstr "Paylaşılan"
 
-#: proxmox-widget-toolkit/src/Utils.js:560
-#: proxmox-widget-toolkit/src/Utils.js:566
+#: proxmox-widget-toolkit/src/Utils.js:572
+#: proxmox-widget-toolkit/src/Utils.js:578
 #: pve-manager/www/manager6/Utils.js:1816
 #: pve-manager/www/manager6/Utils.js:1821
 #: pve-manager/www/manager6/node/CmdMenu.js:80
@@ -6969,7 +7080,7 @@ msgid "Signed"
 msgstr "İmzalanmış"
 
 #: proxmox-widget-toolkit/src/panel/JournalView.js:296
-#: pmg-gui/js/QuarantineList.js:224 pmg-gui/js/mobile/quarantineview.js:21
+#: pmg-gui/js/QuarantineList.js:296 pmg-gui/js/mobile/quarantineview.js:21
 #: proxmox-backup/www/panel/Tasks.js:212
 msgid "Since"
 msgstr ""
@@ -6987,11 +7098,11 @@ msgstr "Tek Disk"
 #: pmg-gui/js/ContactStatistics.js:171 pmg-gui/js/MailTracker.js:406
 #: pmg-gui/js/ReceiverStatistics.js:69 pmg-gui/js/ReceiverStatistics.js:183
 #: pmg-gui/js/SenderStatistics.js:69 pmg-gui/js/SenderStatistics.js:171
-#: pmg-gui/js/SpamQuarantine.js:268 pmg-gui/js/VirusQuarantine.js:132
+#: pmg-gui/js/SpamQuarantine.js:288 pmg-gui/js/VirusQuarantine.js:132
 #: pve-manager/www/manager6/ceph/Pool.js:20
 #: pve-manager/www/manager6/ceph/Pool.js:114
 #: pve-manager/www/manager6/form/FileSelector.js:78
-#: pve-manager/www/manager6/grid/BackupView.js:309
+#: pve-manager/www/manager6/grid/BackupView.js:299
 #: pve-manager/www/manager6/node/LVM.js:81
 #: pve-manager/www/manager6/node/LVMThin.js:75
 #: pve-manager/www/manager6/node/ZFS.js:140
@@ -7028,7 +7139,7 @@ msgstr ""
 msgid "Slaves"
 msgstr ""
 
-#: proxmox-backup/www/tape/ChangerStatus.js:548
+#: proxmox-backup/www/tape/ChangerStatus.js:603
 msgid "Slots"
 msgstr ""
 
@@ -7085,6 +7196,7 @@ msgstr "Bazı misafirler için seçili yedekleme görevi yok."
 msgid "Source"
 msgstr "Kaynak"
 
+#: proxmox-backup/www/tape/window/TapeRestore.js:258
 #: proxmox-backup/www/window/SyncJobEdit.js:182
 msgid "Source Datastore"
 msgstr "Kaynak datastore"
@@ -7113,7 +7225,7 @@ msgstr "Spam / dakika"
 msgid "Spam Detector"
 msgstr "Spam algılayıcı"
 
-#: pmg-gui/js/Utils.js:301
+#: pmg-gui/js/Utils.js:328
 msgid "Spam Filter"
 msgstr "Spam Filtresi"
 
@@ -7121,16 +7233,16 @@ msgstr "Spam Filtresi"
 msgid "Spam Mails"
 msgstr "Spam postalar"
 
-#: pmg-gui/js/NavigationTree.js:104 pmg-gui/js/QuarantineView.js:16
-#: pmg-gui/js/SpamQuarantine.js:235
+#: pmg-gui/js/NavigationTree.js:110 pmg-gui/js/QuarantineView.js:16
+#: pmg-gui/js/SpamQuarantine.js:255
 msgid "Spam Quarantine"
 msgstr "Spam karantina"
 
-#: pmg-gui/js/NavigationTree.js:154 pmg-gui/js/SpamScoreDistribution.js:8
+#: pmg-gui/js/NavigationTree.js:160 pmg-gui/js/SpamScoreDistribution.js:8
 msgid "Spam Scores"
 msgstr "Spam skorları"
 
-#: pmg-gui/js/Utils.js:829
+#: pmg-gui/js/Utils.js:856
 msgid "SpamAssassin update"
 msgstr ""
 
@@ -7164,8 +7276,8 @@ msgstr "Standart"
 msgid "Standard VGA"
 msgstr "Standart VGA"
 
-#: proxmox-widget-toolkit/src/Utils.js:563
-#: proxmox-widget-toolkit/src/node/ServiceView.js:86
+#: proxmox-widget-toolkit/src/Utils.js:575
+#: proxmox-widget-toolkit/src/node/ServiceView.js:85
 #: pmg-gui/js/MailTracker.js:97 pve-manager/www/manager6/Utils.js:1786
 #: pve-manager/www/manager6/Utils.js:1811
 #: pve-manager/www/manager6/Utils.js:1835
@@ -7185,7 +7297,7 @@ msgid "Start Garbage Collection"
 msgstr "Garbage collection başlat"
 
 #: proxmox-widget-toolkit/src/node/Tasks.js:139
-#: proxmox-widget-toolkit/src/window/TaskViewer.js:157 pmg-gui/js/Utils.js:286
+#: proxmox-widget-toolkit/src/window/TaskViewer.js:157 pmg-gui/js/Utils.js:313
 #: pve-manager/www/manager6/dc/Backup.js:194
 #: pve-manager/www/manager6/dc/Backup.js:594
 #: pve-manager/www/manager6/dc/Backup.js:1103
@@ -7204,7 +7316,7 @@ msgstr "Webauthn challenge başlat"
 msgid "Start after created"
 msgstr "Oluşturulduktan sonra otomatik başlat"
 
-#: pve-manager/www/manager6/window/Restore.js:88
+#: pve-manager/www/manager6/window/Restore.js:89
 msgid "Start after restore"
 msgstr "Geri yükledikten sonra otomatik başlat"
 
@@ -7248,11 +7360,11 @@ msgstr "Başlangıç Zamanı"
 msgid "Startup delay"
 msgstr "Başlangıç zaman aşımı"
 
-#: proxmox-widget-toolkit/src/Utils.js:61
+#: proxmox-widget-toolkit/src/Utils.js:62
 #: pmg-gui/js/ClusterAdministration.js:245
 #: pve-manager/www/manager6/ha/Resources.js:116
-#: proxmox-backup/www/tape/ChangerStatus.js:675
-#: proxmox-backup/www/tape/DriveStatus.js:403
+#: proxmox-backup/www/tape/ChangerStatus.js:730
+#: proxmox-backup/www/tape/DriveStatus.js:434
 msgid "State"
 msgstr "Durum"
 
@@ -7269,7 +7381,7 @@ msgstr "İstatistik"
 
 #: pmg-gui/js/ContactStatistics.js:99 pmg-gui/js/DomainStatistics.js:5
 #: pmg-gui/js/GeneralMailStatistics.js:16
-#: pmg-gui/js/HourlyMailDistribution.js:68 pmg-gui/js/NavigationTree.js:148
+#: pmg-gui/js/HourlyMailDistribution.js:68 pmg-gui/js/NavigationTree.js:154
 #: pmg-gui/js/RBLStatistics.js:10 pmg-gui/js/ReceiverStatistics.js:107
 #: pmg-gui/js/SenderStatistics.js:99 pmg-gui/js/SpamScoreDistribution.js:8
 #: pmg-gui/js/VirusCharts.js:5
@@ -7280,8 +7392,9 @@ msgstr "İstatistikler"
 msgid "Stats from last Garbage Collection"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/node/ServiceView.js:163
+#: proxmox-widget-toolkit/src/node/ServiceView.js:162
 #: proxmox-widget-toolkit/src/node/Tasks.js:192
+#: proxmox-widget-toolkit/src/window/ACMEAccount.js:169
 #: proxmox-widget-toolkit/src/window/TaskViewer.js:108
 #: proxmox-widget-toolkit/src/window/TaskViewer.js:224
 #: proxmox-widget-toolkit/src/window/ZFSDetail.js:11
@@ -7327,16 +7440,16 @@ msgstr ""
 #: proxmox-backup/www/dashboard/LongestTasks.js:91
 #: proxmox-backup/www/panel/Tasks.js:366
 #: proxmox-backup/www/tape/BackupJobs.js:246
-#: proxmox-backup/www/tape/ChangerStatus.js:735
-#: proxmox-backup/www/tape/DriveStatus.js:273
-#: proxmox-backup/www/tape/DriveStatus.js:293
+#: proxmox-backup/www/tape/ChangerStatus.js:790
+#: proxmox-backup/www/tape/DriveStatus.js:303
+#: proxmox-backup/www/tape/DriveStatus.js:323
 #: proxmox-backup/www/tape/TapeInventory.js:131
 #: proxmox-backup/www/tape/TapeInventory.js:289
 msgid "Status"
 msgstr "Durum"
 
-#: proxmox-widget-toolkit/src/Utils.js:564
-#: proxmox-widget-toolkit/src/node/ServiceView.js:94
+#: proxmox-widget-toolkit/src/Utils.js:576
+#: proxmox-widget-toolkit/src/node/ServiceView.js:93
 #: proxmox-widget-toolkit/src/window/TaskViewer.js:212
 #: proxmox-widget-toolkit/src/window/TaskViewer.js:218
 #: pve-manager/www/manager6/Utils.js:1787
@@ -7413,17 +7526,26 @@ msgstr "Depolama kullanımı (byte)"
 msgid "Storage {0} on node {1}"
 msgstr "Sunucu {1} üzerindeki Depolama {0}"
 
-#: pmg-gui/js/MailInfo.js:32 pmg-gui/js/Utils.js:521
+#: proxmox-widget-toolkit/src/panel/Certificates.js:23
+#: proxmox-widget-toolkit/src/window/Certificates.js:31
+#: pmg-gui/js/MailInfo.js:32 pmg-gui/js/Utils.js:548
 #: pmg-gui/js/ViewMailHeaders.js:71
 #: pve-manager/www/manager6/node/Certificates.js:57
 #: pve-manager/www/manager6/node/Certificates.js:302
 msgid "Subject"
 msgstr "Konu"
 
+#: proxmox-widget-toolkit/src/panel/Certificates.js:52
+#: proxmox-widget-toolkit/src/window/Certificates.js:58
 #: pve-manager/www/manager6/node/Certificates.js:84
 #: pve-manager/www/manager6/node/Certificates.js:331
 msgid "Subject Alternative Names"
 msgstr ""
+
+#: pmg-gui/js/QuarantineList.js:351
+#, fuzzy
+msgid "Subject, Sender"
+msgstr "Konu"
 
 #: proxmox-widget-toolkit/src/node/NetworkView.js:411
 msgid "Subnet mask"
@@ -7453,7 +7575,7 @@ msgstr "Abonelikler"
 msgid "Success"
 msgstr "Başarılı"
 
-#: proxmox-widget-toolkit/src/Utils.js:349
+#: proxmox-widget-toolkit/src/Utils.js:350
 msgid "Successful"
 msgstr "Başarılı"
 
@@ -7478,7 +7600,7 @@ msgstr "Özet sütunları"
 msgid "Sunday"
 msgstr "Pazar"
 
-#: pmg-gui/js/Utils.js:16
+#: pmg-gui/js/Utils.js:43
 msgid "Superuser"
 msgstr ""
 
@@ -7516,7 +7638,7 @@ msgstr "Swap kullanımı"
 msgid "Sync"
 msgstr "Senkronizasyon"
 
-#: proxmox-backup/www/Utils.js:391
+#: proxmox-backup/www/Utils.js:387
 msgid "Sync Job"
 msgstr "Senkronizasyon görevi"
 
@@ -7549,8 +7671,8 @@ msgstr "Senkronize et"
 msgid "Syncs"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/node/ServiceView.js:48
-#: proxmox-widget-toolkit/src/node/ServiceView.js:110
+#: proxmox-widget-toolkit/src/node/ServiceView.js:47
+#: proxmox-widget-toolkit/src/node/ServiceView.js:109
 #: pmg-gui/js/MailTracker.js:163 pmg-gui/js/ServerAdministration.js:53
 #: pve-manager/www/manager6/ceph/ServiceList.js:211
 #: pve-manager/www/manager6/ceph/ServiceList.js:310
@@ -7576,7 +7698,7 @@ msgstr "Sistem yapılandırma"
 msgid "System Report"
 msgstr "Sistem Raporu"
 
-#: pve-manager/www/manager6/dc/MetricServerView.js:456
+#: pve-manager/www/manager6/dc/MetricServerView.js:467
 msgid "TCP Timeout"
 msgstr "TCP Zaman aşımı"
 
@@ -7638,11 +7760,11 @@ msgstr "Depolama"
 msgid "Take Snapshot"
 msgstr "Snapshot oluştur"
 
-#: proxmox-backup/www/Utils.js:372 proxmox-backup/www/tape/TapeManagement.js:5
+#: proxmox-backup/www/Utils.js:388 proxmox-backup/www/tape/TapeManagement.js:5
 msgid "Tape Backup"
 msgstr "Kaset yedekleme"
 
-#: proxmox-backup/www/Utils.js:373
+#: proxmox-backup/www/Utils.js:389
 #: proxmox-backup/www/tape/window/TapeBackupJob.js:10
 msgid "Tape Backup Job"
 msgstr "Kaset yedekleme görevi"
@@ -7651,44 +7773,49 @@ msgstr "Kaset yedekleme görevi"
 msgid "Tape Backup Jobs"
 msgstr "Kaset yedekleme görevleri"
 
-#: proxmox-backup/www/tape/DriveStatus.js:296
+#: proxmox-backup/www/tape/DriveStatus.js:326
 msgid "Tape Density"
 msgstr "Kaset yoğunluğu"
 
-#: proxmox-backup/www/tape/DriveStatus.js:299
+#: proxmox-backup/www/tape/DriveStatus.js:329
 msgid "Tape Manufacture Date"
 msgstr "Kaset üretim tarihi"
 
-#: proxmox-backup/www/tape/DriveStatus.js:316
+#: proxmox-backup/www/tape/DriveStatus.js:346
 msgid "Tape Passes"
 msgstr "Kaset geçişleri"
 
-#: proxmox-backup/www/tape/DriveStatus.js:308
+#: proxmox-backup/www/tape/DriveStatus.js:338
 msgid "Tape Read"
 msgstr "Kaset okuma"
 
-#: proxmox-backup/www/Utils.js:374
+#: proxmox-backup/www/Utils.js:390
 msgid "Tape Restore"
 msgstr "Kaset geri yükleme"
 
-#: proxmox-backup/www/tape/DriveStatus.js:319
+#: proxmox-backup/www/tape/DriveStatus.js:349
 msgid "Tape Wearout"
 msgstr "Kaset yıpranması"
 
-#: proxmox-backup/www/tape/DriveStatus.js:312
+#: proxmox-backup/www/tape/DriveStatus.js:342
 msgid "Tape Written"
 msgstr "Yazılan kaset"
 
-#: proxmox-backup/www/tape/BackupOverview.js:245
+#: proxmox-backup/www/tape/BackupOverview.js:276
 msgid "Tapes"
 msgstr ""
 
-#: pmg-gui/js/Utils.js:603 pve-manager/www/manager6/dc/StorageView.js:130
+#: pmg-gui/js/Utils.js:630 pve-manager/www/manager6/dc/StorageView.js:130
 #: pve-manager/www/manager6/grid/Replication.js:33
 #: pve-manager/www/manager6/grid/Replication.js:310
 #: pve-manager/www/manager6/storage/ZFSEdit.js:75
 msgid "Target"
 msgstr "Hedef"
+
+#: proxmox-backup/www/tape/window/TapeRestore.js:263
+#, fuzzy
+msgid "Target Datastore"
+msgstr "Hedef depolama"
 
 #: pve-manager/www/manager6/qemu/HDMove.js:76
 #: pve-manager/www/manager6/window/Clone.js:247
@@ -7768,6 +7895,7 @@ msgstr "Şablon"
 msgid "Templates"
 msgstr "Şablonlar"
 
+#: proxmox-widget-toolkit/src/window/ACMEAccount.js:180
 #: pve-manager/www/manager6/node/ACME.js:160
 msgid "Terms of Services"
 msgstr "Kullanım Şartları"
@@ -7776,12 +7904,12 @@ msgstr "Kullanım Şartları"
 msgid "Test Name"
 msgstr "Test İsim"
 
-#: pmg-gui/js/Utils.js:145 pmg-gui/js/Utils.js:351 pmg-gui/js/Utils.js:417
-#: pmg-gui/js/Utils.js:484
+#: pmg-gui/js/Utils.js:172 pmg-gui/js/Utils.js:378 pmg-gui/js/Utils.js:444
+#: pmg-gui/js/Utils.js:511
 msgid "Test String"
 msgstr "Test Yazı"
 
-#: pmg-gui/js/Utils.js:640
+#: pmg-gui/js/Utils.js:667
 msgid "Text Replacement"
 msgstr ""
 
@@ -7817,7 +7945,7 @@ msgstr "Bu geçerli bir DNS adı değil"
 msgid "This will permanently erase all data."
 msgstr "Bu kalıcı olarak tüm verileri silecektir."
 
-#: pve-manager/www/manager6/window/Restore.js:171
+#: pve-manager/www/manager6/window/Restore.js:172
 msgid "This will permanently erase current VM data."
 msgstr "Bu kalıcı olarak mevcut VM verilerini silecektir."
 
@@ -7836,7 +7964,7 @@ msgstr "Eşik"
 #: pmg-gui/js/AttachmentQuarantine.js:136 pmg-gui/js/BackupRestore.js:176
 #: pmg-gui/js/ContactStatistics.js:81 pmg-gui/js/MailTracker.js:361
 #: pmg-gui/js/PostfixMailQueue.js:143 pmg-gui/js/ReceiverStatistics.js:81
-#: pmg-gui/js/SenderStatistics.js:81 pmg-gui/js/SpamQuarantine.js:281
+#: pmg-gui/js/SenderStatistics.js:81 pmg-gui/js/SpamQuarantine.js:301
 #: pmg-gui/js/SystemConfiguration.js:41 pmg-gui/js/VirusQuarantine.js:145
 #: pve-manager/www/manager6/dc/Log.js:46
 #: pve-manager/www/manager6/node/Config.js:209
@@ -7860,7 +7988,7 @@ msgstr "Zaman dilimi"
 msgid "Time zone"
 msgstr "Saat dilimi"
 
-#: pmg-gui/js/Utils.js:280
+#: pmg-gui/js/Utils.js:307
 msgid "TimeFrame"
 msgstr "Zaman aralığı"
 
@@ -7868,7 +7996,7 @@ msgstr "Zaman aralığı"
 msgid "Timeout"
 msgstr "Zaman aşımı"
 
-#: pve-manager/www/manager6/dc/MetricServerView.js:306
+#: pve-manager/www/manager6/dc/MetricServerView.js:317
 msgid "Timeout (s)"
 msgstr "Zaman aşımı (saniye)"
 
@@ -7877,13 +8005,13 @@ msgid "Timestamp"
 msgstr "Zaman damgası"
 
 #: pmg-gui/js/MailTracker.js:373 pmg-gui/js/ObjectGroupSelector.js:26
-#: pmg-gui/js/RuleInfo.js:383 pmg-gui/js/Utils.js:33
+#: pmg-gui/js/RuleInfo.js:383 pmg-gui/js/Utils.js:60
 #: pmg-gui/js/ViewMailHeaders.js:64
 msgid "To"
 msgstr "Kime"
 
-#: proxmox-backup/www/tape/ChangerStatus.js:45
-#: proxmox-backup/www/tape/ChangerStatus.js:78
+#: proxmox-backup/www/tape/ChangerStatus.js:68
+#: proxmox-backup/www/tape/ChangerStatus.js:104
 msgid "To Slot"
 msgstr ""
 
@@ -7903,16 +8031,16 @@ msgstr ""
 "Bu özellikleri kullanabilmek için sanal makinenin donanım ayarlarında "
 "görüntüyü SPICE'a çevirin."
 
-#: pmg-gui/js/AttachmentQuarantine.js:157 pmg-gui/js/SpamQuarantine.js:302
+#: pmg-gui/js/AttachmentQuarantine.js:157 pmg-gui/js/SpamQuarantine.js:322
 #: pmg-gui/js/VirusQuarantine.js:166
 msgid "Toggle Raw"
 msgstr ""
 
-#: pmg-gui/js/SpamQuarantine.js:309
+#: pmg-gui/js/SpamQuarantine.js:329
 msgid "Toggle Spam Info"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/MetricServerView.js:290
+#: pve-manager/www/manager6/dc/MetricServerView.js:291
 #: pve-manager/www/manager6/dc/TokenEdit.js:6
 msgid "Token"
 msgstr ""
@@ -7941,7 +8069,7 @@ msgstr "Token adı"
 msgid "Top Receivers"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/Utils.js:58 pmg-gui/js/PostfixQShape.js:121
+#: proxmox-widget-toolkit/src/Utils.js:59 pmg-gui/js/PostfixQShape.js:121
 #: pmg-gui/js/ServerStatus.js:133 pmg-gui/js/ServerStatus.js:141
 #: pmg-gui/js/ServerStatus.js:157 pve-manager/www/manager6/ceph/OSD.js:656
 #: pve-manager/www/manager6/ceph/Pool.js:169
@@ -7984,7 +8112,7 @@ msgstr ""
 msgid "Total cores"
 msgstr ""
 
-#: pmg-gui/js/MailTracker.js:228 pmg-gui/js/NavigationTree.js:134
+#: pmg-gui/js/MailTracker.js:228 pmg-gui/js/NavigationTree.js:140
 msgid "Tracking Center"
 msgstr "Takip Merkezi"
 
@@ -7993,8 +8121,8 @@ msgstr "Takip Merkezi"
 msgid "Traffic"
 msgstr "Trafik"
 
-#: proxmox-backup/www/tape/ChangerStatus.js:62
-#: proxmox-backup/www/tape/ChangerStatus.js:585
+#: proxmox-backup/www/tape/ChangerStatus.js:88
+#: proxmox-backup/www/tape/ChangerStatus.js:640
 msgid "Transfer"
 msgstr ""
 
@@ -8022,6 +8150,7 @@ msgstr "İki faktörlü kimlik doğrulama"
 
 #: proxmox-widget-toolkit/src/form/NetworkSelector.js:117
 #: proxmox-widget-toolkit/src/node/NetworkView.js:351
+#: proxmox-widget-toolkit/src/panel/ACMEDomains.js:395
 #: proxmox-widget-toolkit/src/panel/DiskList.js:221
 #: pmg-gui/js/ObjectGroup.js:78 pmg-gui/js/RuleInfo.js:290
 #: pmg-gui/js/Subscription.js:118
@@ -8055,6 +8184,7 @@ msgstr "İki faktörlü kimlik doğrulama"
 #: proxmox-backup/www/Subscription.js:108
 #: proxmox-backup/www/config/TfaView.js:350
 #: proxmox-backup/www/form/AuthidSelector.js:72
+#: proxmox-backup/www/tape/ChangerStatus.js:30
 #: proxmox-backup/www/window/FileBrowser.js:224
 msgid "Type"
 msgstr "Tür"
@@ -8075,6 +8205,7 @@ msgstr ""
 msgid "U2F Settings"
 msgstr "U2F ayarları"
 
+#: proxmox-widget-toolkit/src/window/ACMEAccount.js:59
 #: pve-manager/www/manager6/node/ACME.js:59
 msgid "URL"
 msgstr ""
@@ -8101,7 +8232,7 @@ msgstr "Değişiklik yok"
 msgid "Undo Zoom"
 msgstr ""
 
-#: pve-manager/www/manager6/window/Restore.js:75
+#: pve-manager/www/manager6/window/Restore.js:76
 msgid "Unique"
 msgstr ""
 
@@ -8114,7 +8245,7 @@ msgstr ""
 msgid "Unit File"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/Utils.js:51
+#: proxmox-widget-toolkit/src/Utils.js:52
 #: pmg-gui/js/dashboard/SubscriptionInfo.js:7
 #: pve-manager/www/manager6/ceph/StatusDetail.js:171
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:89
@@ -8126,7 +8257,7 @@ msgstr "Bilinmeyen"
 msgid "Unknown LDAP address"
 msgstr "Bilinmeyen LDAP adresi"
 
-#: proxmox-widget-toolkit/src/Utils.js:352
+#: proxmox-widget-toolkit/src/Utils.js:353
 msgid "Unknown error"
 msgstr "Bilinmeyen Hata"
 
@@ -8134,12 +8265,13 @@ msgstr "Bilinmeyen Hata"
 msgid "Unkown"
 msgstr ""
 
-#: proxmox-backup/www/tape/ChangerStatus.js:712
+#: proxmox-backup/www/tape/ChangerStatus.js:767
 msgid "Unload"
 msgstr "Boşalt"
 
-#: proxmox-backup/www/Utils.js:379
-msgid "Unload media"
+#: proxmox-backup/www/Utils.js:391
+#, fuzzy
+msgid "Unload Media"
 msgstr "Medyayı boşalt"
 
 #: pve-manager/www/manager6/Utils.js:1839
@@ -8152,12 +8284,12 @@ msgstr ""
 
 #: pve-manager/www/manager6/lxc/CreateWizard.js:63
 #: pve-manager/www/manager6/lxc/Options.js:133
-#: pve-manager/www/manager6/window/Restore.js:100
+#: pve-manager/www/manager6/window/Restore.js:101
 msgid "Unprivileged container"
 msgstr "Yetkisiz Container"
 
 #: proxmox-widget-toolkit/src/panel/JournalView.js:312
-#: pmg-gui/js/QuarantineList.js:231 pmg-gui/js/mobile/quarantineview.js:29
+#: pmg-gui/js/QuarantineList.js:303 pmg-gui/js/mobile/quarantineview.js:29
 #: proxmox-backup/www/panel/Tasks.js:223
 msgid "Until"
 msgstr ""
@@ -8189,7 +8321,7 @@ msgstr "Şimdi güncelle"
 msgid "Update now"
 msgstr "Şimdi güncelle"
 
-#: proxmox-widget-toolkit/src/Utils.js:558
+#: proxmox-widget-toolkit/src/Utils.js:570
 msgid "Update package database"
 msgstr "Paket veritabanını güncelle"
 
@@ -8205,6 +8337,7 @@ msgstr "Güncellemeler"
 msgid "Upgrade"
 msgstr "Yükselt"
 
+#: proxmox-widget-toolkit/src/window/Certificates.js:111
 #: pve-manager/www/manager6/node/Certificates.js:137
 #: pve-manager/www/manager6/storage/ContentView.js:112
 #: pve-manager/www/manager6/storage/ContentView.js:177
@@ -8212,6 +8345,9 @@ msgstr "Yükselt"
 msgid "Upload"
 msgstr "Yükle"
 
+#: proxmox-widget-toolkit/src/panel/Certificates.js:175
+#: proxmox-widget-toolkit/src/panel/Certificates.js:227
+#: proxmox-widget-toolkit/src/window/Certificates.js:108
 #: pve-manager/www/manager6/node/Certificates.js:134
 #: pve-manager/www/manager6/node/Certificates.js:244
 msgid "Upload Custom Certificate"
@@ -8240,7 +8376,9 @@ msgstr "Dosya yükleniyor..."
 msgid "Uptime"
 msgstr "Çalışma süresi"
 
+#: proxmox-widget-toolkit/src/panel/ACMEDomains.js:387
 #: proxmox-widget-toolkit/src/panel/DiskList.js:236
+#: proxmox-widget-toolkit/src/window/ACMEDomains.js:162
 #: pve-manager/www/manager6/ceph/Status.js:197
 #: pve-manager/www/manager6/node/LVM.js:71
 #: pve-manager/www/manager6/node/LVMThin.js:65
@@ -8258,7 +8396,7 @@ msgstr "Kullanım %"
 msgid "Usage History"
 msgstr "Kullanım geçmişi"
 
-#: pve-manager/www/manager6/window/Restore.js:66
+#: pve-manager/www/manager6/window/Restore.js:67
 msgid "Use '0' to disable all bandwidth limits."
 msgstr "Tüm bant genişliği limitlerini devre dışı bırakmak için '0' kullan"
 
@@ -8349,7 +8487,7 @@ msgstr ""
 msgid "Use {0}"
 msgstr "{0} kullan"
 
-#: proxmox-widget-toolkit/src/Utils.js:59 pmg-gui/js/ServerStatus.js:133
+#: proxmox-widget-toolkit/src/Utils.js:60 pmg-gui/js/ServerStatus.js:133
 #: pmg-gui/js/ServerStatus.js:141 pmg-gui/js/ServerStatus.js:157
 #: pve-manager/www/manager6/ceph/OSD.js:644
 #: pve-manager/www/manager6/ceph/Pool.js:156
@@ -8389,7 +8527,7 @@ msgstr "Kullanıcı"
 msgid "User Attribute Name"
 msgstr ""
 
-#: pmg-gui/js/NavigationTree.js:128
+#: pmg-gui/js/NavigationTree.js:134
 msgid "User Blacklist"
 msgstr "Kullanıcı karalistesi"
 
@@ -8421,7 +8559,7 @@ msgstr "Kullanıcı İzni"
 msgid "User Spamreport Style"
 msgstr "Kullanıcı Spam Raporu stili"
 
-#: pmg-gui/js/NavigationTree.js:122
+#: pmg-gui/js/NavigationTree.js:128
 msgid "User Whitelist"
 msgstr "Kullanıcı beyaz listesi"
 
@@ -8494,6 +8632,7 @@ msgid ""
 "decrease in security in practice."
 msgstr ""
 
+#: proxmox-widget-toolkit/src/panel/ACMEDomains.js:262
 #: pve-manager/www/manager6/node/ACME.js:583
 #, fuzzy
 msgid "Using Account"
@@ -8534,7 +8673,7 @@ msgid "VM State storage"
 msgstr "LVM Depolama"
 
 #: pve-manager/www/manager6/dc/Backup.js:731
-#: pve-manager/www/manager6/grid/BackupView.js:315
+#: pve-manager/www/manager6/grid/BackupView.js:305
 msgid "VMID"
 msgstr ""
 
@@ -8559,19 +8698,22 @@ msgstr "VZDump yedekleme dosyası"
 msgid "Valid CIDR Range"
 msgstr "Geçerli CIDR aralığı"
 
+#: proxmox-widget-toolkit/src/panel/Certificates.js:40
+#: proxmox-widget-toolkit/src/window/Certificates.js:46
 #: pve-manager/www/manager6/node/Certificates.js:72
 #: pve-manager/www/manager6/node/Certificates.js:319
 msgid "Valid Since"
 msgstr ""
 
+#: proxmox-widget-toolkit/src/window/ACMEPluginEdit.js:184
 #: pve-manager/www/manager6/dc/ACMEPluginEdit.js:171
 msgid "Validation Delay"
 msgstr ""
 
 #: proxmox-widget-toolkit/src/grid/ObjectGrid.js:313
 #: proxmox-widget-toolkit/src/window/DiskSmart.js:21
-#: pmg-gui/js/ObjectGroup.js:95 pmg-gui/js/Utils.js:347 pmg-gui/js/Utils.js:392
-#: pmg-gui/js/Utils.js:459 pmg-gui/js/Utils.js:577
+#: pmg-gui/js/ObjectGroup.js:95 pmg-gui/js/Utils.js:374 pmg-gui/js/Utils.js:419
+#: pmg-gui/js/Utils.js:486 pmg-gui/js/Utils.js:604
 #: pve-manager/www/manager6/window/Snapshot.js:128
 #: proxmox-backup/www/Utils.js:475 proxmox-backup/www/Utils.js:512
 #: proxmox-backup/www/Utils.js:555 proxmox-backup/www/Utils.js:597
@@ -8587,10 +8729,10 @@ msgstr "Varsayılan"
 #: proxmox-widget-toolkit/src/panel/DiskList.js:279
 #: pve-manager/www/manager6/form/CPUModelSelector.js:38
 #: pve-manager/www/manager6/form/PCISelector.js:38
-#: proxmox-backup/www/tape/ChangerConfig.js:111
-#: proxmox-backup/www/tape/ChangerStatus.js:681
-#: proxmox-backup/www/tape/DriveConfig.js:147
-#: proxmox-backup/www/tape/DriveStatus.js:367
+#: proxmox-backup/www/tape/ChangerConfig.js:117
+#: proxmox-backup/www/tape/ChangerStatus.js:736
+#: proxmox-backup/www/tape/DriveConfig.js:153
+#: proxmox-backup/www/tape/DriveStatus.js:397
 #: proxmox-backup/www/tape/form/ChangerSelector.js:38
 #: proxmox-backup/www/tape/form/DriveSelector.js:29
 #: proxmox-backup/www/tape/form/TapeDevicePathSelector.js:22
@@ -8602,14 +8744,19 @@ msgid "Verbose"
 msgstr "Ayrıntılı"
 
 #: pve-manager/www/manager6/window/LoginWindow.js:100
-#: proxmox-backup/www/Utils.js:392 proxmox-backup/www/Utils.js:393
-#: proxmox-backup/www/Utils.js:394
+#: proxmox-backup/www/Utils.js:393 proxmox-backup/www/Utils.js:394
+#: proxmox-backup/www/Utils.js:395
 msgid "Verification"
 msgstr "Doğrulama"
 
 #: pve-manager/www/manager6/dc/TFAEdit.js:459
 msgid "Verification Code"
 msgstr "Doğrulama kodu"
+
+#: proxmox-backup/www/window/VerifyJobEdit.js:12
+#, fuzzy
+msgid "Verification Job"
+msgstr "Doğrulama görevleri"
 
 #: proxmox-backup/www/window/NotifyOptions.js:64
 msgid "Verification Jobs"
@@ -8636,7 +8783,7 @@ msgstr "Sertifikayı doğrula"
 msgid "Verify Code"
 msgstr "Kodu doğrula"
 
-#: proxmox-backup/www/Utils.js:395
+#: proxmox-backup/www/Utils.js:392
 msgid "Verify Job"
 msgstr "Görevi doğrula"
 
@@ -8667,7 +8814,7 @@ msgstr "Alıcıları doğrula"
 msgid "Verify SSL certificate of the server"
 msgstr "Sunucu SSL Sertifikasını doğrula"
 
-#: pve-manager/www/manager6/grid/BackupView.js:325
+#: pve-manager/www/manager6/grid/BackupView.js:315
 #: pve-manager/www/manager6/storage/BackupView.js:128
 #: proxmox-backup/www/datastore/Content.js:711
 msgid "Verify State"
@@ -8676,10 +8823,6 @@ msgstr "Durumu doğrula"
 #: proxmox-backup/www/datastore/OptionView.js:79
 msgid "Verify new backups immediately after completion"
 msgstr "Yedeklemeden hemen sonra doğrula"
-
-#: proxmox-backup/www/window/VerifyJobEdit.js:12
-msgid "VerifyJob"
-msgstr "Doğrulama görevi"
 
 #: proxmox-widget-toolkit/src/node/APT.js:23 pmg-gui/js/ClamAVDatabase.js:93
 #: pmg-gui/js/SpamDetectorStatus.js:34 pve-manager/www/manager6/ceph/OSD.js:624
@@ -8693,12 +8836,14 @@ msgid "Version"
 msgstr "Sürüm"
 
 #: proxmox-widget-toolkit/src/node/Tasks.js:77
+#: proxmox-widget-toolkit/src/panel/ACMEAccount.js:101
 #: pve-manager/www/manager6/dc/ACMEClusterView.js:93
 #: pve-manager/www/manager6/tree/SnapshotTree.js:26
 #: proxmox-backup/www/panel/Tasks.js:148
 msgid "View"
 msgstr "Görünüm"
 
+#: proxmox-widget-toolkit/src/panel/Certificates.js:255
 #: pve-manager/www/manager6/node/Certificates.js:282
 msgid "View Certificate"
 msgstr "Sertifikayı görüntüle"
@@ -8744,7 +8889,7 @@ msgstr "Sanal Makineler"
 msgid "Virus"
 msgstr "Virüs"
 
-#: pmg-gui/js/NavigationTree.js:160
+#: pmg-gui/js/NavigationTree.js:166
 msgid "Virus  Charts"
 msgstr "Virüs Grafiği"
 
@@ -8756,7 +8901,7 @@ msgstr "Virüs Grafiği"
 msgid "Virus Detector"
 msgstr "Virüs dedektörü"
 
-#: pmg-gui/js/Utils.js:317
+#: pmg-gui/js/Utils.js:344
 msgid "Virus Filter"
 msgstr "Virüs filtresi"
 
@@ -8771,7 +8916,7 @@ msgstr "Virüslü postalar"
 msgid "Virus Outbreaks"
 msgstr ""
 
-#: pmg-gui/js/NavigationTree.js:110 pmg-gui/js/VirusQuarantine.js:99
+#: pmg-gui/js/NavigationTree.js:116 pmg-gui/js/VirusQuarantine.js:99
 msgid "Virus Quarantine"
 msgstr "Virüs karantinası"
 
@@ -8787,8 +8932,8 @@ msgstr ""
 msgid "Vnets"
 msgstr ""
 
-#: proxmox-backup/www/Utils.js:536 proxmox-backup/www/tape/ChangerStatus.js:724
-#: proxmox-backup/www/tape/DriveStatus.js:217
+#: proxmox-backup/www/Utils.js:536 proxmox-backup/www/tape/ChangerStatus.js:779
+#: proxmox-backup/www/tape/DriveStatus.js:247
 msgid "Volume Statistics"
 msgstr "Volume İstatistikleri"
 
@@ -8859,7 +9004,7 @@ msgstr ""
 msgid "Warning: Your subscription levels are not the same."
 msgstr "Uyarı: Abonelik seviyeleriniz aynı değil."
 
-#: proxmox-backup/www/panel/Tasks.js:261
+#: proxmox-widget-toolkit/src/Utils.js:51 proxmox-backup/www/panel/Tasks.js:261
 msgid "Warnings"
 msgstr "Uyarılar"
 
@@ -8891,7 +9036,7 @@ msgstr ""
 msgid "What"
 msgstr ""
 
-#: pmg-gui/js/NavigationTree.js:34 pmg-gui/js/Utils.js:29
+#: pmg-gui/js/NavigationTree.js:34 pmg-gui/js/Utils.js:56
 msgid "What Objects"
 msgstr ""
 
@@ -8899,18 +9044,18 @@ msgstr ""
 msgid "When"
 msgstr ""
 
-#: pmg-gui/js/NavigationTree.js:40 pmg-gui/js/Utils.js:30
+#: pmg-gui/js/NavigationTree.js:40 pmg-gui/js/Utils.js:57
 msgid "When Objects"
 msgstr ""
 
 #: pmg-gui/js/MailProxyConfiguration.js:54 pmg-gui/js/QuarantineView.js:22
-#: pmg-gui/js/SpamContextMenu.js:31 pmg-gui/js/SpamQuarantine.js:330
+#: pmg-gui/js/SpamContextMenu.js:31 pmg-gui/js/SpamQuarantine.js:350
 #: pmg-gui/js/UserBlackWhiteList.js:56 pmg-gui/js/UserBlackWhiteList.js:240
 #: pmg-gui/js/mobile/mailview.js:36 pmg-gui/js/mobile/quarantineview.js:87
 msgid "Whitelist"
 msgstr ""
 
-#: pmg-gui/js/NavigationTree.js:28 pmg-gui/js/Utils.js:28
+#: pmg-gui/js/NavigationTree.js:28 pmg-gui/js/Utils.js:55
 msgid "Who Objects"
 msgstr ""
 
@@ -9085,11 +9230,11 @@ msgstr "mevcut"
 msgid "daily"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/Utils.js:54
+#: proxmox-widget-toolkit/src/Utils.js:55
 msgid "day"
 msgstr "gün"
 
-#: proxmox-widget-toolkit/src/Utils.js:53
+#: proxmox-widget-toolkit/src/Utils.js:54
 msgid "days"
 msgstr "günler"
 
@@ -9192,7 +9337,7 @@ msgstr ""
 msgid "missing"
 msgstr "İzin"
 
-#: proxmox-widget-toolkit/src/Utils.js:57
+#: proxmox-widget-toolkit/src/Utils.js:58
 msgid "never"
 msgstr "asla"
 
@@ -9251,15 +9396,15 @@ msgid ""
 "pveproxy will be restarted with new certificates, please reload the GUI!"
 msgstr "pveproxy yeni sertifikalarla başlatılacak, lütfen sayfayı yenileyin!"
 
-#: proxmox-widget-toolkit/src/Utils.js:55
+#: proxmox-widget-toolkit/src/Utils.js:56
 msgid "running"
 msgstr "çalışıyor"
 
-#: pmg-gui/js/Utils.js:609
+#: pmg-gui/js/Utils.js:636
 msgid "send orig. Mail"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/Utils.js:56
+#: proxmox-widget-toolkit/src/Utils.js:57
 msgid "stopped"
 msgstr "durdu"
 
@@ -9322,6 +9467,10 @@ msgstr "xterm.js Ayarları"
 msgid "{0} ({1})"
 msgstr ""
 
+#: pmg-gui/js/Utils.js:887
+msgid "{0} ({1}/{2}) successful"
+msgstr ""
+
 #: proxmox-backup/www/Dashboard.js:320 proxmox-backup/www/Dashboard.js:332
 #: proxmox-backup/www/datastore/DataStoreListSummary.js:163
 #: proxmox-backup/www/tape/form/RetentionSelector.js:11
@@ -9361,13 +9510,18 @@ msgstr "{0} yüklü değil."
 msgid "{0} of {1}"
 msgstr ""
 
-#: pmg-gui/js/Utils.js:812
+#: pmg-gui/js/Utils.js:839
 msgid "{0} on behalf of {1}"
 msgstr ""
 
 #: pmg-gui/js/GeneralMailStatistics.js:120
 msgid "{0} seconds"
 msgstr "{0} saniye"
+
+#: pmg-gui/js/Utils.js:888
+#, fuzzy
+msgid "{0} successful"
+msgstr "Başarılı"
 
 #: proxmox-backup/www/tape/form/RetentionSelector.js:12
 msgid "{0} weeks"
@@ -9404,15 +9558,15 @@ msgstr ""
 #~ "VM {0} kaldırmak istediğinizden emin misiniz? Bu kalıcı olarak tüm VM "
 #~ "verilerini silecektir."
 
-#~ msgid "Are you sure you want to restore this VM?"
-#~ msgstr "Bu VM geri yüklemek istediğinizden emin misiniz?"
-
 #~ msgid "Are you sure you want to revert your changes"
 #~ msgstr "Değişiklikleri geri almak istediğinizden emin misiniz"
 
 #, fuzzy
 #~ msgid "Are you sure you want to rollback to snapshot {0}"
 #~ msgstr "{0} kaydını kaldırmak istediğinizden emin misiniz"
+
+#~ msgid "Blocksize"
+#~ msgstr "Blok boyutu"
 
 #~ msgid "Boot device"
 #~ msgstr "Boot aygıtı"
@@ -9544,6 +9698,10 @@ msgstr ""
 #~ msgstr "Alan İsimlerini Düzenle"
 
 #, fuzzy
+#~ msgid "Eject media"
+#~ msgstr "Verileri sil"
+
+#, fuzzy
 #~ msgid "Enable DHCP"
 #~ msgstr "Etkinleştir"
 
@@ -9622,6 +9780,10 @@ msgstr ""
 #~ msgstr "Not: Geri alma işlemi CT'yi durdurur"
 
 #, fuzzy
+#~ msgid "Notfiy User"
+#~ msgstr "Kullanıcı"
+
+#, fuzzy
 #~ msgid "Number of replicas"
 #~ msgstr "Üyeler"
 
@@ -9648,6 +9810,9 @@ msgstr ""
 
 #~ msgid "Please select OVMF(UEFI) as BIOS first."
 #~ msgstr "Önce BIOS olarak OVMF(UEFI) seçmelisiniz."
+
+#~ msgid "Read Limit"
+#~ msgstr "Okuma sınırı"
 
 #, fuzzy
 #~ msgid "Removed Bytes"
@@ -9719,6 +9884,9 @@ msgstr ""
 #, fuzzy
 #~ msgid "VM protection"
 #~ msgstr "Dizin"
+
+#~ msgid "VerifyJob"
+#~ msgstr "Doğrulama görevi"
 
 #, fuzzy
 #~ msgid "You are logged in as '{0}'"
