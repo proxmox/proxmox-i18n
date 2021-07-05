@@ -87,10 +87,12 @@ clean:
 	find . -name '*~' -exec rm {} ';'
 	rm -rf dest *.po.tmp *.js.tmp *.deb *.buildinfo *.changes *.js messages.pot
 
-.PHONY: upload-pve upload-pmg upload-pbs
+.PHONY: upload-pve upload-pmg upload-pbs upload
 upload-pve: ${PVE_I18N_DEB}
 	tar cf - $^|ssh -X repoman@repo.proxmox.com -- upload --product pve --dist bullseye
 upload-pmg: ${PMG_I18N_DEB}
 	tar cf - $^|ssh -X repoman@repo.proxmox.com -- upload --product pmg --dist bullseye
 upload-pbs: ${PBS_I18N_DEB}
 	tar cf - $^|ssh -X repoman@repo.proxmox.com -- upload --product pbs --dist bullseye
+
+upload: upload-pve upload-pmg upload-pbs
