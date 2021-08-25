@@ -88,7 +88,8 @@ foreach my $filename (@ARGV) {
 
 my $json = to_json($catalog, {canonical => 1, utf8 => 1});
 
-my $content = "// $options->{v}\n"; # write version to beginning
+my $version = $options->{v} // ("dev-build " . localtime());
+my $content = "// $version\n"; # write version to the beginning to better avoid stale cache
 
 my $outfile = $options->{o};
 
