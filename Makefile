@@ -42,7 +42,6 @@ install: ${PMG_LANG_FILES} ${PVE_LANG_FILES} ${PBS_LANG_FILES}
 	install -d ${PBSLOCALEDIR}
 	install -m 0644 ${PBS_LANG_FILES} ${PBSLOCALEDIR}
 
-
 pmg-lang-%.js: %.po
 	./po2js.pl -t pmg -v "${VERSION}-${PKGREL}" -o pmg-lang-$*.js $?
 
@@ -58,16 +57,21 @@ define potupdate
     ./jsgettext.pl -p "$(1) $(shell cd $(2);git rev-parse HEAD)" -o $(1).pot $(2)
 endef
 
-.PHONY: update update_pot
+.PHONY: update update_pot do_update
 update_pot: submodule
-	git submodule foreach 'git pull --ff-only origin master'
 	$(call potupdate,proxmox-widget-toolkit,proxmox-widget-toolkit/)
 	$(call potupdate,pve-manager,pve-manager/www/manager6/)
 	$(call potupdate,proxmox-mailgateway,pmg-gui/js/)
 	$(call potupdate,proxmox-backup,proxmox-backup/www/)
 
-update: | update_pot messages.pot
+do_update:
+	$(MAKE) update_pot
+	$(MAKE) messages.pot
 	for i in $(LINGUAS); do echo -n "$$i: "; msgmerge -s -v $$i.po messages.pot >$$i.po.tmp && mv $$i.po.tmp $$i.po; done;
+
+update:
+	git submodule foreach 'git pull --ff-only origin master'
+	$(MAKE) do_update
 
 stats:
 	@for i in $(LINGUAS); do echo -n "$$i: "; msgfmt --statistics -o /dev/null $$i.po; done
