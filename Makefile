@@ -1,6 +1,31 @@
 include /usr/share/dpkg/pkg-info.mk
 
-LINGUAS=de it fr ja es sv ru tr zh_CN zh_TW da ca pl sl nb nn pt_BR eu fa gl hu he ar nl kr
+LINGUAS=\
+	ar \
+	ca \
+	da \
+	de \
+	es \
+	eu \
+	fa \
+	fr \
+	gl \
+	he \
+	hu \
+	it \
+	ja \
+	kr \
+	nb \
+	nl \
+	nn \
+	pl \
+	pt_BR \
+	ru \
+	sl \
+	sv \
+	tr \
+	zh_CN \
+	zh_TW \
 
 PVE_I18N_DEB=pve-i18n_${DEB_VERSION_UPSTREAM_REVISION}_all.deb
 PMG_I18N_DEB=pmg-i18n_${DEB_VERSION_UPSTREAM_REVISION}_all.deb
