@@ -122,8 +122,7 @@ sub extract_msg {
 foreach my $s (@$sources) {
     open(my $SRC_FH, '<', $s) || die "unable to open file '$s' - $!\n";
     while(defined(my $line = <$SRC_FH>)) {
-	next if $line =~ m/^\s*function gettext/;
-	if ($line =~ m/gettext\s*\(/) {
+	if ($line =~ m/gettext\s*\(/ && $line !~ m/^\s*function gettext/) {
 	    extract_msg($s, $., $line);
 	}
     }
