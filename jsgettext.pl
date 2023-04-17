@@ -69,19 +69,20 @@ __EOD
 my $ctime = scalar localtime;
 
 my $href = {};
-my $po = new Locale::PO(-msgid=> '',
-			-comment=> $header,
-			-fuzzy=> 1,
-			-msgstr=>
-			"Project-Id-Version: $projectId\n" .
-			"Report-Msgid-Bugs-To: <support\@proxmox.com>\n" .
-			"POT-Creation-Date: $ctime\n" .
-			"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n" .
-			"Last-Translator: FULL NAME <EMAIL\@ADDRESS>\n" .
-			"Language-Team: LANGUAGE <support\@proxmox.com>\n" .
-			"MIME-Version: 1.0\n" .
-			"Content-Type: text/plain; charset=UTF-8\n" .
-			"Content-Transfer-Encoding: 8bit\n");
+my $po = Locale::PO->new(
+    -msgid => '',
+    -comment => $header,
+    -fuzzy => 1,
+    -msgstr => "Project-Id-Version: $projectId\n"
+        ."Report-Msgid-Bugs-To: <support\@proxmox.com>\n"
+        ."POT-Creation-Date: $ctime\n"
+        ."PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+        ."Last-Translator: FULL NAME <EMAIL\@ADDRESS>\n"
+        ."Language-Team: LANGUAGE <support\@proxmox.com>\n"
+        ."MIME-Version: 1.0\n"
+        ."Content-Type: text/plain; charset=UTF-8\n"
+        ."Content-Transfer-Encoding: 8bit\n",
+);
 
 $href->{''} = $po;
 
@@ -108,8 +109,8 @@ sub extract_msg {
 
 	if (my $po = $href->{$text}) {
 	    $po->reference($po->reference() . " $ref");
-	} else {   
-	    my $po = new Locale::PO(-msgid=> $text, -reference=> $ref, -msgstr=> '');
+	} else {
+	    my $po = Locale::PO->new(-msgid=> $text, -reference=> $ref, -msgstr=> '');
 	    $href->{$text} = $po;
 	}
     };
@@ -119,14 +120,14 @@ sub extract_msg {
 }
 
 foreach my $s (@$sources) {
-    open(SRC, $s) || die "unable to open file '$s' - $!\n";
-    while(defined(my $line = <SRC>)) {
+    open(my $SRC_FH, '<', $s) || die "unable to open file '$s' - $!\n";
+    while(defined(my $line = <$SRC_FH>)) {
 	next if $line =~ m/^\s*function gettext/;
 	if ($line =~ m/gettext\s*\(/) {
 	    extract_msg($s, $., $line);
 	}
     }
-    close(SRC);
+    close($SRC_FH);
 }
 
 my $filename = $options->{o} // "messages.pot";
