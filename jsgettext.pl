@@ -1,12 +1,14 @@
 #!/usr/bin/perl
 
 use strict;
-use Time::Local;
-use PVE::Tools;
-use Data::Dumper;
-use Locale::PO;
-use Getopt::Std;
+use warnings;
+
 use Encode;
+use Getopt::Std;
+use Locale::PO;
+use Time::Local;
+
+use PVE::Tools;
 
 my $options = {};
 
