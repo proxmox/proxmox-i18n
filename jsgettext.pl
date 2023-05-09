@@ -8,8 +8,6 @@ use Getopt::Std;
 use Locale::PO;
 use Time::Local;
 
-use PVE::Tools;
-
 my $options = {};
 
 getopts('o:b:p:', $options) ||
@@ -48,12 +46,20 @@ if (my $base = $options->{b}) {
 
 my $sources = [];
 
-my $findcmd = [['find', @$dirs, '-name', '*.js'],['sort']];
-PVE::Tools::run_command($findcmd, outfunc => sub {
-    my $line = shift;
+my $find_cmd = 'find ';
+# shell quote heuristic, with the (here safe) assumption that the dirs don't contain single-quotes
+$find_cmd .= join(' ', map { "'$_'" } $dirs->@*);
+$find_cmd .= ' -name "*.js"';
+open(my $find_cmd_output, '-|', "$find_cmd | sort") or die "Failed to execute command: $!";
+
+# Iterate through the sorted output line by line
+while (my $line = <$find_cmd_output>) {
+    chomp $line;
     print "F: $line\n";
     push @$sources, $line;
-});
+}
+close($find_cmd_output);
+
 
 my $header = <<__EOD;
 Proxmox message catalog.
