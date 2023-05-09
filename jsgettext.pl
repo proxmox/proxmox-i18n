@@ -64,12 +64,12 @@ sub find_js_sources {
     return $sources;
 }
 
-my $header = <<__EOD;
+my $header = <<'__EOD';
 Proxmox message catalog.
 
 Copyright (C) Proxmox Server Solutions GmbH
 
-This file is free software: you can redistribute it and\/or modify it under the terms of the GNU
+This file is free software: you can redistribute it and/or modify it under the terms of the GNU
 Affero General Public License as published by the Free Software Foundation, either version 3 of the
 License, or (at your option) any later version.
 -- Proxmox Support Team <support\@proxmox.com>
@@ -77,23 +77,22 @@ __EOD
 
 my $ctime = scalar localtime;
 
-my $href = {};
-my $po = Locale::PO->new(
-    -msgid => '',
-    -comment => $header,
-    -fuzzy => 1,
-    -msgstr => "Project-Id-Version: $projectId\n"
-        ."Report-Msgid-Bugs-To: <support\@proxmox.com>\n"
-        ."POT-Creation-Date: $ctime\n"
-        ."PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
-        ."Last-Translator: FULL NAME <EMAIL\@ADDRESS>\n"
-        ."Language-Team: LANGUAGE <support\@proxmox.com>\n"
-        ."MIME-Version: 1.0\n"
-        ."Content-Type: text/plain; charset=UTF-8\n"
-        ."Content-Transfer-Encoding: 8bit\n",
-);
-
-$href->{''} = $po;
+my $href = {
+    '' => Locale::PO->new(
+	-msgid => '',
+	-comment => $header,
+	-fuzzy => 1,
+	-msgstr => "Project-Id-Version: $projectId\n"
+	    ."Report-Msgid-Bugs-To: <support\@proxmox.com>\n"
+	    ."POT-Creation-Date: $ctime\n"
+	    ."PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+	    ."Last-Translator: FULL NAME <EMAIL\@ADDRESS>\n"
+	    ."Language-Team: LANGUAGE <support\@proxmox.com>\n"
+	    ."MIME-Version: 1.0\n"
+	    ."Content-Type: text/plain; charset=UTF-8\n"
+	    ."Content-Transfer-Encoding: 8bit\n",
+    ),
+};
 
 sub extract_msg {
     my ($filename, $linenr, $line) = @_;
@@ -105,13 +104,8 @@ sub extract_msg {
 	if ($line =~ m/\bgettext\s*\((("((?:[^"\\]++|\\.)*+)")|('((?:[^'\\]++|\\.)*+)'))\)/g) {
 	    $text = $3 || $5;
 	}
-	
 	last if !$text;
-
-	if ($basehref->{$text}) {
-	    return;
-	}
-	
+	return if $basehref->{$text};
 	$count++;
 
 	my $ref = "$filename:$linenr";
@@ -119,13 +113,11 @@ sub extract_msg {
 	if (my $po = $href->{$text}) {
 	    $po->reference($po->reference() . " $ref");
 	} else {
-	    my $po = Locale::PO->new(-msgid=> $text, -reference=> $ref, -msgstr=> '');
-	    $href->{$text} = $po;
+	    $href->{$text} = Locale::PO->new(-msgid=> $text, -reference=> $ref, -msgstr=> '');
 	}
-    };
-
-    die "can't extract gettext message in '$filename' line $linenr\n"
-	if !$count;
+    }
+    die "can't extract gettext message in '$filename' line $linenr\n" if !$count;
+    return;
 }
 
 my $sources = find_js_sources($dirs);
