@@ -4,14 +4,12 @@ use strict;
 use warnings;
 
 use Encode;
-use Getopt::Std;
+use Getopt::Long;
 use Locale::PO;
 use Time::Local;
 
 my $options = {};
-
-getopts('o:b:p:', $options) ||
-    die "unable to parse options\n";
+GetOptions($options, 'o=s', 'b=s', 'p=s') or die "unable to parse options\n";
 
 my $dirs = [@ARGV];
 
