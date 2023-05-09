@@ -44,22 +44,25 @@ if (my $base = $options->{b}) {
     }
 }
 
-my $sources = [];
+sub find_js_sources {
+    my ($base_dirs) = @_;
 
-my $find_cmd = 'find ';
-# shell quote heuristic, with the (here safe) assumption that the dirs don't contain single-quotes
-$find_cmd .= join(' ', map { "'$_'" } $dirs->@*);
-$find_cmd .= ' -name "*.js"';
-open(my $find_cmd_output, '-|', "$find_cmd | sort") or die "Failed to execute command: $!";
+    my $find_cmd = 'find ';
+    # shell quote heuristic, with the (here safe) assumption that the dirs don't contain single-quotes
+    $find_cmd .= join(' ', map { "'$_'" } $base_dirs->@*);
+    $find_cmd .= ' -name "*.js"';
+    open(my $find_cmd_output, '-|', "$find_cmd | sort") or die "Failed to execute command: $!";
 
-# Iterate through the sorted output line by line
-while (my $line = <$find_cmd_output>) {
-    chomp $line;
-    print "F: $line\n";
-    push @$sources, $line;
+    my $sources = [];
+    while (my $line = <$find_cmd_output>) {
+	chomp $line;
+	print "F: $line\n";
+	push @$sources, $line;
+    }
+    close($find_cmd_output);
+
+    return $sources;
 }
-close($find_cmd_output);
-
 
 my $header = <<__EOD;
 Proxmox message catalog.
@@ -124,6 +127,8 @@ sub extract_msg {
     die "can't extract gettext message in '$filename' line $linenr\n"
 	if !$count;
 }
+
+my $sources = find_js_sources($dirs);
 
 foreach my $s (@$sources) {
     open(my $SRC_FH, '<', $s) || die "unable to open file '$s' - $!\n";
