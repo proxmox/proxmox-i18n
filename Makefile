@@ -27,6 +27,8 @@ LINGUAS=\
 	zh_CN \
 	zh_TW \
 
+BUILDDIR ?= ${DEB_SOURCE}-${DEB_VERSION}
+
 PVE_I18N_DEB=pve-i18n_${DEB_VERSION}_all.deb
 PMG_I18N_DEB=pmg-i18n_${DEB_VERSION}_all.deb
 PBS_I18N_DEB=pbs-i18n_${DEB_VERSION}_all.deb
@@ -43,17 +45,20 @@ PBS_LANG_FILES=$(patsubst %, pbs-lang-%.js, $(LINGUAS))
 
 all:
 
+$(BUILDDIR): submodule
+	rm -rf $@ $@.tmp
+	rsync -a * $@.tmp
+	mv $@.tmp $@
+
 .PHONY: deb
 deb: $(DEBS)
-$(PMG_I18N_DEB): $(PVE_I18N_DEB)
-$(PBS_I18N_DEB): $(PVE_I18N_DEB)
-$(PVE_I18N_DEB): | submodule
-	rm -rf dest
-	rsync -a * dest
-	cd dest; dpkg-buildpackage -b -us -uc
-	lintian $(DEBS)
+$(DEBS): build-debs
 
-.PHONY: submodule
+build-debs: $(BUILDDIR)
+	cd $(BUILDDIR); dpkg-buildpackage -b -us -uc
+	lintian $(DEBS)
+	touch "$@"
+
 submodule:
 	test  -f pmg-gui/Makefile -a -f proxmox-backup/Makefile -a -f pve-manager/Makefile \
 	    || git submodule update --init
@@ -114,7 +119,7 @@ distclean: clean
 .PHONY: clean
 clean:
 	find . -name '*~' -exec rm {} ';'
-	rm -rf dest *.po.tmp *.js.tmp *.deb *.buildinfo *.changes *.js messages.pot
+	rm -rf $(DEB_SOURCE)-[0-9]*/ *.po.tmp *.js.tmp *.deb *.buildinfo *.changes *.js messages.pot
 
 .PHONY: upload-pve upload-pmg upload-pbs upload
 upload-pve: ${PVE_I18N_DEB}
