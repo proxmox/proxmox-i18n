@@ -96,13 +96,11 @@ my $outfile = $options->{o};
 $content .= "// Proxmox Message Catalog: $outfile\n" if $outfile;
 
 $content .= <<__EOD;
-__proxmox_i18n_msgcat__ = $json;
+const __proxmox_i18n_msgcat__ = $json;
 
 function fnv31a(text) {
-    var len = text.length;
-    var hval = 0x811c9dc5;
-    for (var i = 0; i < len; i++) {
-	var c = text.charCodeAt(i);
+    let hval = 0x811c9dc5;
+    for (const c of text) {
 	hval ^= c;
 	hval += (hval << 1) + (hval << 4) + (hval << 7) + (hval << 8) + (hval << 24);
     }
@@ -111,12 +109,8 @@ function fnv31a(text) {
 }
 
 function gettext(buf) {
-    var digest = fnv31a(buf);
-    var data = __proxmox_i18n_msgcat__[digest];
-    if (!data) {
-	return buf;
-    }
-    return data[0] || buf;
+    let digest = fnv31a(buf);
+    return __proxmox_i18n_msgcat__[digest]?.[0] ?? buf;
 }
 __EOD
 
