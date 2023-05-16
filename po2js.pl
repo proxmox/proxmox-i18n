@@ -2,19 +2,18 @@
 
 use strict;
 use warnings;
-use Getopt::Std;
-use Locale::PO;
-use JSON;
+
 use Encode;
+use Getopt::Long;
+use JSON;
+use Locale::PO;
 
 # current limits:
 # - we do not support plural. forms
 # - no message content support
 
 my $options = {};
-
-getopts('t:o:v:', $options) ||
-    die "unable to parse options\n";
+GetOptions($options, 't=s', 'o=s', 'v=s') or die "unable to parse options\n";
 
 die "no files specified\n" if !scalar(@ARGV);
 
