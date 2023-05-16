@@ -122,11 +122,12 @@ clean:
 	rm -rf $(DEB_SOURCE)-[0-9]*/ *.po.tmp *.js.tmp *.deb *.buildinfo *.changes *.js messages.pot
 
 .PHONY: upload-pve upload-pmg upload-pbs upload
+upload-%: UPLOAD_DIST ?= $(DEB_DISTRIBUTION)
 upload-pve: ${PVE_I18N_DEB}
-	tar cf - $^|ssh -X repoman@repo.proxmox.com -- upload --product pve --dist bullseye
+	tar cf - $^|ssh -X repoman@repo.proxmox.com -- upload --product pve --dist $(UPLOAD_DIST)
 upload-pmg: ${PMG_I18N_DEB}
-	tar cf - $^|ssh -X repoman@repo.proxmox.com -- upload --product pmg --dist bullseye
+	tar cf - $^|ssh -X repoman@repo.proxmox.com -- upload --product pmg --dist $(UPLOAD_DIST)
 upload-pbs: ${PBS_I18N_DEB}
-	tar cf - $^|ssh -X repoman@repo.proxmox.com -- upload --product pbs --dist bullseye
+	tar cf - $^|ssh -X repoman@repo.proxmox.com -- upload --product pbs --dist $(UPLOAD_DIST)
 
 upload: upload-pve upload-pmg upload-pbs
