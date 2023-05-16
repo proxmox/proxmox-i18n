@@ -27,9 +27,9 @@ LINGUAS=\
 	zh_CN \
 	zh_TW \
 
-PVE_I18N_DEB=pve-i18n_${DEB_VERSION_UPSTREAM_REVISION}_all.deb
-PMG_I18N_DEB=pmg-i18n_${DEB_VERSION_UPSTREAM_REVISION}_all.deb
-PBS_I18N_DEB=pbs-i18n_${DEB_VERSION_UPSTREAM_REVISION}_all.deb
+PVE_I18N_DEB=pve-i18n_${DEB_VERSION}_all.deb
+PMG_I18N_DEB=pmg-i18n_${DEB_VERSION}_all.deb
+PBS_I18N_DEB=pbs-i18n_${DEB_VERSION}_all.deb
 
 DEBS=${PMG_I18N_DEB} $(PVE_I18N_DEB) $(PBS_I18N_DEB)
 
@@ -68,13 +68,13 @@ install: ${PMG_LANG_FILES} ${PVE_LANG_FILES} ${PBS_LANG_FILES}
 	install -m 0644 ${PBS_LANG_FILES} ${PBSLOCALEDIR}
 
 pmg-lang-%.js: %.po
-	./po2js.pl -t pmg -v "${VERSION}-${PKGREL}" -o pmg-lang-$*.js $?
+	./po2js.pl -t pmg -v "${DEB_VERSION}" -o pmg-lang-$*.js $?
 
 pve-lang-%.js: %.po
-	./po2js.pl -t pve -v "${VERSION}-${PKGREL}" -o pve-lang-$*.js $?
+	./po2js.pl -t pve -v "${DEB_VERSION}" -o pve-lang-$*.js $?
 
 pbs-lang-%.js: %.po
-	./po2js.pl -t pbs -v "${VERSION}-${PKGREL}" -o pbs-lang-$*.js $?
+	./po2js.pl -t pbs -v "${DEB_VERSION}" -o pbs-lang-$*.js $?
 
 # parameter 1 is the name
 # parameter 2 is the directory
