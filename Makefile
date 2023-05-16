@@ -29,6 +29,7 @@ LINGUAS=\
 
 BUILDDIR ?= $(DEB_SOURCE)-$(DEB_VERSION)
 
+DSC=$(DEB_SOURCE)_$(DEB_VERSION_UPSTREAM_REVISION).dsc
 PVE_I18N_DEB=pve-i18n_$(DEB_VERSION)_all.deb
 PMG_I18N_DEB=pmg-i18n_$(DEB_VERSION)_all.deb
 PBS_I18N_DEB=pbs-i18n_$(DEB_VERSION)_all.deb
@@ -58,6 +59,12 @@ build-debs: $(BUILDDIR)
 	cd $(BUILDDIR); dpkg-buildpackage -b -us -uc
 	lintian $(DEBS)
 	touch "$@"
+
+.PHONY: dsc
+dsc: $(DSC)
+$(DSC): $(BUILDDIR)
+	cd $(BUILDDIR); dpkg-buildpackage -S -us -uc -d
+	lintian $(DSC)
 
 submodule:
 	test  -f pmg-gui/Makefile -a -f proxmox-backup/Makefile -a -f pve-manager/Makefile \
@@ -118,7 +125,7 @@ distclean: clean
 
 .PHONY: clean
 clean:
-	rm -rf $(DEB_SOURCE)-[0-9]*/ *.po.tmp *.js.tmp *.deb *.buildinfo *.changes *.js messages.pot
+	rm -rf $(DEB_SOURCE)-[0-9]*/ *.po.tmp *.js.tmp *.deb *.dsc *.tar.* *.build *.buildinfo *.changes *.js messages.pot
 
 .PHONY: upload-pve upload-pmg upload-pbs upload
 upload-%: UPLOAD_DIST ?= $(DEB_DISTRIBUTION)
