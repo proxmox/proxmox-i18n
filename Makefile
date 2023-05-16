@@ -60,6 +60,9 @@ build-debs: $(BUILDDIR)
 	lintian $(DEBS)
 	touch "$@"
 
+sbuild: $(DSC)
+	sbuild $(DSC)
+
 .PHONY: dsc
 dsc: $(DSC)
 $(DSC): $(BUILDDIR)
