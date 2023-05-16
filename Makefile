@@ -27,17 +27,17 @@ LINGUAS=\
 	zh_CN \
 	zh_TW \
 
-BUILDDIR ?= ${DEB_SOURCE}-${DEB_VERSION}
+BUILDDIR ?= $(DEB_SOURCE)-$(DEB_VERSION)
 
-PVE_I18N_DEB=pve-i18n_${DEB_VERSION}_all.deb
-PMG_I18N_DEB=pmg-i18n_${DEB_VERSION}_all.deb
-PBS_I18N_DEB=pbs-i18n_${DEB_VERSION}_all.deb
+PVE_I18N_DEB=pve-i18n_$(DEB_VERSION)_all.deb
+PMG_I18N_DEB=pmg-i18n_$(DEB_VERSION)_all.deb
+PBS_I18N_DEB=pbs-i18n_$(DEB_VERSION)_all.deb
 
-DEBS=${PMG_I18N_DEB} $(PVE_I18N_DEB) $(PBS_I18N_DEB)
+DEBS=$(PMG_I18N_DEB) $(PVE_I18N_DEB) $(PBS_I18N_DEB)
 
-PMGLOCALEDIR=${DESTDIR}/usr/share/pmg-i18n
-PVELOCALEDIR=${DESTDIR}/usr/share/pve-i18n
-PBSLOCALEDIR=${DESTDIR}/usr/share/pbs-i18n
+PMGLOCALEDIR=$(DESTDIR)/usr/share/pmg-i18n
+PVELOCALEDIR=$(DESTDIR)/usr/share/pve-i18n
+PBSLOCALEDIR=$(DESTDIR)/usr/share/pbs-i18n
 
 PMG_LANG_FILES=$(patsubst %, pmg-lang-%.js, $(LINGUAS))
 PVE_LANG_FILES=$(patsubst %, pve-lang-%.js, $(LINGUAS))
@@ -64,22 +64,22 @@ submodule:
 	    || git submodule update --init
 
 .PHONY: install
-install: ${PMG_LANG_FILES} ${PVE_LANG_FILES} ${PBS_LANG_FILES}
-	install -d ${PMGLOCALEDIR}
-	install -m 0644 ${PMG_LANG_FILES} ${PMGLOCALEDIR}
-	install -d ${PVELOCALEDIR}
-	install -m 0644 ${PVE_LANG_FILES} ${PVELOCALEDIR}
-	install -d ${PBSLOCALEDIR}
-	install -m 0644 ${PBS_LANG_FILES} ${PBSLOCALEDIR}
+install: $(PMG_LANG_FILES) $(PVE_LANG_FILES) $(PBS_LANG_FILES)
+	install -d $(PMGLOCALEDIR)
+	install -m 0644 $(PMG_LANG_FILES) $(PMGLOCALEDIR)
+	install -d $(PVELOCALEDIR)
+	install -m 0644 $(PVE_LANG_FILES) $(PVELOCALEDIR)
+	install -d $(PBSLOCALEDIR)
+	install -m 0644 $(PBS_LANG_FILES) $(PBSLOCALEDIR)
 
 pmg-lang-%.js: %.po
-	./po2js.pl -t pmg -v "${DEB_VERSION}" -o pmg-lang-$*.js $?
+	./po2js.pl -t pmg -v "$(DEB_VERSION)" -o pmg-lang-$*.js $?
 
 pve-lang-%.js: %.po
-	./po2js.pl -t pve -v "${DEB_VERSION}" -o pve-lang-$*.js $?
+	./po2js.pl -t pve -v "$(DEB_VERSION)" -o pve-lang-$*.js $?
 
 pbs-lang-%.js: %.po
-	./po2js.pl -t pbs -v "${DEB_VERSION}" -o pbs-lang-$*.js $?
+	./po2js.pl -t pbs -v "$(DEB_VERSION)" -o pbs-lang-$*.js $?
 
 # parameter 1 is the name
 # parameter 2 is the directory
@@ -118,16 +118,15 @@ distclean: clean
 
 .PHONY: clean
 clean:
-	find . -name '*~' -exec rm {} ';'
 	rm -rf $(DEB_SOURCE)-[0-9]*/ *.po.tmp *.js.tmp *.deb *.buildinfo *.changes *.js messages.pot
 
 .PHONY: upload-pve upload-pmg upload-pbs upload
 upload-%: UPLOAD_DIST ?= $(DEB_DISTRIBUTION)
-upload-pve: ${PVE_I18N_DEB}
+upload-pve: $(PVE_I18N_DEB)
 	tar cf - $^|ssh -X repoman@repo.proxmox.com -- upload --product pve --dist $(UPLOAD_DIST)
-upload-pmg: ${PMG_I18N_DEB}
+upload-pmg: $(PMG_I18N_DEB)
 	tar cf - $^|ssh -X repoman@repo.proxmox.com -- upload --product pmg --dist $(UPLOAD_DIST)
-upload-pbs: ${PBS_I18N_DEB}
+upload-pbs: $(PBS_I18N_DEB)
 	tar cf - $^|ssh -X repoman@repo.proxmox.com -- upload --product pbs --dist $(UPLOAD_DIST)
 
 upload: upload-pve upload-pmg upload-pbs
