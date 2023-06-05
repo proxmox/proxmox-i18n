@@ -24,6 +24,7 @@ LINGUAS=\
 	sl \
 	sv \
 	tr \
+	ukr \
 	zh_CN \
 	zh_TW \
 
