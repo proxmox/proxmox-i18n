@@ -17,14 +17,22 @@ GetOptions($options, 't=s', 'o=s', 'v=s') or die "unable to parse options\n";
 
 die "no files specified\n" if !scalar(@ARGV);
 
+#my $filename = shift || die "no po file specified\n";
+
 # like FNV32a, but we only return 31 bits (positive numbers)
 sub fnv31a {
     my ($string) = @_;
 
     my $hval = 0x811c9dc5;
-    for my $c (unpack('C*', $string)) {
+
+    foreach my $c (unpack('C*', $string)) {
 	$hval ^= $c;
-	$hval += ($hval << 1) + ($hval << 4) + ($hval << 7) + ($hval << 8) + ($hval << 24);
+	$hval += (
+	    (($hval << 1) ) +
+	    (($hval << 4) ) +
+	    (($hval << 7) ) +
+	    (($hval << 8) ) +
+	    (($hval << 24) ) );
 	$hval = $hval & 0xffffffff;
     }
     return $hval & 0x7fffffff;
@@ -35,7 +43,7 @@ my $catalog = {};
 foreach my $filename (@ARGV) {
     my $href = Locale::PO->load_file_ashash($filename) ||
 	die "unable to load '$filename'\n";
-
+    
     my $charset;
     my $hpo = $href->{'""'} || die "no header";
     my $header = $hpo->dequote($hpo->msgstr);
@@ -45,15 +53,19 @@ foreach my $filename (@ARGV) {
 	die "unable to get charset\n" if !$charset;
     }
 
-    for my $k (keys %$href) {
+
+    foreach my $k (keys %$href) {
 	my $po = $href->{$k};
 	next if $po->fuzzy(); # skip fuzzy entries
-	my $ref = $po->reference() or next; # skip unused entries
+	my $ref = $po->reference();
 
-	# skip entries if "t" is defined (pve/pmg) and the string is
+	# skip unused entries
+	next if !$ref;
+
+	# skip entries if t is defined (pve/pmg) and the string is
 	# not used there or in the widget toolkit
 	next if $options->{t} && $ref !~ m/($options->{t}|proxmox)\-/;
-
+    
 	my $qmsgid = decode($charset, $po->msgid);
 	my $msgid = $po->dequote($qmsgid);
 
@@ -61,11 +73,12 @@ foreach my $filename (@ARGV) {
 	my $msgstr = $po->dequote($qmsgstr);
 
 	next if !length($msgid); # skip header
+	
 	next if !length($msgstr); # skip untranslated entries
 
 	my $digest = fnv31a($msgid);
 
-	die "duplicate digest '$digest' (msgid '$msgid')\n" if $catalog->{$digest};
+	die "duplicate digest" if $catalog->{$digest};
 
 	$catalog->{$digest} = [ $msgstr ];
 	# later, we can add plural forms to the array
