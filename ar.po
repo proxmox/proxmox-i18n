@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pve-manager 31813246103b2582162f422dc34d8077eaee1e01\n"
 "Report-Msgid-Bugs-To: <support@proxmox.com>\n"
-"POT-Creation-Date: Fri Jun  9 10:01:56 2023\n"
+"POT-Creation-Date: Wed Jun 14 14:11:17 2023\n"
 "PO-Revision-Date: 2023-03-21 10:37+0100\n"
 "Last-Translator: \n"
 "Language-Team: LANGUAGE <support@proxmox.com>\n"
@@ -104,6 +104,8 @@ msgstr "بادئة مسار API"
 #: pve-manager/www/manager6/dc/ACLView.js:44
 #: pve-manager/www/manager6/dc/ACLView.js:124
 #: pve-manager/www/manager6/form/TokenSelector.js:44
+#: pve-manager/www/manager6/sdn/VnetACLView.js:43
+#: pve-manager/www/manager6/sdn/VnetACLView.js:154
 #: proxmox-backup/www/form/AuthidSelector.js:78
 #: proxmox-backup/www/form/TokenSelector.js:62
 #: proxmox-backup/www/panel/AccessControl.js:30
@@ -113,6 +115,8 @@ msgstr "رمز API"
 
 #: pve-manager/www/manager6/dc/ACLView.js:40
 #: pve-manager/www/manager6/dc/ACLView.js:223
+#: pve-manager/www/manager6/sdn/VnetACLView.js:39
+#: pve-manager/www/manager6/sdn/VnetACLView.js:250
 #: proxmox-backup/www/config/ACLView.js:160
 #: proxmox-backup/www/window/ACLEdit.js:42
 msgid "API Token Permission"
@@ -263,6 +267,7 @@ msgstr "خادم Active Directory"
 #: pve-manager/www/manager6/sdn/ControllerView.js:91
 #: pve-manager/www/manager6/sdn/DnsView.js:91
 #: pve-manager/www/manager6/sdn/IpamView.js:89
+#: pve-manager/www/manager6/sdn/VnetACLView.js:217
 #: pve-manager/www/manager6/sdn/ZoneView.js:106
 #: proxmox-backup/www/config/ACLView.js:150
 #: proxmox-backup/www/config/MetricServerView.js:87
@@ -426,6 +431,7 @@ msgstr "الاسم المستعار"
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:178
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:377
 #: pve-manager/www/manager6/form/StorageSelector.js:52
+#: pve-manager/www/manager6/sdn/VnetACLView.js:63
 #: pve-manager/www/manager6/sdn/zones/EvpnEdit.js:128
 #: pve-manager/www/manager6/sdn/zones/QinQEdit.js:69
 #: pve-manager/www/manager6/sdn/zones/SimpleEdit.js:44
@@ -454,7 +460,7 @@ msgstr "كل شيء جيد"
 msgid "All OK (old)"
 msgstr "كل شيء جيد (قديم)"
 
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:439
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:440
 msgid "All OK, you have production-ready repositories configured!"
 msgstr "حسنًا ، لديك مستودعات جاهزة للإنتاج مهيأة!"
 
@@ -621,6 +627,7 @@ msgid "Are you sure you want to remove the subscription key?"
 msgstr "هل تريد بالتأكيد إزالة مفتاح الاشتراك؟"
 
 #: pve-manager/www/manager6/dc/ACLView.js:159
+#: pve-manager/www/manager6/sdn/VnetACLView.js:182
 msgid "Are you sure you want to remove this entry"
 msgstr "هل أنت متأكد من أنك تريد إزالة هذا الإدخال"
 
@@ -1798,7 +1805,7 @@ msgid "Container {0} on node '{1}'"
 msgstr "{0} الحاوية على العقدة \"{1}\""
 
 #: pve-manager/www/manager6/dc/StorageView.js:115
-#: pve-manager/www/manager6/sdn/Browser.js:31
+#: pve-manager/www/manager6/sdn/Browser.js:32
 #: pve-manager/www/manager6/storage/BTRFSEdit.js:22
 #: pve-manager/www/manager6/storage/CIFSEdit.js:204
 #: pve-manager/www/manager6/storage/CephFSEdit.js:96
@@ -2468,7 +2475,7 @@ msgstr "التفاصيل"
 msgid "Details"
 msgstr "تفاصيل"
 
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:482
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:483
 msgid "Detected mixed suites before upgrade"
 msgstr ""
 
@@ -2530,7 +2537,7 @@ msgid "Directory Storage"
 msgstr "تخزين الدليل"
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:198
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:525
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:526
 msgid "Disable"
 msgstr "إبطال"
 
@@ -2584,7 +2591,7 @@ msgstr "منفصل"
 #: pve-manager/www/manager6/node/LVMThin.js:28
 #: pve-manager/www/manager6/qemu/HDEdit.js:411
 #: pve-manager/www/manager6/qemu/HDMove.js:67
-#: pve-manager/www/manager6/qemu/HDResize.js:40
+#: pve-manager/www/manager6/qemu/HDResize.js:44
 #: proxmox-backup/www/window/CreateDirectory.js:21
 msgid "Disk"
 msgstr "قرص"
@@ -3001,7 +3008,7 @@ msgid "Email from address"
 msgstr "البريد الإلكتروني من العنوان"
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:197
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:525
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:526
 #: pmg-gui/js/LDAPConfig.js:123 pmg-gui/js/PBSRemoteEdit.js:99
 #: pve-manager/www/manager6/ceph/OSD.js:265
 #: pve-manager/www/manager6/dc/Backup.js:317
@@ -3167,8 +3174,8 @@ msgstr "محو البيانات"
 #: proxmox-widget-toolkit/src/button/Button.js:155
 #: proxmox-widget-toolkit/src/node/APT.js:144
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:223
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:451
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:602
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:452
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:603
 #: proxmox-widget-toolkit/src/node/NetworkEdit.js:379
 #: proxmox-widget-toolkit/src/node/NetworkView.js:141
 #: proxmox-widget-toolkit/src/node/NetworkView.js:248
@@ -3260,6 +3267,7 @@ msgstr "محو البيانات"
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:246
 #: pve-manager/www/manager6/qemu/Smbios1Edit.js:114
 #: pve-manager/www/manager6/sdn/StatusView.js:49
+#: pve-manager/www/manager6/sdn/VnetACLView.js:205
 #: pve-manager/www/manager6/storage/TemplateView.js:139
 #: pve-manager/www/manager6/tree/SnapshotTree.js:83
 #: pve-manager/www/manager6/window/Backup.js:155
@@ -3482,7 +3490,7 @@ msgstr "الرجوع عن تهيئة التخزين"
 msgid "Family"
 msgstr "عائلة"
 
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:498
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:499
 msgid "Fatal parsing error for at least one repository"
 msgstr "خطأ تحليل فادح لمستودع واحد على الأقل"
 
@@ -3914,8 +3922,10 @@ msgstr "رسائل القوائم الرمادية"
 #: pve-manager/www/manager6/ha/GroupSelector.js:12
 #: pve-manager/www/manager6/ha/Groups.js:76
 #: pve-manager/www/manager6/ha/ResourceEdit.js:112
-#: pve-manager/www/manager6/ha/Resources.js:140 proxmox-backup/www/Utils.js:407
-#: proxmox-backup/www/form/GroupFilter.js:395
+#: pve-manager/www/manager6/ha/Resources.js:140
+#: pve-manager/www/manager6/sdn/VnetACLView.js:29
+#: pve-manager/www/manager6/sdn/VnetACLView.js:154
+#: proxmox-backup/www/Utils.js:407 proxmox-backup/www/form/GroupFilter.js:395
 #: proxmox-backup/www/form/GroupSelector.js:47
 msgid "Group"
 msgstr "مجموعة"
@@ -3932,6 +3942,8 @@ msgstr "أنواع الضيف المجمعة"
 
 #: pve-manager/www/manager6/dc/ACLView.js:26
 #: pve-manager/www/manager6/dc/ACLView.js:199
+#: pve-manager/www/manager6/sdn/VnetACLView.js:25
+#: pve-manager/www/manager6/sdn/VnetACLView.js:222
 msgid "Group Permission"
 msgstr "إذن المجموعة"
 
@@ -3989,7 +4001,7 @@ msgstr "صورة الضيف"
 msgid "Guest Notes"
 msgstr "ملاحظات الـ Notes"
 
-#: pve-manager/www/manager6/qemu/OSTypeEdit.js:52
+#: pve-manager/www/manager6/qemu/OSTypeEdit.js:53
 msgid "Guest OS"
 msgstr "نظام التشغيل الضيف"
 
@@ -6190,7 +6202,7 @@ msgstr "لم يتم العثور على {0}"
 msgid "No {0} repository enabled!"
 msgstr "لم يتم تمكين مستودع {0}!"
 
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:467
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:468
 msgid "No {0} repository is enabled, you do not get any updates!"
 msgstr "لم يتم تمكين مستودع {0} ، ولم تحصل على أي تحديثات!"
 
@@ -6782,6 +6794,7 @@ msgstr "لصق معلومات الكتلة المشفرة هنا"
 #: pve-manager/www/manager6/dc/StorageView.js:122
 #: pve-manager/www/manager6/lxc/MPEdit.js:250
 #: pve-manager/www/manager6/node/Directory.js:107
+#: pve-manager/www/manager6/sdn/VnetACLView.js:20
 #: pve-manager/www/manager6/storage/BTRFSEdit.js:14
 #: proxmox-backup/www/DirectoryList.js:56
 #: proxmox-backup/www/config/ACLView.js:176
@@ -6863,7 +6876,7 @@ msgstr "إذن"
 #: pve-manager/www/manager6/lxc/Config.js:365
 #: pve-manager/www/manager6/pool/Config.js:34
 #: pve-manager/www/manager6/qemu/Config.js:400
-#: pve-manager/www/manager6/sdn/Browser.js:39
+#: pve-manager/www/manager6/sdn/Browser.js:40
 #: pve-manager/www/manager6/storage/Browser.js:125
 #: proxmox-backup/www/config/ACLView.js:23
 #: proxmox-backup/www/panel/AccessControl.js:36
@@ -7812,6 +7825,7 @@ msgstr "الإزالة المجدولة"
 #: pve-manager/www/manager6/qemu/Config.js:125
 #: pve-manager/www/manager6/qemu/HardwareView.js:468
 #: pve-manager/www/manager6/qemu/HardwareView.js:469
+#: pve-manager/www/manager6/sdn/VnetACLView.js:179
 #: pve-manager/www/manager6/storage/ImageView.js:33
 #: pve-manager/www/manager6/tree/SnapshotTree.js:281
 #: proxmox-backup/www/Utils.js:404
@@ -8006,8 +8020,8 @@ msgstr "تغيير حجم"
 
 #: pve-manager/www/manager6/lxc/MPResize.js:75
 #: pve-manager/www/manager6/lxc/MPResize.js:77
-#: pve-manager/www/manager6/qemu/HDResize.js:72
-#: pve-manager/www/manager6/qemu/HDResize.js:74
+#: pve-manager/www/manager6/qemu/HDResize.js:76
+#: pve-manager/www/manager6/qemu/HDResize.js:78
 msgid "Resize disk"
 msgstr "تغيير حجم القرص"
 
@@ -8134,6 +8148,8 @@ msgstr "ترجيع الوسائط"
 #: pmg-gui/js/UserView.js:136 pve-manager/www/manager6/dc/ACLView.js:54
 #: pve-manager/www/manager6/dc/ACLView.js:131
 #: pve-manager/www/manager6/dc/RoleEdit.js:24
+#: pve-manager/www/manager6/sdn/VnetACLView.js:53
+#: pve-manager/www/manager6/sdn/VnetACLView.js:161
 #: proxmox-backup/www/config/ACLView.js:191
 #: proxmox-backup/www/window/ACLEdit.js:53
 msgid "Role"
@@ -8914,7 +8930,7 @@ msgid "Size"
 msgstr "حجم"
 
 #: pve-manager/www/manager6/lxc/MPResize.js:55
-#: pve-manager/www/manager6/qemu/HDResize.js:52
+#: pve-manager/www/manager6/qemu/HDResize.js:56
 msgid "Size Increment"
 msgstr "زيادة الحجم"
 
@@ -8995,7 +9011,7 @@ msgstr "Softlink"
 msgid "Some guests are not covered by any backup job."
 msgstr "بعض الضيوف غير مشمولين بأي وظيفة احتياطية."
 
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:478
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:479
 msgid "Some suites are misconfigured"
 msgstr "تم تكوين بعض الأجنحة بشكل خاطئ"
 
@@ -9238,7 +9254,7 @@ msgid "Stats from last Garbage Collection"
 msgstr "احصائيات من جمع القمامة الماضي"
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:41
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:549
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:550
 #: proxmox-widget-toolkit/src/node/ServiceView.js:178
 #: proxmox-widget-toolkit/src/node/Tasks.js:432
 #: proxmox-widget-toolkit/src/panel/StatusView.js:9
@@ -9923,7 +9939,7 @@ msgstr ""
 msgid "The current guest configuration does not support taking new snapshots"
 msgstr "لا يدعم التكوين الحالي للضيف أخذ لقطات جديدة"
 
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:486
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:487
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:163
 msgid ""
 "The enterprise repository is enabled, but there is no active subscription!"
@@ -9941,7 +9957,7 @@ msgstr "تم تثبيت أحدث إصدار في المجموعة."
 msgid "The no-subscription repository is NOT production-ready"
 msgstr "المستودع بدون اشتراك ليس جاهزًا للإنتاج"
 
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:490
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:491
 msgid "The no-subscription repository is not recommended for production use!"
 msgstr "لا يُنصح باستخدام المستودع بدون اشتراك للإنتاج!"
 
@@ -9971,7 +9987,7 @@ msgstr "سيتم فقدان حالة VM المحفوظة بشكل دائم."
 msgid "The test repository may contain unstable updates"
 msgstr "قد يحتوي مستودع الاختبار على تحديثات غير مستقرة"
 
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:494
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:495
 msgid ""
 "The test repository may pull in unstable updates and is not recommended for "
 "production use!"
@@ -10316,7 +10332,7 @@ msgstr "مصادقة الاستيثاق الثنائي (2FA)"
 #: pve-manager/www/manager6/node/ACME.js:705
 #: pve-manager/www/manager6/node/Directory.js:117
 #: pve-manager/www/manager6/node/Subscription.js:120
-#: pve-manager/www/manager6/qemu/OSTypeEdit.js:59
+#: pve-manager/www/manager6/qemu/OSTypeEdit.js:60
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:143
 #: pve-manager/www/manager6/qemu/ScsiHwEdit.js:13
 #: pve-manager/www/manager6/sdn/ControllerView.js:110
@@ -10739,6 +10755,8 @@ msgstr "الكائنات المستخدمة"
 #: pve-manager/www/manager6/qemu/CloudInit.js:199
 #: pve-manager/www/manager6/qemu/CloudInit.js:205
 #: pve-manager/www/manager6/qemu/CloudInit.js:211
+#: pve-manager/www/manager6/sdn/VnetACLView.js:36
+#: pve-manager/www/manager6/sdn/VnetACLView.js:154
 #: proxmox-backup/www/config/TokenView.js:185
 #: proxmox-backup/www/form/AuthidSelector.js:77
 #: proxmox-backup/www/window/ACLEdit.js:38
@@ -10776,6 +10794,8 @@ msgstr "كلمة مرور المستخدم"
 
 #: pve-manager/www/manager6/dc/ACLView.js:33
 #: pve-manager/www/manager6/dc/ACLView.js:211
+#: pve-manager/www/manager6/sdn/VnetACLView.js:32
+#: pve-manager/www/manager6/sdn/VnetACLView.js:236
 #: proxmox-backup/www/config/ACLView.js:155
 #: proxmox-backup/www/window/ACLEdit.js:34
 msgid "User Permission"
@@ -10889,6 +10909,11 @@ msgstr "VCPUs"
 msgid "VG Name"
 msgstr "اسم VG"
 
+#: pve-manager/www/manager6/sdn/VnetACLView.js:167
+#, fuzzy
+msgid "VLAN"
+msgstr "معرف VLAN"
+
 #: pve-manager/www/manager6/sdn/VnetEdit.js:57
 #: pve-manager/www/manager6/sdn/VnetView.js:120
 msgid "VLAN Aware"
@@ -10941,9 +10966,15 @@ msgstr "متوافق مع VMware"
 msgid "VMware image format"
 msgstr "تنسيق صورة VMware"
 
+#: pve-manager/www/manager6/form/SDNVnetSelector.js:26
 #: pve-manager/www/manager6/sdn/VnetEdit.js:65
 msgid "VNet"
 msgstr "VNet"
+
+#: pve-manager/www/manager6/sdn/ZoneContentPanel.js:13
+#, fuzzy
+msgid "VNet Permissions"
+msgstr "الأذون"
 
 #: pve-manager/www/manager6/Utils.js:688
 msgid "VZDump backup file"
@@ -11098,7 +11129,7 @@ msgstr "تحقق من النسخ الاحتياطية الجديدة مباشر�
 #: pve-manager/www/manager6/ceph/Services.js:184
 #: pve-manager/www/manager6/qemu/HDTPM.js:63
 #: pve-manager/www/manager6/qemu/MachineEdit.js:88
-#: pve-manager/www/manager6/qemu/OSTypeEdit.js:69
+#: pve-manager/www/manager6/qemu/OSTypeEdit.js:70
 #: pve-manager/www/manager6/qemu/Smbios1Edit.js:54
 #: pve-manager/www/manager6/storage/TemplateView.js:76
 msgid "Version"
@@ -11200,17 +11231,9 @@ msgstr "معلومات الفيروسات"
 msgid "Vlan raw device"
 msgstr "Vlan raw device"
 
-#: pve-manager/www/manager6/form/SDNVnetSelector.js:26
-msgid "Vnet"
-msgstr "Vnet"
-
 #: pve-manager/www/manager6/sdn/zones/EvpnEdit.js:68
 msgid "Vnet MAC address"
 msgstr "عنوان Vnet MAC"
-
-#: pve-manager/www/manager6/dc/Config.js:192
-msgid "Vnets"
-msgstr "Vnets"
 
 #: pve-manager/www/manager6/storage/LVMEdit.js:133
 msgid "Volume"
@@ -11269,7 +11292,7 @@ msgid "Wake-on-LAN"
 msgstr "التنبيه على الشبكة المحلية (LAN)"
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:270
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:445
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:446
 #: pve-manager/www/manager6/ceph/OSD.js:564
 #: pve-manager/www/manager6/ceph/ServiceList.js:230
 #: pve-manager/www/manager6/ceph/ServiceList.js:380
@@ -11520,11 +11543,11 @@ msgstr "يمكنك سحب ملف مفتاح وإفلاته هنا."
 msgid "You can use Markdown for rich text formatting."
 msgstr "يمكنك استخدام Markdown لتنسيق النص المنسق."
 
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:472
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:473
 msgid "You get supported updates for {0}"
 msgstr "تحصل على تحديثات مدعومة لـ {0}"
 
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:474
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:475
 msgid "You get updates for {0}"
 msgstr "تحصل على تحديثات لـ {0}"
 
@@ -12286,6 +12309,12 @@ msgstr "{0}% من {1}"
 
 #~ msgid "Verification Code"
 #~ msgstr "شيفرة التأكيد"
+
+#~ msgid "Vnet"
+#~ msgstr "Vnet"
+
+#~ msgid "Vnets"
+#~ msgstr "Vnets"
 
 #~ msgid "Wake on LAN"
 #~ msgstr "استيقظ على الشبكة المحلية (LAN)"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: proxmox translations\n"
 "Report-Msgid-Bugs-To: <support@proxmox.com>\n"
-"POT-Creation-Date: Fri Jun  9 10:01:56 2023\n"
+"POT-Creation-Date: Wed Jun 14 14:11:17 2023\n"
 "PO-Revision-Date: 2021-03-08 17:02+0900\n"
 "Last-Translator: Jucheol Kim <jucheol.kim@bitclue.co.kr>\n"
 "Language-Team: BitClue\n"
@@ -106,6 +106,8 @@ msgstr ""
 #: pve-manager/www/manager6/dc/ACLView.js:44
 #: pve-manager/www/manager6/dc/ACLView.js:124
 #: pve-manager/www/manager6/form/TokenSelector.js:44
+#: pve-manager/www/manager6/sdn/VnetACLView.js:43
+#: pve-manager/www/manager6/sdn/VnetACLView.js:154
 #: proxmox-backup/www/form/AuthidSelector.js:78
 #: proxmox-backup/www/form/TokenSelector.js:62
 #: proxmox-backup/www/panel/AccessControl.js:30
@@ -115,6 +117,8 @@ msgstr "API 토큰"
 
 #: pve-manager/www/manager6/dc/ACLView.js:40
 #: pve-manager/www/manager6/dc/ACLView.js:223
+#: pve-manager/www/manager6/sdn/VnetACLView.js:39
+#: pve-manager/www/manager6/sdn/VnetACLView.js:250
 #: proxmox-backup/www/config/ACLView.js:160
 #: proxmox-backup/www/window/ACLEdit.js:42
 msgid "API Token Permission"
@@ -264,6 +268,7 @@ msgstr "Active Directory 서버"
 #: pve-manager/www/manager6/sdn/ControllerView.js:91
 #: pve-manager/www/manager6/sdn/DnsView.js:91
 #: pve-manager/www/manager6/sdn/IpamView.js:89
+#: pve-manager/www/manager6/sdn/VnetACLView.js:217
 #: pve-manager/www/manager6/sdn/ZoneView.js:106
 #: proxmox-backup/www/config/ACLView.js:150
 #: proxmox-backup/www/config/MetricServerView.js:87
@@ -433,6 +438,7 @@ msgstr "별칭"
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:178
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:377
 #: pve-manager/www/manager6/form/StorageSelector.js:52
+#: pve-manager/www/manager6/sdn/VnetACLView.js:63
 #: pve-manager/www/manager6/sdn/zones/EvpnEdit.js:128
 #: pve-manager/www/manager6/sdn/zones/QinQEdit.js:69
 #: pve-manager/www/manager6/sdn/zones/SimpleEdit.js:44
@@ -462,7 +468,7 @@ msgstr "모두 확인"
 msgid "All OK (old)"
 msgstr "모두 확인 (이전)"
 
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:439
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:440
 msgid "All OK, you have production-ready repositories configured!"
 msgstr ""
 
@@ -634,6 +640,7 @@ msgid "Are you sure you want to remove the subscription key?"
 msgstr "구독 키를 제거하겠습니까?"
 
 #: pve-manager/www/manager6/dc/ACLView.js:159
+#: pve-manager/www/manager6/sdn/VnetACLView.js:182
 msgid "Are you sure you want to remove this entry"
 msgstr "이 항목을 제거하겠습니까"
 
@@ -1859,7 +1866,7 @@ msgid "Container {0} on node '{1}'"
 msgstr "{1} 노드의 {0} 컨테이너"
 
 #: pve-manager/www/manager6/dc/StorageView.js:115
-#: pve-manager/www/manager6/sdn/Browser.js:31
+#: pve-manager/www/manager6/sdn/Browser.js:32
 #: pve-manager/www/manager6/storage/BTRFSEdit.js:22
 #: pve-manager/www/manager6/storage/CIFSEdit.js:204
 #: pve-manager/www/manager6/storage/CephFSEdit.js:96
@@ -2551,7 +2558,7 @@ msgstr "상세내용"
 msgid "Details"
 msgstr "상세내용"
 
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:482
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:483
 msgid "Detected mixed suites before upgrade"
 msgstr ""
 
@@ -2614,7 +2621,7 @@ msgid "Directory Storage"
 msgstr "디렉토리 스토리지"
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:198
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:525
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:526
 #, fuzzy
 msgid "Disable"
 msgstr "사용 안 함"
@@ -2671,7 +2678,7 @@ msgstr "연결 해제"
 #: pve-manager/www/manager6/node/LVMThin.js:28
 #: pve-manager/www/manager6/qemu/HDEdit.js:411
 #: pve-manager/www/manager6/qemu/HDMove.js:67
-#: pve-manager/www/manager6/qemu/HDResize.js:40
+#: pve-manager/www/manager6/qemu/HDResize.js:44
 #: proxmox-backup/www/window/CreateDirectory.js:21
 msgid "Disk"
 msgstr "디스크"
@@ -3100,7 +3107,7 @@ msgid "Email from address"
 msgstr "발신 이메일 주소"
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:197
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:525
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:526
 #: pmg-gui/js/LDAPConfig.js:123 pmg-gui/js/PBSRemoteEdit.js:99
 #: pve-manager/www/manager6/ceph/OSD.js:265
 #: pve-manager/www/manager6/dc/Backup.js:317
@@ -3268,8 +3275,8 @@ msgstr "데이터 지우기"
 #: proxmox-widget-toolkit/src/button/Button.js:155
 #: proxmox-widget-toolkit/src/node/APT.js:144
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:223
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:451
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:602
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:452
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:603
 #: proxmox-widget-toolkit/src/node/NetworkEdit.js:379
 #: proxmox-widget-toolkit/src/node/NetworkView.js:141
 #: proxmox-widget-toolkit/src/node/NetworkView.js:248
@@ -3361,6 +3368,7 @@ msgstr "데이터 지우기"
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:246
 #: pve-manager/www/manager6/qemu/Smbios1Edit.js:114
 #: pve-manager/www/manager6/sdn/StatusView.js:49
+#: pve-manager/www/manager6/sdn/VnetACLView.js:205
 #: pve-manager/www/manager6/storage/TemplateView.js:139
 #: pve-manager/www/manager6/tree/SnapshotTree.js:83
 #: pve-manager/www/manager6/window/Backup.js:155
@@ -3588,7 +3596,7 @@ msgstr ""
 msgid "Family"
 msgstr "패밀리"
 
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:498
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:499
 msgid "Fatal parsing error for at least one repository"
 msgstr ""
 
@@ -4040,8 +4048,10 @@ msgstr "그레이리스트 메일"
 #: pve-manager/www/manager6/ha/GroupSelector.js:12
 #: pve-manager/www/manager6/ha/Groups.js:76
 #: pve-manager/www/manager6/ha/ResourceEdit.js:112
-#: pve-manager/www/manager6/ha/Resources.js:140 proxmox-backup/www/Utils.js:407
-#: proxmox-backup/www/form/GroupFilter.js:395
+#: pve-manager/www/manager6/ha/Resources.js:140
+#: pve-manager/www/manager6/sdn/VnetACLView.js:29
+#: pve-manager/www/manager6/sdn/VnetACLView.js:154
+#: proxmox-backup/www/Utils.js:407 proxmox-backup/www/form/GroupFilter.js:395
 #: proxmox-backup/www/form/GroupSelector.js:47
 msgid "Group"
 msgstr "그룹"
@@ -4059,6 +4069,8 @@ msgstr "그룹 클래스"
 
 #: pve-manager/www/manager6/dc/ACLView.js:26
 #: pve-manager/www/manager6/dc/ACLView.js:199
+#: pve-manager/www/manager6/sdn/VnetACLView.js:25
+#: pve-manager/www/manager6/sdn/VnetACLView.js:222
 msgid "Group Permission"
 msgstr "그룹 권한허가"
 
@@ -4117,7 +4129,7 @@ msgstr "게스트 이미지"
 msgid "Guest Notes"
 msgstr "게스트 노트"
 
-#: pve-manager/www/manager6/qemu/OSTypeEdit.js:52
+#: pve-manager/www/manager6/qemu/OSTypeEdit.js:53
 msgid "Guest OS"
 msgstr "게스트 OS"
 
@@ -6379,7 +6391,7 @@ msgstr "찾는 디스크가 없음"
 msgid "No {0} repository enabled!"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:467
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:468
 msgid "No {0} repository is enabled, you do not get any updates!"
 msgstr ""
 
@@ -6999,6 +7011,7 @@ msgstr "여기에 암호화한 클러스터 정보를 붙여넣으십시오"
 #: pve-manager/www/manager6/dc/StorageView.js:122
 #: pve-manager/www/manager6/lxc/MPEdit.js:250
 #: pve-manager/www/manager6/node/Directory.js:107
+#: pve-manager/www/manager6/sdn/VnetACLView.js:20
 #: pve-manager/www/manager6/storage/BTRFSEdit.js:14
 #: proxmox-backup/www/DirectoryList.js:56
 #: proxmox-backup/www/config/ACLView.js:176
@@ -7082,7 +7095,7 @@ msgstr "권한허가"
 #: pve-manager/www/manager6/lxc/Config.js:365
 #: pve-manager/www/manager6/pool/Config.js:34
 #: pve-manager/www/manager6/qemu/Config.js:400
-#: pve-manager/www/manager6/sdn/Browser.js:39
+#: pve-manager/www/manager6/sdn/Browser.js:40
 #: pve-manager/www/manager6/storage/Browser.js:125
 #: proxmox-backup/www/config/ACLView.js:23
 #: proxmox-backup/www/panel/AccessControl.js:36
@@ -8063,6 +8076,7 @@ msgstr "제거 스케줄"
 #: pve-manager/www/manager6/qemu/Config.js:125
 #: pve-manager/www/manager6/qemu/HardwareView.js:468
 #: pve-manager/www/manager6/qemu/HardwareView.js:469
+#: pve-manager/www/manager6/sdn/VnetACLView.js:179
 #: pve-manager/www/manager6/storage/ImageView.js:33
 #: pve-manager/www/manager6/tree/SnapshotTree.js:281
 #: proxmox-backup/www/Utils.js:404
@@ -8269,8 +8283,8 @@ msgstr "디스크 크기 확장"
 
 #: pve-manager/www/manager6/lxc/MPResize.js:75
 #: pve-manager/www/manager6/lxc/MPResize.js:77
-#: pve-manager/www/manager6/qemu/HDResize.js:72
-#: pve-manager/www/manager6/qemu/HDResize.js:74
+#: pve-manager/www/manager6/qemu/HDResize.js:76
+#: pve-manager/www/manager6/qemu/HDResize.js:78
 msgid "Resize disk"
 msgstr "디스크 크기 확장"
 
@@ -8405,6 +8419,8 @@ msgstr "미디어 되감기"
 #: pmg-gui/js/UserView.js:136 pve-manager/www/manager6/dc/ACLView.js:54
 #: pve-manager/www/manager6/dc/ACLView.js:131
 #: pve-manager/www/manager6/dc/RoleEdit.js:24
+#: pve-manager/www/manager6/sdn/VnetACLView.js:53
+#: pve-manager/www/manager6/sdn/VnetACLView.js:161
 #: proxmox-backup/www/config/ACLView.js:191
 #: proxmox-backup/www/window/ACLEdit.js:53
 msgid "Role"
@@ -9213,7 +9229,7 @@ msgid "Size"
 msgstr "크기"
 
 #: pve-manager/www/manager6/lxc/MPResize.js:55
-#: pve-manager/www/manager6/qemu/HDResize.js:52
+#: pve-manager/www/manager6/qemu/HDResize.js:56
 msgid "Size Increment"
 msgstr "증가할 크기"
 
@@ -9295,7 +9311,7 @@ msgstr "소프트링크"
 msgid "Some guests are not covered by any backup job."
 msgstr "일부 게스트가 모든 백업작업에서 제외되어 있습니다."
 
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:478
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:479
 #, fuzzy
 msgid "Some suites are misconfigured"
 msgstr "게스트 에이전트 구성이 없음"
@@ -9545,7 +9561,7 @@ msgid "Stats from last Garbage Collection"
 msgstr "최근 GC의 상태"
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:41
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:549
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:550
 #: proxmox-widget-toolkit/src/node/ServiceView.js:178
 #: proxmox-widget-toolkit/src/node/Tasks.js:432
 #: proxmox-widget-toolkit/src/panel/StatusView.js:9
@@ -10258,7 +10274,7 @@ msgstr ""
 msgid "The current guest configuration does not support taking new snapshots"
 msgstr "현재 게스트 구성이 새 스냅샷 생성을 지원하지 않습니다"
 
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:486
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:487
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:163
 msgid ""
 "The enterprise repository is enabled, but there is no active subscription!"
@@ -10276,7 +10292,7 @@ msgstr "클러스터에 설치된 최신 버전."
 msgid "The no-subscription repository is NOT production-ready"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:490
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:491
 msgid "The no-subscription repository is not recommended for production use!"
 msgstr ""
 
@@ -10303,7 +10319,7 @@ msgstr "저장된 VM 상태가 영구적으로 손실될 것입니다."
 msgid "The test repository may contain unstable updates"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:494
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:495
 msgid ""
 "The test repository may pull in unstable updates and is not recommended for "
 "production use!"
@@ -10661,7 +10677,7 @@ msgstr "이중 인자 인증"
 #: pve-manager/www/manager6/node/ACME.js:705
 #: pve-manager/www/manager6/node/Directory.js:117
 #: pve-manager/www/manager6/node/Subscription.js:120
-#: pve-manager/www/manager6/qemu/OSTypeEdit.js:59
+#: pve-manager/www/manager6/qemu/OSTypeEdit.js:60
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:143
 #: pve-manager/www/manager6/qemu/ScsiHwEdit.js:13
 #: pve-manager/www/manager6/sdn/ControllerView.js:110
@@ -11091,6 +11107,8 @@ msgstr "사용한 객체"
 #: pve-manager/www/manager6/qemu/CloudInit.js:199
 #: pve-manager/www/manager6/qemu/CloudInit.js:205
 #: pve-manager/www/manager6/qemu/CloudInit.js:211
+#: pve-manager/www/manager6/sdn/VnetACLView.js:36
+#: pve-manager/www/manager6/sdn/VnetACLView.js:154
 #: proxmox-backup/www/config/TokenView.js:185
 #: proxmox-backup/www/form/AuthidSelector.js:77
 #: proxmox-backup/www/window/ACLEdit.js:38
@@ -11128,6 +11146,8 @@ msgstr "사용자 패스워드"
 
 #: pve-manager/www/manager6/dc/ACLView.js:33
 #: pve-manager/www/manager6/dc/ACLView.js:211
+#: pve-manager/www/manager6/sdn/VnetACLView.js:32
+#: pve-manager/www/manager6/sdn/VnetACLView.js:236
 #: proxmox-backup/www/config/ACLView.js:155
 #: proxmox-backup/www/window/ACLEdit.js:34
 msgid "User Permission"
@@ -11244,6 +11264,11 @@ msgstr "VCPUs"
 msgid "VG Name"
 msgstr "이름"
 
+#: pve-manager/www/manager6/sdn/VnetACLView.js:167
+#, fuzzy
+msgid "VLAN"
+msgstr "VLAN 태그"
+
 #: pve-manager/www/manager6/sdn/VnetEdit.js:57
 #: pve-manager/www/manager6/sdn/VnetView.js:120
 msgid "VLAN Aware"
@@ -11298,9 +11323,15 @@ msgstr "VMware 호환"
 msgid "VMware image format"
 msgstr "VMware 이미지 형식"
 
+#: pve-manager/www/manager6/form/SDNVnetSelector.js:26
 #: pve-manager/www/manager6/sdn/VnetEdit.js:65
 msgid "VNet"
 msgstr "VNet"
+
+#: pve-manager/www/manager6/sdn/ZoneContentPanel.js:13
+#, fuzzy
+msgid "VNet Permissions"
+msgstr "권한허가"
 
 #: pve-manager/www/manager6/Utils.js:688
 msgid "VZDump backup file"
@@ -11462,7 +11493,7 @@ msgstr "새 백업 완료 즉시 검증"
 #: pve-manager/www/manager6/ceph/Services.js:184
 #: pve-manager/www/manager6/qemu/HDTPM.js:63
 #: pve-manager/www/manager6/qemu/MachineEdit.js:88
-#: pve-manager/www/manager6/qemu/OSTypeEdit.js:69
+#: pve-manager/www/manager6/qemu/OSTypeEdit.js:70
 #: pve-manager/www/manager6/qemu/Smbios1Edit.js:54
 #: pve-manager/www/manager6/storage/TemplateView.js:76
 msgid "Version"
@@ -11565,19 +11596,10 @@ msgstr "바이러스 정보"
 msgid "Vlan raw device"
 msgstr "VLAN 로 디바이스"
 
-#: pve-manager/www/manager6/form/SDNVnetSelector.js:26
-#, fuzzy
-msgid "Vnet"
-msgstr "Vnets"
-
 #: pve-manager/www/manager6/sdn/zones/EvpnEdit.js:68
 #, fuzzy
 msgid "Vnet MAC address"
 msgstr "MAC 주소"
-
-#: pve-manager/www/manager6/dc/Config.js:192
-msgid "Vnets"
-msgstr "Vnets"
 
 #: pve-manager/www/manager6/storage/LVMEdit.js:133
 #, fuzzy
@@ -11639,7 +11661,7 @@ msgid "Wake-on-LAN"
 msgstr "WOL (Wake-on-LAN)"
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:270
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:445
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:446
 #: pve-manager/www/manager6/ceph/OSD.js:564
 #: pve-manager/www/manager6/ceph/ServiceList.js:230
 #: pve-manager/www/manager6/ceph/ServiceList.js:380
@@ -11902,11 +11924,11 @@ msgstr "키 파일을 이 곳에 드래그엔드롭 할 수 있습니다."
 msgid "You can use Markdown for rich text formatting."
 msgstr ""
 
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:472
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:473
 msgid "You get supported updates for {0}"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:474
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:475
 msgid "You get updates for {0}"
 msgstr ""
 
@@ -12997,6 +13019,13 @@ msgstr "{1}의 {0}%"
 
 #~ msgid "VerifyJob"
 #~ msgstr "작업 검증"
+
+#, fuzzy
+#~ msgid "Vnet"
+#~ msgstr "Vnets"
+
+#~ msgid "Vnets"
+#~ msgstr "Vnets"
 
 #, fuzzy
 #~ msgid "Wake on LAN"
