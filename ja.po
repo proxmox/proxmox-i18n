@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: proxmox translations\n"
 "Report-Msgid-Bugs-To: <support@proxmox.com>\n"
-"POT-Creation-Date: Wed Jun 14 15:28:28 2023\n"
+"POT-Creation-Date: Wed Jun 21 17:50:53 2023\n"
 "PO-Revision-Date: 2023-04-30 16:58+0900\n"
 "Last-Translator: ribbon <ribbon@users.osdn.me>\n"
 "Language-Team: Japanese <kde-i18n-doc@kde.org>\n"
@@ -59,10 +59,16 @@ msgid ""
 "A newer version was installed but old version still running, please restart"
 msgstr "新バージョンがインストール済みだが旧バージョンが動作中;再起動が必要"
 
+#: pve-manager/www/manager6/window/PCIMapEdit.js:189
+msgid ""
+"A selected device is not in a separate IOMMU group, make sure this is "
+"intended."
+msgstr ""
+
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:361
 #: proxmox-widget-toolkit/src/window/SyncWindow.js:110
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:290
-#: pve-manager/www/manager6/dc/RealmSyncJob.js:301
+#: pve-manager/www/manager6/dc/RealmSyncJob.js:355
 #: pve-manager/www/manager6/dc/SyncWindow.js:129
 msgid "ACL"
 msgstr "ACL"
@@ -206,6 +212,7 @@ msgstr "Action '{0}' 正常終了"
 msgid "Action Objects"
 msgstr "アクション”オブジェクト”"
 
+#: pve-manager/www/manager6/tree/ResourceMapTree.js:332
 #: proxmox-backup/www/datastore/Content.js:941
 #: proxmox-backup/www/tape/ChangerStatus.js:736
 #: proxmox-backup/www/tape/ChangerStatus.js:881
@@ -246,7 +253,7 @@ msgstr "Active Directory サーバー"
 #: pve-manager/www/manager6/dc/Backup.js:685
 #: pve-manager/www/manager6/dc/CorosyncLinkEdit.js:307
 #: pve-manager/www/manager6/dc/MetricServerView.js:94
-#: pve-manager/www/manager6/dc/RealmSyncJob.js:96
+#: pve-manager/www/manager6/dc/RealmSyncJob.js:133
 #: pve-manager/www/manager6/dc/StorageView.js:92
 #: pve-manager/www/manager6/dc/TokenView.js:107
 #: pve-manager/www/manager6/dc/UserView.js:130
@@ -262,12 +269,13 @@ msgstr "Active Directory サーバー"
 #: pve-manager/www/manager6/node/ACME.js:557
 #: pve-manager/www/manager6/panel/IPSet.js:335
 #: pve-manager/www/manager6/panel/MultiDiskEdit.js:256
-#: pve-manager/www/manager6/qemu/HardwareView.js:665
+#: pve-manager/www/manager6/qemu/HardwareView.js:666
 #: pve-manager/www/manager6/sdn/ControllerView.js:91
 #: pve-manager/www/manager6/sdn/DnsView.js:91
 #: pve-manager/www/manager6/sdn/IpamView.js:89
 #: pve-manager/www/manager6/sdn/VnetACLView.js:217
 #: pve-manager/www/manager6/sdn/ZoneView.js:106
+#: pve-manager/www/manager6/tree/ResourceMapTree.js:314
 #: proxmox-backup/www/config/ACLView.js:150
 #: proxmox-backup/www/config/MetricServerView.js:87
 #: proxmox-backup/www/config/PruneView.js:137
@@ -331,6 +339,10 @@ msgstr "タグを追加"
 msgid "Add Tape"
 msgstr "テープを追加"
 
+#: pve-manager/www/manager6/window/USBMapEdit.js:26
+msgid "Add USB mapping"
+msgstr ""
+
 #: proxmox-widget-toolkit/src/window/AddTotp.js:11
 msgid "Add a TOTP login factor"
 msgstr "TOTPログイン要素を追加"
@@ -356,6 +368,10 @@ msgstr "データストアとして追加"
 #: pve-manager/www/manager6/ceph/Pool.js:63
 msgid "Add as Storage"
 msgstr "ストレージとして追加"
+
+#: pve-manager/www/manager6/tree/ResourceMapTree.js:337
+msgid "Add new host mapping for '{0}'"
+msgstr ""
 
 #: pve-manager/www/manager6/ceph/FS.js:53
 msgid "Add the new CephFS to the cluster storage configuration."
@@ -410,7 +426,7 @@ msgstr "サブネットに公告"
 msgid "Alert Flags"
 msgstr "警告フラグ"
 
-#: pve-manager/www/manager6/dc/Config.js:244
+#: pve-manager/www/manager6/dc/Config.js:256
 #: pve-manager/www/manager6/form/SDNVnetSelector.js:32
 #: pve-manager/www/manager6/grid/FirewallAliases.js:47
 #: pve-manager/www/manager6/grid/FirewallAliases.js:84
@@ -447,7 +463,7 @@ msgstr "全部"
 msgid "All Cores"
 msgstr "すべてのコア"
 
-#: pve-manager/www/manager6/qemu/PCIEdit.js:151
+#: pve-manager/www/manager6/qemu/PCIEdit.js:248
 msgid "All Functions"
 msgstr "全機能"
 
@@ -596,6 +612,21 @@ msgstr "本当にテープ '{0}' を削除してよいですか?"
 msgid "Are you sure you want to format the inserted tape?"
 msgstr "本当に挿入されているテープをフォーマットして良いですか?"
 
+#: pve-manager/www/manager6/tree/ResourceMapTree.js:109
+#, fuzzy
+msgid "Are you sure you want to remove '{0}'"
+msgstr "本当にエントリ {0} を削除してよいですか"
+
+#: pve-manager/www/manager6/tree/ResourceMapTree.js:113
+#, fuzzy
+msgid "Are you sure you want to remove '{0}' entries for '{1}'"
+msgstr "本当にこの {0} エントリを削除して良いですか"
+
+#: pve-manager/www/manager6/tree/ResourceMapTree.js:117
+#, fuzzy
+msgid "Are you sure you want to remove '{0}' on '{1}' for '{2}'"
+msgstr "本当にこの {0} エントリを削除して良いですか"
+
 #: proxmox-widget-toolkit/src/button/Button.js:136 pmg-gui/js/RuleInfo.js:41
 #: pmg-gui/js/UserBlackWhiteList.js:178
 #: pve-manager/www/manager6/grid/BackupView.js:209
@@ -676,7 +707,7 @@ msgstr "属性"
 #: pve-manager/www/manager6/qemu/AudioEdit.js:24
 #: pve-manager/www/manager6/qemu/AudioEdit.js:47
 #: pve-manager/www/manager6/qemu/HardwareView.js:293
-#: pve-manager/www/manager6/qemu/HardwareView.js:725
+#: pve-manager/www/manager6/qemu/HardwareView.js:726
 msgid "Audio Device"
 msgstr "音声デバイス"
 
@@ -1094,7 +1125,7 @@ msgid "Bus/Device"
 msgstr "バス/デバイス"
 
 #: pve-manager/www/manager6/qemu/HardwareView.js:227
-#: pve-manager/www/manager6/qemu/HardwareView.js:676
+#: pve-manager/www/manager6/qemu/HardwareView.js:677
 msgid "CD/DVD Drive"
 msgstr "CD/DVD ドライブ"
 
@@ -1174,6 +1205,14 @@ msgstr "キャッシュ"
 #: pve-manager/www/manager6/form/TagEdit.js:321
 msgid "Cancel Edit"
 msgstr "編集をキャンセル"
+
+#: pve-manager/www/manager6/dc/PCIMapView.js:35
+msgid "Cannot find PCI id {0}"
+msgstr ""
+
+#: pve-manager/www/manager6/dc/USBMapView.js:38
+msgid "Cannot find USB device {0}"
+msgstr ""
 
 #: pve-manager/www/manager6/storage/ImageView.js:52
 msgid "Cannot remove disk image."
@@ -1346,11 +1385,14 @@ msgstr "簡体字中国語"
 msgid "Chinese (Traditional)"
 msgstr "繁体字中国語"
 
-#: pve-manager/www/manager6/qemu/USBEdit.js:85
+#: pve-manager/www/manager6/qemu/USBEdit.js:96
+#: pve-manager/www/manager6/qemu/USBEdit.js:115
+#: pve-manager/www/manager6/window/USBMapEdit.js:205
 msgid "Choose Device"
 msgstr "デバイスを選択"
 
-#: pve-manager/www/manager6/qemu/USBEdit.js:104
+#: pve-manager/www/manager6/qemu/USBEdit.js:134
+#: pve-manager/www/manager6/window/USBMapEdit.js:225
 msgid "Choose Port"
 msgstr "ポートを選択"
 
@@ -1458,7 +1500,7 @@ msgstr "クローズ"
 #: pve-manager/www/manager6/qemu/CIDriveEdit.js:41
 #: pve-manager/www/manager6/qemu/CIDriveEdit.js:61
 #: pve-manager/www/manager6/qemu/HardwareView.js:228
-#: pve-manager/www/manager6/qemu/HardwareView.js:718
+#: pve-manager/www/manager6/qemu/HardwareView.js:719
 msgid "CloudInit Drive"
 msgstr "CloudInitデバイス"
 
@@ -1536,7 +1578,7 @@ msgstr "色の上書き"
 
 #: proxmox-widget-toolkit/src/window/ThemeEdit.js:33
 #: proxmox-widget-toolkit/src/window/ThemeEdit.js:40 pmg-gui/js/MainView.js:213
-#: pmg-gui/js/QuarantineView.js:246 pve-manager/www/manager6/Workspace.js:404
+#: pmg-gui/js/QuarantineView.js:246 pve-manager/www/manager6/Workspace.js:400
 #: proxmox-backup/www/MainView.js:252
 msgid "Color Theme"
 msgstr "色テーマ"
@@ -1569,21 +1611,24 @@ msgstr "コマンド"
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:251
 #: pve-manager/www/manager6/dc/GroupEdit.js:35
 #: pve-manager/www/manager6/dc/GroupView.js:85
+#: pve-manager/www/manager6/dc/PCIMapView.js:98
 #: pve-manager/www/manager6/dc/PoolEdit.js:32
 #: pve-manager/www/manager6/dc/PoolView.js:85
-#: pve-manager/www/manager6/dc/RealmSyncJob.js:86
+#: pve-manager/www/manager6/dc/RealmSyncJob.js:123
 #: pve-manager/www/manager6/dc/SecurityGroups.js:37
 #: pve-manager/www/manager6/dc/SecurityGroups.js:170
 #: pve-manager/www/manager6/dc/TokenEdit.js:77
 #: pve-manager/www/manager6/dc/TokenView.js:190
+#: pve-manager/www/manager6/dc/USBMapView.js:90
 #: pve-manager/www/manager6/dc/UserEdit.js:126
-#: pve-manager/www/manager6/dc/UserView.js:221
+#: pve-manager/www/manager6/dc/UserView.js:227
 #: pve-manager/www/manager6/form/BridgeSelector.js:34
 #: pve-manager/www/manager6/form/GroupSelector.js:28
-#: pve-manager/www/manager6/form/IPRefSelector.js:69
+#: pve-manager/www/manager6/form/IPRefSelector.js:94
 #: pve-manager/www/manager6/form/PoolSelector.js:29
 #: pve-manager/www/manager6/form/SecurityGroupSelector.js:35
 #: pve-manager/www/manager6/form/TokenSelector.js:51
+#: pve-manager/www/manager6/form/USBMapSelector.js:64
 #: pve-manager/www/manager6/grid/FirewallAliases.js:41
 #: pve-manager/www/manager6/grid/FirewallAliases.js:180
 #: pve-manager/www/manager6/grid/FirewallRules.js:376
@@ -1601,6 +1646,8 @@ msgstr "コマンド"
 #: pve-manager/www/manager6/panel/IPSet.js:234
 #: pve-manager/www/manager6/panel/IPSet.js:397
 #: pve-manager/www/manager6/pool/StatusView.js:20
+#: pve-manager/www/manager6/window/PCIMapEdit.js:266
+#: pve-manager/www/manager6/window/USBMapEdit.js:235
 #: proxmox-backup/www/config/MetricServerView.js:78
 #: proxmox-backup/www/config/PruneView.js:256
 #: proxmox-backup/www/config/RemoteView.js:146
@@ -1685,6 +1732,11 @@ msgstr "設定は未サポート"
 msgid "Configuration change only, no data will be deleted."
 msgstr "設定変更のみ；データは削除されません。"
 
+#: pve-manager/www/manager6/dc/PCIMapView.js:52
+#: pve-manager/www/manager6/dc/USBMapView.js:52
+msgid "Configuration for {0} not correct ('{1}' != '{2}')"
+msgstr ""
+
 #: pve-manager/www/manager6/Utils.js:1967
 msgid "Configure"
 msgstr "設定"
@@ -1715,6 +1767,7 @@ msgstr "構成済み"
 #: pve-manager/www/manager6/qemu/CmdMenu.js:27
 #: pve-manager/www/manager6/qemu/CmdMenu.js:134
 #: pve-manager/www/manager6/qemu/CreateWizard.js:190
+#: pve-manager/www/manager6/tree/ResourceMapTree.js:124
 #: pve-manager/www/manager6/window/Restore.js:102
 #: proxmox-backup/www/datastore/Content.js:632
 msgid "Confirm"
@@ -1996,7 +2049,7 @@ msgstr "現在の認証ID"
 msgid "Current User"
 msgstr "現在のユーザ"
 
-#: pve-manager/www/manager6/window/Migrate.js:341
+#: pve-manager/www/manager6/window/Migrate.js:373
 msgid "Current layout"
 msgstr "現在のレイアウト"
 
@@ -2136,6 +2189,7 @@ msgid "Database Mirror"
 msgstr "データベースミラー"
 
 #: pve-manager/www/manager6/dc/Config.js:19
+#: pve-manager/www/manager6/form/IPRefSelector.js:90
 #: pve-manager/www/manager6/tree/ResourceTree.js:255
 #: pve-manager/www/manager6/tree/ResourceTree.js:415
 msgid "Datacenter"
@@ -2274,7 +2328,7 @@ msgid "Default Sync Options"
 msgstr "既定の同期オプション"
 
 #: proxmox-widget-toolkit/src/window/SyncWindow.js:131
-#: pve-manager/www/manager6/dc/RealmSyncJob.js:337
+#: pve-manager/www/manager6/dc/RealmSyncJob.js:391
 #: pve-manager/www/manager6/dc/SyncWindow.js:150
 msgid "Default sync options can be set by editing the realm."
 msgstr "規定の動機オプションはレルムの編集で設定可能。"
@@ -2384,6 +2438,7 @@ msgstr "Dense"
 #: pve-manager/www/manager6/form/GlobalSearchField.js:79
 #: pve-manager/www/manager6/form/IPProtocolSelector.js:23
 #: pve-manager/www/manager6/form/MDevSelector.js:38
+#: pve-manager/www/manager6/form/PCIMapSelector.js:40
 #: pve-manager/www/manager6/grid/FirewallRules.js:17
 #: pve-manager/www/manager6/ha/Resources.js:154
 #: pve-manager/www/manager6/qemu/BootOrderEdit.js:205
@@ -2395,7 +2450,7 @@ msgid "Description"
 msgstr "説明"
 
 #: pve-manager/www/manager6/dc/Backup.js:334
-#: pve-manager/www/manager6/dc/RealmSyncJob.js:331
+#: pve-manager/www/manager6/dc/RealmSyncJob.js:385
 msgid "Description of the job"
 msgstr "Job の説明"
 
@@ -2471,7 +2526,7 @@ msgstr "詳細"
 msgid "Details"
 msgstr "詳細"
 
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:483
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:488
 msgid "Detected mixed suites before upgrade"
 msgstr ""
 
@@ -2479,12 +2534,15 @@ msgstr ""
 #: proxmox-widget-toolkit/src/form/MultiDiskSelector.js:96
 #: proxmox-widget-toolkit/src/panel/DiskList.js:254
 #: pve-manager/www/manager6/ceph/OSDDetails.js:211
-#: pve-manager/www/manager6/form/PCISelector.js:44
-#: pve-manager/www/manager6/form/USBSelector.js:63
+#: pve-manager/www/manager6/form/MultiPCISelector.js:240
+#: pve-manager/www/manager6/form/PCISelector.js:45
+#: pve-manager/www/manager6/form/USBSelector.js:78
 #: pve-manager/www/manager6/node/Directory.js:112
 #: pve-manager/www/manager6/qemu/BootOrderEdit.js:182
-#: pve-manager/www/manager6/qemu/PCIEdit.js:84
-#: pve-manager/www/manager6/qemu/PCIEdit.js:205
+#: pve-manager/www/manager6/qemu/PCIEdit.js:200
+#: pve-manager/www/manager6/qemu/PCIEdit.js:223
+#: pve-manager/www/manager6/qemu/PCIEdit.js:310
+#: pve-manager/www/manager6/window/PCIMapEdit.js:250
 #: proxmox-backup/www/DirectoryList.js:61
 msgid "Device"
 msgstr "デバイス"
@@ -2533,7 +2591,7 @@ msgid "Directory Storage"
 msgstr "ディレクトリストレージ"
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:198
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:526
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:550
 msgid "Disable"
 msgstr "Disable"
 
@@ -2658,7 +2716,7 @@ msgstr "バックアップの暗号化不可"
 msgid "Do not use any media"
 msgstr "メディアを使用しない"
 
-#: pmg-gui/js/MainView.js:187 pve-manager/www/manager6/Workspace.js:356
+#: pmg-gui/js/MainView.js:187 pve-manager/www/manager6/Workspace.js:352
 #: proxmox-backup/www/MainView.js:226
 msgid "Documentation"
 msgstr "ドキュメント"
@@ -2896,7 +2954,7 @@ msgstr "Eメール属性名"
 #: pve-manager/www/manager6/dc/MetricServerView.js:109
 #: pve-manager/www/manager6/dc/OptionView.js:543
 #: pve-manager/www/manager6/dc/PoolView.js:50
-#: pve-manager/www/manager6/dc/RealmSyncJob.js:100
+#: pve-manager/www/manager6/dc/RealmSyncJob.js:137
 #: pve-manager/www/manager6/dc/RoleView.js:99
 #: pve-manager/www/manager6/dc/SecurityGroups.js:135
 #: pve-manager/www/manager6/dc/StorageView.js:56
@@ -2947,6 +3005,15 @@ msgstr "Eメール属性名"
 #: proxmox-backup/www/tape/PoolConfig.js:97
 msgid "Edit"
 msgstr "編集"
+
+#: pve-manager/www/manager6/tree/ResourceMapTree.js:345
+msgid "Edit Mapping '{0}'"
+msgstr ""
+
+#: pve-manager/www/manager6/tree/ResourceMapTree.js:346
+#, fuzzy
+msgid "Edit Mapping '{0}' for '{1}'"
+msgstr "Action '{0}' for '{1}' items"
 
 #: pve-manager/www/manager6/grid/BackupView.js:269
 #: pve-manager/www/manager6/storage/BackupView.js:146
@@ -3004,11 +3071,10 @@ msgid "Email from address"
 msgstr "送り元メールアドレス"
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:197
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:526
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:550
 #: pmg-gui/js/LDAPConfig.js:123 pmg-gui/js/PBSRemoteEdit.js:99
 #: pve-manager/www/manager6/ceph/OSD.js:265
 #: pve-manager/www/manager6/dc/Backup.js:317
-#: pve-manager/www/manager6/dc/RealmSyncJob.js:254
 #: pve-manager/www/manager6/grid/FirewallRules.js:262
 #: pve-manager/www/manager6/grid/FirewallRules.js:506
 #: pve-manager/www/manager6/storage/Base.js:51
@@ -3020,9 +3086,19 @@ msgstr "有効"
 msgid "Enable DKIM Signing"
 msgstr "DKIM署名を有効化"
 
+#: pve-manager/www/manager6/dc/RealmSyncJob.js:306
+#, fuzzy
+msgid "Enable Job"
+msgstr "有効"
+
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:229
 msgid "Enable NUMA"
 msgstr "NUMAを有効化"
+
+#: pve-manager/www/manager6/dc/RealmSyncJob.js:344
+#, fuzzy
+msgid "Enable New"
+msgstr "新たに有効化"
 
 #: pmg-gui/js/MailProxyTLS.js:10
 msgid "Enable TLS"
@@ -3033,7 +3109,6 @@ msgid "Enable TLS Logging"
 msgstr "TLSロギングを有効化"
 
 #: proxmox-widget-toolkit/src/window/SyncWindow.js:96
-#: pve-manager/www/manager6/dc/RealmSyncJob.js:290
 #: pve-manager/www/manager6/dc/SyncWindow.js:118
 msgid "Enable new"
 msgstr "新たに有効化"
@@ -3061,7 +3136,7 @@ msgstr "quotaを有効化"
 #: pve-manager/www/manager6/dc/MetricServerView.js:75
 #: pve-manager/www/manager6/dc/MetricServerView.js:269
 #: pve-manager/www/manager6/dc/MetricServerView.js:418
-#: pve-manager/www/manager6/dc/RealmSyncJob.js:54
+#: pve-manager/www/manager6/dc/RealmSyncJob.js:92
 #: pve-manager/www/manager6/dc/StorageView.js:141
 #: pve-manager/www/manager6/dc/UserEdit.js:71
 #: pve-manager/www/manager6/dc/UserView.js:170
@@ -3153,7 +3228,7 @@ msgstr "Entropy ソース"
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:367
 #: proxmox-widget-toolkit/src/window/SyncWindow.js:116
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:296
-#: pve-manager/www/manager6/dc/RealmSyncJob.js:308
+#: pve-manager/www/manager6/dc/RealmSyncJob.js:362
 #: pve-manager/www/manager6/dc/SyncWindow.js:135
 msgid "Entry"
 msgstr "Entry"
@@ -3171,7 +3246,7 @@ msgstr "データを消去"
 #: proxmox-widget-toolkit/src/node/APT.js:144
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:223
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:452
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:603
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:627
 #: proxmox-widget-toolkit/src/node/NetworkEdit.js:379
 #: proxmox-widget-toolkit/src/node/NetworkView.js:141
 #: proxmox-widget-toolkit/src/node/NetworkView.js:248
@@ -3227,6 +3302,7 @@ msgstr "データを消去"
 #: pve-manager/www/manager6/ceph/StatusDetail.js:197
 #: pve-manager/www/manager6/dc/ACLView.js:182
 #: pve-manager/www/manager6/dc/Guests.js:131
+#: pve-manager/www/manager6/dc/RealmSyncJob.js:61
 #: pve-manager/www/manager6/dc/Support.js:59
 #: pve-manager/www/manager6/dc/SyncWindow.js:57
 #: pve-manager/www/manager6/dc/SyncWindow.js:191
@@ -3265,6 +3341,7 @@ msgstr "データを消去"
 #: pve-manager/www/manager6/sdn/StatusView.js:49
 #: pve-manager/www/manager6/sdn/VnetACLView.js:205
 #: pve-manager/www/manager6/storage/TemplateView.js:139
+#: pve-manager/www/manager6/tree/ResourceMapTree.js:176
 #: pve-manager/www/manager6/tree/SnapshotTree.js:83
 #: pve-manager/www/manager6/window/Backup.js:155
 #: pve-manager/www/manager6/window/DownloadUrlToStorage.js:74
@@ -3485,7 +3562,7 @@ msgstr "ストレージ構成からのフォールバック"
 msgid "Family"
 msgstr "ファミリ"
 
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:499
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:520
 msgid "Fatal parsing error for at least one repository"
 msgstr "少なくとも1つのリポジトリに対する致命的な解析エラー"
 
@@ -3494,7 +3571,7 @@ msgstr "少なくとも1つのリポジトリに対する致命的な解析エ�
 msgid "Features"
 msgstr "機能"
 
-#: pve-manager/www/manager6/dc/Config.js:164
+#: pve-manager/www/manager6/dc/Config.js:176
 msgid "Fencing"
 msgstr "フェンシング"
 
@@ -3609,7 +3686,7 @@ msgstr "完了"
 msgid "Finish Edit"
 msgstr "編集を完了"
 
-#: pve-manager/www/manager6/dc/Config.js:218
+#: pve-manager/www/manager6/dc/Config.js:230
 #: pve-manager/www/manager6/grid/FirewallOptions.js:69
 #: pve-manager/www/manager6/grid/FirewallOptions.js:90
 #: pve-manager/www/manager6/grid/FirewallOptions.js:105
@@ -3695,7 +3772,7 @@ msgstr "例, vmbr0.100, vmbr0, vlan0.100, vlan0"
 msgid "For example: TFA device ID, required to identify multiple factors."
 msgstr "例: TFA device ID, required to identify multiple factors."
 
-#: pve-manager/www/manager6/window/Migrate.js:349
+#: pve-manager/www/manager6/window/Migrate.js:381
 msgid "Force"
 msgstr "Force"
 
@@ -3788,10 +3865,10 @@ msgstr "送信者"
 msgid "From Backup"
 msgstr "バックアップから"
 
-#: pve-manager/www/manager6/qemu/PCIEdit.js:197
-#: pve-manager/www/manager6/qemu/PCIEdit.js:206
-#: pve-manager/www/manager6/qemu/PCIEdit.js:223
-#: pve-manager/www/manager6/qemu/PCIEdit.js:232
+#: pve-manager/www/manager6/qemu/PCIEdit.js:302
+#: pve-manager/www/manager6/qemu/PCIEdit.js:311
+#: pve-manager/www/manager6/qemu/PCIEdit.js:329
+#: pve-manager/www/manager6/qemu/PCIEdit.js:338
 msgid "From Device"
 msgstr "デバイスから"
 
@@ -3965,9 +4042,10 @@ msgstr "グループ名属性."
 
 #: pmg-gui/js/LDAPConfig.js:608 pve-manager/www/manager6/dc/AuthEditLDAP.js:224
 #: pve-manager/www/manager6/dc/Config.js:117
-#: pve-manager/www/manager6/dc/Config.js:157
-#: pve-manager/www/manager6/dc/RealmSyncJob.js:275
+#: pve-manager/www/manager6/dc/Config.js:169
+#: pve-manager/www/manager6/dc/RealmSyncJob.js:328
 #: pve-manager/www/manager6/dc/SyncWindow.js:101
+#: pve-manager/www/manager6/dc/UserView.js:221
 #: proxmox-backup/www/datastore/Summary.js:92
 msgid "Groups"
 msgstr "グループ"
@@ -3976,6 +4054,7 @@ msgstr "グループ"
 msgid "Groups of '{0}'"
 msgstr "{0} のグループ"
 
+#: pve-manager/www/manager6/form/IPRefSelector.js:90
 #: pve-manager/www/manager6/grid/Replication.js:297
 msgid "Guest"
 msgstr "ゲスト"
@@ -4048,7 +4127,7 @@ msgstr "HTTP プロキシ"
 #: pve-manager/www/manager6/qemu/HDEdit.js:475
 #: pve-manager/www/manager6/qemu/HDEdit.js:477
 #: pve-manager/www/manager6/qemu/HardwareView.js:226
-#: pve-manager/www/manager6/qemu/HardwareView.js:670
+#: pve-manager/www/manager6/qemu/HardwareView.js:671
 msgid "Hard Disk"
 msgstr "ハードディスク"
 
@@ -4223,8 +4302,9 @@ msgstr "ICMP 種別"
 
 #: pmg-gui/js/ClusterAdministration.js:234 pmg-gui/js/PBSRemoteEdit.js:31
 #: pve-manager/www/manager6/dc/Backup.js:730
-#: pve-manager/www/manager6/dc/Cluster.js:286 proxmox-backup/www/Utils.js:543
-#: proxmox-backup/www/tape/ChangerStatus.js:31
+#: pve-manager/www/manager6/dc/Cluster.js:286
+#: pve-manager/www/manager6/form/PCIMapSelector.js:35
+#: proxmox-backup/www/Utils.js:543 proxmox-backup/www/tape/ChangerStatus.js:31
 #: proxmox-backup/www/tape/ChangerStatus.js:719
 #: proxmox-backup/www/tape/ChangerStatus.js:825
 #: proxmox-backup/www/tape/ChangerStatus.js:934
@@ -4239,6 +4319,14 @@ msgstr "IDには英数字のみが使用可能"
 #, fuzzy
 msgid "ID {0}"
 msgstr "in {0}"
+
+#: pve-manager/www/manager6/dc/PCIMapView.js:75
+msgid "ID/Node/Path"
+msgstr ""
+
+#: pve-manager/www/manager6/dc/USBMapView.js:75
+msgid "ID/Node/Vendor&Device"
+msgstr ""
 
 #: proxmox-backup/www/ServerStatus.js:262
 #: proxmox-backup/www/datastore/Summary.js:274
@@ -4260,8 +4348,14 @@ msgstr "IO 遅延"
 msgid "IO wait"
 msgstr "IO wait"
 
-#: pve-manager/www/manager6/form/PCISelector.js:33
+#: pve-manager/www/manager6/form/MultiPCISelector.js:229
+#: pve-manager/www/manager6/form/PCISelector.js:34
 msgid "IOMMU Group"
+msgstr "IOMMUグループ"
+
+#: pve-manager/www/manager6/dc/PCIMapView.js:88
+#, fuzzy
+msgid "IOMMU group"
 msgstr "IOMMUグループ"
 
 #: proxmox-widget-toolkit/src/form/NetworkSelector.js:101
@@ -4587,7 +4681,7 @@ msgid "Job"
 msgstr "Job"
 
 #: pve-manager/www/manager6/dc/Backup.js:328
-#: pve-manager/www/manager6/dc/RealmSyncJob.js:325
+#: pve-manager/www/manager6/dc/RealmSyncJob.js:379
 msgid "Job Comment"
 msgstr "JOBのコメント"
 
@@ -4827,7 +4921,7 @@ msgstr "ラベルメディア"
 #: proxmox-widget-toolkit/src/window/LanguageEdit.js:30
 #: proxmox-widget-toolkit/src/window/LanguageEdit.js:37
 #: pmg-gui/js/LoginView.js:262 pmg-gui/js/MainView.js:221
-#: pmg-gui/js/QuarantineView.js:250 pve-manager/www/manager6/Workspace.js:412
+#: pmg-gui/js/QuarantineView.js:250 pve-manager/www/manager6/Workspace.js:408
 #: pve-manager/www/manager6/window/LoginWindow.js:369
 #: proxmox-backup/www/LoginView.js:300 proxmox-backup/www/MainView.js:260
 msgid "Language"
@@ -4978,6 +5072,7 @@ msgstr "ロード中"
 
 #: proxmox-widget-toolkit/src/Utils.js:362
 #: pve-manager/www/manager6/ceph/OSD.js:482
+#: pve-manager/www/manager6/tree/ResourceMapTree.js:268
 msgid "Loading..."
 msgstr "ロード中…"
 
@@ -5081,11 +5176,11 @@ msgid "Login failed. Please try again"
 msgstr "ログイン失敗。再実行してください"
 
 #: pmg-gui/js/MainView.js:228 pmg-gui/js/QuarantineView.js:257
-#: pve-manager/www/manager6/Workspace.js:421 proxmox-backup/www/MainView.js:270
+#: pve-manager/www/manager6/Workspace.js:417 proxmox-backup/www/MainView.js:270
 msgid "Logout"
 msgstr "ログアウト"
 
-#: pve-manager/www/manager6/Workspace.js:505
+#: pve-manager/www/manager6/Workspace.js:501
 msgid "Logs"
 msgstr "ログ"
 
@@ -5125,7 +5220,7 @@ msgstr "MACフィルタ"
 msgid "MB"
 msgstr ""
 
-#: pve-manager/www/manager6/qemu/PCIEdit.js:161
+#: pve-manager/www/manager6/qemu/PCIEdit.js:265
 msgid "MDev Type"
 msgstr "MDev 種別"
 
@@ -5232,10 +5327,28 @@ msgstr "マネージャ"
 msgid "Managers"
 msgstr "マネージャ"
 
-#: pve-manager/www/manager6/form/USBSelector.js:69
+#: pve-manager/www/manager6/form/USBSelector.js:84
 #: pve-manager/www/manager6/qemu/Smbios1Edit.js:36
 msgid "Manufacturer"
 msgstr "製造者"
+
+#: pve-manager/www/manager6/qemu/PCIEdit.js:193
+#, fuzzy
+msgid "Mapped Device"
+msgstr "Mediated デバイス"
+
+#: pve-manager/www/manager6/form/PCIMapSelector.js:51
+#: pve-manager/www/manager6/form/USBMapSelector.js:37
+#: pve-manager/www/manager6/tree/ResourceMapTree.js:276
+msgid "Mapping matches host data"
+msgstr ""
+
+#: pve-manager/www/manager6/window/PCIMapEdit.js:209
+#: pve-manager/www/manager6/window/PCIMapEdit.js:222
+#: pve-manager/www/manager6/window/USBMapEdit.js:153
+#: pve-manager/www/manager6/window/USBMapEdit.js:166
+msgid "Mapping on Node"
+msgstr ""
 
 #: pmg-gui/js/LDAPGroupEditor.js:77
 msgid "Match"
@@ -5347,7 +5460,8 @@ msgstr "メディアセット"
 msgid "Media-Set UUID"
 msgstr "メディアセットUUID"
 
-#: pve-manager/www/manager6/form/PCISelector.js:49
+#: pve-manager/www/manager6/form/MultiPCISelector.js:245
+#: pve-manager/www/manager6/form/PCISelector.js:50
 msgid "Mediated Devices"
 msgstr "Mediated デバイス"
 
@@ -5423,7 +5537,7 @@ msgstr "メタデータ使用状況"
 msgid "Metadata Used"
 msgstr "使用されたメタデータ"
 
-#: pve-manager/www/manager6/dc/Config.js:261
+#: pve-manager/www/manager6/dc/Config.js:273
 #: proxmox-backup/www/SystemConfiguration.js:49
 msgid "Metric Server"
 msgstr "メトリックサーバ"
@@ -5443,7 +5557,7 @@ msgstr ""
 #: pve-manager/www/manager6/qemu/CmdMenu.js:110
 #: pve-manager/www/manager6/qemu/Config.js:68
 #: pve-manager/www/manager6/window/Migrate.js:96
-#: pve-manager/www/manager6/window/Migrate.js:417
+#: pve-manager/www/manager6/window/Migrate.js:449
 msgid "Migrate"
 msgstr "マイグレート"
 
@@ -5495,7 +5609,7 @@ msgstr "混合サブスクリプション"
 #: pve-manager/www/manager6/dc/UserTagAccessEdit.js:52
 #: pve-manager/www/manager6/window/Backup.js:28
 #: pve-manager/www/manager6/window/Clone.js:209
-#: pve-manager/www/manager6/window/Migrate.js:312
+#: pve-manager/www/manager6/window/Migrate.js:344
 msgid "Mode"
 msgstr "モード"
 
@@ -5631,6 +5745,10 @@ msgid ""
 "Multiple links are used as failover, lower numbers have higher priority."
 msgstr "フェイルオーバ用に複数のリンクが使用され、最小値が最大の優先度を持つ。"
 
+#: pve-manager/www/manager6/form/MultiPCISelector.js:42
+msgid "Must choose at least one device"
+msgstr ""
+
 #: proxmox-widget-toolkit/src/Toolkit.js:110
 msgid "Must end with"
 msgstr "Must end with"
@@ -5642,7 +5760,7 @@ msgid "Must start with"
 msgstr "Must start with"
 
 #: pmg-gui/js/MainView.js:208 pmg-gui/js/Settings.js:5
-#: pve-manager/www/manager6/Workspace.js:376
+#: pve-manager/www/manager6/Workspace.js:372
 #: pve-manager/www/manager6/window/Settings.js:5
 #: proxmox-backup/www/MainView.js:247 proxmox-backup/www/window/Settings.js:5
 msgid "My Settings"
@@ -5706,14 +5824,15 @@ msgstr "現在"
 #: pve-manager/www/manager6/dc/OptionView.js:230
 #: pve-manager/www/manager6/dc/PoolEdit.js:22
 #: pve-manager/www/manager6/dc/PoolView.js:79
-#: pve-manager/www/manager6/dc/RealmSyncJob.js:64
+#: pve-manager/www/manager6/dc/RealmSyncJob.js:101
 #: pve-manager/www/manager6/dc/RoleEdit.js:33
 #: pve-manager/www/manager6/dc/RoleView.js:58
 #: pve-manager/www/manager6/dc/SecurityGroups.js:30
 #: pve-manager/www/manager6/dc/UserView.js:184
 #: pve-manager/www/manager6/form/FileSelector.js:67
-#: pve-manager/www/manager6/form/IPRefSelector.js:63
+#: pve-manager/www/manager6/form/IPRefSelector.js:79
 #: pve-manager/www/manager6/form/StorageSelector.js:20
+#: pve-manager/www/manager6/form/USBMapSelector.js:25
 #: pve-manager/www/manager6/form/VMSelector.js:42
 #: pve-manager/www/manager6/form/VMSelector.js:289
 #: pve-manager/www/manager6/grid/BackupView.js:330
@@ -5744,10 +5863,12 @@ msgstr "現在"
 #: pve-manager/www/manager6/storage/ContentView.js:152
 #: pve-manager/www/manager6/tree/SnapshotTree.js:324
 #: pve-manager/www/manager6/window/Clone.js:196
+#: pve-manager/www/manager6/window/PCIMapEdit.js:197
 #: pve-manager/www/manager6/window/Restore.js:316
 #: pve-manager/www/manager6/window/Settings.js:180
 #: pve-manager/www/manager6/window/Snapshot.js:65
 #: pve-manager/www/manager6/window/TreeSettingsEdit.js:26
+#: pve-manager/www/manager6/window/USBMapEdit.js:142
 #: proxmox-backup/www/Utils.js:549 proxmox-backup/www/ZFSList.js:62
 #: proxmox-backup/www/config/MetricServerView.js:56
 #: proxmox-backup/www/config/UserView.js:195
@@ -5844,7 +5965,7 @@ msgstr "ネットワーク設定"
 #: proxmox-widget-toolkit/src/Utils.js:636
 #: pve-manager/www/manager6/lxc/Network.js:326
 #: pve-manager/www/manager6/qemu/HardwareView.js:239
-#: pve-manager/www/manager6/qemu/HardwareView.js:682
+#: pve-manager/www/manager6/qemu/HardwareView.js:683
 #: pve-manager/www/manager6/qemu/IPConfigEdit.js:66
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:232
 msgid "Network Device"
@@ -5910,7 +6031,7 @@ msgstr "次のメディア"
 
 #: pmg-gui/js/PBSSnapshotView.js:185 pve-manager/www/manager6/dc/Backup.js:752
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:193
-#: pve-manager/www/manager6/dc/RealmSyncJob.js:80
+#: pve-manager/www/manager6/dc/RealmSyncJob.js:117
 #: proxmox-backup/www/config/PruneView.js:249
 #: proxmox-backup/www/config/SyncView.js:279
 #: proxmox-backup/www/config/VerifyView.js:251
@@ -5972,6 +6093,11 @@ msgstr "データベースが設定されていません"
 msgid "No Delay"
 msgstr "遅延がありません"
 
+#: pve-manager/www/manager6/form/MultiPCISelector.js:5
+#, fuzzy
+msgid "No Devices found"
+msgstr "ディスクがありません"
+
 #: proxmox-widget-toolkit/src/form/MultiDiskSelector.js:68
 msgid "No Disk selected"
 msgstr "ディスクが選択されていません"
@@ -6010,6 +6136,21 @@ msgstr "Guestエージェントが未設定"
 #: proxmox-widget-toolkit/src/button/HelpButton.js:73
 msgid "No Help available"
 msgstr "ヘルプがありません"
+
+#: pve-manager/www/manager6/window/PCIMapEdit.js:170
+msgid ""
+"No IOMMU detected, please activate it. See Documentation for further "
+"information."
+msgstr ""
+
+#: pve-manager/www/manager6/dc/RealmSyncJob.js:284
+msgid "No LDAP/AD Realm found"
+msgstr ""
+
+#: pve-manager/www/manager6/tree/ResourceMapTree.js:8
+#, fuzzy
+msgid "No Mapping found"
+msgstr "何も見つかりません"
 
 #: proxmox-backup/www/DirectoryList.js:8
 msgid "No Mount-Units found"
@@ -6116,7 +6257,7 @@ msgstr "変更なし"
 msgid "No data in database"
 msgstr "データベース中にデータがありません"
 
-#: pve-manager/www/manager6/dc/RealmSyncJob.js:270
+#: pve-manager/www/manager6/dc/RealmSyncJob.js:323
 #: pve-manager/www/manager6/dc/SyncWindow.js:96
 msgid "No default available"
 msgstr "既定値がありません"
@@ -6184,6 +6325,11 @@ msgstr "アップデートがありません。"
 msgid "No valid subscription"
 msgstr "有効なサブスクリプションがありません"
 
+#: pve-manager/www/manager6/dc/RealmSyncJob.js:8
+#, fuzzy
+msgid "No {0} configured"
+msgstr "{0} が設定されていません。"
+
 #: pve-manager/www/manager6/ceph/FS.js:101
 msgid "No {0} configured."
 msgstr "{0} が設定されていません。"
@@ -6196,7 +6342,7 @@ msgstr "{0} がありません"
 msgid "No {0} repository enabled!"
 msgstr "有効な{0}リポジトリがありません!"
 
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:468
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:473
 msgid "No {0} repository is enabled, you do not get any updates!"
 msgstr "有効な{0}リポジトリがありません。更新は取得されません!"
 
@@ -6566,8 +6712,8 @@ msgstr "オプション"
 #: pmg-gui/js/SystemConfiguration.js:52
 #: pmg-gui/js/VirusDetectorConfiguration.js:13
 #: pve-manager/www/manager6/dc/Config.js:50
-#: pve-manager/www/manager6/dc/Config.js:200
-#: pve-manager/www/manager6/dc/Config.js:227
+#: pve-manager/www/manager6/dc/Config.js:212
+#: pve-manager/www/manager6/dc/Config.js:239
 #: pve-manager/www/manager6/lxc/Config.js:264
 #: pve-manager/www/manager6/lxc/Config.js:323
 #: pve-manager/www/manager6/node/Config.js:212
@@ -6692,10 +6838,19 @@ msgid "PB"
 msgstr ""
 
 #: pve-manager/www/manager6/qemu/HardwareView.js:275
-#: pve-manager/www/manager6/qemu/HardwareView.js:704
-#: pve-manager/www/manager6/qemu/PCIEdit.js:246
+#: pve-manager/www/manager6/qemu/HardwareView.js:705
+#: pve-manager/www/manager6/qemu/PCIEdit.js:352
 msgid "PCI Device"
 msgstr "PCIデバイス"
+
+#: pve-manager/www/manager6/dc/Config.js:302
+#, fuzzy
+msgid "PCI Devices"
+msgstr "PCIデバイス"
+
+#: pve-manager/www/manager6/window/PCIMapEdit.js:8
+msgid "PCI mapping"
+msgstr ""
 
 #: proxmox-widget-toolkit/src/panel/Certificates.js:63
 #: pve-manager/www/manager6/node/Certificates.js:343
@@ -6734,11 +6889,16 @@ msgstr "親の名前空間"
 msgid "Partitions"
 msgstr "パーティション"
 
-#: pve-manager/www/manager6/form/USBSelector.js:53
+#: pve-manager/www/manager6/form/MultiPCISelector.js:159
+#, fuzzy
+msgid "Pass through all functions as one device"
+msgstr "特定デバイスのパススルー"
+
+#: pve-manager/www/manager6/form/USBSelector.js:67
 msgid "Passthrough a full port"
 msgstr "全ポートのパススルー"
 
-#: pve-manager/www/manager6/form/USBSelector.js:51
+#: pve-manager/www/manager6/form/USBSelector.js:65
 msgid "Passthrough a specific device"
 msgstr "特定デバイスのパススルー"
 
@@ -6750,7 +6910,7 @@ msgstr "特定デバイスのパススルー"
 #: pmg-gui/js/LDAPConfig.js:113 pmg-gui/js/LoginView.js:256
 #: pmg-gui/js/PBSRemoteEdit.js:80 pmg-gui/js/UserEdit.js:50
 #: pmg-gui/js/UserView.js:115 pmg-gui/js/mobile/loginscreen.js:28
-#: pve-manager/www/manager6/Workspace.js:383
+#: pve-manager/www/manager6/Workspace.js:379
 #: pve-manager/www/manager6/dc/ClusterEdit.js:348
 #: pve-manager/www/manager6/dc/UserEdit.js:38
 #: pve-manager/www/manager6/dc/UserView.js:58
@@ -6785,6 +6945,7 @@ msgstr "エンコードされたクラスタ情報をここに貼り付け"
 #: pve-manager/www/manager6/dc/MetricServerView.js:433
 #: pve-manager/www/manager6/dc/PermissionView.js:26
 #: pve-manager/www/manager6/dc/StorageView.js:122
+#: pve-manager/www/manager6/dc/USBMapView.js:80
 #: pve-manager/www/manager6/lxc/MPEdit.js:250
 #: pve-manager/www/manager6/node/Directory.js:107
 #: pve-manager/www/manager6/sdn/VnetACLView.js:20
@@ -7071,7 +7232,7 @@ msgstr "Pools"
 #: pve-manager/www/manager6/dc/MetricServerView.js:86
 #: pve-manager/www/manager6/dc/MetricServerView.js:228
 #: pve-manager/www/manager6/dc/MetricServerView.js:426
-#: pve-manager/www/manager6/form/USBSelector.js:63
+#: pve-manager/www/manager6/form/USBSelector.js:78
 #: proxmox-backup/www/window/InfluxDbEdit.js:172
 msgid "Port"
 msgstr "ポート"
@@ -7135,7 +7296,7 @@ msgstr "プライマリE-Mail"
 msgid "Primary Exit Node"
 msgstr "プライマリ Exit ノード"
 
-#: pve-manager/www/manager6/qemu/PCIEdit.js:175
+#: pve-manager/www/manager6/qemu/PCIEdit.js:279
 msgid "Primary GPU"
 msgstr "プライマリGPU"
 
@@ -7195,7 +7356,7 @@ msgstr "処理中..."
 msgid "Processors"
 msgstr "プロセッサ"
 
-#: pve-manager/www/manager6/form/USBSelector.js:75
+#: pve-manager/www/manager6/form/USBSelector.js:90
 #: pve-manager/www/manager6/qemu/Smbios1Edit.js:45
 msgid "Product"
 msgstr "Product"
@@ -7231,7 +7392,7 @@ msgstr "継承"
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:373
 #: proxmox-widget-toolkit/src/window/SyncWindow.js:122
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:302
-#: pve-manager/www/manager6/dc/RealmSyncJob.js:315
+#: pve-manager/www/manager6/dc/RealmSyncJob.js:369
 #: pve-manager/www/manager6/dc/SyncWindow.js:141
 msgid "Properties"
 msgstr "プロパティ"
@@ -7364,7 +7525,7 @@ msgstr "ジョブ設定から削除"
 msgid "Push file"
 msgstr "ファイルのpush"
 
-#: pve-manager/www/manager6/qemu/PCIEdit.js:32
+#: pve-manager/www/manager6/qemu/PCIEdit.js:39
 msgid "Q35 only"
 msgstr "Q35のみ"
 
@@ -7487,6 +7648,11 @@ msgstr "Rateの制限値"
 msgid "Raw Certificate"
 msgstr "生の証明書"
 
+#: pve-manager/www/manager6/qemu/PCIEdit.js:219
+#, fuzzy
+msgid "Raw Device"
+msgstr "デバイス"
+
 #: pve-manager/www/manager6/form/DiskFormatSelector.js:5
 msgid "Raw disk image"
 msgstr "Raw ディスクイメージ"
@@ -7545,8 +7711,8 @@ msgstr "Reads"
 #: pve-manager/www/manager6/Utils.js:1931
 #: pve-manager/www/manager6/dc/AuthEditBase.js:37
 #: pve-manager/www/manager6/dc/AuthView.js:17
-#: pve-manager/www/manager6/dc/RealmSyncJob.js:70
-#: pve-manager/www/manager6/dc/RealmSyncJob.js:241
+#: pve-manager/www/manager6/dc/RealmSyncJob.js:107
+#: pve-manager/www/manager6/dc/RealmSyncJob.js:292
 #: pve-manager/www/manager6/dc/UserEdit.js:102
 #: pve-manager/www/manager6/dc/UserView.js:163
 #: proxmox-backup/www/config/UserView.js:174
@@ -7555,17 +7721,22 @@ msgid "Realm"
 msgstr "レルム"
 
 #: proxmox-widget-toolkit/src/window/SyncWindow.js:4
-#: pve-manager/www/manager6/dc/Config.js:145
 #: pve-manager/www/manager6/dc/SyncWindow.js:4
 msgid "Realm Sync"
 msgstr "レルム同期"
 
-#: pve-manager/www/manager6/dc/RealmSyncJob.js:129
+#: pve-manager/www/manager6/dc/RealmSyncJob.js:8
+#: pve-manager/www/manager6/dc/RealmSyncJob.js:172
 #, fuzzy
 msgid "Realm Sync Job"
 msgstr "レルム同期"
 
-#: pve-manager/www/manager6/dc/Config.js:138
+#: pve-manager/www/manager6/dc/Config.js:153
+#, fuzzy
+msgid "Realm Sync Jobs"
+msgstr "レルム同期"
+
+#: pve-manager/www/manager6/dc/Config.js:137
 #: proxmox-backup/www/panel/AccessControl.js:44
 msgid "Realms"
 msgstr "レルム"
@@ -7823,13 +7994,18 @@ msgstr "削除のスケジュール"
 msgid "Remove"
 msgstr "削除"
 
+#: pve-manager/www/manager6/tree/ResourceMapTree.js:354
+#, fuzzy
+msgid "Remove '{0}'"
+msgstr "名前空間 '{0}' を削除"
+
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:363
 msgid "Remove ACLs of vanished users"
 msgstr "Remove ACLs of vanished users."
 
 #: proxmox-widget-toolkit/src/window/SyncWindow.js:112
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:292
-#: pve-manager/www/manager6/dc/RealmSyncJob.js:304
+#: pve-manager/www/manager6/dc/RealmSyncJob.js:358
 #: pve-manager/www/manager6/dc/SyncWindow.js:131
 msgid "Remove ACLs of vanished users and groups."
 msgstr "Remove ACLs of vanished users and groups."
@@ -7864,7 +8040,7 @@ msgstr "サブスクリプションの削除"
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:357
 #: proxmox-widget-toolkit/src/window/SyncWindow.js:106
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:286
-#: pve-manager/www/manager6/dc/RealmSyncJob.js:297
+#: pve-manager/www/manager6/dc/RealmSyncJob.js:351
 #: pve-manager/www/manager6/dc/SyncWindow.js:125
 msgid "Remove Vanished Options"
 msgstr "消えたオプションを削除"
@@ -7884,6 +8060,16 @@ msgstr "エントリの削除?"
 msgid "Remove from replication, HA and backup jobs"
 msgstr "レプリケーション、HAとバックアップジョブの削除"
 
+#: pve-manager/www/manager6/tree/ResourceMapTree.js:357
+#, fuzzy
+msgid "Remove mapping '{0}'"
+msgstr "名前空間 '{0}' を削除"
+
+#: pve-manager/www/manager6/tree/ResourceMapTree.js:356
+#, fuzzy
+msgid "Remove mapping for '{0}'"
+msgstr "名前空間 '{0}' を削除"
+
 #: proxmox-backup/www/datastore/Content.js:982
 msgid "Remove namespace '{0}'"
 msgstr "名前空間 '{0}' を削除"
@@ -7902,7 +8088,7 @@ msgstr "消えたものを除去"
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:375
 #: proxmox-widget-toolkit/src/window/SyncWindow.js:124
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:304
-#: pve-manager/www/manager6/dc/RealmSyncJob.js:318
+#: pve-manager/www/manager6/dc/RealmSyncJob.js:372
 #: pve-manager/www/manager6/dc/SyncWindow.js:143
 msgid "Remove vanished properties from synced users."
 msgstr "同期したユーザからの消えたプロパティを削除。"
@@ -7913,7 +8099,7 @@ msgstr "消えたユーザを除去"
 
 #: proxmox-widget-toolkit/src/window/SyncWindow.js:118
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:298
-#: pve-manager/www/manager6/dc/RealmSyncJob.js:311
+#: pve-manager/www/manager6/dc/RealmSyncJob.js:365
 #: pve-manager/www/manager6/dc/SyncWindow.js:137
 msgid "Remove vanished user and group entries."
 msgstr "Remove vanished user and group entries."
@@ -8019,6 +8205,11 @@ msgstr "ディスクのリサイズ"
 #: pve-manager/www/manager6/ha/ResourceEdit.js:180
 msgid "Resource"
 msgstr "リソース"
+
+#: pve-manager/www/manager6/dc/Config.js:287
+#, fuzzy
+msgid "Resource Mappings"
+msgstr "データベースマッピング"
 
 #: pve-manager/www/manager6/lxc/CreateWizard.js:87
 #: pve-manager/www/manager6/pool/Config.js:16
@@ -8212,6 +8403,11 @@ msgstr "ルールデータベース"
 msgid "Rules"
 msgstr "ルール"
 
+#: pve-manager/www/manager6/dc/RealmSyncJob.js:151
+#, fuzzy
+msgid "Run Now"
+msgstr "直ちに実行"
+
 #: pve-manager/www/manager6/form/AgentFeatureSelector.js:17
 msgid "Run guest-trim after a disk move or VM migration"
 msgstr "ディスクの移動後か、VMマイグレーション後にguest-trimを実行"
@@ -8255,7 +8451,7 @@ msgstr "SCSIコントローラ"
 msgid "SCSI Controller Type"
 msgstr "SCSIコントローラタイプ"
 
-#: pve-manager/www/manager6/dc/Config.js:175
+#: pve-manager/www/manager6/dc/Config.js:187
 #: pve-manager/www/manager6/tree/ResourceTree.js:26
 msgid "SDN"
 msgstr "SDN"
@@ -8384,8 +8580,8 @@ msgstr "スキャン中…"
 #: pmg-gui/js/PBSSnapshotView.js:177 pve-manager/www/manager6/dc/Backup.js:245
 #: pve-manager/www/manager6/dc/Backup.js:747
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:188
-#: pve-manager/www/manager6/dc/RealmSyncJob.js:75
-#: pve-manager/www/manager6/dc/RealmSyncJob.js:247
+#: pve-manager/www/manager6/dc/RealmSyncJob.js:112
+#: pve-manager/www/manager6/dc/RealmSyncJob.js:298
 #: pve-manager/www/manager6/grid/Replication.js:37
 #: pve-manager/www/manager6/grid/Replication.js:397
 #: pve-manager/www/manager6/window/ScheduleSimulator.js:83
@@ -8415,8 +8611,9 @@ msgid "Scheduled Verification"
 msgstr "スケジュールされた検証"
 
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:218
-#: pve-manager/www/manager6/dc/RealmSyncJob.js:268
+#: pve-manager/www/manager6/dc/RealmSyncJob.js:321
 #: pve-manager/www/manager6/dc/SyncWindow.js:94
+#: pve-manager/www/manager6/form/IPRefSelector.js:85
 msgid "Scope"
 msgstr "スコープ"
 
@@ -8495,7 +8692,7 @@ msgstr "シークレット長"
 msgid "Section"
 msgstr "選択"
 
-#: pve-manager/www/manager6/dc/Config.js:237
+#: pve-manager/www/manager6/dc/Config.js:249
 #: pve-manager/www/manager6/dc/SecurityGroups.js:42
 #: pve-manager/www/manager6/dc/SecurityGroups.js:44
 #: pve-manager/www/manager6/form/SecurityGroupSelector.js:29
@@ -8597,7 +8794,7 @@ msgid "Serial"
 msgstr "シリアル"
 
 #: pve-manager/www/manager6/qemu/HardwareView.js:285
-#: pve-manager/www/manager6/qemu/HardwareView.js:711
+#: pve-manager/www/manager6/qemu/HardwareView.js:712
 #: pve-manager/www/manager6/qemu/SerialEdit.js:32
 #: pve-manager/www/manager6/qemu/SerialEdit.js:57
 msgid "Serial Port"
@@ -9004,7 +9201,7 @@ msgstr "ソフトリンク"
 msgid "Some guests are not covered by any backup job."
 msgstr "ゲストのいくつかは何らかのバックアップジョブでカバーされていません。"
 
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:479
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:484
 msgid "Some suites are misconfigured"
 msgstr "一部のスイートが正しく設定されていない"
 
@@ -9037,7 +9234,7 @@ msgstr "ソース リモート"
 msgid "Source Slot"
 msgstr "ソースポート"
 
-#: pve-manager/www/manager6/window/Migrate.js:304
+#: pve-manager/www/manager6/window/Migrate.js:336
 msgid "Source node"
 msgstr "ソースノード"
 
@@ -9095,7 +9292,7 @@ msgstr "スペイン語"
 msgid "Spares"
 msgstr "スペア"
 
-#: pve-manager/www/manager6/form/USBSelector.js:81
+#: pve-manager/www/manager6/form/USBSelector.js:96
 msgid "Speed"
 msgstr "スピード"
 
@@ -9104,7 +9301,7 @@ msgstr "スピード"
 msgid "Spice Enhancements"
 msgstr "Spice拡張"
 
-#: pve-manager/www/manager6/qemu/USBEdit.js:65
+#: pve-manager/www/manager6/qemu/USBEdit.js:78
 msgid "Spice Port"
 msgstr "Spiceポート"
 
@@ -9246,7 +9443,7 @@ msgid "Stats from last Garbage Collection"
 msgstr "最後のガーベジコレクションからの状態"
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:41
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:550
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:574
 #: proxmox-widget-toolkit/src/node/ServiceView.js:178
 #: proxmox-widget-toolkit/src/node/Tasks.js:432
 #: proxmox-widget-toolkit/src/panel/StatusView.js:9
@@ -9267,7 +9464,11 @@ msgstr "最後のガーベジコレクションからの状態"
 #: pve-manager/www/manager6/ceph/Status.js:170
 #: pve-manager/www/manager6/data/ResourceStore.js:274
 #: pve-manager/www/manager6/dc/Health.js:93
+#: pve-manager/www/manager6/dc/PCIMapView.js:92
 #: pve-manager/www/manager6/dc/Tasks.js:117
+#: pve-manager/www/manager6/dc/USBMapView.js:84
+#: pve-manager/www/manager6/form/PCIMapSelector.js:45
+#: pve-manager/www/manager6/form/USBMapSelector.js:30
 #: pve-manager/www/manager6/form/VMSelector.js:35
 #: pve-manager/www/manager6/form/VMSelector.js:84
 #: pve-manager/www/manager6/form/VMSelector.js:301
@@ -9392,11 +9593,11 @@ msgstr "ストレージ使用状態（バイト）"
 msgid "Storage {0} on node {1}"
 msgstr "ノード {1} 上のストレージ {0}"
 
-#: pve-manager/www/manager6/qemu/PCIEdit.js:231
+#: pve-manager/www/manager6/qemu/PCIEdit.js:337
 msgid "Sub-Device"
 msgstr "副デバイス"
 
-#: pve-manager/www/manager6/qemu/PCIEdit.js:222
+#: pve-manager/www/manager6/qemu/PCIEdit.js:328
 msgid "Sub-Vendor"
 msgstr "副ベンダ"
 
@@ -9458,6 +9659,11 @@ msgstr "サブスクリプションキー"
 msgid "Subscriptions"
 msgstr "サブスクリプション"
 
+#: pve-manager/www/manager6/dc/PCIMapView.js:84
+#, fuzzy
+msgid "Subsystem Vendor/Device"
+msgstr "USB ベンダ/デバイスIDを使用"
+
 #: pmg-gui/js/RegexTester.js:48
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:568
 msgid "Success"
@@ -9504,7 +9710,7 @@ msgstr "日曜日"
 msgid "Superuser"
 msgstr "スーパーユーザー"
 
-#: pve-manager/www/manager6/dc/Config.js:268
+#: pve-manager/www/manager6/dc/Config.js:323
 #: pve-manager/www/manager6/dc/NodeView.js:33
 msgid "Support"
 msgstr "サポート"
@@ -9674,7 +9880,7 @@ msgstr "TOTPコードは通常6桁の10進数で構成されます。"
 
 #: pve-manager/www/manager6/qemu/HDTPM.js:81
 #: pve-manager/www/manager6/qemu/HardwareView.js:254
-#: pve-manager/www/manager6/qemu/HardwareView.js:690
+#: pve-manager/www/manager6/qemu/HardwareView.js:691
 msgid "TPM State"
 msgstr "TPMの状態"
 
@@ -9818,7 +10024,7 @@ msgstr "ターゲットグループ"
 
 #: pve-manager/www/manager6/window/BulkAction.js:61
 #: pve-manager/www/manager6/window/Clone.js:167
-#: pve-manager/www/manager6/window/Migrate.js:325
+#: pve-manager/www/manager6/window/Migrate.js:357
 msgid "Target node"
 msgstr "ターゲットノード"
 
@@ -9826,7 +10032,7 @@ msgstr "ターゲットノード"
 msgid "Target portal group"
 msgstr "ターゲットポータルグループ"
 
-#: pve-manager/www/manager6/window/Migrate.js:337
+#: pve-manager/www/manager6/window/Migrate.js:369
 msgid "Target storage"
 msgstr "ターゲットストレージ"
 
@@ -9929,7 +10135,6 @@ msgstr "このプールに最終的に格納されたデータの量。自動ス
 msgid "The current guest configuration does not support taking new snapshots"
 msgstr "現在のゲスト設定は新しいスナップショットをサポートしません"
 
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:487
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:163
 msgid ""
 "The enterprise repository is enabled, but there is no active subscription!"
@@ -9948,11 +10153,6 @@ msgstr "クラスタ中に最新のバージョンがインストールされて
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:305
 msgid "The no-subscription repository is NOT production-ready"
 msgstr "サブスクリプションなしのリポジトリは、本番環境で使用できません。"
-
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:491
-msgid "The no-subscription repository is not recommended for production use!"
-msgstr ""
-"サブスクリプションなしのリポジトリは、運用環境での使用にはお勧めできません!"
 
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:172
 #, fuzzy
@@ -9981,19 +10181,35 @@ msgstr "セーブされたVMステートは完全に失われます。"
 msgid "The test repository may contain unstable updates"
 msgstr "テストリポジトリに不安定な更新が含まれている可能性があります"
 
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:495
-msgid ""
-"The test repository may pull in unstable updates and is not recommended for "
-"production use!"
-msgstr ""
-"テストリポジトリが不安定な更新を引き起こす可能性があるため、運用環境での使用"
-"はお勧めできません!"
-
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:174
 msgid ""
 "The test repository should only be used for test setups or after consulting "
 "the official Proxmox support!"
 msgstr ""
+
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:494
+#, fuzzy
+msgid ""
+"The {0}enterprise repository is enabled, but there is no active subscription!"
+msgstr ""
+"エンタープライズリポジトリは有効になっていますが、アクティブなサブスクリプ"
+"ションがありません。"
+
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:501
+#, fuzzy
+msgid ""
+"The {0}no-subscription{1} repository is not recommended for production use!"
+msgstr ""
+"サブスクリプションなしのリポジトリは、運用環境での使用にはお勧めできません!"
+
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:509
+#, fuzzy
+msgid ""
+"The {0}test repository may pull in unstable updates and is not recommended "
+"for production use!"
+msgstr ""
+"テストリポジトリが不安定な更新を引き起こす可能性があるため、運用環境での使用"
+"はお勧めできません!"
 
 #: pve-manager/www/manager6/storage/LvmThinEdit.js:167
 msgid "Thin Pool"
@@ -10316,7 +10532,7 @@ msgstr "2要素認証"
 #: pve-manager/www/manager6/dc/OptionView.js:127
 #: pve-manager/www/manager6/dc/StorageView.js:108
 #: pve-manager/www/manager6/form/GlobalSearchField.js:73
-#: pve-manager/www/manager6/form/IPRefSelector.js:54
+#: pve-manager/www/manager6/form/IPRefSelector.js:70
 #: pve-manager/www/manager6/form/MDevSelector.js:22
 #: pve-manager/www/manager6/form/StorageSelector.js:26
 #: pve-manager/www/manager6/form/VMSelector.js:57
@@ -10373,9 +10589,14 @@ msgid "URL"
 msgstr "URL"
 
 #: pve-manager/www/manager6/qemu/HardwareView.js:264
-#: pve-manager/www/manager6/qemu/HardwareView.js:697
-#: pve-manager/www/manager6/qemu/USBEdit.js:127
+#: pve-manager/www/manager6/qemu/HardwareView.js:698
+#: pve-manager/www/manager6/qemu/USBEdit.js:157
 msgid "USB Device"
+msgstr "USBデバイス"
+
+#: pve-manager/www/manager6/dc/Config.js:312
+#, fuzzy
+msgid "USB Devices"
 msgstr "USBデバイス"
 
 #: proxmox-widget-toolkit/src/Utils.js:88
@@ -10423,7 +10644,7 @@ msgstr "ユニットファイル"
 #: pmg-gui/js/dashboard/SubscriptionInfo.js:7
 #: pve-manager/www/manager6/ceph/StatusDetail.js:183
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:231
-#: pve-manager/www/manager6/form/USBSelector.js:128
+#: pve-manager/www/manager6/form/USBSelector.js:143
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:101
 #: pve-manager/www/manager6/window/DownloadUrlToStorage.js:85
 #: pve-manager/www/manager6/window/DownloadUrlToStorage.js:86
@@ -10434,6 +10655,11 @@ msgstr "不明"
 #: pmg-gui/js/LDAPGroupEditor.js:73 pmg-gui/js/LDAPGroupEditor.js:74
 msgid "Unknown LDAP address"
 msgstr "未知LDAPアドレス"
+
+#: pve-manager/www/manager6/tree/ResourceMapTree.js:271
+#, fuzzy
+msgid "Unknown Node"
+msgstr "不明"
 
 #: proxmox-widget-toolkit/src/Utils.js:425
 msgid "Unknown error"
@@ -10466,7 +10692,7 @@ msgstr "認証モード"
 msgid "Unmount"
 msgstr "アンマウント"
 
-#: pve-manager/www/manager6/form/USBSelector.js:158
+#: pve-manager/www/manager6/form/USBSelector.js:173
 msgid "Unplugged"
 msgstr "Unplugged"
 
@@ -10675,15 +10901,17 @@ msgstr "SPF使用"
 msgid "Use SSL"
 msgstr "SSL使用"
 
-#: pve-manager/www/manager6/qemu/USBEdit.js:91
+#: pve-manager/www/manager6/qemu/USBEdit.js:121
+#: pve-manager/www/manager6/window/USBMapEdit.js:211
 msgid "Use USB Port"
 msgstr "USBポートを使用"
 
-#: pve-manager/www/manager6/qemu/USBEdit.js:72
+#: pve-manager/www/manager6/qemu/USBEdit.js:102
+#: pve-manager/www/manager6/window/USBMapEdit.js:191
 msgid "Use USB Vendor/Device ID"
 msgstr "USB ベンダ/デバイスIDを使用"
 
-#: pve-manager/www/manager6/qemu/USBEdit.js:113
+#: pve-manager/www/manager6/qemu/USBEdit.js:143
 msgid "Use USB3"
 msgstr "USB3を使用"
 
@@ -10700,6 +10928,11 @@ msgstr "オートホワイトリスト使用"
 #: pve-manager/www/manager6/qemu/Options.js:246
 msgid "Use local time for RTC"
 msgstr "RTC にローカルタイムを設定する"
+
+#: pve-manager/www/manager6/qemu/USBEdit.js:85
+#, fuzzy
+msgid "Use mapped Device"
+msgstr "Mediated デバイス"
 
 #: pve-manager/www/manager6/qemu/CDEdit.js:133
 msgid "Use physical CD/DVD Drive"
@@ -10719,6 +10952,11 @@ msgstr ""
 #: pve-manager/www/manager6/ha/Fencing.js:21
 msgid "Use watchdog based fencing."
 msgstr ""
+
+#: pve-manager/www/manager6/window/PCIMapEdit.js:236
+#, fuzzy
+msgid "Use with Mediated Devices"
+msgstr "Mediated デバイス"
 
 #: pve-manager/www/manager6/form/AgentFeatureSelector.js:10
 msgid "Use {0}"
@@ -10870,7 +11108,7 @@ msgstr "ユーザー名の要求"
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:223
 #: pve-manager/www/manager6/dc/Config.js:92
 #: pve-manager/www/manager6/dc/GroupView.js:92
-#: pve-manager/www/manager6/dc/RealmSyncJob.js:274
+#: pve-manager/www/manager6/dc/RealmSyncJob.js:327
 #: pve-manager/www/manager6/dc/SyncWindow.js:100
 #: pve-manager/www/manager6/form/GroupSelector.js:35
 #: proxmox-backup/www/config/UserView.js:22
@@ -10878,7 +11116,7 @@ msgid "Users"
 msgstr "ユーザ"
 
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:225
-#: pve-manager/www/manager6/dc/RealmSyncJob.js:276
+#: pve-manager/www/manager6/dc/RealmSyncJob.js:329
 #: pve-manager/www/manager6/dc/SyncWindow.js:102
 msgid "Users and Groups"
 msgstr "ユーザ/グループ"
@@ -11019,8 +11257,9 @@ msgstr "Vault"
 
 #: proxmox-widget-toolkit/src/panel/DiskList.js:295
 #: pve-manager/www/manager6/form/CPUModelSelector.js:38
-#: pve-manager/www/manager6/form/PCISelector.js:39
-#: pve-manager/www/manager6/qemu/PCIEdit.js:196
+#: pve-manager/www/manager6/form/MultiPCISelector.js:235
+#: pve-manager/www/manager6/form/PCISelector.js:40
+#: pve-manager/www/manager6/qemu/PCIEdit.js:301
 #: proxmox-backup/www/tape/ChangerConfig.js:117
 #: proxmox-backup/www/tape/ChangerStatus.js:856
 #: proxmox-backup/www/tape/DriveConfig.js:153
@@ -11030,6 +11269,11 @@ msgstr "Vault"
 #: proxmox-backup/www/tape/form/TapeDevicePathSelector.js:22
 msgid "Vendor"
 msgstr "ベンダ"
+
+#: pve-manager/www/manager6/dc/PCIMapView.js:80
+#, fuzzy
+msgid "Vendor/Device"
+msgstr "USB ベンダ/デバイスIDを使用"
 
 #: pmg-gui/js/SpamQuarantineOptions.js:16
 msgid "Verbose"
@@ -11158,7 +11402,7 @@ msgid "View images"
 msgstr "イメージ閲覧"
 
 #: pve-manager/www/manager6/qemu/HardwareView.js:310
-#: pve-manager/www/manager6/qemu/HardwareView.js:732
+#: pve-manager/www/manager6/qemu/HardwareView.js:733
 #: pve-manager/www/manager6/qemu/RNGEdit.js:99
 msgid "VirtIO RNG"
 msgstr "VirtIO RNG"
@@ -11391,6 +11635,12 @@ msgstr "いつ"
 msgid "When Objects"
 msgstr "いつのオブジェクト"
 
+#: pve-manager/www/manager6/window/PCIMapEdit.js:179
+msgid ""
+"When multiple devices are selected, the first free one will be chosen on "
+"guest start."
+msgstr ""
+
 #: pmg-gui/js/MailProxyConfiguration.js:54 pmg-gui/js/QuarantineView.js:22
 #: pmg-gui/js/SpamContextMenu.js:19 pmg-gui/js/SpamQuarantine.js:255
 #: pmg-gui/js/UserBlackWhiteList.js:56 pmg-gui/js/UserBlackWhiteList.js:240
@@ -11541,11 +11791,11 @@ msgstr "ここにキーファイルをドラッグ＆ドロップできます。
 msgid "You can use Markdown for rich text formatting."
 msgstr "マークダウンを使用すると、リッチテキスト書式を設定できます。"
 
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:473
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:478
 msgid "You get supported updates for {0}"
 msgstr "{0}用のサポートされる更新を取得します。"
 
-#: proxmox-widget-toolkit/src/node/APTRepositories.js:475
+#: proxmox-widget-toolkit/src/node/APTRepositories.js:480
 msgid "You get updates for {0}"
 msgstr "{0}用の更新を取得します"
 
@@ -11629,7 +11879,7 @@ msgstr "ゾーン"
 msgid "Zone {0} on node {1}"
 msgstr "ノード {1} 上のゾーン {0}"
 
-#: pve-manager/www/manager6/dc/Config.js:184
+#: pve-manager/www/manager6/dc/Config.js:196
 msgid "Zones"
 msgstr "ゾーン"
 
@@ -11976,10 +12226,10 @@ msgstr "{0} ({1}/{2}) 成功"
 msgid "{0} Attachments"
 msgstr "{0} 個の添付"
 
-#: pve-manager/www/manager6/qemu/PCIEdit.js:196
-#: pve-manager/www/manager6/qemu/PCIEdit.js:205
-#: pve-manager/www/manager6/qemu/PCIEdit.js:222
-#: pve-manager/www/manager6/qemu/PCIEdit.js:231
+#: pve-manager/www/manager6/qemu/PCIEdit.js:301
+#: pve-manager/www/manager6/qemu/PCIEdit.js:310
+#: pve-manager/www/manager6/qemu/PCIEdit.js:328
+#: pve-manager/www/manager6/qemu/PCIEdit.js:337
 msgid "{0} ID"
 msgstr "{0} ID"
 
