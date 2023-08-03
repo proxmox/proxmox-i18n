@@ -14,6 +14,7 @@ LINGUAS=\
 	hu \
 	it \
 	ja \
+	ka \
 	kr \
 	nb \
 	nl \
