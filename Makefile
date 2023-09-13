@@ -11,6 +11,7 @@ LINGUAS=\
 	fr \
 	gl \
 	he \
+	hr \
 	hu \
 	it \
 	ja \
