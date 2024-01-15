@@ -10,9 +10,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: proxmox-mailgateway c111cf8e55ca28a433086a1351b4f45b213432f3\n"
+"Project-Id-Version: proxmox-mailgateway e5e0b43bc222d84d902578075448053159b8b037\n"
 "Report-Msgid-Bugs-To: <support@proxmox.com>\n"
-"POT-Creation-Date: Wed Nov 22 18:17:30 2023\n"
+"POT-Creation-Date: Mon Jan 15 18:12:11 2024\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <support@proxmox.com>\n"
@@ -236,6 +236,10 @@ msgstr ""
 msgid "Build time"
 msgstr ""
 
+#: pmg-gui/js/MyNetworks.js:54 pmg-gui/js/MyNetworks.js:92
+msgid "CIDR"
+msgstr ""
+
 #: pmg-gui/js/Dashboard.js:484
 msgid "CPU"
 msgstr ""
@@ -350,6 +354,10 @@ msgstr ""
 
 #: pmg-gui/js/Utils.js:660
 msgid "Copy original mail to Attachment Quarantine"
+msgstr ""
+
+#: pmg-gui/js/DKIMSettings.js:40
+msgid "Could not read private key - please create a selector first!"
 msgstr ""
 
 #: pmg-gui/js/ContactStatistics.js:158 pmg-gui/js/Dashboard.js:461 pmg-gui/js/DomainStatistics.js:86 pmg-gui/js/DomainStatistics.js:130 pmg-gui/js/HourlyMailDistribution.js:11 pmg-gui/js/ReceiverStatistics.js:166 pmg-gui/js/SenderStatistics.js:158 pmg-gui/js/SpamScoreDistribution.js:38 pmg-gui/js/VirusCharts.js:30
@@ -472,7 +480,7 @@ msgstr ""
 msgid "Direction"
 msgstr ""
 
-#: pmg-gui/js/MailProxyRelaying.js:28
+#: pmg-gui/js/MailProxyRelaying.js:33
 msgid "Disable MX lookup (SMTP)"
 msgstr ""
 
@@ -500,7 +508,7 @@ msgstr ""
 msgid "Download"
 msgstr ""
 
-#: pmg-gui/js/LDAPUserSelector.js:32 pmg-gui/js/UserEdit.js:134 pmg-gui/js/Utils.js:210 pmg-gui/js/Utils.js:216 pmg-gui/js/Utils.js:225 pmg-gui/js/Utils.js:232
+#: pmg-gui/js/LDAPUserSelector.js:32 pmg-gui/js/QuarantineList.js:362 pmg-gui/js/UserBlackWhiteList.js:156 pmg-gui/js/UserEdit.js:134 pmg-gui/js/Utils.js:210 pmg-gui/js/Utils.js:216 pmg-gui/js/Utils.js:225 pmg-gui/js/Utils.js:232
 msgid "E-Mail"
 msgstr ""
 
@@ -528,7 +536,7 @@ msgstr ""
 msgid "EMail attribute name(s)"
 msgstr ""
 
-#: pmg-gui/js/ActionList.js:108 pmg-gui/js/ClamAVDatabase.js:156 pmg-gui/js/DKIMSettings.js:205 pmg-gui/js/FetchmailView.js:76 pmg-gui/js/LDAPConfig.js:528 pmg-gui/js/MailProxyOptions.js:89 pmg-gui/js/MailProxyPorts.js:33 pmg-gui/js/MailProxyRelaying.js:90 pmg-gui/js/MailProxyTLS.js:22 pmg-gui/js/MailProxyTLSDestinations.js:124 pmg-gui/js/MyNetworks.js:74 pmg-gui/js/ObjectGroup.js:192 pmg-gui/js/ObjectGroupList.js:108 pmg-gui/js/PBSConfig.js:118 pmg-gui/js/RelayDomains.js:79 pmg-gui/js/SpamDetectorCustom.js:220 pmg-gui/js/SpamDetectorOptions.js:59 pmg-gui/js/SpamQuarantineOptions.js:75 pmg-gui/js/SystemOptions.js:25 pmg-gui/js/Transport.js:51 pmg-gui/js/UserView.js:126 pmg-gui/js/VirusDetectorOptions.js:49 pmg-gui/js/VirusQuarantineOptions.js:28
+#: pmg-gui/js/ActionList.js:108 pmg-gui/js/ClamAVDatabase.js:156 pmg-gui/js/DKIMSettings.js:205 pmg-gui/js/FetchmailView.js:76 pmg-gui/js/LDAPConfig.js:528 pmg-gui/js/MailProxyOptions.js:89 pmg-gui/js/MailProxyPorts.js:33 pmg-gui/js/MailProxyRelaying.js:98 pmg-gui/js/MailProxyTLS.js:22 pmg-gui/js/MailProxyTLSDestinations.js:124 pmg-gui/js/MyNetworks.js:74 pmg-gui/js/ObjectGroup.js:192 pmg-gui/js/ObjectGroupList.js:108 pmg-gui/js/PBSConfig.js:118 pmg-gui/js/RelayDomains.js:79 pmg-gui/js/SpamDetectorCustom.js:220 pmg-gui/js/SpamDetectorOptions.js:59 pmg-gui/js/SpamQuarantineOptions.js:75 pmg-gui/js/SystemOptions.js:25 pmg-gui/js/Transport.js:51 pmg-gui/js/UserView.js:126 pmg-gui/js/VirusDetectorOptions.js:49 pmg-gui/js/VirusQuarantineOptions.js:28
 msgid "Edit"
 msgstr ""
 
@@ -1216,7 +1224,7 @@ msgstr ""
 msgid "Policy"
 msgstr ""
 
-#: pmg-gui/js/FetchmailEdit.js:53 pmg-gui/js/LDAPConfig.js:99 pmg-gui/js/MailProxyRelaying.js:76 pmg-gui/js/Transport.js:96 pmg-gui/js/Transport.js:178
+#: pmg-gui/js/FetchmailEdit.js:53 pmg-gui/js/LDAPConfig.js:99 pmg-gui/js/MailProxyRelaying.js:83 pmg-gui/js/Transport.js:96 pmg-gui/js/Transport.js:178
 msgid "Port"
 msgstr ""
 
@@ -1336,11 +1344,11 @@ msgstr ""
 msgid "Relay Domains"
 msgstr ""
 
-#: pmg-gui/js/MailProxyRelaying.js:13
+#: pmg-gui/js/MailProxyRelaying.js:16
 msgid "Relay Port"
 msgstr ""
 
-#: pmg-gui/js/MailProxyRelaying.js:20
+#: pmg-gui/js/MailProxyRelaying.js:24
 msgid "Relay Protocol"
 msgstr ""
 
@@ -1588,7 +1596,7 @@ msgstr ""
 msgid "Size"
 msgstr ""
 
-#: pmg-gui/js/MailProxyRelaying.js:33 pmg-gui/js/MailProxyRelaying.js:57 pmg-gui/js/MailProxyRelaying.js:67
+#: pmg-gui/js/MailProxyRelaying.js:40 pmg-gui/js/MailProxyRelaying.js:64 pmg-gui/js/MailProxyRelaying.js:74
 msgid "Smarthost"
 msgstr ""
 
@@ -2000,11 +2008,7 @@ msgstr ""
 msgid "Virus"
 msgstr ""
 
-#: pmg-gui/js/NavigationTree.js:166
-msgid "Virus  Charts"
-msgstr ""
-
-#: pmg-gui/js/VirusCharts.js:5
+#: pmg-gui/js/NavigationTree.js:166 pmg-gui/js/VirusCharts.js:5
 msgid "Virus Charts"
 msgstr ""
 
