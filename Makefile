@@ -16,7 +16,7 @@ LINGUAS=\
 	it \
 	ja \
 	ka \
-	kr \
+	ko \
 	nb \
 	nl \
 	nn \
@@ -84,6 +84,10 @@ install: $(PMG_LANG_FILES) $(PVE_LANG_FILES) $(PBS_LANG_FILES)
 	install -m 0644 $(PVE_LANG_FILES) $(PVELOCALEDIR)
 	install -d $(PBSLOCALEDIR)
 	install -m 0644 $(PBS_LANG_FILES) $(PBSLOCALEDIR)
+# compat symlinks for kr -> ko correction.
+	ln -s pmg-lang-ko.js $(PMGLOCALEDIR)/pmg-lang-kr.js
+	ln -s pve-lang-ko.js $(PVELOCALEDIR)/pve-lang-kr.js
+	ln -s pbs-lang-ko.js $(PBSLOCALEDIR)/pbs-lang-kr.js
 
 pmg-lang-%.js: %.po
 	./po2js.pl -t pmg -v "$(DEB_VERSION)" -o pmg-lang-$*.js $?
