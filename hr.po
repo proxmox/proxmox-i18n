@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: proxmox translations\n"
 "Report-Msgid-Bugs-To: <support@proxmox.com>\n"
-"POT-Creation-Date: Mon Apr 22 13:17:26 2024\n"
+"POT-Creation-Date: Mon Apr 22 19:58:29 2024\n"
 "PO-Revision-Date: Tue Jun 27 17:20:49 2023\n"
 "Last-Translator: STIPE TABAK <EMAIL@ADDRESS>\n"
 "Language-Team: Proxmox Support Team <support@proxmox.com>\n"
@@ -1021,6 +1021,11 @@ msgstr "Napravi sigurnosnu kopiju"
 msgid "Backup snapshots on '{0}'"
 msgstr "Sigurnosne snimke na '{0}'"
 
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:175
+msgid ""
+"Backup write cache that can reduce IO pressure inside guests (VMs only)."
+msgstr ""
+
 #: pmg-gui/js/NavigationTree.js:90
 msgid "Backup/Restore"
 msgstr "Napravi Sigurnosnu kopiju/Primjeni sigurnosnu kopiju"
@@ -1048,7 +1053,7 @@ msgid "Bandwidth"
 msgstr "Pojasna širina"
 
 #: pve-manager/www/manager6/dc/StorageView.js:148
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:75
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:102
 #: pve-manager/www/manager6/window/Restore.js:206
 msgid "Bandwidth Limit"
 msgstr "Ograničenje propusnosti"
@@ -1665,6 +1670,10 @@ msgstr "Ključ Klijenta"
 #: pmg-gui/js/MailProxyOptions.js:70
 msgid "Client Message Rate Limit"
 msgstr "Ograničenje brzine poruka klijenta"
+
+#: pve-manager/www/manager6/qemu/DisplayEdit.js:84
+msgid "Clipboard"
+msgstr ""
 
 #: pve-manager/www/manager6/Utils.js:2012
 #: pve-manager/www/manager6/Utils.js:2041
@@ -2995,7 +3004,7 @@ msgstr "Upotreba diska"
 msgid "Disks"
 msgstr "Diskovi"
 
-#: pve-manager/www/manager6/qemu/DisplayEdit.js:71
+#: pve-manager/www/manager6/qemu/DisplayEdit.js:122
 #: pve-manager/www/manager6/qemu/HardwareView.js:148
 msgid "Display"
 msgstr "Prikaz"
@@ -3934,9 +3943,9 @@ msgstr "Neuspješno"
 msgid "Failing"
 msgstr "Otkazuje"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:76
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:99
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:124
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:103
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:126
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:151
 #, fuzzy
 msgid "Fallback"
 msgstr "Povratak"
@@ -4141,6 +4150,16 @@ msgstr "Popravljeno"
 #: proxmox-widget-toolkit/src/window/DiskSmart.js:60
 msgid "Flags"
 msgstr "Zastavice"
+
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:168
+#, fuzzy
+msgid "Fleecing"
+msgstr "Čvor u kvaru je van mreže"
+
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:183
+#, fuzzy
+msgid "Fleecing Storage"
+msgstr "EFI Pohrana"
 
 #: pve-manager/www/manager6/qemu/Options.js:129
 msgid "Floppy"
@@ -4418,7 +4437,7 @@ msgstr ""
 msgid "Granted Permissions"
 msgstr "Dodijeljene dozvole"
 
-#: pve-manager/www/manager6/qemu/DisplayEdit.js:19
+#: pve-manager/www/manager6/qemu/DisplayEdit.js:49
 #: pve-manager/www/manager6/qemu/SystemEdit.js:81
 msgid "Graphic card"
 msgstr "Grafička kartica"
@@ -4751,7 +4770,7 @@ msgstr "Raspodjela po satu"
 msgid "Hours to show"
 msgstr "Sati za prikaz"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:132
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:159
 msgid "I/O workers in the QEMU process (VMs only)."
 msgstr ""
 
@@ -4808,7 +4827,7 @@ msgstr "IO kašnjenje"
 msgid "IO wait"
 msgstr "IO čekanje"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:122
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:149
 msgid "IO-Workers"
 msgstr ""
 
@@ -4913,6 +4932,12 @@ msgstr "ISO slika"
 #: proxmox-backup/www/Utils.js:652
 msgid "Idle"
 msgstr "U mirovanju"
+
+#: pve-manager/www/manager6/qemu/DisplayEdit.js:109
+msgid ""
+"If the display type uses SPICE you are able to use the default SPICE "
+"Clipboard."
+msgstr ""
 
 #: pve-manager/www/manager6/storage/Browser.js:152
 #: pve-manager/www/manager6/window/GuestImport.js:17
@@ -5074,6 +5099,10 @@ msgstr "Instaliraj Ceph"
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:331
 msgid "Installation"
 msgstr "Instalacija"
+
+#: pve-manager/www/manager6/qemu/MachineEdit.js:153
+msgid "Intel (AMD Compatible)"
+msgstr ""
 
 #: proxmox-widget-toolkit/src/form/NetworkSelector.js:102
 #: pve-manager/www/manager6/grid/FirewallRules.js:214
@@ -5490,8 +5519,8 @@ msgstr "Posljednja potvrda"
 msgid "Last checked"
 msgstr "Zadnji put provjereno"
 
-#: pve-manager/www/manager6/qemu/MachineEdit.js:89
-#: pve-manager/www/manager6/qemu/MachineEdit.js:105
+#: pve-manager/www/manager6/qemu/MachineEdit.js:117
+#: pve-manager/www/manager6/qemu/MachineEdit.js:133
 msgid "Latest"
 msgstr "Najnovije"
 
@@ -5530,7 +5559,7 @@ msgstr "Životni vijek (dani)"
 msgid "Limit (Bytes/Period)"
 msgstr "Ograničenje (Okteti/Period)"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:88
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:115
 msgid "Limit I/O bandwidth."
 msgstr ""
 
@@ -5774,13 +5803,13 @@ msgid ""
 msgstr "MTU mora biti >= 576 ili 1 da se naslijedio MTU temeljnog premosnika."
 
 #: pve-manager/www/manager6/qemu/HardwareView.js:157
-#: pve-manager/www/manager6/qemu/MachineEdit.js:76
-#: pve-manager/www/manager6/qemu/MachineEdit.js:122
+#: pve-manager/www/manager6/qemu/MachineEdit.js:101
+#: pve-manager/www/manager6/qemu/MachineEdit.js:183
 #: pve-manager/www/manager6/qemu/SystemEdit.js:90
 msgid "Machine"
 msgstr "Stroj"
 
-#: pve-manager/www/manager6/qemu/MachineEdit.js:114
+#: pve-manager/www/manager6/qemu/MachineEdit.js:142
 msgid ""
 "Machine version change may affect hardware layout and settings in the guest "
 "OS."
@@ -6065,7 +6094,7 @@ msgstr "Članovi"
 #: pve-manager/www/manager6/lxc/Resources.js:55
 #: pve-manager/www/manager6/panel/TemplateStatusView.js:46
 #: pve-manager/www/manager6/qemu/CreateWizard.js:226
-#: pve-manager/www/manager6/qemu/DisplayEdit.js:58
+#: pve-manager/www/manager6/qemu/DisplayEdit.js:67
 #: pve-manager/www/manager6/qemu/HardwareView.js:70
 #: pve-manager/www/manager6/qemu/MemoryEdit.js:65
 #: pve-manager/www/manager6/qemu/MemoryEdit.js:168
@@ -7145,8 +7174,8 @@ msgstr "Nema dovoljno podataka"
 msgid "Not yet configured"
 msgstr "Još nije konfigurirano"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:170
-#: pve-manager/www/manager6/qemu/MachineEdit.js:113
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:233
+#: pve-manager/www/manager6/qemu/MachineEdit.js:141
 #: proxmox-backup/www/form/GroupFilter.js:344
 #: proxmox-backup/www/form/GroupFilter.js:399
 #: proxmox-backup/www/window/NamespaceEdit.js:89
@@ -8012,6 +8041,12 @@ msgstr "Prethodna dodjela"
 msgid "Predefined Tags"
 msgstr "Unaprijed definirane oznake"
 
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:195
+msgid ""
+"Prefer a fast and local storage, ideally with support for discard and thin-"
+"provisioning or sparse files."
+msgstr ""
+
 #: pve-manager/www/manager6/Utils.js:33
 msgid "Premium"
 msgstr "Premium"
@@ -8862,7 +8897,7 @@ msgstr "Uklonite unose nestalih korisnika i grupa."
 msgid "Renew Certificate"
 msgstr "Obnovi certifikat"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:153
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:216
 msgid "Repeat missed"
 msgstr "Ponavljanje propušteno"
 
@@ -9183,7 +9218,7 @@ msgstr "Pokreni sada"
 msgid "Run guest-trim after a disk move or VM migration"
 msgstr "Pokreni guest-trim nakon premještanja diska ili VM migracije"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:164
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:227
 msgid ""
 "Run jobs as soon as possible if they couldn't start on schedule, for "
 "example, due to the node being offline."
@@ -9391,9 +9426,9 @@ msgstr "Raspored na '{0}'"
 msgid "Scheduled Verification"
 msgstr "Zakazana provjera"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:88
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:112
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:132
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:115
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:139
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:159
 #, fuzzy
 msgid "Schema default: {0}"
 msgstr "Raspored na '{0}'"
@@ -9605,7 +9640,7 @@ msgstr "Serijski broj"
 msgid "Serial Port"
 msgstr "Serijski priključak"
 
-#: pve-manager/www/manager6/qemu/DisplayEdit.js:25
+#: pve-manager/www/manager6/qemu/DisplayEdit.js:55
 msgid "Serial interface '{0}' is not correctly configured."
 msgstr "Serijsko sučelje '{0}' nije ispravno konfigurirano."
 
@@ -11045,7 +11080,7 @@ msgid ""
 msgstr ""
 "Spremište bez pretplate nije najbolji izbor za korištenje u produkciji."
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:171
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:234
 msgid ""
 "The node-specific 'vzdump.conf' or, if this is not set, the default from the "
 "config schema is used to determine fallback values."
@@ -11122,6 +11157,10 @@ msgstr "Ovo nije važeći CpuSet"
 msgid "This is not a valid hostname"
 msgstr "Ovo nije važeće DNS ime"
 
+#: pve-manager/www/manager6/qemu/DisplayEdit.js:108
+msgid "This option depends on your display type."
+msgstr ""
+
 #: pve-manager/www/manager6/grid/BackupView.js:210
 #: pve-manager/www/manager6/lxc/Resources.js:247
 #: pve-manager/www/manager6/qemu/HardwareView.js:300
@@ -11148,7 +11187,7 @@ msgstr "Ovaj {0} ID ne postoji"
 msgid "This {0} ID is already in use"
 msgstr "Ovaj {0} ID je već u upotrebi"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:112
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:139
 msgid "Threads used for zstd compression (non-PBS)."
 msgstr ""
 
@@ -11896,7 +11935,7 @@ msgstr "Koristi s posredničkim uređajima"
 msgid "Use {0}"
 msgstr "Koristi {0}"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:82
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:109
 #: pve-manager/www/manager6/panel/BackupJobPrune.js:124
 msgid "Use {0} for unlimited"
 msgstr "Koristite {0} za neograničeno"
@@ -12133,6 +12172,10 @@ msgstr "VMware kompatibilan"
 msgid "VMware image format"
 msgstr "VMware format slike"
 
+#: pve-manager/www/manager6/qemu/DisplayEdit.js:99
+msgid "VNC Clipboard requires spice-tools installed in the Guest-VM."
+msgstr ""
+
 #: pve-manager/www/manager6/form/SDNVnetSelector.js:26
 #: pve-manager/www/manager6/sdn/VnetEdit.js:71
 msgid "VNet"
@@ -12309,7 +12352,7 @@ msgstr "Provjerite nove sigurnosne kopije odmah nakon završetka"
 #: pve-manager/www/manager6/ceph/ServiceList.js:448
 #: pve-manager/www/manager6/ceph/Services.js:184
 #: pve-manager/www/manager6/qemu/HDTPM.js:63
-#: pve-manager/www/manager6/qemu/MachineEdit.js:88
+#: pve-manager/www/manager6/qemu/MachineEdit.js:116
 #: pve-manager/www/manager6/qemu/OSTypeEdit.js:124
 #: pve-manager/www/manager6/qemu/Smbios1Edit.js:54
 #: pve-manager/www/manager6/storage/TemplateView.js:76
@@ -12625,7 +12668,7 @@ msgstr "Premjesti volumen"
 msgid "Wipe labels and other left-overs"
 msgstr "Obrišite labele i druge ostatke"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:106
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:133
 msgid "With 0, half of the available cores are used"
 msgstr ""
 
@@ -12751,6 +12794,11 @@ msgstr "Ovdje možete povući i ispustiti dataoteku ključa."
 #: proxmox-widget-toolkit/src/window/NotesEdit.js:32
 msgid "You can use Markdown for rich text formatting."
 msgstr "Možete koristiti Markdown za format obogaćenog teksta"
+
+#: pve-manager/www/manager6/qemu/DisplayEdit.js:98
+msgid ""
+"You cannot use the default SPICE clipboard if the VNC Clipboard is selected."
+msgstr ""
 
 #: proxmox-widget-toolkit/src/Utils.js:160
 msgid ""
@@ -13204,6 +13252,11 @@ msgstr "koristi postavke domaćina"
 msgid "user@example.com"
 msgstr ""
 
+#: pve-manager/www/manager6/qemu/MachineEdit.js:147
+#: pve-manager/www/manager6/qemu/MachineEdit.js:164
+msgid "vIOMMU"
+msgstr ""
+
 #: proxmox-widget-toolkit/src/window/TfaEdit.js:80
 msgid "verify current password"
 msgstr "potvrdi trenutnu lozinku"
@@ -13250,7 +13303,7 @@ msgstr "{0} Stavka"
 msgid "{0} Items"
 msgstr "{0} Stavke"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:97
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:124
 #, fuzzy
 msgid "{0} Threads"
 msgstr "{0} sati"

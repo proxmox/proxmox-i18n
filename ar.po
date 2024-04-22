@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pve-manager 31813246103b2582162f422dc34d8077eaee1e01\n"
 "Report-Msgid-Bugs-To: <support@proxmox.com>\n"
-"POT-Creation-Date: Mon Apr 22 13:17:26 2024\n"
+"POT-Creation-Date: Mon Apr 22 19:58:29 2024\n"
 "PO-Revision-Date: 2023-11-09 14:21+0100\n"
 "Last-Translator: \n"
 "Language-Team: LANGUAGE <support@proxmox.com>\n"
@@ -1013,6 +1013,11 @@ msgstr "النسخ الاحتياطي الآن"
 msgid "Backup snapshots on '{0}'"
 msgstr "لقطات احتياطية على '{0}'"
 
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:175
+msgid ""
+"Backup write cache that can reduce IO pressure inside guests (VMs only)."
+msgstr ""
+
 #: pmg-gui/js/NavigationTree.js:90
 msgid "Backup/Restore"
 msgstr "النسخ الاحتياطي/ الاستعادة"
@@ -1040,7 +1045,7 @@ msgid "Bandwidth"
 msgstr "عرض النطاق"
 
 #: pve-manager/www/manager6/dc/StorageView.js:148
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:75
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:102
 #: pve-manager/www/manager6/window/Restore.js:206
 msgid "Bandwidth Limit"
 msgstr "حد عرض النطاق الترددي"
@@ -1650,6 +1655,11 @@ msgstr "مفتاح العميل"
 #: pmg-gui/js/MailProxyOptions.js:70
 msgid "Client Message Rate Limit"
 msgstr "حد معدل رسالة العميل"
+
+#: pve-manager/www/manager6/qemu/DisplayEdit.js:84
+#, fuzzy
+msgid "Clipboard"
+msgstr "نسخ إلى الحافظة"
 
 #: pve-manager/www/manager6/Utils.js:2012
 #: pve-manager/www/manager6/Utils.js:2041
@@ -2967,7 +2977,7 @@ msgstr "إستخدام القرص"
 msgid "Disks"
 msgstr "أقراص"
 
-#: pve-manager/www/manager6/qemu/DisplayEdit.js:71
+#: pve-manager/www/manager6/qemu/DisplayEdit.js:122
 #: pve-manager/www/manager6/qemu/HardwareView.js:148
 msgid "Display"
 msgstr "عرض"
@@ -3903,9 +3913,9 @@ msgstr "باءت بالفشل"
 msgid "Failing"
 msgstr "فشل"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:76
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:99
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:124
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:103
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:126
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:151
 #, fuzzy
 msgid "Fallback"
 msgstr "العوده"
@@ -4110,6 +4120,16 @@ msgstr "مثبت"
 #: proxmox-widget-toolkit/src/window/DiskSmart.js:60
 msgid "Flags"
 msgstr "أعلام"
+
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:168
+#, fuzzy
+msgid "Fleecing"
+msgstr "سياج"
+
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:183
+#, fuzzy
+msgid "Fleecing Storage"
+msgstr "تخزين EFI"
 
 #: pve-manager/www/manager6/qemu/Options.js:129
 msgid "Floppy"
@@ -4383,7 +4403,7 @@ msgstr "تم تمكين العلامات العالمية التي تحد من �
 msgid "Granted Permissions"
 msgstr "الأذونات الممنوحة"
 
-#: pve-manager/www/manager6/qemu/DisplayEdit.js:19
+#: pve-manager/www/manager6/qemu/DisplayEdit.js:49
 #: pve-manager/www/manager6/qemu/SystemEdit.js:81
 msgid "Graphic card"
 msgstr "بطاقة الرسومات"
@@ -4716,7 +4736,7 @@ msgstr "التوزيع بالساعة"
 msgid "Hours to show"
 msgstr "ساعات العرض"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:132
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:159
 msgid "I/O workers in the QEMU process (VMs only)."
 msgstr ""
 
@@ -4773,7 +4793,7 @@ msgstr "تأخير الإدخال والإخراج"
 msgid "IO wait"
 msgstr "انتظار الإدخال والإخراج"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:122
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:149
 msgid "IO-Workers"
 msgstr ""
 
@@ -4878,6 +4898,12 @@ msgstr "صورة ISO"
 #: proxmox-backup/www/Utils.js:652
 msgid "Idle"
 msgstr "معطّل"
+
+#: pve-manager/www/manager6/qemu/DisplayEdit.js:109
+msgid ""
+"If the display type uses SPICE you are able to use the default SPICE "
+"Clipboard."
+msgstr ""
 
 #: pve-manager/www/manager6/storage/Browser.js:152
 #: pve-manager/www/manager6/window/GuestImport.js:17
@@ -5039,6 +5065,10 @@ msgstr "قم بتثبيت Ceph"
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:331
 msgid "Installation"
 msgstr "تثبيت"
+
+#: pve-manager/www/manager6/qemu/MachineEdit.js:153
+msgid "Intel (AMD Compatible)"
+msgstr ""
 
 #: proxmox-widget-toolkit/src/form/NetworkSelector.js:102
 #: pve-manager/www/manager6/grid/FirewallRules.js:214
@@ -5454,8 +5484,8 @@ msgstr "التحقق الأخير"
 msgid "Last checked"
 msgstr "آخر فحص"
 
-#: pve-manager/www/manager6/qemu/MachineEdit.js:89
-#: pve-manager/www/manager6/qemu/MachineEdit.js:105
+#: pve-manager/www/manager6/qemu/MachineEdit.js:117
+#: pve-manager/www/manager6/qemu/MachineEdit.js:133
 msgid "Latest"
 msgstr "أحدث"
 
@@ -5494,7 +5524,7 @@ msgstr "العمر (أيام)"
 msgid "Limit (Bytes/Period)"
 msgstr "الحد (بالبايت/الفترة)"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:88
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:115
 msgid "Limit I/O bandwidth."
 msgstr ""
 
@@ -5738,13 +5768,13 @@ msgid ""
 msgstr "يجب أن يكون MTU> = 576 أو 1 للاستفادة من MTU الأساسية من الجسر السفلي."
 
 #: pve-manager/www/manager6/qemu/HardwareView.js:157
-#: pve-manager/www/manager6/qemu/MachineEdit.js:76
-#: pve-manager/www/manager6/qemu/MachineEdit.js:122
+#: pve-manager/www/manager6/qemu/MachineEdit.js:101
+#: pve-manager/www/manager6/qemu/MachineEdit.js:183
 #: pve-manager/www/manager6/qemu/SystemEdit.js:90
 msgid "Machine"
 msgstr "آلة"
 
-#: pve-manager/www/manager6/qemu/MachineEdit.js:114
+#: pve-manager/www/manager6/qemu/MachineEdit.js:142
 msgid ""
 "Machine version change may affect hardware layout and settings in the guest "
 "OS."
@@ -6030,7 +6060,7 @@ msgstr "أغضاء"
 #: pve-manager/www/manager6/lxc/Resources.js:55
 #: pve-manager/www/manager6/panel/TemplateStatusView.js:46
 #: pve-manager/www/manager6/qemu/CreateWizard.js:226
-#: pve-manager/www/manager6/qemu/DisplayEdit.js:58
+#: pve-manager/www/manager6/qemu/DisplayEdit.js:67
 #: pve-manager/www/manager6/qemu/HardwareView.js:70
 #: pve-manager/www/manager6/qemu/MemoryEdit.js:65
 #: pve-manager/www/manager6/qemu/MemoryEdit.js:168
@@ -7100,8 +7130,8 @@ msgstr "لا توجد بيانات كافية"
 msgid "Not yet configured"
 msgstr "لم يتم تكوينه بعد"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:170
-#: pve-manager/www/manager6/qemu/MachineEdit.js:113
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:233
+#: pve-manager/www/manager6/qemu/MachineEdit.js:141
 #: proxmox-backup/www/form/GroupFilter.js:344
 #: proxmox-backup/www/form/GroupFilter.js:399
 #: proxmox-backup/www/window/NamespaceEdit.js:89
@@ -7962,6 +7992,12 @@ msgstr "قبل التخصيص"
 msgid "Predefined Tags"
 msgstr "العلامات المحددة مسبقًا"
 
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:195
+msgid ""
+"Prefer a fast and local storage, ideally with support for discard and thin-"
+"provisioning or sparse files."
+msgstr ""
+
 #: pve-manager/www/manager6/Utils.js:33
 msgid "Premium"
 msgstr "الممتازة"
@@ -8814,7 +8850,7 @@ msgstr "إزالة إدخالات المستخدمين والمجموعات ال
 msgid "Renew Certificate"
 msgstr "تجديد الشهادة"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:153
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:216
 msgid "Repeat missed"
 msgstr "تكرار الفائت"
 
@@ -9134,7 +9170,7 @@ msgstr "تشغيل الآن"
 msgid "Run guest-trim after a disk move or VM migration"
 msgstr "قم بتشغيل الضيف بعد نقل القرص أو ترحيل VM"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:164
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:227
 msgid ""
 "Run jobs as soon as possible if they couldn't start on schedule, for "
 "example, due to the node being offline."
@@ -9340,9 +9376,9 @@ msgstr "الجدول الزمني في \"{0}\""
 msgid "Scheduled Verification"
 msgstr "التحقق المجدول"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:88
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:112
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:132
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:115
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:139
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:159
 #, fuzzy
 msgid "Schema default: {0}"
 msgstr "الجدول الزمني في \"{0}\""
@@ -9553,7 +9589,7 @@ msgstr "تسلسل"
 msgid "Serial Port"
 msgstr "منفذ تسلسلي"
 
-#: pve-manager/www/manager6/qemu/DisplayEdit.js:25
+#: pve-manager/www/manager6/qemu/DisplayEdit.js:55
 msgid "Serial interface '{0}' is not correctly configured."
 msgstr "لم يتم تكوين الواجهة التسلسلية '{0}' بشكل صحيح."
 
@@ -10985,7 +11021,7 @@ msgid ""
 "The no-subscription repository is not the best choice for production setups."
 msgstr "المستودع بدون اشتراك ليس الخيار الأمثل للإعدادات الإنتاجية."
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:171
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:234
 msgid ""
 "The node-specific 'vzdump.conf' or, if this is not set, the default from the "
 "config schema is used to determine fallback values."
@@ -11059,6 +11095,10 @@ msgstr "هذه ليست CpuSet صالحة"
 msgid "This is not a valid hostname"
 msgstr "هذا ليس اسم مضيف صحيح."
 
+#: pve-manager/www/manager6/qemu/DisplayEdit.js:108
+msgid "This option depends on your display type."
+msgstr ""
+
 #: pve-manager/www/manager6/grid/BackupView.js:210
 #: pve-manager/www/manager6/lxc/Resources.js:247
 #: pve-manager/www/manager6/qemu/HardwareView.js:300
@@ -11085,7 +11125,7 @@ msgstr "معرف {0} هذا غير موجود"
 msgid "This {0} ID is already in use"
 msgstr "هذا {0} معرف قيد الاستخدام بالفعل"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:112
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:139
 msgid "Threads used for zstd compression (non-PBS)."
 msgstr ""
 
@@ -11827,7 +11867,7 @@ msgstr "استخدم مع الأجهزة المتوسطة"
 msgid "Use {0}"
 msgstr "استخدام {0}"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:82
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:109
 #: pve-manager/www/manager6/panel/BackupJobPrune.js:124
 msgid "Use {0} for unlimited"
 msgstr "استخدم {0} غير محدود"
@@ -12064,6 +12104,10 @@ msgstr "متوافق مع VMware"
 msgid "VMware image format"
 msgstr "تنسيق صورة VMware"
 
+#: pve-manager/www/manager6/qemu/DisplayEdit.js:99
+msgid "VNC Clipboard requires spice-tools installed in the Guest-VM."
+msgstr ""
+
 #: pve-manager/www/manager6/form/SDNVnetSelector.js:26
 #: pve-manager/www/manager6/sdn/VnetEdit.js:71
 msgid "VNet"
@@ -12239,7 +12283,7 @@ msgstr "تحقق من النسخ الاحتياطية الجديدة مباشر�
 #: pve-manager/www/manager6/ceph/ServiceList.js:448
 #: pve-manager/www/manager6/ceph/Services.js:184
 #: pve-manager/www/manager6/qemu/HDTPM.js:63
-#: pve-manager/www/manager6/qemu/MachineEdit.js:88
+#: pve-manager/www/manager6/qemu/MachineEdit.js:116
 #: pve-manager/www/manager6/qemu/OSTypeEdit.js:124
 #: pve-manager/www/manager6/qemu/Smbios1Edit.js:54
 #: pve-manager/www/manager6/storage/TemplateView.js:76
@@ -12551,7 +12595,7 @@ msgstr "نقل وحدة التخزين"
 msgid "Wipe labels and other left-overs"
 msgstr "امسح الملصقات والأجزاء المتبقية الأخرى"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:106
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:133
 msgid "With 0, half of the available cores are used"
 msgstr ""
 
@@ -12677,6 +12721,11 @@ msgstr "يمكنك سحب ملف مفتاح وإفلاته هنا."
 #: proxmox-widget-toolkit/src/window/NotesEdit.js:32
 msgid "You can use Markdown for rich text formatting."
 msgstr "يمكنك استخدام Markdown لتنسيق النص المنسق."
+
+#: pve-manager/www/manager6/qemu/DisplayEdit.js:98
+msgid ""
+"You cannot use the default SPICE clipboard if the VNC Clipboard is selected."
+msgstr ""
 
 #: proxmox-widget-toolkit/src/Utils.js:160
 msgid ""
@@ -13129,6 +13178,11 @@ msgstr "استخدام إعدادات المضيف"
 msgid "user@example.com"
 msgstr ""
 
+#: pve-manager/www/manager6/qemu/MachineEdit.js:147
+#: pve-manager/www/manager6/qemu/MachineEdit.js:164
+msgid "vIOMMU"
+msgstr ""
+
 #: proxmox-widget-toolkit/src/window/TfaEdit.js:80
 msgid "verify current password"
 msgstr "التحقق من كلمة المرور الحالية"
@@ -13175,7 +13229,7 @@ msgstr "{0} عنصر"
 msgid "{0} Items"
 msgstr "{0} العناصر"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:97
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:124
 #, fuzzy
 msgid "{0} Threads"
 msgstr "{0} ساعة"

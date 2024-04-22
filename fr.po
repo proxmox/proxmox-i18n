@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: proxmox translations\n"
 "Report-Msgid-Bugs-To: <support@proxmox.com>\n"
-"POT-Creation-Date: Mon Apr 22 13:17:26 2024\n"
+"POT-Creation-Date: Mon Apr 22 19:58:29 2024\n"
 "PO-Revision-Date: 2023-12-12 19:18+0100\n"
 "Last-Translator: Davy Defaud <davy.defaud@free.fr>\n"
 "Language-Team: French\n"
@@ -1033,6 +1033,11 @@ msgstr "Sauvegarder maintenant"
 msgid "Backup snapshots on '{0}'"
 msgstr "Instantanés de sauvegarde sur « {0} »"
 
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:175
+msgid ""
+"Backup write cache that can reduce IO pressure inside guests (VMs only)."
+msgstr ""
+
 #: pmg-gui/js/NavigationTree.js:90
 msgid "Backup/Restore"
 msgstr "Sauvegarde et restauration"
@@ -1060,7 +1065,7 @@ msgid "Bandwidth"
 msgstr "Bande passante"
 
 #: pve-manager/www/manager6/dc/StorageView.js:148
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:75
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:102
 #: pve-manager/www/manager6/window/Restore.js:206
 msgid "Bandwidth Limit"
 msgstr "Limite de bande passante"
@@ -1674,6 +1679,11 @@ msgstr "Clef du client"
 #: pmg-gui/js/MailProxyOptions.js:70
 msgid "Client Message Rate Limit"
 msgstr "Fréquence maximale d’envoi de messages du client"
+
+#: pve-manager/www/manager6/qemu/DisplayEdit.js:84
+#, fuzzy
+msgid "Clipboard"
+msgstr "Copier dans le presse‐papiers"
 
 #: pve-manager/www/manager6/Utils.js:2012
 #: pve-manager/www/manager6/Utils.js:2041
@@ -3004,7 +3014,7 @@ msgstr "Utilisation du disque"
 msgid "Disks"
 msgstr "Disques"
 
-#: pve-manager/www/manager6/qemu/DisplayEdit.js:71
+#: pve-manager/www/manager6/qemu/DisplayEdit.js:122
 #: pve-manager/www/manager6/qemu/HardwareView.js:148
 msgid "Display"
 msgstr "Affichage"
@@ -3943,9 +3953,9 @@ msgstr "En échec"
 msgid "Failing"
 msgstr "Défaillant"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:76
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:99
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:124
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:103
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:126
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:151
 #, fuzzy
 msgid "Fallback"
 msgstr "Retour en arrière"
@@ -4149,6 +4159,16 @@ msgstr "Fixe"
 #: proxmox-widget-toolkit/src/window/DiskSmart.js:60
 msgid "Flags"
 msgstr "Drapeaux"
+
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:168
+#, fuzzy
+msgid "Fleecing"
+msgstr "Clôture (fencing)"
+
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:183
+#, fuzzy
+msgid "Fleecing Storage"
+msgstr "Stockage EFI"
 
 #: pve-manager/www/manager6/qemu/Options.js:129
 msgid "Floppy"
@@ -4428,7 +4448,7 @@ msgstr "Les drapeaux globaux limitant l’autocorrection de Ceph sont activés."
 msgid "Granted Permissions"
 msgstr "Permissions accordées"
 
-#: pve-manager/www/manager6/qemu/DisplayEdit.js:19
+#: pve-manager/www/manager6/qemu/DisplayEdit.js:49
 #: pve-manager/www/manager6/qemu/SystemEdit.js:81
 msgid "Graphic card"
 msgstr "Carte graphique"
@@ -4760,7 +4780,7 @@ msgstr "Distribution horaire"
 msgid "Hours to show"
 msgstr "Heures à afficher"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:132
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:159
 msgid "I/O workers in the QEMU process (VMs only)."
 msgstr ""
 
@@ -4817,7 +4837,7 @@ msgstr "Latence d’E‑S"
 msgid "IO wait"
 msgstr "Latence des E‑S"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:122
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:149
 msgid "IO-Workers"
 msgstr ""
 
@@ -4922,6 +4942,12 @@ msgstr "Image ISO"
 #: proxmox-backup/www/Utils.js:652
 msgid "Idle"
 msgstr "Inactif"
+
+#: pve-manager/www/manager6/qemu/DisplayEdit.js:109
+msgid ""
+"If the display type uses SPICE you are able to use the default SPICE "
+"Clipboard."
+msgstr ""
 
 #: pve-manager/www/manager6/storage/Browser.js:152
 #: pve-manager/www/manager6/window/GuestImport.js:17
@@ -5081,6 +5107,10 @@ msgstr "Installer Ceph"
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:331
 msgid "Installation"
 msgstr "Installation"
+
+#: pve-manager/www/manager6/qemu/MachineEdit.js:153
+msgid "Intel (AMD Compatible)"
+msgstr ""
 
 #: proxmox-widget-toolkit/src/form/NetworkSelector.js:102
 #: pve-manager/www/manager6/grid/FirewallRules.js:214
@@ -5498,8 +5528,8 @@ msgstr "Dernière vérification"
 msgid "Last checked"
 msgstr "Dernière vérification"
 
-#: pve-manager/www/manager6/qemu/MachineEdit.js:89
-#: pve-manager/www/manager6/qemu/MachineEdit.js:105
+#: pve-manager/www/manager6/qemu/MachineEdit.js:117
+#: pve-manager/www/manager6/qemu/MachineEdit.js:133
 msgid "Latest"
 msgstr "Dernière"
 
@@ -5538,7 +5568,7 @@ msgstr "Durée d’utilisation (jours)"
 msgid "Limit (Bytes/Period)"
 msgstr "Limite (octets/période)"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:88
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:115
 msgid "Limit I/O bandwidth."
 msgstr ""
 
@@ -5785,13 +5815,13 @@ msgstr ""
 "alors être à 1 afin d’hériter de celle du pont réseau (bridge) sous‐jacent."
 
 #: pve-manager/www/manager6/qemu/HardwareView.js:157
-#: pve-manager/www/manager6/qemu/MachineEdit.js:76
-#: pve-manager/www/manager6/qemu/MachineEdit.js:122
+#: pve-manager/www/manager6/qemu/MachineEdit.js:101
+#: pve-manager/www/manager6/qemu/MachineEdit.js:183
 #: pve-manager/www/manager6/qemu/SystemEdit.js:90
 msgid "Machine"
 msgstr "Machine"
 
-#: pve-manager/www/manager6/qemu/MachineEdit.js:114
+#: pve-manager/www/manager6/qemu/MachineEdit.js:142
 msgid ""
 "Machine version change may affect hardware layout and settings in the guest "
 "OS."
@@ -6073,7 +6103,7 @@ msgstr "Membres"
 #: pve-manager/www/manager6/lxc/Resources.js:55
 #: pve-manager/www/manager6/panel/TemplateStatusView.js:46
 #: pve-manager/www/manager6/qemu/CreateWizard.js:226
-#: pve-manager/www/manager6/qemu/DisplayEdit.js:58
+#: pve-manager/www/manager6/qemu/DisplayEdit.js:67
 #: pve-manager/www/manager6/qemu/HardwareView.js:70
 #: pve-manager/www/manager6/qemu/MemoryEdit.js:65
 #: pve-manager/www/manager6/qemu/MemoryEdit.js:168
@@ -7156,8 +7186,8 @@ msgstr "Données insuffisantes"
 msgid "Not yet configured"
 msgstr "Pas encore configuré"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:170
-#: pve-manager/www/manager6/qemu/MachineEdit.js:113
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:233
+#: pve-manager/www/manager6/qemu/MachineEdit.js:141
 #: proxmox-backup/www/form/GroupFilter.js:344
 #: proxmox-backup/www/form/GroupFilter.js:399
 #: proxmox-backup/www/window/NamespaceEdit.js:89
@@ -8027,6 +8057,12 @@ msgstr "Préallocation"
 msgid "Predefined Tags"
 msgstr "Étiquettes prédéfinies"
 
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:195
+msgid ""
+"Prefer a fast and local storage, ideally with support for discard and thin-"
+"provisioning or sparse files."
+msgstr ""
+
 #: pve-manager/www/manager6/Utils.js:33
 msgid "Premium"
 msgstr "Premium"
@@ -8882,7 +8918,7 @@ msgstr "Supprimer les utilisateurs et groupes qui ont disparu."
 msgid "Renew Certificate"
 msgstr "Renouveler le certificat"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:153
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:216
 msgid "Repeat missed"
 msgstr "Retenter en cas d’échec"
 
@@ -9205,7 +9241,7 @@ msgstr ""
 "Exécuter guest-trim après un déplacement de disque ou une migration de "
 "machine virtuelle"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:164
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:227
 msgid ""
 "Run jobs as soon as possible if they couldn't start on schedule, for "
 "example, due to the node being offline."
@@ -9415,9 +9451,9 @@ msgstr "Programmé pour « {0} »"
 msgid "Scheduled Verification"
 msgstr "Vérification planifiée"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:88
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:112
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:132
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:115
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:139
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:159
 #, fuzzy
 msgid "Schema default: {0}"
 msgstr "Programmé pour « {0} »"
@@ -9630,7 +9666,7 @@ msgstr "Numéro de série"
 msgid "Serial Port"
 msgstr "Port série"
 
-#: pve-manager/www/manager6/qemu/DisplayEdit.js:25
+#: pve-manager/www/manager6/qemu/DisplayEdit.js:55
 msgid "Serial interface '{0}' is not correctly configured."
 msgstr "L’interface série « {0} » n’est pas configurée correctement."
 
@@ -11069,7 +11105,7 @@ msgstr ""
 "Le dépôt « no-subscription » n’est pas recommandé pour une utilisation en "
 "production."
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:171
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:234
 msgid ""
 "The node-specific 'vzdump.conf' or, if this is not set, the default from the "
 "config schema is used to determine fallback values."
@@ -11150,6 +11186,10 @@ msgstr "Ce jeu de processeurs est incorrect"
 msgid "This is not a valid hostname"
 msgstr "Le nom d’hôte est incorrect"
 
+#: pve-manager/www/manager6/qemu/DisplayEdit.js:108
+msgid "This option depends on your display type."
+msgstr ""
+
 #: pve-manager/www/manager6/grid/BackupView.js:210
 #: pve-manager/www/manager6/lxc/Resources.js:247
 #: pve-manager/www/manager6/qemu/HardwareView.js:300
@@ -11176,7 +11216,7 @@ msgstr "Cet identifiant de {0} n’existe pas"
 msgid "This {0} ID is already in use"
 msgstr "Cet identifiant de {0} est déjà utilisé"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:112
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:139
 msgid "Threads used for zstd compression (non-PBS)."
 msgstr ""
 
@@ -11923,7 +11963,7 @@ msgstr "Utiliser avec les périphériques négociés"
 msgid "Use {0}"
 msgstr "Utiliser {0}"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:82
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:109
 #: pve-manager/www/manager6/panel/BackupJobPrune.js:124
 msgid "Use {0} for unlimited"
 msgstr "Utiliser {0} pour illimité"
@@ -12160,6 +12200,10 @@ msgstr "Compatible VMware"
 msgid "VMware image format"
 msgstr "Format d’image VMware"
 
+#: pve-manager/www/manager6/qemu/DisplayEdit.js:99
+msgid "VNC Clipboard requires spice-tools installed in the Guest-VM."
+msgstr ""
+
 #: pve-manager/www/manager6/form/SDNVnetSelector.js:26
 #: pve-manager/www/manager6/sdn/VnetEdit.js:71
 msgid "VNet"
@@ -12337,7 +12381,7 @@ msgstr "Vérifier les nouvelles sauvegardes dès qu’elles sont terminées"
 #: pve-manager/www/manager6/ceph/ServiceList.js:448
 #: pve-manager/www/manager6/ceph/Services.js:184
 #: pve-manager/www/manager6/qemu/HDTPM.js:63
-#: pve-manager/www/manager6/qemu/MachineEdit.js:88
+#: pve-manager/www/manager6/qemu/MachineEdit.js:116
 #: pve-manager/www/manager6/qemu/OSTypeEdit.js:124
 #: pve-manager/www/manager6/qemu/Smbios1Edit.js:54
 #: pve-manager/www/manager6/storage/TemplateView.js:76
@@ -12659,7 +12703,7 @@ msgstr "Déplacer le volume"
 msgid "Wipe labels and other left-overs"
 msgstr "Nettoyer les étiquettes et autres restes"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:106
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:133
 msgid "With 0, half of the available cores are used"
 msgstr ""
 
@@ -12786,6 +12830,11 @@ msgstr "Vous pouvez glisser‐déposer un fichier de clef ici."
 msgid "You can use Markdown for rich text formatting."
 msgstr ""
 "Vous pouvez utiliser la syntaxe Markdown pour mettre en forme votre texte."
+
+#: pve-manager/www/manager6/qemu/DisplayEdit.js:98
+msgid ""
+"You cannot use the default SPICE clipboard if the VNC Clipboard is selected."
+msgstr ""
 
 #: proxmox-widget-toolkit/src/Utils.js:160
 msgid ""
@@ -13242,6 +13291,11 @@ msgstr "utiliser les valeurs de l’hôte"
 msgid "user@example.com"
 msgstr "utilisateur@domaine.com"
 
+#: pve-manager/www/manager6/qemu/MachineEdit.js:147
+#: pve-manager/www/manager6/qemu/MachineEdit.js:164
+msgid "vIOMMU"
+msgstr ""
+
 #: proxmox-widget-toolkit/src/window/TfaEdit.js:80
 msgid "verify current password"
 msgstr "vérification du mot de passe actuel"
@@ -13287,7 +13341,7 @@ msgstr "{0} élément"
 msgid "{0} Items"
 msgstr "{0}  éléments"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:97
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:124
 #, fuzzy
 msgid "{0} Threads"
 msgstr "{0} heures"

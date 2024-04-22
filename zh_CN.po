@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: proxmox translations\n"
 "Report-Msgid-Bugs-To: <support@proxmox.com>\n"
-"POT-Creation-Date: Mon Apr 22 13:17:26 2024\n"
+"POT-Creation-Date: Mon Apr 22 19:58:29 2024\n"
 "PO-Revision-Date: 2024-01-16 11:24+0800\n"
 "Last-Translator: Try. <rov7@qq.com>\n"
 "Language-Team: Chinese (simplified) <tianmotrue@163.com>\n"
@@ -1005,6 +1005,11 @@ msgstr "立即备份"
 msgid "Backup snapshots on '{0}'"
 msgstr "在{0}上备份快照"
 
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:175
+msgid ""
+"Backup write cache that can reduce IO pressure inside guests (VMs only)."
+msgstr ""
+
 #: pmg-gui/js/NavigationTree.js:90
 msgid "Backup/Restore"
 msgstr "备份/还原"
@@ -1032,7 +1037,7 @@ msgid "Bandwidth"
 msgstr "带宽"
 
 #: pve-manager/www/manager6/dc/StorageView.js:148
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:75
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:102
 #: pve-manager/www/manager6/window/Restore.js:206
 msgid "Bandwidth Limit"
 msgstr "带宽限制"
@@ -1637,6 +1642,11 @@ msgstr "客户端秘钥"
 #: pmg-gui/js/MailProxyOptions.js:70
 msgid "Client Message Rate Limit"
 msgstr "客户端消息速率限制"
+
+#: pve-manager/www/manager6/qemu/DisplayEdit.js:84
+#, fuzzy
+msgid "Clipboard"
+msgstr "复制到剪贴板"
 
 #: pve-manager/www/manager6/Utils.js:2012
 #: pve-manager/www/manager6/Utils.js:2041
@@ -2946,7 +2956,7 @@ msgstr "磁盘使用率"
 msgid "Disks"
 msgstr "磁盘"
 
-#: pve-manager/www/manager6/qemu/DisplayEdit.js:71
+#: pve-manager/www/manager6/qemu/DisplayEdit.js:122
 #: pve-manager/www/manager6/qemu/HardwareView.js:148
 msgid "Display"
 msgstr "显示"
@@ -3879,9 +3889,9 @@ msgstr "失败"
 msgid "Failing"
 msgstr "失败"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:76
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:99
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:124
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:103
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:126
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:151
 #, fuzzy
 msgid "Fallback"
 msgstr "回滚"
@@ -4082,6 +4092,16 @@ msgstr "已修复"
 #: proxmox-widget-toolkit/src/window/DiskSmart.js:60
 msgid "Flags"
 msgstr "标记"
+
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:168
+#, fuzzy
+msgid "Fleecing"
+msgstr "隔离"
+
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:183
+#, fuzzy
+msgid "Fleecing Storage"
+msgstr "EFI存储"
 
 #: pve-manager/www/manager6/qemu/Options.js:129
 msgid "Floppy"
@@ -4353,7 +4373,7 @@ msgstr "限制Ceph自我修复的全局标志已启用。"
 msgid "Granted Permissions"
 msgstr "授予的权限"
 
-#: pve-manager/www/manager6/qemu/DisplayEdit.js:19
+#: pve-manager/www/manager6/qemu/DisplayEdit.js:49
 #: pve-manager/www/manager6/qemu/SystemEdit.js:81
 msgid "Graphic card"
 msgstr "显卡"
@@ -4684,7 +4704,7 @@ msgstr "每小时分配"
 msgid "Hours to show"
 msgstr "要显示的时间"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:132
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:159
 msgid "I/O workers in the QEMU process (VMs only)."
 msgstr ""
 
@@ -4741,7 +4761,7 @@ msgstr "IO延迟"
 msgid "IO wait"
 msgstr "IO等待"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:122
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:149
 msgid "IO-Workers"
 msgstr ""
 
@@ -4846,6 +4866,12 @@ msgstr "ISO镜像"
 #: proxmox-backup/www/Utils.js:652
 msgid "Idle"
 msgstr "空闲"
+
+#: pve-manager/www/manager6/qemu/DisplayEdit.js:109
+msgid ""
+"If the display type uses SPICE you are able to use the default SPICE "
+"Clipboard."
+msgstr ""
 
 #: pve-manager/www/manager6/storage/Browser.js:152
 #: pve-manager/www/manager6/window/GuestImport.js:17
@@ -5004,6 +5030,10 @@ msgstr "安装Ceph"
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:331
 msgid "Installation"
 msgstr "安装"
+
+#: pve-manager/www/manager6/qemu/MachineEdit.js:153
+msgid "Intel (AMD Compatible)"
+msgstr ""
 
 #: proxmox-widget-toolkit/src/form/NetworkSelector.js:102
 #: pve-manager/www/manager6/grid/FirewallRules.js:214
@@ -5415,8 +5445,8 @@ msgstr "上次验证"
 msgid "Last checked"
 msgstr "上次校验"
 
-#: pve-manager/www/manager6/qemu/MachineEdit.js:89
-#: pve-manager/www/manager6/qemu/MachineEdit.js:105
+#: pve-manager/www/manager6/qemu/MachineEdit.js:117
+#: pve-manager/www/manager6/qemu/MachineEdit.js:133
 msgid "Latest"
 msgstr "最新"
 
@@ -5453,7 +5483,7 @@ msgstr "存留时间（天）"
 msgid "Limit (Bytes/Period)"
 msgstr "限制（字节/周期）"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:88
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:115
 msgid "Limit I/O bandwidth."
 msgstr ""
 
@@ -5695,13 +5725,13 @@ msgid ""
 msgstr "MTU需要大于等于576或1才能从底层网桥继承MTU。"
 
 #: pve-manager/www/manager6/qemu/HardwareView.js:157
-#: pve-manager/www/manager6/qemu/MachineEdit.js:76
-#: pve-manager/www/manager6/qemu/MachineEdit.js:122
+#: pve-manager/www/manager6/qemu/MachineEdit.js:101
+#: pve-manager/www/manager6/qemu/MachineEdit.js:183
 #: pve-manager/www/manager6/qemu/SystemEdit.js:90
 msgid "Machine"
 msgstr "机型"
 
-#: pve-manager/www/manager6/qemu/MachineEdit.js:114
+#: pve-manager/www/manager6/qemu/MachineEdit.js:142
 msgid ""
 "Machine version change may affect hardware layout and settings in the guest "
 "OS."
@@ -5974,7 +6004,7 @@ msgstr "成员"
 #: pve-manager/www/manager6/lxc/Resources.js:55
 #: pve-manager/www/manager6/panel/TemplateStatusView.js:46
 #: pve-manager/www/manager6/qemu/CreateWizard.js:226
-#: pve-manager/www/manager6/qemu/DisplayEdit.js:58
+#: pve-manager/www/manager6/qemu/DisplayEdit.js:67
 #: pve-manager/www/manager6/qemu/HardwareView.js:70
 #: pve-manager/www/manager6/qemu/MemoryEdit.js:65
 #: pve-manager/www/manager6/qemu/MemoryEdit.js:168
@@ -7037,8 +7067,8 @@ msgstr "数据不足"
 msgid "Not yet configured"
 msgstr "尚未配置"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:170
-#: pve-manager/www/manager6/qemu/MachineEdit.js:113
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:233
+#: pve-manager/www/manager6/qemu/MachineEdit.js:141
 #: proxmox-backup/www/form/GroupFilter.js:344
 #: proxmox-backup/www/form/GroupFilter.js:399
 #: proxmox-backup/www/window/NamespaceEdit.js:89
@@ -7882,6 +7912,12 @@ msgstr "预分配"
 #: pve-manager/www/manager6/dc/UserTagAccessEdit.js:67
 msgid "Predefined Tags"
 msgstr "预定义标记"
+
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:195
+msgid ""
+"Prefer a fast and local storage, ideally with support for discard and thin-"
+"provisioning or sparse files."
+msgstr ""
 
 #: pve-manager/www/manager6/Utils.js:33
 msgid "Premium"
@@ -8730,7 +8766,7 @@ msgstr "移除消失的用户和组条目。"
 msgid "Renew Certificate"
 msgstr "更新凭证"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:153
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:216
 msgid "Repeat missed"
 msgstr "重复错过"
 
@@ -9048,7 +9084,7 @@ msgstr "现在运行"
 msgid "Run guest-trim after a disk move or VM migration"
 msgstr "磁盘移动或VM迁移后运行guest-trim"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:164
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:227
 msgid ""
 "Run jobs as soon as possible if they couldn't start on schedule, for "
 "example, due to the node being offline."
@@ -9254,9 +9290,9 @@ msgstr "'{0}'上的计划"
 msgid "Scheduled Verification"
 msgstr "定期验证"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:88
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:112
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:132
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:115
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:139
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:159
 #, fuzzy
 msgid "Schema default: {0}"
 msgstr "'{0}'上的计划"
@@ -9464,7 +9500,7 @@ msgstr "串行"
 msgid "Serial Port"
 msgstr "串行端口"
 
-#: pve-manager/www/manager6/qemu/DisplayEdit.js:25
+#: pve-manager/www/manager6/qemu/DisplayEdit.js:55
 msgid "Serial interface '{0}' is not correctly configured."
 msgstr "串行接口'{0}'未正确配置。"
 
@@ -10887,7 +10923,7 @@ msgid ""
 "The no-subscription repository is not the best choice for production setups."
 msgstr "无订阅存储库不是生产设置的最佳选择。"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:171
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:234
 msgid ""
 "The node-specific 'vzdump.conf' or, if this is not set, the default from the "
 "config schema is used to determine fallback values."
@@ -10955,6 +10991,10 @@ msgstr "这不是有效的CpuSet"
 msgid "This is not a valid hostname"
 msgstr "这不是有效的主机名"
 
+#: pve-manager/www/manager6/qemu/DisplayEdit.js:108
+msgid "This option depends on your display type."
+msgstr ""
+
 #: pve-manager/www/manager6/grid/BackupView.js:210
 #: pve-manager/www/manager6/lxc/Resources.js:247
 #: pve-manager/www/manager6/qemu/HardwareView.js:300
@@ -10979,7 +11019,7 @@ msgstr "该{0}ID不存在"
 msgid "This {0} ID is already in use"
 msgstr "该{0}ID已被使用"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:112
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:139
 msgid "Threads used for zstd compression (non-PBS)."
 msgstr ""
 
@@ -11718,7 +11758,7 @@ msgstr "与中介设备一起使用"
 msgid "Use {0}"
 msgstr "使用 {0}"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:82
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:109
 #: pve-manager/www/manager6/panel/BackupJobPrune.js:124
 msgid "Use {0} for unlimited"
 msgstr "使用 {0} 无限制"
@@ -11954,6 +11994,10 @@ msgstr "VMWare兼容"
 msgid "VMware image format"
 msgstr "VMware映像格式"
 
+#: pve-manager/www/manager6/qemu/DisplayEdit.js:99
+msgid "VNC Clipboard requires spice-tools installed in the Guest-VM."
+msgstr ""
+
 #: pve-manager/www/manager6/form/SDNVnetSelector.js:26
 #: pve-manager/www/manager6/sdn/VnetEdit.js:71
 msgid "VNet"
@@ -12129,7 +12173,7 @@ msgstr "完成后立即验证新备份"
 #: pve-manager/www/manager6/ceph/ServiceList.js:448
 #: pve-manager/www/manager6/ceph/Services.js:184
 #: pve-manager/www/manager6/qemu/HDTPM.js:63
-#: pve-manager/www/manager6/qemu/MachineEdit.js:88
+#: pve-manager/www/manager6/qemu/MachineEdit.js:116
 #: pve-manager/www/manager6/qemu/OSTypeEdit.js:124
 #: pve-manager/www/manager6/qemu/Smbios1Edit.js:54
 #: pve-manager/www/manager6/storage/TemplateView.js:76
@@ -12438,7 +12482,7 @@ msgstr "移动卷"
 msgid "Wipe labels and other left-overs"
 msgstr "擦拭标签和其他残留物"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:106
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:133
 msgid "With 0, half of the available cores are used"
 msgstr ""
 
@@ -12556,6 +12600,11 @@ msgstr "你可以在此处拖放密钥文件。"
 #: proxmox-widget-toolkit/src/window/NotesEdit.js:32
 msgid "You can use Markdown for rich text formatting."
 msgstr "你可以使用 Markdown 进行富文本格式设置。"
+
+#: pve-manager/www/manager6/qemu/DisplayEdit.js:98
+msgid ""
+"You cannot use the default SPICE clipboard if the VNC Clipboard is selected."
+msgstr ""
 
 #: proxmox-widget-toolkit/src/Utils.js:160
 msgid ""
@@ -13000,6 +13049,11 @@ msgstr "使用主机设置"
 msgid "user@example.com"
 msgstr "user@example.com"
 
+#: pve-manager/www/manager6/qemu/MachineEdit.js:147
+#: pve-manager/www/manager6/qemu/MachineEdit.js:164
+msgid "vIOMMU"
+msgstr ""
+
 #: proxmox-widget-toolkit/src/window/TfaEdit.js:80
 msgid "verify current password"
 msgstr "验证当前密码"
@@ -13045,7 +13099,7 @@ msgstr "{0}项"
 msgid "{0} Items"
 msgstr "{0}项"
 
-#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:97
+#: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:124
 #, fuzzy
 msgid "{0} Threads"
 msgstr "{0}小时"
