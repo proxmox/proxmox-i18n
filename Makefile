@@ -2,6 +2,7 @@ include /usr/share/dpkg/pkg-info.mk
 
 LINGUAS=\
 	ar \
+	bg \
 	ca \
 	da \
 	de \
