@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: proxmox-backup e97132bb64a203535c28214c1cec4c1e49cf9009\n"
 "Report-Msgid-Bugs-To: <support@proxmox.com>\n"
-"POT-Creation-Date: Tue Nov 26 12:25:38 2024\n"
+"POT-Creation-Date: Wed Nov 27 14:13:27 2024\n"
 "PO-Revision-Date: 2024-11-11 14:48 +2 ZONE\n"
 "Last-Translator: Kalin Sabevski <kalin_sabevski@yahoo.com>\n"
 "Language-Team: LANGUAGE <support@proxmox.com>\n"
@@ -24,6 +24,10 @@ msgstr ""
 #: pve-manager/www/manager6/qemu/Options.js:95
 msgid "(No boot device selected)"
 msgstr "(Не е избрано устройство за зареждане)"
+
+#: proxmox-backup/www/config/SyncView.js:242
+msgid "(remote) store, remote, id, owner, direction"
+msgstr ""
 
 #: proxmox-widget-toolkit/src/window/FileBrowser.js:322
 msgid ".tar.zst"
@@ -58,6 +62,11 @@ msgid ""
 msgstr ""
 "Беше инсталирана по-нова версия, но старата все още работи, моля, "
 "рестартирайте"
+
+#: proxmox-backup/www/window/DataStoreEdit.js:117
+#, fuzzy
+msgid "A relative path"
+msgstr "Абсолютен път"
 
 #: pve-manager/www/manager6/window/PCIMapEdit.js:191
 msgid ""
@@ -316,7 +325,7 @@ msgstr "Активност"
 #: proxmox-backup/www/config/MetricServerView.js:87
 #: proxmox-backup/www/config/PruneView.js:137
 #: proxmox-backup/www/config/RemoteView.js:96
-#: proxmox-backup/www/config/SyncView.js:162
+#: proxmox-backup/www/config/SyncView.js:192
 #: proxmox-backup/www/config/TokenView.js:148
 #: proxmox-backup/www/config/TrafficControlView.js:92
 #: proxmox-backup/www/config/UserView.js:153
@@ -344,8 +353,19 @@ msgid "Add EFI Disk"
 msgstr "Добавете EFI диск"
 
 #: proxmox-backup/www/datastore/Content.js:1260
-msgid "Add NS"
-msgstr "Добавете NS"
+#, fuzzy
+msgid "Add Namespace"
+msgstr "Пространство от имена"
+
+#: proxmox-backup/www/config/SyncView.js:195
+#, fuzzy
+msgid "Add Pull Sync Job"
+msgstr "Задачи за синхронизиране на регион"
+
+#: proxmox-backup/www/config/SyncView.js:201
+#, fuzzy
+msgid "Add Push Sync Job"
+msgstr "Задание за синхронизиране"
 
 #: pmg-gui/js/PBSConfig.js:112
 msgid "Add Remote"
@@ -523,7 +543,7 @@ msgstr "Псевдоним"
 #: pve-manager/www/manager6/window/BulkAction.js:333
 #: pve-manager/www/manager6/window/BulkAction.js:404
 #: proxmox-backup/www/ServerAdministration.js:83
-#: proxmox-backup/www/config/SyncView.js:259
+#: proxmox-backup/www/config/SyncView.js:347
 #: proxmox-backup/www/tape/BackupJobs.js:227
 msgid "All"
 msgstr "Всички"
@@ -621,6 +641,7 @@ msgid "Always"
 msgstr "Винаги"
 
 #: proxmox-backup/www/window/DataStoreEdit.js:63
+#: proxmox-backup/www/window/DataStoreEdit.js:120
 msgid "An absolute path"
 msgstr "Абсолютен път"
 
@@ -964,7 +985,7 @@ msgid "Background"
 msgstr "Фон"
 
 #: proxmox-backup/www/window/DataStoreEdit.js:62
-#: proxmox-backup/www/window/DataStoreEdit.js:118
+#: proxmox-backup/www/window/DataStoreEdit.js:119
 msgid "Backing Path"
 msgstr "Поддържащ път"
 
@@ -1000,7 +1021,7 @@ msgstr "Подробности за Архивиране"
 msgid "Backup Group"
 msgstr "Резервна група"
 
-#: proxmox-backup/www/config/SyncView.js:257
+#: proxmox-backup/www/config/SyncView.js:345
 #: proxmox-backup/www/tape/BackupJobs.js:225
 msgid "Backup Groups"
 msgstr "Групи за архивиране"
@@ -1935,7 +1956,7 @@ msgstr "Командване"
 #: proxmox-backup/www/config/MetricServerView.js:78
 #: proxmox-backup/www/config/PruneView.js:256
 #: proxmox-backup/www/config/RemoteView.js:146
-#: proxmox-backup/www/config/SyncView.js:304
+#: proxmox-backup/www/config/SyncView.js:392
 #: proxmox-backup/www/config/TokenView.js:213
 #: proxmox-backup/www/config/TrafficControlView.js:187
 #: proxmox-backup/www/config/UserView.js:258
@@ -1952,7 +1973,7 @@ msgstr "Командване"
 #: proxmox-backup/www/tape/PoolConfig.js:135
 #: proxmox-backup/www/tape/window/PoolEdit.js:77
 #: proxmox-backup/www/tape/window/TapeBackupJob.js:211
-#: proxmox-backup/www/window/DataStoreEdit.js:126
+#: proxmox-backup/www/window/DataStoreEdit.js:128
 #: proxmox-backup/www/window/InfluxDbEdit.js:87
 #: proxmox-backup/www/window/InfluxDbEdit.js:181
 #: proxmox-backup/www/window/PruneJobEdit.js:143
@@ -2980,6 +3001,7 @@ msgstr "Цифри"
 #: pmg-gui/js/ObjectGroup.js:100 pmg-gui/js/RuleEditor.js:37
 #: pmg-gui/js/RuleInfo.js:287
 #: pve-manager/www/manager6/grid/FirewallRules.js:261
+#: proxmox-backup/www/config/SyncView.js:279
 msgid "Direction"
 msgstr "Посока"
 
@@ -3263,7 +3285,7 @@ msgstr "Дублираният номер на връзката не е разр
 #: pve-manager/www/manager6/grid/Replication.js:370
 #: proxmox-backup/www/config/GCView.js:178
 #: proxmox-backup/www/config/PruneView.js:237
-#: proxmox-backup/www/config/SyncView.js:285
+#: proxmox-backup/www/config/SyncView.js:373
 #: proxmox-backup/www/config/VerifyView.js:239
 #: proxmox-backup/www/dashboard/LongestTasks.js:86
 #: proxmox-backup/www/dashboard/RunningTasks.js:86
@@ -3423,7 +3445,7 @@ msgstr "Име(на) на Пощенски атрибут"
 #: proxmox-backup/www/config/NodeOptionView.js:23
 #: proxmox-backup/www/config/PruneView.js:143
 #: proxmox-backup/www/config/RemoteView.js:102
-#: proxmox-backup/www/config/SyncView.js:168
+#: proxmox-backup/www/config/SyncView.js:210
 #: proxmox-backup/www/config/TokenView.js:155
 #: proxmox-backup/www/config/TrafficControlView.js:98
 #: proxmox-backup/www/config/UserView.js:160
@@ -3857,7 +3879,7 @@ msgstr "Изтриване"
 #: proxmox-backup/www/config/ACLView.js:78
 #: proxmox-backup/www/config/GCView.js:77
 #: proxmox-backup/www/config/PruneView.js:104
-#: proxmox-backup/www/config/SyncView.js:108
+#: proxmox-backup/www/config/SyncView.js:141
 #: proxmox-backup/www/config/UserView.js:119
 #: proxmox-backup/www/config/VerifyView.js:101
 #: proxmox-backup/www/datastore/Content.js:538
@@ -5394,7 +5416,7 @@ msgstr "Подробности за работата"
 #: pve-manager/www/manager6/Utils.js:2077
 #: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:120
 #: proxmox-backup/www/Utils.js:442 proxmox-backup/www/config/PruneView.js:175
-#: proxmox-backup/www/config/SyncView.js:200
+#: proxmox-backup/www/config/SyncView.js:270
 #: proxmox-backup/www/config/VerifyView.js:181
 #: proxmox-backup/www/tape/BackupJobs.js:178
 #: proxmox-backup/www/tape/window/TapeBackupJob.js:95
@@ -5675,7 +5697,7 @@ msgid "Last Status"
 msgstr "Последно състояние"
 
 #: pve-manager/www/manager6/grid/Replication.js:356
-#: proxmox-backup/www/config/SyncView.js:278
+#: proxmox-backup/www/config/SyncView.js:366
 msgid "Last Sync"
 msgstr "Последна Синхронизация"
 
@@ -5836,11 +5858,15 @@ msgstr "Локално пространство на имената"
 msgid "Local Owner"
 msgstr "Местен собственик"
 
-#: proxmox-backup/www/config/SyncView.js:209
+#: proxmox-backup/www/config/SyncView.js:335
+#, fuzzy
+msgid "Local Owner/User"
+msgstr "Местен собственик"
+
+#: proxmox-backup/www/config/SyncView.js:296
 msgid "Local Store"
 msgstr "Местен магазин"
 
-#: proxmox-backup/www/config/SyncView.js:36
 #: proxmox-backup/www/window/SyncJobEdit.js:39
 #, fuzzy
 msgid "Local User"
@@ -6201,7 +6227,7 @@ msgid "Max scan size"
 msgstr "Максимален размер на сканиране"
 
 #: proxmox-backup/www/config/PruneView.js:198
-#: proxmox-backup/www/config/SyncView.js:242
+#: proxmox-backup/www/config/SyncView.js:329
 #: proxmox-backup/www/config/VerifyView.js:204
 #: proxmox-backup/www/form/NamespaceMaxDepth.js:8
 #: proxmox-backup/www/tape/window/TapeBackupJob.js:204
@@ -6773,7 +6799,7 @@ msgstr "Етикетът не трябва да е празен."
 #: pve-manager/www/manager6/storage/PBSEdit.js:563
 #: pve-manager/www/manager6/storage/RBDEdit.js:237
 #: proxmox-backup/www/Utils.js:408 proxmox-backup/www/config/PruneView.js:190
-#: proxmox-backup/www/config/SyncView.js:215
+#: proxmox-backup/www/config/SyncView.js:302
 #: proxmox-backup/www/config/VerifyView.js:196
 #: proxmox-backup/www/datastore/Content.js:1249
 #: proxmox-backup/www/form/RemoteTargetSelector.js:127
@@ -6907,7 +6933,7 @@ msgstr "Следваща Медия"
 #: pve-manager/www/manager6/dc/RealmSyncJob.js:117
 #: proxmox-backup/www/config/GCView.js:192
 #: proxmox-backup/www/config/PruneView.js:249
-#: proxmox-backup/www/config/SyncView.js:297
+#: proxmox-backup/www/config/SyncView.js:385
 #: proxmox-backup/www/config/VerifyView.js:251
 #: proxmox-backup/www/tape/BackupJobs.js:258
 msgid "Next Run"
@@ -7622,11 +7648,6 @@ msgstr "Ок"
 msgid "On"
 msgstr "Включено"
 
-#: proxmox-backup/www/window/DataStoreEdit.js:116
-#, fuzzy
-msgid "On device path"
-msgstr "Път на устройството"
-
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:215
 #: pve-manager/www/manager6/form/NotificationPolicySelector.js:6
 msgid "On failure only"
@@ -7839,7 +7860,6 @@ msgstr "Презаписване"
 msgid "Overwrite existing file"
 msgstr "Презаписване на съществуващ файл"
 
-#: proxmox-backup/www/config/SyncView.js:30
 #: proxmox-backup/www/datastore/Content.js:1103
 #: proxmox-backup/www/tape/window/TapeRestore.js:461
 msgid "Owner"
@@ -7982,6 +8002,11 @@ msgstr "Пътека"
 #: pve-manager/www/manager6/lxc/DeviceEdit.js:58
 msgid "Path has to start with /dev/"
 msgstr "Пътят трябва да започва с /dev/"
+
+#: proxmox-backup/www/window/DataStoreEdit.js:116
+#, fuzzy
+msgid "Path on Device"
+msgstr "От Устройството"
 
 #: pve-manager/www/manager6/Utils.js:2032
 #: pve-manager/www/manager6/qemu/CmdMenu.js:65
@@ -8514,7 +8539,7 @@ msgid "Prune Jobs"
 msgstr "Съкращаване на работи"
 
 #: pmg-gui/js/PBSRemoteEdit.js:124
-#: proxmox-backup/www/window/DataStoreEdit.js:148
+#: proxmox-backup/www/window/DataStoreEdit.js:150
 msgid "Prune Options"
 msgstr "Опции за подрязване"
 
@@ -8562,17 +8587,35 @@ msgstr "Размер на публичния ключ"
 msgid "Public Key Type"
 msgstr "Тип публичен ключ"
 
+#: proxmox-backup/www/config/SyncView.js:288
+#, fuzzy
+msgid "Pull"
+msgstr "Изтеглете файл"
+
 #: pve-manager/www/manager6/Utils.js:2023
 msgid "Pull file"
 msgstr "Изтеглете файл"
+
+#: proxmox-backup/www/config/SyncView.js:336
+msgid "Pull: The local owner."
+msgstr ""
 
 #: pve-manager/www/manager6/window/SafeDestroyGuest.js:13
 msgid "Purge from job configurations"
 msgstr "Изчистване от конфигурации на работа"
 
+#: proxmox-backup/www/config/SyncView.js:285
+#, fuzzy
+msgid "Push"
+msgstr "Бутни Файл"
+
 #: pve-manager/www/manager6/Utils.js:2024
 msgid "Push file"
 msgstr "Бутни Файл"
+
+#: proxmox-backup/www/config/SyncView.js:337
+msgid "Push: The local user used for access control."
+msgstr ""
 
 #: pve-manager/www/manager6/qemu/PCIEdit.js:39
 msgid "Q35 only"
@@ -9012,17 +9055,17 @@ msgid "Remote"
 msgstr "Отдалечено"
 
 #: proxmox-backup/www/config/RemoteView.js:119
-#: proxmox-backup/www/config/SyncView.js:222
+#: proxmox-backup/www/config/SyncView.js:309
 #: proxmox-backup/www/form/RemoteSelector.js:19
 #: proxmox-backup/www/window/RemoteEdit.js:35
 msgid "Remote ID"
 msgstr "Отдалечено ID"
 
-#: proxmox-backup/www/config/SyncView.js:235
+#: proxmox-backup/www/config/SyncView.js:322
 msgid "Remote Namespace"
 msgstr "Отдалечено пространство на имената"
 
-#: proxmox-backup/www/config/SyncView.js:229
+#: proxmox-backup/www/config/SyncView.js:316
 msgid "Remote Store"
 msgstr "Отдалечен магазин"
 
@@ -9142,7 +9185,7 @@ msgid "Remove all Attachments"
 msgstr "Премахнете Всички Прикачени Файлове"
 
 #: proxmox-backup/www/config/PruneView.js:150
-#: proxmox-backup/www/config/SyncView.js:175
+#: proxmox-backup/www/config/SyncView.js:217
 #: proxmox-backup/www/config/VerifyView.js:156
 #: proxmox-backup/www/tape/BackupJobs.js:157
 msgid "Remove entry?"
@@ -9412,7 +9455,7 @@ msgstr "Политика за задържане"
 msgid "Retired"
 msgstr "Пенсиониран"
 
-#: proxmox-backup/www/window/DataStoreEdit.js:133
+#: proxmox-backup/www/window/DataStoreEdit.js:135
 #, fuzzy
 msgid "Reuse existing datastore"
 msgstr "Премахване на Datastore"
@@ -9543,7 +9586,7 @@ msgstr ""
 #: pve-manager/www/manager6/dc/Backup.js:677
 #: proxmox-backup/www/config/GCView.js:145
 #: proxmox-backup/www/config/PruneView.js:163
-#: proxmox-backup/www/config/SyncView.js:188
+#: proxmox-backup/www/config/SyncView.js:230
 #: proxmox-backup/www/config/VerifyView.js:169
 #: proxmox-backup/www/tape/BackupJobs.js:170
 msgid "Run now"
@@ -9721,7 +9764,7 @@ msgstr "Сканиране..."
 #: pve-manager/www/manager6/window/ScheduleSimulator.js:83
 #: proxmox-backup/www/config/GCView.js:163
 #: proxmox-backup/www/config/PruneView.js:204
-#: proxmox-backup/www/config/SyncView.js:270
+#: proxmox-backup/www/config/SyncView.js:358
 #: proxmox-backup/www/config/VerifyView.js:224
 #: proxmox-backup/www/tape/BackupJobs.js:231
 #: proxmox-backup/www/tape/window/TapeBackupJob.js:158
@@ -9787,6 +9830,7 @@ msgstr "Прочистване екранното меню.{0}"
 #: pve-manager/www/manager6/panel/ConfigPanel.js:216
 #: pve-manager/www/manager6/storage/ContentView.js:107
 #: pve-manager/www/manager6/storage/TemplateView.js:45
+#: proxmox-backup/www/config/SyncView.js:237
 #: proxmox-backup/www/datastore/Content.js:1267
 msgid "Search"
 msgstr "Търсене"
@@ -10174,7 +10218,7 @@ msgstr "Показване на пръстов отпечатък"
 
 #: proxmox-backup/www/config/GCView.js:138
 #: proxmox-backup/www/config/PruneView.js:156
-#: proxmox-backup/www/config/SyncView.js:181
+#: proxmox-backup/www/config/SyncView.js:223
 #: proxmox-backup/www/config/VerifyView.js:162
 #: proxmox-backup/www/tape/BackupJobs.js:163
 msgid "Show Log"
@@ -10720,7 +10764,7 @@ msgstr "Статистика от последното събиране на о�
 #: pve-manager/www/manager6/window/BulkAction.js:284
 #: proxmox-backup/www/Subscription.js:102 proxmox-backup/www/Utils.js:676
 #: proxmox-backup/www/config/PruneView.js:243
-#: proxmox-backup/www/config/SyncView.js:291
+#: proxmox-backup/www/config/SyncView.js:379
 #: proxmox-backup/www/config/VerifyView.js:245
 #: proxmox-backup/www/dashboard/LongestTasks.js:91
 #: proxmox-backup/www/tape/BackupJobs.js:252
@@ -11006,18 +11050,10 @@ msgstr ""
 msgid "Sync Job - Push Direction"
 msgstr ""
 
-#: proxmox-backup/www/config/SyncPullPushView.js:4
+#: proxmox-backup/www/config/SyncView.js:29
 #: proxmox-backup/www/window/NotifyOptions.js:116
 msgid "Sync Jobs"
 msgstr "Синхронизиране на задания"
-
-#: proxmox-backup/www/config/SyncView.js:29
-msgid "Sync Jobs - Pull Direction"
-msgstr ""
-
-#: proxmox-backup/www/config/SyncView.js:35
-msgid "Sync Jobs - Push Direction"
-msgstr ""
 
 #: proxmox-backup/www/Utils.js:847
 #: proxmox-backup/www/datastore/OptionView.js:269
@@ -11794,7 +11830,7 @@ msgstr "Правило за контрол на движението"
 msgid "Transfer"
 msgstr "Трансфер"
 
-#: proxmox-backup/www/config/SyncView.js:263
+#: proxmox-backup/www/config/SyncView.js:351
 #: proxmox-backup/www/window/SyncJobEdit.js:376
 msgid "Transfer Last"
 msgstr "Последен трансфер"
@@ -12060,6 +12096,7 @@ msgid "Unmount Device"
 msgstr "USB устройство"
 
 #: proxmox-backup/www/Utils.js:805
+#: proxmox-backup/www/window/MaintenanceOptions.js:92
 #, fuzzy
 msgid "Unmounting"
 msgstr "Демонтиране"
@@ -13853,6 +13890,13 @@ msgstr "{0} дни"
 msgid "{0}% of {1}"
 msgstr "{0}% от {1}"
 
+#~ msgid "Add NS"
+#~ msgstr "Добавете NS"
+
 #, fuzzy
 #~ msgid "Import Storage"
 #~ msgstr "EFI съхранение"
+
+#, fuzzy
+#~ msgid "On device path"
+#~ msgstr "Път на устройството"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: proxmox translations\n"
 "Report-Msgid-Bugs-To: <support@proxmox.com>\n"
-"POT-Creation-Date: Tue Nov 26 12:25:38 2024\n"
+"POT-Creation-Date: Wed Nov 27 14:13:27 2024\n"
 "PO-Revision-Date: 2023-11-22 21:17+0100\n"
 "Last-Translator: Daniel Koć <daniel@xn--ko-wla.pl>\n"
 "Language-Team: Polish\n"
@@ -21,6 +21,10 @@ msgstr ""
 #: pve-manager/www/manager6/qemu/Options.js:95
 msgid "(No boot device selected)"
 msgstr "(nie wybrano urządzenia startowego)"
+
+#: proxmox-backup/www/config/SyncView.js:242
+msgid "(remote) store, remote, id, owner, direction"
+msgstr ""
 
 #: proxmox-widget-toolkit/src/window/FileBrowser.js:322
 msgid ".tar.zst"
@@ -53,6 +57,11 @@ msgid ""
 msgstr ""
 "Zainstalowano nowszą wersję, ale stara wersja nadal jest aktywna, proszę "
 "zrestartować"
+
+#: proxmox-backup/www/window/DataStoreEdit.js:117
+#, fuzzy
+msgid "A relative path"
+msgstr "ścieżka bezwzględna"
 
 #: pve-manager/www/manager6/window/PCIMapEdit.js:191
 msgid ""
@@ -313,7 +322,7 @@ msgstr "Aktywne"
 #: proxmox-backup/www/config/MetricServerView.js:87
 #: proxmox-backup/www/config/PruneView.js:137
 #: proxmox-backup/www/config/RemoteView.js:96
-#: proxmox-backup/www/config/SyncView.js:162
+#: proxmox-backup/www/config/SyncView.js:192
 #: proxmox-backup/www/config/TokenView.js:148
 #: proxmox-backup/www/config/TrafficControlView.js:92
 #: proxmox-backup/www/config/UserView.js:153
@@ -341,8 +350,19 @@ msgid "Add EFI Disk"
 msgstr "Dodaj dysk EFI"
 
 #: proxmox-backup/www/datastore/Content.js:1260
-msgid "Add NS"
-msgstr "Dodaj NS"
+#, fuzzy
+msgid "Add Namespace"
+msgstr "Przestrzeń nazw"
+
+#: proxmox-backup/www/config/SyncView.js:195
+#, fuzzy
+msgid "Add Pull Sync Job"
+msgstr "Synchronizacja"
+
+#: proxmox-backup/www/config/SyncView.js:201
+#, fuzzy
+msgid "Add Push Sync Job"
+msgstr "Zadanie synchronizacji"
 
 #: pmg-gui/js/PBSConfig.js:112
 msgid "Add Remote"
@@ -521,7 +541,7 @@ msgstr "Aliasy sieciowe"
 #: pve-manager/www/manager6/window/BulkAction.js:333
 #: pve-manager/www/manager6/window/BulkAction.js:404
 #: proxmox-backup/www/ServerAdministration.js:83
-#: proxmox-backup/www/config/SyncView.js:259
+#: proxmox-backup/www/config/SyncView.js:347
 #: proxmox-backup/www/tape/BackupJobs.js:227
 msgid "All"
 msgstr "wszystkie"
@@ -619,6 +639,7 @@ msgid "Always"
 msgstr "zawsze"
 
 #: proxmox-backup/www/window/DataStoreEdit.js:63
+#: proxmox-backup/www/window/DataStoreEdit.js:120
 msgid "An absolute path"
 msgstr "ścieżka bezwzględna"
 
@@ -966,7 +987,7 @@ msgid "Background"
 msgstr "Tło"
 
 #: proxmox-backup/www/window/DataStoreEdit.js:62
-#: proxmox-backup/www/window/DataStoreEdit.js:118
+#: proxmox-backup/www/window/DataStoreEdit.js:119
 msgid "Backing Path"
 msgstr "Ścieżka przechowywania"
 
@@ -1001,7 +1022,7 @@ msgstr "Szczegóły kopii"
 msgid "Backup Group"
 msgstr "Grupa kopii"
 
-#: proxmox-backup/www/config/SyncView.js:257
+#: proxmox-backup/www/config/SyncView.js:345
 #: proxmox-backup/www/tape/BackupJobs.js:225
 msgid "Backup Groups"
 msgstr "Grupy kopii"
@@ -1926,7 +1947,7 @@ msgstr "Polecenie"
 #: proxmox-backup/www/config/MetricServerView.js:78
 #: proxmox-backup/www/config/PruneView.js:256
 #: proxmox-backup/www/config/RemoteView.js:146
-#: proxmox-backup/www/config/SyncView.js:304
+#: proxmox-backup/www/config/SyncView.js:392
 #: proxmox-backup/www/config/TokenView.js:213
 #: proxmox-backup/www/config/TrafficControlView.js:187
 #: proxmox-backup/www/config/UserView.js:258
@@ -1943,7 +1964,7 @@ msgstr "Polecenie"
 #: proxmox-backup/www/tape/PoolConfig.js:135
 #: proxmox-backup/www/tape/window/PoolEdit.js:77
 #: proxmox-backup/www/tape/window/TapeBackupJob.js:211
-#: proxmox-backup/www/window/DataStoreEdit.js:126
+#: proxmox-backup/www/window/DataStoreEdit.js:128
 #: proxmox-backup/www/window/InfluxDbEdit.js:87
 #: proxmox-backup/www/window/InfluxDbEdit.js:181
 #: proxmox-backup/www/window/PruneJobEdit.js:143
@@ -2972,6 +2993,7 @@ msgstr "Cyfry"
 #: pmg-gui/js/ObjectGroup.js:100 pmg-gui/js/RuleEditor.js:37
 #: pmg-gui/js/RuleInfo.js:287
 #: pve-manager/www/manager6/grid/FirewallRules.js:261
+#: proxmox-backup/www/config/SyncView.js:279
 msgid "Direction"
 msgstr "Kierunek ruchu"
 
@@ -3253,7 +3275,7 @@ msgstr "Nie można powtarzać numerów łącz."
 #: pve-manager/www/manager6/grid/Replication.js:370
 #: proxmox-backup/www/config/GCView.js:178
 #: proxmox-backup/www/config/PruneView.js:237
-#: proxmox-backup/www/config/SyncView.js:285
+#: proxmox-backup/www/config/SyncView.js:373
 #: proxmox-backup/www/config/VerifyView.js:239
 #: proxmox-backup/www/dashboard/LongestTasks.js:86
 #: proxmox-backup/www/dashboard/RunningTasks.js:86
@@ -3413,7 +3435,7 @@ msgstr "Nazwa atrybutu e-mail"
 #: proxmox-backup/www/config/NodeOptionView.js:23
 #: proxmox-backup/www/config/PruneView.js:143
 #: proxmox-backup/www/config/RemoteView.js:102
-#: proxmox-backup/www/config/SyncView.js:168
+#: proxmox-backup/www/config/SyncView.js:210
 #: proxmox-backup/www/config/TokenView.js:155
 #: proxmox-backup/www/config/TrafficControlView.js:98
 #: proxmox-backup/www/config/UserView.js:160
@@ -3847,7 +3869,7 @@ msgstr "Usuń dane"
 #: proxmox-backup/www/config/ACLView.js:78
 #: proxmox-backup/www/config/GCView.js:77
 #: proxmox-backup/www/config/PruneView.js:104
-#: proxmox-backup/www/config/SyncView.js:108
+#: proxmox-backup/www/config/SyncView.js:141
 #: proxmox-backup/www/config/UserView.js:119
 #: proxmox-backup/www/config/VerifyView.js:101
 #: proxmox-backup/www/datastore/Content.js:538
@@ -5388,7 +5410,7 @@ msgstr "Szczegóły zadania"
 #: pve-manager/www/manager6/Utils.js:2077
 #: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:120
 #: proxmox-backup/www/Utils.js:442 proxmox-backup/www/config/PruneView.js:175
-#: proxmox-backup/www/config/SyncView.js:200
+#: proxmox-backup/www/config/SyncView.js:270
 #: proxmox-backup/www/config/VerifyView.js:181
 #: proxmox-backup/www/tape/BackupJobs.js:178
 #: proxmox-backup/www/tape/window/TapeBackupJob.js:95
@@ -5670,7 +5692,7 @@ msgid "Last Status"
 msgstr "Ustaw stan"
 
 #: pve-manager/www/manager6/grid/Replication.js:356
-#: proxmox-backup/www/config/SyncView.js:278
+#: proxmox-backup/www/config/SyncView.js:366
 msgid "Last Sync"
 msgstr "Ostatni raz"
 
@@ -5832,11 +5854,15 @@ msgstr "Lokalna przestrzeń nazw"
 msgid "Local Owner"
 msgstr "Lokalny właściciel"
 
-#: proxmox-backup/www/config/SyncView.js:209
+#: proxmox-backup/www/config/SyncView.js:335
+#, fuzzy
+msgid "Local Owner/User"
+msgstr "Lokalny właściciel"
+
+#: proxmox-backup/www/config/SyncView.js:296
 msgid "Local Store"
 msgstr "Nośnik lokalny"
 
-#: proxmox-backup/www/config/SyncView.js:36
 #: proxmox-backup/www/window/SyncJobEdit.js:39
 #, fuzzy
 msgid "Local User"
@@ -6199,7 +6225,7 @@ msgid "Max scan size"
 msgstr "Maks. rozmiar skanowania"
 
 #: proxmox-backup/www/config/PruneView.js:198
-#: proxmox-backup/www/config/SyncView.js:242
+#: proxmox-backup/www/config/SyncView.js:329
 #: proxmox-backup/www/config/VerifyView.js:204
 #: proxmox-backup/www/form/NamespaceMaxDepth.js:8
 #: proxmox-backup/www/tape/window/TapeBackupJob.js:204
@@ -6764,7 +6790,7 @@ msgstr "Tag nie może być pusty"
 #: pve-manager/www/manager6/storage/PBSEdit.js:563
 #: pve-manager/www/manager6/storage/RBDEdit.js:237
 #: proxmox-backup/www/Utils.js:408 proxmox-backup/www/config/PruneView.js:190
-#: proxmox-backup/www/config/SyncView.js:215
+#: proxmox-backup/www/config/SyncView.js:302
 #: proxmox-backup/www/config/VerifyView.js:196
 #: proxmox-backup/www/datastore/Content.js:1249
 #: proxmox-backup/www/form/RemoteTargetSelector.js:127
@@ -6899,7 +6925,7 @@ msgstr "Następny nośnik"
 #: pve-manager/www/manager6/dc/RealmSyncJob.js:117
 #: proxmox-backup/www/config/GCView.js:192
 #: proxmox-backup/www/config/PruneView.js:249
-#: proxmox-backup/www/config/SyncView.js:297
+#: proxmox-backup/www/config/SyncView.js:385
 #: proxmox-backup/www/config/VerifyView.js:251
 #: proxmox-backup/www/tape/BackupJobs.js:258
 msgid "Next Run"
@@ -7620,11 +7646,6 @@ msgstr "Ok"
 msgid "On"
 msgstr "włączone"
 
-#: proxmox-backup/www/window/DataStoreEdit.js:116
-#, fuzzy
-msgid "On device path"
-msgstr "Urządzenie"
-
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:215
 #: pve-manager/www/manager6/form/NotificationPolicySelector.js:6
 msgid "On failure only"
@@ -7838,7 +7859,6 @@ msgstr "Nadpisuj"
 msgid "Overwrite existing file"
 msgstr "Nadpisuj istniejący plik"
 
-#: proxmox-backup/www/config/SyncView.js:30
 #: proxmox-backup/www/datastore/Content.js:1103
 #: proxmox-backup/www/tape/window/TapeRestore.js:461
 msgid "Owner"
@@ -7984,6 +8004,11 @@ msgstr "Ścieżka"
 #, fuzzy
 msgid "Path has to start with /dev/"
 msgstr "Musi się zaczynać od"
+
+#: proxmox-backup/www/window/DataStoreEdit.js:116
+#, fuzzy
+msgid "Path on Device"
+msgstr "z urządzenia"
 
 #: pve-manager/www/manager6/Utils.js:2032
 #: pve-manager/www/manager6/qemu/CmdMenu.js:65
@@ -8513,7 +8538,7 @@ msgid "Prune Jobs"
 msgstr "Zadania czyszczenia"
 
 #: pmg-gui/js/PBSRemoteEdit.js:124
-#: proxmox-backup/www/window/DataStoreEdit.js:148
+#: proxmox-backup/www/window/DataStoreEdit.js:150
 msgid "Prune Options"
 msgstr "Opcje czyszczenia"
 
@@ -8562,17 +8587,35 @@ msgstr "Rozmiar klucza publicznego"
 msgid "Public Key Type"
 msgstr "Typ klucza publicznego"
 
+#: proxmox-backup/www/config/SyncView.js:288
+#, fuzzy
+msgid "Pull"
+msgstr "Pobierz plik"
+
 #: pve-manager/www/manager6/Utils.js:2023
 msgid "Pull file"
 msgstr "Pobierz plik"
+
+#: proxmox-backup/www/config/SyncView.js:336
+msgid "Pull: The local owner."
+msgstr ""
 
 #: pve-manager/www/manager6/window/SafeDestroyGuest.js:13
 msgid "Purge from job configurations"
 msgstr "Usuń z konfiguracji zadań"
 
+#: proxmox-backup/www/config/SyncView.js:285
+#, fuzzy
+msgid "Push"
+msgstr "Wyślij plik"
+
 #: pve-manager/www/manager6/Utils.js:2024
 msgid "Push file"
 msgstr "Wyślij plik"
+
+#: proxmox-backup/www/config/SyncView.js:337
+msgid "Push: The local user used for access control."
+msgstr ""
 
 #: pve-manager/www/manager6/qemu/PCIEdit.js:39
 msgid "Q35 only"
@@ -9013,17 +9056,17 @@ msgid "Remote"
 msgstr "Nazwa"
 
 #: proxmox-backup/www/config/RemoteView.js:119
-#: proxmox-backup/www/config/SyncView.js:222
+#: proxmox-backup/www/config/SyncView.js:309
 #: proxmox-backup/www/form/RemoteSelector.js:19
 #: proxmox-backup/www/window/RemoteEdit.js:35
 msgid "Remote ID"
 msgstr "Zdalny ID"
 
-#: proxmox-backup/www/config/SyncView.js:235
+#: proxmox-backup/www/config/SyncView.js:322
 msgid "Remote Namespace"
 msgstr "Zdalna przestrzeń nazw"
 
-#: proxmox-backup/www/config/SyncView.js:229
+#: proxmox-backup/www/config/SyncView.js:316
 msgid "Remote Store"
 msgstr "Zdalny magazyn"
 
@@ -9144,7 +9187,7 @@ msgid "Remove all Attachments"
 msgstr "Usuń wszystkie załączniki"
 
 #: proxmox-backup/www/config/PruneView.js:150
-#: proxmox-backup/www/config/SyncView.js:175
+#: proxmox-backup/www/config/SyncView.js:217
 #: proxmox-backup/www/config/VerifyView.js:156
 #: proxmox-backup/www/tape/BackupJobs.js:157
 msgid "Remove entry?"
@@ -9418,7 +9461,7 @@ msgstr "Reguły retencji"
 msgid "Retired"
 msgstr "Wycofana"
 
-#: proxmox-backup/www/window/DataStoreEdit.js:133
+#: proxmox-backup/www/window/DataStoreEdit.js:135
 #, fuzzy
 msgid "Reuse existing datastore"
 msgstr "Usuń magazyn"
@@ -9548,7 +9591,7 @@ msgstr ""
 #: pve-manager/www/manager6/dc/Backup.js:677
 #: proxmox-backup/www/config/GCView.js:145
 #: proxmox-backup/www/config/PruneView.js:163
-#: proxmox-backup/www/config/SyncView.js:188
+#: proxmox-backup/www/config/SyncView.js:230
 #: proxmox-backup/www/config/VerifyView.js:169
 #: proxmox-backup/www/tape/BackupJobs.js:170
 msgid "Run now"
@@ -9724,7 +9767,7 @@ msgstr "Skanowanie..."
 #: pve-manager/www/manager6/window/ScheduleSimulator.js:83
 #: proxmox-backup/www/config/GCView.js:163
 #: proxmox-backup/www/config/PruneView.js:204
-#: proxmox-backup/www/config/SyncView.js:270
+#: proxmox-backup/www/config/SyncView.js:358
 #: proxmox-backup/www/config/VerifyView.js:224
 #: proxmox-backup/www/tape/BackupJobs.js:231
 #: proxmox-backup/www/tape/window/TapeBackupJob.js:158
@@ -9791,6 +9834,7 @@ msgstr "Przegląd OSD.{0}"
 #: pve-manager/www/manager6/panel/ConfigPanel.js:216
 #: pve-manager/www/manager6/storage/ContentView.js:107
 #: pve-manager/www/manager6/storage/TemplateView.js:45
+#: proxmox-backup/www/config/SyncView.js:237
 #: proxmox-backup/www/datastore/Content.js:1267
 msgid "Search"
 msgstr "Szukaj"
@@ -10178,7 +10222,7 @@ msgstr "Pokaż odcisk"
 
 #: proxmox-backup/www/config/GCView.js:138
 #: proxmox-backup/www/config/PruneView.js:156
-#: proxmox-backup/www/config/SyncView.js:181
+#: proxmox-backup/www/config/SyncView.js:223
 #: proxmox-backup/www/config/VerifyView.js:162
 #: proxmox-backup/www/tape/BackupJobs.js:163
 msgid "Show Log"
@@ -10720,7 +10764,7 @@ msgstr "Statystyki po ostatnim usuwaniu"
 #: pve-manager/www/manager6/window/BulkAction.js:284
 #: proxmox-backup/www/Subscription.js:102 proxmox-backup/www/Utils.js:676
 #: proxmox-backup/www/config/PruneView.js:243
-#: proxmox-backup/www/config/SyncView.js:291
+#: proxmox-backup/www/config/SyncView.js:379
 #: proxmox-backup/www/config/VerifyView.js:245
 #: proxmox-backup/www/dashboard/LongestTasks.js:91
 #: proxmox-backup/www/tape/BackupJobs.js:252
@@ -11005,18 +11049,10 @@ msgstr ""
 msgid "Sync Job - Push Direction"
 msgstr ""
 
-#: proxmox-backup/www/config/SyncPullPushView.js:4
+#: proxmox-backup/www/config/SyncView.js:29
 #: proxmox-backup/www/window/NotifyOptions.js:116
 msgid "Sync Jobs"
 msgstr "Zadania synchronizacji"
-
-#: proxmox-backup/www/config/SyncView.js:29
-msgid "Sync Jobs - Pull Direction"
-msgstr ""
-
-#: proxmox-backup/www/config/SyncView.js:35
-msgid "Sync Jobs - Push Direction"
-msgstr ""
 
 #: proxmox-backup/www/Utils.js:847
 #: proxmox-backup/www/datastore/OptionView.js:269
@@ -11791,7 +11827,7 @@ msgstr "Kontrola ruchu sieciowego"
 msgid "Transfer"
 msgstr "Transfer"
 
-#: proxmox-backup/www/config/SyncView.js:263
+#: proxmox-backup/www/config/SyncView.js:351
 #: proxmox-backup/www/window/SyncJobEdit.js:376
 msgid "Transfer Last"
 msgstr "Ostatni transfer"
@@ -12058,6 +12094,7 @@ msgid "Unmount Device"
 msgstr "Urządzenie USB"
 
 #: proxmox-backup/www/Utils.js:805
+#: proxmox-backup/www/window/MaintenanceOptions.js:92
 #, fuzzy
 msgid "Unmounting"
 msgstr "Odmontuj"
@@ -13857,6 +13894,9 @@ msgstr "{0}% z {1}"
 #~ msgid "1"
 #~ msgstr "1"
 
+#~ msgid "Add NS"
+#~ msgstr "Dodaj NS"
+
 #, fuzzy
 #~ msgid "Add Storages"
 #~ msgstr "Przestrzeń"
@@ -14216,6 +14256,10 @@ msgstr "{0}% z {1}"
 #, fuzzy
 #~ msgid "Number of replicas"
 #~ msgstr "Uzytkownicy"
+
+#, fuzzy
+#~ msgid "On device path"
+#~ msgstr "Urządzenie"
 
 #~ msgid "Only Errors"
 #~ msgstr "Tylko błędy"
