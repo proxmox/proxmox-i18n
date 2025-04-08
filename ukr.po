@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: proxmox translations\n"
 "Report-Msgid-Bugs-To: <support@proxmox.com>\n"
-"POT-Creation-Date: Mon Apr  7 18:30:26 2025\n"
+"POT-Creation-Date: Tue Apr  8 12:23:34 2025\n"
 "PO-Revision-Date: 2025-03-20 15:37+0200\n"
 "Last-Translator: Oleksandr KHarchenko <zloymonah@gmail.com>\n"
 "Language-Team: AMS Team (AngryMonk)\n"
@@ -50,6 +50,7 @@ msgstr ".zip"
 
 #: pve-manager/www/manager6/lxc/MPEdit.js:246
 #: pve-manager/www/manager6/storage/CIFSEdit.js:228
+#: pve-manager/www/manager6/window/DirMapEdit.js:170
 msgid "/some/path"
 msgstr "/деякий/шлях"
 
@@ -196,7 +197,7 @@ msgstr "API Токен"
 msgid "APT Repositories"
 msgstr "Репозиторії APT"
 
-#: pve-manager/www/manager6/window/UploadToStorage.js:255
+#: pve-manager/www/manager6/window/UploadToStorage.js:276
 msgid "Abort"
 msgstr "Перервати"
 
@@ -330,7 +331,7 @@ msgstr "Активність"
 #: pve-manager/www/manager6/node/ACME.js:605
 #: pve-manager/www/manager6/panel/IPSet.js:345
 #: pve-manager/www/manager6/panel/MultiDiskEdit.js:256
-#: pve-manager/www/manager6/qemu/HardwareView.js:678
+#: pve-manager/www/manager6/qemu/HardwareView.js:690
 #: pve-manager/www/manager6/sdn/ControllerView.js:91
 #: pve-manager/www/manager6/sdn/DnsView.js:91
 #: pve-manager/www/manager6/sdn/IpamView.js:89
@@ -365,6 +366,11 @@ msgstr "Додайте обліковий запис ACME"
 #: proxmox-backup/www/NavigationTree.js:124
 msgid "Add Datastore"
 msgstr "Додати Сховище даних"
+
+#: pve-manager/www/manager6/window/DirMapEdit.js:26
+#, fuzzy
+msgid "Add Directory Mapping"
+msgstr "Сховище каталогів"
 
 #: pve-manager/www/manager6/qemu/SystemEdit.js:117
 msgid "Add EFI Disk"
@@ -624,6 +630,10 @@ msgstr "Політика виділення"
 msgid "Allow Debugging"
 msgstr "Дозволити налагодження"
 
+#: pve-manager/www/manager6/qemu/VirtiofsEdit.js:87
+msgid "Allow Direct IO"
+msgstr ""
+
 #: pmg-gui/js/SpamQuarantineOptions.js:68
 #: pmg-gui/js/VirusQuarantineOptions.js:20
 msgid "Allow HREFs"
@@ -745,7 +755,7 @@ msgid "Are you sure to remove the subscription key?"
 msgstr "Ви впевнені, що хочете видалити ключ підписки?"
 
 #: pve-manager/www/manager6/lxc/Resources.js:244
-#: pve-manager/www/manager6/qemu/HardwareView.js:489
+#: pve-manager/www/manager6/qemu/HardwareView.js:499
 msgid "Are you sure you want to detach entry {0}"
 msgstr "Ви впевнені, що хочете від’єднати {0}"
 
@@ -785,7 +795,7 @@ msgstr "Ви впевнені, що хочете вилучити DHCP відо�
 #: pve-manager/www/manager6/lxc/Network.js:459
 #: pve-manager/www/manager6/lxc/Resources.js:242
 #: pve-manager/www/manager6/qemu/CloudInit.js:14
-#: pve-manager/www/manager6/qemu/HardwareView.js:487
+#: pve-manager/www/manager6/qemu/HardwareView.js:497
 #: pve-manager/www/manager6/tree/SnapshotTree.js:299
 msgid "Are you sure you want to remove entry {0}"
 msgstr "Ви впевнені, що хочете видалити {0}"
@@ -876,7 +886,7 @@ msgstr "Атрибут"
 #: pve-manager/www/manager6/qemu/AudioEdit.js:24
 #: pve-manager/www/manager6/qemu/AudioEdit.js:47
 #: pve-manager/www/manager6/qemu/HardwareView.js:303
-#: pve-manager/www/manager6/qemu/HardwareView.js:738
+#: pve-manager/www/manager6/qemu/HardwareView.js:750
 msgid "Audio Device"
 msgstr "Аудіопристрій"
 
@@ -1027,7 +1037,7 @@ msgstr "Рейтинг підроблених звітів про недоста
 #: pmg-gui/js/BackupConfiguration.js:5 pmg-gui/js/BackupRestore.js:78
 #: pmg-gui/js/BackupRestore.js:81 pmg-gui/js/BackupRestore.js:102
 #: pmg-gui/js/Utils.js:891 pve-manager/www/manager6/Utils.js:689
-#: pve-manager/www/manager6/Utils.js:2073
+#: pve-manager/www/manager6/Utils.js:2074
 #: pve-manager/www/manager6/dc/Config.js:70
 #: pve-manager/www/manager6/lxc/Config.js:296
 #: pve-manager/www/manager6/lxc/MPEdit.js:258
@@ -1057,7 +1067,7 @@ msgstr "Група резервних копій"
 msgid "Backup Groups"
 msgstr "Групи резервних копій"
 
-#: pve-manager/www/manager6/Utils.js:2073
+#: pve-manager/www/manager6/Utils.js:2074
 #: pve-manager/www/manager6/dc/Backup.js:9
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:52
 msgid "Backup Job"
@@ -1097,7 +1107,7 @@ msgstr "Час Резервного копіювання"
 msgid "Backup content type not available for this storage."
 msgstr "Резервні копії недоступні, для цього сховища."
 
-#: pve-manager/www/manager6/Utils.js:2097
+#: pve-manager/www/manager6/Utils.js:2098
 msgid "Backup notifications"
 msgstr "Сповіщення про резервне копіювання"
 
@@ -1334,15 +1344,15 @@ msgstr "Масовий Старт"
 msgid "Bulk Suspend"
 msgstr "Масова Призупинка"
 
-#: pve-manager/www/manager6/Utils.js:2034
+#: pve-manager/www/manager6/Utils.js:2035
 msgid "Bulk migrate VMs and Containers"
 msgstr "Масова міграція ВМ та Контейнерів"
 
-#: pve-manager/www/manager6/Utils.js:2063
+#: pve-manager/www/manager6/Utils.js:2064
 msgid "Bulk shutdown VMs and Containers"
 msgstr "Масове вимкнення ВМ та Контейнерів"
 
-#: pve-manager/www/manager6/Utils.js:2062
+#: pve-manager/www/manager6/Utils.js:2063
 msgid "Bulk start VMs and Containers"
 msgstr "Масовий запуск ВМ та Контейнерів"
 
@@ -1385,7 +1395,7 @@ msgstr ""
 "дисковод '{0}' на вкладці 'Додатково'."
 
 #: pve-manager/www/manager6/qemu/HardwareView.js:234
-#: pve-manager/www/manager6/qemu/HardwareView.js:689
+#: pve-manager/www/manager6/qemu/HardwareView.js:701
 msgid "CD/DVD Drive"
 msgstr "Привід CD/DVD"
 
@@ -1469,6 +1479,7 @@ msgid "CT Volumes"
 msgstr "Тома Контейнерів"
 
 #: pve-manager/www/manager6/qemu/HDEdit.js:245
+#: pve-manager/www/manager6/qemu/VirtiofsEdit.js:49
 msgid "Cache"
 msgstr "Кеш"
 
@@ -1636,7 +1647,7 @@ msgstr "Змінити Пароль"
 msgid "Change Protection"
 msgstr "Захист від змін"
 
-#: pve-manager/www/manager6/Utils.js:2018
+#: pve-manager/www/manager6/Utils.js:2019
 msgid "Change global Ceph flags"
 msgstr "Змінити глобальні прапори Ceph"
 
@@ -1694,8 +1705,8 @@ msgstr "Перевірка"
 msgid "Check connection"
 msgstr "Перевірте підключення"
 
-#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:200
-#: pve-manager/www/manager6/window/UploadToStorage.js:226
+#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:204
+#: pve-manager/www/manager6/window/UploadToStorage.js:242
 msgid "Checksum"
 msgstr "Контрольна сума"
 
@@ -1817,8 +1828,8 @@ msgstr "Обмеження швидкості клієнтських повід�
 msgid "Clipboard"
 msgstr "Буфер обміну"
 
-#: pve-manager/www/manager6/Utils.js:2039
-#: pve-manager/www/manager6/Utils.js:2069
+#: pve-manager/www/manager6/Utils.js:2040
+#: pve-manager/www/manager6/Utils.js:2070
 #: pve-manager/www/manager6/dc/OptionView.js:306
 #: pve-manager/www/manager6/lxc/CmdMenu.js:89
 #: pve-manager/www/manager6/lxc/Config.js:115
@@ -1839,7 +1850,7 @@ msgstr "Закрити"
 #: pve-manager/www/manager6/qemu/CIDriveEdit.js:41
 #: pve-manager/www/manager6/qemu/CIDriveEdit.js:61
 #: pve-manager/www/manager6/qemu/HardwareView.js:235
-#: pve-manager/www/manager6/qemu/HardwareView.js:731
+#: pve-manager/www/manager6/qemu/HardwareView.js:743
 msgid "CloudInit Drive"
 msgstr "CloudInit Диск"
 
@@ -1963,6 +1974,7 @@ msgstr "Команда"
 #: pve-manager/www/manager6/dc/AuthView.js:35
 #: pve-manager/www/manager6/dc/Backup.js:847
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:263
+#: pve-manager/www/manager6/dc/DirMapView.js:30
 #: pve-manager/www/manager6/dc/GroupEdit.js:35
 #: pve-manager/www/manager6/dc/GroupView.js:85
 #: pve-manager/www/manager6/dc/PCIMapView.js:106
@@ -1977,6 +1989,7 @@ msgstr "Команда"
 #: pve-manager/www/manager6/dc/UserEdit.js:126
 #: pve-manager/www/manager6/dc/UserView.js:236
 #: pve-manager/www/manager6/form/BridgeSelector.js:34
+#: pve-manager/www/manager6/form/DirMapSelector.js:29
 #: pve-manager/www/manager6/form/GroupSelector.js:32
 #: pve-manager/www/manager6/form/IPRefSelector.js:93
 #: pve-manager/www/manager6/form/NotificationTargetSelector.js:46
@@ -2001,6 +2014,7 @@ msgstr "Команда"
 #: pve-manager/www/manager6/panel/IPSet.js:244
 #: pve-manager/www/manager6/panel/IPSet.js:410
 #: pve-manager/www/manager6/pool/StatusView.js:20
+#: pve-manager/www/manager6/window/DirMapEdit.js:194
 #: pve-manager/www/manager6/window/PCIMapEdit.js:280
 #: pve-manager/www/manager6/window/USBMapEdit.js:237
 #: proxmox-backup/www/config/MetricServerView.js:78
@@ -2092,7 +2106,7 @@ msgstr "Лише зміна конфігурації, жодні дані не �
 msgid "Configuration for {0} not correct ('{1}' != '{2}')"
 msgstr "Конфігурація для {0} неправильна ('{1}' != '{2}')"
 
-#: pve-manager/www/manager6/Utils.js:2040
+#: pve-manager/www/manager6/Utils.js:2041
 msgid "Configure"
 msgstr "Налаштувати"
 
@@ -2171,7 +2185,7 @@ msgstr "Інформація про підключення"
 #: proxmox-widget-toolkit/src/Utils.js:513
 #: proxmox-widget-toolkit/src/Utils.js:515
 #: proxmox-widget-toolkit/src/Utils.js:517
-#: pve-manager/www/manager6/Utils.js:673 pve-manager/www/manager6/Utils.js:1737
+#: pve-manager/www/manager6/Utils.js:673 pve-manager/www/manager6/Utils.js:1738
 msgid "Connection error"
 msgstr "Помилка з'єднання"
 
@@ -2189,8 +2203,8 @@ msgid "Consent Text"
 msgstr "Текст згоди"
 
 #: proxmox-widget-toolkit/src/Utils.js:708 pmg-gui/js/ServerStatus.js:59
-#: pve-manager/www/manager6/Utils.js:2060
-#: pve-manager/www/manager6/Utils.js:2067
+#: pve-manager/www/manager6/Utils.js:2061
+#: pve-manager/www/manager6/Utils.js:2068
 #: pve-manager/www/manager6/button/ConsoleButton.js:20
 #: pve-manager/www/manager6/lxc/CmdMenu.js:132
 #: pve-manager/www/manager6/lxc/Config.js:244
@@ -2271,8 +2285,8 @@ msgstr "Контролер"
 msgid "Controllers"
 msgstr "Контролери"
 
-#: pve-manager/www/manager6/Utils.js:2057
-#: pve-manager/www/manager6/Utils.js:2085
+#: pve-manager/www/manager6/Utils.js:2058
+#: pve-manager/www/manager6/Utils.js:2086
 #: pve-manager/www/manager6/lxc/CmdMenu.js:115
 #: pve-manager/www/manager6/lxc/Config.js:129
 #: pve-manager/www/manager6/qemu/CmdMenu.js:142
@@ -2306,7 +2320,7 @@ msgstr "Копіювати Ключі Відновлення"
 msgid "Copy Secret Value"
 msgstr "Копіювати Ключ"
 
-#: pve-manager/www/manager6/Utils.js:2028
+#: pve-manager/www/manager6/Utils.js:2029
 msgid "Copy data"
 msgstr "Копіювати дані"
 
@@ -2363,18 +2377,18 @@ msgstr "Кількість"
 #: pmg-gui/js/MailProxyTLSInboundDomains.js:67 pmg-gui/js/MyNetworks.js:61
 #: pmg-gui/js/ObjectGroupList.js:99 pmg-gui/js/RelayDomains.js:71
 #: pmg-gui/js/SpamDetectorCustom.js:221 pmg-gui/js/Transport.js:50
-#: pve-manager/www/manager6/Utils.js:2005
 #: pve-manager/www/manager6/Utils.js:2006
 #: pve-manager/www/manager6/Utils.js:2007
 #: pve-manager/www/manager6/Utils.js:2008
 #: pve-manager/www/manager6/Utils.js:2009
-#: pve-manager/www/manager6/Utils.js:2016
-#: pve-manager/www/manager6/Utils.js:2021
-#: pve-manager/www/manager6/Utils.js:2030
-#: pve-manager/www/manager6/Utils.js:2032
-#: pve-manager/www/manager6/Utils.js:2041
-#: pve-manager/www/manager6/Utils.js:2070
-#: pve-manager/www/manager6/Utils.js:2087
+#: pve-manager/www/manager6/Utils.js:2010
+#: pve-manager/www/manager6/Utils.js:2017
+#: pve-manager/www/manager6/Utils.js:2022
+#: pve-manager/www/manager6/Utils.js:2031
+#: pve-manager/www/manager6/Utils.js:2033
+#: pve-manager/www/manager6/Utils.js:2042
+#: pve-manager/www/manager6/Utils.js:2071
+#: pve-manager/www/manager6/Utils.js:2088
 #: pve-manager/www/manager6/ceph/Pool.js:460
 #: pve-manager/www/manager6/ceph/Pool.js:482
 #: pve-manager/www/manager6/ceph/ServiceList.js:336
@@ -2404,7 +2418,7 @@ msgstr "Створити Контейнер"
 msgid "Create CephFS"
 msgstr "Створити CephFS"
 
-#: pmg-gui/js/Utils.js:892 pve-manager/www/manager6/Utils.js:2019
+#: pmg-gui/js/Utils.js:892 pve-manager/www/manager6/Utils.js:2020
 #: pve-manager/www/manager6/dc/Cluster.js:152
 #: pve-manager/www/manager6/dc/ClusterEdit.js:5
 msgid "Create Cluster"
@@ -2698,7 +2712,7 @@ msgstr "Дні"
 msgid "Days to show"
 msgstr "Кількість днів для відображення"
 
-#: pve-manager/www/manager6/Utils.js:1996
+#: pve-manager/www/manager6/Utils.js:1997
 msgid "Deactivate"
 msgstr "Деактивувати"
 
@@ -2710,7 +2724,7 @@ msgstr "Деактивувати обліковий запис {0}"
 msgid "Decode"
 msgstr "Розшифрувати"
 
-#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:221
+#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:225
 msgid "Decompression algorithm"
 msgstr "Алгоритм розпакування"
 
@@ -2847,8 +2861,8 @@ msgstr "Видалити"
 msgid "Delete Custom Certificate"
 msgstr "Видалити сертифікат користувача"
 
-#: pve-manager/www/manager6/Utils.js:2042
-#: pve-manager/www/manager6/Utils.js:2071
+#: pve-manager/www/manager6/Utils.js:2043
+#: pve-manager/www/manager6/Utils.js:2072
 msgid "Delete Snapshot"
 msgstr "Видалити знімок"
 
@@ -2940,14 +2954,14 @@ msgstr "Порт призначення"
 msgid "Destination"
 msgstr "Одержувач"
 
-#: pve-manager/www/manager6/Utils.js:2010
 #: pve-manager/www/manager6/Utils.js:2011
 #: pve-manager/www/manager6/Utils.js:2012
 #: pve-manager/www/manager6/Utils.js:2013
 #: pve-manager/www/manager6/Utils.js:2014
 #: pve-manager/www/manager6/Utils.js:2015
-#: pve-manager/www/manager6/Utils.js:2043
-#: pve-manager/www/manager6/Utils.js:2072
+#: pve-manager/www/manager6/Utils.js:2016
+#: pve-manager/www/manager6/Utils.js:2044
+#: pve-manager/www/manager6/Utils.js:2073
 #: pve-manager/www/manager6/ceph/OSD.js:208
 #: pve-manager/www/manager6/ceph/OSD.js:951
 #: pve-manager/www/manager6/ceph/Pool.js:506
@@ -2975,7 +2989,7 @@ msgstr "Знищити простір імен '{0}'"
 msgid "Destroy all data (dangerous!)"
 msgstr "Знищити всі дані (небезпечно!)"
 
-#: pve-manager/www/manager6/Utils.js:2065
+#: pve-manager/www/manager6/Utils.js:2066
 msgid "Destroy image from unknown guest"
 msgstr "Знищити образ від невідомого гостя"
 
@@ -2984,7 +2998,7 @@ msgid "Destroy unreferenced disks owned by guest"
 msgstr "Знищити диски без посилань, що належать гостю"
 
 #: pve-manager/www/manager6/lxc/Resources.js:237
-#: pve-manager/www/manager6/qemu/HardwareView.js:481
+#: pve-manager/www/manager6/qemu/HardwareView.js:491
 msgid "Detach"
 msgstr "Від'єднати"
 
@@ -3071,7 +3085,7 @@ msgstr "Напрямок"
 #: proxmox-widget-toolkit/src/Schema.js:91
 #: proxmox-widget-toolkit/src/Utils.js:61
 #: proxmox-widget-toolkit/src/window/ACMEAccount.js:174
-#: pve-manager/www/manager6/Utils.js:2022
+#: pve-manager/www/manager6/Utils.js:2023
 #: pve-manager/www/manager6/node/Directory.js:145
 #: pve-manager/www/manager6/node/Directory.js:170
 #: pve-manager/www/manager6/storage/DirEdit.js:14
@@ -3079,7 +3093,23 @@ msgstr "Напрямок"
 msgid "Directory"
 msgstr "Каталог"
 
-#: pve-manager/www/manager6/Utils.js:2021 proxmox-backup/www/Utils.js:409
+#: pve-manager/www/manager6/form/DirMapSelector.js:24
+#: pve-manager/www/manager6/qemu/VirtiofsEdit.js:34
+#, fuzzy
+msgid "Directory ID"
+msgstr "Каталог"
+
+#: pve-manager/www/manager6/dc/Config.js:337
+#, fuzzy
+msgid "Directory Mappings"
+msgstr "Сховище каталогів"
+
+#: pve-manager/www/manager6/qemu/VirtiofsEdit.js:42
+msgid ""
+"Directory Mappings can be managed under Datacenter -> Directory Mappings"
+msgstr ""
+
+#: pve-manager/www/manager6/Utils.js:2022 proxmox-backup/www/Utils.js:409
 msgid "Directory Storage"
 msgstr "Сховище каталогів"
 
@@ -3145,7 +3175,7 @@ msgstr "Відключено"
 msgid "Disk"
 msgstr "Диск"
 
-#: pve-manager/www/manager6/qemu/HardwareView.js:466
+#: pve-manager/www/manager6/qemu/HardwareView.js:476
 msgid "Disk Action"
 msgstr "Дія над Диском"
 
@@ -3255,7 +3285,7 @@ msgstr "Вниз"
 #: pmg-gui/js/AttachmentGrid.js:124 pmg-gui/js/AttachmentQuarantine.js:125
 #: pmg-gui/js/BackupRestore.js:190 pmg-gui/js/SpamQuarantine.js:242
 #: pmg-gui/js/Subscription.js:60 pmg-gui/js/VirusQuarantine.js:138
-#: pve-manager/www/manager6/Utils.js:2023
+#: pve-manager/www/manager6/Utils.js:2024
 #: pve-manager/www/manager6/node/Subscription.js:65
 #: pve-manager/www/manager6/storage/PBSEdit.js:79
 #: pve-manager/www/manager6/storage/TemplateView.js:127
@@ -3411,7 +3441,7 @@ msgstr "EB"
 
 #: pve-manager/www/manager6/qemu/HDEfi.js:95
 #: pve-manager/www/manager6/qemu/HardwareView.js:255
-#: pve-manager/www/manager6/qemu/HardwareView.js:546
+#: pve-manager/www/manager6/qemu/HardwareView.js:556
 msgid "EFI Disk"
 msgstr "EFI Диск"
 
@@ -3460,7 +3490,7 @@ msgstr "Назва(и) атрибута електронної пошти"
 #: pmg-gui/js/Transport.js:64 pmg-gui/js/UserView.js:127
 #: pmg-gui/js/VirusDetectorOptions.js:49
 #: pmg-gui/js/VirusQuarantineOptions.js:30
-#: pve-manager/www/manager6/Utils.js:2017
+#: pve-manager/www/manager6/Utils.js:2018
 #: pve-manager/www/manager6/ceph/Pool.js:444
 #: pve-manager/www/manager6/ceph/Pool.js:499
 #: pve-manager/www/manager6/dc/AuthView.js:113
@@ -3491,7 +3521,7 @@ msgstr "Назва(и) атрибута електронної пошти"
 #: pve-manager/www/manager6/panel/IPSet.js:98
 #: pve-manager/www/manager6/panel/IPSet.js:337
 #: pve-manager/www/manager6/qemu/CloudInit.js:74
-#: pve-manager/www/manager6/qemu/HardwareView.js:391
+#: pve-manager/www/manager6/qemu/HardwareView.js:401
 #: pve-manager/www/manager6/qemu/Options.js:361
 #: pve-manager/www/manager6/sdn/ControllerView.js:54
 #: pve-manager/www/manager6/sdn/DnsView.js:54
@@ -3672,6 +3702,10 @@ msgstr "Увімкнути нових користувачів"
 msgid "Enable quota"
 msgstr "Увімкнути квоту"
 
+#: pve-manager/www/manager6/qemu/VirtiofsEdit.js:69
+msgid "Enable support for extended attributes."
+msgstr ""
+
 #: proxmox-widget-toolkit/src/Utils.js:46
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:242
 #: proxmox-widget-toolkit/src/panel/TfaView.js:222
@@ -3780,7 +3814,7 @@ msgstr "Англійська"
 msgid "Ensure underlying storage honors access time updates"
 msgstr ""
 
-#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:136
+#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:140
 msgid "Enter URL to download"
 msgstr "Введіть URL для завантаження"
 
@@ -3808,7 +3842,7 @@ msgstr "Запис"
 msgid "Envelope"
 msgstr "Конверт"
 
-#: pve-manager/www/manager6/Utils.js:2029
+#: pve-manager/www/manager6/Utils.js:2030
 msgid "Erase data"
 msgstr "Стерти дані"
 
@@ -3921,6 +3955,7 @@ msgstr "Стирання"
 #: pve-manager/www/manager6/qemu/IPConfigEdit.js:236
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:246
 #: pve-manager/www/manager6/qemu/Smbios1Edit.js:114
+#: pve-manager/www/manager6/qemu/VirtiofsEdit.js:128
 #: pve-manager/www/manager6/sdn/StatusView.js:55
 #: pve-manager/www/manager6/sdn/VnetACLView.js:205
 #: pve-manager/www/manager6/storage/TemplateView.js:139
@@ -3928,6 +3963,7 @@ msgstr "Стирання"
 #: pve-manager/www/manager6/tree/ResourceMapTree.js:176
 #: pve-manager/www/manager6/tree/SnapshotTree.js:85
 #: pve-manager/www/manager6/window/Backup.js:196
+#: pve-manager/www/manager6/window/DirMapEdit.js:57
 #: pve-manager/www/manager6/window/DownloadUrlToStorage.js:74
 #: pve-manager/www/manager6/window/FirewallEnableEdit.js:40
 #: pve-manager/www/manager6/window/GuestDiskReassign.js:94
@@ -3938,9 +3974,9 @@ msgstr "Стирання"
 #: pve-manager/www/manager6/window/Prune.js:106
 #: pve-manager/www/manager6/window/Restore.js:84
 #: pve-manager/www/manager6/window/ScheduleSimulator.js:37
-#: pve-manager/www/manager6/window/UploadToStorage.js:105
-#: pve-manager/www/manager6/window/UploadToStorage.js:111
-#: pve-manager/www/manager6/window/UploadToStorage.js:117
+#: pve-manager/www/manager6/window/UploadToStorage.js:114
+#: pve-manager/www/manager6/window/UploadToStorage.js:120
+#: pve-manager/www/manager6/window/UploadToStorage.js:126
 #: proxmox-backup/www/LoginView.js:64 proxmox-backup/www/LoginView.js:105
 #: proxmox-backup/www/LoginView.js:201 proxmox-backup/www/ServerStatus.js:100
 #: proxmox-backup/www/ServerStatus.js:133 proxmox-backup/www/Utils.js:537
@@ -4197,9 +4233,9 @@ msgstr "Поля"
 
 #: proxmox-widget-toolkit/src/Schema.js:92
 #: proxmox-widget-toolkit/src/panel/Certificates.js:13
-#: pve-manager/www/manager6/Utils.js:2023
+#: pve-manager/www/manager6/Utils.js:2024
 #: pve-manager/www/manager6/node/Certificates.js:293
-#: pve-manager/www/manager6/window/UploadToStorage.js:175
+#: pve-manager/www/manager6/window/UploadToStorage.js:191
 #: proxmox-backup/www/Utils.js:835
 msgid "File"
 msgstr "Файл"
@@ -4211,12 +4247,12 @@ msgstr "Файл"
 msgid "File Restore"
 msgstr "Відновлення файлу"
 
-#: pve-manager/www/manager6/Utils.js:2036
+#: pve-manager/www/manager6/Utils.js:2037
 msgid "File Restore Download"
 msgstr "Завантаження для відновлення файлів"
 
-#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:161
-#: pve-manager/www/manager6/window/UploadToStorage.js:187
+#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:165
+#: pve-manager/www/manager6/window/UploadToStorage.js:203
 msgid "File name"
 msgstr "Ім'я файлу"
 
@@ -4228,8 +4264,8 @@ msgstr ""
 "Файл типу {0} не можна завантажити безпосередньо, замість цього завантажте "
 "батьківський каталог."
 
-#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:169
-#: pve-manager/www/manager6/window/UploadToStorage.js:199
+#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:173
+#: pve-manager/www/manager6/window/UploadToStorage.js:215
 msgid "File size"
 msgstr "Розмір файлу"
 
@@ -4440,7 +4476,7 @@ msgstr "Поля форми не можуть бути надіслані з н�
 #: proxmox-widget-toolkit/src/Toolkit.js:94
 #: pve-manager/www/manager6/Toolkit.js:11
 #: pve-manager/www/manager6/form/DiskStorageSelector.js:161
-#: pve-manager/www/manager6/form/FileSelector.js:73
+#: pve-manager/www/manager6/form/FileSelector.js:83
 #: pve-manager/www/manager6/grid/BackupView.js:360
 #: pve-manager/www/manager6/storage/ContentView.js:180
 #: pve-manager/www/manager6/window/GuestImport.js:699
@@ -4855,7 +4891,7 @@ msgstr "HTTP проксі"
 #: pve-manager/www/manager6/qemu/HDEdit.js:475
 #: pve-manager/www/manager6/qemu/HDEdit.js:477
 #: pve-manager/www/manager6/qemu/HardwareView.js:233
-#: pve-manager/www/manager6/qemu/HardwareView.js:683
+#: pve-manager/www/manager6/qemu/HardwareView.js:695
 msgid "Hard Disk"
 msgstr "Жорсткий диск"
 
@@ -4871,8 +4907,8 @@ msgstr "Обладнання"
 msgid "Hash Policy"
 msgstr "Політика Хешування"
 
-#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:189
-#: pve-manager/www/manager6/window/UploadToStorage.js:215
+#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:193
+#: pve-manager/www/manager6/window/UploadToStorage.js:231
 msgid "Hash algorithm"
 msgstr "Алгоритм Хешування"
 
@@ -4928,7 +4964,7 @@ msgstr "Довідкова"
 msgid "Heuristic Score"
 msgstr "Евристична оцінка"
 
-#: pve-manager/www/manager6/Utils.js:2056
+#: pve-manager/www/manager6/Utils.js:2057
 #: pve-manager/www/manager6/qemu/CmdMenu.js:72
 #: pve-manager/www/manager6/qemu/Config.js:179
 msgid "Hibernate"
@@ -5062,6 +5098,11 @@ msgstr ""
 #: proxmox-widget-toolkit/src/window/TfaWindow.js:84
 msgid "ID {0}"
 msgstr "ID {0}"
+
+#: pve-manager/www/manager6/dc/DirMapView.js:25
+#, fuzzy
+msgid "ID/Node"
+msgstr "ID/Вузол/Шлях"
 
 #: pve-manager/www/manager6/dc/PCIMapView.js:83
 msgid "ID/Node/Path"
@@ -5207,6 +5248,10 @@ msgstr ""
 #: pmg-gui/js/Utils.js:428
 msgid "Ignore header information"
 msgstr "Ігнорувати інформацію заголовка"
+
+#: pve-manager/www/manager6/qemu/VirtiofsEdit.js:75
+msgid "Implies xattr support."
+msgstr ""
 
 #: pve-manager/www/manager6/Utils.js:694
 #: pve-manager/www/manager6/storage/Browser.js:146
@@ -5514,7 +5559,7 @@ msgstr "Коментар до завдання"
 msgid "Job Detail"
 msgstr "Деталі завдання"
 
-#: pve-manager/www/manager6/Utils.js:2092
+#: pve-manager/www/manager6/Utils.js:2093
 #: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:120
 #: proxmox-backup/www/Utils.js:442 proxmox-backup/www/config/PruneView.js:175
 #: proxmox-backup/www/config/SyncView.js:270
@@ -5536,7 +5581,7 @@ msgstr "Симулятор Розкладу Роботи"
 msgid "Join"
 msgstr "Приєднання"
 
-#: pmg-gui/js/Utils.js:893 pve-manager/www/manager6/Utils.js:2020
+#: pmg-gui/js/Utils.js:893 pve-manager/www/manager6/Utils.js:2021
 #: pve-manager/www/manager6/dc/Cluster.js:168
 msgid "Join Cluster"
 msgstr "Приєднати до кластера"
@@ -5723,11 +5768,11 @@ msgstr "Шлях логічного тому"
 msgid "LV UUID"
 msgstr "UUID логічного тому"
 
-#: pve-manager/www/manager6/Utils.js:2030
+#: pve-manager/www/manager6/Utils.js:2031
 msgid "LVM Storage"
 msgstr "Сховище LVM"
 
-#: pve-manager/www/manager6/Utils.js:2032
+#: pve-manager/www/manager6/Utils.js:2033
 msgid "LVM-Thin Storage"
 msgstr "LVM-Тонке Сховище"
 
@@ -6029,7 +6074,7 @@ msgstr "Ротація журналу"
 msgid "Log burst limit"
 msgstr "Ліміт серії журналювання"
 
-#: pve-manager/www/manager6/Utils.js:1762
+#: pve-manager/www/manager6/Utils.js:1763
 msgid "Log in as root to install."
 msgstr "Для встановлення увійдіть як root."
 
@@ -6120,8 +6165,8 @@ msgstr "MDS ID"
 msgid "MDev Type"
 msgstr "Тип MDev"
 
-#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:179
-#: pve-manager/www/manager6/window/UploadToStorage.js:207
+#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:183
+#: pve-manager/www/manager6/window/UploadToStorage.js:223
 msgid "MIME type"
 msgstr "Тип MIME"
 
@@ -6243,6 +6288,11 @@ msgstr "Відображений пристрій"
 #: pve-manager/www/manager6/window/Migrate.js:245
 msgid "Mapped Resources ({0}) not available on selected target."
 msgstr ""
+
+#: pve-manager/www/manager6/qemu/VirtiofsEdit.js:35
+#, fuzzy
+msgid "Mapping ID"
+msgstr "Відображення на Вузлі"
 
 #: pve-manager/www/manager6/form/PCIMapSelector.js:52
 #: pve-manager/www/manager6/form/USBMapSelector.js:37
@@ -6502,9 +6552,9 @@ msgstr "Метричний сервер"
 msgid "MiB"
 msgstr "MiB"
 
-#: pve-manager/www/manager6/Utils.js:2024
-#: pve-manager/www/manager6/Utils.js:2044
-#: pve-manager/www/manager6/Utils.js:2074
+#: pve-manager/www/manager6/Utils.js:2025
+#: pve-manager/www/manager6/Utils.js:2045
+#: pve-manager/www/manager6/Utils.js:2075
 #: pve-manager/www/manager6/lxc/CmdMenu.js:101
 #: pve-manager/www/manager6/lxc/Config.js:95
 #: pve-manager/www/manager6/menu/TemplateMenu.js:29
@@ -6676,7 +6726,7 @@ msgstr "Щомісяця"
 msgid "More"
 msgstr "Додатково"
 
-#: pve-manager/www/manager6/Utils.js:2075
+#: pve-manager/www/manager6/Utils.js:2076
 #: proxmox-backup/www/datastore/Summary.js:268
 msgid "Mount"
 msgstr "Підключити"
@@ -6711,21 +6761,21 @@ msgid "Mounted"
 msgstr "Підключений"
 
 #: pve-manager/www/manager6/lxc/Resources.js:273
-#: pve-manager/www/manager6/qemu/HardwareView.js:398
+#: pve-manager/www/manager6/qemu/HardwareView.js:408
 msgid "Move Storage"
 msgstr "Перемістити Сховище"
 
-#: pve-manager/www/manager6/Utils.js:2035
+#: pve-manager/www/manager6/Utils.js:2036
 #: pve-manager/www/manager6/qemu/HDMove.js:28
 msgid "Move Volume"
 msgstr "Перемістити Том"
 
-#: pve-manager/www/manager6/Utils.js:2045
+#: pve-manager/www/manager6/Utils.js:2046
 #: pve-manager/www/manager6/qemu/HDMove.js:28
 msgid "Move disk"
 msgstr "Перемістити диск"
 
-#: pve-manager/www/manager6/qemu/HardwareView.js:399
+#: pve-manager/www/manager6/qemu/HardwareView.js:409
 msgid "Move disk to another storage"
 msgstr "Перемістіть диск в інше сховище"
 
@@ -6844,7 +6894,7 @@ msgstr "Диски NVMe наразі не підтримуються, '{0}' бу
 #: pve-manager/www/manager6/dc/RoleView.js:58
 #: pve-manager/www/manager6/dc/SecurityGroups.js:30
 #: pve-manager/www/manager6/dc/UserView.js:193
-#: pve-manager/www/manager6/form/FileSelector.js:67
+#: pve-manager/www/manager6/form/FileSelector.js:77
 #: pve-manager/www/manager6/form/IPRefSelector.js:78
 #: pve-manager/www/manager6/form/StorageSelector.js:20
 #: pve-manager/www/manager6/form/USBMapSelector.js:25
@@ -6879,6 +6929,7 @@ msgstr "Диски NVMe наразі не підтримуються, '{0}' бу
 #: pve-manager/www/manager6/tree/SnapshotTree.js:333
 #: pve-manager/www/manager6/window/BulkAction.js:277
 #: pve-manager/www/manager6/window/Clone.js:199
+#: pve-manager/www/manager6/window/DirMapEdit.js:133
 #: pve-manager/www/manager6/window/GuestImport.js:506
 #: pve-manager/www/manager6/window/PCIMapEdit.js:199
 #: pve-manager/www/manager6/window/Restore.js:317
@@ -6990,7 +7041,7 @@ msgstr "Конфігурація мережі"
 #: proxmox-widget-toolkit/src/Utils.js:653
 #: pve-manager/www/manager6/lxc/Network.js:326
 #: pve-manager/www/manager6/qemu/HardwareView.js:247
-#: pve-manager/www/manager6/qemu/HardwareView.js:695
+#: pve-manager/www/manager6/qemu/HardwareView.js:707
 #: pve-manager/www/manager6/qemu/IPConfigEdit.js:66
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:232
 msgid "Network Device"
@@ -7447,11 +7498,12 @@ msgstr "Без підписки"
 #: pve-manager/www/manager6/sdn/StatusView.js:73
 #: pve-manager/www/manager6/sdn/controllers/BgpEdit.js:26
 #: pve-manager/www/manager6/sdn/controllers/IsisEdit.js:26
+#: pve-manager/www/manager6/window/DirMapEdit.js:145
 #: pve-manager/www/manager6/window/Settings.js:188
 msgid "Node"
 msgstr "Вузол"
 
-#: pve-manager/www/manager6/Utils.js:2099
+#: pve-manager/www/manager6/Utils.js:2100
 msgid "Node fencing notifications"
 msgstr "Сповіщення огородження Вузла"
 
@@ -7670,7 +7722,7 @@ msgstr "Система сповіщення"
 msgid "Notification type"
 msgstr "Тип сповіщення"
 
-#: pve-manager/www/manager6/dc/Config.js:343
+#: pve-manager/www/manager6/dc/Config.js:349
 #: proxmox-backup/www/NavigationTree.js:72
 msgid "Notifications"
 msgstr "Сповіщення"
@@ -7905,7 +7957,7 @@ msgstr "Опції"
 msgid "Order"
 msgstr "Порядок"
 
-#: pve-manager/www/manager6/Utils.js:1997 proxmox-backup/www/Utils.js:401
+#: pve-manager/www/manager6/Utils.js:1998 proxmox-backup/www/Utils.js:401
 msgid "Order Certificate"
 msgstr "Замовити сертифікати"
 
@@ -8039,7 +8091,7 @@ msgid "PBS change detection mode"
 msgstr "PBS змінити режим виявлення"
 
 #: pve-manager/www/manager6/qemu/HardwareView.js:285
-#: pve-manager/www/manager6/qemu/HardwareView.js:717
+#: pve-manager/www/manager6/qemu/HardwareView.js:729
 #: pve-manager/www/manager6/qemu/PCIEdit.js:344
 msgid "PCI Device"
 msgstr "PCI-Пристрій"
@@ -8061,12 +8113,16 @@ msgstr "PEM"
 msgid "PG Autoscaler Mode"
 msgstr "Режим автомасштабування PG"
 
+#: pve-manager/www/manager6/qemu/VirtiofsEdit.js:74
+msgid "POSIX ACLs"
+msgstr ""
+
 #: proxmox-widget-toolkit/src/node/APT.js:19
 #: pve-manager/www/manager6/storage/TemplateView.js:71
 msgid "Package"
 msgstr "Пакет"
 
-#: pve-manager/www/manager6/Utils.js:2096 proxmox-backup/www/Utils.js:449
+#: pve-manager/www/manager6/Utils.js:2097 proxmox-backup/www/Utils.js:449
 msgid "Package updates are available"
 msgstr "Доступне оновлення пакетів"
 
@@ -8149,6 +8205,7 @@ msgstr "Вставте сюди закодовану інформацію про
 #: pve-manager/www/manager6/node/Directory.js:107
 #: pve-manager/www/manager6/sdn/VnetACLView.js:20
 #: pve-manager/www/manager6/storage/BTRFSEdit.js:14
+#: pve-manager/www/manager6/window/DirMapEdit.js:176
 #: proxmox-backup/www/DirectoryList.js:138
 #: proxmox-backup/www/config/ACLView.js:176
 #: proxmox-backup/www/form/PartitionSelector.js:52
@@ -8171,7 +8228,7 @@ msgstr "Шлях має починатися з /dev/"
 msgid "Path on Device"
 msgstr "Шлях на Пристрої"
 
-#: pve-manager/www/manager6/Utils.js:2046
+#: pve-manager/www/manager6/Utils.js:2047
 #: pve-manager/www/manager6/qemu/CmdMenu.js:65
 #: pve-manager/www/manager6/qemu/Config.js:171
 msgid "Pause"
@@ -8269,7 +8326,7 @@ msgstr "PiB"
 msgid "Pipe/Fifo"
 msgstr "Неіменований/Іменований канал"
 
-#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:162
+#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:166
 msgid "Please (re-)query URL to get meta information"
 msgstr "Будь ласка (повторно) запитайте URL, щоб отримати метаінформацію"
 
@@ -8754,7 +8811,7 @@ msgstr "Тип відкритого ключа"
 msgid "Pull"
 msgstr "Pull"
 
-#: pve-manager/www/manager6/Utils.js:2037
+#: pve-manager/www/manager6/Utils.js:2038
 msgid "Pull file"
 msgstr "Підтягнути файл"
 
@@ -8770,7 +8827,7 @@ msgstr "Видалення з конфігурацій завдань"
 msgid "Push"
 msgstr "Push"
 
-#: pve-manager/www/manager6/Utils.js:2038
+#: pve-manager/www/manager6/Utils.js:2039
 msgid "Push file"
 msgstr "Вивантажити файл"
 
@@ -8810,7 +8867,7 @@ msgid "Quarantine port"
 msgstr "Порт карантину"
 
 #: pve-manager/www/manager6/node/ACME.js:127
-#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:146
+#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:150
 msgid "Query URL"
 msgstr "Запит URL"
 
@@ -8988,8 +9045,8 @@ msgstr "Читання"
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:82
 #: proxmox-widget-toolkit/src/window/AuthEditOpenId.js:37
 #: proxmox-widget-toolkit/src/window/AuthEditSimple.js:15
-#: pmg-gui/js/UserView.js:164 pve-manager/www/manager6/Utils.js:2003
-#: pve-manager/www/manager6/Utils.js:2004
+#: pmg-gui/js/UserView.js:164 pve-manager/www/manager6/Utils.js:2004
+#: pve-manager/www/manager6/Utils.js:2005
 #: pve-manager/www/manager6/dc/AuthEditBase.js:37
 #: pve-manager/www/manager6/dc/AuthView.js:17
 #: pve-manager/www/manager6/dc/RealmSyncJob.js:107
@@ -9029,7 +9086,7 @@ msgid "Reassign Disk"
 msgstr "Перепризначити Диск"
 
 #: pve-manager/www/manager6/lxc/Resources.js:281
-#: pve-manager/www/manager6/qemu/HardwareView.js:421
+#: pve-manager/www/manager6/qemu/HardwareView.js:431
 msgid "Reassign Owner"
 msgstr "Перепризначити Власника"
 
@@ -9037,7 +9094,7 @@ msgstr "Перепризначити Власника"
 msgid "Reassign Volume"
 msgstr "Перепризначити том"
 
-#: pve-manager/www/manager6/qemu/HardwareView.js:422
+#: pve-manager/www/manager6/qemu/HardwareView.js:432
 msgid "Reassign disk to another VM"
 msgstr "Перепризначте диск іншій Віртуальній Машині"
 
@@ -9053,8 +9110,8 @@ msgstr "Повторний баланс"
 msgid "Rebalance on Start"
 msgstr "Повторний баланс на Старті"
 
-#: pve-manager/www/manager6/Utils.js:2047
-#: pve-manager/www/manager6/Utils.js:2076
+#: pve-manager/www/manager6/Utils.js:2048
+#: pve-manager/www/manager6/Utils.js:2077
 #: pve-manager/www/manager6/lxc/CmdMenu.js:78
 #: pve-manager/www/manager6/lxc/Config.js:68
 #: pve-manager/www/manager6/node/Config.js:102
@@ -9115,7 +9172,7 @@ msgid "Referenced disks will always be destroyed."
 msgstr "Диски, на які є посилання, завжди будуть знищуватися."
 
 #: proxmox-widget-toolkit/src/node/APT.js:106
-#: pve-manager/www/manager6/Utils.js:1998
+#: pve-manager/www/manager6/Utils.js:1999
 msgid "Refresh"
 msgstr "Оновити"
 
@@ -9142,7 +9199,7 @@ msgid "Regex"
 msgstr "Регулярний вираз"
 
 #: proxmox-widget-toolkit/src/window/ACMEAccount.js:12
-#: pve-manager/www/manager6/Utils.js:1999
+#: pve-manager/www/manager6/Utils.js:2000
 #: pve-manager/www/manager6/node/ACME.js:9
 msgid "Register"
 msgstr "Зареєструватися"
@@ -9225,7 +9282,7 @@ msgstr "Ретрансляція"
 msgid "Reload"
 msgstr "Перезавантажити"
 
-#: pve-manager/www/manager6/Utils.js:2059
+#: pve-manager/www/manager6/Utils.js:2060
 #, fuzzy
 msgid "Reload network configuration on all nodes"
 msgstr "Неможливо проаналізувати конфігурацію мережі"
@@ -9285,10 +9342,10 @@ msgstr "Видалення Розкладу"
 #: proxmox-widget-toolkit/src/window/NotificationMatcherEdit.js:858
 #: proxmox-widget-toolkit/src/window/SafeDestroy.js:115
 #: pmg-gui/js/RuleConfiguration.js:166 pmg-gui/js/RuleInfo.js:364
-#: pmg-gui/js/UserBlackWhiteList.js:164 pve-manager/www/manager6/Utils.js:2022
-#: pve-manager/www/manager6/Utils.js:2031
-#: pve-manager/www/manager6/Utils.js:2033
-#: pve-manager/www/manager6/Utils.js:2088
+#: pmg-gui/js/UserBlackWhiteList.js:164 pve-manager/www/manager6/Utils.js:2023
+#: pve-manager/www/manager6/Utils.js:2032
+#: pve-manager/www/manager6/Utils.js:2034
+#: pve-manager/www/manager6/Utils.js:2089
 #: pve-manager/www/manager6/dc/ACLView.js:156
 #: pve-manager/www/manager6/form/TagColorGrid.js:286
 #: pve-manager/www/manager6/grid/PoolMembers.js:193
@@ -9298,8 +9355,8 @@ msgstr "Видалення Розкладу"
 #: pve-manager/www/manager6/lxc/Resources.js:236
 #: pve-manager/www/manager6/qemu/CloudInit.js:61
 #: pve-manager/www/manager6/qemu/Config.js:132
-#: pve-manager/www/manager6/qemu/HardwareView.js:479
-#: pve-manager/www/manager6/qemu/HardwareView.js:480
+#: pve-manager/www/manager6/qemu/HardwareView.js:489
+#: pve-manager/www/manager6/qemu/HardwareView.js:490
 #: pve-manager/www/manager6/sdn/VnetACLView.js:179
 #: pve-manager/www/manager6/storage/ImageView.js:33
 #: pve-manager/www/manager6/tree/SnapshotTree.js:290
@@ -9427,7 +9484,7 @@ msgstr "Видаліть зниклі записи користувачів і �
 msgid "Removed Data"
 msgstr "Видалені Дані"
 
-#: pve-manager/www/manager6/Utils.js:2000 proxmox-backup/www/Utils.js:402
+#: pve-manager/www/manager6/Utils.js:2001 proxmox-backup/www/Utils.js:402
 msgid "Renew Certificate"
 msgstr "Поновити сертифікат"
 
@@ -9450,7 +9507,7 @@ msgstr "Завдання реплікації"
 msgid "Replication Log"
 msgstr "Журнал реплікації"
 
-#: pve-manager/www/manager6/Utils.js:2098
+#: pve-manager/www/manager6/Utils.js:2099
 msgid "Replication job notifications"
 msgstr "Сповіщення про завдання реплікації"
 
@@ -9498,7 +9555,7 @@ msgstr "Потрібні привілеї '{0}'"
 
 #: proxmox-widget-toolkit/src/panel/NotificationConfigView.js:11
 #: pmg-gui/js/Settings.js:159 pmg-gui/js/Settings.js:180
-#: pmg-gui/js/Settings.js:278 pve-manager/www/manager6/Utils.js:2048
+#: pmg-gui/js/Settings.js:278 pve-manager/www/manager6/Utils.js:2049
 #: pve-manager/www/manager6/qemu/Config.js:200
 #: pve-manager/www/manager6/window/Settings.js:223
 #: pve-manager/www/manager6/window/Settings.js:244
@@ -9526,9 +9583,9 @@ msgstr "Скинути базу даних правил до заводськи�
 msgid "Reset {0} immediately"
 msgstr "Негайно скинути {0}"
 
-#: pve-manager/www/manager6/Utils.js:2058
+#: pve-manager/www/manager6/Utils.js:2059
 #: pve-manager/www/manager6/lxc/Resources.js:289
-#: pve-manager/www/manager6/qemu/HardwareView.js:445
+#: pve-manager/www/manager6/qemu/HardwareView.js:455
 msgid "Resize"
 msgstr "Змінити розмір"
 
@@ -9581,8 +9638,8 @@ msgstr "Перезапустіть pmg-smtp-filter, щоб активувати 
 #: pmg-gui/js/BackupRestore.js:22 pmg-gui/js/BackupRestore.js:25
 #: pmg-gui/js/BackupRestore.js:102 pmg-gui/js/BackupRestore.js:142
 #: pmg-gui/js/PBSSnapshotView.js:206 pmg-gui/js/Utils.js:894
-#: pve-manager/www/manager6/Utils.js:2049
-#: pve-manager/www/manager6/Utils.js:2077
+#: pve-manager/www/manager6/Utils.js:2050
+#: pve-manager/www/manager6/Utils.js:2078
 #: pve-manager/www/manager6/grid/BackupView.js:185
 #: pve-manager/www/manager6/storage/BackupView.js:84
 #: pve-manager/www/manager6/window/Restore.js:358
@@ -9615,8 +9672,8 @@ msgstr "Відновити знімок(и)"
 msgid "Resulting Config"
 msgstr "Отримана конфігурація"
 
-#: pve-manager/www/manager6/Utils.js:2050
-#: pve-manager/www/manager6/Utils.js:2078
+#: pve-manager/www/manager6/Utils.js:2051
+#: pve-manager/www/manager6/Utils.js:2079
 #: pve-manager/www/manager6/qemu/CmdMenu.js:80
 #: pve-manager/www/manager6/qemu/Config.js:48
 msgid "Resume"
@@ -9660,7 +9717,7 @@ msgstr "Зворотний DNS сервер"
 msgid "Revert"
 msgstr "Повернути"
 
-#: pve-manager/www/manager6/Utils.js:2001 proxmox-backup/www/Utils.js:403
+#: pve-manager/www/manager6/Utils.js:2002 proxmox-backup/www/Utils.js:403
 msgid "Revoke Certificate"
 msgstr "Відкликати сертифікат"
 
@@ -9688,8 +9745,8 @@ msgstr "Роль"
 msgid "Roles"
 msgstr "Ролі"
 
-#: pve-manager/www/manager6/Utils.js:2051
-#: pve-manager/www/manager6/Utils.js:2079
+#: pve-manager/www/manager6/Utils.js:2052
+#: pve-manager/www/manager6/Utils.js:2080
 #: pve-manager/www/manager6/tree/SnapshotTree.js:257
 msgid "Rollback"
 msgstr "Відкат назад"
@@ -10075,7 +10132,7 @@ msgstr "Секція"
 msgid "Security Group"
 msgstr "Група Безпеки"
 
-#: pve-manager/www/manager6/window/UploadToStorage.js:173
+#: pve-manager/www/manager6/window/UploadToStorage.js:189
 msgid "Select File"
 msgstr "Виберіть Файл"
 
@@ -10183,7 +10240,7 @@ msgid "Serial"
 msgstr "Серійний номер"
 
 #: pve-manager/www/manager6/qemu/HardwareView.js:295
-#: pve-manager/www/manager6/qemu/HardwareView.js:724
+#: pve-manager/www/manager6/qemu/HardwareView.js:736
 #: pve-manager/www/manager6/qemu/SerialEdit.js:32
 #: pve-manager/www/manager6/qemu/SerialEdit.js:57
 msgid "Serial Port"
@@ -10356,8 +10413,8 @@ msgstr "Загальні ресурси"
 
 #: proxmox-widget-toolkit/src/Utils.js:703
 #: proxmox-widget-toolkit/src/Utils.js:709
-#: pve-manager/www/manager6/Utils.js:2061
-#: pve-manager/www/manager6/Utils.js:2068
+#: pve-manager/www/manager6/Utils.js:2062
+#: pve-manager/www/manager6/Utils.js:2069
 #: pve-manager/www/manager6/node/CmdMenu.js:89
 #: pve-manager/www/manager6/node/Config.js:125
 #: pve-manager/www/manager6/node/Config.js:162
@@ -10436,9 +10493,9 @@ msgid "Show only installed services"
 msgstr "Показувати лише встановлені служби"
 
 #: pmg-gui/js/ServerStatus.js:73 pmg-gui/js/ServerStatus.js:75
-#: pve-manager/www/manager6/Utils.js:2025
-#: pve-manager/www/manager6/Utils.js:2052
-#: pve-manager/www/manager6/Utils.js:2080
+#: pve-manager/www/manager6/Utils.js:2026
+#: pve-manager/www/manager6/Utils.js:2053
+#: pve-manager/www/manager6/Utils.js:2081
 #: pve-manager/www/manager6/lxc/CmdMenu.js:59
 #: pve-manager/www/manager6/lxc/Config.js:59
 #: pve-manager/www/manager6/node/CmdMenu.js:53
@@ -10535,7 +10592,7 @@ msgstr "Один Диск"
 #: pve-manager/www/manager6/ceph/OSDDetails.js:218
 #: pve-manager/www/manager6/ceph/Pool.js:74
 #: pve-manager/www/manager6/ceph/Pool.js:322
-#: pve-manager/www/manager6/form/FileSelector.js:78
+#: pve-manager/www/manager6/form/FileSelector.js:88
 #: pve-manager/www/manager6/grid/BackupView.js:365
 #: pve-manager/www/manager6/node/LVM.js:121
 #: pve-manager/www/manager6/node/LVMThin.js:124
@@ -10591,8 +10648,8 @@ msgstr "Словенська"
 msgid "Smarthost"
 msgstr "Проміжний вузол (smarthost)"
 
-#: pve-manager/www/manager6/Utils.js:2053
-#: pve-manager/www/manager6/Utils.js:2081
+#: pve-manager/www/manager6/Utils.js:2054
+#: pve-manager/www/manager6/Utils.js:2082
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:239
 #: pve-manager/www/manager6/form/BackupModeSelector.js:5
 #: pve-manager/www/manager6/form/SnapshotSelector.js:56
@@ -10767,9 +10824,9 @@ msgstr "Стандартний VGA"
 #: proxmox-widget-toolkit/src/Utils.js:706
 #: proxmox-widget-toolkit/src/node/ServiceView.js:100
 #: pmg-gui/js/MailTracker.js:97 pmg-gui/js/Utils.js:714
-#: pve-manager/www/manager6/Utils.js:2026
-#: pve-manager/www/manager6/Utils.js:2054
-#: pve-manager/www/manager6/Utils.js:2082
+#: pve-manager/www/manager6/Utils.js:2027
+#: pve-manager/www/manager6/Utils.js:2055
+#: pve-manager/www/manager6/Utils.js:2083
 #: pve-manager/www/manager6/ceph/OSD.js:876
 #: pve-manager/www/manager6/ceph/ServiceList.js:309
 #: pve-manager/www/manager6/lxc/CmdMenu.js:53
@@ -10967,9 +11024,9 @@ msgstr "Статус: {0}"
 #: proxmox-widget-toolkit/src/node/ServiceView.js:105
 #: proxmox-widget-toolkit/src/window/TaskViewer.js:214
 #: proxmox-widget-toolkit/src/window/TaskViewer.js:220
-#: pve-manager/www/manager6/Utils.js:2027
-#: pve-manager/www/manager6/Utils.js:2055
-#: pve-manager/www/manager6/Utils.js:2083
+#: pve-manager/www/manager6/Utils.js:2028
+#: pve-manager/www/manager6/Utils.js:2056
+#: pve-manager/www/manager6/Utils.js:2084
 #: pve-manager/www/manager6/ceph/OSD.js:886
 #: pve-manager/www/manager6/ceph/ServiceList.js:318
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:240
@@ -11173,7 +11230,7 @@ msgstr "Неділя"
 msgid "Superuser"
 msgstr "Суперкористувач"
 
-#: pve-manager/www/manager6/dc/Config.js:354
+#: pve-manager/www/manager6/dc/Config.js:360
 #: pve-manager/www/manager6/dc/NodeView.js:33
 msgid "Support"
 msgstr "Підтримка"
@@ -11182,7 +11239,7 @@ msgstr "Підтримка"
 msgid "Support for {0} {1} ends on {2}"
 msgstr "Підтримка для {0} {1} закінчується {2}"
 
-#: pve-manager/www/manager6/Utils.js:2084
+#: pve-manager/www/manager6/Utils.js:2085
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:241
 #: pve-manager/www/manager6/form/BackupModeSelector.js:6
 #: pve-manager/www/manager6/node/CmdMenu.js:67
@@ -11190,7 +11247,7 @@ msgstr "Підтримка для {0} {1} закінчується {2}"
 msgid "Suspend"
 msgstr "Призупинити"
 
-#: pve-manager/www/manager6/Utils.js:2064
+#: pve-manager/www/manager6/Utils.js:2065
 msgid "Suspend all VMs"
 msgstr "Призупинити всі ВМ"
 
@@ -11216,7 +11273,7 @@ msgstr "Шведська"
 
 #: proxmox-widget-toolkit/src/panel/AuthView.js:158
 #: proxmox-widget-toolkit/src/window/SyncWindow.js:147
-#: pve-manager/www/manager6/Utils.js:2003
+#: pve-manager/www/manager6/Utils.js:2004
 #: pve-manager/www/manager6/dc/AuthView.js:126
 #: pve-manager/www/manager6/dc/SyncWindow.js:172
 msgid "Sync"
@@ -11249,7 +11306,7 @@ msgstr "Рівень синхронізації"
 msgid "Sync Options"
 msgstr "Параметри синхронізації"
 
-#: pve-manager/www/manager6/Utils.js:2004
+#: pve-manager/www/manager6/Utils.js:2005
 msgid "Sync Preview"
 msgstr "Попередній перегляд синхронізації"
 
@@ -11379,7 +11436,7 @@ msgstr "Коди TOTP зазвичай складаються з шести де
 
 #: pve-manager/www/manager6/qemu/HDTPM.js:81
 #: pve-manager/www/manager6/qemu/HardwareView.js:263
-#: pve-manager/www/manager6/qemu/HardwareView.js:703
+#: pve-manager/www/manager6/qemu/HardwareView.js:715
 msgid "TPM State"
 msgstr "TPM-Пристрій"
 
@@ -12161,13 +12218,13 @@ msgstr "URL-адреси"
 #: pve-manager/www/manager6/node/ACME.js:105
 #: pve-manager/www/manager6/sdn/ipams/NetboxEdit.js:42
 #: pve-manager/www/manager6/sdn/ipams/PhpIpamEdit.js:41
-#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:131
+#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:135
 #: proxmox-backup/www/window/InfluxDbEdit.js:38
 msgid "URL"
 msgstr "URL-адреса"
 
 #: pve-manager/www/manager6/qemu/HardwareView.js:274
-#: pve-manager/www/manager6/qemu/HardwareView.js:710
+#: pve-manager/www/manager6/qemu/HardwareView.js:722
 #: pve-manager/www/manager6/qemu/USBEdit.js:157
 msgid "USB Device"
 msgstr "USB-Пристрій"
@@ -12232,8 +12289,8 @@ msgstr "Юніт-файл"
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:243
 #: pve-manager/www/manager6/form/USBSelector.js:143
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:101
-#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:97
-#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:98
+#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:101
+#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:102
 #: proxmox-backup/www/Dashboard.js:307
 msgid "Unknown"
 msgstr "Невідомий"
@@ -12282,7 +12339,7 @@ msgstr "Розблокувати TFA"
 msgid "Unlock TFA authentication for {0}"
 msgstr "Розблокувати автентифікацію TFA для {0}"
 
-#: pve-manager/www/manager6/Utils.js:2086
+#: pve-manager/www/manager6/Utils.js:2087
 #: proxmox-backup/www/datastore/Summary.js:243
 msgid "Unmount"
 msgstr "Відключити"
@@ -12332,7 +12389,7 @@ msgstr "Невикористаний диск"
 msgid "Up"
 msgstr "Вгору"
 
-#: pmg-gui/js/DKIMSettings.js:152 pve-manager/www/manager6/Utils.js:2002
+#: pmg-gui/js/DKIMSettings.js:152 pve-manager/www/manager6/Utils.js:2003
 msgid "Update"
 msgstr "Оновити"
 
@@ -12385,7 +12442,7 @@ msgstr "Оновити базу пакетів під час завантаже�
 #: pve-manager/www/manager6/node/Certificates.js:156
 #: pve-manager/www/manager6/storage/ContentView.js:66
 #: pve-manager/www/manager6/window/UploadToStorage.js:9
-#: pve-manager/www/manager6/window/UploadToStorage.js:264
+#: pve-manager/www/manager6/window/UploadToStorage.js:285
 msgid "Upload"
 msgstr "Завантажити"
 
@@ -12407,6 +12464,12 @@ msgstr "Завантажити Ключ підписки"
 #: pve-manager/www/manager6/storage/PBSEdit.js:318
 msgid "Upload an existing client encryption key"
 msgstr "Завантажте наявний ключ шифрування клієнта"
+
+#: pve-manager/www/manager6/window/UploadToStorage.js:251
+msgid ""
+"Uploads are stored temporarily in '/var/tmp/', make sure there is enough "
+"free space."
+msgstr ""
 
 #: pve-manager/www/manager6/dc/OptionView.js:338
 msgid "Upper"
@@ -12996,7 +13059,7 @@ msgstr "Перевірка стану"
 msgid "Verify TLS certificate of the server"
 msgstr "Перевірити TLS-сертифікат сервера"
 
-#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:211
+#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:215
 msgid "Verify certificates"
 msgstr "Перевірте сертифікати"
 
@@ -13052,10 +13115,19 @@ msgid "View images"
 msgstr "Переглянути зображення"
 
 #: pve-manager/www/manager6/qemu/HardwareView.js:321
-#: pve-manager/www/manager6/qemu/HardwareView.js:745
+#: pve-manager/www/manager6/qemu/HardwareView.js:757
 #: pve-manager/www/manager6/qemu/RNGEdit.js:86
 msgid "VirtIO RNG"
 msgstr "Віртуальний генератор випадкових чисел (RNG)"
+
+#: pve-manager/www/manager6/qemu/HardwareView.js:330
+#: pve-manager/www/manager6/qemu/HardwareView.js:764
+msgid "Virtiofs"
+msgstr ""
+
+#: pve-manager/www/manager6/qemu/VirtiofsEdit.js:100
+msgid "Virtiofs Filesystem Passthrough"
+msgstr ""
 
 #: proxmox-widget-toolkit/src/Schema.js:97
 msgid "Virtual"
@@ -13332,7 +13404,7 @@ msgid "Whole year"
 msgstr "Весь рік"
 
 #: proxmox-widget-toolkit/src/panel/DiskList.js:396
-#: pve-manager/www/manager6/Utils.js:2066 proxmox-backup/www/Utils.js:436
+#: pve-manager/www/manager6/Utils.js:2067 proxmox-backup/www/Utils.js:436
 msgid "Wipe Disk"
 msgstr "Очистити Диск"
 
@@ -13418,6 +13490,11 @@ msgstr "Ліміт запису"
 msgid "Write max burst"
 msgstr "Пік запису"
 
+#: pve-manager/www/manager6/qemu/VirtiofsEdit.js:63
+#, fuzzy
+msgid "Writeback cache"
+msgstr "Кеш запису"
+
 #: pve-manager/www/manager6/ceph/Status.js:304
 #: pve-manager/www/manager6/ceph/Status.js:316
 msgid "Writes"
@@ -13431,7 +13508,7 @@ msgstr "Запис даних"
 msgid "Writing encrypted data"
 msgstr "Запис зашифрованих даних"
 
-#: pve-manager/www/manager6/window/UploadToStorage.js:194
+#: pve-manager/www/manager6/window/UploadToStorage.js:210
 msgid "Wrong file extension"
 msgstr "Неправильне розширення файлу"
 
@@ -13576,7 +13653,7 @@ msgstr "ZB"
 msgid "ZFS Pool"
 msgstr "Пул ZFS"
 
-#: pve-manager/www/manager6/Utils.js:2087 proxmox-backup/www/Utils.js:437
+#: pve-manager/www/manager6/Utils.js:2088 proxmox-backup/www/Utils.js:437
 msgid "ZFS Storage"
 msgstr "Сховище ZFS"
 
@@ -13822,8 +13899,8 @@ msgstr "налаштування noVNC"
 
 #: proxmox-widget-toolkit/src/Utils.js:48
 #: pve-manager/www/manager6/dc/OptionView.js:286
-#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:203
-#: pve-manager/www/manager6/window/UploadToStorage.js:229
+#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:207
+#: pve-manager/www/manager6/window/UploadToStorage.js:245
 #: proxmox-backup/www/window/DataStoreEdit.js:83
 #: proxmox-backup/www/window/DataStoreEdit.js:94
 msgid "none"
@@ -13970,6 +14047,11 @@ msgstr "підтвердити поточний пароль"
 msgid "with options"
 msgstr "з опціями"
 
+#: pve-manager/www/manager6/qemu/VirtiofsEdit.js:68
+#, fuzzy
+msgid "xattr Support"
+msgstr "Підтримка"
+
 #: pmg-gui/js/Settings.js:220 pve-manager/www/manager6/window/Settings.js:305
 #: proxmox-backup/www/window/Settings.js:220
 msgid "xterm.js Settings"
@@ -14032,7 +14114,7 @@ msgstr "{0} хвилин"
 msgid "{0} months"
 msgstr "{0} місяців"
 
-#: pve-manager/www/manager6/Utils.js:1761
+#: pve-manager/www/manager6/Utils.js:1762
 msgid "{0} not installed."
 msgstr "{0} не встановлено."
 

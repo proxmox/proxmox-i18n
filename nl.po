@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pve-manager e7dc4402223cffef6b5ae34e7fc00401198b98e1\n"
 "Report-Msgid-Bugs-To: <support@proxmox.com>\n"
-"POT-Creation-Date: Mon Apr  7 18:30:26 2025\n"
+"POT-Creation-Date: Tue Apr  8 12:23:34 2025\n"
 "PO-Revision-Date: 2022-08-19 14:00+0200\n"
 "Last-Translator: \n"
 "Language-Team: LANGUAGE <support@proxmox.com>\n"
@@ -50,6 +50,7 @@ msgstr ".zip"
 
 #: pve-manager/www/manager6/lxc/MPEdit.js:246
 #: pve-manager/www/manager6/storage/CIFSEdit.js:228
+#: pve-manager/www/manager6/window/DirMapEdit.js:170
 msgid "/some/path"
 msgstr "/een/pad"
 
@@ -199,7 +200,7 @@ msgstr "API token"
 msgid "APT Repositories"
 msgstr "APT archieven"
 
-#: pve-manager/www/manager6/window/UploadToStorage.js:255
+#: pve-manager/www/manager6/window/UploadToStorage.js:276
 msgid "Abort"
 msgstr "Afbreken"
 
@@ -334,7 +335,7 @@ msgstr "Actief"
 #: pve-manager/www/manager6/node/ACME.js:605
 #: pve-manager/www/manager6/panel/IPSet.js:345
 #: pve-manager/www/manager6/panel/MultiDiskEdit.js:256
-#: pve-manager/www/manager6/qemu/HardwareView.js:678
+#: pve-manager/www/manager6/qemu/HardwareView.js:690
 #: pve-manager/www/manager6/sdn/ControllerView.js:91
 #: pve-manager/www/manager6/sdn/DnsView.js:91
 #: pve-manager/www/manager6/sdn/IpamView.js:89
@@ -369,6 +370,11 @@ msgstr "ACME-account toevoegen"
 #: proxmox-backup/www/NavigationTree.js:124
 msgid "Add Datastore"
 msgstr "Gegevensopslag toevoegen"
+
+#: pve-manager/www/manager6/window/DirMapEdit.js:26
+#, fuzzy
+msgid "Add Directory Mapping"
+msgstr "Mapopslag"
 
 #: pve-manager/www/manager6/qemu/SystemEdit.js:117
 msgid "Add EFI Disk"
@@ -637,6 +643,10 @@ msgstr "Toewijzingsbeleid"
 msgid "Allow Debugging"
 msgstr ""
 
+#: pve-manager/www/manager6/qemu/VirtiofsEdit.js:87
+msgid "Allow Direct IO"
+msgstr ""
+
 #: pmg-gui/js/SpamQuarantineOptions.js:68
 #: pmg-gui/js/VirusQuarantineOptions.js:20
 msgid "Allow HREFs"
@@ -757,7 +767,7 @@ msgid "Are you sure to remove the subscription key?"
 msgstr "Weet u zeker dat u de lidmaatschapssleutel wilt verwijderen?"
 
 #: pve-manager/www/manager6/lxc/Resources.js:244
-#: pve-manager/www/manager6/qemu/HardwareView.js:489
+#: pve-manager/www/manager6/qemu/HardwareView.js:499
 msgid "Are you sure you want to detach entry {0}"
 msgstr "Weet u zeker dat u item {0} wilt loskoppelen"
 
@@ -801,7 +811,7 @@ msgstr "Weet u zeker dat u item {0} wilt verwijderen"
 #: pve-manager/www/manager6/lxc/Network.js:459
 #: pve-manager/www/manager6/lxc/Resources.js:242
 #: pve-manager/www/manager6/qemu/CloudInit.js:14
-#: pve-manager/www/manager6/qemu/HardwareView.js:487
+#: pve-manager/www/manager6/qemu/HardwareView.js:497
 #: pve-manager/www/manager6/tree/SnapshotTree.js:299
 msgid "Are you sure you want to remove entry {0}"
 msgstr "Weet u zeker dat u item {0} wilt verwijderen"
@@ -898,7 +908,7 @@ msgstr "Kenmerk"
 #: pve-manager/www/manager6/qemu/AudioEdit.js:24
 #: pve-manager/www/manager6/qemu/AudioEdit.js:47
 #: pve-manager/www/manager6/qemu/HardwareView.js:303
-#: pve-manager/www/manager6/qemu/HardwareView.js:738
+#: pve-manager/www/manager6/qemu/HardwareView.js:750
 msgid "Audio Device"
 msgstr "Audioapparaat"
 
@@ -1056,7 +1066,7 @@ msgstr "Verstrooings score"
 #: pmg-gui/js/BackupConfiguration.js:5 pmg-gui/js/BackupRestore.js:78
 #: pmg-gui/js/BackupRestore.js:81 pmg-gui/js/BackupRestore.js:102
 #: pmg-gui/js/Utils.js:891 pve-manager/www/manager6/Utils.js:689
-#: pve-manager/www/manager6/Utils.js:2073
+#: pve-manager/www/manager6/Utils.js:2074
 #: pve-manager/www/manager6/dc/Config.js:70
 #: pve-manager/www/manager6/lxc/Config.js:296
 #: pve-manager/www/manager6/lxc/MPEdit.js:258
@@ -1086,7 +1096,7 @@ msgstr "Back-up groep"
 msgid "Backup Groups"
 msgstr "Back-up groepen"
 
-#: pve-manager/www/manager6/Utils.js:2073
+#: pve-manager/www/manager6/Utils.js:2074
 #: pve-manager/www/manager6/dc/Backup.js:9
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:52
 msgid "Backup Job"
@@ -1126,7 +1136,7 @@ msgstr "Back-up tijd"
 msgid "Backup content type not available for this storage."
 msgstr "Back-up inhoudstype niet beschikbaar voor deze opslag."
 
-#: pve-manager/www/manager6/Utils.js:2097
+#: pve-manager/www/manager6/Utils.js:2098
 #, fuzzy
 msgid "Backup notifications"
 msgstr "E-mail melding"
@@ -1366,17 +1376,17 @@ msgstr "Bulk starten"
 msgid "Bulk Suspend"
 msgstr "Pauzeer"
 
-#: pve-manager/www/manager6/Utils.js:2034
+#: pve-manager/www/manager6/Utils.js:2035
 #, fuzzy
 msgid "Bulk migrate VMs and Containers"
 msgstr "Alle VMs en containers migreren"
 
-#: pve-manager/www/manager6/Utils.js:2063
+#: pve-manager/www/manager6/Utils.js:2064
 #, fuzzy
 msgid "Bulk shutdown VMs and Containers"
 msgstr "Alle VMs en containers stoppen"
 
-#: pve-manager/www/manager6/Utils.js:2062
+#: pve-manager/www/manager6/Utils.js:2063
 #, fuzzy
 msgid "Bulk start VMs and Containers"
 msgstr "Alle VMs en containers starten"
@@ -1417,7 +1427,7 @@ msgid ""
 msgstr ""
 
 #: pve-manager/www/manager6/qemu/HardwareView.js:234
-#: pve-manager/www/manager6/qemu/HardwareView.js:689
+#: pve-manager/www/manager6/qemu/HardwareView.js:701
 msgid "CD/DVD Drive"
 msgstr "CD/DVD-station"
 
@@ -1504,6 +1514,7 @@ msgid "CT Volumes"
 msgstr "CT volumes"
 
 #: pve-manager/www/manager6/qemu/HDEdit.js:245
+#: pve-manager/www/manager6/qemu/VirtiofsEdit.js:49
 msgid "Cache"
 msgstr "Cache"
 
@@ -1669,7 +1680,7 @@ msgstr "Wachtwoord wijzigen"
 msgid "Change Protection"
 msgstr "Bescherming wijzigen"
 
-#: pve-manager/www/manager6/Utils.js:2018
+#: pve-manager/www/manager6/Utils.js:2019
 msgid "Change global Ceph flags"
 msgstr "Globale Ceph vlaggen wijzigen"
 
@@ -1734,8 +1745,8 @@ msgstr "Controleer"
 msgid "Check connection"
 msgstr "Bescherming wijzigen"
 
-#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:200
-#: pve-manager/www/manager6/window/UploadToStorage.js:226
+#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:204
+#: pve-manager/www/manager6/window/UploadToStorage.js:242
 msgid "Checksum"
 msgstr "Controlesom"
 
@@ -1858,8 +1869,8 @@ msgstr "Client berichten snelheids limiet"
 msgid "Clipboard"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2039
-#: pve-manager/www/manager6/Utils.js:2069
+#: pve-manager/www/manager6/Utils.js:2040
+#: pve-manager/www/manager6/Utils.js:2070
 #: pve-manager/www/manager6/dc/OptionView.js:306
 #: pve-manager/www/manager6/lxc/CmdMenu.js:89
 #: pve-manager/www/manager6/lxc/Config.js:115
@@ -1880,7 +1891,7 @@ msgstr "Sluit"
 #: pve-manager/www/manager6/qemu/CIDriveEdit.js:41
 #: pve-manager/www/manager6/qemu/CIDriveEdit.js:61
 #: pve-manager/www/manager6/qemu/HardwareView.js:235
-#: pve-manager/www/manager6/qemu/HardwareView.js:731
+#: pve-manager/www/manager6/qemu/HardwareView.js:743
 msgid "CloudInit Drive"
 msgstr "CloudInit Drive"
 
@@ -2003,6 +2014,7 @@ msgstr "Commando"
 #: pve-manager/www/manager6/dc/AuthView.js:35
 #: pve-manager/www/manager6/dc/Backup.js:847
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:263
+#: pve-manager/www/manager6/dc/DirMapView.js:30
 #: pve-manager/www/manager6/dc/GroupEdit.js:35
 #: pve-manager/www/manager6/dc/GroupView.js:85
 #: pve-manager/www/manager6/dc/PCIMapView.js:106
@@ -2017,6 +2029,7 @@ msgstr "Commando"
 #: pve-manager/www/manager6/dc/UserEdit.js:126
 #: pve-manager/www/manager6/dc/UserView.js:236
 #: pve-manager/www/manager6/form/BridgeSelector.js:34
+#: pve-manager/www/manager6/form/DirMapSelector.js:29
 #: pve-manager/www/manager6/form/GroupSelector.js:32
 #: pve-manager/www/manager6/form/IPRefSelector.js:93
 #: pve-manager/www/manager6/form/NotificationTargetSelector.js:46
@@ -2041,6 +2054,7 @@ msgstr "Commando"
 #: pve-manager/www/manager6/panel/IPSet.js:244
 #: pve-manager/www/manager6/panel/IPSet.js:410
 #: pve-manager/www/manager6/pool/StatusView.js:20
+#: pve-manager/www/manager6/window/DirMapEdit.js:194
 #: pve-manager/www/manager6/window/PCIMapEdit.js:280
 #: pve-manager/www/manager6/window/USBMapEdit.js:237
 #: proxmox-backup/www/config/MetricServerView.js:78
@@ -2132,7 +2146,7 @@ msgstr "Configuratie wijziging, data wordt niet verwijderd."
 msgid "Configuration for {0} not correct ('{1}' != '{2}')"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2040
+#: pve-manager/www/manager6/Utils.js:2041
 msgid "Configure"
 msgstr "Configureren"
 
@@ -2213,7 +2227,7 @@ msgstr "Deelname informatie"
 #: proxmox-widget-toolkit/src/Utils.js:513
 #: proxmox-widget-toolkit/src/Utils.js:515
 #: proxmox-widget-toolkit/src/Utils.js:517
-#: pve-manager/www/manager6/Utils.js:673 pve-manager/www/manager6/Utils.js:1737
+#: pve-manager/www/manager6/Utils.js:673 pve-manager/www/manager6/Utils.js:1738
 msgid "Connection error"
 msgstr "Verbindingsfout"
 
@@ -2234,8 +2248,8 @@ msgid "Consent Text"
 msgstr "Inhoudstype"
 
 #: proxmox-widget-toolkit/src/Utils.js:708 pmg-gui/js/ServerStatus.js:59
-#: pve-manager/www/manager6/Utils.js:2060
-#: pve-manager/www/manager6/Utils.js:2067
+#: pve-manager/www/manager6/Utils.js:2061
+#: pve-manager/www/manager6/Utils.js:2068
 #: pve-manager/www/manager6/button/ConsoleButton.js:20
 #: pve-manager/www/manager6/lxc/CmdMenu.js:132
 #: pve-manager/www/manager6/lxc/Config.js:244
@@ -2316,8 +2330,8 @@ msgstr "Controller"
 msgid "Controllers"
 msgstr "Controllers"
 
-#: pve-manager/www/manager6/Utils.js:2057
-#: pve-manager/www/manager6/Utils.js:2085
+#: pve-manager/www/manager6/Utils.js:2058
+#: pve-manager/www/manager6/Utils.js:2086
 #: pve-manager/www/manager6/lxc/CmdMenu.js:115
 #: pve-manager/www/manager6/lxc/Config.js:129
 #: pve-manager/www/manager6/qemu/CmdMenu.js:142
@@ -2351,7 +2365,7 @@ msgstr "Herstelsleutel kopiëren"
 msgid "Copy Secret Value"
 msgstr "Geheime waarde kopiëren"
 
-#: pve-manager/www/manager6/Utils.js:2028
+#: pve-manager/www/manager6/Utils.js:2029
 msgid "Copy data"
 msgstr "Gegevens kopiëren"
 
@@ -2407,18 +2421,18 @@ msgstr "Aantal"
 #: pmg-gui/js/MailProxyTLSInboundDomains.js:67 pmg-gui/js/MyNetworks.js:61
 #: pmg-gui/js/ObjectGroupList.js:99 pmg-gui/js/RelayDomains.js:71
 #: pmg-gui/js/SpamDetectorCustom.js:221 pmg-gui/js/Transport.js:50
-#: pve-manager/www/manager6/Utils.js:2005
 #: pve-manager/www/manager6/Utils.js:2006
 #: pve-manager/www/manager6/Utils.js:2007
 #: pve-manager/www/manager6/Utils.js:2008
 #: pve-manager/www/manager6/Utils.js:2009
-#: pve-manager/www/manager6/Utils.js:2016
-#: pve-manager/www/manager6/Utils.js:2021
-#: pve-manager/www/manager6/Utils.js:2030
-#: pve-manager/www/manager6/Utils.js:2032
-#: pve-manager/www/manager6/Utils.js:2041
-#: pve-manager/www/manager6/Utils.js:2070
-#: pve-manager/www/manager6/Utils.js:2087
+#: pve-manager/www/manager6/Utils.js:2010
+#: pve-manager/www/manager6/Utils.js:2017
+#: pve-manager/www/manager6/Utils.js:2022
+#: pve-manager/www/manager6/Utils.js:2031
+#: pve-manager/www/manager6/Utils.js:2033
+#: pve-manager/www/manager6/Utils.js:2042
+#: pve-manager/www/manager6/Utils.js:2071
+#: pve-manager/www/manager6/Utils.js:2088
 #: pve-manager/www/manager6/ceph/Pool.js:460
 #: pve-manager/www/manager6/ceph/Pool.js:482
 #: pve-manager/www/manager6/ceph/ServiceList.js:336
@@ -2448,7 +2462,7 @@ msgstr "CT aanmaken"
 msgid "Create CephFS"
 msgstr "CephFS aanmaken"
 
-#: pmg-gui/js/Utils.js:892 pve-manager/www/manager6/Utils.js:2019
+#: pmg-gui/js/Utils.js:892 pve-manager/www/manager6/Utils.js:2020
 #: pve-manager/www/manager6/dc/Cluster.js:152
 #: pve-manager/www/manager6/dc/ClusterEdit.js:5
 msgid "Create Cluster"
@@ -2754,7 +2768,7 @@ msgstr "dagen"
 msgid "Days to show"
 msgstr "Aantal dagen weergeven"
 
-#: pve-manager/www/manager6/Utils.js:1996
+#: pve-manager/www/manager6/Utils.js:1997
 msgid "Deactivate"
 msgstr "Deactiveren"
 
@@ -2766,7 +2780,7 @@ msgstr "Account {0} deactiveren"
 msgid "Decode"
 msgstr "Decodeer"
 
-#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:221
+#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:225
 msgid "Decompression algorithm"
 msgstr ""
 
@@ -2905,8 +2919,8 @@ msgstr "Verwijder"
 msgid "Delete Custom Certificate"
 msgstr "Aangepast certificaat verwijderen"
 
-#: pve-manager/www/manager6/Utils.js:2042
-#: pve-manager/www/manager6/Utils.js:2071
+#: pve-manager/www/manager6/Utils.js:2043
+#: pve-manager/www/manager6/Utils.js:2072
 msgid "Delete Snapshot"
 msgstr "Momentopname verwijderen"
 
@@ -2999,14 +3013,14 @@ msgstr "Bestemmings poort"
 msgid "Destination"
 msgstr "Bestemming"
 
-#: pve-manager/www/manager6/Utils.js:2010
 #: pve-manager/www/manager6/Utils.js:2011
 #: pve-manager/www/manager6/Utils.js:2012
 #: pve-manager/www/manager6/Utils.js:2013
 #: pve-manager/www/manager6/Utils.js:2014
 #: pve-manager/www/manager6/Utils.js:2015
-#: pve-manager/www/manager6/Utils.js:2043
-#: pve-manager/www/manager6/Utils.js:2072
+#: pve-manager/www/manager6/Utils.js:2016
+#: pve-manager/www/manager6/Utils.js:2044
+#: pve-manager/www/manager6/Utils.js:2073
 #: pve-manager/www/manager6/ceph/OSD.js:208
 #: pve-manager/www/manager6/ceph/OSD.js:951
 #: pve-manager/www/manager6/ceph/Pool.js:506
@@ -3035,7 +3049,7 @@ msgstr "Vernietig naamruimte '{0}'"
 msgid "Destroy all data (dangerous!)"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2065
+#: pve-manager/www/manager6/Utils.js:2066
 msgid "Destroy image from unknown guest"
 msgstr "Vernietig kopie van onbekende gast"
 
@@ -3044,7 +3058,7 @@ msgid "Destroy unreferenced disks owned by guest"
 msgstr "Vernietig niet gerefereerde schijven van gast"
 
 #: pve-manager/www/manager6/lxc/Resources.js:237
-#: pve-manager/www/manager6/qemu/HardwareView.js:481
+#: pve-manager/www/manager6/qemu/HardwareView.js:491
 msgid "Detach"
 msgstr "Ontkoppelen"
 
@@ -3135,7 +3149,7 @@ msgstr "Richting"
 #: proxmox-widget-toolkit/src/Schema.js:91
 #: proxmox-widget-toolkit/src/Utils.js:61
 #: proxmox-widget-toolkit/src/window/ACMEAccount.js:174
-#: pve-manager/www/manager6/Utils.js:2022
+#: pve-manager/www/manager6/Utils.js:2023
 #: pve-manager/www/manager6/node/Directory.js:145
 #: pve-manager/www/manager6/node/Directory.js:170
 #: pve-manager/www/manager6/storage/DirEdit.js:14
@@ -3143,7 +3157,23 @@ msgstr "Richting"
 msgid "Directory"
 msgstr "Map"
 
-#: pve-manager/www/manager6/Utils.js:2021 proxmox-backup/www/Utils.js:409
+#: pve-manager/www/manager6/form/DirMapSelector.js:24
+#: pve-manager/www/manager6/qemu/VirtiofsEdit.js:34
+#, fuzzy
+msgid "Directory ID"
+msgstr "Map"
+
+#: pve-manager/www/manager6/dc/Config.js:337
+#, fuzzy
+msgid "Directory Mappings"
+msgstr "Mapopslag"
+
+#: pve-manager/www/manager6/qemu/VirtiofsEdit.js:42
+msgid ""
+"Directory Mappings can be managed under Datacenter -> Directory Mappings"
+msgstr ""
+
+#: pve-manager/www/manager6/Utils.js:2022 proxmox-backup/www/Utils.js:409
 msgid "Directory Storage"
 msgstr "Mapopslag"
 
@@ -3211,7 +3241,7 @@ msgstr "Verbinding verbreken"
 msgid "Disk"
 msgstr "Schijf"
 
-#: pve-manager/www/manager6/qemu/HardwareView.js:466
+#: pve-manager/www/manager6/qemu/HardwareView.js:476
 msgid "Disk Action"
 msgstr "Schijf actie"
 
@@ -3321,7 +3351,7 @@ msgstr "Omlaag"
 #: pmg-gui/js/AttachmentGrid.js:124 pmg-gui/js/AttachmentQuarantine.js:125
 #: pmg-gui/js/BackupRestore.js:190 pmg-gui/js/SpamQuarantine.js:242
 #: pmg-gui/js/Subscription.js:60 pmg-gui/js/VirusQuarantine.js:138
-#: pve-manager/www/manager6/Utils.js:2023
+#: pve-manager/www/manager6/Utils.js:2024
 #: pve-manager/www/manager6/node/Subscription.js:65
 #: pve-manager/www/manager6/storage/PBSEdit.js:79
 #: pve-manager/www/manager6/storage/TemplateView.js:127
@@ -3477,7 +3507,7 @@ msgstr ""
 
 #: pve-manager/www/manager6/qemu/HDEfi.js:95
 #: pve-manager/www/manager6/qemu/HardwareView.js:255
-#: pve-manager/www/manager6/qemu/HardwareView.js:546
+#: pve-manager/www/manager6/qemu/HardwareView.js:556
 msgid "EFI Disk"
 msgstr "EFI schijf"
 
@@ -3524,7 +3554,7 @@ msgstr "E-mail kenmerknaam"
 #: pmg-gui/js/Transport.js:64 pmg-gui/js/UserView.js:127
 #: pmg-gui/js/VirusDetectorOptions.js:49
 #: pmg-gui/js/VirusQuarantineOptions.js:30
-#: pve-manager/www/manager6/Utils.js:2017
+#: pve-manager/www/manager6/Utils.js:2018
 #: pve-manager/www/manager6/ceph/Pool.js:444
 #: pve-manager/www/manager6/ceph/Pool.js:499
 #: pve-manager/www/manager6/dc/AuthView.js:113
@@ -3555,7 +3585,7 @@ msgstr "E-mail kenmerknaam"
 #: pve-manager/www/manager6/panel/IPSet.js:98
 #: pve-manager/www/manager6/panel/IPSet.js:337
 #: pve-manager/www/manager6/qemu/CloudInit.js:74
-#: pve-manager/www/manager6/qemu/HardwareView.js:391
+#: pve-manager/www/manager6/qemu/HardwareView.js:401
 #: pve-manager/www/manager6/qemu/Options.js:361
 #: pve-manager/www/manager6/sdn/ControllerView.js:54
 #: pve-manager/www/manager6/sdn/DnsView.js:54
@@ -3740,6 +3770,10 @@ msgstr "Nieuwe gebruikers inschakelen"
 msgid "Enable quota"
 msgstr "Quotum inschakelen"
 
+#: pve-manager/www/manager6/qemu/VirtiofsEdit.js:69
+msgid "Enable support for extended attributes."
+msgstr ""
+
 #: proxmox-widget-toolkit/src/Utils.js:46
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:242
 #: proxmox-widget-toolkit/src/panel/TfaView.js:222
@@ -3850,7 +3884,7 @@ msgstr "Engels"
 msgid "Ensure underlying storage honors access time updates"
 msgstr ""
 
-#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:136
+#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:140
 msgid "Enter URL to download"
 msgstr "Voer URL in om te downloaden"
 
@@ -3878,7 +3912,7 @@ msgstr "Invoer"
 msgid "Envelope"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2029
+#: pve-manager/www/manager6/Utils.js:2030
 msgid "Erase data"
 msgstr "Gegevens wissen"
 
@@ -3991,6 +4025,7 @@ msgstr ""
 #: pve-manager/www/manager6/qemu/IPConfigEdit.js:236
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:246
 #: pve-manager/www/manager6/qemu/Smbios1Edit.js:114
+#: pve-manager/www/manager6/qemu/VirtiofsEdit.js:128
 #: pve-manager/www/manager6/sdn/StatusView.js:55
 #: pve-manager/www/manager6/sdn/VnetACLView.js:205
 #: pve-manager/www/manager6/storage/TemplateView.js:139
@@ -3998,6 +4033,7 @@ msgstr ""
 #: pve-manager/www/manager6/tree/ResourceMapTree.js:176
 #: pve-manager/www/manager6/tree/SnapshotTree.js:85
 #: pve-manager/www/manager6/window/Backup.js:196
+#: pve-manager/www/manager6/window/DirMapEdit.js:57
 #: pve-manager/www/manager6/window/DownloadUrlToStorage.js:74
 #: pve-manager/www/manager6/window/FirewallEnableEdit.js:40
 #: pve-manager/www/manager6/window/GuestDiskReassign.js:94
@@ -4008,9 +4044,9 @@ msgstr ""
 #: pve-manager/www/manager6/window/Prune.js:106
 #: pve-manager/www/manager6/window/Restore.js:84
 #: pve-manager/www/manager6/window/ScheduleSimulator.js:37
-#: pve-manager/www/manager6/window/UploadToStorage.js:105
-#: pve-manager/www/manager6/window/UploadToStorage.js:111
-#: pve-manager/www/manager6/window/UploadToStorage.js:117
+#: pve-manager/www/manager6/window/UploadToStorage.js:114
+#: pve-manager/www/manager6/window/UploadToStorage.js:120
+#: pve-manager/www/manager6/window/UploadToStorage.js:126
 #: proxmox-backup/www/LoginView.js:64 proxmox-backup/www/LoginView.js:105
 #: proxmox-backup/www/LoginView.js:201 proxmox-backup/www/ServerStatus.js:100
 #: proxmox-backup/www/ServerStatus.js:133 proxmox-backup/www/Utils.js:537
@@ -4273,9 +4309,9 @@ msgstr "Velden"
 
 #: proxmox-widget-toolkit/src/Schema.js:92
 #: proxmox-widget-toolkit/src/panel/Certificates.js:13
-#: pve-manager/www/manager6/Utils.js:2023
+#: pve-manager/www/manager6/Utils.js:2024
 #: pve-manager/www/manager6/node/Certificates.js:293
-#: pve-manager/www/manager6/window/UploadToStorage.js:175
+#: pve-manager/www/manager6/window/UploadToStorage.js:191
 #: proxmox-backup/www/Utils.js:835
 msgid "File"
 msgstr "Bestand"
@@ -4287,12 +4323,12 @@ msgstr "Bestand"
 msgid "File Restore"
 msgstr "Bestand herstel"
 
-#: pve-manager/www/manager6/Utils.js:2036
+#: pve-manager/www/manager6/Utils.js:2037
 msgid "File Restore Download"
 msgstr "Bestand herstel download"
 
-#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:161
-#: pve-manager/www/manager6/window/UploadToStorage.js:187
+#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:165
+#: pve-manager/www/manager6/window/UploadToStorage.js:203
 msgid "File name"
 msgstr "Bestandsnaam"
 
@@ -4304,8 +4340,8 @@ msgstr ""
 "Bestand van type {0} kan niet direct worden gedownload, download in plaats "
 "daarvan een bovenliggende map."
 
-#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:169
-#: pve-manager/www/manager6/window/UploadToStorage.js:199
+#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:173
+#: pve-manager/www/manager6/window/UploadToStorage.js:215
 msgid "File size"
 msgstr "Bestandsgrootte"
 
@@ -4524,7 +4560,7 @@ msgstr "Formuliervelden mogen niet worden ingediend met ongeldige waarden"
 #: proxmox-widget-toolkit/src/Toolkit.js:94
 #: pve-manager/www/manager6/Toolkit.js:11
 #: pve-manager/www/manager6/form/DiskStorageSelector.js:161
-#: pve-manager/www/manager6/form/FileSelector.js:73
+#: pve-manager/www/manager6/form/FileSelector.js:83
 #: pve-manager/www/manager6/grid/BackupView.js:360
 #: pve-manager/www/manager6/storage/ContentView.js:180
 #: pve-manager/www/manager6/window/GuestImport.js:699
@@ -4947,7 +4983,7 @@ msgstr "HTTP-proxy"
 #: pve-manager/www/manager6/qemu/HDEdit.js:475
 #: pve-manager/www/manager6/qemu/HDEdit.js:477
 #: pve-manager/www/manager6/qemu/HardwareView.js:233
-#: pve-manager/www/manager6/qemu/HardwareView.js:683
+#: pve-manager/www/manager6/qemu/HardwareView.js:695
 msgid "Hard Disk"
 msgstr "Harde schijf"
 
@@ -4963,8 +4999,8 @@ msgstr "Hardware"
 msgid "Hash Policy"
 msgstr "Hash beleid"
 
-#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:189
-#: pve-manager/www/manager6/window/UploadToStorage.js:215
+#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:193
+#: pve-manager/www/manager6/window/UploadToStorage.js:231
 msgid "Hash algorithm"
 msgstr "Hash algoritme"
 
@@ -5022,7 +5058,7 @@ msgstr "Helpdesk"
 msgid "Heuristic Score"
 msgstr "Heuristische score"
 
-#: pve-manager/www/manager6/Utils.js:2056
+#: pve-manager/www/manager6/Utils.js:2057
 #: pve-manager/www/manager6/qemu/CmdMenu.js:72
 #: pve-manager/www/manager6/qemu/Config.js:179
 msgid "Hibernate"
@@ -5156,6 +5192,11 @@ msgstr ""
 #, fuzzy
 msgid "ID {0}"
 msgstr "in {0}"
+
+#: pve-manager/www/manager6/dc/DirMapView.js:25
+#, fuzzy
+msgid "ID/Node"
+msgstr "Systeem"
 
 #: pve-manager/www/manager6/dc/PCIMapView.js:83
 msgid "ID/Node/Path"
@@ -5302,6 +5343,10 @@ msgstr ""
 #, fuzzy
 msgid "Ignore header information"
 msgstr "Geen netwerkinformatie"
+
+#: pve-manager/www/manager6/qemu/VirtiofsEdit.js:75
+msgid "Implies xattr support."
+msgstr ""
 
 #: pve-manager/www/manager6/Utils.js:694
 #: pve-manager/www/manager6/storage/Browser.js:146
@@ -5614,7 +5659,7 @@ msgstr "Taak opmerking"
 msgid "Job Detail"
 msgstr "Taak details"
 
-#: pve-manager/www/manager6/Utils.js:2092
+#: pve-manager/www/manager6/Utils.js:2093
 #: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:120
 #: proxmox-backup/www/Utils.js:442 proxmox-backup/www/config/PruneView.js:175
 #: proxmox-backup/www/config/SyncView.js:270
@@ -5636,7 +5681,7 @@ msgstr "Taakschema simulatie"
 msgid "Join"
 msgstr "Deelname"
 
-#: pmg-gui/js/Utils.js:893 pve-manager/www/manager6/Utils.js:2020
+#: pmg-gui/js/Utils.js:893 pve-manager/www/manager6/Utils.js:2021
 #: pve-manager/www/manager6/dc/Cluster.js:168
 msgid "Join Cluster"
 msgstr "Cluster deelname"
@@ -5823,11 +5868,11 @@ msgstr "Pad"
 msgid "LV UUID"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2030
+#: pve-manager/www/manager6/Utils.js:2031
 msgid "LVM Storage"
 msgstr "LVM opslag"
 
-#: pve-manager/www/manager6/Utils.js:2032
+#: pve-manager/www/manager6/Utils.js:2033
 msgid "LVM-Thin Storage"
 msgstr "LVM-dun opslag"
 
@@ -6135,7 +6180,7 @@ msgstr "Logboek rotatie"
 msgid "Log burst limit"
 msgstr "Limiet voor logboekgroei"
 
-#: pve-manager/www/manager6/Utils.js:1762
+#: pve-manager/www/manager6/Utils.js:1763
 msgid "Log in as root to install."
 msgstr "Log in als root om te installeren."
 
@@ -6227,8 +6272,8 @@ msgstr ""
 msgid "MDev Type"
 msgstr "MDev type"
 
-#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:179
-#: pve-manager/www/manager6/window/UploadToStorage.js:207
+#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:183
+#: pve-manager/www/manager6/window/UploadToStorage.js:223
 msgid "MIME type"
 msgstr "MIME type"
 
@@ -6352,6 +6397,11 @@ msgstr "Bemiddelde apparaten"
 #: pve-manager/www/manager6/window/Migrate.js:245
 msgid "Mapped Resources ({0}) not available on selected target."
 msgstr ""
+
+#: pve-manager/www/manager6/qemu/VirtiofsEdit.js:35
+#, fuzzy
+msgid "Mapping ID"
+msgstr "Gegevensopslag toewijzing"
 
 #: pve-manager/www/manager6/form/PCIMapSelector.js:52
 #: pve-manager/www/manager6/form/USBMapSelector.js:37
@@ -6619,9 +6669,9 @@ msgstr "Metrische server"
 msgid "MiB"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2024
-#: pve-manager/www/manager6/Utils.js:2044
-#: pve-manager/www/manager6/Utils.js:2074
+#: pve-manager/www/manager6/Utils.js:2025
+#: pve-manager/www/manager6/Utils.js:2045
+#: pve-manager/www/manager6/Utils.js:2075
 #: pve-manager/www/manager6/lxc/CmdMenu.js:101
 #: pve-manager/www/manager6/lxc/Config.js:95
 #: pve-manager/www/manager6/menu/TemplateMenu.js:29
@@ -6791,7 +6841,7 @@ msgstr "Maand"
 msgid "More"
 msgstr "Meer"
 
-#: pve-manager/www/manager6/Utils.js:2075
+#: pve-manager/www/manager6/Utils.js:2076
 #: proxmox-backup/www/datastore/Summary.js:268
 msgid "Mount"
 msgstr "Koppel"
@@ -6828,21 +6878,21 @@ msgid "Mounted"
 msgstr "Koppel"
 
 #: pve-manager/www/manager6/lxc/Resources.js:273
-#: pve-manager/www/manager6/qemu/HardwareView.js:398
+#: pve-manager/www/manager6/qemu/HardwareView.js:408
 msgid "Move Storage"
 msgstr "Opslag verplaatsen"
 
-#: pve-manager/www/manager6/Utils.js:2035
+#: pve-manager/www/manager6/Utils.js:2036
 #: pve-manager/www/manager6/qemu/HDMove.js:28
 msgid "Move Volume"
 msgstr "Volume verplaatsen"
 
-#: pve-manager/www/manager6/Utils.js:2045
+#: pve-manager/www/manager6/Utils.js:2046
 #: pve-manager/www/manager6/qemu/HDMove.js:28
 msgid "Move disk"
 msgstr "Schijf verplaatsen"
 
-#: pve-manager/www/manager6/qemu/HardwareView.js:399
+#: pve-manager/www/manager6/qemu/HardwareView.js:409
 msgid "Move disk to another storage"
 msgstr "Schijf naar andere opslag verplaatsen"
 
@@ -6958,7 +7008,7 @@ msgstr ""
 #: pve-manager/www/manager6/dc/RoleView.js:58
 #: pve-manager/www/manager6/dc/SecurityGroups.js:30
 #: pve-manager/www/manager6/dc/UserView.js:193
-#: pve-manager/www/manager6/form/FileSelector.js:67
+#: pve-manager/www/manager6/form/FileSelector.js:77
 #: pve-manager/www/manager6/form/IPRefSelector.js:78
 #: pve-manager/www/manager6/form/StorageSelector.js:20
 #: pve-manager/www/manager6/form/USBMapSelector.js:25
@@ -6993,6 +7043,7 @@ msgstr ""
 #: pve-manager/www/manager6/tree/SnapshotTree.js:333
 #: pve-manager/www/manager6/window/BulkAction.js:277
 #: pve-manager/www/manager6/window/Clone.js:199
+#: pve-manager/www/manager6/window/DirMapEdit.js:133
 #: pve-manager/www/manager6/window/GuestImport.js:506
 #: pve-manager/www/manager6/window/PCIMapEdit.js:199
 #: pve-manager/www/manager6/window/Restore.js:317
@@ -7104,7 +7155,7 @@ msgstr "Netwerk configuratie"
 #: proxmox-widget-toolkit/src/Utils.js:653
 #: pve-manager/www/manager6/lxc/Network.js:326
 #: pve-manager/www/manager6/qemu/HardwareView.js:247
-#: pve-manager/www/manager6/qemu/HardwareView.js:695
+#: pve-manager/www/manager6/qemu/HardwareView.js:707
 #: pve-manager/www/manager6/qemu/IPConfigEdit.js:66
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:232
 msgid "Network Device"
@@ -7578,11 +7629,12 @@ msgstr "Geen lidmaatschap"
 #: pve-manager/www/manager6/sdn/StatusView.js:73
 #: pve-manager/www/manager6/sdn/controllers/BgpEdit.js:26
 #: pve-manager/www/manager6/sdn/controllers/IsisEdit.js:26
+#: pve-manager/www/manager6/window/DirMapEdit.js:145
 #: pve-manager/www/manager6/window/Settings.js:188
 msgid "Node"
 msgstr "Systeem"
 
-#: pve-manager/www/manager6/Utils.js:2099
+#: pve-manager/www/manager6/Utils.js:2100
 #, fuzzy
 msgid "Node fencing notifications"
 msgstr "E-mail melding"
@@ -7813,7 +7865,7 @@ msgstr "Notificatie"
 msgid "Notification type"
 msgstr "Notificatie"
 
-#: pve-manager/www/manager6/dc/Config.js:343
+#: pve-manager/www/manager6/dc/Config.js:349
 #: proxmox-backup/www/NavigationTree.js:72
 #, fuzzy
 msgid "Notifications"
@@ -8051,7 +8103,7 @@ msgstr "Opties"
 msgid "Order"
 msgstr "Bestel"
 
-#: pve-manager/www/manager6/Utils.js:1997 proxmox-backup/www/Utils.js:401
+#: pve-manager/www/manager6/Utils.js:1998 proxmox-backup/www/Utils.js:401
 msgid "Order Certificate"
 msgstr "Bestel certificaat"
 
@@ -8188,7 +8240,7 @@ msgid "PBS change detection mode"
 msgstr "Selectiemodus"
 
 #: pve-manager/www/manager6/qemu/HardwareView.js:285
-#: pve-manager/www/manager6/qemu/HardwareView.js:717
+#: pve-manager/www/manager6/qemu/HardwareView.js:729
 #: pve-manager/www/manager6/qemu/PCIEdit.js:344
 msgid "PCI Device"
 msgstr "PCI-apparaat"
@@ -8212,12 +8264,17 @@ msgstr "PEM"
 msgid "PG Autoscaler Mode"
 msgstr "Automatisch schalen"
 
+#: pve-manager/www/manager6/qemu/VirtiofsEdit.js:74
+#, fuzzy
+msgid "POSIX ACLs"
+msgstr "ACL's verwijderen"
+
 #: proxmox-widget-toolkit/src/node/APT.js:19
 #: pve-manager/www/manager6/storage/TemplateView.js:71
 msgid "Package"
 msgstr "Pakket"
 
-#: pve-manager/www/manager6/Utils.js:2096 proxmox-backup/www/Utils.js:449
+#: pve-manager/www/manager6/Utils.js:2097 proxmox-backup/www/Utils.js:449
 #, fuzzy
 msgid "Package updates are available"
 msgstr "Geen updates beschikbaar"
@@ -8302,6 +8359,7 @@ msgstr "Gecodeerde clustergegevens hier invoegen"
 #: pve-manager/www/manager6/node/Directory.js:107
 #: pve-manager/www/manager6/sdn/VnetACLView.js:20
 #: pve-manager/www/manager6/storage/BTRFSEdit.js:14
+#: pve-manager/www/manager6/window/DirMapEdit.js:176
 #: proxmox-backup/www/DirectoryList.js:138
 #: proxmox-backup/www/config/ACLView.js:176
 #: proxmox-backup/www/form/PartitionSelector.js:52
@@ -8326,7 +8384,7 @@ msgstr "Moet beginnen met"
 msgid "Path on Device"
 msgstr "Van apparaat"
 
-#: pve-manager/www/manager6/Utils.js:2046
+#: pve-manager/www/manager6/Utils.js:2047
 #: pve-manager/www/manager6/qemu/CmdMenu.js:65
 #: pve-manager/www/manager6/qemu/Config.js:171
 msgid "Pause"
@@ -8426,7 +8484,7 @@ msgstr ""
 msgid "Pipe/Fifo"
 msgstr "Pipe/Fifo"
 
-#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:162
+#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:166
 msgid "Please (re-)query URL to get meta information"
 msgstr "Gelieve URL (opnieuw) ophalen om meta-informatie te krijgen"
 
@@ -8917,7 +8975,7 @@ msgstr "Publieke sleutel type"
 msgid "Pull"
 msgstr "Tref bestand"
 
-#: pve-manager/www/manager6/Utils.js:2037
+#: pve-manager/www/manager6/Utils.js:2038
 msgid "Pull file"
 msgstr "Tref bestand"
 
@@ -8934,7 +8992,7 @@ msgstr "Verwijder van taak configuratie"
 msgid "Push"
 msgstr "Duw bestand"
 
-#: pve-manager/www/manager6/Utils.js:2038
+#: pve-manager/www/manager6/Utils.js:2039
 msgid "Push file"
 msgstr "Duw bestand"
 
@@ -8973,7 +9031,7 @@ msgid "Quarantine port"
 msgstr "Quarantaine poort"
 
 #: pve-manager/www/manager6/node/ACME.js:127
-#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:146
+#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:150
 msgid "Query URL"
 msgstr "Opzoek URL"
 
@@ -9154,8 +9212,8 @@ msgstr "Aantal gelezen"
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:82
 #: proxmox-widget-toolkit/src/window/AuthEditOpenId.js:37
 #: proxmox-widget-toolkit/src/window/AuthEditSimple.js:15
-#: pmg-gui/js/UserView.js:164 pve-manager/www/manager6/Utils.js:2003
-#: pve-manager/www/manager6/Utils.js:2004
+#: pmg-gui/js/UserView.js:164 pve-manager/www/manager6/Utils.js:2004
+#: pve-manager/www/manager6/Utils.js:2005
 #: pve-manager/www/manager6/dc/AuthEditBase.js:37
 #: pve-manager/www/manager6/dc/AuthView.js:17
 #: pve-manager/www/manager6/dc/RealmSyncJob.js:107
@@ -9197,7 +9255,7 @@ msgid "Reassign Disk"
 msgstr "Schijven opnieuw toewijzen"
 
 #: pve-manager/www/manager6/lxc/Resources.js:281
-#: pve-manager/www/manager6/qemu/HardwareView.js:421
+#: pve-manager/www/manager6/qemu/HardwareView.js:431
 msgid "Reassign Owner"
 msgstr "Eigenaar opnieuw toewijzen"
 
@@ -9205,7 +9263,7 @@ msgstr "Eigenaar opnieuw toewijzen"
 msgid "Reassign Volume"
 msgstr "Volume opnieuw toewijzen"
 
-#: pve-manager/www/manager6/qemu/HardwareView.js:422
+#: pve-manager/www/manager6/qemu/HardwareView.js:432
 msgid "Reassign disk to another VM"
 msgstr "Schijf aan andere VM opnieuw toewijzen"
 
@@ -9222,8 +9280,8 @@ msgstr "Opnieuw balanceren"
 msgid "Rebalance on Start"
 msgstr "Opnieuw balanceren"
 
-#: pve-manager/www/manager6/Utils.js:2047
-#: pve-manager/www/manager6/Utils.js:2076
+#: pve-manager/www/manager6/Utils.js:2048
+#: pve-manager/www/manager6/Utils.js:2077
 #: pve-manager/www/manager6/lxc/CmdMenu.js:78
 #: pve-manager/www/manager6/lxc/Config.js:68
 #: pve-manager/www/manager6/node/Config.js:102
@@ -9285,7 +9343,7 @@ msgid "Referenced disks will always be destroyed."
 msgstr "Schijven waarnaar verwezen wordt, worden altijd vernietigd"
 
 #: proxmox-widget-toolkit/src/node/APT.js:106
-#: pve-manager/www/manager6/Utils.js:1998
+#: pve-manager/www/manager6/Utils.js:1999
 msgid "Refresh"
 msgstr "Ververs"
 
@@ -9312,7 +9370,7 @@ msgid "Regex"
 msgstr "Regex"
 
 #: proxmox-widget-toolkit/src/window/ACMEAccount.js:12
-#: pve-manager/www/manager6/Utils.js:1999
+#: pve-manager/www/manager6/Utils.js:2000
 #: pve-manager/www/manager6/node/ACME.js:9
 msgid "Register"
 msgstr "Registreer"
@@ -9396,7 +9454,7 @@ msgstr "Relaying"
 msgid "Reload"
 msgstr "Herlaad"
 
-#: pve-manager/www/manager6/Utils.js:2059
+#: pve-manager/www/manager6/Utils.js:2060
 #, fuzzy
 msgid "Reload network configuration on all nodes"
 msgstr "Kan netwerkconfiguratie niet verwerken"
@@ -9458,10 +9516,10 @@ msgstr "Verwijdering gepland"
 #: proxmox-widget-toolkit/src/window/NotificationMatcherEdit.js:858
 #: proxmox-widget-toolkit/src/window/SafeDestroy.js:115
 #: pmg-gui/js/RuleConfiguration.js:166 pmg-gui/js/RuleInfo.js:364
-#: pmg-gui/js/UserBlackWhiteList.js:164 pve-manager/www/manager6/Utils.js:2022
-#: pve-manager/www/manager6/Utils.js:2031
-#: pve-manager/www/manager6/Utils.js:2033
-#: pve-manager/www/manager6/Utils.js:2088
+#: pmg-gui/js/UserBlackWhiteList.js:164 pve-manager/www/manager6/Utils.js:2023
+#: pve-manager/www/manager6/Utils.js:2032
+#: pve-manager/www/manager6/Utils.js:2034
+#: pve-manager/www/manager6/Utils.js:2089
 #: pve-manager/www/manager6/dc/ACLView.js:156
 #: pve-manager/www/manager6/form/TagColorGrid.js:286
 #: pve-manager/www/manager6/grid/PoolMembers.js:193
@@ -9471,8 +9529,8 @@ msgstr "Verwijdering gepland"
 #: pve-manager/www/manager6/lxc/Resources.js:236
 #: pve-manager/www/manager6/qemu/CloudInit.js:61
 #: pve-manager/www/manager6/qemu/Config.js:132
-#: pve-manager/www/manager6/qemu/HardwareView.js:479
-#: pve-manager/www/manager6/qemu/HardwareView.js:480
+#: pve-manager/www/manager6/qemu/HardwareView.js:489
+#: pve-manager/www/manager6/qemu/HardwareView.js:490
 #: pve-manager/www/manager6/sdn/VnetACLView.js:179
 #: pve-manager/www/manager6/storage/ImageView.js:33
 #: pve-manager/www/manager6/tree/SnapshotTree.js:290
@@ -9607,7 +9665,7 @@ msgstr "Verwijder verdwenen gebruik en groep invoeren."
 msgid "Removed Data"
 msgstr "Verwijder gegevensopslag"
 
-#: pve-manager/www/manager6/Utils.js:2000 proxmox-backup/www/Utils.js:402
+#: pve-manager/www/manager6/Utils.js:2001 proxmox-backup/www/Utils.js:402
 msgid "Renew Certificate"
 msgstr "Vernieuw certificaat"
 
@@ -9630,7 +9688,7 @@ msgstr "Replicatie taak"
 msgid "Replication Log"
 msgstr "Replicatie logboek"
 
-#: pve-manager/www/manager6/Utils.js:2098
+#: pve-manager/www/manager6/Utils.js:2099
 #, fuzzy
 msgid "Replication job notifications"
 msgstr "Replicatie taak"
@@ -9679,7 +9737,7 @@ msgstr "Vereist '{0}' rechten"
 
 #: proxmox-widget-toolkit/src/panel/NotificationConfigView.js:11
 #: pmg-gui/js/Settings.js:159 pmg-gui/js/Settings.js:180
-#: pmg-gui/js/Settings.js:278 pve-manager/www/manager6/Utils.js:2048
+#: pmg-gui/js/Settings.js:278 pve-manager/www/manager6/Utils.js:2049
 #: pve-manager/www/manager6/qemu/Config.js:200
 #: pve-manager/www/manager6/window/Settings.js:223
 #: pve-manager/www/manager6/window/Settings.js:244
@@ -9707,9 +9765,9 @@ msgstr "Regeldata naar fabrieksinstellingen herstellen?"
 msgid "Reset {0} immediately"
 msgstr "Herstel {0} onmiddellijk"
 
-#: pve-manager/www/manager6/Utils.js:2058
+#: pve-manager/www/manager6/Utils.js:2059
 #: pve-manager/www/manager6/lxc/Resources.js:289
-#: pve-manager/www/manager6/qemu/HardwareView.js:445
+#: pve-manager/www/manager6/qemu/HardwareView.js:455
 msgid "Resize"
 msgstr "Wijzig grootte"
 
@@ -9764,8 +9822,8 @@ msgstr "Gelieve pmg-smtp-filter te herstarten om veranderingen te activeren"
 #: pmg-gui/js/BackupRestore.js:22 pmg-gui/js/BackupRestore.js:25
 #: pmg-gui/js/BackupRestore.js:102 pmg-gui/js/BackupRestore.js:142
 #: pmg-gui/js/PBSSnapshotView.js:206 pmg-gui/js/Utils.js:894
-#: pve-manager/www/manager6/Utils.js:2049
-#: pve-manager/www/manager6/Utils.js:2077
+#: pve-manager/www/manager6/Utils.js:2050
+#: pve-manager/www/manager6/Utils.js:2078
 #: pve-manager/www/manager6/grid/BackupView.js:185
 #: pve-manager/www/manager6/storage/BackupView.js:84
 #: pve-manager/www/manager6/window/Restore.js:358
@@ -9800,8 +9858,8 @@ msgstr "Herstel momentopname"
 msgid "Resulting Config"
 msgstr "Retentie configuratie"
 
-#: pve-manager/www/manager6/Utils.js:2050
-#: pve-manager/www/manager6/Utils.js:2078
+#: pve-manager/www/manager6/Utils.js:2051
+#: pve-manager/www/manager6/Utils.js:2079
 #: pve-manager/www/manager6/qemu/CmdMenu.js:80
 #: pve-manager/www/manager6/qemu/Config.js:48
 msgid "Resume"
@@ -9848,7 +9906,7 @@ msgstr "Reverse DNS server"
 msgid "Revert"
 msgstr "Terugzetten"
 
-#: pve-manager/www/manager6/Utils.js:2001 proxmox-backup/www/Utils.js:403
+#: pve-manager/www/manager6/Utils.js:2002 proxmox-backup/www/Utils.js:403
 msgid "Revoke Certificate"
 msgstr "Certificaat intrekken"
 
@@ -9877,8 +9935,8 @@ msgstr "Rol"
 msgid "Roles"
 msgstr "Rollen"
 
-#: pve-manager/www/manager6/Utils.js:2051
-#: pve-manager/www/manager6/Utils.js:2079
+#: pve-manager/www/manager6/Utils.js:2052
+#: pve-manager/www/manager6/Utils.js:2080
 #: pve-manager/www/manager6/tree/SnapshotTree.js:257
 msgid "Rollback"
 msgstr "Terugdraaien"
@@ -10270,7 +10328,7 @@ msgstr "Sectie"
 msgid "Security Group"
 msgstr "Beveiligingsgroep"
 
-#: pve-manager/www/manager6/window/UploadToStorage.js:173
+#: pve-manager/www/manager6/window/UploadToStorage.js:189
 msgid "Select File"
 msgstr "Selecteer bestand"
 
@@ -10379,7 +10437,7 @@ msgid "Serial"
 msgstr "Serienummer"
 
 #: pve-manager/www/manager6/qemu/HardwareView.js:295
-#: pve-manager/www/manager6/qemu/HardwareView.js:724
+#: pve-manager/www/manager6/qemu/HardwareView.js:736
 #: pve-manager/www/manager6/qemu/SerialEdit.js:32
 #: pve-manager/www/manager6/qemu/SerialEdit.js:57
 msgid "Serial Port"
@@ -10555,8 +10613,8 @@ msgstr "Delingen"
 
 #: proxmox-widget-toolkit/src/Utils.js:703
 #: proxmox-widget-toolkit/src/Utils.js:709
-#: pve-manager/www/manager6/Utils.js:2061
-#: pve-manager/www/manager6/Utils.js:2068
+#: pve-manager/www/manager6/Utils.js:2062
+#: pve-manager/www/manager6/Utils.js:2069
 #: pve-manager/www/manager6/node/CmdMenu.js:89
 #: pve-manager/www/manager6/node/Config.js:125
 #: pve-manager/www/manager6/node/Config.js:162
@@ -10637,9 +10695,9 @@ msgid "Show only installed services"
 msgstr ""
 
 #: pmg-gui/js/ServerStatus.js:73 pmg-gui/js/ServerStatus.js:75
-#: pve-manager/www/manager6/Utils.js:2025
-#: pve-manager/www/manager6/Utils.js:2052
-#: pve-manager/www/manager6/Utils.js:2080
+#: pve-manager/www/manager6/Utils.js:2026
+#: pve-manager/www/manager6/Utils.js:2053
+#: pve-manager/www/manager6/Utils.js:2081
 #: pve-manager/www/manager6/lxc/CmdMenu.js:59
 #: pve-manager/www/manager6/lxc/Config.js:59
 #: pve-manager/www/manager6/node/CmdMenu.js:53
@@ -10738,7 +10796,7 @@ msgstr "Eén schijf"
 #: pve-manager/www/manager6/ceph/OSDDetails.js:218
 #: pve-manager/www/manager6/ceph/Pool.js:74
 #: pve-manager/www/manager6/ceph/Pool.js:322
-#: pve-manager/www/manager6/form/FileSelector.js:78
+#: pve-manager/www/manager6/form/FileSelector.js:88
 #: pve-manager/www/manager6/grid/BackupView.js:365
 #: pve-manager/www/manager6/node/LVM.js:121
 #: pve-manager/www/manager6/node/LVMThin.js:124
@@ -10796,8 +10854,8 @@ msgstr "Sloveens"
 msgid "Smarthost"
 msgstr "Smarthost"
 
-#: pve-manager/www/manager6/Utils.js:2053
-#: pve-manager/www/manager6/Utils.js:2081
+#: pve-manager/www/manager6/Utils.js:2054
+#: pve-manager/www/manager6/Utils.js:2082
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:239
 #: pve-manager/www/manager6/form/BackupModeSelector.js:5
 #: pve-manager/www/manager6/form/SnapshotSelector.js:56
@@ -10973,9 +11031,9 @@ msgstr "Standaard VGA"
 #: proxmox-widget-toolkit/src/Utils.js:706
 #: proxmox-widget-toolkit/src/node/ServiceView.js:100
 #: pmg-gui/js/MailTracker.js:97 pmg-gui/js/Utils.js:714
-#: pve-manager/www/manager6/Utils.js:2026
-#: pve-manager/www/manager6/Utils.js:2054
-#: pve-manager/www/manager6/Utils.js:2082
+#: pve-manager/www/manager6/Utils.js:2027
+#: pve-manager/www/manager6/Utils.js:2055
+#: pve-manager/www/manager6/Utils.js:2083
 #: pve-manager/www/manager6/ceph/OSD.js:876
 #: pve-manager/www/manager6/ceph/ServiceList.js:309
 #: pve-manager/www/manager6/lxc/CmdMenu.js:53
@@ -11173,9 +11231,9 @@ msgstr "Status"
 #: proxmox-widget-toolkit/src/node/ServiceView.js:105
 #: proxmox-widget-toolkit/src/window/TaskViewer.js:214
 #: proxmox-widget-toolkit/src/window/TaskViewer.js:220
-#: pve-manager/www/manager6/Utils.js:2027
-#: pve-manager/www/manager6/Utils.js:2055
-#: pve-manager/www/manager6/Utils.js:2083
+#: pve-manager/www/manager6/Utils.js:2028
+#: pve-manager/www/manager6/Utils.js:2056
+#: pve-manager/www/manager6/Utils.js:2084
 #: pve-manager/www/manager6/ceph/OSD.js:886
 #: pve-manager/www/manager6/ceph/ServiceList.js:318
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:240
@@ -11384,7 +11442,7 @@ msgstr "Zondag"
 msgid "Superuser"
 msgstr "Supergebruiker"
 
-#: pve-manager/www/manager6/dc/Config.js:354
+#: pve-manager/www/manager6/dc/Config.js:360
 #: pve-manager/www/manager6/dc/NodeView.js:33
 msgid "Support"
 msgstr "Ondersteuning"
@@ -11393,7 +11451,7 @@ msgstr "Ondersteuning"
 msgid "Support for {0} {1} ends on {2}"
 msgstr "Steun voor {0} {1} eindigt op {2}"
 
-#: pve-manager/www/manager6/Utils.js:2084
+#: pve-manager/www/manager6/Utils.js:2085
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:241
 #: pve-manager/www/manager6/form/BackupModeSelector.js:6
 #: pve-manager/www/manager6/node/CmdMenu.js:67
@@ -11401,7 +11459,7 @@ msgstr "Steun voor {0} {1} eindigt op {2}"
 msgid "Suspend"
 msgstr "Pauzeer"
 
-#: pve-manager/www/manager6/Utils.js:2064
+#: pve-manager/www/manager6/Utils.js:2065
 #, fuzzy
 msgid "Suspend all VMs"
 msgstr "Pauzeren op schijf"
@@ -11428,7 +11486,7 @@ msgstr "Zweeds"
 
 #: proxmox-widget-toolkit/src/panel/AuthView.js:158
 #: proxmox-widget-toolkit/src/window/SyncWindow.js:147
-#: pve-manager/www/manager6/Utils.js:2003
+#: pve-manager/www/manager6/Utils.js:2004
 #: pve-manager/www/manager6/dc/AuthView.js:126
 #: pve-manager/www/manager6/dc/SyncWindow.js:172
 msgid "Sync"
@@ -11462,7 +11520,7 @@ msgstr "Synchronisatie voorbeeld"
 msgid "Sync Options"
 msgstr "Synchronisatie opties"
 
-#: pve-manager/www/manager6/Utils.js:2004
+#: pve-manager/www/manager6/Utils.js:2005
 msgid "Sync Preview"
 msgstr "Synchronisatie voorbeeld"
 
@@ -11596,7 +11654,7 @@ msgstr "TOTP-codes bestaan meestal uit zes decimale cijfers"
 
 #: pve-manager/www/manager6/qemu/HDTPM.js:81
 #: pve-manager/www/manager6/qemu/HardwareView.js:263
-#: pve-manager/www/manager6/qemu/HardwareView.js:703
+#: pve-manager/www/manager6/qemu/HardwareView.js:715
 msgid "TPM State"
 msgstr "TPM status"
 
@@ -12387,13 +12445,13 @@ msgstr "URIs"
 #: pve-manager/www/manager6/node/ACME.js:105
 #: pve-manager/www/manager6/sdn/ipams/NetboxEdit.js:42
 #: pve-manager/www/manager6/sdn/ipams/PhpIpamEdit.js:41
-#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:131
+#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:135
 #: proxmox-backup/www/window/InfluxDbEdit.js:38
 msgid "URL"
 msgstr "URL"
 
 #: pve-manager/www/manager6/qemu/HardwareView.js:274
-#: pve-manager/www/manager6/qemu/HardwareView.js:710
+#: pve-manager/www/manager6/qemu/HardwareView.js:722
 #: pve-manager/www/manager6/qemu/USBEdit.js:157
 msgid "USB Device"
 msgstr "USB-apparaat"
@@ -12460,8 +12518,8 @@ msgstr "Eenheidsbestand"
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:243
 #: pve-manager/www/manager6/form/USBSelector.js:143
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:101
-#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:97
-#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:98
+#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:101
+#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:102
 #: proxmox-backup/www/Dashboard.js:307
 msgid "Unknown"
 msgstr "Onbekend"
@@ -12514,7 +12572,7 @@ msgstr ""
 msgid "Unlock TFA authentication for {0}"
 msgstr "Authenticatiemodus"
 
-#: pve-manager/www/manager6/Utils.js:2086
+#: pve-manager/www/manager6/Utils.js:2087
 #: proxmox-backup/www/datastore/Summary.js:243
 msgid "Unmount"
 msgstr "Ontkoppel"
@@ -12566,7 +12624,7 @@ msgstr "Ongebruikte schijf"
 msgid "Up"
 msgstr "Omhoog"
 
-#: pmg-gui/js/DKIMSettings.js:152 pve-manager/www/manager6/Utils.js:2002
+#: pmg-gui/js/DKIMSettings.js:152 pve-manager/www/manager6/Utils.js:2003
 msgid "Update"
 msgstr "Update"
 
@@ -12620,7 +12678,7 @@ msgstr ""
 #: pve-manager/www/manager6/node/Certificates.js:156
 #: pve-manager/www/manager6/storage/ContentView.js:66
 #: pve-manager/www/manager6/window/UploadToStorage.js:9
-#: pve-manager/www/manager6/window/UploadToStorage.js:264
+#: pve-manager/www/manager6/window/UploadToStorage.js:285
 msgid "Upload"
 msgstr "Upload"
 
@@ -12642,6 +12700,12 @@ msgstr "Lidmaatschapssleutel uploaden"
 #: pve-manager/www/manager6/storage/PBSEdit.js:318
 msgid "Upload an existing client encryption key"
 msgstr "Bestaande client versleutelings sleutel uploaden"
+
+#: pve-manager/www/manager6/window/UploadToStorage.js:251
+msgid ""
+"Uploads are stored temporarily in '/var/tmp/', make sure there is enough "
+"free space."
+msgstr ""
 
 #: pve-manager/www/manager6/dc/OptionView.js:338
 msgid "Upper"
@@ -13240,7 +13304,7 @@ msgstr "Status verifiëren"
 msgid "Verify TLS certificate of the server"
 msgstr "SSL certificaat van deze server verifiëren"
 
-#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:211
+#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:215
 msgid "Verify certificates"
 msgstr "Certificaten verifiëren"
 
@@ -13294,10 +13358,19 @@ msgid "View images"
 msgstr "Schijfkopie bekijken"
 
 #: pve-manager/www/manager6/qemu/HardwareView.js:321
-#: pve-manager/www/manager6/qemu/HardwareView.js:745
+#: pve-manager/www/manager6/qemu/HardwareView.js:757
 #: pve-manager/www/manager6/qemu/RNGEdit.js:86
 msgid "VirtIO RNG"
 msgstr "VirtIO RNG"
+
+#: pve-manager/www/manager6/qemu/HardwareView.js:330
+#: pve-manager/www/manager6/qemu/HardwareView.js:764
+msgid "Virtiofs"
+msgstr ""
+
+#: pve-manager/www/manager6/qemu/VirtiofsEdit.js:100
+msgid "Virtiofs Filesystem Passthrough"
+msgstr ""
 
 #: proxmox-widget-toolkit/src/Schema.js:97
 msgid "Virtual"
@@ -13571,7 +13644,7 @@ msgid "Whole year"
 msgstr "Hele jaar"
 
 #: proxmox-widget-toolkit/src/panel/DiskList.js:396
-#: pve-manager/www/manager6/Utils.js:2066 proxmox-backup/www/Utils.js:436
+#: pve-manager/www/manager6/Utils.js:2067 proxmox-backup/www/Utils.js:436
 msgid "Wipe Disk"
 msgstr "Schijf wissen"
 
@@ -13658,6 +13731,11 @@ msgstr "Schrijflimiet"
 msgid "Write max burst"
 msgstr "Schrijf maximale groei"
 
+#: pve-manager/www/manager6/qemu/VirtiofsEdit.js:63
+#, fuzzy
+msgid "Writeback cache"
+msgstr "Schrijfcache"
+
 #: pve-manager/www/manager6/ceph/Status.js:304
 #: pve-manager/www/manager6/ceph/Status.js:316
 msgid "Writes"
@@ -13671,7 +13749,7 @@ msgstr ""
 msgid "Writing encrypted data"
 msgstr ""
 
-#: pve-manager/www/manager6/window/UploadToStorage.js:194
+#: pve-manager/www/manager6/window/UploadToStorage.js:210
 msgid "Wrong file extension"
 msgstr "Verkeerde bestands extensie"
 
@@ -13811,7 +13889,7 @@ msgstr ""
 msgid "ZFS Pool"
 msgstr "ZFS pool"
 
-#: pve-manager/www/manager6/Utils.js:2087 proxmox-backup/www/Utils.js:437
+#: pve-manager/www/manager6/Utils.js:2088 proxmox-backup/www/Utils.js:437
 msgid "ZFS Storage"
 msgstr "ZFS opslag"
 
@@ -14061,8 +14139,8 @@ msgstr "noVNC-instellingen"
 
 #: proxmox-widget-toolkit/src/Utils.js:48
 #: pve-manager/www/manager6/dc/OptionView.js:286
-#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:203
-#: pve-manager/www/manager6/window/UploadToStorage.js:229
+#: pve-manager/www/manager6/window/DownloadUrlToStorage.js:207
+#: pve-manager/www/manager6/window/UploadToStorage.js:245
 #: proxmox-backup/www/window/DataStoreEdit.js:83
 #: proxmox-backup/www/window/DataStoreEdit.js:94
 msgid "none"
@@ -14214,6 +14292,11 @@ msgstr "huidig wachtwoord verifiëren"
 msgid "with options"
 msgstr "met opties"
 
+#: pve-manager/www/manager6/qemu/VirtiofsEdit.js:68
+#, fuzzy
+msgid "xattr Support"
+msgstr "Ondersteuning"
+
 #: pmg-gui/js/Settings.js:220 pve-manager/www/manager6/window/Settings.js:305
 #: proxmox-backup/www/window/Settings.js:220
 msgid "xterm.js Settings"
@@ -14279,7 +14362,7 @@ msgstr "{0} minuten"
 msgid "{0} months"
 msgstr "{0} maanden"
 
-#: pve-manager/www/manager6/Utils.js:1761
+#: pve-manager/www/manager6/Utils.js:1762
 msgid "{0} not installed."
 msgstr "{0} niet geïnstalleerd."
 
@@ -14522,9 +14605,6 @@ msgstr "{0}% van {1}"
 
 #~ msgid "Purge"
 #~ msgstr "Verwijder"
-
-#~ msgid "Purge ACLs"
-#~ msgstr "ACL's verwijderen"
 
 #~ msgid "Read Limit"
 #~ msgstr "Leesbegrenzing"
