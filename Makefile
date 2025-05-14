@@ -4,6 +4,7 @@ LINGUAS=\
 	ar \
 	bg \
 	ca \
+	cs \
 	da \
 	de \
 	es \
