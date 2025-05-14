@@ -1,6 +1,6 @@
 include /usr/share/dpkg/pkg-info.mk
 
-LINGUAS=\
+LINGUAS ?= \
 	ar \
 	bg \
 	ca \
