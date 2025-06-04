@@ -130,7 +130,11 @@ init-%.po: messages.pot
 
 .INTERMEDIATE: messages.pot
 messages.pot: proxmox-widget-toolkit.pot proxmox-mailgateway.pot pve-manager.pot proxmox-backup.pot
-	msgcat $^ > $@
+	xgettext $^ \
+      --package-name="proxmox translations" \
+      --msgid-bugs-address="<support@proxmox.com>" \
+      --copyright-holder="Copyright (C) Proxmox Server Solutions GmbH <support@proxmox.com> & the translation contributors." \
+      --output $@
 
 .PHONY: distclean
 distclean: clean
