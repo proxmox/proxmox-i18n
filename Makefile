@@ -38,16 +38,19 @@ DSC=$(DEB_SOURCE)_$(DEB_VERSION_UPSTREAM_REVISION).dsc
 PVE_I18N_DEB=pve-i18n_$(DEB_VERSION)_all.deb
 PMG_I18N_DEB=pmg-i18n_$(DEB_VERSION)_all.deb
 PBS_I18N_DEB=pbs-i18n_$(DEB_VERSION)_all.deb
+PDM_I18N_DEB=pdm-i18n_$(DEB_VERSION)_all.deb
 
-DEBS=$(PMG_I18N_DEB) $(PVE_I18N_DEB) $(PBS_I18N_DEB)
+DEBS=$(PMG_I18N_DEB) $(PVE_I18N_DEB) $(PBS_I18N_DEB) $(PDM_I18N_DEB)
 
 PMGLOCALEDIR=$(DESTDIR)/usr/share/pmg-i18n
 PVELOCALEDIR=$(DESTDIR)/usr/share/pve-i18n
 PBSLOCALEDIR=$(DESTDIR)/usr/share/pbs-i18n
+PDMLOCALEDIR=$(DESTDIR)/usr/share/pdm-i18n
 
 PMG_LANG_FILES=$(patsubst %, pmg-lang-%.js, $(LINGUAS))
 PVE_LANG_FILES=$(patsubst %, pve-lang-%.js, $(LINGUAS))
 PBS_LANG_FILES=$(patsubst %, pbs-lang-%.js, $(LINGUAS))
+PDM_LANG_FILES=$(patsubst %, catalog-%.mo, $(LINGUAS))
 
 all:
 
@@ -75,17 +78,25 @@ $(DSC): $(BUILDDIR)
 	lintian $(DSC)
 
 submodule:
-	test  -f pmg-gui/Makefile -a -f proxmox-backup/Makefile -a -f pve-manager/Makefile \
+	test  -f pmg-gui/Makefile \
+	  -a -f proxmox-datacenter-manager/Makefile \
+	  -a -f proxmox-backup/Makefile \
+	  -a -f proxmox-yew-widget-toolkit/Makefile \
+	  -a -f pve-manager/Makefile \
+	  -a -f pve-manager/Makefile \
 	    || git submodule update --init
 
 .PHONY: install
-install: $(PMG_LANG_FILES) $(PVE_LANG_FILES) $(PBS_LANG_FILES)
+install: $(PMG_LANG_FILES) $(PVE_LANG_FILES) $(PBS_LANG_FILES) $(PDM_LANG_FILES)
 	install -d $(PMGLOCALEDIR)
 	install -m 0644 $(PMG_LANG_FILES) $(PMGLOCALEDIR)
 	install -d $(PVELOCALEDIR)
 	install -m 0644 $(PVE_LANG_FILES) $(PVELOCALEDIR)
 	install -d $(PBSLOCALEDIR)
 	install -m 0644 $(PBS_LANG_FILES) $(PBSLOCALEDIR)
+	install -d $(PDMLOCALEDIR)
+	install -m 0644 $(PDM_LANG_FILES) $(PDMLOCALEDIR)
+
 # compat symlinks for kr -> ko correction.
 	ln -s pmg-lang-ko.js $(PMGLOCALEDIR)/pmg-lang-kr.js
 	ln -s pve-lang-ko.js $(PVELOCALEDIR)/pve-lang-kr.js
@@ -99,6 +110,9 @@ pve-lang-%.js: %.po
 
 pbs-lang-%.js: %.po
 	./po2js.pl -t pbs -v "$(DEB_VERSION)" -o pbs-lang-$*.js $?
+
+catalog-%.mo: %.po
+	msgmerge $< proxmox-datacenter-manager.pot | msgattrib --no-fuzzy --no-obsolete | msgfmt --verbose --output-file $@ $<;
 
 # parameter 1 is the name
 # parameter 2 is the directory
@@ -114,17 +128,34 @@ define potupdate
       --output="$(1)".pot
 endef
 
+# parameter 1 is the name
+# parameter 2 is the directory
+define xtrpotupdate
+     xtr \
+	  --package-name "$(1)" \
+	  --package-version="$(shell cd $(2);git rev-parse HEAD)" \
+	  --msgid-bugs-address="<support@proxmox.com>" \
+	  --copyright-holder="Copyright (C) Proxmox Server Solutions GmbH <support@proxmox.com> & the translation contributors." \
+	  --output "$(1)".pot \
+	  $(shell find . -name "*.rs" -path "./$(2)*" | sort | xargs)
+endef
+
 .PHONY: update update_pot do_update
 update_pot: submodule
 	$(call potupdate,proxmox-widget-toolkit,proxmox-widget-toolkit/)
 	$(call potupdate,pve-manager,pve-manager/www/manager6/)
 	$(call potupdate,proxmox-mailgateway,pmg-gui/js/)
 	$(call potupdate,proxmox-backup,proxmox-backup/www/)
+	$(call xtrpotupdate,proxmox-datacenter-manager-ui,proxmox-datacenter-manager/ui/src/)
+	$(call xtrpotupdate,proxmox-yew-comp,proxmox-yew-comp/src/)
+	$(call xtrpotupdate,proxmox-yew-widget-toolkit,proxmox-yew-widget-toolkit/src/)
 
 do_update:
 	$(MAKE) update_pot
 	$(MAKE) messages.pot
+	$(MAKE) proxmox-datacenter-manager.pot
 	for i in $(LINGUAS); do echo -n "$$i: "; msgmerge -s -v $$i.po messages.pot >$$i.po.tmp && mv $$i.po.tmp $$i.po; done;
+	for i in $(LINGUAS); do echo -n "$$i: "; msgmerge -s -v $$i.po proxmox-datacenter-manager.pot >$$i.po.tmp && mv $$i.po.tmp $$i.po; done;
 
 update:
 	git submodule foreach 'git pull --ff-only origin master'
@@ -139,17 +170,25 @@ init-%.po: messages.pot
 .INTERMEDIATE: messages.pot
 messages.pot: proxmox-widget-toolkit.pot proxmox-mailgateway.pot pve-manager.pot proxmox-backup.pot
 	xgettext $^ \
-      --package-name="proxmox translations" \
-      --msgid-bugs-address="<support@proxmox.com>" \
-      --copyright-holder="Copyright (C) Proxmox Server Solutions GmbH <support@proxmox.com> & the translation contributors." \
-      --output $@
+	  --package-name="proxmox translations" \
+	  --msgid-bugs-address="<support@proxmox.com>" \
+	  --copyright-holder="Copyright (C) Proxmox Server Solutions GmbH <support@proxmox.com> & the translation contributors." \
+	  --output $@
+
+.INTERMEDIATE: proxmox-datacenter-manager.pot
+proxmox-datacenter-manager.pot: proxmox-datacenter-manager-ui.pot proxmox-yew-comp.pot proxmox-yew-widget-toolkit.pot
+	xgettext $^ \
+	  --package-name="Proxmox Datacenter Manager" \
+	  --msgid-bugs-address="<support@proxmox.com>" \
+	  --copyright-holder="Copyright (C) Proxmox Server Solutions GmbH <support@proxmox.com> & the translation contributors." \
+	  --output $@
 
 .PHONY: distclean
 distclean: clean
 
 .PHONY: clean
 clean:
-	rm -rf $(DEB_SOURCE)-[0-9]*/ *.po.tmp *.js.tmp *.deb *.dsc *.tar.* *.build *.buildinfo *.changes *.js messages.pot
+	rm -rf $(DEB_SOURCE)-[0-9]*/ *.po.tmp *.js.tmp *.deb *.dsc *.tar.* *.build *.buildinfo *.changes *.js messages.pot proxmox-datacenter-manager.pot
 
 .PHONY: upload-pve upload-pmg upload-pbs upload
 upload-%: UPLOAD_DIST ?= $(DEB_DISTRIBUTION)
