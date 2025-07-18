@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: proxmox translations\n"
 "Report-Msgid-Bugs-To: <support@proxmox.com>\n"
-"POT-Creation-Date: 2025-07-16 13:07+0200\n"
+"POT-Creation-Date: 2025-07-18 10:22+0200\n"
 "PO-Revision-Date: 2025-02-27 10:16+0800\n"
 "Last-Translator: Try. <rov7@qq.com>\n"
 "Language-Team: Chinese (simplified) <tianmotrue@163.com>\n"
@@ -236,6 +236,7 @@ msgstr "账户"
 #: pmg-gui/js/ObjectGroupSelector.js:35 pmg-gui/js/RuleInfo.js:426
 #: pve-manager/www/manager6/grid/FirewallRules.js:240
 #: pve-manager/www/manager6/grid/FirewallRules.js:925
+#: pve-manager/www/manager6/sdn/FabricsView.js:100
 msgid "Action"
 msgstr "操作"
 
@@ -267,8 +268,8 @@ msgstr "操作对象"
 msgid "Actions"
 msgstr "操作"
 
-#: proxmox-widget-toolkit/src/form/NetworkSelector.js:107
-#: proxmox-widget-toolkit/src/node/NetworkView.js:290
+#: proxmox-widget-toolkit/src/form/NetworkSelector.js:114
+#: proxmox-widget-toolkit/src/node/NetworkView.js:310
 #: proxmox-widget-toolkit/src/node/ServiceView.js:220
 #: pmg-gui/js/RuleEditor.js:45 pmg-gui/js/RuleInfo.js:288
 #: pve-manager/www/manager6/form/BridgeSelector.js:28
@@ -305,7 +306,7 @@ msgstr "活动"
 #: pmg-gui/js/UserBlackWhiteList.js:159 pmg-gui/js/UserView.js:120
 #: pve-manager/www/manager6/dc/ACLView.js:198
 #: pve-manager/www/manager6/dc/AuthView.js:108
-#: pve-manager/www/manager6/dc/Backup.js:785
+#: pve-manager/www/manager6/dc/Backup.js:732
 #: pve-manager/www/manager6/dc/CorosyncLinkEdit.js:308
 #: pve-manager/www/manager6/dc/MetricServerView.js:97
 #: pve-manager/www/manager6/dc/RealmSyncJob.js:144
@@ -369,6 +370,11 @@ msgstr "目录存储"
 msgid "Add EFI Disk"
 msgstr "添加 EFI 磁盘"
 
+#: pve-manager/www/manager6/sdn/FabricsView.js:187
+#, fuzzy
+msgid "Add Fabric"
+msgstr "添加为"
+
 #: proxmox-widget-toolkit/src/panel/WebhookEditPanel.js:71
 msgid "Add Header"
 msgstr "添加标题栏"
@@ -376,6 +382,13 @@ msgstr "添加标题栏"
 #: proxmox-backup/www/datastore/Content.js:1309
 msgid "Add Namespace"
 msgstr "新增命名空间"
+
+#: pve-manager/www/manager6/sdn/fabrics/NodeEdit.js:188
+#: pve-manager/www/manager6/sdn/FabricsView.js:107
+#: pve-manager/www/manager6/sdn/FabricsView.js:168
+#, fuzzy
+msgid "Add Node"
+msgstr "添加 NS"
 
 #: proxmox-backup/www/config/SyncView.js:226
 msgid "Add Pull Sync Job"
@@ -478,7 +491,7 @@ msgstr "将新池添加到集群存储配置。"
 msgid "Additional Recipient(s)"
 msgstr "其他收件人"
 
-#: pve-manager/www/manager6/ceph/CephInstallWizard.js:554
+#: pve-manager/www/manager6/ceph/CephInstallWizard.js:556
 msgid ""
 "Additional monitors are recommended. They can be created at any time in the "
 "Monitor tab."
@@ -511,7 +524,7 @@ msgid "Administrator EMail"
 msgstr "管理员邮箱"
 
 #: proxmox-widget-toolkit/src/window/Edit.js:374
-#: pve-manager/www/manager6/dc/Backup.js:488
+#: pve-manager/www/manager6/dc/Backup.js:435
 #: pve-manager/www/manager6/window/GuestImport.js:656
 #: pve-manager/www/manager6/window/Wizard.js:163
 msgid "Advanced"
@@ -525,7 +538,7 @@ msgstr "广播子网"
 msgid "Alert Flags"
 msgstr "警报标志"
 
-#: pve-manager/www/manager6/dc/Config.js:281
+#: pve-manager/www/manager6/dc/Config.js:289
 #: pve-manager/www/manager6/form/SDNVnetSelector.js:34
 #: pve-manager/www/manager6/grid/FirewallAliases.js:47
 #: pve-manager/www/manager6/grid/FirewallAliases.js:84
@@ -541,9 +554,9 @@ msgstr "别名"
 #: proxmox-widget-toolkit/src/node/Tasks.js:353
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:183
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:410
-#: pve-manager/www/manager6/dc/Backup.js:259
-#: pve-manager/www/manager6/dc/Backup.js:287
-#: pve-manager/www/manager6/dc/Backup.js:507
+#: pve-manager/www/manager6/dc/Backup.js:246
+#: pve-manager/www/manager6/dc/Backup.js:274
+#: pve-manager/www/manager6/dc/Backup.js:454
 #: pve-manager/www/manager6/form/StorageSelector.js:54
 #: pve-manager/www/manager6/sdn/VnetACLView.js:63
 #: pve-manager/www/manager6/sdn/zones/Base.js:45
@@ -584,6 +597,10 @@ msgstr "一切正常，已经配置了生产就绪的存储库！"
 
 #: pmg-gui/js/AuthEditOIDC.js:199
 msgid "All auto-created users get audit role"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/fabrics/NodeEdit.js:189
+msgid "All available nodes are already part of the fabric"
 msgstr ""
 
 #: proxmox-backup/www/datastore/OptionView.js:18
@@ -643,6 +660,11 @@ msgstr "允许密钥共享"
 msgid "Allow SMT"
 msgstr "允许超链接"
 
+#: pve-manager/www/manager6/storage/Base.js:84
+#, fuzzy
+msgid "Allow Snapshots as Volume-Chain"
+msgstr "没有找到快照"
+
 #: pve-manager/www/manager6/window/BulkAction.js:90
 msgid "Allow local disk migration"
 msgstr "允许本地磁盘迁移"
@@ -657,6 +679,12 @@ msgstr "允许的字符"
 #: pve-manager/www/manager6/UIOptions.js:82
 msgid "Alphabetical"
 msgstr "按字母顺序排列的"
+
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:373
+#: proxmox-widget-toolkit/src/node/NetworkView.js:287
+#, fuzzy
+msgid "Alternative Names"
+msgstr "主题替代名称"
 
 #: pmg-gui/js/PBSRemoteEdit.js:87
 #: pve-manager/www/manager6/form/NotificationPolicySelector.js:5
@@ -697,7 +725,7 @@ msgstr "任意规则匹配"
 msgid "Application"
 msgstr "应用"
 
-#: pve-manager/www/manager6/dc/OptionView.js:500
+#: pve-manager/www/manager6/dc/OptionView.js:501
 msgid "Applies to new edits"
 msgstr "应用于新编辑"
 
@@ -713,7 +741,7 @@ msgstr "应用"
 msgid "Apply Always"
 msgstr "始终应用"
 
-#: proxmox-widget-toolkit/src/node/NetworkView.js:128
+#: proxmox-widget-toolkit/src/node/NetworkView.js:133
 msgid "Apply Configuration"
 msgstr "应用配置"
 
@@ -813,6 +841,17 @@ msgstr "确定要删除该证书吗"
 msgid "Are you sure you want to remove the certificate used for {0}"
 msgstr "确定要删除用于 {0} 的凭证吗？"
 
+#: pve-manager/www/manager6/sdn/FabricsView.js:438
+#, fuzzy
+msgid "Are you sure you want to remove the fabric \"{0}\"?"
+msgstr "确定要删除该项 {0} 吗？"
+
+#: pve-manager/www/manager6/sdn/FabricsView.js:448
+#, fuzzy
+msgid ""
+"Are you sure you want to remove the node \"{0}\" from the fabric \"{1}\"?"
+msgstr "确定要删除 {0} 的计划吗？"
+
 #: pmg-gui/js/PBSSnapshotView.js:152
 msgid "Are you sure you want to remove the schedule for {0}"
 msgstr "确定要删除 {0} 的计划吗？"
@@ -838,6 +877,10 @@ msgstr "确定要删除 {0} 条目吗"
 #: proxmox-widget-toolkit/src/panel/DiskList.js:432
 msgid "Are you sure you want to wipe {0}?"
 msgstr "确定要擦除 {0} 吗？"
+
+#: pve-manager/www/manager6/sdn/fabrics/ospf/FabricEdit.js:14
+msgid "Area"
+msgstr ""
 
 #: pve-manager/www/manager6/node/LVM.js:113
 msgid "Assigned to LVs"
@@ -916,12 +959,7 @@ msgstr "身份验证模式"
 msgid "Author"
 msgstr "发起人"
 
-#: pve-manager/www/manager6/dc/Backup.js:328
-#: pve-manager/www/manager6/window/Backup.js:42
-msgid "Auto"
-msgstr "自动"
-
-#: pmg-gui/js/TFAView.js:60 pve-manager/www/manager6/dc/OptionView.js:269
+#: pmg-gui/js/TFAView.js:60 pve-manager/www/manager6/dc/OptionView.js:270
 #: proxmox-backup/www/config/WebauthnView.js:112
 msgid "Auto-fill"
 msgstr "自动填充"
@@ -972,8 +1010,8 @@ msgstr "自动（虚拟机使用的存储或 “本地”）"
 msgid "Autoscaler Mode"
 msgstr "自动缩放模式"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:55
-#: proxmox-widget-toolkit/src/node/NetworkView.js:300
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:58
+#: proxmox-widget-toolkit/src/node/NetworkView.js:320
 msgid "Autostart"
 msgstr "自动启动"
 
@@ -1042,9 +1080,9 @@ msgstr "退信攻击计分"
 #: pve-manager/www/manager6/lxc/MPEdit.js:261
 #: pve-manager/www/manager6/qemu/Config.js:360
 #: pve-manager/www/manager6/qemu/HDEdit.js:360
-#: pve-manager/www/manager6/Utils.js:694 pve-manager/www/manager6/Utils.js:2142
-#: pve-manager/www/manager6/window/Backup.js:293
-#: pve-manager/www/manager6/window/Backup.js:366
+#: pve-manager/www/manager6/Utils.js:694 pve-manager/www/manager6/Utils.js:2136
+#: pve-manager/www/manager6/window/Backup.js:306
+#: pve-manager/www/manager6/window/Backup.js:379
 #: proxmox-backup/www/tape/window/TapeBackup.js:5
 #: proxmox-backup/www/Utils.js:421
 msgid "Backup"
@@ -1054,7 +1092,7 @@ msgstr "备份"
 msgid "Backup Count"
 msgstr "备份计数"
 
-#: pve-manager/www/manager6/dc/Backup.js:564
+#: pve-manager/www/manager6/dc/Backup.js:511
 msgid "Backup Details"
 msgstr "备份详情"
 
@@ -1069,7 +1107,7 @@ msgstr "备份组"
 
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:52
 #: pve-manager/www/manager6/dc/Backup.js:9
-#: pve-manager/www/manager6/Utils.js:2142
+#: pve-manager/www/manager6/Utils.js:2136
 msgid "Backup Job"
 msgstr "备份作业"
 
@@ -1077,7 +1115,7 @@ msgstr "备份作业"
 msgid "Backup Jobs"
 msgstr "备份作业"
 
-#: pve-manager/www/manager6/dc/Backup.js:459
+#: pve-manager/www/manager6/dc/Backup.js:406
 msgid "Backup Notes"
 msgstr "备份日志"
 
@@ -1085,11 +1123,11 @@ msgstr "备份日志"
 msgid "Backup Now"
 msgstr "立即备份"
 
-#: pve-manager/www/manager6/dc/OptionView.js:321
+#: pve-manager/www/manager6/dc/OptionView.js:322
 msgid "Backup Restore"
 msgstr "备份还原"
 
-#: pve-manager/www/manager6/storage/Base.js:123
+#: pve-manager/www/manager6/storage/Base.js:146
 msgid "Backup Retention"
 msgstr "备份保留"
 
@@ -1107,7 +1145,7 @@ msgstr "备份时间"
 msgid "Backup content type not available for this storage."
 msgstr "备份内容类型不可用于此存储。"
 
-#: pve-manager/www/manager6/Utils.js:2166
+#: pve-manager/www/manager6/Utils.js:2160
 msgid "Backup notifications"
 msgstr "备份通知"
 
@@ -1156,7 +1194,7 @@ msgstr "带宽"
 msgid "Bandwidth Limit"
 msgstr "带宽限制"
 
-#: pve-manager/www/manager6/dc/OptionView.js:304
+#: pve-manager/www/manager6/dc/OptionView.js:305
 msgid "Bandwidth Limits"
 msgstr "带宽限制"
 
@@ -1242,7 +1280,7 @@ msgstr "阻止加密的档案和文档"
 msgid "Body"
 msgstr "正文"
 
-#: proxmox-widget-toolkit/src/node/NetworkView.js:335
+#: proxmox-widget-toolkit/src/node/NetworkView.js:355
 msgid "Bond Mode"
 msgstr "Bond 模式"
 
@@ -1277,8 +1315,8 @@ msgstr "退信"
 msgid "Bridge"
 msgstr "桥接"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:132
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:147
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:135
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:150
 msgid "Bridge ports"
 msgstr "桥接端口"
 
@@ -1342,15 +1380,15 @@ msgstr "批量启动"
 msgid "Bulk Suspend"
 msgstr "批量挂起"
 
-#: pve-manager/www/manager6/Utils.js:2102
+#: pve-manager/www/manager6/Utils.js:2096
 msgid "Bulk migrate VMs and Containers"
 msgstr "批量迁移虚拟机和容器"
 
-#: pve-manager/www/manager6/Utils.js:2131
+#: pve-manager/www/manager6/Utils.js:2125
 msgid "Bulk shutdown VMs and Containers"
 msgstr "批量关闭虚拟机和容器"
 
-#: pve-manager/www/manager6/Utils.js:2130
+#: pve-manager/www/manager6/Utils.js:2124
 msgid "Bulk start VMs and Containers"
 msgstr "批量启动虚拟机和容器"
 
@@ -1399,9 +1437,11 @@ msgstr "CD/DVD 驱动器"
 msgid "CD/DVD Drives"
 msgstr "CD/DVD 驱动器"
 
-#: proxmox-widget-toolkit/src/form/NetworkSelector.js:91
-#: proxmox-widget-toolkit/src/node/NetworkView.js:361
+#: proxmox-widget-toolkit/src/form/NetworkSelector.js:98
+#: proxmox-widget-toolkit/src/node/NetworkView.js:381
 #: pmg-gui/js/MyNetworks.js:45 pmg-gui/js/MyNetworks.js:73
+#: pve-manager/www/manager6/sdn/controllers/EvpnEdit.js:48
+#: pve-manager/www/manager6/sdn/zones/VxlanEdit.js:69
 msgid "CIDR"
 msgstr "CIDR"
 
@@ -1459,6 +1499,11 @@ msgstr "CPU(s)"
 #: pve-manager/www/manager6/ha/Resources.js:113
 msgid "CRM State"
 msgstr "CRM 状态"
+
+#: pve-manager/www/manager6/sdn/fabrics/openfabric/FabricEdit.js:58
+#, fuzzy
+msgid "CSNP Interval"
+msgstr "间隔"
 
 #: pve-manager/www/manager6/window/BulkAction.js:350
 #: proxmox-backup/www/datastore/Summary.js:169
@@ -1537,8 +1582,8 @@ msgid "Cartridge Memory"
 msgstr "盒式内存"
 
 #: pve-manager/www/manager6/dc/AuthEditAD.js:22
-#: pve-manager/www/manager6/dc/OptionView.js:391
-#: pve-manager/www/manager6/dc/OptionView.js:499
+#: pve-manager/www/manager6/dc/OptionView.js:392
+#: pve-manager/www/manager6/dc/OptionView.js:500
 msgid "Case-Sensitive"
 msgstr "区分大小写"
 
@@ -1610,7 +1655,7 @@ msgid "Certificate Chain"
 msgstr "凭证链"
 
 #: pmg-gui/js/Certificates.js:5 pmg-gui/js/Certificates.js:30
-#: pmg-gui/js/NavigationTree.js:96 pve-manager/www/manager6/node/Config.js:202
+#: pmg-gui/js/NavigationTree.js:96 pve-manager/www/manager6/node/Config.js:203
 #: proxmox-backup/www/config/CertificateView.js:5
 #: proxmox-backup/www/config/CertificateView.js:26
 #: proxmox-backup/www/NavigationTree.js:66
@@ -1641,7 +1686,7 @@ msgstr "更改密码"
 msgid "Change Protection"
 msgstr "变更保护"
 
-#: pve-manager/www/manager6/Utils.js:2086
+#: pve-manager/www/manager6/Utils.js:2080
 msgid "Change global Ceph flags"
 msgstr "更改全局 Ceph 标志"
 
@@ -1672,7 +1717,7 @@ msgstr "转换器"
 msgid "Changers"
 msgstr "转换器"
 
-#: pve-manager/www/manager6/dc/OptionView.js:300
+#: pve-manager/www/manager6/dc/OptionView.js:301
 msgid "Changing the ID breaks existing WebAuthn TFA entries."
 msgstr "更改ID会中断现有的 WebAuthn TFA 条目。"
 
@@ -1822,14 +1867,14 @@ msgstr "客户端消息速率限制"
 msgid "Clipboard"
 msgstr "剪贴板"
 
-#: pve-manager/www/manager6/dc/OptionView.js:335
+#: pve-manager/www/manager6/dc/OptionView.js:336
 #: pve-manager/www/manager6/lxc/CmdMenu.js:95
 #: pve-manager/www/manager6/lxc/Config.js:121
 #: pve-manager/www/manager6/menu/TemplateMenu.js:42
 #: pve-manager/www/manager6/qemu/CmdMenu.js:136
 #: pve-manager/www/manager6/qemu/Config.js:88
-#: pve-manager/www/manager6/Utils.js:2107
-#: pve-manager/www/manager6/Utils.js:2137
+#: pve-manager/www/manager6/Utils.js:2101
+#: pve-manager/www/manager6/Utils.js:2131
 #: pve-manager/www/manager6/window/Clone.js:304
 msgid "Clone"
 msgstr "克隆"
@@ -1888,7 +1933,7 @@ msgstr "集群网络"
 msgid "Cluster Nodes"
 msgstr "集群节点"
 
-#: pve-manager/www/manager6/dc/OptionView.js:153
+#: pve-manager/www/manager6/dc/OptionView.js:154
 msgid "Cluster Resource Scheduling"
 msgstr "群集资源调度"
 
@@ -1915,8 +1960,8 @@ msgstr "集群日志"
 msgid "Collapse All"
 msgstr "全部收缩"
 
-#: pve-manager/www/manager6/dc/OptionView.js:394
-#: pve-manager/www/manager6/dc/OptionView.js:505
+#: pve-manager/www/manager6/dc/OptionView.js:395
+#: pve-manager/www/manager6/dc/OptionView.js:506
 msgid "Color Overrides"
 msgstr "颜色覆盖"
 
@@ -1931,11 +1976,11 @@ msgstr "主题颜色"
 msgid "Command"
 msgstr "命令"
 
-#: proxmox-widget-toolkit/src/form/NetworkSelector.js:119
+#: proxmox-widget-toolkit/src/form/NetworkSelector.js:126
 #: proxmox-widget-toolkit/src/form/UserSelector.js:41
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:360
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:298
-#: proxmox-widget-toolkit/src/node/NetworkView.js:393
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:301
+#: proxmox-widget-toolkit/src/node/NetworkView.js:413
 #: proxmox-widget-toolkit/src/panel/AuthView.js:43
 #: proxmox-widget-toolkit/src/panel/EmailRecipientPanel.js:64
 #: proxmox-widget-toolkit/src/panel/GotifyEditPanel.js:46
@@ -1964,7 +2009,7 @@ msgstr "命令"
 #: pve-manager/www/manager6/dc/AuthEditBase.js:67
 #: pve-manager/www/manager6/dc/AuthView.js:35
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:279
-#: pve-manager/www/manager6/dc/Backup.js:864
+#: pve-manager/www/manager6/dc/Backup.js:811
 #: pve-manager/www/manager6/dc/DirMapView.js:30
 #: pve-manager/www/manager6/dc/GroupEdit.js:35
 #: pve-manager/www/manager6/dc/GroupView.js:86
@@ -2050,7 +2095,7 @@ msgid "Components"
 msgstr "组件"
 
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:246
-#: pve-manager/www/manager6/dc/Backup.js:368
+#: pve-manager/www/manager6/dc/Backup.js:308
 #: pve-manager/www/manager6/node/ZFS.js:91
 #: pve-manager/www/manager6/window/Backup.js:24
 #: proxmox-backup/www/tape/DriveStatus.js:349
@@ -2072,7 +2117,7 @@ msgstr "配置已锁定（{0}）"
 #: pmg-gui/js/VirusDetectorConfiguration.js:5
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:481
 #: pve-manager/www/manager6/ceph/Config.js:136
-#: pve-manager/www/manager6/node/Config.js:365
+#: pve-manager/www/manager6/node/Config.js:366
 #: pve-manager/www/manager6/UIOptions.js:81
 #: pve-manager/www/manager6/window/BackupConfig.js:3
 #: proxmox-backup/www/NavigationTree.js:42
@@ -2097,7 +2142,7 @@ msgstr "仅更改配置，不会删除任何数据。"
 msgid "Configuration for {0} not correct ('{1}' != '{2}')"
 msgstr "{0} 的配置不正确 ('{1}' != '{2}')"
 
-#: pve-manager/www/manager6/Utils.js:2108
+#: pve-manager/www/manager6/Utils.js:2102
 msgid "Configure"
 msgstr "配置"
 
@@ -2109,6 +2154,10 @@ msgstr "配置 Ceph"
 msgid "Configure Scheduled Backup"
 msgstr "配置定时备份"
 
+#: pve-manager/www/manager6/sdn/fabrics/InterfacePanel.js:36
+msgid "Configure the IP in the fabric, instead of /etc/network/interfaces"
+msgstr ""
+
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:48
 msgid "Configured"
 msgstr "配置"
@@ -2119,7 +2168,7 @@ msgstr "配置"
 #: pmg-gui/js/RuleConfiguration.js:98 pmg-gui/js/RuleInfo.js:39
 #: pve-manager/www/manager6/button/Split.js:43
 #: pve-manager/www/manager6/ceph/OSD.js:452
-#: pve-manager/www/manager6/dc/Backup.js:700
+#: pve-manager/www/manager6/dc/Backup.js:647
 #: pve-manager/www/manager6/lxc/CmdMenu.js:26
 #: pve-manager/www/manager6/lxc/CmdMenu.js:124
 #: pve-manager/www/manager6/lxc/CreateWizard.js:255
@@ -2127,6 +2176,7 @@ msgstr "配置"
 #: pve-manager/www/manager6/qemu/CmdMenu.js:27
 #: pve-manager/www/manager6/qemu/CmdMenu.js:152
 #: pve-manager/www/manager6/qemu/CreateWizard.js:236
+#: pve-manager/www/manager6/sdn/FabricsView.js:410
 #: pve-manager/www/manager6/sdn/StatusView.js:49
 #: pve-manager/www/manager6/tree/DhcpTree.js:98
 #: pve-manager/www/manager6/tree/ResourceMapTree.js:124
@@ -2176,11 +2226,11 @@ msgstr "连接信息"
 #: proxmox-widget-toolkit/src/Utils.js:550
 #: proxmox-widget-toolkit/src/Utils.js:552
 #: proxmox-widget-toolkit/src/Utils.js:555
-#: pve-manager/www/manager6/Utils.js:677 pve-manager/www/manager6/Utils.js:1791
+#: pve-manager/www/manager6/Utils.js:677 pve-manager/www/manager6/Utils.js:1785
 msgid "Connection error"
 msgstr "连接错误"
 
-#: pve-manager/www/manager6/window/LoginWindow.js:163
+#: pve-manager/www/manager6/window/LoginWindow.js:171
 msgid "Connection failure. Network error or Proxmox VE services not running?"
 msgstr "连接失败。 网络错误或 Proxmox VE 服务未运行？"
 
@@ -2188,7 +2238,7 @@ msgstr "连接失败。 网络错误或 Proxmox VE 服务未运行？"
 msgid "Consent"
 msgstr "同意"
 
-#: pve-manager/www/manager6/dc/OptionView.js:554
+#: pve-manager/www/manager6/dc/OptionView.js:555
 #: proxmox-backup/www/config/NodeOptionView.js:68
 msgid "Consent Text"
 msgstr "同意书文本"
@@ -2199,8 +2249,8 @@ msgstr "同意书文本"
 #: pve-manager/www/manager6/lxc/Config.js:255
 #: pve-manager/www/manager6/qemu/CmdMenu.js:166
 #: pve-manager/www/manager6/qemu/Config.js:307
-#: pve-manager/www/manager6/Utils.js:2128
-#: pve-manager/www/manager6/Utils.js:2135
+#: pve-manager/www/manager6/Utils.js:2122
+#: pve-manager/www/manager6/Utils.js:2129
 #: proxmox-backup/www/ServerStatus.js:164
 msgid "Console"
 msgstr "控制台"
@@ -2239,7 +2289,6 @@ msgstr "节点 {1} 上的容器 {0}"
 #: pve-manager/www/manager6/storage/CephFSEdit.js:99
 #: pve-manager/www/manager6/storage/CIFSEdit.js:204
 #: pve-manager/www/manager6/storage/DirEdit.js:22
-#: pve-manager/www/manager6/storage/GlusterFsEdit.js:106
 #: pve-manager/www/manager6/storage/LVMEdit.js:219
 #: pve-manager/www/manager6/storage/LvmThinEdit.js:179
 #: pve-manager/www/manager6/storage/NFSEdit.js:140
@@ -2280,8 +2329,8 @@ msgstr "控制器"
 #: pve-manager/www/manager6/lxc/Config.js:129
 #: pve-manager/www/manager6/qemu/CmdMenu.js:143
 #: pve-manager/www/manager6/qemu/Config.js:96
-#: pve-manager/www/manager6/Utils.js:2125
-#: pve-manager/www/manager6/Utils.js:2154
+#: pve-manager/www/manager6/Utils.js:2119
+#: pve-manager/www/manager6/Utils.js:2148
 msgid "Convert to template"
 msgstr "转换成模板"
 
@@ -2311,7 +2360,7 @@ msgstr "复制还原密钥"
 msgid "Copy Secret Value"
 msgstr "复制密钥值"
 
-#: pve-manager/www/manager6/Utils.js:2096
+#: pve-manager/www/manager6/Utils.js:2090
 msgid "Copy data"
 msgstr "复制数据"
 
@@ -2357,7 +2406,7 @@ msgstr "无法读取私钥-请先创建一个选择器！"
 msgid "Count"
 msgstr "计数"
 
-#: proxmox-widget-toolkit/src/node/NetworkView.js:238
+#: proxmox-widget-toolkit/src/node/NetworkView.js:243
 #: proxmox-widget-toolkit/src/Utils.js:695
 #: proxmox-widget-toolkit/src/window/Edit.js:314
 #: pmg-gui/js/ClusterAdministration.js:198 pmg-gui/js/LDAPConfig.js:527
@@ -2380,18 +2429,18 @@ msgstr "计数"
 #: pve-manager/www/manager6/panel/IPSet.js:109
 #: pve-manager/www/manager6/sdn/SubnetView.js:58
 #: pve-manager/www/manager6/sdn/VnetView.js:74
-#: pve-manager/www/manager6/Utils.js:2073
-#: pve-manager/www/manager6/Utils.js:2074
-#: pve-manager/www/manager6/Utils.js:2075
-#: pve-manager/www/manager6/Utils.js:2076
-#: pve-manager/www/manager6/Utils.js:2077
-#: pve-manager/www/manager6/Utils.js:2084
-#: pve-manager/www/manager6/Utils.js:2089
-#: pve-manager/www/manager6/Utils.js:2098
-#: pve-manager/www/manager6/Utils.js:2100
-#: pve-manager/www/manager6/Utils.js:2109
-#: pve-manager/www/manager6/Utils.js:2138
-#: pve-manager/www/manager6/Utils.js:2156
+#: pve-manager/www/manager6/Utils.js:2067
+#: pve-manager/www/manager6/Utils.js:2068
+#: pve-manager/www/manager6/Utils.js:2069
+#: pve-manager/www/manager6/Utils.js:2070
+#: pve-manager/www/manager6/Utils.js:2071
+#: pve-manager/www/manager6/Utils.js:2078
+#: pve-manager/www/manager6/Utils.js:2083
+#: pve-manager/www/manager6/Utils.js:2092
+#: pve-manager/www/manager6/Utils.js:2094
+#: pve-manager/www/manager6/Utils.js:2103
+#: pve-manager/www/manager6/Utils.js:2132
+#: pve-manager/www/manager6/Utils.js:2150
 #: proxmox-backup/www/DirectoryList.js:78 proxmox-backup/www/Utils.js:427
 #: proxmox-backup/www/Utils.js:458 proxmox-backup/www/ZFSList.js:117
 msgid "Create"
@@ -2408,7 +2457,7 @@ msgstr "创建 CephFS"
 
 #: pmg-gui/js/Utils.js:897 pve-manager/www/manager6/dc/ClusterEdit.js:5
 #: pve-manager/www/manager6/dc/Cluster.js:155
-#: pve-manager/www/manager6/Utils.js:2087
+#: pve-manager/www/manager6/Utils.js:2081
 msgid "Create Cluster"
 msgstr "创建集群"
 
@@ -2425,6 +2474,11 @@ msgstr "创建设备节点"
 #: pve-manager/www/manager6/Workspace.js:286
 msgid "Create VM"
 msgstr "创建虚拟机"
+
+#: pve-manager/www/manager6/sdn/fabrics/NodeEdit.js:64
+#, fuzzy
+msgid "Create another"
+msgstr "创建集群"
 
 #: pve-manager/www/manager6/ceph/OSD.js:871
 #, fuzzy
@@ -2524,7 +2578,7 @@ msgstr "DKIM"
 #: pmg-gui/js/SystemConfiguration.js:34
 #: pve-manager/www/manager6/lxc/Config.js:281
 #: pve-manager/www/manager6/lxc/CreateWizard.js:251
-#: pve-manager/www/manager6/node/Config.js:210
+#: pve-manager/www/manager6/node/Config.js:211
 #: pve-manager/www/manager6/sdn/ZoneView.js:159
 #: proxmox-backup/www/SystemConfiguration.js:35
 msgid "DNS"
@@ -2709,7 +2763,7 @@ msgstr "天"
 msgid "Days to show"
 msgstr "显示天数"
 
-#: pve-manager/www/manager6/Utils.js:2064
+#: pve-manager/www/manager6/Utils.js:2058
 msgid "Deactivate"
 msgstr "停用"
 
@@ -2749,7 +2803,7 @@ msgstr "深度擦洗OSD.{0}"
 #: pmg-gui/js/LDAPConfig.js:95 pve-manager/www/manager6/dc/AuthEditAD.js:48
 #: pve-manager/www/manager6/dc/AuthEditBase.js:51
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:48
-#: pve-manager/www/manager6/dc/OptionView.js:314
+#: pve-manager/www/manager6/dc/OptionView.js:315
 #: pve-manager/www/manager6/grid/FirewallOptions.js:113
 #: pve-manager/www/manager6/lxc/Options.js:95
 msgid "Default"
@@ -2823,11 +2877,11 @@ msgstr "默认用户类别：inetorgperson、posixaccount、person、user"
 msgid "Defaults to datacenter configuration, or root@$hostname"
 msgstr "默认为数据中心配置，或 root@$hostname"
 
-#: pve-manager/www/manager6/dc/OptionView.js:194
+#: pve-manager/www/manager6/dc/OptionView.js:195
 msgid "Defaults to origin"
 msgstr "默认为起始点"
 
-#: pve-manager/www/manager6/dc/OptionView.js:204
+#: pve-manager/www/manager6/dc/OptionView.js:205
 msgid "Defaults to requesting host URI"
 msgstr "默认为请求主机URI"
 
@@ -2851,6 +2905,7 @@ msgstr "延迟警告时间（小时）"
 #: pmg-gui/js/mobile/quarantineview.js:99
 #: pmg-gui/js/QuarantineContextMenu.js:25 pmg-gui/js/SpamContextMenu.js:12
 #: pmg-gui/js/SpamQuarantine.js:273 pmg-gui/js/VirusQuarantine.js:156
+#: pve-manager/www/manager6/sdn/FabricsView.js:131
 #: pve-manager/www/manager6/tree/DhcpTree.js:271
 msgid "Delete"
 msgstr "删除"
@@ -2860,8 +2915,8 @@ msgstr "删除"
 msgid "Delete Custom Certificate"
 msgstr "删除自定义凭证"
 
-#: pve-manager/www/manager6/Utils.js:2110
-#: pve-manager/www/manager6/Utils.js:2139
+#: pve-manager/www/manager6/Utils.js:2104
+#: pve-manager/www/manager6/Utils.js:2133
 msgid "Delete Snapshot"
 msgstr "删除快照"
 
@@ -2935,7 +2990,7 @@ msgstr "密集"
 msgid "Description"
 msgstr "说明"
 
-#: pve-manager/www/manager6/dc/Backup.js:405
+#: pve-manager/www/manager6/dc/Backup.js:345
 #: pve-manager/www/manager6/dc/RealmSyncJob.js:397
 msgid "Description of the job"
 msgstr "作业说明"
@@ -2959,14 +3014,14 @@ msgstr "目标"
 #: pve-manager/www/manager6/node/LVM.js:187
 #: pve-manager/www/manager6/node/LVMThin.js:222
 #: pve-manager/www/manager6/node/ZFS.js:335
-#: pve-manager/www/manager6/Utils.js:2078
-#: pve-manager/www/manager6/Utils.js:2079
-#: pve-manager/www/manager6/Utils.js:2080
-#: pve-manager/www/manager6/Utils.js:2081
-#: pve-manager/www/manager6/Utils.js:2082
-#: pve-manager/www/manager6/Utils.js:2083
-#: pve-manager/www/manager6/Utils.js:2111
-#: pve-manager/www/manager6/Utils.js:2140
+#: pve-manager/www/manager6/Utils.js:2072
+#: pve-manager/www/manager6/Utils.js:2073
+#: pve-manager/www/manager6/Utils.js:2074
+#: pve-manager/www/manager6/Utils.js:2075
+#: pve-manager/www/manager6/Utils.js:2076
+#: pve-manager/www/manager6/Utils.js:2077
+#: pve-manager/www/manager6/Utils.js:2105
+#: pve-manager/www/manager6/Utils.js:2134
 msgid "Destroy"
 msgstr "销毁"
 
@@ -2986,7 +3041,7 @@ msgstr "销毁命名空间 '{0}'"
 msgid "Destroy all data (dangerous!)"
 msgstr "销毁所有数据（危险！）"
 
-#: pve-manager/www/manager6/Utils.js:2133
+#: pve-manager/www/manager6/Utils.js:2127
 msgid "Destroy image from unknown guest"
 msgstr "销毁未知客户机的映像"
 
@@ -3085,7 +3140,7 @@ msgstr "方向"
 #: pve-manager/www/manager6/node/Directory.js:147
 #: pve-manager/www/manager6/node/Directory.js:172
 #: pve-manager/www/manager6/storage/DirEdit.js:14
-#: pve-manager/www/manager6/Utils.js:2090
+#: pve-manager/www/manager6/Utils.js:2084
 #: proxmox-backup/www/DirectoryList.js:94 proxmox-backup/www/Utils.js:428
 msgid "Directory"
 msgstr "目录"
@@ -3096,7 +3151,7 @@ msgstr "目录"
 msgid "Directory ID"
 msgstr "目录"
 
-#: pve-manager/www/manager6/dc/Config.js:348
+#: pve-manager/www/manager6/dc/Config.js:356
 #, fuzzy
 msgid "Directory Mappings"
 msgstr "目录存储"
@@ -3106,7 +3161,7 @@ msgid ""
 "Directory Mappings can be managed under Datacenter -> Directory Mappings"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2089 proxmox-backup/www/Utils.js:427
+#: pve-manager/www/manager6/Utils.js:2083 proxmox-backup/www/Utils.js:427
 msgid "Directory Storage"
 msgstr "目录存储"
 
@@ -3178,7 +3233,7 @@ msgstr "磁盘操作"
 msgid "Disk IO"
 msgstr "磁盘 IO"
 
-#: pve-manager/www/manager6/dc/OptionView.js:342
+#: pve-manager/www/manager6/dc/OptionView.js:343
 msgid "Disk Move"
 msgstr "磁盘移动"
 
@@ -3203,7 +3258,7 @@ msgid "Disk usage"
 msgstr "磁盘使用率"
 
 #: pve-manager/www/manager6/lxc/CreateWizard.js:224
-#: pve-manager/www/manager6/node/Config.js:317
+#: pve-manager/www/manager6/node/Config.js:318
 #: pve-manager/www/manager6/qemu/CreateWizard.js:215
 #: pve-manager/www/manager6/window/GuestImport.js:665
 #: proxmox-backup/www/panel/StorageAndDisks.js:18
@@ -3263,7 +3318,7 @@ msgstr "似乎不是有效编码的集群信息！"
 msgid "Domain"
 msgstr "域名"
 
-#: pve-manager/www/manager6/dc/OptionView.js:240
+#: pve-manager/www/manager6/dc/OptionView.js:241
 msgid "Domain Lockdown (e.g., {0})"
 msgstr "域锁定(例如, {0})"
 
@@ -3283,7 +3338,7 @@ msgstr "离线"
 #: pve-manager/www/manager6/node/Subscription.js:65
 #: pve-manager/www/manager6/storage/PBSEdit.js:87
 #: pve-manager/www/manager6/storage/TemplateView.js:140
-#: pve-manager/www/manager6/Utils.js:2091
+#: pve-manager/www/manager6/Utils.js:2085
 #: pve-manager/www/manager6/window/DownloadUrlToStorage.js:13
 #: proxmox-backup/www/Subscription.js:62
 msgid "Download"
@@ -3462,7 +3517,7 @@ msgid "EMail attribute name(s)"
 msgstr "邮件属性名"
 
 #: proxmox-widget-toolkit/src/node/DNSView.js:50
-#: proxmox-widget-toolkit/src/node/NetworkView.js:114
+#: proxmox-widget-toolkit/src/node/NetworkView.js:119
 #: proxmox-widget-toolkit/src/node/TimeView.js:42
 #: proxmox-widget-toolkit/src/panel/ACMEDomains.js:261
 #: proxmox-widget-toolkit/src/panel/ACMEPlugin.js:102
@@ -3485,10 +3540,10 @@ msgstr "邮件属性名"
 #: pve-manager/www/manager6/ceph/Pool.js:456
 #: pve-manager/www/manager6/ceph/Pool.js:512
 #: pve-manager/www/manager6/dc/AuthView.js:115
-#: pve-manager/www/manager6/dc/Backup.js:683
+#: pve-manager/www/manager6/dc/Backup.js:630
 #: pve-manager/www/manager6/dc/GroupView.js:50
 #: pve-manager/www/manager6/dc/MetricServerView.js:112
-#: pve-manager/www/manager6/dc/OptionView.js:567
+#: pve-manager/www/manager6/dc/OptionView.js:568
 #: pve-manager/www/manager6/dc/PoolView.js:53
 #: pve-manager/www/manager6/dc/RealmSyncJob.js:148
 #: pve-manager/www/manager6/dc/RoleView.js:99
@@ -3516,6 +3571,7 @@ msgstr "邮件属性名"
 #: pve-manager/www/manager6/qemu/Options.js:397
 #: pve-manager/www/manager6/sdn/ControllerView.js:55
 #: pve-manager/www/manager6/sdn/DnsView.js:54
+#: pve-manager/www/manager6/sdn/FabricsView.js:118
 #: pve-manager/www/manager6/sdn/IpamView.js:53
 #: pve-manager/www/manager6/sdn/SubnetView.js:71
 #: pve-manager/www/manager6/sdn/VnetView.js:44
@@ -3523,7 +3579,7 @@ msgstr "邮件属性名"
 #: pve-manager/www/manager6/tree/DhcpTree.js:260
 #: pve-manager/www/manager6/tree/SnapshotTree.js:27
 #: pve-manager/www/manager6/tree/SnapshotTree.js:283
-#: pve-manager/www/manager6/Utils.js:2085
+#: pve-manager/www/manager6/Utils.js:2079
 #: proxmox-backup/www/config/GCView.js:148
 #: proxmox-backup/www/config/MetricServerView.js:104
 #: proxmox-backup/www/config/NodeOptionView.js:31
@@ -3591,7 +3647,7 @@ msgstr "EiB"
 msgid "Either mailto or mailto-user must be set"
 msgstr "必须设置 mailto 或 mailto 用户"
 
-#: proxmox-widget-toolkit/src/node/NetworkView.js:414
+#: proxmox-widget-toolkit/src/node/NetworkView.js:434
 msgid ""
 "Either reboot or use 'Apply Configuration' (needs ifupdown2) to activate"
 msgstr "重新启动或使用“应用配置”(需要 ifupdown2 )激活"
@@ -3607,8 +3663,6 @@ msgstr "弹出"
 msgid "Eject Media"
 msgstr "弹出媒体"
 
-#: pve-manager/www/manager6/dc/Backup.js:329
-#: pve-manager/www/manager6/window/Backup.js:43
 #: proxmox-backup/www/tape/window/TapeRestore.js:441
 msgid "Email (legacy)"
 msgstr "电子邮件（旧版）"
@@ -3629,7 +3683,7 @@ msgstr "来自地址的电子邮件"
 #: proxmox-widget-toolkit/src/window/NotificationMatcherEdit.js:20
 #: pmg-gui/js/LDAPConfig.js:123 pmg-gui/js/PBSRemoteEdit.js:99
 #: pve-manager/www/manager6/ceph/OSD.js:272
-#: pve-manager/www/manager6/dc/Backup.js:388
+#: pve-manager/www/manager6/dc/Backup.js:328
 #: pve-manager/www/manager6/grid/FirewallRules.js:329
 #: pve-manager/www/manager6/grid/FirewallRules.js:584
 #: pve-manager/www/manager6/storage/Base.js:51
@@ -3700,7 +3754,7 @@ msgstr ""
 #: pmg-gui/js/PBSConfig.js:174 pmg-gui/js/UserEdit.js:122
 #: pmg-gui/js/UserView.js:177
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:264
-#: pve-manager/www/manager6/dc/Backup.js:822
+#: pve-manager/www/manager6/dc/Backup.js:769
 #: pve-manager/www/manager6/dc/MetricServerView.js:78
 #: pve-manager/www/manager6/dc/MetricServerView.js:274
 #: pve-manager/www/manager6/dc/MetricServerView.js:423
@@ -3828,7 +3882,7 @@ msgstr "入口"
 msgid "Envelope"
 msgstr "信封"
 
-#: pve-manager/www/manager6/Utils.js:2097
+#: pve-manager/www/manager6/Utils.js:2091
 msgid "Erase data"
 msgstr "擦除数据"
 
@@ -3841,9 +3895,9 @@ msgstr "擦除"
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:223
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:453
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:648
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:447
-#: proxmox-widget-toolkit/src/node/NetworkView.js:145
-#: proxmox-widget-toolkit/src/node/NetworkView.js:257
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:458
+#: proxmox-widget-toolkit/src/node/NetworkView.js:150
+#: proxmox-widget-toolkit/src/node/NetworkView.js:262
 #: proxmox-widget-toolkit/src/node/ServiceView.js:91
 #: proxmox-widget-toolkit/src/panel/ACMEDomains.js:147
 #: proxmox-widget-toolkit/src/panel/ACMEDomains.js:186
@@ -3884,8 +3938,8 @@ msgstr "擦除"
 #: pmg-gui/js/UserBlackWhiteList.js:88 pmg-gui/js/UserView.js:101
 #: pmg-gui/js/Utils.js:789 pmg-gui/js/ViewMailHeaders.js:61
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:126
-#: pve-manager/www/manager6/ceph/CephInstallWizard.js:623
-#: pve-manager/www/manager6/ceph/CephInstallWizard.js:628
+#: pve-manager/www/manager6/ceph/CephInstallWizard.js:625
+#: pve-manager/www/manager6/ceph/CephInstallWizard.js:630
 #: pve-manager/www/manager6/ceph/Config.js:84
 #: pve-manager/www/manager6/ceph/Crush.js:17
 #: pve-manager/www/manager6/ceph/OSD.js:23
@@ -3946,17 +4000,17 @@ msgstr "擦除"
 #: pve-manager/www/manager6/tree/DhcpTree.js:126
 #: pve-manager/www/manager6/tree/ResourceMapTree.js:180
 #: pve-manager/www/manager6/tree/SnapshotTree.js:89
-#: pve-manager/www/manager6/Utils.js:1598
-#: pve-manager/www/manager6/Utils.js:1611
-#: pve-manager/www/manager6/window/Backup.js:220
+#: pve-manager/www/manager6/Utils.js:1592
+#: pve-manager/www/manager6/Utils.js:1605
+#: pve-manager/www/manager6/window/Backup.js:230
 #: pve-manager/www/manager6/window/DirMapEdit.js:61
 #: pve-manager/www/manager6/window/DownloadUrlToStorage.js:73
 #: pve-manager/www/manager6/window/FirewallEnableEdit.js:40
 #: pve-manager/www/manager6/window/GuestDiskReassign.js:95
 #: pve-manager/www/manager6/window/LoginWindow.js:67
-#: pve-manager/www/manager6/window/LoginWindow.js:167
-#: pve-manager/www/manager6/window/LoginWindow.js:209
-#: pve-manager/www/manager6/window/LoginWindow.js:314
+#: pve-manager/www/manager6/window/LoginWindow.js:175
+#: pve-manager/www/manager6/window/LoginWindow.js:217
+#: pve-manager/www/manager6/window/LoginWindow.js:322
 #: pve-manager/www/manager6/window/Prune.js:106
 #: pve-manager/www/manager6/window/Restore.js:84
 #: pve-manager/www/manager6/window/ScheduleSimulator.js:38
@@ -4086,7 +4140,7 @@ msgid "Exclude filters will be applied after include filters"
 msgstr "排除筛选器将在包含筛选器之后应用"
 
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:413
-#: pve-manager/www/manager6/dc/Backup.js:288
+#: pve-manager/www/manager6/dc/Backup.js:275
 msgid "Exclude selected VMs"
 msgstr "不包括选中的虚拟机"
 
@@ -4158,6 +4212,15 @@ msgstr "FQDN 或者 IP 地址"
 msgid "FS Name"
 msgstr "FS 名称"
 
+#: pve-manager/www/manager6/sdn/controllers/EvpnEdit.js:43
+#: pve-manager/www/manager6/sdn/zones/VxlanEdit.js:64
+msgid "Fabric"
+msgstr ""
+
+#: pve-manager/www/manager6/dc/Config.js:242
+msgid "Fabrics"
+msgstr ""
+
 #: pmg-gui/js/RuleConfiguration.js:177
 msgid "Factory Defaults"
 msgstr "出厂默认值"
@@ -4182,7 +4245,7 @@ msgstr "回退"
 msgid "Fallback Server"
 msgstr "后备服务器"
 
-#: pve-manager/www/manager6/dc/Backup.js:877
+#: pve-manager/www/manager6/dc/Backup.js:824
 msgid "Fallback from storage config"
 msgstr "从存储配置回退"
 
@@ -4220,7 +4283,7 @@ msgstr "字段"
 #: proxmox-widget-toolkit/src/panel/Certificates.js:13
 #: proxmox-widget-toolkit/src/Schema.js:93
 #: pve-manager/www/manager6/node/Certificates.js:312
-#: pve-manager/www/manager6/Utils.js:2091
+#: pve-manager/www/manager6/Utils.js:2085
 #: pve-manager/www/manager6/window/UploadToStorage.js:202
 #: proxmox-backup/www/Utils.js:868
 msgid "File"
@@ -4233,7 +4296,7 @@ msgstr "文件"
 msgid "File Restore"
 msgstr "文件还原"
 
-#: pve-manager/www/manager6/Utils.js:2104
+#: pve-manager/www/manager6/Utils.js:2098
 msgid "File Restore Download"
 msgstr "文件还原下载"
 
@@ -4329,7 +4392,7 @@ msgstr "完成"
 msgid "Finish Edit"
 msgstr "完成编辑"
 
-#: pve-manager/www/manager6/dc/Config.js:254
+#: pve-manager/www/manager6/dc/Config.js:262
 #: pve-manager/www/manager6/grid/FirewallOptions.js:66
 #: pve-manager/www/manager6/grid/FirewallOptions.js:93
 #: pve-manager/www/manager6/grid/FirewallOptions.js:108
@@ -4337,7 +4400,7 @@ msgstr "完成编辑"
 #: pve-manager/www/manager6/lxc/Config.js:338
 #: pve-manager/www/manager6/lxc/Network.js:127
 #: pve-manager/www/manager6/lxc/Network.js:506
-#: pve-manager/www/manager6/node/Config.js:293
+#: pve-manager/www/manager6/node/Config.js:294
 #: pve-manager/www/manager6/qemu/Config.js:391
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:96
 #: pve-manager/www/manager6/window/FirewallEnableEdit.js:6
@@ -4349,7 +4412,7 @@ msgstr "防火墙"
 msgid "Firmware"
 msgstr "固件"
 
-#: pve-manager/www/manager6/ceph/CephInstallWizard.js:542
+#: pve-manager/www/manager6/ceph/CephInstallWizard.js:544
 msgid "First Ceph monitor"
 msgstr "第一个 Ceph 监视器"
 
@@ -4423,7 +4486,7 @@ msgstr "字体系列"
 msgid "Font-Size"
 msgstr "字体大小"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:331
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:334
 msgid "For example, vmbr0.100, vmbr0, vlan0.100, vlan0"
 msgstr "例如：vmbr0.100, vmbr0, vlan0.100, vlan0"
 
@@ -4654,9 +4717,9 @@ msgstr "垃圾收集"
 msgid "Garbage collections"
 msgstr "垃圾收集"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:394
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:408
-#: proxmox-widget-toolkit/src/node/NetworkView.js:368
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:405
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:419
+#: proxmox-widget-toolkit/src/node/NetworkView.js:388
 #: pve-manager/www/manager6/lxc/Network.js:201
 #: pve-manager/www/manager6/lxc/Network.js:271
 #: pve-manager/www/manager6/lxc/Network.js:536
@@ -4673,11 +4736,11 @@ msgstr "网关"
 #: proxmox-widget-toolkit/src/window/NotificationMatcherEdit.js:114
 #: pve-manager/www/manager6/ceph/OSDDetails.js:135
 #: pve-manager/www/manager6/dc/AuthEditBase.js:118
-#: pve-manager/www/manager6/dc/Backup.js:241
+#: pve-manager/www/manager6/dc/Backup.js:228
 #: pve-manager/www/manager6/lxc/CreateWizard.js:30
 #: pve-manager/www/manager6/qemu/CreateWizard.js:66
 #: pve-manager/www/manager6/sdn/SubnetEdit.js:266
-#: pve-manager/www/manager6/storage/Base.js:104
+#: pve-manager/www/manager6/storage/Base.js:127
 #: pve-manager/www/manager6/window/GuestImport.js:354
 #: proxmox-backup/www/SystemConfiguration.js:73
 #: proxmox-backup/www/window/DataStoreEdit.js:39
@@ -4837,8 +4900,8 @@ msgstr "访客用户"
 msgid "Guests"
 msgstr "客户"
 
-#: pve-manager/www/manager6/dc/Backup.js:733
-#: pve-manager/www/manager6/dc/Backup.js:745
+#: pve-manager/www/manager6/dc/Backup.js:680
+#: pve-manager/www/manager6/dc/Backup.js:692
 msgid "Guests Without Backup Job"
 msgstr "没有备份工作的客户机"
 
@@ -4846,11 +4909,11 @@ msgstr "没有备份工作的客户机"
 msgid "HA Group"
 msgstr "HA 组"
 
-#: pve-manager/www/manager6/dc/OptionView.js:163
+#: pve-manager/www/manager6/dc/OptionView.js:164
 msgid "HA Scheduling"
 msgstr "HA 调度"
 
-#: pve-manager/www/manager6/dc/OptionView.js:130
+#: pve-manager/www/manager6/dc/OptionView.js:131
 msgid "HA Settings"
 msgstr "高可用设置"
 
@@ -4894,7 +4957,7 @@ msgstr "硬连接"
 msgid "Hardware"
 msgstr "硬件"
 
-#: proxmox-widget-toolkit/src/node/NetworkView.js:340
+#: proxmox-widget-toolkit/src/node/NetworkView.js:360
 msgid "Hash Policy"
 msgstr "Hash 策略"
 
@@ -4903,7 +4966,7 @@ msgstr "Hash 策略"
 msgid "Hash algorithm"
 msgstr "哈希算法"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:233
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:236
 msgid "Hash policy"
 msgstr "Hash 策略"
 
@@ -4941,6 +5004,15 @@ msgstr "心跳前端地址"
 msgid "Hebrew"
 msgstr "希伯来语"
 
+#: pve-manager/www/manager6/sdn/fabrics/openfabric/FabricEdit.js:46
+#, fuzzy
+msgid "Hello Interval"
+msgstr "间隔"
+
+#: pve-manager/www/manager6/sdn/fabrics/openfabric/InterfacePanel.js:19
+msgid "Hello Multiplier"
+msgstr ""
+
 #: proxmox-widget-toolkit/src/button/HelpButton.js:8
 #: proxmox-widget-toolkit/src/button/HelpButton.js:73
 #: pmg-gui/js/QuarantineView.js:37 pmg-gui/js/Utils.js:23
@@ -4957,7 +5029,7 @@ msgstr "启发式计分"
 
 #: pve-manager/www/manager6/qemu/CmdMenu.js:75
 #: pve-manager/www/manager6/qemu/Config.js:190
-#: pve-manager/www/manager6/Utils.js:2124
+#: pve-manager/www/manager6/Utils.js:2118
 msgid "Hibernate"
 msgstr "休眠"
 
@@ -5030,7 +5102,7 @@ msgstr "主机名"
 msgid "Hostname/IP"
 msgstr "主机名/IP"
 
-#: pve-manager/www/manager6/node/Config.js:219
+#: pve-manager/www/manager6/node/Config.js:220
 msgid "Hosts"
 msgstr "主机"
 
@@ -5067,7 +5139,7 @@ msgid "ICMP type"
 msgstr "ICMP类型"
 
 #: pmg-gui/js/ClusterAdministration.js:234 pmg-gui/js/PBSRemoteEdit.js:31
-#: pve-manager/www/manager6/dc/Backup.js:830
+#: pve-manager/www/manager6/dc/Backup.js:777
 #: pve-manager/www/manager6/dc/Cluster.js:289
 #: pve-manager/www/manager6/form/PCIMapSelector.js:35
 #: pve-manager/www/manager6/window/GuestImport.js:889
@@ -5134,8 +5206,9 @@ msgstr "IOMMU 组"
 msgid "IOMMU-Group"
 msgstr "IOMMU 组"
 
-#: proxmox-widget-toolkit/src/form/NetworkSelector.js:97
+#: proxmox-widget-toolkit/src/form/NetworkSelector.js:104
 #: pmg-gui/js/ClusterAdministration.js:240
+#: pve-manager/www/manager6/sdn/fabrics/InterfacePanel.js:59
 msgid "IP"
 msgstr "IP"
 
@@ -5154,7 +5227,7 @@ msgstr "IP 配置"
 msgid "IP Network"
 msgstr "IP 网络"
 
-#: proxmox-widget-toolkit/src/node/NetworkView.js:345
+#: proxmox-widget-toolkit/src/node/NetworkView.js:365
 #: pve-manager/www/manager6/lxc/Network.js:522
 #: pve-manager/www/manager6/qemu/AgentIPView.js:33
 msgid "IP address"
@@ -5193,8 +5266,15 @@ msgstr "IPSet"
 
 #: pve-manager/www/manager6/qemu/IPConfigEdit.js:79
 #: pve-manager/www/manager6/qemu/IPConfigEdit.js:119
+#: pve-manager/www/manager6/sdn/fabrics/NodeEdit.js:27
+#: pve-manager/www/manager6/sdn/FabricsView.js:56
 msgid "IPv4"
 msgstr "IPv4"
+
+#: pve-manager/www/manager6/sdn/fabrics/FabricEdit.js:28
+#, fuzzy
+msgid "IPv4 Prefix"
+msgstr "API 路径前缀"
 
 #: pve-manager/www/manager6/qemu/IPConfigEdit.js:111
 msgid "IPv4/CIDR"
@@ -5202,8 +5282,16 @@ msgstr "IPv4/CIDR"
 
 #: pve-manager/www/manager6/qemu/IPConfigEdit.js:137
 #: pve-manager/www/manager6/qemu/IPConfigEdit.js:185
+#: pve-manager/www/manager6/sdn/fabrics/openfabric/InterfacePanel.js:6
+#: pve-manager/www/manager6/sdn/fabrics/openfabric/NodeEdit.js:12
+#: pve-manager/www/manager6/sdn/FabricsView.js:68
 msgid "IPv6"
 msgstr "IPv6"
+
+#: pve-manager/www/manager6/sdn/fabrics/openfabric/FabricEdit.js:28
+#, fuzzy
+msgid "IPv6 Prefix"
+msgstr "API 路径前缀"
 
 #: pve-manager/www/manager6/qemu/IPConfigEdit.js:177
 msgid "IPv6/CIDR"
@@ -5333,7 +5421,7 @@ msgid "Include in Backup"
 msgstr "包含在备份中"
 
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:407
-#: pve-manager/www/manager6/dc/Backup.js:286
+#: pve-manager/www/manager6/dc/Backup.js:273
 msgid "Include selected VMs"
 msgstr "包括选中的虚拟机"
 
@@ -5342,7 +5430,7 @@ msgstr "包括选中的虚拟机"
 msgid "Include volume in backup job"
 msgstr "在备份作业中包括卷"
 
-#: pve-manager/www/manager6/dc/Backup.js:582
+#: pve-manager/www/manager6/dc/Backup.js:529
 msgid "Included disks"
 msgstr "包含的磁盘"
 
@@ -5425,15 +5513,25 @@ msgstr "安装"
 msgid "Intel (AMD Compatible)"
 msgstr "Intel（AMD兼容）"
 
-#: proxmox-widget-toolkit/src/form/NetworkSelector.js:102
+#: proxmox-widget-toolkit/src/form/NetworkSelector.js:109
 #: pve-manager/www/manager6/grid/FirewallRules.js:284
 #: pve-manager/www/manager6/grid/FirewallRules.js:571
 #: pve-manager/www/manager6/grid/FirewallRules.js:947
 msgid "Interface"
 msgstr "接口"
 
+#: pve-manager/www/manager6/sdn/fabrics/InterfacePanel.js:32
+msgid "Interface already has an address configured in /etc/network/interfaces"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/fabrics/InterfacePanel.js:26
+#, fuzzy
+msgid "Interface does not exist on node"
+msgstr "包含的目标不存在！"
+
 #: pmg-gui/js/SystemConfiguration.js:41
 #: pve-manager/www/manager6/sdn/controllers/IsisEdit.js:46
+#: pve-manager/www/manager6/sdn/FabricsView.js:80
 msgid "Interfaces"
 msgstr "接口"
 
@@ -5455,12 +5553,12 @@ msgstr "无效值"
 msgid "Invalid characters in pool name"
 msgstr "池名称中的字符无效"
 
-#: pve-manager/www/manager6/Utils.js:1599
+#: pve-manager/www/manager6/Utils.js:1593
 msgid "Invalid file size"
 msgstr "无效的文件大小"
 
 #: proxmox-widget-toolkit/src/Utils.js:1177
-#: pve-manager/www/manager6/Utils.js:1611
+#: pve-manager/www/manager6/Utils.js:1605
 msgid "Invalid file size: "
 msgstr "无效的文件大小： "
 
@@ -5545,17 +5643,17 @@ msgstr "日语"
 msgid "Job"
 msgstr "作业"
 
-#: pve-manager/www/manager6/dc/Backup.js:399
+#: pve-manager/www/manager6/dc/Backup.js:339
 #: pve-manager/www/manager6/dc/RealmSyncJob.js:391
 msgid "Job Comment"
 msgstr "作业评论"
 
-#: pve-manager/www/manager6/dc/Backup.js:723
+#: pve-manager/www/manager6/dc/Backup.js:670
 msgid "Job Detail"
 msgstr "作业详情"
 
 #: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:125
-#: pve-manager/www/manager6/Utils.js:2161
+#: pve-manager/www/manager6/Utils.js:2155
 #: proxmox-backup/www/config/PruneView.js:202
 #: proxmox-backup/www/config/SyncView.js:301
 #: proxmox-backup/www/config/VerifyView.js:204
@@ -5578,7 +5676,7 @@ msgid "Join"
 msgstr "加入"
 
 #: pmg-gui/js/Utils.js:898 pve-manager/www/manager6/dc/Cluster.js:171
-#: pve-manager/www/manager6/Utils.js:2088
+#: pve-manager/www/manager6/Utils.js:2082
 msgid "Join Cluster"
 msgstr "加入集群"
 
@@ -5759,11 +5857,11 @@ msgstr "LV 路径"
 msgid "LV UUID"
 msgstr "LV UUID"
 
-#: pve-manager/www/manager6/Utils.js:2098
+#: pve-manager/www/manager6/Utils.js:2092
 msgid "LVM Storage"
 msgstr "LVM 存储"
 
-#: pve-manager/www/manager6/Utils.js:2100
+#: pve-manager/www/manager6/Utils.js:2094
 msgid "LVM-Thin Storage"
 msgstr "LVM-Thin 存储"
 
@@ -5797,7 +5895,7 @@ msgstr "标签媒体"
 #: proxmox-widget-toolkit/src/window/LanguageEdit.js:43
 #: pmg-gui/js/LoginView.js:380 pmg-gui/js/MainView.js:221
 #: pmg-gui/js/QuarantineView.js:258
-#: pve-manager/www/manager6/window/LoginWindow.js:392
+#: pve-manager/www/manager6/window/LoginWindow.js:400
 #: pve-manager/www/manager6/Workspace.js:421
 #: proxmox-backup/www/LoginView.js:316 proxmox-backup/www/MainView.js:275
 msgid "Language"
@@ -5917,7 +6015,7 @@ msgstr "链接 {0}"
 msgid "Linked Clone"
 msgstr "链接克隆"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:73
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:76
 msgid ""
 "List of VLAN IDs and ranges, useful for NICs with restricted VLAN offloading "
 "support. For example: '2 4 100-200'"
@@ -6045,8 +6143,8 @@ msgstr "如果用户的密码被泄露，可能会发生锁定的第二个因素
 
 #: pve-manager/www/manager6/grid/Replication.js:260
 #: pve-manager/www/manager6/lxc/Config.js:378
-#: pve-manager/www/manager6/node/Config.js:412
-#: pve-manager/www/manager6/node/Config.js:423
+#: pve-manager/www/manager6/node/Config.js:413
+#: pve-manager/www/manager6/node/Config.js:424
 #: pve-manager/www/manager6/qemu/Config.js:431
 msgid "Log"
 msgstr "日志"
@@ -6063,7 +6161,7 @@ msgstr "日志轮换"
 msgid "Log burst limit"
 msgstr "日志突发限制"
 
-#: pve-manager/www/manager6/Utils.js:1819
+#: pve-manager/www/manager6/Utils.js:1813
 msgid "Log in as root to install."
 msgstr "以 root 身份登录以进行安装。"
 
@@ -6099,6 +6197,11 @@ msgstr "登录（OpenID 重定向）"
 msgid "Login failed. Please try again"
 msgstr "登录失败，请重试"
 
+#: pve-manager/www/manager6/window/LoginWindow.js:163
+#, fuzzy
+msgid "Login failed:"
+msgstr "全部失败"
+
 #: pmg-gui/js/MainView.js:228 pmg-gui/js/QuarantineView.js:265
 #: pve-manager/www/manager6/Workspace.js:429 proxmox-backup/www/MainView.js:286
 msgid "Logout"
@@ -6118,7 +6221,7 @@ msgstr "最长的任务"
 msgid "Loopback Interface"
 msgstr "环回接口"
 
-#: pve-manager/www/manager6/dc/OptionView.js:361
+#: pve-manager/www/manager6/dc/OptionView.js:362
 msgid "Lower"
 msgstr "起始值"
 
@@ -6403,7 +6506,7 @@ msgstr "最大重定位"
 msgid "Max. Restart"
 msgstr "最大重启"
 
-#: pve-manager/www/manager6/dc/OptionView.js:348
+#: pve-manager/www/manager6/dc/OptionView.js:349
 msgid "Maximal Workers/bulk-action"
 msgstr "最大工作数/批量动作"
 
@@ -6528,7 +6631,7 @@ msgstr "已使用的元数据"
 msgid "Method/URL"
 msgstr "Method/URL"
 
-#: pve-manager/www/manager6/dc/Config.js:298
+#: pve-manager/www/manager6/dc/Config.js:306
 #: proxmox-backup/www/SystemConfiguration.js:50
 msgid "Metric Server"
 msgstr "指标服务器"
@@ -6544,9 +6647,9 @@ msgstr "MiB"
 #: pve-manager/www/manager6/node/Config.js:92
 #: pve-manager/www/manager6/qemu/CmdMenu.js:122
 #: pve-manager/www/manager6/qemu/Config.js:68
-#: pve-manager/www/manager6/Utils.js:2092
-#: pve-manager/www/manager6/Utils.js:2112
-#: pve-manager/www/manager6/Utils.js:2143
+#: pve-manager/www/manager6/Utils.js:2086
+#: pve-manager/www/manager6/Utils.js:2106
+#: pve-manager/www/manager6/Utils.js:2137
 #: pve-manager/www/manager6/window/Migrate.js:100
 #: pve-manager/www/manager6/window/Migrate.js:513
 msgid "Migrate"
@@ -6558,7 +6661,7 @@ msgid ""
 "not available on the target node."
 msgstr ""
 
-#: pve-manager/www/manager6/dc/OptionView.js:328
+#: pve-manager/www/manager6/dc/OptionView.js:329
 msgid "Migration"
 msgstr "迁移"
 
@@ -6597,13 +6700,13 @@ msgstr "混合"
 msgid "Mixed Subscriptions"
 msgstr "混合订阅"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:248
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:370
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:251
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:381
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:194
 #: pve-manager/www/manager6/dc/AuthEditAD.js:54
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:54
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:251
-#: pve-manager/www/manager6/dc/Backup.js:382
+#: pve-manager/www/manager6/dc/Backup.js:322
 #: pve-manager/www/manager6/dc/UserTagAccessEdit.js:52
 #: pve-manager/www/manager6/window/Backup.js:28
 #: pve-manager/www/manager6/window/Clone.js:215
@@ -6624,8 +6727,8 @@ msgid ""
 "backups."
 msgstr "检测文件更改并切换容器备份的存档编码格式的模式。"
 
-#: pve-manager/www/manager6/dc/OptionView.js:523
-#: pve-manager/www/manager6/dc/OptionView.js:527
+#: pve-manager/www/manager6/dc/OptionView.js:524
+#: pve-manager/www/manager6/dc/OptionView.js:528
 msgid "Mode: {0}"
 msgstr "模式：{0}"
 
@@ -6673,12 +6776,12 @@ msgid "Monday to Friday"
 msgstr "周一到周五"
 
 #: pve-manager/www/manager6/ceph/Monitor.js:36
-#: pve-manager/www/manager6/node/Config.js:372
+#: pve-manager/www/manager6/node/Config.js:373
 #: pve-manager/www/manager6/qemu/Config.js:350
 msgid "Monitor"
 msgstr "监视器"
 
-#: pve-manager/www/manager6/ceph/CephInstallWizard.js:546
+#: pve-manager/www/manager6/ceph/CephInstallWizard.js:548
 msgid "Monitor node"
 msgstr "监控节点"
 
@@ -6707,7 +6810,7 @@ msgstr "每月"
 msgid "More"
 msgstr "更多"
 
-#: pve-manager/www/manager6/Utils.js:2144
+#: pve-manager/www/manager6/Utils.js:2138
 #: proxmox-backup/www/datastore/Summary.js:281
 msgid "Mount"
 msgstr "挂载"
@@ -6747,12 +6850,12 @@ msgid "Move Storage"
 msgstr "移动存储"
 
 #: pve-manager/www/manager6/qemu/HDMove.js:28
-#: pve-manager/www/manager6/Utils.js:2103
+#: pve-manager/www/manager6/Utils.js:2097
 msgid "Move Volume"
 msgstr "移动卷"
 
 #: pve-manager/www/manager6/qemu/HDMove.js:28
-#: pve-manager/www/manager6/Utils.js:2113
+#: pve-manager/www/manager6/Utils.js:2107
 msgid "Move disk"
 msgstr "移动磁盘"
 
@@ -6811,7 +6914,7 @@ msgstr "N/A"
 msgid "NFS Version"
 msgstr "NFS 版本"
 
-#: pve-manager/www/manager6/dc/OptionView.js:220
+#: pve-manager/www/manager6/dc/OptionView.js:221
 msgid "NOTE: Changing an AppID breaks existing U2F registrations!"
 msgstr "注意：更改 AppID 会破坏现有的 U2F 注册！"
 
@@ -6833,8 +6936,8 @@ msgstr "NVMe 磁盘目前不受支持，'{0}' 将作为 SCSI 连接"
 
 #: proxmox-widget-toolkit/src/form/UserSelector.js:33
 #: proxmox-widget-toolkit/src/grid/ObjectGrid.js:391
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:323
-#: proxmox-widget-toolkit/src/node/NetworkView.js:277
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:326
+#: proxmox-widget-toolkit/src/node/NetworkView.js:282
 #: proxmox-widget-toolkit/src/node/ServiceView.js:198
 #: proxmox-widget-toolkit/src/panel/ACMEAccount.js:65
 #: proxmox-widget-toolkit/src/window/ACMEAccount.js:54
@@ -6861,7 +6964,7 @@ msgstr "NVMe 磁盘目前不受支持，'{0}' 将作为 SCSI 连接"
 #: pve-manager/www/manager6/dc/MetricServerView.js:215
 #: pve-manager/www/manager6/dc/MetricServerView.js:404
 #: pve-manager/www/manager6/dc/NodeView.js:13
-#: pve-manager/www/manager6/dc/OptionView.js:232
+#: pve-manager/www/manager6/dc/OptionView.js:233
 #: pve-manager/www/manager6/dc/PoolEdit.js:21
 #: pve-manager/www/manager6/dc/PoolView.js:83
 #: pve-manager/www/manager6/dc/RealmSyncJob.js:112
@@ -6899,6 +7002,9 @@ msgstr "NVMe 磁盘目前不受支持，'{0}' 将作为 SCSI 连接"
 #: pve-manager/www/manager6/qemu/Options.js:26
 #: pve-manager/www/manager6/qemu/Options.js:30
 #: pve-manager/www/manager6/qemu/Options.js:38
+#: pve-manager/www/manager6/sdn/fabrics/FabricEdit.js:19
+#: pve-manager/www/manager6/sdn/fabrics/InterfacePanel.js:49
+#: pve-manager/www/manager6/sdn/FabricsView.js:16
 #: pve-manager/www/manager6/sdn/VnetEdit.js:32
 #: pve-manager/www/manager6/storage/ContentView.js:152
 #: pve-manager/www/manager6/tree/SnapshotTree.js:340
@@ -7077,7 +7183,7 @@ msgstr "群集中最新的Ceph版本是 {0}"
 msgid "Next"
 msgstr "下一步"
 
-#: pve-manager/www/manager6/dc/OptionView.js:354
+#: pve-manager/www/manager6/dc/OptionView.js:355
 msgid "Next Free VMID Range"
 msgstr "下一个可用的 VMID 范围"
 
@@ -7087,7 +7193,7 @@ msgstr "下一个媒体"
 
 #: pmg-gui/js/PBSSnapshotView.js:185
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:198
-#: pve-manager/www/manager6/dc/Backup.js:852
+#: pve-manager/www/manager6/dc/Backup.js:799
 #: pve-manager/www/manager6/dc/RealmSyncJob.js:128
 #: proxmox-backup/www/config/GCView.js:210
 #: proxmox-backup/www/config/PruneView.js:276
@@ -7223,7 +7329,7 @@ msgstr "没有选中 OSD"
 msgid "No Objects"
 msgstr "没有 Objects"
 
-#: pve-manager/www/manager6/dc/OptionView.js:382
+#: pve-manager/www/manager6/dc/OptionView.js:383
 #: pve-manager/www/manager6/form/TagColorGrid.js:100
 msgid "No Overrides"
 msgstr "未覆写"
@@ -7232,7 +7338,7 @@ msgstr "未覆写"
 msgid "No Plugins configured"
 msgstr "未配置插件"
 
-#: pve-manager/www/manager6/dc/OptionView.js:543
+#: pve-manager/www/manager6/dc/OptionView.js:544
 msgid "No Registered Tags"
 msgstr "未注册标记"
 
@@ -7304,8 +7410,8 @@ msgstr "无缓存"
 msgid "No change"
 msgstr "无更改"
 
-#: proxmox-widget-toolkit/src/node/NetworkView.js:79
-#: proxmox-widget-toolkit/src/node/NetworkView.js:421
+#: proxmox-widget-toolkit/src/node/NetworkView.js:83
+#: proxmox-widget-toolkit/src/node/NetworkView.js:441
 msgid "No changes"
 msgstr "无更改"
 
@@ -7448,8 +7554,8 @@ msgstr "无订阅"
 #: pmg-gui/js/ServerStatus.js:75
 #: pve-manager/www/manager6/data/ResourceStore.js:248
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:182
-#: pve-manager/www/manager6/dc/Backup.js:255
-#: pve-manager/www/manager6/dc/Backup.js:835
+#: pve-manager/www/manager6/dc/Backup.js:242
+#: pve-manager/www/manager6/dc/Backup.js:782
 #: pve-manager/www/manager6/dc/Log.js:52
 #: pve-manager/www/manager6/dc/Tasks.js:101
 #: pve-manager/www/manager6/form/GlobalSearchField.js:89
@@ -7469,17 +7575,20 @@ msgstr "无订阅"
 #: pve-manager/www/manager6/sdn/controllers/BgpEdit.js:26
 #: pve-manager/www/manager6/sdn/controllers/IsisEdit.js:26
 #: pve-manager/www/manager6/sdn/ControllerView.js:122
+#: pve-manager/www/manager6/sdn/fabrics/NodeEdit.js:6
+#: pve-manager/www/manager6/sdn/fabrics/NodeEdit.js:145
+#: pve-manager/www/manager6/sdn/fabrics/NodeEdit.js:164
 #: pve-manager/www/manager6/sdn/StatusView.js:83
 #: pve-manager/www/manager6/window/DirMapEdit.js:149
 #: pve-manager/www/manager6/window/Settings.js:197
 msgid "Node"
 msgstr "节点"
 
-#: pve-manager/www/manager6/Utils.js:2168
+#: pve-manager/www/manager6/Utils.js:2162
 msgid "Node fencing notifications"
 msgstr "节点屏蔽通知"
 
-#: pve-manager/www/manager6/dc/Backup.js:635
+#: pve-manager/www/manager6/dc/Backup.js:582
 msgid "Node is offline"
 msgstr "节点已下线"
 
@@ -7598,12 +7707,12 @@ msgstr "尚未配置"
 msgid "Note"
 msgstr "备注"
 
-#: pve-manager/www/manager6/dc/Backup.js:441
+#: pve-manager/www/manager6/dc/Backup.js:388
 msgid "Note Template"
 msgstr "备注模板"
 
-#: pmg-gui/js/TFAView.js:73 pve-manager/www/manager6/dc/OptionView.js:214
-#: pve-manager/www/manager6/dc/OptionView.js:290
+#: pmg-gui/js/TFAView.js:73 pve-manager/www/manager6/dc/OptionView.js:215
+#: pve-manager/www/manager6/dc/OptionView.js:291
 #: proxmox-backup/www/config/WebauthnView.js:126
 msgid "Note:"
 msgstr "备注:"
@@ -7633,7 +7742,7 @@ msgstr ""
 #: pve-manager/www/manager6/node/Config.js:151
 #: pve-manager/www/manager6/storage/BackupView.js:162
 #: pve-manager/www/manager6/storage/ContentView.js:163
-#: pve-manager/www/manager6/window/Backup.js:243
+#: pve-manager/www/manager6/window/Backup.js:256
 #: pve-manager/www/manager6/window/Settings.js:295
 #: proxmox-backup/www/NavigationTree.js:36
 #: proxmox-backup/www/window/NotesEdit.js:5
@@ -7649,6 +7758,7 @@ msgid "Notice"
 msgstr "通知"
 
 #: pmg-gui/js/Utils.js:523 pve-manager/www/manager6/dc/BackupJobDetail.js:211
+#: pve-manager/www/manager6/window/Backup.js:46
 #: proxmox-backup/www/tape/window/TapeBackup.js:103
 msgid "Notification"
 msgstr "通知"
@@ -7670,14 +7780,10 @@ msgstr "通知目标测试"
 msgid "Notification Targets"
 msgstr "通知目标"
 
-#: pve-manager/www/manager6/dc/Backup.js:332
-#: pve-manager/www/manager6/window/Backup.js:46
 #: proxmox-backup/www/tape/window/TapeRestore.js:444
 msgid "Notification mode"
 msgstr "通知模式"
 
-#: pve-manager/www/manager6/dc/Backup.js:330
-#: pve-manager/www/manager6/window/Backup.js:44
 #: proxmox-backup/www/tape/window/TapeRestore.js:442
 msgid "Notification system"
 msgstr "通知系统"
@@ -7686,7 +7792,8 @@ msgstr "通知系统"
 msgid "Notification type"
 msgstr "通知类型"
 
-#: pve-manager/www/manager6/dc/Config.js:361
+#: pve-manager/www/manager6/dc/Backup.js:369
+#: pve-manager/www/manager6/dc/Config.js:369
 #: proxmox-backup/www/datastore/OptionView.js:170
 #: proxmox-backup/www/NavigationTree.js:72
 #: proxmox-backup/www/tape/window/TapeBackupJob.js:223
@@ -7755,9 +7862,9 @@ msgstr "没有元数据的 OSD，可能是移除后遗留下来的"
 msgid "OVMF is built without LSI drivers, scsi hardware was set to '{1}'"
 msgstr "OVMF 构建时未使用 LSI 驱动程序，scsi 硬件设置为 '{1}'"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:158
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:178
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:291
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:161
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:181
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:294
 msgid "OVS options"
 msgstr "OVS 选项"
 
@@ -7858,12 +7965,12 @@ msgstr "OpenID 登录失败，请重试"
 msgid "OpenID Connect redirect failed."
 msgstr "OpenID 重定向失败。"
 
-#: pve-manager/www/manager6/window/LoginWindow.js:298
+#: pve-manager/www/manager6/window/LoginWindow.js:306
 #: proxmox-backup/www/LoginView.js:182
 msgid "OpenID login - please wait..."
 msgstr "OpenID 登录 - 请稍候..."
 
-#: pve-manager/www/manager6/window/LoginWindow.js:315
+#: pve-manager/www/manager6/window/LoginWindow.js:323
 #: proxmox-backup/www/LoginView.js:200
 msgid "OpenID login failed, please try again"
 msgstr "OpenID 登录失败，请重试"
@@ -7880,7 +7987,7 @@ msgstr "OpenID 重定向失败。"
 msgid "Optimal # of PGs"
 msgstr "最优置放值"
 
-#: pve-manager/www/manager6/dc/OptionView.js:458
+#: pve-manager/www/manager6/dc/OptionView.js:459
 msgid "Option"
 msgstr "选项"
 
@@ -7891,11 +7998,11 @@ msgstr "选项"
 #: pmg-gui/js/VirusDetectorConfiguration.js:13
 #: pve-manager/www/manager6/dc/Config.js:51
 #: pve-manager/www/manager6/dc/Config.js:218
-#: pve-manager/www/manager6/dc/Config.js:264
+#: pve-manager/www/manager6/dc/Config.js:272
 #: pve-manager/www/manager6/lxc/Config.js:287
 #: pve-manager/www/manager6/lxc/Config.js:351
-#: pve-manager/www/manager6/node/Config.js:228
-#: pve-manager/www/manager6/node/Config.js:302
+#: pve-manager/www/manager6/node/Config.js:229
+#: pve-manager/www/manager6/node/Config.js:303
 #: pve-manager/www/manager6/node/Directory.js:124
 #: pve-manager/www/manager6/qemu/Config.js:331
 #: pve-manager/www/manager6/qemu/Config.js:404
@@ -7910,7 +8017,7 @@ msgstr "选项"
 msgid "Order"
 msgstr "预定"
 
-#: pve-manager/www/manager6/Utils.js:2065 proxmox-backup/www/Utils.js:418
+#: pve-manager/www/manager6/Utils.js:2059 proxmox-backup/www/Utils.js:418
 msgid "Order Certificate"
 msgstr "预定凭证"
 
@@ -7920,11 +8027,11 @@ msgstr "预定凭证"
 msgid "Order Certificates Now"
 msgstr "立即预定凭证"
 
-#: pve-manager/www/manager6/dc/OptionView.js:490
+#: pve-manager/www/manager6/dc/OptionView.js:491
 msgid "Ordering"
 msgstr "排序"
 
-#: pve-manager/www/manager6/dc/OptionView.js:389
+#: pve-manager/www/manager6/dc/OptionView.js:390
 msgid "Ordering: {0}"
 msgstr "排序: {0}"
 
@@ -7936,7 +8043,7 @@ msgstr "组织"
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:342
 #: proxmox-widget-toolkit/src/panel/NotificationConfigView.js:184
 #: proxmox-widget-toolkit/src/panel/NotificationConfigView.js:350
-#: pmg-gui/js/TFAView.js:40 pve-manager/www/manager6/dc/OptionView.js:238
+#: pmg-gui/js/TFAView.js:40 pve-manager/www/manager6/dc/OptionView.js:239
 #: proxmox-backup/www/config/WebauthnView.js:16
 #: proxmox-backup/www/config/WebauthnView.js:92
 msgid "Origin"
@@ -8047,7 +8154,7 @@ msgstr "PBS 变化检测模式"
 msgid "PCI Device"
 msgstr "PCI 设备"
 
-#: pve-manager/www/manager6/dc/Config.js:330
+#: pve-manager/www/manager6/dc/Config.js:338
 msgid "PCI Devices"
 msgstr "PCI 设备"
 
@@ -8074,7 +8181,7 @@ msgstr "清除ACLs"
 msgid "Package"
 msgstr "软件包"
 
-#: pve-manager/www/manager6/Utils.js:2165 proxmox-backup/www/Utils.js:470
+#: pve-manager/www/manager6/Utils.js:2159 proxmox-backup/www/Utils.js:470
 msgid "Package updates are available"
 msgstr "软件包更新可用"
 
@@ -8127,7 +8234,7 @@ msgstr "直通特定设备"
 #: pve-manager/www/manager6/storage/CIFSEdit.js:180
 #: pve-manager/www/manager6/storage/ESXIEdit.js:70
 #: pve-manager/www/manager6/storage/PBSEdit.js:557
-#: pve-manager/www/manager6/window/LoginWindow.js:377
+#: pve-manager/www/manager6/window/LoginWindow.js:385
 #: pve-manager/www/manager6/Workspace.js:387
 #: proxmox-backup/www/LoginView.js:300
 #: proxmox-backup/www/tape/EncryptionKeys.js:56
@@ -8182,7 +8289,7 @@ msgstr "设备上的路径"
 
 #: pve-manager/www/manager6/qemu/CmdMenu.js:68
 #: pve-manager/www/manager6/qemu/Config.js:181
-#: pve-manager/www/manager6/Utils.js:2114
+#: pve-manager/www/manager6/Utils.js:2108
 msgid "Pause"
 msgstr "暂停"
 
@@ -8195,7 +8302,7 @@ msgstr "已暂停"
 msgid "Peer Address"
 msgstr "对端地址"
 
-#: pve-manager/www/manager6/sdn/zones/VxlanEdit.js:27
+#: pve-manager/www/manager6/sdn/zones/VxlanEdit.js:44
 msgid "Peer Address List"
 msgstr "对端地址列表"
 
@@ -8204,7 +8311,7 @@ msgid "Peer's root password"
 msgstr "对端 root 密码"
 
 #: pve-manager/www/manager6/sdn/controllers/BgpEdit.js:43
-#: pve-manager/www/manager6/sdn/controllers/EvpnEdit.js:30
+#: pve-manager/www/manager6/sdn/controllers/EvpnEdit.js:59
 msgid "Peers"
 msgstr "对端"
 
@@ -8216,7 +8323,7 @@ msgstr "待更改"
 msgid "Pending Data"
 msgstr "待处理数据"
 
-#: proxmox-widget-toolkit/src/node/NetworkView.js:411
+#: proxmox-widget-toolkit/src/node/NetworkView.js:431
 #: pmg-gui/js/SpamDetectorCustom.js:306
 msgid "Pending changes"
 msgstr "待更改"
@@ -8307,7 +8414,7 @@ msgstr "请输入搜索参数，然后按“搜索”。"
 msgid "Please insert your authentication device and press its button"
 msgstr "请插入您的身份验证设备，然后按其按钮"
 
-#: pve-manager/www/manager6/window/LoginWindow.js:197
+#: pve-manager/www/manager6/window/LoginWindow.js:205
 msgid "Please press the button on your U2F Device"
 msgstr "请按 U2F 设备上的按钮"
 
@@ -8351,6 +8458,11 @@ msgstr "请选择一个发件人。"
 msgid "Please select an object."
 msgstr "请选择一个对象。"
 
+#: pve-manager/www/manager6/window/LoginWindow.js:165
+#, fuzzy
+msgid "Please try again"
+msgstr "登录失败，请重试"
+
 #: pmg-gui/js/ClusterAdministration.js:83
 msgid ""
 "Please use the 'Join' button on the node you want to add, using the "
@@ -8362,11 +8474,11 @@ msgstr "请使用以下IP地址和指纹，在要添加的节点上使用“加�
 #: proxmox-widget-toolkit/src/window/AddWebauthn.js:62
 #: proxmox-widget-toolkit/src/window/LanguageEdit.js:29
 #: proxmox-widget-toolkit/src/window/ThemeEdit.js:26 pmg-gui/js/LoginView.js:81
-#: pmg-gui/js/LoginView.js:206 pve-manager/www/manager6/dc/Backup.js:644
-#: pve-manager/www/manager6/window/Backup.js:379
+#: pmg-gui/js/LoginView.js:206 pve-manager/www/manager6/dc/Backup.js:591
+#: pve-manager/www/manager6/window/Backup.js:392
 #: pve-manager/www/manager6/window/LoginWindow.js:75
-#: pve-manager/www/manager6/window/LoginWindow.js:219
-#: pve-manager/www/manager6/window/LoginWindow.js:258
+#: pve-manager/www/manager6/window/LoginWindow.js:227
+#: pve-manager/www/manager6/window/LoginWindow.js:266
 #: proxmox-backup/www/LoginView.js:74 proxmox-backup/www/LoginView.js:144
 msgid "Please wait..."
 msgstr "请稍候..."
@@ -8417,12 +8529,12 @@ msgid "Pool View"
 msgstr "资源池视图"
 
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:416
-#: pve-manager/www/manager6/dc/Backup.js:289
+#: pve-manager/www/manager6/dc/Backup.js:276
 msgid "Pool based"
 msgstr "基于资源池"
 
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:271
-#: pve-manager/www/manager6/dc/Backup.js:304
+#: pve-manager/www/manager6/dc/Backup.js:291
 msgid "Pool to backup"
 msgstr "要备份的池"
 
@@ -8431,7 +8543,7 @@ msgid "Pool/Media-Set/Snapshot"
 msgstr "池/媒体集/快照"
 
 #: pve-manager/www/manager6/dc/Config.js:128
-#: pve-manager/www/manager6/node/Config.js:394
+#: pve-manager/www/manager6/node/Config.js:395
 msgid "Pools"
 msgstr "资源池"
 
@@ -8457,7 +8569,7 @@ msgstr "入口"
 msgid "Ports"
 msgstr "端口"
 
-#: proxmox-widget-toolkit/src/node/NetworkView.js:319
+#: proxmox-widget-toolkit/src/node/NetworkView.js:339
 msgid "Ports/Slaves"
 msgstr "端口/从属"
 
@@ -8469,8 +8581,8 @@ msgstr "葡萄牙语（巴西）"
 msgid "Position"
 msgstr "位置"
 
-#: pve-manager/www/manager6/dc/Backup.js:477
-#: pve-manager/www/manager6/window/Backup.js:254
+#: pve-manager/www/manager6/dc/Backup.js:424
+#: pve-manager/www/manager6/window/Backup.js:267
 msgid "Possible template variables are: {0}"
 msgstr "模板变量可能是：{0}"
 
@@ -8482,11 +8594,11 @@ msgstr "发送画面"
 msgid "Pre-Enroll keys"
 msgstr "预注册密钥"
 
-#: pve-manager/www/manager6/dc/OptionView.js:530
+#: pve-manager/www/manager6/dc/OptionView.js:531
 msgid "Pre-defined:"
 msgstr "预定义的："
 
-#: pve-manager/www/manager6/storage/Base.js:61
+#: pve-manager/www/manager6/storage/Base.js:71
 msgid "Preallocation"
 msgstr "预分配"
 
@@ -8509,7 +8621,7 @@ msgid "Prepare for VirtIO-SCSI"
 msgstr "准备 VirtIO-SCSI"
 
 #: proxmox-widget-toolkit/src/window/SyncWindow.js:146
-#: pve-manager/www/manager6/dc/OptionView.js:463
+#: pve-manager/www/manager6/dc/OptionView.js:464
 #: pve-manager/www/manager6/dc/SyncWindow.js:174
 msgid "Preview"
 msgstr "预览"
@@ -8633,7 +8745,7 @@ msgstr "属性"
 #: pve-manager/www/manager6/grid/BackupView.js:348
 #: pve-manager/www/manager6/storage/ContentView.js:170
 #: pve-manager/www/manager6/storage/ContentView.js:173
-#: pve-manager/www/manager6/window/Backup.js:231
+#: pve-manager/www/manager6/window/Backup.js:241
 #: proxmox-backup/www/datastore/Content.js:730
 msgid "Protected"
 msgstr "受保护"
@@ -8654,6 +8766,7 @@ msgstr "保护"
 #: pve-manager/www/manager6/form/IPProtocolSelector.js:9
 #: pve-manager/www/manager6/grid/FirewallRules.js:360
 #: pve-manager/www/manager6/grid/FirewallRules.js:959
+#: pve-manager/www/manager6/sdn/FabricsView.js:28
 msgid "Protocol"
 msgstr "协议"
 
@@ -8669,7 +8782,7 @@ msgstr "Proxmox Mail Gateway 登录"
 msgid "Proxmox Mail Gateway Quarantine Help"
 msgstr "Proxmox Mail Gateway 隔离帮助"
 
-#: pve-manager/www/manager6/window/LoginWindow.js:343
+#: pve-manager/www/manager6/window/LoginWindow.js:351
 msgid "Proxmox VE Login"
 msgstr "Proxmox VE 登录"
 
@@ -8756,7 +8869,7 @@ msgstr "公钥类型"
 msgid "Pull"
 msgstr "拉取"
 
-#: pve-manager/www/manager6/Utils.js:2105
+#: pve-manager/www/manager6/Utils.js:2099
 msgid "Pull file"
 msgstr "拉取文件"
 
@@ -8772,7 +8885,7 @@ msgstr "从作业配置中清除"
 msgid "Push"
 msgstr "推送"
 
-#: pve-manager/www/manager6/Utils.js:2106
+#: pve-manager/www/manager6/Utils.js:2100
 msgid "Push file"
 msgstr "推送文件"
 
@@ -8997,8 +9110,8 @@ msgstr "读取"
 #: pve-manager/www/manager6/dc/RealmSyncJob.js:304
 #: pve-manager/www/manager6/dc/UserEdit.js:102
 #: pve-manager/www/manager6/dc/UserView.js:181
-#: pve-manager/www/manager6/Utils.js:2071
-#: pve-manager/www/manager6/Utils.js:2072
+#: pve-manager/www/manager6/Utils.js:2065
+#: pve-manager/www/manager6/Utils.js:2066
 #: proxmox-backup/www/config/UserView.js:223
 #: proxmox-backup/www/window/UserEdit.js:76
 msgid "Realm"
@@ -9052,7 +9165,7 @@ msgstr "将卷重新分配给另一个 CT"
 msgid "Rebalance"
 msgstr "重新平衡"
 
-#: pve-manager/www/manager6/dc/OptionView.js:176
+#: pve-manager/www/manager6/dc/OptionView.js:177
 msgid "Rebalance on Start"
 msgstr "启动时重新平衡"
 
@@ -9061,8 +9174,8 @@ msgstr "启动时重新平衡"
 #: pve-manager/www/manager6/node/Config.js:102
 #: pve-manager/www/manager6/qemu/CmdMenu.js:108
 #: pve-manager/www/manager6/qemu/Config.js:164
-#: pve-manager/www/manager6/Utils.js:2115
-#: pve-manager/www/manager6/Utils.js:2145
+#: pve-manager/www/manager6/Utils.js:2109
+#: pve-manager/www/manager6/Utils.js:2139
 #: proxmox-backup/www/ServerStatus.js:144
 msgid "Reboot"
 msgstr "重启"
@@ -9103,6 +9216,7 @@ msgid "Recipient(s)"
 msgstr "收件人"
 
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:230
+#: pve-manager/www/manager6/panel/BackupNotificationOptions.js:79
 #, fuzzy
 msgid "Recipients"
 msgstr "收件人"
@@ -9129,7 +9243,7 @@ msgid "Referenced disks will always be destroyed."
 msgstr "引用的磁盘将始终被销毁。"
 
 #: proxmox-widget-toolkit/src/node/APT.js:117
-#: pve-manager/www/manager6/Utils.js:2066
+#: pve-manager/www/manager6/Utils.js:2060
 msgid "Refresh"
 msgstr "刷新"
 
@@ -9157,7 +9271,7 @@ msgstr "正则表达式"
 
 #: proxmox-widget-toolkit/src/window/ACMEAccount.js:12
 #: pve-manager/www/manager6/node/ACME.js:9
-#: pve-manager/www/manager6/Utils.js:2067
+#: pve-manager/www/manager6/Utils.js:2061
 msgid "Register"
 msgstr "注册"
 
@@ -9174,7 +9288,7 @@ msgstr "注册 Webauthn 设备"
 msgid "Register {0} Account"
 msgstr "注册 {0} 帐户"
 
-#: pve-manager/www/manager6/dc/OptionView.js:548
+#: pve-manager/www/manager6/dc/OptionView.js:549
 #: pve-manager/www/manager6/dc/RegisteredTagsEdit.js:5
 msgid "Registered Tags"
 msgstr "已注册的标记"
@@ -9230,6 +9344,7 @@ msgstr "中继"
 #: pve-manager/www/manager6/node/LVM.js:142
 #: pve-manager/www/manager6/node/LVMThin.js:171
 #: pve-manager/www/manager6/node/ZFS.js:276
+#: pve-manager/www/manager6/sdn/FabricsView.js:202
 #: pve-manager/www/manager6/tree/DhcpTree.js:190
 #: proxmox-backup/www/datastore/Content.js:1278
 #: proxmox-backup/www/DirectoryList.js:73
@@ -9241,7 +9356,7 @@ msgstr "中继"
 msgid "Reload"
 msgstr "重载"
 
-#: pve-manager/www/manager6/Utils.js:2127
+#: pve-manager/www/manager6/Utils.js:2121
 #, fuzzy
 msgid "Reload network configuration on all nodes"
 msgstr "无法解析网络配置"
@@ -9316,10 +9431,10 @@ msgstr "移除已安排"
 #: pve-manager/www/manager6/sdn/VnetACLView.js:184
 #: pve-manager/www/manager6/storage/ImageView.js:33
 #: pve-manager/www/manager6/tree/SnapshotTree.js:294
-#: pve-manager/www/manager6/Utils.js:2090
-#: pve-manager/www/manager6/Utils.js:2099
-#: pve-manager/www/manager6/Utils.js:2101
-#: pve-manager/www/manager6/Utils.js:2157
+#: pve-manager/www/manager6/Utils.js:2084
+#: pve-manager/www/manager6/Utils.js:2093
+#: pve-manager/www/manager6/Utils.js:2095
+#: pve-manager/www/manager6/Utils.js:2151
 #: proxmox-backup/www/datastore/Content.js:1396
 #: proxmox-backup/www/datastore/Content.js:1453
 #: proxmox-backup/www/DirectoryList.js:109
@@ -9441,7 +9556,7 @@ msgstr "移除消失的用户和组条目。"
 msgid "Removed Data"
 msgstr "已删除的数据"
 
-#: pve-manager/www/manager6/Utils.js:2068 proxmox-backup/www/Utils.js:419
+#: pve-manager/www/manager6/Utils.js:2062 proxmox-backup/www/Utils.js:419
 msgid "Renew Certificate"
 msgstr "更新凭证"
 
@@ -9451,7 +9566,7 @@ msgstr "重复错过"
 
 #: pve-manager/www/manager6/dc/Config.js:78
 #: pve-manager/www/manager6/lxc/Config.js:313
-#: pve-manager/www/manager6/node/Config.js:402
+#: pve-manager/www/manager6/node/Config.js:403
 #: pve-manager/www/manager6/qemu/Config.js:366
 msgid "Replication"
 msgstr "复制"
@@ -9464,7 +9579,7 @@ msgstr "复制作业"
 msgid "Replication Log"
 msgstr "复制日志"
 
-#: pve-manager/www/manager6/Utils.js:2167
+#: pve-manager/www/manager6/Utils.js:2161
 msgid "Replication job notifications"
 msgstr "复制作业通知"
 
@@ -9473,7 +9588,7 @@ msgid "Replication needs at least two nodes"
 msgstr "复制至少需要两个节点"
 
 #: pmg-gui/js/ServerAdministration.js:55
-#: pve-manager/www/manager6/node/Config.js:278
+#: pve-manager/www/manager6/node/Config.js:279
 #: proxmox-backup/www/ServerAdministration.js:58
 msgid "Repositories"
 msgstr "存储库"
@@ -9513,7 +9628,7 @@ msgstr "需要 '{0}' 权限"
 #: proxmox-widget-toolkit/src/panel/NotificationConfigView.js:11
 #: pmg-gui/js/Settings.js:159 pmg-gui/js/Settings.js:180
 #: pmg-gui/js/Settings.js:278 pve-manager/www/manager6/qemu/Config.js:217
-#: pve-manager/www/manager6/Utils.js:2116
+#: pve-manager/www/manager6/Utils.js:2110
 #: pve-manager/www/manager6/window/Settings.js:235
 #: pve-manager/www/manager6/window/Settings.js:256
 #: pve-manager/www/manager6/window/Settings.js:378
@@ -9542,7 +9657,7 @@ msgstr "立即重置 {0}"
 
 #: pve-manager/www/manager6/lxc/Resources.js:291
 #: pve-manager/www/manager6/qemu/HardwareView.js:484
-#: pve-manager/www/manager6/Utils.js:2126
+#: pve-manager/www/manager6/Utils.js:2120
 msgid "Resize"
 msgstr "调整大小"
 
@@ -9557,7 +9672,7 @@ msgstr "调整磁盘大小"
 msgid "Resource"
 msgstr "资源"
 
-#: pve-manager/www/manager6/dc/Config.js:315
+#: pve-manager/www/manager6/dc/Config.js:323
 msgid "Resource Mappings"
 msgstr "资源映射"
 
@@ -9596,8 +9711,8 @@ msgstr "重新启动 pmg-smtp-filter 以激活更改。"
 #: pmg-gui/js/PBSSnapshotView.js:206 pmg-gui/js/Utils.js:899
 #: pve-manager/www/manager6/grid/BackupView.js:177
 #: pve-manager/www/manager6/storage/BackupView.js:84
-#: pve-manager/www/manager6/Utils.js:2117
-#: pve-manager/www/manager6/Utils.js:2146
+#: pve-manager/www/manager6/Utils.js:2111
+#: pve-manager/www/manager6/Utils.js:2140
 #: pve-manager/www/manager6/window/Restore.js:372
 #: pve-manager/www/manager6/window/Restore.js:397
 #: proxmox-backup/www/tape/BackupOverview.js:317
@@ -9630,13 +9745,13 @@ msgstr "最终配置"
 
 #: pve-manager/www/manager6/qemu/CmdMenu.js:83
 #: pve-manager/www/manager6/qemu/Config.js:48
-#: pve-manager/www/manager6/Utils.js:2118
-#: pve-manager/www/manager6/Utils.js:2147
+#: pve-manager/www/manager6/Utils.js:2112
+#: pve-manager/www/manager6/Utils.js:2141
 msgid "Resume"
 msgstr "恢复运行"
 
-#: pve-manager/www/manager6/dc/Backup.js:429
-#: pve-manager/www/manager6/dc/Backup.js:872
+#: pve-manager/www/manager6/dc/Backup.js:376
+#: pve-manager/www/manager6/dc/Backup.js:819
 msgid "Retention"
 msgstr "保留"
 
@@ -9667,13 +9782,13 @@ msgid "Reverse DNS Server"
 msgstr "反向 DNS 服务"
 
 #: proxmox-widget-toolkit/src/node/HostsView.js:35
-#: proxmox-widget-toolkit/src/node/NetworkView.js:246
+#: proxmox-widget-toolkit/src/node/NetworkView.js:251
 #: pmg-gui/js/SpamDetectorCustom.js:289
 #: pve-manager/www/manager6/button/Revert.js:5
 msgid "Revert"
 msgstr "还原"
 
-#: pve-manager/www/manager6/Utils.js:2069 proxmox-backup/www/Utils.js:420
+#: pve-manager/www/manager6/Utils.js:2063 proxmox-backup/www/Utils.js:420
 msgid "Revoke Certificate"
 msgstr "撤销凭证"
 
@@ -9707,8 +9822,8 @@ msgid "Roles"
 msgstr "角色"
 
 #: pve-manager/www/manager6/tree/SnapshotTree.js:263
-#: pve-manager/www/manager6/Utils.js:2119
-#: pve-manager/www/manager6/Utils.js:2148
+#: pve-manager/www/manager6/Utils.js:2113
+#: pve-manager/www/manager6/Utils.js:2142
 msgid "Rollback"
 msgstr "回滚"
 
@@ -9785,7 +9900,7 @@ msgid ""
 "example, due to the node being offline."
 msgstr "如果由于节点离线等原因导致作业无法按计划启动，则尽快运行作业。"
 
-#: pve-manager/www/manager6/dc/Backup.js:690
+#: pve-manager/www/manager6/dc/Backup.js:637
 #: proxmox-backup/www/config/GCView.js:163
 #: proxmox-backup/www/config/PruneView.js:190
 #: proxmox-backup/www/config/SyncView.js:261
@@ -9880,7 +9995,7 @@ msgstr "SSH 公钥"
 msgid "SWAP usage"
 msgstr "SWAP 使用率"
 
-#: pve-manager/www/manager6/ceph/CephInstallWizard.js:532
+#: pve-manager/www/manager6/ceph/CephInstallWizard.js:534
 msgid "Same as Public Network"
 msgstr "与公共网络相同"
 
@@ -9890,6 +10005,7 @@ msgid "Same as Rate"
 msgstr "与速率相同"
 
 #: pve-manager/www/manager6/lxc/Network.js:285
+#: pve-manager/www/manager6/qemu/NetworkEdit.js:116
 msgid "Same as bridge"
 msgstr "与网桥相同"
 
@@ -9908,7 +10024,7 @@ msgid "Save"
 msgstr "保存"
 
 #: pmg-gui/js/LoginView.js:389
-#: pve-manager/www/manager6/window/LoginWindow.js:402
+#: pve-manager/www/manager6/window/LoginWindow.js:410
 #: proxmox-backup/www/LoginView.js:329
 msgid "Save User name"
 msgstr "保存用户名"
@@ -9956,8 +10072,8 @@ msgstr "扫描中..."
 #: pmg-gui/js/PBSConfig.js:17 pmg-gui/js/PBSSnapshotView.js:122
 #: pmg-gui/js/PBSSnapshotView.js:177
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:193
-#: pve-manager/www/manager6/dc/Backup.js:278
-#: pve-manager/www/manager6/dc/Backup.js:847
+#: pve-manager/www/manager6/dc/Backup.js:265
+#: pve-manager/www/manager6/dc/Backup.js:794
 #: pve-manager/www/manager6/dc/RealmSyncJob.js:123
 #: pve-manager/www/manager6/dc/RealmSyncJob.js:310
 #: pve-manager/www/manager6/grid/Replication.js:36
@@ -9973,7 +10089,7 @@ msgstr "扫描中..."
 msgid "Schedule"
 msgstr "计划"
 
-#: pve-manager/www/manager6/dc/Backup.js:804
+#: pve-manager/www/manager6/dc/Backup.js:751
 msgid "Schedule Simulator"
 msgstr "调度模拟器"
 
@@ -10050,10 +10166,6 @@ msgstr "二次验证"
 msgid "Second Factors"
 msgstr "二次验证"
 
-#: pve-manager/www/manager6/storage/GlusterFsEdit.js:90
-msgid "Second Server"
-msgstr "第二服务器"
-
 #: proxmox-widget-toolkit/src/window/TfaWindow.js:6
 msgid "Second login factor required"
 msgstr "需要二次登录验证"
@@ -10084,7 +10196,7 @@ msgstr "密钥"
 msgid "Section"
 msgstr "区段"
 
-#: pve-manager/www/manager6/dc/Config.js:274
+#: pve-manager/www/manager6/dc/Config.js:282
 #: pve-manager/www/manager6/dc/SecurityGroups.js:42
 #: pve-manager/www/manager6/dc/SecurityGroups.js:44
 #: pve-manager/www/manager6/form/SecurityGroupSelector.js:29
@@ -10136,12 +10248,12 @@ msgid ""
 "Selected guests who are already part of a pool will be removed from it first."
 msgstr "已成为池中一部分的选定客人将首先从池中移除。"
 
-#: pve-manager/www/manager6/dc/Backup.js:881
+#: pve-manager/www/manager6/dc/Backup.js:828
 msgid "Selection"
 msgstr "选择"
 
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:204
-#: pve-manager/www/manager6/dc/Backup.js:291
+#: pve-manager/www/manager6/dc/Backup.js:278
 msgid "Selection mode"
 msgstr "选择模式"
 
@@ -10162,16 +10274,11 @@ msgstr "发送原始邮件"
 msgid "Send daily admin reports"
 msgstr "发送每日管理员报告"
 
-#: pve-manager/www/manager6/dc/Backup.js:353
-msgid "Send email"
-msgstr "发送邮件"
-
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:223
 #, fuzzy
 msgid "Send email on failure"
 msgstr "发送邮件至"
 
-#: pve-manager/www/manager6/dc/Backup.js:344
 #: pve-manager/www/manager6/window/Backup.js:34
 msgid "Send email to"
 msgstr "发送邮件至"
@@ -10244,7 +10351,6 @@ msgstr "串行终端"
 #: pve-manager/www/manager6/dc/MetricServerView.js:414
 #: pve-manager/www/manager6/storage/CIFSEdit.js:147
 #: pve-manager/www/manager6/storage/ESXIEdit.js:56
-#: pve-manager/www/manager6/storage/GlusterFsEdit.js:74
 #: pve-manager/www/manager6/storage/NFSEdit.js:116
 #: pve-manager/www/manager6/storage/PBSEdit.js:499
 msgid "Server"
@@ -10391,8 +10497,8 @@ msgstr "共享"
 #: pve-manager/www/manager6/node/CmdMenu.js:89
 #: pve-manager/www/manager6/node/Config.js:125
 #: pve-manager/www/manager6/node/Config.js:161
-#: pve-manager/www/manager6/Utils.js:2129
-#: pve-manager/www/manager6/Utils.js:2136
+#: pve-manager/www/manager6/Utils.js:2123
+#: pve-manager/www/manager6/Utils.js:2130
 #: proxmox-backup/www/NavigationTree.js:93
 msgid "Shell"
 msgstr "Shell"
@@ -10401,7 +10507,7 @@ msgstr "Shell"
 msgid "Short"
 msgstr "短的"
 
-#: pve-manager/www/manager6/dc/Backup.js:733
+#: pve-manager/www/manager6/dc/Backup.js:680
 msgid "Show"
 msgstr "显示"
 
@@ -10456,7 +10562,7 @@ msgstr "显示用户"
 msgid "Show details"
 msgstr "显示详细信息"
 
-#: pve-manager/www/manager6/dc/Backup.js:726
+#: pve-manager/www/manager6/dc/Backup.js:673
 msgid ""
 "Show job details and which guests and volumes are affected by the backup job"
 msgstr "显示作业详细信息以及哪些来宾和卷受备份作业影响"
@@ -10473,14 +10579,14 @@ msgstr "仅显示已安装的服务"
 #: pve-manager/www/manager6/node/Config.js:113
 #: pve-manager/www/manager6/qemu/CmdMenu.js:89
 #: pve-manager/www/manager6/qemu/Config.js:154
-#: pve-manager/www/manager6/Utils.js:2093
-#: pve-manager/www/manager6/Utils.js:2120
-#: pve-manager/www/manager6/Utils.js:2149
+#: pve-manager/www/manager6/Utils.js:2087
+#: pve-manager/www/manager6/Utils.js:2114
+#: pve-manager/www/manager6/Utils.js:2143
 #: proxmox-backup/www/ServerStatus.js:154
 msgid "Shutdown"
 msgstr "关机"
 
-#: pve-manager/www/manager6/dc/OptionView.js:139
+#: pve-manager/www/manager6/dc/OptionView.js:140
 msgid "Shutdown Policy"
 msgstr "关机策略"
 
@@ -10598,8 +10704,8 @@ msgstr "跳过已验证"
 msgid "Skip replication"
 msgstr "跳过复制"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:228
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:378
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:231
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:389
 msgid "Slaves"
 msgstr "从属"
 
@@ -10623,8 +10729,8 @@ msgstr "智能主机"
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:254
 #: pve-manager/www/manager6/form/BackupModeSelector.js:5
 #: pve-manager/www/manager6/form/SnapshotSelector.js:63
-#: pve-manager/www/manager6/Utils.js:2121
-#: pve-manager/www/manager6/Utils.js:2150
+#: pve-manager/www/manager6/Utils.js:2115
+#: pve-manager/www/manager6/Utils.js:2144
 #: pve-manager/www/manager6/window/Clone.js:233
 #: pve-manager/www/manager6/window/Snapshot.js:149
 #: pve-manager/www/manager6/window/Snapshot.js:153
@@ -10665,7 +10771,7 @@ msgstr "插槽"
 msgid "Softlink"
 msgstr "软链接"
 
-#: pve-manager/www/manager6/dc/Backup.js:734
+#: pve-manager/www/manager6/dc/Backup.js:681
 msgid "Some guests are not covered by any backup job."
 msgstr "部分客户机没有任何备份作业。"
 
@@ -10719,8 +10825,8 @@ msgstr "源节点"
 msgid "Source port"
 msgstr "源端口"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:137
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:152
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:140
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:155
 msgid "Space-separated list of interfaces, for example: enp0s0 enp1s0"
 msgstr "以空格分隔的接口列表，例如：enp0s0 enp1s0"
 
@@ -10805,9 +10911,9 @@ msgstr "标准 VGA"
 #: pve-manager/www/manager6/node/Config.js:49
 #: pve-manager/www/manager6/qemu/CmdMenu.js:61
 #: pve-manager/www/manager6/qemu/Config.js:58
-#: pve-manager/www/manager6/Utils.js:2094
-#: pve-manager/www/manager6/Utils.js:2122
-#: pve-manager/www/manager6/Utils.js:2151
+#: pve-manager/www/manager6/Utils.js:2088
+#: pve-manager/www/manager6/Utils.js:2116
+#: pve-manager/www/manager6/Utils.js:2145
 msgid "Start"
 msgstr "启动"
 
@@ -10853,7 +10959,7 @@ msgstr "开机自启动"
 msgid "Start on boot delay"
 msgstr "启动延迟"
 
-#: pve-manager/www/manager6/dc/Backup.js:702
+#: pve-manager/www/manager6/dc/Backup.js:649
 msgid "Start the selected backup job now?"
 msgstr "立即启动选定的备份作业？"
 
@@ -10893,6 +10999,7 @@ msgstr "启动延时"
 #: pmg-gui/js/ClusterAdministration.js:245
 #: pve-manager/www/manager6/ha/Resources.js:93
 #: pve-manager/www/manager6/sdn/ControllerView.js:131
+#: pve-manager/www/manager6/sdn/FabricsView.js:146
 #: pve-manager/www/manager6/sdn/SubnetView.js:134
 #: pve-manager/www/manager6/sdn/VnetView.js:129
 #: pve-manager/www/manager6/sdn/ZoneView.js:183
@@ -10963,6 +11070,7 @@ msgstr "上次垃圾回收的统计信息"
 #: pve-manager/www/manager6/node/Subscription.js:123
 #: pve-manager/www/manager6/panel/GuestStatusView.js:55
 #: pve-manager/www/manager6/pool/StatusView.js:6
+#: pve-manager/www/manager6/sdn/fabrics/InterfacePanel.js:16
 #: pve-manager/www/manager6/sdn/Status.js:29
 #: pve-manager/www/manager6/sdn/StatusView.js:88
 #: pve-manager/www/manager6/sdn/ZoneContentView.js:72
@@ -11003,9 +11111,9 @@ msgstr "状态：{0}"
 #: pve-manager/www/manager6/lxc/Config.js:83
 #: pve-manager/www/manager6/qemu/CmdMenu.js:95
 #: pve-manager/www/manager6/qemu/Config.js:204
-#: pve-manager/www/manager6/Utils.js:2095
-#: pve-manager/www/manager6/Utils.js:2123
-#: pve-manager/www/manager6/Utils.js:2152
+#: pve-manager/www/manager6/Utils.js:2089
+#: pve-manager/www/manager6/Utils.js:2117
+#: pve-manager/www/manager6/Utils.js:2146
 msgid "Stop"
 msgstr "停止"
 
@@ -11037,8 +11145,8 @@ msgstr "已停止"
 #: pmg-gui/js/Dashboard.js:504
 #: pve-manager/www/manager6/data/ResourceStore.js:255
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:188
-#: pve-manager/www/manager6/dc/Backup.js:267
-#: pve-manager/www/manager6/dc/Backup.js:858
+#: pve-manager/www/manager6/dc/Backup.js:254
+#: pve-manager/www/manager6/dc/Backup.js:805
 #: pve-manager/www/manager6/dc/Config.js:61
 #: pve-manager/www/manager6/dc/Summary.js:45
 #: pve-manager/www/manager6/form/DiskStorageSelector.js:11
@@ -11061,7 +11169,7 @@ msgstr "存储"
 msgid "Storage / Disks"
 msgstr "存储/磁盘"
 
-#: pve-manager/www/manager6/window/Backup.js:261
+#: pve-manager/www/manager6/window/Backup.js:274
 msgid "Storage Retention Configuration"
 msgstr "存储保留配置"
 
@@ -11081,6 +11189,10 @@ msgstr "存储 {0} 在节点 {1} 上"
 msgid ""
 "Storage(s) ({0}) not available on selected target. Start VM to use live "
 "storage migration or select other target node."
+msgstr ""
+
+#: pve-manager/www/manager6/storage/Base.js:95
+msgid "Storage-Managed Snapshots are a technology preview."
 msgstr ""
 
 #: pve-manager/www/manager6/qemu/PCIEdit.js:332
@@ -11124,7 +11236,7 @@ msgstr "主题，发送者"
 msgid "Subnet"
 msgstr "子网"
 
-#: proxmox-widget-toolkit/src/node/NetworkView.js:353
+#: proxmox-widget-toolkit/src/node/NetworkView.js:373
 msgid "Subnet mask"
 msgstr "子网掩码"
 
@@ -11134,7 +11246,7 @@ msgstr "子网"
 
 #: pmg-gui/js/ClusterAdministration.js:266 pmg-gui/js/Dashboard.js:422
 #: pmg-gui/js/NavigationTree.js:84 pmg-gui/js/Subscription.js:23
-#: pve-manager/www/manager6/node/Config.js:451
+#: pve-manager/www/manager6/node/Config.js:452
 #: proxmox-backup/www/Dashboard.js:290 proxmox-backup/www/NavigationTree.js:78
 #: proxmox-backup/www/Subscription.js:24
 msgid "Subscription"
@@ -11156,7 +11268,7 @@ msgid "Subsystem Vendor/Device"
 msgstr "子系统供应商/设备"
 
 #: pmg-gui/js/RegexTester.js:48
-#: pve-manager/www/manager6/ceph/CephInstallWizard.js:637
+#: pve-manager/www/manager6/ceph/CephInstallWizard.js:639
 msgid "Success"
 msgstr "成功"
 
@@ -11201,7 +11313,7 @@ msgstr "周日"
 msgid "Superuser"
 msgstr "超级用户"
 
-#: pve-manager/www/manager6/dc/Config.js:371
+#: pve-manager/www/manager6/dc/Config.js:379
 #: pve-manager/www/manager6/dc/NodeView.js:35
 msgid "Support"
 msgstr "支持"
@@ -11214,11 +11326,11 @@ msgstr "对 {0} {1} 的支持将于 {2} 结束"
 #: pve-manager/www/manager6/form/BackupModeSelector.js:6
 #: pve-manager/www/manager6/node/CmdMenu.js:67
 #: pve-manager/www/manager6/node/Config.js:77
-#: pve-manager/www/manager6/Utils.js:2153
+#: pve-manager/www/manager6/Utils.js:2147
 msgid "Suspend"
 msgstr "挂起"
 
-#: pve-manager/www/manager6/Utils.js:2132
+#: pve-manager/www/manager6/Utils.js:2126
 msgid "Suspend all VMs"
 msgstr "挂起所有虚拟机"
 
@@ -11246,7 +11358,7 @@ msgstr "瑞典语"
 #: proxmox-widget-toolkit/src/window/SyncWindow.js:150
 #: pve-manager/www/manager6/dc/AuthView.js:128
 #: pve-manager/www/manager6/dc/SyncWindow.js:178
-#: pve-manager/www/manager6/Utils.js:2071
+#: pve-manager/www/manager6/Utils.js:2065
 msgid "Sync"
 msgstr "同步"
 
@@ -11277,7 +11389,7 @@ msgstr "同步级别"
 msgid "Sync Options"
 msgstr "同步选项"
 
-#: pve-manager/www/manager6/Utils.js:2072
+#: pve-manager/www/manager6/Utils.js:2066
 msgid "Sync Preview"
 msgstr "同步预览"
 
@@ -11324,7 +11436,7 @@ msgstr "系统"
 msgid "System Configuration"
 msgstr "系统配置"
 
-#: pve-manager/www/manager6/node/Config.js:249
+#: pve-manager/www/manager6/node/Config.js:250
 msgid "System Log"
 msgstr "系统日志"
 
@@ -11427,11 +11539,11 @@ msgstr "TTY 计数"
 msgid "Tag"
 msgstr "标记"
 
-#: pve-manager/www/manager6/dc/OptionView.js:405
+#: pve-manager/www/manager6/dc/OptionView.js:406
 msgid "Tag Color Override"
 msgstr "标记颜色设定"
 
-#: pve-manager/www/manager6/dc/OptionView.js:401
+#: pve-manager/www/manager6/dc/OptionView.js:402
 msgid "Tag Style Override"
 msgstr "标记样式设定"
 
@@ -11607,7 +11719,7 @@ msgid "Task"
 msgstr "任务"
 
 #: pve-manager/www/manager6/lxc/Config.js:293
-#: pve-manager/www/manager6/node/Config.js:436
+#: pve-manager/www/manager6/node/Config.js:437
 #: pve-manager/www/manager6/qemu/Config.js:337
 msgid "Task History"
 msgstr "任务历史"
@@ -11718,7 +11830,7 @@ msgid ""
 msgstr ""
 "如果未设置，则使用节点特定的 'vzdump.conf' 或配置模式的默认值来确定后备值。"
 
-#: pve-manager/www/manager6/dc/Backup.js:474
+#: pve-manager/www/manager6/dc/Backup.js:421
 msgid "The notes are added to each backup created by this job."
 msgstr "注释将添加到此作业创建的每个备份中。"
 
@@ -11840,7 +11952,7 @@ msgstr "TiB"
 #: pmg-gui/js/SenderStatistics.js:81 pmg-gui/js/SpamQuarantine.js:188
 #: pmg-gui/js/SystemConfiguration.js:29 pmg-gui/js/VirusQuarantine.js:91
 #: pve-manager/www/manager6/dc/Log.js:44
-#: pve-manager/www/manager6/node/Config.js:237
+#: pve-manager/www/manager6/node/Config.js:238
 #: pve-manager/www/manager6/window/ScheduleSimulator.js:133
 #: proxmox-backup/www/SystemConfiguration.js:29
 msgid "Time"
@@ -12052,11 +12164,11 @@ msgstr "传输"
 msgid "Tree Settings"
 msgstr "树形设置"
 
-#: pve-manager/www/manager6/dc/OptionView.js:451
+#: pve-manager/www/manager6/dc/OptionView.js:452
 msgid "Tree Shape"
 msgstr "树形结构"
 
-#: pve-manager/www/manager6/dc/OptionView.js:387
+#: pve-manager/www/manager6/dc/OptionView.js:388
 msgid "Tree Shape: {0}"
 msgstr "树形结构: {0}"
 
@@ -12086,8 +12198,8 @@ msgstr "二次验证"
 msgid "Two Factor Authentication"
 msgstr "二次验证"
 
-#: proxmox-widget-toolkit/src/form/NetworkSelector.js:113
-#: proxmox-widget-toolkit/src/node/NetworkView.js:282
+#: proxmox-widget-toolkit/src/form/NetworkSelector.js:120
+#: proxmox-widget-toolkit/src/node/NetworkView.js:302
 #: proxmox-widget-toolkit/src/panel/ACMEDomains.js:411
 #: proxmox-widget-toolkit/src/panel/AuthView.js:26
 #: proxmox-widget-toolkit/src/panel/DiskList.js:294
@@ -12125,6 +12237,7 @@ msgstr "二次验证"
 #: pve-manager/www/manager6/qemu/ScsiHwEdit.js:13
 #: pve-manager/www/manager6/sdn/ControllerView.js:113
 #: pve-manager/www/manager6/sdn/DnsView.js:109
+#: pve-manager/www/manager6/sdn/fabrics/InterfacePanel.js:54
 #: pve-manager/www/manager6/sdn/IpamView.js:108
 #: pve-manager/www/manager6/sdn/ZoneView.js:127
 #: pve-manager/www/manager6/storage/StatusView.js:45
@@ -12142,19 +12255,19 @@ msgstr "类别"
 msgid "Types"
 msgstr "类别"
 
-#: pve-manager/www/manager6/dc/OptionView.js:193
+#: pve-manager/www/manager6/dc/OptionView.js:194
 msgid "U2F AppID URL"
 msgstr "U2F AppID URL"
 
-#: pve-manager/www/manager6/dc/OptionView.js:203
+#: pve-manager/www/manager6/dc/OptionView.js:204
 msgid "U2F Origin"
 msgstr "U2F 源"
 
-#: pve-manager/www/manager6/dc/OptionView.js:184
+#: pve-manager/www/manager6/dc/OptionView.js:185
 msgid "U2F Settings"
 msgstr "U2F 设置"
 
-#: pve-manager/www/manager6/dc/OptionView.js:215
+#: pve-manager/www/manager6/dc/OptionView.js:216
 #, fuzzy
 msgid "U2F is deprecated, use WebAuthn"
 msgstr "{0} 已弃用，请使用 {1}"
@@ -12179,7 +12292,7 @@ msgstr "URL"
 msgid "USB Device"
 msgstr "USB 设备"
 
-#: pve-manager/www/manager6/dc/Config.js:340
+#: pve-manager/www/manager6/dc/Config.js:348
 msgid "USB Devices"
 msgstr "USB 设备"
 
@@ -12290,7 +12403,7 @@ msgstr "解锁 TFA"
 msgid "Unlock TFA authentication for {0}"
 msgstr "解锁 {0} 的 TFA 身份验证"
 
-#: pve-manager/www/manager6/Utils.js:2155
+#: pve-manager/www/manager6/Utils.js:2149
 #: proxmox-backup/www/datastore/Summary.js:256
 msgid "Unmount"
 msgstr "卸载"
@@ -12340,7 +12453,7 @@ msgstr "未使用的磁盘"
 msgid "Up"
 msgstr "在线"
 
-#: pmg-gui/js/DKIMSettings.js:152 pve-manager/www/manager6/Utils.js:2070
+#: pmg-gui/js/DKIMSettings.js:152 pve-manager/www/manager6/Utils.js:2064
 msgid "Update"
 msgstr "更新"
 
@@ -12365,7 +12478,7 @@ msgid "Update {0} Account"
 msgstr "更新 {0} 帐户"
 
 #: pmg-gui/js/ServerAdministration.js:39
-#: pve-manager/www/manager6/node/Config.js:260
+#: pve-manager/www/manager6/node/Config.js:261
 #: proxmox-backup/www/ServerAdministration.js:42
 msgid "Updates"
 msgstr "更新"
@@ -12375,7 +12488,7 @@ msgid "Updating Microcode"
 msgstr "更新 Microcode"
 
 #: pmg-gui/js/ServerAdministration.js:45
-#: pve-manager/www/manager6/node/Config.js:269
+#: pve-manager/www/manager6/node/Config.js:270
 #: proxmox-backup/www/ServerAdministration.js:48
 msgid "Upgrade"
 msgstr "升级"
@@ -12422,7 +12535,7 @@ msgid ""
 "free space."
 msgstr ""
 
-#: pve-manager/www/manager6/dc/OptionView.js:370
+#: pve-manager/www/manager6/dc/OptionView.js:371
 msgid "Upper"
 msgstr "结束值"
 
@@ -12477,7 +12590,7 @@ msgstr "使用贝叶斯过滤器"
 msgid "Use CD/DVD disc image file (iso)"
 msgstr "使用 CD/DVD 光盘镜像文件（ISO）"
 
-#: pve-manager/www/manager6/dc/OptionView.js:178
+#: pve-manager/www/manager6/dc/OptionView.js:179
 msgid "Use CRS to select the least loaded node when starting an HA service"
 msgstr "启动HA服务时，使用CRS选择负载最小的节点"
 
@@ -12550,12 +12663,14 @@ msgid "Use auto-whitelists"
 msgstr "使用自动白名单"
 
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:219
+#: pve-manager/www/manager6/panel/BackupNotificationOptions.js:64
 #: proxmox-backup/www/tape/window/TapeBackupJob.js:259
 #: proxmox-backup/www/window/NotifyOptions.js:91
 #, fuzzy
 msgid "Use global notification settings"
 msgstr "磁带备份通知"
 
+#: pve-manager/www/manager6/window/Backup.js:43
 #: proxmox-backup/www/datastore/OptionView.js:173
 #: proxmox-backup/www/tape/window/TapeBackup.js:100
 #, fuzzy
@@ -12576,11 +12691,13 @@ msgstr "中介设备"
 msgid "Use physical CD/DVD Drive"
 msgstr "使用物理 CD/DVD 驱动器"
 
+#: pve-manager/www/manager6/window/Backup.js:44
 #: proxmox-backup/www/tape/window/TapeBackup.js:101
 #, fuzzy
 msgid "Use sendmail (legacy)"
 msgstr "电子邮件（旧版）"
 
+#: pve-manager/www/manager6/panel/BackupNotificationOptions.js:73
 #: proxmox-backup/www/datastore/OptionView.js:175
 #: proxmox-backup/www/tape/window/TapeBackupJob.js:268
 #: proxmox-backup/www/window/NotifyOptions.js:100
@@ -12693,7 +12810,7 @@ msgstr "用户垃圾邮件报告样式"
 msgid "User Sync"
 msgstr "用户同步"
 
-#: pve-manager/www/manager6/dc/OptionView.js:533
+#: pve-manager/www/manager6/dc/OptionView.js:534
 #: pve-manager/www/manager6/dc/UserTagAccessEdit.js:5
 msgid "User Tag Access"
 msgstr "用户标记访问"
@@ -12723,7 +12840,7 @@ msgstr "用户类别"
 #: pve-manager/www/manager6/dc/UserView.js:174
 #: pve-manager/www/manager6/storage/CephFSEdit.js:62
 #: pve-manager/www/manager6/storage/RBDEdit.js:184
-#: pve-manager/www/manager6/window/LoginWindow.js:363
+#: pve-manager/www/manager6/window/LoginWindow.js:371
 #: proxmox-backup/www/config/UserView.js:216
 #: proxmox-backup/www/LoginView.js:286 proxmox-backup/www/window/UserEdit.js:66
 msgid "User name"
@@ -12785,15 +12902,15 @@ msgstr "VCPUs"
 msgid "VG Name"
 msgstr "VG 名称"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:98
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:101
 msgid "VID range includes not-a-number: {0}"
 msgstr "VID 范围包括非数字：{0}"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:103
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:106
 msgid "VID range must go from lower to higher tag: {0}"
 msgstr "VID 范围必须从较低标签到较高标签：{0}"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:109
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:112
 msgid "VID range outside of allowed 2 and 4094 limit: {0}"
 msgstr "VID 范围超出允许的 2 到 4094 限制：{0}"
 
@@ -12806,11 +12923,11 @@ msgstr "VLAN"
 msgid "VLAN Aware"
 msgstr "VLAN 感知"
 
-#: proxmox-widget-toolkit/src/node/NetworkView.js:375
+#: proxmox-widget-toolkit/src/node/NetworkView.js:395
 msgid "VLAN ID"
 msgstr "VLAN ID"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:66
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:69
 msgid "VLAN IDs"
 msgstr "VLAN IDs"
 
@@ -12821,12 +12938,12 @@ msgstr "VLAN IDs"
 msgid "VLAN Tag"
 msgstr "VLAN 标签"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:119
-#: proxmox-widget-toolkit/src/node/NetworkView.js:310
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:122
+#: proxmox-widget-toolkit/src/node/NetworkView.js:330
 msgid "VLAN aware"
 msgstr "VLAN 感知"
 
-#: proxmox-widget-toolkit/src/node/NetworkView.js:381
+#: proxmox-widget-toolkit/src/node/NetworkView.js:401
 msgid "VLAN raw device"
 msgstr "VLAN 原始设备"
 
@@ -12939,7 +13056,7 @@ msgstr "供应商/设备"
 msgid "Verbose"
 msgstr "详细"
 
-#: pve-manager/www/manager6/window/LoginWindow.js:196
+#: pve-manager/www/manager6/window/LoginWindow.js:204
 #: proxmox-backup/www/Utils.js:454 proxmox-backup/www/Utils.js:455
 #: proxmox-backup/www/Utils.js:456
 msgid "Verification"
@@ -13170,7 +13287,7 @@ msgstr "病毒爆发"
 msgid "Virus info"
 msgstr "病毒信息"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:206
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:209
 msgid "Vlan raw device"
 msgstr "VLAN 原始设备"
 
@@ -13284,7 +13401,7 @@ msgstr "磨损"
 msgid "WebAuthn"
 msgstr "WebAuthn"
 
-#: pve-manager/www/manager6/dc/OptionView.js:224
+#: pve-manager/www/manager6/dc/OptionView.js:225
 msgid "WebAuthn Settings"
 msgstr "WebAuthn 设置"
 
@@ -13292,7 +13409,7 @@ msgstr "WebAuthn 设置"
 msgid "WebAuthn TFA"
 msgstr "Webauthn TFA"
 
-#: pmg-gui/js/TFAView.js:74 pve-manager/www/manager6/dc/OptionView.js:291
+#: pmg-gui/js/TFAView.js:74 pve-manager/www/manager6/dc/OptionView.js:292
 #: proxmox-backup/www/config/WebauthnView.js:127
 msgid "WebAuthn requires using a trusted certificate."
 msgstr "WebAuthn 需要使用受信任的凭证。"
@@ -13328,6 +13445,7 @@ msgid "What Objects"
 msgstr "内容对象"
 
 #: pmg-gui/js/ObjectGroupSelector.js:29 pmg-gui/js/RuleInfo.js:458
+#: pve-manager/www/manager6/panel/BackupNotificationOptions.js:90
 msgid "When"
 msgstr "时间"
 
@@ -13361,7 +13479,7 @@ msgid "Whole year"
 msgstr "整年"
 
 #: proxmox-widget-toolkit/src/panel/DiskList.js:425
-#: pve-manager/www/manager6/Utils.js:2134 proxmox-backup/www/Utils.js:457
+#: pve-manager/www/manager6/Utils.js:2128 proxmox-backup/www/Utils.js:457
 msgid "Wipe Disk"
 msgstr "擦除磁盘"
 
@@ -13393,7 +13511,7 @@ msgid ""
 "addresses as spam."
 msgstr "使用此功能，可以手动将来自某些域或地址的电子邮件标记为垃圾邮件。"
 
-#: pve-manager/www/manager6/storage/Base.js:129
+#: pve-manager/www/manager6/storage/Base.js:152
 #, fuzzy
 msgid ""
 "Without any keep option, the node's vzdump.conf or `keep-all` is used as "
@@ -13401,7 +13519,7 @@ msgid ""
 msgstr ""
 "如果没有任何保留选项，节点的 vzdump.conf 或 “keep all” 将用作备份作业的回退"
 
-#: pve-manager/www/manager6/dc/Backup.js:436
+#: pve-manager/www/manager6/dc/Backup.js:383
 #, fuzzy
 msgid ""
 "Without any keep option, the storage's configuration or node's vzdump.conf "
@@ -13588,7 +13706,7 @@ msgstr "ZB"
 msgid "ZFS Pool"
 msgstr "ZFS 池"
 
-#: pve-manager/www/manager6/Utils.js:2156 proxmox-backup/www/Utils.js:458
+#: pve-manager/www/manager6/Utils.js:2150 proxmox-backup/www/Utils.js:458
 msgid "ZFS Storage"
 msgstr "ZFS 存储"
 
@@ -13675,10 +13793,10 @@ msgstr "天"
 msgid "days"
 msgstr "天"
 
-#: pve-manager/www/manager6/dc/OptionView.js:322
-#: pve-manager/www/manager6/dc/OptionView.js:329
-#: pve-manager/www/manager6/dc/OptionView.js:336
-#: pve-manager/www/manager6/dc/OptionView.js:343
+#: pve-manager/www/manager6/dc/OptionView.js:323
+#: pve-manager/www/manager6/dc/OptionView.js:330
+#: pve-manager/www/manager6/dc/OptionView.js:337
+#: pve-manager/www/manager6/dc/OptionView.js:344
 #: pve-manager/www/manager6/qemu/HDEdit.js:439
 #: pve-manager/www/manager6/qemu/HDEdit.js:448
 #: pve-manager/www/manager6/qemu/HDEdit.js:457
@@ -13827,7 +13945,7 @@ msgid "noVNC Settings"
 msgstr "noVNC 设置"
 
 #: proxmox-widget-toolkit/src/Utils.js:48
-#: pve-manager/www/manager6/dc/OptionView.js:315
+#: pve-manager/www/manager6/dc/OptionView.js:316
 #: pve-manager/www/manager6/window/DownloadUrlToStorage.js:208
 #: pve-manager/www/manager6/window/UploadToStorage.js:256
 #: proxmox-backup/www/window/DataStoreEdit.js:83
@@ -13842,7 +13960,7 @@ msgstr "无"
 msgid "none (disabled)"
 msgstr "无（禁用）"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:89
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:92
 msgid "not a valid bridge VLAN ID entry: {0}"
 msgstr "无效的网桥 VLAN ID条目：{0}"
 
@@ -13871,7 +13989,7 @@ msgid "peer's link address: {0}"
 msgstr "对端链接地址: {0}"
 
 #: pve-manager/www/manager6/grid/Replication.js:396
-#: pve-manager/www/manager6/Utils.js:1139 proxmox-backup/www/Utils.js:244
+#: pve-manager/www/manager6/Utils.js:1133 proxmox-backup/www/Utils.js:244
 msgid "pending"
 msgstr "等待中"
 
@@ -13965,6 +14083,12 @@ msgstr "使用 OSD/DB 磁盘"
 msgid "use host settings"
 msgstr "使用主机设置"
 
+#: pve-manager/www/manager6/sdn/controllers/EvpnEdit.js:37
+#: pve-manager/www/manager6/sdn/zones/VxlanEdit.js:58
+#, fuzzy
+msgid "used as underlay network"
+msgstr "与公共网络相同"
+
 #: proxmox-widget-toolkit/src/panel/SmtpEditPanel.js:144
 msgid "user@example.com"
 msgstr "user@example.com"
@@ -13991,10 +14115,6 @@ msgstr "支持"
 #: proxmox-backup/www/window/Settings.js:223
 msgid "xterm.js Settings"
 msgstr "xterm.js设置"
-
-#: pve-manager/www/manager6/dc/Backup.js:324
-msgid "{0} (Auto)"
-msgstr "{0} (自动)"
 
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:376
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:314
@@ -14049,7 +14169,7 @@ msgstr "{0} 分钟"
 msgid "{0} months"
 msgstr "{0} 月"
 
-#: pve-manager/www/manager6/Utils.js:1817
+#: pve-manager/www/manager6/Utils.js:1811
 msgid "{0} not installed."
 msgstr "{0} 没有安装。"
 
@@ -14118,9 +14238,6 @@ msgstr "{0}% 的 {1}"
 #~ msgid "API"
 #~ msgstr "API"
 
-#~ msgid "Add NS"
-#~ msgstr "添加 NS"
-
 #~ msgid "Add {0}"
 #~ msgstr "添加 {0}"
 
@@ -14152,6 +14269,9 @@ msgstr "{0}% 的 {1}"
 
 #~ msgid "Are you sure you want to rollback to snapshot {0}"
 #~ msgstr "确定要回滚到快照{0}"
+
+#~ msgid "Auto"
+#~ msgstr "自动"
 
 #~ msgid "Automatically"
 #~ msgstr "自动化"
@@ -14420,9 +14540,6 @@ msgstr "{0}% 的 {1}"
 #~ msgid "No Data in Database"
 #~ msgstr "数据库中没有数据"
 
-#~ msgid "No Snapshots found"
-#~ msgstr "没有找到快照"
-
 #~ msgid "No Volume Groups found"
 #~ msgstr "未找到卷组"
 
@@ -14565,6 +14682,12 @@ msgstr "{0}% 的 {1}"
 
 #~ msgid "Scan QR code and enter TOTP auth. code to verify"
 #~ msgstr "扫描二维码，并输入TOTP验证码以用于验证"
+
+#~ msgid "Second Server"
+#~ msgstr "第二服务器"
+
+#~ msgid "Send email"
+#~ msgstr "发送邮件"
 
 #~ msgid "Server Resources"
 #~ msgstr "服务器资源"
@@ -14759,6 +14882,9 @@ msgstr "{0}% 的 {1}"
 
 #~ msgid "zone"
 #~ msgstr "时区"
+
+#~ msgid "{0} (Auto)"
+#~ msgstr "{0} (自动)"
 
 #~ msgid "{0} ID"
 #~ msgstr "{0} ID"
