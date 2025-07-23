@@ -103,7 +103,7 @@ pbs-lang-%.js: %.po
 # parameter 1 is the name
 # parameter 2 is the directory
 define potupdate
-	find . -name "*.js" -path "./$(2)*" | sort | xargs xgettext \
+	find . -name "*.js" -path "./$(2)*" | LC_COLLATE=C sort | xargs xgettext \
       --sort-output \
       --add-comments="TRANSLATORS" \
       --from-code="UTF-8" \
