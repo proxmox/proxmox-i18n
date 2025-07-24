@@ -111,8 +111,8 @@ pve-lang-%.js: %.po
 pbs-lang-%.js: %.po
 	./po2js.pl -t pbs -v "$(DEB_VERSION)" -o pbs-lang-$*.js $?
 
-catalog-%.mo: %.po
-	msgmerge $< proxmox-datacenter-manager.pot | msgattrib --no-fuzzy --no-obsolete | msgfmt --verbose --output-file $@ $<;
+catalog-%.mo: %.po proxmox-datacenter-manager.pot
+	msgmerge $^ | msgattrib --no-fuzzy --no-obsolete | msgfmt --verbose --output-file $@ $<;
 
 # parameter 1 is the name
 # parameter 2 is the directory
