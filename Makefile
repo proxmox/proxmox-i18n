@@ -131,13 +131,12 @@ endef
 # parameter 1 is the name
 # parameter 2 is the directory
 define xtrpotupdate
-     xtr \
+	find . -name "*.rs" -path "./$(2)*" | LC_COLLATE=C sort | xargs xtr \
 	  --package-name "$(1)" \
 	  --package-version="$(shell cd $(2);git rev-parse HEAD)" \
 	  --msgid-bugs-address="<support@proxmox.com>" \
 	  --copyright-holder="Copyright (C) Proxmox Server Solutions GmbH <support@proxmox.com> & the translation contributors." \
-	  --output "$(1)".pot \
-	  $(shell find . -name "*.rs" -path "./$(2)*" | sort | xargs)
+	  --output "$(1)".pot
 endef
 
 .PHONY: update update_pot do_update
