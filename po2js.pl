@@ -65,27 +65,51 @@ foreach my $filename (@ARGV) {
 	# skip entries if t is defined (pve/pmg) and the string is
 	# not used there or in the widget toolkit
 	next if $options->{t} && $ref !~ m/($options->{t}|proxmox)\-/;
-    
+
 	my $qmsgid = decode($charset, $po->msgid);
 	my $msgid = $po->dequote($qmsgid);
 
-	my $qmsgstr = decode($charset, $po->msgstr);
-	my $msgstr = $po->dequote($qmsgstr);
+        my $qmsgid_plural = decode($charset, $po->msgid_plural);
+        my $msgid_plural = $po->dequote($qmsgid_plural);
 
-	next if !length($msgid); # skip header
-	
-	next if !length($msgstr); # skip untranslated entries
+        warn "$msgid_plural" if length($msgid_plural);
 
-	my $digest = fnv31a($msgid);
+        next if !length($msgid) && !length($msgid_plural); # skip header
 
-	die "duplicate digest" if $catalog->{$digest};
+        my $digest = fnv31a($msgid);
+        die "duplicate digest for msgid '$msgid'" if $catalog->{$digest};
 
-	$catalog->{$digest} = [ $msgstr ];
-	# later, we can add plural forms to the array
+        if (defined($po->msgstr)) {
+            my $qmsgstr = decode($charset, $po->msgstr);
+            my $msgstr = $po->dequote($qmsgstr);
+
+            if (length($msgstr)) { # only record actually translated entries
+                $catalog->{$digest} = [ $msgstr ];
+            }
+        }
+
+        if (defined(my $plurals = $po->msgstr_n)) {
+
+            my $digest_plural = fnv31a($msgid_plural);
+            die "duplicate digest" if $catalog->{$digest_plural};
+
+            $catalog->{$digest_plural} = [];
+
+            for my $case (sort { $a <=> $b } keys $plurals->%*) {
+                my $msgstr = $plurals->{$case};
+
+                my $qmsgstr = decode($charset, $msgstr);
+                $msgstr = $po->dequote($qmsgstr);
+                next if !length($msgstr); # skip untranslated entries
+
+                push $catalog->{$digest_plural}->@*, $msgstr;
+                warn "$msgstr";
+            }
+        }
     }
 }
 
-my $json = to_json($catalog, {canonical => 1, utf8 => 1});
+my $json = to_json($catalog, {canonical => 1, utf8 => 1, pretty => 1});
 
 my $version = $options->{v} // ("dev-build " . localtime());
 my $content = "// $version\n"; # write version to the beginning to better avoid stale cache
@@ -109,13 +133,23 @@ function fnv31a(text) {
     return hval;
 }
 
-function gettext(buf) {
-    var digest = fnv31a(buf);
-    var data = __proxmox_i18n_msgcat__[digest];
-    if (!data) {
-	return buf;
+function gettext(message) {
+    const digest = fnv31a(message);
+    const translation = __proxmox_i18n_msgcat__[digest];
+    if (!data || typeof translation[0] !== 'string') {
+        return message;
     }
-    return data[0] || buf;
+    return translation[0];
+}
+
+function ngettext(singular, plural, count) {
+    const message = count === 1 ? singular : plural;
+    const digest = fnv31a(message);
+    const translation = __proxmox_i18n_msgcat__[digest];
+    if (!translation || typeof translation[0] !== 'string') {
+        return message;
+    }
+    return translation[0].replace('%d', count);
 }
 __EOD
 
