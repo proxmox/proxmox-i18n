@@ -111,7 +111,7 @@ pve-lang-%.js: %.po
 pbs-lang-%.js: %.po
 	./po2js.pl -t pbs -v "$(DEB_VERSION)" -o pbs-lang-$*.js $?
 
-catalog-%.mo: %.po proxmox-datacenter-manager.pot
+catalog-%.mo: %.po
 	msgmerge $^ | msgattrib --no-fuzzy --no-obsolete | msgfmt --verbose --output-file $@ $<;
 
 # parameter 1 is the name
@@ -152,9 +152,7 @@ update_pot: submodule
 do_update:
 	$(MAKE) update_pot
 	$(MAKE) messages.pot
-	$(MAKE) proxmox-datacenter-manager.pot
 	for i in $(LINGUAS); do echo -n "$$i: "; msgmerge -s -v $$i.po messages.pot >$$i.po.tmp && mv $$i.po.tmp $$i.po; done;
-	for i in $(LINGUAS); do echo -n "$$i: "; msgmerge -s -v $$i.po proxmox-datacenter-manager.pot >$$i.po.tmp && mv $$i.po.tmp $$i.po; done;
 
 update:
 	git submodule foreach 'git pull --ff-only origin master'
@@ -167,17 +165,9 @@ init-%.po: messages.pot
 	msginit -i $^ -l $^ -o $*.po --no-translator
 
 .INTERMEDIATE: messages.pot
-messages.pot: proxmox-widget-toolkit.pot proxmox-mailgateway.pot pve-manager.pot proxmox-backup.pot
+messages.pot: proxmox-widget-toolkit.pot proxmox-mailgateway.pot pve-manager.pot proxmox-backup.pot proxmox-datacenter-manager-ui.pot proxmox-yew-comp.pot proxmox-yew-widget-toolkit.pot
 	xgettext $^ \
 	  --package-name="proxmox translations" \
-	  --msgid-bugs-address="<support@proxmox.com>" \
-	  --copyright-holder="Copyright (C) Proxmox Server Solutions GmbH <support@proxmox.com> & the translation contributors." \
-	  --output $@
-
-.INTERMEDIATE: proxmox-datacenter-manager.pot
-proxmox-datacenter-manager.pot: proxmox-datacenter-manager-ui.pot proxmox-yew-comp.pot proxmox-yew-widget-toolkit.pot
-	xgettext $^ \
-	  --package-name="Proxmox Datacenter Manager" \
 	  --msgid-bugs-address="<support@proxmox.com>" \
 	  --copyright-holder="Copyright (C) Proxmox Server Solutions GmbH <support@proxmox.com> & the translation contributors." \
 	  --output $@
@@ -187,7 +177,7 @@ distclean: clean
 
 .PHONY: clean
 clean:
-	rm -rf $(DEB_SOURCE)-[0-9]*/ *.po.tmp *.js.tmp *.deb *.dsc *.tar.* *.build *.buildinfo *.changes *.js messages.pot proxmox-datacenter-manager.pot
+	rm -rf $(DEB_SOURCE)-[0-9]*/ *.po.tmp *.js.tmp *.deb *.dsc *.tar.* *.build *.buildinfo *.changes *.js messages.pot
 
 .PHONY: upload-pve upload-pmg upload-pbs upload
 upload-%: UPLOAD_DIST ?= $(DEB_DISTRIBUTION)
