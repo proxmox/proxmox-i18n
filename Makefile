@@ -120,8 +120,14 @@ pbs-lang-%.js: %.po
 catalog-%.mo: %.po
 	msgmerge $^ | msgattrib --no-fuzzy --no-obsolete | msgfmt --verbose --output-file $@ $<;
 
-pve-yew-mobile-catalog-%.mo: %.po
-	msgmerge $^ | msgattrib --no-fuzzy --no-obsolete | msgfmt --verbose --output-file $@ $<;
+.INTERMEDIATE: pve-yew-mobile-all.pot
+pve-yew-mobile-all.pot: pve-yew-mobile-gui.pot proxmox-yew-comp.pot proxmox-yew-widget-toolkit.pot
+	xgettext $^ --output $@
+
+pve-yew-mobile-catalog-%.mo: %.po pve-yew-mobile-all.pot
+	msgmerge $*.po pve-yew-mobile-all.pot| msgattrib --no-fuzzy --no-obsolete > $@.tmp
+	msgfmt --verbose --output-file $@ $@.tmp;
+	rm -rf  $@.tmp
 
 # parameter 1 is the name
 # parameter 2 is the directory
