@@ -26,14 +26,10 @@ sub fnv31a {
     my $hval = 0x811c9dc5;
 
     foreach my $c (unpack('C*', $string)) {
-	$hval ^= $c;
-	$hval += (
-	    (($hval << 1) ) +
-	    (($hval << 4) ) +
-	    (($hval << 7) ) +
-	    (($hval << 8) ) +
-	    (($hval << 24) ) );
-	$hval = $hval & 0xffffffff;
+        $hval ^= $c;
+        $hval +=
+            ((($hval << 1)) + (($hval << 4)) + (($hval << 7)) + (($hval << 8)) + (($hval << 24)));
+        $hval = $hval & 0xffffffff;
     }
     return $hval & 0x7fffffff;
 }
@@ -41,51 +37,50 @@ sub fnv31a {
 my $catalog = {};
 
 foreach my $filename (@ARGV) {
-    my $href = Locale::PO->load_file_ashash($filename) ||
-	die "unable to load '$filename'\n";
-    
+    my $href = Locale::PO->load_file_ashash($filename)
+        || die "unable to load '$filename'\n";
+
     my $charset;
     my $hpo = $href->{'""'} || die "no header";
     my $header = $hpo->dequote($hpo->msgstr);
     if ($header =~ m|^Content-Type:\s+text/plain;\s+charset=(\S+)$|im) {
-	$charset = $1;
+        $charset = $1;
     } else {
-	die "unable to get charset\n" if !$charset;
+        die "unable to get charset\n" if !$charset;
     }
 
-
     foreach my $k (keys %$href) {
-	my $po = $href->{$k};
-	next if $po->fuzzy(); # skip fuzzy entries
-	my $ref = $po->reference();
+        my $po = $href->{$k};
+        next if $po->fuzzy(); # skip fuzzy entries
+        my $ref = $po->reference();
 
-	# skip unused entries
-	next if !$ref;
+        # skip unused entries
+        next if !$ref;
 
-	# skip entries if t is defined (pve/pmg) and the string is
-	# not used there or in the widget toolkit
-	next if $options->{t} && $ref !~ m/($options->{t}|proxmox)\-/;
-    
-	my $qmsgid = decode($charset, $po->msgid);
-	my $msgid = $po->dequote($qmsgid);
+        # skip entries if t is defined (pve/pmg) and the string is
+        # not used there or in the widget toolkit
+        next if $options->{t} && $ref !~ m/($options->{t}|proxmox)\-/;
 
-	my $qmsgstr = decode($charset, $po->msgstr);
-	my $msgstr = $po->dequote($qmsgstr);
+        my $qmsgid = decode($charset, $po->msgid);
+        my $msgid = $po->dequote($qmsgid);
 
-	next if !length($msgid); # skip header
-	
-	next if !length($msgstr); # skip untranslated entries
+        my $qmsgstr = decode($charset, $po->msgstr);
+        my $msgstr = $po->dequote($qmsgstr);
 
-	my $digest = fnv31a($msgid);
+        next if !length($msgid); # skip header
 
-	die "duplicate digest" if $catalog->{$digest};
+        next if !length($msgstr); # skip untranslated entries
 
-	$catalog->{$digest} = [ $msgstr ];
-	# later, we can add plural forms to the array
+        my $digest = fnv31a($msgid);
+
+        die "duplicate digest" if $catalog->{$digest};
+
+        $catalog->{$digest} = [$msgstr];
+        # later, we can add plural forms to the array
     }
 }
 
-my $json = to_json($catalog, {canonical => 1, utf8 => 1});
+my $json = to_json($catalog, { canonical => 1, utf8 => 1 });
 
 my $version = $options->{v} // ("dev-build " . localtime());
 my $content = "// $version\n"; # write version to the beginning to better avoid stale cache
@@ -120,8 +115,8 @@ function gettext(buf) {
 __EOD
 
 if ($outfile) {
-    open(my $fh, '>', $outfile) ||
-	die "unable to open '$outfile' - $!\n";
+    open(my $fh, '>', $outfile)
+        || die "unable to open '$outfile' - $!\n";
     print $fh $content;
 } else {
     print $content;
