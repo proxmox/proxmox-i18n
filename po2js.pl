@@ -35,6 +35,10 @@ sub fnv31a {
 }
 
 my $catalog = {};
+my $plurals_catalog = {};
+
+my $nplurals = 2;
+my $plural_forms = "n!=1";
 
 foreach my $filename (@ARGV) {
     my $href = Locale::PO->load_file_ashash($filename)
@@ -47,6 +51,11 @@ foreach my $filename (@ARGV) {
         $charset = $1;
     } else {
         die "unable to get charset\n" if !$charset;
+    }
+
+    if ($header =~ m|^Plural-Forms:\s+nplurals\s?=\s?([123456]);\s+plural=(.*);$|im) {
+	$nplurals = $1 + 0;
+	$plural_forms = $2;
     }
 
     foreach my $k (keys %$href) {
@@ -64,23 +73,37 @@ foreach my $filename (@ARGV) {
         my $qmsgid = decode($charset, $po->msgid);
         my $msgid = $po->dequote($qmsgid);
 
-        my $qmsgstr = decode($charset, $po->msgstr);
-        my $msgstr = $po->dequote($qmsgstr);
+        my $qmsgid_plural = decode($charset, $po->msgid_plural);
+        my $msgid_plural = $po->dequote($qmsgid_plural);
 
-        next if !length($msgid); # skip header
-
-        next if !length($msgstr); # skip untranslated entries
+        next if !length($msgid) && !length($msgid_plural); # skip header
 
         my $digest = fnv31a($msgid);
 
         die "duplicate digest" if $catalog->{$digest};
 
-        $catalog->{$digest} = [$msgstr];
-        # later, we can add plural forms to the array
+        if (defined($po->msgstr)) {
+            my $qmsgstr = decode($charset, $po->msgstr);
+            my $msgstr = $po->dequote($qmsgstr);
+
+            next if !length($msgstr); # skip untranslated entries
+            $catalog->{$digest} = [$msgstr];
+        }
+
+        if (defined(my $plurals = $po->msgstr_n)) {
+            for my $case (sort { $a <=> $b } keys $plurals->%*) {
+                my $qmsgstr_n = decode($charset, $plurals->{$case});
+                my $msgstr_n = $po->dequote($qmsgstr_n);
+
+                next if !length($msgstr_n); # skip untranslated entries
+                push $plurals_catalog->{$digest}->@*, $msgstr_n;
+            }
+        }
     }
 }
 
 my $json = to_json($catalog, { canonical => 1, utf8 => 1 });
+my $plurals_json = to_json($plurals_catalog, { canonical => 1, utf8 => 1 });
 
 my $version = $options->{v} // ("dev-build " . localtime());
 my $content = "// $version\n"; # write version to the beginning to better avoid stale cache
@@ -91,6 +114,7 @@ $content .= "// Proxmox Message Catalog: $outfile\n" if $outfile;
 
 $content .= <<__EOD;
 __proxmox_i18n_msgcat__ = $json;
+__proxmox_i18n_plurals_msgcat__ = $plurals_json;
 
 function fnv31a(text) {
     var len = text.length;
@@ -111,6 +135,20 @@ function gettext(buf) {
 	return buf;
     }
     return data[0] || buf;
+}
+
+function ngettext(singular, plural, n) {
+    const msg_idx = Number($plural_forms);
+    const digest = fnv31a(singular);
+    const translation = __proxmox_i18n_plurals_msgcat__[digest];
+    if (!translation || msg_idx >= translation.length) {
+        if (n === 1) {
+	    return singular;
+        } else {
+	    return plural;
+        }
+    }
+    return translation[msg_idx];
 }
 __EOD
 
