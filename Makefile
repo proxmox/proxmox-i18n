@@ -161,7 +161,7 @@ endef
 # parameter 1 is the name
 # parameter 2 is the directory
 define xtrpotupdate
-	find . -name "*.rs" -path "./$(2)*" | LC_COLLATE=C sort | xargs xtr \
+	LC_COLLATE=C xtr "./$(2)" \
 	  --package-name "$(1)" \
 	  --package-version="$(shell cd $(2);git rev-parse HEAD)" \
 	  --msgid-bugs-address="<support@proxmox.com>" \
@@ -175,11 +175,11 @@ update_pot: submodule
 	$(call potupdate,pve-manager,pve-manager/www/manager6/)
 	$(call potupdate,proxmox-mailgateway,pmg-gui/js/)
 	$(call potupdate,proxmox-backup,proxmox-backup/www/)
-	$(call xtrpotupdate,proxmox-datacenter-manager-ui,proxmox-datacenter-manager/ui/src/)
-	$(call xtrpotupdate,pve-yew-mobile-gui,pve-yew-mobile-gui/src/)
-	$(call xtrpotupdate,pmg-yew-quarantine-gui,pmg-yew-quarantine-gui/src/)
-	$(call xtrpotupdate,proxmox-yew-comp,proxmox-yew-comp/src/)
-	$(call xtrpotupdate,proxmox-yew-widget-toolkit,proxmox-yew-widget-toolkit/src/)
+	$(call xtrpotupdate,proxmox-datacenter-manager-ui,proxmox-datacenter-manager/ui/src/lib.rs)
+	$(call xtrpotupdate,pve-yew-mobile-gui,pve-yew-mobile-gui/src/main.rs)
+	$(call xtrpotupdate,pmg-yew-quarantine-gui,pmg-yew-quarantine-gui/src/main.rs)
+	$(call xtrpotupdate,proxmox-yew-comp,proxmox-yew-comp/src/lib.rs)
+	$(call xtrpotupdate,proxmox-yew-widget-toolkit,proxmox-yew-widget-toolkit/src/lib.rs)
 
 do_update:
 	$(MAKE) update_pot
