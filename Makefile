@@ -185,7 +185,7 @@ update_pot: submodule
 	# NOTE: this is a workaround to exclude example translations from getting picked up, ideally xtr would support ignoring these explicitly.
 	for i in $(EXCLUDED_PWT_FILES); do mv proxmox-yew-widget-toolkit/src/$$i proxmox-yew-widget-toolkit/src/$$i.org; echo > proxmox-yew-widget-toolkit/src/$$i; done
 	$(call xtrpotupdate,proxmox-yew-widget-toolkit,proxmox-yew-widget-toolkit/src/lib.rs)
-	for i in $(EXCLUDED_PWT_FILES); do mv proxmox-yew-widget-toolkit/src/$$i.org proxmox-yew-widget-toolkit/src/$$i; done
+	for i in $(EXCLUDED_PWT_FILES); do mv -f proxmox-yew-widget-toolkit/src/$$i.org proxmox-yew-widget-toolkit/src/$$i; done
 
 
 do_update:
