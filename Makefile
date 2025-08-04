@@ -169,6 +169,9 @@ define xtrpotupdate
 	  --output "$(1)".pot
 endef
 
+# HACK: exclude gettext test messages
+EXCLUDED_PWT_FILES= tr.rs gettext_wrapper.rs
+
 .PHONY: update update_pot do_update
 update_pot: submodule
 	$(call potupdate,proxmox-widget-toolkit,proxmox-widget-toolkit/)
@@ -179,7 +182,10 @@ update_pot: submodule
 	$(call xtrpotupdate,pve-yew-mobile-gui,pve-yew-mobile-gui/src/main.rs)
 	$(call xtrpotupdate,pmg-yew-quarantine-gui,pmg-yew-quarantine-gui/src/main.rs)
 	$(call xtrpotupdate,proxmox-yew-comp,proxmox-yew-comp/src/lib.rs)
+	for i in $(EXCLUDED_PWT_FILES); do mv proxmox-yew-widget-toolkit/src/$$i proxmox-yew-widget-toolkit/src/$$i.org; echo > proxmox-yew-widget-toolkit/src/$$i; done
 	$(call xtrpotupdate,proxmox-yew-widget-toolkit,proxmox-yew-widget-toolkit/src/lib.rs)
+	for i in $(EXCLUDED_PWT_FILES); do mv proxmox-yew-widget-toolkit/src/$$i.org proxmox-yew-widget-toolkit/src/$$i; done
+
 
 do_update:
 	$(MAKE) update_pot
