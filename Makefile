@@ -218,7 +218,7 @@ distclean: clean
 clean:
 	rm -rf $(DEB_SOURCE)-[0-9]*/ *.po.tmp *.js.tmp *.deb *.dsc *.tar.* *.build *.buildinfo *.changes *.js messages.pot
 
-.PHONY: upload-pve upload-pmg upload-pbs upload
+.PHONY: upload-pve upload-pmg upload-pbs upload-pdm upload
 upload-%: UPLOAD_DIST ?= $(DEB_DISTRIBUTION)
 upload-pve: $(PVE_I18N_DEB) $(PVE_YEW_MOBILE_I18N_DEB)
 	tar cf - $^|ssh -X repoman@repo.proxmox.com -- upload --product pve --dist $(UPLOAD_DIST)
@@ -226,5 +226,7 @@ upload-pmg: $(PMG_I18N_DEB) $(PMG_YEW_QUARANTINE_I18N_DEB)
 	tar cf - $^|ssh -X repoman@repo.proxmox.com -- upload --product pmg --dist $(UPLOAD_DIST)
 upload-pbs: $(PBS_I18N_DEB)
 	tar cf - $^|ssh -X repoman@repo.proxmox.com -- upload --product pbs --dist $(UPLOAD_DIST)
+upload-pdm: $(PDM_I18N_DEB)
+	tar cf - $^|ssh -X repoman@repo.proxmox.com -- upload --product pdm --dist $(UPLOAD_DIST)
 
-upload: upload-pve upload-pmg upload-pbs
+upload: upload-pve upload-pmg upload-pbs upload-pdm
