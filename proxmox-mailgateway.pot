@@ -7,9 +7,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: proxmox-mailgateway "
-"96e13d1ac93dc51e6600af8360e541b147d9f8a9\n"
+"5a492cb929c65cbbd69ab1b3038aaa28d7ceba0e\n"
 "Report-Msgid-Bugs-To: <support@proxmox.com>\n"
-"POT-Creation-Date: 2025-09-11 11:37+0200\n"
+"POT-Creation-Date: 2025-09-19 08:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -74,7 +74,7 @@ msgstr ""
 #: pmg-gui/js/ActionList.js:100 pmg-gui/js/ClusterAdministration.js:222
 #: pmg-gui/js/FetchmailView.js:80 pmg-gui/js/ObjectGroup.js:198
 #: pmg-gui/js/RuleConfiguration.js:161 pmg-gui/js/RuleInfo.js:431
-#: pmg-gui/js/UserBlackWhiteList.js:162 pmg-gui/js/UserView.js:134
+#: pmg-gui/js/UserBlockWelcomeList.js:162 pmg-gui/js/UserView.js:134
 msgid "Add"
 msgstr ""
 
@@ -90,7 +90,7 @@ msgstr ""
 msgid "Add TLS received header"
 msgstr ""
 
-#: pmg-gui/js/UserBlackWhiteList.js:33 pmg-gui/js/UserBlackWhiteList.js:195
+#: pmg-gui/js/UserBlockWelcomeList.js:33 pmg-gui/js/UserBlockWelcomeList.js:195
 msgid "Address"
 msgstr ""
 
@@ -155,7 +155,7 @@ msgstr ""
 msgid "Are you sure you want to forget snapshot {0}"
 msgstr ""
 
-#: pmg-gui/js/RuleInfo.js:41 pmg-gui/js/UserBlackWhiteList.js:181
+#: pmg-gui/js/RuleInfo.js:41 pmg-gui/js/UserBlockWelcomeList.js:181
 msgid "Are you sure you want to remove entry {0}"
 msgstr ""
 
@@ -163,7 +163,7 @@ msgstr ""
 msgid "Are you sure you want to remove the schedule for {0}"
 msgstr ""
 
-#: pmg-gui/js/UserBlackWhiteList.js:176
+#: pmg-gui/js/UserBlockWelcomeList.js:176
 msgid "Are you sure you want to remove {0} entries"
 msgstr ""
 
@@ -262,15 +262,18 @@ msgstr ""
 msgid "Before Queue Filtering"
 msgstr ""
 
-#: pmg-gui/js/QuarantineView.js:28 pmg-gui/js/SpamContextMenu.js:25
-#: pmg-gui/js/SpamQuarantine.js:271 pmg-gui/js/UserBlackWhiteList.js:55
-#: pmg-gui/js/UserBlackWhiteList.js:207 pmg-gui/js/mobile/mailview.js:33
-#: pmg-gui/js/mobile/quarantineview.js:113
+#: pmg-gui/js/mobile/mailview.js:33 pmg-gui/js/mobile/quarantineview.js:113
 msgid "Blacklist"
 msgstr ""
 
 #: pmg-gui/js/VirusDetectorOptions.js:12
 msgid "Block encrypted archives and documents"
+msgstr ""
+
+#: pmg-gui/js/QuarantineView.js:28 pmg-gui/js/SpamContextMenu.js:25
+#: pmg-gui/js/SpamQuarantine.js:271 pmg-gui/js/UserBlockWelcomeList.js:55
+#: pmg-gui/js/UserBlockWelcomeList.js:207
+msgid "Blocklist"
 msgstr ""
 
 #: pmg-gui/js/Utils.js:574
@@ -629,7 +632,7 @@ msgid "Download"
 msgstr ""
 
 #: pmg-gui/js/LDAPUserSelector.js:32 pmg-gui/js/QuarantineList.js:360
-#: pmg-gui/js/UserBlackWhiteList.js:159 pmg-gui/js/UserEdit.js:166
+#: pmg-gui/js/UserBlockWelcomeList.js:159 pmg-gui/js/UserEdit.js:166
 #: pmg-gui/js/Utils.js:222 pmg-gui/js/Utils.js:228 pmg-gui/js/Utils.js:237
 #: pmg-gui/js/Utils.js:244
 msgid "E-Mail"
@@ -733,7 +736,7 @@ msgstr ""
 #: pmg-gui/js/RuleInfo.js:31 pmg-gui/js/RuleInfo.js:59
 #: pmg-gui/js/RuleInfo.js:81 pmg-gui/js/ServerStatus.js:35
 #: pmg-gui/js/SpamDetectorStatus.js:72 pmg-gui/js/Subscription.js:93
-#: pmg-gui/js/Subscription.js:181 pmg-gui/js/UserBlackWhiteList.js:91
+#: pmg-gui/js/Subscription.js:181 pmg-gui/js/UserBlockWelcomeList.js:91
 #: pmg-gui/js/UserView.js:115 pmg-gui/js/Utils.js:797
 #: pmg-gui/js/ViewMailHeaders.js:61 pmg-gui/js/mobile/utils.js:45
 #: pmg-gui/js/mobile/utils.js:48 pmg-gui/js/mobile/utils.js:61
@@ -1313,7 +1316,7 @@ msgstr ""
 #: pmg-gui/js/LDAPConfig.js:434 pmg-gui/js/MailTracker.js:270
 #: pmg-gui/js/QuarantineList.js:12 pmg-gui/js/QuarantineList.js:338
 #: pmg-gui/js/ReceiverStatistics.js:115 pmg-gui/js/SenderStatistics.js:107
-#: pmg-gui/js/UserBlackWhiteList.js:16 pmg-gui/js/UserBlackWhiteList.js:157
+#: pmg-gui/js/UserBlockWelcomeList.js:16 pmg-gui/js/UserBlockWelcomeList.js:157
 #: pmg-gui/js/VirusCharts.js:12 pmg-gui/js/VirusQuarantine.js:54
 msgid "No data in database"
 msgstr ""
@@ -1653,7 +1656,7 @@ msgid "Remote"
 msgstr ""
 
 #: pmg-gui/js/RuleConfiguration.js:167 pmg-gui/js/RuleInfo.js:377
-#: pmg-gui/js/UserBlackWhiteList.js:167
+#: pmg-gui/js/UserBlockWelcomeList.js:167
 msgid "Remove"
 msgstr ""
 
@@ -2278,7 +2281,7 @@ msgid "Use advanced statistic filters"
 msgstr ""
 
 #: pmg-gui/js/SpamDetectorOptions.js:10
-msgid "Use auto-whitelists"
+msgid "Use auto-welcomelists"
 msgstr ""
 
 #: pmg-gui/js/ServerStatus.js:139 pmg-gui/js/ServerStatus.js:147
@@ -2295,7 +2298,7 @@ msgid "User"
 msgstr ""
 
 #: pmg-gui/js/NavigationTree.js:134
-msgid "User Blacklist"
+msgid "User Blocklist"
 msgstr ""
 
 #: pmg-gui/js/PBSConfig.js:162
@@ -2311,7 +2314,7 @@ msgid "User Spamreport Style"
 msgstr ""
 
 #: pmg-gui/js/NavigationTree.js:128
-msgid "User Whitelist"
+msgid "User Welcomelist"
 msgstr ""
 
 #: pmg-gui/js/FetchmailView.js:117 pmg-gui/js/LDAPConfig.js:115
@@ -2429,6 +2432,12 @@ msgstr ""
 msgid "Webinterface Settings"
 msgstr ""
 
+#: pmg-gui/js/MailProxyConfiguration.js:53 pmg-gui/js/QuarantineView.js:22
+#: pmg-gui/js/SpamContextMenu.js:19 pmg-gui/js/SpamQuarantine.js:265
+#: pmg-gui/js/UserBlockWelcomeList.js:57 pmg-gui/js/UserBlockWelcomeList.js:247
+msgid "Welcomelist"
+msgstr ""
+
 #: pmg-gui/js/ObjectGroupSelector.js:32 pmg-gui/js/RuleInfo.js:464
 msgid "What"
 msgstr ""
@@ -2445,9 +2454,6 @@ msgstr ""
 msgid "When Objects"
 msgstr ""
 
-#: pmg-gui/js/MailProxyConfiguration.js:53 pmg-gui/js/QuarantineView.js:22
-#: pmg-gui/js/SpamContextMenu.js:19 pmg-gui/js/SpamQuarantine.js:265
-#: pmg-gui/js/UserBlackWhiteList.js:57 pmg-gui/js/UserBlackWhiteList.js:247
 #: pmg-gui/js/mobile/mailview.js:42 pmg-gui/js/mobile/quarantineview.js:104
 msgid "Whitelist"
 msgstr ""
@@ -2464,13 +2470,13 @@ msgstr ""
 msgid "Whole year"
 msgstr ""
 
-#: pmg-gui/js/UserBlackWhiteList.js:273
+#: pmg-gui/js/UserBlockWelcomeList.js:273
 msgid ""
 "With this feature, you can manually bypass spam checking for certain domains "
 "or E-mail addresses."
 msgstr ""
 
-#: pmg-gui/js/UserBlackWhiteList.js:233
+#: pmg-gui/js/UserBlockWelcomeList.js:233
 msgid ""
 "With this feature, you can manually mark E-mails from certain domains or "
 "addresses as spam."
