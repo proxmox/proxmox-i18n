@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: proxmox translations\n"
 "Report-Msgid-Bugs-To: <support@proxmox.com>\n"
-"POT-Creation-Date: 2025-09-19 08:15+0200\n"
+"POT-Creation-Date: 2025-09-29 18:08+0200\n"
 "PO-Revision-Date: 2023-01-21 17:57+0100\n"
 "Last-Translator: PERFTECH d.o.o. <sio-podpora@perftech.si>\n"
 "Language-Team: Slovenia <support@proxmox.com>\n"
@@ -63,7 +63,7 @@ msgstr ".zip"
 msgid "/some/path"
 msgstr "/nekasistemska/pot"
 
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:32
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:33
 #: pve-yew-mobile-gui/src/pages/page_node_status/dashboard_panel.rs:76
 #, fuzzy
 msgid "1 Core"
@@ -73,8 +73,9 @@ msgstr[1] "Jedra"
 msgstr[2] "Jedra"
 msgstr[3] "Jedra"
 
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:33
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:34
 #: pve-yew-mobile-gui/src/pages/page_node_status/dashboard_panel.rs:77
+#: proxmox-yew-comp/src/node_info.rs:208
 #, fuzzy
 msgid "1 Socket"
 msgid_plural "{n} Sockets"
@@ -95,7 +96,7 @@ msgstr ""
 msgid "5 Minutes"
 msgstr "5 minut"
 
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:234
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:236
 #, fuzzy
 msgid "<IP/Hostname>:Port"
 msgstr "Ime gostitelja"
@@ -135,6 +136,11 @@ msgstr ""
 msgid "ACL"
 msgstr "ACL"
 
+#: proxmox-yew-comp/src/auth_view.rs:428
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:240
+msgid "ACLs"
+msgstr ""
+
 #: proxmox-backup/www/config/CertificateView.js:63
 #: proxmox-datacenter-manager/ui/src/certificates.rs:46
 msgid "ACME Accounts"
@@ -173,7 +179,7 @@ msgstr "Veriga certifikata"
 
 #: pve-manager/www/manager6/qemu/Options.js:187
 #: pve-manager/www/manager6/qemu/Options.js:193
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:97
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:107
 msgid "ACPI support"
 msgstr "ACPI podpora"
 
@@ -185,7 +191,7 @@ msgid "ACR Values"
 msgstr "ACR vrednosti"
 
 #: pve-manager/www/manager6/qemu/Options.js:372
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:97
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:88
 msgid "AMD SEV"
 msgstr ""
 
@@ -228,7 +234,7 @@ msgstr "Predpona poti do API-ja"
 msgid "API Token"
 msgstr "Žeton API-ja"
 
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:315
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:332
 #, fuzzy
 msgid "API Token Name"
 msgstr "Ime žetona"
@@ -368,10 +374,14 @@ msgstr "Akcije predmetov"
 #: proxmox-backup/www/tape/ChangerStatus.js:760
 #: proxmox-backup/www/tape/ChangerStatus.js:914
 #: proxmox-backup/www/tape/ChangerStatus.js:989
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:612
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:616
 #: proxmox-datacenter-manager/ui/src/sdn/zone_tree.rs:160
 msgid "Actions"
 msgstr "Dejanja"
+
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:105
+msgid "Activate AES instruction set for HW acceleration."
+msgstr ""
 
 #: proxmox-widget-toolkit/src/form/NetworkSelector.js:114
 #: proxmox-widget-toolkit/src/node/NetworkView.js:310
@@ -381,13 +391,15 @@ msgstr "Dejanja"
 #: pve-manager/www/manager6/storage/PBSEdit.js:232
 #: pve-manager/www/manager6/storage/PBSEdit.js:235
 #: pve-manager/www/manager6/storage/StatusView.js:31
-#: proxmox-datacenter-manager/ui/src/pve/storage.rs:271
+#: proxmox-datacenter-manager/ui/src/pve/storage.rs:265
+#: pve-yew-mobile-gui/src/form/pve_network_selector.rs:154
 #: proxmox-yew-comp/src/configuration/network_view.rs:416
 msgid "Active"
 msgstr "Aktivno"
 
 #: proxmox-widget-toolkit/src/Schema.js:39
-#: pve-manager/www/manager6/Utils.js:726
+#: pve-manager/www/manager6/Utils.js:726 proxmox-yew-comp/src/auth_view.rs:277
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:401
 msgid "Active Directory Server"
 msgstr "Strežnik Active Directory"
 
@@ -409,10 +421,10 @@ msgstr "Aktivno"
 #: proxmox-widget-toolkit/src/window/Edit.js:310
 #: proxmox-widget-toolkit/src/window/NotificationMatcherEdit.js:865
 #: pmg-gui/js/ActionList.js:100 pmg-gui/js/ClusterAdministration.js:222
-#: pmg-gui/js/FetchmailView.js:80 pmg-gui/js/ObjectGroup.js:198
-#: pmg-gui/js/RuleConfiguration.js:161 pmg-gui/js/RuleInfo.js:431
-#: pmg-gui/js/UserBlockWelcomeList.js:162 pmg-gui/js/UserView.js:134
-#: pve-manager/www/manager6/dc/ACLView.js:198
+#: pmg-gui/js/DNSBLSitesField.js:136 pmg-gui/js/FetchmailView.js:80
+#: pmg-gui/js/ObjectGroup.js:198 pmg-gui/js/RuleConfiguration.js:161
+#: pmg-gui/js/RuleInfo.js:431 pmg-gui/js/UserBlockWelcomeList.js:162
+#: pmg-gui/js/UserView.js:134 pve-manager/www/manager6/dc/ACLView.js:198
 #: pve-manager/www/manager6/dc/AuthView.js:108
 #: pve-manager/www/manager6/dc/Backup.js:717
 #: pve-manager/www/manager6/dc/CorosyncLinkEdit.js:308
@@ -460,9 +472,10 @@ msgstr "Aktivno"
 #: proxmox-backup/www/tape/PoolConfig.js:95
 #: proxmox-backup/www/window/TrafficControlEdit.js:430
 #: proxmox-datacenter-manager/ui/src/remotes/node_url_list.rs:203
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:544
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:173
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:546
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/evpn_panel.rs:115
-#: pve-yew-mobile-gui/src/widgets/edit_dialog.rs:355
+#: pve-yew-mobile-gui/src/widgets/edit_dialog.rs:380
 #: proxmox-yew-comp/src/acme/acme_accounts.rs:106
 #: proxmox-yew-comp/src/acme/acme_domains.rs:175
 #: proxmox-yew-comp/src/acme/acme_domains.rs:353
@@ -471,7 +484,7 @@ msgstr "Aktivno"
 #: proxmox-yew-comp/src/apt_repositories.rs:556
 #: proxmox-yew-comp/src/apt_repositories.rs:697
 #: proxmox-yew-comp/src/auth_edit_openid.rs:157
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:262
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:386
 #: proxmox-yew-comp/src/acl/acl_view.rs:199
 #: proxmox-yew-comp/src/edit_window.rs:313
 #: proxmox-yew-comp/src/tfa/tfa_view.rs:271
@@ -479,6 +492,8 @@ msgstr "Aktivno"
 #: proxmox-yew-comp/src/tfa/tfa_add_recovery.rs:228
 #: proxmox-yew-comp/src/user_panel.rs:175
 #: proxmox-yew-comp/src/user_panel.rs:260
+#: proxmox-yew-comp/src/token_panel.rs:180
+#: proxmox-yew-comp/src/token_panel.rs:388
 msgid "Add"
 msgstr "Dodaj"
 
@@ -515,17 +530,17 @@ msgstr "Glava"
 msgid "Add Namespace"
 msgstr "Imenski prostor"
 
+#: pve-yew-mobile-gui/src/pages/page_qemu_status/hardware_panel.rs:445
+#, fuzzy
+msgid "Add Network card"
+msgstr "IP Omrežje"
+
 #: pve-manager/www/manager6/sdn/FabricsView.js:107
 #: pve-manager/www/manager6/sdn/FabricsView.js:168
 #: pve-manager/www/manager6/sdn/fabrics/NodeEdit.js:188
 #, fuzzy
 msgid "Add Node"
 msgstr "Dodaj NS"
-
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:176
-#, fuzzy
-msgid "Add Proxmox VE"
-msgstr "Proxmox VE prijava"
 
 #: proxmox-backup/www/config/SyncView.js:226
 #, fuzzy
@@ -682,7 +697,7 @@ msgstr "E-naslov skrbnika"
 #: pve-manager/www/manager6/dc/Backup.js:420
 #: pve-manager/www/manager6/window/GuestImport.js:656
 #: pve-manager/www/manager6/window/Wizard.js:163
-#: pve-yew-mobile-gui/src/widgets/edit_dialog.rs:330
+#: pve-yew-mobile-gui/src/widgets/edit_dialog.rs:355
 #: proxmox-yew-comp/src/edit_window.rs:293
 msgid "Advanced"
 msgstr "Napredno"
@@ -754,7 +769,7 @@ msgid "All"
 msgstr "Vsi"
 
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:204
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:311
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:312
 msgid "All Cores"
 msgstr "Vsa jedra"
 
@@ -763,12 +778,18 @@ msgid "All Functions"
 msgstr "Vse funkcije"
 
 #: proxmox-backup/www/datastore/Content.js:1248
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:392
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:399
 msgid "All OK"
 msgstr "Vse v redu"
 
 #: proxmox-backup/www/datastore/Content.js:1244
 msgid "All OK (old)"
 msgstr "Vse v redu (staro)"
+
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:391
+msgid "All OK, but some snapshots were not verified in last 30 days"
+msgstr ""
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:441
 #: proxmox-yew-comp/src/apt_repositories.rs:283
@@ -796,12 +817,18 @@ msgid "All except {0}"
 msgstr "Dovoli vse razen {0}"
 
 #: proxmox-backup/www/datastore/Content.js:1264
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:423
 msgid "All failed"
 msgstr "Vse ni uspelo"
 
 #: pmg-gui/js/form/MatchModeSelector.js:6
 msgid "All match"
 msgstr ""
+
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_network_property.rs:78
+#, fuzzy
+msgid "All network devices in use."
+msgstr "Ni omrežne naprave"
 
 #: pve-yew-mobile-gui/src/pages/page_node_status/services_panel.rs:75
 msgid "All required services running"
@@ -812,11 +839,15 @@ msgstr ""
 msgid "All rules match"
 msgstr ""
 
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:396
+msgid "All snapshots verified at least once in last 30 days"
+msgstr ""
+
 #: pve-manager/www/manager6/node/ZFS.js:245 proxmox-backup/www/ZFSList.js:81
 msgid "Allocated"
 msgstr "Dodeljeno"
 
-#: proxmox-datacenter-manager/ui/src/pve/remote.rs:251
+#: proxmox-datacenter-manager/ui/src/pve/remote.rs:254
 #, fuzzy
 msgid "Allocation"
 msgstr "Preddodelitev"
@@ -828,7 +859,7 @@ msgid "Allocation Policy"
 msgstr "Politika dodeljevanja"
 
 #: pve-manager/www/manager6/qemu/SevEdit.js:92
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:51
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:44
 msgid "Allow Debugging"
 msgstr ""
 
@@ -842,12 +873,12 @@ msgid "Allow HREFs"
 msgstr "Dovoli HREFs"
 
 #: pve-manager/www/manager6/qemu/SevEdit.js:103
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:61
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:54
 msgid "Allow Key-Sharing"
 msgstr ""
 
 #: pve-manager/www/manager6/qemu/SevEdit.js:114
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:70
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:63
 #, fuzzy
 msgid "Allow SMT"
 msgstr "Dovoli HREFs"
@@ -856,6 +887,10 @@ msgstr "Dovoli HREFs"
 #, fuzzy
 msgid "Allow Snapshots as Volume-Chain"
 msgstr "Viri"
+
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:102
+msgid "Allow guest OS to use 1GB size pages, if host HW supports it"
+msgstr ""
 
 #: pve-manager/www/manager6/window/BulkAction.js:90
 msgid "Allow local disk migration"
@@ -866,6 +901,14 @@ msgstr "Dovoli lokalno selitev diska"
 #: proxmox-widget-toolkit/src/Toolkit.js:129
 msgid "Allowed characters"
 msgstr "Dovoljeni znaki"
+
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:98
+msgid "Allows improved Spectre mitigation with AMD CPUs"
+msgstr ""
+
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:96
+msgid "Allows improved Spectre mitigation with Intel CPUs"
+msgstr ""
 
 #: pve-manager/www/manager6/UIOptions.js:80
 #: pve-manager/www/manager6/UIOptions.js:82
@@ -911,7 +954,7 @@ msgid "Analytics"
 msgstr ""
 
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:120
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:201
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:341
 msgid "Anonymous Search"
 msgstr ""
 
@@ -938,7 +981,7 @@ msgstr "Velja za nove popravke"
 #: pmg-gui/js/SpamDetectorCustom.js:83 pve-manager/www/manager6/ceph/OSD.js:242
 #: pve-manager/www/manager6/node/ACME.js:419
 #: pve-manager/www/manager6/sdn/StatusView.js:46
-#: pmg-yew-quarantine-gui/src/page_spam_list.rs:96
+#: pmg-yew-quarantine-gui/src/page_spam_list.rs:102
 #: proxmox-yew-comp/src/language_dialog.rs:93
 msgid "Apply"
 msgstr "Uporabi"
@@ -975,7 +1018,7 @@ msgid ""
 "changes. Proceed?"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/Utils.js:67 proxmox-yew-comp/src/lib.rs:264
+#: proxmox-widget-toolkit/src/Utils.js:67 proxmox-yew-comp/src/lib.rs:270
 msgid "Arabic"
 msgstr ""
 
@@ -1103,7 +1146,7 @@ msgstr "Ali ste prepričani, da želite odstraniti ta vnos"
 msgid "Are you sure you want to remove this entry?"
 msgstr "Ali ste prepričani, da želite odstraniti ta vnos"
 
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:208
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:199
 #, fuzzy
 msgid "Are you sure you want to remove this remote?"
 msgstr "Ali ste prepričani, da želite odstraniti ta vnos"
@@ -1222,7 +1265,7 @@ msgstr "ID avtorizacije"
 msgid "Auth-Provider Default"
 msgstr "Privzeta vrednost ponudnika overitve"
 
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:335
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:326
 #, fuzzy
 msgid "AuthId"
 msgstr "ID avtorizacije"
@@ -1285,12 +1328,12 @@ msgstr "Samodejno ustvarjanje edinstvenih lastnosti, npr. naslovov MAC"
 #: pve-manager/www/manager6/form/TagColorGrid.js:55
 #: pve-manager/www/manager6/qemu/Options.js:350
 #: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:386
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:255
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:267
 msgid "Automatic"
 msgstr "Samodejno"
 
 #: pve-manager/www/manager6/qemu/Options.js:361
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:264
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:276
 msgid "Automatic (Storage used by the VM, or 'local')"
 msgstr "Samodejno (shramba, ki jo uporablja VM, ali 'lokalno')"
 
@@ -1350,7 +1393,6 @@ msgstr ""
 msgid "BCC"
 msgstr "SKP"
 
-#: pmg-gui/js/mobile/mailview.js:12
 #: pve-manager/www/manager6/window/Wizard.js:176
 #: proxmox-backup/www/tape/window/TapeRestore.js:268
 #: proxmox-yew-comp/src/wizard.rs:667
@@ -1395,7 +1437,7 @@ msgstr "Backscatter ocena"
 #: proxmox-datacenter-manager/ui/src/pve/utils.rs:284
 #: proxmox-datacenter-manager/ui/src/tasks.rs:91
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/mod.rs:120
-#: proxmox-yew-comp/src/utils.rs:435
+#: proxmox-yew-comp/src/utils.rs:446
 msgid "Backup"
 msgstr "Varnostna kopija"
 
@@ -1407,7 +1449,7 @@ msgstr "Število varnostnih kopij"
 msgid "Backup Details"
 msgstr "Podrobnosti varnostne kopije"
 
-#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:124
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:100
 #, fuzzy
 msgid "Backup Dir"
 msgstr "Čas varnostne kopije"
@@ -1425,7 +1467,7 @@ msgstr "Skupine za varnostne kopije"
 #: pve-manager/www/manager6/dc/Backup.js:9
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:52
 #: proxmox-datacenter-manager/ui/src/tasks.rs:92
-#: proxmox-yew-comp/src/utils.rs:436
+#: proxmox-yew-comp/src/utils.rs:447
 msgid "Backup Job"
 msgstr "Varnostna opravila"
 
@@ -1469,7 +1511,7 @@ msgid "Backup notifications"
 msgstr "E-poštno obvestilo"
 
 #: pve-manager/www/manager6/grid/BackupView.js:158
-#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:195
+#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:187
 msgid "Backup now"
 msgstr "Izdelaj varnostno kopijo"
 
@@ -1506,7 +1548,7 @@ msgid "Bad Request"
 msgstr "Neustrezna zahteva"
 
 #: pve-manager/www/manager6/qemu/MemoryEdit.js:125
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_memory_property.rs:86
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_memory_property.rs:88
 msgid "Ballooning Device"
 msgstr "Balonska naprava"
 
@@ -1543,7 +1585,7 @@ msgstr "Osnovni DN za skupine"
 
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:100
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:16
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:179
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:302
 msgid "Base Domain Name"
 msgstr "Ime osnovne domene"
 
@@ -1559,34 +1601,34 @@ msgstr "Osnovni prostor"
 msgid "Basic"
 msgstr "Osnovno"
 
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:99
+msgid "Basis for \"Speculative Store Bypass\" protection for AMD models"
+msgstr ""
+
 #: pve-manager/www/manager6/dc/MetricServerView.js:372
 #: proxmox-backup/www/window/InfluxDbEdit.js:98
 msgid "Batch Size (b)"
 msgstr "Velikost serije (b)"
 
-#: pmg-gui/js/MailProxyOptions.js:108
+#: pmg-gui/js/MailProxyOptions.js:96
 msgid "Before Queue Filtering"
 msgstr "Filtriranje pred čakalno vrsto"
 
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:128
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:225
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:348
 #, fuzzy
 msgid "Bind Domain Name"
 msgstr "Ime osnovne domene"
 
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:151
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:241
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:237
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:361
 msgid "Bind Password"
 msgstr "Geslo za vezavo"
 
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:234
 msgid "Bind User"
 msgstr "Poveži uporabnika"
-
-#: pmg-gui/js/mobile/mailview.js:33 pmg-gui/js/mobile/quarantineview.js:113
-msgid "Blacklist"
-msgstr "Blokiraj"
 
 #: proxmox-widget-toolkit/src/Schema.js:90
 msgid "Block Device"
@@ -1630,14 +1672,14 @@ msgstr "Vrstni red zagona"
 
 #: pve-manager/www/manager6/qemu/BootOrderEdit.js:273
 #: pve-manager/www/manager6/qemu/Options.js:97
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:183
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:189
 msgid "Boot Order"
 msgstr "Vrstni red zagona"
 
 #: pve-manager/www/manager6/panel/GuestStatusView.js:147
 #: pve-manager/www/manager6/panel/TemplateStatusView.js:60
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:344
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:358
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:343
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:357
 msgid "Bootdisk size"
 msgstr "Velikost zagonskega diska"
 
@@ -1654,6 +1696,8 @@ msgstr "Zavrnjena pošta"
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:81
 #: pve-manager/www/manager6/window/GuestImport.js:911
 #: proxmox-datacenter-manager/ui/src/widget/pve_network_selector.rs:160
+#: pve-yew-mobile-gui/src/form/pve_network_selector.rs:150
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_network_property.rs:24
 msgid "Bridge"
 msgstr "Most"
 
@@ -1693,7 +1737,7 @@ msgstr "Vgrajeno"
 msgid "Built-In (modified)"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/Utils.js:68 proxmox-yew-comp/src/lib.rs:265
+#: proxmox-widget-toolkit/src/Utils.js:68 proxmox-yew-comp/src/lib.rs:271
 msgid "Bulgarian"
 msgstr ""
 
@@ -1732,21 +1776,21 @@ msgstr "Prekini"
 
 #: pve-manager/www/manager6/Utils.js:2098
 #: proxmox-datacenter-manager/ui/src/tasks.rs:50
-#: proxmox-yew-comp/src/utils.rs:396
+#: proxmox-yew-comp/src/utils.rs:407
 #, fuzzy
 msgid "Bulk migrate VMs and Containers"
 msgstr "Selitev vseh VM in zabojnikov"
 
 #: pve-manager/www/manager6/Utils.js:2127
 #: proxmox-datacenter-manager/ui/src/tasks.rs:80
-#: proxmox-yew-comp/src/utils.rs:424
+#: proxmox-yew-comp/src/utils.rs:435
 #, fuzzy
 msgid "Bulk shutdown VMs and Containers"
 msgstr "Zaustavite vse VM in zabojnike"
 
 #: pve-manager/www/manager6/Utils.js:2126
 #: proxmox-datacenter-manager/ui/src/tasks.rs:79
-#: proxmox-yew-comp/src/utils.rs:423
+#: proxmox-yew-comp/src/utils.rs:434
 #, fuzzy
 msgid "Bulk start VMs and Containers"
 msgstr "Zaženite vse VM-je in zabojnike"
@@ -1788,7 +1832,7 @@ msgstr ""
 
 #: pve-manager/www/manager6/qemu/HardwareView.js:251
 #: pve-manager/www/manager6/qemu/HardwareView.js:737
-#: pve-yew-mobile-gui/src/pages/page_qemu_status/hardware_panel.rs:168
+#: pve-yew-mobile-gui/src/pages/page_qemu_status/hardware_panel.rs:284
 msgid "CD/DVD Drive"
 msgstr "CD/DVD naprava"
 
@@ -1812,7 +1856,8 @@ msgstr "CIDR"
 #: pve-manager/www/manager6/lxc/CreateWizard.js:233
 #: pve-manager/www/manager6/lxc/ResourceEdit.js:35
 #: pve-manager/www/manager6/qemu/CreateWizard.js:220
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:154
+#: proxmox-datacenter-manager/ui/src/pbs/remote.rs:148
+#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:153
 #: pve-yew-mobile-gui/src/form/hotplug_feature_selector.rs:57
 #: pve-yew-mobile-gui/src/form/hotplug_feature_selector.rs:194
 #: pve-yew-mobile-gui/src/pages/page_dashboard.rs:124
@@ -1822,18 +1867,13 @@ msgid "CPU"
 msgstr "CPE"
 
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:202
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:308
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:309
 msgid "CPU Affinity"
 msgstr "CPE Afiniteta"
 
-#: proxmox-datacenter-manager/ui/src/pve/remote.rs:254
+#: proxmox-datacenter-manager/ui/src/pve/remote.rs:257
 msgid "CPU Cores assigned"
 msgstr ""
-
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:261
-#, fuzzy
-msgid "CPU Model"
-msgstr "Model"
 
 #: pve-manager/www/manager6/node/Summary.js:269
 #: pve-manager/www/manager6/panel/GuestSummary.js:137
@@ -1847,9 +1887,11 @@ msgstr "Vrsta OS"
 
 #: pve-manager/www/manager6/node/Summary.js:164
 #: pve-manager/www/manager6/panel/GuestSummary.js:95
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:381
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:303
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:394
+#: proxmox-datacenter-manager/ui/src/pbs/remote.rs:251
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:379
+#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:247
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:392
+#: proxmox-yew-comp/src/node_info.rs:133
 #, fuzzy
 msgid "CPU Usage"
 msgstr "CPU poraba"
@@ -1861,13 +1903,13 @@ msgstr "CPU poraba"
 
 #: pve-manager/www/manager6/lxc/ResourceEdit.js:78
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:193
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:299
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:300
 msgid "CPU limit"
 msgstr "CPE omejitev"
 
 #: pve-manager/www/manager6/lxc/ResourceEdit.js:88
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:216
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:290
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:291
 msgid "CPU units"
 msgstr "CPE enote"
 
@@ -1884,19 +1926,19 @@ msgstr "CPE enote"
 #: proxmox-backup/www/ServerStatus.js:215
 #: proxmox-backup/www/ServerStatus.js:217
 #: proxmox-backup/www/panel/NodeInfo.js:79
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:633
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:640
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:203
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:331
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:229
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:203
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:345
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:649
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:656
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:206
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:329
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:206
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:343
 msgid "CPU usage"
 msgstr "CPE poraba"
 
 #: proxmox-widget-toolkit/src/Utils.js:1122 pmg-gui/js/dashboard/NodeInfo.js:81
 #: pve-manager/www/manager6/node/StatusView.js:96
 #: proxmox-backup/www/panel/NodeInfo.js:136
+#: proxmox-yew-comp/src/node_info.rs:210
 msgid "CPU(s)"
 msgstr "CPE(ji)"
 
@@ -2026,7 +2068,7 @@ msgstr "Kartuše pomnilnika"
 msgid "Case-Sensitive"
 msgstr "Razlikuje med velikimi in malimi črkami"
 
-#: proxmox-widget-toolkit/src/Utils.js:69 proxmox-yew-comp/src/lib.rs:266
+#: proxmox-widget-toolkit/src/Utils.js:69 proxmox-yew-comp/src/lib.rs:272
 #, fuzzy
 msgid "Catalan"
 msgstr "Katalog"
@@ -2140,7 +2182,7 @@ msgstr "Zaščita pred spremembami"
 
 #: pve-manager/www/manager6/Utils.js:2082
 #: proxmox-datacenter-manager/ui/src/tasks.rs:32
-#: proxmox-yew-comp/src/utils.rs:380
+#: proxmox-yew-comp/src/utils.rs:391
 msgid "Change global Ceph flags"
 msgstr "Spremenite globalne zastavice Ceph"
 
@@ -2208,11 +2250,11 @@ msgstr "Zaščita pred spremembami"
 msgid "Checksum"
 msgstr "Kontrolna vsota"
 
-#: proxmox-widget-toolkit/src/Utils.js:94 proxmox-yew-comp/src/lib.rs:299
+#: proxmox-widget-toolkit/src/Utils.js:94 proxmox-yew-comp/src/lib.rs:305
 msgid "Chinese (Simplified)"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/Utils.js:95 proxmox-yew-comp/src/lib.rs:304
+#: proxmox-widget-toolkit/src/Utils.js:95 proxmox-yew-comp/src/lib.rs:310
 msgid "Chinese (Traditional)"
 msgstr ""
 
@@ -2321,11 +2363,11 @@ msgstr ""
 msgid "Client"
 msgstr "Odjemalec"
 
-#: pmg-gui/js/MailProxyOptions.js:81
+#: pmg-gui/js/MailProxyOptions.js:69
 msgid "Client Connection Count Limit"
 msgstr "Omejitev števila povezav odjemalca"
 
-#: pmg-gui/js/MailProxyOptions.js:87
+#: pmg-gui/js/MailProxyOptions.js:75
 msgid "Client Connection Rate Limit"
 msgstr "Omejitev hitrosti povezav odjemalca"
 
@@ -2343,11 +2385,12 @@ msgstr "ID odjemalca"
 msgid "Client Key"
 msgstr "Ključ odjemalca"
 
-#: pmg-gui/js/MailProxyOptions.js:92
+#: pmg-gui/js/MailProxyOptions.js:80
 msgid "Client Message Rate Limit"
 msgstr "Omejitev števila sporočil odjemalca"
 
 #: pve-manager/www/manager6/qemu/DisplayEdit.js:86
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:147
 msgid "Clipboard"
 msgstr ""
 
@@ -2362,7 +2405,7 @@ msgstr ""
 #: pve-manager/www/manager6/window/Clone.js:304
 #: proxmox-datacenter-manager/ui/src/tasks.rs:55
 #: proxmox-datacenter-manager/ui/src/tasks.rs:86
-#: proxmox-yew-comp/src/utils.rs:401 proxmox-yew-comp/src/utils.rs:430
+#: proxmox-yew-comp/src/utils.rs:412 proxmox-yew-comp/src/utils.rs:441
 msgid "Clone"
 msgstr "Kloniraj"
 
@@ -2455,8 +2498,8 @@ msgid "Color Overrides"
 msgstr "Barvne preglasitve"
 
 #: proxmox-widget-toolkit/src/window/ThemeEdit.js:33
-#: proxmox-widget-toolkit/src/window/ThemeEdit.js:40 pmg-gui/js/MainView.js:214
-#: pmg-gui/js/QuarantineView.js:259 pve-manager/www/manager6/Workspace.js:425
+#: proxmox-widget-toolkit/src/window/ThemeEdit.js:40 pmg-gui/js/MainView.js:221
+#: pmg-gui/js/QuarantineView.js:301 pve-manager/www/manager6/Workspace.js:425
 #: proxmox-backup/www/MainView.js:267
 #, fuzzy
 msgid "Color Theme"
@@ -2466,10 +2509,6 @@ msgstr "Izvirnik"
 #, fuzzy
 msgid "Columns"
 msgstr "CT volumni"
-
-#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:187
-msgid "Coming soon"
-msgstr ""
 
 #: pve-manager/www/manager6/ha/Fencing.js:33
 msgid "Command"
@@ -2587,15 +2626,19 @@ msgstr "Vse ni uspelo"
 #: proxmox-backup/www/window/UserEdit.js:174
 #: proxmox-backup/www/window/VerifyJobEdit.js:148
 #: proxmox-datacenter-manager/ui/src/widget/pve_network_selector.rs:164
+#: proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:204
+#: pve-yew-mobile-gui/src/form/pve_network_selector.rs:157
 #: proxmox-yew-comp/src/apt_repositories.rs:784
 #: proxmox-yew-comp/src/auth_edit_openid.rs:138
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:245
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:369
 #: proxmox-yew-comp/src/configuration/network_edit.rs:164
 #: proxmox-yew-comp/src/configuration/network_edit.rs:260
 #: proxmox-yew-comp/src/configuration/network_edit.rs:295
 #: proxmox-yew-comp/src/user_panel.rs:417
 #: proxmox-yew-comp/src/user_panel.rs:511
 #: proxmox-yew-comp/src/user_panel.rs:537
+#: proxmox-yew-comp/src/token_panel.rs:436
+#: proxmox-yew-comp/src/token_panel.rs:465
 msgid "Comment"
 msgstr "Komentar"
 
@@ -2615,7 +2658,7 @@ msgstr "Komponente"
 #: pve-manager/www/manager6/window/Backup.js:24
 #: proxmox-backup/www/tape/DriveStatus.js:349
 #: proxmox-backup/www/window/ZFSCreate.js:54
-#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:95
+#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:87
 msgid "Compression"
 msgstr "Kompresija"
 
@@ -2664,7 +2707,7 @@ msgstr ""
 
 #: pve-manager/www/manager6/Utils.js:2104
 #: proxmox-datacenter-manager/ui/src/tasks.rs:56
-#: proxmox-yew-comp/src/utils.rs:402
+#: proxmox-yew-comp/src/utils.rs:413
 msgid "Configure"
 msgstr "Konfiguriraj"
 
@@ -2687,9 +2730,9 @@ msgstr "Konfigurirano"
 
 #: proxmox-widget-toolkit/src/button/Button.js:49
 #: proxmox-widget-toolkit/src/window/SafeDestroy.js:7
-#: pmg-gui/js/RuleConfiguration.js:99 pmg-gui/js/RuleInfo.js:39
-#: pmg-gui/js/controller/QuarantineController.js:101
-#: pmg-gui/js/mobile/app.js:35 pve-manager/www/manager6/button/Split.js:43
+#: pmg-gui/js/PostfixMailQueue.js:82 pmg-gui/js/RuleConfiguration.js:99
+#: pmg-gui/js/RuleInfo.js:39 pmg-gui/js/controller/QuarantineController.js:101
+#: pve-manager/www/manager6/button/Split.js:43
 #: pve-manager/www/manager6/ceph/OSD.js:452
 #: pve-manager/www/manager6/dc/Backup.js:632
 #: pve-manager/www/manager6/lxc/CmdMenu.js:26
@@ -2706,8 +2749,8 @@ msgstr "Konfigurirano"
 #: pve-manager/www/manager6/window/GuestStop.js:72
 #: pve-manager/www/manager6/window/Restore.js:103
 #: proxmox-backup/www/datastore/Content.js:669
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:501
-#: proxmox-yew-comp/src/safe_confirm_dialog.rs:155
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:516
+#: proxmox-yew-comp/src/safe_confirm_dialog.rs:162
 #: proxmox-yew-comp/src/tfa/tfa_confirm_remove.rs:97
 #: proxmox-yew-widget-toolkit/src/widget/confirm_dialog.rs:66
 msgid "Confirm"
@@ -2763,7 +2806,7 @@ msgstr "Potrdite svoje ({0}) geslo"
 msgid "Connection"
 msgstr "Napaka pri povezavi"
 
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:83
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:85
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_nodes.rs:57
 #, fuzzy
 msgid "Connection Certificate"
@@ -2829,11 +2872,11 @@ msgstr "Vrsta vsebine"
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/dashboard_panel.rs:229
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/config_panel.rs:88
 #: pve-yew-mobile-gui/src/pages/page_node_status/dashboard_panel.rs:142
-#: proxmox-yew-comp/src/utils.rs:421 proxmox-yew-comp/src/utils.rs:428
+#: proxmox-yew-comp/src/utils.rs:432 proxmox-yew-comp/src/utils.rs:439
 msgid "Console"
 msgstr "Konzola"
 
-#: proxmox-yew-comp/src/utils.rs:221
+#: proxmox-yew-comp/src/utils.rs:240
 #, fuzzy
 msgid "Console (xterm.js)"
 msgstr "Konzola"
@@ -2893,7 +2936,8 @@ msgstr "Zabojnik {0} na vozlišču '{1}'"
 #: proxmox-backup/www/tape/ChangerStatus.js:857
 #: proxmox-backup/www/tape/ChangerStatus.js:977
 #: proxmox-backup/www/tape/TapeManagement.js:18
-#: proxmox-datacenter-manager/ui/src/pve/storage.rs:280
+#: proxmox-datacenter-manager/ui/src/pbs/datastore.rs:63
+#: proxmox-datacenter-manager/ui/src/pve/storage.rs:274
 msgid "Content"
 msgstr "Vsebina"
 
@@ -2934,7 +2978,7 @@ msgstr "Krmilniki"
 #: pve-manager/www/manager6/qemu/Config.js:96
 #: proxmox-datacenter-manager/ui/src/tasks.rs:73
 #: proxmox-datacenter-manager/ui/src/tasks.rs:105
-#: proxmox-yew-comp/src/utils.rs:419 proxmox-yew-comp/src/utils.rs:449
+#: proxmox-yew-comp/src/utils.rs:430 proxmox-yew-comp/src/utils.rs:460
 msgid "Convert to template"
 msgstr "Pretvori v predlogo"
 
@@ -2962,12 +3006,13 @@ msgstr "Kopiraj ključe za obnovitev"
 
 #: pve-manager/www/manager6/dc/TokenEdit.js:163
 #: proxmox-backup/www/window/TokenEdit.js:213
+#: proxmox-yew-comp/src/token_panel.rs:372
 msgid "Copy Secret Value"
 msgstr "Kopirajte skrivno vrednost"
 
 #: pve-manager/www/manager6/Utils.js:2092
 #: proxmox-datacenter-manager/ui/src/tasks.rs:44
-#: proxmox-yew-comp/src/utils.rs:390
+#: proxmox-yew-comp/src/utils.rs:401
 msgid "Copy data"
 msgstr "Kopiraj podatke"
 
@@ -2995,8 +3040,8 @@ msgstr ""
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:130
 #: pve-manager/www/manager6/window/GuestImport.js:501
 #: pve-manager/www/manager6/window/Restore.js:336
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:116
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:218
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:108
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:210
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/resources_panel.rs:71
 msgid "Cores"
 msgstr "Jedra"
@@ -3023,6 +3068,7 @@ msgstr ""
 #: pmg-gui/js/HourlyMailDistribution.js:12 pmg-gui/js/ReceiverStatistics.js:168
 #: pmg-gui/js/SenderStatistics.js:160 pmg-gui/js/SpamScoreDistribution.js:39
 #: pmg-gui/js/VirusCharts.js:30 proxmox-backup/www/datastore/Content.js:1165
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:125
 msgid "Count"
 msgstr "Število"
 
@@ -3076,12 +3122,12 @@ msgstr "Število"
 #: proxmox-datacenter-manager/ui/src/tasks.rs:107
 #: proxmox-yew-comp/src/configuration/network_view.rs:214
 #: proxmox-yew-comp/src/configuration/network_edit.rs:346
-#: proxmox-yew-comp/src/utils.rs:367 proxmox-yew-comp/src/utils.rs:368
-#: proxmox-yew-comp/src/utils.rs:369 proxmox-yew-comp/src/utils.rs:370
-#: proxmox-yew-comp/src/utils.rs:371 proxmox-yew-comp/src/utils.rs:378
-#: proxmox-yew-comp/src/utils.rs:383 proxmox-yew-comp/src/utils.rs:392
+#: proxmox-yew-comp/src/utils.rs:378 proxmox-yew-comp/src/utils.rs:379
+#: proxmox-yew-comp/src/utils.rs:380 proxmox-yew-comp/src/utils.rs:381
+#: proxmox-yew-comp/src/utils.rs:382 proxmox-yew-comp/src/utils.rs:389
 #: proxmox-yew-comp/src/utils.rs:394 proxmox-yew-comp/src/utils.rs:403
-#: proxmox-yew-comp/src/utils.rs:431 proxmox-yew-comp/src/utils.rs:451
+#: proxmox-yew-comp/src/utils.rs:405 proxmox-yew-comp/src/utils.rs:414
+#: proxmox-yew-comp/src/utils.rs:442 proxmox-yew-comp/src/utils.rs:462
 msgid "Create"
 msgstr "Ustvari"
 
@@ -3098,7 +3144,7 @@ msgstr "Ustvarite CephFS"
 #: pve-manager/www/manager6/dc/Cluster.js:155
 #: pve-manager/www/manager6/dc/ClusterEdit.js:5
 #: proxmox-datacenter-manager/ui/src/tasks.rs:33
-#: proxmox-yew-comp/src/utils.rs:381
+#: proxmox-yew-comp/src/utils.rs:392
 msgid "Create Cluster"
 msgstr "Ustvari gručo"
 
@@ -3160,7 +3206,7 @@ msgstr "Ustvari"
 msgid "Critical"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/Utils.js:78 proxmox-yew-comp/src/lib.rs:277
+#: proxmox-widget-toolkit/src/Utils.js:78 proxmox-yew-comp/src/lib.rs:283
 msgid "Croatian"
 msgstr ""
 
@@ -3203,7 +3249,7 @@ msgstr "Ocena za Pravilo po meri"
 msgid "Custom Scores"
 msgstr "Ocene po meri"
 
-#: proxmox-widget-toolkit/src/Utils.js:70 proxmox-yew-comp/src/lib.rs:267
+#: proxmox-widget-toolkit/src/Utils.js:70 proxmox-yew-comp/src/lib.rs:273
 msgid "Czech"
 msgstr ""
 
@@ -3245,7 +3291,7 @@ msgstr "DKIM"
 #: pve-manager/www/manager6/node/Config.js:211
 #: pve-manager/www/manager6/sdn/ZoneView.js:159
 #: proxmox-backup/www/SystemConfiguration.js:35
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:112
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:134
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/resources_panel.rs:123
 msgid "DNS"
 msgstr "DNS"
@@ -3324,11 +3370,11 @@ msgstr "DNS strežnik"
 msgid "DNS servers"
 msgstr "DNS strežniki"
 
-#: pmg-gui/js/MailProxyOptions.js:22
+#: pmg-gui/js/MailProxyOptions.js:106 pmg-gui/js/MailProxyOptions.js:116
 msgid "DNSBL Sites"
 msgstr "Spletna mesta DNSBL"
 
-#: pmg-gui/js/MailProxyOptions.js:28
+#: pmg-gui/js/MailProxyOptions.js:98
 msgid "DNSBL Threshold"
 msgstr "Prag za DNSBL"
 
@@ -3340,7 +3386,7 @@ msgstr "Dnevno"
 msgid "Damaged"
 msgstr "Poškodovan"
 
-#: proxmox-widget-toolkit/src/Utils.js:71 proxmox-yew-comp/src/lib.rs:268
+#: proxmox-widget-toolkit/src/Utils.js:71 proxmox-yew-comp/src/lib.rs:274
 #, fuzzy
 msgid "Danish"
 msgstr "Končaj"
@@ -3360,7 +3406,7 @@ msgstr ""
 msgid "Dashboard"
 msgstr "Nadzorna plošča"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:683
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:695
 #, fuzzy
 msgid "Dashboard Configuration"
 msgstr "Prikaži konfiguracijo"
@@ -3401,7 +3447,7 @@ msgstr "Zrcalo podatkovne baze"
 #: pve-manager/www/manager6/tree/ResourceTree.js:286
 #: pve-manager/www/manager6/tree/ResourceTree.js:345
 #: pve-manager/www/manager6/tree/ResourceTree.js:547
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:576
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:591
 msgid "Datacenter"
 msgstr "Podatkovni center"
 
@@ -3456,7 +3502,13 @@ msgstr "Shramba podatkov ni na voljo"
 msgid "Datastore is not mounted"
 msgstr "Shramba podatkov ni na voljo"
 
+#: proxmox-datacenter-manager/ui/src/pbs/datastore.rs:50
+#, fuzzy
+msgid "Datastore {0}"
+msgstr "Shramba podatkov"
+
 #: proxmox-backup/www/datastore/DataStoreList.js:194
+#: proxmox-datacenter-manager/ui/src/pbs/tree.rs:239
 msgid "Datastores"
 msgstr "Podatkovne shrambe"
 
@@ -3486,7 +3538,7 @@ msgstr "Dnevi za prikaz"
 
 #: pve-manager/www/manager6/Utils.js:2060
 #: proxmox-datacenter-manager/ui/src/tasks.rs:10
-#: proxmox-yew-comp/src/utils.rs:358
+#: proxmox-yew-comp/src/utils.rs:369
 msgid "Deactivate"
 msgstr "Deaktiviraj"
 
@@ -3533,21 +3585,29 @@ msgstr "OSD za globinsko čiščenje.{0}"
 #: pve-manager/www/manager6/dc/OptionView.js:346
 #: pve-manager/www/manager6/grid/FirewallOptions.js:113
 #: pve-manager/www/manager6/lxc/Options.js:95
-#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:83
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:173
+#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:105
 #: pve-yew-mobile-gui/src/form/hotplug_feature_selector.rs:39
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:60
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:66
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:34
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:100
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_memory_property.rs:76
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:52
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:82
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_bios_property.rs:52
-#: pve-yew-mobile-gui/src/pages/page_qemu_status/hardware_panel.rs:154
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:26
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:107
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:148
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:165
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_machine_property.rs:51
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_machine_property.rs:140
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_scsihw_property.rs:20
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_scsihw_property.rs:41
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:36
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:91
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_memory_property.rs:78
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:88
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:108
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_bios_property.rs:43
+#: pve-yew-mobile-gui/src/widgets/editable_property.rs:166
+#: proxmox-yew-comp/src/auth_view.rs:418 proxmox-yew-comp/src/auth_view.rs:486
 #: proxmox-yew-comp/src/auth_edit_openid.rs:120
 #: proxmox-yew-comp/src/auth_edit_openid.rs:128
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:125
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:197
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:231
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:294
 #: proxmox-yew-widget-toolkit/src/widget/form/tristate_boolean.rs:168
 msgid "Default"
 msgstr "Privzeto"
@@ -3590,6 +3650,7 @@ msgstr "Privzeti imenski prostor"
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:85
 #: proxmox-widget-toolkit/src/window/AuthEditOpenId.js:42
 #: proxmox-widget-toolkit/src/window/AuthEditSimple.js:19
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:339
 #, fuzzy
 msgid "Default Realm"
 msgstr "Privzeti rele"
@@ -3605,7 +3666,7 @@ msgstr "Privzeta shramba podatkov"
 
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:366
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:256
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:118
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:224
 msgid "Default Sync Options"
 msgstr "Privzete možnosti sinhronizacije"
 
@@ -3656,14 +3717,13 @@ msgstr ""
 msgid "Delay"
 msgstr "Zakasnitev"
 
-#: pmg-gui/js/MailProxyOptions.js:76
+#: pmg-gui/js/MailProxyOptions.js:64
 msgid "Delay Warning Time (hours)"
 msgstr "Opozorilni čas zakasnitve (ure)"
 
 #: pmg-gui/js/AttachmentQuarantine.js:153
 #: pmg-gui/js/QuarantineContextMenu.js:25 pmg-gui/js/SpamContextMenu.js:12
 #: pmg-gui/js/SpamQuarantine.js:283 pmg-gui/js/VirusQuarantine.js:166
-#: pmg-gui/js/mobile/mailview.js:51 pmg-gui/js/mobile/quarantineview.js:120
 #: pve-manager/www/manager6/sdn/FabricsView.js:131
 #: pve-manager/www/manager6/tree/DhcpTree.js:272
 #: pmg-yew-quarantine-gui/src/spam_list.rs:282
@@ -3681,7 +3741,7 @@ msgstr "Brisanje potrdila po meri"
 #: pve-manager/www/manager6/Utils.js:2135
 #: proxmox-datacenter-manager/ui/src/tasks.rs:58
 #: proxmox-datacenter-manager/ui/src/tasks.rs:88
-#: proxmox-yew-comp/src/utils.rs:404 proxmox-yew-comp/src/utils.rs:432
+#: proxmox-yew-comp/src/utils.rs:415 proxmox-yew-comp/src/utils.rs:443
 msgid "Delete Snapshot"
 msgstr "Izbriši posnetek"
 
@@ -3702,6 +3762,11 @@ msgstr "Izbriši vsa sporočila"
 msgid "Delete custom certificate and switch to generated one?"
 msgstr "Želite izbrisati certifikat po meri in preklopiti na ustvarjenega?"
 
+#: pve-yew-mobile-gui/src/pages/page_qemu_status/hardware_panel.rs:214
+#, fuzzy
+msgid "Delete device"
+msgstr "Izbriši vir"
+
 #: pve-manager/www/manager6/storage/PBSEdit.js:310
 msgid "Delete existing encryption key"
 msgstr "Brisanje obstoječega ključa za šifriranje"
@@ -3709,6 +3774,11 @@ msgstr "Brisanje obstoječega ključa za šifriranje"
 #: pve-manager/www/manager6/qemu/HDMove.js:85
 msgid "Delete source"
 msgstr "Izbriši vir"
+
+#: pmg-gui/js/PostfixMailQueue.js:100
+#, fuzzy
+msgid "Delete {0} selected mails?"
+msgstr "Ni izbranih {0}"
 
 #: pve-manager/www/manager6/storage/PBSEdit.js:441
 msgid ""
@@ -3721,7 +3791,6 @@ msgstr ""
 #: pmg-gui/js/AttachmentQuarantine.js:147
 #: pmg-gui/js/QuarantineContextMenu.js:19 pmg-gui/js/SpamContextMenu.js:6
 #: pmg-gui/js/SpamQuarantine.js:277 pmg-gui/js/VirusQuarantine.js:160
-#: pmg-gui/js/mobile/mailview.js:60 pmg-gui/js/mobile/quarantineview.js:97
 #: pmg-yew-quarantine-gui/src/spam_list.rs:260
 #: pmg-yew-quarantine-gui/src/page_mail_view.rs:125
 msgid "Deliver"
@@ -3730,6 +3799,11 @@ msgstr "Dostavi"
 #: pmg-gui/js/FetchmailEdit.js:77 pmg-gui/js/FetchmailView.js:123
 msgid "Deliver to"
 msgstr "Dostavi na"
+
+#: pmg-gui/js/PostfixMailQueue.js:96
+#, fuzzy
+msgid "Deliver {0} selected mails?"
+msgstr "Ni izbranih {0}"
 
 #: pve-manager/www/manager6/UIOptions.js:75
 msgid "Dense"
@@ -3753,7 +3827,7 @@ msgstr "Gostota trakov"
 #: proxmox-widget-toolkit/src/window/TfaEdit.js:61
 #: proxmox-widget-toolkit/src/window/TfaEdit.js:200
 #: pmg-gui/js/ActionList.js:133 pmg-gui/js/ObjectGroupList.js:40
-#: pmg-gui/js/ObjectGroupList.js:150 pmg-gui/js/SpamInfoGrid.js:75
+#: pmg-gui/js/ObjectGroupList.js:150 pmg-gui/js/SpamInfoGrid.js:79
 #: pve-manager/www/manager6/data/ResourceStore.js:115
 #: pve-manager/www/manager6/dc/Tasks.js:116
 #: pve-manager/www/manager6/form/GlobalSearchField.js:79
@@ -3819,10 +3893,10 @@ msgstr "Cilj"
 #: proxmox-datacenter-manager/ui/src/tasks.rs:29
 #: proxmox-datacenter-manager/ui/src/tasks.rs:59
 #: proxmox-datacenter-manager/ui/src/tasks.rs:89
-#: proxmox-yew-comp/src/utils.rs:372 proxmox-yew-comp/src/utils.rs:373
-#: proxmox-yew-comp/src/utils.rs:374 proxmox-yew-comp/src/utils.rs:375
-#: proxmox-yew-comp/src/utils.rs:376 proxmox-yew-comp/src/utils.rs:377
-#: proxmox-yew-comp/src/utils.rs:405 proxmox-yew-comp/src/utils.rs:433
+#: proxmox-yew-comp/src/utils.rs:383 proxmox-yew-comp/src/utils.rs:384
+#: proxmox-yew-comp/src/utils.rs:385 proxmox-yew-comp/src/utils.rs:386
+#: proxmox-yew-comp/src/utils.rs:387 proxmox-yew-comp/src/utils.rs:388
+#: proxmox-yew-comp/src/utils.rs:416 proxmox-yew-comp/src/utils.rs:444
 msgid "Destroy"
 msgstr "Uniči"
 
@@ -3844,7 +3918,7 @@ msgstr "Uniči vse podatke (nevarno!)"
 
 #: pve-manager/www/manager6/Utils.js:2129
 #: proxmox-datacenter-manager/ui/src/tasks.rs:82
-#: proxmox-yew-comp/src/utils.rs:426
+#: proxmox-yew-comp/src/utils.rs:437
 msgid "Destroy image from unknown guest"
 msgstr "Uniči sliko neznanega gosta"
 
@@ -3959,7 +4033,7 @@ msgstr "Smer"
 #: proxmox-datacenter-manager/ui/src/tasks.rs:38
 #: proxmox-yew-comp/src/acme/acme_register_account.rs:113
 #: proxmox-yew-comp/src/acme/acme_accounts.rs:230
-#: proxmox-yew-comp/src/utils.rs:384
+#: proxmox-yew-comp/src/utils.rs:395
 msgid "Directory"
 msgstr "Mapa"
 
@@ -3981,7 +4055,7 @@ msgstr ""
 
 #: pve-manager/www/manager6/Utils.js:2085 proxmox-backup/www/Utils.js:433
 #: proxmox-datacenter-manager/ui/src/tasks.rs:37
-#: proxmox-yew-comp/src/utils.rs:383
+#: proxmox-yew-comp/src/utils.rs:394
 msgid "Directory Storage"
 msgstr "Shramba imenika"
 
@@ -4003,9 +4077,10 @@ msgstr "Onemogoči MX iskanje (SMTP)"
 #: proxmox-widget-toolkit/src/Utils.js:47 pve-manager/www/manager6/Utils.js:401
 #: pve-manager/www/manager6/Utils.js:403 pve-manager/www/manager6/Utils.js:437
 #: pve-yew-mobile-gui/src/form/hotplug_feature_selector.rs:47
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:34
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:100
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:82
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:36
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:91
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:19
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:108
 msgid "Disabled"
 msgstr "Onemogočeno"
 
@@ -4031,6 +4106,7 @@ msgstr "Podpis"
 
 #: pve-manager/www/manager6/lxc/Network.js:278
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:105
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_network_property.rs:62
 msgid "Disconnect"
 msgstr "Odklopi"
 
@@ -4054,7 +4130,7 @@ msgstr "Odklopi"
 #: pve-yew-mobile-gui/src/form/hotplug_feature_selector.rs:41
 #: pve-yew-mobile-gui/src/form/hotplug_feature_selector.rs:53
 #: pve-yew-mobile-gui/src/form/hotplug_feature_selector.rs:190
-#: proxmox-yew-comp/src/utils.rs:223
+#: proxmox-yew-comp/src/utils.rs:242
 msgid "Disk"
 msgstr "Disk"
 
@@ -4062,8 +4138,9 @@ msgstr "Disk"
 msgid "Disk Action"
 msgstr "Dejanje diska"
 
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:420
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:433
+#: proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:245
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:418
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:431
 #, fuzzy
 msgid "Disk I/O"
 msgstr "Disk IO"
@@ -4081,14 +4158,16 @@ msgstr "Slika diska"
 msgid "Disk Move"
 msgstr "Premik diska"
 
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:208
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:210
+#: proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:141
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:211
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:213
 #, fuzzy
 msgid "Disk Read"
 msgstr "Skupno branje diska"
 
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:209
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:211
+#: proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:142
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:212
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:214
 #, fuzzy
 msgid "Disk Write"
 msgstr "Skupno pisanje na disk"
@@ -4123,7 +4202,7 @@ msgstr "Diski"
 
 #: pve-manager/www/manager6/qemu/DisplayEdit.js:141
 #: pve-manager/www/manager6/qemu/HardwareView.js:167
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:59
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:162
 msgid "Display"
 msgstr "Zaslon"
 
@@ -4136,6 +4215,12 @@ msgstr "Ne šifriraj varnostnih kopij"
 msgid "Do not use any media"
 msgstr "Ne uporabljajte nobenih medijev"
 
+#: proxmox-yew-comp/src/token_panel.rs:198
+msgid ""
+"Do you want to regenerate the secret of the selected API token? All current "
+"usage sites will lose access!"
+msgstr ""
+
 #: proxmox-widget-toolkit/src/panel/NotificationConfigView.js:14
 #, fuzzy
 msgid "Do you want to reset {0} to its default settings?"
@@ -4146,7 +4231,7 @@ msgstr "Resetiram VM {0}?"
 msgid "Do you want to send a test notification to '{0}'?"
 msgstr "Izbriši {0} vnos?"
 
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:94
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:96
 #, fuzzy
 msgid "Do you want to trust the certificate and save its fingerprint?"
 msgstr "Resetiram VM {0}?"
@@ -4155,9 +4240,9 @@ msgstr "Resetiram VM {0}?"
 msgid "Do you want to trust them by saving their fingerprint?"
 msgstr ""
 
-#: pmg-gui/js/MainView.js:188 pve-manager/www/manager6/Workspace.js:371
+#: pmg-gui/js/MainView.js:195 pve-manager/www/manager6/Workspace.js:371
 #: proxmox-backup/www/MainView.js:241
-#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:182
+#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:183
 msgid "Documentation"
 msgstr "Dokumentacija"
 
@@ -4212,7 +4297,7 @@ msgstr "Dol"
 #: pve-manager/www/manager6/window/DownloadUrlToStorage.js:13
 #: proxmox-backup/www/Subscription.js:62
 #: proxmox-datacenter-manager/ui/src/tasks.rs:39
-#: proxmox-yew-comp/src/utils.rs:385
+#: proxmox-yew-comp/src/utils.rs:396
 msgid "Download"
 msgstr "Prenos"
 
@@ -4310,7 +4395,7 @@ msgstr "Podvojena številka povezave ni dovoljena."
 msgid "Duration"
 msgstr "Trajanje"
 
-#: proxmox-widget-toolkit/src/Utils.js:85 proxmox-yew-comp/src/lib.rs:283
+#: proxmox-widget-toolkit/src/Utils.js:85 proxmox-yew-comp/src/lib.rs:289
 msgid "Dutch"
 msgstr ""
 
@@ -4350,7 +4435,7 @@ msgstr "Poštni naslovi '{0}'"
 
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:351
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:246
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:113
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:219
 msgid "E-Mail attribute"
 msgstr "Atribut e-pošte"
 
@@ -4449,7 +4534,7 @@ msgstr ""
 #: proxmox-widget-toolkit/src/panel/TfaView.js:294 pmg-gui/js/ActionList.js:107
 #: pmg-gui/js/ClamAVDatabase.js:161 pmg-gui/js/DKIMSettings.js:223
 #: pmg-gui/js/FetchmailView.js:87 pmg-gui/js/LDAPConfig.js:557
-#: pmg-gui/js/MailProxyOptions.js:117 pmg-gui/js/MailProxyPorts.js:32
+#: pmg-gui/js/MailProxyOptions.js:139 pmg-gui/js/MailProxyPorts.js:32
 #: pmg-gui/js/MailProxyRelaying.js:100 pmg-gui/js/MailProxyTLS.js:23
 #: pmg-gui/js/MailProxyTLSDestinations.js:134 pmg-gui/js/MyNetworks.js:90
 #: pmg-gui/js/ObjectGroup.js:208 pmg-gui/js/ObjectGroupList.js:119
@@ -4521,22 +4606,24 @@ msgstr ""
 #: proxmox-backup/www/tape/DriveConfig.js:134
 #: proxmox-backup/www/tape/PoolConfig.js:102
 #: proxmox-datacenter-manager/ui/src/remotes/edit_remote.rs:61
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:202
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:193
 #: proxmox-datacenter-manager/ui/src/tasks.rs:31
 #: proxmox-yew-comp/src/acme/acme_domains.rs:179
 #: proxmox-yew-comp/src/acme/acme_domains.rs:374
 #: proxmox-yew-comp/src/acme/acme_plugins.rs:269
 #: proxmox-yew-comp/src/acme/acme_plugins.rs:492
-#: proxmox-yew-comp/src/auth_view.rs:213
+#: proxmox-yew-comp/src/auth_view.rs:311
 #: proxmox-yew-comp/src/auth_edit_openid.rs:157
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:262
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:386
 #: proxmox-yew-comp/src/configuration/network_view.rs:225
 #: proxmox-yew-comp/src/configuration/network_edit.rs:346
 #: proxmox-yew-comp/src/notes_view.rs:171
 #: proxmox-yew-comp/src/notes_view.rs:199
 #: proxmox-yew-comp/src/tfa/tfa_view.rs:274
 #: proxmox-yew-comp/src/user_panel.rs:180
-#: proxmox-yew-comp/src/user_panel.rs:269 proxmox-yew-comp/src/utils.rs:379
+#: proxmox-yew-comp/src/user_panel.rs:269
+#: proxmox-yew-comp/src/token_panel.rs:185
+#: proxmox-yew-comp/src/token_panel.rs:399 proxmox-yew-comp/src/utils.rs:390
 msgid "Edit"
 msgstr "Uredi"
 
@@ -4626,7 +4713,7 @@ msgstr ""
 msgid "Email from address"
 msgstr "E-poštni naslov od"
 
-#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:96
+#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:88
 #, fuzzy
 msgid "Email to"
 msgstr "E-pošta"
@@ -4649,6 +4736,7 @@ msgstr "E-pošta"
 #: pve-manager/www/manager6/storage/Base.js:51
 #: pve-manager/www/manager6/window/FirewallLograteEdit.js:12
 #: proxmox-yew-comp/src/apt_repositories.rs:569
+#: proxmox-yew-comp/src/token_panel.rs:504
 msgid "Enable"
 msgstr "Omogoči"
 
@@ -4662,13 +4750,13 @@ msgid "Enable Job"
 msgstr "Omogoči"
 
 #: pve-manager/www/manager6/qemu/SevEdit.js:125
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:78
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:71
 #, fuzzy
 msgid "Enable Kernel Hashes"
 msgstr "Omogoči nove uporabnike"
 
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:231
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:318
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:319
 msgid "Enable NUMA"
 msgstr "Omogoči NUMA"
 
@@ -4708,7 +4796,8 @@ msgstr "Omogoči novo"
 
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:385
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:323
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:121
+#: proxmox-yew-comp/src/auth_view.rs:415
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:227
 msgid "Enable new users"
 msgstr "Omogoči nove uporabnike"
 
@@ -4757,13 +4846,15 @@ msgstr ""
 #: proxmox-backup/www/window/PruneJobEdit.js:126
 #: proxmox-backup/www/window/TokenEdit.js:59
 #: proxmox-backup/www/window/UserEdit.js:134
-#: proxmox-datacenter-manager/ui/src/pve/storage.rs:262
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:22
 #: proxmox-yew-comp/src/apt_repositories.rs:760
 #: proxmox-yew-comp/src/tfa/tfa_view.rs:365
 #: proxmox-yew-comp/src/tfa/tfa_edit.rs:67
 #: proxmox-yew-comp/src/user_panel.rs:336
 #: proxmox-yew-comp/src/user_panel.rs:507
 #: proxmox-yew-comp/src/user_panel.rs:536
+#: proxmox-yew-comp/src/token_panel.rs:434
+#: proxmox-yew-comp/src/token_panel.rs:464
 msgid "Enabled"
 msgstr "Omogočeno"
 
@@ -4850,7 +4941,7 @@ msgstr "Ime osnovne domene"
 msgid "Endpoints"
 msgstr "Ime osnovne domene"
 
-#: proxmox-widget-toolkit/src/Utils.js:73 proxmox-yew-comp/src/lib.rs:270
+#: proxmox-widget-toolkit/src/Utils.js:73 proxmox-yew-comp/src/lib.rs:276
 msgid "English"
 msgstr ""
 
@@ -4870,6 +4961,12 @@ msgstr ""
 msgid "Enterprise repository needs valid subscription"
 msgstr "Repozitorij za podjetja potrebuje veljavno naročnino"
 
+#: proxmox-yew-comp/src/auth_view.rs:434
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:246
+#, fuzzy
+msgid "Entries"
+msgstr "Vstop"
+
 #: pve-manager/www/manager6/qemu/RNGEdit.js:47
 msgid "Entropy source"
 msgstr "Vir entropije"
@@ -4888,7 +4985,7 @@ msgstr ""
 
 #: pve-manager/www/manager6/Utils.js:2093
 #: proxmox-datacenter-manager/ui/src/tasks.rs:45
-#: proxmox-yew-comp/src/utils.rs:391
+#: proxmox-yew-comp/src/utils.rs:402
 msgid "Erase data"
 msgstr "Izbriši podatke"
 
@@ -4933,17 +5030,15 @@ msgstr "Izbriši podatke"
 #: pmg-gui/js/LDAPConfig.js:528 pmg-gui/js/LoginView.js:113
 #: pmg-gui/js/LoginView.js:137 pmg-gui/js/LoginView.js:266
 #: pmg-gui/js/MailTracker.js:195 pmg-gui/js/MailTracker.js:303
-#: pmg-gui/js/PostfixMailQueue.js:69 pmg-gui/js/PostfixMailQueue.js:92
-#: pmg-gui/js/PostfixQShape.js:51 pmg-gui/js/PostfixQShape.js:67
-#: pmg-gui/js/PostfixQShape.js:80 pmg-gui/js/RegexTester.js:55
-#: pmg-gui/js/RuleConfiguration.js:69 pmg-gui/js/RuleConfiguration.js:113
-#: pmg-gui/js/RuleInfo.js:31 pmg-gui/js/RuleInfo.js:59
-#: pmg-gui/js/RuleInfo.js:81 pmg-gui/js/ServerStatus.js:35
-#: pmg-gui/js/SpamDetectorStatus.js:72 pmg-gui/js/Subscription.js:93
-#: pmg-gui/js/Subscription.js:181 pmg-gui/js/UserBlockWelcomeList.js:91
-#: pmg-gui/js/UserView.js:115 pmg-gui/js/Utils.js:797
-#: pmg-gui/js/ViewMailHeaders.js:61 pmg-gui/js/mobile/utils.js:45
-#: pmg-gui/js/mobile/utils.js:48 pmg-gui/js/mobile/utils.js:61
+#: pmg-gui/js/PostfixMailQueue.js:74 pmg-gui/js/PostfixQShape.js:51
+#: pmg-gui/js/PostfixQShape.js:67 pmg-gui/js/PostfixQShape.js:80
+#: pmg-gui/js/RegexTester.js:55 pmg-gui/js/RuleConfiguration.js:69
+#: pmg-gui/js/RuleConfiguration.js:113 pmg-gui/js/RuleInfo.js:31
+#: pmg-gui/js/RuleInfo.js:59 pmg-gui/js/RuleInfo.js:81
+#: pmg-gui/js/ServerStatus.js:35 pmg-gui/js/SpamDetectorStatus.js:72
+#: pmg-gui/js/Subscription.js:93 pmg-gui/js/Subscription.js:181
+#: pmg-gui/js/UserBlockWelcomeList.js:91 pmg-gui/js/UserView.js:115
+#: pmg-gui/js/Utils.js:797 pmg-gui/js/ViewMailHeaders.js:61
 #: pve-manager/www/manager6/Utils.js:1594
 #: pve-manager/www/manager6/Utils.js:1607
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:126
@@ -5074,7 +5169,7 @@ msgstr "Napake"
 msgid "Estimated Full"
 msgstr "Predvideno polno"
 
-#: proxmox-widget-toolkit/src/Utils.js:75 proxmox-yew-comp/src/lib.rs:272
+#: proxmox-widget-toolkit/src/Utils.js:75 proxmox-yew-comp/src/lib.rs:278
 msgid "Euskera (Basque)"
 msgstr ""
 
@@ -5202,6 +5297,9 @@ msgstr "Eksperimentalno"
 #: proxmox-yew-comp/src/user_panel.rs:357
 #: proxmox-yew-comp/src/user_panel.rs:502
 #: proxmox-yew-comp/src/user_panel.rs:529
+#: proxmox-yew-comp/src/token_panel.rs:420
+#: proxmox-yew-comp/src/token_panel.rs:454
+#: proxmox-yew-comp/src/token_panel.rs:511
 msgid "Expire"
 msgstr "Poteče"
 
@@ -5209,7 +5307,7 @@ msgstr "Poteče"
 #: proxmox-widget-toolkit/src/window/Certificates.js:52
 #: pve-manager/www/manager6/node/Certificates.js:85
 #: pve-manager/www/manager6/node/Certificates.js:345
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:307
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:309
 #: proxmox-yew-comp/src/acme/certificate_list.rs:351
 #: proxmox-yew-comp/src/acme/certificate_list.rs:402
 msgid "Expires"
@@ -5267,6 +5365,7 @@ msgid "Failback"
 msgstr "Vrni nazaj"
 
 #: pve-manager/www/manager6/Utils.js:295
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:438
 msgid "Failed"
 msgstr "Ni uspelo"
 
@@ -5292,7 +5391,7 @@ msgstr "Vrni nazaj"
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:173
 #: pve-manager/www/manager6/dc/AuthEditAD.js:38
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:38
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:185
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:297
 msgid "Fallback Server"
 msgstr "Povratni strežnik"
 
@@ -5301,7 +5400,7 @@ msgid "Fallback from storage config"
 msgstr "Nadomestna konfiguracija za shranjevanje"
 
 #: pve-manager/www/manager6/qemu/Smbios1Edit.js:81
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:89
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:80
 msgid "Family"
 msgstr "Družina"
 
@@ -5352,7 +5451,7 @@ msgstr "Polja"
 #: proxmox-datacenter-manager/ui/src/tasks.rs:39
 #: proxmox-yew-comp/src/acme/certificate_list.rs:344
 #: proxmox-yew-comp/src/acme/certificate_list.rs:372
-#: proxmox-yew-comp/src/utils.rs:385
+#: proxmox-yew-comp/src/utils.rs:396
 msgid "File"
 msgstr "Datoteka"
 
@@ -5365,7 +5464,7 @@ msgstr "Obnovitev datoteke"
 
 #: pve-manager/www/manager6/Utils.js:2100
 #: proxmox-datacenter-manager/ui/src/tasks.rs:52
-#: proxmox-yew-comp/src/utils.rs:398
+#: proxmox-yew-comp/src/utils.rs:409
 msgid "File Restore Download"
 msgstr "Prenos obnovitve datoteke"
 
@@ -5404,10 +5503,12 @@ msgstr "Datotečni sistem"
 msgid "Filetype"
 msgstr "Tip datoteke"
 
-#: proxmox-widget-toolkit/src/node/Tasks.js:262 pmg-gui/js/MailTracker.js:88
-#: pmg-gui/js/PostfixMailQueue.js:149 pmg-gui/js/form/FilterField.js:14
+#: proxmox-widget-toolkit/src/node/Tasks.js:262
+#: pmg-gui/js/DNSBLSitesField.js:163 pmg-gui/js/MailTracker.js:88
+#: pmg-gui/js/PostfixMailQueue.js:157 pmg-gui/js/form/FilterField.js:14
 #: pve-manager/www/manager6/grid/PoolMembers.js:66
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:476
+#: proxmox-datacenter-manager/ui/src/pbs/tree.rs:254
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:491
 msgid "Filter"
 msgstr "Filter"
 
@@ -5457,8 +5558,8 @@ msgstr "Filtri so aditivni (ALI podobni)"
 #: proxmox-backup/www/window/DatastoreRepoInfo.js:55
 #: proxmox-backup/www/window/RemoteEdit.js:114
 #: proxmox-backup/www/window/S3ClientEdit.js:113
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:238
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:301
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:240
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:303
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_nodes.rs:277
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_summary.rs:168
 #: proxmox-datacenter-manager/ui/src/remotes/node_url_list.rs:264
@@ -5495,6 +5596,7 @@ msgstr "Končaj"
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:96
 #: pve-manager/www/manager6/window/FirewallEnableEdit.js:6
 #: pve-manager/www/manager6/window/FirewallEnableEdit.js:22
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_network_property.rs:58
 msgid "Firewall"
 msgstr "Požarni zid"
 
@@ -5512,7 +5614,7 @@ msgid "First Name"
 msgstr "Ime"
 
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:333
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:104
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:210
 #, fuzzy
 msgid "First Name attribute"
 msgstr "Ime"
@@ -5564,7 +5666,7 @@ msgstr "Shramba EFI"
 msgid "Floppy"
 msgstr "Disketa"
 
-#: pmg-gui/js/PostfixMailQueue.js:140
+#: pmg-gui/js/PostfixMailQueue.js:146
 msgid "Flush"
 msgstr "Splakni"
 
@@ -5572,8 +5674,8 @@ msgstr "Splakni"
 msgid "Flush Queue"
 msgstr "Splakni čakalno vrsto"
 
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:44
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:81
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:40
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:76
 #, fuzzy
 msgid "Folder Sharing"
 msgstr "Seznamski prikaz"
@@ -5659,8 +5761,8 @@ msgstr "Vnosna polja morajo vsebovati pravilne vrednosti"
 #: proxmox-backup/www/tape/ChangerStatus.js:829
 #: proxmox-backup/www/tape/DriveStatus.js:237
 #: proxmox-backup/www/tape/TapeInventory.js:231
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:53
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:241
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:44
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:253
 msgid "Format"
 msgstr "Formatiraj"
 
@@ -5709,24 +5811,24 @@ msgstr "Prost"
 msgid "Freeze CPU at startup"
 msgstr "Zamrzni CPU ob zagonu"
 
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:104
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:114
 #, fuzzy
 msgid "Freeze CPU on startup"
 msgstr "Zamrzni CPU ob zagonu"
 
 #: pve-manager/www/manager6/form/AgentFeatureSelector.js:40
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:68
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:94
 msgid ""
 "Freeze/thaw for guest filesystems disabled. This can lead to inconsistent "
 "disk backups."
 msgstr ""
 
 #: pve-manager/www/manager6/form/AgentFeatureSelector.js:26
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:43
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:76
 msgid "Freeze/thaw guest filesystems on backup for consistency"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/Utils.js:77 proxmox-yew-comp/src/lib.rs:275
+#: proxmox-widget-toolkit/src/Utils.js:77 proxmox-yew-comp/src/lib.rs:281
 msgid "French"
 msgstr ""
 
@@ -5781,7 +5883,7 @@ msgstr "Iz reže"
 msgid "From backup configuration"
 msgstr "Iz varnostne kopije konfiguracije"
 
-#: pmg-yew-quarantine-gui/src/page_spam_list.rs:80
+#: pmg-yew-quarantine-gui/src/page_spam_list.rs:86
 #, fuzzy
 msgid "From:"
 msgstr "Od"
@@ -5893,15 +5995,15 @@ msgstr "Prehod"
 #: pve-manager/www/manager6/window/GuestImport.js:354
 #: proxmox-backup/www/SystemConfiguration.js:74
 #: proxmox-backup/www/window/DataStoreEdit.js:39
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:85
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:190
 msgid "General"
 msgstr "Splošno"
 
-#: proxmox-widget-toolkit/src/Utils.js:82 proxmox-yew-comp/src/lib.rs:280
+#: proxmox-widget-toolkit/src/Utils.js:82 proxmox-yew-comp/src/lib.rs:286
 msgid "Georgian"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/Utils.js:72 proxmox-yew-comp/src/lib.rs:269
+#: proxmox-widget-toolkit/src/Utils.js:72 proxmox-yew-comp/src/lib.rs:275
 msgid "German"
 msgstr ""
 
@@ -5938,12 +6040,13 @@ msgstr ""
 #: proxmox-widget-toolkit/src/panel/PermissionView.js:152
 #: pve-manager/www/manager6/dc/PermissionView.js:148
 #: proxmox-yew-comp/src/user_panel.rs:296
+#: proxmox-yew-comp/src/token_panel.rs:314
 msgid "Granted Permissions"
 msgstr "Odobrena dovoljenja"
 
 #: pve-manager/www/manager6/qemu/DisplayEdit.js:50
 #: pve-manager/www/manager6/qemu/SystemEdit.js:81
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:33
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:130
 msgid "Graphic card"
 msgstr "Grafična kartica"
 
@@ -6060,11 +6163,11 @@ msgid "Guest user"
 msgstr "Gostujoči uporabnik"
 
 #: pve-manager/www/manager6/dc/Guests.js:5
-#: proxmox-datacenter-manager/ui/src/pve/remote.rs:192
+#: proxmox-datacenter-manager/ui/src/pve/remote.rs:190
 msgid "Guests"
 msgstr "Gostje"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:632
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:648
 msgid "Guests With the Highest CPU Usage"
 msgstr ""
 
@@ -6154,8 +6257,8 @@ msgstr ""
 msgid "HA rule errors"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:321
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:335
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:322
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:336
 #, fuzzy
 msgid "HA state"
 msgstr "HA Stanje"
@@ -6171,6 +6274,11 @@ msgstr "Stanje"
 msgid "HD space"
 msgstr "Poraba diska"
 
+#: proxmox-yew-comp/src/node_info.rs:170
+#, fuzzy
+msgid "HD space (root)"
+msgstr "Poraba diska"
+
 #: pve-manager/www/manager6/dc/MetricServerView.js:681
 msgid "HTTP Headers (JSON)"
 msgstr ""
@@ -6184,8 +6292,8 @@ msgstr "Proxy HTTP"
 #: pve-manager/www/manager6/qemu/HDEdit.js:547
 #: pve-manager/www/manager6/qemu/HardwareView.js:250
 #: pve-manager/www/manager6/qemu/HardwareView.js:725
-#: pve-yew-mobile-gui/src/pages/page_qemu_status/hardware_panel.rs:175
-#: pve-yew-mobile-gui/src/pages/page_qemu_status/hardware_panel.rs:186
+#: pve-yew-mobile-gui/src/pages/page_qemu_status/hardware_panel.rs:291
+#: pve-yew-mobile-gui/src/pages/page_qemu_status/hardware_panel.rs:302
 msgid "Hard Disk"
 msgstr "Trdi disk"
 
@@ -6194,7 +6302,7 @@ msgid "Hardlink"
 msgstr "Trda povezava"
 
 #: pve-manager/www/manager6/qemu/Config.js:319
-#: pve-yew-mobile-gui/src/pages/page_qemu_status/hardware_panel.rs:276
+#: pve-yew-mobile-gui/src/pages/page_qemu_status/hardware_panel.rs:457
 msgid "Hardware"
 msgstr "Strojna oprema"
 
@@ -6223,7 +6331,7 @@ msgid "Header Attribute"
 msgstr "Atribut glave"
 
 #: proxmox-widget-toolkit/src/panel/WebhookEditPanel.js:70
-#: pmg-gui/js/PostfixMailQueue.js:134
+#: pmg-gui/js/PostfixMailQueue.js:140
 msgid "Headers"
 msgstr "Glave"
 
@@ -6245,7 +6353,7 @@ msgstr "Naslov strežnika"
 msgid "Heartbeat Front Address"
 msgstr "Naslov strežnika"
 
-#: proxmox-widget-toolkit/src/Utils.js:79 proxmox-yew-comp/src/lib.rs:276
+#: proxmox-widget-toolkit/src/Utils.js:79 proxmox-yew-comp/src/lib.rs:282
 msgid "Hebrew"
 msgstr ""
 
@@ -6277,15 +6385,16 @@ msgstr "Hevristična ocena"
 #: pve-manager/www/manager6/qemu/Config.js:190
 #: proxmox-datacenter-manager/ui/src/tasks.rs:72
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/dashboard_panel.rs:221
-#: proxmox-yew-comp/src/utils.rs:418
+#: proxmox-yew-comp/src/utils.rs:429
 msgid "Hibernate"
 msgstr "Hibernacija"
 
 #: pve-manager/www/manager6/qemu/HardwareView.js:203
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:287
 msgid "Hibernation VM State"
 msgstr "Stanje mirovanja VM"
 
-#: pmg-gui/js/MailProxyOptions.js:74
+#: pmg-gui/js/MailProxyOptions.js:62
 msgid "Hide Internal Hosts"
 msgstr "Skrij interne gostitelje"
 
@@ -6329,7 +6438,7 @@ msgstr "Strežnik"
 msgid "Host CPU usage"
 msgstr "Uporaba CPE gostitelja"
 
-#: proxmox-datacenter-manager/ui/src/pve/remote.rs:211
+#: proxmox-datacenter-manager/ui/src/pve/remote.rs:209
 #, fuzzy
 msgid "Host CPU usage (avg.)"
 msgstr "Uporaba CPE gostitelja"
@@ -6349,7 +6458,7 @@ msgstr "Uporaba pomnilnika gostitelja"
 msgid "Host Memory used"
 msgstr "Uporaba pomnilnika gostitelja"
 
-#: proxmox-datacenter-manager/ui/src/pve/remote.rs:231
+#: proxmox-datacenter-manager/ui/src/pve/remote.rs:233
 #, fuzzy
 msgid "Host Storage used"
 msgstr "Poraba prostora za shranjevanje"
@@ -6397,7 +6506,7 @@ msgstr "Gostitelji"
 #: pve-manager/www/manager6/qemu/Options.js:168
 #: pve-manager/www/manager6/qemu/Options.js:174
 #: pve-manager/www/manager6/qemu/Options.js:180
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:204
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:216
 msgid "Hotplug"
 msgstr "Vroča priključitev"
 
@@ -6486,6 +6595,7 @@ msgstr ""
 #: pve-manager/www/manager6/node/StatusView.js:35
 #: pve-manager/www/manager6/node/Summary.js:166
 #: proxmox-backup/www/panel/NodeInfo.js:87
+#: proxmox-yew-comp/src/node_info.rs:140
 msgid "IO delay"
 msgstr "Zakasnitev IO"
 
@@ -6631,13 +6741,14 @@ msgstr "ISO slika"
 msgid "Idle"
 msgstr "Mirovanje"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:724
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:736
 msgid ""
 "If a response from a remote is older than 'Max Age', it will be updated on "
 "the next refresh."
 msgstr ""
 
 #: pve-manager/www/manager6/qemu/DisplayEdit.js:127
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:122
 msgid ""
 "If the display type uses SPICE you are able to use the default SPICE "
 "clipboard."
@@ -6710,6 +6821,23 @@ msgstr "Uvozi"
 msgid ""
 "Importing an OVA temporarily requires extra space on the working storage "
 "while extracting the contained disks for further processing."
+msgstr ""
+
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:104
+msgid ""
+"Improve performance for nested virtualization. Only supported on Intel CPUs."
+msgstr ""
+
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:103
+msgid ""
+"Improve performance in overcommitted Windows guests. May lead to guest "
+"bluescreens on old CPUs."
+msgstr ""
+
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:100
+msgid ""
+"Improves Spectre mitigation performance with AMD CPUs, best used with \"virt-"
+"ssbd\""
 msgstr ""
 
 #: pmg-gui/js/Utils.js:113 pve-manager/www/manager6/ceph/StatusDetail.js:39
@@ -6822,7 +6950,7 @@ msgstr "Vhod"
 
 #: proxmox-widget-toolkit/src/Utils.js:750
 #: proxmox-widget-toolkit/src/panel/DiskList.js:407
-#: proxmox-yew-comp/src/utils.rs:223
+#: proxmox-yew-comp/src/utils.rs:242
 msgid "Initialize Disk with GPT"
 msgstr "Inicializirajte disk z GPT"
 
@@ -6857,6 +6985,8 @@ msgid "Installation"
 msgstr "Namestitev"
 
 #: pve-manager/www/manager6/qemu/MachineEdit.js:159
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_machine_property.rs:130
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_machine_property.rs:143
 msgid "Intel (AMD Compatible)"
 msgstr ""
 
@@ -6948,7 +7078,7 @@ msgstr "Vrata releja"
 #: proxmox-widget-toolkit/src/window/Certificates.js:26
 #: pve-manager/www/manager6/node/Certificates.js:55
 #: pve-manager/www/manager6/node/Certificates.js:317
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:302
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:304
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_nodes.rs:278
 #: proxmox-yew-comp/src/acme/certificate_list.rs:346
 #: proxmox-yew-comp/src/acme/certificate_list.rs:376
@@ -6987,7 +7117,7 @@ msgstr ""
 "Zaželeno je konfigurirati hrambo varnostne kopije neposredno na strežniku za "
 "varnostno kopiranje Proxmox."
 
-#: proxmox-widget-toolkit/src/Utils.js:80 proxmox-yew-comp/src/lib.rs:278
+#: proxmox-widget-toolkit/src/Utils.js:80 proxmox-yew-comp/src/lib.rs:284
 msgid "Italian"
 msgstr ""
 
@@ -7000,7 +7130,7 @@ msgstr "Element"
 msgid "Iterations"
 msgstr "Iteracije"
 
-#: proxmox-widget-toolkit/src/Utils.js:81 proxmox-yew-comp/src/lib.rs:279
+#: proxmox-widget-toolkit/src/Utils.js:81 proxmox-yew-comp/src/lib.rs:285
 msgid "Japanese"
 msgstr ""
 
@@ -7042,7 +7172,7 @@ msgstr "Pridruži"
 #: pmg-gui/js/Utils.js:908 pve-manager/www/manager6/Utils.js:2084
 #: pve-manager/www/manager6/dc/Cluster.js:171
 #: proxmox-datacenter-manager/ui/src/tasks.rs:34
-#: proxmox-yew-comp/src/utils.rs:382
+#: proxmox-yew-comp/src/utils.rs:393
 msgid "Join Cluster"
 msgstr "Pridruži gruči"
 
@@ -7074,7 +7204,7 @@ msgstr "KSM deljenje"
 
 #: pve-manager/www/manager6/qemu/Options.js:207
 #: pve-manager/www/manager6/qemu/Options.js:213
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:101
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:111
 msgid "KVM hardware virtualization"
 msgstr "Virtualizacija strojne opreme KVM"
 
@@ -7176,10 +7306,11 @@ msgstr ""
 #: pmg-gui/js/dashboard/NodeInfo.js:88
 #: pve-manager/www/manager6/node/StatusView.js:103
 #: proxmox-backup/www/panel/NodeInfo.js:143
+#: proxmox-yew-comp/src/node_info.rs:220
 msgid "Kernel Version"
 msgstr "Različica jedra"
 
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:327
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:328
 #, fuzzy
 msgid "Kernel scheduler settings"
 msgstr "Različica jedra"
@@ -7209,7 +7340,7 @@ msgstr "Razpored tipkovnice"
 msgid "KiB"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/Utils.js:83 proxmox-yew-comp/src/lib.rs:281
+#: proxmox-widget-toolkit/src/Utils.js:83 proxmox-yew-comp/src/lib.rs:287
 msgid "Korean"
 msgstr ""
 
@@ -7230,8 +7361,8 @@ msgid "LDAP Group"
 msgstr "LDAP skupina"
 
 #: proxmox-widget-toolkit/src/Schema.js:28
-#: pve-manager/www/manager6/Utils.js:734 proxmox-yew-comp/src/auth_view.rs:187
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:276
+#: pve-manager/www/manager6/Utils.js:734 proxmox-yew-comp/src/auth_view.rs:285
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:403
 msgid "LDAP Server"
 msgstr "Strežnik LDAP"
 
@@ -7259,13 +7390,13 @@ msgstr ""
 
 #: pve-manager/www/manager6/Utils.js:2094
 #: proxmox-datacenter-manager/ui/src/tasks.rs:46
-#: proxmox-yew-comp/src/utils.rs:392
+#: proxmox-yew-comp/src/utils.rs:403
 msgid "LVM Storage"
 msgstr "Shramba LVM"
 
 #: pve-manager/www/manager6/Utils.js:2096
 #: proxmox-datacenter-manager/ui/src/tasks.rs:48
-#: proxmox-yew-comp/src/utils.rs:394
+#: proxmox-yew-comp/src/utils.rs:405
 msgid "LVM-Thin Storage"
 msgstr "LVM-tanek prostor za shranjevanje"
 
@@ -7276,7 +7407,7 @@ msgstr "LVM-tanek prostor za shranjevanje"
 #: pve-manager/www/manager6/form/VMSelector.js:354
 #: pve-manager/www/manager6/lxc/CreateWizard.js:25
 #: pve-manager/www/manager6/tree/ResourceTree.js:34
-#: pve-yew-mobile-gui/src/pages/page_dashboard.rs:298
+#: pve-yew-mobile-gui/src/pages/page_dashboard.rs:299
 msgid "LXC Container"
 msgstr "LXC Zabojnik"
 
@@ -7297,12 +7428,14 @@ msgstr "Označi medij"
 
 #: proxmox-widget-toolkit/src/window/LanguageEdit.js:36
 #: proxmox-widget-toolkit/src/window/LanguageEdit.js:43
-#: pmg-gui/js/LoginView.js:383 pmg-gui/js/MainView.js:223
-#: pmg-gui/js/QuarantineView.js:263 pve-manager/www/manager6/Workspace.js:432
+#: pmg-gui/js/LoginView.js:383 pmg-gui/js/MainView.js:230
+#: pmg-gui/js/QuarantineView.js:305 pve-manager/www/manager6/Workspace.js:432
 #: pve-manager/www/manager6/window/LoginWindow.js:400
 #: proxmox-backup/www/LoginView.js:324 proxmox-backup/www/MainView.js:276
-#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:152
+#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:153
 #: pve-yew-mobile-gui/src/pages/page_settings.rs:39
+#: pmg-yew-quarantine-gui/src/page_spam_list.rs:246
+#: pmg-yew-quarantine-gui/src/page_spam_list.rs:293
 #: proxmox-yew-comp/src/language_dialog.rs:76
 #: proxmox-yew-comp/src/language_dialog.rs:84
 #: proxmox-yew-widget-toolkit/src/widget/language_selector.rs:193
@@ -7332,7 +7465,7 @@ msgid "Last Name"
 msgstr "Priimek"
 
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:342
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:111
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:217
 #, fuzzy
 msgid "Last Name attribute"
 msgstr "Priimek"
@@ -7376,8 +7509,18 @@ msgstr "Priimek"
 msgid "Last refresh: {0}"
 msgstr ""
 
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:444
+msgid "Last verify task over 30 days ago: {0}"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:449
+msgid "Last verify task started on {0}"
+msgstr ""
+
 #: pve-manager/www/manager6/qemu/MachineEdit.js:117
 #: pve-manager/www/manager6/qemu/MachineEdit.js:136
+#: pve-yew-mobile-gui/src/form/qemu_machine_version_selector.rs:150
+#: pve-yew-mobile-gui/src/form/qemu_machine_version_selector.rs:158
 msgid "Latest"
 msgstr "Najnovejša"
 
@@ -7450,7 +7593,7 @@ msgstr ""
 msgid "Linux Bridge"
 msgstr "Most"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:243
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:245
 #, fuzzy
 msgid "Linux Container"
 msgstr "LXC Zabojnik"
@@ -7502,6 +7645,11 @@ msgstr ""
 msgid "Load"
 msgstr "Naloži"
 
+#: proxmox-yew-comp/src/node_info.rs:163
+#, fuzzy
+msgid "Load Average"
+msgstr "Povpr. obremenitev"
+
 #: proxmox-backup/www/Utils.js:443
 msgid "Load Media"
 msgstr "Naloži medij"
@@ -7521,7 +7669,6 @@ msgstr "Naloži datoteko ključa SSH"
 #: pve-manager/www/manager6/node/Summary.js:174
 #: proxmox-backup/www/ServerStatus.js:224
 #: proxmox-backup/www/panel/NodeInfo.js:106
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:235
 msgid "Load average"
 msgstr "Povpr. obremenitev"
 
@@ -7630,10 +7777,6 @@ msgstr ""
 msgid "Log"
 msgstr "Dnevnik"
 
-#: pmg-gui/js/mobile/loginscreen.js:44
-msgid "Log In"
-msgstr "Prijavite se"
-
 #: proxmox-backup/www/Utils.js:444
 msgid "Log Rotation"
 msgstr "Rotacija dnevnika"
@@ -7673,7 +7816,7 @@ msgstr "Prijava (preusmeritev OpenID)"
 msgid "Login (OpenID redirect)"
 msgstr "Prijava (preusmeritev OpenID)"
 
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:284
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:301
 msgid "Login and create Token"
 msgstr ""
 
@@ -7694,10 +7837,11 @@ msgstr "Prijava ni uspela. Poskusite znova"
 msgid "Login failed:"
 msgstr "Vse ni uspelo"
 
-#: pmg-gui/js/MainView.js:230 pmg-gui/js/QuarantineView.js:270
+#: pmg-gui/js/MainView.js:237 pmg-gui/js/QuarantineView.js:317
 #: pve-manager/www/manager6/Workspace.js:440 proxmox-backup/www/MainView.js:287
-#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:169
+#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:170
 #: pve-yew-mobile-gui/src/widgets/top_nav_bar.rs:118
+#: pmg-yew-quarantine-gui/src/page_spam_list.rs:310
 msgid "Logout"
 msgstr "Odjava"
 
@@ -7729,6 +7873,7 @@ msgstr "Nižje"
 #: pve-manager/www/manager6/qemu/AgentIPView.js:27
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:172
 #: pve-manager/www/manager6/window/GuestImport.js:893
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_network_property.rs:51
 msgid "MAC address"
 msgstr "MAC naslov"
 
@@ -7763,6 +7908,7 @@ msgid "MIME type"
 msgstr "Vrsta MIME"
 
 #: pve-manager/www/manager6/lxc/Network.js:550
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_network_property.rs:134
 #: proxmox-yew-comp/src/configuration/network_view.rs:494
 #: proxmox-yew-comp/src/configuration/network_edit.rs:173
 #: proxmox-yew-comp/src/configuration/network_edit.rs:265
@@ -7779,15 +7925,12 @@ msgstr "MTU mora biti >= 576 ali 1, da podeduje MTU od osnovnega mostu."
 #: pve-manager/www/manager6/qemu/MachineEdit.js:101
 #: pve-manager/www/manager6/qemu/MachineEdit.js:189
 #: pve-manager/www/manager6/qemu/SystemEdit.js:90
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_machine_property.rs:164
 msgid "Machine"
 msgstr "Računalnik"
 
-#: pve-yew-mobile-gui/src/pages/page_qemu_status/hardware_panel.rs:156
-#, fuzzy
-msgid "Machine Type"
-msgstr "Vrsta vzdrževanja"
-
 #: pve-manager/www/manager6/qemu/MachineEdit.js:147
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_machine_property.rs:155
 msgid ""
 "Machine version change may affect hardware layout and settings in the guest "
 "OS."
@@ -7819,6 +7962,11 @@ msgstr "Poštni proxy"
 msgid "Mails / min"
 msgstr "Pošta / min"
 
+#: proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:209
+#, fuzzy
+msgid "Maintenance Mode"
+msgstr "Način vzdrževanja"
+
 #: proxmox-backup/www/window/MaintenanceOptions.js:57
 msgid "Maintenance Type"
 msgstr "Vrsta vzdrževanja"
@@ -7839,12 +7987,12 @@ msgstr ""
 "oznako, ki je napisana na traku."
 
 #: pve-manager/www/manager6/form/AgentFeatureSelector.js:49
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:71
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:97
 msgid "Make sure the QEMU Guest Agent is installed in the VM"
 msgstr "Prepričajte se, da je QEMU Guest Agent nameščen v VM"
 
 #: pve-manager/www/manager6/form/SpiceEnhancementSelector.js:41
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:62
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:57
 msgid "Make sure the SPICE WebDav daemon is installed in the VM."
 msgstr "Prepričajte se, da je demon SPICE WebDav nameščen v VM."
 
@@ -7882,7 +8030,7 @@ msgstr "Upravljavci"
 
 #: pve-manager/www/manager6/form/USBSelector.js:86
 #: pve-manager/www/manager6/qemu/Smbios1Edit.js:36
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:59
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:50
 msgid "Manufacturer"
 msgstr "Proizvajalec"
 
@@ -7982,7 +8130,7 @@ msgstr ""
 msgid "Matcher Name"
 msgstr "Ime gruče"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:713
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:725
 msgid "Max Age (seconds)"
 msgstr ""
 
@@ -8092,6 +8240,11 @@ msgstr "UUID za medijski nabor"
 msgid "Mediated Devices"
 msgstr "Posredovane naprave"
 
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:95
+msgid ""
+"Meltdown fix cost reduction on Westmere, Sandy-, and IvyBridge Intel CPUs"
+msgstr ""
+
 #: pve-manager/www/manager6/pool/Config.js:26
 msgid "Members"
 msgstr "Člani"
@@ -8113,9 +8266,9 @@ msgstr "Člani"
 #: pve-manager/www/manager6/window/Restore.js:350
 #: pve-yew-mobile-gui/src/form/hotplug_feature_selector.rs:56
 #: pve-yew-mobile-gui/src/form/hotplug_feature_selector.rs:193
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:37
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_memory_property.rs:47
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_memory_property.rs:130
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:136
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_memory_property.rs:49
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_memory_property.rs:132
 #: pve-yew-mobile-gui/src/pages/page_dashboard.rs:132
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/dashboard_panel.rs:180
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/resources_panel.rs:58
@@ -8130,12 +8283,13 @@ msgstr ""
 
 #: pve-manager/www/manager6/panel/GuestSummary.js:104
 #: proxmox-datacenter-manager/ui/src/widget/pve_node_selector.rs:157
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:327
+#: proxmox-datacenter-manager/ui/src/pbs/remote.rs:275
+#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:271
 #, fuzzy
 msgid "Memory Usage"
 msgstr "Poraba pomnilnika"
 
-#: proxmox-datacenter-manager/ui/src/pve/remote.rs:265
+#: proxmox-datacenter-manager/ui/src/pve/remote.rs:267
 #, fuzzy
 msgid "Memory assigned"
 msgstr "Velikost pomnilnika"
@@ -8153,10 +8307,10 @@ msgstr "Velikost pomnilnika"
 #: pve-manager/www/manager6/node/Summary.js:179
 #: pve-manager/www/manager6/panel/GuestStatusView.js:113
 #: proxmox-backup/www/ServerStatus.js:229
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:647
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:393
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:406
-#: proxmox-datacenter-manager/ui/src/renderer.rs:97
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:663
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:391
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:404
+#: proxmox-datacenter-manager/ui/src/renderer.rs:74
 msgid "Memory usage"
 msgstr "Poraba pomnilnika"
 
@@ -8223,12 +8377,12 @@ msgstr ""
 #: pve-manager/www/manager6/window/Migrate.js:722
 #: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:577
 #: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:579
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:704
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:708
 #: proxmox-datacenter-manager/ui/src/tasks.rs:40
 #: proxmox-datacenter-manager/ui/src/tasks.rs:60
 #: proxmox-datacenter-manager/ui/src/tasks.rs:94
-#: proxmox-yew-comp/src/utils.rs:386 proxmox-yew-comp/src/utils.rs:406
-#: proxmox-yew-comp/src/utils.rs:438
+#: proxmox-yew-comp/src/utils.rs:397 proxmox-yew-comp/src/utils.rs:417
+#: proxmox-yew-comp/src/utils.rs:449
 msgid "Migrate"
 msgstr "Prestavi"
 
@@ -8271,7 +8425,7 @@ msgid "Minimum characters"
 msgstr "Minimalno število znakov"
 
 #: pve-manager/www/manager6/qemu/MemoryEdit.js:94
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_memory_property.rs:57
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_memory_property.rs:59
 msgid "Minimum memory"
 msgstr "Najmanjši pomnilnik"
 
@@ -8296,8 +8450,8 @@ msgstr "Mešane naročnine"
 #: pve-manager/www/manager6/window/Clone.js:215
 #: pve-manager/www/manager6/window/Migrate.js:590
 #: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:366
-#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:94
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:208
+#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:86
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:319
 #: proxmox-yew-comp/src/configuration/network_edit.rs:233
 msgid "Mode"
 msgstr "Način"
@@ -8332,6 +8486,7 @@ msgstr "Način: {0}"
 #: proxmox-backup/www/tape/form/ChangerSelector.js:44
 #: proxmox-backup/www/tape/form/DriveSelector.js:39
 #: proxmox-backup/www/tape/form/TapeDevicePathSelector.js:29
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_network_property.rs:31
 msgid "Model"
 msgstr "Model"
 
@@ -8404,7 +8559,7 @@ msgstr "Več"
 #: pve-manager/www/manager6/Utils.js:2140
 #: proxmox-backup/www/datastore/Summary.js:281
 #: proxmox-datacenter-manager/ui/src/tasks.rs:95
-#: proxmox-yew-comp/src/utils.rs:439
+#: proxmox-yew-comp/src/utils.rs:450
 msgid "Mount"
 msgstr "Priklopi"
 
@@ -8447,14 +8602,14 @@ msgstr "Premakni prostor za shranjevanje"
 #: pve-manager/www/manager6/Utils.js:2099
 #: pve-manager/www/manager6/qemu/HDMove.js:28
 #: proxmox-datacenter-manager/ui/src/tasks.rs:51
-#: proxmox-yew-comp/src/utils.rs:397
+#: proxmox-yew-comp/src/utils.rs:408
 msgid "Move Volume"
 msgstr "Premakni podatkovno shrambo"
 
 #: pve-manager/www/manager6/Utils.js:2109
 #: pve-manager/www/manager6/qemu/HDMove.js:28
 #: proxmox-datacenter-manager/ui/src/tasks.rs:61
-#: proxmox-yew-comp/src/utils.rs:407
+#: proxmox-yew-comp/src/utils.rs:418
 msgid "Move disk"
 msgstr "Premakni disk"
 
@@ -8479,6 +8634,10 @@ msgstr "Več povezav za samodejni preklop, nižje številke imajo višjo prednos
 msgid "Multiple recipients must be separated by spaces, commas or semicolons"
 msgstr ""
 
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_network_property.rs:156
+msgid "Multiqueue"
+msgstr ""
+
 #: proxmox-widget-toolkit/src/panel/WebhookEditPanel.js:62
 msgid "Must be a valid URL"
 msgstr ""
@@ -8501,7 +8660,7 @@ msgstr "Mora končati z"
 msgid "Must start with"
 msgstr "Začeti mora z"
 
-#: pmg-gui/js/MainView.js:209 pmg-gui/js/Settings.js:5
+#: pmg-gui/js/MainView.js:216 pmg-gui/js/Settings.js:5
 #: pve-manager/www/manager6/Workspace.js:391
 #: pve-manager/www/manager6/window/Settings.js:5
 #: proxmox-backup/www/MainView.js:262 proxmox-backup/www/window/Settings.js:5
@@ -8510,7 +8669,8 @@ msgstr "Moje nastavitve"
 
 #: proxmox-widget-toolkit/src/Utils.js:1130
 #: proxmox-widget-toolkit/src/panel/DiskList.js:374
-#: proxmox-backup/www/Utils.js:322
+#: proxmox-backup/www/Utils.js:322 proxmox-yew-comp/src/node_info.rs:60
+#: proxmox-yew-comp/src/node_info.rs:192
 msgid "N/A"
 msgstr "Ni podatkov"
 
@@ -8653,7 +8813,7 @@ msgstr ""
 #: proxmox-datacenter-manager/ui/src/sdn/zone_tree.rs:118
 #: pve-yew-mobile-gui/src/form/qemu_cpu_model_selector.rs:138
 #: pve-yew-mobile-gui/src/form/qemu_cpu_model_selector.rs:149
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:116
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:126
 #: pve-yew-mobile-gui/src/form/pve_storage_selector.rs:203
 #: pve-yew-mobile-gui/src/form/pve_storage_selector.rs:248
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/config_panel.rs:91
@@ -8709,16 +8869,23 @@ msgstr "DNS strežnik"
 #: proxmox-backup/www/window/PruneJobEdit.js:88
 #: proxmox-backup/www/window/VerifyAll.js:36
 #: proxmox-backup/www/window/VerifyJobEdit.js:80
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:320
 msgid "Namespace"
 msgstr "Imenski prostor"
 
 #: proxmox-backup/www/datastore/Content.js:360
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:109
 msgid "Namespace '{0}'"
 msgstr "Imenski prostor '{0}'"
 
 #: proxmox-backup/www/window/NamespaceEdit.js:44
 msgid "Namespace Name"
 msgstr "Ime imenskega prostora"
+
+#: pmg-gui/js/QuarantineView.js:240
+#, fuzzy
+msgid "Narrow viewport detected"
+msgstr "Izbran ni noben disk"
 
 #: proxmox-backup/www/tape/window/TapeRestore.js:630
 msgid "Need at least one mapping"
@@ -8734,23 +8901,23 @@ msgid "Nesting"
 msgstr "Gnezdenje"
 
 #. TRANSLATORS: As in amount of incoming network traffic
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:206
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:207
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:209
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:210
 msgid "Net In"
 msgstr ""
 
 #. TRANSLATORS: As in amount of outgoing network traffic
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:207
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:209
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:210
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:212
 #, fuzzy
 msgid "Net Out"
 msgstr "Oceni izhod"
 
-#: pmg-gui/js/MailProxyOptions.js:56
+#: pmg-gui/js/MailProxyOptions.js:44
 msgid "Netmask for Greylisting IPv4"
 msgstr "Omrežna maska IPv4 za sivi seznam"
 
-#: pmg-gui/js/MailProxyOptions.js:66
+#: pmg-gui/js/MailProxyOptions.js:54
 msgid "Netmask for Greylisting IPv6"
 msgstr "Omrežna maska IPv6 za sivi seznam"
 
@@ -8781,7 +8948,7 @@ msgstr "Omrežna konfiguracija"
 #: pve-manager/www/manager6/qemu/HardwareView.js:743
 #: pve-manager/www/manager6/qemu/IPConfigEdit.js:66
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:238
-#: pve-yew-mobile-gui/src/pages/page_qemu_status/hardware_panel.rs:195
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_network_property.rs:85
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/resources_panel.rs:94
 #: proxmox-yew-comp/src/configuration/mod.rs:28
 msgid "Network Device"
@@ -8789,14 +8956,14 @@ msgstr "Omrežna kartica"
 
 #: pve-manager/www/manager6/window/GuestImport.js:856
 #: proxmox-backup/www/SystemConfiguration.js:40
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:119
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:141
 msgid "Network Interfaces"
 msgstr "Omrežni vmesniki"
 
 #: pve-manager/www/manager6/node/Summary.js:262
 #: pve-manager/www/manager6/panel/GuestSummary.js:121
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:406
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:419
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:404
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:417
 #, fuzzy
 msgid "Network Traffic"
 msgstr "Omrežni promet"
@@ -8894,7 +9061,7 @@ msgstr "Naslednji datum zapadlosti"
 #: pve-manager/www/manager6/window/TreeSettingsEdit.js:39
 #: pve-manager/www/manager6/window/TreeSettingsEdit.js:52
 #: proxmox-backup/www/Subscription.js:133
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:115
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:117
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_nodes.rs:106
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_summary.rs:113
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/remote_tree.rs:394
@@ -9042,6 +9209,11 @@ msgstr "Brez poročil"
 #: proxmox-widget-toolkit/src/window/DiskSmart.js:24
 msgid "No S.M.A.R.T. Values"
 msgstr "Brez S.M.A.R.T. vrednosti"
+
+#: pmg-gui/js/DNSBLSitesField.js:17
+#, fuzzy
+msgid "No Sites defined"
+msgstr "Ni določenih oznak"
 
 #: proxmox-backup/www/tape/window/TapeRestore.js:837
 msgid "No Snapshots"
@@ -9230,12 +9402,10 @@ msgstr "Poraba diska"
 msgid "No updates available."
 msgstr "Na voljo ni nobenih posodobitev."
 
-#: proxmox-widget-toolkit/src/Utils.js:617
-#: pmg-gui/js/mobile/quarantineview.js:62 pmg-gui/js/mobile/utils.js:146
-#: pmg-gui/js/mobile/utils.js:149 proxmox-backup/www/Dashboard.js:348
+#: proxmox-widget-toolkit/src/Utils.js:617 proxmox-backup/www/Dashboard.js:348
 #: proxmox-datacenter-manager/ui/src/dashboard/subscription_info.rs:62
-#: pmg-yew-quarantine-gui/src/page_spam_list.rs:197
-#: pmg-yew-quarantine-gui/src/page_spam_list.rs:225
+#: pmg-yew-quarantine-gui/src/page_spam_list.rs:224
+#: pmg-yew-quarantine-gui/src/page_spam_list.rs:264
 #: proxmox-yew-comp/src/subscription_info.rs:20
 msgid "No valid subscription"
 msgstr "Ni veljavne naročnine"
@@ -9367,17 +9537,17 @@ msgstr "Ime vozlišča"
 #: pve-manager/www/manager6/sdn/zones/Base.js:44
 #: pve-manager/www/manager6/storage/Base.js:41
 #: pve-manager/www/manager6/tree/ResourceTree.js:14
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:344
-#: proxmox-datacenter-manager/ui/src/pve/remote.rs:186
-#: pve-yew-mobile-gui/src/pages/page_dashboard.rs:224
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:335
+#: proxmox-datacenter-manager/ui/src/pve/remote.rs:185
+#: pve-yew-mobile-gui/src/pages/page_dashboard.rs:225
 msgid "Nodes"
 msgstr "Vozlišča"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:639
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:655
 msgid "Nodes With the Highest CPU Usage"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:646
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:662
 msgid "Nodes With the Highest Memory Usage"
 msgstr ""
 
@@ -9398,8 +9568,11 @@ msgstr "Omogočen je repozitorij, ki ni primeren za produkcijo!"
 #: proxmox-backup/www/datastore/Content.js:1253
 #: proxmox-backup/www/datastore/Content.js:1268
 #: proxmox-backup/www/window/MaintenanceOptions.js:6
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:348
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:339
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:405
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:459
 #: proxmox-datacenter-manager/ui/src/pve/utils.rs:291
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_machine_property.rs:140
 msgid "None"
 msgstr "Nobeden"
 
@@ -9422,11 +9595,11 @@ msgstr "Ujemanja ni bilo mogoče najti"
 msgid "Normalized"
 msgstr "Normalizirano"
 
-#: proxmox-widget-toolkit/src/Utils.js:84 proxmox-yew-comp/src/lib.rs:282
+#: proxmox-widget-toolkit/src/Utils.js:84 proxmox-yew-comp/src/lib.rs:288
 msgid "Norwegian (Bokmal)"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/Utils.js:86 proxmox-yew-comp/src/lib.rs:284
+#: proxmox-widget-toolkit/src/Utils.js:86 proxmox-yew-comp/src/lib.rs:290
 msgid "Norwegian (Nynorsk)"
 msgstr ""
 
@@ -9516,8 +9689,12 @@ msgstr ""
 "Opomba: Če gre karkoli narobe med obnovitvijo v živo, se lahko izgubijo novi "
 "podatki, ki jih je napisal VM."
 
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:390
+msgid "Note: Login currently requires Proxmox Backup Server version 4."
+msgstr ""
+
 #: pve-manager/www/manager6/qemu/SevEdit.js:82
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:87
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:80
 msgid "Note: SEV-SNP requires host kernel version 6.11 or higher."
 msgstr ""
 
@@ -9598,6 +9775,10 @@ msgstr "Obvestilo"
 msgid "Notifications"
 msgstr "Obvestilo"
 
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:101
+msgid "Notifies guest OS that host is not vulnerable for Spectre on AMD CPUs"
+msgstr ""
+
 #: pmg-gui/js/PBSRemoteEdit.js:85
 msgid "Notify"
 msgstr "Obvesti"
@@ -9627,8 +9808,7 @@ msgstr "Število vozlišč"
 #: proxmox-widget-toolkit/src/node/Tasks.js:356
 #: proxmox-widget-toolkit/src/window/ConsentModal.js:32
 #: proxmox-widget-toolkit/src/window/Edit.js:317 pmg-gui/js/LoginView.js:179
-#: pmg-gui/js/RegexTester.js:49 pmg-gui/js/mobile/quarantineview.js:45
-#: pve-manager/www/manager6/Utils.js:298
+#: pmg-gui/js/RegexTester.js:49 pve-manager/www/manager6/Utils.js:298
 #: pve-manager/www/manager6/grid/Replication.js:358
 #: proxmox-backup/www/Utils.js:235
 #: proxmox-backup/www/dashboard/TaskSummary.js:165
@@ -9639,7 +9819,7 @@ msgstr "Število vozlišč"
 #: proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:192
 #: proxmox-datacenter-manager/ui/src/dashboard/tasks.rs:144
 #: pve-yew-mobile-gui/src/pages/page_login.rs:80
-#: pmg-yew-quarantine-gui/src/page_spam_list.rs:205
+#: pmg-yew-quarantine-gui/src/page_spam_list.rs:232
 msgid "OK"
 msgstr "V redu"
 
@@ -9650,7 +9830,7 @@ msgstr "OS"
 #: pve-manager/www/manager6/lxc/Options.js:54
 #: pve-manager/www/manager6/qemu/Options.js:88
 #: pve-manager/www/manager6/window/GuestImport.js:562
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:127
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:137
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/config_panel.rs:109
 msgid "OS Type"
 msgstr "Vrsta OS"
@@ -9681,6 +9861,11 @@ msgstr "OVS možnosti"
 msgid "Objects are degraded. Consider waiting until the cluster is healthy."
 msgstr "Elementi so degradirani. Počakate, da bo grozd zdrav."
 
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:172
+#, fuzzy
+msgid "Off"
+msgstr "Brez povezave"
+
 #: pve-manager/www/manager6/dc/Health.js:114
 #: pve-manager/www/manager6/window/Migrate.js:45
 #: proxmox-backup/www/Utils.js:847 proxmox-backup/www/tape/TapeInventory.js:308
@@ -9708,12 +9893,14 @@ msgstr ""
 #: proxmox-backup/www/tape/window/Erase.js:33
 #: proxmox-backup/www/tape/window/MediaRemoveWindow.js:26
 #: proxmox-backup/www/window/DatastoreRepoInfo.js:89
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:437
 #: proxmox-yew-comp/src/task_status_selector.rs:137
 #: proxmox-yew-widget-toolkit/src/widget/message_box.rs:131
 msgid "Ok"
 msgstr "V redu"
 
 #: pve-manager/www/manager6/grid/FirewallRules.js:896
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:171
 msgid "On"
 msgstr "Vklopljeno"
 
@@ -9779,6 +9966,7 @@ msgstr "Odprite ploščo za repositorije"
 msgid "Open Task"
 msgstr "Odpri nalogo"
 
+#: proxmox-datacenter-manager/ui/src/pbs/mod.rs:138
 #: proxmox-datacenter-manager/ui/src/pve/mod.rs:214
 msgid "Open Web UI"
 msgstr ""
@@ -9787,13 +9975,21 @@ msgstr ""
 msgid "Open editor on double-click"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:722
+#: proxmox-datacenter-manager/ui/src/pbs/tree.rs:318
+msgid "Open in PBS UI"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:726
 msgid "Open in PVE UI"
 msgstr ""
 
 #: proxmox-backup/www/tape/BackupOverview.js:365
 msgid "Open restore wizard for {0}"
 msgstr "Odpri čarovnika za obnovitev za {0}"
+
+#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:195
+msgid "Open the Beta documentation in a new tab."
+msgstr ""
 
 #: proxmox-widget-toolkit/src/Schema.js:17
 #: pve-manager/www/manager6/Utils.js:742
@@ -9834,7 +10030,7 @@ msgstr "Preusmeritev OpenID ni uspela, poskusite znova"
 msgid "OpenID redirect failed."
 msgstr "Preusmeritev OpenID ni uspela."
 
-#: proxmox-yew-comp/src/auth_view.rs:198
+#: proxmox-yew-comp/src/auth_view.rs:296
 #, fuzzy
 msgid "OpenId Connect Server"
 msgstr "Strežnik OpenID"
@@ -9876,13 +10072,13 @@ msgid "Options"
 msgstr "Možnosti"
 
 #: proxmox-widget-toolkit/src/form/MultiDiskSelector.js:118
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:157
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:167
 msgid "Order"
 msgstr "Red"
 
 #: pve-manager/www/manager6/Utils.js:2061 proxmox-backup/www/Utils.js:424
 #: proxmox-datacenter-manager/ui/src/tasks.rs:11
-#: proxmox-yew-comp/src/utils.rs:359
+#: proxmox-yew-comp/src/utils.rs:370
 msgid "Order Certificate"
 msgstr "Naročilo certifikata"
 
@@ -9996,6 +10192,8 @@ msgstr "Nastavitve za preglasitev"
 msgid "Overrule active shutdown tasks"
 msgstr ""
 
+#: proxmox-datacenter-manager/ui/src/pbs/datastore.rs:53
+#: proxmox-datacenter-manager/ui/src/pbs/remote.rs:215
 #: proxmox-datacenter-manager/ui/src/pve/node/mod.rs:81
 #, fuzzy
 msgid "Overview"
@@ -10118,8 +10316,7 @@ msgstr "Prepustnost skozi določeno napravo"
 #: pmg-gui/js/ClusterAdministration.js:64 pmg-gui/js/FetchmailEdit.js:71
 #: pmg-gui/js/LDAPConfig.js:123 pmg-gui/js/LoginView.js:366
 #: pmg-gui/js/PBSRemoteEdit.js:80 pmg-gui/js/UserEdit.js:69
-#: pmg-gui/js/UserView.js:154 pmg-gui/js/mobile/loginscreen.js:32
-#: pve-manager/www/manager6/Workspace.js:398
+#: pmg-gui/js/UserView.js:154 pve-manager/www/manager6/Workspace.js:398
 #: pve-manager/www/manager6/dc/ClusterEdit.js:372
 #: pve-manager/www/manager6/dc/UserEdit.js:38
 #: pve-manager/www/manager6/dc/UserView.js:58
@@ -10136,7 +10333,7 @@ msgstr "Prepustnost skozi določeno napravo"
 #: proxmox-backup/www/tape/window/EncryptionEdit.js:36
 #: proxmox-backup/www/window/RemoteEdit.js:102
 #: proxmox-backup/www/window/UserEdit.js:93
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:299
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:316
 #: proxmox-yew-comp/src/login_panel.rs:182
 #: proxmox-yew-comp/src/login_panel.rs:260 proxmox-yew-comp/src/tfa/mod.rs:47
 #: proxmox-yew-comp/src/tfa/mod.rs:48 proxmox-yew-comp/src/user_panel.rs:446
@@ -10188,6 +10385,7 @@ msgstr "Prilepite kodirane podatke o gruči tukaj"
 #: proxmox-backup/www/tape/window/DriveEdit.js:69
 #: proxmox-backup/www/window/ACLEdit.js:26
 #: proxmox-datacenter-manager/ui/src/configuration/mod.rs:45
+#: proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:199
 #: proxmox-yew-comp/src/acl/acl_view.rs:110
 #: proxmox-yew-comp/src/permission_panel.rs:163
 msgid "Path"
@@ -10212,7 +10410,7 @@ msgstr "Iz naprave"
 #: pve-manager/www/manager6/qemu/Config.js:181
 #: proxmox-datacenter-manager/ui/src/tasks.rs:62
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/dashboard_panel.rs:215
-#: proxmox-yew-comp/src/utils.rs:408
+#: proxmox-yew-comp/src/utils.rs:419
 msgid "Pause"
 msgstr "Premor"
 
@@ -10296,11 +10494,11 @@ msgstr "Dovoljenje"
 #: pve-manager/www/manager6/storage/Browser.js:197
 #: proxmox-backup/www/config/ACLView.js:27
 #: proxmox-backup/www/panel/AccessControl.js:36
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:83
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:93
 msgid "Permissions"
 msgstr "Pravice"
 
-#: proxmox-widget-toolkit/src/Utils.js:76 proxmox-yew-comp/src/lib.rs:273
+#: proxmox-widget-toolkit/src/Utils.js:76 proxmox-yew-comp/src/lib.rs:279
 msgid "Persian (Farsi)"
 msgstr ""
 
@@ -10338,7 +10536,7 @@ msgstr "Vnesite enega od svojih obnovitvenih ključev za enkratno uporabo"
 msgid "Please enter the ID to confirm"
 msgstr "Prosimo vnesite ID za potrditev"
 
-#: proxmox-yew-comp/src/safe_confirm_dialog.rs:116
+#: proxmox-yew-comp/src/safe_confirm_dialog.rs:119
 #, fuzzy
 msgid "Please enter the ID to confirm ({0})"
 msgstr "Prosimo vnesite ID za potrditev"
@@ -10375,6 +10573,7 @@ msgstr "Prosimo, zabeležite ključe za obnovitev - prikazani bodo šele zdaj"
 
 #: pve-manager/www/manager6/dc/TokenEdit.js:154
 #: proxmox-backup/www/window/TokenEdit.js:204
+#: proxmox-yew-comp/src/token_panel.rs:364
 msgid "Please record the API token secret - it will only be displayed now"
 msgstr "Prosimo, zabeležite skrivnost žetona API - prikazana bo šele zdaj"
 
@@ -10403,7 +10602,7 @@ msgstr "Izberite pravilo."
 msgid "Please select a sender."
 msgstr "Izberite pošiljatelja."
 
-#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:188
+#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:180
 #, fuzzy
 msgid "Please select a target storage."
 msgstr "Izberite pravilo."
@@ -10461,7 +10660,7 @@ msgstr "ID vtičnika"
 msgid "Policy"
 msgstr "Politika"
 
-#: proxmox-widget-toolkit/src/Utils.js:87 proxmox-yew-comp/src/lib.rs:285
+#: proxmox-widget-toolkit/src/Utils.js:87 proxmox-yew-comp/src/lib.rs:291
 #, fuzzy
 msgid "Polish"
 msgstr "Politika"
@@ -10524,7 +10723,7 @@ msgstr "Fondi"
 #: proxmox-backup/www/config/S3ClientView.js:121
 #: proxmox-backup/www/window/InfluxDbEdit.js:172
 #: proxmox-backup/www/window/S3ClientEdit.js:59
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:194
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:291
 msgid "Port"
 msgstr "Vrata"
 
@@ -10541,7 +10740,7 @@ msgstr "Vrata"
 msgid "Ports/Slaves"
 msgstr "Vrata/Podrejeni"
 
-#: proxmox-widget-toolkit/src/Utils.js:88 proxmox-yew-comp/src/lib.rs:289
+#: proxmox-widget-toolkit/src/Utils.js:88 proxmox-yew-comp/src/lib.rs:295
 msgid "Portuguese (Brazil)"
 msgstr ""
 
@@ -10595,6 +10794,11 @@ msgstr ""
 #: pve-manager/www/manager6/dc/SyncWindow.js:174
 #: pmg-yew-quarantine-gui/src/page_mail_view.rs:145
 msgid "Preview"
+msgstr "Predogled"
+
+#: proxmox-yew-comp/src/auth_view.rs:413
+#, fuzzy
+msgid "Preview Only"
 msgstr "Predogled"
 
 #: pmg-gui/js/LDAPConfig.js:263
@@ -10669,7 +10873,7 @@ msgstr "ID procesa"
 msgid "Processing..."
 msgstr "Obdelava..."
 
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:216
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:208
 #, fuzzy
 msgid "Processor"
 msgstr "Procesorji"
@@ -10682,7 +10886,7 @@ msgstr "Procesorji"
 
 #: pve-manager/www/manager6/form/USBSelector.js:92
 #: pve-manager/www/manager6/qemu/Smbios1Edit.js:45
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:65
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:56
 msgid "Product"
 msgstr "Izdelek"
 
@@ -10724,6 +10928,8 @@ msgstr "Propagirati"
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:346
 #: pve-manager/www/manager6/dc/RealmSyncJob.js:381
 #: pve-manager/www/manager6/dc/SyncWindow.js:144
+#: proxmox-yew-comp/src/auth_view.rs:440
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:252
 msgid "Properties"
 msgstr "Lastnosti"
 
@@ -10746,10 +10952,14 @@ msgstr "Zaščiteno"
 #: pve-manager/www/manager6/qemu/Options.js:313
 #: pve-manager/www/manager6/qemu/Options.js:319
 #: proxmox-backup/www/datastore/Content.js:732
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:112
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:122
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/config_panel.rs:87
 msgid "Protection"
 msgstr "Zaščita"
+
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:97
+msgid "Protection for \"Speculative Store Bypass\" for Intel models"
+msgstr ""
 
 #: pmg-gui/js/FetchmailEdit.js:41 pmg-gui/js/FetchmailView.js:113
 #: pmg-gui/js/LDAPConfig.js:70 pmg-gui/js/LDAPConfig.js:591
@@ -10870,7 +11080,7 @@ msgstr "Čiščenje"
 
 #: proxmox-widget-toolkit/src/panel/Certificates.js:28
 #: pve-manager/www/manager6/node/Certificates.js:327
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:304
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:306
 #: proxmox-yew-comp/src/acme/certificate_list.rs:348
 #: proxmox-yew-comp/src/acme/certificate_list.rs:384
 #, fuzzy
@@ -10881,7 +11091,7 @@ msgstr "Algoritem javnega ključa"
 #: proxmox-widget-toolkit/src/window/Certificates.js:41
 #: pve-manager/www/manager6/node/Certificates.js:72
 #: pve-manager/www/manager6/node/Certificates.js:333
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:305
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:307
 #: proxmox-yew-comp/src/acme/certificate_list.rs:349
 #: proxmox-yew-comp/src/acme/certificate_list.rs:388
 msgid "Public Key Size"
@@ -10899,7 +11109,7 @@ msgstr "Potegni datoteko"
 
 #: pve-manager/www/manager6/Utils.js:2101
 #: proxmox-datacenter-manager/ui/src/tasks.rs:53
-#: proxmox-yew-comp/src/utils.rs:399
+#: proxmox-yew-comp/src/utils.rs:410
 msgid "Pull file"
 msgstr "Potegni datoteko"
 
@@ -10918,7 +11128,7 @@ msgstr "Potisni datoteko"
 
 #: pve-manager/www/manager6/Utils.js:2102
 #: proxmox-datacenter-manager/ui/src/tasks.rs:54
-#: proxmox-yew-comp/src/utils.rs:400
+#: proxmox-yew-comp/src/utils.rs:411
 msgid "Push file"
 msgstr "Potisni datoteko"
 
@@ -10930,7 +11140,7 @@ msgstr ""
 msgid "Q35 only"
 msgstr "Samo Q35"
 
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:79
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:105
 #, fuzzy
 msgid "QEMU Guest Agent"
 msgstr "Agent Qemu"
@@ -10970,7 +11180,8 @@ msgstr "URL poizvedbe"
 msgid "Query userinfo endpoint"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:572
+#: proxmox-datacenter-manager/ui/src/pbs/tree.rs:287
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:587
 msgid "Querying Remote..."
 msgstr ""
 
@@ -10999,12 +11210,17 @@ msgstr "Raven RAID"
 msgid "RAM"
 msgstr "Pomnilnik"
 
+#: proxmox-yew-comp/src/node_info.rs:149
+#, fuzzy
+msgid "RAM Usage"
+msgstr "Poraba RAM-a"
+
 #: pmg-gui/js/ClusterAdministration.js:313 pmg-gui/js/dashboard/NodeInfo.js:43
 #: pve-manager/www/manager6/node/StatusView.js:54
 #: proxmox-backup/www/ServerStatus.js:231
 #: proxmox-backup/www/panel/NodeInfo.js:98
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:204
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:204
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:207
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:207
 msgid "RAM usage"
 msgstr "Poraba RAM-a"
 
@@ -11019,7 +11235,7 @@ msgstr "Imenske prostore RBD morate ustvariti ročno!"
 #: pve-manager/www/manager6/qemu/Options.js:271
 #: pve-manager/www/manager6/qemu/Options.js:276
 #: pve-manager/www/manager6/qemu/Options.js:282
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:228
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:240
 msgid "RTC start date"
 msgstr "Začetni datum RTC"
 
@@ -11031,10 +11247,6 @@ msgstr "Naključna zakasnitev"
 #: proxmox-yew-comp/src/tfa/tfa_add_totp.rs:119
 msgid "Randomize"
 msgstr "Naključno določi"
-
-#: pmg-gui/js/mobile/quarantineview.js:19
-msgid "Range"
-msgstr "Razpon"
 
 #: proxmox-backup/www/config/TrafficControlView.js:134
 #: proxmox-backup/www/window/TrafficControlEdit.js:240
@@ -11063,6 +11275,8 @@ msgstr "Oceni porabo izhoda"
 #: pve-manager/www/manager6/grid/Replication.js:411
 #: pve-manager/www/manager6/lxc/Network.js:297
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:182
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_network_property.rs:148
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_network_property.rs:172
 msgid "Rate limit"
 msgstr "Omejitev hitrosti"
 
@@ -11161,22 +11375,23 @@ msgstr "Branje"
 #: pve-manager/www/manager6/dc/UserView.js:181
 #: proxmox-backup/www/config/UserView.js:223
 #: proxmox-backup/www/window/UserEdit.js:76
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:308
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:325
 #: proxmox-datacenter-manager/ui/src/tasks.rs:17
 #: proxmox-datacenter-manager/ui/src/tasks.rs:18
-#: proxmox-yew-comp/src/auth_view.rs:283
+#: proxmox-yew-comp/src/auth_view.rs:468
 #: proxmox-yew-comp/src/auth_edit_openid.rs:101
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:170
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:282
 #: proxmox-yew-comp/src/login_panel.rs:195
 #: proxmox-yew-comp/src/login_panel.rs:267
 #: proxmox-yew-comp/src/user_panel.rs:327
-#: proxmox-yew-comp/src/user_panel.rs:478 proxmox-yew-comp/src/utils.rs:365
-#: proxmox-yew-comp/src/utils.rs:366
+#: proxmox-yew-comp/src/user_panel.rs:478 proxmox-yew-comp/src/utils.rs:376
+#: proxmox-yew-comp/src/utils.rs:377
 msgid "Realm"
 msgstr "Področje"
 
 #: proxmox-widget-toolkit/src/window/SyncWindow.js:4
 #: pve-manager/www/manager6/dc/SyncWindow.js:4
+#: proxmox-yew-comp/src/auth_view.rs:409
 msgid "Realm Sync"
 msgstr "Realm Sinhronizacija"
 
@@ -11193,10 +11408,11 @@ msgstr "Realm Sinhronizacija"
 
 #: pmg-gui/js/UserManagement.js:38 pve-manager/www/manager6/dc/Config.js:141
 #: proxmox-backup/www/panel/AccessControl.js:43
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:110
 msgid "Realms"
 msgstr "Realms"
 
-#: pmg-gui/js/PostfixMailQueue.js:184
+#: pmg-gui/js/PostfixMailQueue.js:192
 msgid "Reason"
 msgstr "Razlog"
 
@@ -11243,7 +11459,7 @@ msgstr "Uravnotežiti"
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/dashboard_panel.rs:209
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/dashboard_panel.rs:198
 #: pve-yew-mobile-gui/src/pages/page_node_status/dashboard_panel.rs:132
-#: proxmox-yew-comp/src/utils.rs:409 proxmox-yew-comp/src/utils.rs:440
+#: proxmox-yew-comp/src/utils.rs:420 proxmox-yew-comp/src/utils.rs:451
 msgid "Reboot"
 msgstr "Ponovno zaženi"
 
@@ -11266,14 +11482,14 @@ msgstr "Ponovno zaženite {0}"
 #: pmg-gui/js/Dashboard.js:483 pmg-gui/js/DomainStatistics.js:81
 #: pmg-gui/js/DomainStatistics.js:124 pmg-gui/js/MailInfo.js:35
 #: pmg-gui/js/MailTracker.js:82 pmg-gui/js/NavigationTree.js:196
-#: pmg-gui/js/PostfixMailQueue.js:178 pmg-gui/js/ReceiverStatistics.js:110
+#: pmg-gui/js/PostfixMailQueue.js:186 pmg-gui/js/ReceiverStatistics.js:110
 #: pmg-gui/js/ReceiverStatistics.js:156 pmg-gui/js/ReceiverStatistics.js:223
 #: pmg-gui/js/SenderStatistics.js:63 pmg-gui/js/Utils.js:38
 #: pmg-gui/js/Utils.js:549 pmg-gui/js/VirusQuarantine.js:76
 msgid "Receiver"
 msgstr "Prejemnik"
 
-#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:217
+#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:209
 #, fuzzy
 msgid "Recent backups"
 msgstr "Shranite vse varnostne kopije"
@@ -11323,11 +11539,11 @@ msgstr "Referenčni diski bodo vedno uničeni."
 #: pve-manager/www/manager6/Utils.js:2062
 #: proxmox-datacenter-manager/ui/src/tasks.rs:12
 #: proxmox-yew-comp/src/apt_package_manager.rs:214
-#: proxmox-yew-comp/src/utils.rs:360
+#: proxmox-yew-comp/src/utils.rs:371
 msgid "Refresh"
 msgstr "Osveži"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:705
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:717
 msgid "Refresh Interval (seconds)"
 msgstr ""
 
@@ -11345,6 +11561,7 @@ msgid "Regenerate Image"
 msgstr "Regeneriraj sliko"
 
 #: proxmox-backup/www/config/TokenView.js:211
+#: proxmox-yew-comp/src/token_panel.rs:196
 #, fuzzy
 msgid "Regenerate Secret"
 msgstr "Regeneriraj sliko"
@@ -11371,7 +11588,7 @@ msgstr ""
 #: pve-manager/www/manager6/Utils.js:2063
 #: pve-manager/www/manager6/node/ACME.js:9
 #: proxmox-datacenter-manager/ui/src/tasks.rs:13
-#: proxmox-yew-comp/src/utils.rs:361
+#: proxmox-yew-comp/src/utils.rs:372
 msgid "Register"
 msgstr "Registracija"
 
@@ -11453,7 +11670,7 @@ msgstr "Posredovanje"
 #: proxmox-backup/www/tape/ChangerStatus.js:694
 #: proxmox-backup/www/tape/DriveStatus.js:209
 #: proxmox-backup/www/tape/TapeInventory.js:208
-#: proxmox-yew-comp/src/utils.rs:227
+#: proxmox-yew-comp/src/utils.rs:246
 msgid "Reload"
 msgstr "Ponovno naloži"
 
@@ -11487,6 +11704,7 @@ msgstr "Zanašajoča Stranka"
 msgid "Remote"
 msgstr "Oddaljeno"
 
+#: proxmox-datacenter-manager/ui/src/pbs/mod.rs:121
 #: proxmox-datacenter-manager/ui/src/pve/mod.rs:199
 #, fuzzy
 msgid "Remote '{0}'"
@@ -11497,9 +11715,9 @@ msgstr "Odstrani imenski prostor '{0}'"
 #: proxmox-backup/www/form/RemoteSelector.js:19
 #: proxmox-backup/www/window/RemoteEdit.js:35
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_summary.rs:97
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:278
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:295
 #: proxmox-datacenter-manager/ui/src/remotes/edit_remote.rs:93
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:316
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:307
 msgid "Remote ID"
 msgstr "ID na daljavo"
 
@@ -11528,7 +11746,7 @@ msgstr "Prikaži vse naloge"
 #: proxmox-backup/www/NavigationTree.js:54
 #: proxmox-backup/www/config/RemoteView.js:39
 #: proxmox-datacenter-manager/ui/src/main_menu.rs:266
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:538
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:540
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/evpn_panel.rs:186
 msgid "Remotes"
 msgstr "Upravljalniki"
@@ -11559,6 +11777,7 @@ msgstr "Načrtovana odstranitev"
 #: proxmox-widget-toolkit/src/window/Edit.js:312
 #: proxmox-widget-toolkit/src/window/NotificationMatcherEdit.js:872
 #: proxmox-widget-toolkit/src/window/SafeDestroy.js:113
+#: pmg-gui/js/DNSBLSitesField.js:141 pmg-gui/js/PostfixMailQueue.js:152
 #: pmg-gui/js/RuleConfiguration.js:167 pmg-gui/js/RuleInfo.js:377
 #: pmg-gui/js/UserBlockWelcomeList.js:167
 #: pve-manager/www/manager6/Utils.js:2086
@@ -11583,18 +11802,19 @@ msgstr "Načrtovana odstranitev"
 #: proxmox-backup/www/datastore/Content.js:1453
 #: proxmox-backup/www/datastore/Content.js:1510
 #: proxmox-backup/www/tape/TapeInventory.js:237
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:207
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:198
 #: proxmox-datacenter-manager/ui/src/tasks.rs:38
 #: proxmox-datacenter-manager/ui/src/tasks.rs:47
 #: proxmox-datacenter-manager/ui/src/tasks.rs:49
 #: proxmox-datacenter-manager/ui/src/tasks.rs:108
-#: proxmox-yew-comp/src/auth_view.rs:218
+#: proxmox-yew-comp/src/auth_view.rs:316
 #: proxmox-yew-comp/src/confirm_button.rs:75
 #: proxmox-yew-comp/src/configuration/network_view.rs:230
 #: proxmox-yew-comp/src/tfa/tfa_view.rs:279
-#: proxmox-yew-comp/src/user_panel.rs:185 proxmox-yew-comp/src/utils.rs:384
-#: proxmox-yew-comp/src/utils.rs:393 proxmox-yew-comp/src/utils.rs:395
-#: proxmox-yew-comp/src/utils.rs:452
+#: proxmox-yew-comp/src/user_panel.rs:185
+#: proxmox-yew-comp/src/token_panel.rs:190 proxmox-yew-comp/src/utils.rs:395
+#: proxmox-yew-comp/src/utils.rs:404 proxmox-yew-comp/src/utils.rs:406
+#: proxmox-yew-comp/src/utils.rs:463
 msgid "Remove"
 msgstr "Odstrani"
 
@@ -11609,7 +11829,6 @@ msgid "Remove ACL Entry"
 msgstr "Odstrani vnos?"
 
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:424
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:134
 #, fuzzy
 msgid "Remove ACLs of vanished users"
 msgstr "Odstranite sezname ACL izginulih uporabnikov in skupin."
@@ -11619,6 +11838,12 @@ msgstr "Odstranite sezname ACL izginulih uporabnikov in skupin."
 #: pve-manager/www/manager6/dc/RealmSyncJob.js:370
 #: pve-manager/www/manager6/dc/SyncWindow.js:134
 msgid "Remove ACLs of vanished users and groups."
+msgstr "Odstranite sezname ACL izginulih uporabnikov in skupin."
+
+#: proxmox-yew-comp/src/auth_view.rs:431
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:243
+#, fuzzy
+msgid "Remove ACLs of vanished users."
 msgstr "Odstranite sezname ACL izginulih uporabnikov in skupin."
 
 #: pmg-gui/js/Utils.js:652
@@ -11664,7 +11889,8 @@ msgstr "Brez omejitev"
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:330
 #: pve-manager/www/manager6/dc/RealmSyncJob.js:363
 #: pve-manager/www/manager6/dc/SyncWindow.js:128
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:131
+#: proxmox-yew-comp/src/auth_view.rs:425
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:237
 msgid "Remove Vanished Options"
 msgstr "Odstrani izginule možnosti"
 
@@ -11712,7 +11938,8 @@ msgstr ""
 "Ali želite odstraniti posnetke iz lokalne shrambe podatkov, če so izginili "
 "iz izvorne shrambe podatkov?"
 
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:142
+#: proxmox-yew-comp/src/auth_view.rs:443
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:255
 #, fuzzy
 msgid "Remove vanished properties"
 msgstr "Odstrani izginilo"
@@ -11726,7 +11953,8 @@ msgid "Remove vanished properties from synced users."
 msgstr "Odstranite izginule lastnosti sinhroniziranih uporabnikov."
 
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:430
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:138
+#: proxmox-yew-comp/src/auth_view.rs:437
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:249
 #, fuzzy
 msgid "Remove vanished user"
 msgstr "Odstrani izginilo"
@@ -11745,7 +11973,7 @@ msgstr "Odstrani shrambo podatkov"
 
 #: pve-manager/www/manager6/Utils.js:2064 proxmox-backup/www/Utils.js:425
 #: proxmox-datacenter-manager/ui/src/tasks.rs:14
-#: proxmox-yew-comp/src/utils.rs:362
+#: proxmox-yew-comp/src/utils.rs:373
 msgid "Renew Certificate"
 msgstr "Obnovi potrdilo"
 
@@ -11819,6 +12047,10 @@ msgstr "Stanje zahteve"
 msgid "Require TFA"
 msgstr "Zahtevaj TFA"
 
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:94
+msgid "Required to let the guest OS know if MDS is mitigated correctly"
+msgstr ""
+
 #: pve-manager/www/manager6/qemu/AgentIPView.js:141
 msgid "Requires '{0}' Privileges"
 msgstr "Zahteva '{0}' pravice"
@@ -11835,7 +12067,7 @@ msgstr "Zahteva '{0}' pravice"
 #: proxmox-backup/www/window/Settings.js:282
 #: proxmox-datacenter-manager/ui/src/tasks.rs:64
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/dashboard_panel.rs:235
-#: proxmox-yew-comp/src/utils.rs:410
+#: proxmox-yew-comp/src/utils.rs:421
 #: proxmox-yew-widget-toolkit/src/widget/form/reset_button.rs:134
 msgid "Reset"
 msgstr "Ponastavi"
@@ -11861,7 +12093,7 @@ msgstr "Ponastavi {0} takoj"
 #: pve-manager/www/manager6/lxc/Resources.js:291
 #: pve-manager/www/manager6/qemu/HardwareView.js:484
 #: proxmox-datacenter-manager/ui/src/tasks.rs:75
-#: proxmox-yew-comp/src/utils.rs:420
+#: proxmox-yew-comp/src/utils.rs:431
 msgid "Resize"
 msgstr "Spremeni velikost"
 
@@ -11898,8 +12130,9 @@ msgstr "Fond virov"
 #: pve-manager/www/manager6/ha/Status.js:38
 #: pve-manager/www/manager6/lxc/Config.js:268
 #: pve-manager/www/manager6/lxc/DNS.js:71
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:476
 #: pve-yew-mobile-gui/src/widgets/main_navigation.rs:80
-#: pve-yew-mobile-gui/src/pages/page_dashboard.rs:342
+#: pve-yew-mobile-gui/src/pages/page_dashboard.rs:343
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/resources_panel.rs:82
 msgid "Resources"
 msgstr "Viri"
@@ -11910,7 +12143,7 @@ msgstr "Viri"
 #: pve-manager/www/manager6/ceph/OSD.js:927
 #: pve-manager/www/manager6/ceph/ServiceList.js:338
 #: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:132
-#: proxmox-yew-comp/src/utils.rs:226
+#: proxmox-yew-comp/src/utils.rs:245
 msgid "Restart"
 msgstr "Ponovni zagon"
 
@@ -11938,7 +12171,7 @@ msgstr "Ponovno zaženite pmg-smtp-filter, da aktivirate spremembe"
 #: proxmox-backup/www/tape/window/TapeRestore.js:279
 #: proxmox-datacenter-manager/ui/src/tasks.rs:65
 #: proxmox-datacenter-manager/ui/src/tasks.rs:97
-#: proxmox-yew-comp/src/utils.rs:411 proxmox-yew-comp/src/utils.rs:441
+#: proxmox-yew-comp/src/utils.rs:422 proxmox-yew-comp/src/utils.rs:452
 msgid "Restore"
 msgstr "Obnovi"
 
@@ -11971,7 +12204,7 @@ msgstr "Konfiguracija hrambe"
 #: proxmox-datacenter-manager/ui/src/tasks.rs:66
 #: proxmox-datacenter-manager/ui/src/tasks.rs:98
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/dashboard_panel.rs:256
-#: proxmox-yew-comp/src/utils.rs:412 proxmox-yew-comp/src/utils.rs:442
+#: proxmox-yew-comp/src/utils.rs:423 proxmox-yew-comp/src/utils.rs:453
 msgid "Resume"
 msgstr "Nadaljuj"
 
@@ -12017,9 +12250,13 @@ msgstr "Povratni DNS strežnik"
 msgid "Revert"
 msgstr "Povrni"
 
+#: pve-yew-mobile-gui/src/widgets/pending_property_list.rs:310
+msgid "Revert property failed"
+msgstr ""
+
 #: pve-manager/www/manager6/Utils.js:2065 proxmox-backup/www/Utils.js:426
 #: proxmox-datacenter-manager/ui/src/tasks.rs:15
-#: proxmox-yew-comp/src/utils.rs:363
+#: proxmox-yew-comp/src/utils.rs:374
 msgid "Revoke Certificate"
 msgstr "Preklic potrdila"
 
@@ -12061,7 +12298,7 @@ msgstr "Vloge"
 #: pve-manager/www/manager6/tree/SnapshotTree.js:263
 #: proxmox-datacenter-manager/ui/src/tasks.rs:67
 #: proxmox-datacenter-manager/ui/src/tasks.rs:99
-#: proxmox-yew-comp/src/utils.rs:413 proxmox-yew-comp/src/utils.rs:443
+#: proxmox-yew-comp/src/utils.rs:424 proxmox-yew-comp/src/utils.rs:454
 msgid "Rollback"
 msgstr "Vrni nazaj"
 
@@ -12102,13 +12339,9 @@ msgid "Root Filesystem"
 msgstr "Datotečni sistem"
 
 #: proxmox-backup/www/datastore/Content.js:359
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:107
 msgid "Root Namespace"
 msgstr "Korenski imenski prostor"
-
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:242
-#, fuzzy
-msgid "Root filesystem usage"
-msgstr "Uporaba korenskega diska"
 
 #: pve-manager/www/manager6/sdn/zones/EvpnEdit.js:87
 #, fuzzy
@@ -12141,7 +12374,7 @@ msgid "Run Now"
 msgstr "Poženi zdaj"
 
 #: pve-manager/www/manager6/form/AgentFeatureSelector.js:17
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:36
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:69
 msgid "Run guest-trim after a disk move or VM migration"
 msgstr "Po premiku diska ali selitvi VM zaženite gost-obrezovanje"
 
@@ -12180,7 +12413,7 @@ msgstr "Izvajanje"
 msgid "Running Tasks"
 msgstr "Opravila v izvajanju"
 
-#: proxmox-widget-toolkit/src/Utils.js:89 proxmox-yew-comp/src/lib.rs:291
+#: proxmox-widget-toolkit/src/Utils.js:89 proxmox-yew-comp/src/lib.rs:297
 msgid "Russian"
 msgstr ""
 
@@ -12245,7 +12478,7 @@ msgstr "Vrsta krmilnika SCSI"
 msgid "SDN"
 msgstr "SDN"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:261
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:263
 #, fuzzy
 msgid "SDN Zones"
 msgstr "DNS cona"
@@ -12256,7 +12489,7 @@ msgstr "SLAAC"
 
 #: pve-manager/www/manager6/qemu/Options.js:290
 #: pve-manager/www/manager6/qemu/Smbios1Edit.js:100
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:100
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:90
 msgid "SMBIOS settings (type1)"
 msgstr "Nastavitve SMBIOS (vrsta1)"
 
@@ -12264,7 +12497,7 @@ msgstr "Nastavitve SMBIOS (vrsta1)"
 msgid "SMTP HELO checks"
 msgstr "Preveri SMTP HELO"
 
-#: pmg-gui/js/MailProxyOptions.js:97
+#: pmg-gui/js/MailProxyOptions.js:85
 msgid "SMTPD Banner"
 msgstr "SMTPD Banner"
 
@@ -12297,6 +12530,7 @@ msgstr "SSH javni ključ"
 #: pve-manager/www/manager6/node/StatusView.js:82
 #: pve-manager/www/manager6/panel/GuestStatusView.js:136
 #: proxmox-backup/www/panel/NodeInfo.js:122
+#: proxmox-yew-comp/src/node_info.rs:194
 msgid "SWAP usage"
 msgstr "Uporaba SWAP"
 
@@ -12325,7 +12559,7 @@ msgstr "Sob"
 #: proxmox-widget-toolkit/src/node/HostsView.js:12 pmg-gui/js/Dashboard.js:38
 #: pmg-gui/js/Settings.js:288 pve-manager/www/manager6/window/Settings.js:384
 #: proxmox-backup/www/Dashboard.js:38 proxmox-backup/www/window/Settings.js:288
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:684
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:696
 msgid "Save"
 msgstr "Shrani"
 
@@ -12436,7 +12670,7 @@ msgstr "Področja uporabe"
 
 #: pmg-gui/js/ReceiverStatistics.js:93 pmg-gui/js/SpamDetectorCustom.js:131
 #: pmg-gui/js/SpamDetectorCustom.js:177 pmg-gui/js/SpamDetectorCustom.js:261
-#: pmg-gui/js/SpamInfoGrid.js:45 pmg-gui/js/SpamQuarantine.js:179
+#: pmg-gui/js/SpamInfoGrid.js:49 pmg-gui/js/SpamQuarantine.js:179
 #: pmg-gui/js/Utils.js:39
 msgid "Score"
 msgstr "Ocena"
@@ -12498,8 +12732,9 @@ msgstr "Sekund"
 #: proxmox-widget-toolkit/src/window/AddTotp.js:176
 #: pve-manager/www/manager6/dc/TokenEdit.js:140
 #: proxmox-backup/www/window/TokenEdit.js:190
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:340
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:357
 #: proxmox-yew-comp/src/tfa/tfa_add_totp.rs:110
+#: proxmox-yew-comp/src/token_panel.rs:341
 msgid "Secret"
 msgstr "Skrivnost"
 
@@ -12530,7 +12765,7 @@ msgstr "Razdelek"
 msgid "Security Group"
 msgstr "Varnostna skupina"
 
-#: pmg-yew-quarantine-gui/src/page_spam_list.rs:192
+#: pmg-yew-quarantine-gui/src/page_spam_list.rs:219
 #, fuzzy
 msgid "Select Date"
 msgstr "Slika gosta"
@@ -12543,6 +12778,11 @@ msgstr "Izberite datoteko"
 #, fuzzy
 msgid "Select Image"
 msgstr "Slika gosta"
+
+#: pmg-yew-quarantine-gui/src/page_spam_list.rs:240
+#, fuzzy
+msgid "Select Language"
+msgstr "Privzeti jezik"
 
 #: proxmox-backup/www/tape/window/TapeRestore.js:316
 msgid "Select Media-Set to restore"
@@ -12596,7 +12836,7 @@ msgstr "Izbirni način"
 msgid "Selector"
 msgstr "Selektor"
 
-#: pmg-gui/js/MailProxyOptions.js:103
+#: pmg-gui/js/MailProxyOptions.js:91
 msgid "Send NDR on Blocked E-Mails"
 msgstr "Pošlji NDR za blokirana sporočila"
 
@@ -12619,7 +12859,7 @@ msgstr "Pošlji e-pošto na"
 
 #: pmg-gui/js/AttachmentQuarantine.js:74 pmg-gui/js/ContactStatistics.js:63
 #: pmg-gui/js/MailTracker.js:76 pmg-gui/js/NavigationTree.js:190
-#: pmg-gui/js/PostfixMailQueue.js:172 pmg-gui/js/ReceiverStatistics.js:63
+#: pmg-gui/js/PostfixMailQueue.js:180 pmg-gui/js/ReceiverStatistics.js:63
 #: pmg-gui/js/SenderStatistics.js:102 pmg-gui/js/SenderStatistics.js:148
 #: pmg-gui/js/SenderStatistics.js:211 pmg-gui/js/Utils.js:37
 #: pmg-gui/js/VirusQuarantine.js:76
@@ -12651,7 +12891,7 @@ msgstr "Zap. Št."
 #: proxmox-backup/www/tape/form/ChangerSelector.js:51
 #: proxmox-backup/www/tape/form/DriveSelector.js:46
 #: proxmox-backup/www/tape/form/TapeDevicePathSelector.js:36
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:77
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:68
 msgid "Serial"
 msgstr "Serijski"
 
@@ -12672,10 +12912,10 @@ msgstr ""
 
 #: pve-manager/www/manager6/Utils.js:610 pve-manager/www/manager6/Utils.js:611
 #: pve-manager/www/manager6/Utils.js:612 pve-manager/www/manager6/Utils.js:613
-#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:39
-#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:40
-#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:41
-#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:42
+#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:44
+#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:45
+#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:46
+#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:47
 msgid "Serial terminal"
 msgstr "Serijski terminal"
 
@@ -12694,12 +12934,12 @@ msgstr "Serijski terminal"
 #: pve-manager/www/manager6/storage/ESXIEdit.js:56
 #: pve-manager/www/manager6/storage/NFSEdit.js:116
 #: pve-manager/www/manager6/storage/PBSEdit.js:499
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:177
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:289
 msgid "Server"
 msgstr "Strežnik"
 
 #: pve-manager/www/manager6/dc/NodeView.js:42
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:231
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:233
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_nodes.rs:80
 msgid "Server Address"
 msgstr "Naslov strežnika"
@@ -12717,7 +12957,8 @@ msgid "Server ID"
 msgstr "ID strežnika"
 
 #: pve-manager/www/manager6/node/Summary.js:172
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:155
+#: proxmox-datacenter-manager/ui/src/pbs/remote.rs:149
+#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:154
 #, fuzzy
 msgid "Server Load"
 msgstr "Obremenitev strežnika"
@@ -12737,7 +12978,7 @@ msgstr "Seznam strežnikov"
 
 #: proxmox-widget-toolkit/src/form/FingerprintField.js:8
 #: pmg-gui/js/PBSRemoteEdit.js:116
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:241
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:243
 msgid ""
 "Server certificate SHA-256 fingerprint, required for self-signed certificates"
 msgstr ""
@@ -12753,7 +12994,8 @@ msgstr ""
 "Prstni odtis SHA-256 potrdila strežnika, potreben za samopodpisana potrdila"
 
 #: pmg-gui/js/ServerStatus.js:129 proxmox-backup/www/ServerStatus.js:222
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:315
+#: proxmox-datacenter-manager/ui/src/pbs/remote.rs:263
+#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:259
 msgid "Server load"
 msgstr "Obremenitev strežnika"
 
@@ -12762,9 +13004,9 @@ msgstr "Obremenitev strežnika"
 msgid "Server time"
 msgstr "Čas strežnika"
 
-#: pve-manager/www/manager6/dc/Log.js:57 proxmox-yew-comp/src/utils.rs:224
-#: proxmox-yew-comp/src/utils.rs:225 proxmox-yew-comp/src/utils.rs:226
-#: proxmox-yew-comp/src/utils.rs:227
+#: pve-manager/www/manager6/dc/Log.js:57 proxmox-yew-comp/src/utils.rs:243
+#: proxmox-yew-comp/src/utils.rs:244 proxmox-yew-comp/src/utils.rs:245
+#: proxmox-yew-comp/src/utils.rs:246
 msgid "Service"
 msgstr "Servis"
 
@@ -12853,7 +13095,7 @@ msgid "Shared"
 msgstr "Skupna raba"
 
 #: pve-manager/www/manager6/qemu/MemoryEdit.js:114
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_memory_property.rs:71
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_memory_property.rs:73
 msgid "Shares"
 msgstr "Delitve"
 
@@ -12868,15 +13110,15 @@ msgstr "Delitve"
 #: proxmox-datacenter-manager/ui/src/main_menu.rs:202
 #: proxmox-datacenter-manager/ui/src/tasks.rs:77
 #: proxmox-datacenter-manager/ui/src/tasks.rs:85
-#: proxmox-yew-comp/src/utils.rs:422 proxmox-yew-comp/src/utils.rs:429
+#: proxmox-yew-comp/src/utils.rs:433 proxmox-yew-comp/src/utils.rs:440
 msgid "Shell"
 msgstr "Lupina"
 
-#: proxmox-yew-comp/src/utils.rs:219
+#: proxmox-yew-comp/src/utils.rs:238
 msgid "Shell (Spice)"
 msgstr ""
 
-#: proxmox-yew-comp/src/utils.rs:220
+#: proxmox-yew-comp/src/utils.rs:239
 #, fuzzy
 msgid "Shell (VNC)"
 msgstr "Lupina"
@@ -12917,7 +13159,7 @@ msgstr "Prikaži poštne naslove"
 msgid "Show Fingerprint"
 msgstr "Prikaži prstni odtis"
 
-#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:198
+#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:206
 #, fuzzy
 msgid "Show Local Tasks"
 msgstr "Prikaži vse naloge"
@@ -12939,10 +13181,11 @@ msgstr "Uporabniško geslo"
 #: proxmox-backup/www/config/TokenView.js:225
 #: proxmox-backup/www/config/UserView.js:195
 #: proxmox-yew-comp/src/user_panel.rs:196
+#: proxmox-yew-comp/src/token_panel.rs:206
 msgid "Show Permissions"
 msgstr "Pokaži dovoljenja"
 
-#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:203
+#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:211
 #, fuzzy
 msgid "Show Remote Tasks"
 msgstr "Prikaži vse naloge"
@@ -12988,7 +13231,7 @@ msgstr "{0} od {1}"
 #: pve-manager/www/manager6/qemu/Config.js:154
 #: proxmox-backup/www/ServerStatus.js:154
 #: proxmox-datacenter-manager/ui/src/pve/tree.rs:118
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:673
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:677
 #: proxmox-datacenter-manager/ui/src/pve/mod.rs:64
 #: proxmox-datacenter-manager/ui/src/tasks.rs:41
 #: proxmox-datacenter-manager/ui/src/tasks.rs:68
@@ -12996,8 +13239,8 @@ msgstr "{0} od {1}"
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/dashboard_panel.rs:241
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/dashboard_panel.rs:210
 #: pve-yew-mobile-gui/src/pages/page_node_status/dashboard_panel.rs:137
-#: proxmox-yew-comp/src/utils.rs:387 proxmox-yew-comp/src/utils.rs:414
-#: proxmox-yew-comp/src/utils.rs:444
+#: proxmox-yew-comp/src/utils.rs:398 proxmox-yew-comp/src/utils.rs:425
+#: proxmox-yew-comp/src/utils.rs:455
 msgid "Shutdown"
 msgstr "Izklop"
 
@@ -13016,7 +13259,7 @@ msgstr "Izklopi vozlišče '{0}'?"
 
 #: pve-manager/www/manager6/qemu/CreateWizard.js:142
 #: pve-manager/www/manager6/window/StartupEdit.js:49
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:169
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:175
 msgid "Shutdown timeout"
 msgstr "Časovna omejitev zaustavitve"
 
@@ -13066,8 +13309,7 @@ msgstr "Simuliraj"
 #: proxmox-widget-toolkit/src/node/Tasks.js:309
 #: proxmox-widget-toolkit/src/panel/JournalView.js:310
 #: proxmox-widget-toolkit/src/panel/LogView.js:324
-#: pmg-gui/js/QuarantineList.js:320 pmg-gui/js/mobile/quarantineview.js:26
-#: proxmox-yew-comp/src/tasks.rs:409
+#: pmg-gui/js/QuarantineList.js:320 proxmox-yew-comp/src/tasks.rs:409
 msgid "Since"
 msgstr "Od"
 
@@ -13075,6 +13317,15 @@ msgstr "Od"
 #: proxmox-backup/www/window/ZFSCreate.js:44
 msgid "Single Disk"
 msgstr "Posamezni disk"
+
+#: pmg-gui/js/DNSBLSitesField.js:149
+msgid "Site"
+msgstr ""
+
+#: pmg-gui/js/DNSBLSitesField.js:72
+#, fuzzy
+msgid "Site must not be empty."
+msgstr "Oznaka ne sme biti prazna."
 
 #: proxmox-widget-toolkit/src/form/DiskSelector.js:30
 #: proxmox-widget-toolkit/src/form/MultiDiskSelector.js:112
@@ -13144,7 +13395,7 @@ msgstr "Reže"
 msgid "Slots"
 msgstr "Reže"
 
-#: proxmox-widget-toolkit/src/Utils.js:90 proxmox-yew-comp/src/lib.rs:292
+#: proxmox-widget-toolkit/src/Utils.js:90 proxmox-yew-comp/src/lib.rs:298
 msgid "Slovenian"
 msgstr ""
 
@@ -13165,7 +13416,7 @@ msgstr "Pametni strežnik"
 #: proxmox-backup/www/tape/window/TapeRestore.js:867
 #: proxmox-datacenter-manager/ui/src/tasks.rs:69
 #: proxmox-datacenter-manager/ui/src/tasks.rs:101
-#: proxmox-yew-comp/src/utils.rs:415 proxmox-yew-comp/src/utils.rs:445
+#: proxmox-yew-comp/src/utils.rs:426 proxmox-yew-comp/src/utils.rs:456
 msgid "Snapshot"
 msgstr "Posnetek"
 
@@ -13200,8 +13451,8 @@ msgstr "Vtičnica"
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:118
 #: pve-manager/www/manager6/window/GuestImport.js:488
 #: pve-manager/www/manager6/window/Restore.js:358
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:112
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:217
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:104
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:209
 msgid "Sockets"
 msgstr "Vtičnice"
 
@@ -13316,11 +13567,11 @@ msgstr "Ocene nezaželene pošte"
 msgid "SpamAssassin update"
 msgstr "SpamAssassin posodobitev"
 
-#: pmg-gui/js/SpamInfoGrid.js:41
+#: pmg-gui/js/SpamInfoGrid.js:45
 msgid "Spamscore"
 msgstr "Ocena nezaželene pošte"
 
-#: proxmox-widget-toolkit/src/Utils.js:74 proxmox-yew-comp/src/lib.rs:271
+#: proxmox-widget-toolkit/src/Utils.js:74 proxmox-yew-comp/src/lib.rs:277
 #, fuzzy
 msgid "Spanish"
 msgstr "Končaj"
@@ -13335,7 +13586,7 @@ msgstr "Hitrost"
 
 #: pve-manager/www/manager6/qemu/Options.js:332
 #: pve-manager/www/manager6/qemu/Options.js:338
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:71
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:66
 msgid "Spice Enhancements"
 msgstr "Spice izboljšave"
 
@@ -13353,7 +13604,7 @@ msgid "Standard"
 msgstr "Standardno"
 
 #: pve-manager/www/manager6/Utils.js:604
-#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:33
+#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:38
 msgid "Standard VGA"
 msgstr "Standardni VGA"
 
@@ -13372,7 +13623,7 @@ msgstr "Standardni VGA"
 #: pve-manager/www/manager6/qemu/CmdMenu.js:61
 #: pve-manager/www/manager6/qemu/Config.js:58
 #: proxmox-datacenter-manager/ui/src/pve/tree.rs:117
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:696
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:700
 #: proxmox-datacenter-manager/ui/src/pve/mod.rs:63
 #: proxmox-datacenter-manager/ui/src/tasks.rs:9
 #: proxmox-datacenter-manager/ui/src/tasks.rs:42
@@ -13380,9 +13631,9 @@ msgstr "Standardni VGA"
 #: proxmox-datacenter-manager/ui/src/tasks.rs:102
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/dashboard_panel.rs:261
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/dashboard_panel.rs:223
-#: proxmox-yew-comp/src/utils.rs:224 proxmox-yew-comp/src/utils.rs:357
-#: proxmox-yew-comp/src/utils.rs:388 proxmox-yew-comp/src/utils.rs:416
-#: proxmox-yew-comp/src/utils.rs:446
+#: proxmox-yew-comp/src/utils.rs:243 proxmox-yew-comp/src/utils.rs:368
+#: proxmox-yew-comp/src/utils.rs:399 proxmox-yew-comp/src/utils.rs:427
+#: proxmox-yew-comp/src/utils.rs:457
 msgid "Start"
 msgstr "Zaženi"
 
@@ -13430,12 +13681,12 @@ msgstr "Začni po obnovitvi"
 msgid "Start at boot"
 msgstr "Zaženi ob zagonu"
 
-#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:103
+#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:95
 #, fuzzy
 msgid "Start backup now"
 msgstr "Izdelaj varnostno kopijo"
 
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:89
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:99
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/config_panel.rs:86
 #, fuzzy
 msgid "Start on boot"
@@ -13459,7 +13710,7 @@ msgstr "Zaženite namestitev {0}"
 #: pve-manager/www/manager6/qemu/Options.js:76
 #: pve-manager/www/manager6/window/StartupEdit.js:35
 #: pve-manager/www/manager6/window/StartupEdit.js:69
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:148
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:158
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/config_panel.rs:100
 msgid "Start/Shutdown order"
 msgstr "Vrstni red zagona/izklopa"
@@ -13480,7 +13731,7 @@ msgstr "Začetni čas"
 
 #: pve-manager/www/manager6/qemu/CreateWizard.js:134
 #: pve-manager/www/manager6/window/StartupEdit.js:42
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:163
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:171
 msgid "Startup delay"
 msgstr "Zakasnitev zagona"
 
@@ -13580,8 +13831,8 @@ msgstr "Statistika zadnjega zbiranja odpadkov"
 #: proxmox-backup/www/tape/TapeInventory.js:321
 #: proxmox-datacenter-manager/ui/src/remotes/tasks.rs:91
 #: proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:261
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:297
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:308
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:300
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:311
 #: proxmox-datacenter-manager/ui/src/sdn/zone_tree.rs:137
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/dashboard_panel.rs:194
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/dashboard_panel.rs:184
@@ -13626,9 +13877,9 @@ msgstr "Stanje"
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/dashboard_panel.rs:204
 #: pve-yew-mobile-gui/src/pages/page_task_status.rs:258
 #: proxmox-yew-comp/src/task_viewer.rs:196
-#: proxmox-yew-comp/src/task_viewer.rs:277 proxmox-yew-comp/src/utils.rs:225
-#: proxmox-yew-comp/src/utils.rs:389 proxmox-yew-comp/src/utils.rs:417
-#: proxmox-yew-comp/src/utils.rs:447
+#: proxmox-yew-comp/src/task_viewer.rs:277 proxmox-yew-comp/src/utils.rs:244
+#: proxmox-yew-comp/src/utils.rs:400 proxmox-yew-comp/src/utils.rs:428
+#: proxmox-yew-comp/src/utils.rs:458
 msgid "Stop"
 msgstr "Ustavi"
 
@@ -13678,11 +13929,11 @@ msgstr "Ustavljeno"
 #: pve-manager/www/manager6/window/Restore.js:176
 #: proxmox-datacenter-manager/ui/src/widget/pve_migrate_mapping.rs:41
 #: pve-yew-mobile-gui/src/pages/page_dashboard.rs:158
-#: pve-yew-mobile-gui/src/pages/page_dashboard.rs:319
+#: pve-yew-mobile-gui/src/pages/page_dashboard.rs:320
 msgid "Storage"
 msgstr "Prostor"
 
-#: proxmox-datacenter-manager/ui/src/pve/storage.rs:242
+#: proxmox-datacenter-manager/ui/src/pve/storage.rs:245
 #, fuzzy
 msgid "Storage '{0}'"
 msgstr "Prostor"
@@ -13697,7 +13948,7 @@ msgid "Storage Retention Configuration"
 msgstr "Konfiguracija hrambe prostora za shranjevanje"
 
 #: pve-yew-mobile-gui/src/form/pve_storage_selector.rs:226
-#: pve-yew-mobile-gui/src/widgets/mod.rs:92
+#: pve-yew-mobile-gui/src/widgets/mod.rs:105
 #, fuzzy
 msgid "Storage size/usage unknown"
 msgstr "Poraba prostora za shranjevanje"
@@ -13748,7 +13999,7 @@ msgstr "direktorij"
 #: pmg-gui/js/VirusQuarantine.js:76
 #: pve-manager/www/manager6/node/Certificates.js:60
 #: pve-manager/www/manager6/node/Certificates.js:322
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:303
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:305
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_nodes.rs:279
 #: proxmox-yew-comp/src/acme/certificate_list.rs:347
 #: proxmox-yew-comp/src/acme/certificate_list.rs:380
@@ -13759,7 +14010,7 @@ msgstr "Zadeva"
 #: proxmox-widget-toolkit/src/window/Certificates.js:58
 #: pve-manager/www/manager6/node/Certificates.js:93
 #: pve-manager/www/manager6/node/Certificates.js:351
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:308
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:310
 #: proxmox-yew-comp/src/acme/certificate_list.rs:352
 #: proxmox-yew-comp/src/acme/certificate_list.rs:409
 msgid "Subject Alternative Names"
@@ -13896,13 +14147,13 @@ msgstr "Podpora za {0} {1} se konča {2}"
 #: pve-manager/www/manager6/node/CmdMenu.js:67
 #: pve-manager/www/manager6/node/Config.js:77
 #: proxmox-datacenter-manager/ui/src/tasks.rs:104
-#: proxmox-yew-comp/src/utils.rs:448
+#: proxmox-yew-comp/src/utils.rs:459
 msgid "Suspend"
 msgstr "Prekini"
 
 #: pve-manager/www/manager6/Utils.js:2128
 #: proxmox-datacenter-manager/ui/src/tasks.rs:81
-#: proxmox-yew-comp/src/utils.rs:425
+#: proxmox-yew-comp/src/utils.rs:436
 #, fuzzy
 msgid "Suspend all VMs"
 msgstr "Začasno ustavite na disk"
@@ -13924,8 +14175,20 @@ msgstr "Swap"
 msgid "Swap usage"
 msgstr "Swap poraba"
 
-#: proxmox-widget-toolkit/src/Utils.js:91 proxmox-yew-comp/src/lib.rs:293
+#: proxmox-widget-toolkit/src/Utils.js:91 proxmox-yew-comp/src/lib.rs:299
 msgid "Swedish"
+msgstr ""
+
+#: pmg-yew-quarantine-gui/src/page_spam_list.rs:301
+msgid "Switch to Desktop View"
+msgstr ""
+
+#: pmg-gui/js/QuarantineView.js:310
+msgid "Switch to Mobile View"
+msgstr ""
+
+#: pmg-gui/js/QuarantineView.js:245
+msgid "Switch to mobile view"
 msgstr ""
 
 #: proxmox-widget-toolkit/src/panel/AuthView.js:160
@@ -13934,9 +14197,14 @@ msgstr ""
 #: pve-manager/www/manager6/dc/AuthView.js:128
 #: pve-manager/www/manager6/dc/SyncWindow.js:178
 #: proxmox-datacenter-manager/ui/src/tasks.rs:17
-#: proxmox-yew-comp/src/auth_view.rs:223 proxmox-yew-comp/src/utils.rs:365
+#: proxmox-yew-comp/src/auth_view.rs:321 proxmox-yew-comp/src/utils.rs:376
 msgid "Sync"
 msgstr "Sinhronizacija"
+
+#: proxmox-yew-comp/src/auth_view.rs:128
+#, fuzzy
+msgid "Sync Failed"
+msgstr "Ni uspelo"
 
 #: proxmox-backup/www/Utils.js:456
 msgid "Sync Job"
@@ -13962,13 +14230,13 @@ msgstr "Raven sinhronizacije"
 
 #: proxmox-widget-toolkit/src/window/AuthEditBase.js:62
 #: pve-manager/www/manager6/dc/AuthEditBase.js:125
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:91
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:196
 msgid "Sync Options"
 msgstr "Možnosti sinhronizacije"
 
 #: pve-manager/www/manager6/Utils.js:2068
 #: proxmox-datacenter-manager/ui/src/tasks.rs:18
-#: proxmox-yew-comp/src/utils.rs:366
+#: proxmox-yew-comp/src/utils.rs:377
 msgid "Sync Preview"
 msgstr "Predogled sinhronizacije"
 
@@ -14155,7 +14423,7 @@ msgstr "Oznaka ne sme biti prazna."
 #: pve-manager/www/manager6/data/ResourceStore.js:334
 #: pve-manager/www/manager6/form/TagFieldSet.js:6
 #: pve-manager/www/manager6/form/VMSelector.js:86
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:604
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:608
 msgid "Tags"
 msgstr "Oznake"
 
@@ -14370,15 +14638,15 @@ msgstr "Rezultat naloge"
 msgid "Task Summary"
 msgstr "Povzetek naloge"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:275
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:277
 msgid "Task Summary Sorted by Failed Tasks (Last {0}h)"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:726
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:738
 msgid "Task Summary Time Range (last hours)"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:276
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:278
 msgid "Task Summary by Category (Last {0}h)"
 msgstr ""
 
@@ -14438,7 +14706,7 @@ msgstr "Pogoji uporabe storitev"
 msgid "Test"
 msgstr "Naziv preverjanja"
 
-#: pmg-gui/js/SpamInfoGrid.js:37
+#: pmg-gui/js/SpamInfoGrid.js:41
 msgid "Test Name"
 msgstr "Naziv preverjanja"
 
@@ -14470,7 +14738,7 @@ msgstr ""
 "Količina podatkov, ki so na koncu shranjeni v tem fondu. Uporablja se za "
 "samodejno skaliranje."
 
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:91
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:93
 #, fuzzy
 msgid "The certificate of the remote server is not trusted."
 msgstr "Preveri SSL potrdilo strežnika"
@@ -14580,7 +14848,7 @@ msgstr ""
 "Testni repozitorij lahko prenese nestabilne posodobitve in ni priporočen za "
 "produkcijsko uporabo!"
 
-#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:160
+#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:161
 #: pve-yew-mobile-gui/src/pages/page_settings.rs:40
 #: proxmox-yew-comp/src/theme_dialog.rs:45
 #, fuzzy
@@ -14616,6 +14884,7 @@ msgid "This is not a valid hostname"
 msgstr "Vpiši pravilno DNS ime"
 
 #: pve-manager/www/manager6/qemu/DisplayEdit.js:124
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:119
 msgid "This option depends on your display type."
 msgstr ""
 
@@ -14663,14 +14932,14 @@ msgstr ""
 
 #: pmg-gui/js/AttachmentQuarantine.js:93 pmg-gui/js/BackupRestore.js:174
 #: pmg-gui/js/ContactStatistics.js:84 pmg-gui/js/MailTracker.js:367
-#: pmg-gui/js/PostfixMailQueue.js:160 pmg-gui/js/ReceiverStatistics.js:84
+#: pmg-gui/js/PostfixMailQueue.js:168 pmg-gui/js/ReceiverStatistics.js:84
 #: pmg-gui/js/SenderStatistics.js:84 pmg-gui/js/SpamQuarantine.js:198
 #: pmg-gui/js/SystemConfiguration.js:28 pmg-gui/js/VirusQuarantine.js:101
 #: pve-manager/www/manager6/dc/Log.js:44
 #: pve-manager/www/manager6/node/Config.js:238
 #: pve-manager/www/manager6/window/ScheduleSimulator.js:133
 #: proxmox-backup/www/SystemConfiguration.js:29
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:107
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:129
 #: proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:269
 msgid "Time"
 msgstr "Čas"
@@ -14742,7 +15011,7 @@ msgid "To Slot"
 msgstr "V režo"
 
 #: pve-manager/www/manager6/form/SpiceEnhancementSelector.js:33
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:57
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:52
 msgid ""
 "To use these features set the display to SPICE in the hardware settings of "
 "the VM."
@@ -14750,7 +15019,7 @@ msgstr ""
 "Za uporabo teh funkcij nastavite zaslon na SPICE v nastavitvah strojne "
 "opreme VM."
 
-#: pmg-yew-quarantine-gui/src/page_spam_list.rs:87
+#: pmg-yew-quarantine-gui/src/page_spam_list.rs:93
 #, fuzzy
 msgid "To:"
 msgstr "Za"
@@ -14769,27 +15038,34 @@ msgstr "Ocena pošte"
 #: pve-manager/www/manager6/sdn/ipams/NetboxEdit.js:33
 #: pve-manager/www/manager6/sdn/ipams/PhpIpamEdit.js:33
 #: proxmox-backup/www/window/InfluxDbEdit.js:73
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:331
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:348
+#: proxmox-yew-comp/src/token_panel.rs:388
+#: proxmox-yew-comp/src/token_panel.rs:399
 msgid "Token"
 msgstr "Žeton"
 
 #: pve-manager/www/manager6/dc/TokenEdit.js:53
 #: pve-manager/www/manager6/dc/TokenEdit.js:132
 #: proxmox-backup/www/window/TokenEdit.js:182
+#: proxmox-yew-comp/src/token_panel.rs:333
 msgid "Token ID"
 msgstr "ID žetona"
 
 #: pve-manager/www/manager6/dc/TokenView.js:141
 #: proxmox-backup/www/window/TokenEdit.js:42
+#: proxmox-yew-comp/src/token_panel.rs:427
+#: proxmox-yew-comp/src/token_panel.rs:461
 msgid "Token Name"
 msgstr "Ime žetona"
 
 #: pve-manager/www/manager6/dc/TokenEdit.js:116
 #: proxmox-backup/www/window/TokenEdit.js:166
+#: proxmox-yew-comp/src/token_panel.rs:326
 msgid "Token Secret"
 msgstr "Skrivnost žetona"
 
 #: proxmox-backup/www/config/TokenView.js:244
+#: proxmox-yew-comp/src/token_panel.rs:479
 msgid "Token name"
 msgstr "Ime žetona"
 
@@ -14818,9 +15094,10 @@ msgstr "Najpogostejših prejemniki"
 #: proxmox-backup/www/ServerStatus.js:240
 #: proxmox-backup/www/ServerStatus.js:255
 #: proxmox-backup/www/datastore/Summary.js:341
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:205
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:205
-#: proxmox-datacenter-manager/ui/src/pve/storage.rs:198
+#: proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:140
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:208
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:208
+#: proxmox-datacenter-manager/ui/src/pve/storage.rs:201
 msgid "Total"
 msgstr "Skupno"
 
@@ -14841,7 +15118,8 @@ msgstr "Skupno število pošte"
 msgid "Total Mails"
 msgstr "Skupno število sporočil"
 
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:157
+#: proxmox-datacenter-manager/ui/src/pbs/remote.rs:151
+#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:156
 #, fuzzy
 msgid "Total Memory"
 msgstr "Skupaj jeder"
@@ -14856,7 +15134,7 @@ msgstr "Skupni neto izhod"
 
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:147
 #: pve-manager/www/manager6/window/GuestImport.js:551
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:123
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:115
 msgid "Total cores"
 msgstr "Skupaj jeder"
 
@@ -14933,7 +15211,7 @@ msgstr "Tor"
 msgid "Tuning Options"
 msgstr "Možnosti prilagajanja"
 
-#: proxmox-widget-toolkit/src/Utils.js:92 proxmox-yew-comp/src/lib.rs:294
+#: proxmox-widget-toolkit/src/Utils.js:92 proxmox-yew-comp/src/lib.rs:300
 msgid "Turkish"
 msgstr ""
 
@@ -14942,7 +15220,7 @@ msgid "Two Factor"
 msgstr "Dva faktorja"
 
 #: proxmox-backup/www/panel/AccessControl.js:24
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:70
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:80
 msgid "Two Factor Authentication"
 msgstr "Dvofaktorska avtentikacija"
 
@@ -14997,15 +15275,16 @@ msgstr "Dvofaktorska avtentikacija"
 #: proxmox-backup/www/form/AuthidSelector.js:72
 #: proxmox-backup/www/form/GroupFilter.js:520
 #: proxmox-backup/www/tape/ChangerStatus.js:47
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:326
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:317
 #: proxmox-datacenter-manager/ui/src/widget/pve_storage_selector.rs:207
 #: proxmox-datacenter-manager/ui/src/widget/pve_migrate_mapping.rs:351
-#: proxmox-datacenter-manager/ui/src/pve/storage.rs:290
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:49
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:105
+#: proxmox-datacenter-manager/ui/src/pve/storage.rs:284
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_machine_property.rs:110
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:82
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:99
 #: pve-yew-mobile-gui/src/form/pve_storage_selector.rs:252
 #: proxmox-yew-comp/src/acme/acme_domains.rs:93
-#: proxmox-yew-comp/src/auth_view.rs:292
+#: proxmox-yew-comp/src/auth_view.rs:477
 #: proxmox-yew-comp/src/configuration/network_view.rs:405
 #: proxmox-yew-comp/src/subscription_panel.rs:185
 #: proxmox-yew-comp/src/tfa/tfa_confirm_remove.rs:52
@@ -15066,11 +15345,11 @@ msgstr "Naprava USB"
 msgid "USB Devices"
 msgstr "Naprava USB"
 
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:45
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:36
 msgid "UUID"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/Utils.js:93 proxmox-yew-comp/src/lib.rs:295
+#: proxmox-widget-toolkit/src/Utils.js:93 proxmox-yew-comp/src/lib.rs:301
 msgid "Ukrainian"
 msgstr ""
 
@@ -15078,8 +15357,8 @@ msgstr ""
 msgid "Unable to apply changes"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:157
-#: proxmox-yew-comp/src/auth_view.rs:137
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:154
+#: proxmox-yew-comp/src/auth_view.rs:215
 #: proxmox-yew-comp/src/configuration/network_view.rs:150
 #: proxmox-yew-comp/src/tfa/tfa_view.rs:225
 msgid "Unable to delete item"
@@ -15118,11 +15397,11 @@ msgstr ""
 #: proxmox-backup/www/window/RemoteEdit.js:25
 #: proxmox-backup/www/window/S3ClientEdit.js:25
 #: proxmox-datacenter-manager/ui/src/remotes/edit_remote.rs:109
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:242
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:366
 msgid "Unchanged"
 msgstr "Nespremenjeno"
 
-#: proxmox-widget-toolkit/src/panel/RRDChart.js:278
+#: proxmox-widget-toolkit/src/panel/RRDChart.js:288
 msgid "Undo Zoom"
 msgstr "Razveljavi povečavo"
 
@@ -15224,7 +15503,7 @@ msgstr "Način avtentikacije"
 #: pve-manager/www/manager6/Utils.js:2151
 #: proxmox-backup/www/datastore/Summary.js:256
 #: proxmox-datacenter-manager/ui/src/tasks.rs:106
-#: proxmox-yew-comp/src/utils.rs:450
+#: proxmox-yew-comp/src/utils.rs:461
 msgid "Unmount"
 msgstr "Odklopi nosilec"
 
@@ -15261,7 +15540,7 @@ msgstr "Zabojnik brez pravic"
 #: proxmox-widget-toolkit/src/node/Tasks.js:320
 #: proxmox-widget-toolkit/src/panel/JournalView.js:326
 #: proxmox-widget-toolkit/src/panel/LogView.js:343
-#: pmg-gui/js/QuarantineList.js:327 pmg-gui/js/mobile/quarantineview.js:36
+#: pmg-gui/js/QuarantineList.js:327
 msgid "Until"
 msgstr "Do"
 
@@ -15288,8 +15567,8 @@ msgstr "Gor"
 
 #: pmg-gui/js/DKIMSettings.js:154 pve-manager/www/manager6/Utils.js:2066
 #: proxmox-datacenter-manager/ui/src/tasks.rs:16
-#: pve-yew-mobile-gui/src/widgets/edit_dialog.rs:353
-#: proxmox-yew-comp/src/edit_window.rs:311 proxmox-yew-comp/src/utils.rs:364
+#: pve-yew-mobile-gui/src/widgets/edit_dialog.rs:378
+#: proxmox-yew-comp/src/edit_window.rs:311 proxmox-yew-comp/src/utils.rs:375
 msgid "Update"
 msgstr "Posodobitev"
 
@@ -15305,7 +15584,7 @@ msgstr "Posodobi zdaj"
 msgid "Update now"
 msgstr "Posodobi zdaj"
 
-#: proxmox-widget-toolkit/src/Utils.js:749 proxmox-yew-comp/src/utils.rs:218
+#: proxmox-widget-toolkit/src/Utils.js:749 proxmox-yew-comp/src/utils.rs:237
 msgid "Update package database"
 msgstr "Posodobitev baze podatkov paketov"
 
@@ -15403,10 +15682,12 @@ msgstr "Čas delovanja"
 #: pve-manager/www/manager6/storage/StatusView.js:56
 #: pve-manager/www/manager6/storage/Summary.js:51
 #: proxmox-backup/www/datastore/Summary.js:154
-#: proxmox-datacenter-manager/ui/src/pve/remote.rs:208
-#: proxmox-datacenter-manager/ui/src/pve/storage.rs:197
-#: proxmox-datacenter-manager/ui/src/pve/storage.rs:301
-#: proxmox-datacenter-manager/ui/src/pve/storage.rs:341
+#: proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:139
+#: proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:232
+#: proxmox-datacenter-manager/ui/src/pve/remote.rs:205
+#: proxmox-datacenter-manager/ui/src/pve/storage.rs:200
+#: proxmox-datacenter-manager/ui/src/pve/storage.rs:296
+#: proxmox-datacenter-manager/ui/src/pve/storage.rs:336
 msgid "Usage"
 msgstr "Uporaba"
 
@@ -15454,11 +15735,11 @@ msgstr ""
 "Uporabite EFIvars sliko s standardno distribucijo in vpisanimi ključi za "
 "varni zagon Microsoft."
 
-#: pmg-gui/js/MailProxyOptions.js:52
+#: pmg-gui/js/MailProxyOptions.js:40
 msgid "Use Greylisting for IPv4"
 msgstr "Uporabi IPv4 sivi seznam"
 
-#: pmg-gui/js/MailProxyOptions.js:62
+#: pmg-gui/js/MailProxyOptions.js:50
 msgid "Use Greylisting for IPv6"
 msgstr "Uporabi IPv6 sivi seznam"
 
@@ -15480,7 +15761,7 @@ msgstr ""
 msgid "Use Proxmox VE managed hyper-converged cephFS"
 msgstr "Uporabite hiperkonvergirano cephFS, ki jo upravlja Proxmox VE"
 
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:31
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:64
 #, fuzzy
 msgid "Use QEMU Guest Agent"
 msgstr "Agent Qemu"
@@ -15493,7 +15774,7 @@ msgstr "RBL preverjanje"
 msgid "Use Razor2 checks"
 msgstr "Razor2 preverjanje"
 
-#: pmg-gui/js/MailProxyOptions.js:72
+#: pmg-gui/js/MailProxyOptions.js:60
 msgid "Use SPF"
 msgstr "Uporabi SPF"
 
@@ -15524,7 +15805,7 @@ msgstr "Napredni statistični filtri"
 msgid "Use auto-welcomelists"
 msgstr "Samodejni seznami dovoljenih"
 
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:328
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:345
 #, fuzzy
 msgid "Use existing Token"
 msgstr "Odstrani shrambo podatkov"
@@ -15557,7 +15838,7 @@ msgstr "uporabite nastavitve gostitelja"
 #: pve-manager/www/manager6/qemu/Options.js:247
 #: pve-manager/www/manager6/qemu/Options.js:253
 #: pve-manager/www/manager6/qemu/Options.js:265
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:108
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:118
 msgid "Use local time for RTC"
 msgstr "Za RTC uporabi lokalni čas"
 
@@ -15588,7 +15869,7 @@ msgstr ""
 
 #: pve-manager/www/manager6/qemu/Options.js:148
 #: pve-manager/www/manager6/qemu/Options.js:154
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:93
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:103
 msgid "Use tablet for pointer"
 msgstr "Uporabite tablico za kazalec"
 
@@ -15636,7 +15917,8 @@ msgstr "Uporabite {0} za neomejeno"
 msgid "Used"
 msgstr "Uporabljeno"
 
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:156
+#: proxmox-datacenter-manager/ui/src/pbs/remote.rs:150
+#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:155
 #, fuzzy
 msgid "Used Memory"
 msgstr "Pomnilnik"
@@ -15668,7 +15950,7 @@ msgstr "Uporabljeni objekti"
 #: proxmox-backup/www/window/ACLEdit.js:38
 #: proxmox-backup/www/window/TokenEdit.js:34
 #: proxmox-backup/www/window/UserEdit.js:36
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:291
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:308
 #: proxmox-yew-comp/src/acl/acl_edit.rs:67
 #: proxmox-yew-comp/src/tfa/tfa_view.rs:356
 #: proxmox-yew-comp/src/tfa/tfa_edit.rs:53
@@ -15678,12 +15960,15 @@ msgstr "Uporabljeni objekti"
 #: proxmox-yew-comp/src/tfa/tfa_confirm_remove.rs:50
 #: proxmox-yew-comp/src/user_panel.rs:260
 #: proxmox-yew-comp/src/user_panel.rs:269
+#: proxmox-yew-comp/src/token_panel.rs:412
+#: proxmox-yew-comp/src/token_panel.rs:446
+#: proxmox-yew-comp/src/token_panel.rs:471
 msgid "User"
 msgstr "Uporabnik"
 
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:110
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:24
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:187
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:309
 msgid "User Attribute Name"
 msgstr "Ime atributa uporabnika"
 
@@ -15694,7 +15979,7 @@ msgstr "Uporabniško blokirani"
 
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:408
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:292
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:112
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:218
 msgid "User Filter"
 msgstr "Uporabniški filter"
 
@@ -15704,7 +15989,7 @@ msgstr "ID uporabnika"
 
 #: pmg-gui/js/NavigationTree.js:72 pmg-gui/js/UserManagement.js:5
 #: proxmox-backup/www/panel/AccessControl.js:18
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:57
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:58
 msgid "User Management"
 msgstr "Upravljanje uporabnikov"
 
@@ -15714,7 +15999,7 @@ msgstr "Upravljanje uporabnikov"
 #: pve-manager/www/manager6/sdn/VnetACLView.js:241
 #: proxmox-backup/www/config/ACLView.js:161
 #: proxmox-backup/www/window/ACLEdit.js:34
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:89
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:99
 #: proxmox-yew-comp/src/acl/acl_edit.rs:66
 msgid "User Permission"
 msgstr "Uporabniška dovoljenja"
@@ -15744,7 +16029,7 @@ msgstr "Uporabnik že ima obnovitvene ključe."
 
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:393
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:278
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:106
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:212
 msgid "User classes"
 msgstr "Razredi uporabnikov"
 
@@ -15791,7 +16076,6 @@ msgstr "Uporabnik/Skupina/Žeton API"
 
 #: proxmox-widget-toolkit/src/panel/SmtpEditPanel.js:114
 #: pmg-gui/js/FetchmailEdit.js:64 pmg-gui/js/PBSRemoteEdit.js:61
-#: pmg-gui/js/mobile/loginscreen.js:21
 #: pve-manager/www/manager6/storage/CIFSEdit.js:162
 #: pve-manager/www/manager6/storage/ESXIEdit.js:64
 #: pve-manager/www/manager6/storage/PBSEdit.js:546
@@ -15833,7 +16117,7 @@ msgid "Using Account"
 msgstr "Uporaba računa"
 
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:177
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:281
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:282
 msgid "VCPUs"
 msgstr "vCPU-ji"
 
@@ -15877,6 +16161,7 @@ msgstr "VLAN ID"
 #: pve-manager/www/manager6/form/VLanField.js:9
 #: pve-manager/www/manager6/lxc/Network.js:512
 #: pve-manager/www/manager6/window/GuestImport.js:926
+#: pve-yew-mobile-gui/src/form/pve_vlan_field.rs:17
 msgid "VLAN Tag"
 msgstr "VLAN oznaka"
 
@@ -15897,8 +16182,8 @@ msgstr "Naprava VLAN raw"
 msgid "VM"
 msgstr "VM"
 
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:258
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:260
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:261
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:263
 #, fuzzy
 msgid "VM '{0}'"
 msgstr "Preverite '{0}'"
@@ -15909,12 +16194,12 @@ msgstr "VM diski"
 
 #: pve-manager/www/manager6/qemu/Options.js:348
 #: pve-manager/www/manager6/qemu/Options.js:354
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:253
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:265
 msgid "VM State storage"
 msgstr "Shranjevanje VM stanja"
 
 #: pve-manager/www/manager6/Utils.js:605
-#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:34
+#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:39
 msgid "VMware compatible"
 msgstr "Združljiv z VMware"
 
@@ -15923,7 +16208,7 @@ msgid "VMware image format"
 msgstr "VMware slikovni format"
 
 #: pve-manager/www/manager6/qemu/DisplayEdit.js:105
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:51
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:115
 msgid "VNC clipboard requires spice-tools installed in the Guest-VM."
 msgstr ""
 
@@ -15992,7 +16277,7 @@ msgstr "Veljavno območje CIDR"
 #: proxmox-widget-toolkit/src/window/Certificates.js:46
 #: pve-manager/www/manager6/node/Certificates.js:79
 #: pve-manager/www/manager6/node/Certificates.js:339
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:306
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:308
 #: proxmox-yew-comp/src/acme/certificate_list.rs:350
 #: proxmox-yew-comp/src/acme/certificate_list.rs:395
 msgid "Valid Since"
@@ -16016,7 +16301,7 @@ msgstr "Zakasnitev preverjanja"
 msgid "Value"
 msgstr "Vrednost"
 
-#: proxmox-yew-comp/src/safe_confirm_dialog.rs:84
+#: proxmox-yew-comp/src/safe_confirm_dialog.rs:87
 #, fuzzy
 msgid "Value does not match!"
 msgstr "Gesli se ne ujemata"
@@ -16102,7 +16387,7 @@ msgstr "Preveri vse"
 #: pmg-gui/js/LDAPConfig.js:81 pve-manager/www/manager6/dc/AuthEditAD.js:78
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:78
 #: pve-manager/www/manager6/dc/MetricServerView.js:361
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:233
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:336
 msgid "Verify Certificate"
 msgstr "Preverjanje potrdila"
 
@@ -16134,7 +16419,7 @@ msgstr "Preverjanje novih posnetkov"
 msgid "Verify Password"
 msgstr "Potrdi geslo"
 
-#: pmg-gui/js/MailProxyOptions.js:41
+#: pmg-gui/js/MailProxyOptions.js:29
 msgid "Verify Receivers"
 msgstr "Preverjanje prejemnikov"
 
@@ -16146,6 +16431,7 @@ msgstr "Preveri"
 #: pve-manager/www/manager6/grid/BackupView.js:379
 #: pve-manager/www/manager6/storage/BackupView.js:216
 #: proxmox-backup/www/datastore/Content.js:1207
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:135
 msgid "Verify State"
 msgstr "Preveri stanje"
 
@@ -16180,14 +16466,16 @@ msgstr "Preverite nove varnostne kopije takoj po zaključku"
 #: pve-manager/www/manager6/qemu/Smbios1Edit.js:54
 #: pve-manager/www/manager6/storage/TemplateView.js:81
 #: pve-manager/www/manager6/window/GuestImport.js:572
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:255
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:71
+#: pve-yew-mobile-gui/src/form/qemu_machine_version_selector.rs:176
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_machine_property.rs:93
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:62
 #: proxmox-yew-comp/src/apt_package_manager.rs:340
+#: proxmox-yew-comp/src/node_info.rs:215
 msgid "Version"
 msgstr "Različica"
 
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:47
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:85
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:43
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:79
 #, fuzzy
 msgid "Video Streaming"
 msgstr "Preizkusni niz"
@@ -16224,6 +16512,12 @@ msgstr "Ogled slik"
 msgid "View images"
 msgstr "Ogled slik"
 
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_machine_property.rs:132
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_machine_property.rs:144
+#, fuzzy
+msgid "VirtIO"
+msgstr "VirtIO RNG"
+
 #: pve-manager/www/manager6/qemu/HardwareView.js:347
 #: pve-manager/www/manager6/qemu/HardwareView.js:797
 #: pve-manager/www/manager6/qemu/RNGEdit.js:90
@@ -16243,7 +16537,7 @@ msgstr ""
 msgid "Virtual"
 msgstr "Virtualni"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:553
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:569
 msgid "Virtual Environment Nodes"
 msgstr ""
 
@@ -16274,8 +16568,8 @@ msgid "Virtual Machine {0} on node '{1}'"
 msgstr "Virtualni računalnik {0} v vozlišču '{1}'"
 
 #: pve-manager/www/manager6/dc/Guests.js:38
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:238
-#: pve-yew-mobile-gui/src/pages/page_dashboard.rs:277
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:240
+#: pve-yew-mobile-gui/src/pages/page_dashboard.rs:278
 msgid "Virtual Machines"
 msgstr "Virtualni računalniki"
 
@@ -16363,7 +16657,7 @@ msgid "WAL size"
 msgstr "Velikost WAL"
 
 #: pve-manager/www/manager6/qemu/SevEdit.js:74
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:82
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:75
 msgid "WARNING: When using SEV-SNP no EFI disk is loaded as pflash."
 msgstr ""
 
@@ -16500,6 +16794,10 @@ msgstr "Teden"
 msgid "Weekly"
 msgstr "Tedenski"
 
+#: pmg-gui/js/DNSBLSitesField.js:178
+msgid "Weight"
+msgstr ""
+
 #: pmg-gui/js/MailProxyConfiguration.js:53 pmg-gui/js/QuarantineView.js:22
 #: pmg-gui/js/SpamContextMenu.js:19 pmg-gui/js/SpamQuarantine.js:265
 #: pmg-gui/js/UserBlockWelcomeList.js:57 pmg-gui/js/UserBlockWelcomeList.js:247
@@ -16532,10 +16830,6 @@ msgid ""
 "guest start."
 msgstr ""
 
-#: pmg-gui/js/mobile/mailview.js:42 pmg-gui/js/mobile/quarantineview.js:104
-msgid "Whitelist"
-msgstr "Dovoli"
-
 #: pmg-gui/js/NavigationTree.js:28 pmg-gui/js/Utils.js:54
 msgid "Who Objects"
 msgstr "Objekt Kdo"
@@ -16551,7 +16845,7 @@ msgstr "Celo leto"
 #: proxmox-widget-toolkit/src/panel/DiskList.js:425
 #: pve-manager/www/manager6/Utils.js:2130 proxmox-backup/www/Utils.js:468
 #: proxmox-datacenter-manager/ui/src/tasks.rs:83
-#: proxmox-yew-comp/src/utils.rs:427
+#: proxmox-yew-comp/src/utils.rs:438
 msgid "Wipe Disk"
 msgstr "Trajno izbriši disk"
 
@@ -16689,12 +16983,13 @@ msgstr "Letno"
 #: pve-manager/www/manager6/window/TreeSettingsEdit.js:50
 #: pve-manager/www/manager6/window/TreeSettingsEdit.js:51
 #: proxmox-backup/www/Subscription.js:131
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:111
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:113
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_nodes.rs:102
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_summary.rs:112
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/remote_tree.rs:393
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/remote_tree.rs:401
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:125
+#: proxmox-yew-comp/src/auth_view.rs:418
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:231
 #: proxmox-yew-comp/src/configuration/network_view.rs:419
 #: proxmox-yew-comp/src/configuration/network_view.rs:436
 #: proxmox-yew-comp/src/configuration/network_view.rs:454
@@ -16729,11 +17024,12 @@ msgid "You can use Markdown for rich text formatting."
 msgstr "Za formatiranje obogatenega besedila lahko uporabite Markdown."
 
 #: pve-manager/www/manager6/qemu/DisplayEdit.js:114
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:117
 msgid "You cannot live-migrate while using the VNC clipboard."
 msgstr ""
 
 #: pve-manager/www/manager6/qemu/DisplayEdit.js:102
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:50
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:113
 msgid ""
 "You cannot use the default SPICE clipboard if the VNC clipboard is selected."
 msgstr ""
@@ -16762,7 +17058,7 @@ msgid "You have at least one node without subscription."
 msgstr "Imate vsaj eno vozlišče brez naročnine."
 
 #: pve-manager/www/manager6/qemu/QemuBiosEdit.js:38
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_bios_property.rs:42
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_bios_property.rs:32
 msgid ""
 "You need to add an EFI disk for storing the EFI settings. See the online "
 "help for details."
@@ -16831,7 +17127,7 @@ msgstr "ZFS Fond"
 
 #: pve-manager/www/manager6/Utils.js:2152 proxmox-backup/www/Utils.js:469
 #: proxmox-datacenter-manager/ui/src/tasks.rs:107
-#: proxmox-yew-comp/src/utils.rs:451
+#: proxmox-yew-comp/src/utils.rs:462
 msgid "ZFS Storage"
 msgstr "ZFS Shramba"
 
@@ -16876,18 +17172,18 @@ msgstr ""
 msgid "all"
 msgstr "Vsi"
 
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:160
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:168
 #, fuzzy
 msgid "any"
 msgstr "Dan"
 
 #: pve-manager/www/manager6/qemu/Options.js:139
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:187
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:199
 msgid "any CD-ROM"
 msgstr "kateri koli CD-ROM"
 
 #: pve-manager/www/manager6/qemu/Options.js:135
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:188
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:200
 msgid "any net"
 msgstr "katero koli mrežo"
 
@@ -16975,8 +17271,8 @@ msgstr "dni"
 #: pve-manager/www/manager6/qemu/HDEdit.js:448
 #: pve-manager/www/manager6/qemu/HDEdit.js:457
 #: pve-manager/www/manager6/qemu/HDEdit.js:466
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:166
 #: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:172
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:178
 msgid "default"
 msgstr "privzeto"
 
@@ -17024,6 +17320,8 @@ msgid "failed to parse webauthn registration challenge"
 msgstr ""
 
 #: pve-manager/www/manager6/form/BackupCompressionSelector.js:6
+#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:70
+#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:71
 msgid "fast"
 msgstr "hitro"
 
@@ -17031,7 +17329,7 @@ msgstr "hitro"
 msgid "fast and good"
 msgstr "hitro in dobro"
 
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:186
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:198
 #, fuzzy
 msgid "first Disk"
 msgstr "prvi disk"
@@ -17041,6 +17339,8 @@ msgid "first disk"
 msgstr "prvi disk"
 
 #: pve-manager/www/manager6/form/BackupCompressionSelector.js:7
+#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:69
+#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:71
 msgid "good"
 msgstr "dobro"
 
@@ -17161,6 +17461,9 @@ msgstr "manjka"
 
 #: proxmox-widget-toolkit/src/Utils.js:58
 #: proxmox-yew-comp/src/user_panel.rs:359
+#: proxmox-yew-comp/src/token_panel.rs:423
+#: proxmox-yew-comp/src/token_panel.rs:457
+#: proxmox-yew-comp/src/token_panel.rs:514
 msgid "never"
 msgstr "nikoli"
 
@@ -17175,11 +17478,16 @@ msgstr ""
 
 #: proxmox-widget-toolkit/src/form/VlanField.js:7
 #: pve-manager/www/manager6/form/VLanField.js:7
+#: pve-yew-mobile-gui/src/form/pve_vlan_field.rs:35
 msgid "no VLAN"
 msgstr ""
 
 #: pve-yew-mobile-gui/src/pages/page_task_status.rs:175
 msgid "no data loaded"
+msgstr ""
+
+#: proxmox-yew-widget-toolkit/src/widget/form/combobox.rs:219
+msgid "no such item"
 msgstr ""
 
 #: pve-manager/www/manager6/window/Settings.js:394
@@ -17193,13 +17501,15 @@ msgstr "noVNC nastavitve"
 #: proxmox-backup/www/window/DataStoreEdit.js:149
 #: proxmox-backup/www/window/DataStoreEdit.js:160
 #: proxmox-backup/www/window/SyncJobEdit.js:209
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:309
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:317
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:323
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:331
-#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:45
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:73
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:89
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:311
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:319
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:325
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:333
+#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:50
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:68
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:82
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:87
+#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:68
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/config_panel.rs:152
 msgid "none"
 msgstr "brez"
@@ -17237,6 +17547,10 @@ msgstr ""
 msgid "of {0} CPU(s)"
 msgstr "od {0} CPE-jev"
 
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:392
+msgid "old"
+msgstr ""
+
 #: proxmox-widget-toolkit/src/Toolkit.js:79
 msgid "only unicast addresses are allowed"
 msgstr "dovoljeni so samo unicast naslovi"
@@ -17255,6 +17569,7 @@ msgid "page not found"
 msgstr ""
 
 #: pve-manager/www/manager6/form/NetworkCardSelector.js:7
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_network_property.rs:37
 msgid "paravirtualized"
 msgstr "paravirtualiziran"
 
@@ -17362,7 +17677,8 @@ msgstr "Neznano"
 #: pve-manager/www/manager6/qemu/HDEdit.js:427
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:195
 #: pve-manager/www/manager6/qemu/RNGEdit.js:64
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:302
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_network_property.rs:151
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:303
 msgid "unlimited"
 msgstr "neomejeno"
 
@@ -17459,11 +17775,6 @@ msgid ""
 "}"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:264
-#, fuzzy
-msgid "{0} ({1} sockets)"
-msgstr "{0} ({1})"
-
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:376
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:314
 msgid "{0} ({1})"
@@ -17473,7 +17784,7 @@ msgstr "{0} ({1})"
 msgid "{0} ({1}/{2}) successful"
 msgstr "{0} ({1}/{2}) uspešno"
 
-#: proxmox-datacenter-manager/ui/src/pve/remote.rs:195
+#: proxmox-datacenter-manager/ui/src/pve/remote.rs:193
 msgid "{0} / {1} (running / total)"
 msgstr ""
 
@@ -17489,6 +17800,13 @@ msgstr "{0} element"
 msgid "{0} Items"
 msgstr "{0} predmetov"
 
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:407
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:412
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:415
+#, fuzzy
+msgid "{0} OK"
+msgstr "{0} ID"
+
 #: proxmox-backup/www/Utils.js:829
 msgid "{0} conflicting tasks still active."
 msgstr "{0} navzkrižna opravila še vedno aktivna."
@@ -17498,6 +17816,12 @@ msgstr "{0} navzkrižna opravila še vedno aktivna."
 #: proxmox-backup/www/tape/form/RetentionSelector.js:11
 msgid "{0} days"
 msgstr "{0} dni"
+
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:417
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:425
+#, fuzzy
+msgid "{0} failed"
+msgstr "Vse ni uspelo"
 
 #: pmg-gui/js/Dashboard.js:339
 #: proxmox-backup/www/tape/form/RetentionSelector.js:10
@@ -17522,11 +17846,11 @@ msgstr "{0} minut"
 msgid "{0} months"
 msgstr "{0} mesecev"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:183
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:185
 msgid "{0} nodes have an unknown status"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:192
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:194
 #, fuzzy
 msgid "{0} nodes online"
 msgstr "Vozlišče je brez povezave"
@@ -17535,7 +17859,13 @@ msgstr "Vozlišče je brez povezave"
 msgid "{0} not installed."
 msgstr "{0} ni nameščen."
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:189
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:402
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:409
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:419
+msgid "{0} not verified yet"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:191
 msgid "{0} of an unknown number of nodes online"
 msgstr ""
 
@@ -17548,7 +17878,7 @@ msgstr ""
 msgid "{0} of {1}"
 msgstr "{0} od {1}"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:173
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:175
 msgid "{0} of {1} nodes are offline"
 msgstr ""
 
@@ -17562,8 +17892,8 @@ msgstr "Območje {0} na vozlišču {1}"
 msgid "{0} on behalf of {1}"
 msgstr "{0} v imenu {1}"
 
-#: proxmox-datacenter-manager/ui/src/pve/remote.rs:257
-#: proxmox-datacenter-manager/ui/src/pve/remote.rs:268
+#: proxmox-datacenter-manager/ui/src/pve/remote.rs:260
+#: proxmox-datacenter-manager/ui/src/pve/remote.rs:270
 msgid "{0} running / {1} physical ({2} total configured)"
 msgstr ""
 
@@ -17595,11 +17925,10 @@ msgstr "{0} tednov"
 msgid "{0} years"
 msgstr "{0} let"
 
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:245
 #: proxmox-datacenter-manager/ui/src/pve/remote.rs:220
-#: proxmox-datacenter-manager/ui/src/pve/remote.rs:234
-#: proxmox-datacenter-manager/ui/src/pve/storage.rs:304
-#: proxmox-datacenter-manager/ui/src/renderer.rs:100
+#: proxmox-datacenter-manager/ui/src/pve/remote.rs:236
+#: proxmox-datacenter-manager/ui/src/pve/storage.rs:299
+#: proxmox-datacenter-manager/ui/src/renderer.rs:77
 #, fuzzy
 msgid "{0}% ({1} of {2})"
 msgstr "{0}% od {1}"
@@ -17609,21 +17938,24 @@ msgstr "{0}% od {1}"
 msgid "{0}% of {1}"
 msgstr "{0}% od {1}"
 
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:334
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:231
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:348
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:332
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:346
 #, fuzzy
 msgid "{0}% of {1} CPU(s)"
 msgstr "od {0} CPE-jev"
 
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:315
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:329
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:317
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:331
 #, fuzzy
 msgid "{0}, Group: {1}"
 msgstr "{0} od {1}"
 
 #~ msgid " Network/Time"
 #~ msgstr " Omrežje/čas"
+
+#, fuzzy
+#~ msgid "Add Proxmox VE"
+#~ msgstr "Proxmox VE prijava"
 
 #, fuzzy
 #~ msgid "Add Storages"
@@ -17664,6 +17996,9 @@ msgstr "{0} od {1}"
 #~ msgid "Automatically"
 #~ msgstr "Samodejno"
 
+#~ msgid "Blacklist"
+#~ msgstr "Blokiraj"
+
 #, fuzzy
 #~ msgid "Blocksize"
 #~ msgstr "Servis"
@@ -17682,6 +18017,10 @@ msgstr "{0} od {1}"
 #, fuzzy
 #~ msgid "CD/DVD"
 #~ msgstr "CD/DVD naprava"
+
+#, fuzzy
+#~ msgid "CPU Model"
+#~ msgstr "Model"
 
 #, fuzzy
 #~ msgid "CPU usage %"
@@ -17852,6 +18191,9 @@ msgstr "{0} od {1}"
 #~ msgid "Local Time"
 #~ msgstr "Lokalni čas"
 
+#~ msgid "Log In"
+#~ msgstr "Prijavite se"
+
 #, fuzzy
 #~ msgid "MAC"
 #~ msgstr "ACL"
@@ -17859,6 +18201,10 @@ msgstr "{0} od {1}"
 #, fuzzy
 #~ msgid "MAC Address"
 #~ msgstr "IP naslov"
+
+#, fuzzy
+#~ msgid "Machine Type"
+#~ msgstr "Vrsta vzdrževanja"
 
 #~ msgid "Manage {0}"
 #~ msgstr "Upravljaj {0}"
@@ -17899,10 +18245,6 @@ msgstr "{0} od {1}"
 
 #~ msgid "No Volume Groups found"
 #~ msgstr "Ni najdenih skupin podatkovnih pogonov"
-
-#, fuzzy
-#~ msgid "No endpoint selected"
-#~ msgstr "Izbran ni noben disk"
 
 #, fuzzy
 #~ msgid "No enhancements"
@@ -17983,6 +18325,9 @@ msgstr "{0} od {1}"
 #~ msgid "Public Key Alogrithm"
 #~ msgstr "Algoritem javnega ključa"
 
+#~ msgid "Range"
+#~ msgstr "Razpon"
+
 #, fuzzy
 #~ msgid "Register U2F Device"
 #~ msgstr "Omrežna kartica"
@@ -18011,6 +18356,10 @@ msgstr "{0} od {1}"
 #, fuzzy
 #~ msgid "Ring 0 Address"
 #~ msgstr "IP naslov"
+
+#, fuzzy
+#~ msgid "Root filesystem usage"
+#~ msgstr "Uporaba korenskega diska"
 
 #, fuzzy
 #~ msgid "SMTP"
@@ -18142,6 +18491,9 @@ msgstr "{0} od {1}"
 #~ msgid "WebAuthn "
 #~ msgstr "WebAuthn "
 
+#~ msgid "Whitelist"
+#~ msgstr "Dovoli"
+
 #~ msgid "Working"
 #~ msgstr "Deluje"
 
@@ -18226,8 +18578,9 @@ msgstr "{0} od {1}"
 #~ msgid "{0} (Auto)"
 #~ msgstr "{0} ({1})"
 
-#~ msgid "{0} ID"
-#~ msgstr "{0} ID"
+#, fuzzy
+#~ msgid "{0} ({1} sockets)"
+#~ msgstr "{0} ({1})"
 
 #, fuzzy
 #~ msgctxt "context"

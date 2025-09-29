@@ -7,9 +7,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: proxmox-mailgateway "
-"5a492cb929c65cbbd69ab1b3038aaa28d7ceba0e\n"
+"10c00f8a5a27a86693ccfeab8c6ca5e610640b38\n"
 "Report-Msgid-Bugs-To: <support@proxmox.com>\n"
-"POT-Creation-Date: 2025-09-19 08:15+0200\n"
+"POT-Creation-Date: 2025-09-29 18:08+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -72,9 +72,10 @@ msgid "Active"
 msgstr ""
 
 #: pmg-gui/js/ActionList.js:100 pmg-gui/js/ClusterAdministration.js:222
-#: pmg-gui/js/FetchmailView.js:80 pmg-gui/js/ObjectGroup.js:198
-#: pmg-gui/js/RuleConfiguration.js:161 pmg-gui/js/RuleInfo.js:431
-#: pmg-gui/js/UserBlockWelcomeList.js:162 pmg-gui/js/UserView.js:134
+#: pmg-gui/js/DNSBLSitesField.js:136 pmg-gui/js/FetchmailView.js:80
+#: pmg-gui/js/ObjectGroup.js:198 pmg-gui/js/RuleConfiguration.js:161
+#: pmg-gui/js/RuleInfo.js:431 pmg-gui/js/UserBlockWelcomeList.js:162
+#: pmg-gui/js/UserView.js:134
 msgid "Add"
 msgstr ""
 
@@ -220,10 +221,6 @@ msgstr ""
 msgid "BCC"
 msgstr ""
 
-#: pmg-gui/js/mobile/mailview.js:12
-msgid "Back"
-msgstr ""
-
 #: pmg-gui/js/SpamDetectorOptions.js:41
 msgid "Backscatter Score"
 msgstr ""
@@ -258,12 +255,8 @@ msgstr ""
 msgid "Base DN for Groups"
 msgstr ""
 
-#: pmg-gui/js/MailProxyOptions.js:108
+#: pmg-gui/js/MailProxyOptions.js:96
 msgid "Before Queue Filtering"
-msgstr ""
-
-#: pmg-gui/js/mobile/mailview.js:33 pmg-gui/js/mobile/quarantineview.js:113
-msgid "Blacklist"
 msgstr ""
 
 #: pmg-gui/js/VirusDetectorOptions.js:12
@@ -347,11 +340,11 @@ msgstr ""
 msgid "Client"
 msgstr ""
 
-#: pmg-gui/js/MailProxyOptions.js:81
+#: pmg-gui/js/MailProxyOptions.js:69
 msgid "Client Connection Count Limit"
 msgstr ""
 
-#: pmg-gui/js/MailProxyOptions.js:87
+#: pmg-gui/js/MailProxyOptions.js:75
 msgid "Client Connection Rate Limit"
 msgstr ""
 
@@ -363,7 +356,7 @@ msgstr ""
 msgid "Client Key"
 msgstr ""
 
-#: pmg-gui/js/MailProxyOptions.js:92
+#: pmg-gui/js/MailProxyOptions.js:80
 msgid "Client Message Rate Limit"
 msgstr ""
 
@@ -388,7 +381,7 @@ msgstr ""
 msgid "Cluster Resources (average)"
 msgstr ""
 
-#: pmg-gui/js/MainView.js:214 pmg-gui/js/QuarantineView.js:259
+#: pmg-gui/js/MainView.js:221 pmg-gui/js/QuarantineView.js:301
 msgid "Color Theme"
 msgstr ""
 
@@ -417,9 +410,8 @@ msgstr ""
 msgid "Configure Scheduled Backup"
 msgstr ""
 
-#: pmg-gui/js/RuleConfiguration.js:99 pmg-gui/js/RuleInfo.js:39
-#: pmg-gui/js/controller/QuarantineController.js:101
-#: pmg-gui/js/mobile/app.js:35
+#: pmg-gui/js/PostfixMailQueue.js:82 pmg-gui/js/RuleConfiguration.js:99
+#: pmg-gui/js/RuleInfo.js:39 pmg-gui/js/controller/QuarantineController.js:101
 msgid "Confirm"
 msgstr ""
 
@@ -496,11 +488,11 @@ msgstr ""
 msgid "DNS TXT Record"
 msgstr ""
 
-#: pmg-gui/js/MailProxyOptions.js:22
+#: pmg-gui/js/MailProxyOptions.js:106 pmg-gui/js/MailProxyOptions.js:116
 msgid "DNSBL Sites"
 msgstr ""
 
-#: pmg-gui/js/MailProxyOptions.js:28
+#: pmg-gui/js/MailProxyOptions.js:98
 msgid "DNSBL Threshold"
 msgstr ""
 
@@ -555,14 +547,13 @@ msgstr ""
 msgid "Delay"
 msgstr ""
 
-#: pmg-gui/js/MailProxyOptions.js:76
+#: pmg-gui/js/MailProxyOptions.js:64
 msgid "Delay Warning Time (hours)"
 msgstr ""
 
 #: pmg-gui/js/AttachmentQuarantine.js:153
 #: pmg-gui/js/QuarantineContextMenu.js:25 pmg-gui/js/SpamContextMenu.js:12
 #: pmg-gui/js/SpamQuarantine.js:283 pmg-gui/js/VirusQuarantine.js:166
-#: pmg-gui/js/mobile/mailview.js:51 pmg-gui/js/mobile/quarantineview.js:120
 msgid "Delete"
 msgstr ""
 
@@ -570,10 +561,13 @@ msgstr ""
 msgid "Delete all Messages"
 msgstr ""
 
+#: pmg-gui/js/PostfixMailQueue.js:100
+msgid "Delete {0} selected mails?"
+msgstr ""
+
 #: pmg-gui/js/AttachmentQuarantine.js:147
 #: pmg-gui/js/QuarantineContextMenu.js:19 pmg-gui/js/SpamContextMenu.js:6
 #: pmg-gui/js/SpamQuarantine.js:277 pmg-gui/js/VirusQuarantine.js:160
-#: pmg-gui/js/mobile/mailview.js:60 pmg-gui/js/mobile/quarantineview.js:97
 msgid "Deliver"
 msgstr ""
 
@@ -581,8 +575,12 @@ msgstr ""
 msgid "Deliver to"
 msgstr ""
 
+#: pmg-gui/js/PostfixMailQueue.js:96
+msgid "Deliver {0} selected mails?"
+msgstr ""
+
 #: pmg-gui/js/ActionList.js:133 pmg-gui/js/ObjectGroupList.js:40
-#: pmg-gui/js/ObjectGroupList.js:150 pmg-gui/js/SpamInfoGrid.js:75
+#: pmg-gui/js/ObjectGroupList.js:150 pmg-gui/js/SpamInfoGrid.js:79
 msgid "Description"
 msgstr ""
 
@@ -612,7 +610,7 @@ msgstr ""
 msgid "Disk usage"
 msgstr ""
 
-#: pmg-gui/js/MainView.js:188
+#: pmg-gui/js/MainView.js:195
 msgid "Documentation"
 msgstr ""
 
@@ -664,7 +662,7 @@ msgstr ""
 
 #: pmg-gui/js/ActionList.js:107 pmg-gui/js/ClamAVDatabase.js:161
 #: pmg-gui/js/DKIMSettings.js:223 pmg-gui/js/FetchmailView.js:87
-#: pmg-gui/js/LDAPConfig.js:557 pmg-gui/js/MailProxyOptions.js:117
+#: pmg-gui/js/LDAPConfig.js:557 pmg-gui/js/MailProxyOptions.js:139
 #: pmg-gui/js/MailProxyPorts.js:32 pmg-gui/js/MailProxyRelaying.js:100
 #: pmg-gui/js/MailProxyTLS.js:23 pmg-gui/js/MailProxyTLSDestinations.js:134
 #: pmg-gui/js/MyNetworks.js:90 pmg-gui/js/ObjectGroup.js:208
@@ -729,17 +727,15 @@ msgstr ""
 #: pmg-gui/js/LDAPConfig.js:528 pmg-gui/js/LoginView.js:113
 #: pmg-gui/js/LoginView.js:137 pmg-gui/js/LoginView.js:266
 #: pmg-gui/js/MailTracker.js:195 pmg-gui/js/MailTracker.js:303
-#: pmg-gui/js/PostfixMailQueue.js:69 pmg-gui/js/PostfixMailQueue.js:92
-#: pmg-gui/js/PostfixQShape.js:51 pmg-gui/js/PostfixQShape.js:67
-#: pmg-gui/js/PostfixQShape.js:80 pmg-gui/js/RegexTester.js:55
-#: pmg-gui/js/RuleConfiguration.js:69 pmg-gui/js/RuleConfiguration.js:113
-#: pmg-gui/js/RuleInfo.js:31 pmg-gui/js/RuleInfo.js:59
-#: pmg-gui/js/RuleInfo.js:81 pmg-gui/js/ServerStatus.js:35
-#: pmg-gui/js/SpamDetectorStatus.js:72 pmg-gui/js/Subscription.js:93
-#: pmg-gui/js/Subscription.js:181 pmg-gui/js/UserBlockWelcomeList.js:91
-#: pmg-gui/js/UserView.js:115 pmg-gui/js/Utils.js:797
-#: pmg-gui/js/ViewMailHeaders.js:61 pmg-gui/js/mobile/utils.js:45
-#: pmg-gui/js/mobile/utils.js:48 pmg-gui/js/mobile/utils.js:61
+#: pmg-gui/js/PostfixMailQueue.js:74 pmg-gui/js/PostfixQShape.js:51
+#: pmg-gui/js/PostfixQShape.js:67 pmg-gui/js/PostfixQShape.js:80
+#: pmg-gui/js/RegexTester.js:55 pmg-gui/js/RuleConfiguration.js:69
+#: pmg-gui/js/RuleConfiguration.js:113 pmg-gui/js/RuleInfo.js:31
+#: pmg-gui/js/RuleInfo.js:59 pmg-gui/js/RuleInfo.js:81
+#: pmg-gui/js/ServerStatus.js:35 pmg-gui/js/SpamDetectorStatus.js:72
+#: pmg-gui/js/Subscription.js:93 pmg-gui/js/Subscription.js:181
+#: pmg-gui/js/UserBlockWelcomeList.js:91 pmg-gui/js/UserView.js:115
+#: pmg-gui/js/Utils.js:797 pmg-gui/js/ViewMailHeaders.js:61
 msgid "Error"
 msgstr ""
 
@@ -785,8 +781,8 @@ msgstr ""
 msgid "Filetype"
 msgstr ""
 
-#: pmg-gui/js/MailTracker.js:88 pmg-gui/js/PostfixMailQueue.js:149
-#: pmg-gui/js/form/FilterField.js:14
+#: pmg-gui/js/DNSBLSitesField.js:163 pmg-gui/js/MailTracker.js:88
+#: pmg-gui/js/PostfixMailQueue.js:157 pmg-gui/js/form/FilterField.js:14
 msgid "Filter"
 msgstr ""
 
@@ -807,7 +803,7 @@ msgstr ""
 msgid "Fixed role for all auto-created users"
 msgstr ""
 
-#: pmg-gui/js/PostfixMailQueue.js:140
+#: pmg-gui/js/PostfixMailQueue.js:146
 msgid "Flush"
 msgstr ""
 
@@ -877,7 +873,7 @@ msgstr ""
 msgid "Header Attribute"
 msgstr ""
 
-#: pmg-gui/js/PostfixMailQueue.js:134
+#: pmg-gui/js/PostfixMailQueue.js:140
 msgid "Headers"
 msgstr ""
 
@@ -893,7 +889,7 @@ msgstr ""
 msgid "Heuristic Score"
 msgstr ""
 
-#: pmg-gui/js/MailProxyOptions.js:74
+#: pmg-gui/js/MailProxyOptions.js:62
 msgid "Hide Internal Hosts"
 msgstr ""
 
@@ -1068,8 +1064,8 @@ msgstr ""
 msgid "LDAP filter"
 msgstr ""
 
-#: pmg-gui/js/LoginView.js:383 pmg-gui/js/MainView.js:223
-#: pmg-gui/js/QuarantineView.js:263
+#: pmg-gui/js/LoginView.js:383 pmg-gui/js/MainView.js:230
+#: pmg-gui/js/QuarantineView.js:305
 msgid "Language"
 msgstr ""
 
@@ -1133,10 +1129,6 @@ msgid ""
 "sure you want to unlock the user?"
 msgstr ""
 
-#: pmg-gui/js/mobile/loginscreen.js:44
-msgid "Log In"
-msgstr ""
-
 #: pmg-gui/js/LoginView.js:14
 msgid "Login"
 msgstr ""
@@ -1149,7 +1141,7 @@ msgstr ""
 msgid "Login failed. Please try again"
 msgstr ""
 
-#: pmg-gui/js/MainView.js:230 pmg-gui/js/QuarantineView.js:270
+#: pmg-gui/js/MainView.js:237 pmg-gui/js/QuarantineView.js:317
 msgid "Logout"
 msgstr ""
 
@@ -1231,7 +1223,7 @@ msgstr ""
 msgid "Multiple E-Mails selected"
 msgstr ""
 
-#: pmg-gui/js/MainView.js:209 pmg-gui/js/Settings.js:5
+#: pmg-gui/js/MainView.js:216 pmg-gui/js/Settings.js:5
 msgid "My Settings"
 msgstr ""
 
@@ -1250,11 +1242,15 @@ msgstr ""
 msgid "Namespace"
 msgstr ""
 
-#: pmg-gui/js/MailProxyOptions.js:56
+#: pmg-gui/js/QuarantineView.js:240
+msgid "Narrow viewport detected"
+msgstr ""
+
+#: pmg-gui/js/MailProxyOptions.js:44
 msgid "Netmask for Greylisting IPv4"
 msgstr ""
 
-#: pmg-gui/js/MailProxyOptions.js:66
+#: pmg-gui/js/MailProxyOptions.js:54
 msgid "Netmask for Greylisting IPv6"
 msgstr ""
 
@@ -1302,6 +1298,10 @@ msgstr ""
 msgid "No Reports"
 msgstr ""
 
+#: pmg-gui/js/DNSBLSitesField.js:17
+msgid "No Sites defined"
+msgstr ""
+
 #: pmg-gui/js/SpamInfoGrid.js:26
 msgid "No Spam Info"
 msgstr ""
@@ -1327,11 +1327,6 @@ msgstr ""
 
 #: pmg-gui/js/PBSSnapshotView.js:126
 msgid "No schedule setup."
-msgstr ""
-
-#: pmg-gui/js/mobile/quarantineview.js:62 pmg-gui/js/mobile/utils.js:146
-#: pmg-gui/js/mobile/utils.js:149
-msgid "No valid subscription"
 msgstr ""
 
 #: pmg-gui/js/ClusterAdministration.js:240 pmg-gui/js/ServerStatus.js:68
@@ -1364,7 +1359,6 @@ msgid "Notify"
 msgstr ""
 
 #: pmg-gui/js/LoginView.js:179 pmg-gui/js/RegexTester.js:49
-#: pmg-gui/js/mobile/quarantineview.js:45
 msgid "OK"
 msgstr ""
 
@@ -1428,7 +1422,7 @@ msgstr ""
 #: pmg-gui/js/ClusterAdministration.js:64 pmg-gui/js/FetchmailEdit.js:71
 #: pmg-gui/js/LDAPConfig.js:123 pmg-gui/js/LoginView.js:366
 #: pmg-gui/js/PBSRemoteEdit.js:80 pmg-gui/js/UserEdit.js:69
-#: pmg-gui/js/UserView.js:154 pmg-gui/js/mobile/loginscreen.js:32
+#: pmg-gui/js/UserView.js:154
 msgid "Password"
 msgstr ""
 
@@ -1574,10 +1568,6 @@ msgstr ""
 msgid "Random Delay"
 msgstr ""
 
-#: pmg-gui/js/mobile/quarantineview.js:19
-msgid "Range"
-msgstr ""
-
 #: pmg-gui/js/AuthEditOIDC.js:85 pmg-gui/js/UserView.js:178
 msgid "Realm"
 msgstr ""
@@ -1586,7 +1576,7 @@ msgstr ""
 msgid "Realms"
 msgstr ""
 
-#: pmg-gui/js/PostfixMailQueue.js:184
+#: pmg-gui/js/PostfixMailQueue.js:192
 msgid "Reason"
 msgstr ""
 
@@ -1594,7 +1584,7 @@ msgstr ""
 #: pmg-gui/js/Dashboard.js:483 pmg-gui/js/DomainStatistics.js:81
 #: pmg-gui/js/DomainStatistics.js:124 pmg-gui/js/MailInfo.js:35
 #: pmg-gui/js/MailTracker.js:82 pmg-gui/js/NavigationTree.js:196
-#: pmg-gui/js/PostfixMailQueue.js:178 pmg-gui/js/ReceiverStatistics.js:110
+#: pmg-gui/js/PostfixMailQueue.js:186 pmg-gui/js/ReceiverStatistics.js:110
 #: pmg-gui/js/ReceiverStatistics.js:156 pmg-gui/js/ReceiverStatistics.js:223
 #: pmg-gui/js/SenderStatistics.js:63 pmg-gui/js/Utils.js:38
 #: pmg-gui/js/Utils.js:549 pmg-gui/js/VirusQuarantine.js:76
@@ -1655,6 +1645,7 @@ msgstr ""
 msgid "Remote"
 msgstr ""
 
+#: pmg-gui/js/DNSBLSitesField.js:141 pmg-gui/js/PostfixMailQueue.js:152
 #: pmg-gui/js/RuleConfiguration.js:167 pmg-gui/js/RuleInfo.js:377
 #: pmg-gui/js/UserBlockWelcomeList.js:167
 msgid "Remove"
@@ -1740,7 +1731,7 @@ msgstr ""
 msgid "SMTP HELO checks"
 msgstr ""
 
-#: pmg-gui/js/MailProxyOptions.js:97
+#: pmg-gui/js/MailProxyOptions.js:85
 msgid "SMTPD Banner"
 msgstr ""
 
@@ -1779,7 +1770,7 @@ msgstr ""
 
 #: pmg-gui/js/ReceiverStatistics.js:93 pmg-gui/js/SpamDetectorCustom.js:131
 #: pmg-gui/js/SpamDetectorCustom.js:177 pmg-gui/js/SpamDetectorCustom.js:261
-#: pmg-gui/js/SpamInfoGrid.js:45 pmg-gui/js/SpamQuarantine.js:179
+#: pmg-gui/js/SpamInfoGrid.js:49 pmg-gui/js/SpamQuarantine.js:179
 #: pmg-gui/js/Utils.js:39
 msgid "Score"
 msgstr ""
@@ -1798,7 +1789,7 @@ msgstr ""
 msgid "Selector"
 msgstr ""
 
-#: pmg-gui/js/MailProxyOptions.js:103
+#: pmg-gui/js/MailProxyOptions.js:91
 msgid "Send NDR on Blocked E-Mails"
 msgstr ""
 
@@ -1812,7 +1803,7 @@ msgstr ""
 
 #: pmg-gui/js/AttachmentQuarantine.js:74 pmg-gui/js/ContactStatistics.js:63
 #: pmg-gui/js/MailTracker.js:76 pmg-gui/js/NavigationTree.js:190
-#: pmg-gui/js/PostfixMailQueue.js:172 pmg-gui/js/ReceiverStatistics.js:63
+#: pmg-gui/js/PostfixMailQueue.js:180 pmg-gui/js/ReceiverStatistics.js:63
 #: pmg-gui/js/SenderStatistics.js:102 pmg-gui/js/SenderStatistics.js:148
 #: pmg-gui/js/SenderStatistics.js:211 pmg-gui/js/Utils.js:37
 #: pmg-gui/js/VirusQuarantine.js:76
@@ -1911,8 +1902,16 @@ msgstr ""
 msgid "Signing Domain Source"
 msgstr ""
 
-#: pmg-gui/js/QuarantineList.js:320 pmg-gui/js/mobile/quarantineview.js:26
+#: pmg-gui/js/QuarantineList.js:320
 msgid "Since"
+msgstr ""
+
+#: pmg-gui/js/DNSBLSitesField.js:149
+msgid "Site"
+msgstr ""
+
+#: pmg-gui/js/DNSBLSitesField.js:72
+msgid "Site must not be empty."
 msgstr ""
 
 #: pmg-gui/js/AttachmentGrid.js:120 pmg-gui/js/AttachmentQuarantine.js:80
@@ -1970,7 +1969,7 @@ msgstr ""
 msgid "SpamAssassin update"
 msgstr ""
 
-#: pmg-gui/js/SpamInfoGrid.js:41
+#: pmg-gui/js/SpamInfoGrid.js:45
 msgid "Spamscore"
 msgstr ""
 
@@ -2048,6 +2047,14 @@ msgstr ""
 msgid "Swap usage"
 msgstr ""
 
+#: pmg-gui/js/QuarantineView.js:310
+msgid "Switch to Mobile View"
+msgstr ""
+
+#: pmg-gui/js/QuarantineView.js:245
+msgid "Switch to mobile view"
+msgstr ""
+
 #: pmg-gui/js/LDAPConfig.js:569
 msgid "Synchronize"
 msgstr ""
@@ -2104,7 +2111,7 @@ msgstr ""
 msgid "Tasks"
 msgstr ""
 
-#: pmg-gui/js/SpamInfoGrid.js:37
+#: pmg-gui/js/SpamInfoGrid.js:41
 msgid "Test Name"
 msgstr ""
 
@@ -2119,7 +2126,7 @@ msgstr ""
 
 #: pmg-gui/js/AttachmentQuarantine.js:93 pmg-gui/js/BackupRestore.js:174
 #: pmg-gui/js/ContactStatistics.js:84 pmg-gui/js/MailTracker.js:367
-#: pmg-gui/js/PostfixMailQueue.js:160 pmg-gui/js/ReceiverStatistics.js:84
+#: pmg-gui/js/PostfixMailQueue.js:168 pmg-gui/js/ReceiverStatistics.js:84
 #: pmg-gui/js/SenderStatistics.js:84 pmg-gui/js/SpamQuarantine.js:198
 #: pmg-gui/js/SystemConfiguration.js:28 pmg-gui/js/VirusQuarantine.js:101
 msgid "Time"
@@ -2208,7 +2215,7 @@ msgstr ""
 msgid "Unlock TFA authentication for {0}"
 msgstr ""
 
-#: pmg-gui/js/QuarantineList.js:327 pmg-gui/js/mobile/quarantineview.js:36
+#: pmg-gui/js/QuarantineList.js:327
 msgid "Until"
 msgstr ""
 
@@ -2248,11 +2255,11 @@ msgstr ""
 msgid "Use Bayesian filter"
 msgstr ""
 
-#: pmg-gui/js/MailProxyOptions.js:52
+#: pmg-gui/js/MailProxyOptions.js:40
 msgid "Use Greylisting for IPv4"
 msgstr ""
 
-#: pmg-gui/js/MailProxyOptions.js:62
+#: pmg-gui/js/MailProxyOptions.js:50
 msgid "Use Greylisting for IPv6"
 msgstr ""
 
@@ -2268,7 +2275,7 @@ msgstr ""
 msgid "Use Razor2 checks"
 msgstr ""
 
-#: pmg-gui/js/MailProxyOptions.js:72
+#: pmg-gui/js/MailProxyOptions.js:60
 msgid "Use SPF"
 msgstr ""
 
@@ -2328,7 +2335,6 @@ msgid "User statistic lifetime (days)"
 msgstr ""
 
 #: pmg-gui/js/FetchmailEdit.js:64 pmg-gui/js/PBSRemoteEdit.js:61
-#: pmg-gui/js/mobile/loginscreen.js:21
 msgid "Username"
 msgstr ""
 
@@ -2353,7 +2359,7 @@ msgstr ""
 msgid "Verify Certificate"
 msgstr ""
 
-#: pmg-gui/js/MailProxyOptions.js:41
+#: pmg-gui/js/MailProxyOptions.js:29
 msgid "Verify Receivers"
 msgstr ""
 
@@ -2432,6 +2438,10 @@ msgstr ""
 msgid "Webinterface Settings"
 msgstr ""
 
+#: pmg-gui/js/DNSBLSitesField.js:178
+msgid "Weight"
+msgstr ""
+
 #: pmg-gui/js/MailProxyConfiguration.js:53 pmg-gui/js/QuarantineView.js:22
 #: pmg-gui/js/SpamContextMenu.js:19 pmg-gui/js/SpamQuarantine.js:265
 #: pmg-gui/js/UserBlockWelcomeList.js:57 pmg-gui/js/UserBlockWelcomeList.js:247
@@ -2452,10 +2462,6 @@ msgstr ""
 
 #: pmg-gui/js/NavigationTree.js:40 pmg-gui/js/Utils.js:56
 msgid "When Objects"
-msgstr ""
-
-#: pmg-gui/js/mobile/mailview.js:42 pmg-gui/js/mobile/quarantineview.js:104
-msgid "Whitelist"
 msgstr ""
 
 #: pmg-gui/js/NavigationTree.js:28 pmg-gui/js/Utils.js:54

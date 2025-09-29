@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: proxmox translations\n"
 "Report-Msgid-Bugs-To: <support@proxmox.com>\n"
-"POT-Creation-Date: 2025-09-19 08:15+0200\n"
+"POT-Creation-Date: 2025-09-29 18:08+0200\n"
 "PO-Revision-Date: 2019-06-13 11:09+0200\n"
 "Last-Translator: Condless <info@condless.com>\n"
 "Language-Team: Hebrew <support@proxmox.com>\n"
@@ -62,7 +62,7 @@ msgstr ""
 msgid "/some/path"
 msgstr "/some/path"
 
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:32
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:33
 #: pve-yew-mobile-gui/src/pages/page_node_status/dashboard_panel.rs:76
 #, fuzzy
 msgid "1 Core"
@@ -70,8 +70,9 @@ msgid_plural "{n} Cores"
 msgstr[0] "ליבות"
 msgstr[1] "ליבות"
 
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:33
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:34
 #: pve-yew-mobile-gui/src/pages/page_node_status/dashboard_panel.rs:77
+#: proxmox-yew-comp/src/node_info.rs:208
 #, fuzzy
 msgid "1 Socket"
 msgid_plural "{n} Sockets"
@@ -90,7 +91,7 @@ msgstr ""
 msgid "5 Minutes"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:234
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:236
 #, fuzzy
 msgid "<IP/Hostname>:Port"
 msgstr "שם שרת"
@@ -127,6 +128,11 @@ msgstr ""
 #, fuzzy
 msgid "ACL"
 msgstr "ACLs"
+
+#: proxmox-yew-comp/src/auth_view.rs:428
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:240
+msgid "ACLs"
+msgstr ""
 
 #: proxmox-backup/www/config/CertificateView.js:63
 #: proxmox-datacenter-manager/ui/src/certificates.rs:46
@@ -168,7 +174,7 @@ msgstr "שרשרת אישורים"
 
 #: pve-manager/www/manager6/qemu/Options.js:187
 #: pve-manager/www/manager6/qemu/Options.js:193
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:97
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:107
 msgid "ACPI support"
 msgstr "ACPI תמיכת"
 
@@ -181,7 +187,7 @@ msgid "ACR Values"
 msgstr "S.M.A.R.T. ערכי"
 
 #: pve-manager/www/manager6/qemu/Options.js:372
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:97
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:88
 msgid "AMD SEV"
 msgstr ""
 
@@ -224,7 +230,7 @@ msgstr ""
 msgid "API Token"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:315
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:332
 #, fuzzy
 msgid "API Token Name"
 msgstr "שם בדיקה"
@@ -366,11 +372,15 @@ msgstr "פריטי פעולה"
 #: proxmox-backup/www/tape/ChangerStatus.js:760
 #: proxmox-backup/www/tape/ChangerStatus.js:914
 #: proxmox-backup/www/tape/ChangerStatus.js:989
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:612
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:616
 #: proxmox-datacenter-manager/ui/src/sdn/zone_tree.rs:160
 #, fuzzy
 msgid "Actions"
 msgstr "פעולה"
+
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:105
+msgid "Activate AES instruction set for HW acceleration."
+msgstr ""
 
 #: proxmox-widget-toolkit/src/form/NetworkSelector.js:114
 #: proxmox-widget-toolkit/src/node/NetworkView.js:310
@@ -380,13 +390,15 @@ msgstr "פעולה"
 #: pve-manager/www/manager6/storage/PBSEdit.js:232
 #: pve-manager/www/manager6/storage/PBSEdit.js:235
 #: pve-manager/www/manager6/storage/StatusView.js:31
-#: proxmox-datacenter-manager/ui/src/pve/storage.rs:271
+#: proxmox-datacenter-manager/ui/src/pve/storage.rs:265
+#: pve-yew-mobile-gui/src/form/pve_network_selector.rs:154
 #: proxmox-yew-comp/src/configuration/network_view.rs:416
 msgid "Active"
 msgstr "פעיל"
 
 #: proxmox-widget-toolkit/src/Schema.js:39
-#: pve-manager/www/manager6/Utils.js:726
+#: pve-manager/www/manager6/Utils.js:726 proxmox-yew-comp/src/auth_view.rs:277
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:401
 msgid "Active Directory Server"
 msgstr "Active Directory שרת"
 
@@ -408,10 +420,10 @@ msgstr "פעיל"
 #: proxmox-widget-toolkit/src/window/Edit.js:310
 #: proxmox-widget-toolkit/src/window/NotificationMatcherEdit.js:865
 #: pmg-gui/js/ActionList.js:100 pmg-gui/js/ClusterAdministration.js:222
-#: pmg-gui/js/FetchmailView.js:80 pmg-gui/js/ObjectGroup.js:198
-#: pmg-gui/js/RuleConfiguration.js:161 pmg-gui/js/RuleInfo.js:431
-#: pmg-gui/js/UserBlockWelcomeList.js:162 pmg-gui/js/UserView.js:134
-#: pve-manager/www/manager6/dc/ACLView.js:198
+#: pmg-gui/js/DNSBLSitesField.js:136 pmg-gui/js/FetchmailView.js:80
+#: pmg-gui/js/ObjectGroup.js:198 pmg-gui/js/RuleConfiguration.js:161
+#: pmg-gui/js/RuleInfo.js:431 pmg-gui/js/UserBlockWelcomeList.js:162
+#: pmg-gui/js/UserView.js:134 pve-manager/www/manager6/dc/ACLView.js:198
 #: pve-manager/www/manager6/dc/AuthView.js:108
 #: pve-manager/www/manager6/dc/Backup.js:717
 #: pve-manager/www/manager6/dc/CorosyncLinkEdit.js:308
@@ -459,9 +471,10 @@ msgstr "פעיל"
 #: proxmox-backup/www/tape/PoolConfig.js:95
 #: proxmox-backup/www/window/TrafficControlEdit.js:430
 #: proxmox-datacenter-manager/ui/src/remotes/node_url_list.rs:203
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:544
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:173
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:546
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/evpn_panel.rs:115
-#: pve-yew-mobile-gui/src/widgets/edit_dialog.rs:355
+#: pve-yew-mobile-gui/src/widgets/edit_dialog.rs:380
 #: proxmox-yew-comp/src/acme/acme_accounts.rs:106
 #: proxmox-yew-comp/src/acme/acme_domains.rs:175
 #: proxmox-yew-comp/src/acme/acme_domains.rs:353
@@ -470,7 +483,7 @@ msgstr "פעיל"
 #: proxmox-yew-comp/src/apt_repositories.rs:556
 #: proxmox-yew-comp/src/apt_repositories.rs:697
 #: proxmox-yew-comp/src/auth_edit_openid.rs:157
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:262
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:386
 #: proxmox-yew-comp/src/acl/acl_view.rs:199
 #: proxmox-yew-comp/src/edit_window.rs:313
 #: proxmox-yew-comp/src/tfa/tfa_view.rs:271
@@ -478,6 +491,8 @@ msgstr "פעיל"
 #: proxmox-yew-comp/src/tfa/tfa_add_recovery.rs:228
 #: proxmox-yew-comp/src/user_panel.rs:175
 #: proxmox-yew-comp/src/user_panel.rs:260
+#: proxmox-yew-comp/src/token_panel.rs:180
+#: proxmox-yew-comp/src/token_panel.rs:388
 msgid "Add"
 msgstr "הוסף"
 
@@ -516,17 +531,17 @@ msgstr "Header"
 msgid "Add Namespace"
 msgstr "שם"
 
+#: pve-yew-mobile-gui/src/pages/page_qemu_status/hardware_panel.rs:445
+#, fuzzy
+msgid "Add Network card"
+msgstr "IP רשת"
+
 #: pve-manager/www/manager6/sdn/FabricsView.js:107
 #: pve-manager/www/manager6/sdn/FabricsView.js:168
 #: pve-manager/www/manager6/sdn/fabrics/NodeEdit.js:188
 #, fuzzy
 msgid "Add Node"
 msgstr "הוסף אחסון"
-
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:176
-#, fuzzy
-msgid "Add Proxmox VE"
-msgstr "Proxmox VE התחברות"
 
 #: proxmox-backup/www/config/SyncView.js:226
 #, fuzzy
@@ -690,7 +705,7 @@ msgstr "אימייל של המנהל"
 #: pve-manager/www/manager6/dc/Backup.js:420
 #: pve-manager/www/manager6/window/GuestImport.js:656
 #: pve-manager/www/manager6/window/Wizard.js:163
-#: pve-yew-mobile-gui/src/widgets/edit_dialog.rs:330
+#: pve-yew-mobile-gui/src/widgets/edit_dialog.rs:355
 #: proxmox-yew-comp/src/edit_window.rs:293
 msgid "Advanced"
 msgstr "מתקדם"
@@ -762,7 +777,7 @@ msgid "All"
 msgstr "הכל"
 
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:204
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:311
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:312
 #, fuzzy
 msgid "All Cores"
 msgstr "ליבות"
@@ -772,11 +787,17 @@ msgid "All Functions"
 msgstr "כל הפונקצית"
 
 #: proxmox-backup/www/datastore/Content.js:1248
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:392
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:399
 msgid "All OK"
 msgstr ""
 
 #: proxmox-backup/www/datastore/Content.js:1244
 msgid "All OK (old)"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:391
+msgid "All OK, but some snapshots were not verified in last 30 days"
 msgstr ""
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:441
@@ -805,6 +826,7 @@ msgid "All except {0}"
 msgstr "הכל מלבד {0}"
 
 #: proxmox-backup/www/datastore/Content.js:1264
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:423
 #, fuzzy
 msgid "All failed"
 msgstr "IP סינון"
@@ -812,6 +834,11 @@ msgstr "IP סינון"
 #: pmg-gui/js/form/MatchModeSelector.js:6
 msgid "All match"
 msgstr ""
+
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_network_property.rs:78
+#, fuzzy
+msgid "All network devices in use."
+msgstr "אין התקן רשת"
 
 #: pve-yew-mobile-gui/src/pages/page_node_status/services_panel.rs:75
 msgid "All required services running"
@@ -822,11 +849,15 @@ msgstr ""
 msgid "All rules match"
 msgstr ""
 
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:396
+msgid "All snapshots verified at least once in last 30 days"
+msgstr ""
+
 #: pve-manager/www/manager6/node/ZFS.js:245 proxmox-backup/www/ZFSList.js:81
 msgid "Allocated"
 msgstr "מוקצה"
 
-#: proxmox-datacenter-manager/ui/src/pve/remote.rs:251
+#: proxmox-datacenter-manager/ui/src/pve/remote.rs:254
 #, fuzzy
 msgid "Allocation"
 msgstr "הגנה"
@@ -839,7 +870,7 @@ msgid "Allocation Policy"
 msgstr "פעולה"
 
 #: pve-manager/www/manager6/qemu/SevEdit.js:92
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:51
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:44
 msgid "Allow Debugging"
 msgstr ""
 
@@ -853,12 +884,12 @@ msgid "Allow HREFs"
 msgstr "אפשר HREFs"
 
 #: pve-manager/www/manager6/qemu/SevEdit.js:103
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:61
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:54
 msgid "Allow Key-Sharing"
 msgstr ""
 
 #: pve-manager/www/manager6/qemu/SevEdit.js:114
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:70
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:63
 #, fuzzy
 msgid "Allow SMT"
 msgstr "אפשר HREFs"
@@ -867,6 +898,10 @@ msgstr "אפשר HREFs"
 #, fuzzy
 msgid "Allow Snapshots as Volume-Chain"
 msgstr "סנאפשוטים"
+
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:102
+msgid "Allow guest OS to use 1GB size pages, if host HW supports it"
+msgstr ""
 
 #: pve-manager/www/manager6/window/BulkAction.js:90
 msgid "Allow local disk migration"
@@ -877,6 +912,14 @@ msgstr ""
 #: proxmox-widget-toolkit/src/Toolkit.js:129
 msgid "Allowed characters"
 msgstr "תווים מורשים"
+
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:98
+msgid "Allows improved Spectre mitigation with AMD CPUs"
+msgstr ""
+
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:96
+msgid "Allows improved Spectre mitigation with Intel CPUs"
+msgstr ""
 
 #: pve-manager/www/manager6/UIOptions.js:80
 #: pve-manager/www/manager6/UIOptions.js:82
@@ -922,7 +965,7 @@ msgid "Analytics"
 msgstr ""
 
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:120
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:201
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:341
 msgid "Anonymous Search"
 msgstr ""
 
@@ -949,7 +992,7 @@ msgstr ""
 #: pmg-gui/js/SpamDetectorCustom.js:83 pve-manager/www/manager6/ceph/OSD.js:242
 #: pve-manager/www/manager6/node/ACME.js:419
 #: pve-manager/www/manager6/sdn/StatusView.js:46
-#: pmg-yew-quarantine-gui/src/page_spam_list.rs:96
+#: pmg-yew-quarantine-gui/src/page_spam_list.rs:102
 #: proxmox-yew-comp/src/language_dialog.rs:93
 msgid "Apply"
 msgstr "החל"
@@ -990,7 +1033,7 @@ msgid ""
 "changes. Proceed?"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/Utils.js:67 proxmox-yew-comp/src/lib.rs:264
+#: proxmox-widget-toolkit/src/Utils.js:67 proxmox-yew-comp/src/lib.rs:270
 msgid "Arabic"
 msgstr ""
 
@@ -1126,7 +1169,7 @@ msgstr "האם אתה בטוח שברצונך להסיר ערך זה"
 msgid "Are you sure you want to remove this entry?"
 msgstr "האם אתה בטוח שברצונך להסיר ערך זה"
 
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:208
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:199
 #, fuzzy
 msgid "Are you sure you want to remove this remote?"
 msgstr "האם אתה בטוח שברצונך להסיר ערך זה"
@@ -1249,7 +1292,7 @@ msgstr ""
 msgid "Auth-Provider Default"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:335
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:326
 msgid "AuthId"
 msgstr ""
 
@@ -1312,13 +1355,13 @@ msgstr "חולל פרטים ייחודיים, כמו כתובות MAC"
 #: pve-manager/www/manager6/form/TagColorGrid.js:55
 #: pve-manager/www/manager6/qemu/Options.js:350
 #: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:386
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:255
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:267
 #, fuzzy
 msgid "Automatic"
 msgstr "אוטומטי"
 
 #: pve-manager/www/manager6/qemu/Options.js:361
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:264
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:276
 msgid "Automatic (Storage used by the VM, or 'local')"
 msgstr ""
 
@@ -1378,7 +1421,6 @@ msgstr ""
 msgid "BCC"
 msgstr "עותק נסתר"
 
-#: pmg-gui/js/mobile/mailview.js:12
 #: pve-manager/www/manager6/window/Wizard.js:176
 #: proxmox-backup/www/tape/window/TapeRestore.js:268
 #: proxmox-yew-comp/src/wizard.rs:667
@@ -1424,7 +1466,7 @@ msgstr "ציון Backscatter"
 #: proxmox-datacenter-manager/ui/src/pve/utils.rs:284
 #: proxmox-datacenter-manager/ui/src/tasks.rs:91
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/mod.rs:120
-#: proxmox-yew-comp/src/utils.rs:435
+#: proxmox-yew-comp/src/utils.rs:446
 msgid "Backup"
 msgstr "גיבוי"
 
@@ -1438,7 +1480,7 @@ msgstr "משימת גיבוי"
 msgid "Backup Details"
 msgstr "פרטים"
 
-#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:124
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:100
 #, fuzzy
 msgid "Backup Dir"
 msgstr "גיבוי"
@@ -1458,7 +1500,7 @@ msgstr "משימת גיבוי"
 #: pve-manager/www/manager6/dc/Backup.js:9
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:52
 #: proxmox-datacenter-manager/ui/src/tasks.rs:92
-#: proxmox-yew-comp/src/utils.rs:436
+#: proxmox-yew-comp/src/utils.rs:447
 msgid "Backup Job"
 msgstr "משימת גיבוי"
 
@@ -1509,7 +1551,7 @@ msgid "Backup notifications"
 msgstr "התראת אימייל"
 
 #: pve-manager/www/manager6/grid/BackupView.js:158
-#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:195
+#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:187
 msgid "Backup now"
 msgstr "גבה עכשיו"
 
@@ -1548,7 +1590,7 @@ msgid "Bad Request"
 msgstr "דרישה לא חוקית"
 
 #: pve-manager/www/manager6/qemu/MemoryEdit.js:125
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_memory_property.rs:86
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_memory_property.rs:88
 msgid "Ballooning Device"
 msgstr "Ballooning התקן"
 
@@ -1588,7 +1630,7 @@ msgstr "שם מתחם בסיס לקבוצות"
 
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:100
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:16
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:179
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:302
 msgid "Base Domain Name"
 msgstr "שם מתחם בסיס"
 
@@ -1604,24 +1646,28 @@ msgstr "volume בסיס"
 msgid "Basic"
 msgstr "בסיס"
 
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:99
+msgid "Basis for \"Speculative Store Bypass\" protection for AMD models"
+msgstr ""
+
 #: pve-manager/www/manager6/dc/MetricServerView.js:372
 #: proxmox-backup/www/window/InfluxDbEdit.js:98
 msgid "Batch Size (b)"
 msgstr ""
 
-#: pmg-gui/js/MailProxyOptions.js:108
+#: pmg-gui/js/MailProxyOptions.js:96
 msgid "Before Queue Filtering"
 msgstr ""
 
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:128
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:225
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:348
 #, fuzzy
 msgid "Bind Domain Name"
 msgstr "שם מתחם בסיס"
 
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:151
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:241
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:237
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:361
 #, fuzzy
 msgid "Bind Password"
 msgstr "סיסמא"
@@ -1630,10 +1676,6 @@ msgstr "סיסמא"
 #, fuzzy
 msgid "Bind User"
 msgstr "משתמש"
-
-#: pmg-gui/js/mobile/mailview.js:33 pmg-gui/js/mobile/quarantineview.js:113
-msgid "Blacklist"
-msgstr "בלקליסט"
 
 #: proxmox-widget-toolkit/src/Schema.js:90
 #, fuzzy
@@ -1680,14 +1722,14 @@ msgstr "Boot-Reihenfolge"
 
 #: pve-manager/www/manager6/qemu/BootOrderEdit.js:273
 #: pve-manager/www/manager6/qemu/Options.js:97
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:183
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:189
 msgid "Boot Order"
 msgstr "סדר עלייה"
 
 #: pve-manager/www/manager6/panel/GuestStatusView.js:147
 #: pve-manager/www/manager6/panel/TemplateStatusView.js:60
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:344
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:358
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:343
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:357
 msgid "Bootdisk size"
 msgstr "גודל דיסק אתחול"
 
@@ -1704,6 +1746,8 @@ msgstr "Bounces"
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:81
 #: pve-manager/www/manager6/window/GuestImport.js:911
 #: proxmox-datacenter-manager/ui/src/widget/pve_network_selector.rs:160
+#: pve-yew-mobile-gui/src/form/pve_network_selector.rs:150
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_network_property.rs:24
 msgid "Bridge"
 msgstr "Bridge"
 
@@ -1744,7 +1788,7 @@ msgstr "מובנה"
 msgid "Built-In (modified)"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/Utils.js:68 proxmox-yew-comp/src/lib.rs:265
+#: proxmox-widget-toolkit/src/Utils.js:68 proxmox-yew-comp/src/lib.rs:271
 msgid "Bulgarian"
 msgstr ""
 
@@ -1784,21 +1828,21 @@ msgstr "השעה"
 
 #: pve-manager/www/manager6/Utils.js:2098
 #: proxmox-datacenter-manager/ui/src/tasks.rs:50
-#: proxmox-yew-comp/src/utils.rs:396
+#: proxmox-yew-comp/src/utils.rs:407
 #, fuzzy
 msgid "Bulk migrate VMs and Containers"
 msgstr "בצע מיגרציה לכל המכונות הויטואליות והקונטיינרים"
 
 #: pve-manager/www/manager6/Utils.js:2127
 #: proxmox-datacenter-manager/ui/src/tasks.rs:80
-#: proxmox-yew-comp/src/utils.rs:424
+#: proxmox-yew-comp/src/utils.rs:435
 #, fuzzy
 msgid "Bulk shutdown VMs and Containers"
 msgstr "עצור את כל המכונות הוירטואליות והקונטיינרים"
 
 #: pve-manager/www/manager6/Utils.js:2126
 #: proxmox-datacenter-manager/ui/src/tasks.rs:79
-#: proxmox-yew-comp/src/utils.rs:423
+#: proxmox-yew-comp/src/utils.rs:434
 #, fuzzy
 msgid "Bulk start VMs and Containers"
 msgstr "התחל את כל המכונות הוירטואליות והקונטיינרים"
@@ -1839,7 +1883,7 @@ msgstr ""
 
 #: pve-manager/www/manager6/qemu/HardwareView.js:251
 #: pve-manager/www/manager6/qemu/HardwareView.js:737
-#: pve-yew-mobile-gui/src/pages/page_qemu_status/hardware_panel.rs:168
+#: pve-yew-mobile-gui/src/pages/page_qemu_status/hardware_panel.rs:284
 msgid "CD/DVD Drive"
 msgstr "CD/DVD כונן"
 
@@ -1864,7 +1908,8 @@ msgstr "CIDR"
 #: pve-manager/www/manager6/lxc/CreateWizard.js:233
 #: pve-manager/www/manager6/lxc/ResourceEdit.js:35
 #: pve-manager/www/manager6/qemu/CreateWizard.js:220
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:154
+#: proxmox-datacenter-manager/ui/src/pbs/remote.rs:148
+#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:153
 #: pve-yew-mobile-gui/src/form/hotplug_feature_selector.rs:57
 #: pve-yew-mobile-gui/src/form/hotplug_feature_selector.rs:194
 #: pve-yew-mobile-gui/src/pages/page_dashboard.rs:124
@@ -1874,19 +1919,14 @@ msgid "CPU"
 msgstr "מעבד"
 
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:202
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:308
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:309
 #, fuzzy
 msgid "CPU Affinity"
 msgstr "הגבלת מעבד"
 
-#: proxmox-datacenter-manager/ui/src/pve/remote.rs:254
+#: proxmox-datacenter-manager/ui/src/pve/remote.rs:257
 msgid "CPU Cores assigned"
 msgstr ""
-
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:261
-#, fuzzy
-msgid "CPU Model"
-msgstr "מודל"
 
 #: pve-manager/www/manager6/node/Summary.js:269
 #: pve-manager/www/manager6/panel/GuestSummary.js:137
@@ -1900,9 +1940,11 @@ msgstr "סוג מערכת ההפעלה"
 
 #: pve-manager/www/manager6/node/Summary.js:164
 #: pve-manager/www/manager6/panel/GuestSummary.js:95
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:381
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:303
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:394
+#: proxmox-datacenter-manager/ui/src/pbs/remote.rs:251
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:379
+#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:247
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:392
+#: proxmox-yew-comp/src/node_info.rs:133
 msgid "CPU Usage"
 msgstr "CPU-Auslastung"
 
@@ -1913,13 +1955,13 @@ msgstr "CPU-Auslastung"
 
 #: pve-manager/www/manager6/lxc/ResourceEdit.js:78
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:193
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:299
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:300
 msgid "CPU limit"
 msgstr "הגבלת מעבד"
 
 #: pve-manager/www/manager6/lxc/ResourceEdit.js:88
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:216
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:290
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:291
 msgid "CPU units"
 msgstr "יחידות מעבד"
 
@@ -1936,19 +1978,19 @@ msgstr "יחידות מעבד"
 #: proxmox-backup/www/ServerStatus.js:215
 #: proxmox-backup/www/ServerStatus.js:217
 #: proxmox-backup/www/panel/NodeInfo.js:79
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:633
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:640
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:203
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:331
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:229
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:203
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:345
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:649
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:656
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:206
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:329
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:206
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:343
 msgid "CPU usage"
 msgstr "שימוש במעבד"
 
 #: proxmox-widget-toolkit/src/Utils.js:1122 pmg-gui/js/dashboard/NodeInfo.js:81
 #: pve-manager/www/manager6/node/StatusView.js:96
 #: proxmox-backup/www/panel/NodeInfo.js:136
+#: proxmox-yew-comp/src/node_info.rs:210
 msgid "CPU(s)"
 msgstr "מעבד(ים)"
 
@@ -2081,7 +2123,7 @@ msgstr ""
 msgid "Case-Sensitive"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/Utils.js:69 proxmox-yew-comp/src/lib.rs:266
+#: proxmox-widget-toolkit/src/Utils.js:69 proxmox-yew-comp/src/lib.rs:272
 #, fuzzy
 msgid "Catalan"
 msgstr "מחק נתונים"
@@ -2204,7 +2246,7 @@ msgstr "הגנה"
 
 #: pve-manager/www/manager6/Utils.js:2082
 #: proxmox-datacenter-manager/ui/src/tasks.rs:32
-#: proxmox-yew-comp/src/utils.rs:380
+#: proxmox-yew-comp/src/utils.rs:391
 msgid "Change global Ceph flags"
 msgstr ""
 
@@ -2278,11 +2320,11 @@ msgstr "הגנה"
 msgid "Checksum"
 msgstr "בדוק"
 
-#: proxmox-widget-toolkit/src/Utils.js:94 proxmox-yew-comp/src/lib.rs:299
+#: proxmox-widget-toolkit/src/Utils.js:94 proxmox-yew-comp/src/lib.rs:305
 msgid "Chinese (Simplified)"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/Utils.js:95 proxmox-yew-comp/src/lib.rs:304
+#: proxmox-widget-toolkit/src/Utils.js:95 proxmox-yew-comp/src/lib.rs:310
 msgid "Chinese (Traditional)"
 msgstr ""
 
@@ -2396,11 +2438,11 @@ msgstr ""
 msgid "Client"
 msgstr "לקוח"
 
-#: pmg-gui/js/MailProxyOptions.js:81
+#: pmg-gui/js/MailProxyOptions.js:69
 msgid "Client Connection Count Limit"
 msgstr "הגבלת מספר חיבורי משתמשים"
 
-#: pmg-gui/js/MailProxyOptions.js:87
+#: pmg-gui/js/MailProxyOptions.js:75
 msgid "Client Connection Rate Limit"
 msgstr "הגבלת קצב חיבורי משתמשים"
 
@@ -2420,11 +2462,12 @@ msgstr "לקוח"
 msgid "Client Key"
 msgstr "לקוח"
 
-#: pmg-gui/js/MailProxyOptions.js:92
+#: pmg-gui/js/MailProxyOptions.js:80
 msgid "Client Message Rate Limit"
 msgstr "הגבלת קצב הודעות משתמשים"
 
 #: pve-manager/www/manager6/qemu/DisplayEdit.js:86
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:147
 msgid "Clipboard"
 msgstr ""
 
@@ -2439,7 +2482,7 @@ msgstr ""
 #: pve-manager/www/manager6/window/Clone.js:304
 #: proxmox-datacenter-manager/ui/src/tasks.rs:55
 #: proxmox-datacenter-manager/ui/src/tasks.rs:86
-#: proxmox-yew-comp/src/utils.rs:401 proxmox-yew-comp/src/utils.rs:430
+#: proxmox-yew-comp/src/utils.rs:412 proxmox-yew-comp/src/utils.rs:441
 msgid "Clone"
 msgstr "שכפל"
 
@@ -2535,8 +2578,8 @@ msgid "Color Overrides"
 msgstr ""
 
 #: proxmox-widget-toolkit/src/window/ThemeEdit.js:33
-#: proxmox-widget-toolkit/src/window/ThemeEdit.js:40 pmg-gui/js/MainView.js:214
-#: pmg-gui/js/QuarantineView.js:259 pve-manager/www/manager6/Workspace.js:425
+#: proxmox-widget-toolkit/src/window/ThemeEdit.js:40 pmg-gui/js/MainView.js:221
+#: pmg-gui/js/QuarantineView.js:301 pve-manager/www/manager6/Workspace.js:425
 #: proxmox-backup/www/MainView.js:267
 #, fuzzy
 msgid "Color Theme"
@@ -2546,10 +2589,6 @@ msgstr "Toggle Legend"
 #, fuzzy
 msgid "Columns"
 msgstr "Volume העבר"
-
-#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:187
-msgid "Coming soon"
-msgstr ""
 
 #: pve-manager/www/manager6/ha/Fencing.js:33
 msgid "Command"
@@ -2667,15 +2706,19 @@ msgstr "IP סינון"
 #: proxmox-backup/www/window/UserEdit.js:174
 #: proxmox-backup/www/window/VerifyJobEdit.js:148
 #: proxmox-datacenter-manager/ui/src/widget/pve_network_selector.rs:164
+#: proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:204
+#: pve-yew-mobile-gui/src/form/pve_network_selector.rs:157
 #: proxmox-yew-comp/src/apt_repositories.rs:784
 #: proxmox-yew-comp/src/auth_edit_openid.rs:138
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:245
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:369
 #: proxmox-yew-comp/src/configuration/network_edit.rs:164
 #: proxmox-yew-comp/src/configuration/network_edit.rs:260
 #: proxmox-yew-comp/src/configuration/network_edit.rs:295
 #: proxmox-yew-comp/src/user_panel.rs:417
 #: proxmox-yew-comp/src/user_panel.rs:511
 #: proxmox-yew-comp/src/user_panel.rs:537
+#: proxmox-yew-comp/src/token_panel.rs:436
+#: proxmox-yew-comp/src/token_panel.rs:465
 msgid "Comment"
 msgstr "הערה"
 
@@ -2695,7 +2738,7 @@ msgstr ""
 #: pve-manager/www/manager6/window/Backup.js:24
 #: proxmox-backup/www/tape/DriveStatus.js:349
 #: proxmox-backup/www/window/ZFSCreate.js:54
-#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:95
+#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:87
 msgid "Compression"
 msgstr "דחיסה"
 
@@ -2745,7 +2788,7 @@ msgstr ""
 
 #: pve-manager/www/manager6/Utils.js:2104
 #: proxmox-datacenter-manager/ui/src/tasks.rs:56
-#: proxmox-yew-comp/src/utils.rs:402
+#: proxmox-yew-comp/src/utils.rs:413
 msgid "Configure"
 msgstr "הגדר"
 
@@ -2770,9 +2813,9 @@ msgstr "הגדר"
 
 #: proxmox-widget-toolkit/src/button/Button.js:49
 #: proxmox-widget-toolkit/src/window/SafeDestroy.js:7
-#: pmg-gui/js/RuleConfiguration.js:99 pmg-gui/js/RuleInfo.js:39
-#: pmg-gui/js/controller/QuarantineController.js:101
-#: pmg-gui/js/mobile/app.js:35 pve-manager/www/manager6/button/Split.js:43
+#: pmg-gui/js/PostfixMailQueue.js:82 pmg-gui/js/RuleConfiguration.js:99
+#: pmg-gui/js/RuleInfo.js:39 pmg-gui/js/controller/QuarantineController.js:101
+#: pve-manager/www/manager6/button/Split.js:43
 #: pve-manager/www/manager6/ceph/OSD.js:452
 #: pve-manager/www/manager6/dc/Backup.js:632
 #: pve-manager/www/manager6/lxc/CmdMenu.js:26
@@ -2789,8 +2832,8 @@ msgstr "הגדר"
 #: pve-manager/www/manager6/window/GuestStop.js:72
 #: pve-manager/www/manager6/window/Restore.js:103
 #: proxmox-backup/www/datastore/Content.js:669
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:501
-#: proxmox-yew-comp/src/safe_confirm_dialog.rs:155
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:516
+#: proxmox-yew-comp/src/safe_confirm_dialog.rs:162
 #: proxmox-yew-comp/src/tfa/tfa_confirm_remove.rs:97
 #: proxmox-yew-widget-toolkit/src/widget/confirm_dialog.rs:66
 msgid "Confirm"
@@ -2849,7 +2892,7 @@ msgstr "אמת סיסמא"
 msgid "Connection"
 msgstr "בעיית חיבור"
 
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:83
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:85
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_nodes.rs:57
 #, fuzzy
 msgid "Connection Certificate"
@@ -2915,11 +2958,11 @@ msgstr "סוג תוכן"
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/dashboard_panel.rs:229
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/config_panel.rs:88
 #: pve-yew-mobile-gui/src/pages/page_node_status/dashboard_panel.rs:142
-#: proxmox-yew-comp/src/utils.rs:421 proxmox-yew-comp/src/utils.rs:428
+#: proxmox-yew-comp/src/utils.rs:432 proxmox-yew-comp/src/utils.rs:439
 msgid "Console"
 msgstr "קונסול"
 
-#: proxmox-yew-comp/src/utils.rs:221
+#: proxmox-yew-comp/src/utils.rs:240
 #, fuzzy
 msgid "Console (xterm.js)"
 msgstr "Konsole (JS)"
@@ -2979,7 +3022,8 @@ msgstr "קונטיינר {0} ב node '{1}'"
 #: proxmox-backup/www/tape/ChangerStatus.js:857
 #: proxmox-backup/www/tape/ChangerStatus.js:977
 #: proxmox-backup/www/tape/TapeManagement.js:18
-#: proxmox-datacenter-manager/ui/src/pve/storage.rs:280
+#: proxmox-datacenter-manager/ui/src/pbs/datastore.rs:63
+#: proxmox-datacenter-manager/ui/src/pve/storage.rs:274
 msgid "Content"
 msgstr "תוכן"
 
@@ -3023,7 +3067,7 @@ msgstr "SCSI בקר"
 #: pve-manager/www/manager6/qemu/Config.js:96
 #: proxmox-datacenter-manager/ui/src/tasks.rs:73
 #: proxmox-datacenter-manager/ui/src/tasks.rs:105
-#: proxmox-yew-comp/src/utils.rs:419 proxmox-yew-comp/src/utils.rs:449
+#: proxmox-yew-comp/src/utils.rs:430 proxmox-yew-comp/src/utils.rs:460
 msgid "Convert to template"
 msgstr "המר לתבנית"
 
@@ -3053,12 +3097,13 @@ msgstr "מקבלים ראשיים"
 
 #: pve-manager/www/manager6/dc/TokenEdit.js:163
 #: proxmox-backup/www/window/TokenEdit.js:213
+#: proxmox-yew-comp/src/token_panel.rs:372
 msgid "Copy Secret Value"
 msgstr ""
 
 #: pve-manager/www/manager6/Utils.js:2092
 #: proxmox-datacenter-manager/ui/src/tasks.rs:44
-#: proxmox-yew-comp/src/utils.rs:390
+#: proxmox-yew-comp/src/utils.rs:401
 msgid "Copy data"
 msgstr "העתק נתונים"
 
@@ -3085,8 +3130,8 @@ msgstr ""
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:130
 #: pve-manager/www/manager6/window/GuestImport.js:501
 #: pve-manager/www/manager6/window/Restore.js:336
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:116
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:218
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:108
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:210
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/resources_panel.rs:71
 msgid "Cores"
 msgstr "ליבות"
@@ -3113,6 +3158,7 @@ msgstr ""
 #: pmg-gui/js/HourlyMailDistribution.js:12 pmg-gui/js/ReceiverStatistics.js:168
 #: pmg-gui/js/SenderStatistics.js:160 pmg-gui/js/SpamScoreDistribution.js:39
 #: pmg-gui/js/VirusCharts.js:30 proxmox-backup/www/datastore/Content.js:1165
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:125
 msgid "Count"
 msgstr "ספירה"
 
@@ -3166,12 +3212,12 @@ msgstr "ספירה"
 #: proxmox-datacenter-manager/ui/src/tasks.rs:107
 #: proxmox-yew-comp/src/configuration/network_view.rs:214
 #: proxmox-yew-comp/src/configuration/network_edit.rs:346
-#: proxmox-yew-comp/src/utils.rs:367 proxmox-yew-comp/src/utils.rs:368
-#: proxmox-yew-comp/src/utils.rs:369 proxmox-yew-comp/src/utils.rs:370
-#: proxmox-yew-comp/src/utils.rs:371 proxmox-yew-comp/src/utils.rs:378
-#: proxmox-yew-comp/src/utils.rs:383 proxmox-yew-comp/src/utils.rs:392
+#: proxmox-yew-comp/src/utils.rs:378 proxmox-yew-comp/src/utils.rs:379
+#: proxmox-yew-comp/src/utils.rs:380 proxmox-yew-comp/src/utils.rs:381
+#: proxmox-yew-comp/src/utils.rs:382 proxmox-yew-comp/src/utils.rs:389
 #: proxmox-yew-comp/src/utils.rs:394 proxmox-yew-comp/src/utils.rs:403
-#: proxmox-yew-comp/src/utils.rs:431 proxmox-yew-comp/src/utils.rs:451
+#: proxmox-yew-comp/src/utils.rs:405 proxmox-yew-comp/src/utils.rs:414
+#: proxmox-yew-comp/src/utils.rs:442 proxmox-yew-comp/src/utils.rs:462
 msgid "Create"
 msgstr "צור"
 
@@ -3188,7 +3234,7 @@ msgstr "צור CephFS"
 #: pve-manager/www/manager6/dc/Cluster.js:155
 #: pve-manager/www/manager6/dc/ClusterEdit.js:5
 #: proxmox-datacenter-manager/ui/src/tasks.rs:33
-#: proxmox-yew-comp/src/utils.rs:381
+#: proxmox-yew-comp/src/utils.rs:392
 msgid "Create Cluster"
 msgstr "צור Cluster"
 
@@ -3251,7 +3297,7 @@ msgstr "צור"
 msgid "Critical"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/Utils.js:78 proxmox-yew-comp/src/lib.rs:277
+#: proxmox-widget-toolkit/src/Utils.js:78 proxmox-yew-comp/src/lib.rs:283
 msgid "Croatian"
 msgstr ""
 
@@ -3299,7 +3345,7 @@ msgstr "Crush RuleSet"
 msgid "Custom Scores"
 msgstr "ניקודי דואר זבל"
 
-#: proxmox-widget-toolkit/src/Utils.js:70 proxmox-yew-comp/src/lib.rs:267
+#: proxmox-widget-toolkit/src/Utils.js:70 proxmox-yew-comp/src/lib.rs:273
 msgid "Czech"
 msgstr ""
 
@@ -3344,7 +3390,7 @@ msgstr ""
 #: pve-manager/www/manager6/node/Config.js:211
 #: pve-manager/www/manager6/sdn/ZoneView.js:159
 #: proxmox-backup/www/SystemConfiguration.js:35
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:112
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:134
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/resources_panel.rs:123
 msgid "DNS"
 msgstr "DNS"
@@ -3423,11 +3469,11 @@ msgstr "DNS שרת"
 msgid "DNS servers"
 msgstr "DNS שרתי"
 
-#: pmg-gui/js/MailProxyOptions.js:22
+#: pmg-gui/js/MailProxyOptions.js:106 pmg-gui/js/MailProxyOptions.js:116
 msgid "DNSBL Sites"
 msgstr "DNSBL אתרי"
 
-#: pmg-gui/js/MailProxyOptions.js:28
+#: pmg-gui/js/MailProxyOptions.js:98
 msgid "DNSBL Threshold"
 msgstr "DNSBL גבולות"
 
@@ -3440,7 +3486,7 @@ msgstr "שמור אימייל ישנים"
 msgid "Damaged"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/Utils.js:71 proxmox-yew-comp/src/lib.rs:268
+#: proxmox-widget-toolkit/src/Utils.js:71 proxmox-yew-comp/src/lib.rs:274
 #, fuzzy
 msgid "Danish"
 msgstr "סיים"
@@ -3460,7 +3506,7 @@ msgstr ""
 msgid "Dashboard"
 msgstr "לוח מחוונים"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:683
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:695
 #, fuzzy
 msgid "Dashboard Configuration"
 msgstr "הראה תצורה"
@@ -3502,7 +3548,7 @@ msgstr "עותק מסד נתונים"
 #: pve-manager/www/manager6/tree/ResourceTree.js:286
 #: pve-manager/www/manager6/tree/ResourceTree.js:345
 #: pve-manager/www/manager6/tree/ResourceTree.js:547
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:576
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:591
 msgid "Datacenter"
 msgstr "דאטהסנטר"
 
@@ -3562,7 +3608,13 @@ msgstr "Metadata שימוש ב"
 msgid "Datastore is not mounted"
 msgstr "Metadata שימוש ב"
 
+#: proxmox-datacenter-manager/ui/src/pbs/datastore.rs:50
+#, fuzzy
+msgid "Datastore {0}"
+msgstr "דאטהסנטר"
+
 #: proxmox-backup/www/datastore/DataStoreList.js:194
+#: proxmox-datacenter-manager/ui/src/pbs/tree.rs:239
 #, fuzzy
 msgid "Datastores"
 msgstr "דאטהסנטר"
@@ -3594,7 +3646,7 @@ msgstr "שעות להצגה"
 
 #: pve-manager/www/manager6/Utils.js:2060
 #: proxmox-datacenter-manager/ui/src/tasks.rs:10
-#: proxmox-yew-comp/src/utils.rs:358
+#: proxmox-yew-comp/src/utils.rs:369
 msgid "Deactivate"
 msgstr "בטל"
 
@@ -3643,21 +3695,29 @@ msgstr "Deep Scrub OSD.{0}"
 #: pve-manager/www/manager6/dc/OptionView.js:346
 #: pve-manager/www/manager6/grid/FirewallOptions.js:113
 #: pve-manager/www/manager6/lxc/Options.js:95
-#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:83
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:173
+#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:105
 #: pve-yew-mobile-gui/src/form/hotplug_feature_selector.rs:39
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:60
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:66
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:34
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:100
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_memory_property.rs:76
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:52
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:82
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_bios_property.rs:52
-#: pve-yew-mobile-gui/src/pages/page_qemu_status/hardware_panel.rs:154
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:26
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:107
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:148
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:165
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_machine_property.rs:51
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_machine_property.rs:140
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_scsihw_property.rs:20
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_scsihw_property.rs:41
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:36
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:91
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_memory_property.rs:78
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:88
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:108
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_bios_property.rs:43
+#: pve-yew-mobile-gui/src/widgets/editable_property.rs:166
+#: proxmox-yew-comp/src/auth_view.rs:418 proxmox-yew-comp/src/auth_view.rs:486
 #: proxmox-yew-comp/src/auth_edit_openid.rs:120
 #: proxmox-yew-comp/src/auth_edit_openid.rs:128
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:125
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:197
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:231
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:294
 #: proxmox-yew-widget-toolkit/src/widget/form/tristate_boolean.rs:168
 msgid "Default"
 msgstr "ברירת מחדל"
@@ -3705,6 +3765,7 @@ msgstr "שם"
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:85
 #: proxmox-widget-toolkit/src/window/AuthEditOpenId.js:42
 #: proxmox-widget-toolkit/src/window/AuthEditSimple.js:19
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:339
 #, fuzzy
 msgid "Default Realm"
 msgstr "ברירת מחדל Relay"
@@ -3720,7 +3781,7 @@ msgstr "דאטהסנטר"
 
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:366
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:256
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:118
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:224
 msgid "Default Sync Options"
 msgstr ""
 
@@ -3771,14 +3832,13 @@ msgstr ""
 msgid "Delay"
 msgstr "IO השהיית"
 
-#: pmg-gui/js/MailProxyOptions.js:76
+#: pmg-gui/js/MailProxyOptions.js:64
 msgid "Delay Warning Time (hours)"
 msgstr "השהיית אזהרת זמן (בשעות)"
 
 #: pmg-gui/js/AttachmentQuarantine.js:153
 #: pmg-gui/js/QuarantineContextMenu.js:25 pmg-gui/js/SpamContextMenu.js:12
 #: pmg-gui/js/SpamQuarantine.js:283 pmg-gui/js/VirusQuarantine.js:166
-#: pmg-gui/js/mobile/mailview.js:51 pmg-gui/js/mobile/quarantineview.js:120
 #: pve-manager/www/manager6/sdn/FabricsView.js:131
 #: pve-manager/www/manager6/tree/DhcpTree.js:272
 #: pmg-yew-quarantine-gui/src/spam_list.rs:282
@@ -3796,7 +3856,7 @@ msgstr "מחק אישור מותאם אישית"
 #: pve-manager/www/manager6/Utils.js:2135
 #: proxmox-datacenter-manager/ui/src/tasks.rs:58
 #: proxmox-datacenter-manager/ui/src/tasks.rs:88
-#: proxmox-yew-comp/src/utils.rs:404 proxmox-yew-comp/src/utils.rs:432
+#: proxmox-yew-comp/src/utils.rs:415 proxmox-yew-comp/src/utils.rs:443
 msgid "Delete Snapshot"
 msgstr "מחק סנאפשוט"
 
@@ -3818,6 +3878,11 @@ msgstr "מחק את כל ההודעות"
 msgid "Delete custom certificate and switch to generated one?"
 msgstr ""
 
+#: pve-yew-mobile-gui/src/pages/page_qemu_status/hardware_panel.rs:214
+#, fuzzy
+msgid "Delete device"
+msgstr "מחק מקור"
+
 #: pve-manager/www/manager6/storage/PBSEdit.js:310
 msgid "Delete existing encryption key"
 msgstr ""
@@ -3825,6 +3890,11 @@ msgstr ""
 #: pve-manager/www/manager6/qemu/HDMove.js:85
 msgid "Delete source"
 msgstr "מחק מקור"
+
+#: pmg-gui/js/PostfixMailQueue.js:100
+#, fuzzy
+msgid "Delete {0} selected mails?"
+msgstr "לא נבחרה מכונה וירטואלית"
 
 #: pve-manager/www/manager6/storage/PBSEdit.js:441
 msgid ""
@@ -3835,7 +3905,6 @@ msgstr ""
 #: pmg-gui/js/AttachmentQuarantine.js:147
 #: pmg-gui/js/QuarantineContextMenu.js:19 pmg-gui/js/SpamContextMenu.js:6
 #: pmg-gui/js/SpamQuarantine.js:277 pmg-gui/js/VirusQuarantine.js:160
-#: pmg-gui/js/mobile/mailview.js:60 pmg-gui/js/mobile/quarantineview.js:97
 #: pmg-yew-quarantine-gui/src/spam_list.rs:260
 #: pmg-yew-quarantine-gui/src/page_mail_view.rs:125
 msgid "Deliver"
@@ -3844,6 +3913,11 @@ msgstr "מסור"
 #: pmg-gui/js/FetchmailEdit.js:77 pmg-gui/js/FetchmailView.js:123
 msgid "Deliver to"
 msgstr "מסור ל"
+
+#: pmg-gui/js/PostfixMailQueue.js:96
+#, fuzzy
+msgid "Deliver {0} selected mails?"
+msgstr "לא נבחרה מכונה וירטואלית"
 
 #: pve-manager/www/manager6/UIOptions.js:75
 msgid "Dense"
@@ -3867,7 +3941,7 @@ msgstr "משימת גיבוי"
 #: proxmox-widget-toolkit/src/window/TfaEdit.js:61
 #: proxmox-widget-toolkit/src/window/TfaEdit.js:200
 #: pmg-gui/js/ActionList.js:133 pmg-gui/js/ObjectGroupList.js:40
-#: pmg-gui/js/ObjectGroupList.js:150 pmg-gui/js/SpamInfoGrid.js:75
+#: pmg-gui/js/ObjectGroupList.js:150 pmg-gui/js/SpamInfoGrid.js:79
 #: pve-manager/www/manager6/data/ResourceStore.js:115
 #: pve-manager/www/manager6/dc/Tasks.js:116
 #: pve-manager/www/manager6/form/GlobalSearchField.js:79
@@ -3934,10 +4008,10 @@ msgstr "יעד"
 #: proxmox-datacenter-manager/ui/src/tasks.rs:29
 #: proxmox-datacenter-manager/ui/src/tasks.rs:59
 #: proxmox-datacenter-manager/ui/src/tasks.rs:89
-#: proxmox-yew-comp/src/utils.rs:372 proxmox-yew-comp/src/utils.rs:373
-#: proxmox-yew-comp/src/utils.rs:374 proxmox-yew-comp/src/utils.rs:375
-#: proxmox-yew-comp/src/utils.rs:376 proxmox-yew-comp/src/utils.rs:377
-#: proxmox-yew-comp/src/utils.rs:405 proxmox-yew-comp/src/utils.rs:433
+#: proxmox-yew-comp/src/utils.rs:383 proxmox-yew-comp/src/utils.rs:384
+#: proxmox-yew-comp/src/utils.rs:385 proxmox-yew-comp/src/utils.rs:386
+#: proxmox-yew-comp/src/utils.rs:387 proxmox-yew-comp/src/utils.rs:388
+#: proxmox-yew-comp/src/utils.rs:416 proxmox-yew-comp/src/utils.rs:444
 msgid "Destroy"
 msgstr "הרוס"
 
@@ -3961,7 +4035,7 @@ msgstr ""
 
 #: pve-manager/www/manager6/Utils.js:2129
 #: proxmox-datacenter-manager/ui/src/tasks.rs:82
-#: proxmox-yew-comp/src/utils.rs:426
+#: proxmox-yew-comp/src/utils.rs:437
 msgid "Destroy image from unknown guest"
 msgstr "הרוס image מאורח לא ידוע"
 
@@ -4078,7 +4152,7 @@ msgstr "כיוון"
 #: proxmox-datacenter-manager/ui/src/tasks.rs:38
 #: proxmox-yew-comp/src/acme/acme_register_account.rs:113
 #: proxmox-yew-comp/src/acme/acme_accounts.rs:230
-#: proxmox-yew-comp/src/utils.rs:384
+#: proxmox-yew-comp/src/utils.rs:395
 msgid "Directory"
 msgstr "תיקייה"
 
@@ -4100,7 +4174,7 @@ msgstr ""
 
 #: pve-manager/www/manager6/Utils.js:2085 proxmox-backup/www/Utils.js:433
 #: proxmox-datacenter-manager/ui/src/tasks.rs:37
-#: proxmox-yew-comp/src/utils.rs:383
+#: proxmox-yew-comp/src/utils.rs:394
 msgid "Directory Storage"
 msgstr "אחסון תיקיות"
 
@@ -4123,9 +4197,10 @@ msgstr "MX Lookup בטל"
 #: proxmox-widget-toolkit/src/Utils.js:47 pve-manager/www/manager6/Utils.js:401
 #: pve-manager/www/manager6/Utils.js:403 pve-manager/www/manager6/Utils.js:437
 #: pve-yew-mobile-gui/src/form/hotplug_feature_selector.rs:47
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:34
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:100
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:82
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:36
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:91
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:19
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:108
 msgid "Disabled"
 msgstr "מבוטל"
 
@@ -4149,6 +4224,7 @@ msgstr "גילוי נאות"
 
 #: pve-manager/www/manager6/lxc/Network.js:278
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:105
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_network_property.rs:62
 msgid "Disconnect"
 msgstr "התנתק"
 
@@ -4172,7 +4248,7 @@ msgstr "התנתק"
 #: pve-yew-mobile-gui/src/form/hotplug_feature_selector.rs:41
 #: pve-yew-mobile-gui/src/form/hotplug_feature_selector.rs:53
 #: pve-yew-mobile-gui/src/form/hotplug_feature_selector.rs:190
-#: proxmox-yew-comp/src/utils.rs:223
+#: proxmox-yew-comp/src/utils.rs:242
 msgid "Disk"
 msgstr "דיסק"
 
@@ -4181,8 +4257,9 @@ msgstr "דיסק"
 msgid "Disk Action"
 msgstr "פעולה"
 
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:420
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:433
+#: proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:245
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:418
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:431
 #, fuzzy
 msgid "Disk I/O"
 msgstr "דיסק IO"
@@ -4201,14 +4278,16 @@ msgstr "דיסק Image"
 msgid "Disk Move"
 msgstr "גודל דיסק"
 
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:208
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:210
+#: proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:141
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:211
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:213
 #, fuzzy
 msgid "Disk Read"
 msgstr "סך הכל קריאות דיסק"
 
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:209
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:211
+#: proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:142
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:212
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:214
 #, fuzzy
 msgid "Disk Write"
 msgstr "סך הכל כתיבות דיסק"
@@ -4243,7 +4322,7 @@ msgstr "דיסקים"
 
 #: pve-manager/www/manager6/qemu/DisplayEdit.js:141
 #: pve-manager/www/manager6/qemu/HardwareView.js:167
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:59
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:162
 msgid "Display"
 msgstr "הצג"
 
@@ -4257,6 +4336,12 @@ msgstr "Pool לגיבוי"
 msgid "Do not use any media"
 msgstr "אל תשתמש בשום מדיה"
 
+#: proxmox-yew-comp/src/token_panel.rs:198
+msgid ""
+"Do you want to regenerate the secret of the selected API token? All current "
+"usage sites will lose access!"
+msgstr ""
+
 #: proxmox-widget-toolkit/src/panel/NotificationConfigView.js:14
 msgid "Do you want to reset {0} to its default settings?"
 msgstr ""
@@ -4266,7 +4351,7 @@ msgstr ""
 msgid "Do you want to send a test notification to '{0}'?"
 msgstr "Möchten Sie Replikation Job {0} wirklich entfernen?"
 
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:94
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:96
 #, fuzzy
 msgid "Do you want to trust the certificate and save its fingerprint?"
 msgstr "האם אתה בטוח שברצונך להסיר ערך {0}"
@@ -4275,9 +4360,9 @@ msgstr "האם אתה בטוח שברצונך להסיר ערך {0}"
 msgid "Do you want to trust them by saving their fingerprint?"
 msgstr ""
 
-#: pmg-gui/js/MainView.js:188 pve-manager/www/manager6/Workspace.js:371
+#: pmg-gui/js/MainView.js:195 pve-manager/www/manager6/Workspace.js:371
 #: proxmox-backup/www/MainView.js:241
-#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:182
+#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:183
 msgid "Documentation"
 msgstr "תיעוד"
 
@@ -4333,7 +4418,7 @@ msgstr "למטה"
 #: pve-manager/www/manager6/window/DownloadUrlToStorage.js:13
 #: proxmox-backup/www/Subscription.js:62
 #: proxmox-datacenter-manager/ui/src/tasks.rs:39
-#: proxmox-yew-comp/src/utils.rs:385
+#: proxmox-yew-comp/src/utils.rs:396
 msgid "Download"
 msgstr "הורד"
 
@@ -4436,7 +4521,7 @@ msgstr ""
 msgid "Duration"
 msgstr "משך זמן"
 
-#: proxmox-widget-toolkit/src/Utils.js:85 proxmox-yew-comp/src/lib.rs:283
+#: proxmox-widget-toolkit/src/Utils.js:85 proxmox-yew-comp/src/lib.rs:289
 msgid "Dutch"
 msgstr ""
 
@@ -4476,7 +4561,7 @@ msgstr "כתובת אימייל של '{0}'"
 
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:351
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:246
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:113
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:219
 #, fuzzy
 msgid "E-Mail attribute"
 msgstr "שמ(ות) תכונת אימייל"
@@ -4576,7 +4661,7 @@ msgstr ""
 #: proxmox-widget-toolkit/src/panel/TfaView.js:294 pmg-gui/js/ActionList.js:107
 #: pmg-gui/js/ClamAVDatabase.js:161 pmg-gui/js/DKIMSettings.js:223
 #: pmg-gui/js/FetchmailView.js:87 pmg-gui/js/LDAPConfig.js:557
-#: pmg-gui/js/MailProxyOptions.js:117 pmg-gui/js/MailProxyPorts.js:32
+#: pmg-gui/js/MailProxyOptions.js:139 pmg-gui/js/MailProxyPorts.js:32
 #: pmg-gui/js/MailProxyRelaying.js:100 pmg-gui/js/MailProxyTLS.js:23
 #: pmg-gui/js/MailProxyTLSDestinations.js:134 pmg-gui/js/MyNetworks.js:90
 #: pmg-gui/js/ObjectGroup.js:208 pmg-gui/js/ObjectGroupList.js:119
@@ -4648,22 +4733,24 @@ msgstr ""
 #: proxmox-backup/www/tape/DriveConfig.js:134
 #: proxmox-backup/www/tape/PoolConfig.js:102
 #: proxmox-datacenter-manager/ui/src/remotes/edit_remote.rs:61
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:202
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:193
 #: proxmox-datacenter-manager/ui/src/tasks.rs:31
 #: proxmox-yew-comp/src/acme/acme_domains.rs:179
 #: proxmox-yew-comp/src/acme/acme_domains.rs:374
 #: proxmox-yew-comp/src/acme/acme_plugins.rs:269
 #: proxmox-yew-comp/src/acme/acme_plugins.rs:492
-#: proxmox-yew-comp/src/auth_view.rs:213
+#: proxmox-yew-comp/src/auth_view.rs:311
 #: proxmox-yew-comp/src/auth_edit_openid.rs:157
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:262
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:386
 #: proxmox-yew-comp/src/configuration/network_view.rs:225
 #: proxmox-yew-comp/src/configuration/network_edit.rs:346
 #: proxmox-yew-comp/src/notes_view.rs:171
 #: proxmox-yew-comp/src/notes_view.rs:199
 #: proxmox-yew-comp/src/tfa/tfa_view.rs:274
 #: proxmox-yew-comp/src/user_panel.rs:180
-#: proxmox-yew-comp/src/user_panel.rs:269 proxmox-yew-comp/src/utils.rs:379
+#: proxmox-yew-comp/src/user_panel.rs:269
+#: proxmox-yew-comp/src/token_panel.rs:185
+#: proxmox-yew-comp/src/token_panel.rs:399 proxmox-yew-comp/src/utils.rs:390
 msgid "Edit"
 msgstr "ערוך"
 
@@ -4757,7 +4844,7 @@ msgstr ""
 msgid "Email from address"
 msgstr "אימייל מכתובת"
 
-#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:96
+#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:88
 #, fuzzy
 msgid "Email to"
 msgstr "E-Mail"
@@ -4780,6 +4867,7 @@ msgstr "E-Mail"
 #: pve-manager/www/manager6/storage/Base.js:51
 #: pve-manager/www/manager6/window/FirewallLograteEdit.js:12
 #: proxmox-yew-comp/src/apt_repositories.rs:569
+#: proxmox-yew-comp/src/token_panel.rs:504
 msgid "Enable"
 msgstr "אפשר"
 
@@ -4794,13 +4882,13 @@ msgid "Enable Job"
 msgstr "אפשר"
 
 #: pve-manager/www/manager6/qemu/SevEdit.js:125
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:78
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:71
 #, fuzzy
 msgid "Enable Kernel Hashes"
 msgstr "אפשר"
 
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:231
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:318
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:319
 msgid "Enable NUMA"
 msgstr "אפשר NUMA"
 
@@ -4841,7 +4929,8 @@ msgstr "אפשר"
 
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:385
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:323
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:121
+#: proxmox-yew-comp/src/auth_view.rs:415
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:227
 msgid "Enable new users"
 msgstr ""
 
@@ -4890,13 +4979,15 @@ msgstr ""
 #: proxmox-backup/www/window/PruneJobEdit.js:126
 #: proxmox-backup/www/window/TokenEdit.js:59
 #: proxmox-backup/www/window/UserEdit.js:134
-#: proxmox-datacenter-manager/ui/src/pve/storage.rs:262
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:22
 #: proxmox-yew-comp/src/apt_repositories.rs:760
 #: proxmox-yew-comp/src/tfa/tfa_view.rs:365
 #: proxmox-yew-comp/src/tfa/tfa_edit.rs:67
 #: proxmox-yew-comp/src/user_panel.rs:336
 #: proxmox-yew-comp/src/user_panel.rs:507
 #: proxmox-yew-comp/src/user_panel.rs:536
+#: proxmox-yew-comp/src/token_panel.rs:434
+#: proxmox-yew-comp/src/token_panel.rs:464
 msgid "Enabled"
 msgstr "מאופשר"
 
@@ -4989,7 +5080,7 @@ msgstr "שם מתחם בסיס"
 msgid "Endpoints"
 msgstr "שם מתחם בסיס"
 
-#: proxmox-widget-toolkit/src/Utils.js:73 proxmox-yew-comp/src/lib.rs:270
+#: proxmox-widget-toolkit/src/Utils.js:73 proxmox-yew-comp/src/lib.rs:276
 msgid "English"
 msgstr ""
 
@@ -5007,6 +5098,11 @@ msgstr ""
 
 #: proxmox-widget-toolkit/src/Utils.js:1397
 msgid "Enterprise repository needs valid subscription"
+msgstr ""
+
+#: proxmox-yew-comp/src/auth_view.rs:434
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:246
+msgid "Entries"
 msgstr ""
 
 #: pve-manager/www/manager6/qemu/RNGEdit.js:47
@@ -5027,7 +5123,7 @@ msgstr ""
 
 #: pve-manager/www/manager6/Utils.js:2093
 #: proxmox-datacenter-manager/ui/src/tasks.rs:45
-#: proxmox-yew-comp/src/utils.rs:391
+#: proxmox-yew-comp/src/utils.rs:402
 msgid "Erase data"
 msgstr "מחק נתונים"
 
@@ -5072,17 +5168,15 @@ msgstr "מחק נתונים"
 #: pmg-gui/js/LDAPConfig.js:528 pmg-gui/js/LoginView.js:113
 #: pmg-gui/js/LoginView.js:137 pmg-gui/js/LoginView.js:266
 #: pmg-gui/js/MailTracker.js:195 pmg-gui/js/MailTracker.js:303
-#: pmg-gui/js/PostfixMailQueue.js:69 pmg-gui/js/PostfixMailQueue.js:92
-#: pmg-gui/js/PostfixQShape.js:51 pmg-gui/js/PostfixQShape.js:67
-#: pmg-gui/js/PostfixQShape.js:80 pmg-gui/js/RegexTester.js:55
-#: pmg-gui/js/RuleConfiguration.js:69 pmg-gui/js/RuleConfiguration.js:113
-#: pmg-gui/js/RuleInfo.js:31 pmg-gui/js/RuleInfo.js:59
-#: pmg-gui/js/RuleInfo.js:81 pmg-gui/js/ServerStatus.js:35
-#: pmg-gui/js/SpamDetectorStatus.js:72 pmg-gui/js/Subscription.js:93
-#: pmg-gui/js/Subscription.js:181 pmg-gui/js/UserBlockWelcomeList.js:91
-#: pmg-gui/js/UserView.js:115 pmg-gui/js/Utils.js:797
-#: pmg-gui/js/ViewMailHeaders.js:61 pmg-gui/js/mobile/utils.js:45
-#: pmg-gui/js/mobile/utils.js:48 pmg-gui/js/mobile/utils.js:61
+#: pmg-gui/js/PostfixMailQueue.js:74 pmg-gui/js/PostfixQShape.js:51
+#: pmg-gui/js/PostfixQShape.js:67 pmg-gui/js/PostfixQShape.js:80
+#: pmg-gui/js/RegexTester.js:55 pmg-gui/js/RuleConfiguration.js:69
+#: pmg-gui/js/RuleConfiguration.js:113 pmg-gui/js/RuleInfo.js:31
+#: pmg-gui/js/RuleInfo.js:59 pmg-gui/js/RuleInfo.js:81
+#: pmg-gui/js/ServerStatus.js:35 pmg-gui/js/SpamDetectorStatus.js:72
+#: pmg-gui/js/Subscription.js:93 pmg-gui/js/Subscription.js:181
+#: pmg-gui/js/UserBlockWelcomeList.js:91 pmg-gui/js/UserView.js:115
+#: pmg-gui/js/Utils.js:797 pmg-gui/js/ViewMailHeaders.js:61
 #: pve-manager/www/manager6/Utils.js:1594
 #: pve-manager/www/manager6/Utils.js:1607
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:126
@@ -5213,7 +5307,7 @@ msgstr "שגיאות"
 msgid "Estimated Full"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/Utils.js:75 proxmox-yew-comp/src/lib.rs:272
+#: proxmox-widget-toolkit/src/Utils.js:75 proxmox-yew-comp/src/lib.rs:278
 msgid "Euskera (Basque)"
 msgstr ""
 
@@ -5345,6 +5439,9 @@ msgstr ""
 #: proxmox-yew-comp/src/user_panel.rs:357
 #: proxmox-yew-comp/src/user_panel.rs:502
 #: proxmox-yew-comp/src/user_panel.rs:529
+#: proxmox-yew-comp/src/token_panel.rs:420
+#: proxmox-yew-comp/src/token_panel.rs:454
+#: proxmox-yew-comp/src/token_panel.rs:511
 msgid "Expire"
 msgstr "פג תוקף"
 
@@ -5352,7 +5449,7 @@ msgstr "פג תוקף"
 #: proxmox-widget-toolkit/src/window/Certificates.js:52
 #: pve-manager/www/manager6/node/Certificates.js:85
 #: pve-manager/www/manager6/node/Certificates.js:345
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:307
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:309
 #: proxmox-yew-comp/src/acme/certificate_list.rs:351
 #: proxmox-yew-comp/src/acme/certificate_list.rs:402
 msgid "Expires"
@@ -5414,6 +5511,7 @@ msgid "Failback"
 msgstr "גלגל לאחור"
 
 #: pve-manager/www/manager6/Utils.js:295
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:438
 #, fuzzy
 msgid "Failed"
 msgstr "IP סינון"
@@ -5438,7 +5536,7 @@ msgstr "גלגל לאחור"
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:173
 #: pve-manager/www/manager6/dc/AuthEditAD.js:38
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:38
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:185
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:297
 msgid "Fallback Server"
 msgstr "Fallback שרת"
 
@@ -5447,7 +5545,7 @@ msgid "Fallback from storage config"
 msgstr ""
 
 #: pve-manager/www/manager6/qemu/Smbios1Edit.js:81
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:89
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:80
 msgid "Family"
 msgstr "משפחה"
 
@@ -5498,7 +5596,7 @@ msgstr "שדה"
 #: proxmox-datacenter-manager/ui/src/tasks.rs:39
 #: proxmox-yew-comp/src/acme/certificate_list.rs:344
 #: proxmox-yew-comp/src/acme/certificate_list.rs:372
-#: proxmox-yew-comp/src/utils.rs:385
+#: proxmox-yew-comp/src/utils.rs:396
 msgid "File"
 msgstr "קובץ"
 
@@ -5512,7 +5610,7 @@ msgstr "משימת גיבוי"
 
 #: pve-manager/www/manager6/Utils.js:2100
 #: proxmox-datacenter-manager/ui/src/tasks.rs:52
-#: proxmox-yew-comp/src/utils.rs:398
+#: proxmox-yew-comp/src/utils.rs:409
 msgid "File Restore Download"
 msgstr ""
 
@@ -5552,10 +5650,12 @@ msgstr "מערכת קבצים"
 msgid "Filetype"
 msgstr "קובץ"
 
-#: proxmox-widget-toolkit/src/node/Tasks.js:262 pmg-gui/js/MailTracker.js:88
-#: pmg-gui/js/PostfixMailQueue.js:149 pmg-gui/js/form/FilterField.js:14
+#: proxmox-widget-toolkit/src/node/Tasks.js:262
+#: pmg-gui/js/DNSBLSitesField.js:163 pmg-gui/js/MailTracker.js:88
+#: pmg-gui/js/PostfixMailQueue.js:157 pmg-gui/js/form/FilterField.js:14
 #: pve-manager/www/manager6/grid/PoolMembers.js:66
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:476
+#: proxmox-datacenter-manager/ui/src/pbs/tree.rs:254
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:491
 msgid "Filter"
 msgstr "סנן"
 
@@ -5607,8 +5707,8 @@ msgstr ""
 #: proxmox-backup/www/window/DatastoreRepoInfo.js:55
 #: proxmox-backup/www/window/RemoteEdit.js:114
 #: proxmox-backup/www/window/S3ClientEdit.js:113
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:238
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:301
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:240
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:303
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_nodes.rs:277
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_summary.rs:168
 #: proxmox-datacenter-manager/ui/src/remotes/node_url_list.rs:264
@@ -5646,6 +5746,7 @@ msgstr "סיים"
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:96
 #: pve-manager/www/manager6/window/FirewallEnableEdit.js:6
 #: pve-manager/www/manager6/window/FirewallEnableEdit.js:22
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_network_property.rs:58
 msgid "Firewall"
 msgstr "חומת אש"
 
@@ -5664,7 +5765,7 @@ msgid "First Name"
 msgstr "שם פרטי"
 
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:333
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:104
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:210
 #, fuzzy
 msgid "First Name attribute"
 msgstr "שם פרטי"
@@ -5716,7 +5817,7 @@ msgstr "ZFS אחסון"
 msgid "Floppy"
 msgstr ""
 
-#: pmg-gui/js/PostfixMailQueue.js:140
+#: pmg-gui/js/PostfixMailQueue.js:146
 msgid "Flush"
 msgstr "נקה"
 
@@ -5724,8 +5825,8 @@ msgstr "נקה"
 msgid "Flush Queue"
 msgstr "נקה תור"
 
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:44
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:81
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:40
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:76
 #, fuzzy
 msgid "Folder Sharing"
 msgstr "מראה תיקיות"
@@ -5812,8 +5913,8 @@ msgstr "שדות הטופס אינם יכולים להישלח עם ערכים �
 #: proxmox-backup/www/tape/ChangerStatus.js:829
 #: proxmox-backup/www/tape/DriveStatus.js:237
 #: proxmox-backup/www/tape/TapeInventory.js:231
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:53
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:241
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:44
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:253
 msgid "Format"
 msgstr "מבנה"
 
@@ -5864,24 +5965,24 @@ msgstr "פנוי"
 msgid "Freeze CPU at startup"
 msgstr "הקפא מעבד באתחול"
 
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:104
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:114
 #, fuzzy
 msgid "Freeze CPU on startup"
 msgstr "הקפא מעבד באתחול"
 
 #: pve-manager/www/manager6/form/AgentFeatureSelector.js:40
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:68
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:94
 msgid ""
 "Freeze/thaw for guest filesystems disabled. This can lead to inconsistent "
 "disk backups."
 msgstr ""
 
 #: pve-manager/www/manager6/form/AgentFeatureSelector.js:26
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:43
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:76
 msgid "Freeze/thaw guest filesystems on backup for consistency"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/Utils.js:77 proxmox-yew-comp/src/lib.rs:275
+#: proxmox-widget-toolkit/src/Utils.js:77 proxmox-yew-comp/src/lib.rs:281
 msgid "French"
 msgstr ""
 
@@ -5940,7 +6041,7 @@ msgstr "מקובץ"
 msgid "From backup configuration"
 msgstr "תצורת ה Ceph cluster"
 
-#: pmg-yew-quarantine-gui/src/page_spam_list.rs:80
+#: pmg-yew-quarantine-gui/src/page_spam_list.rs:86
 #, fuzzy
 msgid "From:"
 msgstr "מ"
@@ -6054,15 +6155,15 @@ msgstr "Gateway"
 #: pve-manager/www/manager6/window/GuestImport.js:354
 #: proxmox-backup/www/SystemConfiguration.js:74
 #: proxmox-backup/www/window/DataStoreEdit.js:39
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:85
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:190
 msgid "General"
 msgstr "כללי"
 
-#: proxmox-widget-toolkit/src/Utils.js:82 proxmox-yew-comp/src/lib.rs:280
+#: proxmox-widget-toolkit/src/Utils.js:82 proxmox-yew-comp/src/lib.rs:286
 msgid "Georgian"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/Utils.js:72 proxmox-yew-comp/src/lib.rs:269
+#: proxmox-widget-toolkit/src/Utils.js:72 proxmox-yew-comp/src/lib.rs:275
 msgid "German"
 msgstr ""
 
@@ -6100,13 +6201,14 @@ msgstr ""
 #: proxmox-widget-toolkit/src/panel/PermissionView.js:152
 #: pve-manager/www/manager6/dc/PermissionView.js:148
 #: proxmox-yew-comp/src/user_panel.rs:296
+#: proxmox-yew-comp/src/token_panel.rs:314
 #, fuzzy
 msgid "Granted Permissions"
 msgstr "הרשאות קבוצה"
 
 #: pve-manager/www/manager6/qemu/DisplayEdit.js:50
 #: pve-manager/www/manager6/qemu/SystemEdit.js:81
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:33
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:130
 msgid "Graphic card"
 msgstr "כרטיס מסך"
 
@@ -6227,11 +6329,11 @@ msgid "Guest user"
 msgstr "משתמש ה Guest"
 
 #: pve-manager/www/manager6/dc/Guests.js:5
-#: proxmox-datacenter-manager/ui/src/pve/remote.rs:192
+#: proxmox-datacenter-manager/ui/src/pve/remote.rs:190
 msgid "Guests"
 msgstr "Guests"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:632
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:648
 msgid "Guests With the Highest CPU Usage"
 msgstr ""
 
@@ -6324,8 +6426,8 @@ msgstr ""
 msgid "HA rule errors"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:321
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:335
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:322
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:336
 #, fuzzy
 msgid "HA state"
 msgstr "HA מצב"
@@ -6341,6 +6443,11 @@ msgstr "מצב"
 msgid "HD space"
 msgstr "מקום בדיסק"
 
+#: proxmox-yew-comp/src/node_info.rs:170
+#, fuzzy
+msgid "HD space (root)"
+msgstr "מקום בדיסק"
+
 #: pve-manager/www/manager6/dc/MetricServerView.js:681
 msgid "HTTP Headers (JSON)"
 msgstr ""
@@ -6354,8 +6461,8 @@ msgstr "HTTP פרוקסי"
 #: pve-manager/www/manager6/qemu/HDEdit.js:547
 #: pve-manager/www/manager6/qemu/HardwareView.js:250
 #: pve-manager/www/manager6/qemu/HardwareView.js:725
-#: pve-yew-mobile-gui/src/pages/page_qemu_status/hardware_panel.rs:175
-#: pve-yew-mobile-gui/src/pages/page_qemu_status/hardware_panel.rs:186
+#: pve-yew-mobile-gui/src/pages/page_qemu_status/hardware_panel.rs:291
+#: pve-yew-mobile-gui/src/pages/page_qemu_status/hardware_panel.rs:302
 msgid "Hard Disk"
 msgstr "דיסק קשיח"
 
@@ -6365,7 +6472,7 @@ msgid "Hardlink"
 msgstr "דיסק קשיח"
 
 #: pve-manager/www/manager6/qemu/Config.js:319
-#: pve-yew-mobile-gui/src/pages/page_qemu_status/hardware_panel.rs:276
+#: pve-yew-mobile-gui/src/pages/page_qemu_status/hardware_panel.rs:457
 msgid "Hardware"
 msgstr "חומרה"
 
@@ -6395,7 +6502,7 @@ msgid "Header Attribute"
 msgstr "Header תכונות"
 
 #: proxmox-widget-toolkit/src/panel/WebhookEditPanel.js:70
-#: pmg-gui/js/PostfixMailQueue.js:134
+#: pmg-gui/js/PostfixMailQueue.js:140
 msgid "Headers"
 msgstr "Headers"
 
@@ -6417,7 +6524,7 @@ msgstr "כתובת שרת"
 msgid "Heartbeat Front Address"
 msgstr "כתובת שרת"
 
-#: proxmox-widget-toolkit/src/Utils.js:79 proxmox-yew-comp/src/lib.rs:276
+#: proxmox-widget-toolkit/src/Utils.js:79 proxmox-yew-comp/src/lib.rs:282
 msgid "Hebrew"
 msgstr ""
 
@@ -6449,16 +6556,17 @@ msgstr "ציון היוריסטי"
 #: pve-manager/www/manager6/qemu/Config.js:190
 #: proxmox-datacenter-manager/ui/src/tasks.rs:72
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/dashboard_panel.rs:221
-#: proxmox-yew-comp/src/utils.rs:418
+#: proxmox-yew-comp/src/utils.rs:429
 msgid "Hibernate"
 msgstr "מצב שינה"
 
 #: pve-manager/www/manager6/qemu/HardwareView.js:203
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:287
 #, fuzzy
 msgid "Hibernation VM State"
 msgstr "מצב שינה"
 
-#: pmg-gui/js/MailProxyOptions.js:74
+#: pmg-gui/js/MailProxyOptions.js:62
 msgid "Hide Internal Hosts"
 msgstr "הסתר הוסטים פנימיים"
 
@@ -6503,7 +6611,7 @@ msgstr "הוסט"
 msgid "Host CPU usage"
 msgstr "שימוש במעבד"
 
-#: proxmox-datacenter-manager/ui/src/pve/remote.rs:211
+#: proxmox-datacenter-manager/ui/src/pve/remote.rs:209
 #, fuzzy
 msgid "Host CPU usage (avg.)"
 msgstr "שימוש במעבד"
@@ -6524,7 +6632,7 @@ msgstr "שימוש בזכרון"
 msgid "Host Memory used"
 msgstr "שימוש בזכרון"
 
-#: proxmox-datacenter-manager/ui/src/pve/remote.rs:231
+#: proxmox-datacenter-manager/ui/src/pve/remote.rs:233
 #, fuzzy
 msgid "Host Storage used"
 msgstr "Storage מראה"
@@ -6572,7 +6680,7 @@ msgstr "הוסטים"
 #: pve-manager/www/manager6/qemu/Options.js:168
 #: pve-manager/www/manager6/qemu/Options.js:174
 #: pve-manager/www/manager6/qemu/Options.js:180
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:204
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:216
 msgid "Hotplug"
 msgstr "Hotplug"
 
@@ -6665,6 +6773,7 @@ msgstr ""
 #: pve-manager/www/manager6/node/StatusView.js:35
 #: pve-manager/www/manager6/node/Summary.js:166
 #: proxmox-backup/www/panel/NodeInfo.js:87
+#: proxmox-yew-comp/src/node_info.rs:140
 msgid "IO delay"
 msgstr "IO השהיית"
 
@@ -6812,13 +6921,14 @@ msgstr "ISO Image"
 msgid "Idle"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:724
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:736
 msgid ""
 "If a response from a remote is older than 'Max Age', it will be updated on "
 "the next refresh."
 msgstr ""
 
 #: pve-manager/www/manager6/qemu/DisplayEdit.js:127
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:122
 msgid ""
 "If the display type uses SPICE you are able to use the default SPICE "
 "clipboard."
@@ -6892,6 +7002,23 @@ msgstr "תמיכה"
 msgid ""
 "Importing an OVA temporarily requires extra space on the working storage "
 "while extracting the contained disks for further processing."
+msgstr ""
+
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:104
+msgid ""
+"Improve performance for nested virtualization. Only supported on Intel CPUs."
+msgstr ""
+
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:103
+msgid ""
+"Improve performance in overcommitted Windows guests. May lead to guest "
+"bluescreens on old CPUs."
+msgstr ""
+
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:100
+msgid ""
+"Improves Spectre mitigation performance with AMD CPUs, best used with \"virt-"
+"ssbd\""
 msgstr ""
 
 #: pmg-gui/js/Utils.js:113 pve-manager/www/manager6/ceph/StatusDetail.js:39
@@ -7008,7 +7135,7 @@ msgstr "חודר"
 
 #: proxmox-widget-toolkit/src/Utils.js:750
 #: proxmox-widget-toolkit/src/panel/DiskList.js:407
-#: proxmox-yew-comp/src/utils.rs:223
+#: proxmox-yew-comp/src/utils.rs:242
 msgid "Initialize Disk with GPT"
 msgstr "אתחל דיסק עם GPT"
 
@@ -7044,6 +7171,8 @@ msgid "Installation"
 msgstr "התקנה"
 
 #: pve-manager/www/manager6/qemu/MachineEdit.js:159
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_machine_property.rs:130
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_machine_property.rs:143
 msgid "Intel (AMD Compatible)"
 msgstr ""
 
@@ -7137,7 +7266,7 @@ msgstr "פורט טורי"
 #: proxmox-widget-toolkit/src/window/Certificates.js:26
 #: pve-manager/www/manager6/node/Certificates.js:55
 #: pve-manager/www/manager6/node/Certificates.js:317
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:302
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:304
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_nodes.rs:278
 #: proxmox-yew-comp/src/acme/certificate_list.rs:346
 #: proxmox-yew-comp/src/acme/certificate_list.rs:376
@@ -7173,7 +7302,7 @@ msgid ""
 "Server."
 msgstr ""
 
-#: proxmox-widget-toolkit/src/Utils.js:80 proxmox-yew-comp/src/lib.rs:278
+#: proxmox-widget-toolkit/src/Utils.js:80 proxmox-yew-comp/src/lib.rs:284
 #, fuzzy
 msgid "Italian"
 msgstr "כינוי"
@@ -7189,7 +7318,7 @@ msgstr "כל {0} דקות"
 msgid "Iterations"
 msgstr "משך זמן"
 
-#: proxmox-widget-toolkit/src/Utils.js:81 proxmox-yew-comp/src/lib.rs:279
+#: proxmox-widget-toolkit/src/Utils.js:81 proxmox-yew-comp/src/lib.rs:285
 msgid "Japanese"
 msgstr ""
 
@@ -7234,7 +7363,7 @@ msgstr "צרף"
 #: pmg-gui/js/Utils.js:908 pve-manager/www/manager6/Utils.js:2084
 #: pve-manager/www/manager6/dc/Cluster.js:171
 #: proxmox-datacenter-manager/ui/src/tasks.rs:34
-#: proxmox-yew-comp/src/utils.rs:382
+#: proxmox-yew-comp/src/utils.rs:393
 msgid "Join Cluster"
 msgstr "צרף ל Cluster"
 
@@ -7268,7 +7397,7 @@ msgstr "KSM שיתוף"
 
 #: pve-manager/www/manager6/qemu/Options.js:207
 #: pve-manager/www/manager6/qemu/Options.js:213
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:101
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:111
 msgid "KVM hardware virtualization"
 msgstr "KVM וירטואליזציית חומרה"
 
@@ -7373,10 +7502,11 @@ msgstr ""
 #: pmg-gui/js/dashboard/NodeInfo.js:88
 #: pve-manager/www/manager6/node/StatusView.js:103
 #: proxmox-backup/www/panel/NodeInfo.js:143
+#: proxmox-yew-comp/src/node_info.rs:220
 msgid "Kernel Version"
 msgstr "גרסת ליבה"
 
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:327
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:328
 #, fuzzy
 msgid "Kernel scheduler settings"
 msgstr "גרסת ליבה"
@@ -7407,7 +7537,7 @@ msgstr "פריסת מקלדת"
 msgid "KiB"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/Utils.js:83 proxmox-yew-comp/src/lib.rs:281
+#: proxmox-widget-toolkit/src/Utils.js:83 proxmox-yew-comp/src/lib.rs:287
 msgid "Korean"
 msgstr ""
 
@@ -7428,8 +7558,8 @@ msgid "LDAP Group"
 msgstr "LDAP קבוצת"
 
 #: proxmox-widget-toolkit/src/Schema.js:28
-#: pve-manager/www/manager6/Utils.js:734 proxmox-yew-comp/src/auth_view.rs:187
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:276
+#: pve-manager/www/manager6/Utils.js:734 proxmox-yew-comp/src/auth_view.rs:285
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:403
 msgid "LDAP Server"
 msgstr "LDAP שרת"
 
@@ -7457,13 +7587,13 @@ msgstr ""
 
 #: pve-manager/www/manager6/Utils.js:2094
 #: proxmox-datacenter-manager/ui/src/tasks.rs:46
-#: proxmox-yew-comp/src/utils.rs:392
+#: proxmox-yew-comp/src/utils.rs:403
 msgid "LVM Storage"
 msgstr "LVM אחסון"
 
 #: pve-manager/www/manager6/Utils.js:2096
 #: proxmox-datacenter-manager/ui/src/tasks.rs:48
-#: proxmox-yew-comp/src/utils.rs:394
+#: proxmox-yew-comp/src/utils.rs:405
 msgid "LVM-Thin Storage"
 msgstr "LVM-Thin אחסון"
 
@@ -7474,7 +7604,7 @@ msgstr "LVM-Thin אחסון"
 #: pve-manager/www/manager6/form/VMSelector.js:354
 #: pve-manager/www/manager6/lxc/CreateWizard.js:25
 #: pve-manager/www/manager6/tree/ResourceTree.js:34
-#: pve-yew-mobile-gui/src/pages/page_dashboard.rs:298
+#: pve-yew-mobile-gui/src/pages/page_dashboard.rs:299
 msgid "LXC Container"
 msgstr "LXC קונטיינר"
 
@@ -7497,12 +7627,14 @@ msgstr "מחק נתונים"
 
 #: proxmox-widget-toolkit/src/window/LanguageEdit.js:36
 #: proxmox-widget-toolkit/src/window/LanguageEdit.js:43
-#: pmg-gui/js/LoginView.js:383 pmg-gui/js/MainView.js:223
-#: pmg-gui/js/QuarantineView.js:263 pve-manager/www/manager6/Workspace.js:432
+#: pmg-gui/js/LoginView.js:383 pmg-gui/js/MainView.js:230
+#: pmg-gui/js/QuarantineView.js:305 pve-manager/www/manager6/Workspace.js:432
 #: pve-manager/www/manager6/window/LoginWindow.js:400
 #: proxmox-backup/www/LoginView.js:324 proxmox-backup/www/MainView.js:276
-#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:152
+#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:153
 #: pve-yew-mobile-gui/src/pages/page_settings.rs:39
+#: pmg-yew-quarantine-gui/src/page_spam_list.rs:246
+#: pmg-yew-quarantine-gui/src/page_spam_list.rs:293
 #: proxmox-yew-comp/src/language_dialog.rs:76
 #: proxmox-yew-comp/src/language_dialog.rs:84
 #: proxmox-yew-widget-toolkit/src/widget/language_selector.rs:193
@@ -7534,7 +7666,7 @@ msgid "Last Name"
 msgstr "שם משפחה"
 
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:342
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:111
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:217
 #, fuzzy
 msgid "Last Name attribute"
 msgstr "שם משפחה"
@@ -7581,8 +7713,18 @@ msgstr "שם משפחה"
 msgid "Last refresh: {0}"
 msgstr ""
 
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:444
+msgid "Last verify task over 30 days ago: {0}"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:449
+msgid "Last verify task started on {0}"
+msgstr ""
+
 #: pve-manager/www/manager6/qemu/MachineEdit.js:117
 #: pve-manager/www/manager6/qemu/MachineEdit.js:136
+#: pve-yew-mobile-gui/src/form/qemu_machine_version_selector.rs:150
+#: pve-yew-mobile-gui/src/form/qemu_machine_version_selector.rs:158
 #, fuzzy
 msgid "Latest"
 msgstr "עדכונים"
@@ -7655,7 +7797,7 @@ msgstr ""
 msgid "Linux Bridge"
 msgstr "Bridge"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:243
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:245
 #, fuzzy
 msgid "Linux Container"
 msgstr "LXC קונטיינר"
@@ -7710,6 +7852,11 @@ msgstr ""
 msgid "Load"
 msgstr "טוען"
 
+#: proxmox-yew-comp/src/node_info.rs:163
+#, fuzzy
+msgid "Load Average"
+msgstr "עומס ממוצע"
+
 #: proxmox-backup/www/Utils.js:443
 #, fuzzy
 msgid "Load Media"
@@ -7730,7 +7877,6 @@ msgstr "טען קובץ SSH מפתח"
 #: pve-manager/www/manager6/node/Summary.js:174
 #: proxmox-backup/www/ServerStatus.js:224
 #: proxmox-backup/www/panel/NodeInfo.js:106
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:235
 msgid "Load average"
 msgstr "עומס ממוצע"
 
@@ -7844,10 +7990,6 @@ msgstr ""
 msgid "Log"
 msgstr "Log"
 
-#: pmg-gui/js/mobile/loginscreen.js:44
-msgid "Log In"
-msgstr "התחבר"
-
 #: proxmox-backup/www/Utils.js:444
 #, fuzzy
 msgid "Log Rotation"
@@ -7887,7 +8029,7 @@ msgstr ""
 msgid "Login (OpenID redirect)"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:284
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:301
 msgid "Login and create Token"
 msgstr ""
 
@@ -7908,10 +8050,11 @@ msgstr "ההתחברות נכשלה. אנא נסה שנית"
 msgid "Login failed:"
 msgstr "IP סינון"
 
-#: pmg-gui/js/MainView.js:230 pmg-gui/js/QuarantineView.js:270
+#: pmg-gui/js/MainView.js:237 pmg-gui/js/QuarantineView.js:317
 #: pve-manager/www/manager6/Workspace.js:440 proxmox-backup/www/MainView.js:287
-#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:169
+#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:170
 #: pve-yew-mobile-gui/src/widgets/top_nav_bar.rs:118
+#: pmg-yew-quarantine-gui/src/page_spam_list.rs:310
 msgid "Logout"
 msgstr "התנתק"
 
@@ -7945,6 +8088,7 @@ msgstr ""
 #: pve-manager/www/manager6/qemu/AgentIPView.js:27
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:172
 #: pve-manager/www/manager6/window/GuestImport.js:893
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_network_property.rs:51
 msgid "MAC address"
 msgstr "MAC כתובת"
 
@@ -7979,6 +8123,7 @@ msgid "MIME type"
 msgstr ""
 
 #: pve-manager/www/manager6/lxc/Network.js:550
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_network_property.rs:134
 #: proxmox-yew-comp/src/configuration/network_view.rs:494
 #: proxmox-yew-comp/src/configuration/network_edit.rs:173
 #: proxmox-yew-comp/src/configuration/network_edit.rs:265
@@ -7995,15 +8140,12 @@ msgstr ""
 #: pve-manager/www/manager6/qemu/MachineEdit.js:101
 #: pve-manager/www/manager6/qemu/MachineEdit.js:189
 #: pve-manager/www/manager6/qemu/SystemEdit.js:90
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_machine_property.rs:164
 msgid "Machine"
 msgstr "מכונה"
 
-#: pve-yew-mobile-gui/src/pages/page_qemu_status/hardware_panel.rs:156
-#, fuzzy
-msgid "Machine Type"
-msgstr "סוג תוכן"
-
 #: pve-manager/www/manager6/qemu/MachineEdit.js:147
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_machine_property.rs:155
 msgid ""
 "Machine version change may affect hardware layout and settings in the guest "
 "OS."
@@ -8033,6 +8175,11 @@ msgstr "אימייל פרוקסי"
 msgid "Mails / min"
 msgstr "אימיילים לדקה"
 
+#: proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:209
+#, fuzzy
+msgid "Maintenance Mode"
+msgstr "סוג תוכן"
+
 #: proxmox-backup/www/window/MaintenanceOptions.js:57
 #, fuzzy
 msgid "Maintenance Type"
@@ -8051,12 +8198,12 @@ msgid ""
 msgstr ""
 
 #: pve-manager/www/manager6/form/AgentFeatureSelector.js:49
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:71
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:97
 msgid "Make sure the QEMU Guest Agent is installed in the VM"
 msgstr ""
 
 #: pve-manager/www/manager6/form/SpiceEnhancementSelector.js:41
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:62
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:57
 msgid "Make sure the SPICE WebDav daemon is installed in the VM."
 msgstr ""
 
@@ -8094,7 +8241,7 @@ msgstr "מנהלים"
 
 #: pve-manager/www/manager6/form/USBSelector.js:86
 #: pve-manager/www/manager6/qemu/Smbios1Edit.js:36
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:59
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:50
 msgid "Manufacturer"
 msgstr "יצרן"
 
@@ -8195,7 +8342,7 @@ msgstr ""
 msgid "Matcher Name"
 msgstr "Cluster שם"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:713
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:725
 msgid "Max Age (seconds)"
 msgstr ""
 
@@ -8310,6 +8457,11 @@ msgstr ""
 msgid "Mediated Devices"
 msgstr "Mediated התקני"
 
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:95
+msgid ""
+"Meltdown fix cost reduction on Westmere, Sandy-, and IvyBridge Intel CPUs"
+msgstr ""
+
 #: pve-manager/www/manager6/pool/Config.js:26
 msgid "Members"
 msgstr "חברים"
@@ -8331,9 +8483,9 @@ msgstr "חברים"
 #: pve-manager/www/manager6/window/Restore.js:350
 #: pve-yew-mobile-gui/src/form/hotplug_feature_selector.rs:56
 #: pve-yew-mobile-gui/src/form/hotplug_feature_selector.rs:193
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:37
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_memory_property.rs:47
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_memory_property.rs:130
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:136
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_memory_property.rs:49
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_memory_property.rs:132
 #: pve-yew-mobile-gui/src/pages/page_dashboard.rs:132
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/dashboard_panel.rs:180
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/resources_panel.rs:58
@@ -8348,12 +8500,13 @@ msgstr ""
 
 #: pve-manager/www/manager6/panel/GuestSummary.js:104
 #: proxmox-datacenter-manager/ui/src/widget/pve_node_selector.rs:157
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:327
+#: proxmox-datacenter-manager/ui/src/pbs/remote.rs:275
+#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:271
 #, fuzzy
 msgid "Memory Usage"
 msgstr "שימוש בזכרון"
 
-#: proxmox-datacenter-manager/ui/src/pve/remote.rs:265
+#: proxmox-datacenter-manager/ui/src/pve/remote.rs:267
 #, fuzzy
 msgid "Memory assigned"
 msgstr "גודל זכרון"
@@ -8371,10 +8524,10 @@ msgstr "גודל זכרון"
 #: pve-manager/www/manager6/node/Summary.js:179
 #: pve-manager/www/manager6/panel/GuestStatusView.js:113
 #: proxmox-backup/www/ServerStatus.js:229
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:647
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:393
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:406
-#: proxmox-datacenter-manager/ui/src/renderer.rs:97
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:663
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:391
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:404
+#: proxmox-datacenter-manager/ui/src/renderer.rs:74
 msgid "Memory usage"
 msgstr "שימוש בזכרון"
 
@@ -8442,12 +8595,12 @@ msgstr ""
 #: pve-manager/www/manager6/window/Migrate.js:722
 #: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:577
 #: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:579
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:704
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:708
 #: proxmox-datacenter-manager/ui/src/tasks.rs:40
 #: proxmox-datacenter-manager/ui/src/tasks.rs:60
 #: proxmox-datacenter-manager/ui/src/tasks.rs:94
-#: proxmox-yew-comp/src/utils.rs:386 proxmox-yew-comp/src/utils.rs:406
-#: proxmox-yew-comp/src/utils.rs:438
+#: proxmox-yew-comp/src/utils.rs:397 proxmox-yew-comp/src/utils.rs:417
+#: proxmox-yew-comp/src/utils.rs:449
 msgid "Migrate"
 msgstr "מיגרציה"
 
@@ -8492,7 +8645,7 @@ msgid "Minimum characters"
 msgstr "מספר תווים מינימלי"
 
 #: pve-manager/www/manager6/qemu/MemoryEdit.js:94
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_memory_property.rs:57
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_memory_property.rs:59
 msgid "Minimum memory"
 msgstr "כמות זכרון מינימלית"
 
@@ -8517,8 +8670,8 @@ msgstr "עירוב סוגי מנויים"
 #: pve-manager/www/manager6/window/Clone.js:215
 #: pve-manager/www/manager6/window/Migrate.js:590
 #: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:366
-#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:94
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:208
+#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:86
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:319
 #: proxmox-yew-comp/src/configuration/network_edit.rs:233
 msgid "Mode"
 msgstr "מצב"
@@ -8554,6 +8707,7 @@ msgstr "HA נהל"
 #: proxmox-backup/www/tape/form/ChangerSelector.js:44
 #: proxmox-backup/www/tape/form/DriveSelector.js:39
 #: proxmox-backup/www/tape/form/TapeDevicePathSelector.js:29
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_network_property.rs:31
 msgid "Model"
 msgstr "מודל"
 
@@ -8627,7 +8781,7 @@ msgstr "עוד"
 #: pve-manager/www/manager6/Utils.js:2140
 #: proxmox-backup/www/datastore/Summary.js:281
 #: proxmox-datacenter-manager/ui/src/tasks.rs:95
-#: proxmox-yew-comp/src/utils.rs:439
+#: proxmox-yew-comp/src/utils.rs:450
 msgid "Mount"
 msgstr "Mount"
 
@@ -8672,14 +8826,14 @@ msgstr "LVM אחסון"
 #: pve-manager/www/manager6/Utils.js:2099
 #: pve-manager/www/manager6/qemu/HDMove.js:28
 #: proxmox-datacenter-manager/ui/src/tasks.rs:51
-#: proxmox-yew-comp/src/utils.rs:397
+#: proxmox-yew-comp/src/utils.rs:408
 msgid "Move Volume"
 msgstr "Volume העבר"
 
 #: pve-manager/www/manager6/Utils.js:2109
 #: pve-manager/www/manager6/qemu/HDMove.js:28
 #: proxmox-datacenter-manager/ui/src/tasks.rs:61
-#: proxmox-yew-comp/src/utils.rs:407
+#: proxmox-yew-comp/src/utils.rs:418
 msgid "Move disk"
 msgstr "העבר דיסק"
 
@@ -8706,6 +8860,11 @@ msgstr ""
 msgid "Multiple recipients must be separated by spaces, commas or semicolons"
 msgstr ""
 
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_network_property.rs:156
+#, fuzzy
+msgid "Multiqueue"
+msgstr "Multiqueues"
+
 #: proxmox-widget-toolkit/src/panel/WebhookEditPanel.js:62
 msgid "Must be a valid URL"
 msgstr ""
@@ -8728,7 +8887,7 @@ msgstr "חייב להסתיים ב"
 msgid "Must start with"
 msgstr "חייב להתחיל ב"
 
-#: pmg-gui/js/MainView.js:209 pmg-gui/js/Settings.js:5
+#: pmg-gui/js/MainView.js:216 pmg-gui/js/Settings.js:5
 #: pve-manager/www/manager6/Workspace.js:391
 #: pve-manager/www/manager6/window/Settings.js:5
 #: proxmox-backup/www/MainView.js:262 proxmox-backup/www/window/Settings.js:5
@@ -8737,7 +8896,8 @@ msgstr "ההגדרות שלי"
 
 #: proxmox-widget-toolkit/src/Utils.js:1130
 #: proxmox-widget-toolkit/src/panel/DiskList.js:374
-#: proxmox-backup/www/Utils.js:322
+#: proxmox-backup/www/Utils.js:322 proxmox-yew-comp/src/node_info.rs:60
+#: proxmox-yew-comp/src/node_info.rs:192
 msgid "N/A"
 msgstr "לא ישים"
 
@@ -8878,7 +9038,7 @@ msgstr ""
 #: proxmox-datacenter-manager/ui/src/sdn/zone_tree.rs:118
 #: pve-yew-mobile-gui/src/form/qemu_cpu_model_selector.rs:138
 #: pve-yew-mobile-gui/src/form/qemu_cpu_model_selector.rs:149
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:116
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:126
 #: pve-yew-mobile-gui/src/form/pve_storage_selector.rs:203
 #: pve-yew-mobile-gui/src/form/pve_storage_selector.rs:248
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/config_panel.rs:91
@@ -8935,11 +9095,13 @@ msgstr "DNS שרת"
 #: proxmox-backup/www/window/PruneJobEdit.js:88
 #: proxmox-backup/www/window/VerifyAll.js:36
 #: proxmox-backup/www/window/VerifyJobEdit.js:80
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:320
 #, fuzzy
 msgid "Namespace"
 msgstr "שם"
 
 #: proxmox-backup/www/datastore/Content.js:360
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:109
 #, fuzzy
 msgid "Namespace '{0}'"
 msgstr "שם"
@@ -8948,6 +9110,11 @@ msgstr "שם"
 #, fuzzy
 msgid "Namespace Name"
 msgstr "שם"
+
+#: pmg-gui/js/QuarantineView.js:240
+#, fuzzy
+msgid "Narrow viewport detected"
+msgstr "OSD לא נבחר"
 
 #: proxmox-backup/www/tape/window/TapeRestore.js:630
 msgid "Need at least one mapping"
@@ -8964,24 +9131,24 @@ msgid "Nesting"
 msgstr "Nesting"
 
 #. TRANSLATORS: As in amount of incoming network traffic
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:206
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:207
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:209
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:210
 msgid "Net In"
 msgstr ""
 
 #. TRANSLATORS: As in amount of outgoing network traffic
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:207
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:209
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:210
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:212
 #, fuzzy
 msgid "Net Out"
 msgstr "הגבלת קצב"
 
-#: pmg-gui/js/MailProxyOptions.js:56
+#: pmg-gui/js/MailProxyOptions.js:44
 #, fuzzy
 msgid "Netmask for Greylisting IPv4"
 msgstr "השתמש ברשימות גריליסט"
 
-#: pmg-gui/js/MailProxyOptions.js:66
+#: pmg-gui/js/MailProxyOptions.js:54
 #, fuzzy
 msgid "Netmask for Greylisting IPv6"
 msgstr "השתמש ברשימות גריליסט"
@@ -9013,7 +9180,7 @@ msgstr "תצורת רשת"
 #: pve-manager/www/manager6/qemu/HardwareView.js:743
 #: pve-manager/www/manager6/qemu/IPConfigEdit.js:66
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:238
-#: pve-yew-mobile-gui/src/pages/page_qemu_status/hardware_panel.rs:195
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_network_property.rs:85
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/resources_panel.rs:94
 #: proxmox-yew-comp/src/configuration/mod.rs:28
 msgid "Network Device"
@@ -9021,15 +9188,15 @@ msgstr "התקן רשת"
 
 #: pve-manager/www/manager6/window/GuestImport.js:856
 #: proxmox-backup/www/SystemConfiguration.js:40
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:119
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:141
 #, fuzzy
 msgid "Network Interfaces"
 msgstr "תעבורת רשת"
 
 #: pve-manager/www/manager6/node/Summary.js:262
 #: pve-manager/www/manager6/panel/GuestSummary.js:121
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:406
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:419
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:404
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:417
 #, fuzzy
 msgid "Network Traffic"
 msgstr "תעבורת רשת"
@@ -9133,7 +9300,7 @@ msgstr "תאריך ביצוע הבא"
 #: pve-manager/www/manager6/window/TreeSettingsEdit.js:39
 #: pve-manager/www/manager6/window/TreeSettingsEdit.js:52
 #: proxmox-backup/www/Subscription.js:133
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:115
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:117
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_nodes.rs:106
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_summary.rs:113
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/remote_tree.rs:394
@@ -9295,6 +9462,11 @@ msgstr "אין דוחות"
 #: proxmox-widget-toolkit/src/window/DiskSmart.js:24
 msgid "No S.M.A.R.T. Values"
 msgstr "S.M.A.R.T. אין ערכי"
+
+#: pmg-gui/js/DNSBLSitesField.js:17
+#, fuzzy
+msgid "No Sites defined"
+msgstr "לא נמצאו דיסקים"
 
 #: proxmox-backup/www/tape/window/TapeRestore.js:837
 #, fuzzy
@@ -9492,12 +9664,10 @@ msgstr "OSD לא נבחר"
 msgid "No updates available."
 msgstr "אין עדכונים זמינים."
 
-#: proxmox-widget-toolkit/src/Utils.js:617
-#: pmg-gui/js/mobile/quarantineview.js:62 pmg-gui/js/mobile/utils.js:146
-#: pmg-gui/js/mobile/utils.js:149 proxmox-backup/www/Dashboard.js:348
+#: proxmox-widget-toolkit/src/Utils.js:617 proxmox-backup/www/Dashboard.js:348
 #: proxmox-datacenter-manager/ui/src/dashboard/subscription_info.rs:62
-#: pmg-yew-quarantine-gui/src/page_spam_list.rs:197
-#: pmg-yew-quarantine-gui/src/page_spam_list.rs:225
+#: pmg-yew-quarantine-gui/src/page_spam_list.rs:224
+#: pmg-yew-quarantine-gui/src/page_spam_list.rs:264
 #: proxmox-yew-comp/src/subscription_info.rs:20
 msgid "No valid subscription"
 msgstr "אין מנוי תקין"
@@ -9631,17 +9801,17 @@ msgstr "שם ה Node"
 #: pve-manager/www/manager6/sdn/zones/Base.js:44
 #: pve-manager/www/manager6/storage/Base.js:41
 #: pve-manager/www/manager6/tree/ResourceTree.js:14
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:344
-#: proxmox-datacenter-manager/ui/src/pve/remote.rs:186
-#: pve-yew-mobile-gui/src/pages/page_dashboard.rs:224
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:335
+#: proxmox-datacenter-manager/ui/src/pve/remote.rs:185
+#: pve-yew-mobile-gui/src/pages/page_dashboard.rs:225
 msgid "Nodes"
 msgstr "Nodes"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:639
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:655
 msgid "Nodes With the Highest CPU Usage"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:646
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:662
 msgid "Nodes With the Highest Memory Usage"
 msgstr ""
 
@@ -9662,8 +9832,11 @@ msgstr ""
 #: proxmox-backup/www/datastore/Content.js:1253
 #: proxmox-backup/www/datastore/Content.js:1268
 #: proxmox-backup/www/window/MaintenanceOptions.js:6
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:348
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:339
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:405
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:459
 #: proxmox-datacenter-manager/ui/src/pve/utils.rs:291
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_machine_property.rs:140
 msgid "None"
 msgstr ""
 
@@ -9686,11 +9859,11 @@ msgstr "לא נמצאו דיסקים"
 msgid "Normalized"
 msgstr "חזרה לשגרה"
 
-#: proxmox-widget-toolkit/src/Utils.js:84 proxmox-yew-comp/src/lib.rs:282
+#: proxmox-widget-toolkit/src/Utils.js:84 proxmox-yew-comp/src/lib.rs:288
 msgid "Norwegian (Bokmal)"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/Utils.js:86 proxmox-yew-comp/src/lib.rs:284
+#: proxmox-widget-toolkit/src/Utils.js:86 proxmox-yew-comp/src/lib.rs:290
 msgid "Norwegian (Nynorsk)"
 msgstr ""
 
@@ -9783,8 +9956,12 @@ msgid ""
 "the VM may be lost."
 msgstr ""
 
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:390
+msgid "Note: Login currently requires Proxmox Backup Server version 4."
+msgstr ""
+
 #: pve-manager/www/manager6/qemu/SevEdit.js:82
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:87
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:80
 msgid "Note: SEV-SNP requires host kernel version 6.11 or higher."
 msgstr ""
 
@@ -9866,6 +10043,10 @@ msgstr "התראה"
 msgid "Notifications"
 msgstr "התראה"
 
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:101
+msgid "Notifies guest OS that host is not vulnerable for Spectre on AMD CPUs"
+msgstr ""
+
 #: pmg-gui/js/PBSRemoteEdit.js:85
 #, fuzzy
 msgid "Notify"
@@ -9897,8 +10078,7 @@ msgstr "מספר ה Nodes"
 #: proxmox-widget-toolkit/src/node/Tasks.js:356
 #: proxmox-widget-toolkit/src/window/ConsentModal.js:32
 #: proxmox-widget-toolkit/src/window/Edit.js:317 pmg-gui/js/LoginView.js:179
-#: pmg-gui/js/RegexTester.js:49 pmg-gui/js/mobile/quarantineview.js:45
-#: pve-manager/www/manager6/Utils.js:298
+#: pmg-gui/js/RegexTester.js:49 pve-manager/www/manager6/Utils.js:298
 #: pve-manager/www/manager6/grid/Replication.js:358
 #: proxmox-backup/www/Utils.js:235
 #: proxmox-backup/www/dashboard/TaskSummary.js:165
@@ -9909,7 +10089,7 @@ msgstr "מספר ה Nodes"
 #: proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:192
 #: proxmox-datacenter-manager/ui/src/dashboard/tasks.rs:144
 #: pve-yew-mobile-gui/src/pages/page_login.rs:80
-#: pmg-yew-quarantine-gui/src/page_spam_list.rs:205
+#: pmg-yew-quarantine-gui/src/page_spam_list.rs:232
 msgid "OK"
 msgstr "אוקי"
 
@@ -9920,7 +10100,7 @@ msgstr "מערכת הפעלה"
 #: pve-manager/www/manager6/lxc/Options.js:54
 #: pve-manager/www/manager6/qemu/Options.js:88
 #: pve-manager/www/manager6/window/GuestImport.js:562
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:127
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:137
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/config_panel.rs:109
 msgid "OS Type"
 msgstr "סוג מערכת ההפעלה"
@@ -9951,6 +10131,11 @@ msgstr "OVS אפשרויות"
 msgid "Objects are degraded. Consider waiting until the cluster is healthy."
 msgstr ""
 
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:172
+#, fuzzy
+msgid "Off"
+msgstr "כבוי"
+
 #: pve-manager/www/manager6/dc/Health.js:114
 #: pve-manager/www/manager6/window/Migrate.js:45
 #: proxmox-backup/www/Utils.js:847 proxmox-backup/www/tape/TapeInventory.js:308
@@ -9978,12 +10163,14 @@ msgstr ""
 #: proxmox-backup/www/tape/window/Erase.js:33
 #: proxmox-backup/www/tape/window/MediaRemoveWindow.js:26
 #: proxmox-backup/www/window/DatastoreRepoInfo.js:89
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:437
 #: proxmox-yew-comp/src/task_status_selector.rs:137
 #: proxmox-yew-widget-toolkit/src/widget/message_box.rs:131
 msgid "Ok"
 msgstr ""
 
 #: pve-manager/www/manager6/grid/FirewallRules.js:896
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:171
 msgid "On"
 msgstr ""
 
@@ -10046,6 +10233,7 @@ msgstr "ניטורים"
 msgid "Open Task"
 msgstr "משימה"
 
+#: proxmox-datacenter-manager/ui/src/pbs/mod.rs:138
 #: proxmox-datacenter-manager/ui/src/pve/mod.rs:214
 msgid "Open Web UI"
 msgstr ""
@@ -10054,12 +10242,20 @@ msgstr ""
 msgid "Open editor on double-click"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:722
+#: proxmox-datacenter-manager/ui/src/pbs/tree.rs:318
+msgid "Open in PBS UI"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:726
 msgid "Open in PVE UI"
 msgstr ""
 
 #: proxmox-backup/www/tape/BackupOverview.js:365
 msgid "Open restore wizard for {0}"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:195
+msgid "Open the Beta documentation in a new tab."
 msgstr ""
 
 #: proxmox-widget-toolkit/src/Schema.js:17
@@ -10105,7 +10301,7 @@ msgstr "ההתחברות נכשלה. אנא נסה שנית"
 msgid "OpenID redirect failed."
 msgstr "ההתחברות נכשלה. אנא נסה שנית"
 
-#: proxmox-yew-comp/src/auth_view.rs:198
+#: proxmox-yew-comp/src/auth_view.rs:296
 #, fuzzy
 msgid "OpenId Connect Server"
 msgstr "ההתחברות נכשלה. אנא נסה שנית"
@@ -10148,13 +10344,13 @@ msgid "Options"
 msgstr "אפשרויות"
 
 #: proxmox-widget-toolkit/src/form/MultiDiskSelector.js:118
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:157
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:167
 msgid "Order"
 msgstr "הזמן"
 
 #: pve-manager/www/manager6/Utils.js:2061 proxmox-backup/www/Utils.js:424
 #: proxmox-datacenter-manager/ui/src/tasks.rs:11
-#: proxmox-yew-comp/src/utils.rs:359
+#: proxmox-yew-comp/src/utils.rs:370
 msgid "Order Certificate"
 msgstr "הזמן אישור"
 
@@ -10272,6 +10468,8 @@ msgstr "xterm.js הגדרות"
 msgid "Overrule active shutdown tasks"
 msgstr ""
 
+#: proxmox-datacenter-manager/ui/src/pbs/datastore.rs:53
+#: proxmox-datacenter-manager/ui/src/pbs/remote.rs:215
 #: proxmox-datacenter-manager/ui/src/pve/node/mod.rs:81
 #, fuzzy
 msgid "Overview"
@@ -10395,8 +10593,7 @@ msgstr ""
 #: pmg-gui/js/ClusterAdministration.js:64 pmg-gui/js/FetchmailEdit.js:71
 #: pmg-gui/js/LDAPConfig.js:123 pmg-gui/js/LoginView.js:366
 #: pmg-gui/js/PBSRemoteEdit.js:80 pmg-gui/js/UserEdit.js:69
-#: pmg-gui/js/UserView.js:154 pmg-gui/js/mobile/loginscreen.js:32
-#: pve-manager/www/manager6/Workspace.js:398
+#: pmg-gui/js/UserView.js:154 pve-manager/www/manager6/Workspace.js:398
 #: pve-manager/www/manager6/dc/ClusterEdit.js:372
 #: pve-manager/www/manager6/dc/UserEdit.js:38
 #: pve-manager/www/manager6/dc/UserView.js:58
@@ -10413,7 +10610,7 @@ msgstr ""
 #: proxmox-backup/www/tape/window/EncryptionEdit.js:36
 #: proxmox-backup/www/window/RemoteEdit.js:102
 #: proxmox-backup/www/window/UserEdit.js:93
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:299
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:316
 #: proxmox-yew-comp/src/login_panel.rs:182
 #: proxmox-yew-comp/src/login_panel.rs:260 proxmox-yew-comp/src/tfa/mod.rs:47
 #: proxmox-yew-comp/src/tfa/mod.rs:48 proxmox-yew-comp/src/user_panel.rs:446
@@ -10465,6 +10662,7 @@ msgstr "הדבק כאן את מידע המוצפן של ה Cluster"
 #: proxmox-backup/www/tape/window/DriveEdit.js:69
 #: proxmox-backup/www/window/ACLEdit.js:26
 #: proxmox-datacenter-manager/ui/src/configuration/mod.rs:45
+#: proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:199
 #: proxmox-yew-comp/src/acl/acl_view.rs:110
 #: proxmox-yew-comp/src/permission_panel.rs:163
 msgid "Path"
@@ -10489,7 +10687,7 @@ msgstr "התקן"
 #: pve-manager/www/manager6/qemu/Config.js:181
 #: proxmox-datacenter-manager/ui/src/tasks.rs:62
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/dashboard_panel.rs:215
-#: proxmox-yew-comp/src/utils.rs:408
+#: proxmox-yew-comp/src/utils.rs:419
 msgid "Pause"
 msgstr "השהה"
 
@@ -10573,11 +10771,11 @@ msgstr "הרשאות"
 #: pve-manager/www/manager6/storage/Browser.js:197
 #: proxmox-backup/www/config/ACLView.js:27
 #: proxmox-backup/www/panel/AccessControl.js:36
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:83
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:93
 msgid "Permissions"
 msgstr "הרשאות"
 
-#: proxmox-widget-toolkit/src/Utils.js:76 proxmox-yew-comp/src/lib.rs:273
+#: proxmox-widget-toolkit/src/Utils.js:76 proxmox-yew-comp/src/lib.rs:279
 msgid "Persian (Farsi)"
 msgstr ""
 
@@ -10615,7 +10813,7 @@ msgstr ""
 msgid "Please enter the ID to confirm"
 msgstr "אנא הכנס את המספר המזהה כדי להמשיך"
 
-#: proxmox-yew-comp/src/safe_confirm_dialog.rs:116
+#: proxmox-yew-comp/src/safe_confirm_dialog.rs:119
 #, fuzzy
 msgid "Please enter the ID to confirm ({0})"
 msgstr "אנא הכנס את המספר המזהה כדי להמשיך"
@@ -10655,6 +10853,7 @@ msgstr ""
 
 #: pve-manager/www/manager6/dc/TokenEdit.js:154
 #: proxmox-backup/www/window/TokenEdit.js:204
+#: proxmox-yew-comp/src/token_panel.rs:364
 msgid "Please record the API token secret - it will only be displayed now"
 msgstr ""
 
@@ -10681,7 +10880,7 @@ msgstr "אנא בחר חוק."
 msgid "Please select a sender."
 msgstr "אנא בחר שולח."
 
-#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:188
+#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:180
 #, fuzzy
 msgid "Please select a target storage."
 msgstr "אנא בחר חוק."
@@ -10738,7 +10937,7 @@ msgstr ""
 msgid "Policy"
 msgstr "מדיניות"
 
-#: proxmox-widget-toolkit/src/Utils.js:87 proxmox-yew-comp/src/lib.rs:285
+#: proxmox-widget-toolkit/src/Utils.js:87 proxmox-yew-comp/src/lib.rs:291
 #, fuzzy
 msgid "Polish"
 msgstr "מדיניות"
@@ -10803,7 +11002,7 @@ msgstr "Pools"
 #: proxmox-backup/www/config/S3ClientView.js:121
 #: proxmox-backup/www/window/InfluxDbEdit.js:172
 #: proxmox-backup/www/window/S3ClientEdit.js:59
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:194
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:291
 msgid "Port"
 msgstr "פורט"
 
@@ -10820,7 +11019,7 @@ msgstr "פורטים"
 msgid "Ports/Slaves"
 msgstr "פורטים או Slaves"
 
-#: proxmox-widget-toolkit/src/Utils.js:88 proxmox-yew-comp/src/lib.rs:289
+#: proxmox-widget-toolkit/src/Utils.js:88 proxmox-yew-comp/src/lib.rs:295
 msgid "Portuguese (Brazil)"
 msgstr ""
 
@@ -10875,6 +11074,11 @@ msgstr ""
 #: pmg-yew-quarantine-gui/src/page_mail_view.rs:145
 msgid "Preview"
 msgstr ""
+
+#: proxmox-yew-comp/src/auth_view.rs:413
+#, fuzzy
+msgid "Preview Only"
+msgstr "לוח זמנים"
 
 #: pmg-gui/js/LDAPConfig.js:263
 msgid "Primary E-Mail"
@@ -10955,7 +11159,7 @@ msgstr "מזהה תהליך"
 msgid "Processing..."
 msgstr "עיבוד אימייל"
 
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:216
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:208
 #, fuzzy
 msgid "Processor"
 msgstr "מעבדים"
@@ -10968,7 +11172,7 @@ msgstr "מעבדים"
 
 #: pve-manager/www/manager6/form/USBSelector.js:92
 #: pve-manager/www/manager6/qemu/Smbios1Edit.js:45
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:65
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:56
 msgid "Product"
 msgstr "מוצר"
 
@@ -11010,6 +11214,8 @@ msgstr "הפץ"
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:346
 #: pve-manager/www/manager6/dc/RealmSyncJob.js:381
 #: pve-manager/www/manager6/dc/SyncWindow.js:144
+#: proxmox-yew-comp/src/auth_view.rs:440
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:252
 #, fuzzy
 msgid "Properties"
 msgstr "הפץ"
@@ -11034,10 +11240,14 @@ msgstr "הגנה"
 #: pve-manager/www/manager6/qemu/Options.js:313
 #: pve-manager/www/manager6/qemu/Options.js:319
 #: proxmox-backup/www/datastore/Content.js:732
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:112
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:122
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/config_panel.rs:87
 msgid "Protection"
 msgstr "הגנה"
+
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:97
+msgid "Protection for \"Speculative Store Bypass\" for Intel models"
+msgstr ""
 
 #: pmg-gui/js/FetchmailEdit.js:41 pmg-gui/js/FetchmailView.js:113
 #: pmg-gui/js/LDAPConfig.js:70 pmg-gui/js/LDAPConfig.js:591
@@ -11166,7 +11376,7 @@ msgstr ""
 
 #: proxmox-widget-toolkit/src/panel/Certificates.js:28
 #: pve-manager/www/manager6/node/Certificates.js:327
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:304
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:306
 #: proxmox-yew-comp/src/acme/certificate_list.rs:348
 #: proxmox-yew-comp/src/acme/certificate_list.rs:384
 msgid "Public Key Algorithm"
@@ -11176,7 +11386,7 @@ msgstr ""
 #: proxmox-widget-toolkit/src/window/Certificates.js:41
 #: pve-manager/www/manager6/node/Certificates.js:72
 #: pve-manager/www/manager6/node/Certificates.js:333
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:305
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:307
 #: proxmox-yew-comp/src/acme/certificate_list.rs:349
 #: proxmox-yew-comp/src/acme/certificate_list.rs:388
 msgid "Public Key Size"
@@ -11194,7 +11404,7 @@ msgstr "IP סינון"
 
 #: pve-manager/www/manager6/Utils.js:2101
 #: proxmox-datacenter-manager/ui/src/tasks.rs:53
-#: proxmox-yew-comp/src/utils.rs:399
+#: proxmox-yew-comp/src/utils.rs:410
 #, fuzzy
 msgid "Pull file"
 msgstr "IP סינון"
@@ -11215,7 +11425,7 @@ msgstr "IP סינון"
 
 #: pve-manager/www/manager6/Utils.js:2102
 #: proxmox-datacenter-manager/ui/src/tasks.rs:54
-#: proxmox-yew-comp/src/utils.rs:400
+#: proxmox-yew-comp/src/utils.rs:411
 #, fuzzy
 msgid "Push file"
 msgstr "IP סינון"
@@ -11228,7 +11438,7 @@ msgstr ""
 msgid "Q35 only"
 msgstr "רק Q35"
 
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:79
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:105
 #, fuzzy
 msgid "QEMU Guest Agent"
 msgstr "Qemu סוכן"
@@ -11269,7 +11479,8 @@ msgstr ""
 msgid "Query userinfo endpoint"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:572
+#: proxmox-datacenter-manager/ui/src/pbs/tree.rs:287
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:587
 msgid "Querying Remote..."
 msgstr ""
 
@@ -11298,12 +11509,17 @@ msgstr "RAID רמת"
 msgid "RAM"
 msgstr "זכרון ראם"
 
+#: proxmox-yew-comp/src/node_info.rs:149
+#, fuzzy
+msgid "RAM Usage"
+msgstr "שימוש בזכרון ראם"
+
 #: pmg-gui/js/ClusterAdministration.js:313 pmg-gui/js/dashboard/NodeInfo.js:43
 #: pve-manager/www/manager6/node/StatusView.js:54
 #: proxmox-backup/www/ServerStatus.js:231
 #: proxmox-backup/www/panel/NodeInfo.js:98
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:204
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:204
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:207
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:207
 msgid "RAM usage"
 msgstr "שימוש בזכרון ראם"
 
@@ -11318,7 +11534,7 @@ msgstr ""
 #: pve-manager/www/manager6/qemu/Options.js:271
 #: pve-manager/www/manager6/qemu/Options.js:276
 #: pve-manager/www/manager6/qemu/Options.js:282
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:228
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:240
 msgid "RTC start date"
 msgstr "RTC תאריך התחלה"
 
@@ -11331,10 +11547,6 @@ msgstr "צור בצורה אקראית"
 #: proxmox-yew-comp/src/tfa/tfa_add_totp.rs:119
 msgid "Randomize"
 msgstr "צור בצורה אקראית"
-
-#: pmg-gui/js/mobile/quarantineview.js:19
-msgid "Range"
-msgstr "טווח"
 
 #: proxmox-backup/www/config/TrafficControlView.js:134
 #: proxmox-backup/www/window/TrafficControlEdit.js:240
@@ -11365,6 +11577,8 @@ msgstr ""
 #: pve-manager/www/manager6/grid/Replication.js:411
 #: pve-manager/www/manager6/lxc/Network.js:297
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:182
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_network_property.rs:148
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_network_property.rs:172
 msgid "Rate limit"
 msgstr "הגבלת קצב"
 
@@ -11469,22 +11683,23 @@ msgstr "קורא"
 #: pve-manager/www/manager6/dc/UserView.js:181
 #: proxmox-backup/www/config/UserView.js:223
 #: proxmox-backup/www/window/UserEdit.js:76
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:308
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:325
 #: proxmox-datacenter-manager/ui/src/tasks.rs:17
 #: proxmox-datacenter-manager/ui/src/tasks.rs:18
-#: proxmox-yew-comp/src/auth_view.rs:283
+#: proxmox-yew-comp/src/auth_view.rs:468
 #: proxmox-yew-comp/src/auth_edit_openid.rs:101
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:170
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:282
 #: proxmox-yew-comp/src/login_panel.rs:195
 #: proxmox-yew-comp/src/login_panel.rs:267
 #: proxmox-yew-comp/src/user_panel.rs:327
-#: proxmox-yew-comp/src/user_panel.rs:478 proxmox-yew-comp/src/utils.rs:365
-#: proxmox-yew-comp/src/utils.rs:366
+#: proxmox-yew-comp/src/user_panel.rs:478 proxmox-yew-comp/src/utils.rs:376
+#: proxmox-yew-comp/src/utils.rs:377
 msgid "Realm"
 msgstr "תחום"
 
 #: proxmox-widget-toolkit/src/window/SyncWindow.js:4
 #: pve-manager/www/manager6/dc/SyncWindow.js:4
+#: proxmox-yew-comp/src/auth_view.rs:409
 #, fuzzy
 msgid "Realm Sync"
 msgstr "תחום"
@@ -11502,11 +11717,12 @@ msgstr "תחום"
 
 #: pmg-gui/js/UserManagement.js:38 pve-manager/www/manager6/dc/Config.js:141
 #: proxmox-backup/www/panel/AccessControl.js:43
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:110
 #, fuzzy
 msgid "Realms"
 msgstr "תחום"
 
-#: pmg-gui/js/PostfixMailQueue.js:184
+#: pmg-gui/js/PostfixMailQueue.js:192
 msgid "Reason"
 msgstr "סיבה"
 
@@ -11555,7 +11771,7 @@ msgstr ""
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/dashboard_panel.rs:209
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/dashboard_panel.rs:198
 #: pve-yew-mobile-gui/src/pages/page_node_status/dashboard_panel.rs:132
-#: proxmox-yew-comp/src/utils.rs:409 proxmox-yew-comp/src/utils.rs:440
+#: proxmox-yew-comp/src/utils.rs:420 proxmox-yew-comp/src/utils.rs:451
 msgid "Reboot"
 msgstr "אתחל מחדש"
 
@@ -11579,14 +11795,14 @@ msgstr "אתחל מחדש"
 #: pmg-gui/js/Dashboard.js:483 pmg-gui/js/DomainStatistics.js:81
 #: pmg-gui/js/DomainStatistics.js:124 pmg-gui/js/MailInfo.js:35
 #: pmg-gui/js/MailTracker.js:82 pmg-gui/js/NavigationTree.js:196
-#: pmg-gui/js/PostfixMailQueue.js:178 pmg-gui/js/ReceiverStatistics.js:110
+#: pmg-gui/js/PostfixMailQueue.js:186 pmg-gui/js/ReceiverStatistics.js:110
 #: pmg-gui/js/ReceiverStatistics.js:156 pmg-gui/js/ReceiverStatistics.js:223
 #: pmg-gui/js/SenderStatistics.js:63 pmg-gui/js/Utils.js:38
 #: pmg-gui/js/Utils.js:549 pmg-gui/js/VirusQuarantine.js:76
 msgid "Receiver"
 msgstr "מקבל"
 
-#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:217
+#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:209
 #, fuzzy
 msgid "Recent backups"
 msgstr "שמור אימייל ישנים"
@@ -11638,11 +11854,11 @@ msgstr ""
 #: pve-manager/www/manager6/Utils.js:2062
 #: proxmox-datacenter-manager/ui/src/tasks.rs:12
 #: proxmox-yew-comp/src/apt_package_manager.rs:214
-#: proxmox-yew-comp/src/utils.rs:360
+#: proxmox-yew-comp/src/utils.rs:371
 msgid "Refresh"
 msgstr "רענן"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:705
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:717
 msgid "Refresh Interval (seconds)"
 msgstr ""
 
@@ -11660,6 +11876,7 @@ msgid "Regenerate Image"
 msgstr "צור מחדש Image"
 
 #: proxmox-backup/www/config/TokenView.js:211
+#: proxmox-yew-comp/src/token_panel.rs:196
 #, fuzzy
 msgid "Regenerate Secret"
 msgstr "צור מחדש Image"
@@ -11686,7 +11903,7 @@ msgstr ""
 #: pve-manager/www/manager6/Utils.js:2063
 #: pve-manager/www/manager6/node/ACME.js:9
 #: proxmox-datacenter-manager/ui/src/tasks.rs:13
-#: proxmox-yew-comp/src/utils.rs:361
+#: proxmox-yew-comp/src/utils.rs:372
 msgid "Register"
 msgstr "הרשם"
 
@@ -11773,7 +11990,7 @@ msgstr "Relaying"
 #: proxmox-backup/www/tape/ChangerStatus.js:694
 #: proxmox-backup/www/tape/DriveStatus.js:209
 #: proxmox-backup/www/tape/TapeInventory.js:208
-#: proxmox-yew-comp/src/utils.rs:227
+#: proxmox-yew-comp/src/utils.rs:246
 msgid "Reload"
 msgstr "טען מחדש"
 
@@ -11809,6 +12026,7 @@ msgstr "Relaying"
 msgid "Remote"
 msgstr "הסר"
 
+#: proxmox-datacenter-manager/ui/src/pbs/mod.rs:121
 #: proxmox-datacenter-manager/ui/src/pve/mod.rs:199
 #, fuzzy
 msgid "Remote '{0}'"
@@ -11819,9 +12037,9 @@ msgstr "לאתחל מחדש node '{0}'?"
 #: proxmox-backup/www/form/RemoteSelector.js:19
 #: proxmox-backup/www/window/RemoteEdit.js:35
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_summary.rs:97
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:278
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:295
 #: proxmox-datacenter-manager/ui/src/remotes/edit_remote.rs:93
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:316
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:307
 #, fuzzy
 msgid "Remote ID"
 msgstr "הסר"
@@ -11854,7 +12072,7 @@ msgstr "הראה פרטים"
 #: proxmox-backup/www/NavigationTree.js:54
 #: proxmox-backup/www/config/RemoteView.js:39
 #: proxmox-datacenter-manager/ui/src/main_menu.rs:266
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:538
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:540
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/evpn_panel.rs:186
 #, fuzzy
 msgid "Remotes"
@@ -11886,6 +12104,7 @@ msgstr "ההסרה תוזמנה"
 #: proxmox-widget-toolkit/src/window/Edit.js:312
 #: proxmox-widget-toolkit/src/window/NotificationMatcherEdit.js:872
 #: proxmox-widget-toolkit/src/window/SafeDestroy.js:113
+#: pmg-gui/js/DNSBLSitesField.js:141 pmg-gui/js/PostfixMailQueue.js:152
 #: pmg-gui/js/RuleConfiguration.js:167 pmg-gui/js/RuleInfo.js:377
 #: pmg-gui/js/UserBlockWelcomeList.js:167
 #: pve-manager/www/manager6/Utils.js:2086
@@ -11910,18 +12129,19 @@ msgstr "ההסרה תוזמנה"
 #: proxmox-backup/www/datastore/Content.js:1453
 #: proxmox-backup/www/datastore/Content.js:1510
 #: proxmox-backup/www/tape/TapeInventory.js:237
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:207
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:198
 #: proxmox-datacenter-manager/ui/src/tasks.rs:38
 #: proxmox-datacenter-manager/ui/src/tasks.rs:47
 #: proxmox-datacenter-manager/ui/src/tasks.rs:49
 #: proxmox-datacenter-manager/ui/src/tasks.rs:108
-#: proxmox-yew-comp/src/auth_view.rs:218
+#: proxmox-yew-comp/src/auth_view.rs:316
 #: proxmox-yew-comp/src/confirm_button.rs:75
 #: proxmox-yew-comp/src/configuration/network_view.rs:230
 #: proxmox-yew-comp/src/tfa/tfa_view.rs:279
-#: proxmox-yew-comp/src/user_panel.rs:185 proxmox-yew-comp/src/utils.rs:384
-#: proxmox-yew-comp/src/utils.rs:393 proxmox-yew-comp/src/utils.rs:395
-#: proxmox-yew-comp/src/utils.rs:452
+#: proxmox-yew-comp/src/user_panel.rs:185
+#: proxmox-yew-comp/src/token_panel.rs:190 proxmox-yew-comp/src/utils.rs:395
+#: proxmox-yew-comp/src/utils.rs:404 proxmox-yew-comp/src/utils.rs:406
+#: proxmox-yew-comp/src/utils.rs:463
 msgid "Remove"
 msgstr "הסר"
 
@@ -11936,7 +12156,6 @@ msgid "Remove ACL Entry"
 msgstr "הסר קבצים מצורפים"
 
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:424
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:134
 #, fuzzy
 msgid "Remove ACLs of vanished users"
 msgstr "Partitionen löschen"
@@ -11947,6 +12166,12 @@ msgstr "Partitionen löschen"
 #: pve-manager/www/manager6/dc/SyncWindow.js:134
 msgid "Remove ACLs of vanished users and groups."
 msgstr ""
+
+#: proxmox-yew-comp/src/auth_view.rs:431
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:243
+#, fuzzy
+msgid "Remove ACLs of vanished users."
+msgstr "Partitionen löschen"
 
 #: pmg-gui/js/Utils.js:652
 msgid "Remove Attachments"
@@ -11996,7 +12221,8 @@ msgstr "Partitionen löschen"
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:330
 #: pve-manager/www/manager6/dc/RealmSyncJob.js:363
 #: pve-manager/www/manager6/dc/SyncWindow.js:128
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:131
+#: proxmox-yew-comp/src/auth_view.rs:425
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:237
 #, fuzzy
 msgid "Remove Vanished Options"
 msgstr "Partitionen löschen"
@@ -12043,7 +12269,8 @@ msgid ""
 "datastore?"
 msgstr ""
 
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:142
+#: proxmox-yew-comp/src/auth_view.rs:443
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:255
 #, fuzzy
 msgid "Remove vanished properties"
 msgstr "Partitionen löschen"
@@ -12058,7 +12285,8 @@ msgid "Remove vanished properties from synced users."
 msgstr "Partitionen löschen"
 
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:430
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:138
+#: proxmox-yew-comp/src/auth_view.rs:437
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:249
 #, fuzzy
 msgid "Remove vanished user"
 msgstr "Partitionen löschen"
@@ -12077,7 +12305,7 @@ msgstr "node מקור"
 
 #: pve-manager/www/manager6/Utils.js:2064 proxmox-backup/www/Utils.js:425
 #: proxmox-datacenter-manager/ui/src/tasks.rs:14
-#: proxmox-yew-comp/src/utils.rs:362
+#: proxmox-yew-comp/src/utils.rs:373
 msgid "Renew Certificate"
 msgstr "חדש אישור"
 
@@ -12154,6 +12382,10 @@ msgstr "מצב הבקשה"
 msgid "Require TFA"
 msgstr ""
 
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:94
+msgid "Required to let the guest OS know if MDS is mitigated correctly"
+msgstr ""
+
 #: pve-manager/www/manager6/qemu/AgentIPView.js:141
 msgid "Requires '{0}' Privileges"
 msgstr "נדרשות הרשאות: '{0}'"
@@ -12170,7 +12402,7 @@ msgstr "נדרשות הרשאות: '{0}'"
 #: proxmox-backup/www/window/Settings.js:282
 #: proxmox-datacenter-manager/ui/src/tasks.rs:64
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/dashboard_panel.rs:235
-#: proxmox-yew-comp/src/utils.rs:410
+#: proxmox-yew-comp/src/utils.rs:421
 #: proxmox-yew-widget-toolkit/src/widget/form/reset_button.rs:134
 msgid "Reset"
 msgstr "אפס"
@@ -12197,7 +12429,7 @@ msgstr "עצור מיד את {0}"
 #: pve-manager/www/manager6/lxc/Resources.js:291
 #: pve-manager/www/manager6/qemu/HardwareView.js:484
 #: proxmox-datacenter-manager/ui/src/tasks.rs:75
-#: proxmox-yew-comp/src/utils.rs:420
+#: proxmox-yew-comp/src/utils.rs:431
 #, fuzzy
 msgid "Resize"
 msgstr "שנה גודל דיסק"
@@ -12235,8 +12467,9 @@ msgstr "משאבי Pool"
 #: pve-manager/www/manager6/ha/Status.js:38
 #: pve-manager/www/manager6/lxc/Config.js:268
 #: pve-manager/www/manager6/lxc/DNS.js:71
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:476
 #: pve-yew-mobile-gui/src/widgets/main_navigation.rs:80
-#: pve-yew-mobile-gui/src/pages/page_dashboard.rs:342
+#: pve-yew-mobile-gui/src/pages/page_dashboard.rs:343
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/resources_panel.rs:82
 msgid "Resources"
 msgstr "משאבים"
@@ -12247,7 +12480,7 @@ msgstr "משאבים"
 #: pve-manager/www/manager6/ceph/OSD.js:927
 #: pve-manager/www/manager6/ceph/ServiceList.js:338
 #: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:132
-#: proxmox-yew-comp/src/utils.rs:226
+#: proxmox-yew-comp/src/utils.rs:245
 msgid "Restart"
 msgstr "אתחול"
 
@@ -12275,7 +12508,7 @@ msgstr "אנא אתחל כדי להחיל את השינויים"
 #: proxmox-backup/www/tape/window/TapeRestore.js:279
 #: proxmox-datacenter-manager/ui/src/tasks.rs:65
 #: proxmox-datacenter-manager/ui/src/tasks.rs:97
-#: proxmox-yew-comp/src/utils.rs:411 proxmox-yew-comp/src/utils.rs:441
+#: proxmox-yew-comp/src/utils.rs:422 proxmox-yew-comp/src/utils.rs:452
 msgid "Restore"
 msgstr "שחזר"
 
@@ -12312,7 +12545,7 @@ msgstr "תצורת מערכת"
 #: proxmox-datacenter-manager/ui/src/tasks.rs:66
 #: proxmox-datacenter-manager/ui/src/tasks.rs:98
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/dashboard_panel.rs:256
-#: proxmox-yew-comp/src/utils.rs:412 proxmox-yew-comp/src/utils.rs:442
+#: proxmox-yew-comp/src/utils.rs:423 proxmox-yew-comp/src/utils.rs:453
 msgid "Resume"
 msgstr "התחל שוב"
 
@@ -12361,9 +12594,13 @@ msgstr "DNS שרת"
 msgid "Revert"
 msgstr "החזר"
 
+#: pve-yew-mobile-gui/src/widgets/pending_property_list.rs:310
+msgid "Revert property failed"
+msgstr ""
+
 #: pve-manager/www/manager6/Utils.js:2065 proxmox-backup/www/Utils.js:426
 #: proxmox-datacenter-manager/ui/src/tasks.rs:15
-#: proxmox-yew-comp/src/utils.rs:363
+#: proxmox-yew-comp/src/utils.rs:374
 msgid "Revoke Certificate"
 msgstr "בטל אישור"
 
@@ -12406,7 +12643,7 @@ msgstr "תפקידים"
 #: pve-manager/www/manager6/tree/SnapshotTree.js:263
 #: proxmox-datacenter-manager/ui/src/tasks.rs:67
 #: proxmox-datacenter-manager/ui/src/tasks.rs:99
-#: proxmox-yew-comp/src/utils.rs:413 proxmox-yew-comp/src/utils.rs:443
+#: proxmox-yew-comp/src/utils.rs:424 proxmox-yew-comp/src/utils.rs:454
 msgid "Rollback"
 msgstr "גלגל לאחור"
 
@@ -12449,14 +12686,10 @@ msgid "Root Filesystem"
 msgstr "מערכת קבצים"
 
 #: proxmox-backup/www/datastore/Content.js:359
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:107
 #, fuzzy
 msgid "Root Namespace"
 msgstr "שם"
-
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:242
-#, fuzzy
-msgid "Root filesystem usage"
-msgstr "שימוש בדיסק"
 
 #: pve-manager/www/manager6/sdn/zones/EvpnEdit.js:87
 #, fuzzy
@@ -12488,7 +12721,7 @@ msgid "Run Now"
 msgstr ""
 
 #: pve-manager/www/manager6/form/AgentFeatureSelector.js:17
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:36
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:69
 #, fuzzy
 msgid "Run guest-trim after a disk move or VM migration"
 msgstr "הרץ guest-trim אחרי שכפול הדיסק"
@@ -12528,7 +12761,7 @@ msgstr "בפעולה"
 msgid "Running Tasks"
 msgstr "בפעולה"
 
-#: proxmox-widget-toolkit/src/Utils.js:89 proxmox-yew-comp/src/lib.rs:291
+#: proxmox-widget-toolkit/src/Utils.js:89 proxmox-yew-comp/src/lib.rs:297
 msgid "Russian"
 msgstr ""
 
@@ -12595,7 +12828,7 @@ msgstr "SCSI סוג בקר"
 msgid "SDN"
 msgstr "DNS"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:261
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:263
 #, fuzzy
 msgid "SDN Zones"
 msgstr "DNS שם מתחם ל"
@@ -12606,7 +12839,7 @@ msgstr "SLAAC"
 
 #: pve-manager/www/manager6/qemu/Options.js:290
 #: pve-manager/www/manager6/qemu/Smbios1Edit.js:100
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:100
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:90
 msgid "SMBIOS settings (type1)"
 msgstr "SMBIOS אפשרויות (type1)"
 
@@ -12614,7 +12847,7 @@ msgstr "SMBIOS אפשרויות (type1)"
 msgid "SMTP HELO checks"
 msgstr "SMTP HELO בדיקות"
 
-#: pmg-gui/js/MailProxyOptions.js:97
+#: pmg-gui/js/MailProxyOptions.js:85
 msgid "SMTPD Banner"
 msgstr "SMTPD כרזת"
 
@@ -12647,6 +12880,7 @@ msgstr "SSH מפתח ציבורי"
 #: pve-manager/www/manager6/node/StatusView.js:82
 #: pve-manager/www/manager6/panel/GuestStatusView.js:136
 #: proxmox-backup/www/panel/NodeInfo.js:122
+#: proxmox-yew-comp/src/node_info.rs:194
 msgid "SWAP usage"
 msgstr "SWAP שימוש"
 
@@ -12678,7 +12912,7 @@ msgstr "התחל"
 #: proxmox-widget-toolkit/src/node/HostsView.js:12 pmg-gui/js/Dashboard.js:38
 #: pmg-gui/js/Settings.js:288 pve-manager/www/manager6/window/Settings.js:384
 #: proxmox-backup/www/Dashboard.js:38 proxmox-backup/www/window/Settings.js:288
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:684
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:696
 msgid "Save"
 msgstr "שמור"
 
@@ -12794,7 +13028,7 @@ msgstr ""
 
 #: pmg-gui/js/ReceiverStatistics.js:93 pmg-gui/js/SpamDetectorCustom.js:131
 #: pmg-gui/js/SpamDetectorCustom.js:177 pmg-gui/js/SpamDetectorCustom.js:261
-#: pmg-gui/js/SpamInfoGrid.js:45 pmg-gui/js/SpamQuarantine.js:179
+#: pmg-gui/js/SpamInfoGrid.js:49 pmg-gui/js/SpamQuarantine.js:179
 #: pmg-gui/js/Utils.js:39
 msgid "Score"
 msgstr "ניקוד"
@@ -12860,8 +13094,9 @@ msgstr "Zweiter Faktor"
 #: proxmox-widget-toolkit/src/window/AddTotp.js:176
 #: pve-manager/www/manager6/dc/TokenEdit.js:140
 #: proxmox-backup/www/window/TokenEdit.js:190
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:340
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:357
 #: proxmox-yew-comp/src/tfa/tfa_add_totp.rs:110
+#: proxmox-yew-comp/src/token_panel.rs:341
 msgid "Secret"
 msgstr "סוד"
 
@@ -12895,7 +13130,7 @@ msgstr "בחירה"
 msgid "Security Group"
 msgstr "קבוצת אבטחה"
 
-#: pmg-yew-quarantine-gui/src/page_spam_list.rs:192
+#: pmg-yew-quarantine-gui/src/page_spam_list.rs:219
 #, fuzzy
 msgid "Select Date"
 msgstr "משתמש ה Guest"
@@ -12909,6 +13144,11 @@ msgstr "בחר קובץ..."
 #, fuzzy
 msgid "Select Image"
 msgstr "משתמש ה Guest"
+
+#: pmg-yew-quarantine-gui/src/page_spam_list.rs:240
+#, fuzzy
+msgid "Select Language"
+msgstr "דאטהסנטר"
 
 #: proxmox-backup/www/tape/window/TapeRestore.js:316
 #, fuzzy
@@ -12966,7 +13206,7 @@ msgstr "מצב בחירה"
 msgid "Selector"
 msgstr "בחירה"
 
-#: pmg-gui/js/MailProxyOptions.js:103
+#: pmg-gui/js/MailProxyOptions.js:91
 msgid "Send NDR on Blocked E-Mails"
 msgstr ""
 
@@ -12991,7 +13231,7 @@ msgstr "שלח אימייל ל"
 
 #: pmg-gui/js/AttachmentQuarantine.js:74 pmg-gui/js/ContactStatistics.js:63
 #: pmg-gui/js/MailTracker.js:76 pmg-gui/js/NavigationTree.js:190
-#: pmg-gui/js/PostfixMailQueue.js:172 pmg-gui/js/ReceiverStatistics.js:63
+#: pmg-gui/js/PostfixMailQueue.js:180 pmg-gui/js/ReceiverStatistics.js:63
 #: pmg-gui/js/SenderStatistics.js:102 pmg-gui/js/SenderStatistics.js:148
 #: pmg-gui/js/SenderStatistics.js:211 pmg-gui/js/Utils.js:37
 #: pmg-gui/js/VirusQuarantine.js:76
@@ -13023,7 +13263,7 @@ msgstr ""
 #: proxmox-backup/www/tape/form/ChangerSelector.js:51
 #: proxmox-backup/www/tape/form/DriveSelector.js:46
 #: proxmox-backup/www/tape/form/TapeDevicePathSelector.js:36
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:77
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:68
 msgid "Serial"
 msgstr "סריאלי"
 
@@ -13045,10 +13285,10 @@ msgstr ""
 
 #: pve-manager/www/manager6/Utils.js:610 pve-manager/www/manager6/Utils.js:611
 #: pve-manager/www/manager6/Utils.js:612 pve-manager/www/manager6/Utils.js:613
-#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:39
-#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:40
-#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:41
-#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:42
+#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:44
+#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:45
+#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:46
+#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:47
 msgid "Serial terminal"
 msgstr "טרמינל סריאלי"
 
@@ -13067,12 +13307,12 @@ msgstr "טרמינל סריאלי"
 #: pve-manager/www/manager6/storage/ESXIEdit.js:56
 #: pve-manager/www/manager6/storage/NFSEdit.js:116
 #: pve-manager/www/manager6/storage/PBSEdit.js:499
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:177
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:289
 msgid "Server"
 msgstr "שרת"
 
 #: pve-manager/www/manager6/dc/NodeView.js:42
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:231
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:233
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_nodes.rs:80
 msgid "Server Address"
 msgstr "כתובת שרת"
@@ -13090,7 +13330,8 @@ msgid "Server ID"
 msgstr "מזהה שרת"
 
 #: pve-manager/www/manager6/node/Summary.js:172
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:155
+#: proxmox-datacenter-manager/ui/src/pbs/remote.rs:149
+#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:154
 #, fuzzy
 msgid "Server Load"
 msgstr "עומס שרת"
@@ -13111,7 +13352,7 @@ msgstr "מראה שרת"
 
 #: proxmox-widget-toolkit/src/form/FingerprintField.js:8
 #: pmg-gui/js/PBSRemoteEdit.js:116
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:241
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:243
 msgid ""
 "Server certificate SHA-256 fingerprint, required for self-signed certificates"
 msgstr ""
@@ -13124,7 +13365,8 @@ msgid ""
 msgstr ""
 
 #: pmg-gui/js/ServerStatus.js:129 proxmox-backup/www/ServerStatus.js:222
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:315
+#: proxmox-datacenter-manager/ui/src/pbs/remote.rs:263
+#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:259
 msgid "Server load"
 msgstr "עומס שרת"
 
@@ -13133,9 +13375,9 @@ msgstr "עומס שרת"
 msgid "Server time"
 msgstr "זמן שרת"
 
-#: pve-manager/www/manager6/dc/Log.js:57 proxmox-yew-comp/src/utils.rs:224
-#: proxmox-yew-comp/src/utils.rs:225 proxmox-yew-comp/src/utils.rs:226
-#: proxmox-yew-comp/src/utils.rs:227
+#: pve-manager/www/manager6/dc/Log.js:57 proxmox-yew-comp/src/utils.rs:243
+#: proxmox-yew-comp/src/utils.rs:244 proxmox-yew-comp/src/utils.rs:245
+#: proxmox-yew-comp/src/utils.rs:246
 msgid "Service"
 msgstr "שירות"
 
@@ -13230,7 +13472,7 @@ msgid "Shared"
 msgstr "משותף"
 
 #: pve-manager/www/manager6/qemu/MemoryEdit.js:114
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_memory_property.rs:71
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_memory_property.rs:73
 msgid "Shares"
 msgstr "משתף"
 
@@ -13245,16 +13487,16 @@ msgstr "משתף"
 #: proxmox-datacenter-manager/ui/src/main_menu.rs:202
 #: proxmox-datacenter-manager/ui/src/tasks.rs:77
 #: proxmox-datacenter-manager/ui/src/tasks.rs:85
-#: proxmox-yew-comp/src/utils.rs:422 proxmox-yew-comp/src/utils.rs:429
+#: proxmox-yew-comp/src/utils.rs:433 proxmox-yew-comp/src/utils.rs:440
 msgid "Shell"
 msgstr "Shell"
 
-#: proxmox-yew-comp/src/utils.rs:219
+#: proxmox-yew-comp/src/utils.rs:238
 #, fuzzy
 msgid "Shell (Spice)"
 msgstr "Shell (JS)"
 
-#: proxmox-yew-comp/src/utils.rs:220
+#: proxmox-yew-comp/src/utils.rs:239
 #, fuzzy
 msgid "Shell (VNC)"
 msgstr "Shell (JS)"
@@ -13296,7 +13538,7 @@ msgstr "הראה כתובות אימייל"
 msgid "Show Fingerprint"
 msgstr "טביעת אצבע"
 
-#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:198
+#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:206
 msgid "Show Local Tasks"
 msgstr ""
 
@@ -13317,11 +13559,12 @@ msgstr "סיסמא"
 #: proxmox-backup/www/config/TokenView.js:225
 #: proxmox-backup/www/config/UserView.js:195
 #: proxmox-yew-comp/src/user_panel.rs:196
+#: proxmox-yew-comp/src/token_panel.rs:206
 #, fuzzy
 msgid "Show Permissions"
 msgstr "הרשאות"
 
-#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:203
+#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:211
 #, fuzzy
 msgid "Show Remote Tasks"
 msgstr "הראה פרטים"
@@ -13366,7 +13609,7 @@ msgstr "{0} מ {1}"
 #: pve-manager/www/manager6/qemu/Config.js:154
 #: proxmox-backup/www/ServerStatus.js:154
 #: proxmox-datacenter-manager/ui/src/pve/tree.rs:118
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:673
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:677
 #: proxmox-datacenter-manager/ui/src/pve/mod.rs:64
 #: proxmox-datacenter-manager/ui/src/tasks.rs:41
 #: proxmox-datacenter-manager/ui/src/tasks.rs:68
@@ -13374,8 +13617,8 @@ msgstr "{0} מ {1}"
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/dashboard_panel.rs:241
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/dashboard_panel.rs:210
 #: pve-yew-mobile-gui/src/pages/page_node_status/dashboard_panel.rs:137
-#: proxmox-yew-comp/src/utils.rs:387 proxmox-yew-comp/src/utils.rs:414
-#: proxmox-yew-comp/src/utils.rs:444
+#: proxmox-yew-comp/src/utils.rs:398 proxmox-yew-comp/src/utils.rs:425
+#: proxmox-yew-comp/src/utils.rs:455
 msgid "Shutdown"
 msgstr "כבה"
 
@@ -13395,7 +13638,7 @@ msgstr "לכבות node '{0}'?"
 
 #: pve-manager/www/manager6/qemu/CreateWizard.js:142
 #: pve-manager/www/manager6/window/StartupEdit.js:49
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:169
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:175
 msgid "Shutdown timeout"
 msgstr "פסק זמן לכיבוי"
 
@@ -13452,8 +13695,7 @@ msgstr "תבנית"
 #: proxmox-widget-toolkit/src/node/Tasks.js:309
 #: proxmox-widget-toolkit/src/panel/JournalView.js:310
 #: proxmox-widget-toolkit/src/panel/LogView.js:324
-#: pmg-gui/js/QuarantineList.js:320 pmg-gui/js/mobile/quarantineview.js:26
-#: proxmox-yew-comp/src/tasks.rs:409
+#: pmg-gui/js/QuarantineList.js:320 proxmox-yew-comp/src/tasks.rs:409
 #, fuzzy
 msgid "Since"
 msgstr "מאז"
@@ -13462,6 +13704,14 @@ msgstr "מאז"
 #: proxmox-backup/www/window/ZFSCreate.js:44
 msgid "Single Disk"
 msgstr "דיסק יחיד"
+
+#: pmg-gui/js/DNSBLSitesField.js:149
+msgid "Site"
+msgstr ""
+
+#: pmg-gui/js/DNSBLSitesField.js:72
+msgid "Site must not be empty."
+msgstr ""
 
 #: proxmox-widget-toolkit/src/form/DiskSelector.js:30
 #: proxmox-widget-toolkit/src/form/MultiDiskSelector.js:112
@@ -13531,7 +13781,7 @@ msgstr "מקובץ"
 msgid "Slots"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/Utils.js:90 proxmox-yew-comp/src/lib.rs:292
+#: proxmox-widget-toolkit/src/Utils.js:90 proxmox-yew-comp/src/lib.rs:298
 msgid "Slovenian"
 msgstr ""
 
@@ -13552,7 +13802,7 @@ msgstr "Smarthost"
 #: proxmox-backup/www/tape/window/TapeRestore.js:867
 #: proxmox-datacenter-manager/ui/src/tasks.rs:69
 #: proxmox-datacenter-manager/ui/src/tasks.rs:101
-#: proxmox-yew-comp/src/utils.rs:415 proxmox-yew-comp/src/utils.rs:445
+#: proxmox-yew-comp/src/utils.rs:426 proxmox-yew-comp/src/utils.rs:456
 msgid "Snapshot"
 msgstr "סנאפשוט"
 
@@ -13588,8 +13838,8 @@ msgstr "Socket"
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:118
 #: pve-manager/www/manager6/window/GuestImport.js:488
 #: pve-manager/www/manager6/window/Restore.js:358
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:112
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:217
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:104
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:209
 msgid "Sockets"
 msgstr "Sockets"
 
@@ -13710,11 +13960,11 @@ msgstr "ניקודי דואר זבל"
 msgid "SpamAssassin update"
 msgstr ""
 
-#: pmg-gui/js/SpamInfoGrid.js:41
+#: pmg-gui/js/SpamInfoGrid.js:45
 msgid "Spamscore"
 msgstr "ניקוד דואר זבל"
 
-#: proxmox-widget-toolkit/src/Utils.js:74 proxmox-yew-comp/src/lib.rs:271
+#: proxmox-widget-toolkit/src/Utils.js:74 proxmox-yew-comp/src/lib.rs:277
 #, fuzzy
 msgid "Spanish"
 msgstr "סיים"
@@ -13730,7 +13980,7 @@ msgstr "מהירות"
 
 #: pve-manager/www/manager6/qemu/Options.js:332
 #: pve-manager/www/manager6/qemu/Options.js:338
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:71
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:66
 #, fuzzy
 msgid "Spice Enhancements"
 msgstr "הגדל דיסק"
@@ -13749,7 +13999,7 @@ msgid "Standard"
 msgstr "סטנדרטי"
 
 #: pve-manager/www/manager6/Utils.js:604
-#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:33
+#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:38
 msgid "Standard VGA"
 msgstr "סטנדרטי VGA"
 
@@ -13768,7 +14018,7 @@ msgstr "סטנדרטי VGA"
 #: pve-manager/www/manager6/qemu/CmdMenu.js:61
 #: pve-manager/www/manager6/qemu/Config.js:58
 #: proxmox-datacenter-manager/ui/src/pve/tree.rs:117
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:696
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:700
 #: proxmox-datacenter-manager/ui/src/pve/mod.rs:63
 #: proxmox-datacenter-manager/ui/src/tasks.rs:9
 #: proxmox-datacenter-manager/ui/src/tasks.rs:42
@@ -13776,9 +14026,9 @@ msgstr "סטנדרטי VGA"
 #: proxmox-datacenter-manager/ui/src/tasks.rs:102
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/dashboard_panel.rs:261
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/dashboard_panel.rs:223
-#: proxmox-yew-comp/src/utils.rs:224 proxmox-yew-comp/src/utils.rs:357
-#: proxmox-yew-comp/src/utils.rs:388 proxmox-yew-comp/src/utils.rs:416
-#: proxmox-yew-comp/src/utils.rs:446
+#: proxmox-yew-comp/src/utils.rs:243 proxmox-yew-comp/src/utils.rs:368
+#: proxmox-yew-comp/src/utils.rs:399 proxmox-yew-comp/src/utils.rs:427
+#: proxmox-yew-comp/src/utils.rs:457
 msgid "Start"
 msgstr "התחל"
 
@@ -13827,12 +14077,12 @@ msgstr "התחל אחרי היצירה"
 msgid "Start at boot"
 msgstr "התחל באתחול"
 
-#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:103
+#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:95
 #, fuzzy
 msgid "Start backup now"
 msgstr "גבה עכשיו"
 
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:89
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:99
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/config_panel.rs:86
 #, fuzzy
 msgid "Start on boot"
@@ -13858,7 +14108,7 @@ msgstr "התחל התקנה"
 #: pve-manager/www/manager6/qemu/Options.js:76
 #: pve-manager/www/manager6/window/StartupEdit.js:35
 #: pve-manager/www/manager6/window/StartupEdit.js:69
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:148
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:158
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/config_panel.rs:100
 msgid "Start/Shutdown order"
 msgstr "סדר התחלה וכיבוי"
@@ -13880,7 +14130,7 @@ msgstr "זמן התחלה"
 
 #: pve-manager/www/manager6/qemu/CreateWizard.js:134
 #: pve-manager/www/manager6/window/StartupEdit.js:42
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:163
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:171
 msgid "Startup delay"
 msgstr "השהיית אתחול"
 
@@ -13980,8 +14230,8 @@ msgstr ""
 #: proxmox-backup/www/tape/TapeInventory.js:321
 #: proxmox-datacenter-manager/ui/src/remotes/tasks.rs:91
 #: proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:261
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:297
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:308
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:300
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:311
 #: proxmox-datacenter-manager/ui/src/sdn/zone_tree.rs:137
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/dashboard_panel.rs:194
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/dashboard_panel.rs:184
@@ -14026,9 +14276,9 @@ msgstr "מצב"
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/dashboard_panel.rs:204
 #: pve-yew-mobile-gui/src/pages/page_task_status.rs:258
 #: proxmox-yew-comp/src/task_viewer.rs:196
-#: proxmox-yew-comp/src/task_viewer.rs:277 proxmox-yew-comp/src/utils.rs:225
-#: proxmox-yew-comp/src/utils.rs:389 proxmox-yew-comp/src/utils.rs:417
-#: proxmox-yew-comp/src/utils.rs:447
+#: proxmox-yew-comp/src/task_viewer.rs:277 proxmox-yew-comp/src/utils.rs:244
+#: proxmox-yew-comp/src/utils.rs:400 proxmox-yew-comp/src/utils.rs:428
+#: proxmox-yew-comp/src/utils.rs:458
 msgid "Stop"
 msgstr "עצור"
 
@@ -14081,11 +14331,11 @@ msgstr "נעצר"
 #: pve-manager/www/manager6/window/Restore.js:176
 #: proxmox-datacenter-manager/ui/src/widget/pve_migrate_mapping.rs:41
 #: pve-yew-mobile-gui/src/pages/page_dashboard.rs:158
-#: pve-yew-mobile-gui/src/pages/page_dashboard.rs:319
+#: pve-yew-mobile-gui/src/pages/page_dashboard.rs:320
 msgid "Storage"
 msgstr "אחסון"
 
-#: proxmox-datacenter-manager/ui/src/pve/storage.rs:242
+#: proxmox-datacenter-manager/ui/src/pve/storage.rs:245
 #, fuzzy
 msgid "Storage '{0}'"
 msgstr "אחסון"
@@ -14102,7 +14352,7 @@ msgid "Storage Retention Configuration"
 msgstr "תצורת מערכת"
 
 #: pve-yew-mobile-gui/src/form/pve_storage_selector.rs:226
-#: pve-yew-mobile-gui/src/widgets/mod.rs:92
+#: pve-yew-mobile-gui/src/widgets/mod.rs:105
 #, fuzzy
 msgid "Storage size/usage unknown"
 msgstr "Storage מראה"
@@ -14154,7 +14404,7 @@ msgstr "תיקייה"
 #: pmg-gui/js/VirusQuarantine.js:76
 #: pve-manager/www/manager6/node/Certificates.js:60
 #: pve-manager/www/manager6/node/Certificates.js:322
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:303
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:305
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_nodes.rs:279
 #: proxmox-yew-comp/src/acme/certificate_list.rs:347
 #: proxmox-yew-comp/src/acme/certificate_list.rs:380
@@ -14165,7 +14415,7 @@ msgstr "נושא"
 #: proxmox-widget-toolkit/src/window/Certificates.js:58
 #: pve-manager/www/manager6/node/Certificates.js:93
 #: pve-manager/www/manager6/node/Certificates.js:351
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:308
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:310
 #: proxmox-yew-comp/src/acme/certificate_list.rs:352
 #: proxmox-yew-comp/src/acme/certificate_list.rs:409
 msgid "Subject Alternative Names"
@@ -14309,13 +14559,13 @@ msgstr ""
 #: pve-manager/www/manager6/node/CmdMenu.js:67
 #: pve-manager/www/manager6/node/Config.js:77
 #: proxmox-datacenter-manager/ui/src/tasks.rs:104
-#: proxmox-yew-comp/src/utils.rs:448
+#: proxmox-yew-comp/src/utils.rs:459
 msgid "Suspend"
 msgstr "השעה"
 
 #: pve-manager/www/manager6/Utils.js:2128
 #: proxmox-datacenter-manager/ui/src/tasks.rs:81
-#: proxmox-yew-comp/src/utils.rs:425
+#: proxmox-yew-comp/src/utils.rs:436
 #, fuzzy
 msgid "Suspend all VMs"
 msgstr "השעה לדיסק"
@@ -14337,8 +14587,20 @@ msgstr "Swap"
 msgid "Swap usage"
 msgstr "Swap שימוש ב"
 
-#: proxmox-widget-toolkit/src/Utils.js:91 proxmox-yew-comp/src/lib.rs:293
+#: proxmox-widget-toolkit/src/Utils.js:91 proxmox-yew-comp/src/lib.rs:299
 msgid "Swedish"
+msgstr ""
+
+#: pmg-yew-quarantine-gui/src/page_spam_list.rs:301
+msgid "Switch to Desktop View"
+msgstr ""
+
+#: pmg-gui/js/QuarantineView.js:310
+msgid "Switch to Mobile View"
+msgstr ""
+
+#: pmg-gui/js/QuarantineView.js:245
+msgid "Switch to mobile view"
 msgstr ""
 
 #: proxmox-widget-toolkit/src/panel/AuthView.js:160
@@ -14347,10 +14609,15 @@ msgstr ""
 #: pve-manager/www/manager6/dc/AuthView.js:128
 #: pve-manager/www/manager6/dc/SyncWindow.js:178
 #: proxmox-datacenter-manager/ui/src/tasks.rs:17
-#: proxmox-yew-comp/src/auth_view.rs:223 proxmox-yew-comp/src/utils.rs:365
+#: proxmox-yew-comp/src/auth_view.rs:321 proxmox-yew-comp/src/utils.rs:376
 #, fuzzy
 msgid "Sync"
 msgstr "סנכרון אחרון"
+
+#: proxmox-yew-comp/src/auth_view.rs:128
+#, fuzzy
+msgid "Sync Failed"
+msgstr "IP סינון"
 
 #: proxmox-backup/www/Utils.js:456
 #, fuzzy
@@ -14379,14 +14646,14 @@ msgstr "סנכרן"
 
 #: proxmox-widget-toolkit/src/window/AuthEditBase.js:62
 #: pve-manager/www/manager6/dc/AuthEditBase.js:125
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:91
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:196
 #, fuzzy
 msgid "Sync Options"
 msgstr "אפשרויות"
 
 #: pve-manager/www/manager6/Utils.js:2068
 #: proxmox-datacenter-manager/ui/src/tasks.rs:18
-#: proxmox-yew-comp/src/utils.rs:366
+#: proxmox-yew-comp/src/utils.rs:377
 #, fuzzy
 msgid "Sync Preview"
 msgstr "סנכרן"
@@ -14582,7 +14849,7 @@ msgstr ""
 #: pve-manager/www/manager6/data/ResourceStore.js:334
 #: pve-manager/www/manager6/form/TagFieldSet.js:6
 #: pve-manager/www/manager6/form/VMSelector.js:86
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:604
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:608
 msgid "Tags"
 msgstr ""
 
@@ -14817,15 +15084,15 @@ msgstr "משימות"
 msgid "Task Summary"
 msgstr "סיכום"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:275
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:277
 msgid "Task Summary Sorted by Failed Tasks (Last {0}h)"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:726
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:738
 msgid "Task Summary Time Range (last hours)"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:276
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:278
 msgid "Task Summary by Category (Last {0}h)"
 msgstr ""
 
@@ -14886,7 +15153,7 @@ msgstr "תנאי שימוש"
 msgid "Test"
 msgstr "שם בדיקה"
 
-#: pmg-gui/js/SpamInfoGrid.js:37
+#: pmg-gui/js/SpamInfoGrid.js:41
 msgid "Test Name"
 msgstr "שם בדיקה"
 
@@ -14916,7 +15183,7 @@ msgid ""
 "The amount of data eventually stored in this pool. Used for auto-scaling."
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:91
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:93
 #, fuzzy
 msgid "The certificate of the remote server is not trusted."
 msgstr "אמת אישור"
@@ -15017,7 +15284,7 @@ msgid ""
 "for production use!"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:160
+#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:161
 #: pve-yew-mobile-gui/src/pages/page_settings.rs:40
 #: proxmox-yew-comp/src/theme_dialog.rs:45
 #, fuzzy
@@ -15055,6 +15322,7 @@ msgid "This is not a valid hostname"
 msgstr "זהו לא שם DNS תקין"
 
 #: pve-manager/www/manager6/qemu/DisplayEdit.js:124
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:119
 msgid "This option depends on your display type."
 msgstr ""
 
@@ -15102,14 +15370,14 @@ msgstr ""
 
 #: pmg-gui/js/AttachmentQuarantine.js:93 pmg-gui/js/BackupRestore.js:174
 #: pmg-gui/js/ContactStatistics.js:84 pmg-gui/js/MailTracker.js:367
-#: pmg-gui/js/PostfixMailQueue.js:160 pmg-gui/js/ReceiverStatistics.js:84
+#: pmg-gui/js/PostfixMailQueue.js:168 pmg-gui/js/ReceiverStatistics.js:84
 #: pmg-gui/js/SenderStatistics.js:84 pmg-gui/js/SpamQuarantine.js:198
 #: pmg-gui/js/SystemConfiguration.js:28 pmg-gui/js/VirusQuarantine.js:101
 #: pve-manager/www/manager6/dc/Log.js:44
 #: pve-manager/www/manager6/node/Config.js:238
 #: pve-manager/www/manager6/window/ScheduleSimulator.js:133
 #: proxmox-backup/www/SystemConfiguration.js:29
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:107
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:129
 #: proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:269
 msgid "Time"
 msgstr "זמן"
@@ -15186,13 +15454,13 @@ msgid "To Slot"
 msgstr ""
 
 #: pve-manager/www/manager6/form/SpiceEnhancementSelector.js:33
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:57
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:52
 msgid ""
 "To use these features set the display to SPICE in the hardware settings of "
 "the VM."
 msgstr ""
 
-#: pmg-yew-quarantine-gui/src/page_spam_list.rs:87
+#: pmg-yew-quarantine-gui/src/page_spam_list.rs:93
 #, fuzzy
 msgid "To:"
 msgstr "אל"
@@ -15211,29 +15479,36 @@ msgstr "Toggle מידע דואר זבל"
 #: pve-manager/www/manager6/sdn/ipams/NetboxEdit.js:33
 #: pve-manager/www/manager6/sdn/ipams/PhpIpamEdit.js:33
 #: proxmox-backup/www/window/InfluxDbEdit.js:73
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:331
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:348
+#: proxmox-yew-comp/src/token_panel.rs:388
+#: proxmox-yew-comp/src/token_panel.rs:399
 msgid "Token"
 msgstr ""
 
 #: pve-manager/www/manager6/dc/TokenEdit.js:53
 #: pve-manager/www/manager6/dc/TokenEdit.js:132
 #: proxmox-backup/www/window/TokenEdit.js:182
+#: proxmox-yew-comp/src/token_panel.rs:333
 msgid "Token ID"
 msgstr ""
 
 #: pve-manager/www/manager6/dc/TokenView.js:141
 #: proxmox-backup/www/window/TokenEdit.js:42
+#: proxmox-yew-comp/src/token_panel.rs:427
+#: proxmox-yew-comp/src/token_panel.rs:461
 #, fuzzy
 msgid "Token Name"
 msgstr "שם בדיקה"
 
 #: pve-manager/www/manager6/dc/TokenEdit.js:116
 #: proxmox-backup/www/window/TokenEdit.js:166
+#: proxmox-yew-comp/src/token_panel.rs:326
 #, fuzzy
 msgid "Token Secret"
 msgstr "סוד"
 
 #: proxmox-backup/www/config/TokenView.js:244
+#: proxmox-yew-comp/src/token_panel.rs:479
 #, fuzzy
 msgid "Token name"
 msgstr "שם בדיקה"
@@ -15263,9 +15538,10 @@ msgstr "מקבלים ראשיים"
 #: proxmox-backup/www/ServerStatus.js:240
 #: proxmox-backup/www/ServerStatus.js:255
 #: proxmox-backup/www/datastore/Summary.js:341
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:205
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:205
-#: proxmox-datacenter-manager/ui/src/pve/storage.rs:198
+#: proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:140
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:208
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:208
+#: proxmox-datacenter-manager/ui/src/pve/storage.rs:201
 msgid "Total"
 msgstr "סך הכל"
 
@@ -15286,7 +15562,8 @@ msgstr "סך הכל ספירת אימיילים"
 msgid "Total Mails"
 msgstr "סך הכל אימיילים"
 
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:157
+#: proxmox-datacenter-manager/ui/src/pbs/remote.rs:151
+#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:156
 #, fuzzy
 msgid "Total Memory"
 msgstr "סך הכל ליבות"
@@ -15301,7 +15578,7 @@ msgstr "סך הכל תעבורת רשת החוצה"
 
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:147
 #: pve-manager/www/manager6/window/GuestImport.js:551
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:123
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:115
 msgid "Total cores"
 msgstr "סך הכל ליבות"
 
@@ -15382,7 +15659,7 @@ msgstr ""
 msgid "Tuning Options"
 msgstr "אפשרויות"
 
-#: proxmox-widget-toolkit/src/Utils.js:92 proxmox-yew-comp/src/lib.rs:294
+#: proxmox-widget-toolkit/src/Utils.js:92 proxmox-yew-comp/src/lib.rs:300
 msgid "Turkish"
 msgstr ""
 
@@ -15392,7 +15669,7 @@ msgid "Two Factor"
 msgstr "Zweiter Faktor"
 
 #: proxmox-backup/www/panel/AccessControl.js:24
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:70
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:80
 msgid "Two Factor Authentication"
 msgstr "אימות דו שלבי"
 
@@ -15447,15 +15724,16 @@ msgstr "אימות דו שלבי"
 #: proxmox-backup/www/form/AuthidSelector.js:72
 #: proxmox-backup/www/form/GroupFilter.js:520
 #: proxmox-backup/www/tape/ChangerStatus.js:47
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:326
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:317
 #: proxmox-datacenter-manager/ui/src/widget/pve_storage_selector.rs:207
 #: proxmox-datacenter-manager/ui/src/widget/pve_migrate_mapping.rs:351
-#: proxmox-datacenter-manager/ui/src/pve/storage.rs:290
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:49
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:105
+#: proxmox-datacenter-manager/ui/src/pve/storage.rs:284
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_machine_property.rs:110
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:82
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:99
 #: pve-yew-mobile-gui/src/form/pve_storage_selector.rs:252
 #: proxmox-yew-comp/src/acme/acme_domains.rs:93
-#: proxmox-yew-comp/src/auth_view.rs:292
+#: proxmox-yew-comp/src/auth_view.rs:477
 #: proxmox-yew-comp/src/configuration/network_view.rs:405
 #: proxmox-yew-comp/src/subscription_panel.rs:185
 #: proxmox-yew-comp/src/tfa/tfa_confirm_remove.rs:52
@@ -15517,11 +15795,11 @@ msgstr "USB התקן"
 msgid "USB Devices"
 msgstr "USB התקן"
 
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:45
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:36
 msgid "UUID"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/Utils.js:93 proxmox-yew-comp/src/lib.rs:295
+#: proxmox-widget-toolkit/src/Utils.js:93 proxmox-yew-comp/src/lib.rs:301
 msgid "Ukrainian"
 msgstr ""
 
@@ -15529,8 +15807,8 @@ msgstr ""
 msgid "Unable to apply changes"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:157
-#: proxmox-yew-comp/src/auth_view.rs:137
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:154
+#: proxmox-yew-comp/src/auth_view.rs:215
 #: proxmox-yew-comp/src/configuration/network_view.rs:150
 #: proxmox-yew-comp/src/tfa/tfa_view.rs:225
 msgid "Unable to delete item"
@@ -15569,11 +15847,11 @@ msgstr ""
 #: proxmox-backup/www/window/RemoteEdit.js:25
 #: proxmox-backup/www/window/S3ClientEdit.js:25
 #: proxmox-datacenter-manager/ui/src/remotes/edit_remote.rs:109
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:242
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:366
 msgid "Unchanged"
 msgstr "ללא שינוי"
 
-#: proxmox-widget-toolkit/src/panel/RRDChart.js:278
+#: proxmox-widget-toolkit/src/panel/RRDChart.js:288
 msgid "Undo Zoom"
 msgstr "בטל זום"
 
@@ -15679,7 +15957,7 @@ msgstr "צורת אימות"
 #: pve-manager/www/manager6/Utils.js:2151
 #: proxmox-backup/www/datastore/Summary.js:256
 #: proxmox-datacenter-manager/ui/src/tasks.rs:106
-#: proxmox-yew-comp/src/utils.rs:450
+#: proxmox-yew-comp/src/utils.rs:461
 msgid "Unmount"
 msgstr "Unmount"
 
@@ -15717,7 +15995,7 @@ msgstr "Unprivileged קונטיינר"
 #: proxmox-widget-toolkit/src/node/Tasks.js:320
 #: proxmox-widget-toolkit/src/panel/JournalView.js:326
 #: proxmox-widget-toolkit/src/panel/LogView.js:343
-#: pmg-gui/js/QuarantineList.js:327 pmg-gui/js/mobile/quarantineview.js:36
+#: pmg-gui/js/QuarantineList.js:327
 msgid "Until"
 msgstr "עד"
 
@@ -15745,8 +16023,8 @@ msgstr "למעלה"
 
 #: pmg-gui/js/DKIMSettings.js:154 pve-manager/www/manager6/Utils.js:2066
 #: proxmox-datacenter-manager/ui/src/tasks.rs:16
-#: pve-yew-mobile-gui/src/widgets/edit_dialog.rs:353
-#: proxmox-yew-comp/src/edit_window.rs:311 proxmox-yew-comp/src/utils.rs:364
+#: pve-yew-mobile-gui/src/widgets/edit_dialog.rs:378
+#: proxmox-yew-comp/src/edit_window.rs:311 proxmox-yew-comp/src/utils.rs:375
 msgid "Update"
 msgstr "עדכן"
 
@@ -15762,7 +16040,7 @@ msgstr "עדכן עכשיו"
 msgid "Update now"
 msgstr "עדכן עכשיו"
 
-#: proxmox-widget-toolkit/src/Utils.js:749 proxmox-yew-comp/src/utils.rs:218
+#: proxmox-widget-toolkit/src/Utils.js:749 proxmox-yew-comp/src/utils.rs:237
 msgid "Update package database"
 msgstr "עדכן מסד נתונים של חבילות"
 
@@ -15860,10 +16138,12 @@ msgstr "זמן באוויר"
 #: pve-manager/www/manager6/storage/StatusView.js:56
 #: pve-manager/www/manager6/storage/Summary.js:51
 #: proxmox-backup/www/datastore/Summary.js:154
-#: proxmox-datacenter-manager/ui/src/pve/remote.rs:208
-#: proxmox-datacenter-manager/ui/src/pve/storage.rs:197
-#: proxmox-datacenter-manager/ui/src/pve/storage.rs:301
-#: proxmox-datacenter-manager/ui/src/pve/storage.rs:341
+#: proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:139
+#: proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:232
+#: proxmox-datacenter-manager/ui/src/pve/remote.rs:205
+#: proxmox-datacenter-manager/ui/src/pve/storage.rs:200
+#: proxmox-datacenter-manager/ui/src/pve/storage.rs:296
+#: proxmox-datacenter-manager/ui/src/pve/storage.rs:336
 msgid "Usage"
 msgstr "שימוש"
 
@@ -15911,12 +16191,12 @@ msgid ""
 "enrolled."
 msgstr ""
 
-#: pmg-gui/js/MailProxyOptions.js:52
+#: pmg-gui/js/MailProxyOptions.js:40
 #, fuzzy
 msgid "Use Greylisting for IPv4"
 msgstr "השתמש ברשימות גריליסט"
 
-#: pmg-gui/js/MailProxyOptions.js:62
+#: pmg-gui/js/MailProxyOptions.js:50
 #, fuzzy
 msgid "Use Greylisting for IPv6"
 msgstr "השתמש ברשימות גריליסט"
@@ -15937,7 +16217,7 @@ msgstr "השתמש ב Proxmox VE managed hyper-converged ceph pool"
 msgid "Use Proxmox VE managed hyper-converged cephFS"
 msgstr "השתמש ב Proxmox VE managed hyper-converged cephFS"
 
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:31
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:64
 #, fuzzy
 msgid "Use QEMU Guest Agent"
 msgstr "Qemu סוכן"
@@ -15950,7 +16230,7 @@ msgstr "השתמש בבדיקות RBL"
 msgid "Use Razor2 checks"
 msgstr "Razor2 השתמש בבדיקות"
 
-#: pmg-gui/js/MailProxyOptions.js:72
+#: pmg-gui/js/MailProxyOptions.js:60
 msgid "Use SPF"
 msgstr "SPF השתמש ב"
 
@@ -15981,7 +16261,7 @@ msgstr "השתמש במסנני סטטיסטיקה מתקדמים"
 msgid "Use auto-welcomelists"
 msgstr "השתמש בוויטליסט אוטומטי"
 
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:328
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:345
 #, fuzzy
 msgid "Use existing Token"
 msgstr "node מקור"
@@ -16014,7 +16294,7 @@ msgstr "השתמש בהגדרות ההוסט"
 #: pve-manager/www/manager6/qemu/Options.js:247
 #: pve-manager/www/manager6/qemu/Options.js:253
 #: pve-manager/www/manager6/qemu/Options.js:265
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:108
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:118
 msgid "Use local time for RTC"
 msgstr "השתמש בזמן מקומי ל RTC"
 
@@ -16045,7 +16325,7 @@ msgstr ""
 
 #: pve-manager/www/manager6/qemu/Options.js:148
 #: pve-manager/www/manager6/qemu/Options.js:154
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:93
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:103
 msgid "Use tablet for pointer"
 msgstr "השתמש בטאבלט לפוינטר"
 
@@ -16093,7 +16373,8 @@ msgstr "ללא הגבלה"
 msgid "Used"
 msgstr "שומש"
 
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:156
+#: proxmox-datacenter-manager/ui/src/pbs/remote.rs:150
+#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:155
 #, fuzzy
 msgid "Used Memory"
 msgstr "זכרון"
@@ -16125,7 +16406,7 @@ msgstr "אובייקטים בשימוש"
 #: proxmox-backup/www/window/ACLEdit.js:38
 #: proxmox-backup/www/window/TokenEdit.js:34
 #: proxmox-backup/www/window/UserEdit.js:36
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:291
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:308
 #: proxmox-yew-comp/src/acl/acl_edit.rs:67
 #: proxmox-yew-comp/src/tfa/tfa_view.rs:356
 #: proxmox-yew-comp/src/tfa/tfa_edit.rs:53
@@ -16135,12 +16416,15 @@ msgstr "אובייקטים בשימוש"
 #: proxmox-yew-comp/src/tfa/tfa_confirm_remove.rs:50
 #: proxmox-yew-comp/src/user_panel.rs:260
 #: proxmox-yew-comp/src/user_panel.rs:269
+#: proxmox-yew-comp/src/token_panel.rs:412
+#: proxmox-yew-comp/src/token_panel.rs:446
+#: proxmox-yew-comp/src/token_panel.rs:471
 msgid "User"
 msgstr "משתמש"
 
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:110
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:24
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:187
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:309
 msgid "User Attribute Name"
 msgstr "שם תכונת משתמש"
 
@@ -16151,7 +16435,7 @@ msgstr "בלקליסט משתמש"
 
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:408
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:292
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:112
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:218
 #, fuzzy
 msgid "User Filter"
 msgstr "סנן"
@@ -16163,7 +16447,7 @@ msgstr "משתמש"
 
 #: pmg-gui/js/NavigationTree.js:72 pmg-gui/js/UserManagement.js:5
 #: proxmox-backup/www/panel/AccessControl.js:18
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:57
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:58
 msgid "User Management"
 msgstr "ניהול משתמש"
 
@@ -16173,7 +16457,7 @@ msgstr "ניהול משתמש"
 #: pve-manager/www/manager6/sdn/VnetACLView.js:241
 #: proxmox-backup/www/config/ACLView.js:161
 #: proxmox-backup/www/window/ACLEdit.js:34
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:89
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:99
 #: proxmox-yew-comp/src/acl/acl_edit.rs:66
 msgid "User Permission"
 msgstr "הרשאת משתמש"
@@ -16204,7 +16488,7 @@ msgstr ""
 
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:393
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:278
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:106
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:212
 #, fuzzy
 msgid "User classes"
 msgstr "שם משתמש"
@@ -16253,7 +16537,6 @@ msgstr "קבוצה"
 
 #: proxmox-widget-toolkit/src/panel/SmtpEditPanel.js:114
 #: pmg-gui/js/FetchmailEdit.js:64 pmg-gui/js/PBSRemoteEdit.js:61
-#: pmg-gui/js/mobile/loginscreen.js:21
 #: pve-manager/www/manager6/storage/CIFSEdit.js:162
 #: pve-manager/www/manager6/storage/ESXIEdit.js:64
 #: pve-manager/www/manager6/storage/PBSEdit.js:546
@@ -16297,7 +16580,7 @@ msgid "Using Account"
 msgstr "הראה משתמש"
 
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:177
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:281
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:282
 msgid "VCPUs"
 msgstr "VCPUs"
 
@@ -16343,6 +16626,7 @@ msgstr "VLAN Tag"
 #: pve-manager/www/manager6/form/VLanField.js:9
 #: pve-manager/www/manager6/lxc/Network.js:512
 #: pve-manager/www/manager6/window/GuestImport.js:926
+#: pve-yew-mobile-gui/src/form/pve_vlan_field.rs:17
 msgid "VLAN Tag"
 msgstr "VLAN Tag"
 
@@ -16364,8 +16648,8 @@ msgstr "VLAN aware"
 msgid "VM"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:258
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:260
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:261
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:263
 #, fuzzy
 msgid "VM '{0}'"
 msgstr "הרוס '{0}'"
@@ -16377,13 +16661,13 @@ msgstr "דיסקים"
 
 #: pve-manager/www/manager6/qemu/Options.js:348
 #: pve-manager/www/manager6/qemu/Options.js:354
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:253
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:265
 #, fuzzy
 msgid "VM State storage"
 msgstr "LVM אחסון"
 
 #: pve-manager/www/manager6/Utils.js:605
-#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:34
+#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:39
 msgid "VMware compatible"
 msgstr "VMware תואם"
 
@@ -16392,7 +16676,7 @@ msgid "VMware image format"
 msgstr "VMWare פרמוט image"
 
 #: pve-manager/www/manager6/qemu/DisplayEdit.js:105
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:51
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:115
 msgid "VNC clipboard requires spice-tools installed in the Guest-VM."
 msgstr ""
 
@@ -16461,7 +16745,7 @@ msgstr "טווח CIDR תקין"
 #: proxmox-widget-toolkit/src/window/Certificates.js:46
 #: pve-manager/www/manager6/node/Certificates.js:79
 #: pve-manager/www/manager6/node/Certificates.js:339
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:306
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:308
 #: proxmox-yew-comp/src/acme/certificate_list.rs:350
 #: proxmox-yew-comp/src/acme/certificate_list.rs:395
 msgid "Valid Since"
@@ -16485,7 +16769,7 @@ msgstr ""
 msgid "Value"
 msgstr "ערך"
 
-#: proxmox-yew-comp/src/safe_confirm_dialog.rs:84
+#: proxmox-yew-comp/src/safe_confirm_dialog.rs:87
 #, fuzzy
 msgid "Value does not match!"
 msgstr "Kennwörter stimmen nicht überein"
@@ -16576,7 +16860,7 @@ msgstr "לוח זמנים"
 #: pmg-gui/js/LDAPConfig.js:81 pve-manager/www/manager6/dc/AuthEditAD.js:78
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:78
 #: pve-manager/www/manager6/dc/MetricServerView.js:361
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:233
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:336
 msgid "Verify Certificate"
 msgstr "אמת אישור"
 
@@ -16614,7 +16898,7 @@ msgstr "מחק סנאפשוט"
 msgid "Verify Password"
 msgstr "סיסמא"
 
-#: pmg-gui/js/MailProxyOptions.js:41
+#: pmg-gui/js/MailProxyOptions.js:29
 msgid "Verify Receivers"
 msgstr "אמת מקבלים"
 
@@ -16626,6 +16910,7 @@ msgstr "אמת אישור"
 #: pve-manager/www/manager6/grid/BackupView.js:379
 #: pve-manager/www/manager6/storage/BackupView.js:216
 #: proxmox-backup/www/datastore/Content.js:1207
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:135
 #, fuzzy
 msgid "Verify State"
 msgstr "אמת אישור"
@@ -16662,14 +16947,16 @@ msgstr ""
 #: pve-manager/www/manager6/qemu/Smbios1Edit.js:54
 #: pve-manager/www/manager6/storage/TemplateView.js:81
 #: pve-manager/www/manager6/window/GuestImport.js:572
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:255
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:71
+#: pve-yew-mobile-gui/src/form/qemu_machine_version_selector.rs:176
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_machine_property.rs:93
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:62
 #: proxmox-yew-comp/src/apt_package_manager.rs:340
+#: proxmox-yew-comp/src/node_info.rs:215
 msgid "Version"
 msgstr "גרסא"
 
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:47
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:85
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:43
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:79
 #, fuzzy
 msgid "Video Streaming"
 msgstr "בדוק מחרוזת"
@@ -16706,6 +16993,12 @@ msgstr "הראה images"
 msgid "View images"
 msgstr "הראה images"
 
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_machine_property.rs:132
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_machine_property.rs:144
+#, fuzzy
+msgid "VirtIO"
+msgstr "מכונה וירטואלית"
+
 #: pve-manager/www/manager6/qemu/HardwareView.js:347
 #: pve-manager/www/manager6/qemu/HardwareView.js:797
 #: pve-manager/www/manager6/qemu/RNGEdit.js:90
@@ -16726,7 +17019,7 @@ msgstr ""
 msgid "Virtual"
 msgstr "מכונה וירטואלית"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:553
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:569
 msgid "Virtual Environment Nodes"
 msgstr ""
 
@@ -16757,8 +17050,8 @@ msgid "Virtual Machine {0} on node '{1}'"
 msgstr "מכונה וירטואלית {0} ב node '{1}'"
 
 #: pve-manager/www/manager6/dc/Guests.js:38
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:238
-#: pve-yew-mobile-gui/src/pages/page_dashboard.rs:277
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:240
+#: pve-yew-mobile-gui/src/pages/page_dashboard.rs:278
 msgid "Virtual Machines"
 msgstr "מכונות וירטואליות"
 
@@ -16850,7 +17143,7 @@ msgid "WAL size"
 msgstr "גודל WAL"
 
 #: pve-manager/www/manager6/qemu/SevEdit.js:74
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:82
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:75
 msgid "WARNING: When using SEV-SNP no EFI disk is loaded as pflash."
 msgstr ""
 
@@ -16986,6 +17279,10 @@ msgstr "שבוע"
 msgid "Weekly"
 msgstr "שבוע"
 
+#: pmg-gui/js/DNSBLSitesField.js:178
+msgid "Weight"
+msgstr ""
+
 #: pmg-gui/js/MailProxyConfiguration.js:53 pmg-gui/js/QuarantineView.js:22
 #: pmg-gui/js/SpamContextMenu.js:19 pmg-gui/js/SpamQuarantine.js:265
 #: pmg-gui/js/UserBlockWelcomeList.js:57 pmg-gui/js/UserBlockWelcomeList.js:247
@@ -17018,10 +17315,6 @@ msgid ""
 "guest start."
 msgstr ""
 
-#: pmg-gui/js/mobile/mailview.js:42 pmg-gui/js/mobile/quarantineview.js:104
-msgid "Whitelist"
-msgstr "וויטליסט"
-
 #: pmg-gui/js/NavigationTree.js:28 pmg-gui/js/Utils.js:54
 msgid "Who Objects"
 msgstr "איזה אובייקטים"
@@ -17037,7 +17330,7 @@ msgstr "כל השנה"
 #: proxmox-widget-toolkit/src/panel/DiskList.js:425
 #: pve-manager/www/manager6/Utils.js:2130 proxmox-backup/www/Utils.js:468
 #: proxmox-datacenter-manager/ui/src/tasks.rs:83
-#: proxmox-yew-comp/src/utils.rs:427
+#: proxmox-yew-comp/src/utils.rs:438
 #, fuzzy
 msgid "Wipe Disk"
 msgstr "WAL דיסק"
@@ -17173,12 +17466,13 @@ msgstr "שנה"
 #: pve-manager/www/manager6/window/TreeSettingsEdit.js:50
 #: pve-manager/www/manager6/window/TreeSettingsEdit.js:51
 #: proxmox-backup/www/Subscription.js:131
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:111
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:113
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_nodes.rs:102
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_summary.rs:112
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/remote_tree.rs:393
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/remote_tree.rs:401
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:125
+#: proxmox-yew-comp/src/auth_view.rs:418
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:231
 #: proxmox-yew-comp/src/configuration/network_view.rs:419
 #: proxmox-yew-comp/src/configuration/network_view.rs:436
 #: proxmox-yew-comp/src/configuration/network_view.rs:454
@@ -17213,11 +17507,12 @@ msgid "You can use Markdown for rich text formatting."
 msgstr ""
 
 #: pve-manager/www/manager6/qemu/DisplayEdit.js:114
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:117
 msgid "You cannot live-migrate while using the VNC clipboard."
 msgstr ""
 
 #: pve-manager/www/manager6/qemu/DisplayEdit.js:102
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:50
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:113
 msgid ""
 "You cannot use the default SPICE clipboard if the VNC clipboard is selected."
 msgstr ""
@@ -17246,7 +17541,7 @@ msgid "You have at least one node without subscription."
 msgstr "יש לך לפחות node אחד בלי מנוי."
 
 #: pve-manager/www/manager6/qemu/QemuBiosEdit.js:38
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_bios_property.rs:42
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_bios_property.rs:32
 msgid ""
 "You need to add an EFI disk for storing the EFI settings. See the online "
 "help for details."
@@ -17313,7 +17608,7 @@ msgstr "ZFS Pool"
 
 #: pve-manager/www/manager6/Utils.js:2152 proxmox-backup/www/Utils.js:469
 #: proxmox-datacenter-manager/ui/src/tasks.rs:107
-#: proxmox-yew-comp/src/utils.rs:451
+#: proxmox-yew-comp/src/utils.rs:462
 msgid "ZFS Storage"
 msgstr "ZFS אחסון"
 
@@ -17359,18 +17654,18 @@ msgstr ""
 msgid "all"
 msgstr "הכל"
 
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:160
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:168
 #, fuzzy
 msgid "any"
 msgstr "יום"
 
 #: pve-manager/www/manager6/qemu/Options.js:139
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:187
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:199
 msgid "any CD-ROM"
 msgstr ""
 
 #: pve-manager/www/manager6/qemu/Options.js:135
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:188
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:200
 msgid "any net"
 msgstr ""
 
@@ -17459,8 +17754,8 @@ msgstr "ימים"
 #: pve-manager/www/manager6/qemu/HDEdit.js:448
 #: pve-manager/www/manager6/qemu/HDEdit.js:457
 #: pve-manager/www/manager6/qemu/HDEdit.js:466
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:166
 #: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:172
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:178
 msgid "default"
 msgstr "ברירת מחדל"
 
@@ -17511,6 +17806,8 @@ msgid "failed to parse webauthn registration challenge"
 msgstr ""
 
 #: pve-manager/www/manager6/form/BackupCompressionSelector.js:6
+#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:70
+#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:71
 msgid "fast"
 msgstr "מהר"
 
@@ -17518,7 +17815,7 @@ msgstr "מהר"
 msgid "fast and good"
 msgstr ""
 
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:186
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:198
 #, fuzzy
 msgid "first Disk"
 msgstr "דיסק root"
@@ -17528,6 +17825,8 @@ msgid "first disk"
 msgstr ""
 
 #: pve-manager/www/manager6/form/BackupCompressionSelector.js:7
+#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:69
+#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:71
 msgid "good"
 msgstr "טוב"
 
@@ -17650,6 +17949,9 @@ msgstr "הרשאות"
 
 #: proxmox-widget-toolkit/src/Utils.js:58
 #: proxmox-yew-comp/src/user_panel.rs:359
+#: proxmox-yew-comp/src/token_panel.rs:423
+#: proxmox-yew-comp/src/token_panel.rs:457
+#: proxmox-yew-comp/src/token_panel.rs:514
 msgid "never"
 msgstr "לעולם לא"
 
@@ -17664,11 +17966,16 @@ msgstr ""
 
 #: proxmox-widget-toolkit/src/form/VlanField.js:7
 #: pve-manager/www/manager6/form/VLanField.js:7
+#: pve-yew-mobile-gui/src/form/pve_vlan_field.rs:35
 msgid "no VLAN"
 msgstr ""
 
 #: pve-yew-mobile-gui/src/pages/page_task_status.rs:175
 msgid "no data loaded"
+msgstr ""
+
+#: proxmox-yew-widget-toolkit/src/widget/form/combobox.rs:219
+msgid "no such item"
 msgstr ""
 
 #: pve-manager/www/manager6/window/Settings.js:394
@@ -17683,13 +17990,15 @@ msgstr "הגדרות"
 #: proxmox-backup/www/window/DataStoreEdit.js:149
 #: proxmox-backup/www/window/DataStoreEdit.js:160
 #: proxmox-backup/www/window/SyncJobEdit.js:209
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:309
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:317
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:323
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:331
-#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:45
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:73
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:89
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:311
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:319
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:325
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:333
+#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:50
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:68
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:82
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:87
+#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:68
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/config_panel.rs:152
 msgid "none"
 msgstr "אף אחד"
@@ -17729,6 +18038,10 @@ msgstr ""
 msgid "of {0} CPU(s)"
 msgstr "מ {0} מעבד (ים)"
 
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:392
+msgid "old"
+msgstr ""
+
 #: proxmox-widget-toolkit/src/Toolkit.js:79
 #, fuzzy
 msgid "only unicast addresses are allowed"
@@ -17748,6 +18061,7 @@ msgid "page not found"
 msgstr ""
 
 #: pve-manager/www/manager6/form/NetworkCardSelector.js:7
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_network_property.rs:37
 msgid "paravirtualized"
 msgstr "paravirtualized"
 
@@ -17857,7 +18171,8 @@ msgstr "לא ידוע"
 #: pve-manager/www/manager6/qemu/HDEdit.js:427
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:195
 #: pve-manager/www/manager6/qemu/RNGEdit.js:64
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:302
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_network_property.rs:151
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:303
 msgid "unlimited"
 msgstr "ללא הגבלה"
 
@@ -17954,11 +18269,6 @@ msgid ""
 "}"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:264
-#, fuzzy
-msgid "{0} ({1} sockets)"
-msgstr "{0} מ {1}"
-
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:376
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:314
 #, fuzzy
@@ -17969,7 +18279,7 @@ msgstr "{0} מ {1}"
 msgid "{0} ({1}/{2}) successful"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/pve/remote.rs:195
+#: proxmox-datacenter-manager/ui/src/pve/remote.rs:193
 msgid "{0} / {1} (running / total)"
 msgstr ""
 
@@ -17988,6 +18298,13 @@ msgstr "כל {0} דקות"
 msgid "{0} Items"
 msgstr "כל {0} דקות"
 
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:407
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:412
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:415
+#, fuzzy
+msgid "{0} OK"
+msgstr "{0} מ {1}"
+
 #: proxmox-backup/www/Utils.js:829
 msgid "{0} conflicting tasks still active."
 msgstr ""
@@ -17998,6 +18315,12 @@ msgstr ""
 #, fuzzy
 msgid "{0} days"
 msgstr "ימים"
+
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:417
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:425
+#, fuzzy
+msgid "{0} failed"
+msgstr "IP סינון"
 
 #: pmg-gui/js/Dashboard.js:339
 #: proxmox-backup/www/tape/form/RetentionSelector.js:10
@@ -18025,11 +18348,11 @@ msgstr "כל {0} דקות"
 msgid "{0} months"
 msgstr "{0} שניות"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:183
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:185
 msgid "{0} nodes have an unknown status"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:192
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:194
 msgid "{0} nodes online"
 msgstr ""
 
@@ -18037,7 +18360,13 @@ msgstr ""
 msgid "{0} not installed."
 msgstr "{0} לא מותקן."
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:189
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:402
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:409
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:419
+msgid "{0} not verified yet"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:191
 msgid "{0} of an unknown number of nodes online"
 msgstr ""
 
@@ -18050,7 +18379,7 @@ msgstr ""
 msgid "{0} of {1}"
 msgstr "{0} מ {1}"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:173
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:175
 msgid "{0} of {1} nodes are offline"
 msgstr ""
 
@@ -18064,8 +18393,8 @@ msgstr "אחסון {0} ב node {1}"
 msgid "{0} on behalf of {1}"
 msgstr "{0} מטעם {1}"
 
-#: proxmox-datacenter-manager/ui/src/pve/remote.rs:257
-#: proxmox-datacenter-manager/ui/src/pve/remote.rs:268
+#: proxmox-datacenter-manager/ui/src/pve/remote.rs:260
+#: proxmox-datacenter-manager/ui/src/pve/remote.rs:270
 msgid "{0} running / {1} physical ({2} total configured)"
 msgstr ""
 
@@ -18102,11 +18431,10 @@ msgstr "{0} שניות"
 msgid "{0} years"
 msgstr "ימים"
 
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:245
 #: proxmox-datacenter-manager/ui/src/pve/remote.rs:220
-#: proxmox-datacenter-manager/ui/src/pve/remote.rs:234
-#: proxmox-datacenter-manager/ui/src/pve/storage.rs:304
-#: proxmox-datacenter-manager/ui/src/renderer.rs:100
+#: proxmox-datacenter-manager/ui/src/pve/remote.rs:236
+#: proxmox-datacenter-manager/ui/src/pve/storage.rs:299
+#: proxmox-datacenter-manager/ui/src/renderer.rs:77
 #, fuzzy
 msgid "{0}% ({1} of {2})"
 msgstr "{0} עד {1} ({2})"
@@ -18116,15 +18444,14 @@ msgstr "{0} עד {1} ({2})"
 msgid "{0}% of {1}"
 msgstr "{0}% מ {1}"
 
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:334
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:231
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:348
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:332
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:346
 #, fuzzy
 msgid "{0}% of {1} CPU(s)"
 msgstr "מ {0} מעבד (ים)"
 
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:315
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:329
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:317
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:331
 #, fuzzy
 msgid "{0}, Group: {1}"
 msgstr "{0} מ {1}"
@@ -18132,6 +18459,10 @@ msgstr "{0} מ {1}"
 #, fuzzy
 #~ msgid " Network/Time"
 #~ msgstr "זמן רשת"
+
+#, fuzzy
+#~ msgid "Add Proxmox VE"
+#~ msgstr "Proxmox VE התחברות"
 
 #~ msgid "Add Storages"
 #~ msgstr "Storages hinzufügen"
@@ -18157,6 +18488,9 @@ msgstr "{0} מ {1}"
 #~ msgid "Avg. Processing Time"
 #~ msgstr "Durchschn. Verarbeitungszeit"
 
+#~ msgid "Blacklist"
+#~ msgstr "בלקליסט"
+
 #, fuzzy
 #~ msgid "Blocksize"
 #~ msgstr "גודל בלוק"
@@ -18176,6 +18510,10 @@ msgstr "{0} מ {1}"
 
 #~ msgid "CD/DVD"
 #~ msgstr "CD/DVD"
+
+#, fuzzy
+#~ msgid "CPU Model"
+#~ msgstr "מודל"
 
 #~ msgid "CPUs"
 #~ msgstr "CPUs"
@@ -18316,6 +18654,9 @@ msgstr "{0} מ {1}"
 #~ msgid "Local Time"
 #~ msgstr "LVM אחסון"
 
+#~ msgid "Log In"
+#~ msgstr "התחבר"
+
 #, fuzzy
 #~ msgid "MAC"
 #~ msgstr "ACLs"
@@ -18323,6 +18664,10 @@ msgstr "{0} מ {1}"
 #, fuzzy
 #~ msgid "MAC Address"
 #~ msgstr "MAC כתובת"
+
+#, fuzzy
+#~ msgid "Machine Type"
+#~ msgstr "סוג תוכן"
 
 #, fuzzy
 #~ msgid "Manage {0}"
@@ -18354,9 +18699,6 @@ msgstr "{0} מ {1}"
 #~ msgid "Mount אפשרויות"
 #~ msgstr "Mount Point"
 
-#~ msgid "Multiqueues"
-#~ msgstr "Multiqueues"
-
 #, fuzzy
 #~ msgid "Next due data"
 #~ msgstr "תאריך ביצוע הבא"
@@ -18369,10 +18711,6 @@ msgstr "{0} מ {1}"
 
 #~ msgid "No data in database."
 #~ msgstr "Keine Daten in der Datenbank"
-
-#, fuzzy
-#~ msgid "No endpoint selected"
-#~ msgstr "OSD לא נבחר"
 
 #, fuzzy
 #~ msgid "No enhancements"
@@ -18474,6 +18812,9 @@ msgstr "{0} מ {1}"
 #~ msgid "Proxmox Datacenter Manager Login"
 #~ msgstr "Proxmox VE התחברות"
 
+#~ msgid "Range"
+#~ msgstr "טווח"
+
 #~ msgid "Read IOPS"
 #~ msgstr "Lese IOPS"
 
@@ -18507,6 +18848,10 @@ msgstr "{0} מ {1}"
 
 #~ msgid "Ring 1"
 #~ msgstr "Ring 1"
+
+#, fuzzy
+#~ msgid "Root filesystem usage"
+#~ msgstr "שימוש בדיסק"
 
 #~ msgid "SKU"
 #~ msgstr "SKU"
@@ -18624,6 +18969,9 @@ msgstr "{0} מ {1}"
 #~ msgid "WebAuthn "
 #~ msgstr "הגדרות HA"
 
+#~ msgid "Whitelist"
+#~ msgstr "וויטליסט"
+
 #~ msgid "Working"
 #~ msgstr "עובד"
 
@@ -18708,13 +19056,13 @@ msgstr "{0} מ {1}"
 #~ msgstr "{0} מ {1}"
 
 #, fuzzy
+#~ msgid "{0} ({1} sockets)"
+#~ msgstr "{0} מ {1}"
+
+#, fuzzy
 #~ msgctxt "context"
 #~ msgid "{0} bar"
 #~ msgstr "ימים"
-
-#, fuzzy
-#~ msgid "{0} {1}"
-#~ msgstr "{0} מ {1}"
 
 #, fuzzy
 #~ msgid "{1} {0}"

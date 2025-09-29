@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: proxmox translations\n"
 "Report-Msgid-Bugs-To: <support@proxmox.com>\n"
-"POT-Creation-Date: 2025-09-19 08:15+0200\n"
+"POT-Creation-Date: 2025-09-29 18:08+0200\n"
 "PO-Revision-Date: 2025-03-20 23:21+0900\n"
 "Last-Translator: ribbon <ribbon@users.osdn.me>\n"
 "Language-Team: Japanese <kde-i18n-doc@kde.org>\n"
@@ -60,15 +60,16 @@ msgstr ".zip"
 msgid "/some/path"
 msgstr "/some/path"
 
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:32
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:33
 #: pve-yew-mobile-gui/src/pages/page_node_status/dashboard_panel.rs:76
 #, fuzzy
 msgid "1 Core"
 msgid_plural "{n} Cores"
 msgstr[0] "コア"
 
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:33
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:34
 #: pve-yew-mobile-gui/src/pages/page_node_status/dashboard_panel.rs:77
+#: proxmox-yew-comp/src/node_info.rs:208
 #, fuzzy
 msgid "1 Socket"
 msgid_plural "{n} Sockets"
@@ -86,7 +87,7 @@ msgstr ""
 msgid "5 Minutes"
 msgstr "5分"
 
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:234
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:236
 #, fuzzy
 msgid "<IP/Hostname>:Port"
 msgstr "ホスト名/IP"
@@ -121,6 +122,11 @@ msgstr "選択したデバイスが別のIOMMUグループに属していない�
 #: pve-manager/www/manager6/dc/SyncWindow.js:132
 msgid "ACL"
 msgstr "ACL"
+
+#: proxmox-yew-comp/src/auth_view.rs:428
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:240
+msgid "ACLs"
+msgstr ""
 
 #: proxmox-backup/www/config/CertificateView.js:63
 #: proxmox-datacenter-manager/ui/src/certificates.rs:46
@@ -160,7 +166,7 @@ msgstr "ACME証明書の更新"
 
 #: pve-manager/www/manager6/qemu/Options.js:187
 #: pve-manager/www/manager6/qemu/Options.js:193
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:97
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:107
 msgid "ACPI support"
 msgstr "ACPI サポート"
 
@@ -172,7 +178,7 @@ msgid "ACR Values"
 msgstr "ACR 値"
 
 #: pve-manager/www/manager6/qemu/Options.js:372
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:97
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:88
 msgid "AMD SEV"
 msgstr "AMD SEV"
 
@@ -215,7 +221,7 @@ msgstr "APIパスプレフィックス"
 msgid "API Token"
 msgstr "API トークン"
 
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:315
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:332
 #, fuzzy
 msgid "API Token Name"
 msgstr "トークン名"
@@ -355,10 +361,14 @@ msgstr "アクション ”オブジェクト”"
 #: proxmox-backup/www/tape/ChangerStatus.js:760
 #: proxmox-backup/www/tape/ChangerStatus.js:914
 #: proxmox-backup/www/tape/ChangerStatus.js:989
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:612
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:616
 #: proxmox-datacenter-manager/ui/src/sdn/zone_tree.rs:160
 msgid "Actions"
 msgstr "アクション"
+
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:105
+msgid "Activate AES instruction set for HW acceleration."
+msgstr ""
 
 #: proxmox-widget-toolkit/src/form/NetworkSelector.js:114
 #: proxmox-widget-toolkit/src/node/NetworkView.js:310
@@ -368,13 +378,15 @@ msgstr "アクション"
 #: pve-manager/www/manager6/storage/PBSEdit.js:232
 #: pve-manager/www/manager6/storage/PBSEdit.js:235
 #: pve-manager/www/manager6/storage/StatusView.js:31
-#: proxmox-datacenter-manager/ui/src/pve/storage.rs:271
+#: proxmox-datacenter-manager/ui/src/pve/storage.rs:265
+#: pve-yew-mobile-gui/src/form/pve_network_selector.rs:154
 #: proxmox-yew-comp/src/configuration/network_view.rs:416
 msgid "Active"
 msgstr "稼働中"
 
 #: proxmox-widget-toolkit/src/Schema.js:39
-#: pve-manager/www/manager6/Utils.js:726
+#: pve-manager/www/manager6/Utils.js:726 proxmox-yew-comp/src/auth_view.rs:277
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:401
 msgid "Active Directory Server"
 msgstr "Active Directory サーバー"
 
@@ -395,10 +407,10 @@ msgstr "アクティビティ"
 #: proxmox-widget-toolkit/src/window/Edit.js:310
 #: proxmox-widget-toolkit/src/window/NotificationMatcherEdit.js:865
 #: pmg-gui/js/ActionList.js:100 pmg-gui/js/ClusterAdministration.js:222
-#: pmg-gui/js/FetchmailView.js:80 pmg-gui/js/ObjectGroup.js:198
-#: pmg-gui/js/RuleConfiguration.js:161 pmg-gui/js/RuleInfo.js:431
-#: pmg-gui/js/UserBlockWelcomeList.js:162 pmg-gui/js/UserView.js:134
-#: pve-manager/www/manager6/dc/ACLView.js:198
+#: pmg-gui/js/DNSBLSitesField.js:136 pmg-gui/js/FetchmailView.js:80
+#: pmg-gui/js/ObjectGroup.js:198 pmg-gui/js/RuleConfiguration.js:161
+#: pmg-gui/js/RuleInfo.js:431 pmg-gui/js/UserBlockWelcomeList.js:162
+#: pmg-gui/js/UserView.js:134 pve-manager/www/manager6/dc/ACLView.js:198
 #: pve-manager/www/manager6/dc/AuthView.js:108
 #: pve-manager/www/manager6/dc/Backup.js:717
 #: pve-manager/www/manager6/dc/CorosyncLinkEdit.js:308
@@ -446,9 +458,10 @@ msgstr "アクティビティ"
 #: proxmox-backup/www/tape/PoolConfig.js:95
 #: proxmox-backup/www/window/TrafficControlEdit.js:430
 #: proxmox-datacenter-manager/ui/src/remotes/node_url_list.rs:203
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:544
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:173
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:546
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/evpn_panel.rs:115
-#: pve-yew-mobile-gui/src/widgets/edit_dialog.rs:355
+#: pve-yew-mobile-gui/src/widgets/edit_dialog.rs:380
 #: proxmox-yew-comp/src/acme/acme_accounts.rs:106
 #: proxmox-yew-comp/src/acme/acme_domains.rs:175
 #: proxmox-yew-comp/src/acme/acme_domains.rs:353
@@ -457,7 +470,7 @@ msgstr "アクティビティ"
 #: proxmox-yew-comp/src/apt_repositories.rs:556
 #: proxmox-yew-comp/src/apt_repositories.rs:697
 #: proxmox-yew-comp/src/auth_edit_openid.rs:157
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:262
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:386
 #: proxmox-yew-comp/src/acl/acl_view.rs:199
 #: proxmox-yew-comp/src/edit_window.rs:313
 #: proxmox-yew-comp/src/tfa/tfa_view.rs:271
@@ -465,6 +478,8 @@ msgstr "アクティビティ"
 #: proxmox-yew-comp/src/tfa/tfa_add_recovery.rs:228
 #: proxmox-yew-comp/src/user_panel.rs:175
 #: proxmox-yew-comp/src/user_panel.rs:260
+#: proxmox-yew-comp/src/token_panel.rs:180
+#: proxmox-yew-comp/src/token_panel.rs:388
 msgid "Add"
 msgstr "追加"
 
@@ -497,16 +512,16 @@ msgstr "ヘッダ追加"
 msgid "Add Namespace"
 msgstr "名前空間追加"
 
+#: pve-yew-mobile-gui/src/pages/page_qemu_status/hardware_panel.rs:445
+#, fuzzy
+msgid "Add Network card"
+msgstr "IPネットワーク"
+
 #: pve-manager/www/manager6/sdn/FabricsView.js:107
 #: pve-manager/www/manager6/sdn/FabricsView.js:168
 #: pve-manager/www/manager6/sdn/fabrics/NodeEdit.js:188
 msgid "Add Node"
 msgstr "Node を追加"
-
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:176
-#, fuzzy
-msgid "Add Proxmox VE"
-msgstr "Proxmox VE ログイン"
 
 #: proxmox-backup/www/config/SyncView.js:226
 msgid "Add Pull Sync Job"
@@ -659,7 +674,7 @@ msgstr "管理者Eメール"
 #: pve-manager/www/manager6/dc/Backup.js:420
 #: pve-manager/www/manager6/window/GuestImport.js:656
 #: pve-manager/www/manager6/window/Wizard.js:163
-#: pve-yew-mobile-gui/src/widgets/edit_dialog.rs:330
+#: pve-yew-mobile-gui/src/widgets/edit_dialog.rs:355
 #: proxmox-yew-comp/src/edit_window.rs:293
 msgid "Advanced"
 msgstr "詳細設定"
@@ -730,7 +745,7 @@ msgid "All"
 msgstr "全部"
 
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:204
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:311
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:312
 msgid "All Cores"
 msgstr "すべてのコア"
 
@@ -739,12 +754,18 @@ msgid "All Functions"
 msgstr "全機能"
 
 #: proxmox-backup/www/datastore/Content.js:1248
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:392
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:399
 msgid "All OK"
 msgstr "全てOK"
 
 #: proxmox-backup/www/datastore/Content.js:1244
 msgid "All OK (old)"
 msgstr "全てOK(旧)"
+
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:391
+msgid "All OK, but some snapshots were not verified in last 30 days"
+msgstr ""
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:441
 #: proxmox-yew-comp/src/apt_repositories.rs:283
@@ -772,12 +793,18 @@ msgid "All except {0}"
 msgstr "{0} を除くすべて"
 
 #: proxmox-backup/www/datastore/Content.js:1264
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:423
 msgid "All failed"
 msgstr "すべて失敗"
 
 #: pmg-gui/js/form/MatchModeSelector.js:6
 msgid "All match"
 msgstr "すべて一致"
+
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_network_property.rs:78
+#, fuzzy
+msgid "All network devices in use."
+msgstr "ネットデバイスなし"
 
 #: pve-yew-mobile-gui/src/pages/page_node_status/services_panel.rs:75
 msgid "All required services running"
@@ -788,11 +815,15 @@ msgstr ""
 msgid "All rules match"
 msgstr "すべてのルールに一致"
 
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:396
+msgid "All snapshots verified at least once in last 30 days"
+msgstr ""
+
 #: pve-manager/www/manager6/node/ZFS.js:245 proxmox-backup/www/ZFSList.js:81
 msgid "Allocated"
 msgstr "割当済"
 
-#: proxmox-datacenter-manager/ui/src/pve/remote.rs:251
+#: proxmox-datacenter-manager/ui/src/pve/remote.rs:254
 #, fuzzy
 msgid "Allocation"
 msgstr "事前割当"
@@ -804,7 +835,7 @@ msgid "Allocation Policy"
 msgstr "割当ポリシ"
 
 #: pve-manager/www/manager6/qemu/SevEdit.js:92
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:51
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:44
 msgid "Allow Debugging"
 msgstr "デバッグを許可"
 
@@ -818,17 +849,21 @@ msgid "Allow HREFs"
 msgstr "HREF許可"
 
 #: pve-manager/www/manager6/qemu/SevEdit.js:103
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:61
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:54
 msgid "Allow Key-Sharing"
 msgstr "キー共有を許可"
 
 #: pve-manager/www/manager6/qemu/SevEdit.js:114
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:70
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:63
 msgid "Allow SMT"
 msgstr "SMT許可"
 
 #: pve-manager/www/manager6/storage/Base.js:84
 msgid "Allow Snapshots as Volume-Chain"
+msgstr ""
+
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:102
+msgid "Allow guest OS to use 1GB size pages, if host HW supports it"
 msgstr ""
 
 #: pve-manager/www/manager6/window/BulkAction.js:90
@@ -840,6 +875,14 @@ msgstr "ローカルディスクのマイグレーションを許可"
 #: proxmox-widget-toolkit/src/Toolkit.js:129
 msgid "Allowed characters"
 msgstr "使用可能な文字"
+
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:98
+msgid "Allows improved Spectre mitigation with AMD CPUs"
+msgstr ""
+
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:96
+msgid "Allows improved Spectre mitigation with Intel CPUs"
+msgstr ""
 
 #: pve-manager/www/manager6/UIOptions.js:80
 #: pve-manager/www/manager6/UIOptions.js:82
@@ -883,7 +926,7 @@ msgid "Analytics"
 msgstr ""
 
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:120
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:201
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:341
 msgid "Anonymous Search"
 msgstr "匿名検索"
 
@@ -909,7 +952,7 @@ msgstr "新しい編集に適用"
 #: pmg-gui/js/SpamDetectorCustom.js:83 pve-manager/www/manager6/ceph/OSD.js:242
 #: pve-manager/www/manager6/node/ACME.js:419
 #: pve-manager/www/manager6/sdn/StatusView.js:46
-#: pmg-yew-quarantine-gui/src/page_spam_list.rs:96
+#: pmg-yew-quarantine-gui/src/page_spam_list.rs:102
 #: proxmox-yew-comp/src/language_dialog.rs:93
 msgid "Apply"
 msgstr "適用"
@@ -948,7 +991,7 @@ msgstr ""
 "保留中のSDN変更を適用すると、保留中のローカルノードのネットワーク変更も適用さ"
 "れます。続行しますか？"
 
-#: proxmox-widget-toolkit/src/Utils.js:67 proxmox-yew-comp/src/lib.rs:264
+#: proxmox-widget-toolkit/src/Utils.js:67 proxmox-yew-comp/src/lib.rs:270
 msgid "Arabic"
 msgstr "アラビア語"
 
@@ -1069,7 +1112,7 @@ msgstr "本当にこの項目を削除してよいですか"
 msgid "Are you sure you want to remove this entry?"
 msgstr "本当にこの項目を削除してよいですか"
 
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:208
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:199
 #, fuzzy
 msgid "Are you sure you want to remove this remote?"
 msgstr "本当にこの項目を削除してよいですか"
@@ -1189,7 +1232,7 @@ msgstr "Auth ID"
 msgid "Auth-Provider Default"
 msgstr "Auth-Provider の既定値"
 
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:335
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:326
 #, fuzzy
 msgid "AuthId"
 msgstr "Auth ID"
@@ -1248,12 +1291,12 @@ msgstr "一意のプロパティを自動生成；例えばMACアドレス"
 #: pve-manager/www/manager6/form/TagColorGrid.js:55
 #: pve-manager/www/manager6/qemu/Options.js:350
 #: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:386
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:255
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:267
 msgid "Automatic"
 msgstr "自動的"
 
 #: pve-manager/www/manager6/qemu/Options.js:361
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:264
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:276
 msgid "Automatic (Storage used by the VM, or 'local')"
 msgstr "自動的(VMまたはローカルによって使われるストレージ）"
 
@@ -1311,7 +1354,6 @@ msgstr "B"
 msgid "BCC"
 msgstr "BCC"
 
-#: pmg-gui/js/mobile/mailview.js:12
 #: pve-manager/www/manager6/window/Wizard.js:176
 #: proxmox-backup/www/tape/window/TapeRestore.js:268
 #: proxmox-yew-comp/src/wizard.rs:667
@@ -1355,7 +1397,7 @@ msgstr "Backscatter スコア"
 #: proxmox-datacenter-manager/ui/src/pve/utils.rs:284
 #: proxmox-datacenter-manager/ui/src/tasks.rs:91
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/mod.rs:120
-#: proxmox-yew-comp/src/utils.rs:435
+#: proxmox-yew-comp/src/utils.rs:446
 msgid "Backup"
 msgstr "バックアップ"
 
@@ -1367,7 +1409,7 @@ msgstr "バックアップカウント"
 msgid "Backup Details"
 msgstr "バックアップ詳細"
 
-#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:124
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:100
 #, fuzzy
 msgid "Backup Dir"
 msgstr "バックアップ時間"
@@ -1385,7 +1427,7 @@ msgstr "バックアップグループ"
 #: pve-manager/www/manager6/dc/Backup.js:9
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:52
 #: proxmox-datacenter-manager/ui/src/tasks.rs:92
-#: proxmox-yew-comp/src/utils.rs:436
+#: proxmox-yew-comp/src/utils.rs:447
 msgid "Backup Job"
 msgstr "バックアップJob"
 
@@ -1428,7 +1470,7 @@ msgid "Backup notifications"
 msgstr "バックアップ通知"
 
 #: pve-manager/www/manager6/grid/BackupView.js:158
-#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:195
+#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:187
 msgid "Backup now"
 msgstr "今すぐバックアップ"
 
@@ -1465,7 +1507,7 @@ msgid "Bad Request"
 msgstr "不正な要求"
 
 #: pve-manager/www/manager6/qemu/MemoryEdit.js:125
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_memory_property.rs:86
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_memory_property.rs:88
 msgid "Ballooning Device"
 msgstr "Ballooning デバイス"
 
@@ -1502,7 +1544,7 @@ msgstr "グループのベースDN"
 
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:100
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:16
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:179
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:302
 msgid "Base Domain Name"
 msgstr "ベースドメイン名"
 
@@ -1518,33 +1560,33 @@ msgstr "ベースボリューム"
 msgid "Basic"
 msgstr "Basic"
 
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:99
+msgid "Basis for \"Speculative Store Bypass\" protection for AMD models"
+msgstr ""
+
 #: pve-manager/www/manager6/dc/MetricServerView.js:372
 #: proxmox-backup/www/window/InfluxDbEdit.js:98
 msgid "Batch Size (b)"
 msgstr "バッチサイズ（ｂ）"
 
-#: pmg-gui/js/MailProxyOptions.js:108
+#: pmg-gui/js/MailProxyOptions.js:96
 msgid "Before Queue Filtering"
 msgstr "キューフィルタ前"
 
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:128
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:225
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:348
 msgid "Bind Domain Name"
 msgstr "バインドドメイン名"
 
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:151
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:241
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:237
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:361
 msgid "Bind Password"
 msgstr "Bindパスワード"
 
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:234
 msgid "Bind User"
 msgstr "Bindユーザー"
-
-#: pmg-gui/js/mobile/mailview.js:33 pmg-gui/js/mobile/quarantineview.js:113
-msgid "Blacklist"
-msgstr "ブラックリスト"
 
 #: proxmox-widget-toolkit/src/Schema.js:90
 msgid "Block Device"
@@ -1587,14 +1629,14 @@ msgstr "Bootモード"
 
 #: pve-manager/www/manager6/qemu/BootOrderEdit.js:273
 #: pve-manager/www/manager6/qemu/Options.js:97
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:183
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:189
 msgid "Boot Order"
 msgstr "ブート順"
 
 #: pve-manager/www/manager6/panel/GuestStatusView.js:147
 #: pve-manager/www/manager6/panel/TemplateStatusView.js:60
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:344
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:358
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:343
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:357
 msgid "Bootdisk size"
 msgstr "ブートディスクサイズ"
 
@@ -1611,6 +1653,8 @@ msgstr "バウンス"
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:81
 #: pve-manager/www/manager6/window/GuestImport.js:911
 #: proxmox-datacenter-manager/ui/src/widget/pve_network_selector.rs:160
+#: pve-yew-mobile-gui/src/form/pve_network_selector.rs:150
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_network_property.rs:24
 msgid "Bridge"
 msgstr "ブリッジ"
 
@@ -1650,7 +1694,7 @@ msgstr "ビルトイン"
 msgid "Built-In (modified)"
 msgstr "ビルトイン(変更済)"
 
-#: proxmox-widget-toolkit/src/Utils.js:68 proxmox-yew-comp/src/lib.rs:265
+#: proxmox-widget-toolkit/src/Utils.js:68 proxmox-yew-comp/src/lib.rs:271
 msgid "Bulgarian"
 msgstr "ブルガリア語"
 
@@ -1688,19 +1732,19 @@ msgstr "一括サスペンド"
 
 #: pve-manager/www/manager6/Utils.js:2098
 #: proxmox-datacenter-manager/ui/src/tasks.rs:50
-#: proxmox-yew-comp/src/utils.rs:396
+#: proxmox-yew-comp/src/utils.rs:407
 msgid "Bulk migrate VMs and Containers"
 msgstr "Mとコンテナの一括マイグレート"
 
 #: pve-manager/www/manager6/Utils.js:2127
 #: proxmox-datacenter-manager/ui/src/tasks.rs:80
-#: proxmox-yew-comp/src/utils.rs:424
+#: proxmox-yew-comp/src/utils.rs:435
 msgid "Bulk shutdown VMs and Containers"
 msgstr "VMとコンテナの一括シャットダウン"
 
 #: pve-manager/www/manager6/Utils.js:2126
 #: proxmox-datacenter-manager/ui/src/tasks.rs:79
-#: proxmox-yew-comp/src/utils.rs:423
+#: proxmox-yew-comp/src/utils.rs:434
 msgid "Bulk start VMs and Containers"
 msgstr "VMとコンテナの一括起動"
 
@@ -1744,7 +1788,7 @@ msgstr ""
 
 #: pve-manager/www/manager6/qemu/HardwareView.js:251
 #: pve-manager/www/manager6/qemu/HardwareView.js:737
-#: pve-yew-mobile-gui/src/pages/page_qemu_status/hardware_panel.rs:168
+#: pve-yew-mobile-gui/src/pages/page_qemu_status/hardware_panel.rs:284
 msgid "CD/DVD Drive"
 msgstr "CD/DVD ドライブ"
 
@@ -1767,7 +1811,8 @@ msgstr "CIDR"
 #: pve-manager/www/manager6/lxc/CreateWizard.js:233
 #: pve-manager/www/manager6/lxc/ResourceEdit.js:35
 #: pve-manager/www/manager6/qemu/CreateWizard.js:220
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:154
+#: proxmox-datacenter-manager/ui/src/pbs/remote.rs:148
+#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:153
 #: pve-yew-mobile-gui/src/form/hotplug_feature_selector.rs:57
 #: pve-yew-mobile-gui/src/form/hotplug_feature_selector.rs:194
 #: pve-yew-mobile-gui/src/pages/page_dashboard.rs:124
@@ -1777,18 +1822,13 @@ msgid "CPU"
 msgstr "CPU"
 
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:202
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:308
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:309
 msgid "CPU Affinity"
 msgstr "CPUアフィニティ"
 
-#: proxmox-datacenter-manager/ui/src/pve/remote.rs:254
+#: proxmox-datacenter-manager/ui/src/pve/remote.rs:257
 msgid "CPU Cores assigned"
 msgstr ""
-
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:261
-#, fuzzy
-msgid "CPU Model"
-msgstr "モデル"
 
 #: pve-manager/www/manager6/node/Summary.js:269
 #: pve-manager/www/manager6/panel/GuestSummary.js:137
@@ -1801,9 +1841,11 @@ msgstr "CPUの種類"
 
 #: pve-manager/www/manager6/node/Summary.js:164
 #: pve-manager/www/manager6/panel/GuestSummary.js:95
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:381
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:303
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:394
+#: proxmox-datacenter-manager/ui/src/pbs/remote.rs:251
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:379
+#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:247
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:392
+#: proxmox-yew-comp/src/node_info.rs:133
 #, fuzzy
 msgid "CPU Usage"
 msgstr "CPU使用率"
@@ -1815,13 +1857,13 @@ msgstr "CPU使用率"
 
 #: pve-manager/www/manager6/lxc/ResourceEdit.js:78
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:193
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:299
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:300
 msgid "CPU limit"
 msgstr "CPUの上限"
 
 #: pve-manager/www/manager6/lxc/ResourceEdit.js:88
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:216
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:290
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:291
 msgid "CPU units"
 msgstr "CPUユニット"
 
@@ -1838,19 +1880,19 @@ msgstr "CPUユニット"
 #: proxmox-backup/www/ServerStatus.js:215
 #: proxmox-backup/www/ServerStatus.js:217
 #: proxmox-backup/www/panel/NodeInfo.js:79
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:633
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:640
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:203
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:331
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:229
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:203
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:345
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:649
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:656
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:206
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:329
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:206
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:343
 msgid "CPU usage"
 msgstr "CPU使用率"
 
 #: proxmox-widget-toolkit/src/Utils.js:1122 pmg-gui/js/dashboard/NodeInfo.js:81
 #: pve-manager/www/manager6/node/StatusView.js:96
 #: proxmox-backup/www/panel/NodeInfo.js:136
+#: proxmox-yew-comp/src/node_info.rs:210
 msgid "CPU(s)"
 msgstr "CPU"
 
@@ -1980,7 +2022,7 @@ msgstr "カートリッジ記憶装置"
 msgid "Case-Sensitive"
 msgstr "大小文字を区別"
 
-#: proxmox-widget-toolkit/src/Utils.js:69 proxmox-yew-comp/src/lib.rs:266
+#: proxmox-widget-toolkit/src/Utils.js:69 proxmox-yew-comp/src/lib.rs:272
 msgid "Catalan"
 msgstr "カタロニア語"
 
@@ -2095,7 +2137,7 @@ msgstr "保護を変更"
 
 #: pve-manager/www/manager6/Utils.js:2082
 #: proxmox-datacenter-manager/ui/src/tasks.rs:32
-#: proxmox-yew-comp/src/utils.rs:380
+#: proxmox-yew-comp/src/utils.rs:391
 msgid "Change global Ceph flags"
 msgstr "グローバル Ceph フラグを変更"
 
@@ -2161,11 +2203,11 @@ msgstr "Check connection"
 msgid "Checksum"
 msgstr "チェックサム"
 
-#: proxmox-widget-toolkit/src/Utils.js:94 proxmox-yew-comp/src/lib.rs:299
+#: proxmox-widget-toolkit/src/Utils.js:94 proxmox-yew-comp/src/lib.rs:305
 msgid "Chinese (Simplified)"
 msgstr "簡体字中国語"
 
-#: proxmox-widget-toolkit/src/Utils.js:95 proxmox-yew-comp/src/lib.rs:304
+#: proxmox-widget-toolkit/src/Utils.js:95 proxmox-yew-comp/src/lib.rs:310
 msgid "Chinese (Traditional)"
 msgstr "繁体字中国語"
 
@@ -2270,11 +2312,11 @@ msgstr ""
 msgid "Client"
 msgstr "クライアント"
 
-#: pmg-gui/js/MailProxyOptions.js:81
+#: pmg-gui/js/MailProxyOptions.js:69
 msgid "Client Connection Count Limit"
 msgstr "クライアント接続数制限"
 
-#: pmg-gui/js/MailProxyOptions.js:87
+#: pmg-gui/js/MailProxyOptions.js:75
 msgid "Client Connection Rate Limit"
 msgstr "クライアント接続速度制限"
 
@@ -2292,11 +2334,12 @@ msgstr "クライアント ID"
 msgid "Client Key"
 msgstr "クライアントキー"
 
-#: pmg-gui/js/MailProxyOptions.js:92
+#: pmg-gui/js/MailProxyOptions.js:80
 msgid "Client Message Rate Limit"
 msgstr "クライアントメッセージ率制限"
 
 #: pve-manager/www/manager6/qemu/DisplayEdit.js:86
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:147
 msgid "Clipboard"
 msgstr "クリップボード"
 
@@ -2311,7 +2354,7 @@ msgstr "クリップボード"
 #: pve-manager/www/manager6/window/Clone.js:304
 #: proxmox-datacenter-manager/ui/src/tasks.rs:55
 #: proxmox-datacenter-manager/ui/src/tasks.rs:86
-#: proxmox-yew-comp/src/utils.rs:401 proxmox-yew-comp/src/utils.rs:430
+#: proxmox-yew-comp/src/utils.rs:412 proxmox-yew-comp/src/utils.rs:441
 msgid "Clone"
 msgstr "クローン"
 
@@ -2404,8 +2447,8 @@ msgid "Color Overrides"
 msgstr "色の上書き"
 
 #: proxmox-widget-toolkit/src/window/ThemeEdit.js:33
-#: proxmox-widget-toolkit/src/window/ThemeEdit.js:40 pmg-gui/js/MainView.js:214
-#: pmg-gui/js/QuarantineView.js:259 pve-manager/www/manager6/Workspace.js:425
+#: proxmox-widget-toolkit/src/window/ThemeEdit.js:40 pmg-gui/js/MainView.js:221
+#: pmg-gui/js/QuarantineView.js:301 pve-manager/www/manager6/Workspace.js:425
 #: proxmox-backup/www/MainView.js:267
 msgid "Color Theme"
 msgstr "色テーマ"
@@ -2414,10 +2457,6 @@ msgstr "色テーマ"
 #, fuzzy
 msgid "Columns"
 msgstr "CTボリューム"
-
-#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:187
-msgid "Coming soon"
-msgstr ""
 
 #: pve-manager/www/manager6/ha/Fencing.js:33
 msgid "Command"
@@ -2535,15 +2574,19 @@ msgstr "Login失敗"
 #: proxmox-backup/www/window/UserEdit.js:174
 #: proxmox-backup/www/window/VerifyJobEdit.js:148
 #: proxmox-datacenter-manager/ui/src/widget/pve_network_selector.rs:164
+#: proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:204
+#: pve-yew-mobile-gui/src/form/pve_network_selector.rs:157
 #: proxmox-yew-comp/src/apt_repositories.rs:784
 #: proxmox-yew-comp/src/auth_edit_openid.rs:138
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:245
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:369
 #: proxmox-yew-comp/src/configuration/network_edit.rs:164
 #: proxmox-yew-comp/src/configuration/network_edit.rs:260
 #: proxmox-yew-comp/src/configuration/network_edit.rs:295
 #: proxmox-yew-comp/src/user_panel.rs:417
 #: proxmox-yew-comp/src/user_panel.rs:511
 #: proxmox-yew-comp/src/user_panel.rs:537
+#: proxmox-yew-comp/src/token_panel.rs:436
+#: proxmox-yew-comp/src/token_panel.rs:465
 msgid "Comment"
 msgstr "コメント"
 
@@ -2563,7 +2606,7 @@ msgstr "コンポーネント"
 #: pve-manager/www/manager6/window/Backup.js:24
 #: proxmox-backup/www/tape/DriveStatus.js:349
 #: proxmox-backup/www/window/ZFSCreate.js:54
-#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:95
+#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:87
 msgid "Compression"
 msgstr "圧縮"
 
@@ -2612,7 +2655,7 @@ msgstr "{0}の構成が正しくありません('{1}'!='{2}')"
 
 #: pve-manager/www/manager6/Utils.js:2104
 #: proxmox-datacenter-manager/ui/src/tasks.rs:56
-#: proxmox-yew-comp/src/utils.rs:402
+#: proxmox-yew-comp/src/utils.rs:413
 msgid "Configure"
 msgstr "設定"
 
@@ -2635,9 +2678,9 @@ msgstr "設定済み"
 
 #: proxmox-widget-toolkit/src/button/Button.js:49
 #: proxmox-widget-toolkit/src/window/SafeDestroy.js:7
-#: pmg-gui/js/RuleConfiguration.js:99 pmg-gui/js/RuleInfo.js:39
-#: pmg-gui/js/controller/QuarantineController.js:101
-#: pmg-gui/js/mobile/app.js:35 pve-manager/www/manager6/button/Split.js:43
+#: pmg-gui/js/PostfixMailQueue.js:82 pmg-gui/js/RuleConfiguration.js:99
+#: pmg-gui/js/RuleInfo.js:39 pmg-gui/js/controller/QuarantineController.js:101
+#: pve-manager/www/manager6/button/Split.js:43
 #: pve-manager/www/manager6/ceph/OSD.js:452
 #: pve-manager/www/manager6/dc/Backup.js:632
 #: pve-manager/www/manager6/lxc/CmdMenu.js:26
@@ -2654,8 +2697,8 @@ msgstr "設定済み"
 #: pve-manager/www/manager6/window/GuestStop.js:72
 #: pve-manager/www/manager6/window/Restore.js:103
 #: proxmox-backup/www/datastore/Content.js:669
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:501
-#: proxmox-yew-comp/src/safe_confirm_dialog.rs:155
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:516
+#: proxmox-yew-comp/src/safe_confirm_dialog.rs:162
 #: proxmox-yew-comp/src/tfa/tfa_confirm_remove.rs:97
 #: proxmox-yew-widget-toolkit/src/widget/confirm_dialog.rs:66
 msgid "Confirm"
@@ -2710,7 +2753,7 @@ msgstr "({0}) パスワードの確認"
 msgid "Connection"
 msgstr "接続エラー"
 
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:83
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:85
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_nodes.rs:57
 #, fuzzy
 msgid "Connection Certificate"
@@ -2774,11 +2817,11 @@ msgstr "コンセントタイプ"
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/dashboard_panel.rs:229
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/config_panel.rs:88
 #: pve-yew-mobile-gui/src/pages/page_node_status/dashboard_panel.rs:142
-#: proxmox-yew-comp/src/utils.rs:421 proxmox-yew-comp/src/utils.rs:428
+#: proxmox-yew-comp/src/utils.rs:432 proxmox-yew-comp/src/utils.rs:439
 msgid "Console"
 msgstr "コンソール"
 
-#: proxmox-yew-comp/src/utils.rs:221
+#: proxmox-yew-comp/src/utils.rs:240
 #, fuzzy
 msgid "Console (xterm.js)"
 msgstr "コンソールビューワ"
@@ -2838,7 +2881,8 @@ msgstr "ノード {1} 上のコンテナ {0}"
 #: proxmox-backup/www/tape/ChangerStatus.js:857
 #: proxmox-backup/www/tape/ChangerStatus.js:977
 #: proxmox-backup/www/tape/TapeManagement.js:18
-#: proxmox-datacenter-manager/ui/src/pve/storage.rs:280
+#: proxmox-datacenter-manager/ui/src/pbs/datastore.rs:63
+#: proxmox-datacenter-manager/ui/src/pve/storage.rs:274
 msgid "Content"
 msgstr "内容"
 
@@ -2879,7 +2923,7 @@ msgstr "コントローラ"
 #: pve-manager/www/manager6/qemu/Config.js:96
 #: proxmox-datacenter-manager/ui/src/tasks.rs:73
 #: proxmox-datacenter-manager/ui/src/tasks.rs:105
-#: proxmox-yew-comp/src/utils.rs:419 proxmox-yew-comp/src/utils.rs:449
+#: proxmox-yew-comp/src/utils.rs:430 proxmox-yew-comp/src/utils.rs:460
 msgid "Convert to template"
 msgstr "テンプレートに変換"
 
@@ -2907,12 +2951,13 @@ msgstr "リカバリキーのコピー"
 
 #: pve-manager/www/manager6/dc/TokenEdit.js:163
 #: proxmox-backup/www/window/TokenEdit.js:213
+#: proxmox-yew-comp/src/token_panel.rs:372
 msgid "Copy Secret Value"
 msgstr "シークレット値をコピー"
 
 #: pve-manager/www/manager6/Utils.js:2092
 #: proxmox-datacenter-manager/ui/src/tasks.rs:44
-#: proxmox-yew-comp/src/utils.rs:390
+#: proxmox-yew-comp/src/utils.rs:401
 msgid "Copy data"
 msgstr "データのコピー"
 
@@ -2938,8 +2983,8 @@ msgstr "クリップボードにコピー"
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:130
 #: pve-manager/www/manager6/window/GuestImport.js:501
 #: pve-manager/www/manager6/window/Restore.js:336
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:116
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:218
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:108
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:210
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/resources_panel.rs:71
 msgid "Cores"
 msgstr "コア"
@@ -2966,6 +3011,7 @@ msgstr ""
 #: pmg-gui/js/HourlyMailDistribution.js:12 pmg-gui/js/ReceiverStatistics.js:168
 #: pmg-gui/js/SenderStatistics.js:160 pmg-gui/js/SpamScoreDistribution.js:39
 #: pmg-gui/js/VirusCharts.js:30 proxmox-backup/www/datastore/Content.js:1165
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:125
 msgid "Count"
 msgstr "カウント"
 
@@ -3019,12 +3065,12 @@ msgstr "カウント"
 #: proxmox-datacenter-manager/ui/src/tasks.rs:107
 #: proxmox-yew-comp/src/configuration/network_view.rs:214
 #: proxmox-yew-comp/src/configuration/network_edit.rs:346
-#: proxmox-yew-comp/src/utils.rs:367 proxmox-yew-comp/src/utils.rs:368
-#: proxmox-yew-comp/src/utils.rs:369 proxmox-yew-comp/src/utils.rs:370
-#: proxmox-yew-comp/src/utils.rs:371 proxmox-yew-comp/src/utils.rs:378
-#: proxmox-yew-comp/src/utils.rs:383 proxmox-yew-comp/src/utils.rs:392
+#: proxmox-yew-comp/src/utils.rs:378 proxmox-yew-comp/src/utils.rs:379
+#: proxmox-yew-comp/src/utils.rs:380 proxmox-yew-comp/src/utils.rs:381
+#: proxmox-yew-comp/src/utils.rs:382 proxmox-yew-comp/src/utils.rs:389
 #: proxmox-yew-comp/src/utils.rs:394 proxmox-yew-comp/src/utils.rs:403
-#: proxmox-yew-comp/src/utils.rs:431 proxmox-yew-comp/src/utils.rs:451
+#: proxmox-yew-comp/src/utils.rs:405 proxmox-yew-comp/src/utils.rs:414
+#: proxmox-yew-comp/src/utils.rs:442 proxmox-yew-comp/src/utils.rs:462
 msgid "Create"
 msgstr "作成"
 
@@ -3041,7 +3087,7 @@ msgstr "CephFSを作成"
 #: pve-manager/www/manager6/dc/Cluster.js:155
 #: pve-manager/www/manager6/dc/ClusterEdit.js:5
 #: proxmox-datacenter-manager/ui/src/tasks.rs:33
-#: proxmox-yew-comp/src/utils.rs:381
+#: proxmox-yew-comp/src/utils.rs:392
 msgid "Create Cluster"
 msgstr "クラスタを作成"
 
@@ -3099,7 +3145,7 @@ msgstr "作成時刻"
 msgid "Critical"
 msgstr "Critical"
 
-#: proxmox-widget-toolkit/src/Utils.js:78 proxmox-yew-comp/src/lib.rs:277
+#: proxmox-widget-toolkit/src/Utils.js:78 proxmox-yew-comp/src/lib.rs:283
 msgid "Croatian"
 msgstr "クロアチア語"
 
@@ -3141,7 +3187,7 @@ msgstr "カスタムルールスコア"
 msgid "Custom Scores"
 msgstr "カスタムスコア"
 
-#: proxmox-widget-toolkit/src/Utils.js:70 proxmox-yew-comp/src/lib.rs:267
+#: proxmox-widget-toolkit/src/Utils.js:70 proxmox-yew-comp/src/lib.rs:273
 msgid "Czech"
 msgstr ""
 
@@ -3181,7 +3227,7 @@ msgstr "DKIM"
 #: pve-manager/www/manager6/node/Config.js:211
 #: pve-manager/www/manager6/sdn/ZoneView.js:159
 #: proxmox-backup/www/SystemConfiguration.js:35
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:112
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:134
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/resources_panel.rs:123
 msgid "DNS"
 msgstr "DNS"
@@ -3256,11 +3302,11 @@ msgstr "DNS サーバ"
 msgid "DNS servers"
 msgstr "DNS サーバ"
 
-#: pmg-gui/js/MailProxyOptions.js:22
+#: pmg-gui/js/MailProxyOptions.js:106 pmg-gui/js/MailProxyOptions.js:116
 msgid "DNSBL Sites"
 msgstr "DNSBLサイト"
 
-#: pmg-gui/js/MailProxyOptions.js:28
+#: pmg-gui/js/MailProxyOptions.js:98
 msgid "DNSBL Threshold"
 msgstr "DNSBL 閾値"
 
@@ -3272,7 +3318,7 @@ msgstr "日毎"
 msgid "Damaged"
 msgstr "ダメージあり"
 
-#: proxmox-widget-toolkit/src/Utils.js:71 proxmox-yew-comp/src/lib.rs:268
+#: proxmox-widget-toolkit/src/Utils.js:71 proxmox-yew-comp/src/lib.rs:274
 msgid "Danish"
 msgstr "デンマーク語"
 
@@ -3291,7 +3337,7 @@ msgstr "ダークモードフィルタ"
 msgid "Dashboard"
 msgstr "ダッシュボード"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:683
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:695
 #, fuzzy
 msgid "Dashboard Configuration"
 msgstr "設定の表示"
@@ -3330,7 +3376,7 @@ msgstr "データベースミラー"
 #: pve-manager/www/manager6/tree/ResourceTree.js:286
 #: pve-manager/www/manager6/tree/ResourceTree.js:345
 #: pve-manager/www/manager6/tree/ResourceTree.js:547
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:576
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:591
 msgid "Datacenter"
 msgstr "データセンター"
 
@@ -3384,7 +3430,13 @@ msgstr "データストアが無効"
 msgid "Datastore is not mounted"
 msgstr "データストアが非マウント"
 
+#: proxmox-datacenter-manager/ui/src/pbs/datastore.rs:50
+#, fuzzy
+msgid "Datastore {0}"
+msgstr "データストア"
+
 #: proxmox-backup/www/datastore/DataStoreList.js:194
+#: proxmox-datacenter-manager/ui/src/pbs/tree.rs:239
 msgid "Datastores"
 msgstr "データストア"
 
@@ -3414,7 +3466,7 @@ msgstr "表示する日"
 
 #: pve-manager/www/manager6/Utils.js:2060
 #: proxmox-datacenter-manager/ui/src/tasks.rs:10
-#: proxmox-yew-comp/src/utils.rs:358
+#: proxmox-yew-comp/src/utils.rs:369
 msgid "Deactivate"
 msgstr "無効化"
 
@@ -3461,21 +3513,29 @@ msgstr "Deep Scrub OSD.{0}"
 #: pve-manager/www/manager6/dc/OptionView.js:346
 #: pve-manager/www/manager6/grid/FirewallOptions.js:113
 #: pve-manager/www/manager6/lxc/Options.js:95
-#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:83
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:173
+#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:105
 #: pve-yew-mobile-gui/src/form/hotplug_feature_selector.rs:39
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:60
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:66
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:34
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:100
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_memory_property.rs:76
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:52
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:82
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_bios_property.rs:52
-#: pve-yew-mobile-gui/src/pages/page_qemu_status/hardware_panel.rs:154
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:26
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:107
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:148
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:165
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_machine_property.rs:51
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_machine_property.rs:140
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_scsihw_property.rs:20
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_scsihw_property.rs:41
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:36
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:91
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_memory_property.rs:78
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:88
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:108
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_bios_property.rs:43
+#: pve-yew-mobile-gui/src/widgets/editable_property.rs:166
+#: proxmox-yew-comp/src/auth_view.rs:418 proxmox-yew-comp/src/auth_view.rs:486
 #: proxmox-yew-comp/src/auth_edit_openid.rs:120
 #: proxmox-yew-comp/src/auth_edit_openid.rs:128
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:125
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:197
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:231
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:294
 #: proxmox-yew-widget-toolkit/src/widget/form/tristate_boolean.rs:168
 msgid "Default"
 msgstr "既定"
@@ -3516,6 +3576,7 @@ msgstr "既定の名前空間"
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:85
 #: proxmox-widget-toolkit/src/window/AuthEditOpenId.js:42
 #: proxmox-widget-toolkit/src/window/AuthEditSimple.js:19
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:339
 msgid "Default Realm"
 msgstr "既定の Realm"
 
@@ -3529,7 +3590,7 @@ msgstr "既定のストレージ"
 
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:366
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:256
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:118
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:224
 msgid "Default Sync Options"
 msgstr "既定の同期オプション"
 
@@ -3578,14 +3639,13 @@ msgstr ""
 msgid "Delay"
 msgstr "日毎"
 
-#: pmg-gui/js/MailProxyOptions.js:76
+#: pmg-gui/js/MailProxyOptions.js:64
 msgid "Delay Warning Time (hours)"
 msgstr "遅れ警告時間(時)"
 
 #: pmg-gui/js/AttachmentQuarantine.js:153
 #: pmg-gui/js/QuarantineContextMenu.js:25 pmg-gui/js/SpamContextMenu.js:12
 #: pmg-gui/js/SpamQuarantine.js:283 pmg-gui/js/VirusQuarantine.js:166
-#: pmg-gui/js/mobile/mailview.js:51 pmg-gui/js/mobile/quarantineview.js:120
 #: pve-manager/www/manager6/sdn/FabricsView.js:131
 #: pve-manager/www/manager6/tree/DhcpTree.js:272
 #: pmg-yew-quarantine-gui/src/spam_list.rs:282
@@ -3603,7 +3663,7 @@ msgstr "カスタム証明書の削除"
 #: pve-manager/www/manager6/Utils.js:2135
 #: proxmox-datacenter-manager/ui/src/tasks.rs:58
 #: proxmox-datacenter-manager/ui/src/tasks.rs:88
-#: proxmox-yew-comp/src/utils.rs:404 proxmox-yew-comp/src/utils.rs:432
+#: proxmox-yew-comp/src/utils.rs:415 proxmox-yew-comp/src/utils.rs:443
 msgid "Delete Snapshot"
 msgstr "スナップショットの削除"
 
@@ -3624,6 +3684,11 @@ msgstr "全メッセージを削除"
 msgid "Delete custom certificate and switch to generated one?"
 msgstr "固有の証明書を削除し新しいものに切替えますか？"
 
+#: pve-yew-mobile-gui/src/pages/page_qemu_status/hardware_panel.rs:214
+#, fuzzy
+msgid "Delete device"
+msgstr "ソースの削除"
+
 #: pve-manager/www/manager6/storage/PBSEdit.js:310
 msgid "Delete existing encryption key"
 msgstr "既存の暗号化キーの削除"
@@ -3631,6 +3696,11 @@ msgstr "既存の暗号化キーの削除"
 #: pve-manager/www/manager6/qemu/HDMove.js:85
 msgid "Delete source"
 msgstr "ソースの削除"
+
+#: pmg-gui/js/PostfixMailQueue.js:100
+#, fuzzy
+msgid "Delete {0} selected mails?"
+msgstr "なにも{0}が選択されていません"
 
 #: pve-manager/www/manager6/storage/PBSEdit.js:441
 msgid ""
@@ -3643,7 +3713,6 @@ msgstr ""
 #: pmg-gui/js/AttachmentQuarantine.js:147
 #: pmg-gui/js/QuarantineContextMenu.js:19 pmg-gui/js/SpamContextMenu.js:6
 #: pmg-gui/js/SpamQuarantine.js:277 pmg-gui/js/VirusQuarantine.js:160
-#: pmg-gui/js/mobile/mailview.js:60 pmg-gui/js/mobile/quarantineview.js:97
 #: pmg-yew-quarantine-gui/src/spam_list.rs:260
 #: pmg-yew-quarantine-gui/src/page_mail_view.rs:125
 msgid "Deliver"
@@ -3652,6 +3721,11 @@ msgstr "Deliver"
 #: pmg-gui/js/FetchmailEdit.js:77 pmg-gui/js/FetchmailView.js:123
 msgid "Deliver to"
 msgstr "Deliver to"
+
+#: pmg-gui/js/PostfixMailQueue.js:96
+#, fuzzy
+msgid "Deliver {0} selected mails?"
+msgstr "なにも{0}が選択されていません"
 
 #: pve-manager/www/manager6/UIOptions.js:75
 msgid "Dense"
@@ -3675,7 +3749,7 @@ msgstr "テープ密度"
 #: proxmox-widget-toolkit/src/window/TfaEdit.js:61
 #: proxmox-widget-toolkit/src/window/TfaEdit.js:200
 #: pmg-gui/js/ActionList.js:133 pmg-gui/js/ObjectGroupList.js:40
-#: pmg-gui/js/ObjectGroupList.js:150 pmg-gui/js/SpamInfoGrid.js:75
+#: pmg-gui/js/ObjectGroupList.js:150 pmg-gui/js/SpamInfoGrid.js:79
 #: pve-manager/www/manager6/data/ResourceStore.js:115
 #: pve-manager/www/manager6/dc/Tasks.js:116
 #: pve-manager/www/manager6/form/GlobalSearchField.js:79
@@ -3741,10 +3815,10 @@ msgstr "送り先"
 #: proxmox-datacenter-manager/ui/src/tasks.rs:29
 #: proxmox-datacenter-manager/ui/src/tasks.rs:59
 #: proxmox-datacenter-manager/ui/src/tasks.rs:89
-#: proxmox-yew-comp/src/utils.rs:372 proxmox-yew-comp/src/utils.rs:373
-#: proxmox-yew-comp/src/utils.rs:374 proxmox-yew-comp/src/utils.rs:375
-#: proxmox-yew-comp/src/utils.rs:376 proxmox-yew-comp/src/utils.rs:377
-#: proxmox-yew-comp/src/utils.rs:405 proxmox-yew-comp/src/utils.rs:433
+#: proxmox-yew-comp/src/utils.rs:383 proxmox-yew-comp/src/utils.rs:384
+#: proxmox-yew-comp/src/utils.rs:385 proxmox-yew-comp/src/utils.rs:386
+#: proxmox-yew-comp/src/utils.rs:387 proxmox-yew-comp/src/utils.rs:388
+#: proxmox-yew-comp/src/utils.rs:416 proxmox-yew-comp/src/utils.rs:444
 msgid "Destroy"
 msgstr "破棄"
 
@@ -3766,7 +3840,7 @@ msgstr "全てのデータを破壊（危険!)"
 
 #: pve-manager/www/manager6/Utils.js:2129
 #: proxmox-datacenter-manager/ui/src/tasks.rs:82
-#: proxmox-yew-comp/src/utils.rs:426
+#: proxmox-yew-comp/src/utils.rs:437
 msgid "Destroy image from unknown guest"
 msgstr "不明のゲストからイメージを破棄"
 
@@ -3876,7 +3950,7 @@ msgstr "送信方向"
 #: proxmox-datacenter-manager/ui/src/tasks.rs:38
 #: proxmox-yew-comp/src/acme/acme_register_account.rs:113
 #: proxmox-yew-comp/src/acme/acme_accounts.rs:230
-#: proxmox-yew-comp/src/utils.rs:384
+#: proxmox-yew-comp/src/utils.rs:395
 msgid "Directory"
 msgstr "ディレクトリ"
 
@@ -3896,7 +3970,7 @@ msgstr ""
 
 #: pve-manager/www/manager6/Utils.js:2085 proxmox-backup/www/Utils.js:433
 #: proxmox-datacenter-manager/ui/src/tasks.rs:37
-#: proxmox-yew-comp/src/utils.rs:383
+#: proxmox-yew-comp/src/utils.rs:394
 msgid "Directory Storage"
 msgstr "ディレクトリストレージ"
 
@@ -3917,9 +3991,10 @@ msgstr "MXルックアップ(SMTP)を無効にする"
 #: proxmox-widget-toolkit/src/Utils.js:47 pve-manager/www/manager6/Utils.js:401
 #: pve-manager/www/manager6/Utils.js:403 pve-manager/www/manager6/Utils.js:437
 #: pve-yew-mobile-gui/src/form/hotplug_feature_selector.rs:47
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:34
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:100
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:82
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:36
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:91
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:19
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:108
 msgid "Disabled"
 msgstr "無効"
 
@@ -3945,6 +4020,7 @@ msgstr "免責事項"
 
 #: pve-manager/www/manager6/lxc/Network.js:278
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:105
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_network_property.rs:62
 msgid "Disconnect"
 msgstr "切断"
 
@@ -3967,7 +4043,7 @@ msgstr "切断済"
 #: pve-yew-mobile-gui/src/form/hotplug_feature_selector.rs:41
 #: pve-yew-mobile-gui/src/form/hotplug_feature_selector.rs:53
 #: pve-yew-mobile-gui/src/form/hotplug_feature_selector.rs:190
-#: proxmox-yew-comp/src/utils.rs:223
+#: proxmox-yew-comp/src/utils.rs:242
 msgid "Disk"
 msgstr "ディスク"
 
@@ -3975,8 +4051,9 @@ msgstr "ディスク"
 msgid "Disk Action"
 msgstr "ディスクの動作"
 
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:420
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:433
+#: proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:245
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:418
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:431
 #, fuzzy
 msgid "Disk I/O"
 msgstr "Disk I/O"
@@ -3994,14 +4071,16 @@ msgstr "ディスクイメージ"
 msgid "Disk Move"
 msgstr "ディスク移動"
 
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:208
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:210
+#: proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:141
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:211
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:213
 #, fuzzy
 msgid "Disk Read"
 msgstr "ディスク読取り合計"
 
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:209
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:211
+#: proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:142
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:212
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:214
 #, fuzzy
 msgid "Disk Write"
 msgstr "ディスク書き込み合計"
@@ -4036,7 +4115,7 @@ msgstr "ディスク"
 
 #: pve-manager/www/manager6/qemu/DisplayEdit.js:141
 #: pve-manager/www/manager6/qemu/HardwareView.js:167
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:59
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:162
 msgid "Display"
 msgstr "ディスプレイ"
 
@@ -4049,6 +4128,12 @@ msgstr "バックアップの暗号化不可"
 msgid "Do not use any media"
 msgstr "メディアを使用しない"
 
+#: proxmox-yew-comp/src/token_panel.rs:198
+msgid ""
+"Do you want to regenerate the secret of the selected API token? All current "
+"usage sites will lose access!"
+msgstr ""
+
 #: proxmox-widget-toolkit/src/panel/NotificationConfigView.js:14
 msgid "Do you want to reset {0} to its default settings?"
 msgstr "{0}をデフォルト設定にリセットしてもよろしいですか？"
@@ -4057,7 +4142,7 @@ msgstr "{0}をデフォルト設定にリセットしてもよろしいですか
 msgid "Do you want to send a test notification to '{0}'?"
 msgstr "'{0}'にテスト通知を送信しますか?"
 
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:94
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:96
 #, fuzzy
 msgid "Do you want to trust the certificate and save its fingerprint?"
 msgstr "{0}をデフォルト設定にリセットしてもよろしいですか？"
@@ -4066,9 +4151,9 @@ msgstr "{0}をデフォルト設定にリセットしてもよろしいですか
 msgid "Do you want to trust them by saving their fingerprint?"
 msgstr ""
 
-#: pmg-gui/js/MainView.js:188 pve-manager/www/manager6/Workspace.js:371
+#: pmg-gui/js/MainView.js:195 pve-manager/www/manager6/Workspace.js:371
 #: proxmox-backup/www/MainView.js:241
-#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:182
+#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:183
 msgid "Documentation"
 msgstr "ドキュメント"
 
@@ -4123,7 +4208,7 @@ msgstr "Down"
 #: pve-manager/www/manager6/window/DownloadUrlToStorage.js:13
 #: proxmox-backup/www/Subscription.js:62
 #: proxmox-datacenter-manager/ui/src/tasks.rs:39
-#: proxmox-yew-comp/src/utils.rs:385
+#: proxmox-yew-comp/src/utils.rs:396
 msgid "Download"
 msgstr "ダウンロード"
 
@@ -4220,7 +4305,7 @@ msgstr "重複したリンク番号は使用できません。"
 msgid "Duration"
 msgstr "Duration"
 
-#: proxmox-widget-toolkit/src/Utils.js:85 proxmox-yew-comp/src/lib.rs:283
+#: proxmox-widget-toolkit/src/Utils.js:85 proxmox-yew-comp/src/lib.rs:289
 msgid "Dutch"
 msgstr "オランダ語"
 
@@ -4260,7 +4345,7 @@ msgstr "'{0}'のEメールアドレス"
 
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:351
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:246
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:113
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:219
 msgid "E-Mail attribute"
 msgstr "Eメール属性名"
 
@@ -4360,7 +4445,7 @@ msgstr ""
 #: proxmox-widget-toolkit/src/panel/TfaView.js:294 pmg-gui/js/ActionList.js:107
 #: pmg-gui/js/ClamAVDatabase.js:161 pmg-gui/js/DKIMSettings.js:223
 #: pmg-gui/js/FetchmailView.js:87 pmg-gui/js/LDAPConfig.js:557
-#: pmg-gui/js/MailProxyOptions.js:117 pmg-gui/js/MailProxyPorts.js:32
+#: pmg-gui/js/MailProxyOptions.js:139 pmg-gui/js/MailProxyPorts.js:32
 #: pmg-gui/js/MailProxyRelaying.js:100 pmg-gui/js/MailProxyTLS.js:23
 #: pmg-gui/js/MailProxyTLSDestinations.js:134 pmg-gui/js/MyNetworks.js:90
 #: pmg-gui/js/ObjectGroup.js:208 pmg-gui/js/ObjectGroupList.js:119
@@ -4432,22 +4517,24 @@ msgstr ""
 #: proxmox-backup/www/tape/DriveConfig.js:134
 #: proxmox-backup/www/tape/PoolConfig.js:102
 #: proxmox-datacenter-manager/ui/src/remotes/edit_remote.rs:61
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:202
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:193
 #: proxmox-datacenter-manager/ui/src/tasks.rs:31
 #: proxmox-yew-comp/src/acme/acme_domains.rs:179
 #: proxmox-yew-comp/src/acme/acme_domains.rs:374
 #: proxmox-yew-comp/src/acme/acme_plugins.rs:269
 #: proxmox-yew-comp/src/acme/acme_plugins.rs:492
-#: proxmox-yew-comp/src/auth_view.rs:213
+#: proxmox-yew-comp/src/auth_view.rs:311
 #: proxmox-yew-comp/src/auth_edit_openid.rs:157
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:262
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:386
 #: proxmox-yew-comp/src/configuration/network_view.rs:225
 #: proxmox-yew-comp/src/configuration/network_edit.rs:346
 #: proxmox-yew-comp/src/notes_view.rs:171
 #: proxmox-yew-comp/src/notes_view.rs:199
 #: proxmox-yew-comp/src/tfa/tfa_view.rs:274
 #: proxmox-yew-comp/src/user_panel.rs:180
-#: proxmox-yew-comp/src/user_panel.rs:269 proxmox-yew-comp/src/utils.rs:379
+#: proxmox-yew-comp/src/user_panel.rs:269
+#: proxmox-yew-comp/src/token_panel.rs:185
+#: proxmox-yew-comp/src/token_panel.rs:399 proxmox-yew-comp/src/utils.rs:390
 msgid "Edit"
 msgstr "編集"
 
@@ -4534,7 +4621,7 @@ msgstr "Email (legacy)"
 msgid "Email from address"
 msgstr "送り元メールアドレス"
 
-#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:96
+#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:88
 #, fuzzy
 msgid "Email to"
 msgstr "メールの送信先"
@@ -4557,6 +4644,7 @@ msgstr "メールの送信先"
 #: pve-manager/www/manager6/storage/Base.js:51
 #: pve-manager/www/manager6/window/FirewallLograteEdit.js:12
 #: proxmox-yew-comp/src/apt_repositories.rs:569
+#: proxmox-yew-comp/src/token_panel.rs:504
 msgid "Enable"
 msgstr "有効"
 
@@ -4569,12 +4657,12 @@ msgid "Enable Job"
 msgstr "ジョブを有効化"
 
 #: pve-manager/www/manager6/qemu/SevEdit.js:125
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:78
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:71
 msgid "Enable Kernel Hashes"
 msgstr "カーネルハッシュを有効にする"
 
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:231
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:318
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:319
 msgid "Enable NUMA"
 msgstr "NUMAを有効化"
 
@@ -4614,7 +4702,8 @@ msgstr "新たに有効化"
 
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:385
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:323
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:121
+#: proxmox-yew-comp/src/auth_view.rs:415
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:227
 msgid "Enable new users"
 msgstr "新規ユーザを有効化"
 
@@ -4663,13 +4752,15 @@ msgstr ""
 #: proxmox-backup/www/window/PruneJobEdit.js:126
 #: proxmox-backup/www/window/TokenEdit.js:59
 #: proxmox-backup/www/window/UserEdit.js:134
-#: proxmox-datacenter-manager/ui/src/pve/storage.rs:262
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:22
 #: proxmox-yew-comp/src/apt_repositories.rs:760
 #: proxmox-yew-comp/src/tfa/tfa_view.rs:365
 #: proxmox-yew-comp/src/tfa/tfa_edit.rs:67
 #: proxmox-yew-comp/src/user_panel.rs:336
 #: proxmox-yew-comp/src/user_panel.rs:507
 #: proxmox-yew-comp/src/user_panel.rs:536
+#: proxmox-yew-comp/src/token_panel.rs:434
+#: proxmox-yew-comp/src/token_panel.rs:464
 msgid "Enabled"
 msgstr "有効"
 
@@ -4753,7 +4844,7 @@ msgstr "エンドポイント名"
 msgid "Endpoints"
 msgstr "エンドポイント名"
 
-#: proxmox-widget-toolkit/src/Utils.js:73 proxmox-yew-comp/src/lib.rs:270
+#: proxmox-widget-toolkit/src/Utils.js:73 proxmox-yew-comp/src/lib.rs:276
 msgid "English"
 msgstr "英語"
 
@@ -4773,6 +4864,12 @@ msgstr "Enterprise (推奨)"
 msgid "Enterprise repository needs valid subscription"
 msgstr "エンタープライズリポジトリには有効なサブスクリプションが必要です"
 
+#: proxmox-yew-comp/src/auth_view.rs:434
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:246
+#, fuzzy
+msgid "Entries"
+msgstr "Entry"
+
 #: pve-manager/www/manager6/qemu/RNGEdit.js:47
 msgid "Entropy source"
 msgstr "Entropy ソース"
@@ -4791,7 +4888,7 @@ msgstr "エンベロープ"
 
 #: pve-manager/www/manager6/Utils.js:2093
 #: proxmox-datacenter-manager/ui/src/tasks.rs:45
-#: proxmox-yew-comp/src/utils.rs:391
+#: proxmox-yew-comp/src/utils.rs:402
 msgid "Erase data"
 msgstr "データを消去"
 
@@ -4835,17 +4932,15 @@ msgstr "消去"
 #: pmg-gui/js/LDAPConfig.js:528 pmg-gui/js/LoginView.js:113
 #: pmg-gui/js/LoginView.js:137 pmg-gui/js/LoginView.js:266
 #: pmg-gui/js/MailTracker.js:195 pmg-gui/js/MailTracker.js:303
-#: pmg-gui/js/PostfixMailQueue.js:69 pmg-gui/js/PostfixMailQueue.js:92
-#: pmg-gui/js/PostfixQShape.js:51 pmg-gui/js/PostfixQShape.js:67
-#: pmg-gui/js/PostfixQShape.js:80 pmg-gui/js/RegexTester.js:55
-#: pmg-gui/js/RuleConfiguration.js:69 pmg-gui/js/RuleConfiguration.js:113
-#: pmg-gui/js/RuleInfo.js:31 pmg-gui/js/RuleInfo.js:59
-#: pmg-gui/js/RuleInfo.js:81 pmg-gui/js/ServerStatus.js:35
-#: pmg-gui/js/SpamDetectorStatus.js:72 pmg-gui/js/Subscription.js:93
-#: pmg-gui/js/Subscription.js:181 pmg-gui/js/UserBlockWelcomeList.js:91
-#: pmg-gui/js/UserView.js:115 pmg-gui/js/Utils.js:797
-#: pmg-gui/js/ViewMailHeaders.js:61 pmg-gui/js/mobile/utils.js:45
-#: pmg-gui/js/mobile/utils.js:48 pmg-gui/js/mobile/utils.js:61
+#: pmg-gui/js/PostfixMailQueue.js:74 pmg-gui/js/PostfixQShape.js:51
+#: pmg-gui/js/PostfixQShape.js:67 pmg-gui/js/PostfixQShape.js:80
+#: pmg-gui/js/RegexTester.js:55 pmg-gui/js/RuleConfiguration.js:69
+#: pmg-gui/js/RuleConfiguration.js:113 pmg-gui/js/RuleInfo.js:31
+#: pmg-gui/js/RuleInfo.js:59 pmg-gui/js/RuleInfo.js:81
+#: pmg-gui/js/ServerStatus.js:35 pmg-gui/js/SpamDetectorStatus.js:72
+#: pmg-gui/js/Subscription.js:93 pmg-gui/js/Subscription.js:181
+#: pmg-gui/js/UserBlockWelcomeList.js:91 pmg-gui/js/UserView.js:115
+#: pmg-gui/js/Utils.js:797 pmg-gui/js/ViewMailHeaders.js:61
 #: pve-manager/www/manager6/Utils.js:1594
 #: pve-manager/www/manager6/Utils.js:1607
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:126
@@ -4976,7 +5071,7 @@ msgstr "エラー"
 msgid "Estimated Full"
 msgstr "Estimated Full"
 
-#: proxmox-widget-toolkit/src/Utils.js:75 proxmox-yew-comp/src/lib.rs:272
+#: proxmox-widget-toolkit/src/Utils.js:75 proxmox-yew-comp/src/lib.rs:278
 msgid "Euskera (Basque)"
 msgstr "バスク語"
 
@@ -5101,6 +5196,9 @@ msgstr "実験的"
 #: proxmox-yew-comp/src/user_panel.rs:357
 #: proxmox-yew-comp/src/user_panel.rs:502
 #: proxmox-yew-comp/src/user_panel.rs:529
+#: proxmox-yew-comp/src/token_panel.rs:420
+#: proxmox-yew-comp/src/token_panel.rs:454
+#: proxmox-yew-comp/src/token_panel.rs:511
 msgid "Expire"
 msgstr "有効期限"
 
@@ -5108,7 +5206,7 @@ msgstr "有効期限"
 #: proxmox-widget-toolkit/src/window/Certificates.js:52
 #: pve-manager/www/manager6/node/Certificates.js:85
 #: pve-manager/www/manager6/node/Certificates.js:345
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:307
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:309
 #: proxmox-yew-comp/src/acme/certificate_list.rs:351
 #: proxmox-yew-comp/src/acme/certificate_list.rs:402
 msgid "Expires"
@@ -5165,6 +5263,7 @@ msgid "Failback"
 msgstr "フォールバック"
 
 #: pve-manager/www/manager6/Utils.js:295
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:438
 msgid "Failed"
 msgstr "失敗"
 
@@ -5186,7 +5285,7 @@ msgstr "フォールバック"
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:173
 #: pve-manager/www/manager6/dc/AuthEditAD.js:38
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:38
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:185
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:297
 msgid "Fallback Server"
 msgstr "フォールバックサーバ"
 
@@ -5195,7 +5294,7 @@ msgid "Fallback from storage config"
 msgstr "ストレージ設定からのフォールバック"
 
 #: pve-manager/www/manager6/qemu/Smbios1Edit.js:81
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:89
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:80
 msgid "Family"
 msgstr "ファミリ"
 
@@ -5245,7 +5344,7 @@ msgstr "フィールド"
 #: proxmox-datacenter-manager/ui/src/tasks.rs:39
 #: proxmox-yew-comp/src/acme/certificate_list.rs:344
 #: proxmox-yew-comp/src/acme/certificate_list.rs:372
-#: proxmox-yew-comp/src/utils.rs:385
+#: proxmox-yew-comp/src/utils.rs:396
 msgid "File"
 msgstr "ファイル"
 
@@ -5258,7 +5357,7 @@ msgstr "ファイルのリストア"
 
 #: pve-manager/www/manager6/Utils.js:2100
 #: proxmox-datacenter-manager/ui/src/tasks.rs:52
-#: proxmox-yew-comp/src/utils.rs:398
+#: proxmox-yew-comp/src/utils.rs:409
 msgid "File Restore Download"
 msgstr "ファイルリストアダウンロード"
 
@@ -5297,10 +5396,12 @@ msgstr "ファイルシステム"
 msgid "Filetype"
 msgstr "ファイルタイプ"
 
-#: proxmox-widget-toolkit/src/node/Tasks.js:262 pmg-gui/js/MailTracker.js:88
-#: pmg-gui/js/PostfixMailQueue.js:149 pmg-gui/js/form/FilterField.js:14
+#: proxmox-widget-toolkit/src/node/Tasks.js:262
+#: pmg-gui/js/DNSBLSitesField.js:163 pmg-gui/js/MailTracker.js:88
+#: pmg-gui/js/PostfixMailQueue.js:157 pmg-gui/js/form/FilterField.js:14
 #: pve-manager/www/manager6/grid/PoolMembers.js:66
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:476
+#: proxmox-datacenter-manager/ui/src/pbs/tree.rs:254
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:491
 msgid "Filter"
 msgstr "フィルタ"
 
@@ -5347,8 +5448,8 @@ msgstr "フィルタは加法的"
 #: proxmox-backup/www/window/DatastoreRepoInfo.js:55
 #: proxmox-backup/www/window/RemoteEdit.js:114
 #: proxmox-backup/www/window/S3ClientEdit.js:113
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:238
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:301
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:240
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:303
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_nodes.rs:277
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_summary.rs:168
 #: proxmox-datacenter-manager/ui/src/remotes/node_url_list.rs:264
@@ -5385,6 +5486,7 @@ msgstr "完了"
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:96
 #: pve-manager/www/manager6/window/FirewallEnableEdit.js:6
 #: pve-manager/www/manager6/window/FirewallEnableEdit.js:22
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_network_property.rs:58
 msgid "Firewall"
 msgstr "ファイアウォール"
 
@@ -5402,7 +5504,7 @@ msgid "First Name"
 msgstr "氏名"
 
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:333
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:104
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:210
 msgid "First Name attribute"
 msgstr "最初の名前の属性"
 
@@ -5450,7 +5552,7 @@ msgstr "一時的な保存用ストレージ"
 msgid "Floppy"
 msgstr "フロッピー"
 
-#: pmg-gui/js/PostfixMailQueue.js:140
+#: pmg-gui/js/PostfixMailQueue.js:146
 msgid "Flush"
 msgstr "フラッシュ"
 
@@ -5458,8 +5560,8 @@ msgstr "フラッシュ"
 msgid "Flush Queue"
 msgstr "キューを開放"
 
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:44
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:81
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:40
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:76
 #, fuzzy
 msgid "Folder Sharing"
 msgstr "フォルダ表示"
@@ -5545,8 +5647,8 @@ msgstr "すべての欄が正しく入力されていないとフォームを送
 #: proxmox-backup/www/tape/ChangerStatus.js:829
 #: proxmox-backup/www/tape/DriveStatus.js:237
 #: proxmox-backup/www/tape/TapeInventory.js:231
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:53
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:241
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:44
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:253
 msgid "Format"
 msgstr "形式"
 
@@ -5596,13 +5698,13 @@ msgstr "Free"
 msgid "Freeze CPU at startup"
 msgstr "起動時に CPU をロック"
 
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:104
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:114
 #, fuzzy
 msgid "Freeze CPU on startup"
 msgstr "起動時に CPU をロック"
 
 #: pve-manager/www/manager6/form/AgentFeatureSelector.js:40
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:68
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:94
 msgid ""
 "Freeze/thaw for guest filesystems disabled. This can lead to inconsistent "
 "disk backups."
@@ -5611,13 +5713,13 @@ msgstr ""
 "り、ディスクバックアップの整合性が失われる可能性があります。"
 
 #: pve-manager/www/manager6/form/AgentFeatureSelector.js:26
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:43
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:76
 msgid "Freeze/thaw guest filesystems on backup for consistency"
 msgstr ""
 "バックアップ時にゲスト・ファイル・システムをフリーズ/フリーズ解除して整合性を"
 "確保"
 
-#: proxmox-widget-toolkit/src/Utils.js:77 proxmox-yew-comp/src/lib.rs:275
+#: proxmox-widget-toolkit/src/Utils.js:77 proxmox-yew-comp/src/lib.rs:281
 msgid "French"
 msgstr "フランス語"
 
@@ -5670,7 +5772,7 @@ msgstr "Slotから"
 msgid "From backup configuration"
 msgstr "バックアップ設定から"
 
-#: pmg-yew-quarantine-gui/src/page_spam_list.rs:80
+#: pmg-yew-quarantine-gui/src/page_spam_list.rs:86
 #, fuzzy
 msgid "From:"
 msgstr "送信者"
@@ -5777,15 +5879,15 @@ msgstr "ゲートウェイ"
 #: pve-manager/www/manager6/window/GuestImport.js:354
 #: proxmox-backup/www/SystemConfiguration.js:74
 #: proxmox-backup/www/window/DataStoreEdit.js:39
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:85
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:190
 msgid "General"
 msgstr "全般"
 
-#: proxmox-widget-toolkit/src/Utils.js:82 proxmox-yew-comp/src/lib.rs:280
+#: proxmox-widget-toolkit/src/Utils.js:82 proxmox-yew-comp/src/lib.rs:286
 msgid "Georgian"
 msgstr "ジョージア語"
 
-#: proxmox-widget-toolkit/src/Utils.js:72 proxmox-yew-comp/src/lib.rs:269
+#: proxmox-widget-toolkit/src/Utils.js:72 proxmox-yew-comp/src/lib.rs:275
 msgid "German"
 msgstr "ドイツ語"
 
@@ -5822,12 +5924,13 @@ msgstr ""
 #: proxmox-widget-toolkit/src/panel/PermissionView.js:152
 #: pve-manager/www/manager6/dc/PermissionView.js:148
 #: proxmox-yew-comp/src/user_panel.rs:296
+#: proxmox-yew-comp/src/token_panel.rs:314
 msgid "Granted Permissions"
 msgstr "許可されたアクセス権限"
 
 #: pve-manager/www/manager6/qemu/DisplayEdit.js:50
 #: pve-manager/www/manager6/qemu/SystemEdit.js:81
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:33
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:130
 msgid "Graphic card"
 msgstr "グラフィックカード"
 
@@ -5941,11 +6044,11 @@ msgid "Guest user"
 msgstr "ゲストユーザ"
 
 #: pve-manager/www/manager6/dc/Guests.js:5
-#: proxmox-datacenter-manager/ui/src/pve/remote.rs:192
+#: proxmox-datacenter-manager/ui/src/pve/remote.rs:190
 msgid "Guests"
 msgstr "ゲスト"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:632
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:648
 msgid "Guests With the Highest CPU Usage"
 msgstr ""
 
@@ -6035,8 +6138,8 @@ msgstr ""
 msgid "HA rule errors"
 msgstr "任意のルールに一致"
 
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:321
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:335
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:322
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:336
 #, fuzzy
 msgid "HA state"
 msgstr "HA状態"
@@ -6049,6 +6152,11 @@ msgstr "HA 状態"
 #: pve-manager/www/manager6/node/StatusView.js:73
 #: proxmox-backup/www/panel/NodeInfo.js:113
 msgid "HD space"
+msgstr "HDスペース"
+
+#: proxmox-yew-comp/src/node_info.rs:170
+#, fuzzy
+msgid "HD space (root)"
 msgstr "HDスペース"
 
 #: pve-manager/www/manager6/dc/MetricServerView.js:681
@@ -6064,8 +6172,8 @@ msgstr "HTTP プロキシ"
 #: pve-manager/www/manager6/qemu/HDEdit.js:547
 #: pve-manager/www/manager6/qemu/HardwareView.js:250
 #: pve-manager/www/manager6/qemu/HardwareView.js:725
-#: pve-yew-mobile-gui/src/pages/page_qemu_status/hardware_panel.rs:175
-#: pve-yew-mobile-gui/src/pages/page_qemu_status/hardware_panel.rs:186
+#: pve-yew-mobile-gui/src/pages/page_qemu_status/hardware_panel.rs:291
+#: pve-yew-mobile-gui/src/pages/page_qemu_status/hardware_panel.rs:302
 msgid "Hard Disk"
 msgstr "ハードディスク"
 
@@ -6074,7 +6182,7 @@ msgid "Hardlink"
 msgstr "ハードリンク"
 
 #: pve-manager/www/manager6/qemu/Config.js:319
-#: pve-yew-mobile-gui/src/pages/page_qemu_status/hardware_panel.rs:276
+#: pve-yew-mobile-gui/src/pages/page_qemu_status/hardware_panel.rs:457
 msgid "Hardware"
 msgstr "ハードウェア"
 
@@ -6103,7 +6211,7 @@ msgid "Header Attribute"
 msgstr "ヘッダ属性"
 
 #: proxmox-widget-toolkit/src/panel/WebhookEditPanel.js:70
-#: pmg-gui/js/PostfixMailQueue.js:134
+#: pmg-gui/js/PostfixMailQueue.js:140
 msgid "Headers"
 msgstr "ヘッダ"
 
@@ -6123,7 +6231,7 @@ msgstr "Heartbeat Back アドレス"
 msgid "Heartbeat Front Address"
 msgstr "Heartbeat Frontアドレス"
 
-#: proxmox-widget-toolkit/src/Utils.js:79 proxmox-yew-comp/src/lib.rs:276
+#: proxmox-widget-toolkit/src/Utils.js:79 proxmox-yew-comp/src/lib.rs:282
 msgid "Hebrew"
 msgstr "ヘブライ語"
 
@@ -6154,15 +6262,16 @@ msgstr "ヒューリスティックスコア"
 #: pve-manager/www/manager6/qemu/Config.js:190
 #: proxmox-datacenter-manager/ui/src/tasks.rs:72
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/dashboard_panel.rs:221
-#: proxmox-yew-comp/src/utils.rs:418
+#: proxmox-yew-comp/src/utils.rs:429
 msgid "Hibernate"
 msgstr "ハイバネート"
 
 #: pve-manager/www/manager6/qemu/HardwareView.js:203
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:287
 msgid "Hibernation VM State"
 msgstr "ハイバネーションVM状態"
 
-#: pmg-gui/js/MailProxyOptions.js:74
+#: pmg-gui/js/MailProxyOptions.js:62
 msgid "Hide Internal Hosts"
 msgstr "内部ホストを隠す"
 
@@ -6206,7 +6315,7 @@ msgstr "ホスト"
 msgid "Host CPU usage"
 msgstr "ホストCPU使用率"
 
-#: proxmox-datacenter-manager/ui/src/pve/remote.rs:211
+#: proxmox-datacenter-manager/ui/src/pve/remote.rs:209
 #, fuzzy
 msgid "Host CPU usage (avg.)"
 msgstr "ホストCPU使用率"
@@ -6226,7 +6335,7 @@ msgstr "ホストメモリ使用状況"
 msgid "Host Memory used"
 msgstr "ホストメモリ使用状況"
 
-#: proxmox-datacenter-manager/ui/src/pve/remote.rs:231
+#: proxmox-datacenter-manager/ui/src/pve/remote.rs:233
 #, fuzzy
 msgid "Host Storage used"
 msgstr "ストレージ使用状態"
@@ -6273,7 +6382,7 @@ msgstr "ホスト"
 #: pve-manager/www/manager6/qemu/Options.js:168
 #: pve-manager/www/manager6/qemu/Options.js:174
 #: pve-manager/www/manager6/qemu/Options.js:180
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:204
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:216
 msgid "Hotplug"
 msgstr "Hotplug"
 
@@ -6363,6 +6472,7 @@ msgstr ""
 #: pve-manager/www/manager6/node/StatusView.js:35
 #: pve-manager/www/manager6/node/Summary.js:166
 #: proxmox-backup/www/panel/NodeInfo.js:87
+#: proxmox-yew-comp/src/node_info.rs:140
 msgid "IO delay"
 msgstr "IO 遅延"
 
@@ -6504,13 +6614,14 @@ msgstr "ISO イメージ"
 msgid "Idle"
 msgstr "Idle"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:724
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:736
 msgid ""
 "If a response from a remote is older than 'Max Age', it will be updated on "
 "the next refresh."
 msgstr ""
 
 #: pve-manager/www/manager6/qemu/DisplayEdit.js:127
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:122
 msgid ""
 "If the display type uses SPICE you are able to use the default SPICE "
 "clipboard."
@@ -6584,6 +6695,23 @@ msgid ""
 msgstr ""
 "OVAをインポートするには、含まれるディスクを抽出して処理するために、一時的に作"
 "業用ストレージに追加のスペースが必要です。"
+
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:104
+msgid ""
+"Improve performance for nested virtualization. Only supported on Intel CPUs."
+msgstr ""
+
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:103
+msgid ""
+"Improve performance in overcommitted Windows guests. May lead to guest "
+"bluescreens on old CPUs."
+msgstr ""
+
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:100
+msgid ""
+"Improves Spectre mitigation performance with AMD CPUs, best used with \"virt-"
+"ssbd\""
+msgstr ""
 
 #: pmg-gui/js/Utils.js:113 pve-manager/www/manager6/ceph/StatusDetail.js:39
 msgid "In"
@@ -6692,7 +6820,7 @@ msgstr "Ingress"
 
 #: proxmox-widget-toolkit/src/Utils.js:750
 #: proxmox-widget-toolkit/src/panel/DiskList.js:407
-#: proxmox-yew-comp/src/utils.rs:223
+#: proxmox-yew-comp/src/utils.rs:242
 msgid "Initialize Disk with GPT"
 msgstr "GPTでディスクを初期化"
 
@@ -6727,6 +6855,8 @@ msgid "Installation"
 msgstr "インストール"
 
 #: pve-manager/www/manager6/qemu/MachineEdit.js:159
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_machine_property.rs:130
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_machine_property.rs:143
 msgid "Intel (AMD Compatible)"
 msgstr "Intel (AMD互換)"
 
@@ -6816,7 +6946,7 @@ msgstr "分離ポート"
 #: proxmox-widget-toolkit/src/window/Certificates.js:26
 #: pve-manager/www/manager6/node/Certificates.js:55
 #: pve-manager/www/manager6/node/Certificates.js:317
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:302
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:304
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_nodes.rs:278
 #: proxmox-yew-comp/src/acme/certificate_list.rs:346
 #: proxmox-yew-comp/src/acme/certificate_list.rs:376
@@ -6855,7 +6985,7 @@ msgstr ""
 "Proxmoxバックアップサーバで直接バックアップretentionを設定することを推奨しま"
 "す。"
 
-#: proxmox-widget-toolkit/src/Utils.js:80 proxmox-yew-comp/src/lib.rs:278
+#: proxmox-widget-toolkit/src/Utils.js:80 proxmox-yew-comp/src/lib.rs:284
 msgid "Italian"
 msgstr "イタリア語"
 
@@ -6868,7 +6998,7 @@ msgstr "個"
 msgid "Iterations"
 msgstr "Iterations"
 
-#: proxmox-widget-toolkit/src/Utils.js:81 proxmox-yew-comp/src/lib.rs:279
+#: proxmox-widget-toolkit/src/Utils.js:81 proxmox-yew-comp/src/lib.rs:285
 msgid "Japanese"
 msgstr "日本語"
 
@@ -6910,7 +7040,7 @@ msgstr "Join"
 #: pmg-gui/js/Utils.js:908 pve-manager/www/manager6/Utils.js:2084
 #: pve-manager/www/manager6/dc/Cluster.js:171
 #: proxmox-datacenter-manager/ui/src/tasks.rs:34
-#: proxmox-yew-comp/src/utils.rs:382
+#: proxmox-yew-comp/src/utils.rs:393
 msgid "Join Cluster"
 msgstr "クラスタに参加"
 
@@ -6942,7 +7072,7 @@ msgstr "KSM sharing"
 
 #: pve-manager/www/manager6/qemu/Options.js:207
 #: pve-manager/www/manager6/qemu/Options.js:213
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:101
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:111
 msgid "KVM hardware virtualization"
 msgstr "KVM ハードウェア仮想化"
 
@@ -7043,10 +7173,11 @@ msgstr ""
 #: pmg-gui/js/dashboard/NodeInfo.js:88
 #: pve-manager/www/manager6/node/StatusView.js:103
 #: proxmox-backup/www/panel/NodeInfo.js:143
+#: proxmox-yew-comp/src/node_info.rs:220
 msgid "Kernel Version"
 msgstr "カーネルバージョン"
 
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:327
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:328
 #, fuzzy
 msgid "Kernel scheduler settings"
 msgstr "カーネルバージョン"
@@ -7076,7 +7207,7 @@ msgstr "キーボードレイアウト"
 msgid "KiB"
 msgstr "KiB"
 
-#: proxmox-widget-toolkit/src/Utils.js:83 proxmox-yew-comp/src/lib.rs:281
+#: proxmox-widget-toolkit/src/Utils.js:83 proxmox-yew-comp/src/lib.rs:287
 msgid "Korean"
 msgstr "韓国語"
 
@@ -7097,8 +7228,8 @@ msgid "LDAP Group"
 msgstr "LDAPグループ"
 
 #: proxmox-widget-toolkit/src/Schema.js:28
-#: pve-manager/www/manager6/Utils.js:734 proxmox-yew-comp/src/auth_view.rs:187
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:276
+#: pve-manager/www/manager6/Utils.js:734 proxmox-yew-comp/src/auth_view.rs:285
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:403
 msgid "LDAP Server"
 msgstr "LDAP サーバ"
 
@@ -7124,13 +7255,13 @@ msgstr "LV UUID"
 
 #: pve-manager/www/manager6/Utils.js:2094
 #: proxmox-datacenter-manager/ui/src/tasks.rs:46
-#: proxmox-yew-comp/src/utils.rs:392
+#: proxmox-yew-comp/src/utils.rs:403
 msgid "LVM Storage"
 msgstr "LVM ストレージ"
 
 #: pve-manager/www/manager6/Utils.js:2096
 #: proxmox-datacenter-manager/ui/src/tasks.rs:48
-#: proxmox-yew-comp/src/utils.rs:394
+#: proxmox-yew-comp/src/utils.rs:405
 msgid "LVM-Thin Storage"
 msgstr "LVM-Thin ストレージ"
 
@@ -7141,7 +7272,7 @@ msgstr "LVM-Thin ストレージ"
 #: pve-manager/www/manager6/form/VMSelector.js:354
 #: pve-manager/www/manager6/lxc/CreateWizard.js:25
 #: pve-manager/www/manager6/tree/ResourceTree.js:34
-#: pve-yew-mobile-gui/src/pages/page_dashboard.rs:298
+#: pve-yew-mobile-gui/src/pages/page_dashboard.rs:299
 msgid "LXC Container"
 msgstr "LXCコンテナ"
 
@@ -7162,12 +7293,14 @@ msgstr "ラベルメディア"
 
 #: proxmox-widget-toolkit/src/window/LanguageEdit.js:36
 #: proxmox-widget-toolkit/src/window/LanguageEdit.js:43
-#: pmg-gui/js/LoginView.js:383 pmg-gui/js/MainView.js:223
-#: pmg-gui/js/QuarantineView.js:263 pve-manager/www/manager6/Workspace.js:432
+#: pmg-gui/js/LoginView.js:383 pmg-gui/js/MainView.js:230
+#: pmg-gui/js/QuarantineView.js:305 pve-manager/www/manager6/Workspace.js:432
 #: pve-manager/www/manager6/window/LoginWindow.js:400
 #: proxmox-backup/www/LoginView.js:324 proxmox-backup/www/MainView.js:276
-#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:152
+#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:153
 #: pve-yew-mobile-gui/src/pages/page_settings.rs:39
+#: pmg-yew-quarantine-gui/src/page_spam_list.rs:246
+#: pmg-yew-quarantine-gui/src/page_spam_list.rs:293
 #: proxmox-yew-comp/src/language_dialog.rs:76
 #: proxmox-yew-comp/src/language_dialog.rs:84
 #: proxmox-yew-widget-toolkit/src/widget/language_selector.rs:193
@@ -7196,7 +7329,7 @@ msgid "Last Name"
 msgstr "苗字"
 
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:342
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:111
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:217
 msgid "Last Name attribute"
 msgstr "Last Name 属性"
 
@@ -7238,8 +7371,18 @@ msgstr "苗字"
 msgid "Last refresh: {0}"
 msgstr ""
 
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:444
+msgid "Last verify task over 30 days ago: {0}"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:449
+msgid "Last verify task started on {0}"
+msgstr ""
+
 #: pve-manager/www/manager6/qemu/MachineEdit.js:117
 #: pve-manager/www/manager6/qemu/MachineEdit.js:136
+#: pve-yew-mobile-gui/src/form/qemu_machine_version_selector.rs:150
+#: pve-yew-mobile-gui/src/form/qemu_machine_version_selector.rs:158
 msgid "Latest"
 msgstr "最新"
 
@@ -7313,7 +7456,7 @@ msgstr ""
 msgid "Linux Bridge"
 msgstr "ブリッジ"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:243
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:245
 #, fuzzy
 msgid "Linux Container"
 msgstr "LXCコンテナ"
@@ -7367,6 +7510,11 @@ msgstr ""
 msgid "Load"
 msgstr "ロード"
 
+#: proxmox-yew-comp/src/node_info.rs:163
+#, fuzzy
+msgid "Load Average"
+msgstr "ロードアベレージ"
+
 #: proxmox-backup/www/Utils.js:443
 msgid "Load Media"
 msgstr "メディアをロード"
@@ -7386,7 +7534,6 @@ msgstr "SSHキーファイルのロード"
 #: pve-manager/www/manager6/node/Summary.js:174
 #: proxmox-backup/www/ServerStatus.js:224
 #: proxmox-backup/www/panel/NodeInfo.js:106
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:235
 msgid "Load average"
 msgstr "ロードアベレージ"
 
@@ -7493,10 +7640,6 @@ msgstr ""
 msgid "Log"
 msgstr "ログ"
 
-#: pmg-gui/js/mobile/loginscreen.js:44
-msgid "Log In"
-msgstr "ログイン"
-
 #: proxmox-backup/www/Utils.js:444
 msgid "Log Rotation"
 msgstr "ログローテーション"
@@ -7535,7 +7678,7 @@ msgstr "ログイン(OpenID Connectリダイレクト)"
 msgid "Login (OpenID redirect)"
 msgstr "ログイン(OpenIDリダイレクト)"
 
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:284
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:301
 msgid "Login and create Token"
 msgstr ""
 
@@ -7555,10 +7698,11 @@ msgstr "ログイン失敗。再実行してください"
 msgid "Login failed:"
 msgstr "Login失敗"
 
-#: pmg-gui/js/MainView.js:230 pmg-gui/js/QuarantineView.js:270
+#: pmg-gui/js/MainView.js:237 pmg-gui/js/QuarantineView.js:317
 #: pve-manager/www/manager6/Workspace.js:440 proxmox-backup/www/MainView.js:287
-#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:169
+#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:170
 #: pve-yew-mobile-gui/src/widgets/top_nav_bar.rs:118
+#: pmg-yew-quarantine-gui/src/page_spam_list.rs:310
 msgid "Logout"
 msgstr "ログアウト"
 
@@ -7590,6 +7734,7 @@ msgstr "Lower"
 #: pve-manager/www/manager6/qemu/AgentIPView.js:27
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:172
 #: pve-manager/www/manager6/window/GuestImport.js:893
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_network_property.rs:51
 msgid "MAC address"
 msgstr "MAC アドレス"
 
@@ -7624,6 +7769,7 @@ msgid "MIME type"
 msgstr "MIME type"
 
 #: pve-manager/www/manager6/lxc/Network.js:550
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_network_property.rs:134
 #: proxmox-yew-comp/src/configuration/network_view.rs:494
 #: proxmox-yew-comp/src/configuration/network_edit.rs:173
 #: proxmox-yew-comp/src/configuration/network_edit.rs:265
@@ -7642,15 +7788,12 @@ msgstr ""
 #: pve-manager/www/manager6/qemu/MachineEdit.js:101
 #: pve-manager/www/manager6/qemu/MachineEdit.js:189
 #: pve-manager/www/manager6/qemu/SystemEdit.js:90
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_machine_property.rs:164
 msgid "Machine"
 msgstr "マシン"
 
-#: pve-yew-mobile-gui/src/pages/page_qemu_status/hardware_panel.rs:156
-#, fuzzy
-msgid "Machine Type"
-msgstr "マッチタイプ"
-
 #: pve-manager/www/manager6/qemu/MachineEdit.js:147
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_machine_property.rs:155
 msgid ""
 "Machine version change may affect hardware layout and settings in the guest "
 "OS."
@@ -7682,6 +7825,11 @@ msgstr "メールプロキシ"
 msgid "Mails / min"
 msgstr "メール数/分"
 
+#: proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:209
+#, fuzzy
+msgid "Maintenance Mode"
+msgstr "メンテナンスモード"
+
 #: proxmox-backup/www/window/MaintenanceOptions.js:57
 msgid "Maintenance Type"
 msgstr "Maintenanceタイプ"
@@ -7701,12 +7849,12 @@ msgstr ""
 "いるラベルを入力します。"
 
 #: pve-manager/www/manager6/form/AgentFeatureSelector.js:49
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:71
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:97
 msgid "Make sure the QEMU Guest Agent is installed in the VM"
 msgstr "VM中にQEMUゲストエージェントがインストールされているようにしてください"
 
 #: pve-manager/www/manager6/form/SpiceEnhancementSelector.js:41
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:62
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:57
 msgid "Make sure the SPICE WebDav daemon is installed in the VM."
 msgstr "VM中にSPICE WebDAVデーモンがインストールされているようにしてください。"
 
@@ -7741,7 +7889,7 @@ msgstr "マネージャ"
 
 #: pve-manager/www/manager6/form/USBSelector.js:86
 #: pve-manager/www/manager6/qemu/Smbios1Edit.js:36
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:59
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:50
 msgid "Manufacturer"
 msgstr "製造者"
 
@@ -7833,7 +7981,7 @@ msgstr "重要度に一致"
 msgid "Matcher Name"
 msgstr "Matcher Name"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:713
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:725
 msgid "Max Age (seconds)"
 msgstr ""
 
@@ -7944,6 +8092,11 @@ msgstr "メディアセットUUID"
 msgid "Mediated Devices"
 msgstr "Mediated デバイス"
 
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:95
+msgid ""
+"Meltdown fix cost reduction on Westmere, Sandy-, and IvyBridge Intel CPUs"
+msgstr ""
+
 #: pve-manager/www/manager6/pool/Config.js:26
 msgid "Members"
 msgstr "メンバ"
@@ -7965,9 +8118,9 @@ msgstr "メンバ"
 #: pve-manager/www/manager6/window/Restore.js:350
 #: pve-yew-mobile-gui/src/form/hotplug_feature_selector.rs:56
 #: pve-yew-mobile-gui/src/form/hotplug_feature_selector.rs:193
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:37
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_memory_property.rs:47
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_memory_property.rs:130
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:136
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_memory_property.rs:49
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_memory_property.rs:132
 #: pve-yew-mobile-gui/src/pages/page_dashboard.rs:132
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/dashboard_panel.rs:180
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/resources_panel.rs:58
@@ -7982,12 +8135,13 @@ msgstr ""
 
 #: pve-manager/www/manager6/panel/GuestSummary.js:104
 #: proxmox-datacenter-manager/ui/src/widget/pve_node_selector.rs:157
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:327
+#: proxmox-datacenter-manager/ui/src/pbs/remote.rs:275
+#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:271
 #, fuzzy
 msgid "Memory Usage"
 msgstr "メモリ使用状況"
 
-#: proxmox-datacenter-manager/ui/src/pve/remote.rs:265
+#: proxmox-datacenter-manager/ui/src/pve/remote.rs:267
 #, fuzzy
 msgid "Memory assigned"
 msgstr "メモリ量"
@@ -8005,10 +8159,10 @@ msgstr "メモリ量"
 #: pve-manager/www/manager6/node/Summary.js:179
 #: pve-manager/www/manager6/panel/GuestStatusView.js:113
 #: proxmox-backup/www/ServerStatus.js:229
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:647
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:393
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:406
-#: proxmox-datacenter-manager/ui/src/renderer.rs:97
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:663
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:391
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:404
+#: proxmox-datacenter-manager/ui/src/renderer.rs:74
 msgid "Memory usage"
 msgstr "メモリ使用状況"
 
@@ -8073,12 +8227,12 @@ msgstr "MiB"
 #: pve-manager/www/manager6/window/Migrate.js:722
 #: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:577
 #: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:579
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:704
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:708
 #: proxmox-datacenter-manager/ui/src/tasks.rs:40
 #: proxmox-datacenter-manager/ui/src/tasks.rs:60
 #: proxmox-datacenter-manager/ui/src/tasks.rs:94
-#: proxmox-yew-comp/src/utils.rs:386 proxmox-yew-comp/src/utils.rs:406
-#: proxmox-yew-comp/src/utils.rs:438
+#: proxmox-yew-comp/src/utils.rs:397 proxmox-yew-comp/src/utils.rs:417
+#: proxmox-yew-comp/src/utils.rs:449
 msgid "Migrate"
 msgstr "マイグレート"
 
@@ -8121,7 +8275,7 @@ msgid "Minimum characters"
 msgstr "最小文字数"
 
 #: pve-manager/www/manager6/qemu/MemoryEdit.js:94
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_memory_property.rs:57
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_memory_property.rs:59
 msgid "Minimum memory"
 msgstr "最小メモリ量"
 
@@ -8146,8 +8300,8 @@ msgstr "混合サブスクリプション"
 #: pve-manager/www/manager6/window/Clone.js:215
 #: pve-manager/www/manager6/window/Migrate.js:590
 #: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:366
-#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:94
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:208
+#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:86
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:319
 #: proxmox-yew-comp/src/configuration/network_edit.rs:233
 msgid "Mode"
 msgstr "モード"
@@ -8188,6 +8342,7 @@ msgstr "モード: {0}"
 #: proxmox-backup/www/tape/form/ChangerSelector.js:44
 #: proxmox-backup/www/tape/form/DriveSelector.js:39
 #: proxmox-backup/www/tape/form/TapeDevicePathSelector.js:29
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_network_property.rs:31
 msgid "Model"
 msgstr "モデル"
 
@@ -8259,7 +8414,7 @@ msgstr "More"
 #: pve-manager/www/manager6/Utils.js:2140
 #: proxmox-backup/www/datastore/Summary.js:281
 #: proxmox-datacenter-manager/ui/src/tasks.rs:95
-#: proxmox-yew-comp/src/utils.rs:439
+#: proxmox-yew-comp/src/utils.rs:450
 msgid "Mount"
 msgstr "マウント"
 
@@ -8300,14 +8455,14 @@ msgstr "ストレージの移動"
 #: pve-manager/www/manager6/Utils.js:2099
 #: pve-manager/www/manager6/qemu/HDMove.js:28
 #: proxmox-datacenter-manager/ui/src/tasks.rs:51
-#: proxmox-yew-comp/src/utils.rs:397
+#: proxmox-yew-comp/src/utils.rs:408
 msgid "Move Volume"
 msgstr "ボリュームの移動"
 
 #: pve-manager/www/manager6/Utils.js:2109
 #: pve-manager/www/manager6/qemu/HDMove.js:28
 #: proxmox-datacenter-manager/ui/src/tasks.rs:61
-#: proxmox-yew-comp/src/utils.rs:407
+#: proxmox-yew-comp/src/utils.rs:418
 msgid "Move disk"
 msgstr "ディスクの移動"
 
@@ -8335,6 +8490,10 @@ msgstr ""
 "複数の受信者を指定する場合は、スペース、カンマ、またはセミコロンで区切る必要"
 "があります"
 
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_network_property.rs:156
+msgid "Multiqueue"
+msgstr ""
+
 #: proxmox-widget-toolkit/src/panel/WebhookEditPanel.js:62
 msgid "Must be a valid URL"
 msgstr ""
@@ -8357,7 +8516,7 @@ msgstr "Must end with"
 msgid "Must start with"
 msgstr "Must start with"
 
-#: pmg-gui/js/MainView.js:209 pmg-gui/js/Settings.js:5
+#: pmg-gui/js/MainView.js:216 pmg-gui/js/Settings.js:5
 #: pve-manager/www/manager6/Workspace.js:391
 #: pve-manager/www/manager6/window/Settings.js:5
 #: proxmox-backup/www/MainView.js:262 proxmox-backup/www/window/Settings.js:5
@@ -8366,7 +8525,8 @@ msgstr "自分の設定"
 
 #: proxmox-widget-toolkit/src/Utils.js:1130
 #: proxmox-widget-toolkit/src/panel/DiskList.js:374
-#: proxmox-backup/www/Utils.js:322
+#: proxmox-backup/www/Utils.js:322 proxmox-yew-comp/src/node_info.rs:60
+#: proxmox-yew-comp/src/node_info.rs:192
 msgid "N/A"
 msgstr "N/A"
 
@@ -8507,7 +8667,7 @@ msgstr ""
 #: proxmox-datacenter-manager/ui/src/sdn/zone_tree.rs:118
 #: pve-yew-mobile-gui/src/form/qemu_cpu_model_selector.rs:138
 #: pve-yew-mobile-gui/src/form/qemu_cpu_model_selector.rs:149
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:116
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:126
 #: pve-yew-mobile-gui/src/form/pve_storage_selector.rs:203
 #: pve-yew-mobile-gui/src/form/pve_storage_selector.rs:248
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/config_panel.rs:91
@@ -8563,16 +8723,22 @@ msgstr "DNS サーバ"
 #: proxmox-backup/www/window/PruneJobEdit.js:88
 #: proxmox-backup/www/window/VerifyAll.js:36
 #: proxmox-backup/www/window/VerifyJobEdit.js:80
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:320
 msgid "Namespace"
 msgstr "名前空間"
 
 #: proxmox-backup/www/datastore/Content.js:360
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:109
 msgid "Namespace '{0}'"
 msgstr "名前空間 '{0}'"
 
 #: proxmox-backup/www/window/NamespaceEdit.js:44
 msgid "Namespace Name"
 msgstr "名前空間の名前"
+
+#: pmg-gui/js/QuarantineView.js:240
+msgid "Narrow viewport detected"
+msgstr ""
 
 #: proxmox-backup/www/tape/window/TapeRestore.js:630
 msgid "Need at least one mapping"
@@ -8588,23 +8754,23 @@ msgid "Nesting"
 msgstr "ネスト"
 
 #. TRANSLATORS: As in amount of incoming network traffic
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:206
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:207
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:209
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:210
 msgid "Net In"
 msgstr ""
 
 #. TRANSLATORS: As in amount of outgoing network traffic
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:207
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:209
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:210
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:212
 #, fuzzy
 msgid "Net Out"
 msgstr "Rate Out"
 
-#: pmg-gui/js/MailProxyOptions.js:56
+#: pmg-gui/js/MailProxyOptions.js:44
 msgid "Netmask for Greylisting IPv4"
 msgstr "IPv4グレイリスト用のネットマスク"
 
-#: pmg-gui/js/MailProxyOptions.js:66
+#: pmg-gui/js/MailProxyOptions.js:54
 msgid "Netmask for Greylisting IPv6"
 msgstr "IPv6グレイリスト用のネットマスク"
 
@@ -8635,7 +8801,7 @@ msgstr "ネットワーク設定"
 #: pve-manager/www/manager6/qemu/HardwareView.js:743
 #: pve-manager/www/manager6/qemu/IPConfigEdit.js:66
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:238
-#: pve-yew-mobile-gui/src/pages/page_qemu_status/hardware_panel.rs:195
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_network_property.rs:85
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/resources_panel.rs:94
 #: proxmox-yew-comp/src/configuration/mod.rs:28
 msgid "Network Device"
@@ -8643,14 +8809,14 @@ msgstr "ネットデバイス"
 
 #: pve-manager/www/manager6/window/GuestImport.js:856
 #: proxmox-backup/www/SystemConfiguration.js:40
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:119
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:141
 msgid "Network Interfaces"
 msgstr "ネットワークインタフェース"
 
 #: pve-manager/www/manager6/node/Summary.js:262
 #: pve-manager/www/manager6/panel/GuestSummary.js:121
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:406
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:419
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:404
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:417
 #, fuzzy
 msgid "Network Traffic"
 msgstr "ネットワーク転送量"
@@ -8747,7 +8913,7 @@ msgstr "次の期日"
 #: pve-manager/www/manager6/window/TreeSettingsEdit.js:39
 #: pve-manager/www/manager6/window/TreeSettingsEdit.js:52
 #: proxmox-backup/www/Subscription.js:133
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:115
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:117
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_nodes.rs:106
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_summary.rs:113
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/remote_tree.rs:394
@@ -8895,6 +9061,11 @@ msgstr "レポートが有りません"
 #: proxmox-widget-toolkit/src/window/DiskSmart.js:24
 msgid "No S.M.A.R.T. Values"
 msgstr "S.M.A.R.T. 値がありません"
+
+#: pmg-gui/js/DNSBLSitesField.js:17
+#, fuzzy
+msgid "No Sites defined"
+msgstr "タグが未定義"
 
 #: proxmox-backup/www/tape/window/TapeRestore.js:837
 msgid "No Snapshots"
@@ -9075,12 +9246,10 @@ msgstr "ターゲットが選択されていません"
 msgid "No updates available."
 msgstr "アップデートがありません。"
 
-#: proxmox-widget-toolkit/src/Utils.js:617
-#: pmg-gui/js/mobile/quarantineview.js:62 pmg-gui/js/mobile/utils.js:146
-#: pmg-gui/js/mobile/utils.js:149 proxmox-backup/www/Dashboard.js:348
+#: proxmox-widget-toolkit/src/Utils.js:617 proxmox-backup/www/Dashboard.js:348
 #: proxmox-datacenter-manager/ui/src/dashboard/subscription_info.rs:62
-#: pmg-yew-quarantine-gui/src/page_spam_list.rs:197
-#: pmg-yew-quarantine-gui/src/page_spam_list.rs:225
+#: pmg-yew-quarantine-gui/src/page_spam_list.rs:224
+#: pmg-yew-quarantine-gui/src/page_spam_list.rs:264
 #: proxmox-yew-comp/src/subscription_info.rs:20
 msgid "No valid subscription"
 msgstr "有効なサブスクリプションがありません"
@@ -9207,17 +9376,17 @@ msgstr "ノード名"
 #: pve-manager/www/manager6/sdn/zones/Base.js:44
 #: pve-manager/www/manager6/storage/Base.js:41
 #: pve-manager/www/manager6/tree/ResourceTree.js:14
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:344
-#: proxmox-datacenter-manager/ui/src/pve/remote.rs:186
-#: pve-yew-mobile-gui/src/pages/page_dashboard.rs:224
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:335
+#: proxmox-datacenter-manager/ui/src/pve/remote.rs:185
+#: pve-yew-mobile-gui/src/pages/page_dashboard.rs:225
 msgid "Nodes"
 msgstr "ノード"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:639
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:655
 msgid "Nodes With the Highest CPU Usage"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:646
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:662
 msgid "Nodes With the Highest Memory Usage"
 msgstr ""
 
@@ -9238,8 +9407,11 @@ msgstr "本番運用に対応していないリポジトリが有効になって
 #: proxmox-backup/www/datastore/Content.js:1253
 #: proxmox-backup/www/datastore/Content.js:1268
 #: proxmox-backup/www/window/MaintenanceOptions.js:6
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:348
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:339
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:405
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:459
 #: proxmox-datacenter-manager/ui/src/pve/utils.rs:291
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_machine_property.rs:140
 msgid "None"
 msgstr "なし"
 
@@ -9260,11 +9432,11 @@ msgstr "一致しません"
 msgid "Normalized"
 msgstr "正規化"
 
-#: proxmox-widget-toolkit/src/Utils.js:84 proxmox-yew-comp/src/lib.rs:282
+#: proxmox-widget-toolkit/src/Utils.js:84 proxmox-yew-comp/src/lib.rs:288
 msgid "Norwegian (Bokmal)"
 msgstr "ノルウェー語（Bokmal)"
 
-#: proxmox-widget-toolkit/src/Utils.js:86 proxmox-yew-comp/src/lib.rs:284
+#: proxmox-widget-toolkit/src/Utils.js:86 proxmox-yew-comp/src/lib.rs:290
 msgid "Norwegian (Nynorsk)"
 msgstr "ノルウェー語（Nynorsk)"
 
@@ -9355,8 +9527,12 @@ msgstr ""
 "注釈：ライブインポート中に何か問題が発生した場合、仮想マシンによって書き込ま"
 "れた新しいデータが失われる可能性があります。"
 
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:390
+msgid "Note: Login currently requires Proxmox Backup Server version 4."
+msgstr ""
+
 #: pve-manager/www/manager6/qemu/SevEdit.js:82
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:87
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:80
 msgid "Note: SEV-SNP requires host kernel version 6.11 or higher."
 msgstr ""
 
@@ -9428,6 +9604,10 @@ msgstr "通知タイプ"
 msgid "Notifications"
 msgstr "通知"
 
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:101
+msgid "Notifies guest OS that host is not vulnerable for Spectre on AMD CPUs"
+msgstr ""
+
 #: pmg-gui/js/PBSRemoteEdit.js:85
 msgid "Notify"
 msgstr "通知"
@@ -9457,8 +9637,7 @@ msgstr "ノードの数"
 #: proxmox-widget-toolkit/src/node/Tasks.js:356
 #: proxmox-widget-toolkit/src/window/ConsentModal.js:32
 #: proxmox-widget-toolkit/src/window/Edit.js:317 pmg-gui/js/LoginView.js:179
-#: pmg-gui/js/RegexTester.js:49 pmg-gui/js/mobile/quarantineview.js:45
-#: pve-manager/www/manager6/Utils.js:298
+#: pmg-gui/js/RegexTester.js:49 pve-manager/www/manager6/Utils.js:298
 #: pve-manager/www/manager6/grid/Replication.js:358
 #: proxmox-backup/www/Utils.js:235
 #: proxmox-backup/www/dashboard/TaskSummary.js:165
@@ -9469,7 +9648,7 @@ msgstr "ノードの数"
 #: proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:192
 #: proxmox-datacenter-manager/ui/src/dashboard/tasks.rs:144
 #: pve-yew-mobile-gui/src/pages/page_login.rs:80
-#: pmg-yew-quarantine-gui/src/page_spam_list.rs:205
+#: pmg-yew-quarantine-gui/src/page_spam_list.rs:232
 msgid "OK"
 msgstr "OK"
 
@@ -9480,7 +9659,7 @@ msgstr "OS"
 #: pve-manager/www/manager6/lxc/Options.js:54
 #: pve-manager/www/manager6/qemu/Options.js:88
 #: pve-manager/www/manager6/window/GuestImport.js:562
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:127
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:137
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/config_panel.rs:109
 msgid "OS Type"
 msgstr "OS 種別"
@@ -9515,6 +9694,11 @@ msgstr ""
 "オブジェクトの機能が低下しています。クラスタが正常になるまで待つことを検討し"
 "てください。"
 
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:172
+#, fuzzy
+msgid "Off"
+msgstr "オフライン"
+
 #: pve-manager/www/manager6/dc/Health.js:114
 #: pve-manager/www/manager6/window/Migrate.js:45
 #: proxmox-backup/www/Utils.js:847 proxmox-backup/www/tape/TapeInventory.js:308
@@ -9541,12 +9725,14 @@ msgstr "しばしば {0} または {1} と呼ばれます"
 #: proxmox-backup/www/tape/window/Erase.js:33
 #: proxmox-backup/www/tape/window/MediaRemoveWindow.js:26
 #: proxmox-backup/www/window/DatastoreRepoInfo.js:89
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:437
 #: proxmox-yew-comp/src/task_status_selector.rs:137
 #: proxmox-yew-widget-toolkit/src/widget/message_box.rs:131
 msgid "Ok"
 msgstr "Ok"
 
 #: pve-manager/www/manager6/grid/FirewallRules.js:896
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:171
 msgid "On"
 msgstr "On"
 
@@ -9606,6 +9792,7 @@ msgstr "リポジトリパネルを開く"
 msgid "Open Task"
 msgstr "タスク閲覧"
 
+#: proxmox-datacenter-manager/ui/src/pbs/mod.rs:138
 #: proxmox-datacenter-manager/ui/src/pve/mod.rs:214
 msgid "Open Web UI"
 msgstr ""
@@ -9614,13 +9801,21 @@ msgstr ""
 msgid "Open editor on double-click"
 msgstr "ダブルクリックでエディタを開く"
 
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:722
+#: proxmox-datacenter-manager/ui/src/pbs/tree.rs:318
+msgid "Open in PBS UI"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:726
 msgid "Open in PVE UI"
 msgstr ""
 
 #: proxmox-backup/www/tape/BackupOverview.js:365
 msgid "Open restore wizard for {0}"
 msgstr "{0} 向けのリストアウィザードをオープン"
+
+#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:195
+msgid "Open the Beta documentation in a new tab."
+msgstr ""
 
 #: proxmox-widget-toolkit/src/Schema.js:17
 #: pve-manager/www/manager6/Utils.js:742
@@ -9658,7 +9853,7 @@ msgstr "OpenIDリダイレクトに失敗。再試行してください"
 msgid "OpenID redirect failed."
 msgstr "OpenIDリダイレクトに失敗。"
 
-#: proxmox-yew-comp/src/auth_view.rs:198
+#: proxmox-yew-comp/src/auth_view.rs:296
 #, fuzzy
 msgid "OpenId Connect Server"
 msgstr "OpenID Connectサーバ"
@@ -9700,13 +9895,13 @@ msgid "Options"
 msgstr "オプション"
 
 #: proxmox-widget-toolkit/src/form/MultiDiskSelector.js:118
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:157
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:167
 msgid "Order"
 msgstr "順"
 
 #: pve-manager/www/manager6/Utils.js:2061 proxmox-backup/www/Utils.js:424
 #: proxmox-datacenter-manager/ui/src/tasks.rs:11
-#: proxmox-yew-comp/src/utils.rs:359
+#: proxmox-yew-comp/src/utils.rs:370
 msgid "Order Certificate"
 msgstr "Order Certificate"
 
@@ -9820,6 +10015,8 @@ msgstr "上書きの設定"
 msgid "Overrule active shutdown tasks"
 msgstr "実行中のシャットダウンタスクを強制的に上書きする"
 
+#: proxmox-datacenter-manager/ui/src/pbs/datastore.rs:53
+#: proxmox-datacenter-manager/ui/src/pbs/remote.rs:215
 #: proxmox-datacenter-manager/ui/src/pve/node/mod.rs:81
 #, fuzzy
 msgid "Overview"
@@ -9936,8 +10133,7 @@ msgstr "特定デバイスのパススルー"
 #: pmg-gui/js/ClusterAdministration.js:64 pmg-gui/js/FetchmailEdit.js:71
 #: pmg-gui/js/LDAPConfig.js:123 pmg-gui/js/LoginView.js:366
 #: pmg-gui/js/PBSRemoteEdit.js:80 pmg-gui/js/UserEdit.js:69
-#: pmg-gui/js/UserView.js:154 pmg-gui/js/mobile/loginscreen.js:32
-#: pve-manager/www/manager6/Workspace.js:398
+#: pmg-gui/js/UserView.js:154 pve-manager/www/manager6/Workspace.js:398
 #: pve-manager/www/manager6/dc/ClusterEdit.js:372
 #: pve-manager/www/manager6/dc/UserEdit.js:38
 #: pve-manager/www/manager6/dc/UserView.js:58
@@ -9954,7 +10150,7 @@ msgstr "特定デバイスのパススルー"
 #: proxmox-backup/www/tape/window/EncryptionEdit.js:36
 #: proxmox-backup/www/window/RemoteEdit.js:102
 #: proxmox-backup/www/window/UserEdit.js:93
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:299
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:316
 #: proxmox-yew-comp/src/login_panel.rs:182
 #: proxmox-yew-comp/src/login_panel.rs:260 proxmox-yew-comp/src/tfa/mod.rs:47
 #: proxmox-yew-comp/src/tfa/mod.rs:48 proxmox-yew-comp/src/user_panel.rs:446
@@ -10006,6 +10202,7 @@ msgstr "エンコードされたクラスタ情報をここに貼り付け"
 #: proxmox-backup/www/tape/window/DriveEdit.js:69
 #: proxmox-backup/www/window/ACLEdit.js:26
 #: proxmox-datacenter-manager/ui/src/configuration/mod.rs:45
+#: proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:199
 #: proxmox-yew-comp/src/acl/acl_view.rs:110
 #: proxmox-yew-comp/src/permission_panel.rs:163
 msgid "Path"
@@ -10028,7 +10225,7 @@ msgstr "デバイス上のパス"
 #: pve-manager/www/manager6/qemu/Config.js:181
 #: proxmox-datacenter-manager/ui/src/tasks.rs:62
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/dashboard_panel.rs:215
-#: proxmox-yew-comp/src/utils.rs:408
+#: proxmox-yew-comp/src/utils.rs:419
 msgid "Pause"
 msgstr "一時停止"
 
@@ -10109,11 +10306,11 @@ msgstr "アクセス権限"
 #: pve-manager/www/manager6/storage/Browser.js:197
 #: proxmox-backup/www/config/ACLView.js:27
 #: proxmox-backup/www/panel/AccessControl.js:36
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:83
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:93
 msgid "Permissions"
 msgstr "アクセス権限"
 
-#: proxmox-widget-toolkit/src/Utils.js:76 proxmox-yew-comp/src/lib.rs:273
+#: proxmox-widget-toolkit/src/Utils.js:76 proxmox-yew-comp/src/lib.rs:279
 msgid "Persian (Farsi)"
 msgstr "ペルシャ語（Farsi)"
 
@@ -10150,7 +10347,7 @@ msgstr "1回のみのリカバリキーの1つを入力してください"
 msgid "Please enter the ID to confirm"
 msgstr "確認のためIDを入力してください"
 
-#: proxmox-yew-comp/src/safe_confirm_dialog.rs:116
+#: proxmox-yew-comp/src/safe_confirm_dialog.rs:119
 #, fuzzy
 msgid "Please enter the ID to confirm ({0})"
 msgstr "確認のためIDを入力してください"
@@ -10187,6 +10384,7 @@ msgstr "リカバリキーを記録してください - 今だけ表示します
 
 #: pve-manager/www/manager6/dc/TokenEdit.js:154
 #: proxmox-backup/www/window/TokenEdit.js:204
+#: proxmox-yew-comp/src/token_panel.rs:364
 msgid "Please record the API token secret - it will only be displayed now"
 msgstr "APIトークンのシークレットを記録してください - 今だけ表示します"
 
@@ -10215,7 +10413,7 @@ msgstr "ルールを選択してください。"
 msgid "Please select a sender."
 msgstr "送信者を選択してください。"
 
-#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:188
+#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:180
 #, fuzzy
 msgid "Please select a target storage."
 msgstr "ルールを選択してください。"
@@ -10272,7 +10470,7 @@ msgstr "プラグインID"
 msgid "Policy"
 msgstr "ポリシー"
 
-#: proxmox-widget-toolkit/src/Utils.js:87 proxmox-yew-comp/src/lib.rs:285
+#: proxmox-widget-toolkit/src/Utils.js:87 proxmox-yew-comp/src/lib.rs:291
 msgid "Polish"
 msgstr "ポーランド語"
 
@@ -10333,7 +10531,7 @@ msgstr "Pools"
 #: proxmox-backup/www/config/S3ClientView.js:121
 #: proxmox-backup/www/window/InfluxDbEdit.js:172
 #: proxmox-backup/www/window/S3ClientEdit.js:59
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:194
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:291
 msgid "Port"
 msgstr "ポート"
 
@@ -10350,7 +10548,7 @@ msgstr "ポート"
 msgid "Ports/Slaves"
 msgstr "ポート/スレーブ"
 
-#: proxmox-widget-toolkit/src/Utils.js:88 proxmox-yew-comp/src/lib.rs:289
+#: proxmox-widget-toolkit/src/Utils.js:88 proxmox-yew-comp/src/lib.rs:295
 msgid "Portuguese (Brazil)"
 msgstr "ポルトガル語（ブラジル）"
 
@@ -10405,6 +10603,11 @@ msgstr "VirtIO-SCSIの準備"
 #: pve-manager/www/manager6/dc/SyncWindow.js:174
 #: pmg-yew-quarantine-gui/src/page_mail_view.rs:145
 msgid "Preview"
+msgstr "プレビュー"
+
+#: proxmox-yew-comp/src/auth_view.rs:413
+#, fuzzy
+msgid "Preview Only"
 msgstr "プレビュー"
 
 #: pmg-gui/js/LDAPConfig.js:263
@@ -10479,7 +10682,7 @@ msgstr "プロセス ID"
 msgid "Processing..."
 msgstr "処理中..."
 
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:216
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:208
 #, fuzzy
 msgid "Processor"
 msgstr "プロセッサ"
@@ -10492,7 +10695,7 @@ msgstr "プロセッサ"
 
 #: pve-manager/www/manager6/form/USBSelector.js:92
 #: pve-manager/www/manager6/qemu/Smbios1Edit.js:45
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:65
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:56
 msgid "Product"
 msgstr "Product"
 
@@ -10534,6 +10737,8 @@ msgstr "継承"
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:346
 #: pve-manager/www/manager6/dc/RealmSyncJob.js:381
 #: pve-manager/www/manager6/dc/SyncWindow.js:144
+#: proxmox-yew-comp/src/auth_view.rs:440
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:252
 msgid "Properties"
 msgstr "プロパティ"
 
@@ -10556,10 +10761,14 @@ msgstr "Protected"
 #: pve-manager/www/manager6/qemu/Options.js:313
 #: pve-manager/www/manager6/qemu/Options.js:319
 #: proxmox-backup/www/datastore/Content.js:732
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:112
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:122
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/config_panel.rs:87
 msgid "Protection"
 msgstr "保護"
+
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:97
+msgid "Protection for \"Speculative Store Bypass\" for Intel models"
+msgstr ""
 
 #: pmg-gui/js/FetchmailEdit.js:41 pmg-gui/js/FetchmailView.js:113
 #: pmg-gui/js/LDAPConfig.js:70 pmg-gui/js/LDAPConfig.js:591
@@ -10677,7 +10886,7 @@ msgstr "Prunes"
 
 #: proxmox-widget-toolkit/src/panel/Certificates.js:28
 #: pve-manager/www/manager6/node/Certificates.js:327
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:304
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:306
 #: proxmox-yew-comp/src/acme/certificate_list.rs:348
 #: proxmox-yew-comp/src/acme/certificate_list.rs:384
 msgid "Public Key Algorithm"
@@ -10687,7 +10896,7 @@ msgstr "公開鍵アルゴリズム"
 #: proxmox-widget-toolkit/src/window/Certificates.js:41
 #: pve-manager/www/manager6/node/Certificates.js:72
 #: pve-manager/www/manager6/node/Certificates.js:333
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:305
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:307
 #: proxmox-yew-comp/src/acme/certificate_list.rs:349
 #: proxmox-yew-comp/src/acme/certificate_list.rs:388
 msgid "Public Key Size"
@@ -10704,7 +10913,7 @@ msgstr "Pull"
 
 #: pve-manager/www/manager6/Utils.js:2101
 #: proxmox-datacenter-manager/ui/src/tasks.rs:53
-#: proxmox-yew-comp/src/utils.rs:399
+#: proxmox-yew-comp/src/utils.rs:410
 msgid "Pull file"
 msgstr "Pull ファイル"
 
@@ -10722,7 +10931,7 @@ msgstr "push"
 
 #: pve-manager/www/manager6/Utils.js:2102
 #: proxmox-datacenter-manager/ui/src/tasks.rs:54
-#: proxmox-yew-comp/src/utils.rs:400
+#: proxmox-yew-comp/src/utils.rs:411
 msgid "Push file"
 msgstr "ファイルのpush"
 
@@ -10734,7 +10943,7 @@ msgstr ""
 msgid "Q35 only"
 msgstr "Q35のみ"
 
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:79
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:105
 #, fuzzy
 msgid "QEMU Guest Agent"
 msgstr "Qemuエージェント"
@@ -10774,7 +10983,8 @@ msgstr "クエリURL"
 msgid "Query userinfo endpoint"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:572
+#: proxmox-datacenter-manager/ui/src/pbs/tree.rs:287
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:587
 msgid "Querying Remote..."
 msgstr ""
 
@@ -10803,12 +11013,17 @@ msgstr "RAIDレベル"
 msgid "RAM"
 msgstr "RAM"
 
+#: proxmox-yew-comp/src/node_info.rs:149
+#, fuzzy
+msgid "RAM Usage"
+msgstr "RAM 使用状況"
+
 #: pmg-gui/js/ClusterAdministration.js:313 pmg-gui/js/dashboard/NodeInfo.js:43
 #: pve-manager/www/manager6/node/StatusView.js:54
 #: proxmox-backup/www/ServerStatus.js:231
 #: proxmox-backup/www/panel/NodeInfo.js:98
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:204
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:204
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:207
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:207
 msgid "RAM usage"
 msgstr "RAM 使用状況"
 
@@ -10823,7 +11038,7 @@ msgstr "RBD 名前空間は、手動で生成しなければなりません！"
 #: pve-manager/www/manager6/qemu/Options.js:271
 #: pve-manager/www/manager6/qemu/Options.js:276
 #: pve-manager/www/manager6/qemu/Options.js:282
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:228
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:240
 msgid "RTC start date"
 msgstr "RTC 開始日時"
 
@@ -10835,10 +11050,6 @@ msgstr "無作為な遅延"
 #: proxmox-yew-comp/src/tfa/tfa_add_totp.rs:119
 msgid "Randomize"
 msgstr "無作為化"
-
-#: pmg-gui/js/mobile/quarantineview.js:19
-msgid "Range"
-msgstr "レンジ"
 
 #: proxmox-backup/www/config/TrafficControlView.js:134
 #: proxmox-backup/www/window/TrafficControlEdit.js:240
@@ -10867,6 +11078,8 @@ msgstr "Rate Out Used"
 #: pve-manager/www/manager6/grid/Replication.js:411
 #: pve-manager/www/manager6/lxc/Network.js:297
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:182
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_network_property.rs:148
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_network_property.rs:172
 msgid "Rate limit"
 msgstr "Rateの制限値"
 
@@ -10962,22 +11175,23 @@ msgstr "Reads"
 #: pve-manager/www/manager6/dc/UserView.js:181
 #: proxmox-backup/www/config/UserView.js:223
 #: proxmox-backup/www/window/UserEdit.js:76
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:308
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:325
 #: proxmox-datacenter-manager/ui/src/tasks.rs:17
 #: proxmox-datacenter-manager/ui/src/tasks.rs:18
-#: proxmox-yew-comp/src/auth_view.rs:283
+#: proxmox-yew-comp/src/auth_view.rs:468
 #: proxmox-yew-comp/src/auth_edit_openid.rs:101
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:170
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:282
 #: proxmox-yew-comp/src/login_panel.rs:195
 #: proxmox-yew-comp/src/login_panel.rs:267
 #: proxmox-yew-comp/src/user_panel.rs:327
-#: proxmox-yew-comp/src/user_panel.rs:478 proxmox-yew-comp/src/utils.rs:365
-#: proxmox-yew-comp/src/utils.rs:366
+#: proxmox-yew-comp/src/user_panel.rs:478 proxmox-yew-comp/src/utils.rs:376
+#: proxmox-yew-comp/src/utils.rs:377
 msgid "Realm"
 msgstr "レルム"
 
 #: proxmox-widget-toolkit/src/window/SyncWindow.js:4
 #: pve-manager/www/manager6/dc/SyncWindow.js:4
+#: proxmox-yew-comp/src/auth_view.rs:409
 msgid "Realm Sync"
 msgstr "レルム同期"
 
@@ -10992,10 +11206,11 @@ msgstr "レルム同期ジョブ"
 
 #: pmg-gui/js/UserManagement.js:38 pve-manager/www/manager6/dc/Config.js:141
 #: proxmox-backup/www/panel/AccessControl.js:43
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:110
 msgid "Realms"
 msgstr "レルム"
 
-#: pmg-gui/js/PostfixMailQueue.js:184
+#: pmg-gui/js/PostfixMailQueue.js:192
 msgid "Reason"
 msgstr "Reason"
 
@@ -11041,7 +11256,7 @@ msgstr "Start 時ののリバランス"
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/dashboard_panel.rs:209
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/dashboard_panel.rs:198
 #: pve-yew-mobile-gui/src/pages/page_node_status/dashboard_panel.rs:132
-#: proxmox-yew-comp/src/utils.rs:409 proxmox-yew-comp/src/utils.rs:440
+#: proxmox-yew-comp/src/utils.rs:420 proxmox-yew-comp/src/utils.rs:451
 msgid "Reboot"
 msgstr "再起動"
 
@@ -11064,14 +11279,14 @@ msgstr "{0}を再起動"
 #: pmg-gui/js/Dashboard.js:483 pmg-gui/js/DomainStatistics.js:81
 #: pmg-gui/js/DomainStatistics.js:124 pmg-gui/js/MailInfo.js:35
 #: pmg-gui/js/MailTracker.js:82 pmg-gui/js/NavigationTree.js:196
-#: pmg-gui/js/PostfixMailQueue.js:178 pmg-gui/js/ReceiverStatistics.js:110
+#: pmg-gui/js/PostfixMailQueue.js:186 pmg-gui/js/ReceiverStatistics.js:110
 #: pmg-gui/js/ReceiverStatistics.js:156 pmg-gui/js/ReceiverStatistics.js:223
 #: pmg-gui/js/SenderStatistics.js:63 pmg-gui/js/Utils.js:38
 #: pmg-gui/js/Utils.js:549 pmg-gui/js/VirusQuarantine.js:76
 msgid "Receiver"
 msgstr "受信者"
 
-#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:217
+#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:209
 #, fuzzy
 msgid "Recent backups"
 msgstr "すべてのバックアップを保持"
@@ -11122,11 +11337,11 @@ msgstr "参照されたディスクは常時削除されます。"
 #: pve-manager/www/manager6/Utils.js:2062
 #: proxmox-datacenter-manager/ui/src/tasks.rs:12
 #: proxmox-yew-comp/src/apt_package_manager.rs:214
-#: proxmox-yew-comp/src/utils.rs:360
+#: proxmox-yew-comp/src/utils.rs:371
 msgid "Refresh"
 msgstr "再表示"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:705
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:717
 msgid "Refresh Interval (seconds)"
 msgstr ""
 
@@ -11144,6 +11359,7 @@ msgid "Regenerate Image"
 msgstr "イメージ再作成"
 
 #: proxmox-backup/www/config/TokenView.js:211
+#: proxmox-yew-comp/src/token_panel.rs:196
 msgid "Regenerate Secret"
 msgstr "Secret再作成"
 
@@ -11169,7 +11385,7 @@ msgstr ""
 #: pve-manager/www/manager6/Utils.js:2063
 #: pve-manager/www/manager6/node/ACME.js:9
 #: proxmox-datacenter-manager/ui/src/tasks.rs:13
-#: proxmox-yew-comp/src/utils.rs:361
+#: proxmox-yew-comp/src/utils.rs:372
 msgid "Register"
 msgstr "登録"
 
@@ -11251,7 +11467,7 @@ msgstr "リレー"
 #: proxmox-backup/www/tape/ChangerStatus.js:694
 #: proxmox-backup/www/tape/DriveStatus.js:209
 #: proxmox-backup/www/tape/TapeInventory.js:208
-#: proxmox-yew-comp/src/utils.rs:227
+#: proxmox-yew-comp/src/utils.rs:246
 msgid "Reload"
 msgstr "再読込"
 
@@ -11284,6 +11500,7 @@ msgstr "Party をリレー"
 msgid "Remote"
 msgstr "リモート"
 
+#: proxmox-datacenter-manager/ui/src/pbs/mod.rs:121
 #: proxmox-datacenter-manager/ui/src/pve/mod.rs:199
 #, fuzzy
 msgid "Remote '{0}'"
@@ -11294,9 +11511,9 @@ msgstr "'{0}' を削除"
 #: proxmox-backup/www/form/RemoteSelector.js:19
 #: proxmox-backup/www/window/RemoteEdit.js:35
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_summary.rs:97
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:278
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:295
 #: proxmox-datacenter-manager/ui/src/remotes/edit_remote.rs:93
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:316
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:307
 msgid "Remote ID"
 msgstr "リモートID"
 
@@ -11325,7 +11542,7 @@ msgstr "全タスク表示"
 #: proxmox-backup/www/NavigationTree.js:54
 #: proxmox-backup/www/config/RemoteView.js:39
 #: proxmox-datacenter-manager/ui/src/main_menu.rs:266
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:538
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:540
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/evpn_panel.rs:186
 msgid "Remotes"
 msgstr "リモート"
@@ -11354,6 +11571,7 @@ msgstr "削除のスケジュール"
 #: proxmox-widget-toolkit/src/window/Edit.js:312
 #: proxmox-widget-toolkit/src/window/NotificationMatcherEdit.js:872
 #: proxmox-widget-toolkit/src/window/SafeDestroy.js:113
+#: pmg-gui/js/DNSBLSitesField.js:141 pmg-gui/js/PostfixMailQueue.js:152
 #: pmg-gui/js/RuleConfiguration.js:167 pmg-gui/js/RuleInfo.js:377
 #: pmg-gui/js/UserBlockWelcomeList.js:167
 #: pve-manager/www/manager6/Utils.js:2086
@@ -11378,18 +11596,19 @@ msgstr "削除のスケジュール"
 #: proxmox-backup/www/datastore/Content.js:1453
 #: proxmox-backup/www/datastore/Content.js:1510
 #: proxmox-backup/www/tape/TapeInventory.js:237
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:207
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:198
 #: proxmox-datacenter-manager/ui/src/tasks.rs:38
 #: proxmox-datacenter-manager/ui/src/tasks.rs:47
 #: proxmox-datacenter-manager/ui/src/tasks.rs:49
 #: proxmox-datacenter-manager/ui/src/tasks.rs:108
-#: proxmox-yew-comp/src/auth_view.rs:218
+#: proxmox-yew-comp/src/auth_view.rs:316
 #: proxmox-yew-comp/src/confirm_button.rs:75
 #: proxmox-yew-comp/src/configuration/network_view.rs:230
 #: proxmox-yew-comp/src/tfa/tfa_view.rs:279
-#: proxmox-yew-comp/src/user_panel.rs:185 proxmox-yew-comp/src/utils.rs:384
-#: proxmox-yew-comp/src/utils.rs:393 proxmox-yew-comp/src/utils.rs:395
-#: proxmox-yew-comp/src/utils.rs:452
+#: proxmox-yew-comp/src/user_panel.rs:185
+#: proxmox-yew-comp/src/token_panel.rs:190 proxmox-yew-comp/src/utils.rs:395
+#: proxmox-yew-comp/src/utils.rs:404 proxmox-yew-comp/src/utils.rs:406
+#: proxmox-yew-comp/src/utils.rs:463
 msgid "Remove"
 msgstr "削除"
 
@@ -11403,7 +11622,6 @@ msgid "Remove ACL Entry"
 msgstr "エントリの削除?"
 
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:424
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:134
 msgid "Remove ACLs of vanished users"
 msgstr "Remove ACLs of vanished users"
 
@@ -11413,6 +11631,12 @@ msgstr "Remove ACLs of vanished users"
 #: pve-manager/www/manager6/dc/SyncWindow.js:134
 msgid "Remove ACLs of vanished users and groups."
 msgstr "Remove ACLs of vanished users and groups."
+
+#: proxmox-yew-comp/src/auth_view.rs:431
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:243
+#, fuzzy
+msgid "Remove ACLs of vanished users."
+msgstr "Remove ACLs of vanished users"
 
 #: pmg-gui/js/Utils.js:652
 msgid "Remove Attachments"
@@ -11455,7 +11679,8 @@ msgstr "消えたものを除去"
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:330
 #: pve-manager/www/manager6/dc/RealmSyncJob.js:363
 #: pve-manager/www/manager6/dc/SyncWindow.js:128
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:131
+#: proxmox-yew-comp/src/auth_view.rs:425
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:237
 msgid "Remove Vanished Options"
 msgstr "消えたオプションを削除"
 
@@ -11498,7 +11723,8 @@ msgstr ""
 "ソースデータストアから消えていた場合、同期ターゲットデータストアからスナップ"
 "ショットを削除する?"
 
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:142
+#: proxmox-yew-comp/src/auth_view.rs:443
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:255
 #, fuzzy
 msgid "Remove vanished properties"
 msgstr "消えたユーザを除去"
@@ -11512,7 +11738,8 @@ msgid "Remove vanished properties from synced users."
 msgstr "同期したユーザからの消えたプロパティを削除。"
 
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:430
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:138
+#: proxmox-yew-comp/src/auth_view.rs:437
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:249
 msgid "Remove vanished user"
 msgstr "消えたユーザを除去"
 
@@ -11529,7 +11756,7 @@ msgstr "削除されたデータ"
 
 #: pve-manager/www/manager6/Utils.js:2064 proxmox-backup/www/Utils.js:425
 #: proxmox-datacenter-manager/ui/src/tasks.rs:14
-#: proxmox-yew-comp/src/utils.rs:362
+#: proxmox-yew-comp/src/utils.rs:373
 msgid "Renew Certificate"
 msgstr "証明書を更新"
 
@@ -11602,6 +11829,10 @@ msgstr "要求状態"
 msgid "Require TFA"
 msgstr "TFAが必要"
 
+#: pve-yew-mobile-gui/src/form/qemu_cpu_flags_list.rs:94
+msgid "Required to let the guest OS know if MDS is mitigated correctly"
+msgstr ""
+
 #: pve-manager/www/manager6/qemu/AgentIPView.js:141
 msgid "Requires '{0}' Privileges"
 msgstr "'{0}' 権限が必要"
@@ -11618,7 +11849,7 @@ msgstr "'{0}' 権限が必要"
 #: proxmox-backup/www/window/Settings.js:282
 #: proxmox-datacenter-manager/ui/src/tasks.rs:64
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/dashboard_panel.rs:235
-#: proxmox-yew-comp/src/utils.rs:410
+#: proxmox-yew-comp/src/utils.rs:421
 #: proxmox-yew-widget-toolkit/src/widget/form/reset_button.rs:134
 msgid "Reset"
 msgstr "リセット"
@@ -11644,7 +11875,7 @@ msgstr "{0} を直ちにリセット"
 #: pve-manager/www/manager6/lxc/Resources.js:291
 #: pve-manager/www/manager6/qemu/HardwareView.js:484
 #: proxmox-datacenter-manager/ui/src/tasks.rs:75
-#: proxmox-yew-comp/src/utils.rs:420
+#: proxmox-yew-comp/src/utils.rs:431
 msgid "Resize"
 msgstr "リサイズ"
 
@@ -11680,8 +11911,9 @@ msgstr "リソースプール"
 #: pve-manager/www/manager6/ha/Status.js:38
 #: pve-manager/www/manager6/lxc/Config.js:268
 #: pve-manager/www/manager6/lxc/DNS.js:71
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:476
 #: pve-yew-mobile-gui/src/widgets/main_navigation.rs:80
-#: pve-yew-mobile-gui/src/pages/page_dashboard.rs:342
+#: pve-yew-mobile-gui/src/pages/page_dashboard.rs:343
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/resources_panel.rs:82
 msgid "Resources"
 msgstr "リソース"
@@ -11692,7 +11924,7 @@ msgstr "リソース"
 #: pve-manager/www/manager6/ceph/OSD.js:927
 #: pve-manager/www/manager6/ceph/ServiceList.js:338
 #: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:132
-#: proxmox-yew-comp/src/utils.rs:226
+#: proxmox-yew-comp/src/utils.rs:245
 msgid "Restart"
 msgstr "再起動"
 
@@ -11719,7 +11951,7 @@ msgstr "変更を有効にするために、pmg-smtp-filterを再起動してく
 #: proxmox-backup/www/tape/window/TapeRestore.js:279
 #: proxmox-datacenter-manager/ui/src/tasks.rs:65
 #: proxmox-datacenter-manager/ui/src/tasks.rs:97
-#: proxmox-yew-comp/src/utils.rs:411 proxmox-yew-comp/src/utils.rs:441
+#: proxmox-yew-comp/src/utils.rs:422 proxmox-yew-comp/src/utils.rs:452
 msgid "Restore"
 msgstr "リストア"
 
@@ -11751,7 +11983,7 @@ msgstr "生成された設定"
 #: proxmox-datacenter-manager/ui/src/tasks.rs:66
 #: proxmox-datacenter-manager/ui/src/tasks.rs:98
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/dashboard_panel.rs:256
-#: proxmox-yew-comp/src/utils.rs:412 proxmox-yew-comp/src/utils.rs:442
+#: proxmox-yew-comp/src/utils.rs:423 proxmox-yew-comp/src/utils.rs:453
 msgid "Resume"
 msgstr "再開"
 
@@ -11794,9 +12026,13 @@ msgstr "リバース DNS サーバー"
 msgid "Revert"
 msgstr "リバート"
 
+#: pve-yew-mobile-gui/src/widgets/pending_property_list.rs:310
+msgid "Revert property failed"
+msgstr ""
+
 #: pve-manager/www/manager6/Utils.js:2065 proxmox-backup/www/Utils.js:426
 #: proxmox-datacenter-manager/ui/src/tasks.rs:15
-#: proxmox-yew-comp/src/utils.rs:363
+#: proxmox-yew-comp/src/utils.rs:374
 msgid "Revoke Certificate"
 msgstr "証明書の取り消し"
 
@@ -11836,7 +12072,7 @@ msgstr "ロール"
 #: pve-manager/www/manager6/tree/SnapshotTree.js:263
 #: proxmox-datacenter-manager/ui/src/tasks.rs:67
 #: proxmox-datacenter-manager/ui/src/tasks.rs:99
-#: proxmox-yew-comp/src/utils.rs:413 proxmox-yew-comp/src/utils.rs:443
+#: proxmox-yew-comp/src/utils.rs:424 proxmox-yew-comp/src/utils.rs:454
 msgid "Rollback"
 msgstr "ロールバック"
 
@@ -11877,13 +12113,9 @@ msgid "Root Filesystem"
 msgstr "ファイルシステム"
 
 #: proxmox-backup/www/datastore/Content.js:359
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:107
 msgid "Root Namespace"
 msgstr "Root 名前空間"
-
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:242
-#, fuzzy
-msgid "Root filesystem usage"
-msgstr "rootディスク使用状況"
 
 #: pve-manager/www/manager6/sdn/zones/EvpnEdit.js:87
 msgid "Route Target Import"
@@ -11914,7 +12146,7 @@ msgid "Run Now"
 msgstr "直ちに実行"
 
 #: pve-manager/www/manager6/form/AgentFeatureSelector.js:17
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:36
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:69
 msgid "Run guest-trim after a disk move or VM migration"
 msgstr "ディスクの移動後か、VMマイグレーション後にguest-trimを実行"
 
@@ -11955,7 +12187,7 @@ msgstr "稼働中"
 msgid "Running Tasks"
 msgstr "稼働中のタスク"
 
-#: proxmox-widget-toolkit/src/Utils.js:89 proxmox-yew-comp/src/lib.rs:291
+#: proxmox-widget-toolkit/src/Utils.js:89 proxmox-yew-comp/src/lib.rs:297
 msgid "Russian"
 msgstr "ロシア語"
 
@@ -12020,7 +12252,7 @@ msgstr "SCSIコントローラタイプ"
 msgid "SDN"
 msgstr "SDN"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:261
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:263
 #, fuzzy
 msgid "SDN Zones"
 msgstr "DNS ゾーン"
@@ -12031,7 +12263,7 @@ msgstr "SLAAC"
 
 #: pve-manager/www/manager6/qemu/Options.js:290
 #: pve-manager/www/manager6/qemu/Smbios1Edit.js:100
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:100
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:90
 msgid "SMBIOS settings (type1)"
 msgstr "SMBIOS 設定 (type1)"
 
@@ -12039,7 +12271,7 @@ msgstr "SMBIOS 設定 (type1)"
 msgid "SMTP HELO checks"
 msgstr "SMTP HELOチェック"
 
-#: pmg-gui/js/MailProxyOptions.js:97
+#: pmg-gui/js/MailProxyOptions.js:85
 msgid "SMTPD Banner"
 msgstr "SMTPDバナー"
 
@@ -12071,6 +12303,7 @@ msgstr "SSH公開鍵"
 #: pve-manager/www/manager6/node/StatusView.js:82
 #: pve-manager/www/manager6/panel/GuestStatusView.js:136
 #: proxmox-backup/www/panel/NodeInfo.js:122
+#: proxmox-yew-comp/src/node_info.rs:194
 msgid "SWAP usage"
 msgstr "SWAP 使用状況"
 
@@ -12099,7 +12332,7 @@ msgstr "Sat"
 #: proxmox-widget-toolkit/src/node/HostsView.js:12 pmg-gui/js/Dashboard.js:38
 #: pmg-gui/js/Settings.js:288 pve-manager/www/manager6/window/Settings.js:384
 #: proxmox-backup/www/Dashboard.js:38 proxmox-backup/www/window/Settings.js:288
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:684
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:696
 msgid "Save"
 msgstr "保存"
 
@@ -12209,7 +12442,7 @@ msgstr "スコープ"
 
 #: pmg-gui/js/ReceiverStatistics.js:93 pmg-gui/js/SpamDetectorCustom.js:131
 #: pmg-gui/js/SpamDetectorCustom.js:177 pmg-gui/js/SpamDetectorCustom.js:261
-#: pmg-gui/js/SpamInfoGrid.js:45 pmg-gui/js/SpamQuarantine.js:179
+#: pmg-gui/js/SpamInfoGrid.js:49 pmg-gui/js/SpamQuarantine.js:179
 #: pmg-gui/js/Utils.js:39
 msgid "Score"
 msgstr "スコア"
@@ -12271,8 +12504,9 @@ msgstr "2番め"
 #: proxmox-widget-toolkit/src/window/AddTotp.js:176
 #: pve-manager/www/manager6/dc/TokenEdit.js:140
 #: proxmox-backup/www/window/TokenEdit.js:190
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:340
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:357
 #: proxmox-yew-comp/src/tfa/tfa_add_totp.rs:110
+#: proxmox-yew-comp/src/token_panel.rs:341
 msgid "Secret"
 msgstr "シークレット"
 
@@ -12302,7 +12536,7 @@ msgstr "選択"
 msgid "Security Group"
 msgstr "セキュリティグループ"
 
-#: pmg-yew-quarantine-gui/src/page_spam_list.rs:192
+#: pmg-yew-quarantine-gui/src/page_spam_list.rs:219
 #, fuzzy
 msgid "Select Date"
 msgstr "イメージ選択"
@@ -12314,6 +12548,11 @@ msgstr "ファイルを選択"
 #: pve-manager/www/manager6/qemu/HDEdit.js:276
 msgid "Select Image"
 msgstr "イメージ選択"
+
+#: pmg-yew-quarantine-gui/src/page_spam_list.rs:240
+#, fuzzy
+msgid "Select Language"
+msgstr "既定の言語"
 
 #: proxmox-backup/www/tape/window/TapeRestore.js:316
 msgid "Select Media-Set to restore"
@@ -12367,7 +12606,7 @@ msgstr "選択モード"
 msgid "Selector"
 msgstr "セレクタ"
 
-#: pmg-gui/js/MailProxyOptions.js:103
+#: pmg-gui/js/MailProxyOptions.js:91
 msgid "Send NDR on Blocked E-Mails"
 msgstr "ブロックされたEメールにNDRを送信"
 
@@ -12389,7 +12628,7 @@ msgstr "メールの送信先"
 
 #: pmg-gui/js/AttachmentQuarantine.js:74 pmg-gui/js/ContactStatistics.js:63
 #: pmg-gui/js/MailTracker.js:76 pmg-gui/js/NavigationTree.js:190
-#: pmg-gui/js/PostfixMailQueue.js:172 pmg-gui/js/ReceiverStatistics.js:63
+#: pmg-gui/js/PostfixMailQueue.js:180 pmg-gui/js/ReceiverStatistics.js:63
 #: pmg-gui/js/SenderStatistics.js:102 pmg-gui/js/SenderStatistics.js:148
 #: pmg-gui/js/SenderStatistics.js:211 pmg-gui/js/Utils.js:37
 #: pmg-gui/js/VirusQuarantine.js:76
@@ -12420,7 +12659,7 @@ msgstr "Seq. Nr."
 #: proxmox-backup/www/tape/form/ChangerSelector.js:51
 #: proxmox-backup/www/tape/form/DriveSelector.js:46
 #: proxmox-backup/www/tape/form/TapeDevicePathSelector.js:36
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:77
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:68
 msgid "Serial"
 msgstr "シリアル"
 
@@ -12441,10 +12680,10 @@ msgstr "シリアルソケット ‘{0}’ はソケットにマッピングさ�
 
 #: pve-manager/www/manager6/Utils.js:610 pve-manager/www/manager6/Utils.js:611
 #: pve-manager/www/manager6/Utils.js:612 pve-manager/www/manager6/Utils.js:613
-#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:39
-#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:40
-#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:41
-#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:42
+#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:44
+#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:45
+#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:46
+#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:47
 msgid "Serial terminal"
 msgstr "シリアルターミナル"
 
@@ -12463,12 +12702,12 @@ msgstr "シリアルターミナル"
 #: pve-manager/www/manager6/storage/ESXIEdit.js:56
 #: pve-manager/www/manager6/storage/NFSEdit.js:116
 #: pve-manager/www/manager6/storage/PBSEdit.js:499
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:177
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:289
 msgid "Server"
 msgstr "サーバ"
 
 #: pve-manager/www/manager6/dc/NodeView.js:42
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:231
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:233
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_nodes.rs:80
 msgid "Server Address"
 msgstr "サーバアドレス"
@@ -12486,7 +12725,8 @@ msgid "Server ID"
 msgstr "サーバID"
 
 #: pve-manager/www/manager6/node/Summary.js:172
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:155
+#: proxmox-datacenter-manager/ui/src/pbs/remote.rs:149
+#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:154
 #, fuzzy
 msgid "Server Load"
 msgstr "サーバ負荷"
@@ -12505,7 +12745,7 @@ msgstr "サーバ表示"
 
 #: proxmox-widget-toolkit/src/form/FingerprintField.js:8
 #: pmg-gui/js/PBSRemoteEdit.js:116
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:241
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:243
 msgid ""
 "Server certificate SHA-256 fingerprint, required for self-signed certificates"
 msgstr "サーバ証明書のSHA-256フィンガープリントで、自己証明書に必要"
@@ -12518,7 +12758,8 @@ msgid ""
 msgstr "サーバ証明書のSHA-256フィンガープリントで、自己証明書に必要"
 
 #: pmg-gui/js/ServerStatus.js:129 proxmox-backup/www/ServerStatus.js:222
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:315
+#: proxmox-datacenter-manager/ui/src/pbs/remote.rs:263
+#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:259
 msgid "Server load"
 msgstr "サーバ負荷"
 
@@ -12527,9 +12768,9 @@ msgstr "サーバ負荷"
 msgid "Server time"
 msgstr "サーバーの時刻"
 
-#: pve-manager/www/manager6/dc/Log.js:57 proxmox-yew-comp/src/utils.rs:224
-#: proxmox-yew-comp/src/utils.rs:225 proxmox-yew-comp/src/utils.rs:226
-#: proxmox-yew-comp/src/utils.rs:227
+#: pve-manager/www/manager6/dc/Log.js:57 proxmox-yew-comp/src/utils.rs:243
+#: proxmox-yew-comp/src/utils.rs:244 proxmox-yew-comp/src/utils.rs:245
+#: proxmox-yew-comp/src/utils.rs:246
 msgid "Service"
 msgstr "サービス"
 
@@ -12616,7 +12857,7 @@ msgid "Shared"
 msgstr "共有済"
 
 #: pve-manager/www/manager6/qemu/MemoryEdit.js:114
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_memory_property.rs:71
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_memory_property.rs:73
 msgid "Shares"
 msgstr "共有"
 
@@ -12631,15 +12872,15 @@ msgstr "共有"
 #: proxmox-datacenter-manager/ui/src/main_menu.rs:202
 #: proxmox-datacenter-manager/ui/src/tasks.rs:77
 #: proxmox-datacenter-manager/ui/src/tasks.rs:85
-#: proxmox-yew-comp/src/utils.rs:422 proxmox-yew-comp/src/utils.rs:429
+#: proxmox-yew-comp/src/utils.rs:433 proxmox-yew-comp/src/utils.rs:440
 msgid "Shell"
 msgstr "シェル"
 
-#: proxmox-yew-comp/src/utils.rs:219
+#: proxmox-yew-comp/src/utils.rs:238
 msgid "Shell (Spice)"
 msgstr ""
 
-#: proxmox-yew-comp/src/utils.rs:220
+#: proxmox-yew-comp/src/utils.rs:239
 #, fuzzy
 msgid "Shell (VNC)"
 msgstr "シェル"
@@ -12679,7 +12920,7 @@ msgstr "Emailアドレスの表示"
 msgid "Show Fingerprint"
 msgstr "フィンガープリントの表示"
 
-#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:198
+#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:206
 #, fuzzy
 msgid "Show Local Tasks"
 msgstr "全タスク表示"
@@ -12701,10 +12942,11 @@ msgstr "新しいパスワード"
 #: proxmox-backup/www/config/TokenView.js:225
 #: proxmox-backup/www/config/UserView.js:195
 #: proxmox-yew-comp/src/user_panel.rs:196
+#: proxmox-yew-comp/src/token_panel.rs:206
 msgid "Show Permissions"
 msgstr "アクセス権限の表示"
 
-#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:203
+#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:211
 #, fuzzy
 msgid "Show Remote Tasks"
 msgstr "全タスク表示"
@@ -12750,7 +12992,7 @@ msgstr "{1}の {0}"
 #: pve-manager/www/manager6/qemu/Config.js:154
 #: proxmox-backup/www/ServerStatus.js:154
 #: proxmox-datacenter-manager/ui/src/pve/tree.rs:118
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:673
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:677
 #: proxmox-datacenter-manager/ui/src/pve/mod.rs:64
 #: proxmox-datacenter-manager/ui/src/tasks.rs:41
 #: proxmox-datacenter-manager/ui/src/tasks.rs:68
@@ -12758,8 +13000,8 @@ msgstr "{1}の {0}"
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/dashboard_panel.rs:241
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/dashboard_panel.rs:210
 #: pve-yew-mobile-gui/src/pages/page_node_status/dashboard_panel.rs:137
-#: proxmox-yew-comp/src/utils.rs:387 proxmox-yew-comp/src/utils.rs:414
-#: proxmox-yew-comp/src/utils.rs:444
+#: proxmox-yew-comp/src/utils.rs:398 proxmox-yew-comp/src/utils.rs:425
+#: proxmox-yew-comp/src/utils.rs:455
 msgid "Shutdown"
 msgstr "シャットダウン"
 
@@ -12778,7 +13020,7 @@ msgstr "VM {0} をシャットダウン?"
 
 #: pve-manager/www/manager6/qemu/CreateWizard.js:142
 #: pve-manager/www/manager6/window/StartupEdit.js:49
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:169
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:175
 msgid "Shutdown timeout"
 msgstr "シャットダウンタイムアウト"
 
@@ -12827,8 +13069,7 @@ msgstr "Simulate"
 #: proxmox-widget-toolkit/src/node/Tasks.js:309
 #: proxmox-widget-toolkit/src/panel/JournalView.js:310
 #: proxmox-widget-toolkit/src/panel/LogView.js:324
-#: pmg-gui/js/QuarantineList.js:320 pmg-gui/js/mobile/quarantineview.js:26
-#: proxmox-yew-comp/src/tasks.rs:409
+#: pmg-gui/js/QuarantineList.js:320 proxmox-yew-comp/src/tasks.rs:409
 msgid "Since"
 msgstr "起点"
 
@@ -12836,6 +13077,15 @@ msgstr "起点"
 #: proxmox-backup/www/window/ZFSCreate.js:44
 msgid "Single Disk"
 msgstr "単一ディスク"
+
+#: pmg-gui/js/DNSBLSitesField.js:149
+msgid "Site"
+msgstr ""
+
+#: pmg-gui/js/DNSBLSitesField.js:72
+#, fuzzy
+msgid "Site must not be empty."
+msgstr "タグを空白にはできません。"
 
 #: proxmox-widget-toolkit/src/form/DiskSelector.js:30
 #: proxmox-widget-toolkit/src/form/MultiDiskSelector.js:112
@@ -12903,7 +13153,7 @@ msgstr "スロット"
 msgid "Slots"
 msgstr "スロット"
 
-#: proxmox-widget-toolkit/src/Utils.js:90 proxmox-yew-comp/src/lib.rs:292
+#: proxmox-widget-toolkit/src/Utils.js:90 proxmox-yew-comp/src/lib.rs:298
 msgid "Slovenian"
 msgstr "スロベキア語"
 
@@ -12924,7 +13174,7 @@ msgstr "スマートホスト"
 #: proxmox-backup/www/tape/window/TapeRestore.js:867
 #: proxmox-datacenter-manager/ui/src/tasks.rs:69
 #: proxmox-datacenter-manager/ui/src/tasks.rs:101
-#: proxmox-yew-comp/src/utils.rs:415 proxmox-yew-comp/src/utils.rs:445
+#: proxmox-yew-comp/src/utils.rs:426 proxmox-yew-comp/src/utils.rs:456
 msgid "Snapshot"
 msgstr "スナップショット"
 
@@ -12958,8 +13208,8 @@ msgstr "ソケット"
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:118
 #: pve-manager/www/manager6/window/GuestImport.js:488
 #: pve-manager/www/manager6/window/Restore.js:358
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:112
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:217
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:104
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:209
 msgid "Sockets"
 msgstr "ソケット"
 
@@ -13072,11 +13322,11 @@ msgstr "スパムスコア"
 msgid "SpamAssassin update"
 msgstr "SpamAssassinの更新"
 
-#: pmg-gui/js/SpamInfoGrid.js:41
+#: pmg-gui/js/SpamInfoGrid.js:45
 msgid "Spamscore"
 msgstr "スパムスコア"
 
-#: proxmox-widget-toolkit/src/Utils.js:74 proxmox-yew-comp/src/lib.rs:271
+#: proxmox-widget-toolkit/src/Utils.js:74 proxmox-yew-comp/src/lib.rs:277
 msgid "Spanish"
 msgstr "スペイン語"
 
@@ -13090,7 +13340,7 @@ msgstr "スピード"
 
 #: pve-manager/www/manager6/qemu/Options.js:332
 #: pve-manager/www/manager6/qemu/Options.js:338
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:71
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:66
 msgid "Spice Enhancements"
 msgstr "Spice拡張"
 
@@ -13108,7 +13358,7 @@ msgid "Standard"
 msgstr "標準"
 
 #: pve-manager/www/manager6/Utils.js:604
-#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:33
+#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:38
 msgid "Standard VGA"
 msgstr "標準 VGA"
 
@@ -13127,7 +13377,7 @@ msgstr "標準 VGA"
 #: pve-manager/www/manager6/qemu/CmdMenu.js:61
 #: pve-manager/www/manager6/qemu/Config.js:58
 #: proxmox-datacenter-manager/ui/src/pve/tree.rs:117
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:696
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:700
 #: proxmox-datacenter-manager/ui/src/pve/mod.rs:63
 #: proxmox-datacenter-manager/ui/src/tasks.rs:9
 #: proxmox-datacenter-manager/ui/src/tasks.rs:42
@@ -13135,9 +13385,9 @@ msgstr "標準 VGA"
 #: proxmox-datacenter-manager/ui/src/tasks.rs:102
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/dashboard_panel.rs:261
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/dashboard_panel.rs:223
-#: proxmox-yew-comp/src/utils.rs:224 proxmox-yew-comp/src/utils.rs:357
-#: proxmox-yew-comp/src/utils.rs:388 proxmox-yew-comp/src/utils.rs:416
-#: proxmox-yew-comp/src/utils.rs:446
+#: proxmox-yew-comp/src/utils.rs:243 proxmox-yew-comp/src/utils.rs:368
+#: proxmox-yew-comp/src/utils.rs:399 proxmox-yew-comp/src/utils.rs:427
+#: proxmox-yew-comp/src/utils.rs:457
 msgid "Start"
 msgstr "開始"
 
@@ -13184,12 +13434,12 @@ msgstr "リストア後に起動"
 msgid "Start at boot"
 msgstr "ブート時に起動"
 
-#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:103
+#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:95
 #, fuzzy
 msgid "Start backup now"
 msgstr "今すぐバックアップ"
 
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:89
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:99
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/config_panel.rs:86
 #, fuzzy
 msgid "Start on boot"
@@ -13213,7 +13463,7 @@ msgstr "{0} のインストール開始"
 #: pve-manager/www/manager6/qemu/Options.js:76
 #: pve-manager/www/manager6/window/StartupEdit.js:35
 #: pve-manager/www/manager6/window/StartupEdit.js:69
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:148
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:158
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/config_panel.rs:100
 msgid "Start/Shutdown order"
 msgstr "開始/停止順"
@@ -13236,7 +13486,7 @@ msgstr "開始時刻"
 
 #: pve-manager/www/manager6/qemu/CreateWizard.js:134
 #: pve-manager/www/manager6/window/StartupEdit.js:42
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:163
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:171
 msgid "Startup delay"
 msgstr "開始時の遅延"
 
@@ -13336,8 +13586,8 @@ msgstr "最後のガーベジコレクションからの状態"
 #: proxmox-backup/www/tape/TapeInventory.js:321
 #: proxmox-datacenter-manager/ui/src/remotes/tasks.rs:91
 #: proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:261
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:297
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:308
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:300
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:311
 #: proxmox-datacenter-manager/ui/src/sdn/zone_tree.rs:137
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/dashboard_panel.rs:194
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/dashboard_panel.rs:184
@@ -13381,9 +13631,9 @@ msgstr "ステータス: {0}"
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/dashboard_panel.rs:204
 #: pve-yew-mobile-gui/src/pages/page_task_status.rs:258
 #: proxmox-yew-comp/src/task_viewer.rs:196
-#: proxmox-yew-comp/src/task_viewer.rs:277 proxmox-yew-comp/src/utils.rs:225
-#: proxmox-yew-comp/src/utils.rs:389 proxmox-yew-comp/src/utils.rs:417
-#: proxmox-yew-comp/src/utils.rs:447
+#: proxmox-yew-comp/src/task_viewer.rs:277 proxmox-yew-comp/src/utils.rs:244
+#: proxmox-yew-comp/src/utils.rs:400 proxmox-yew-comp/src/utils.rs:428
+#: proxmox-yew-comp/src/utils.rs:458
 msgid "Stop"
 msgstr "停止"
 
@@ -13433,11 +13683,11 @@ msgstr "停止中"
 #: pve-manager/www/manager6/window/Restore.js:176
 #: proxmox-datacenter-manager/ui/src/widget/pve_migrate_mapping.rs:41
 #: pve-yew-mobile-gui/src/pages/page_dashboard.rs:158
-#: pve-yew-mobile-gui/src/pages/page_dashboard.rs:319
+#: pve-yew-mobile-gui/src/pages/page_dashboard.rs:320
 msgid "Storage"
 msgstr "ストレージ"
 
-#: proxmox-datacenter-manager/ui/src/pve/storage.rs:242
+#: proxmox-datacenter-manager/ui/src/pve/storage.rs:245
 #, fuzzy
 msgid "Storage '{0}'"
 msgstr "ストレージ"
@@ -13452,7 +13702,7 @@ msgid "Storage Retention Configuration"
 msgstr "ストレージの保存構成"
 
 #: pve-yew-mobile-gui/src/form/pve_storage_selector.rs:226
-#: pve-yew-mobile-gui/src/widgets/mod.rs:92
+#: pve-yew-mobile-gui/src/widgets/mod.rs:105
 #, fuzzy
 msgid "Storage size/usage unknown"
 msgstr "ストレージ使用状態"
@@ -13499,7 +13749,7 @@ msgstr "サブディレクトリ"
 #: pmg-gui/js/VirusQuarantine.js:76
 #: pve-manager/www/manager6/node/Certificates.js:60
 #: pve-manager/www/manager6/node/Certificates.js:322
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:303
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:305
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_nodes.rs:279
 #: proxmox-yew-comp/src/acme/certificate_list.rs:347
 #: proxmox-yew-comp/src/acme/certificate_list.rs:380
@@ -13510,7 +13760,7 @@ msgstr "件名"
 #: proxmox-widget-toolkit/src/window/Certificates.js:58
 #: pve-manager/www/manager6/node/Certificates.js:93
 #: pve-manager/www/manager6/node/Certificates.js:351
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:308
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:310
 #: proxmox-yew-comp/src/acme/certificate_list.rs:352
 #: proxmox-yew-comp/src/acme/certificate_list.rs:409
 msgid "Subject Alternative Names"
@@ -13646,13 +13896,13 @@ msgstr "Support for {0} {1} ends on {2}"
 #: pve-manager/www/manager6/node/CmdMenu.js:67
 #: pve-manager/www/manager6/node/Config.js:77
 #: proxmox-datacenter-manager/ui/src/tasks.rs:104
-#: proxmox-yew-comp/src/utils.rs:448
+#: proxmox-yew-comp/src/utils.rs:459
 msgid "Suspend"
 msgstr "一時停止"
 
 #: pve-manager/www/manager6/Utils.js:2128
 #: proxmox-datacenter-manager/ui/src/tasks.rs:81
-#: proxmox-yew-comp/src/utils.rs:425
+#: proxmox-yew-comp/src/utils.rs:436
 msgid "Suspend all VMs"
 msgstr "すべてのVMを一時停止"
 
@@ -13673,9 +13923,21 @@ msgstr "スワップ"
 msgid "Swap usage"
 msgstr "Swap 使用状況"
 
-#: proxmox-widget-toolkit/src/Utils.js:91 proxmox-yew-comp/src/lib.rs:293
+#: proxmox-widget-toolkit/src/Utils.js:91 proxmox-yew-comp/src/lib.rs:299
 msgid "Swedish"
 msgstr "スウェーデン語"
+
+#: pmg-yew-quarantine-gui/src/page_spam_list.rs:301
+msgid "Switch to Desktop View"
+msgstr ""
+
+#: pmg-gui/js/QuarantineView.js:310
+msgid "Switch to Mobile View"
+msgstr ""
+
+#: pmg-gui/js/QuarantineView.js:245
+msgid "Switch to mobile view"
+msgstr ""
 
 #: proxmox-widget-toolkit/src/panel/AuthView.js:160
 #: proxmox-widget-toolkit/src/window/SyncWindow.js:150
@@ -13683,9 +13945,14 @@ msgstr "スウェーデン語"
 #: pve-manager/www/manager6/dc/AuthView.js:128
 #: pve-manager/www/manager6/dc/SyncWindow.js:178
 #: proxmox-datacenter-manager/ui/src/tasks.rs:17
-#: proxmox-yew-comp/src/auth_view.rs:223 proxmox-yew-comp/src/utils.rs:365
+#: proxmox-yew-comp/src/auth_view.rs:321 proxmox-yew-comp/src/utils.rs:376
 msgid "Sync"
 msgstr "同期"
+
+#: proxmox-yew-comp/src/auth_view.rs:128
+#, fuzzy
+msgid "Sync Failed"
+msgstr "失敗"
 
 #: proxmox-backup/www/Utils.js:456
 msgid "Sync Job"
@@ -13711,13 +13978,13 @@ msgstr "同期レベル"
 
 #: proxmox-widget-toolkit/src/window/AuthEditBase.js:62
 #: pve-manager/www/manager6/dc/AuthEditBase.js:125
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:91
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:196
 msgid "Sync Options"
 msgstr "同期オプション"
 
 #: pve-manager/www/manager6/Utils.js:2068
 #: proxmox-datacenter-manager/ui/src/tasks.rs:18
-#: proxmox-yew-comp/src/utils.rs:366
+#: proxmox-yew-comp/src/utils.rs:377
 msgid "Sync Preview"
 msgstr "同期プレビュー"
 
@@ -13899,7 +14166,7 @@ msgstr "タグを空白にはできません。"
 #: pve-manager/www/manager6/data/ResourceStore.js:334
 #: pve-manager/www/manager6/form/TagFieldSet.js:6
 #: pve-manager/www/manager6/form/VMSelector.js:86
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:604
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:608
 msgid "Tags"
 msgstr "タグ"
 
@@ -14110,15 +14377,15 @@ msgstr "タスク結果"
 msgid "Task Summary"
 msgstr "タスクサマリー"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:275
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:277
 msgid "Task Summary Sorted by Failed Tasks (Last {0}h)"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:726
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:738
 msgid "Task Summary Time Range (last hours)"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:276
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:278
 msgid "Task Summary by Category (Last {0}h)"
 msgstr ""
 
@@ -14177,7 +14444,7 @@ msgstr "サービスの利用条件"
 msgid "Test"
 msgstr "テスト"
 
-#: pmg-gui/js/SpamInfoGrid.js:37
+#: pmg-gui/js/SpamInfoGrid.js:41
 msgid "Test Name"
 msgstr "テスト名"
 
@@ -14207,7 +14474,7 @@ msgid ""
 "The amount of data eventually stored in this pool. Used for auto-scaling."
 msgstr "このプールに最終的に格納されたデータの量。自動スケールに使用されます。"
 
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:91
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:93
 #, fuzzy
 msgid "The certificate of the remote server is not trusted."
 msgstr "サーバのTLS証明書を検証"
@@ -14325,7 +14592,7 @@ msgstr ""
 "{0}テストリポジトリは不安定な更新を引き起こす可能性があるため、本番環境での使"
 "用は推奨されません!"
 
-#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:160
+#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:161
 #: pve-yew-mobile-gui/src/pages/page_settings.rs:40
 #: proxmox-yew-comp/src/theme_dialog.rs:45
 #, fuzzy
@@ -14360,6 +14627,7 @@ msgid "This is not a valid hostname"
 msgstr "これは有効なホスト名ではありません"
 
 #: pve-manager/www/manager6/qemu/DisplayEdit.js:124
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:119
 msgid "This option depends on your display type."
 msgstr "このオプションはディスプレイタイプに依存します"
 
@@ -14407,14 +14675,14 @@ msgstr "TiB"
 
 #: pmg-gui/js/AttachmentQuarantine.js:93 pmg-gui/js/BackupRestore.js:174
 #: pmg-gui/js/ContactStatistics.js:84 pmg-gui/js/MailTracker.js:367
-#: pmg-gui/js/PostfixMailQueue.js:160 pmg-gui/js/ReceiverStatistics.js:84
+#: pmg-gui/js/PostfixMailQueue.js:168 pmg-gui/js/ReceiverStatistics.js:84
 #: pmg-gui/js/SenderStatistics.js:84 pmg-gui/js/SpamQuarantine.js:198
 #: pmg-gui/js/SystemConfiguration.js:28 pmg-gui/js/VirusQuarantine.js:101
 #: pve-manager/www/manager6/dc/Log.js:44
 #: pve-manager/www/manager6/node/Config.js:238
 #: pve-manager/www/manager6/window/ScheduleSimulator.js:133
 #: proxmox-backup/www/SystemConfiguration.js:29
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:107
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:129
 #: proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:269
 msgid "Time"
 msgstr "時刻"
@@ -14486,7 +14754,7 @@ msgid "To Slot"
 msgstr "To Slot"
 
 #: pve-manager/www/manager6/form/SpiceEnhancementSelector.js:33
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:57
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:52
 msgid ""
 "To use these features set the display to SPICE in the hardware settings of "
 "the VM."
@@ -14494,7 +14762,7 @@ msgstr ""
 "それらの機能を使うため、VMのハードウェア設定中で表示をSPICEに設定してくださ"
 "い。"
 
-#: pmg-yew-quarantine-gui/src/page_spam_list.rs:87
+#: pmg-yew-quarantine-gui/src/page_spam_list.rs:93
 #, fuzzy
 msgid "To:"
 msgstr "受信者"
@@ -14513,27 +14781,34 @@ msgstr "スパム情報の切り替え"
 #: pve-manager/www/manager6/sdn/ipams/NetboxEdit.js:33
 #: pve-manager/www/manager6/sdn/ipams/PhpIpamEdit.js:33
 #: proxmox-backup/www/window/InfluxDbEdit.js:73
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:331
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:348
+#: proxmox-yew-comp/src/token_panel.rs:388
+#: proxmox-yew-comp/src/token_panel.rs:399
 msgid "Token"
 msgstr "トークン"
 
 #: pve-manager/www/manager6/dc/TokenEdit.js:53
 #: pve-manager/www/manager6/dc/TokenEdit.js:132
 #: proxmox-backup/www/window/TokenEdit.js:182
+#: proxmox-yew-comp/src/token_panel.rs:333
 msgid "Token ID"
 msgstr "トークンID"
 
 #: pve-manager/www/manager6/dc/TokenView.js:141
 #: proxmox-backup/www/window/TokenEdit.js:42
+#: proxmox-yew-comp/src/token_panel.rs:427
+#: proxmox-yew-comp/src/token_panel.rs:461
 msgid "Token Name"
 msgstr "トークン名"
 
 #: pve-manager/www/manager6/dc/TokenEdit.js:116
 #: proxmox-backup/www/window/TokenEdit.js:166
+#: proxmox-yew-comp/src/token_panel.rs:326
 msgid "Token Secret"
 msgstr "トークン選択"
 
 #: proxmox-backup/www/config/TokenView.js:244
+#: proxmox-yew-comp/src/token_panel.rs:479
 msgid "Token name"
 msgstr "トークン名"
 
@@ -14562,9 +14837,10 @@ msgstr "トークン受信者"
 #: proxmox-backup/www/ServerStatus.js:240
 #: proxmox-backup/www/ServerStatus.js:255
 #: proxmox-backup/www/datastore/Summary.js:341
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:205
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:205
-#: proxmox-datacenter-manager/ui/src/pve/storage.rs:198
+#: proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:140
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:208
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:208
+#: proxmox-datacenter-manager/ui/src/pve/storage.rs:201
 msgid "Total"
 msgstr "合計"
 
@@ -14585,7 +14861,8 @@ msgstr "メールカウント合計"
 msgid "Total Mails"
 msgstr "メール合計"
 
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:157
+#: proxmox-datacenter-manager/ui/src/pbs/remote.rs:151
+#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:156
 #, fuzzy
 msgid "Total Memory"
 msgstr "合計コア数"
@@ -14600,7 +14877,7 @@ msgstr "送信合計"
 
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:147
 #: pve-manager/www/manager6/window/GuestImport.js:551
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:123
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:115
 msgid "Total cores"
 msgstr "合計コア数"
 
@@ -14675,7 +14952,7 @@ msgstr "火"
 msgid "Tuning Options"
 msgstr "チューニングオプション"
 
-#: proxmox-widget-toolkit/src/Utils.js:92 proxmox-yew-comp/src/lib.rs:294
+#: proxmox-widget-toolkit/src/Utils.js:92 proxmox-yew-comp/src/lib.rs:300
 msgid "Turkish"
 msgstr "トルコ語"
 
@@ -14684,7 +14961,7 @@ msgid "Two Factor"
 msgstr "2要素"
 
 #: proxmox-backup/www/panel/AccessControl.js:24
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:70
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:80
 msgid "Two Factor Authentication"
 msgstr "2要素認証"
 
@@ -14739,15 +15016,16 @@ msgstr "2要素認証"
 #: proxmox-backup/www/form/AuthidSelector.js:72
 #: proxmox-backup/www/form/GroupFilter.js:520
 #: proxmox-backup/www/tape/ChangerStatus.js:47
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:326
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:317
 #: proxmox-datacenter-manager/ui/src/widget/pve_storage_selector.rs:207
 #: proxmox-datacenter-manager/ui/src/widget/pve_migrate_mapping.rs:351
-#: proxmox-datacenter-manager/ui/src/pve/storage.rs:290
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:49
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:105
+#: proxmox-datacenter-manager/ui/src/pve/storage.rs:284
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_machine_property.rs:110
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:82
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:99
 #: pve-yew-mobile-gui/src/form/pve_storage_selector.rs:252
 #: proxmox-yew-comp/src/acme/acme_domains.rs:93
-#: proxmox-yew-comp/src/auth_view.rs:292
+#: proxmox-yew-comp/src/auth_view.rs:477
 #: proxmox-yew-comp/src/configuration/network_view.rs:405
 #: proxmox-yew-comp/src/subscription_panel.rs:185
 #: proxmox-yew-comp/src/tfa/tfa_confirm_remove.rs:52
@@ -14806,12 +15084,12 @@ msgstr "USBデバイス"
 msgid "USB Devices"
 msgstr "USBデバイス"
 
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:45
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:36
 #, fuzzy
 msgid "UUID"
 msgstr "LV UUID"
 
-#: proxmox-widget-toolkit/src/Utils.js:93 proxmox-yew-comp/src/lib.rs:295
+#: proxmox-widget-toolkit/src/Utils.js:93 proxmox-yew-comp/src/lib.rs:301
 msgid "Ukrainian"
 msgstr "ウクライナ語"
 
@@ -14819,8 +15097,8 @@ msgstr "ウクライナ語"
 msgid "Unable to apply changes"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:157
-#: proxmox-yew-comp/src/auth_view.rs:137
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:154
+#: proxmox-yew-comp/src/auth_view.rs:215
 #: proxmox-yew-comp/src/configuration/network_view.rs:150
 #: proxmox-yew-comp/src/tfa/tfa_view.rs:225
 msgid "Unable to delete item"
@@ -14859,11 +15137,11 @@ msgstr ""
 #: proxmox-backup/www/window/RemoteEdit.js:25
 #: proxmox-backup/www/window/S3ClientEdit.js:25
 #: proxmox-datacenter-manager/ui/src/remotes/edit_remote.rs:109
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:242
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:366
 msgid "Unchanged"
 msgstr "変更なし"
 
-#: proxmox-widget-toolkit/src/panel/RRDChart.js:278
+#: proxmox-widget-toolkit/src/panel/RRDChart.js:288
 msgid "Undo Zoom"
 msgstr "ズームを戻す"
 
@@ -14960,7 +15238,7 @@ msgstr "{0}のTFA認証のロックを解除します"
 #: pve-manager/www/manager6/Utils.js:2151
 #: proxmox-backup/www/datastore/Summary.js:256
 #: proxmox-datacenter-manager/ui/src/tasks.rs:106
-#: proxmox-yew-comp/src/utils.rs:450
+#: proxmox-yew-comp/src/utils.rs:461
 msgid "Unmount"
 msgstr "アンマウント"
 
@@ -14995,7 +15273,7 @@ msgstr "非特権コンテナ"
 #: proxmox-widget-toolkit/src/node/Tasks.js:320
 #: proxmox-widget-toolkit/src/panel/JournalView.js:326
 #: proxmox-widget-toolkit/src/panel/LogView.js:343
-#: pmg-gui/js/QuarantineList.js:327 pmg-gui/js/mobile/quarantineview.js:36
+#: pmg-gui/js/QuarantineList.js:327
 msgid "Until"
 msgstr "終点"
 
@@ -15022,8 +15300,8 @@ msgstr "Up"
 
 #: pmg-gui/js/DKIMSettings.js:154 pve-manager/www/manager6/Utils.js:2066
 #: proxmox-datacenter-manager/ui/src/tasks.rs:16
-#: pve-yew-mobile-gui/src/widgets/edit_dialog.rs:353
-#: proxmox-yew-comp/src/edit_window.rs:311 proxmox-yew-comp/src/utils.rs:364
+#: pve-yew-mobile-gui/src/widgets/edit_dialog.rs:378
+#: proxmox-yew-comp/src/edit_window.rs:311 proxmox-yew-comp/src/utils.rs:375
 msgid "Update"
 msgstr "アップデート"
 
@@ -15039,7 +15317,7 @@ msgstr "今すぐ更新"
 msgid "Update now"
 msgstr "今すぐ更新"
 
-#: proxmox-widget-toolkit/src/Utils.js:749 proxmox-yew-comp/src/utils.rs:218
+#: proxmox-widget-toolkit/src/Utils.js:749 proxmox-yew-comp/src/utils.rs:237
 msgid "Update package database"
 msgstr "アップデートパッケージデータベース"
 
@@ -15136,10 +15414,12 @@ msgstr "稼働時間"
 #: pve-manager/www/manager6/storage/StatusView.js:56
 #: pve-manager/www/manager6/storage/Summary.js:51
 #: proxmox-backup/www/datastore/Summary.js:154
-#: proxmox-datacenter-manager/ui/src/pve/remote.rs:208
-#: proxmox-datacenter-manager/ui/src/pve/storage.rs:197
-#: proxmox-datacenter-manager/ui/src/pve/storage.rs:301
-#: proxmox-datacenter-manager/ui/src/pve/storage.rs:341
+#: proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:139
+#: proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:232
+#: proxmox-datacenter-manager/ui/src/pve/remote.rs:205
+#: proxmox-datacenter-manager/ui/src/pve/storage.rs:200
+#: proxmox-datacenter-manager/ui/src/pve/storage.rs:296
+#: proxmox-datacenter-manager/ui/src/pve/storage.rs:336
 msgid "Usage"
 msgstr "使用状況"
 
@@ -15185,11 +15465,11 @@ msgstr ""
 "標準配布およびMicrosoftセキュアブートキーが登録されたEFIvarsイメージを使用し"
 "ます。"
 
-#: pmg-gui/js/MailProxyOptions.js:52
+#: pmg-gui/js/MailProxyOptions.js:40
 msgid "Use Greylisting for IPv4"
 msgstr "IPv4にグレイリスト使用"
 
-#: pmg-gui/js/MailProxyOptions.js:62
+#: pmg-gui/js/MailProxyOptions.js:50
 msgid "Use Greylisting for IPv6"
 msgstr "IPｖ６にグレイリスト使用"
 
@@ -15209,7 +15489,7 @@ msgstr "Proxmox VEが管理しているhyper-converged ceph poolを使用"
 msgid "Use Proxmox VE managed hyper-converged cephFS"
 msgstr "Proxmox VEが管理しているhyper-converged cephFSを使用"
 
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:31
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_agent_property.rs:64
 #, fuzzy
 msgid "Use QEMU Guest Agent"
 msgstr "Qemuエージェント"
@@ -15222,7 +15502,7 @@ msgstr "RBLチェック使用"
 msgid "Use Razor2 checks"
 msgstr "Razor2チェック使用"
 
-#: pmg-gui/js/MailProxyOptions.js:72
+#: pmg-gui/js/MailProxyOptions.js:60
 msgid "Use SPF"
 msgstr "SPFを使用"
 
@@ -15253,7 +15533,7 @@ msgstr "高度な統計フィルタを使用"
 msgid "Use auto-welcomelists"
 msgstr "オートホワイトリスト使用"
 
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:328
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:345
 #, fuzzy
 msgid "Use existing Token"
 msgstr "既存のデータストアを再利用"
@@ -15284,7 +15564,7 @@ msgstr "ホスト設定を使用する"
 #: pve-manager/www/manager6/qemu/Options.js:247
 #: pve-manager/www/manager6/qemu/Options.js:253
 #: pve-manager/www/manager6/qemu/Options.js:265
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:108
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:118
 msgid "Use local time for RTC"
 msgstr "RTC にローカルタイムを設定"
 
@@ -15314,7 +15594,7 @@ msgstr ""
 
 #: pve-manager/www/manager6/qemu/Options.js:148
 #: pve-manager/www/manager6/qemu/Options.js:154
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:93
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:103
 msgid "Use tablet for pointer"
 msgstr "ポインタ用にタブレットを使う"
 
@@ -15359,7 +15639,8 @@ msgstr "{0} を無制限に使用"
 msgid "Used"
 msgstr "使用中"
 
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:156
+#: proxmox-datacenter-manager/ui/src/pbs/remote.rs:150
+#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:155
 #, fuzzy
 msgid "Used Memory"
 msgstr "メモリ"
@@ -15391,7 +15672,7 @@ msgstr "使用中のオブジェクト"
 #: proxmox-backup/www/window/ACLEdit.js:38
 #: proxmox-backup/www/window/TokenEdit.js:34
 #: proxmox-backup/www/window/UserEdit.js:36
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:291
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:308
 #: proxmox-yew-comp/src/acl/acl_edit.rs:67
 #: proxmox-yew-comp/src/tfa/tfa_view.rs:356
 #: proxmox-yew-comp/src/tfa/tfa_edit.rs:53
@@ -15401,12 +15682,15 @@ msgstr "使用中のオブジェクト"
 #: proxmox-yew-comp/src/tfa/tfa_confirm_remove.rs:50
 #: proxmox-yew-comp/src/user_panel.rs:260
 #: proxmox-yew-comp/src/user_panel.rs:269
+#: proxmox-yew-comp/src/token_panel.rs:412
+#: proxmox-yew-comp/src/token_panel.rs:446
+#: proxmox-yew-comp/src/token_panel.rs:471
 msgid "User"
 msgstr "ユーザ"
 
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:110
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:24
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:187
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:309
 msgid "User Attribute Name"
 msgstr "ユーザ属性名"
 
@@ -15417,7 +15701,7 @@ msgstr "ユーザのブラックリスト"
 
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:408
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:292
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:112
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:218
 msgid "User Filter"
 msgstr "ユーザのフィルタ"
 
@@ -15427,7 +15711,7 @@ msgstr "ユーザID"
 
 #: pmg-gui/js/NavigationTree.js:72 pmg-gui/js/UserManagement.js:5
 #: proxmox-backup/www/panel/AccessControl.js:18
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:57
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:58
 msgid "User Management"
 msgstr "ユーザー管理"
 
@@ -15437,7 +15721,7 @@ msgstr "ユーザー管理"
 #: pve-manager/www/manager6/sdn/VnetACLView.js:241
 #: proxmox-backup/www/config/ACLView.js:161
 #: proxmox-backup/www/window/ACLEdit.js:34
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:89
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:99
 #: proxmox-yew-comp/src/acl/acl_edit.rs:66
 msgid "User Permission"
 msgstr "ユーザのアクセス権限"
@@ -15466,7 +15750,7 @@ msgstr "ユーザはすでにリカバリキーを持っています。"
 
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:393
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:278
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:106
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:212
 msgid "User classes"
 msgstr "ユーザのクラス"
 
@@ -15513,7 +15797,6 @@ msgstr "ユーザー/グループ/APIトークン"
 
 #: proxmox-widget-toolkit/src/panel/SmtpEditPanel.js:114
 #: pmg-gui/js/FetchmailEdit.js:64 pmg-gui/js/PBSRemoteEdit.js:61
-#: pmg-gui/js/mobile/loginscreen.js:21
 #: pve-manager/www/manager6/storage/CIFSEdit.js:162
 #: pve-manager/www/manager6/storage/ESXIEdit.js:64
 #: pve-manager/www/manager6/storage/PBSEdit.js:546
@@ -15555,7 +15838,7 @@ msgid "Using Account"
 msgstr "アカウントの使用"
 
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:177
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:281
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:282
 msgid "VCPUs"
 msgstr "VCPUｓ"
 
@@ -15596,6 +15879,7 @@ msgstr "VLAN IDs"
 #: pve-manager/www/manager6/form/VLanField.js:9
 #: pve-manager/www/manager6/lxc/Network.js:512
 #: pve-manager/www/manager6/window/GuestImport.js:926
+#: pve-yew-mobile-gui/src/form/pve_vlan_field.rs:17
 msgid "VLAN Tag"
 msgstr "VLANタグ"
 
@@ -15616,8 +15900,8 @@ msgstr "VLANのRAWデバイス"
 msgid "VM"
 msgstr "VM"
 
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:258
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:260
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:261
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:263
 #, fuzzy
 msgid "VM '{0}'"
 msgstr "'{0}' を検証"
@@ -15628,12 +15912,12 @@ msgstr "VMディスク"
 
 #: pve-manager/www/manager6/qemu/Options.js:348
 #: pve-manager/www/manager6/qemu/Options.js:354
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:253
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:265
 msgid "VM State storage"
 msgstr "VMステートストレージ"
 
 #: pve-manager/www/manager6/Utils.js:605
-#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:34
+#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:39
 msgid "VMware compatible"
 msgstr "VMWare 互換"
 
@@ -15642,7 +15926,7 @@ msgid "VMware image format"
 msgstr "VMware イメージ形式"
 
 #: pve-manager/www/manager6/qemu/DisplayEdit.js:105
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:51
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:115
 msgid "VNC clipboard requires spice-tools installed in the Guest-VM."
 msgstr ""
 "VNCクリップボードには、ゲストVMにspice-toolsがインストールされている必要があ"
@@ -15710,7 +15994,7 @@ msgstr "有効なCIDRレンジ"
 #: proxmox-widget-toolkit/src/window/Certificates.js:46
 #: pve-manager/www/manager6/node/Certificates.js:79
 #: pve-manager/www/manager6/node/Certificates.js:339
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:306
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:308
 #: proxmox-yew-comp/src/acme/certificate_list.rs:350
 #: proxmox-yew-comp/src/acme/certificate_list.rs:395
 msgid "Valid Since"
@@ -15734,7 +16018,7 @@ msgstr "検証の遅延"
 msgid "Value"
 msgstr "値"
 
-#: proxmox-yew-comp/src/safe_confirm_dialog.rs:84
+#: proxmox-yew-comp/src/safe_confirm_dialog.rs:87
 #, fuzzy
 msgid "Value does not match!"
 msgstr "少なくとも1つが一致しません"
@@ -15816,7 +16100,7 @@ msgstr "すべてを検証"
 #: pmg-gui/js/LDAPConfig.js:81 pve-manager/www/manager6/dc/AuthEditAD.js:78
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:78
 #: pve-manager/www/manager6/dc/MetricServerView.js:361
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:233
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:336
 msgid "Verify Certificate"
 msgstr "証明書を検証"
 
@@ -15848,7 +16132,7 @@ msgstr "新しいスナップショットを検証"
 msgid "Verify Password"
 msgstr "パスワードを検証"
 
-#: pmg-gui/js/MailProxyOptions.js:41
+#: pmg-gui/js/MailProxyOptions.js:29
 msgid "Verify Receivers"
 msgstr "受信者認証"
 
@@ -15860,6 +16144,7 @@ msgstr "検証"
 #: pve-manager/www/manager6/grid/BackupView.js:379
 #: pve-manager/www/manager6/storage/BackupView.js:216
 #: proxmox-backup/www/datastore/Content.js:1207
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:135
 msgid "Verify State"
 msgstr "ステートを検証"
 
@@ -15893,14 +16178,16 @@ msgstr "比較後に直ちに新しいバックアップを検証"
 #: pve-manager/www/manager6/qemu/Smbios1Edit.js:54
 #: pve-manager/www/manager6/storage/TemplateView.js:81
 #: pve-manager/www/manager6/window/GuestImport.js:572
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:255
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:71
+#: pve-yew-mobile-gui/src/form/qemu_machine_version_selector.rs:176
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_machine_property.rs:93
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_smbios1_property.rs:62
 #: proxmox-yew-comp/src/apt_package_manager.rs:340
+#: proxmox-yew-comp/src/node_info.rs:215
 msgid "Version"
 msgstr "バージョン"
 
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:47
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:85
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:43
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:79
 #, fuzzy
 msgid "Video Streaming"
 msgstr "テスト文字列"
@@ -15936,6 +16223,12 @@ msgstr "タスク閲覧"
 msgid "View images"
 msgstr "イメージ閲覧"
 
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_machine_property.rs:132
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_machine_property.rs:144
+#, fuzzy
+msgid "VirtIO"
+msgstr "VirtIO RNG"
+
 #: pve-manager/www/manager6/qemu/HardwareView.js:347
 #: pve-manager/www/manager6/qemu/HardwareView.js:797
 #: pve-manager/www/manager6/qemu/RNGEdit.js:90
@@ -15955,7 +16248,7 @@ msgstr ""
 msgid "Virtual"
 msgstr "仮想"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:553
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:569
 msgid "Virtual Environment Nodes"
 msgstr ""
 
@@ -15985,8 +16278,8 @@ msgid "Virtual Machine {0} on node '{1}'"
 msgstr "ノード {1} 上の仮想マシン {0}"
 
 #: pve-manager/www/manager6/dc/Guests.js:38
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:238
-#: pve-yew-mobile-gui/src/pages/page_dashboard.rs:277
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:240
+#: pve-yew-mobile-gui/src/pages/page_dashboard.rs:278
 msgid "Virtual Machines"
 msgstr "仮想マシン"
 
@@ -16075,7 +16368,7 @@ msgid "WAL size"
 msgstr "WALサイズ"
 
 #: pve-manager/www/manager6/qemu/SevEdit.js:74
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:82
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_amd_sev_property.rs:75
 msgid "WARNING: When using SEV-SNP no EFI disk is loaded as pflash."
 msgstr ""
 
@@ -16208,6 +16501,10 @@ msgstr "週"
 msgid "Weekly"
 msgstr "週毎"
 
+#: pmg-gui/js/DNSBLSitesField.js:178
+msgid "Weight"
+msgstr ""
+
 #: pmg-gui/js/MailProxyConfiguration.js:53 pmg-gui/js/QuarantineView.js:22
 #: pmg-gui/js/SpamContextMenu.js:19 pmg-gui/js/SpamQuarantine.js:265
 #: pmg-gui/js/UserBlockWelcomeList.js:57 pmg-gui/js/UserBlockWelcomeList.js:247
@@ -16242,10 +16539,6 @@ msgstr ""
 "複数のデバイスを選択すると、ゲストの起動時に最初の空きデバイスが選択されま"
 "す。"
 
-#: pmg-gui/js/mobile/mailview.js:42 pmg-gui/js/mobile/quarantineview.js:104
-msgid "Whitelist"
-msgstr "ホワイトリスト"
-
 #: pmg-gui/js/NavigationTree.js:28 pmg-gui/js/Utils.js:54
 msgid "Who Objects"
 msgstr "誰のオブジェクト"
@@ -16261,7 +16554,7 @@ msgstr "年全体"
 #: proxmox-widget-toolkit/src/panel/DiskList.js:425
 #: pve-manager/www/manager6/Utils.js:2130 proxmox-backup/www/Utils.js:468
 #: proxmox-datacenter-manager/ui/src/tasks.rs:83
-#: proxmox-yew-comp/src/utils.rs:427
+#: proxmox-yew-comp/src/utils.rs:438
 msgid "Wipe Disk"
 msgstr "ディスクの消去"
 
@@ -16395,12 +16688,13 @@ msgstr "年毎"
 #: pve-manager/www/manager6/window/TreeSettingsEdit.js:50
 #: pve-manager/www/manager6/window/TreeSettingsEdit.js:51
 #: proxmox-backup/www/Subscription.js:131
-#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:111
+#: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:113
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_nodes.rs:102
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_summary.rs:112
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/remote_tree.rs:393
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/remote_tree.rs:401
-#: proxmox-yew-comp/src/auth_edit_ldap.rs:125
+#: proxmox-yew-comp/src/auth_view.rs:418
+#: proxmox-yew-comp/src/auth_edit_ldap.rs:231
 #: proxmox-yew-comp/src/configuration/network_view.rs:419
 #: proxmox-yew-comp/src/configuration/network_view.rs:436
 #: proxmox-yew-comp/src/configuration/network_view.rs:454
@@ -16435,11 +16729,12 @@ msgid "You can use Markdown for rich text formatting."
 msgstr "マークダウンを使用すると、リッチテキスト書式を設定できます。"
 
 #: pve-manager/www/manager6/qemu/DisplayEdit.js:114
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:117
 msgid "You cannot live-migrate while using the VNC clipboard."
 msgstr ""
 
 #: pve-manager/www/manager6/qemu/DisplayEdit.js:102
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:50
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_display_property.rs:113
 msgid ""
 "You cannot use the default SPICE clipboard if the VNC clipboard is selected."
 msgstr ""
@@ -16472,7 +16767,7 @@ msgid "You have at least one node without subscription."
 msgstr "サブスクリプションのないノードが少なくとも1つあります。"
 
 #: pve-manager/www/manager6/qemu/QemuBiosEdit.js:38
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_bios_property.rs:42
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_bios_property.rs:32
 msgid ""
 "You need to add an EFI disk for storing the EFI settings. See the online "
 "help for details."
@@ -16541,7 +16836,7 @@ msgstr "ZFSプール"
 
 #: pve-manager/www/manager6/Utils.js:2152 proxmox-backup/www/Utils.js:469
 #: proxmox-datacenter-manager/ui/src/tasks.rs:107
-#: proxmox-yew-comp/src/utils.rs:451
+#: proxmox-yew-comp/src/utils.rs:462
 msgid "ZFS Storage"
 msgstr "ZFSストレージ"
 
@@ -16585,18 +16880,18 @@ msgstr ""
 msgid "all"
 msgstr "全部"
 
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:160
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:168
 #, fuzzy
 msgid "any"
 msgstr "日"
 
 #: pve-manager/www/manager6/qemu/Options.js:139
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:187
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:199
 msgid "any CD-ROM"
 msgstr "任意のCD-ROM"
 
 #: pve-manager/www/manager6/qemu/Options.js:135
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:188
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:200
 msgid "any net"
 msgstr "任意のネットワーク"
 
@@ -16683,8 +16978,8 @@ msgstr "日"
 #: pve-manager/www/manager6/qemu/HDEdit.js:448
 #: pve-manager/www/manager6/qemu/HDEdit.js:457
 #: pve-manager/www/manager6/qemu/HDEdit.js:466
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:166
 #: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:172
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:178
 msgid "default"
 msgstr "既定値"
 
@@ -16732,6 +17027,8 @@ msgid "failed to parse webauthn registration challenge"
 msgstr ""
 
 #: pve-manager/www/manager6/form/BackupCompressionSelector.js:6
+#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:70
+#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:71
 msgid "fast"
 msgstr "fast"
 
@@ -16739,7 +17036,7 @@ msgstr "fast"
 msgid "fast and good"
 msgstr "fast and good"
 
-#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:186
+#: pve-yew-mobile-gui/src/form/qemu_property/mod.rs:198
 #, fuzzy
 msgid "first Disk"
 msgstr "first disk"
@@ -16749,6 +17046,8 @@ msgid "first disk"
 msgstr "first disk"
 
 #: pve-manager/www/manager6/form/BackupCompressionSelector.js:7
+#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:69
+#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:71
 msgid "good"
 msgstr "good"
 
@@ -16869,6 +17168,9 @@ msgstr "missing"
 
 #: proxmox-widget-toolkit/src/Utils.js:58
 #: proxmox-yew-comp/src/user_panel.rs:359
+#: proxmox-yew-comp/src/token_panel.rs:423
+#: proxmox-yew-comp/src/token_panel.rs:457
+#: proxmox-yew-comp/src/token_panel.rs:514
 msgid "never"
 msgstr "never"
 
@@ -16883,11 +17185,16 @@ msgstr "nftables (tech preview)"
 
 #: proxmox-widget-toolkit/src/form/VlanField.js:7
 #: pve-manager/www/manager6/form/VLanField.js:7
+#: pve-yew-mobile-gui/src/form/pve_vlan_field.rs:35
 msgid "no VLAN"
 msgstr "no VLAN"
 
 #: pve-yew-mobile-gui/src/pages/page_task_status.rs:175
 msgid "no data loaded"
+msgstr ""
+
+#: proxmox-yew-widget-toolkit/src/widget/form/combobox.rs:219
+msgid "no such item"
 msgstr ""
 
 #: pve-manager/www/manager6/window/Settings.js:394
@@ -16901,13 +17208,15 @@ msgstr "noVNC設定"
 #: proxmox-backup/www/window/DataStoreEdit.js:149
 #: proxmox-backup/www/window/DataStoreEdit.js:160
 #: proxmox-backup/www/window/SyncJobEdit.js:209
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:309
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:317
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:323
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:331
-#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:45
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:73
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:89
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:311
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:319
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:325
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:333
+#: pve-yew-mobile-gui/src/form/qemu_display_type_selector.rs:50
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:68
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:82
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_spice_enhancement_property.rs:87
+#: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:68
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/config_panel.rs:152
 msgid "none"
 msgstr "none"
@@ -16945,6 +17254,10 @@ msgstr ""
 msgid "of {0} CPU(s)"
 msgstr "{0}個のCPU(s)"
 
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:392
+msgid "old"
+msgstr ""
+
 #: proxmox-widget-toolkit/src/Toolkit.js:79
 msgid "only unicast addresses are allowed"
 msgstr "ユニキャストアドレスのみが有効"
@@ -16963,6 +17276,7 @@ msgid "page not found"
 msgstr ""
 
 #: pve-manager/www/manager6/form/NetworkCardSelector.js:7
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_network_property.rs:37
 msgid "paravirtualized"
 msgstr "準仮想化"
 
@@ -17066,7 +17380,8 @@ msgstr "不明"
 #: pve-manager/www/manager6/qemu/HDEdit.js:427
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:195
 #: pve-manager/www/manager6/qemu/RNGEdit.js:64
-#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:302
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_network_property.rs:151
+#: pve-yew-mobile-gui/src/form/qemu_property/qemu_processor_property.rs:303
 msgid "unlimited"
 msgstr "無制限"
 
@@ -17160,11 +17475,6 @@ msgid ""
 "}"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:264
-#, fuzzy
-msgid "{0} ({1} sockets)"
-msgstr "{0} ({1})"
-
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:376
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:314
 msgid "{0} ({1})"
@@ -17174,7 +17484,7 @@ msgstr "{0} ({1})"
 msgid "{0} ({1}/{2}) successful"
 msgstr "{0} ({1}/{2}) 成功"
 
-#: proxmox-datacenter-manager/ui/src/pve/remote.rs:195
+#: proxmox-datacenter-manager/ui/src/pve/remote.rs:193
 msgid "{0} / {1} (running / total)"
 msgstr ""
 
@@ -17190,6 +17500,13 @@ msgstr "{0} 個"
 msgid "{0} Items"
 msgstr "{0} 個"
 
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:407
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:412
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:415
+#, fuzzy
+msgid "{0} OK"
+msgstr "{0} ({1})"
+
 #: proxmox-backup/www/Utils.js:829
 msgid "{0} conflicting tasks still active."
 msgstr "{0} conflicting tasks still active."
@@ -17199,6 +17516,12 @@ msgstr "{0} conflicting tasks still active."
 #: proxmox-backup/www/tape/form/RetentionSelector.js:11
 msgid "{0} days"
 msgstr "{0} 日"
+
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:417
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:425
+#, fuzzy
+msgid "{0} failed"
+msgstr "すべて失敗"
 
 #: pmg-gui/js/Dashboard.js:339
 #: proxmox-backup/www/tape/form/RetentionSelector.js:10
@@ -17222,11 +17545,11 @@ msgstr "{0} 分"
 msgid "{0} months"
 msgstr "{0} 月"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:183
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:185
 msgid "{0} nodes have an unknown status"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:192
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:194
 #, fuzzy
 msgid "{0} nodes online"
 msgstr "ノードがオフライン"
@@ -17235,7 +17558,13 @@ msgstr "ノードがオフライン"
 msgid "{0} not installed."
 msgstr "{0} はインストールされていません。"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:189
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:402
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:409
+#: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:419
+msgid "{0} not verified yet"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:191
 msgid "{0} of an unknown number of nodes online"
 msgstr ""
 
@@ -17248,7 +17577,7 @@ msgstr ""
 msgid "{0} of {1}"
 msgstr "{1}の {0}"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:173
+#: proxmox-datacenter-manager/ui/src/dashboard/mod.rs:175
 msgid "{0} of {1} nodes are offline"
 msgstr ""
 
@@ -17262,8 +17591,8 @@ msgstr "ノード {1} 上のゾーン {0}"
 msgid "{0} on behalf of {1}"
 msgstr "{0} on behalf of {1}"
 
-#: proxmox-datacenter-manager/ui/src/pve/remote.rs:257
-#: proxmox-datacenter-manager/ui/src/pve/remote.rs:268
+#: proxmox-datacenter-manager/ui/src/pve/remote.rs:260
+#: proxmox-datacenter-manager/ui/src/pve/remote.rs:270
 msgid "{0} running / {1} physical ({2} total configured)"
 msgstr ""
 
@@ -17295,11 +17624,10 @@ msgstr "{0} 週"
 msgid "{0} years"
 msgstr "{0} 年"
 
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:245
 #: proxmox-datacenter-manager/ui/src/pve/remote.rs:220
-#: proxmox-datacenter-manager/ui/src/pve/remote.rs:234
-#: proxmox-datacenter-manager/ui/src/pve/storage.rs:304
-#: proxmox-datacenter-manager/ui/src/renderer.rs:100
+#: proxmox-datacenter-manager/ui/src/pve/remote.rs:236
+#: proxmox-datacenter-manager/ui/src/pve/storage.rs:299
+#: proxmox-datacenter-manager/ui/src/renderer.rs:77
 #, fuzzy
 msgid "{0}% ({1} of {2})"
 msgstr "{1} の {0}%"
@@ -17309,22 +17637,32 @@ msgstr "{1} の {0}%"
 msgid "{0}% of {1}"
 msgstr "{1} の {0}%"
 
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:334
-#: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:231
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:348
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:332
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:346
 #, fuzzy
 msgid "{0}% of {1} CPU(s)"
 msgstr "{0}個のCPU(s)"
 
-#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:315
-#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:329
+#: proxmox-datacenter-manager/ui/src/pve/lxc.rs:317
+#: proxmox-datacenter-manager/ui/src/pve/qemu.rs:331
 #, fuzzy
 msgid "{0}, Group: {1}"
 msgstr "{1}の {0}"
 
 #, fuzzy
+#~ msgid "Add Proxmox VE"
+#~ msgstr "Proxmox VE ログイン"
+
+#~ msgid "Blacklist"
+#~ msgstr "ブラックリスト"
+
+#, fuzzy
 #~ msgid "Boot Device"
 #~ msgstr "マウントデバイス"
+
+#, fuzzy
+#~ msgid "CPU Model"
+#~ msgstr "モデル"
 
 #, fuzzy
 #~ msgid "Connection OK"
@@ -17340,6 +17678,13 @@ msgstr "{1}の {0}"
 
 #~ msgid "HA Group"
 #~ msgstr "HAグループ"
+
+#~ msgid "Log In"
+#~ msgstr "ログイン"
+
+#, fuzzy
+#~ msgid "Machine Type"
+#~ msgstr "マッチタイプ"
 
 #, fuzzy
 #~ msgid "Mixed subscriptions"
@@ -17364,9 +17709,16 @@ msgstr "{1}の {0}"
 #~ msgid "Public Key Alogrithm"
 #~ msgstr "公開キーアルゴリズム"
 
+#~ msgid "Range"
+#~ msgstr "レンジ"
+
 #, fuzzy
 #~ msgid "Respository"
 #~ msgstr "リポジトリ"
+
+#, fuzzy
+#~ msgid "Root filesystem usage"
+#~ msgstr "rootディスク使用状況"
 
 #, fuzzy
 #~ msgid "Scan OK"
@@ -17379,6 +17731,9 @@ msgstr "{1}の {0}"
 #, fuzzy
 #~ msgid "VM State Storage"
 #~ msgstr "VMステートストレージ"
+
+#~ msgid "Whitelist"
+#~ msgstr "ホワイトリスト"
 
 #, fuzzy
 #~ msgid "one"
@@ -17396,13 +17751,13 @@ msgstr "{1}の {0}"
 #~ msgstr "一時停止中"
 
 #, fuzzy
+#~ msgid "{0} ({1} sockets)"
+#~ msgstr "{0} ({1})"
+
+#, fuzzy
 #~ msgctxt "context"
 #~ msgid "{0} bar"
 #~ msgstr "{0} 年"
-
-#, fuzzy
-#~ msgid "{0} {1}"
-#~ msgstr "{0} ({1})"
 
 #, fuzzy
 #~ msgid "{1} {0}"
