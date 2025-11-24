@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: proxmox-backup 2ba1090b76d7105af69fca43bfd446a589087163\n"
+"Project-Id-Version: proxmox-backup 44c480d26abe6b6ff376a3e2f0b689a815be2b91\n"
 "Report-Msgid-Bugs-To: <support@proxmox.com>\n"
-"POT-Creation-Date: 2025-11-19 11:25+0100\n"
+"POT-Creation-Date: 2025-11-24 15:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,13 +18,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: proxmox-backup/www/window/VerifyAll.js:86
-#: proxmox-backup/www/window/VerifyJobEdit.js:160
+#: proxmox-backup/www/window/VerifyAll.js:116
+#: proxmox-backup/www/window/VerifyJobEdit.js:191
 msgid "# of Read Threads"
 msgstr ""
 
-#: proxmox-backup/www/window/VerifyAll.js:95
-#: proxmox-backup/www/window/VerifyJobEdit.js:171
+#: proxmox-backup/www/window/VerifyAll.js:127
+#: proxmox-backup/www/window/VerifyJobEdit.js:205
 msgid "# of Verify Threads"
 msgstr ""
 
@@ -45,7 +45,7 @@ msgstr ""
 msgid "1445 (24 hours 5 minutes)"
 msgstr ""
 
-#: proxmox-backup/www/window/TrafficControlEdit.js:287
+#: proxmox-backup/www/window/TrafficControlEdit.js:305
 msgid "A comma-separated list of networks to apply the (shared) limit."
 msgstr ""
 
@@ -116,7 +116,6 @@ msgstr ""
 #: proxmox-backup/www/tape/DriveConfig.js:127
 #: proxmox-backup/www/tape/EncryptionKeys.js:102
 #: proxmox-backup/www/tape/PoolConfig.js:95
-#: proxmox-backup/www/window/TrafficControlEdit.js:430
 msgid "Add"
 msgstr ""
 
@@ -138,6 +137,10 @@ msgstr ""
 
 #: proxmox-backup/www/tape/TapeInventory.js:213
 msgid "Add Tape"
+msgstr ""
+
+#: proxmox-backup/www/window/TrafficControlEdit.js:448
+msgid "Add Timeframe"
 msgstr ""
 
 #: proxmox-backup/www/window/CreateDirectory.js:44
@@ -205,11 +208,15 @@ msgstr ""
 msgid "An absolute path"
 msgstr ""
 
-#: proxmox-backup/www/window/TrafficControlEdit.js:304
+#: proxmox-backup/www/window/TrafficControlEdit.js:289
+msgid "Applies to all users"
+msgstr ""
+
+#: proxmox-backup/www/window/TrafficControlEdit.js:322
 msgid "Apply Always"
 msgstr ""
 
-#: proxmox-backup/www/window/TrafficControlEdit.js:283
+#: proxmox-backup/www/window/TrafficControlEdit.js:301
 msgid "Apply on all Networks"
 msgstr ""
 
@@ -247,7 +254,7 @@ msgstr ""
 
 #: proxmox-backup/www/window/PruneJobEdit.js:155
 #: proxmox-backup/www/window/SyncJobEdit.js:429
-#: proxmox-backup/www/window/VerifyJobEdit.js:184
+#: proxmox-backup/www/window/VerifyJobEdit.js:221
 msgid "Autogenerate"
 msgstr ""
 
@@ -335,12 +342,14 @@ msgid "Bucket Name"
 msgstr ""
 
 #: proxmox-backup/www/config/TrafficControlView.js:171
-#: proxmox-backup/www/window/TrafficControlEdit.js:265
+#: proxmox-backup/www/window/S3ClientEdit.js:157
+#: proxmox-backup/www/window/TrafficControlEdit.js:266
 msgid "Burst In"
 msgstr ""
 
 #: proxmox-backup/www/config/TrafficControlView.js:178
-#: proxmox-backup/www/window/TrafficControlEdit.js:272
+#: proxmox-backup/www/window/S3ClientEdit.js:164
+#: proxmox-backup/www/window/TrafficControlEdit.js:273
 msgid "Burst Out"
 msgstr ""
 
@@ -465,7 +474,7 @@ msgstr ""
 #: proxmox-backup/www/config/RemoteView.js:156
 #: proxmox-backup/www/config/SyncView.js:423
 #: proxmox-backup/www/config/TokenView.js:265
-#: proxmox-backup/www/config/TrafficControlView.js:199
+#: proxmox-backup/www/config/TrafficControlView.js:206
 #: proxmox-backup/www/config/UserView.js:272
 #: proxmox-backup/www/config/VerifyView.js:281
 #: proxmox-backup/www/datastore/Content.js:983
@@ -487,9 +496,9 @@ msgstr ""
 #: proxmox-backup/www/window/RemoteEdit.js:128
 #: proxmox-backup/www/window/SyncJobEdit.js:416
 #: proxmox-backup/www/window/TokenEdit.js:71
-#: proxmox-backup/www/window/TrafficControlEdit.js:260
+#: proxmox-backup/www/window/TrafficControlEdit.js:261
 #: proxmox-backup/www/window/UserEdit.js:174
-#: proxmox-backup/www/window/VerifyJobEdit.js:148
+#: proxmox-backup/www/window/VerifyJobEdit.js:179
 msgid "Comment"
 msgstr ""
 
@@ -681,6 +690,14 @@ msgstr ""
 msgid "Deduplication Factor"
 msgstr ""
 
+#: proxmox-backup/www/datastore/OptionView.js:326
+msgid "Default # of Verification Readers"
+msgstr ""
+
+#: proxmox-backup/www/datastore/OptionView.js:316
+msgid "Default # of Verification Workers"
+msgstr ""
+
 #: proxmox-backup/www/window/NotifyOptions.js:6
 msgid "Default (Always)"
 msgstr ""
@@ -699,6 +716,14 @@ msgstr ""
 
 #: proxmox-backup/www/tape/window/TapeRestore.js:44
 msgid "Default Namespace"
+msgstr ""
+
+#: proxmox-backup/www/Utils.js:927
+msgid "Default verification readers"
+msgstr ""
+
+#: proxmox-backup/www/Utils.js:921
+msgid "Default verification workers"
 msgstr ""
 
 #: proxmox-backup/www/window/NamespaceEdit.js:73
@@ -1117,7 +1142,7 @@ msgstr ""
 msgid "Free"
 msgstr ""
 
-#: proxmox-backup/www/window/TrafficControlEdit.js:387
+#: proxmox-backup/www/window/TrafficControlEdit.js:405
 msgid "Fri"
 msgstr ""
 
@@ -1335,7 +1360,7 @@ msgstr ""
 #: proxmox-backup/www/tape/window/TapeBackupJob.js:78
 #: proxmox-backup/www/window/PruneJobEdit.js:154
 #: proxmox-backup/www/window/SyncJobEdit.js:428
-#: proxmox-backup/www/window/VerifyJobEdit.js:183
+#: proxmox-backup/www/window/VerifyJobEdit.js:220
 msgid "Job ID"
 msgstr ""
 
@@ -1444,6 +1469,14 @@ msgstr ""
 msgid "Letter Spacing"
 msgstr ""
 
+#: proxmox-backup/www/window/TrafficControlEdit.js:293
+msgid ""
+"Limit applies only to authenticated requests by these users. Overrides IP-"
+"only rules when both match. If networks are specified on this rule as well, "
+"it'll only apply if the users request comes from one of the specified "
+"networks."
+msgstr ""
+
 #: proxmox-backup/www/window/Settings.js:266
 msgid "Line Height"
 msgstr ""
@@ -1480,7 +1513,7 @@ msgstr ""
 
 #: proxmox-backup/www/tape/window/TapeBackupJob.js:87
 #: proxmox-backup/www/window/SyncJobEdit.js:141
-#: proxmox-backup/www/window/VerifyJobEdit.js:65
+#: proxmox-backup/www/window/VerifyJobEdit.js:96
 msgid "Local Datastore"
 msgstr ""
 
@@ -1580,7 +1613,7 @@ msgstr ""
 #: proxmox-backup/www/tape/window/TapeBackupJob.js:164
 #: proxmox-backup/www/window/PruneJobEdit.js:107
 #: proxmox-backup/www/window/SyncJobEdit.js:394
-#: proxmox-backup/www/window/VerifyJobEdit.js:88
+#: proxmox-backup/www/window/VerifyJobEdit.js:119
 msgid "Max. Depth"
 msgstr ""
 
@@ -1637,7 +1670,7 @@ msgstr ""
 msgid "Model"
 msgstr ""
 
-#: proxmox-backup/www/window/TrafficControlEdit.js:347
+#: proxmox-backup/www/window/TrafficControlEdit.js:365
 msgid "Mon"
 msgstr ""
 
@@ -1693,7 +1726,7 @@ msgstr ""
 #: proxmox-backup/www/window/DataStoreEdit.js:53
 #: proxmox-backup/www/window/InfluxDbEdit.js:28
 #: proxmox-backup/www/window/InfluxDbEdit.js:143
-#: proxmox-backup/www/window/TrafficControlEdit.js:229
+#: proxmox-backup/www/window/TrafficControlEdit.js:230
 #: proxmox-backup/www/window/ZFSCreate.js:26
 msgid "Name"
 msgstr ""
@@ -1706,8 +1739,8 @@ msgstr ""
 #: proxmox-backup/www/tape/window/TapeBackup.js:44
 #: proxmox-backup/www/window/NamespaceEdit.js:9
 #: proxmox-backup/www/window/PruneJobEdit.js:88
-#: proxmox-backup/www/window/VerifyAll.js:36
-#: proxmox-backup/www/window/VerifyJobEdit.js:80
+#: proxmox-backup/www/window/VerifyAll.js:66
+#: proxmox-backup/www/window/VerifyJobEdit.js:111
 msgid "Namespace"
 msgstr ""
 
@@ -1735,7 +1768,7 @@ msgstr ""
 msgid "Network traffic"
 msgstr ""
 
-#: proxmox-backup/www/window/TrafficControlEdit.js:281
+#: proxmox-backup/www/window/TrafficControlEdit.js:299
 msgid "Network(s)"
 msgstr ""
 
@@ -1743,7 +1776,7 @@ msgstr ""
 msgid "Network/Time"
 msgstr ""
 
-#: proxmox-backup/www/config/TrafficControlView.js:185
+#: proxmox-backup/www/config/TrafficControlView.js:192
 msgid "Networks"
 msgstr ""
 
@@ -1849,7 +1882,7 @@ msgstr ""
 msgid "None"
 msgstr ""
 
-#: proxmox-backup/www/window/S3ClientEdit.js:131
+#: proxmox-backup/www/window/S3ClientEdit.js:145
 msgid "None (default)"
 msgstr ""
 
@@ -2100,7 +2133,7 @@ msgstr ""
 msgid "Protection"
 msgstr ""
 
-#: proxmox-backup/www/window/S3ClientEdit.js:127
+#: proxmox-backup/www/window/S3ClientEdit.js:141
 msgid "Provider Quirks"
 msgstr ""
 
@@ -2176,7 +2209,8 @@ msgid "RAM usage"
 msgstr ""
 
 #: proxmox-backup/www/config/TrafficControlView.js:134
-#: proxmox-backup/www/window/TrafficControlEdit.js:240
+#: proxmox-backup/www/window/S3ClientEdit.js:127
+#: proxmox-backup/www/window/TrafficControlEdit.js:241
 msgid "Rate In"
 msgstr ""
 
@@ -2190,7 +2224,8 @@ msgid "Rate Limit"
 msgstr ""
 
 #: proxmox-backup/www/config/TrafficControlView.js:153
-#: proxmox-backup/www/window/TrafficControlEdit.js:247
+#: proxmox-backup/www/window/S3ClientEdit.js:134
+#: proxmox-backup/www/window/TrafficControlEdit.js:248
 msgid "Rate Out"
 msgstr ""
 
@@ -2199,8 +2234,8 @@ msgid "Rate Out Used"
 msgstr ""
 
 #: proxmox-backup/www/config/VerifyView.js:240
-#: proxmox-backup/www/window/VerifyAll.js:64
-#: proxmox-backup/www/window/VerifyJobEdit.js:119
+#: proxmox-backup/www/window/VerifyAll.js:94
+#: proxmox-backup/www/window/VerifyJobEdit.js:150
 msgid "Re-Verify After"
 msgstr ""
 
@@ -2574,12 +2609,14 @@ msgstr ""
 msgid "SWAP usage"
 msgstr ""
 
-#: proxmox-backup/www/window/TrafficControlEdit.js:266
-#: proxmox-backup/www/window/TrafficControlEdit.js:273
+#: proxmox-backup/www/window/S3ClientEdit.js:158
+#: proxmox-backup/www/window/S3ClientEdit.js:165
+#: proxmox-backup/www/window/TrafficControlEdit.js:267
+#: proxmox-backup/www/window/TrafficControlEdit.js:274
 msgid "Same as Rate"
 msgstr ""
 
-#: proxmox-backup/www/window/TrafficControlEdit.js:397
+#: proxmox-backup/www/window/TrafficControlEdit.js:415
 msgid "Sat"
 msgstr ""
 
@@ -2606,7 +2643,7 @@ msgstr ""
 #: proxmox-backup/www/config/VerifyView.js:247
 #: proxmox-backup/www/tape/BackupJobs.js:256
 #: proxmox-backup/www/tape/window/TapeBackupJob.js:116
-#: proxmox-backup/www/window/VerifyJobEdit.js:99
+#: proxmox-backup/www/window/VerifyJobEdit.js:130
 msgid "Schedule"
 msgstr ""
 
@@ -2744,13 +2781,13 @@ msgstr ""
 msgid "Size"
 msgstr ""
 
-#: proxmox-backup/www/window/S3ClientEdit.js:132
+#: proxmox-backup/www/window/S3ClientEdit.js:146
 msgid "Skip If-None-Match header"
 msgstr ""
 
 #: proxmox-backup/www/config/VerifyView.js:233
-#: proxmox-backup/www/window/VerifyAll.js:50
-#: proxmox-backup/www/window/VerifyJobEdit.js:109
+#: proxmox-backup/www/window/VerifyAll.js:80
+#: proxmox-backup/www/window/VerifyJobEdit.js:140
 msgid "Skip Verified"
 msgstr ""
 
@@ -2855,7 +2892,7 @@ msgstr ""
 msgid "Summary/Dashboard columns"
 msgstr ""
 
-#: proxmox-backup/www/window/TrafficControlEdit.js:407
+#: proxmox-backup/www/window/TrafficControlEdit.js:425
 msgid "Sun"
 msgstr ""
 
@@ -3037,7 +3074,7 @@ msgid ""
 "namespaces below it!"
 msgstr ""
 
-#: proxmox-backup/www/window/TrafficControlEdit.js:377
+#: proxmox-backup/www/window/TrafficControlEdit.js:395
 msgid "Thu"
 msgstr ""
 
@@ -3045,16 +3082,16 @@ msgstr ""
 msgid "Time"
 msgstr ""
 
-#: proxmox-backup/www/window/TrafficControlEdit.js:334
+#: proxmox-backup/www/window/TrafficControlEdit.js:352
 msgid "Time End"
 msgstr ""
 
-#: proxmox-backup/www/window/TrafficControlEdit.js:322
+#: proxmox-backup/www/window/TrafficControlEdit.js:340
 msgid "Time Start"
 msgstr ""
 
-#: proxmox-backup/www/config/TrafficControlView.js:192
-#: proxmox-backup/www/window/TrafficControlEdit.js:293
+#: proxmox-backup/www/config/TrafficControlView.js:199
+#: proxmox-backup/www/window/TrafficControlEdit.js:311
 msgid "Timeframes"
 msgstr ""
 
@@ -3113,7 +3150,7 @@ msgstr ""
 msgid "Transfer Rate (bytes/second)"
 msgstr ""
 
-#: proxmox-backup/www/window/TrafficControlEdit.js:357
+#: proxmox-backup/www/window/TrafficControlEdit.js:375
 msgid "Tue"
 msgstr ""
 
@@ -3151,10 +3188,12 @@ msgstr ""
 msgid "Unknown"
 msgstr ""
 
+#: proxmox-backup/www/window/S3ClientEdit.js:128
+#: proxmox-backup/www/window/S3ClientEdit.js:135
 #: proxmox-backup/www/window/SyncJobEdit.js:220
 #: proxmox-backup/www/window/SyncJobEdit.js:229
-#: proxmox-backup/www/window/TrafficControlEdit.js:241
-#: proxmox-backup/www/window/TrafficControlEdit.js:248
+#: proxmox-backup/www/window/TrafficControlEdit.js:242
+#: proxmox-backup/www/window/TrafficControlEdit.js:249
 msgid "Unlimited"
 msgstr ""
 
@@ -3294,7 +3333,9 @@ msgstr ""
 msgid "User/Group/API Token"
 msgstr ""
 
+#: proxmox-backup/www/config/TrafficControlView.js:185
 #: proxmox-backup/www/config/UserView.js:27
+#: proxmox-backup/www/window/TrafficControlEdit.js:282
 msgid "Users"
 msgstr ""
 
@@ -3347,7 +3388,7 @@ msgstr ""
 #: proxmox-backup/www/dashboard/TaskSummary.js:28
 #: proxmox-backup/www/datastore/Content.js:1422
 #: proxmox-backup/www/datastore/Content.js:1487
-#: proxmox-backup/www/window/VerifyAll.js:14
+#: proxmox-backup/www/window/VerifyAll.js:44
 msgid "Verify"
 msgstr ""
 
@@ -3420,7 +3461,7 @@ msgstr ""
 msgid "Webinterface Settings"
 msgstr ""
 
-#: proxmox-backup/www/window/TrafficControlEdit.js:367
+#: proxmox-backup/www/window/TrafficControlEdit.js:385
 msgid "Wed"
 msgstr ""
 
@@ -3479,8 +3520,8 @@ msgstr ""
 msgid "ashift"
 msgstr ""
 
-#: proxmox-backup/www/window/VerifyAll.js:76
-#: proxmox-backup/www/window/VerifyJobEdit.js:137
+#: proxmox-backup/www/window/VerifyAll.js:106
+#: proxmox-backup/www/window/VerifyJobEdit.js:168
 msgid "days"
 msgstr ""
 
@@ -3549,7 +3590,7 @@ msgstr ""
 
 #: proxmox-backup/www/tape/window/TapeBackupJob.js:119
 #: proxmox-backup/www/window/GCJobEdit.js:26
-#: proxmox-backup/www/window/VerifyJobEdit.js:100
+#: proxmox-backup/www/window/VerifyJobEdit.js:131
 msgid "none (disabled)"
 msgstr ""
 

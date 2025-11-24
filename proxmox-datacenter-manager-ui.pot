@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: proxmox-datacenter-manager-ui b14ab87010349cbc19096c89a98e05e3096f4cc4\n"
+"Project-Id-Version: proxmox-datacenter-manager-ui 6c306a49028cab6036d0eaf1b59b4d26e28d1a4e\n"
 "Report-Msgid-Bugs-To: <support@proxmox.com>\n"
-"POT-Creation-Date: 2025-11-19 10:25+0000\n"
+"POT-Creation-Date: 2025-11-24 14:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,7 @@ msgstr ""
 msgid "Node Status"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/administration/mod.rs:82 ./proxmox-datacenter-manager/ui/src/remotes/mod.rs:63 ./proxmox-datacenter-manager/ui/src/pve/node/mod.rs:88
+#: ./proxmox-datacenter-manager/ui/src/administration/mod.rs:82 ./proxmox-datacenter-manager/ui/src/remotes/mod.rs:63 ./proxmox-datacenter-manager/ui/src/pbs/node/mod.rs:83 ./proxmox-datacenter-manager/ui/src/pve/node/mod.rs:88
 msgid "Updates"
 msgstr ""
 
@@ -53,7 +53,7 @@ msgstr ""
 msgid "Tasks"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/certificates.rs:21 ./proxmox-datacenter-manager/ui/src/main_menu.rs:182
+#: ./proxmox-datacenter-manager/ui/src/certificates.rs:21 ./proxmox-datacenter-manager/ui/src/main_menu.rs:210
 msgid "Certificates"
 msgstr ""
 
@@ -143,39 +143,39 @@ msgstr ""
 msgid "Network Interfaces"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/main_menu.rs:142
+#: ./proxmox-datacenter-manager/ui/src/main_menu.rs:157
 msgid "Dashboard"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/main_menu.rs:151
+#: ./proxmox-datacenter-manager/ui/src/main_menu.rs:171
 msgid "Notes"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/main_menu.rs:173
+#: ./proxmox-datacenter-manager/ui/src/main_menu.rs:201
 msgid "Access Control"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/main_menu.rs:191 ./proxmox-datacenter-manager/ui/src/remotes/mod.rs:49
+#: ./proxmox-datacenter-manager/ui/src/main_menu.rs:219 ./proxmox-datacenter-manager/ui/src/remotes/mod.rs:49
 msgid "Configuration"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/main_menu.rs:203 ./proxmox-datacenter-manager/ui/src/tasks.rs:77 ./proxmox-datacenter-manager/ui/src/tasks.rs:85
+#: ./proxmox-datacenter-manager/ui/src/main_menu.rs:231 ./proxmox-datacenter-manager/ui/src/pve/node/mod.rs:119 ./proxmox-datacenter-manager/ui/src/tasks.rs:77 ./proxmox-datacenter-manager/ui/src/tasks.rs:85
 msgid "Shell"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/main_menu.rs:213
+#: ./proxmox-datacenter-manager/ui/src/main_menu.rs:241
 msgid "Administration"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/main_menu.rs:229
+#: ./proxmox-datacenter-manager/ui/src/main_menu.rs:257
 msgid "EVPN"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/main_menu.rs:238
+#: ./proxmox-datacenter-manager/ui/src/main_menu.rs:266
 msgid "SDN"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/main_menu.rs:267 ./proxmox-datacenter-manager/ui/src/dashboard/remote_panel.rs:128 ./proxmox-datacenter-manager/ui/src/sdn/evpn/evpn_panel.rs:186
+#: ./proxmox-datacenter-manager/ui/src/main_menu.rs:295 ./proxmox-datacenter-manager/ui/src/dashboard/remote_panel.rs:128 ./proxmox-datacenter-manager/ui/src/sdn/evpn/evpn_panel.rs:186
 msgid "Remotes"
 msgstr ""
 
@@ -416,7 +416,7 @@ msgstr ""
 msgid "User name"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/tasks.rs:79 ./proxmox-datacenter-manager/ui/src/widget/pve_node_selector.rs:153
+#: ./proxmox-datacenter-manager/ui/src/remotes/tasks.rs:79 ./proxmox-datacenter-manager/ui/src/widget/pve_node_selector.rs:153 ./proxmox-datacenter-manager/ui/src/pbs/node/mod.rs:63
 msgid "Node"
 msgstr ""
 
@@ -566,44 +566,48 @@ msgstr ""
 msgid "Memory usage"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/dashboard/subscription_info.rs:61
+#: ./proxmox-datacenter-manager/ui/src/dashboard/subscription_info.rs:54
 msgid "At least one remote does not have a valid subscription. Please visit <a target=\"_blank\" href=\"https://www.proxmox.com\">www.proxmox.com</a> to get a list of available options."
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/dashboard/subscription_info.rs:65
+#: ./proxmox-datacenter-manager/ui/src/dashboard/subscription_info.rs:58
 msgid "No valid subscription"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/dashboard/subscription_info.rs:67
+#: ./proxmox-datacenter-manager/ui/src/dashboard/subscription_info.rs:60
 msgid "Mixed Subscriptions"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/dashboard/subscription_info.rs:67
+#: ./proxmox-datacenter-manager/ui/src/dashboard/subscription_info.rs:60
 msgid "At least one remote has mixed levels of subscription. These remotes fall back to the lowest one."
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/dashboard/subscription_info.rs:71 ./proxmox-datacenter-manager/ui/src/dashboard/subscription_info.rs:84
+#: ./proxmox-datacenter-manager/ui/src/dashboard/subscription_info.rs:64 ./proxmox-datacenter-manager/ui/src/dashboard/subscription_info.rs:77
 msgid "Unknown subscriptions"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/dashboard/subscription_info.rs:72
+#: ./proxmox-datacenter-manager/ui/src/dashboard/subscription_info.rs:65
 msgid "At least one remote could not be queried and has an unknown subscription status."
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/dashboard/subscription_info.rs:78
+#: ./proxmox-datacenter-manager/ui/src/dashboard/subscription_info.rs:71
 msgid "Your subscription status is valid."
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/dashboard/subscription_info.rs:85
+#: ./proxmox-datacenter-manager/ui/src/dashboard/subscription_info.rs:78
 msgid "No remotes configured or could not fetch status."
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/dashboard/subscription_info.rs:131
+#: ./proxmox-datacenter-manager/ui/src/dashboard/subscription_info.rs:141
 msgid "Your Subscriptions"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/dashboard/subscription_info.rs:181 ./proxmox-datacenter-manager/ui/src/pve/remote.rs:176
+#: ./proxmox-datacenter-manager/ui/src/dashboard/subscription_info.rs:162 ./proxmox-datacenter-manager/ui/src/pve/remote.rs:176
 msgid "Subscription Status"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/dashboard/subscription_info.rs:171
+msgid "Details"
 msgstr ""
 
 #: ./proxmox-datacenter-manager/ui/src/dashboard/subscriptions_list.rs:149
@@ -858,7 +862,7 @@ msgstr ""
 msgid "Migrate"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/widget/pve_node_selector.rs:157 ./proxmox-datacenter-manager/ui/src/pbs/remote.rs:265 ./proxmox-datacenter-manager/ui/src/pve/node/overview.rs:262
+#: ./proxmox-datacenter-manager/ui/src/widget/pve_node_selector.rs:157 ./proxmox-datacenter-manager/ui/src/pbs/node/overview.rs:258 ./proxmox-datacenter-manager/ui/src/pve/node/overview.rs:262
 msgid "Memory Usage"
 msgstr ""
 
@@ -914,7 +918,7 @@ msgstr ""
 msgid "Querying Remote..."
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/pbs/tree.rs:318
+#: ./proxmox-datacenter-manager/ui/src/pbs/tree.rs:319
 msgid "Open in PBS UI"
 msgstr ""
 
@@ -946,7 +950,7 @@ msgstr ""
 msgid "Datastore {0}"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/pbs/datastore.rs:53 ./proxmox-datacenter-manager/ui/src/pbs/remote.rs:204 ./proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:62 ./proxmox-datacenter-manager/ui/src/pve/node/mod.rs:77 ./proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:62
+#: ./proxmox-datacenter-manager/ui/src/pbs/datastore.rs:53 ./proxmox-datacenter-manager/ui/src/pbs/node/mod.rs:73 ./proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:62 ./proxmox-datacenter-manager/ui/src/pve/node/mod.rs:77 ./proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:62
 msgid "Overview"
 msgstr ""
 
@@ -954,27 +958,27 @@ msgstr ""
 msgid "Content"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/pbs/remote.rs:146 ./proxmox-datacenter-manager/ui/src/pve/node/overview.rs:151
+#: ./proxmox-datacenter-manager/ui/src/pbs/node/overview.rs:146 ./proxmox-datacenter-manager/ui/src/pve/node/overview.rs:151
 msgid "CPU"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/pbs/remote.rs:147 ./proxmox-datacenter-manager/ui/src/pve/node/overview.rs:152
+#: ./proxmox-datacenter-manager/ui/src/pbs/node/overview.rs:147 ./proxmox-datacenter-manager/ui/src/pve/node/overview.rs:152
 msgid "Server Load"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/pbs/remote.rs:148 ./proxmox-datacenter-manager/ui/src/pve/node/overview.rs:153
+#: ./proxmox-datacenter-manager/ui/src/pbs/node/overview.rs:148 ./proxmox-datacenter-manager/ui/src/pve/node/overview.rs:153
 msgid "Used Memory"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/pbs/remote.rs:149 ./proxmox-datacenter-manager/ui/src/pve/node/overview.rs:154
+#: ./proxmox-datacenter-manager/ui/src/pbs/node/overview.rs:149 ./proxmox-datacenter-manager/ui/src/pve/node/overview.rs:154
 msgid "Total Memory"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/pbs/remote.rs:241 ./proxmox-datacenter-manager/ui/src/pve/lxc/overview.rs:340 ./proxmox-datacenter-manager/ui/src/pve/node/overview.rs:238 ./proxmox-datacenter-manager/ui/src/pve/qemu/overview.rs:349
+#: ./proxmox-datacenter-manager/ui/src/pbs/node/overview.rs:234 ./proxmox-datacenter-manager/ui/src/pve/lxc/overview.rs:340 ./proxmox-datacenter-manager/ui/src/pve/node/overview.rs:238 ./proxmox-datacenter-manager/ui/src/pve/qemu/overview.rs:349
 msgid "CPU Usage"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/pbs/remote.rs:253 ./proxmox-datacenter-manager/ui/src/pve/node/overview.rs:250
+#: ./proxmox-datacenter-manager/ui/src/pbs/node/overview.rs:246 ./proxmox-datacenter-manager/ui/src/pve/node/overview.rs:250
 msgid "Server load"
 msgstr ""
 
@@ -1050,12 +1054,16 @@ msgstr ""
 msgid "Last verify task started on {0}"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/pbs/mod.rs:119 ./proxmox-datacenter-manager/ui/src/pve/mod.rs:201
+#: ./proxmox-datacenter-manager/ui/src/pbs/mod.rs:121 ./proxmox-datacenter-manager/ui/src/pve/mod.rs:201
 msgid "Remote '{0}'"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/pbs/mod.rs:136 ./proxmox-datacenter-manager/ui/src/pve/mod.rs:216
+#: ./proxmox-datacenter-manager/ui/src/pbs/mod.rs:138 ./proxmox-datacenter-manager/ui/src/pve/mod.rs:216
 msgid "Open Web UI"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/pbs/mod.rs:153
+msgid "Open Shell"
 msgstr ""
 
 #: ./proxmox-datacenter-manager/ui/src/pve/lxc/overview.rs:178 ./proxmox-datacenter-manager/ui/src/pve/qemu/overview.rs:174
