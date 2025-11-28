@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: proxmox translations\n"
 "Report-Msgid-Bugs-To: <support@proxmox.com>\n"
-"POT-Creation-Date: 2025-11-24 15:58+0100\n"
+"POT-Creation-Date: 2025-11-28 10:06+0100\n"
 "PO-Revision-Date: 2025-11-25 16:24+0900\n"
 "Last-Translator: NavyStack <137406386+Navystack@users.noreply.github.com>\n"
 "Language-Team: Korean <support@proxmox.com>\n"
@@ -17,6 +17,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Poedit 3.7\n"
+
+#: proxmox-datacenter-manager/ui/src/configuration/views.rs:142
+#, fuzzy
+msgid "# Excluded"
+msgstr "제외"
+
+#: proxmox-datacenter-manager/ui/src/configuration/views.rs:119
+#, fuzzy
+msgid "# Included"
+msgstr "포함"
 
 #: proxmox-backup/www/window/VerifyAll.js:116
 #: proxmox-backup/www/window/VerifyJobEdit.js:191
@@ -45,6 +55,10 @@ msgstr "관리자 메일의 '보낸 사람:'"
 #: pve-manager/www/manager6/qemu/Options.js:103
 msgid "(No boot device selected)"
 msgstr "(부팅 디바이스를 선택하지 않음)"
+
+#: proxmox-yew-comp/src/form/pve/lxc_property/lxc_network_property.rs:91
+msgid "(e.g. eth0)"
+msgstr ""
 
 #: pve-manager/www/manager6/dc/AuthEditOpenId.js:98
 msgid "(none)"
@@ -97,7 +111,7 @@ msgstr "5분"
 msgid "<IP/Hostname>:Port"
 msgstr "<IP/호스트명>:포트"
 
-#: proxmox-backup/www/window/TrafficControlEdit.js:305
+#: proxmox-backup/www/window/TrafficControlEdit.js:306
 msgid "A comma-separated list of networks to apply the (shared) limit."
 msgstr "쉼표로 구분된 (공유) 제한을 적용할 네트워크 목록입니다."
 
@@ -171,7 +185,7 @@ msgstr "ACME 인증서 리뉴얼"
 
 #: pve-manager/www/manager6/qemu/Options.js:187
 #: pve-manager/www/manager6/qemu/Options.js:193
-#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:133
+#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:136
 msgid "ACPI support"
 msgstr "ACPI 지원"
 
@@ -183,12 +197,12 @@ msgid "ACR Values"
 msgstr "ACR 값"
 
 #: pve-manager/www/manager6/qemu/Options.js:372
-#: proxmox-yew-comp/src/form/pve/qemu_property/qemu_amd_sev_property.rs:110
+#: proxmox-yew-comp/src/form/pve/qemu_property/qemu_amd_sev_property.rs:120
 msgid "AMD SEV"
 msgstr "AMD SEV"
 
 #: pve-manager/www/manager6/qemu/SevEdit.js:54
-#: proxmox-yew-comp/src/form/pve/qemu_property/qemu_amd_sev_property.rs:25
+#: proxmox-yew-comp/src/form/pve/qemu_property/qemu_amd_sev_property.rs:35
 msgid "AMD SEV Type"
 msgstr "AMD SEV 유형"
 
@@ -220,7 +234,7 @@ msgstr "API 경로 접두어"
 #: proxmox-backup/www/form/TokenSelector.js:64
 #: proxmox-backup/www/panel/AccessControl.js:30
 #: proxmox-backup/www/window/ACLEdit.js:46
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:80
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:82
 #: proxmox-yew-comp/src/acl/acl_edit.rs:61
 msgid "API Token"
 msgstr "API 토큰"
@@ -244,7 +258,7 @@ msgstr "API 토큰 권한"
 msgid "API Tokens"
 msgstr "API 토큰"
 
-#: proxmox-yew-comp/src/apt_repositories.rs:538
+#: proxmox-yew-comp/src/apt_repositories.rs:543
 msgid "API call failed"
 msgstr "API 호출이 실패함"
 
@@ -287,7 +301,7 @@ msgstr "서비스 약관 수락"
 
 #: proxmox-backup/www/NavigationTree.js:48
 #: proxmox-backup/www/panel/AccessControl.js:6
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:201
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:254
 msgid "Access Control"
 msgstr "액세스 제어"
 
@@ -331,7 +345,8 @@ msgstr "계정"
 #: pve-manager/www/manager6/grid/FirewallRules.js:240
 #: pve-manager/www/manager6/grid/FirewallRules.js:925
 #: pve-manager/www/manager6/sdn/FabricsView.js:100
-#: proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:274
+#: proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:273
+#: proxmox-yew-comp/src/firewall/rules.rs:183
 #: proxmox-yew-comp/src/running_tasks.rs:109
 msgid "Action"
 msgstr "동작"
@@ -361,6 +376,7 @@ msgstr "작업 오브젝트"
 #: proxmox-backup/www/tape/ChangerStatus.js:760
 #: proxmox-backup/www/tape/ChangerStatus.js:914
 #: proxmox-backup/www/tape/ChangerStatus.js:989
+#: proxmox-datacenter-manager/ui/src/remotes/firewall/columns.rs:130
 #: proxmox-datacenter-manager/ui/src/pve/tree.rs:616
 #: proxmox-datacenter-manager/ui/src/sdn/zone_tree.rs:183
 msgid "Actions"
@@ -379,7 +395,7 @@ msgstr "하드웨어 가속을 위해 AES 명령어셋을 활성화합니다."
 #: pve-manager/www/manager6/storage/PBSEdit.js:235
 #: pve-manager/www/manager6/storage/StatusView.js:31
 #: proxmox-datacenter-manager/ui/src/pve/storage.rs:254
-#: proxmox-yew-comp/src/form/pve/pve_network_selector.rs:154
+#: proxmox-yew-comp/src/form/pve/pve_network_selector.rs:171
 #: proxmox-yew-comp/src/configuration/network_view.rs:416
 msgid "Active"
 msgstr "활성"
@@ -456,17 +472,20 @@ msgstr "활동"
 #: proxmox-backup/www/tape/DriveConfig.js:127
 #: proxmox-backup/www/tape/EncryptionKeys.js:102
 #: proxmox-backup/www/tape/PoolConfig.js:95
+#: proxmox-datacenter-manager/ui/src/configuration/views.rs:164
+#: proxmox-datacenter-manager/ui/src/configuration/views.rs:258
 #: proxmox-datacenter-manager/ui/src/remotes/node_url_list.rs:203
 #: proxmox-datacenter-manager/ui/src/remotes/config.rs:173
-#: proxmox-datacenter-manager/ui/src/dashboard/remote_panel.rs:147
+#: proxmox-datacenter-manager/ui/src/dashboard/remote_panel.rs:149
+#: proxmox-datacenter-manager/ui/src/widget/view_filter_selector.rs:200
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/evpn_panel.rs:115
 #: proxmox-yew-comp/src/acme/acme_accounts.rs:106
 #: proxmox-yew-comp/src/acme/acme_domains.rs:175
 #: proxmox-yew-comp/src/acme/acme_domains.rs:353
 #: proxmox-yew-comp/src/acme/acme_plugins.rs:268
 #: proxmox-yew-comp/src/acme/acme_plugins.rs:534
-#: proxmox-yew-comp/src/apt_repositories.rs:556
-#: proxmox-yew-comp/src/apt_repositories.rs:697
+#: proxmox-yew-comp/src/apt_repositories.rs:579
+#: proxmox-yew-comp/src/apt_repositories.rs:724
 #: proxmox-yew-comp/src/auth_edit_openid.rs:159
 #: proxmox-yew-comp/src/auth_edit_ldap.rs:387
 #: proxmox-yew-comp/src/acl/acl_view.rs:199
@@ -479,8 +498,8 @@ msgstr "활동"
 #: proxmox-yew-comp/src/tfa/tfa_add_recovery.rs:223
 #: proxmox-yew-comp/src/user_panel.rs:180
 #: proxmox-yew-comp/src/user_panel.rs:271
-#: proxmox-yew-comp/src/token_panel.rs:183
-#: proxmox-yew-comp/src/token_panel.rs:389
+#: proxmox-yew-comp/src/token_panel.rs:182
+#: proxmox-yew-comp/src/token_panel.rs:382
 msgid "Add"
 msgstr "추가"
 
@@ -489,7 +508,7 @@ msgstr "추가"
 msgid "Add ACME Account"
 msgstr "ACME 계정 추가"
 
-#: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/mobile.rs:645
+#: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/mobile.rs:648
 msgid "Add CD/DVD drive"
 msgstr "CD/DVD 드라이브 추가"
 
@@ -509,7 +528,7 @@ msgstr "EFI 디스크 추가"
 msgid "Add Fabric"
 msgstr "패브릭 추가"
 
-#: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/mobile.rs:626
+#: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/mobile.rs:629
 msgid "Add Hard Disk"
 msgstr "하드 디스크 추가"
 
@@ -517,7 +536,7 @@ msgstr "하드 디스크 추가"
 msgid "Add Header"
 msgstr "헤더 추가"
 
-#: proxmox-yew-comp/src/configuration/pve/lxc_resources_panel/mobile.rs:349
+#: proxmox-yew-comp/src/configuration/pve/lxc_resources_panel/mobile.rs:352
 msgid "Add Mount Point"
 msgstr "마운트 포인트 추가"
 
@@ -525,7 +544,7 @@ msgstr "마운트 포인트 추가"
 msgid "Add Namespace"
 msgstr "네임스페이스 추가"
 
-#: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/mobile.rs:658
+#: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/mobile.rs:661
 msgid "Add Network card"
 msgstr "네트워크 카드 추가"
 
@@ -545,6 +564,11 @@ msgstr "푸시(Push) 동기화 작업 추가"
 
 #: pmg-gui/js/PBSConfig.js:114
 msgid "Add Remote"
+msgstr "리모트 추가"
+
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:512
+#, fuzzy
+msgid "Add Row"
 msgstr "리모트 추가"
 
 #: proxmox-widget-toolkit/src/panel/WebhookEditPanel.js:93
@@ -578,7 +602,7 @@ msgstr "태그 추가"
 msgid "Add Tape"
 msgstr "테이프 추가"
 
-#: proxmox-backup/www/window/TrafficControlEdit.js:448
+#: proxmox-backup/www/window/TrafficControlEdit.js:449
 msgid "Add Timeframe"
 msgstr "타임프레임 추가"
 
@@ -593,6 +617,11 @@ msgstr "VNet 추가"
 #: pve-manager/www/manager6/lxc/EnvEdit.js:157
 msgid "Add Variable"
 msgstr "변수 추가"
+
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:455
+#, fuzzy
+msgid "Add Widget"
+msgstr "노드 추가"
 
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/add_zone.rs:68
 msgid "Add Zone"
@@ -688,7 +717,7 @@ msgid "Addresses and ports used by the OSD service"
 msgstr "OSD 서비스에서 사용하는 주소 및 포트"
 
 #: pmg-gui/js/NavigationTree.js:104 proxmox-backup/www/NavigationTree.js:92
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:241
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:294
 msgid "Administration"
 msgstr "관리"
 
@@ -766,9 +795,10 @@ msgstr "별칭 (Alias)"
 #: proxmox-backup/www/ServerAdministration.js:83
 #: proxmox-backup/www/config/SyncView.js:378
 #: proxmox-backup/www/tape/BackupJobs.js:252
+#: proxmox-datacenter-manager/ui/src/configuration/views.rs:136
 #: proxmox-datacenter-manager/ui/src/remotes/tasks.rs:153
-#: proxmox-datacenter-manager/ui/src/dashboard/guest_panel.rs:150
-#: proxmox-datacenter-manager/ui/src/dashboard/pbs_datastores_panel.rs:126
+#: proxmox-datacenter-manager/ui/src/dashboard/guest_panel.rs:152
+#: proxmox-datacenter-manager/ui/src/dashboard/pbs_datastores_panel.rs:128
 #: proxmox-yew-comp/src/task_status_selector.rs:131
 msgid "All"
 msgstr "모두"
@@ -781,6 +811,16 @@ msgstr "모든 코어"
 #: pve-manager/www/manager6/qemu/PCIEdit.js:243
 msgid "All Functions"
 msgstr "모든 기능"
+
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:557
+#, fuzzy
+msgid "All Guests"
+msgstr "게스트"
+
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:538
+#, fuzzy
+msgid "All Nodes"
+msgstr "모든 코어"
 
 #: proxmox-backup/www/datastore/Content.js:1248
 #: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:392
@@ -797,7 +837,7 @@ msgid "All OK, but some snapshots were not verified in last 30 days"
 msgstr "모두 괜찮음, 다만 지난 30일 동안 일부 스냅샷은 검증되지 않음"
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:441
-#: proxmox-yew-comp/src/apt_repositories.rs:283
+#: proxmox-yew-comp/src/apt_repositories.rs:288
 msgid "All OK, you have production-ready repositories configured!"
 msgstr "모두 OK, 이제 production-ready 리포지토리를 설정했습니다!"
 
@@ -830,13 +870,24 @@ msgstr "모두 실패함"
 msgid "All match"
 msgstr "모두 일치"
 
+#: proxmox-yew-comp/src/form/pve/lxc_property/lxc_network_property.rs:262
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_network_property.rs:157
 msgid "All network devices in use."
 msgstr "모든 네트워크 디바이스가 사용 중입니다."
 
+#: proxmox-datacenter-manager/ui/src/remotes/firewall/tree.rs:573
+#, fuzzy
+msgid "All nodes"
+msgstr "모든 코어"
+
 #: proxmox-datacenter-manager/ui/src/remotes/updates.rs:449
 msgid "All nodes up-to-date"
 msgstr "모든 노드가 이미 업데이트됨"
+
+#: proxmox-datacenter-manager/ui/src/remotes/firewall/tree.rs:530
+#, fuzzy
+msgid "All remotes"
+msgstr "모든 코어"
 
 #: pve-yew-mobile-gui/src/pages/page_node_status/services_panel.rs:76
 msgid "All required services are running"
@@ -866,7 +917,7 @@ msgid "Allocation Policy"
 msgstr "할당 정책"
 
 #: pve-manager/www/manager6/qemu/SevEdit.js:92
-#: proxmox-yew-comp/src/form/pve/qemu_property/qemu_amd_sev_property.rs:36
+#: proxmox-yew-comp/src/form/pve/qemu_property/qemu_amd_sev_property.rs:46
 msgid "Allow Debugging"
 msgstr "디버깅 허용"
 
@@ -884,12 +935,12 @@ msgid "Allow KSM"
 msgstr "KSM 허용"
 
 #: pve-manager/www/manager6/qemu/SevEdit.js:103
-#: proxmox-yew-comp/src/form/pve/qemu_property/qemu_amd_sev_property.rs:44
+#: proxmox-yew-comp/src/form/pve/qemu_property/qemu_amd_sev_property.rs:54
 msgid "Allow Key-Sharing"
 msgstr "키-셰어링 허용"
 
 #: pve-manager/www/manager6/qemu/SevEdit.js:114
-#: proxmox-yew-comp/src/form/pve/qemu_property/qemu_amd_sev_property.rs:52
+#: proxmox-yew-comp/src/form/pve/qemu_property/qemu_amd_sev_property.rs:62
 msgid "Allow SMT"
 msgstr "SMT 허용"
 
@@ -932,7 +983,7 @@ msgstr "인텔 CPU로 향상된 Spectre 완화 허용"
 msgid "Alphabetical"
 msgstr "알파벳순"
 
-#: proxmox-yew-comp/src/apt_repositories.rs:507
+#: proxmox-yew-comp/src/apt_repositories.rs:512
 msgid "Already configured"
 msgstr "이미 구성되었음"
 
@@ -999,7 +1050,7 @@ msgstr ""
 "애플리케이션 컨테이너가 감지되었습니다. 콘솔이 제대로 작동하지 않을 수 있습니"
 "다."
 
-#: proxmox-backup/www/window/TrafficControlEdit.js:289
+#: proxmox-backup/www/window/TrafficControlEdit.js:290
 msgid "Applies to all users"
 msgstr "모든 사용자에게 적용됨"
 
@@ -1017,7 +1068,7 @@ msgstr "새 편집에 적용"
 msgid "Apply"
 msgstr "적용"
 
-#: proxmox-backup/www/window/TrafficControlEdit.js:322
+#: proxmox-backup/www/window/TrafficControlEdit.js:323
 msgid "Apply Always"
 msgstr "항상 적용"
 
@@ -1038,7 +1089,7 @@ msgstr "SDN 구성 적용"
 msgid "Apply custom SpamAssassin scores"
 msgstr "사용자 정의 SpamAssassin 점수 적용"
 
-#: proxmox-backup/www/window/TrafficControlEdit.js:301
+#: proxmox-backup/www/window/TrafficControlEdit.js:302
 msgid "Apply on all Networks"
 msgstr "모든 네트워크에 적용"
 
@@ -1050,13 +1101,13 @@ msgstr ""
 "보류 중인 SDN 변경 사항을 적용하면 보류 중인 로컬 노드 네트워크 변경 사항도 "
 "모두 적용됩니다. 계속하시겠습니까?"
 
-#: proxmox-widget-toolkit/src/Utils.js:66 proxmox-yew-comp/src/lib.rs:290
+#: proxmox-widget-toolkit/src/Utils.js:66 proxmox-yew-comp/src/lib.rs:293
 msgid "Arabic"
 msgstr "아랍어"
 
 #: pve-manager/www/manager6/lxc/Options.js:58
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/config_panel.rs:118
-#: proxmox-yew-comp/src/form/pve/lxc_property/mod.rs:109
+#: proxmox-yew-comp/src/form/pve/lxc_property/mod.rs:112
 msgid "Architecture"
 msgstr "아키텍처"
 
@@ -1091,12 +1142,13 @@ msgstr "테이프 '{0}'을(를) 포맷하시겠습니까?"
 msgid "Are you sure you want to format the inserted tape?"
 msgstr "삽입한 테이프를 포맷하시겠습니까?"
 
-#: proxmox-datacenter-manager/ui/src/administration/node_status.rs:86
+#: proxmox-datacenter-manager/ui/src/administration/node_status.rs:94
 #: proxmox-yew-comp/src/node_status_panel.rs:223
 msgid "Are you sure you want to reboot the node?"
 msgstr "노드를 재부팅하시겠습니까?"
 
 #: pve-manager/www/manager6/tree/ResourceMapTree.js:109
+#: proxmox-datacenter-manager/ui/src/configuration/views.rs:310
 msgid "Are you sure you want to remove '{0}'"
 msgstr "'{0}'을 제거하시겠습니까?"
 
@@ -1134,7 +1186,7 @@ msgstr "스냅샷 {0}을(를) 제거하시겠습니까?"
 msgid "Are you sure you want to remove tape '{0}' ?"
 msgstr "테이프 '{0}'을(를) 제거하시겠습니까?"
 
-#: proxmox-yew-comp/src/token_panel.rs:194
+#: proxmox-yew-comp/src/token_panel.rs:193
 msgid ""
 "Are you sure you want to remove the API token? All existing users of the "
 "token will lose access!"
@@ -1199,7 +1251,7 @@ msgstr "{0} 항목을 제거하시겠습니까?"
 msgid "Are you sure you want to remove {0} entries"
 msgstr "{0} 항목을 제거하시겠습니까?"
 
-#: proxmox-datacenter-manager/ui/src/administration/node_status.rs:97
+#: proxmox-datacenter-manager/ui/src/administration/node_status.rs:105
 #: proxmox-yew-comp/src/node_status_panel.rs:232
 msgid "Are you sure you want to shut down the node?"
 msgstr "노드를 종료하시겠습니까?"
@@ -1372,12 +1424,12 @@ msgstr "고유 속성(properties) 자동 생성(예: MAC 주소)"
 #: pve-manager/www/manager6/form/TagColorGrid.js:55
 #: pve-manager/www/manager6/qemu/Options.js:350
 #: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:392
-#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:345
+#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:348
 msgid "Automatic"
 msgstr "자동"
 
 #: pve-manager/www/manager6/qemu/Options.js:361
-#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:354
+#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:357
 msgid "Automatic (Storage used by the VM, or 'local')"
 msgstr "자동 (가상 머신에서 사용하는 스토리지 또는 '로컬')"
 
@@ -1537,11 +1589,11 @@ msgstr "백업 보존 기간"
 msgid "Backup Server"
 msgstr "서버 백업"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/pbs_datastores_panel.rs:173
+#: proxmox-datacenter-manager/ui/src/dashboard/pbs_datastores_panel.rs:175
 msgid "Backup Server Datastores"
 msgstr "백업 서버 데이터스토어"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/node_status_panel.rs:160
+#: proxmox-datacenter-manager/ui/src/dashboard/node_status_panel.rs:163
 msgid "Backup Server Nodes"
 msgstr "백업 서버 노드"
 
@@ -1718,7 +1770,7 @@ msgstr "부팅 모드"
 
 #: pve-manager/www/manager6/qemu/BootOrderEdit.js:273
 #: pve-manager/www/manager6/qemu/Options.js:97
-#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:232
+#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:235
 msgid "Boot Order"
 msgstr "부팅 순서"
 
@@ -1743,8 +1795,10 @@ msgstr "반송"
 #: pve-manager/www/manager6/sdn/ZoneBridgeView.js:20
 #: pve-manager/www/manager6/window/GuestImport.js:911
 #: proxmox-datacenter-manager/ui/src/widget/pve_network_selector.rs:160
-#: proxmox-yew-comp/src/form/pve/pve_network_selector.rs:150
+#: proxmox-yew-comp/src/form/pve/pve_network_selector.rs:167
+#: proxmox-yew-comp/src/form/pve/lxc_property/lxc_network_property.rs:180
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_network_property.rs:66
+#: proxmox-yew-comp/src/configuration/pve/lxc_network_panel.rs:357
 msgid "Bridge"
 msgstr "브릿지"
 
@@ -1792,7 +1846,7 @@ msgstr "빌트-인"
 msgid "Built-In (modified)"
 msgstr "빌트-인(수정됨)"
 
-#: proxmox-widget-toolkit/src/Utils.js:67 proxmox-yew-comp/src/lib.rs:291
+#: proxmox-widget-toolkit/src/Utils.js:67 proxmox-yew-comp/src/lib.rs:294
 msgid "Bulgarian"
 msgstr "불가리아어"
 
@@ -1867,6 +1921,11 @@ msgstr "VM 및 컨테이너 일괄 종료"
 msgid "Bulk start VMs and Containers"
 msgstr "VM 및 컨테이너 일괄 시작"
 
+#: proxmox-yew-comp/src/firewall/log_ratelimit_field.rs:320
+#, fuzzy
+msgid "Burst"
+msgstr "버스트 인"
+
 #: proxmox-backup/www/config/TrafficControlView.js:171
 #: proxmox-backup/www/window/S3ClientEdit.js:157
 #: proxmox-backup/www/window/TrafficControlEdit.js:266
@@ -1925,6 +1984,7 @@ msgid "CD/DVD drive"
 msgstr "CD/DVD 드라이브"
 
 #: pve-manager/www/manager6/qemu/TdxEdit.js:86
+#: proxmox-yew-comp/src/form/pve/qemu_property/qemu_intel_tdx_property.rs:44
 msgid "CID"
 msgstr "CID"
 
@@ -1934,6 +1994,7 @@ msgstr "CID"
 #: pve-manager/www/manager6/sdn/EvpnZoneIpVrfPanel.js:18
 #: pve-manager/www/manager6/sdn/controllers/EvpnEdit.js:49
 #: pve-manager/www/manager6/sdn/zones/VxlanEdit.js:70
+#: proxmox-yew-comp/src/configuration/pve/lxc_network_panel.rs:391
 #: proxmox-yew-comp/src/configuration/network_view.rs:482
 msgid "CIDR"
 msgstr "CIDR"
@@ -2013,8 +2074,8 @@ msgstr "CPU 단위"
 #: proxmox-backup/www/ServerStatus.js:215
 #: proxmox-backup/www/ServerStatus.js:217
 #: proxmox-backup/www/panel/NodeInfo.js:79
-#: proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:343
-#: proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:350
+#: proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:344
+#: proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:351
 #: proxmox-datacenter-manager/ui/src/pve/lxc/overview.rs:177
 #: proxmox-datacenter-manager/ui/src/pve/lxc/overview.rs:293
 #: proxmox-datacenter-manager/ui/src/pve/qemu/overview.rs:173
@@ -2051,7 +2112,7 @@ msgstr "CT 템플릿"
 msgid "CT Volumes"
 msgstr "CT 볼륨"
 
-#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:53
+#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:59
 msgid "CT {0}"
 msgstr "CT {0}"
 
@@ -2080,6 +2141,11 @@ msgstr "취소"
 
 #: pve-manager/www/manager6/form/TagEdit.js:351
 msgid "Cancel Edit"
+msgstr "편집 취소"
+
+#: proxmox-datacenter-manager/ui/src/dashboard/status_row.rs:179
+#, fuzzy
+msgid "Cancel Editing"
 msgstr "편집 취소"
 
 #: pve-manager/www/manager6/dc/PCIMapView.js:42
@@ -2161,7 +2227,7 @@ msgstr "카트리지 메모리"
 msgid "Case-Sensitive"
 msgstr "대소문자 구분"
 
-#: proxmox-widget-toolkit/src/Utils.js:68 proxmox-yew-comp/src/lib.rs:292
+#: proxmox-widget-toolkit/src/Utils.js:68 proxmox-yew-comp/src/lib.rs:295
 msgid "Catalan"
 msgstr "카탈루냐어"
 
@@ -2239,7 +2305,7 @@ msgstr "인증서 체인"
 #: proxmox-backup/www/config/CertificateView.js:5
 #: proxmox-backup/www/config/CertificateView.js:26
 #: proxmox-datacenter-manager/ui/src/certificates.rs:21
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:210
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:263
 msgid "Certificates"
 msgstr "인증서"
 
@@ -2343,11 +2409,11 @@ msgstr "연결 확인"
 msgid "Checksum"
 msgstr "체크섬"
 
-#: proxmox-widget-toolkit/src/Utils.js:93 proxmox-yew-comp/src/lib.rs:325
+#: proxmox-widget-toolkit/src/Utils.js:93 proxmox-yew-comp/src/lib.rs:328
 msgid "Chinese (Simplified)"
 msgstr "중국어(간체)"
 
-#: proxmox-widget-toolkit/src/Utils.js:94 proxmox-yew-comp/src/lib.rs:330
+#: proxmox-widget-toolkit/src/Utils.js:94 proxmox-yew-comp/src/lib.rs:333
 msgid "Chinese (Traditional)"
 msgstr "중국어(번체)"
 
@@ -2519,6 +2585,10 @@ msgstr "클러스터"
 #: pve-manager/www/manager6/dc/Cluster.js:29
 msgid "Cluster Administration"
 msgstr "클러스터 관리"
+
+#: proxmox-datacenter-manager/ui/src/remotes/firewall/ui_helpers.rs:81
+msgid "Cluster Firewall Rules - {}"
+msgstr ""
 
 #: pve-manager/www/manager6/dc/Cluster.js:53
 msgid "Cluster Information"
@@ -2711,18 +2781,19 @@ msgstr "명령이 실패함"
 #: proxmox-backup/www/window/VerifyJobEdit.js:179
 #: proxmox-datacenter-manager/ui/src/widget/pve_network_selector.rs:164
 #: proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:204
-#: proxmox-yew-comp/src/apt_repositories.rs:784
+#: proxmox-yew-comp/src/apt_repositories.rs:811
 #: proxmox-yew-comp/src/auth_edit_openid.rs:140
 #: proxmox-yew-comp/src/auth_edit_ldap.rs:370
-#: proxmox-yew-comp/src/form/pve/pve_network_selector.rs:157
+#: proxmox-yew-comp/src/form/pve/pve_network_selector.rs:174
 #: proxmox-yew-comp/src/configuration/network_edit.rs:164
 #: proxmox-yew-comp/src/configuration/network_edit.rs:260
 #: proxmox-yew-comp/src/configuration/network_edit.rs:295
+#: proxmox-yew-comp/src/firewall/rules.rs:191
 #: proxmox-yew-comp/src/user_panel.rs:428
 #: proxmox-yew-comp/src/user_panel.rs:530
 #: proxmox-yew-comp/src/user_panel.rs:556
-#: proxmox-yew-comp/src/token_panel.rs:437
-#: proxmox-yew-comp/src/token_panel.rs:466
+#: proxmox-yew-comp/src/token_panel.rs:430
+#: proxmox-yew-comp/src/token_panel.rs:459
 msgid "Comment"
 msgstr "설명"
 
@@ -2731,7 +2802,7 @@ msgid "Community"
 msgstr "커뮤니티"
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:290
-#: proxmox-yew-comp/src/apt_repositories.rs:776
+#: proxmox-yew-comp/src/apt_repositories.rs:803
 msgid "Components"
 msgstr "컴포넌트"
 
@@ -2745,6 +2816,12 @@ msgstr "컴포넌트"
 #: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:89
 msgid "Compression"
 msgstr "압축"
+
+#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:82
+#: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:81
+#, fuzzy
+msgid "Config"
+msgstr "구성"
 
 #: pve-manager/www/manager6/dc/Cluster.js:193
 msgid "Config Version"
@@ -2765,8 +2842,8 @@ msgstr "구성 잠김 ({0})"
 #: pve-manager/www/manager6/window/BackupConfig.js:3
 #: proxmox-backup/www/NavigationTree.js:42
 #: proxmox-backup/www/SystemConfiguration.js:5
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:219
-#: proxmox-datacenter-manager/ui/src/remotes/mod.rs:49
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:272
+#: proxmox-datacenter-manager/ui/src/remotes/mod.rs:52
 #: pve-yew-mobile-gui/src/widgets/storage_content_panel.rs:258
 #: pve-yew-mobile-gui/src/widgets/main_navigation.rs:90
 msgid "Configuration"
@@ -2808,7 +2885,7 @@ msgid "Configure the IP in the fabric, instead of /etc/network/interfaces"
 msgstr "/etc/network/interfaces 대신 패브릭에서 IP를 구성하세요."
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:48
-#: proxmox-yew-comp/src/apt_repositories.rs:652
+#: proxmox-yew-comp/src/apt_repositories.rs:679
 msgid "Configured"
 msgstr "구성됨"
 
@@ -2833,6 +2910,7 @@ msgstr "구성됨"
 #: pve-manager/www/manager6/window/GuestStop.js:72
 #: pve-manager/www/manager6/window/Restore.js:106
 #: proxmox-backup/www/datastore/Content.js:669
+#: proxmox-datacenter-manager/ui/src/configuration/views.rs:309
 #: proxmox-datacenter-manager/ui/src/pve/tree.rs:516
 #: proxmox-yew-comp/src/safe_confirm_dialog.rs:176
 #: proxmox-yew-comp/src/tfa/tfa_confirm_remove.rs:97
@@ -2893,6 +2971,11 @@ msgstr "연결 인증서"
 
 #: proxmox-backup/www/window/DatastoreRepoInfo.js:6
 msgid "Connection Information"
+msgstr "연결 정보"
+
+#: proxmox-yew-comp/src/firewall/options_edit.rs:423
+#, fuzzy
+msgid "Connection Tracking Max"
 msgstr "연결 정보"
 
 #: proxmox-widget-toolkit/src/Utils.js:411
@@ -2967,7 +3050,7 @@ msgstr "콘솔 뷰어"
 #: pve-manager/www/manager6/lxc/Options.js:106
 #: pve-manager/www/manager6/lxc/Options.js:118
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/config_panel.rs:133
-#: proxmox-yew-comp/src/form/pve/lxc_property/mod.rs:149
+#: proxmox-yew-comp/src/form/pve/lxc_property/mod.rs:152
 msgid "Console mode"
 msgstr "콘솔 모드"
 
@@ -2979,6 +3062,7 @@ msgstr "연락처"
 
 #: pve-manager/www/manager6/Utils.js:697
 #: pve-manager/www/manager6/ha/ResourceEdit.js:196
+#: proxmox-datacenter-manager/ui/src/widget/view_filter_selector.rs:313
 #: proxmox-datacenter-manager/ui/src/pve/utils.rs:294
 msgid "Container"
 msgstr "컨테이너"
@@ -3079,6 +3163,10 @@ msgstr "정보 복사"
 msgid "Copy Key"
 msgstr "키 복사"
 
+#: proxmox-datacenter-manager/ui/src/configuration/views.rs:339
+msgid "Copy Layout from"
+msgstr ""
+
 #: proxmox-widget-toolkit/src/window/AddTfaRecovery.js:179
 #: proxmox-yew-comp/src/tfa/tfa_add_recovery.rs:146
 msgid "Copy Recovery Keys"
@@ -3113,7 +3201,7 @@ msgid "Copy to Clipboard"
 msgstr "클립보드에 복사"
 
 #: proxmox-yew-comp/src/node_status_panel.rs:118
-#: proxmox-yew-comp/src/token_panel.rs:367
+#: proxmox-yew-comp/src/token_panel.rs:360
 msgid "Copy token secret to clipboard."
 msgstr "클립보드에 토큰 비밀 구문 복사"
 
@@ -3134,6 +3222,10 @@ msgstr "코어"
 msgid "Could not connect to remote"
 msgstr "리모트에 연결할 수 없습니다"
 
+#: proxmox-datacenter-manager/ui/src/configuration/views.rs:226
+msgid "Could not delete '{0}': '{1}'"
+msgstr ""
+
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:81
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:114
 msgid "Could not detect a ceph installation in the cluster"
@@ -3143,6 +3235,11 @@ msgstr "클러스터에서 ceph 설치를 감지할 수 없음"
 msgid "Could not find Controller for EVPN zone {}"
 msgstr "EVPN 영역 {}에 대한 컨트롤러를 찾을 수 없음"
 
+#: proxmox-datacenter-manager/ui/src/remotes/firewall/ui_helpers.rs:47
+#, fuzzy
+msgid "Could not load status"
+msgstr "업데이트 상태를 새로 고칠 수 없습니다."
+
 #: pmg-gui/js/DKIMSettings.js:41
 msgid "Could not read private key - please create a selector first!"
 msgstr "개인 키를 읽을 수 없습니다 - 먼저 선택기를 만들어 주세요!"
@@ -3151,7 +3248,7 @@ msgstr "개인 키를 읽을 수 없습니다 - 먼저 선택기를 만들어 �
 msgid "Could not refresh update status."
 msgstr "업데이트 상태를 새로 고칠 수 없습니다."
 
-#: proxmox-datacenter-manager/ui/src/dashboard/remote_panel.rs:80
+#: proxmox-datacenter-manager/ui/src/dashboard/remote_panel.rs:82
 msgid "Could reach all remotes."
 msgstr "모든 리모트에 접근할 수 있습니다."
 
@@ -3292,7 +3389,7 @@ msgstr "생성 시간"
 msgid "Critical"
 msgstr "치명적"
 
-#: proxmox-widget-toolkit/src/Utils.js:77 proxmox-yew-comp/src/lib.rs:303
+#: proxmox-widget-toolkit/src/Utils.js:77 proxmox-yew-comp/src/lib.rs:306
 msgid "Croatian"
 msgstr "크로아티아어"
 
@@ -3326,6 +3423,11 @@ msgstr "현재 상태가 손실됩니다."
 msgid "Custom"
 msgstr "사용자 정의"
 
+#: proxmox-datacenter-manager/ui/src/configuration/views.rs:146
+#, fuzzy
+msgid "Custom Layout"
+msgstr "현재 레이아웃"
+
 #: pmg-gui/js/SpamDetectorCustom.js:118 pmg-gui/js/SpamDetectorCustom.js:165
 msgid "Custom Rule Score"
 msgstr "사용자 지정 규칙 점수"
@@ -3334,7 +3436,7 @@ msgstr "사용자 지정 규칙 점수"
 msgid "Custom Scores"
 msgstr "사용자 지정 점수"
 
-#: proxmox-widget-toolkit/src/Utils.js:69 proxmox-yew-comp/src/lib.rs:293
+#: proxmox-widget-toolkit/src/Utils.js:69 proxmox-yew-comp/src/lib.rs:296
 msgid "Czech"
 msgstr "체코어"
 
@@ -3374,7 +3476,8 @@ msgstr "DKIM"
 #: pve-manager/www/manager6/node/Config.js:211
 #: pve-manager/www/manager6/sdn/ZoneView.js:159
 #: proxmox-backup/www/SystemConfiguration.js:35
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:156
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:158
+#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:111
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/resources_panel.rs:125
 msgid "DNS"
 msgstr "DNS"
@@ -3465,7 +3568,7 @@ msgstr "매일"
 msgid "Damaged"
 msgstr "손상됨"
 
-#: proxmox-widget-toolkit/src/Utils.js:70 proxmox-yew-comp/src/lib.rs:294
+#: proxmox-widget-toolkit/src/Utils.js:70 proxmox-yew-comp/src/lib.rs:297
 msgid "Danish"
 msgstr "덴마크어"
 
@@ -3477,7 +3580,8 @@ msgstr "다크 모드 필터"
 
 #: pmg-gui/js/Dashboard.js:339 pmg-gui/js/NavigationTree.js:10
 #: proxmox-backup/www/Dashboard.js:224 proxmox-backup/www/NavigationTree.js:30
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:157
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:170
+#: proxmox-datacenter-manager/ui/src/widget/view_selector.rs:47
 #: pve-yew-mobile-gui/src/widgets/main_navigation.rs:67
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/mod.rs:100
 #: pve-yew-mobile-gui/src/pages/page_node_status/mod.rs:128
@@ -3488,7 +3592,7 @@ msgstr "대시보드"
 msgid "Dashboard Options"
 msgstr "대시보드 옵션"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/status_row.rs:130
+#: proxmox-datacenter-manager/ui/src/dashboard/status_row.rs:188
 msgid "Dashboard Settings"
 msgstr "대시보드 설정"
 
@@ -3539,6 +3643,11 @@ msgstr "데이터센터"
 #: proxmox-backup/www/window/PruneJobEdit.js:74
 msgid "Datastore"
 msgstr "데이터스토어"
+
+#: proxmox-datacenter-manager/ui/src/widget/view_filter_selector.rs:317
+#, fuzzy
+msgid "Datastore (Proxmox Backup Server)"
+msgstr "Proxmox 백업 서버"
 
 #: proxmox-backup/www/tape/window/TapeRestore.js:517
 msgid "Datastore Mapping"
@@ -3661,17 +3770,19 @@ msgstr "OSD.{0}에 대한 심층 검사"
 #: proxmox-yew-comp/src/form/pve/qemu_display_type_selector.rs:105
 #: proxmox-yew-comp/src/form/pve/hotplug_feature_selector.rs:46
 #: proxmox-yew-comp/src/form/pve/lxc_property/lxc_mount_point_property.rs:250
-#: proxmox-yew-comp/src/form/pve/lxc_property/mod.rs:152
+#: proxmox-yew-comp/src/form/pve/lxc_property/mod.rs:155
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_display_property.rs:20
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_display_property.rs:28
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_display_property.rs:110
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_display_property.rs:162
+#: proxmox-yew-comp/src/form/pve/qemu_property/qemu_intel_tdx_property.rs:35
+#: proxmox-yew-comp/src/form/pve/qemu_property/qemu_intel_tdx_property.rs:101
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_machine_property.rs:52
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_machine_property.rs:152
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_scsihw_property.rs:22
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_scsihw_property.rs:44
-#: proxmox-yew-comp/src/form/pve/qemu_property/qemu_amd_sev_property.rs:33
-#: proxmox-yew-comp/src/form/pve/qemu_property/qemu_amd_sev_property.rs:109
+#: proxmox-yew-comp/src/form/pve/qemu_property/qemu_amd_sev_property.rs:43
+#: proxmox-yew-comp/src/form/pve/qemu_property/qemu_amd_sev_property.rs:119
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_memory_property.rs:66
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_agent_property.rs:15
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_agent_property.rs:102
@@ -3681,11 +3792,11 @@ msgstr "OSD.{0}에 대한 심층 검사"
 msgid "Default"
 msgstr "기본"
 
-#: proxmox-backup/www/datastore/OptionView.js:326
+#: proxmox-backup/www/datastore/OptionView.js:316
 msgid "Default # of Verification Readers"
 msgstr "기본 검증 리더 수"
 
-#: proxmox-backup/www/datastore/OptionView.js:316
+#: proxmox-backup/www/datastore/OptionView.js:326
 msgid "Default # of Verification Workers"
 msgstr "기본 검증 작업자 수"
 
@@ -3842,11 +3953,11 @@ msgstr "모든 메시지 삭제"
 msgid "Delete custom certificate and switch to generated one?"
 msgstr "사용자 지정 인증서를 삭제하고 생성된 인증서로 전환하시겠습니까?"
 
-#: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/mobile.rs:208
+#: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/mobile.rs:211
 msgid "Delete device"
 msgstr "디바이스 삭제"
 
-#: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/mobile.rs:420
+#: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/mobile.rs:423
 msgid "Delete disk"
 msgstr "디스크 삭제"
 
@@ -3863,8 +3974,8 @@ msgstr "속성 삭제 실패"
 msgid "Delete source"
 msgstr "원본 삭제"
 
-#: proxmox-yew-comp/src/configuration/pve/lxc_resources_panel/mobile.rs:230
-#: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/mobile.rs:370
+#: proxmox-yew-comp/src/configuration/pve/lxc_resources_panel/mobile.rs:233
+#: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/mobile.rs:373
 msgid "Delete volume"
 msgstr "볼륨 삭제"
 
@@ -3931,7 +4042,7 @@ msgstr "밀도"
 #: proxmox-backup/www/window/MaintenanceOptions.js:73
 #: proxmox-datacenter-manager/ui/src/remotes/tasks.rs:85
 #: proxmox-yew-comp/src/apt_package_manager.rs:359
-#: proxmox-yew-comp/src/apt_repositories.rs:729
+#: proxmox-yew-comp/src/apt_repositories.rs:756
 #: proxmox-yew-comp/src/form/pve/qemu_disk_format_selector.rs:162
 #: proxmox-yew-comp/src/tfa/tfa_view.rs:407
 #: proxmox-yew-comp/src/tfa/tfa_edit.rs:61
@@ -4018,9 +4129,9 @@ msgstr "게스트가 소유한 참조되지 않은 디스크 파기"
 #: pve-manager/www/manager6/lxc/Resources.js:239
 #: pve-manager/www/manager6/qemu/HardwareView.js:524
 #: proxmox-yew-comp/src/configuration/pve/lxc_resources_panel/desktop.rs:109
-#: proxmox-yew-comp/src/configuration/pve/lxc_resources_panel/mobile.rs:187
+#: proxmox-yew-comp/src/configuration/pve/lxc_resources_panel/mobile.rs:190
 #: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/desktop.rs:113
-#: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/mobile.rs:313
+#: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/mobile.rs:316
 msgid "Detach"
 msgstr "분리"
 
@@ -4036,12 +4147,12 @@ msgstr "자세한 매핑"
 #: pve-manager/www/manager6/ceph/OSD.js:898
 #: pve-manager/www/manager6/ceph/OSDDetails.js:17
 #: pve-manager/www/manager6/sdn/ZoneContentView.js:42
-#: proxmox-datacenter-manager/ui/src/dashboard/subscription_info.rs:171
+#: proxmox-datacenter-manager/ui/src/dashboard/subscription_info.rs:172
 msgid "Details"
 msgstr "세부 정보"
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:497
-#: proxmox-yew-comp/src/apt_repositories.rs:225
+#: proxmox-yew-comp/src/apt_repositories.rs:230
 msgid "Detected mixed suites before upgrade"
 msgstr "업그레이드 전 라이선스 제품군 혼합을 감지함"
 
@@ -4147,7 +4258,7 @@ msgstr "디렉토리 스토리지"
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:198
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:571
-#: proxmox-yew-comp/src/apt_repositories.rs:567
+#: proxmox-yew-comp/src/apt_repositories.rs:590
 msgid "Disable"
 msgstr "비활성화"
 
@@ -4163,8 +4274,10 @@ msgstr "MX 조회(SMTP) 비활성화"
 #: pve-manager/www/manager6/Utils.js:403 pve-manager/www/manager6/Utils.js:437
 #: proxmox-yew-comp/src/form/pve/hotplug_feature_selector.rs:54
 #: proxmox-yew-comp/src/form/pve/lxc_property/lxc_mount_point_property.rs:252
-#: proxmox-yew-comp/src/form/pve/qemu_property/qemu_amd_sev_property.rs:33
-#: proxmox-yew-comp/src/form/pve/qemu_property/qemu_amd_sev_property.rs:109
+#: proxmox-yew-comp/src/form/pve/qemu_property/qemu_intel_tdx_property.rs:35
+#: proxmox-yew-comp/src/form/pve/qemu_property/qemu_intel_tdx_property.rs:101
+#: proxmox-yew-comp/src/form/pve/qemu_property/qemu_amd_sev_property.rs:43
+#: proxmox-yew-comp/src/form/pve/qemu_property/qemu_amd_sev_property.rs:119
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_agent_property.rs:15
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_agent_property.rs:23
 msgid "Disabled"
@@ -4193,11 +4306,13 @@ msgstr "면책 조항"
 
 #: pve-manager/www/manager6/lxc/Network.js:278
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:105
+#: proxmox-yew-comp/src/form/pve/lxc_property/lxc_network_property.rs:102
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_network_property.rs:106
 msgid "Disconnect"
 msgstr "연결 해제"
 
 #: pve-manager/www/manager6/lxc/Network.js:616
+#: proxmox-yew-comp/src/configuration/pve/lxc_network_panel.rs:409
 msgid "Disconnected"
 msgstr "연결 해제됨"
 
@@ -4305,7 +4420,7 @@ msgstr "백업 암호화 안 함"
 msgid "Do not use any media"
 msgstr "미디어 사용 안 함"
 
-#: proxmox-yew-comp/src/token_panel.rs:203
+#: proxmox-yew-comp/src/token_panel.rs:202
 msgid ""
 "Do you want to regenerate the secret of the selected API token? All existing "
 "users of the token will lose access!"
@@ -4331,7 +4446,7 @@ msgstr "지문을 저장하여 그들을 신뢰하고 싶으신가요?"
 
 #: pmg-gui/js/MainView.js:195 pve-manager/www/manager6/Workspace.js:380
 #: proxmox-backup/www/MainView.js:245
-#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:183
+#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:188
 msgid "Documentation"
 msgstr "문서"
 
@@ -4477,14 +4592,14 @@ msgstr "중복된 링크 번호는 허용되지 않습니다."
 #: proxmox-backup/www/dashboard/LongestTasks.js:86
 #: proxmox-backup/www/dashboard/RunningTasks.js:86
 #: proxmox-backup/www/tape/BackupJobs.js:271
-#: proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:242
+#: proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:241
 #: pve-yew-mobile-gui/src/pages/page_task_status.rs:157
 #: proxmox-yew-comp/src/running_tasks.rs:100
 #: proxmox-yew-comp/src/task_viewer.rs:246
 msgid "Duration"
 msgstr "지속시간"
 
-#: proxmox-widget-toolkit/src/Utils.js:84 proxmox-yew-comp/src/lib.rs:309
+#: proxmox-widget-toolkit/src/Utils.js:84 proxmox-yew-comp/src/lib.rs:312
 msgid "Dutch"
 msgstr "네덜란드어"
 
@@ -4545,7 +4660,7 @@ msgstr "EB"
 #: pve-manager/www/manager6/qemu/HardwareView.js:589
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_efidisk_property.rs:167
 #: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/desktop.rs:339
-#: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/mobile.rs:666
+#: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/mobile.rs:669
 msgid "EFI Disk"
 msgstr "EFI 디스크"
 
@@ -4578,7 +4693,7 @@ msgstr "이메일 '보낸 사람:'"
 msgid "EMail attribute name(s)"
 msgstr "이메일 속성 이름"
 
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:257
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:310
 msgid "EVPN"
 msgstr "EVPN"
 
@@ -4696,8 +4811,11 @@ msgstr "EVPN 영역 {}에 정의된 컨트롤러가 없습니다!"
 #: proxmox-backup/www/tape/ChangerConfig.js:94
 #: proxmox-backup/www/tape/DriveConfig.js:134
 #: proxmox-backup/www/tape/PoolConfig.js:102
+#: proxmox-datacenter-manager/ui/src/configuration/views.rs:178
+#: proxmox-datacenter-manager/ui/src/configuration/views.rs:262
 #: proxmox-datacenter-manager/ui/src/remotes/edit_remote.rs:62
 #: proxmox-datacenter-manager/ui/src/remotes/config.rs:193
+#: proxmox-datacenter-manager/ui/src/dashboard/status_row.rs:151
 #: proxmox-datacenter-manager/ui/src/tasks.rs:31
 #: proxmox-yew-comp/src/acme/acme_domains.rs:179
 #: proxmox-yew-comp/src/acme/acme_domains.rs:374
@@ -4712,16 +4830,25 @@ msgstr "EVPN 영역 {}에 정의된 컨트롤러가 없습니다!"
 #: proxmox-yew-comp/src/configuration/network_edit.rs:346
 #: proxmox-yew-comp/src/notes_view.rs:171
 #: proxmox-yew-comp/src/notes_view.rs:199
-#: proxmox-yew-comp/src/property_view/property_grid.rs:81
-#: proxmox-yew-comp/src/pending_property_view/pending_property_grid.rs:94
+#: proxmox-yew-comp/src/property_view/property_grid.rs:85
+#: proxmox-yew-comp/src/pending_property_view/pending_property_grid.rs:98
 #: proxmox-yew-comp/src/tfa/tfa_view.rs:274
 #: proxmox-yew-comp/src/user_panel.rs:185
 #: proxmox-yew-comp/src/user_panel.rs:280
-#: proxmox-yew-comp/src/token_panel.rs:188
-#: proxmox-yew-comp/src/token_panel.rs:400
+#: proxmox-yew-comp/src/token_panel.rs:187
+#: proxmox-yew-comp/src/token_panel.rs:393
 #: proxmox-yew-comp/src/utils/mod.rs:375
 msgid "Edit"
 msgstr "수정"
+
+#: proxmox-yew-comp/src/firewall/options_edit.rs:170
+msgid "Edit Cluster Firewall"
+msgstr ""
+
+#: proxmox-yew-comp/src/firewall/options_edit.rs:240
+#, fuzzy
+msgid "Edit Guest Firewall"
+msgstr "VNet 방화벽"
 
 #: pve-manager/www/manager6/tree/ResourceMapTree.js:357
 msgid "Edit Mapping '{0}'"
@@ -4731,10 +4858,20 @@ msgstr "매핑 '{0}' 편집"
 msgid "Edit Mapping '{0}' for '{1}'"
 msgstr "'{1}'에 대한 '{0}' 매핑 편집"
 
+#: proxmox-yew-comp/src/firewall/options_edit.rs:221
+#, fuzzy
+msgid "Edit Node Firewall"
+msgstr "VNet 방화벽"
+
 #: pve-manager/www/manager6/grid/BackupView.js:268
 #: pve-manager/www/manager6/storage/BackupView.js:151
 msgid "Edit Notes"
 msgstr "메모 편집"
+
+#: proxmox-datacenter-manager/ui/src/remotes/firewall/columns.rs:149
+#, fuzzy
+msgid "Edit Options"
+msgstr "옵션 사용"
 
 #: pve-manager/www/manager6/form/TagEdit.js:374
 msgid "Edit Tags"
@@ -4825,27 +4962,47 @@ msgstr "다음 주소로 이메일 보내기"
 #: pve-manager/www/manager6/ha/RuleEdit.js:73
 #: pve-manager/www/manager6/storage/Base.js:51
 #: pve-manager/www/manager6/window/FirewallLograteEdit.js:12
-#: proxmox-yew-comp/src/apt_repositories.rs:569
-#: proxmox-yew-comp/src/token_panel.rs:505
+#: proxmox-yew-comp/src/apt_repositories.rs:592
+#: proxmox-yew-comp/src/firewall/log_ratelimit_field.rs:306
+#: proxmox-yew-comp/src/token_panel.rs:498
 msgid "Enable"
 msgstr "사용"
 
 #: pve-manager/www/manager6/qemu/TdxEdit.js:73
+#: proxmox-yew-comp/src/form/pve/qemu_property/qemu_intel_tdx_property.rs:37
 msgid "Enable Attestation"
 msgstr "증명 활성화"
+
+#: proxmox-yew-comp/src/firewall/options_edit.rs:339
+#, fuzzy
+msgid "Enable DHCP"
+msgstr "사용"
 
 #: pmg-gui/js/DKIMSettings.js:132
 msgid "Enable DKIM Signing"
 msgstr "DKIM 서명 사용"
+
+#: proxmox-yew-comp/src/firewall/options_edit.rs:279
+#: proxmox-yew-comp/src/firewall/options_edit.rs:335
+#: proxmox-yew-comp/src/firewall/options_edit.rs:404
+#, fuzzy
+msgid "Enable Firewall"
+msgstr "새로 만들기 활성화"
 
 #: pve-manager/www/manager6/dc/RealmSyncJob.js:318
 msgid "Enable Job"
 msgstr "작업 활성화"
 
 #: pve-manager/www/manager6/qemu/SevEdit.js:125
-#: proxmox-yew-comp/src/form/pve/qemu_property/qemu_amd_sev_property.rs:61
+#: proxmox-yew-comp/src/form/pve/qemu_property/qemu_amd_sev_property.rs:71
 msgid "Enable Kernel Hashes"
 msgstr "커널 해시 활성화"
+
+#: proxmox-yew-comp/src/firewall/options_edit.rs:343
+#: proxmox-yew-comp/src/firewall/options_edit.rs:419
+#, fuzzy
+msgid "Enable NDP"
+msgstr "새로 만들기 활성화"
 
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:231
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_processor_property.rs:277
@@ -4863,6 +5020,11 @@ msgstr "TLS 사용"
 #: pmg-gui/js/MailProxyTLS.js:12
 msgid "Enable TLS Logging"
 msgstr "TLS 로깅 사용"
+
+#: proxmox-yew-comp/src/firewall/options_edit.rs:283
+#, fuzzy
+msgid "Enable ebtables"
+msgstr "할당량 활성화"
 
 #: pve-manager/www/manager6/ha/ResourceEdit.js:120
 msgid "Enable if HA resource should automatically adjust to HA rules."
@@ -4939,7 +5101,8 @@ msgstr "확장된 속성에 대한 지원을 활성화합니다."
 #: proxmox-backup/www/window/PruneJobEdit.js:126
 #: proxmox-backup/www/window/TokenEdit.js:59
 #: proxmox-backup/www/window/UserEdit.js:134
-#: proxmox-yew-comp/src/apt_repositories.rs:760
+#: proxmox-datacenter-manager/ui/src/remotes/firewall/columns.rs:75
+#: proxmox-yew-comp/src/apt_repositories.rs:787
 #: proxmox-yew-comp/src/form/pve/lxc_property/lxc_mount_point_property.rs:251
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_agent_property.rs:26
 #: proxmox-yew-comp/src/tfa/tfa_view.rs:365
@@ -4947,8 +5110,8 @@ msgstr "확장된 속성에 대한 지원을 활성화합니다."
 #: proxmox-yew-comp/src/user_panel.rs:347
 #: proxmox-yew-comp/src/user_panel.rs:526
 #: proxmox-yew-comp/src/user_panel.rs:555
-#: proxmox-yew-comp/src/token_panel.rs:435
-#: proxmox-yew-comp/src/token_panel.rs:465
+#: proxmox-yew-comp/src/token_panel.rs:428
+#: proxmox-yew-comp/src/token_panel.rs:458
 msgid "Enabled"
 msgstr "활성화됨"
 
@@ -5030,7 +5193,7 @@ msgstr "엔드포인트 이름"
 msgid "Endpoints"
 msgstr "엔드포인트"
 
-#: proxmox-widget-toolkit/src/Utils.js:72 proxmox-yew-comp/src/lib.rs:296
+#: proxmox-widget-toolkit/src/Utils.js:72 proxmox-yew-comp/src/lib.rs:299
 msgid "English"
 msgstr "영어"
 
@@ -5244,7 +5407,9 @@ msgstr "삭제 중"
 #: proxmox-backup/www/tape/ChangerStatus.js:227
 #: proxmox-backup/www/tape/ChangerStatus.js:285
 #: proxmox-backup/www/tape/window/TapeRestore.js:165
-#: proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:195
+#: proxmox-datacenter-manager/ui/src/configuration/views.rs:225
+#: proxmox-datacenter-manager/ui/src/remotes/firewall/tree.rs:445
+#: proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:194
 #: proxmox-datacenter-manager/ui/src/dashboard/tasks.rs:156
 #: proxmox-datacenter-manager/ui/src/pve/tree.rs:350
 #: proxmox-datacenter-manager/ui/src/pve/tree.rs:369
@@ -5270,7 +5435,7 @@ msgstr "오류"
 msgid "Estimated Full"
 msgstr "용량 한도 도달까지의 예상 시간"
 
-#: proxmox-widget-toolkit/src/Utils.js:74 proxmox-yew-comp/src/lib.rs:298
+#: proxmox-widget-toolkit/src/Utils.js:74 proxmox-yew-comp/src/lib.rs:301
 msgid "Euskera (Basque)"
 msgstr "에우스케라어 (바스크어)"
 
@@ -5344,6 +5509,7 @@ msgid "Example"
 msgstr "예제"
 
 #: proxmox-backup/www/form/GroupFilter.js:446
+#: proxmox-datacenter-manager/ui/src/configuration/views.rs:368
 msgid "Exclude"
 msgstr "제외"
 
@@ -5395,9 +5561,9 @@ msgstr "실험적"
 #: proxmox-yew-comp/src/user_panel.rs:368
 #: proxmox-yew-comp/src/user_panel.rs:521
 #: proxmox-yew-comp/src/user_panel.rs:548
-#: proxmox-yew-comp/src/token_panel.rs:421
-#: proxmox-yew-comp/src/token_panel.rs:455
-#: proxmox-yew-comp/src/token_panel.rs:512
+#: proxmox-yew-comp/src/token_panel.rs:414
+#: proxmox-yew-comp/src/token_panel.rs:448
+#: proxmox-yew-comp/src/token_panel.rs:505
 msgid "Expire"
 msgstr "만료"
 
@@ -5468,7 +5634,7 @@ msgstr "페일백"
 msgid "Failed"
 msgstr "실패"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/remote_panel.rs:85
+#: proxmox-datacenter-manager/ui/src/dashboard/remote_panel.rs:87
 msgid "Failed to reach one remote."
 msgid_plural "Failed to reach {n} remotes."
 msgstr[0] "하나 이상의 리모트에 접속할 수 없습니다."
@@ -5504,7 +5670,7 @@ msgid "Family"
 msgstr "패밀리"
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:541
-#: proxmox-yew-comp/src/apt_repositories.rs:277
+#: proxmox-yew-comp/src/apt_repositories.rs:282
 msgid "Fatal parsing error for at least one repository"
 msgstr ""
 "하나 이상의 리포지토리에 치명적인 구문 분석 오류(Fatal parsing error)가 발생"
@@ -5608,6 +5774,7 @@ msgstr "파일 유형"
 #: pmg-gui/js/DNSBLSitesField.js:163 pmg-gui/js/MailTracker.js:88
 #: pmg-gui/js/PostfixMailQueue.js:157 pmg-gui/js/form/FilterField.js:14
 #: pve-manager/www/manager6/grid/PoolMembers.js:66
+#: proxmox-datacenter-manager/ui/src/remotes/firewall/tree.rs:239
 #: proxmox-datacenter-manager/ui/src/pbs/tree.rs:254
 #: proxmox-datacenter-manager/ui/src/pve/tree.rs:491
 msgid "Filter"
@@ -5677,6 +5844,11 @@ msgstr "종결"
 msgid "Finish Edit"
 msgstr "편집 종결"
 
+#: proxmox-datacenter-manager/ui/src/dashboard/status_row.rs:165
+#, fuzzy
+msgid "Finish Editing"
+msgstr "편집 종결"
+
 #: pve-yew-mobile-gui/src/widgets/task_list_button.rs:148
 msgid "Finished"
 msgstr "종결됨"
@@ -5694,8 +5866,16 @@ msgstr "종결됨"
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:96
 #: pve-manager/www/manager6/window/FirewallEnableEdit.js:6
 #: pve-manager/www/manager6/window/FirewallEnableEdit.js:22
+#: proxmox-datacenter-manager/ui/src/remotes/mod.rs:73
+#: proxmox-yew-comp/src/form/pve/lxc_property/lxc_network_property.rs:99
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_network_property.rs:99
+#: proxmox-yew-comp/src/configuration/pve/lxc_network_panel.rs:363
 msgid "Firewall"
+msgstr "방화벽"
+
+#: proxmox-datacenter-manager/ui/src/remotes/firewall/ui_helpers.rs:145
+#, fuzzy
+msgid "Firewall Rules"
 msgstr "방화벽"
 
 #: pve-manager/www/manager6/qemu/SystemEdit.js:98
@@ -5754,6 +5934,10 @@ msgstr "Fleecing"
 #: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:227
 msgid "Fleecing Storage"
 msgstr "Fleecing 스토리지"
+
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_element.rs:88
+msgid "Flex"
+msgstr ""
 
 #: pve-manager/www/manager6/qemu/Options.js:137
 msgid "Floppy"
@@ -5855,7 +6039,7 @@ msgstr "양식 필드에 유효하지 않은 값을 입력하면 제출할 수 �
 #: proxmox-yew-comp/src/form/pve/pve_storage_content_selector.rs:247
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_efidisk_property.rs:112
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_smbios1_property.rs:38
-#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:318
+#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:321
 #: proxmox-yew-comp/src/configuration/pve/move_disk_dialog.rs:91
 msgid "Format"
 msgstr "포맷"
@@ -5875,6 +6059,7 @@ msgstr "포맷 중"
 #: pve-manager/www/manager6/grid/FirewallOptions.js:160
 #: pve-manager/www/manager6/grid/FirewallOptions.js:165
 #: pve-manager/www/manager6/grid/FirewallOptions.js:170
+#: proxmox-yew-comp/src/firewall/options_edit.rs:306
 msgid "Forward Policy"
 msgstr "포워딩 정책"
 
@@ -5904,7 +6089,7 @@ msgstr "남음"
 msgid "Freeze CPU at startup"
 msgstr "시작 시 CPU 동결"
 
-#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:141
+#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:144
 msgid "Freeze CPU on startup"
 msgstr "시작 시 CPU 동결"
 
@@ -5922,11 +6107,11 @@ msgstr ""
 msgid "Freeze/thaw guest filesystems on backup for consistency"
 msgstr "일관성을 위해 백업 시 게스트 파일 시스템을 동결/해제"
 
-#: proxmox-widget-toolkit/src/Utils.js:76 proxmox-yew-comp/src/lib.rs:301
+#: proxmox-widget-toolkit/src/Utils.js:76 proxmox-yew-comp/src/lib.rs:304
 msgid "French"
 msgstr "프랑스어"
 
-#: proxmox-backup/www/window/TrafficControlEdit.js:405
+#: proxmox-backup/www/window/TrafficControlEdit.js:406
 msgid "Fri"
 msgstr "금"
 
@@ -6059,6 +6244,9 @@ msgstr "가비지 컬렉션"
 #: pve-manager/www/manager6/sdn/SubnetView.js:110
 #: pve-manager/www/manager6/tree/DhcpTree.js:204
 #: pve-manager/www/manager6/tree/DhcpTree.js:221
+#: proxmox-yew-comp/src/form/pve/lxc_property/lxc_network_property.rs:159
+#: proxmox-yew-comp/src/form/pve/lxc_property/lxc_network_property.rs:173
+#: proxmox-yew-comp/src/configuration/pve/lxc_network_panel.rs:397
 #: proxmox-yew-comp/src/configuration/network_view.rs:488
 #: proxmox-yew-comp/src/configuration/network_edit.rs:150
 #: proxmox-yew-comp/src/configuration/network_edit.rs:168
@@ -6085,11 +6273,11 @@ msgstr "게이트웨이"
 msgid "General"
 msgstr "일반"
 
-#: proxmox-widget-toolkit/src/Utils.js:81 proxmox-yew-comp/src/lib.rs:306
+#: proxmox-widget-toolkit/src/Utils.js:81 proxmox-yew-comp/src/lib.rs:309
 msgid "Georgian"
 msgstr "조지아어"
 
-#: proxmox-widget-toolkit/src/Utils.js:71 proxmox-yew-comp/src/lib.rs:295
+#: proxmox-widget-toolkit/src/Utils.js:71 proxmox-yew-comp/src/lib.rs:298
 msgid "German"
 msgstr "독일어"
 
@@ -6127,7 +6315,7 @@ msgstr "잘못된 데이터 유형을 입력했습니다!"
 #: proxmox-widget-toolkit/src/panel/PermissionView.js:152
 #: pve-manager/www/manager6/dc/PermissionView.js:148
 #: proxmox-yew-comp/src/user_panel.rs:307
-#: proxmox-yew-comp/src/token_panel.rs:318
+#: proxmox-yew-comp/src/token_panel.rs:311
 msgid "Granted Permissions"
 msgstr "권한 부여"
 
@@ -6220,6 +6408,10 @@ msgstr "게스트"
 msgid "Guest Agent not running"
 msgstr "게스트 에이전트가 실행중이 아님"
 
+#: proxmox-datacenter-manager/ui/src/remotes/firewall/ui_helpers.rs:118
+msgid "Guest Firewall Rules - {}/{}/{} {}"
+msgstr ""
+
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:29
 msgid "Guest Image"
 msgstr "게스트 이미지"
@@ -6240,17 +6432,22 @@ msgstr "게스트 메모"
 msgid "Guest OS"
 msgstr "게스트 OS"
 
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:554
+#, fuzzy
+msgid "Guest Panels"
+msgstr "게스트 이미지"
+
 #: pve-manager/www/manager6/storage/CIFSEdit.js:163
 msgid "Guest user"
 msgstr "게스트 사용자"
 
 #: pve-manager/www/manager6/dc/Guests.js:5
-#: proxmox-datacenter-manager/ui/src/dashboard/guest_panel.rs:224
+#: proxmox-datacenter-manager/ui/src/dashboard/guest_panel.rs:226
 #: proxmox-datacenter-manager/ui/src/pve/remote.rs:190
 msgid "Guests"
 msgstr "게스트"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:342
+#: proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:343
 msgid "Guests With the Highest CPU Usage"
 msgstr "CPU 사용량이 가장 높은 게스트"
 
@@ -6258,6 +6455,11 @@ msgstr "CPU 사용량이 가장 높은 게스트"
 #: pve-manager/www/manager6/dc/Backup.js:677
 msgid "Guests Without Backup Job"
 msgstr "백업 작업이 없는 게스트"
+
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:588
+#, fuzzy
+msgid "Guests with Highest CPU Usage"
+msgstr "CPU 사용량이 가장 높은 게스트"
 
 #: pve-manager/www/manager6/ha/rules/NodeAffinityRules.js:6
 msgid "HA Node Affinity"
@@ -6384,7 +6586,8 @@ msgid "Hardlink"
 msgstr "하드링크"
 
 #: pve-manager/www/manager6/qemu/Config.js:319
-#: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/mobile.rs:802
+#: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:94
+#: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/mobile.rs:805
 msgid "Hardware"
 msgstr "하드웨어"
 
@@ -6433,7 +6636,7 @@ msgstr "하트비트 백 어드레스"
 msgid "Heartbeat Front Address"
 msgstr "하트비트 프론트 어드레스"
 
-#: proxmox-widget-toolkit/src/Utils.js:78 proxmox-yew-comp/src/lib.rs:302
+#: proxmox-widget-toolkit/src/Utils.js:78 proxmox-yew-comp/src/lib.rs:305
 msgid "Hebrew"
 msgstr "히브리어"
 
@@ -6469,7 +6672,7 @@ msgid "Hibernate"
 msgstr "최대 절전 모드"
 
 #: pve-manager/www/manager6/qemu/HardwareView.js:209
-#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:378
+#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:381
 msgid "Hibernation VM State"
 msgstr "최대 절전 모드 VM 상태"
 
@@ -6481,7 +6684,11 @@ msgstr "내부 호스트 숨김"
 msgid "Hide Password"
 msgstr "비밀번호 숨김"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/pbs_datastores_panel.rs:111
+#: proxmox-datacenter-manager/ui/src/remotes/firewall/tree.rs:245
+msgid "Hide tree panel"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/dashboard/pbs_datastores_panel.rs:113
 msgid "High usage"
 msgstr "높은 사용량"
 
@@ -6500,7 +6707,7 @@ msgstr "내역(최근 한 달)"
 
 #: pve-manager/www/manager6/lxc/Options.js:153
 #: pve-manager/www/manager6/qemu/Options.js:402
-#: proxmox-yew-comp/src/form/pve/lxc_property/mod.rs:116
+#: proxmox-yew-comp/src/form/pve/lxc_property/mod.rs:119
 msgid "Hookscript"
 msgstr "후크스크립트"
 
@@ -6551,16 +6758,13 @@ msgid "Host memory usage"
 msgstr "호스트 메모리 사용량"
 
 #: pve-manager/www/manager6/lxc/Network.js:306
+#: proxmox-yew-comp/src/form/pve/lxc_property/lxc_network_property.rs:105
 msgid "Host-Managed"
 msgstr "호스트-관리됨"
 
 #: proxmox-widget-toolkit/src/Toolkit.js:179
 msgid "Host/IP address or optional port is invalid"
 msgstr "호스트/IP 주소 또는 옵션 포트가 잘못됨"
-
-#: proxmox-yew-comp/src/form/pve/lxc_property/mod.rs:179
-msgid "Hostame"
-msgstr "호스트명"
 
 #: proxmox-widget-toolkit/src/Utils.js:719
 #: pve-manager/www/manager6/ceph/OSDDetails.js:148
@@ -6571,6 +6775,7 @@ msgstr "호스트명"
 #: pve-manager/www/manager6/window/Clone.js:201
 #: pve-manager/www/manager6/window/Restore.js:340
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_summary.rs:120
+#: proxmox-yew-comp/src/form/pve/lxc_property/mod.rs:182
 msgid "Hostname"
 msgstr "호스트명"
 
@@ -6590,7 +6795,7 @@ msgstr "호스트"
 #: pve-manager/www/manager6/qemu/Options.js:168
 #: pve-manager/www/manager6/qemu/Options.js:174
 #: pve-manager/www/manager6/qemu/Options.js:180
-#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:276
+#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:279
 msgid "Hotplug"
 msgstr "핫플러그"
 
@@ -6632,7 +6837,8 @@ msgstr "ICMP 유형"
 #: proxmox-backup/www/tape/ChangerStatus.js:972
 #: proxmox-datacenter-manager/ui/src/configuration/webauthn.rs:43
 #: proxmox-datacenter-manager/ui/src/configuration/webauthn.rs:121
-#: proxmox-datacenter-manager/ui/src/widget/resource_tree.rs:312
+#: proxmox-datacenter-manager/ui/src/widget/resource_tree.rs:367
+#: proxmox-yew-comp/src/configuration/pve/lxc_network_panel.rs:349
 msgid "ID"
 msgstr "ID"
 
@@ -6736,6 +6942,7 @@ msgid "IP address or hostname"
 msgstr "IP 주소 혹은 호스트 이름"
 
 #: pve-manager/www/manager6/grid/FirewallOptions.js:104
+#: proxmox-yew-comp/src/firewall/options_edit.rs:358
 msgid "IP filter"
 msgstr "IP 필터"
 
@@ -6949,8 +7156,14 @@ msgid "In & Out"
 msgstr "수신 및 발신"
 
 #: proxmox-backup/www/form/GroupFilter.js:445
+#: proxmox-datacenter-manager/ui/src/configuration/views.rs:363
 msgid "Include"
 msgstr "포함"
+
+#: proxmox-datacenter-manager/ui/src/configuration/views.rs:353
+#, fuzzy
+msgid "Include All"
+msgstr "RAM 포함"
 
 #: pmg-gui/js/MailTracker.js:145
 msgid "Include Empty Senders"
@@ -6975,6 +7188,10 @@ msgstr "태그 포함"
 #: proxmox-backup/www/form/GroupFilter.js:340
 msgid "Include all groups"
 msgstr "모든 그룹 포함"
+
+#: proxmox-datacenter-manager/ui/src/configuration/views.rs:356
+msgid "Include all remotes and their resources."
+msgstr ""
 
 #: pmg-gui/js/PBSRemoteEdit.js:109
 msgid "Include in Backup"
@@ -7057,6 +7274,8 @@ msgstr "Inode"
 #: pve-manager/www/manager6/grid/FirewallOptions.js:126
 #: pve-manager/www/manager6/grid/FirewallOptions.js:131
 #: pve-manager/www/manager6/grid/FirewallOptions.js:136
+#: proxmox-yew-comp/src/firewall/options_edit.rs:290
+#: proxmox-yew-comp/src/firewall/options_edit.rs:382
 msgid "Input Policy"
 msgstr "정책 입력"
 
@@ -7091,8 +7310,13 @@ msgid "Intel TDX"
 msgstr "Intel TDX"
 
 #: pve-manager/www/manager6/qemu/TdxEdit.js:35
+#: proxmox-yew-comp/src/form/pve/qemu_property/qemu_intel_tdx_property.rs:31
 msgid "Intel TDX Type"
 msgstr "Intel TDX 유형"
+
+#: proxmox-yew-comp/src/form/pve/qemu_property/qemu_intel_tdx_property.rs:102
+msgid "Intel Trust Domain Extension (TDX)"
+msgstr ""
 
 #: proxmox-widget-toolkit/src/form/NetworkSelector.js:109
 #: pve-manager/www/manager6/grid/FirewallRules.js:284
@@ -7133,8 +7357,8 @@ msgstr "JSON 형식이 잘못됨"
 msgid "Invalid OCI Registry Reference"
 msgstr "잘못된 OCI 레지스트리 참조"
 
-#: proxmox-widget-toolkit/src/form/ComboGrid.js:395
-#: proxmox-widget-toolkit/src/form/ComboGrid.js:474
+#: proxmox-widget-toolkit/src/form/ComboGrid.js:397
+#: proxmox-widget-toolkit/src/form/ComboGrid.js:476
 #: pve-manager/www/manager6/form/USBSelector.js:25
 msgid "Invalid Value"
 msgstr "유효하지 않은 값"
@@ -7222,7 +7446,7 @@ msgid ""
 "Server."
 msgstr "Proxmox 백업 서버에서 직접 백업 보존을 구성하는 것이 좋습니다."
 
-#: proxmox-widget-toolkit/src/Utils.js:79 proxmox-yew-comp/src/lib.rs:304
+#: proxmox-widget-toolkit/src/Utils.js:79 proxmox-yew-comp/src/lib.rs:307
 msgid "Italian"
 msgstr "이탈리아어"
 
@@ -7235,7 +7459,7 @@ msgstr "항목"
 msgid "Iterations"
 msgstr "반복"
 
-#: proxmox-widget-toolkit/src/Utils.js:80 proxmox-yew-comp/src/lib.rs:305
+#: proxmox-widget-toolkit/src/Utils.js:80 proxmox-yew-comp/src/lib.rs:308
 msgid "Japanese"
 msgstr "일본어"
 
@@ -7309,7 +7533,7 @@ msgstr "KSM 공유"
 
 #: pve-manager/www/manager6/qemu/Options.js:207
 #: pve-manager/www/manager6/qemu/Options.js:213
-#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:137
+#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:140
 msgid "KVM hardware virtualization"
 msgstr "KVM 하드웨어 가상화"
 
@@ -7422,7 +7646,7 @@ msgstr "커널 스케쥴러 설정"
 #: pve-manager/www/manager6/window/Snapshot.js:127
 #: proxmox-yew-comp/src/configuration/pve/lxc_resources_panel/desktop.rs:618
 #: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/desktop.rs:810
-#: proxmox-yew-comp/src/property_view/property_grid.rs:232
+#: proxmox-yew-comp/src/property_view/property_grid.rs:233
 msgid "Key"
 msgstr "키"
 
@@ -7444,7 +7668,7 @@ msgstr "키보드 배열"
 msgid "KiB"
 msgstr "KiB"
 
-#: proxmox-widget-toolkit/src/Utils.js:82 proxmox-yew-comp/src/lib.rs:307
+#: proxmox-widget-toolkit/src/Utils.js:82 proxmox-yew-comp/src/lib.rs:310
 msgid "Korean"
 msgstr "Korean"
 
@@ -7535,7 +7759,7 @@ msgstr "미디어에 라벨 붙이기"
 #: pmg-gui/js/QuarantineView.js:305 pve-manager/www/manager6/Workspace.js:441
 #: pve-manager/www/manager6/window/LoginWindow.js:400
 #: proxmox-backup/www/LoginView.js:324 proxmox-backup/www/MainView.js:280
-#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:153
+#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:158
 #: pve-yew-mobile-gui/src/pages/page_settings.rs:39
 #: pmg-yew-quarantine-gui/src/page_spam_list.rs:246
 #: pmg-yew-quarantine-gui/src/page_spam_list.rs:293
@@ -7604,7 +7828,7 @@ msgstr "최근 확인"
 msgid "Last name"
 msgstr "성 (Last Name)"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/status_row.rs:119
+#: proxmox-datacenter-manager/ui/src/dashboard/status_row.rs:140
 msgid "Last refresh: {0}"
 msgstr "최근 새로 고침: {0}"
 
@@ -7634,6 +7858,11 @@ msgstr "최신만"
 #: proxmox-backup/www/window/Settings.js:175
 msgid "Layout"
 msgstr "레이아웃"
+
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:585
+#, fuzzy
+msgid "Leaderboards"
+msgstr "헤더"
 
 #: proxmox-yew-comp/src/node_info.rs:256
 msgid "Legacy BIOS"
@@ -7667,7 +7896,7 @@ msgstr "한도 (Bytes/Period)"
 msgid "Limit I/O bandwidth."
 msgstr "I/O 대역폭을 제한합니다."
 
-#: proxmox-backup/www/window/TrafficControlEdit.js:293
+#: proxmox-backup/www/window/TrafficControlEdit.js:294
 msgid ""
 "Limit applies only to authenticated requests by these users. Overrides IP-"
 "only rules when both match. If networks are specified on this rule as well, "
@@ -7705,7 +7934,8 @@ msgstr "리눅스 본드"
 msgid "Linux Bridge"
 msgstr "리눅스 브릿지"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/guest_panel.rs:223
+#: proxmox-datacenter-manager/ui/src/dashboard/guest_panel.rs:225
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:568
 msgid "Linux Container"
 msgstr "리눅스 컨테이너"
 
@@ -7783,7 +8013,7 @@ msgstr "SSH 키 파일 불러오기"
 msgid "Load average"
 msgstr "부하 평균"
 
-#: proxmox-datacenter-manager/ui/src/pve/mod.rs:163
+#: proxmox-datacenter-manager/ui/src/pve/mod.rs:172
 #: proxmox-yew-comp/src/loadable_component.rs:403
 msgid "Load failed"
 msgstr "로드 실패"
@@ -7798,9 +8028,15 @@ msgstr "로딩"
 msgid "Loading TOS failed: {0}"
 msgstr "TOS 로드 실패: {0}"
 
+#: proxmox-datacenter-manager/ui/src/remotes/firewall/columns.rs:45
+#, fuzzy
+msgid "Loading {}..."
+msgstr "로드 중..."
+
 #: proxmox-widget-toolkit/src/Utils.js:403
 #: pve-manager/www/manager6/ceph/OSD.js:502
 #: pve-manager/www/manager6/tree/ResourceMapTree.js:272
+#: proxmox-datacenter-manager/ui/src/remotes/firewall/tree.rs:511
 #: proxmox-yew-comp/src/syslog.rs:93
 #: proxmox-yew-widget-toolkit/src/state/loader.rs:154
 msgid "Loading..."
@@ -7883,6 +8119,28 @@ msgstr ""
 msgid "Log"
 msgstr "로그"
 
+#: proxmox-yew-comp/src/firewall/options_edit.rs:461
+#, fuzzy
+msgid "Log Level Forward"
+msgstr "로그 레벨"
+
+#: proxmox-yew-comp/src/firewall/options_edit.rs:362
+#: proxmox-yew-comp/src/firewall/options_edit.rs:441
+#, fuzzy
+msgid "Log Level In"
+msgstr "로그 레벨"
+
+#: proxmox-yew-comp/src/firewall/options_edit.rs:372
+#: proxmox-yew-comp/src/firewall/options_edit.rs:451
+#, fuzzy
+msgid "Log Level Out"
+msgstr "로그 레벨"
+
+#: proxmox-yew-comp/src/firewall/options_edit.rs:316
+#, fuzzy
+msgid "Log Rate Limiting"
+msgstr "로그 속도 제한"
+
 #: proxmox-backup/www/Utils.js:444
 msgid "Log Rotation"
 msgstr "로그 순환"
@@ -7943,7 +8201,7 @@ msgstr "로그인 실패:"
 
 #: pmg-gui/js/MainView.js:237 pmg-gui/js/QuarantineView.js:317
 #: pve-manager/www/manager6/Workspace.js:449 proxmox-backup/www/MainView.js:291
-#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:170
+#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:175
 #: pve-yew-mobile-gui/src/widgets/top_nav_bar.rs:119
 #: pmg-yew-quarantine-gui/src/page_spam_list.rs:310
 msgid "Logout"
@@ -7976,7 +8234,9 @@ msgstr "Lower"
 #: pve-manager/www/manager6/panel/IPView.js:27
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:172
 #: pve-manager/www/manager6/window/GuestImport.js:893
+#: proxmox-yew-comp/src/form/pve/lxc_property/lxc_network_property.rs:187
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_network_property.rs:93
+#: proxmox-yew-comp/src/configuration/pve/lxc_network_panel.rs:385
 msgid "MAC address"
 msgstr "MAC 주소"
 
@@ -7989,6 +8249,7 @@ msgid "MAC address prefix"
 msgstr "MAC 주소 접두사"
 
 #: pve-manager/www/manager6/grid/FirewallOptions.js:103
+#: proxmox-yew-comp/src/firewall/options_edit.rs:351
 msgid "MAC filter"
 msgstr "MAC 필터"
 
@@ -8023,7 +8284,9 @@ msgid "MIME type"
 msgstr "MIME 유형"
 
 #: pve-manager/www/manager6/lxc/Network.js:611
+#: proxmox-yew-comp/src/form/pve/lxc_property/lxc_network_property.rs:210
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_network_property.rs:19
+#: proxmox-yew-comp/src/configuration/pve/lxc_network_panel.rs:403
 #: proxmox-yew-comp/src/configuration/network_view.rs:494
 #: proxmox-yew-comp/src/configuration/network_edit.rs:173
 #: proxmox-yew-comp/src/configuration/network_edit.rs:265
@@ -8414,7 +8677,7 @@ msgstr "메모리 크기"
 #: pve-manager/www/manager6/node/Summary.js:179
 #: pve-manager/www/manager6/panel/GuestStatusView.js:113
 #: proxmox-backup/www/ServerStatus.js:229
-#: proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:357
+#: proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:358
 #: proxmox-datacenter-manager/ui/src/pve/lxc/overview.rs:352
 #: proxmox-datacenter-manager/ui/src/pve/qemu/overview.rs:361
 #: proxmox-datacenter-manager/ui/src/renderer.rs:73
@@ -8623,7 +8886,7 @@ msgstr "수정"
 msgid "Modify a TFA entry's description"
 msgstr "TFA 항목의 설명 수정"
 
-#: proxmox-backup/www/window/TrafficControlEdit.js:365
+#: proxmox-backup/www/window/TrafficControlEdit.js:366
 msgid "Mon"
 msgstr "월"
 
@@ -8718,13 +8981,22 @@ msgstr "마운트 지점 볼륨도 지워집니다."
 msgid "Mounted"
 msgstr "마운트됨"
 
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:484
+msgid "Move Row down"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:494
+#, fuzzy
+msgid "Move Row up"
+msgstr "볼륨 이동"
+
 #: pve-manager/www/manager6/lxc/Resources.js:275
 #: pve-manager/www/manager6/qemu/HardwareView.js:446
 #: proxmox-yew-comp/src/configuration/pve/move_disk_dialog.rs:124
 #: proxmox-yew-comp/src/configuration/pve/lxc_resources_panel/desktop.rs:245
-#: proxmox-yew-comp/src/configuration/pve/lxc_resources_panel/mobile.rs:124
+#: proxmox-yew-comp/src/configuration/pve/lxc_resources_panel/mobile.rs:127
 #: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/desktop.rs:246
-#: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/mobile.rs:234
+#: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/mobile.rs:237
 msgid "Move Storage"
 msgstr "스토리지 이동"
 
@@ -8940,7 +9212,10 @@ msgstr "현재 NVMe 디스크는 지원되지 않으며, '{0}'은(는) SCSI로 �
 #: proxmox-backup/www/window/InfluxDbEdit.js:143
 #: proxmox-backup/www/window/TrafficControlEdit.js:230
 #: proxmox-backup/www/window/ZFSCreate.js:26
+#: proxmox-datacenter-manager/ui/src/configuration/views.rs:337
+#: proxmox-datacenter-manager/ui/src/configuration/views.rs:346
 #: proxmox-datacenter-manager/ui/src/remotes/updates.rs:126
+#: proxmox-datacenter-manager/ui/src/remotes/firewall/columns.rs:39
 #: proxmox-datacenter-manager/ui/src/widget/pve_storage_selector.rs:203
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/remote_tree.rs:350
 #: proxmox-datacenter-manager/ui/src/sdn/zone_tree.rs:134
@@ -8955,9 +9230,11 @@ msgstr "현재 NVMe 디스크는 지원되지 않으며, '{0}'은(는) SCSI로 �
 #: proxmox-yew-comp/src/form/pve/pve_guest_selector.rs:249
 #: proxmox-yew-comp/src/form/pve/pve_storage_content_selector.rs:208
 #: proxmox-yew-comp/src/form/pve/pve_storage_content_selector.rs:240
-#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:154
+#: proxmox-yew-comp/src/form/pve/lxc_property/lxc_network_property.rs:88
+#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:157
 #: proxmox-yew-comp/src/form/pve/pve_storage_selector.rs:221
 #: proxmox-yew-comp/src/form/pve/pve_storage_selector.rs:266
+#: proxmox-yew-comp/src/configuration/pve/lxc_network_panel.rs:353
 #: proxmox-yew-comp/src/configuration/network_view.rs:396
 #: proxmox-yew-comp/src/configuration/network_edit.rs:131
 #: proxmox-yew-comp/src/configuration/network_edit.rs:205
@@ -9073,12 +9350,18 @@ msgstr "그레이리스팅용 넷마스크 IPv6"
 #: pve-manager/www/manager6/qemu/CreateWizard.js:239
 #: pve-manager/www/manager6/tree/ResourceTree.js:30
 #: proxmox-datacenter-manager/ui/src/widget/pve_migrate_mapping.rs:42
+#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:103
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/resources_panel.rs:101
 #: proxmox-yew-comp/src/form/pve/hotplug_feature_selector.rs:47
 #: proxmox-yew-comp/src/form/pve/hotplug_feature_selector.rs:61
 #: proxmox-yew-comp/src/form/pve/hotplug_feature_selector.rs:195
 msgid "Network"
 msgstr "네트워크"
+
+#: proxmox-datacenter-manager/ui/src/widget/view_filter_selector.rs:315
+#, fuzzy
+msgid "Network (Proxmox VE)"
+msgstr "Proxmox VE 추가"
 
 #: pve-manager/www/manager6/qemu/IPConfigEdit.js:222
 msgid "Network Config"
@@ -9091,6 +9374,7 @@ msgstr "네트워크 설정"
 #: pve-manager/www/manager6/qemu/IPConfigEdit.js:66
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:238
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/resources_panel.rs:96
+#: proxmox-yew-comp/src/form/pve/lxc_property/lxc_network_property.rs:274
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_network_property.rs:168
 #: proxmox-yew-comp/src/configuration/mod.rs:30
 msgid "Network Device"
@@ -9102,7 +9386,7 @@ msgstr "네트워크 정보"
 
 #: pve-manager/www/manager6/window/GuestImport.js:856
 #: proxmox-backup/www/SystemConfiguration.js:40
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:163
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:165
 msgid "Network Interfaces"
 msgstr "네트워크 인터페이스"
 
@@ -9121,14 +9405,14 @@ msgstr "네트워크 카드"
 msgid "Network traffic"
 msgstr "네트워크 트래픽"
 
-#: proxmox-backup/www/window/TrafficControlEdit.js:299
+#: proxmox-backup/www/window/TrafficControlEdit.js:300
 msgid "Network(s)"
 msgstr "네트워크"
 
 #. TRANSLATORS: As in "Network and Time system configuration"
 #: pmg-gui/js/SystemConfiguration.js:11
 #: proxmox-backup/www/SystemConfiguration.js:12
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:28
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:30
 msgid "Network/Time"
 msgstr "네트워크/시간"
 
@@ -9216,11 +9500,14 @@ msgstr "넥스트홉"
 #: pve-manager/www/manager6/window/TreeSettingsEdit.js:39
 #: pve-manager/www/manager6/window/TreeSettingsEdit.js:52
 #: proxmox-backup/www/Subscription.js:133
+#: proxmox-datacenter-manager/ui/src/configuration/views.rs:150
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:117
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_nodes.rs:106
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_summary.rs:113
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/remote_tree.rs:394
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/remote_tree.rs:402
+#: proxmox-yew-comp/src/configuration/pve/lxc_network_panel.rs:367
+#: proxmox-yew-comp/src/configuration/pve/lxc_network_panel.rs:413
 #: proxmox-yew-comp/src/configuration/network_view.rs:420
 #: proxmox-yew-comp/src/configuration/network_view.rs:437
 #: proxmox-yew-comp/src/configuration/network_view.rs:455
@@ -9418,7 +9705,7 @@ msgstr "네임스페이스 {0}에서 액세스할 수 있는 스냅샷을 찾을
 msgid "No backups on remote"
 msgstr "리모트에 백업 없음"
 
-#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:249
+#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:252
 msgid "No boot device selected"
 msgstr "부팅 디바이스를 선택하지 않음"
 
@@ -9440,8 +9727,8 @@ msgstr "변경 사항 없음"
 msgid "No changes"
 msgstr "변경 사항 없음"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:263
-#: proxmox-datacenter-manager/ui/src/widget/resource_tree.rs:291
+#: proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:264
+#: proxmox-datacenter-manager/ui/src/widget/resource_tree.rs:346
 msgid "No data"
 msgstr "데이터 없음"
 
@@ -9462,12 +9749,22 @@ msgstr "데이터베이스에 데이터 없음"
 msgid "No default available"
 msgstr "기본값 사용 불가"
 
-#: proxmox-yew-comp/src/apt_repositories.rs:659
+#: proxmox-yew-comp/src/apt_repositories.rs:686
 msgid "No description available"
 msgstr "설명 없음"
 
+#: proxmox-datacenter-manager/ui/src/remotes/firewall/ui_helpers.rs:132
+#, fuzzy
+msgid "No entry selected"
+msgstr "선택한 대상이 없음"
+
 #: pve-manager/www/manager6/grid/FirewallRules.js:623
 msgid "No firewall rule configured here."
+msgstr "여기에는 방화벽 규칙이 구성되어 있지 않습니다."
+
+#: proxmox-yew-comp/src/firewall/rules.rs:258
+#, fuzzy
+msgid "No firewall rules configured"
 msgstr "여기에는 방화벽 규칙이 구성되어 있지 않습니다."
 
 #: pmg-gui/js/QuarantineList.js:264
@@ -9512,7 +9809,7 @@ msgstr "구성된 수신자가 없습니다"
 msgid "No remotes configured or could not fetch status."
 msgstr "리모트가 구성되지 않았거나 상태를 가져올 수 없습니다."
 
-#: proxmox-datacenter-manager/ui/src/dashboard/remote_panel.rs:75
+#: proxmox-datacenter-manager/ui/src/dashboard/remote_panel.rs:77
 msgid "No remotes configured."
 msgstr "리모트가 구성되지 않았습니다."
 
@@ -9584,7 +9881,7 @@ msgid "No {0} repository enabled!"
 msgstr "{0} 리포지토리가 활성화되지 않았습니다!"
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:475
-#: proxmox-yew-comp/src/apt_repositories.rs:150
+#: proxmox-yew-comp/src/apt_repositories.rs:155
 msgid "No {0} repository is enabled, you do not get any updates!"
 msgstr "{0} 리포지토리가 활성화되어 있지 않으므로 업데이트를 받을 수 없습니다!"
 
@@ -9638,6 +9935,7 @@ msgstr "구독없음"
 #: pve-manager/www/manager6/window/Settings.js:197
 #: proxmox-datacenter-manager/ui/src/remotes/tasks.rs:79
 #: proxmox-datacenter-manager/ui/src/widget/pve_node_selector.rs:153
+#: proxmox-datacenter-manager/ui/src/widget/view_filter_selector.rs:311
 #: proxmox-datacenter-manager/ui/src/pbs/node/mod.rs:63
 #: pve-yew-mobile-gui/src/pages/page_task_status.rs:148
 #: proxmox-yew-comp/src/form/pve/pve_guest_selector.rs:254
@@ -9649,6 +9947,15 @@ msgstr "노드"
 #: pve-yew-mobile-gui/src/pages/page_node_tasks.rs:32
 msgid "Node '{0}'"
 msgstr "노드 '{0}'"
+
+#: proxmox-datacenter-manager/ui/src/remotes/firewall/ui_helpers.rs:92
+msgid "Node Firewall Rules - {}/{}"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:535
+#, fuzzy
+msgid "Node Panels"
+msgstr "노드 상태"
 
 #: proxmox-datacenter-manager/ui/src/administration/mod.rs:75
 #: proxmox-yew-comp/src/node_status_panel.rs:214
@@ -9672,10 +9979,6 @@ msgstr "스캔할 노드"
 msgid "Node type"
 msgstr "노드 유형"
 
-#: proxmox-datacenter-manager/ui/src/widget/resource_tree.rs:343
-msgid "Node/Error"
-msgstr "노드/오류"
-
 #: pve-manager/www/manager6/dc/Cluster.js:284
 msgid "Nodename"
 msgstr "노드명"
@@ -9690,19 +9993,25 @@ msgstr "노드명"
 #: pve-manager/www/manager6/storage/Base.js:41
 #: pve-manager/www/manager6/tree/ResourceTree.js:14
 #: proxmox-datacenter-manager/ui/src/remotes/config.rs:335
-#: proxmox-datacenter-manager/ui/src/dashboard/node_status_panel.rs:161
+#: proxmox-datacenter-manager/ui/src/dashboard/node_status_panel.rs:164
 #: proxmox-datacenter-manager/ui/src/pve/remote.rs:185
 #: pve-yew-mobile-gui/src/pages/page_dashboard.rs:228
 msgid "Nodes"
 msgstr "노드"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:349
+#: proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:350
 msgid "Nodes With the Highest CPU Usage"
 msgstr "CPU 사용량이 가장 높은 노드"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:356
+#: proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:357
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:602
 msgid "Nodes With the Highest Memory Usage"
 msgstr "메모리 사용량이 가장 높은 노드"
+
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:595
+#, fuzzy
+msgid "Nodes With the Hightest CPU Usagge)"
+msgstr "CPU 사용량이 가장 높은 노드"
 
 #: proxmox-widget-toolkit/src/Utils.js:1405
 msgid "Non production-ready repository enabled!"
@@ -9721,6 +10030,7 @@ msgstr "production-ready 리포지토리가 활성화되지 않았습니다!"
 #: proxmox-backup/www/datastore/Content.js:1253
 #: proxmox-backup/www/datastore/Content.js:1268
 #: proxmox-backup/www/window/MaintenanceOptions.js:6
+#: proxmox-datacenter-manager/ui/src/configuration/views.rs:341
 #: proxmox-datacenter-manager/ui/src/remotes/config.rs:339
 #: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:405
 #: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:459
@@ -9746,11 +10056,11 @@ msgstr "일치하는 항목 없음"
 msgid "Normalized"
 msgstr "정규화"
 
-#: proxmox-widget-toolkit/src/Utils.js:83 proxmox-yew-comp/src/lib.rs:308
+#: proxmox-widget-toolkit/src/Utils.js:83 proxmox-yew-comp/src/lib.rs:311
 msgid "Norwegian (Bokmal)"
 msgstr "노르웨이어(Bokmal)"
 
-#: proxmox-widget-toolkit/src/Utils.js:85 proxmox-yew-comp/src/lib.rs:310
+#: proxmox-widget-toolkit/src/Utils.js:85 proxmox-yew-comp/src/lib.rs:313
 msgid "Norwegian (Nynorsk)"
 msgstr "노르웨이어(Nynorsk)"
 
@@ -9800,7 +10110,7 @@ msgid "Not found"
 msgstr "찾을 수 없음"
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:44
-#: proxmox-yew-comp/src/apt_repositories.rs:654
+#: proxmox-yew-comp/src/apt_repositories.rs:681
 msgid "Not yet configured"
 msgstr "아직 구성하지 않음"
 
@@ -9841,6 +10151,7 @@ msgstr ""
 "실될 수 있습니다."
 
 #: pve-manager/www/manager6/qemu/TdxEdit.js:62
+#: proxmox-yew-comp/src/form/pve/qemu_property/qemu_intel_tdx_property.rs:65
 msgid ""
 "Note: Intel TDX is only supported by specific recent CPU models and requires "
 "host kernel version 6.16 or higher."
@@ -9849,7 +10160,7 @@ msgstr ""
 "상이 필요합니다."
 
 #: pve-manager/www/manager6/qemu/SevEdit.js:82
-#: proxmox-yew-comp/src/form/pve/qemu_property/qemu_amd_sev_property.rs:74
+#: proxmox-yew-comp/src/form/pve/qemu_property/qemu_amd_sev_property.rs:84
 msgid "Note: SEV-SNP requires host kernel version 6.11 or higher."
 msgstr "참고: SEV-SNP에는 호스트 커널 버전 6.11 이상이 필요합니다."
 
@@ -9865,7 +10176,7 @@ msgstr "참고: SEV-SNP에는 호스트 커널 버전 6.11 이상이 필요합�
 #: pve-manager/www/manager6/window/Settings.js:295
 #: proxmox-backup/www/NavigationTree.js:36
 #: proxmox-backup/www/window/NotesEdit.js:5
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:171
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:224
 #: proxmox-yew-comp/src/notes_view.rs:199
 msgid "Notes"
 msgstr "메모"
@@ -9934,7 +10245,7 @@ msgstr "통지하기"
 msgid "Notify User"
 msgstr "사용자 통지"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/status_row.rs:121
+#: proxmox-datacenter-manager/ui/src/dashboard/status_row.rs:142
 msgid "Now refreshing"
 msgstr "지금 새로 고침 중"
 
@@ -9961,7 +10272,7 @@ msgstr "노드 수"
 #: proxmox-backup/www/tape/ChangerStatus.js:110
 #: proxmox-backup/www/tape/ChangerStatus.js:234
 #: proxmox-backup/www/tape/window/LabelMedia.js:9
-#: proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:193
+#: proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:192
 #: proxmox-datacenter-manager/ui/src/dashboard/tasks.rs:150
 #: pve-yew-mobile-gui/src/pages/page_login.rs:84
 #: pmg-yew-quarantine-gui/src/page_spam_list.rs:232
@@ -9977,8 +10288,8 @@ msgstr "OS"
 #: pve-manager/www/manager6/qemu/Options.js:88
 #: pve-manager/www/manager6/window/GuestImport.js:562
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/config_panel.rs:109
-#: proxmox-yew-comp/src/form/pve/lxc_property/mod.rs:102
-#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:166
+#: proxmox-yew-comp/src/form/pve/lxc_property/mod.rs:105
+#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:169
 msgid "OS Type"
 msgstr "OS 유형"
 
@@ -10050,6 +10361,7 @@ msgstr "OK"
 
 #: pve-manager/www/manager6/grid/FirewallRules.js:896
 #: proxmox-yew-comp/src/form/pve/qemu_cpu_flags_list.rs:171
+#: proxmox-yew-comp/src/firewall/rules.rs:167
 msgid "On"
 msgstr "켬"
 
@@ -10071,7 +10383,7 @@ msgstr[0] "{}개의 항목"
 msgid "One or more required services is not running"
 msgstr "하나 이상의 필수 서비스가 실행되지 않습니다"
 
-#: proxmox-yew-comp/src/apt_repositories.rs:817
+#: proxmox-yew-comp/src/apt_repositories.rs:844
 msgid "One repository"
 msgid_plural "{n} repositories"
 msgstr[0] "{n}개의 리포지토리"
@@ -10086,7 +10398,7 @@ msgstr[0] "{n} 업데이트 보류 중"
 #: pve-manager/www/manager6/dc/NodeView.js:25
 #: pve-manager/www/manager6/window/Migrate.js:40
 #: proxmox-backup/www/tape/TapeInventory.js:311
-#: proxmox-datacenter-manager/ui/src/dashboard/pbs_datastores_panel.rs:105
+#: proxmox-datacenter-manager/ui/src/dashboard/pbs_datastores_panel.rs:107
 #: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:123
 msgid "Online"
 msgstr "온라인"
@@ -10112,13 +10424,13 @@ msgstr "리포지토리 패널 열기"
 msgid "Open Shell"
 msgstr "셸 열기"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:287
+#: proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:286
 #: proxmox-yew-comp/src/running_tasks.rs:122
 msgid "Open Task"
 msgstr "작업 열기"
 
 #: proxmox-datacenter-manager/ui/src/pbs/mod.rs:138
-#: proxmox-datacenter-manager/ui/src/pve/mod.rs:216
+#: proxmox-datacenter-manager/ui/src/pve/mod.rs:225
 msgid "Open Web UI"
 msgstr "웹 UI 열기"
 
@@ -10138,7 +10450,7 @@ msgstr "PVE UI에서 열기"
 msgid "Open restore wizard for {0}"
 msgstr "{0}에 대한 복원 마법사 열기"
 
-#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:195
+#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:200
 msgid "Open the Beta documentation in a new tab."
 msgstr "베타 문서를 새 탭에서 엽니다."
 
@@ -10213,12 +10525,14 @@ msgstr "옵션"
 #: proxmox-backup/www/DirectoryList.js:152
 #: proxmox-backup/www/datastore/Panel.js:87
 #: proxmox-backup/www/tape/window/TapeBackupJob.js:55
+#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:119
+#: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:102
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/mod.rs:109
 msgid "Options"
 msgstr "옵션"
 
 #: proxmox-widget-toolkit/src/form/MultiDiskSelector.js:118
-#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:207
+#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:210
 msgid "Order"
 msgstr "순서"
 
@@ -10260,7 +10574,7 @@ msgstr "기관"
 #: proxmox-datacenter-manager/ui/src/configuration/webauthn.rs:40
 #: proxmox-datacenter-manager/ui/src/configuration/webauthn.rs:120
 #: proxmox-yew-comp/src/apt_package_manager.rs:390
-#: proxmox-yew-comp/src/apt_repositories.rs:780
+#: proxmox-yew-comp/src/apt_repositories.rs:807
 msgid "Origin"
 msgstr "오리진"
 
@@ -10326,6 +10640,8 @@ msgstr "결과"
 #: pve-manager/www/manager6/grid/FirewallOptions.js:142
 #: pve-manager/www/manager6/grid/FirewallOptions.js:147
 #: pve-manager/www/manager6/grid/FirewallOptions.js:152
+#: proxmox-yew-comp/src/firewall/options_edit.rs:298
+#: proxmox-yew-comp/src/firewall/options_edit.rs:390
 msgid "Output Policy"
 msgstr "Output 정책"
 
@@ -10339,9 +10655,9 @@ msgstr "종료 태스크의 활성 상태 무시"
 
 #: proxmox-datacenter-manager/ui/src/pbs/datastore.rs:53
 #: proxmox-datacenter-manager/ui/src/pbs/node/mod.rs:73
-#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:62
+#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:68
 #: proxmox-datacenter-manager/ui/src/pve/node/mod.rs:77
-#: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:62
+#: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:67
 msgid "Overview"
 msgstr "개요"
 
@@ -10375,6 +10691,16 @@ msgstr "소유자"
 msgid "PB"
 msgstr "PB"
 
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:581
+#, fuzzy
+msgid "PBS Datastores"
+msgstr "데이터스토어"
+
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:541
+#, fuzzy
+msgid "PBS Nodes"
+msgstr "노드"
+
 #: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:280
 #: pve-manager/www/manager6/window/Backup.js:71
 msgid "PBS change detection mode"
@@ -10406,6 +10732,11 @@ msgstr "자동 확장 모드"
 #: pve-manager/www/manager6/qemu/VirtiofsEdit.js:71
 msgid "POSIX ACLs"
 msgstr "POSIX ACL"
+
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:546
+#, fuzzy
+msgid "PVE Nodes"
+msgstr "출구 노드"
 
 #: proxmox-widget-toolkit/src/node/APT.js:26
 #: pve-manager/www/manager6/storage/TemplateView.js:76
@@ -10521,7 +10852,7 @@ msgstr "인코딩된 클러스터 정보를 여기에 붙여넣기"
 #: proxmox-backup/www/tape/window/ChangerEdit.js:34
 #: proxmox-backup/www/tape/window/DriveEdit.js:69
 #: proxmox-backup/www/window/ACLEdit.js:26
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:45
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:47
 #: proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:199
 #: proxmox-yew-comp/src/acl/acl_view.rs:110
 #: proxmox-yew-comp/src/form/pve/lxc_property/lxc_mount_point_property.rs:221
@@ -10629,11 +10960,11 @@ msgstr "권한"
 #: pve-manager/www/manager6/storage/Browser.js:197
 #: proxmox-backup/www/config/ACLView.js:27
 #: proxmox-backup/www/panel/AccessControl.js:36
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:106
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:108
 msgid "Permissions"
 msgstr "권한"
 
-#: proxmox-widget-toolkit/src/Utils.js:75 proxmox-yew-comp/src/lib.rs:299
+#: proxmox-widget-toolkit/src/Utils.js:75 proxmox-yew-comp/src/lib.rs:302
 msgid "Persian (Farsi)"
 msgstr "페르시아어 (Farsi)"
 
@@ -10708,7 +11039,7 @@ msgstr "복구 키를 기록해 주세요 - 지금만 표시됩니다"
 msgid "Please record the API token secret - it will only be displayed now"
 msgstr "API 토큰 비밀 구문를 기록해 주세요 - 지금만 표시됩니다."
 
-#: proxmox-yew-comp/src/token_panel.rs:380
+#: proxmox-yew-comp/src/token_panel.rs:373
 msgid "Please record the API token secret - it will only be displayed now."
 msgstr "API 토큰 비밀 구문을 기록해 주세요 - 지금만 표시됩니다."
 
@@ -10792,7 +11123,7 @@ msgstr "플러그인 ID"
 msgid "Policy"
 msgstr "정책"
 
-#: proxmox-widget-toolkit/src/Utils.js:86 proxmox-yew-comp/src/lib.rs:311
+#: proxmox-widget-toolkit/src/Utils.js:86 proxmox-yew-comp/src/lib.rs:314
 msgid "Polish"
 msgstr "폴란드어"
 
@@ -10855,6 +11186,7 @@ msgstr "풀"
 #: proxmox-backup/www/window/InfluxDbEdit.js:172
 #: proxmox-backup/www/window/S3ClientEdit.js:59
 #: proxmox-yew-comp/src/auth_edit_ldap.rs:292
+#: proxmox-yew-comp/src/form/pve/qemu_property/qemu_intel_tdx_property.rs:52
 msgid "Port"
 msgstr "포트"
 
@@ -10871,7 +11203,7 @@ msgstr "포트"
 msgid "Ports/Slaves"
 msgstr "포트/슬레이브"
 
-#: proxmox-widget-toolkit/src/Utils.js:87 proxmox-yew-comp/src/lib.rs:315
+#: proxmox-widget-toolkit/src/Utils.js:87 proxmox-yew-comp/src/lib.rs:318
 msgid "Portuguese (Brazil)"
 msgstr "포르투갈어 (브라질)"
 
@@ -11086,7 +11418,7 @@ msgstr "보호됨"
 #: pve-manager/www/manager6/qemu/Options.js:319
 #: proxmox-backup/www/datastore/Content.js:732
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/config_panel.rs:87
-#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:150
+#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:153
 msgid "Protection"
 msgstr "보호"
 
@@ -11374,7 +11706,7 @@ msgstr "RBD 네임스페이스는 수동으로 생성해야 합니다!"
 #: pve-manager/www/manager6/qemu/Options.js:271
 #: pve-manager/www/manager6/qemu/Options.js:276
 #: pve-manager/www/manager6/qemu/Options.js:282
-#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:304
+#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:307
 msgid "RTC start date"
 msgstr "RTC 시작일"
 
@@ -11386,6 +11718,11 @@ msgstr "무작위 지연"
 #: proxmox-yew-comp/src/tfa/tfa_add_totp.rs:119
 msgid "Randomize"
 msgstr "무작위화"
+
+#: proxmox-yew-comp/src/firewall/log_ratelimit_field.rs:313
+#, fuzzy
+msgid "Rate"
+msgstr "비율 내"
 
 #: proxmox-backup/www/config/TrafficControlView.js:134
 #: proxmox-backup/www/window/S3ClientEdit.js:127
@@ -11416,6 +11753,7 @@ msgstr "비율 외 사용됨"
 #: pve-manager/www/manager6/grid/Replication.js:411
 #: pve-manager/www/manager6/lxc/Network.js:297
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:182
+#: proxmox-yew-comp/src/form/pve/lxc_property/lxc_network_property.rs:202
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_network_property.rs:37
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_network_property.rs:230
 msgid "Rate limit"
@@ -11548,7 +11886,7 @@ msgstr "영역 동기화 작업"
 
 #: pmg-gui/js/UserManagement.js:38 pve-manager/www/manager6/dc/Config.js:209
 #: proxmox-backup/www/panel/AccessControl.js:43
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:131
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:133
 msgid "Realms"
 msgstr "영역"
 
@@ -11564,9 +11902,9 @@ msgstr "디스크 재할당"
 #: pve-manager/www/manager6/lxc/Resources.js:283
 #: pve-manager/www/manager6/qemu/HardwareView.js:469
 #: proxmox-yew-comp/src/configuration/pve/lxc_resources_panel/desktop.rs:254
-#: proxmox-yew-comp/src/configuration/pve/lxc_resources_panel/mobile.rs:135
+#: proxmox-yew-comp/src/configuration/pve/lxc_resources_panel/mobile.rs:138
 #: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/desktop.rs:255
-#: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/mobile.rs:245
+#: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/mobile.rs:248
 msgid "Reassign Owner"
 msgstr "소유자 재지정"
 
@@ -11599,7 +11937,7 @@ msgstr "시작 시 재조정"
 #: pve-manager/www/manager6/qemu/CmdMenu.js:108
 #: pve-manager/www/manager6/qemu/Config.js:164
 #: proxmox-backup/www/ServerStatus.js:144
-#: proxmox-datacenter-manager/ui/src/administration/node_status.rs:84
+#: proxmox-datacenter-manager/ui/src/administration/node_status.rs:92
 #: proxmox-datacenter-manager/ui/src/tasks.rs:63
 #: proxmox-datacenter-manager/ui/src/tasks.rs:96
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/dashboard_panel.rs:212
@@ -11708,7 +12046,7 @@ msgstr "모두 새로 고침"
 msgid "Refresh contents from S3 bucket"
 msgstr "S3 버킷의 콘텐츠 새로 고침"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/status_row.rs:114
+#: proxmox-datacenter-manager/ui/src/dashboard/status_row.rs:135
 msgid "Refresh now"
 msgstr "지금 새로 고침"
 
@@ -11717,7 +12055,7 @@ msgid "Regenerate Image"
 msgstr "이미지 재생성"
 
 #: proxmox-backup/www/config/TokenView.js:211
-#: proxmox-yew-comp/src/token_panel.rs:201
+#: proxmox-yew-comp/src/token_panel.rs:200
 msgid "Regenerate Secret"
 msgstr "비밀 구문 재생성"
 
@@ -11851,8 +12189,9 @@ msgstr "신뢰 주체"
 #: proxmox-datacenter-manager/ui/src/remotes/edit_remote.rs:62
 #: proxmox-datacenter-manager/ui/src/remotes/tasks.rs:70
 #: proxmox-datacenter-manager/ui/src/remotes/tasks.rs:152
-#: proxmox-datacenter-manager/ui/src/dashboard/subscriptions_list.rs:133
-#: proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:222
+#: proxmox-datacenter-manager/ui/src/dashboard/subscriptions_list.rs:162
+#: proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:221
+#: proxmox-datacenter-manager/ui/src/widget/view_filter_selector.rs:273
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/remote_tree.rs:373
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/vrf_tree.rs:318
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/add_vnet.rs:290
@@ -11861,7 +12200,7 @@ msgid "Remote"
 msgstr "리모트"
 
 #: proxmox-datacenter-manager/ui/src/pbs/mod.rs:121
-#: proxmox-datacenter-manager/ui/src/pve/mod.rs:201
+#: proxmox-datacenter-manager/ui/src/pve/mod.rs:210
 msgid "Remote '{0}'"
 msgstr "'{0}' 리모트"
 
@@ -11884,6 +12223,11 @@ msgstr "리모트 마이그레이션 설정"
 msgid "Remote Namespace"
 msgstr "리모트 네임스페이스"
 
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:531
+#, fuzzy
+msgid "Remote Panel"
+msgstr "리모트 동기화"
+
 #: proxmox-backup/www/config/SyncView.js:347
 msgid "Remote Store"
 msgstr "리모트 스토리지"
@@ -11896,14 +12240,14 @@ msgstr "리모트 동기화"
 msgid "Remote System Updates"
 msgstr "리모트 시스템 업데이트"
 
-#: proxmox-datacenter-manager/ui/src/pve/mod.rs:177
+#: proxmox-datacenter-manager/ui/src/pve/mod.rs:186
 msgid "Remote Tasks"
 msgstr "리모트 태스크"
 
 #: proxmox-backup/www/NavigationTree.js:54
 #: proxmox-backup/www/config/RemoteView.js:39
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:295
-#: proxmox-datacenter-manager/ui/src/dashboard/remote_panel.rs:128
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:348
+#: proxmox-datacenter-manager/ui/src/dashboard/remote_panel.rs:130
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/evpn_panel.rs:186
 msgid "Remotes"
 msgstr "리모트"
@@ -11957,6 +12301,7 @@ msgstr "제거 예정"
 #: proxmox-backup/www/datastore/Content.js:1453
 #: proxmox-backup/www/datastore/Content.js:1510
 #: proxmox-backup/www/tape/TapeInventory.js:237
+#: proxmox-datacenter-manager/ui/src/configuration/views.rs:267
 #: proxmox-datacenter-manager/ui/src/remotes/config.rs:198
 #: proxmox-datacenter-manager/ui/src/tasks.rs:38
 #: proxmox-datacenter-manager/ui/src/tasks.rs:47
@@ -11968,11 +12313,11 @@ msgstr "제거 예정"
 #: proxmox-yew-comp/src/configuration/pve/lxc_resources_panel/desktop.rs:114
 #: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/desktop.rs:114
 #: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/desktop.rs:118
-#: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/mobile.rs:315
+#: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/mobile.rs:318
 #: proxmox-yew-comp/src/configuration/network_view.rs:230
 #: proxmox-yew-comp/src/tfa/tfa_view.rs:279
 #: proxmox-yew-comp/src/user_panel.rs:190
-#: proxmox-yew-comp/src/token_panel.rs:193
+#: proxmox-yew-comp/src/token_panel.rs:192
 #: proxmox-yew-comp/src/utils/mod.rs:380 proxmox-yew-comp/src/utils/mod.rs:389
 #: proxmox-yew-comp/src/utils/mod.rs:391 proxmox-yew-comp/src/utils/mod.rs:448
 msgid "Remove"
@@ -12022,6 +12367,11 @@ msgstr "미디어 제거"
 #: proxmox-backup/www/Utils.js:432
 msgid "Remove Namespace"
 msgstr "네임스페이스 제거"
+
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:468
+#, fuzzy
+msgid "Remove Row"
+msgstr "제거"
 
 #: pmg-gui/js/PBSSnapshotView.js:146
 msgid "Remove Schedule"
@@ -12165,8 +12515,8 @@ msgstr "리포지토리"
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:58
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:348
 #: proxmox-backup/www/window/DatastoreRepoInfo.js:69
-#: proxmox-yew-comp/src/apt_repositories.rs:697
-#: proxmox-yew-comp/src/apt_repositories.rs:727
+#: proxmox-yew-comp/src/apt_repositories.rs:724
+#: proxmox-yew-comp/src/apt_repositories.rs:754
 msgid "Repository"
 msgstr "리포지토리"
 
@@ -12245,9 +12595,9 @@ msgstr "즉시 {0} 재설정"
 #: pve-manager/www/manager6/qemu/HardwareView.js:493
 #: proxmox-datacenter-manager/ui/src/tasks.rs:75
 #: proxmox-yew-comp/src/configuration/pve/lxc_resources_panel/desktop.rs:263
-#: proxmox-yew-comp/src/configuration/pve/lxc_resources_panel/mobile.rs:146
+#: proxmox-yew-comp/src/configuration/pve/lxc_resources_panel/mobile.rs:149
 #: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/desktop.rs:264
-#: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/mobile.rs:255
+#: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/mobile.rs:258
 #: proxmox-yew-comp/src/utils/mod.rs:416
 msgid "Resize"
 msgstr "크기 조정"
@@ -12271,6 +12621,11 @@ msgstr "리소스"
 msgid "Resource Attributes (JSON)"
 msgstr "리소스 속성 (JSON)"
 
+#: proxmox-datacenter-manager/ui/src/widget/view_filter_selector.rs:271
+#, fuzzy
+msgid "Resource ID"
+msgstr "리소스"
+
 #: pve-manager/www/manager6/dc/Config.js:391
 msgid "Resource Mappings"
 msgstr "리소스 매핑"
@@ -12280,18 +12635,31 @@ msgstr "리소스 매핑"
 #: pve-manager/www/manager6/qemu/CreateWizard.js:110
 #: pve-manager/www/manager6/tree/ResourceTree.js:18
 #: pve-manager/www/manager6/window/Clone.js:205
+#: proxmox-datacenter-manager/ui/src/widget/view_filter_selector.rs:270
 msgid "Resource Pool"
 msgstr "리소스 풀"
+
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:629
+#, fuzzy
+msgid "Resource Tree"
+msgstr "리소스"
+
+#: proxmox-datacenter-manager/ui/src/widget/view_filter_selector.rs:269
+#, fuzzy
+msgid "Resource Type"
+msgstr "리소스"
 
 #: pve-manager/www/manager6/dc/Summary.js:26
 #: pve-manager/www/manager6/ha/Status.js:38
 #: pve-manager/www/manager6/lxc/Config.js:268
 #: pve-manager/www/manager6/lxc/DNS.js:71
+#: proxmox-datacenter-manager/ui/src/dashboard/resource_tree.rs:51
+#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:95
 #: proxmox-datacenter-manager/ui/src/pve/tree.rs:476
 #: pve-yew-mobile-gui/src/widgets/main_navigation.rs:80
 #: pve-yew-mobile-gui/src/pages/page_dashboard.rs:346
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/resources_panel.rs:84
-#: proxmox-yew-comp/src/configuration/pve/lxc_resources_panel/mobile.rs:437
+#: proxmox-yew-comp/src/configuration/pve/lxc_resources_panel/mobile.rs:440
 msgid "Resources"
 msgstr "리소스"
 
@@ -12402,7 +12770,7 @@ msgstr "역방향 DNS 서버"
 #: proxmox-yew-comp/src/configuration/pve/lxc_resources_panel/desktop.rs:196
 #: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/desktop.rs:200
 #: proxmox-yew-comp/src/configuration/network_view.rs:220
-#: proxmox-yew-comp/src/pending_property_view/pending_property_grid.rs:110
+#: proxmox-yew-comp/src/pending_property_view/pending_property_grid.rs:111
 msgid "Revert"
 msgstr "되돌리기"
 
@@ -12502,6 +12870,7 @@ msgid "Route Target Import"
 msgstr "경로 대상 가져오기"
 
 #: pve-manager/www/manager6/grid/FirewallOptions.js:102
+#: proxmox-yew-comp/src/firewall/options_edit.rs:347
 msgid "Router Advertisement"
 msgstr "Router Advertisement"
 
@@ -12512,6 +12881,7 @@ msgstr "라우트"
 #: pve-manager/www/manager6/grid/FirewallRules.js:498
 #: pve-manager/www/manager6/grid/FirewallRules.js:598
 #: proxmox-backup/www/config/TrafficControlView.js:127
+#: proxmox-yew-comp/src/firewall/rules.rs:187
 msgid "Rule"
 msgstr "규칙"
 
@@ -12522,6 +12892,7 @@ msgstr "규칙 데이터베이스"
 #: pmg-gui/js/RuleEditor.js:10
 #: pve-manager/www/manager6/dc/SecurityGroups.js:214
 #: pve-manager/www/manager6/sdn/FirewallPanel.js:22
+#: proxmox-datacenter-manager/ui/src/remotes/firewall/columns.rs:101
 msgid "Rules"
 msgstr "규칙"
 
@@ -12569,7 +12940,7 @@ msgstr "실행 중"
 msgid "Running Tasks"
 msgstr "실행 중인 작업"
 
-#: proxmox-widget-toolkit/src/Utils.js:88 proxmox-yew-comp/src/lib.rs:317
+#: proxmox-widget-toolkit/src/Utils.js:88 proxmox-yew-comp/src/lib.rs:320
 msgid "Russian"
 msgstr "러시아어"
 
@@ -12626,11 +12997,16 @@ msgstr "SCSI 컨트롤러 유형"
 #: pve-manager/www/manager6/dc/Config.js:261
 #: pve-manager/www/manager6/form/IPRefSelector.js:73
 #: pve-manager/www/manager6/tree/ResourceTree.js:26
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:266
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:319
 msgid "SDN"
 msgstr "SDN"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/sdn_zone_panel.rs:173
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:627
+#, fuzzy
+msgid "SDN Panel"
+msgstr "SDN 영역"
+
+#: proxmox-datacenter-manager/ui/src/dashboard/sdn_zone_panel.rs:177
 msgid "SDN Zones"
 msgstr "SDN 영역"
 
@@ -12652,7 +13028,13 @@ msgstr "SMTP HELO 점검"
 msgid "SMTPD Banner"
 msgstr "SMTPD 배너"
 
+#: proxmox-yew-comp/src/firewall/options_edit.rs:481
+#, fuzzy
+msgid "SMURF Log Level"
+msgstr "로그 레벨"
+
 #: pve-manager/www/manager6/grid/FirewallOptions.js:73
+#: proxmox-yew-comp/src/firewall/options_edit.rs:408
 msgid "SMURFS filter"
 msgstr "SMURFS 필터"
 
@@ -12698,6 +13080,7 @@ msgstr "비율와 동일"
 
 #: pve-manager/www/manager6/lxc/Network.js:285
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:116
+#: proxmox-yew-comp/src/form/pve/lxc_property/lxc_network_property.rs:214
 msgid "Same as bridge"
 msgstr "브릿지와 동일"
 
@@ -12705,7 +13088,7 @@ msgstr "브릿지와 동일"
 msgid "Same as source"
 msgstr "소스와 동일"
 
-#: proxmox-backup/www/window/TrafficControlEdit.js:415
+#: proxmox-backup/www/window/TrafficControlEdit.js:416
 msgid "Sat"
 msgstr "토"
 
@@ -12849,6 +13232,7 @@ msgstr "OSD.{0} 스크럽 실행"
 #: pve-manager/www/manager6/storage/TemplateView.js:48
 #: proxmox-backup/www/config/SyncView.js:268
 #: proxmox-backup/www/datastore/Content.js:1373
+#: proxmox-datacenter-manager/ui/src/dashboard/resource_tree.rs:26
 msgid "Search"
 msgstr "검색"
 
@@ -12884,7 +13268,7 @@ msgstr "초"
 #: proxmox-backup/www/window/TokenEdit.js:190
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:363
 #: proxmox-yew-comp/src/tfa/tfa_add_totp.rs:110
-#: proxmox-yew-comp/src/token_panel.rs:346
+#: proxmox-yew-comp/src/token_panel.rs:339
 msgid "Secret"
 msgstr "비밀"
 
@@ -12914,6 +13298,11 @@ msgstr "섹션"
 msgid "Security Group"
 msgstr "보안 그룹"
 
+#: proxmox-datacenter-manager/ui/src/widget/view_filter_selector.rs:229
+#, fuzzy
+msgid "Select"
+msgstr "선택기"
+
 #: pmg-yew-quarantine-gui/src/page_spam_list.rs:219
 msgid "Select Date"
 msgstr "날짜 선택"
@@ -12939,6 +13328,16 @@ msgstr "복원할 미디어 세트를 선택합니다."
 #: proxmox-yew-comp/src/syslog.rs:105
 msgid "Select Timespan"
 msgstr "기간 선택"
+
+#: proxmox-datacenter-manager/ui/src/widget/view_filter_selector.rs:403
+#, fuzzy
+msgid "Select Type first"
+msgstr "기간 선택"
+
+#: proxmox-datacenter-manager/ui/src/remotes/firewall/ui_helpers.rs:133
+#, fuzzy
+msgid "Select a firewall entry to show its rules."
+msgstr "사용 가능한 업데이트를 표시하려면 노드를 선택하세요."
 
 #: proxmox-datacenter-manager/ui/src/remotes/updates.rs:416
 msgid "Select a node to show available updates."
@@ -13247,7 +13646,7 @@ msgstr "공유"
 #: pve-manager/www/manager6/node/Config.js:125
 #: pve-manager/www/manager6/node/Config.js:161
 #: proxmox-backup/www/NavigationTree.js:99
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:231
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:284
 #: proxmox-datacenter-manager/ui/src/pve/node/mod.rs:119
 #: proxmox-datacenter-manager/ui/src/tasks.rs:77
 #: proxmox-datacenter-manager/ui/src/tasks.rs:85
@@ -13299,7 +13698,7 @@ msgstr "이메일 주소 표시"
 msgid "Show Fingerprint"
 msgstr "지문 표시"
 
-#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:206
+#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:211
 msgid "Show Local Tasks"
 msgstr "로컬 태스크 표시"
 
@@ -13319,11 +13718,11 @@ msgstr "비밀번호 표시"
 #: proxmox-backup/www/config/TokenView.js:225
 #: proxmox-backup/www/config/UserView.js:195
 #: proxmox-yew-comp/src/user_panel.rs:201
-#: proxmox-yew-comp/src/token_panel.rs:211
+#: proxmox-yew-comp/src/token_panel.rs:210
 msgid "Show Permissions"
 msgstr "권한 표시"
 
-#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:211
+#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:216
 msgid "Show Remote Tasks"
 msgstr "리모트 태스크 표시"
 
@@ -13348,6 +13747,10 @@ msgstr "작업 세부 정보 및 백업 작업에 영향을 받는 게스트 및
 msgid "Show only installed services"
 msgstr "설치된 서비스만 표시"
 
+#: proxmox-datacenter-manager/ui/src/remotes/firewall/tree.rs:284
+msgid "Show tree panel"
+msgstr ""
+
 #: proxmox-datacenter-manager/ui/src/dashboard/tasks.rs:158
 msgid "Show: {0} - {1}"
 msgstr "표시: {0} - {1}"
@@ -13366,7 +13769,7 @@ msgstr "표시: {0} - {1}"
 #: pve-manager/www/manager6/qemu/CmdMenu.js:89
 #: pve-manager/www/manager6/qemu/Config.js:154
 #: proxmox-backup/www/ServerStatus.js:154
-#: proxmox-datacenter-manager/ui/src/administration/node_status.rs:95
+#: proxmox-datacenter-manager/ui/src/administration/node_status.rs:103
 #: proxmox-datacenter-manager/ui/src/pve/tree.rs:118
 #: proxmox-datacenter-manager/ui/src/pve/tree.rs:677
 #: proxmox-datacenter-manager/ui/src/pve/mod.rs:65
@@ -13397,7 +13800,7 @@ msgstr "노드 '{0}'을(를) 종료하시겠습니까?"
 
 #: pve-manager/www/manager6/qemu/CreateWizard.js:149
 #: pve-manager/www/manager6/window/StartupEdit.js:49
-#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:210
+#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:213
 msgid "Shutdown timeout"
 msgstr "종료 시간 초과"
 
@@ -13533,7 +13936,7 @@ msgstr "슬롯"
 msgid "Slots"
 msgstr "슬롯"
 
-#: proxmox-widget-toolkit/src/Utils.js:89 proxmox-yew-comp/src/lib.rs:318
+#: proxmox-widget-toolkit/src/Utils.js:89 proxmox-yew-comp/src/lib.rs:321
 msgid "Slovenian"
 msgstr "슬로베니아어"
 
@@ -13619,7 +14022,7 @@ msgid "Some nodes unavailable"
 msgstr "일부 노드 사용 불가"
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:493
-#: proxmox-yew-comp/src/apt_repositories.rs:206
+#: proxmox-yew-comp/src/apt_repositories.rs:211
 msgid "Some suites are misconfigured"
 msgstr "일부 라이선스 제품군이 잘못 구성됨"
 
@@ -13723,7 +14126,7 @@ msgstr "SpamAssassin 업데이트"
 msgid "Spamscore"
 msgstr "Spamscore"
 
-#: proxmox-widget-toolkit/src/Utils.js:73 proxmox-yew-comp/src/lib.rs:297
+#: proxmox-widget-toolkit/src/Utils.js:73 proxmox-yew-comp/src/lib.rs:300
 msgid "Spanish"
 msgstr "스페인어"
 
@@ -13799,7 +14202,7 @@ msgstr "시작 주소"
 #: pve-manager/www/manager6/dc/Tasks.js:73
 #: proxmox-backup/www/dashboard/TaskSummary.js:95
 #: proxmox-datacenter-manager/ui/src/remotes/tasks.rs:50
-#: proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:237
+#: proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:236
 #: pve-yew-mobile-gui/src/pages/page_task_status.rs:151
 #: proxmox-yew-comp/src/running_tasks.rs:96
 #: proxmox-yew-comp/src/task_viewer.rs:234 proxmox-yew-comp/src/tasks.rs:126
@@ -13838,7 +14241,7 @@ msgid "Start backup now"
 msgstr "지금 백업 시작"
 
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/config_panel.rs:86
-#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:125
+#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:128
 msgid "Start on boot"
 msgstr "부팅 시 시작"
 
@@ -13861,7 +14264,7 @@ msgstr "{0} 설치 시작"
 #: pve-manager/www/manager6/window/StartupEdit.js:35
 #: pve-manager/www/manager6/window/StartupEdit.js:69
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/config_panel.rs:100
-#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:202
+#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:205
 msgid "Start/Shutdown order"
 msgstr "시작/종료 순서"
 
@@ -13883,7 +14286,7 @@ msgstr "시작 시간"
 
 #: pve-manager/www/manager6/qemu/CreateWizard.js:141
 #: pve-manager/www/manager6/window/StartupEdit.js:42
-#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:208
+#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:211
 msgid "Startup delay"
 msgstr "시작 지연"
 
@@ -13985,7 +14388,8 @@ msgstr "지난 가비지 컬렉션 통계"
 #: proxmox-backup/www/tape/TapeInventory.js:321
 #: proxmox-datacenter-manager/ui/src/remotes/tasks.rs:91
 #: proxmox-datacenter-manager/ui/src/remotes/updates.rs:145
-#: proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:262
+#: proxmox-datacenter-manager/ui/src/remotes/firewall/tree.rs:225
+#: proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:261
 #: proxmox-datacenter-manager/ui/src/pve/lxc/overview.rs:264
 #: proxmox-datacenter-manager/ui/src/pve/qemu/overview.rs:270
 #: proxmox-datacenter-manager/ui/src/sdn/zone_tree.rs:160
@@ -13993,7 +14397,7 @@ msgstr "지난 가비지 컬렉션 통계"
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/dashboard_panel.rs:187
 #: pve-yew-mobile-gui/src/pages/page_task_status.rs:125
 #: proxmox-yew-comp/src/acme/acme_accounts.rs:227
-#: proxmox-yew-comp/src/apt_repositories.rs:731
+#: proxmox-yew-comp/src/apt_repositories.rs:758
 #: proxmox-yew-comp/src/form/pve/pve_guest_selector.rs:258
 #: proxmox-yew-comp/src/subscription_panel.rs:187
 #: proxmox-yew-comp/src/task_viewer.rs:155
@@ -14098,6 +14502,11 @@ msgstr "스토리지"
 msgid "Storage '{0}'"
 msgstr "스토리지 '{0}'"
 
+#: proxmox-datacenter-manager/ui/src/widget/view_filter_selector.rs:314
+#, fuzzy
+msgid "Storage (Proxmox VE)"
+msgstr "Proxmox VE 추가"
+
 #: proxmox-backup/www/NavigationTree.js:105
 #: proxmox-backup/www/panel/StorageAndDisks.js:6
 msgid "Storage / Disks"
@@ -14200,7 +14609,7 @@ msgstr "서브넷"
 #: pve-manager/www/manager6/node/Config.js:452
 #: proxmox-backup/www/Dashboard.js:290 proxmox-backup/www/NavigationTree.js:84
 #: proxmox-backup/www/Subscription.js:24
-#: proxmox-datacenter-manager/ui/src/dashboard/subscriptions_list.rs:149
+#: proxmox-datacenter-manager/ui/src/dashboard/subscriptions_list.rs:218
 #: pve-yew-mobile-gui/src/pages/page_dashboard.rs:79
 msgid "Subscription"
 msgstr "구독"
@@ -14214,7 +14623,12 @@ msgstr "구독"
 msgid "Subscription Key"
 msgstr "구독 키"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/subscription_info.rs:162
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:577
+#, fuzzy
+msgid "Subscription Panel"
+msgstr "구독 키"
+
+#: proxmox-datacenter-manager/ui/src/dashboard/subscription_info.rs:163
 #: proxmox-datacenter-manager/ui/src/pve/remote.rs:176
 msgid "Subscription Status"
 msgstr "구독 상태"
@@ -14249,7 +14663,7 @@ msgid "Successful"
 msgstr "성공"
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:265
-#: proxmox-yew-comp/src/apt_repositories.rs:772
+#: proxmox-yew-comp/src/apt_repositories.rs:799
 msgid "Suites"
 msgstr "라이선스 제품군"
 
@@ -14276,7 +14690,7 @@ msgstr "요약 열"
 msgid "Summary/Dashboard columns"
 msgstr "요약/대시보드 열"
 
-#: proxmox-backup/www/window/TrafficControlEdit.js:425
+#: proxmox-backup/www/window/TrafficControlEdit.js:426
 msgid "Sun"
 msgstr "일"
 
@@ -14334,7 +14748,7 @@ msgstr "스왑"
 msgid "Swap usage"
 msgstr "스왑 사용량"
 
-#: proxmox-widget-toolkit/src/Utils.js:90 proxmox-yew-comp/src/lib.rs:319
+#: proxmox-widget-toolkit/src/Utils.js:90 proxmox-yew-comp/src/lib.rs:322
 msgid "Swedish"
 msgstr "스웨덴어"
 
@@ -14459,11 +14873,21 @@ msgstr "시스템 보고서"
 msgid "TB"
 msgstr "TB"
 
+#: proxmox-yew-comp/src/firewall/options_edit.rs:471
+msgid "TCP Flags Log Level"
+msgstr ""
+
 #: pve-manager/www/manager6/dc/MetricServerView.js:512
 msgid "TCP Timeout"
 msgstr "TCP 타임아웃"
 
+#: proxmox-yew-comp/src/firewall/options_edit.rs:432
+#, fuzzy
+msgid "TCP Timeout Established"
+msgstr "TCP 타임아웃"
+
 #: pve-manager/www/manager6/grid/FirewallOptions.js:74
+#: proxmox-yew-comp/src/firewall/options_edit.rs:415
 msgid "TCP flags filter"
 msgstr "TCP 플래그 필터"
 
@@ -14536,7 +14960,7 @@ msgstr "TOTP 코드는 일반적으로 십진수 6자리로 구성됨"
 #: pve-manager/www/manager6/qemu/HardwareView.js:760
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_tpmstate_property.rs:124
 #: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/desktop.rs:353
-#: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/mobile.rs:680
+#: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/mobile.rs:683
 msgid "TPM State"
 msgstr "TPM 상태"
 
@@ -14548,7 +14972,7 @@ msgstr "TPM 스토리지"
 #: pve-manager/www/manager6/lxc/Options.js:87
 #: pve-manager/www/manager6/lxc/Options.js:93
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/config_panel.rs:127
-#: proxmox-yew-comp/src/form/pve/lxc_property/mod.rs:120
+#: proxmox-yew-comp/src/form/pve/lxc_property/mod.rs:123
 msgid "TTY count"
 msgstr "TTY 수"
 
@@ -14558,6 +14982,7 @@ msgstr "TTY 수"
 #: pve-manager/www/manager6/sdn/VnetEdit.js:68
 #: pve-manager/www/manager6/sdn/VnetView.js:113
 #: pve-manager/www/manager6/storage/TemplateView.js:309
+#: proxmox-datacenter-manager/ui/src/widget/view_filter_selector.rs:272
 msgid "Tag"
 msgstr "태그"
 
@@ -14759,7 +15184,7 @@ msgstr "통지할 대상"
 #: proxmox-backup/www/dashboard/LongestTasks.js:80
 #: proxmox-backup/www/dashboard/RunningTasks.js:72
 #: proxmox-backup/www/dashboard/TaskSummary.js:89
-#: proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:231
+#: proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:230
 #: proxmox-yew-comp/src/running_tasks.rs:83
 msgid "Task"
 msgstr "태스크"
@@ -14783,11 +15208,21 @@ msgstr "태스크 목록"
 msgid "Task Result"
 msgstr "태스크 결과"
 
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:611
+#, fuzzy
+msgid "Task Summaries"
+msgstr "태스크 개요"
+
 #: proxmox-backup/www/Dashboard.js:279
 #: proxmox-backup/www/dashboard/TaskSummary.js:5
 #: proxmox-backup/www/datastore/DataStoreListSummary.js:258
 msgid "Task Summary"
 msgstr "태스크 개요"
+
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:619
+#, fuzzy
+msgid "Task Summary Sorted by Failed Tasks"
+msgstr "실패한 작업별로 정렬된 작업 요약(최근 {0}시간)"
 
 #: proxmox-datacenter-manager/ui/src/dashboard/tasks.rs:315
 msgid "Task Summary Sorted by Failed Tasks (Last {0}h)"
@@ -14796,6 +15231,11 @@ msgstr "실패한 작업별로 정렬된 작업 요약(최근 {0}시간)"
 #: proxmox-datacenter-manager/ui/src/dashboard/refresh_config_edit.rs:99
 msgid "Task Summary Time Range (last hours)"
 msgstr "작업 요약 시간 범위(최근 시간)"
+
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:613
+#, fuzzy
+msgid "Task Summary by Category"
+msgstr "카테고리별 작업 요약(최근 {0}시간)"
 
 #: proxmox-datacenter-manager/ui/src/dashboard/tasks.rs:316
 msgid "Task Summary by Category (Last {0}h)"
@@ -14821,7 +15261,7 @@ msgstr "태스크 유형"
 #: proxmox-backup/www/ServerAdministration.js:76
 #: proxmox-backup/www/button/TaskButton.js:12
 #: proxmox-datacenter-manager/ui/src/administration/mod.rs:121
-#: proxmox-datacenter-manager/ui/src/remotes/mod.rs:56
+#: proxmox-datacenter-manager/ui/src/remotes/mod.rs:59
 #: proxmox-yew-comp/src/running_tasks_button.rs:172
 msgid "Tasks"
 msgstr "태스크"
@@ -14829,7 +15269,7 @@ msgstr "태스크"
 #: pve-manager/www/manager6/data/ResourceStore.js:260
 #: pve-manager/www/manager6/lxc/CreateWizard.js:202
 #: pve-manager/www/manager6/lxc/CreateWizard.js:221
-#: proxmox-datacenter-manager/ui/src/dashboard/guest_panel.rs:135
+#: proxmox-datacenter-manager/ui/src/dashboard/guest_panel.rs:137
 msgid "Template"
 msgstr "템플릿"
 
@@ -14919,7 +15359,7 @@ msgid "The newest version installed in the Cluster."
 msgstr "클러스터에 설치된 최신 버전입니다."
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:305
-#: proxmox-yew-comp/src/apt_repositories.rs:887
+#: proxmox-yew-comp/src/apt_repositories.rs:914
 msgid "The no-subscription repository is NOT production-ready"
 msgstr "no-subscription 리포지토리는 production-ready에 사용할 수 없습니다."
 
@@ -14967,7 +15407,7 @@ msgstr ""
 "포지토리는 아직 제공되지 않습니다."
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:306
-#: proxmox-yew-comp/src/apt_repositories.rs:891
+#: proxmox-yew-comp/src/apt_repositories.rs:918
 msgid "The test repository may contain unstable updates"
 msgstr "test 리포지토리에 불안정한 업데이트가 있을 수 있습니다."
 
@@ -14980,16 +15420,16 @@ msgstr ""
 "야 합니다!"
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:505
-#: proxmox-yew-comp/src/apt_repositories.rs:232
-#: proxmox-yew-comp/src/apt_repositories.rs:255
+#: proxmox-yew-comp/src/apt_repositories.rs:237
+#: proxmox-yew-comp/src/apt_repositories.rs:260
 msgid ""
 "The {0}enterprise repository is enabled, but there is no active subscription!"
 msgstr ""
 "{0}enterprise 리포지토리가 사용하도록 설정되었지만 활성 구독이 없습니다!"
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:516
-#: proxmox-yew-comp/src/apt_repositories.rs:239
-#: proxmox-yew-comp/src/apt_repositories.rs:262
+#: proxmox-yew-comp/src/apt_repositories.rs:244
+#: proxmox-yew-comp/src/apt_repositories.rs:267
 msgid ""
 "The {0}no-subscription{1} repository is not recommended for production use!"
 msgstr ""
@@ -14997,8 +15437,8 @@ msgstr ""
 "다!"
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:528
-#: proxmox-yew-comp/src/apt_repositories.rs:247
-#: proxmox-yew-comp/src/apt_repositories.rs:270
+#: proxmox-yew-comp/src/apt_repositories.rs:252
+#: proxmox-yew-comp/src/apt_repositories.rs:275
 msgid ""
 "The {0}test repository may pull in unstable updates and is not recommended "
 "for production use!"
@@ -15006,7 +15446,7 @@ msgstr ""
 "{0}test 리포지토리는 불안정할 수 있으므로 프로덕션용으로 사용하지 않는 것이 "
 "좋습니다!"
 
-#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:161
+#: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:166
 #: pve-yew-mobile-gui/src/pages/page_settings.rs:40
 #: proxmox-yew-comp/src/theme_dialog.rs:45
 msgid "Theme"
@@ -15078,7 +15518,7 @@ msgstr "zstd 압축에 사용되는 스레드(PBS 아님)."
 msgid "Threshold"
 msgstr "임계값"
 
-#: proxmox-backup/www/window/TrafficControlEdit.js:395
+#: proxmox-backup/www/window/TrafficControlEdit.js:396
 msgid "Thu"
 msgstr "목"
 
@@ -15095,16 +15535,16 @@ msgstr "TiB"
 #: pve-manager/www/manager6/node/Config.js:238
 #: pve-manager/www/manager6/window/ScheduleSimulator.js:133
 #: proxmox-backup/www/SystemConfiguration.js:29
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:151
-#: proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:270
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:153
+#: proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:271
 msgid "Time"
 msgstr "시간"
 
-#: proxmox-backup/www/window/TrafficControlEdit.js:352
+#: proxmox-backup/www/window/TrafficControlEdit.js:353
 msgid "Time End"
 msgstr "종료 시간"
 
-#: proxmox-backup/www/window/TrafficControlEdit.js:340
+#: proxmox-backup/www/window/TrafficControlEdit.js:341
 msgid "Time Start"
 msgstr "시작 시간"
 
@@ -15129,7 +15569,7 @@ msgid "TimeFrame"
 msgstr "타임프레임"
 
 #: proxmox-backup/www/config/TrafficControlView.js:199
-#: proxmox-backup/www/window/TrafficControlEdit.js:311
+#: proxmox-backup/www/window/TrafficControlEdit.js:312
 msgid "Timeframes"
 msgstr "타임프레임"
 
@@ -15194,37 +15634,37 @@ msgstr "스팸 정보 전환"
 #: pve-manager/www/manager6/sdn/ipams/PhpIpamEdit.js:33
 #: proxmox-backup/www/window/InfluxDbEdit.js:73
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:354
-#: proxmox-yew-comp/src/token_panel.rs:389
-#: proxmox-yew-comp/src/token_panel.rs:400
+#: proxmox-yew-comp/src/token_panel.rs:382
+#: proxmox-yew-comp/src/token_panel.rs:393
 msgid "Token"
 msgstr "토큰"
 
 #: pve-manager/www/manager6/dc/TokenEdit.js:53
 #: pve-manager/www/manager6/dc/TokenEdit.js:132
 #: proxmox-backup/www/window/TokenEdit.js:182
-#: proxmox-yew-comp/src/token_panel.rs:337
+#: proxmox-yew-comp/src/token_panel.rs:330
 msgid "Token ID"
 msgstr "토큰 ID"
 
 #: pve-manager/www/manager6/dc/TokenView.js:141
 #: proxmox-backup/www/window/TokenEdit.js:42
-#: proxmox-yew-comp/src/token_panel.rs:428
-#: proxmox-yew-comp/src/token_panel.rs:462
+#: proxmox-yew-comp/src/token_panel.rs:421
+#: proxmox-yew-comp/src/token_panel.rs:455
 msgid "Token Name"
 msgstr "토큰 이름"
 
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:119
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:121
 msgid "Token Permission"
 msgstr "토큰 권한"
 
 #: pve-manager/www/manager6/dc/TokenEdit.js:116
 #: proxmox-backup/www/window/TokenEdit.js:166
-#: proxmox-yew-comp/src/token_panel.rs:331
+#: proxmox-yew-comp/src/token_panel.rs:324
 msgid "Token Secret"
 msgstr "토큰 비밀"
 
 #: proxmox-backup/www/config/TokenView.js:244
-#: proxmox-yew-comp/src/token_panel.rs:480
+#: proxmox-yew-comp/src/token_panel.rs:473
 msgid "Token name"
 msgstr "토큰 이름"
 
@@ -15357,7 +15797,7 @@ msgstr "트리 모양: {0}"
 msgid "Trusted Network"
 msgstr "신뢰하는 네트워크"
 
-#: proxmox-backup/www/window/TrafficControlEdit.js:375
+#: proxmox-backup/www/window/TrafficControlEdit.js:376
 msgid "Tue"
 msgstr "화"
 
@@ -15366,7 +15806,7 @@ msgstr "화"
 msgid "Tuning Options"
 msgstr "옵션 조정"
 
-#: proxmox-widget-toolkit/src/Utils.js:91 proxmox-yew-comp/src/lib.rs:320
+#: proxmox-widget-toolkit/src/Utils.js:91 proxmox-yew-comp/src/lib.rs:323
 msgid "Turkish"
 msgstr "터키어"
 
@@ -15375,7 +15815,7 @@ msgid "Two Factor"
 msgstr "2단계 인증"
 
 #: proxmox-backup/www/panel/AccessControl.js:24
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:93
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:95
 msgid "Two Factor Authentication"
 msgstr "2단계 인증"
 
@@ -15435,6 +15875,7 @@ msgstr "2단계 인증"
 #: proxmox-datacenter-manager/ui/src/remotes/config.rs:317
 #: proxmox-datacenter-manager/ui/src/widget/pve_storage_selector.rs:207
 #: proxmox-datacenter-manager/ui/src/widget/pve_migrate_mapping.rs:351
+#: proxmox-datacenter-manager/ui/src/widget/view_filter_selector.rs:222
 #: proxmox-datacenter-manager/ui/src/pve/storage.rs:273
 #: proxmox-yew-comp/src/acme/acme_domains.rs:93
 #: proxmox-yew-comp/src/auth_view.rs:486
@@ -15445,6 +15886,7 @@ msgstr "2단계 인증"
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_processor_property.rs:76
 #: proxmox-yew-comp/src/form/pve/pve_storage_selector.rs:270
 #: proxmox-yew-comp/src/configuration/network_view.rs:405
+#: proxmox-yew-comp/src/firewall/rules.rs:179
 #: proxmox-yew-comp/src/subscription_panel.rs:185
 #: proxmox-yew-comp/src/tfa/tfa_confirm_remove.rs:52
 msgid "Type"
@@ -15455,7 +15897,7 @@ msgid "Type / Name"
 msgstr "유형 / 이름"
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:249
-#: proxmox-yew-comp/src/apt_repositories.rs:764
+#: proxmox-yew-comp/src/apt_repositories.rs:791
 msgid "Types"
 msgstr "유형"
 
@@ -15484,7 +15926,7 @@ msgid "UEFI (Secure Boot Enabled)"
 msgstr "UEFI (보안 부팅 사용함)"
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:257
-#: proxmox-yew-comp/src/apt_repositories.rs:768
+#: proxmox-yew-comp/src/apt_repositories.rs:795
 msgid "URIs"
 msgstr "URI"
 
@@ -15513,7 +15955,7 @@ msgstr "USB 디바이스"
 msgid "UUID"
 msgstr "UUID"
 
-#: proxmox-widget-toolkit/src/Utils.js:92 proxmox-yew-comp/src/lib.rs:321
+#: proxmox-widget-toolkit/src/Utils.js:92 proxmox-yew-comp/src/lib.rs:324
 msgid "Ukrainian"
 msgstr "우크라이나어"
 
@@ -15563,7 +16005,7 @@ msgstr "변경 사항을 되돌릴 수 없습니다"
 msgid "Unchanged"
 msgstr "변경되지 않음"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/pbs_datastores_panel.rs:117
+#: proxmox-datacenter-manager/ui/src/dashboard/pbs_datastores_panel.rs:119
 msgid "Under Maintenance"
 msgstr "유지보수 중"
 
@@ -15604,8 +16046,8 @@ msgstr "유닛 파일"
 #: pve-manager/www/manager6/window/DownloadUrlToStorage.js:102
 #: pve-manager/www/manager6/window/DownloadUrlToStorage.js:103
 #: proxmox-backup/www/Dashboard.js:325
-#: proxmox-datacenter-manager/ui/src/dashboard/guest_panel.rs:142
-#: proxmox-datacenter-manager/ui/src/dashboard/pbs_datastores_panel.rs:123
+#: proxmox-datacenter-manager/ui/src/dashboard/guest_panel.rs:144
+#: proxmox-datacenter-manager/ui/src/dashboard/pbs_datastores_panel.rs:125
 #: proxmox-yew-comp/src/configuration/mod.rs:35
 #: proxmox-yew-comp/src/task_status_selector.rs:167
 msgid "Unknown"
@@ -15700,7 +16142,7 @@ msgstr "권한 없음"
 
 #: pve-manager/www/manager6/lxc/CreateWizard.js:72
 #: pve-manager/www/manager6/lxc/Options.js:143
-#: proxmox-yew-comp/src/form/pve/lxc_property/mod.rs:92
+#: proxmox-yew-comp/src/form/pve/lxc_property/mod.rs:95
 msgid "Unprivileged container"
 msgstr "권한 없는 컨테이너"
 
@@ -15785,7 +16227,7 @@ msgstr "{0} 계정 업데이트"
 #: pve-manager/www/manager6/node/Config.js:261
 #: proxmox-backup/www/ServerAdministration.js:42
 #: proxmox-datacenter-manager/ui/src/administration/mod.rs:82
-#: proxmox-datacenter-manager/ui/src/remotes/mod.rs:63
+#: proxmox-datacenter-manager/ui/src/remotes/mod.rs:66
 #: proxmox-datacenter-manager/ui/src/pbs/node/mod.rs:83
 #: proxmox-datacenter-manager/ui/src/pve/node/mod.rs:88
 #: pve-yew-mobile-gui/src/pages/page_node_status/mod.rs:146
@@ -16020,7 +16462,7 @@ msgstr "호스트 설정 사용"
 #: pve-manager/www/manager6/qemu/Options.js:247
 #: pve-manager/www/manager6/qemu/Options.js:253
 #: pve-manager/www/manager6/qemu/Options.js:265
-#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:145
+#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:148
 msgid "Use local time for RTC"
 msgstr "RTC에 현지 시간 사용"
 
@@ -16051,7 +16493,7 @@ msgstr "sendmail을 사용하여 이메일 보내기(레거시)"
 
 #: pve-manager/www/manager6/qemu/Options.js:148
 #: pve-manager/www/manager6/qemu/Options.js:154
-#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:129
+#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:132
 msgid "Use tablet for pointer"
 msgstr "태블릿을 포인터로 사용"
 
@@ -16137,9 +16579,9 @@ msgstr "사용 중인 오브젝트"
 #: proxmox-yew-comp/src/tfa/tfa_confirm_remove.rs:50
 #: proxmox-yew-comp/src/user_panel.rs:271
 #: proxmox-yew-comp/src/user_panel.rs:280
-#: proxmox-yew-comp/src/token_panel.rs:413
-#: proxmox-yew-comp/src/token_panel.rs:447
-#: proxmox-yew-comp/src/token_panel.rs:472
+#: proxmox-yew-comp/src/token_panel.rs:406
+#: proxmox-yew-comp/src/token_panel.rs:440
+#: proxmox-yew-comp/src/token_panel.rs:465
 msgid "User"
 msgstr "사용자"
 
@@ -16165,7 +16607,7 @@ msgstr "사용자 ID"
 
 #: pmg-gui/js/NavigationTree.js:72 pmg-gui/js/UserManagement.js:5
 #: proxmox-backup/www/panel/AccessControl.js:18
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:58
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:60
 msgid "User Management"
 msgstr "사용자 관리"
 
@@ -16175,7 +16617,7 @@ msgstr "사용자 관리"
 #: pve-manager/www/manager6/sdn/VnetACLView.js:241
 #: proxmox-backup/www/config/ACLView.js:161
 #: proxmox-backup/www/window/ACLEdit.js:34
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:114
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:116
 #: proxmox-yew-comp/src/acl/acl_edit.rs:66
 msgid "User Permission"
 msgstr "사용자 권한"
@@ -16334,6 +16776,8 @@ msgstr "VLAN ID"
 #: pve-manager/www/manager6/lxc/Network.js:557
 #: pve-manager/www/manager6/window/GuestImport.js:926
 #: proxmox-yew-comp/src/form/pve/pve_vlan_field.rs:17
+#: proxmox-yew-comp/src/form/pve/lxc_property/lxc_network_property.rs:194
+#: proxmox-yew-comp/src/configuration/pve/lxc_network_panel.rs:379
 msgid "VLAN Tag"
 msgstr "VLAN 태그"
 
@@ -16362,7 +16806,7 @@ msgstr "VLAN"
 msgid "VM"
 msgstr "VM"
 
-#: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:53
+#: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:58
 msgid "VM '{0}'"
 msgstr "VM '{0}'"
 
@@ -16372,7 +16816,7 @@ msgstr "VM 디스크"
 
 #: pve-manager/www/manager6/qemu/Options.js:348
 #: pve-manager/www/manager6/qemu/Options.js:354
-#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:342
+#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:345
 msgid "VM State storage"
 msgstr "VM 상태 스토리지"
 
@@ -16488,9 +16932,10 @@ msgstr "유효성 검사 지연"
 #: pve-manager/www/manager6/window/Snapshot.js:132
 #: proxmox-backup/www/Utils.js:602 proxmox-backup/www/Utils.js:639
 #: proxmox-backup/www/Utils.js:684 proxmox-backup/www/Utils.js:729
+#: proxmox-datacenter-manager/ui/src/widget/view_filter_selector.rs:282
 #: proxmox-yew-comp/src/configuration/pve/lxc_resources_panel/desktop.rs:629
 #: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/desktop.rs:821
-#: proxmox-yew-comp/src/property_view/property_grid.rs:237
+#: proxmox-yew-comp/src/property_view/property_grid.rs:238
 msgid "Value"
 msgstr "값"
 
@@ -16672,6 +17117,8 @@ msgstr "비디오 스트리밍"
 
 #: proxmox-widget-toolkit/src/panel/ACMEAccount.js:105
 #: pve-manager/www/manager6/tree/SnapshotTree.js:27
+#: proxmox-datacenter-manager/ui/src/configuration/views.rs:164
+#: proxmox-datacenter-manager/ui/src/configuration/views.rs:178
 #: proxmox-yew-comp/src/acme/acme_accounts.rs:110
 #: proxmox-yew-comp/src/tasks.rs:370
 msgid "View"
@@ -16701,6 +17148,11 @@ msgstr "태스크 보기"
 msgid "View images"
 msgstr "이미지 보기"
 
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:209
+#, fuzzy
+msgid "Views"
+msgstr "보기"
+
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_machine_property.rs:142
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_machine_property.rs:156
 msgid "VirtIO"
@@ -16725,7 +17177,7 @@ msgstr "Virtiofs 파일시스템 패스스루"
 msgid "Virtual"
 msgstr "가상"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/node_status_panel.rs:159
+#: proxmox-datacenter-manager/ui/src/dashboard/node_status_panel.rs:162
 msgid "Virtual Environment Nodes"
 msgstr "가상 환경 노드"
 
@@ -16742,6 +17194,7 @@ msgstr "가상 게스트"
 #: pve-manager/www/manager6/ha/ResourceEdit.js:198
 #: pve-manager/www/manager6/qemu/CreateWizard.js:27
 #: pve-manager/www/manager6/tree/ResourceTree.js:34
+#: proxmox-datacenter-manager/ui/src/widget/view_filter_selector.rs:312
 #: proxmox-yew-comp/src/form/pve/pve_guest_selector.rs:266
 msgid "Virtual Machine"
 msgstr "가상 머신"
@@ -16755,7 +17208,8 @@ msgid "Virtual Machine {0} on node '{1}'"
 msgstr "노드 '{1}'의 VM {0}"
 
 #: pve-manager/www/manager6/dc/Guests.js:38
-#: proxmox-datacenter-manager/ui/src/dashboard/guest_panel.rs:222
+#: proxmox-datacenter-manager/ui/src/dashboard/guest_panel.rs:224
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:561
 #: pve-yew-mobile-gui/src/pages/page_dashboard.rs:281
 msgid "Virtual Machines"
 msgstr "가상 머신"
@@ -16845,11 +17299,12 @@ msgid "WAL size"
 msgstr "WAL 크기"
 
 #: pve-manager/www/manager6/qemu/TdxEdit.js:53
+#: proxmox-yew-comp/src/form/pve/qemu_property/qemu_intel_tdx_property.rs:60
 msgid "WARNING: When using Intel TDX no EFI disk is loaded as pflash."
 msgstr "경고: Intel TDX를 사용하면 EFI 디스크가 pflash로 로드되지 않습니다."
 
 #: pve-manager/www/manager6/qemu/SevEdit.js:74
-#: proxmox-yew-comp/src/form/pve/qemu_property/qemu_amd_sev_property.rs:69
+#: proxmox-yew-comp/src/form/pve/qemu_property/qemu_amd_sev_property.rs:79
 msgid "WARNING: When using SEV-SNP no EFI disk is loaded as pflash."
 msgstr "경고: SEV-SNP를 사용하면 EFI 디스크가 pflash로 로드되지 않습니다."
 
@@ -16884,9 +17339,9 @@ msgstr "Wake-on-LAN"
 #: pve-manager/www/manager6/ceph/ServiceList.js:392
 #: pve-manager/www/manager6/ceph/StatusDetail.js:195
 #: proxmox-backup/www/dashboard/TaskSummary.js:168
-#: proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:194
+#: proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:193
 #: proxmox-datacenter-manager/ui/src/dashboard/tasks.rs:154
-#: proxmox-yew-comp/src/apt_repositories.rs:872
+#: proxmox-yew-comp/src/apt_repositories.rs:899
 msgid "Warning"
 msgid_plural "Warnings"
 msgstr[0] "경고"
@@ -16944,7 +17399,7 @@ msgid "WebAuthn Settings"
 msgstr "WebAuthn 설정"
 
 #: proxmox-backup/www/SystemConfiguration.js:78
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:35
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:37
 msgid "WebAuthn TFA"
 msgstr "WebAuthn TFA"
 
@@ -16966,7 +17421,7 @@ msgstr "Webauthn 디바이스"
 msgid "Webinterface Settings"
 msgstr "웹인터페이스 설정"
 
-#: proxmox-backup/www/window/TrafficControlEdit.js:385
+#: proxmox-backup/www/window/TrafficControlEdit.js:386
 msgid "Wed"
 msgstr "수"
 
@@ -17165,6 +17620,7 @@ msgstr "연간"
 #: pve-manager/www/manager6/window/TreeSettingsEdit.js:50
 #: pve-manager/www/manager6/window/TreeSettingsEdit.js:51
 #: proxmox-backup/www/Subscription.js:131
+#: proxmox-datacenter-manager/ui/src/configuration/views.rs:152
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:113
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_nodes.rs:102
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_summary.rs:112
@@ -17172,6 +17628,8 @@ msgstr "연간"
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/remote_tree.rs:401
 #: proxmox-yew-comp/src/auth_view.rs:427
 #: proxmox-yew-comp/src/auth_edit_ldap.rs:232
+#: proxmox-yew-comp/src/configuration/pve/lxc_network_panel.rs:366
+#: proxmox-yew-comp/src/configuration/pve/lxc_network_panel.rs:412
 #: proxmox-yew-comp/src/configuration/network_view.rs:419
 #: proxmox-yew-comp/src/configuration/network_view.rs:436
 #: proxmox-yew-comp/src/configuration/network_view.rs:454
@@ -17227,12 +17685,12 @@ msgstr ""
 "(를) 방문하세요."
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:484
-#: proxmox-yew-comp/src/apt_repositories.rs:162
+#: proxmox-yew-comp/src/apt_repositories.rs:167
 msgid "You get supported updates for {0}"
 msgstr "{0}에 대해 지원되는 업데이트가 제공됩니다."
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:489
-#: proxmox-yew-comp/src/apt_repositories.rs:157
+#: proxmox-yew-comp/src/apt_repositories.rs:162
 msgid "You get updates for {0}"
 msgstr "{0}에 대한 업데이트를 받습니다."
 
@@ -17275,7 +17733,7 @@ msgstr "귀하의 현재 비밀번호"
 msgid "Your E-Mail"
 msgstr "내 이메일"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/subscription_info.rs:141
+#: proxmox-datacenter-manager/ui/src/dashboard/subscription_info.rs:144
 msgid "Your Subscriptions"
 msgstr "귀하의 구독"
 
@@ -17358,17 +17816,17 @@ msgstr ""
 msgid "all"
 msgstr "모든"
 
-#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:206
+#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:209
 msgid "any"
 msgstr "임의"
 
 #: pve-manager/www/manager6/qemu/Options.js:139
-#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:243
+#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:246
 msgid "any CD-ROM"
 msgstr "임의 CD-ROM"
 
 #: pve-manager/www/manager6/qemu/Options.js:135
-#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:244
+#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:247
 msgid "any net"
 msgstr "임의 net"
 
@@ -17447,8 +17905,8 @@ msgstr "일"
 #: pve-manager/www/manager6/qemu/HDEdit.js:448
 #: pve-manager/www/manager6/qemu/HDEdit.js:457
 #: pve-manager/www/manager6/qemu/HDEdit.js:466
-#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:209
-#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:213
+#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:212
+#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:216
 msgid "default"
 msgstr "기본값"
 
@@ -17471,7 +17929,7 @@ msgstr "디렉토리"
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:49
 #: proxmox-widget-toolkit/src/node/ServiceView.js:211
-#: proxmox-yew-comp/src/apt_repositories.rs:650
+#: proxmox-yew-comp/src/apt_repositories.rs:677
 msgid "disabled"
 msgstr "비활성화 됨"
 
@@ -17488,7 +17946,7 @@ msgid "email profile"
 msgstr "이메일 프로파일"
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:49
-#: proxmox-yew-comp/src/apt_repositories.rs:648
+#: proxmox-yew-comp/src/apt_repositories.rs:675
 msgid "enabled"
 msgstr "활성화 됨"
 
@@ -17510,7 +17968,7 @@ msgstr "빠름"
 msgid "fast and good"
 msgstr "빠르고 좋음"
 
-#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:242
+#: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:245
 msgid "first Disk"
 msgstr "첫 번째 디스크"
 
@@ -17566,6 +18024,11 @@ msgstr "iSCSI 타겟"
 msgid "in {0}"
 msgstr "약 {0}"
 
+#: proxmox-yew-comp/src/form/pve/lxc_property/lxc_network_property.rs:67
+#, fuzzy
+msgid "interface name already in use"
+msgstr "디바이스 {0} 이름은 이미 사용 중입니다."
+
 #. do not allow "inf", "nan", ...
 #: proxmox-yew-widget-toolkit/src/dom/number_format.rs:112
 #: proxmox-yew-widget-toolkit/src/dom/number_format.rs:117
@@ -17575,6 +18038,12 @@ msgstr "잘못된 float 리터럴"
 #: proxmox-yew-widget-toolkit/src/dom/number_format.rs:101
 msgid "invalid float literal (wrong decimal separator)"
 msgstr "잘못된 float 리터럴 (잘못된 소수 구분 기호)"
+
+#: proxmox-datacenter-manager/ui/src/widget/view_filter_selector.rs:274
+#: proxmox-datacenter-manager/ui/src/widget/view_filter_selector.rs:319
+#, fuzzy
+msgid "invalid type: {0}"
+msgstr "입력이 잘못됨: {}"
 
 #: proxmox-yew-comp/src/login_panel.rs:300
 msgid "invalid username"
@@ -17640,9 +18109,9 @@ msgstr "누락"
 
 #: proxmox-widget-toolkit/src/Utils.js:58
 #: proxmox-yew-comp/src/user_panel.rs:370
-#: proxmox-yew-comp/src/token_panel.rs:424
-#: proxmox-yew-comp/src/token_panel.rs:458
-#: proxmox-yew-comp/src/token_panel.rs:515
+#: proxmox-yew-comp/src/token_panel.rs:417
+#: proxmox-yew-comp/src/token_panel.rs:451
+#: proxmox-yew-comp/src/token_panel.rs:508
 msgid "never"
 msgstr "안 함"
 
@@ -17652,6 +18121,7 @@ msgid "new"
 msgstr "새로운"
 
 #: pve-manager/www/manager6/grid/FirewallOptions.js:88
+#: proxmox-yew-comp/src/firewall/options_edit.rs:491
 msgid "nftables (tech preview)"
 msgstr "nftables (기술 프리뷰)"
 
@@ -17786,7 +18256,7 @@ msgid "root@$hostname"
 msgstr "root@$hostname"
 
 #: proxmox-widget-toolkit/src/Utils.js:56
-#: proxmox-datacenter-manager/ui/src/dashboard/guest_panel.rs:121
+#: proxmox-datacenter-manager/ui/src/dashboard/guest_panel.rs:123
 msgid "running"
 msgstr "실행 중"
 
@@ -17795,7 +18265,7 @@ msgid "running..."
 msgstr "실행 중..."
 
 #: proxmox-widget-toolkit/src/Utils.js:57
-#: proxmox-datacenter-manager/ui/src/dashboard/guest_panel.rs:128
+#: proxmox-datacenter-manager/ui/src/dashboard/guest_panel.rs:130
 #: pve-yew-mobile-gui/src/pages/page_task_status.rs:128
 #: pve-yew-mobile-gui/src/pages/page_task_status.rs:130
 msgid "stopped"
@@ -17859,6 +18329,7 @@ msgstr "알 수 없는 상태 '{0}'"
 #: proxmox-yew-comp/src/form/pve/lxc_property/lxc_cores_property.rs:21
 #: proxmox-yew-comp/src/form/pve/lxc_property/lxc_cores_property.rs:42
 #: proxmox-yew-comp/src/form/pve/lxc_property/lxc_cores_property.rs:58
+#: proxmox-yew-comp/src/form/pve/lxc_property/lxc_network_property.rs:207
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_network_property.rs:43
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_processor_property.rs:265
 msgid "unlimited"
@@ -18035,11 +18506,11 @@ msgstr "{0}분"
 msgid "{0} months"
 msgstr "{0}개월"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/node_status_panel.rs:132
+#: proxmox-datacenter-manager/ui/src/dashboard/node_status_panel.rs:135
 msgid "{0} nodes have an unknown status"
 msgstr "{0} 노드의 상태를 알 수 없음"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/node_status_panel.rs:145
+#: proxmox-datacenter-manager/ui/src/dashboard/node_status_panel.rs:148
 msgid "{0} nodes online"
 msgstr "노드 {0}개가 온라인 상태임"
 
@@ -18053,7 +18524,7 @@ msgstr "{0}이(가) 설치되지 않았습니다."
 msgid "{0} not verified yet"
 msgstr "{0} 아직 검증되지 않음"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/node_status_panel.rs:138
+#: proxmox-datacenter-manager/ui/src/dashboard/node_status_panel.rs:141
 msgid "{0} of an unknown number of nodes online"
 msgstr "알 수 없는 수의 노드 {0}개가 온라인 상태임"
 
@@ -18066,12 +18537,12 @@ msgstr "알 수 없는 수의 노드 {0}개가 온라인 상태임"
 msgid "{0} of {1}"
 msgstr "{1} 중 {0}"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/node_status_panel.rs:122
+#: proxmox-datacenter-manager/ui/src/dashboard/node_status_panel.rs:125
 msgid "{0} of {1} nodes are offline"
 msgstr "{1}개 중 {0}개의 노드가 오프라인 상태임"
 
 #. TRANSLATORS: For example "resource on Remote 'HAL 9000'"
-#: proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:248
+#: proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:249
 msgid "{0} on Remote '{1}'"
 msgstr "리모트 {1}의 {0}"
 
@@ -18079,7 +18550,7 @@ msgstr "리모트 {1}의 {0}"
 msgid "{0} on behalf of {1}"
 msgstr "{1}의 대리로 {0}"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/node_status_panel.rs:142
+#: proxmox-datacenter-manager/ui/src/dashboard/node_status_panel.rs:145
 msgid "{0} remotes failed"
 msgstr "{0}개의 리모트가 실패함"
 
@@ -18142,9 +18613,6 @@ msgstr "{1}의 CPU 중 {0}%"
 msgid "{0}, Group: {1}"
 msgstr "{0}, 그룹: {1}"
 
-#~ msgid "Add Proxmox VE"
-#~ msgstr "Proxmox VE 추가"
-
 #~ msgid "Add {0}"
 #~ msgstr "추가: {0}"
 
@@ -18206,6 +18674,9 @@ msgstr "{0}, 그룹: {1}"
 #~ msgid "HA Group"
 #~ msgstr "HA 그룹"
 
+#~ msgid "Hostame"
+#~ msgstr "호스트명"
+
 #~ msgid "ID may only consist of alphanumeric characters"
 #~ msgstr "ID는 영숫자로만 구성할 수 있습니다"
 
@@ -18248,6 +18719,9 @@ msgstr "{0}, 그룹: {1}"
 
 #~ msgid "No valid Subscription"
 #~ msgstr "유효한 구독 없음"
+
+#~ msgid "Node/Error"
+#~ msgstr "노드/오류"
 
 #~ msgid "Note: Login currently requires Proxmox Backup Server version 4."
 #~ msgstr "참고: 현재 로그인에는 Proxmox Backup Server 버전 4가 필요합니다."
