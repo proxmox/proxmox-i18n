@@ -231,3 +231,10 @@ upload-pdm: $(PDM_I18N_DEB)
 	tar cf - $^|ssh -X repoman@repo.proxmox.com -- upload --product pdm --dist $(UPLOAD_DIST)
 
 upload: upload-pve upload-pmg upload-pbs upload-pdm
+
+.PHONY: check-%
+check-%:
+	msgfmt --check $*.po
+
+.PHONY: check
+check: $(addprefix check-, $(LINGUAS))
