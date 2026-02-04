@@ -210,6 +210,7 @@ messages.pot: proxmox-widget-toolkit.pot proxmox-mailgateway.pot pve-manager.pot
 	  --msgid-bugs-address="<support@proxmox.com>" \
 	  --copyright-holder="Copyright (C) Proxmox Server Solutions GmbH <support@proxmox.com> & the translation contributors." \
 	  --output $@
+	awk '!/#, javascript-format/' messages.pot > tmpfile && mv tmpfile messages.pot
 
 .PHONY: distclean
 distclean: clean
