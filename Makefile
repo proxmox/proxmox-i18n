@@ -148,14 +148,14 @@ pmg-yew-quarantine-catalog-%.mo: %.po pmg-yew-quarantine-all.pot
 # parameter 2 is the directory
 define potupdate
 	find . -name "*.js" -path "./$(2)*" | LC_COLLATE=C sort | xargs xgettext \
-      --sort-output \
-      --add-comments="TRANSLATORS" \
-      --from-code="UTF-8" \
-      --package-name="$(1)" \
-      --package-version="$(shell cd $(2);git rev-parse HEAD)" \
-      --msgid-bugs-address="<support@proxmox.com>" \
-      --copyright-holder="Copyright (C) Proxmox Server Solutions GmbH <support@proxmox.com> & the translation contributors." \
-      --output="$(1)".pot
+	  --sort-output \
+	  --add-comments="TRANSLATORS" \
+	  --from-code="UTF-8" \
+	  --package-name="$(1)" \
+	  --package-version="$(shell cd $(2);git rev-parse HEAD)" \
+	  --msgid-bugs-address="<support@proxmox.com>" \
+	  --copyright-holder="Copyright (C) Proxmox Server Solutions GmbH <support@proxmox.com> & the translation contributors." \
+	  --output="$(1)".pot
 endef
 
 # parameter 1 is the name
