@@ -233,7 +233,7 @@ upload-pdm: $(PDM_I18N_DEB)
 upload: upload-pve upload-pmg upload-pbs upload-pdm
 
 .PHONY: check-%
-check-%:
+check-%: %.po
 	msgfmt --check $*.po
 
 .PHONY: check
