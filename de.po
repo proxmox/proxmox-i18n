@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: proxmox translations\n"
 "Report-Msgid-Bugs-To: <support@proxmox.com>\n"
-"POT-Creation-Date: 2026-04-09 00:11+0200\n"
+"POT-Creation-Date: 2026-04-24 01:42+0200\n"
 "PO-Revision-Date: 2026-03-25 09:43+0100\n"
 "Last-Translator: Proxmox Support Team <support@proxmox.com>\n"
 "Language-Team: German <support@proxmox.com>\n"
@@ -25,6 +25,11 @@ msgstr "# Ausgeschlossen"
 #: proxmox-datacenter-manager/ui/src/configuration/views.rs:125
 msgid "# Included"
 msgstr "# Inkludiert"
+
+#: proxmox-backup/www/window/SyncJobEdit.js:457
+#, fuzzy
+msgid "# of Group Workers"
+msgstr "# von Worker Threads"
 
 #: proxmox-backup/www/window/VerifyAll.js:116
 #: proxmox-backup/www/window/VerifyJobEdit.js:191
@@ -96,11 +101,11 @@ msgid_plural "{n} Sockets"
 msgstr[0] "1 Socket"
 msgstr[1] "{n} Sockets"
 
-#: proxmox-backup/www/datastore/OptionView.js:307
+#: proxmox-backup/www/datastore/OptionView.js:336
 msgid "1048576 (0 disables cache)"
 msgstr "1048576 (0 deaktiviert den Cache)"
 
-#: proxmox-backup/www/datastore/OptionView.js:299
+#: proxmox-backup/www/datastore/OptionView.js:328
 msgid "1445 (24 hours 5 minutes)"
 msgstr "1445 (24 Stunden 5 Minuten)"
 
@@ -182,7 +187,7 @@ msgstr "ACME Domäne"
 msgid "ACME Domains"
 msgstr "ACME Domänen"
 
-#: proxmox-backup/www/Utils.js:479
+#: proxmox-backup/www/Utils.js:481
 msgid "ACME certificate renewal"
 msgstr "ACME Zertifikatserneuerung"
 
@@ -384,7 +389,7 @@ msgstr "Aktionsobjekte"
 #: pve-manager/www/manager6/dc/Tasks.js:139
 #: pve-manager/www/manager6/tree/DhcpTree.js:226
 #: pve-manager/www/manager6/tree/ResourceMapTree.js:343
-#: proxmox-backup/www/datastore/Content.js:1042
+#: proxmox-backup/www/datastore/Content.js:1127
 #: proxmox-backup/www/tape/ChangerStatus.js:760
 #: proxmox-backup/www/tape/ChangerStatus.js:914
 #: proxmox-backup/www/tape/ChangerStatus.js:989
@@ -417,6 +422,11 @@ msgstr "Aktiv"
 #: proxmox-yew-comp/src/auth_edit_ldap.rs:422
 msgid "Active Directory Server"
 msgstr "Active Directory Server"
+
+#: proxmox-backup/www/window/SyncJobEdit.js:584
+#, fuzzy
+msgid "Active Encryption Key"
+msgstr "Krypto Schlüssel"
 
 #: proxmox-backup/www/tape/ChangerStatus.js:876
 msgid "Activity"
@@ -470,6 +480,7 @@ msgstr "Aktivität"
 #: pve-manager/www/manager6/tree/DhcpTree.js:250
 #: pve-manager/www/manager6/tree/ResourceMapTree.js:325
 #: proxmox-backup/www/config/ACLView.js:156
+#: proxmox-backup/www/config/EncryptionKeysView.js:230
 #: proxmox-backup/www/config/MetricServerView.js:87
 #: proxmox-backup/www/config/PruneView.js:164
 #: proxmox-backup/www/config/RemoteView.js:106
@@ -526,7 +537,7 @@ msgstr "ACME-Konto hinzufügen"
 msgid "Add CD/DVD drive"
 msgstr "CD/DVD Laufwerk hinzufügen"
 
-#: proxmox-backup/www/NavigationTree.js:130
+#: proxmox-backup/www/NavigationTree.js:136
 msgid "Add Datastore"
 msgstr "Datastore hinzufügen"
 
@@ -554,7 +565,7 @@ msgstr "Header hinzufügen"
 msgid "Add Mount Point"
 msgstr "Mount Point hinzufügen"
 
-#: proxmox-backup/www/datastore/Content.js:1366
+#: proxmox-backup/www/datastore/Content.js:1474
 msgid "Add Namespace"
 msgstr "Namespace hinzufügen"
 
@@ -600,6 +611,11 @@ msgstr "Separator hinzufügen"
 msgid "Add Storage"
 msgstr "Storage hinzufügen"
 
+#: proxmox-backup/www/config/EncryptionKeysView.js:233
+#, fuzzy
+msgid "Add Sync Encryption Key"
+msgstr "Krypto Schlüssel"
+
 #: pmg-gui/js/MailProxyTLS.js:14
 msgid "Add TLS received header"
 msgstr "TLS 'received header' hinzufügen"
@@ -615,6 +631,11 @@ msgstr "Tag hinzufügen"
 #: proxmox-backup/www/tape/TapeInventory.js:213
 msgid "Add Tape"
 msgstr "Band hinzufügen"
+
+#: proxmox-backup/www/config/EncryptionKeysView.js:239
+#, fuzzy
+msgid "Add Tape Encryption Key"
+msgstr "Krypto Schlüssel"
 
 #: proxmox-backup/www/window/TrafficControlEdit.js:449
 msgid "Add Timeframe"
@@ -731,7 +752,7 @@ msgstr "Adressen"
 msgid "Addresses and ports used by the OSD service"
 msgstr "Verwendete Adressen und Ports"
 
-#: pmg-gui/js/NavigationTree.js:104 proxmox-backup/www/NavigationTree.js:92
+#: pmg-gui/js/NavigationTree.js:104 proxmox-backup/www/NavigationTree.js:98
 #: proxmox-datacenter-manager/ui/src/main_menu.rs:310
 msgid "Administration"
 msgstr "Administration"
@@ -816,6 +837,7 @@ msgstr "Alias"
 #: proxmox-datacenter-manager/ui/src/remotes/tasks.rs:165
 #: proxmox-datacenter-manager/ui/src/dashboard/guest_panel.rs:152
 #: proxmox-datacenter-manager/ui/src/dashboard/pbs_datastores_panel.rs:128
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:677
 #: proxmox-yew-comp/src/task_status_selector.rs:134
 msgid "All"
 msgstr "Alle"
@@ -829,21 +851,21 @@ msgstr "Alle Kerne"
 msgid "All Functions"
 msgstr "Alle Funktionen"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:570
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:599
 msgid "All Guests"
 msgstr "Alle Gäste"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:551
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:580
 msgid "All Nodes"
 msgstr "Alle Knoten"
 
-#: proxmox-backup/www/datastore/Content.js:1248
+#: proxmox-backup/www/datastore/Content.js:1356
 #: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:394
 #: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:401
 msgid "All OK"
 msgstr "Alle O.K."
 
-#: proxmox-backup/www/datastore/Content.js:1244
+#: proxmox-backup/www/datastore/Content.js:1352
 msgid "All OK (old)"
 msgstr "Alle O.K. (alt)"
 
@@ -857,6 +879,11 @@ msgstr ""
 #: proxmox-yew-comp/src/apt_repositories.rs:300
 msgid "All OK, you have production-ready repositories configured!"
 msgstr "Alles OK, Sie haben produktionsreife Repositories konfiguriert!"
+
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:545
+#, fuzzy
+msgid "All Resources"
+msgstr "HA Ressourcen"
 
 #: pmg-gui/js/AuthEditOIDC.js:201
 msgid "All auto-created users get audit role"
@@ -879,7 +906,7 @@ msgstr "Alle Daten auf dem Gerät werden gelöscht!"
 msgid "All except {0}"
 msgstr "Alle außer {0}"
 
-#: proxmox-backup/www/datastore/Content.js:1264
+#: proxmox-backup/www/datastore/Content.js:1372
 #: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:425
 msgid "All failed"
 msgstr "Alle fehlgeschlagen"
@@ -1133,6 +1160,16 @@ msgstr "Architektur"
 msgid "Archive Filter"
 msgstr "Archivfilter"
 
+#: proxmox-backup/www/config/EncryptionKeysView.js:335
+#: proxmox-backup/www/form/EncryptionKeySelector.js:29
+#, fuzzy
+msgid "Archived"
+msgstr "Archivfilter"
+
+#: proxmox-backup/www/config/EncryptionKeysView.js:260
+msgid "Archiving will render the key unusable to encrypt new content, proceed?"
+msgstr ""
+
 #: pmg-gui/js/Subscription.js:166
 msgid "Are you sure to remove the subscription key?"
 msgstr "Möchten Sie die Subskription wirklich entfernen?"
@@ -1161,7 +1198,7 @@ msgid "Are you sure you want to format the inserted tape?"
 msgstr "Möchten Sie das eingelegte Band wirklich formatieren?"
 
 #: proxmox-datacenter-manager/ui/src/administration/node_status.rs:248
-#: proxmox-yew-comp/src/node_status_panel.rs:228
+#: proxmox-yew-comp/src/node_status_panel.rs:244
 msgid "Are you sure you want to reboot the node?"
 msgstr "Möchten Sie diesen Knoten wirklich neu starten?"
 
@@ -1196,7 +1233,7 @@ msgstr "Soll das DHCP-Mapping {0} wirklich entfernt werden?"
 msgid "Are you sure you want to remove entry {0}"
 msgstr "Möchten Sie den Eintrag {0} wirklich entfernen?"
 
-#: proxmox-backup/www/datastore/Content.js:672
+#: proxmox-backup/www/datastore/Content.js:756
 msgid "Are you sure you want to remove snapshot {0}"
 msgstr "Möchten Sie den Snapshot {0} wirklich entfernen?"
 
@@ -1269,8 +1306,13 @@ msgstr "Möchten Sie den ausgewählten {0} Eintrag wirklich entfernen?"
 msgid "Are you sure you want to remove {0} entries"
 msgstr "Möchten Sie wirklich {0} Einträge entfernen?"
 
+#: proxmox-backup/www/config/EncryptionKeysView.js:256
+#, fuzzy
+msgid "Are you sure you want to restore the archived key to be active again?"
+msgstr "Möchten Sie den Zeitplan {0} wirklich entfernen?"
+
 #: proxmox-datacenter-manager/ui/src/administration/node_status.rs:259
-#: proxmox-yew-comp/src/node_status_panel.rs:237
+#: proxmox-yew-comp/src/node_status_panel.rs:253
 msgid "Are you sure you want to shut down the node?"
 msgstr "Möchten Sie diesen Knoten wirklich herunter fahren?"
 
@@ -1292,6 +1334,10 @@ msgid ""
 msgstr ""
 "Unterstützter Beitritt: Bitte die kodierte Cluster-Beitrittsinformation "
 "einfügen und Passwort eingeben."
+
+#: proxmox-backup/www/window/SyncJobEdit.js:42
+msgid "Associated Keys"
+msgstr ""
 
 #: pve-manager/www/manager6/qemu/HDEdit.js:378
 msgid "Async IO"
@@ -1415,6 +1461,11 @@ msgstr "Auto-Fill"
 msgid "Auto-generate a client encryption key"
 msgstr "Client-Schlüssel automatisch generieren"
 
+#: proxmox-backup/www/window/EncryptionKeysEdit.js:277
+#, fuzzy
+msgid "Auto-generate a new encryption key"
+msgstr "Client-Schlüssel automatisch generieren"
+
 #: pve-manager/www/manager6/dc/AuthEditOpenId.js:87
 msgid "Autocreate Groups"
 msgstr "Gruppen auto-erstellen"
@@ -1432,7 +1483,7 @@ msgstr "Benutzer auto-erstellen"
 
 #: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:126
 #: proxmox-backup/www/window/PruneJobEdit.js:155
-#: proxmox-backup/www/window/SyncJobEdit.js:429
+#: proxmox-backup/www/window/SyncJobEdit.js:432
 #: proxmox-backup/www/window/VerifyJobEdit.js:221
 msgid "Autogenerate"
 msgstr "Quorate"
@@ -1567,7 +1618,7 @@ msgstr "Backscatter Wert"
 msgid "Backup"
 msgstr "Backup"
 
-#: proxmox-backup/www/datastore/Summary.js:169
+#: proxmox-backup/www/datastore/Summary.js:80
 msgid "Backup Count"
 msgstr "Backup-Anzahl"
 
@@ -1579,7 +1630,7 @@ msgstr "Backup Details"
 msgid "Backup Dir"
 msgstr "Backup Verzeichnis"
 
-#: proxmox-backup/www/datastore/Content.js:972
+#: proxmox-backup/www/datastore/Content.js:1057
 msgid "Backup Group"
 msgstr "Backup Gruppe"
 
@@ -1616,6 +1667,7 @@ msgid "Backup Retention"
 msgstr "Aufbewahrte Backups"
 
 #: pmg-gui/js/PBSRemoteEdit.js:18
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:683
 msgid "Backup Server"
 msgstr "Backupserver"
 
@@ -1628,7 +1680,7 @@ msgid "Backup Server Nodes"
 msgstr "Backupserver Knoten"
 
 #: pve-manager/www/manager6/window/Prune.js:169
-#: proxmox-backup/www/datastore/Content.js:1138
+#: proxmox-backup/www/datastore/Content.js:1246
 #: proxmox-backup/www/datastore/Prune.js:201
 msgid "Backup Time"
 msgstr "Backup Zeit"
@@ -1673,7 +1725,7 @@ msgid "Backups and Backup Jobs"
 msgstr "Backups und Backup Jobs"
 
 #: proxmox-backup/www/datastore/DataStoreListSummary.js:216
-#: proxmox-backup/www/datastore/Summary.js:219
+#: proxmox-backup/www/datastore/Summary.js:130
 msgid "Bad Chunks"
 msgstr "Ungültige Chunks"
 
@@ -1859,7 +1911,7 @@ msgstr "Bridge ports"
 msgid "Bridges"
 msgstr "Bridge"
 
-#: proxmox-backup/www/datastore/Content.js:1114
+#: proxmox-backup/www/datastore/Content.js:1222
 msgid "Browse"
 msgstr "Durchsuchen"
 
@@ -2043,6 +2095,8 @@ msgstr "CIDR"
 #: pve-manager/www/manager6/lxc/CreateWizard.js:240
 #: pve-manager/www/manager6/lxc/ResourceEdit.js:35
 #: pve-manager/www/manager6/qemu/CreateWizard.js:227
+#: proxmox-datacenter-manager/ui/src/dashboard/gauge_panel.rs:176
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:552
 #: proxmox-datacenter-manager/ui/src/pbs/node/overview.rs:146
 #: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:151
 #: pve-yew-mobile-gui/src/pages/page_dashboard.rs:127
@@ -2073,6 +2127,7 @@ msgstr "CPU-Typ"
 
 #: pve-manager/www/manager6/node/Summary.js:164
 #: pve-manager/www/manager6/panel/GuestSummary.js:95
+#: proxmox-datacenter-manager/ui/src/dashboard/gauge_panel.rs:33
 #: proxmox-datacenter-manager/ui/src/pbs/node/overview.rs:234
 #: proxmox-datacenter-manager/ui/src/pve/lxc/overview.rs:340
 #: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:238
@@ -2139,7 +2194,7 @@ msgid "CSNP Interval"
 msgstr "CSNP Intervall"
 
 #: pve-manager/www/manager6/window/BulkAction.js:399
-#: proxmox-backup/www/datastore/Summary.js:174
+#: proxmox-backup/www/datastore/Summary.js:85
 #: proxmox-backup/www/form/GroupFilter.js:534
 msgid "CT"
 msgstr "CT"
@@ -2166,7 +2221,7 @@ msgstr "Cache"
 msgid "Cache Usage History"
 msgstr "Cache-Nutzungsverlauf"
 
-#: proxmox-backup/www/Utils.js:751
+#: proxmox-backup/www/Utils.js:754
 msgid "Calibrating"
 msgstr "Kalibrierung"
 
@@ -2261,7 +2316,7 @@ msgstr "Reservierter Poolname kann nicht benutzt werden"
 msgid "Capacity"
 msgstr "Kapazität"
 
-#: proxmox-backup/www/Utils.js:614 proxmox-backup/www/tape/ChangerStatus.js:927
+#: proxmox-backup/www/Utils.js:617 proxmox-backup/www/tape/ChangerStatus.js:927
 #: proxmox-backup/www/tape/DriveStatus.js:279
 msgid "Cartridge Memory"
 msgstr "Cartridge-Memory"
@@ -2328,7 +2383,7 @@ msgstr "Ceph betreffende Tasks"
 msgid "Ceph version to install"
 msgstr "Zu installierende Ceph-Version"
 
-#: pve-manager/www/manager6/ceph/FS.js:77
+#: pve-manager/www/manager6/ceph/FS.js:78
 msgid "CephFS"
 msgstr "CephFS"
 
@@ -2380,7 +2435,7 @@ msgstr "Kennwort ändern"
 
 #: pve-manager/www/manager6/grid/BackupView.js:297
 #: pve-manager/www/manager6/storage/BackupView.js:181
-#: proxmox-backup/www/datastore/Content.js:1498
+#: proxmox-backup/www/datastore/Content.js:1617
 msgid "Change Protection"
 msgstr "Schutz ändern"
 
@@ -2389,15 +2444,15 @@ msgstr "Schutz ändern"
 msgid "Change global Ceph flags"
 msgstr "Globale Ceph-Flags ändern"
 
-#: proxmox-backup/www/datastore/Content.js:1432
+#: proxmox-backup/www/datastore/Content.js:1551
 msgid "Change owner"
 msgstr "Besitzer wechseln"
 
-#: proxmox-backup/www/datastore/Content.js:1060
+#: proxmox-backup/www/datastore/Content.js:1168
 msgid "Change owner of '{0}'"
 msgstr "Benutzer von '{0}' ändern"
 
-#: proxmox-backup/www/datastore/Content.js:1073
+#: proxmox-backup/www/datastore/Content.js:1181
 msgid "Change protection of '{0}'"
 msgstr "Schutz von '{0}' ändern"
 
@@ -2489,11 +2544,11 @@ msgstr ""
 "Wählen, ob der Privilege-Level des wiederhergestellten Containers behalten "
 "oder überschrieben werden soll."
 
-#: proxmox-backup/www/datastore/OptionView.js:263
+#: proxmox-backup/www/datastore/OptionView.js:292
 msgid "Chunk Iteration Order"
 msgstr "Chunk Iterationsreihenfolge"
 
-#: proxmox-backup/www/Utils.js:892
+#: proxmox-backup/www/Utils.js:895
 msgid "Chunk Order"
 msgstr "Chunk Reihenfolge"
 
@@ -2522,7 +2577,7 @@ msgstr "Fehlerfrei"
 msgid "Clean Drive"
 msgstr "Band Reinigen"
 
-#: proxmox-backup/www/Utils.js:741
+#: proxmox-backup/www/Utils.js:744
 msgid "Cleaning"
 msgstr "Reinigen"
 
@@ -2615,8 +2670,10 @@ msgid "Clone"
 msgstr "Klon"
 
 #: proxmox-widget-toolkit/src/window/DiskSmart.js:99 pmg-gui/js/Settings.js:14
+#: pve-manager/www/manager6/sdn/SdnDiffView.js:108
 #: pve-manager/www/manager6/storage/PBSEdit.js:144
 #: pve-manager/www/manager6/window/Settings.js:19
+#: proxmox-backup/www/window/EncryptionKeysEdit.js:153
 #: proxmox-backup/www/window/Settings.js:14
 msgid "Close"
 msgstr "Schließen"
@@ -2819,7 +2876,7 @@ msgstr "Befehl fehlgeschlagen"
 #: proxmox-backup/www/config/TrafficControlView.js:206
 #: proxmox-backup/www/config/UserView.js:272
 #: proxmox-backup/www/config/VerifyView.js:281
-#: proxmox-backup/www/datastore/Content.js:983
+#: proxmox-backup/www/datastore/Content.js:1068
 #: proxmox-backup/www/datastore/Notes.js:6
 #: proxmox-backup/www/datastore/Notes.js:21
 #: proxmox-backup/www/form/AuthidSelector.js:95
@@ -2836,7 +2893,7 @@ msgstr "Befehl fehlgeschlagen"
 #: proxmox-backup/www/window/InfluxDbEdit.js:181
 #: proxmox-backup/www/window/PruneJobEdit.js:143
 #: proxmox-backup/www/window/RemoteEdit.js:128
-#: proxmox-backup/www/window/SyncJobEdit.js:416
+#: proxmox-backup/www/window/SyncJobEdit.js:419
 #: proxmox-backup/www/window/TokenEdit.js:71
 #: proxmox-backup/www/window/TrafficControlEdit.js:261
 #: proxmox-backup/www/window/UserEdit.js:175
@@ -2970,7 +3027,7 @@ msgstr "Konfiguriert"
 #: pve-manager/www/manager6/tree/ResourceMapTree.js:124
 #: pve-manager/www/manager6/window/GuestStop.js:72
 #: pve-manager/www/manager6/window/Restore.js:105
-#: proxmox-backup/www/datastore/Content.js:669
+#: proxmox-backup/www/datastore/Content.js:753
 #: proxmox-datacenter-manager/ui/src/configuration/views.rs:317
 #: proxmox-datacenter-manager/ui/src/pve/tree.rs:534
 #: proxmox-yew-comp/src/safe_confirm_dialog.rs:176
@@ -3216,6 +3273,7 @@ msgid "Copy Information"
 msgstr "Kopiere Information"
 
 #: pve-manager/www/manager6/storage/PBSEdit.js:61
+#: proxmox-backup/www/window/EncryptionKeysEdit.js:70
 msgid "Copy Key"
 msgstr "Schlüssel kopieren"
 
@@ -3238,8 +3296,8 @@ msgstr "Kopiere geheimen Wert"
 msgid "Copy data"
 msgstr "Daten kopieren"
 
-#: proxmox-backup/www/datastore/Content.js:1412
-#: proxmox-backup/www/datastore/Content.js:1476
+#: proxmox-backup/www/datastore/Content.js:1521
+#: proxmox-backup/www/datastore/Content.js:1595
 msgid "Copy name to clipboard"
 msgstr "Name in Zwischenablage kopieren"
 
@@ -3262,7 +3320,7 @@ msgstr "In Zwischenablage kopieren"
 msgid "Copy to clipboard"
 msgstr "In Zwischenablage kopieren"
 
-#: proxmox-yew-comp/src/node_status_panel.rs:124
+#: proxmox-yew-comp/src/node_status_panel.rs:134
 #: proxmox-yew-comp/src/token_panel.rs:366
 msgid "Copy token secret to clipboard."
 msgstr "Token Geheimnis kopieren."
@@ -3318,7 +3376,7 @@ msgstr "Alle Remotes konnten erreicht werden."
 #: pmg-gui/js/DomainStatistics.js:94 pmg-gui/js/DomainStatistics.js:137
 #: pmg-gui/js/HourlyMailDistribution.js:12 pmg-gui/js/ReceiverStatistics.js:168
 #: pmg-gui/js/SenderStatistics.js:160 pmg-gui/js/SpamScoreDistribution.js:39
-#: pmg-gui/js/VirusCharts.js:30 proxmox-backup/www/datastore/Content.js:1165
+#: pmg-gui/js/VirusCharts.js:30 proxmox-backup/www/datastore/Content.js:1273
 #: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:126
 msgid "Count"
 msgstr "Anzahl"
@@ -3358,7 +3416,7 @@ msgstr "Anzahl"
 #: pve-manager/www/manager6/sdn/SubnetView.js:58
 #: pve-manager/www/manager6/sdn/VnetView.js:74
 #: proxmox-backup/www/DirectoryList.js:78 proxmox-backup/www/Utils.js:433
-#: proxmox-backup/www/Utils.js:469 proxmox-backup/www/ZFSList.js:117
+#: proxmox-backup/www/Utils.js:471 proxmox-backup/www/ZFSList.js:117
 #: proxmox-yew-comp/src/configuration/network_view.rs:222
 #: proxmox-yew-comp/src/configuration/network_edit.rs:346
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:125
@@ -3383,7 +3441,7 @@ msgstr "Erstellen"
 msgid "Create CT"
 msgstr "Erstelle CT"
 
-#: pve-manager/www/manager6/ceph/FS.js:148
+#: pve-manager/www/manager6/ceph/FS.js:149
 msgid "Create CephFS"
 msgstr "Erstelle CephFS"
 
@@ -3432,6 +3490,8 @@ msgstr "Erstelle: OSD"
 #: proxmox-widget-toolkit/src/panel/TfaView.js:238
 #: proxmox-widget-toolkit/src/window/ACMEAccount.js:161
 #: proxmox-widget-toolkit/src/window/TfaEdit.js:192
+#: proxmox-backup/www/config/EncryptionKeysView.js:329
+#: proxmox-backup/www/form/EncryptionKeySelector.js:22
 #: proxmox-backup/www/tape/EncryptionKeys.js:133
 #: proxmox-yew-comp/src/acme/acme_accounts.rs:230
 #: proxmox-yew-comp/src/tfa/tfa_view.rs:406
@@ -3508,6 +3568,12 @@ msgstr "DB Disk"
 #: pve-manager/www/manager6/ceph/OSD.js:88
 msgid "DB size"
 msgstr "DB Größe"
+
+#: proxmox-backup/www/datastore/Summary.js:220
+#: proxmox-backup/www/datastore/Summary.js:375
+#: proxmox-backup/www/window/NotificationThresholds.js:79
+msgid "DELETE"
+msgstr ""
 
 #: pve-manager/www/manager6/qemu/IPConfigEdit.js:97
 #: pve-manager/www/manager6/qemu/IPConfigEdit.js:155
@@ -3657,13 +3723,23 @@ msgstr "Dashboard Storages"
 msgid "Data Devs"
 msgstr "Daten Geräte"
 
-#: pve-manager/www/manager6/ceph/FS.js:164
+#: pve-manager/www/manager6/ceph/FS.js:165
 msgid "Data Pool"
 msgstr "Datenpool"
 
-#: proxmox-backup/www/datastore/OptionView.js:272
+#: proxmox-backup/www/datastore/OptionView.js:301
 msgid "Data Sync Level"
 msgstr "Daten Synchronisations-Level"
+
+#: proxmox-backup/www/datastore/Summary.js:170
+#, fuzzy
+msgid "Data downloaded"
+msgstr "Herunterladen"
+
+#: proxmox-backup/www/datastore/Summary.js:160
+#, fuzzy
+msgid "Data uploaded"
+msgstr "keine Daten geladen"
 
 #: pmg-gui/js/ClamAVDatabase.js:10
 msgid "Database Mirror"
@@ -3678,12 +3754,12 @@ msgstr "Datenbank Server"
 msgid "Datacenter"
 msgstr "Rechenzentrum"
 
-#: pmg-gui/js/PBSConfig.js:156 proxmox-backup/www/NavigationTree.js:121
+#: pmg-gui/js/PBSConfig.js:156 proxmox-backup/www/NavigationTree.js:127
 #: proxmox-backup/www/ServerAdministration.js:82
 #: proxmox-backup/www/Utils.js:430 proxmox-backup/www/Utils.js:431
 #: proxmox-backup/www/Utils.js:445 proxmox-backup/www/Utils.js:447
-#: proxmox-backup/www/Utils.js:454 proxmox-backup/www/Utils.js:463
-#: proxmox-backup/www/Utils.js:473 proxmox-backup/www/config/GCView.js:172
+#: proxmox-backup/www/Utils.js:456 proxmox-backup/www/Utils.js:465
+#: proxmox-backup/www/Utils.js:475 proxmox-backup/www/config/GCView.js:172
 #: proxmox-backup/www/config/PruneView.js:211
 #: proxmox-backup/www/config/VerifyView.js:213
 #: proxmox-backup/www/datastore/Panel.js:106
@@ -3733,18 +3809,23 @@ msgid "Datastore Usage"
 msgstr "Belegung des Datastores"
 
 #: proxmox-backup/www/datastore/DataStoreListSummary.js:59
-#: proxmox-backup/www/datastore/Summary.js:80
+#: proxmox-backup/www/datastore/Summary.js:588
 msgid "Datastore is in maintenance mode"
 msgstr "Datastore befindet sich im Instandhaltungsmodus"
 
-#: proxmox-backup/www/datastore/Summary.js:72
+#: proxmox-backup/www/datastore/Summary.js:580
 msgid "Datastore is not available"
 msgstr "Datastore ist nicht verfügbar"
 
 #: proxmox-backup/www/datastore/DataStoreListSummary.js:40
-#: proxmox-backup/www/datastore/Summary.js:79
+#: proxmox-backup/www/datastore/Summary.js:587
 msgid "Datastore is not mounted"
 msgstr "Datastore ist nicht gemountet"
+
+#: proxmox-backup/www/Utils.js:488
+#, fuzzy
+msgid "Datastore threshold notifications"
+msgstr "Replizierungs-Job Benachrichtigung"
 
 #: proxmox-datacenter-manager/ui/src/pbs/datastore.rs:58
 msgid "Datastore {0}"
@@ -3820,12 +3901,17 @@ msgstr "Dekodieren"
 msgid "Decompression algorithm"
 msgstr "Dekomprimierung"
 
+#: proxmox-backup/www/window/SyncJobEdit.js:57
+#, fuzzy
+msgid "Decryption Keys"
+msgstr "Krypto Schlüssel"
+
 #: pve-manager/www/manager6/node/ZFS.js:262 proxmox-backup/www/ZFSList.js:98
 msgid "Deduplication"
 msgstr "Deduplizierung"
 
 #: proxmox-backup/www/datastore/DataStoreListSummary.js:204
-#: proxmox-backup/www/datastore/Summary.js:209
+#: proxmox-backup/www/datastore/Summary.js:120
 msgid "Deduplication Factor"
 msgstr "Deduplizierungsfaktor"
 
@@ -3884,11 +3970,11 @@ msgstr "Deep Scrub auf OSD.{0}"
 msgid "Default"
 msgstr "Standardeinstellung"
 
-#: proxmox-backup/www/datastore/OptionView.js:316
+#: proxmox-backup/www/datastore/OptionView.js:345
 msgid "Default # of Verification Readers"
 msgstr "Standard Anzahl der lesenden Threads bei Verifizierung"
 
-#: proxmox-backup/www/datastore/OptionView.js:326
+#: proxmox-backup/www/datastore/OptionView.js:355
 msgid "Default # of Verification Workers"
 msgstr "Standard Anzahl der verifizierenden Threads"
 
@@ -3962,7 +4048,7 @@ msgstr "Standardmäßige user-classes: inetorgperson, posixaccount, person, user
 msgid "Default verification readers"
 msgstr "Standard lesenden Threads bei Verifizierung"
 
-#: proxmox-backup/www/Utils.js:921
+#: proxmox-backup/www/Utils.js:923
 msgid "Default verification workers"
 msgstr "Standard verifizierende Threads"
 
@@ -4030,6 +4116,7 @@ msgstr "Benutzerdefiniertes Zertifikat löschen"
 msgid "Delete Snapshot"
 msgstr "Lösche Snapshot"
 
+#: proxmox-backup/www/window/NamespaceMove.js:126
 #: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:432
 msgid "Delete Source"
 msgstr "Quelle löschen"
@@ -4553,6 +4640,11 @@ msgstr "Dokumentation"
 msgid "Does not look like a valid recovery key"
 msgstr "Eingegebener Wert ist kein gültiger Wiederherstellungsschlüssel!"
 
+#: proxmox-backup/www/window/EncryptionKeysEdit.js:333
+#, fuzzy
+msgid "Does not seem like a valid Proxmox Backup key!"
+msgstr "Eingegebener Wert ist kein gültiger Wiederherstellungsschlüssel!"
+
 #: pve-manager/www/manager6/dc/ClusterEdit.js:334
 msgid "Does not seem like a valid encoded Cluster Information!"
 msgstr "Keine gültige Cluster Information!"
@@ -4601,12 +4693,16 @@ msgstr "Down"
 #: pve-manager/www/manager6/storage/TemplateView.js:189
 #: pve-manager/www/manager6/window/DownloadUrlToStorage.js:13
 #: proxmox-backup/www/Subscription.js:62
+#: proxmox-backup/www/datastore/Summary.js:392
+#: proxmox-backup/www/datastore/Summary.js:401
+#: proxmox-backup/www/window/EncryptionKeysEdit.js:96
+#: proxmox-backup/www/window/NotificationThresholds.js:105
 #: proxmox-datacenter-manager/ui/src/administration/node_status.rs:95
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:145
 msgid "Download"
 msgstr "Herunterladen"
 
-#: proxmox-backup/www/datastore/Content.js:1106
+#: proxmox-backup/www/datastore/Content.js:1214
 msgid "Download '{0}'"
 msgstr "'{0}' herunterladen"
 
@@ -4620,6 +4716,7 @@ msgid "Download from URL"
 msgstr "Von URL herunterladen"
 
 #: pve-manager/www/manager6/storage/PBSEdit.js:81
+#: proxmox-backup/www/window/EncryptionKeysEdit.js:90
 msgid "Download the key to a USB (pen) drive, placed in secure vault."
 msgstr ""
 "Den Schlüssel auf einen USB-Stick herunterladen und in einem Safe ablegen."
@@ -4629,11 +4726,18 @@ msgstr ""
 msgid "Drag and drop to reorder"
 msgstr "Ziehen und fallen lassen um die Reihenfolge zu verändern"
 
+#: proxmox-backup/www/window/EncryptionKeysEdit.js:323
+#, fuzzy
+msgid "Drag-and-drop key file here."
+msgstr "Sie können eine Schlüsseldatei hier her ziehen."
+
 #: proxmox-backup/www/Utils.js:191 proxmox-backup/www/Utils.js:428
 #: proxmox-backup/www/Utils.js:429 proxmox-backup/www/Utils.js:435
 #: proxmox-backup/www/Utils.js:436 proxmox-backup/www/Utils.js:440
-#: proxmox-backup/www/Utils.js:441 proxmox-backup/www/Utils.js:453
-#: proxmox-backup/www/Utils.js:462 proxmox-backup/www/tape/BackupJobs.js:224
+#: proxmox-backup/www/Utils.js:441 proxmox-backup/www/Utils.js:455
+#: proxmox-backup/www/Utils.js:464
+#: proxmox-backup/www/config/EncryptionKeysView.js:130
+#: proxmox-backup/www/tape/BackupJobs.js:224
 #: proxmox-backup/www/tape/ChangerStatus.js:261
 #: proxmox-backup/www/tape/ChangerStatus.js:372
 #: proxmox-backup/www/tape/ChangerStatus.js:412
@@ -4684,6 +4788,10 @@ msgstr "Fallen lassen"
 #: proxmox-backup/www/panel/PrunePanel.js:65
 msgid "Dry Run"
 msgstr "Probelauf"
+
+#: pve-manager/www/manager6/sdn/StatusView.js:73
+msgid "Dry-Run"
+msgstr ""
 
 #: pve-manager/www/manager6/qemu/AudioEdit.js:38
 msgid "Dummy Device"
@@ -4925,8 +5033,8 @@ msgstr "EVPN Zone {} hat keinen definierten Controller!"
 #: proxmox-backup/www/config/UserView.js:175
 #: proxmox-backup/www/config/VerifyView.js:172
 #: proxmox-backup/www/config/WebauthnView.js:32
-#: proxmox-backup/www/datastore/Content.js:1005
-#: proxmox-backup/www/datastore/OptionView.js:163
+#: proxmox-backup/www/datastore/Content.js:1090
+#: proxmox-backup/www/datastore/OptionView.js:169
 #: proxmox-backup/www/tape/BackupJobs.js:175
 #: proxmox-backup/www/tape/ChangerConfig.js:94
 #: proxmox-backup/www/tape/DriveConfig.js:134
@@ -5231,17 +5339,18 @@ msgstr "OSD verschlüsseln"
 #: pve-manager/www/manager6/Utils.js:286
 #: pve-manager/www/manager6/grid/BackupView.js:374
 #: pve-manager/www/manager6/storage/BackupView.js:207
-#: proxmox-backup/www/Utils.js:24 proxmox-backup/www/datastore/Content.js:1177
+#: proxmox-backup/www/Utils.js:24 proxmox-backup/www/datastore/Content.js:1285
 msgid "Encrypted"
 msgstr "Verschlüsselt"
 
-#: proxmox-backup/www/window/SyncJobEdit.js:470
+#: proxmox-backup/www/window/SyncJobEdit.js:484
 msgid "Encrypted Only"
 msgstr "Nur Verschlüsselte"
 
 #: proxmox-widget-toolkit/src/panel/SmtpEditPanel.js:76
 #: pmg-gui/js/PBSConfig.js:168 pve-manager/www/manager6/storage/PBSEdit.js:474
 #: proxmox-backup/www/tape/PoolConfig.js:129
+#: proxmox-backup/www/window/SyncJobEdit.js:579
 msgid "Encryption"
 msgstr "Verschlüsselung"
 
@@ -5253,9 +5362,17 @@ msgstr "Schlüssel-Fingerprint"
 #: pve-manager/www/manager6/storage/PBSEdit.js:269
 #: proxmox-backup/www/tape/window/EncryptionEdit.js:8
 #: proxmox-backup/www/tape/window/PoolEdit.js:63
+#: proxmox-backup/www/window/EncryptionKeysEdit.js:218
 msgid "Encryption Key"
 msgstr "Krypto Schlüssel"
 
+#: proxmox-backup/www/window/EncryptionKeysEdit.js:260
+#, fuzzy
+msgid "Encryption Key ID"
+msgstr "Krypto Schlüssel"
+
+#: proxmox-backup/www/NavigationTree.js:78
+#: proxmox-backup/www/config/EncryptionKeysView.js:11
 #: proxmox-backup/www/tape/TapeManagement.js:49
 msgid "Encryption Keys"
 msgstr "Krypto Schlüssel"
@@ -5310,7 +5427,7 @@ msgstr ""
 "UEFI 2023 Zertifikate von Microsoft, welche für \"secure boot\" Updates "
 "benötigt werden, hinzufügen."
 
-#: proxmox-backup/www/datastore/OptionView.js:286
+#: proxmox-backup/www/datastore/OptionView.js:315
 msgid "Ensure underlying storage honors access time updates"
 msgstr ""
 "Stellen Sie sicher, dass der zugrundeliegende Speicher Zugriffszeit-Updates "
@@ -5373,7 +5490,7 @@ msgstr "Umgebung"
 msgid "Erase data"
 msgstr "Daten löschen"
 
-#: proxmox-backup/www/Utils.js:749
+#: proxmox-backup/www/Utils.js:752
 msgid "Erasing"
 msgstr "Löschen"
 
@@ -5504,10 +5621,14 @@ msgstr "Löschen"
 #: pve-manager/www/manager6/window/UploadToStorage.js:116
 #: pve-manager/www/manager6/window/UploadToStorage.js:122
 #: pve-manager/www/manager6/window/UploadToStorage.js:130
-#: proxmox-backup/www/LoginView.js:65 proxmox-backup/www/LoginView.js:108
-#: proxmox-backup/www/LoginView.js:207 proxmox-backup/www/ServerStatus.js:105
-#: proxmox-backup/www/ServerStatus.js:138 proxmox-backup/www/Utils.js:566
+#: proxmox-backup/www/LoginView.js:66 proxmox-backup/www/LoginView.js:109
+#: proxmox-backup/www/LoginView.js:208 proxmox-backup/www/ServerStatus.js:105
+#: proxmox-backup/www/ServerStatus.js:138 proxmox-backup/www/Utils.js:569
 #: proxmox-backup/www/config/ACLView.js:81
+#: proxmox-backup/www/config/EncryptionKeysView.js:51
+#: proxmox-backup/www/config/EncryptionKeysView.js:61
+#: proxmox-backup/www/config/EncryptionKeysView.js:171
+#: proxmox-backup/www/config/EncryptionKeysView.js:184
 #: proxmox-backup/www/config/GCView.js:88
 #: proxmox-backup/www/config/PruneView.js:127
 #: proxmox-backup/www/config/SyncView.js:164
@@ -5515,14 +5636,14 @@ msgstr "Löschen"
 #: proxmox-backup/www/config/UserView.js:134
 #: proxmox-backup/www/config/VerifyView.js:118
 #: proxmox-backup/www/datastore/Content.js:132
-#: proxmox-backup/www/datastore/Content.js:569
-#: proxmox-backup/www/datastore/Content.js:696
-#: proxmox-backup/www/datastore/Content.js:1308
+#: proxmox-backup/www/datastore/Content.js:602
+#: proxmox-backup/www/datastore/Content.js:780
+#: proxmox-backup/www/datastore/Content.js:1416
 #: proxmox-backup/www/datastore/DataStoreListSummary.js:148
 #: proxmox-backup/www/datastore/Notes.js:59
 #: proxmox-backup/www/datastore/Prune.js:139
-#: proxmox-backup/www/datastore/Summary.js:271
-#: proxmox-backup/www/datastore/Summary.js:296
+#: proxmox-backup/www/datastore/Summary.js:281
+#: proxmox-backup/www/datastore/Summary.js:306
 #: proxmox-backup/www/tape/BackupJobs.js:121
 #: proxmox-backup/www/tape/ChangerStatus.js:227
 #: proxmox-backup/www/tape/ChangerStatus.js:285
@@ -5728,6 +5849,11 @@ msgstr "Text aus Anhängen extrahieren"
 msgid "FQDN or IP-address"
 msgstr "FQDN oder IP-Adresse"
 
+#: pve-manager/www/manager6/sdn/SdnDiffView.js:69
+#, fuzzy
+msgid "FRR Config"
+msgstr "Konfiguration"
+
 #: pve-manager/www/manager6/storage/CephFSEdit.js:78
 #: pve-manager/www/manager6/storage/CephFSEdit.js:90
 msgid "FS Name"
@@ -5756,6 +5882,11 @@ msgstr ""
 #: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:440
 msgid "Failed"
 msgstr "Fehlgeschlagen"
+
+#: proxmox-backup/www/window/EncryptionKeysEdit.js:330
+#, fuzzy
+msgid "Failed to parse key - {0}"
+msgstr "konnte den Wert nicht parsen: {}"
 
 #: proxmox-datacenter-manager/ui/src/dashboard/remote_panel.rs:87
 msgid "Failed to reach all remotes"
@@ -5828,6 +5959,10 @@ msgstr "Hole die letzten Tasks von den Remotes"
 msgid "Fetch system update list from remotes"
 msgstr "Hole die System Update Liste von den Remotes"
 
+#: pve-manager/www/manager6/sdn/SdnDiffView.js:32
+msgid "Fetching diff..."
+msgstr ""
+
 #: proxmox-widget-toolkit/src/node/Tasks.js:211
 #: proxmox-widget-toolkit/src/window/NotificationMatcherEdit.js:1308
 #: pmg-gui/js/Utils.js:372 pmg-gui/js/Utils.js:605
@@ -5854,7 +5989,7 @@ msgstr "Felder"
 #: pve-manager/www/manager6/Utils.js:2136
 #: pve-manager/www/manager6/node/Certificates.js:312
 #: pve-manager/www/manager6/window/UploadToStorage.js:202
-#: proxmox-backup/www/Utils.js:882
+#: proxmox-backup/www/Utils.js:885
 #: proxmox-yew-comp/src/acme/certificate_list.rs:351
 #: proxmox-yew-comp/src/acme/certificate_list.rs:379
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:145
@@ -5898,8 +6033,8 @@ msgid "Filename"
 msgstr "Dateiname"
 
 #: pve-manager/www/manager6/node/Directory.js:39
-#: proxmox-backup/www/DirectoryList.js:147 proxmox-backup/www/Utils.js:880
-#: proxmox-backup/www/Utils.js:883
+#: proxmox-backup/www/DirectoryList.js:147 proxmox-backup/www/Utils.js:883
+#: proxmox-backup/www/Utils.js:886
 #: proxmox-backup/www/form/PartitionSelector.js:59
 #: proxmox-backup/www/window/CreateDirectory.js:30
 msgid "Filesystem"
@@ -5955,6 +6090,7 @@ msgstr "Filter sind additiv"
 #: pve-manager/www/manager6/node/Certificates.js:50
 #: pve-manager/www/manager6/node/Certificates.js:357
 #: pve-manager/www/manager6/storage/PBSEdit.js:232
+#: proxmox-backup/www/config/EncryptionKeysView.js:324
 #: proxmox-backup/www/config/RemoteView.js:149
 #: proxmox-backup/www/config/S3ClientView.js:135
 #: proxmox-backup/www/panel/NodeInfo.js:33
@@ -5970,7 +6106,7 @@ msgstr "Filter sind additiv"
 #: proxmox-datacenter-manager/ui/src/remotes/node_url_list.rs:271
 #: proxmox-yew-comp/src/acme/certificate_list.rs:352
 #: proxmox-yew-comp/src/acme/certificate_list.rs:422
-#: proxmox-yew-comp/src/node_status_panel.rs:103
+#: proxmox-yew-comp/src/node_status_panel.rs:113
 msgid "Fingerprint"
 msgstr "Fingerabdruck"
 
@@ -6203,7 +6339,7 @@ msgstr "Medium formatieren"
 msgid "Format/Erase"
 msgstr "Formatieren/Löschen"
 
-#: proxmox-backup/www/Utils.js:750
+#: proxmox-backup/www/Utils.js:753
 msgid "Formatting"
 msgstr "Formatieren"
 
@@ -6354,20 +6490,20 @@ msgstr "vollständiger Klon"
 msgid "GB"
 msgstr "GB"
 
-#: proxmox-backup/www/Utils.js:910
+#: proxmox-backup/www/Utils.js:913
 msgid "GC Access-Time Cutoff"
 msgstr "GC Zugriffsstichzeit"
 
-#: proxmox-backup/www/datastore/OptionView.js:297
+#: proxmox-backup/www/datastore/OptionView.js:326
 msgid "GC Access-Time Cutoff (minutes)"
 msgstr "GC Zugriffsstichzeit (Minuten)"
 
-#: proxmox-backup/www/Utils.js:902
-#: proxmox-backup/www/datastore/OptionView.js:281
+#: proxmox-backup/www/Utils.js:905
+#: proxmox-backup/www/datastore/OptionView.js:310
 msgid "GC Access-Time Support Check"
 msgstr "GC Zugriffszeit Unterstützungsprüfung"
 
-#: proxmox-backup/www/datastore/OptionView.js:305
+#: proxmox-backup/www/datastore/OptionView.js:334
 msgid "GC Cache Capacity (# chunks)"
 msgstr "GC Cache Kapazität (# Chunks)"
 
@@ -6376,9 +6512,22 @@ msgstr "GC Cache Kapazität (# Chunks)"
 msgid "GC Schedule"
 msgstr "GC Zeitplan"
 
-#: proxmox-backup/www/Utils.js:915
+#: proxmox-backup/www/Utils.js:918
 msgid "GC cache capacity"
 msgstr "GC Cache Kapazität"
+
+#: proxmox-backup/www/datastore/OptionView.js:232
+#: proxmox-backup/www/datastore/OptionView.js:240
+#, fuzzy
+msgid "GC on Unmount"
+msgstr "Unmount"
+
+#: proxmox-backup/www/datastore/Summary.js:184
+#: proxmox-backup/www/datastore/Summary.js:371
+#: proxmox-backup/www/window/NotificationThresholds.js:43
+#, fuzzy
+msgid "GET"
+msgstr "GPT"
 
 #: proxmox-backup/www/Utils.js:438
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:260
@@ -6397,7 +6546,7 @@ msgstr "Garbage Collection Zeitplan"
 msgid "Garbage Collection"
 msgstr "Garbage Collection"
 
-#: proxmox-backup/www/Utils.js:480
+#: proxmox-backup/www/Utils.js:482
 msgid "Garbage collection"
 msgstr "Garbage collection"
 
@@ -6511,9 +6660,10 @@ msgstr "Greylisted Mails"
 #: pve-manager/www/manager6/form/GroupSelector.js:26
 #: pve-manager/www/manager6/sdn/VnetACLView.js:29
 #: pve-manager/www/manager6/sdn/VnetACLView.js:160
-#: proxmox-backup/www/Utils.js:437 proxmox-backup/www/datastore/Content.js:937
+#: proxmox-backup/www/Utils.js:437 proxmox-backup/www/datastore/Content.js:1021
 #: proxmox-backup/www/form/GroupFilter.js:521
 #: proxmox-backup/www/form/GroupSelector.js:47
+#: proxmox-backup/www/window/GroupMove.js:42
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:257
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:304
 msgid "Group"
@@ -6521,7 +6671,7 @@ msgstr "Gruppe"
 
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:298
 #: proxmox-backup/www/tape/window/TapeBackupJob.js:213
-#: proxmox-backup/www/window/SyncJobEdit.js:555
+#: proxmox-backup/www/window/SyncJobEdit.js:569
 msgid "Group Filter"
 msgstr "Gruppenfilter"
 
@@ -6561,7 +6711,7 @@ msgstr "Gruppenname Attr."
 #: pve-manager/www/manager6/dc/RealmSyncJob.js:340
 #: pve-manager/www/manager6/dc/SyncWindow.js:104
 #: pve-manager/www/manager6/dc/UserView.js:221
-#: proxmox-backup/www/datastore/Summary.js:108
+#: proxmox-backup/www/datastore/Summary.js:612
 msgid "Groups"
 msgstr "Gruppen"
 
@@ -6607,7 +6757,7 @@ msgstr "Gast-Notizen"
 msgid "Guest OS"
 msgstr "Gast Betriebssytem"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:567
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:596
 msgid "Guest Panels"
 msgstr "Gast Panels"
 
@@ -6630,7 +6780,7 @@ msgstr "Gäste mit der höchsten CPU Auslastung"
 msgid "Guests Without Backup Job"
 msgstr "Gäste ohne Backup-Job"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:601
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:630
 msgid "Guests with Highest CPU Usage"
 msgstr "Gäste mit der höchsten CPU Auslastung"
 
@@ -6734,6 +6884,12 @@ msgstr "Laufwerksspeicher"
 #: proxmox-yew-comp/src/node_info.rs:204
 msgid "HD space (root)"
 msgstr "Laufwerksspeicherplatz (root)"
+
+#: proxmox-backup/www/datastore/Summary.js:211
+#: proxmox-backup/www/datastore/Summary.js:374
+#: proxmox-backup/www/window/NotificationThresholds.js:70
+msgid "HEAD"
+msgstr ""
 
 #: pve-manager/www/manager6/dc/MetricServerView.js:682
 msgid "HTTP Headers (JSON)"
@@ -6867,6 +7023,7 @@ msgstr "Hohe Auslastung"
 
 #: proxmox-widget-toolkit/src/window/ACMEPluginEdit.js:218
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:262
+#: proxmox-backup/www/config/EncryptionKeysView.js:319
 #: proxmox-backup/www/tape/EncryptionKeys.js:123
 #: proxmox-backup/www/tape/form/KeySelector.js:23
 #: proxmox-backup/www/tape/window/EncryptionEdit.js:24
@@ -6894,7 +7051,7 @@ msgstr "Hookscript"
 #: pve-manager/www/manager6/ceph/ServiceList.js:435
 #: pve-manager/www/manager6/ceph/Services.js:168
 #: proxmox-backup/www/config/RemoteView.js:136
-#: proxmox-backup/www/datastore/Summary.js:184
+#: proxmox-backup/www/datastore/Summary.js:95
 #: proxmox-backup/www/form/GroupFilter.js:535
 #: proxmox-backup/www/form/RemoteSelector.js:26
 #: proxmox-backup/www/window/InfluxDbEdit.js:153
@@ -7009,7 +7166,7 @@ msgstr "ICMP-Typ"
 #: pve-manager/www/manager6/form/PCIMapSelector.js:35
 #: pve-manager/www/manager6/ha/Rules.js:114
 #: pve-manager/www/manager6/window/GuestImport.js:889
-#: proxmox-backup/www/Utils.js:628 proxmox-backup/www/tape/ChangerStatus.js:42
+#: proxmox-backup/www/Utils.js:631 proxmox-backup/www/tape/ChangerStatus.js:42
 #: proxmox-backup/www/tape/ChangerStatus.js:743
 #: proxmox-backup/www/tape/ChangerStatus.js:851
 #: proxmox-backup/www/tape/ChangerStatus.js:972
@@ -7045,11 +7202,11 @@ msgid "ID/Node/Vendor&Device"
 msgstr "Name / Knoten / Hersteller:Gerät"
 
 #: proxmox-backup/www/ServerStatus.js:276
-#: proxmox-backup/www/datastore/Summary.js:367
+#: proxmox-backup/www/datastore/Summary.js:431
 msgid "IO Delay"
 msgstr "IO-Verzögerung"
 
-#: proxmox-backup/www/datastore/Summary.js:365
+#: proxmox-backup/www/datastore/Summary.js:429
 msgid "IO Delay (ms)"
 msgstr "IO-Verzögerung (ms)"
 
@@ -7223,9 +7380,16 @@ msgstr "ISO-Image"
 msgid "Id"
 msgstr "Id"
 
-#: proxmox-backup/www/Utils.js:770
+#: proxmox-backup/www/Utils.js:773
 msgid "Idle"
 msgstr "Leerlauf"
+
+#: proxmox-backup/www/window/GroupMove.js:66
+msgid ""
+"If a group with the same name already exists in the target namespace, merge "
+"snapshots into it. Requires matching ownership and non-overlapping snapshot "
+"times."
+msgstr ""
 
 #: proxmox-datacenter-manager/ui/src/dashboard/refresh_config_edit.rs:97
 msgid ""
@@ -7299,6 +7463,7 @@ msgid "Import/Export Slots"
 msgstr "Import/Export-Slots"
 
 #: pve-manager/www/manager6/storage/PBSEdit.js:10
+#: proxmox-backup/www/window/EncryptionKeysEdit.js:9
 msgid "Important: Save your Encryption Key"
 msgstr "Wichtig: Speichern Sie den Schlüssel"
 
@@ -7457,7 +7622,7 @@ msgstr "Eingehend"
 msgid "Initialize Disk with GPT"
 msgstr "Initialisiere Disk mit GPT"
 
-#: proxmox-backup/www/Utils.js:875 proxmox-backup/www/Utils.js:877
+#: proxmox-backup/www/Utils.js:878 proxmox-backup/www/Utils.js:880
 msgid "Inode"
 msgstr "Inode"
 
@@ -7476,7 +7641,7 @@ msgstr "Eingabe ungültig: {}"
 msgid "Input log level"
 msgstr "Input Log Level"
 
-#: proxmox-backup/www/datastore/Summary.js:357
+#: proxmox-backup/www/datastore/Summary.js:421
 msgid "Input/Output Operations per Second (IOPS)"
 msgstr "Input/Output-Operationen pro Sekunde (IOPS)"
 
@@ -7535,6 +7700,11 @@ msgstr "Interface existiert auf dem Knoten nicht"
 msgid "Interfaces"
 msgstr "Interfaces"
 
+#: pve-manager/www/manager6/sdn/SdnDiffView.js:88
+#, fuzzy
+msgid "Interfaces Config"
+msgstr "Interfaces"
+
 #: pmg-gui/js/MailProxyPorts.js:49
 msgid "Internal SMTP Port"
 msgstr "Interner SMTP-Port"
@@ -7575,7 +7745,7 @@ msgstr "Ungültige Dateigröße"
 msgid "Invalid file size: "
 msgstr "Ungültige Dateigröße: "
 
-#: proxmox-backup/www/form/PermissionPathSelector.js:136
+#: proxmox-backup/www/form/PermissionPathSelector.js:137
 msgid "Invalid permission path."
 msgstr "Ungültiger Berechtigungspfad."
 
@@ -7684,13 +7854,13 @@ msgstr "Job-Detail"
 
 #: pve-manager/www/manager6/Utils.js:2206
 #: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:125
-#: proxmox-backup/www/Utils.js:474 proxmox-backup/www/config/PruneView.js:202
+#: proxmox-backup/www/Utils.js:476 proxmox-backup/www/config/PruneView.js:202
 #: proxmox-backup/www/config/SyncView.js:301
 #: proxmox-backup/www/config/VerifyView.js:204
 #: proxmox-backup/www/tape/BackupJobs.js:203
 #: proxmox-backup/www/tape/window/TapeBackupJob.js:78
 #: proxmox-backup/www/window/PruneJobEdit.js:154
-#: proxmox-backup/www/window/SyncJobEdit.js:428
+#: proxmox-backup/www/window/SyncJobEdit.js:431
 #: proxmox-backup/www/window/VerifyJobEdit.js:220
 msgid "Job ID"
 msgstr "Job-ID"
@@ -7846,6 +8016,7 @@ msgid "Keep the API token on the remote"
 msgstr "Das API Token auf dem Remote erhalten"
 
 #: pve-manager/www/manager6/storage/PBSEdit.js:45
+#: proxmox-backup/www/window/EncryptionKeysEdit.js:54
 msgid ""
 "Keep your encryption key safe, but easily accessible for disaster recovery."
 msgstr ""
@@ -7870,11 +8041,20 @@ msgstr "Kernel Scheduler Einstellungen"
 #: pve-manager/www/manager6/storage/PBSEdit.js:370
 #: pve-manager/www/manager6/window/GuestImport.js:968
 #: pve-manager/www/manager6/window/Snapshot.js:127
+#: proxmox-backup/www/Utils.js:454
+#: proxmox-backup/www/window/EncryptionKeysEdit.js:42
 #: proxmox-yew-comp/src/configuration/pve/lxc_resources_panel/desktop.rs:600
 #: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/desktop.rs:797
 #: proxmox-yew-comp/src/property_view/property_grid.rs:245
 msgid "Key"
 msgstr "Schlüssel"
+
+#: proxmox-backup/www/config/EncryptionKeysView.js:295
+#: proxmox-backup/www/form/EncryptionKeySelector.js:16
+#: proxmox-backup/www/window/EncryptionKeysEdit.js:32
+#, fuzzy
+msgid "Key ID"
+msgstr "Schlüssel IDs"
 
 #: pmg-gui/js/UserEdit.js:187 pve-manager/www/manager6/dc/UserEdit.js:134
 msgid "Key IDs"
@@ -7883,6 +8063,11 @@ msgstr "Schlüssel IDs"
 #: pmg-gui/js/DKIMSettings.js:68 pmg-gui/js/DKIMSettings.js:171
 msgid "Key Size"
 msgstr "Schlüssel Größe"
+
+#: proxmox-backup/www/window/EncryptionKeysEdit.js:268
+#, fuzzy
+msgid "Key Source"
+msgstr "Quelle"
 
 #: pve-manager/www/manager6/dc/OptionView.js:76
 #: pve-manager/www/manager6/qemu/KeyboardEdit.js:8
@@ -7969,7 +8154,7 @@ msgstr "LXC Container"
 msgid "Label"
 msgstr "Etikett"
 
-#: proxmox-backup/www/Utils.js:583
+#: proxmox-backup/www/Utils.js:586
 msgid "Label Information"
 msgstr "Etiketten-Information"
 
@@ -7985,7 +8170,7 @@ msgstr "Medium Etikettieren"
 #: pmg-gui/js/LoginView.js:383 pmg-gui/js/MainView.js:224
 #: pmg-gui/js/QuarantineView.js:305 pve-manager/www/manager6/Workspace.js:451
 #: pve-manager/www/manager6/window/LoginWindow.js:401
-#: proxmox-backup/www/LoginView.js:324 proxmox-backup/www/MainView.js:280
+#: proxmox-backup/www/LoginView.js:331 proxmox-backup/www/MainView.js:280
 #: proxmox-datacenter-manager/ui/src/top_nav_bar.rs:158
 #: pve-yew-mobile-gui/src/pages/page_settings.rs:39
 #: pmg-yew-quarantine-gui/src/page_spam_list.rs:246
@@ -8086,7 +8271,7 @@ msgstr "Nur neueste"
 msgid "Layout"
 msgstr "Layout"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:598
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:627
 msgid "Leaderboards"
 msgstr "Ranglisten"
 
@@ -8136,6 +8321,12 @@ msgstr ""
 "diese Regel nur angewandt, wenn die Anfrage aus einem der spezifizierten "
 "Netzwerke kommt."
 
+#: proxmox-backup/www/window/NamespaceMove.js:109
+msgid ""
+"Limit how many levels of child namespaces to include. Leave empty to move "
+"the entire subtree."
+msgstr ""
+
 #: pmg-gui/js/Settings.js:266 pve-manager/www/manager6/window/Settings.js:362
 #: proxmox-backup/www/window/Settings.js:266
 msgid "Line Height"
@@ -8167,7 +8358,7 @@ msgid "Linux Bridge"
 msgstr "Linux Bridge"
 
 #: proxmox-datacenter-manager/ui/src/dashboard/guest_panel.rs:225
-#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:581
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:610
 msgid "Linux Container"
 msgstr "Linux Container"
 
@@ -8253,7 +8444,7 @@ msgid "Load failed"
 msgstr "Ladevorgang fehlgeschlagen"
 
 #: proxmox-widget-toolkit/src/window/ACMEAccount.js:79
-#: pve-manager/www/manager6/node/ACME.js:143 proxmox-backup/www/Utils.js:742
+#: pve-manager/www/manager6/node/ACME.js:143 proxmox-backup/www/Utils.js:745
 #: proxmox-yew-comp/src/acme/acme_register_account.rs:158
 msgid "Loading"
 msgstr "Laden..."
@@ -8275,7 +8466,7 @@ msgstr "Lade {}..."
 msgid "Loading..."
 msgstr "Laden..."
 
-#: pmg-gui/js/UserManagement.js:13 proxmox-backup/www/Utils.js:868
+#: pmg-gui/js/UserManagement.js:13 proxmox-backup/www/Utils.js:871
 #: proxmox-backup/www/window/DataStoreEdit.js:62
 msgid "Local"
 msgstr "Lokal"
@@ -8288,26 +8479,22 @@ msgstr "Lokales Backup/Wiederherstellen"
 msgid "Local Cache"
 msgstr "Lokaler Cache"
 
-#: proxmox-backup/www/datastore/Summary.js:99
-msgid "Local Cache Usage"
-msgstr "Lokale Cache-Nutzung"
-
-#: proxmox-backup/www/datastore/Summary.js:450
+#: proxmox-backup/www/datastore/Summary.js:520
 msgid "Local Cache Usage (bytes)"
 msgstr "Lokale Cache-Nutzung (bytes)"
 
 #: proxmox-backup/www/tape/window/TapeBackupJob.js:87
-#: proxmox-backup/www/window/SyncJobEdit.js:141
+#: proxmox-backup/www/window/SyncJobEdit.js:144
 #: proxmox-backup/www/window/VerifyJobEdit.js:96
 msgid "Local Datastore"
 msgstr "Lokaler Datastore"
 
 #: proxmox-backup/www/tape/window/TapeBackupJob.js:98
-#: proxmox-backup/www/window/SyncJobEdit.js:170
+#: proxmox-backup/www/window/SyncJobEdit.js:173
 msgid "Local Namespace"
 msgstr "Lokaler Namespace"
 
-#: proxmox-backup/www/window/SyncJobEdit.js:54
+#: proxmox-backup/www/window/SyncJobEdit.js:56
 msgid "Local Owner"
 msgstr "Lokaler Besitzer"
 
@@ -8319,16 +8506,16 @@ msgstr "Lokaler Besitzer/Benutzer"
 msgid "Local Store"
 msgstr "Lokaler Datastore"
 
-#: proxmox-backup/www/window/SyncJobEdit.js:40
+#: proxmox-backup/www/window/SyncJobEdit.js:41
 msgid "Local User"
 msgstr "Lokaler Benutzer"
 
-#: proxmox-backup/www/Utils.js:747
+#: proxmox-backup/www/Utils.js:750
 msgid "Locating"
 msgstr "Lokalisieren"
 
 #: proxmox-backup/www/tape/TapeInventory.js:303
-#: proxmox-backup/www/window/SyncJobEdit.js:239
+#: proxmox-backup/www/window/SyncJobEdit.js:242
 msgid "Location"
 msgstr "Ort"
 
@@ -8414,7 +8601,7 @@ msgstr "Einloggen und Token erstellen"
 
 #: pmg-gui/js/LoginView.js:137
 #: pve-manager/www/manager6/window/LoginWindow.js:160
-#: proxmox-backup/www/LoginView.js:108
+#: proxmox-backup/www/LoginView.js:109
 msgid "Login failed. Please try again"
 msgstr "Anmeldung fehlgeschlagen. Bitte versuchen Sie es noch einmal."
 
@@ -8583,7 +8770,7 @@ msgid "Maintenance Type"
 msgstr "Instandhaltungsweise"
 
 #: proxmox-backup/www/datastore/DataStoreListSummary.js:166
-#: proxmox-backup/www/datastore/OptionView.js:225
+#: proxmox-backup/www/datastore/OptionView.js:254
 #: proxmox-backup/www/window/MaintenanceOptions.js:19
 msgid "Maintenance mode"
 msgstr "Instandhaltungsmodus"
@@ -8611,6 +8798,12 @@ msgstr ""
 msgid "Make sure to insert the tape into the selected drive."
 msgstr ""
 "Stellen Sie sicher, dass das Band ins richtige Laufwerk Eingesetzt wird."
+
+#: proxmox-backup/www/config/EncryptionKeysView.js:108
+msgid ""
+"Make sure you have a backup of the encryption key!<br><br>You will not be "
+"able to decrypt contents encrypted with this key once removed."
+msgstr ""
 
 #: pve-manager/www/manager6/ceph/OSD.js:876
 msgid "Manage Global Flags"
@@ -8748,6 +8941,7 @@ msgid "Max Body Size (bytes)"
 msgstr "Max. Body Größe (bytes)"
 
 #: proxmox-backup/www/tape/window/TapeBackup.js:50
+#: proxmox-backup/www/window/NamespaceMove.js:99
 msgid "Max Depth"
 msgstr "Max. Tiefe"
 
@@ -8781,7 +8975,7 @@ msgstr "Max. Scan Größe"
 #: proxmox-backup/www/form/NamespaceMaxDepth.js:8
 #: proxmox-backup/www/tape/window/TapeBackupJob.js:164
 #: proxmox-backup/www/window/PruneJobEdit.js:107
-#: proxmox-backup/www/window/SyncJobEdit.js:394
+#: proxmox-backup/www/window/SyncJobEdit.js:397
 #: proxmox-backup/www/window/VerifyJobEdit.js:119
 msgid "Max. Depth"
 msgstr "Max. Tiefe"
@@ -8823,7 +9017,7 @@ msgstr "Mai"
 msgid "Media"
 msgstr "Medium"
 
-#: proxmox-backup/www/Utils.js:475 proxmox-backup/www/tape/BackupJobs.js:218
+#: proxmox-backup/www/Utils.js:477 proxmox-backup/www/tape/BackupJobs.js:218
 #: proxmox-backup/www/tape/window/LabelMedia.js:65
 #: proxmox-backup/www/tape/window/PoolEdit.js:10
 #: proxmox-backup/www/tape/window/TapeBackup.js:57
@@ -8877,6 +9071,8 @@ msgstr "Mitglieder"
 #: pve-manager/www/manager6/qemu/MemoryEdit.js:200
 #: pve-manager/www/manager6/window/GuestImport.js:514
 #: pve-manager/www/manager6/window/Restore.js:361
+#: proxmox-datacenter-manager/ui/src/dashboard/gauge_panel.rs:186
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:558
 #: pve-yew-mobile-gui/src/pages/page_dashboard.rs:135
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/dashboard_panel.rs:183
 #: pve-yew-mobile-gui/src/pages/page_node_status/dashboard_panel.rs:98
@@ -8896,6 +9092,7 @@ msgid "Memory Pressure Stall"
 msgstr "Arbeitsspeicher Verzögerung durch Auslastung"
 
 #: pve-manager/www/manager6/panel/GuestSummary.js:104
+#: proxmox-datacenter-manager/ui/src/dashboard/gauge_panel.rs:41
 #: proxmox-datacenter-manager/ui/src/widget/pve_node_selector.rs:157
 #: proxmox-datacenter-manager/ui/src/pbs/node/overview.rs:258
 #: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:262
@@ -8930,6 +9127,22 @@ msgstr "Speicherverbrauch"
 msgid "Memory usage (PSS)"
 msgstr "Speicherverbrauch (PSS)"
 
+#: proxmox-backup/www/window/GroupMove.js:61
+#, fuzzy
+msgid "Merge Group"
+msgstr "Gruppe entfernen"
+
+#: proxmox-backup/www/window/NamespaceMove.js:115
+#, fuzzy
+msgid "Merge Groups"
+msgstr "Gruppen Überschreiben"
+
+#: proxmox-backup/www/window/NamespaceMove.js:120
+msgid ""
+"Merge snapshots into existing groups with the same name in the target "
+"namespace. Requires matching ownership and non-overlapping snapshot times."
+msgstr ""
+
 #: proxmox-widget-toolkit/src/window/ZFSDetail.js:153
 #: pve-manager/www/manager6/dc/Log.js:79
 msgid "Message"
@@ -8939,11 +9152,11 @@ msgstr "Meldung"
 msgid "Message Size (bytes)"
 msgstr "Nachrichtengröße (Bytes)"
 
-#: pve-manager/www/manager6/ceph/FS.js:170
+#: pve-manager/www/manager6/ceph/FS.js:171
 msgid "Metadata Pool"
 msgstr "Metadatenpool"
 
-#: pve-manager/www/manager6/ceph/FS.js:182
+#: pve-manager/www/manager6/ceph/FS.js:183
 #: pve-manager/www/manager6/ceph/Services.js:35
 msgid "Metadata Servers"
 msgstr "Metadata-Server"
@@ -9177,12 +9390,12 @@ msgstr "Monats"
 #: pve-manager/www/manager6/panel/IPView.js:101
 #: pve-manager/www/manager6/qemu/Config.js:84
 #: proxmox-backup/www/DirectoryList.js:101
-#: proxmox-backup/www/datastore/Content.js:1327
+#: proxmox-backup/www/datastore/Content.js:1435
 msgid "More"
 msgstr "Mehr"
 
 #: pve-manager/www/manager6/Utils.js:2189
-#: proxmox-backup/www/datastore/Summary.js:286
+#: proxmox-backup/www/datastore/Summary.js:296
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:200
 msgid "Mount"
 msgstr "Mount"
@@ -9226,6 +9439,23 @@ msgstr "Mount-Point-Volumen werden auch gelöscht."
 msgid "Mounted"
 msgstr "Eingehängt"
 
+#: proxmox-backup/www/datastore/Content.js:1541
+#: proxmox-backup/www/window/GroupMove.js:9
+#: proxmox-backup/www/window/NamespaceMove.js:8
+#, fuzzy
+msgid "Move"
+msgstr "Disk Transfer"
+
+#: proxmox-backup/www/window/GroupMove.js:14
+#, fuzzy
+msgid "Move Backup Group '{0}'"
+msgstr "Backup Gruppe"
+
+#: proxmox-backup/www/window/NamespaceMove.js:14
+#, fuzzy
+msgid "Move Namespace '{0}'"
+msgstr "Namespace '{0}'"
+
 #: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:497
 msgid "Move Row down"
 msgstr "Reihe nach unten verschieben"
@@ -9259,6 +9489,16 @@ msgstr "Laufwerk verschieben"
 #: pve-manager/www/manager6/qemu/HardwareView.js:479
 msgid "Move disk to another storage"
 msgstr "Laufwerk zu anderem Speicher verschieben"
+
+#: proxmox-backup/www/datastore/Content.js:1145
+#, fuzzy
+msgid "Move group '{0}'"
+msgstr "Gruppen von '{0}'"
+
+#: proxmox-backup/www/datastore/Content.js:1147
+#, fuzzy
+msgid "Move namespace '{0}'"
+msgstr "Namespace '{0}' entfernen"
 
 #: pve-manager/www/manager6/lxc/Resources.js:276
 msgid "Move volume to another storage"
@@ -9367,7 +9607,7 @@ msgstr ""
 #: pmg-gui/js/UserView.js:205 pmg-gui/js/Utils.js:537 pmg-gui/js/Utils.js:594
 #: pmg-gui/js/Utils.js:627 pmg-gui/js/Utils.js:659 pmg-gui/js/Utils.js:698
 #: pmg-gui/js/VirusCharts.js:25 pve-manager/www/manager6/ceph/FS.js:25
-#: pve-manager/www/manager6/ceph/FS.js:158
+#: pve-manager/www/manager6/ceph/FS.js:159
 #: pve-manager/www/manager6/ceph/Pool.js:61
 #: pve-manager/www/manager6/ceph/Pool.js:310
 #: pve-manager/www/manager6/ceph/ServiceList.js:426
@@ -9438,7 +9678,7 @@ msgstr ""
 #: pve-manager/www/manager6/window/Snapshot.js:67
 #: pve-manager/www/manager6/window/TreeSettingsEdit.js:26
 #: pve-manager/www/manager6/window/USBMapEdit.js:148
-#: proxmox-backup/www/Utils.js:634 proxmox-backup/www/ZFSList.js:66
+#: proxmox-backup/www/Utils.js:637 proxmox-backup/www/ZFSList.js:66
 #: proxmox-backup/www/config/MetricServerView.js:56
 #: proxmox-backup/www/config/UserView.js:244
 #: proxmox-backup/www/dashboard/DataStoreStatistics.js:73
@@ -9516,10 +9756,11 @@ msgstr "Der Name oder Wert darf nicht leer sein."
 #: proxmox-backup/www/Utils.js:432 proxmox-backup/www/config/PruneView.js:217
 #: proxmox-backup/www/config/SyncView.js:333
 #: proxmox-backup/www/config/VerifyView.js:219
-#: proxmox-backup/www/datastore/Content.js:1355
+#: proxmox-backup/www/datastore/Content.js:1463
 #: proxmox-backup/www/form/RemoteTargetSelector.js:126
 #: proxmox-backup/www/tape/window/TapeBackup.js:44
 #: proxmox-backup/www/window/NamespaceEdit.js:9
+#: proxmox-backup/www/window/NamespaceMove.js:66
 #: proxmox-backup/www/window/PruneJobEdit.js:88
 #: proxmox-backup/www/window/VerifyAll.js:66
 #: proxmox-backup/www/window/VerifyJobEdit.js:111
@@ -9529,7 +9770,7 @@ msgstr "Der Name oder Wert darf nicht leer sein."
 msgid "Namespace"
 msgstr "Namespace"
 
-#: proxmox-backup/www/datastore/Content.js:360
+#: proxmox-backup/www/datastore/Content.js:393
 #: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:109
 msgid "Namespace '{0}'"
 msgstr "Namespace '{0}'"
@@ -9679,9 +9920,19 @@ msgstr "Niemals"
 msgid "New Backup"
 msgstr "Neues Backup"
 
+#: proxmox-backup/www/window/NamespaceMove.js:85
+#, fuzzy
+msgid "New Name"
+msgstr "Testname"
+
 #: proxmox-backup/www/window/BackupGroupChangeOwner.js:43
 msgid "New Owner"
 msgstr "Neuer Besitzer"
+
+#: proxmox-backup/www/window/NamespaceMove.js:74
+#, fuzzy
+msgid "New Parent"
+msgstr "Neues Kennwort"
 
 #: proxmox-widget-toolkit/src/window/PasswordEdit.js:41
 msgid "New Password"
@@ -9782,7 +10033,7 @@ msgstr "Kein Account verfügbar."
 msgid "No Accounts configured"
 msgstr "Keine Accounts konfiguriert"
 
-#: proxmox-backup/www/Utils.js:740
+#: proxmox-backup/www/Utils.js:743
 msgid "No Activity"
 msgstr "Keine Aktivitäten"
 
@@ -9951,7 +10202,7 @@ msgstr "Kein VNet konfiguriert."
 msgid "No Warnings/Errors"
 msgstr "Keine Warnungen/Fehler"
 
-#: proxmox-backup/www/datastore/Content.js:394
+#: proxmox-backup/www/datastore/Content.js:427
 msgid "No accessible snapshots found in namespace {0}"
 msgstr "Keine Snapshots in Namespace {0} gefunden"
 
@@ -9978,6 +10229,8 @@ msgstr "Keine Änderung"
 
 #: proxmox-widget-toolkit/src/node/NetworkView.js:83
 #: proxmox-widget-toolkit/src/node/NetworkView.js:441
+#: pve-manager/www/manager6/sdn/SdnDiffView.js:42
+#: pve-manager/www/manager6/sdn/SdnDiffView.js:45
 msgid "No changes"
 msgstr "Keine Änderungen"
 
@@ -10018,6 +10271,11 @@ msgstr "Hier wurde keine Firewall-Regel konfiguriert."
 #: proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:347
 msgid "No guests available"
 msgstr "Keine Gäste verfügbar"
+
+#: proxmox-backup/www/form/EncryptionKeySelector.js:35
+#, fuzzy
+msgid "No key accessible."
+msgstr "Keine Namespaces zugänglich."
 
 #: pmg-gui/js/QuarantineList.js:264
 msgid "No match found"
@@ -10138,7 +10396,7 @@ msgstr "Keine Zone konfiguriert."
 msgid "No {0} configured"
 msgstr "Kein {0} eingerichtet"
 
-#: pve-manager/www/manager6/ceph/FS.js:103
+#: pve-manager/www/manager6/ceph/FS.js:104
 msgid "No {0} configured."
 msgstr "Kein {0} eingerichtet."
 
@@ -10196,7 +10454,8 @@ msgstr "No-Subscription"
 #: pve-manager/www/manager6/panel/TemplateStatusView.js:31
 #: pve-manager/www/manager6/qemu/CreateWizard.js:79
 #: pve-manager/www/manager6/sdn/ControllerView.js:122
-#: pve-manager/www/manager6/sdn/StatusView.js:83
+#: pve-manager/www/manager6/sdn/SdnDiffView.js:58
+#: pve-manager/www/manager6/sdn/StatusView.js:91
 #: pve-manager/www/manager6/sdn/controllers/BgpEdit.js:26
 #: pve-manager/www/manager6/sdn/controllers/IsisEdit.js:26
 #: pve-manager/www/manager6/sdn/fabrics/NodeEdit.js:6
@@ -10226,12 +10485,12 @@ msgstr "Knoten '{0}'"
 msgid "Node Firewall - {0}/{1}"
 msgstr "Knoten Firewall - {0}/{1}"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:548
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:577
 msgid "Node Panels"
 msgstr "Knoten Panels"
 
 #: proxmox-datacenter-manager/ui/src/administration/mod.rs:77
-#: proxmox-yew-comp/src/node_status_panel.rs:219
+#: proxmox-yew-comp/src/node_status_panel.rs:231
 msgid "Node Status"
 msgstr "Knoten Status"
 
@@ -10280,11 +10539,11 @@ msgstr "Knoten mit höchster CPU-Auslastung"
 msgid "Nodes With the Highest Memory Usage"
 msgstr "Knoten mit höchster Arbeitsspeicherauslastung"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:608
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:637
 msgid "Nodes with Highest CPU Usage"
 msgstr "Knoten mit höchster CPU-Auslastung"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:615
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:644
 msgid "Nodes with Highest Memory Usage"
 msgstr "Knoten mit höchster Arbeitsspeicherauslastung"
 
@@ -10304,10 +10563,13 @@ msgstr "Nicht produktionsfähige Repositories aktiviert"
 #: pve-manager/www/manager6/storage/PBSEdit.js:240
 #: pve-manager/www/manager6/storage/PBSEdit.js:556
 #: pve-manager/www/manager6/window/BulkAction.js:434
-#: proxmox-backup/www/Utils.js:814 proxmox-backup/www/Utils.js:876
-#: proxmox-backup/www/Utils.js:881 proxmox-backup/www/datastore/Content.js:1234
-#: proxmox-backup/www/datastore/Content.js:1253
-#: proxmox-backup/www/datastore/Content.js:1268
+#: proxmox-backup/www/Utils.js:817 proxmox-backup/www/Utils.js:879
+#: proxmox-backup/www/Utils.js:884 proxmox-backup/www/datastore/Content.js:1342
+#: proxmox-backup/www/datastore/Content.js:1361
+#: proxmox-backup/www/datastore/Content.js:1376
+#: proxmox-backup/www/datastore/OptionView.js:369
+#: proxmox-backup/www/datastore/OptionView.js:380
+#: proxmox-backup/www/form/EncryptionKeySelector.js:10
 #: proxmox-backup/www/window/MaintenanceOptions.js:6
 #: proxmox-datacenter-manager/ui/src/configuration/views.rs:355
 #: proxmox-datacenter-manager/ui/src/remotes/config.rs:367
@@ -10496,6 +10758,12 @@ msgstr "Test des Benachrichtigungszieles"
 msgid "Notification Targets"
 msgstr "Benachrichtigungsziele"
 
+#: proxmox-backup/www/datastore/OptionView.js:368
+#: proxmox-backup/www/window/NotificationThresholds.js:6
+#, fuzzy
+msgid "Notification Thresholds"
+msgstr "Benachrichtigungsziele"
+
 #: proxmox-backup/www/tape/window/TapeRestore.js:444
 msgid "Notification mode"
 msgstr "Benachrichtigungsmodus"
@@ -10510,8 +10778,8 @@ msgstr "Benachrichtigungstyp"
 
 #: pve-manager/www/manager6/dc/Backup.js:352
 #: pve-manager/www/manager6/dc/Config.js:437
-#: proxmox-backup/www/NavigationTree.js:78
-#: proxmox-backup/www/datastore/OptionView.js:192
+#: proxmox-backup/www/NavigationTree.js:84
+#: proxmox-backup/www/datastore/OptionView.js:199
 #: proxmox-backup/www/tape/window/TapeBackupJob.js:223
 msgid "Notifications"
 msgstr "Benachrichtigungen"
@@ -10566,7 +10834,7 @@ msgstr "Knotenanzahl"
 #: proxmox-datacenter-manager/ui/src/dashboard/tasks.rs:150
 #: pve-yew-mobile-gui/src/pages/page_login.rs:84
 #: pmg-yew-quarantine-gui/src/page_spam_list.rs:232
-#: proxmox-yew-comp/src/node_status_panel.rs:132
+#: proxmox-yew-comp/src/node_status_panel.rs:142
 msgid "OK"
 msgstr "OK"
 
@@ -10621,7 +10889,7 @@ msgstr "Aus"
 
 #: pve-manager/www/manager6/dc/Health.js:114
 #: pve-manager/www/manager6/window/Migrate.js:45
-#: proxmox-backup/www/Utils.js:847 proxmox-backup/www/tape/TapeInventory.js:308
+#: proxmox-backup/www/Utils.js:850 proxmox-backup/www/tape/TapeInventory.js:308
 #: proxmox-backup/www/window/MaintenanceOptions.js:8
 #: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:124
 #: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:136
@@ -10709,6 +10977,7 @@ msgid "Only 5 Domains with type DNS can be configured"
 msgstr "Es können nur 5 Domänen mit Typ DNS konfiguriert werden"
 
 #: proxmox-backup/www/window/NamespaceEdit.js:49
+#: proxmox-backup/www/window/NamespaceMove.js:89
 msgid "Only alpha numerical, '_' and '-' (if not at start) allowed"
 msgstr "Nur alphanumerische Zeichen, '_' und '-' (nicht am Anfang) erlaubt"
 
@@ -10786,16 +11055,16 @@ msgid "OpenID Connect redirect failed."
 msgstr "OpenID Connect Weiterleitung fehlgeschlagen."
 
 #: pve-manager/www/manager6/window/LoginWindow.js:307
-#: proxmox-backup/www/LoginView.js:189
+#: proxmox-backup/www/LoginView.js:190
 msgid "OpenID login - please wait..."
 msgstr "OpenID-Login - Bitte warten..."
 
 #: pve-manager/www/manager6/window/LoginWindow.js:324
-#: proxmox-backup/www/LoginView.js:208
+#: proxmox-backup/www/LoginView.js:209
 msgid "OpenID login failed, please try again"
 msgstr "OpenID-Anmeldung fehlgeschlagen. Bitte versuchen Sie es erneut."
 
-#: proxmox-backup/www/LoginView.js:66
+#: proxmox-backup/www/LoginView.js:67
 msgid "OpenID redirect failed, please try again"
 msgstr "OpenID-Weiterleitung fehlgeschlagen. Bitte versuchen Sie es erneut."
 
@@ -10900,11 +11169,11 @@ msgstr "Ursprung"
 msgid "Other"
 msgstr "Andere(r)"
 
-#: proxmox-backup/www/Utils.js:744
+#: proxmox-backup/www/Utils.js:747
 msgid "Other Activity"
 msgstr "Andere Aktivitäten"
 
-#: proxmox-backup/www/Utils.js:752
+#: proxmox-backup/www/Utils.js:755
 msgid "Other DT Activity"
 msgstr "Andere DT Aktivitäten"
 
@@ -11009,7 +11278,7 @@ msgstr "Verwendungsmarker Überschreiben"
 msgid "Overwrite local resources unavailable check"
 msgstr "Lokale Ressourcen Unverfügbarkeitsprüfung deaktivieren"
 
-#: proxmox-backup/www/datastore/Content.js:1172
+#: proxmox-backup/www/datastore/Content.js:1280
 #: proxmox-backup/www/tape/window/TapeRestore.js:466
 msgid "Owner"
 msgstr "Besitzer"
@@ -11018,11 +11287,11 @@ msgstr "Besitzer"
 msgid "PB"
 msgstr "PB"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:594
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:623
 msgid "PBS Datastores"
 msgstr "PBS Datastores"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:554
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:583
 msgid "PBS Nodes"
 msgstr "PBS Knoten"
 
@@ -11058,7 +11327,20 @@ msgstr "PG Autoscale-Modus"
 msgid "POSIX ACLs"
 msgstr "POSIX ACLs"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:559
+#: proxmox-backup/www/datastore/Summary.js:202
+#: proxmox-backup/www/datastore/Summary.js:373
+#: proxmox-backup/www/window/NotificationThresholds.js:61
+msgid "POST"
+msgstr ""
+
+#: proxmox-backup/www/datastore/Summary.js:193
+#: proxmox-backup/www/datastore/Summary.js:372
+#: proxmox-backup/www/window/NotificationThresholds.js:52
+#, fuzzy
+msgid "PUT"
+msgstr "CPU"
+
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:588
 msgid "PVE Nodes"
 msgstr "PVE Knoten"
 
@@ -11073,7 +11355,7 @@ msgstr "Paket"
 msgid "Package Versions"
 msgstr "Paketversionen"
 
-#: pve-manager/www/manager6/Utils.js:2210 proxmox-backup/www/Utils.js:481
+#: pve-manager/www/manager6/Utils.js:2210 proxmox-backup/www/Utils.js:483
 msgid "Package updates are available"
 msgstr "Updates verfügbar"
 
@@ -11128,7 +11410,8 @@ msgstr "Ein bestimmtes Gerät durchreichen"
 #: pve-manager/www/manager6/storage/ESXIEdit.js:70
 #: pve-manager/www/manager6/storage/PBSEdit.js:557
 #: pve-manager/www/manager6/window/LoginWindow.js:386
-#: proxmox-backup/www/LoginView.js:308
+#: proxmox-backup/www/LoginView.js:315
+#: proxmox-backup/www/config/EncryptionKeysView.js:136
 #: proxmox-backup/www/tape/EncryptionKeys.js:56
 #: proxmox-backup/www/tape/window/EncryptionEdit.js:36
 #: proxmox-backup/www/window/RemoteEdit.js:102
@@ -11240,6 +11523,11 @@ msgstr "Ausstehende Änderungen"
 msgid "Pending Data"
 msgstr "Ausstehende Daten"
 
+#: pve-manager/www/manager6/sdn/SdnDiffView.js:8
+#, fuzzy
+msgid "Pending SDN configuration changes"
+msgstr "SDN Konfiguration anwenden"
+
 #: proxmox-widget-toolkit/src/node/NetworkView.js:431
 #: pmg-gui/js/SpamDetectorCustom.js:310
 msgid "Pending changes"
@@ -11265,11 +11553,11 @@ msgstr "Leistung"
 msgid "Period"
 msgstr "Zeitfenster"
 
-#: proxmox-backup/www/datastore/Content.js:1092
+#: proxmox-backup/www/datastore/Content.js:1200
 msgid "Permanently forget group '{0}'"
 msgstr "Gruppe {0} dauerhaft vergessen"
 
-#: proxmox-backup/www/datastore/Content.js:1090
+#: proxmox-backup/www/datastore/Content.js:1198
 msgid "Permanently forget snapshot '{0}'"
 msgstr "Snapshot {0} dauerhaft vergessen"
 
@@ -11382,6 +11670,7 @@ msgstr ""
 "Bitte notieren Sie das API-Token Geheimnis - es wird nur jetzt angezeigt."
 
 #: pve-manager/www/manager6/storage/PBSEdit.js:138
+#: proxmox-backup/www/window/EncryptionKeysEdit.js:147
 msgid ""
 "Please save the encryption key - losing it will render any backup created "
 "with it unusable"
@@ -11436,7 +11725,7 @@ msgstr ""
 #: pve-manager/www/manager6/window/LoginWindow.js:76
 #: pve-manager/www/manager6/window/LoginWindow.js:228
 #: pve-manager/www/manager6/window/LoginWindow.js:267
-#: proxmox-backup/www/LoginView.js:77 proxmox-backup/www/LoginView.js:151
+#: proxmox-backup/www/LoginView.js:78 proxmox-backup/www/LoginView.js:152
 msgid "Please wait..."
 msgstr "Bitte warten..."
 
@@ -11624,6 +11913,7 @@ msgid "Primary VLAN"
 msgstr "Primäres VLAN"
 
 #: pve-manager/www/manager6/storage/PBSEdit.js:119
+#: proxmox-backup/www/window/EncryptionKeysEdit.js:128
 msgid "Print Key"
 msgstr "Schlüssel ausdrucken"
 
@@ -11633,6 +11923,7 @@ msgid "Print Recovery Keys"
 msgstr "Codes Drucken"
 
 #: pve-manager/www/manager6/storage/PBSEdit.js:114
+#: proxmox-backup/www/window/EncryptionKeysEdit.js:123
 msgid "Print as paperkey, laminated and placed in secure vault."
 msgstr "Schlüssel ausdrucken, laminieren und in Safe ablegen."
 
@@ -11745,8 +12036,8 @@ msgstr "Propagieren"
 msgid "Properties"
 msgstr "Eigenschaften"
 
-#: proxmox-backup/www/Utils.js:597 proxmox-backup/www/Utils.js:679
-#: proxmox-backup/www/Utils.js:724
+#: proxmox-backup/www/Utils.js:600 proxmox-backup/www/Utils.js:682
+#: proxmox-backup/www/Utils.js:727
 msgid "Property"
 msgstr "Eigenschaft"
 
@@ -11755,7 +12046,7 @@ msgstr "Eigenschaft"
 #: pve-manager/www/manager6/storage/ContentView.js:170
 #: pve-manager/www/manager6/storage/ContentView.js:173
 #: pve-manager/www/manager6/window/Backup.js:242
-#: proxmox-backup/www/datastore/Content.js:746
+#: proxmox-backup/www/datastore/Content.js:830
 msgid "Protected"
 msgstr "Geschützt"
 
@@ -11763,7 +12054,7 @@ msgstr "Geschützt"
 #: pve-manager/www/manager6/lxc/Options.js:130
 #: pve-manager/www/manager6/qemu/Options.js:313
 #: pve-manager/www/manager6/qemu/Options.js:319
-#: proxmox-backup/www/datastore/Content.js:732
+#: proxmox-backup/www/datastore/Content.js:816
 #: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:153
 msgid "Protection"
 msgstr "Geschützt"
@@ -11795,7 +12086,7 @@ msgstr "Anbietereigenheiten"
 msgid "Proxmox Backup Server"
 msgstr "Proxmox Backup Server"
 
-#: proxmox-backup/www/LoginView.js:274
+#: proxmox-backup/www/LoginView.js:281
 msgid "Proxmox Backup Server Login"
 msgstr "Proxmox Backup Server Anmeldung"
 
@@ -11828,8 +12119,8 @@ msgid "Proxmox Virtual Environment"
 msgstr "Proxmox Virtual Environment"
 
 #: pve-manager/www/manager6/window/Backup.js:112
-#: pve-manager/www/manager6/window/Prune.js:212 proxmox-backup/www/Utils.js:450
-#: proxmox-backup/www/datastore/Content.js:1442
+#: pve-manager/www/manager6/window/Prune.js:212 proxmox-backup/www/Utils.js:451
+#: proxmox-backup/www/datastore/Content.js:1561
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:278
 msgid "Prune"
 msgstr "Prune"
@@ -11838,11 +12129,11 @@ msgstr "Prune"
 msgid "Prune & GC Jobs"
 msgstr "Prune- & GC-Jobs"
 
-#: proxmox-backup/www/datastore/Content.js:1065
+#: proxmox-backup/www/datastore/Content.js:1173
 msgid "Prune '{0}'"
 msgstr "'{0}' prunen"
 
-#: proxmox-backup/www/datastore/Content.js:1348
+#: proxmox-backup/www/datastore/Content.js:1456
 msgid "Prune All"
 msgstr "Alles prunen"
 
@@ -11850,7 +12141,7 @@ msgstr "Alles prunen"
 msgid "Prune Backups for '{0}' on Storage '{1}'"
 msgstr "Backups für '{0}' auf Storage '{1}' prunen"
 
-#: proxmox-backup/www/Utils.js:451 proxmox-backup/www/window/PruneJobEdit.js:12
+#: proxmox-backup/www/Utils.js:452 proxmox-backup/www/window/PruneJobEdit.js:12
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:281
 msgid "Prune Job"
 msgstr "Prune-Job"
@@ -11876,7 +12167,7 @@ msgstr "Prune-Zeitplan"
 msgid "Prune group"
 msgstr "Prune-Gruppe"
 
-#: proxmox-backup/www/Utils.js:482
+#: proxmox-backup/www/Utils.js:484
 msgid "Prune job"
 msgstr "Prune-Job"
 
@@ -12076,8 +12367,8 @@ msgstr "Rate In"
 msgid "Rate In Used"
 msgstr "Rate In belegt"
 
-#: proxmox-backup/www/window/SyncJobEdit.js:219
-#: proxmox-backup/www/window/SyncJobEdit.js:228
+#: proxmox-backup/www/window/SyncJobEdit.js:222
+#: proxmox-backup/www/window/SyncJobEdit.js:231
 msgid "Rate Limit"
 msgstr "Drosselung"
 
@@ -12121,19 +12412,19 @@ msgstr "Raw disk image"
 msgid "Re-Verify After"
 msgstr "Zustand erneut verifizieren nach"
 
-#: proxmox-backup/www/window/SyncJobEdit.js:453
+#: proxmox-backup/www/window/SyncJobEdit.js:467
 msgid "Re-sync Corrupt"
 msgstr "Korrumpierte erneut synchronisieren"
 
-#: proxmox-backup/www/window/SyncJobEdit.js:457
+#: proxmox-backup/www/window/SyncJobEdit.js:471
 msgid "Re-sync snapshots, whose verification failed."
 msgstr ""
 "Synchronisiere Snapshots deren Verifikation fehlgeschlagen hat nochmal."
 
 #: proxmox-backup/www/ServerStatus.js:262
 #: proxmox-backup/www/ServerStatus.js:269
-#: proxmox-backup/www/datastore/Summary.js:353
-#: proxmox-backup/www/datastore/Summary.js:359
+#: proxmox-backup/www/datastore/Summary.js:417
+#: proxmox-backup/www/datastore/Summary.js:423
 msgid "Read"
 msgstr "Lesen"
 
@@ -12142,7 +12433,7 @@ msgstr "Lesen"
 msgid "Read Label"
 msgstr "Etikett lesen"
 
-#: proxmox-backup/www/Utils.js:452
+#: proxmox-backup/www/Utils.js:453
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:284
 msgid "Read Objects"
 msgstr "Objekte lesen"
@@ -12163,17 +12454,17 @@ msgid "Read only"
 msgstr "Read-only"
 
 #: pve-manager/www/manager6/lxc/MPEdit.js:298
-#: pve-manager/www/manager6/qemu/HDEdit.js:349 proxmox-backup/www/Utils.js:844
+#: pve-manager/www/manager6/qemu/HDEdit.js:349 proxmox-backup/www/Utils.js:847
 #: proxmox-yew-comp/src/form/pve/lxc_property/lxc_mount_point_property.rs:236
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_disk_property.rs:275
 msgid "Read-only"
 msgstr "Read-only"
 
-#: proxmox-backup/www/Utils.js:745
+#: proxmox-backup/www/Utils.js:748
 msgid "Reading data"
 msgstr "Daten lesen"
 
-#: proxmox-backup/www/Utils.js:754
+#: proxmox-backup/www/Utils.js:757
 msgid "Reading encrypted data"
 msgstr "Verschlüsselte Daten lesen"
 
@@ -12288,7 +12579,7 @@ msgstr "Ausbalancieren"
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/dashboard_panel.rs:212
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/dashboard_panel.rs:202
 #: pve-yew-mobile-gui/src/pages/page_node_status/dashboard_panel.rs:135
-#: proxmox-yew-comp/src/node_status_panel.rs:227
+#: proxmox-yew-comp/src/node_status_panel.rs:243
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:169
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:201
 msgid "Reboot"
@@ -12391,7 +12682,7 @@ msgstr "Aktualisierungsintervall (Sekunden)"
 msgid "Refresh all"
 msgstr "Alle aktualisieren"
 
-#: proxmox-backup/www/datastore/Content.js:1332
+#: proxmox-backup/www/datastore/Content.js:1440
 msgid "Refresh contents from S3 bucket"
 msgstr "Inhalt vom S3 Bucket erneuern"
 
@@ -12522,7 +12813,7 @@ msgstr "Relaying"
 #: pve-manager/www/manager6/sdn/FabricsView.js:202
 #: pve-manager/www/manager6/tree/DhcpTree.js:191
 #: proxmox-backup/www/DirectoryList.js:73 proxmox-backup/www/ZFSList.js:112
-#: proxmox-backup/www/datastore/Content.js:1322
+#: proxmox-backup/www/datastore/Content.js:1430
 #: proxmox-backup/www/tape/BackupOverview.js:305
 #: proxmox-backup/www/tape/ChangerStatus.js:694
 #: proxmox-backup/www/tape/DriveStatus.js:209
@@ -12582,7 +12873,7 @@ msgstr "Remote Migrationseinstellungen"
 msgid "Remote Namespace"
 msgstr "Remote Namespace"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:544
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:573
 msgid "Remote Panel"
 msgstr "Remote Panel"
 
@@ -12594,7 +12885,7 @@ msgstr "Remote-Store"
 msgid "Remote Subscription Status"
 msgstr "Remote Subskriptionsstatus"
 
-#: proxmox-backup/www/Utils.js:455 proxmox-backup/www/Utils.js:456
+#: proxmox-backup/www/Utils.js:457 proxmox-backup/www/Utils.js:458
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:288
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:289
 msgid "Remote Sync"
@@ -12624,7 +12915,7 @@ msgstr "Entfernbar"
 msgid "Removable datastore"
 msgstr "Entfernbarer Datastore"
 
-#: proxmox-backup/www/NavigationTree.js:296
+#: proxmox-backup/www/NavigationTree.js:302
 msgid "Removable datastore not mounted"
 msgstr "Entfernbarer Datastore ist nicht gemountet"
 
@@ -12662,8 +12953,9 @@ msgstr "Löschung geplant"
 #: pve-manager/www/manager6/storage/ImageView.js:33
 #: pve-manager/www/manager6/tree/SnapshotTree.js:294
 #: proxmox-backup/www/DirectoryList.js:109 proxmox-backup/www/Utils.js:434
-#: proxmox-backup/www/datastore/Content.js:1453
-#: proxmox-backup/www/datastore/Content.js:1510
+#: proxmox-backup/www/config/EncryptionKeysView.js:271
+#: proxmox-backup/www/datastore/Content.js:1572
+#: proxmox-backup/www/datastore/Content.js:1629
 #: proxmox-backup/www/tape/TapeInventory.js:237
 #: proxmox-datacenter-manager/ui/src/configuration/views.rs:275
 #: proxmox-datacenter-manager/ui/src/remotes/config.rs:213
@@ -12716,7 +13008,7 @@ msgid "Remove Attachments"
 msgstr "Anhänge löschen"
 
 #: proxmox-backup/www/Utils.js:431
-#: proxmox-backup/www/datastore/OptionView.js:172
+#: proxmox-backup/www/datastore/OptionView.js:178
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:247
 msgid "Remove Datastore"
 msgstr "Datastore entfernen"
@@ -12725,6 +13017,11 @@ msgstr "Datastore entfernen"
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:257
 msgid "Remove Group"
 msgstr "Gruppe entfernen"
+
+#: proxmox-backup/www/Utils.js:454
+#, fuzzy
+msgid "Remove Key"
+msgstr "Wiederherstellungs-Code"
 
 #: proxmox-backup/www/tape/window/MediaRemoveWindow.js:19
 msgid "Remove Media"
@@ -12750,7 +13047,7 @@ msgstr "Zeitplan entfernen"
 msgid "Remove Subscription"
 msgstr "Subskription entfernen"
 
-#: proxmox-backup/www/window/SyncJobEdit.js:402
+#: proxmox-backup/www/window/SyncJobEdit.js:405
 msgid "Remove Vanished"
 msgstr "Verschwundene löschen"
 
@@ -12791,7 +13088,7 @@ msgstr "Mapping '{0}' entfernen"
 msgid "Remove mapping for '{0}'"
 msgstr "Mapping für '{0}' entfernen"
 
-#: proxmox-backup/www/datastore/Content.js:1088
+#: proxmox-backup/www/datastore/Content.js:1196
 msgid "Remove namespace '{0}'"
 msgstr "Namespace '{0}' entfernen"
 
@@ -12799,13 +13096,19 @@ msgstr "Namespace '{0}' entfernen"
 msgid "Remove network failed"
 msgstr "Netzwerk entfernen fehlgeschlagen"
 
-#: proxmox-backup/www/window/SyncJobEdit.js:406
+#: proxmox-backup/www/window/SyncJobEdit.js:409
 msgid ""
 "Remove snapshots from sync target datastore if they vanished from source "
 "datastore?"
 msgstr ""
 "Snapshots vom Synchronisationsspeicher löschen, falls sie vom Quell-"
 "Datastore verschwunden sind?"
+
+#: proxmox-backup/www/window/NamespaceMove.js:131
+msgid ""
+"Remove the empty source namespace directories after moving all groups. "
+"Uncheck to keep the namespace structure."
+msgstr ""
 
 #: proxmox-yew-comp/src/auth_view.rs:463
 #: proxmox-yew-comp/src/auth_edit_ldap.rs:276
@@ -13008,13 +13311,19 @@ msgstr "Resource-Mappings"
 msgid "Resource Pool"
 msgstr "Ressource-Pool"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:642
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:671
 msgid "Resource Tree"
 msgstr "Ressourcen-Tree"
 
 #: proxmox-datacenter-manager/ui/src/widget/view_filter_selector.rs:272
 msgid "Resource Type"
 msgstr "Ressource Typ"
+
+#: proxmox-datacenter-manager/ui/src/dashboard/gauge_panel.rs:57
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:675
+#, fuzzy
+msgid "Resource Usage"
+msgstr "Ressourcen"
 
 #: pve-manager/www/manager6/dc/Summary.js:26
 #: pve-manager/www/manager6/ha/Status.js:38
@@ -13056,6 +13365,7 @@ msgstr "pmg-smtp-filter neu starten um die Änderungen zu aktivieren"
 #: pve-manager/www/manager6/storage/BackupView.js:84
 #: pve-manager/www/manager6/window/Restore.js:383
 #: pve-manager/www/manager6/window/Restore.js:408
+#: proxmox-backup/www/config/EncryptionKeysView.js:119
 #: proxmox-backup/www/tape/BackupOverview.js:317
 #: proxmox-backup/www/tape/BackupOverview.js:354
 #: proxmox-backup/www/tape/EncryptionKeys.js:39
@@ -13069,6 +13379,8 @@ msgstr "Zurückspielen"
 msgid "Restore Catalogs"
 msgstr "Kataloge wiederherstellen"
 
+#: proxmox-backup/www/config/EncryptionKeysView.js:117
+#: proxmox-backup/www/config/EncryptionKeysView.js:280
 #: proxmox-backup/www/tape/EncryptionKeys.js:37
 #: proxmox-backup/www/tape/EncryptionKeys.js:115
 msgid "Restore Key"
@@ -13144,12 +13456,12 @@ msgstr "Zurücksetzen"
 msgid "Revoke Certificate"
 msgstr "Zertifikat widerrufen"
 
-#: proxmox-backup/www/Utils.js:453
+#: proxmox-backup/www/Utils.js:455
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:286
 msgid "Rewind Media"
 msgstr "Medium zurückspulen"
 
-#: proxmox-backup/www/Utils.js:748
+#: proxmox-backup/www/Utils.js:751
 msgid "Rewinding"
 msgstr "Zurückspulen"
 
@@ -13186,8 +13498,8 @@ msgstr "Rollback"
 
 #: pmg-gui/js/PBSRemoteEdit.js:54
 #: pve-manager/www/manager6/storage/PBSEdit.js:581
-#: proxmox-backup/www/Utils.js:861 proxmox-backup/www/datastore/Content.js:366
-#: proxmox-backup/www/datastore/Content.js:397
+#: proxmox-backup/www/Utils.js:864 proxmox-backup/www/datastore/Content.js:399
+#: proxmox-backup/www/datastore/Content.js:430
 #: proxmox-backup/www/form/NamespaceSelector.js:25
 #: proxmox-backup/www/form/RemoteTargetSelector.js:99
 #: proxmox-backup/www/tape/window/TapeRestore.js:582
@@ -13219,7 +13531,7 @@ msgstr "Root-Disk-Auslastung"
 msgid "Root Filesystem"
 msgstr "Root-Dateisystem"
 
-#: proxmox-backup/www/datastore/Content.js:359
+#: proxmox-backup/www/datastore/Content.js:392
 #: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:107
 msgid "Root Namespace"
 msgstr "Root-Namespace"
@@ -13266,6 +13578,10 @@ msgstr "Regeln"
 msgid "Run Now"
 msgstr "Jetzt ausführen"
 
+#: proxmox-backup/www/datastore/OptionView.js:245
+msgid "Run garbage collection before unmounting"
+msgstr ""
+
 #: pve-manager/www/manager6/form/AgentFeatureSelector.js:17
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_agent_property.rs:83
 msgid "Run guest-trim after a disk move or VM migration"
@@ -13288,11 +13604,11 @@ msgstr ""
 msgid "Run now"
 msgstr "Jetzt ausführen"
 
-#: proxmox-backup/www/window/SyncJobEdit.js:496
+#: proxmox-backup/www/window/SyncJobEdit.js:510
 msgid "Run on Mount"
 msgstr "Beim Mount ausführen"
 
-#: proxmox-backup/www/window/SyncJobEdit.js:500
+#: proxmox-backup/www/window/SyncJobEdit.js:514
 msgid "Run this job when a relevant removable datastore gets mounted."
 msgstr ""
 "Diesen Job ausführen wenn ein relevanter entfernbarer Datastore gemounted "
@@ -13324,6 +13640,18 @@ msgstr "Quell Port"
 msgid "S3 (tech preview)"
 msgstr "S3 (Tech-Vorschau)"
 
+#: proxmox-backup/www/datastore/Summary.js:390
+msgid "S3 API download/upload rate (bytes/second)"
+msgstr ""
+
+#: proxmox-backup/www/datastore/Summary.js:362
+msgid "S3 API requests"
+msgstr ""
+
+#: proxmox-backup/www/datastore/Summary.js:399
+msgid "S3 API total download/upload (bytes)"
+msgstr ""
+
 #: proxmox-backup/www/window/S3ClientEdit.js:10
 msgid "S3 Endpoint"
 msgstr "S3 Endpoint"
@@ -13340,15 +13668,32 @@ msgstr "S3 Endpoint ID"
 msgid "S3 Endpoints"
 msgstr "S3 Endpoints"
 
-#: proxmox-backup/www/Utils.js:454
+#: proxmox-backup/www/Utils.js:456
 #: proxmox-backup/www/window/MaintenanceOptions.js:99
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:287
 msgid "S3 Refresh"
 msgstr "S3 Aktualisieren"
 
-#: proxmox-backup/www/Utils.js:853
+#: proxmox-backup/www/Utils.js:856
 msgid "S3 refresh"
 msgstr "S3 aktualisieren"
+
+#: proxmox-backup/www/datastore/Summary.js:180
+#: proxmox-backup/www/window/NotificationThresholds.js:37
+#, fuzzy
+msgid "S3 requests:"
+msgstr "S3 aktualisieren"
+
+#: proxmox-backup/www/datastore/Summary.js:346
+#, fuzzy
+msgid "S3 statistics"
+msgstr "Statistik"
+
+#: proxmox-backup/www/datastore/Summary.js:155
+#: proxmox-backup/www/window/NotificationThresholds.js:90
+#, fuzzy
+msgid "S3 traffic:"
+msgstr "Verkehr"
 
 #: pve-manager/www/manager6/qemu/HDEdit.js:204
 #: pve-manager/www/manager6/qemu/HardwareView.js:200
@@ -13370,7 +13715,7 @@ msgstr "SCSI Controller Type"
 msgid "SDN"
 msgstr "SDN"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:640
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:669
 msgid "SDN Panel"
 msgstr "SDN Panel"
 
@@ -13469,11 +13814,12 @@ msgstr "Speichern"
 
 #: pmg-gui/js/LoginView.js:392
 #: pve-manager/www/manager6/window/LoginWindow.js:411
-#: proxmox-backup/www/LoginView.js:337 proxmox-yew-comp/src/login_panel.rs:451
+#: proxmox-backup/www/LoginView.js:344 proxmox-yew-comp/src/login_panel.rs:451
 msgid "Save User name"
 msgstr "Benutzername speichern"
 
 #: pve-manager/www/manager6/storage/PBSEdit.js:56
+#: proxmox-backup/www/window/EncryptionKeysEdit.js:65
 msgid "Save the key in your password manager."
 msgstr "Den Schlüssel in einem Passwort-Manager speichern."
 
@@ -13547,7 +13893,7 @@ msgstr "Demnächst ausführen"
 msgid "Schedule on '{0}'"
 msgstr "Zeitplan für '{0}'"
 
-#: proxmox-backup/www/Utils.js:464
+#: proxmox-backup/www/Utils.js:466
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:301
 msgid "Scheduled Verification"
 msgstr "Geplante Verifizierung"
@@ -13601,7 +13947,7 @@ msgstr "Scrub auf OSD.{0}"
 #: pve-manager/www/manager6/storage/ContentView.js:109
 #: pve-manager/www/manager6/storage/TemplateView.js:48
 #: proxmox-backup/www/config/SyncView.js:268
-#: proxmox-backup/www/datastore/Content.js:1373
+#: proxmox-backup/www/datastore/Content.js:1481
 #: proxmox-datacenter-manager/ui/src/dashboard/resource_tree.rs:26
 msgid "Search"
 msgstr "Suche"
@@ -14025,7 +14371,7 @@ msgstr "Shares"
 #: pve-manager/www/manager6/node/CmdMenu.js:89
 #: pve-manager/www/manager6/node/Config.js:125
 #: pve-manager/www/manager6/node/Config.js:161
-#: proxmox-backup/www/NavigationTree.js:99
+#: proxmox-backup/www/NavigationTree.js:105
 #: proxmox-datacenter-manager/ui/src/main_menu.rs:300
 #: proxmox-datacenter-manager/ui/src/pve/node/mod.rs:139
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:183
@@ -14065,7 +14411,7 @@ msgstr "Alle Aufgaben anzeigen"
 msgid "Show Configuration"
 msgstr "Zeige Konfiguration"
 
-#: proxmox-backup/www/datastore/Summary.js:248
+#: proxmox-backup/www/datastore/Summary.js:258
 msgid "Show Connection Information"
 msgstr "Verbindungsinformationen Anzeigen"
 
@@ -14074,7 +14420,7 @@ msgid "Show E-Mail addresses"
 msgstr "E-Mail-Adressen anzeigen"
 
 #: proxmox-backup/www/panel/NodeInfo.js:69
-#: proxmox-yew-comp/src/node_status_panel.rs:248
+#: proxmox-yew-comp/src/node_status_panel.rs:264
 msgid "Show Fingerprint"
 msgstr "Fingerabdruck anzeigen"
 
@@ -14159,7 +14505,7 @@ msgstr "Zeige: {0} von {1}"
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/dashboard_panel.rs:244
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/dashboard_panel.rs:214
 #: pve-yew-mobile-gui/src/pages/page_node_status/dashboard_panel.rs:140
-#: proxmox-yew-comp/src/node_status_panel.rs:236
+#: proxmox-yew-comp/src/node_status_panel.rs:252
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:147
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:174
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:205
@@ -14274,7 +14620,7 @@ msgstr "Seite darf nicht leer sein."
 #: pve-manager/www/manager6/window/GuestImport.js:708
 #: proxmox-backup/www/ZFSList.js:71
 #: proxmox-backup/www/dashboard/DataStoreStatistics.js:87
-#: proxmox-backup/www/datastore/Content.js:1145
+#: proxmox-backup/www/datastore/Content.js:1253
 #: proxmox-backup/www/form/PartitionSelector.js:65
 #: proxmox-yew-comp/src/form/pve/pve_storage_content_selector.rs:256
 msgid "Size"
@@ -14338,7 +14684,7 @@ msgstr "Smarthost"
 #: pve-manager/www/manager6/window/Clone.js:233
 #: pve-manager/www/manager6/window/Snapshot.js:149
 #: pve-manager/www/manager6/window/Snapshot.js:153
-#: proxmox-backup/www/datastore/Content.js:946
+#: proxmox-backup/www/datastore/Content.js:1031
 #: proxmox-backup/www/tape/window/TapeRestore.js:867
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:175
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:206
@@ -14352,7 +14698,7 @@ msgstr "Snapshot-Auswahl"
 
 #: pve-manager/www/manager6/lxc/Config.js:326
 #: pve-manager/www/manager6/qemu/Config.js:379
-#: proxmox-backup/www/datastore/Summary.js:108
+#: proxmox-backup/www/datastore/Summary.js:612
 msgid "Snapshots"
 msgstr "Snapshots"
 
@@ -14419,15 +14765,15 @@ msgstr "Quelle"
 
 #: proxmox-backup/www/tape/window/TapeRestore.js:677
 #: proxmox-backup/www/tape/window/TapeRestore.js:859
-#: proxmox-backup/www/window/SyncJobEdit.js:52
+#: proxmox-backup/www/window/SyncJobEdit.js:54
 msgid "Source Datastore"
 msgstr "Quell-Datastore"
 
-#: proxmox-backup/www/window/SyncJobEdit.js:53
+#: proxmox-backup/www/window/SyncJobEdit.js:55
 msgid "Source Namespace"
 msgstr "Quell-Namespace"
 
-#: proxmox-backup/www/window/SyncJobEdit.js:51
+#: proxmox-backup/www/window/SyncJobEdit.js:53
 #: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:357
 msgid "Source Remote"
 msgstr "Quell-Remote"
@@ -14702,7 +15048,7 @@ msgstr "Statistik"
 msgid "Statistics"
 msgstr "Statistik"
 
-#: proxmox-backup/www/datastore/Summary.js:204
+#: proxmox-backup/www/datastore/Summary.js:115
 msgid "Stats from last Garbage Collection"
 msgstr "Statistiken der letzten Garbage Collection"
 
@@ -14746,13 +15092,13 @@ msgstr "Statistiken der letzten Garbage Collection"
 #: pve-manager/www/manager6/pool/StatusView.js:6
 #: pve-manager/www/manager6/sdn/FabricsContentView.js:39
 #: pve-manager/www/manager6/sdn/Status.js:29
-#: pve-manager/www/manager6/sdn/StatusView.js:93
+#: pve-manager/www/manager6/sdn/StatusView.js:101
 #: pve-manager/www/manager6/sdn/ZoneContentView.js:36
 #: pve-manager/www/manager6/sdn/fabrics/InterfacePanel.js:16
 #: pve-manager/www/manager6/storage/StatusView.js:6
 #: pve-manager/www/manager6/tree/SnapshotTree.js:359
 #: pve-manager/www/manager6/window/BulkAction.js:358
-#: proxmox-backup/www/Subscription.js:104 proxmox-backup/www/Utils.js:710
+#: proxmox-backup/www/Subscription.js:104 proxmox-backup/www/Utils.js:713
 #: proxmox-backup/www/config/PruneView.js:270
 #: proxmox-backup/www/config/SyncView.js:410
 #: proxmox-backup/www/config/VerifyView.js:268
@@ -14862,6 +15208,8 @@ msgstr "Gestoppt"
 #: pve-manager/www/manager6/window/GuestImport.js:718
 #: pve-manager/www/manager6/window/GuestImport.js:824
 #: pve-manager/www/manager6/window/Restore.js:178
+#: proxmox-datacenter-manager/ui/src/dashboard/gauge_panel.rs:198
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:564
 #: proxmox-datacenter-manager/ui/src/widget/pve_migrate_mapping.rs:42
 #: pve-yew-mobile-gui/src/pages/page_dashboard.rs:161
 #: pve-yew-mobile-gui/src/pages/page_dashboard.rs:329
@@ -14882,7 +15230,7 @@ msgstr "Storage \"{0}\""
 msgid "Storage (Proxmox VE)"
 msgstr "Storage (Proxmox VE)"
 
-#: proxmox-backup/www/NavigationTree.js:105
+#: proxmox-backup/www/NavigationTree.js:111
 #: proxmox-backup/www/panel/StorageAndDisks.js:6
 msgid "Storage / Disks"
 msgstr "Speicher / Disks"
@@ -14891,16 +15239,21 @@ msgstr "Speicher / Disks"
 msgid "Storage Retention Configuration"
 msgstr "Storage-Aufbewarungs-Konfiguration"
 
+#: proxmox-datacenter-manager/ui/src/dashboard/gauge_panel.rs:49
+#, fuzzy
+msgid "Storage Usage"
+msgstr "Speicherverbrauch"
+
 #: pve-yew-mobile-gui/src/widgets/mod.rs:53
 #: proxmox-yew-comp/src/form/pve/pve_storage_selector.rs:244
 msgid "Storage size/usage unknown"
 msgstr "Speichergröße/Auslastung unbekannt"
 
-#: proxmox-backup/www/datastore/Summary.js:347
+#: proxmox-backup/www/datastore/Summary.js:411
 msgid "Storage usage"
 msgstr "Speicherverbrauch"
 
-#: proxmox-backup/www/datastore/Summary.js:344
+#: proxmox-backup/www/datastore/Summary.js:408
 msgid "Storage usage (bytes)"
 msgstr "Speicherverbrauch (Bytes)"
 
@@ -14982,7 +15335,7 @@ msgstr "Subnetze"
 #: pmg-gui/js/ClusterAdministration.js:283 pmg-gui/js/Dashboard.js:436
 #: pmg-gui/js/NavigationTree.js:84 pmg-gui/js/Subscription.js:23
 #: pve-manager/www/manager6/node/Config.js:452
-#: proxmox-backup/www/Dashboard.js:290 proxmox-backup/www/NavigationTree.js:84
+#: proxmox-backup/www/Dashboard.js:290 proxmox-backup/www/NavigationTree.js:90
 #: proxmox-backup/www/Subscription.js:24
 #: proxmox-datacenter-manager/ui/src/main_menu.rs:273
 #: proxmox-datacenter-manager/ui/src/main_menu.rs:279
@@ -15000,7 +15353,7 @@ msgstr "Subskription"
 msgid "Subscription Key"
 msgstr "Subskription-Key"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:590
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:619
 msgid "Subscription Panel"
 msgstr "Subskription Panel"
 
@@ -15146,6 +15499,7 @@ msgstr "Zur mobilen Ansicht wechseln"
 #: pve-manager/www/manager6/Utils.js:2112
 #: pve-manager/www/manager6/dc/AuthView.js:128
 #: pve-manager/www/manager6/dc/SyncWindow.js:178
+#: proxmox-backup/www/config/EncryptionKeysView.js:306
 #: proxmox-yew-comp/src/auth_view.rs:341
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:123
 msgid "Sync"
@@ -15155,13 +15509,13 @@ msgstr "Synchronisiere"
 msgid "Sync Failed"
 msgstr "Synchronisation fehlgeschlagen"
 
-#: proxmox-backup/www/Utils.js:456
+#: proxmox-backup/www/Utils.js:458
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:289
 msgid "Sync Job"
 msgstr "Sync-Job"
 
 #: proxmox-backup/www/window/SyncJobEdit.js:12
-#: proxmox-backup/www/window/SyncJobEdit.js:49
+#: proxmox-backup/www/window/SyncJobEdit.js:51
 msgid "Sync Job - Pull Direction"
 msgstr "Sync-Job - Pull Richtung"
 
@@ -15174,7 +15528,7 @@ msgstr "Sync-Job - Push Richtung"
 msgid "Sync Jobs"
 msgstr "Sync-Jobs"
 
-#: proxmox-backup/www/Utils.js:897
+#: proxmox-backup/www/Utils.js:900
 msgid "Sync Level"
 msgstr "Sync. Level"
 
@@ -15189,20 +15543,20 @@ msgstr "Sync Optionen"
 msgid "Sync Preview"
 msgstr "Sync. Vorschau"
 
-#: proxmox-backup/www/window/SyncJobEdit.js:209
+#: proxmox-backup/www/window/SyncJobEdit.js:212
 msgid "Sync Schedule"
 msgstr "Sync-Zeitplan"
 
-#: proxmox-backup/www/Utils.js:483
+#: proxmox-backup/www/Utils.js:485
 msgid "Sync job"
 msgstr "Sync-Job"
 
-#: proxmox-backup/www/window/SyncJobEdit.js:474
+#: proxmox-backup/www/window/SyncJobEdit.js:488
 msgid "Sync only encrypted backup snapshots, exclude others."
 msgstr ""
 "Nur verschlüsselte Snapshots synchronisieren, alle anderen exkludieren."
 
-#: proxmox-backup/www/window/SyncJobEdit.js:487
+#: proxmox-backup/www/window/SyncJobEdit.js:501
 msgid "Sync only verified backup snapshots, exclude others."
 msgstr "Nur verifizierte Snapshots synchronisieren, alle anderen exkludieren."
 
@@ -15401,14 +15755,19 @@ msgstr "Tags enthalten ungültige Zeichen."
 msgid "Take Snapshot"
 msgstr "Snapshot erstellen"
 
-#: proxmox-backup/www/NavigationTree.js:113 proxmox-backup/www/Utils.js:458
+#: proxmox-backup/www/config/EncryptionKeysView.js:309
+#, fuzzy
+msgid "Tape"
+msgstr "Bänder"
+
+#: proxmox-backup/www/NavigationTree.js:119 proxmox-backup/www/Utils.js:460
 #: proxmox-backup/www/dashboard/TaskSummary.js:29
 #: proxmox-backup/www/tape/TapeManagement.js:5
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:291
 msgid "Tape Backup"
 msgstr "Band Backup"
 
-#: proxmox-backup/www/Utils.js:460
+#: proxmox-backup/www/Utils.js:462
 #: proxmox-backup/www/tape/window/TapeBackupJob.js:10
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:294
 msgid "Tape Backup Job"
@@ -15438,7 +15797,7 @@ msgstr "Band Position"
 msgid "Tape Read"
 msgstr "Band gelesen"
 
-#: proxmox-backup/www/Utils.js:461
+#: proxmox-backup/www/Utils.js:463
 #: proxmox-backup/www/dashboard/TaskSummary.js:30
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:296
 msgid "Tape Restore"
@@ -15452,11 +15811,11 @@ msgstr "Band Verschleiß"
 msgid "Tape Written"
 msgstr "Band beschrieben"
 
-#: proxmox-backup/www/Utils.js:484
+#: proxmox-backup/www/Utils.js:486
 msgid "Tape backup notifications"
 msgstr "Band-Backup Benachrichtigung"
 
-#: proxmox-backup/www/Utils.js:485
+#: proxmox-backup/www/Utils.js:487
 msgid "Tape loading request"
 msgstr "Anfrage ein Band zu laden"
 
@@ -15478,7 +15837,7 @@ msgstr "Target"
 
 #: proxmox-backup/www/tape/window/TapeRestore.js:40
 #: proxmox-backup/www/tape/window/TapeRestore.js:682
-#: proxmox-backup/www/window/SyncJobEdit.js:38
+#: proxmox-backup/www/window/SyncJobEdit.js:39
 msgid "Target Datastore"
 msgstr "Ziel-Datastore"
 
@@ -15500,7 +15859,8 @@ msgstr "Name"
 
 #: proxmox-backup/www/tape/window/TapeRestore.js:44
 #: proxmox-backup/www/tape/window/TapeRestore.js:712
-#: proxmox-backup/www/window/SyncJobEdit.js:39
+#: proxmox-backup/www/window/GroupMove.js:50
+#: proxmox-backup/www/window/SyncJobEdit.js:40
 msgid "Target Namespace"
 msgstr "Ziel-Namespace"
 
@@ -15518,7 +15878,7 @@ msgstr "Zielknoten"
 msgid "Target Ratio"
 msgstr "Ziel-Verhältnis"
 
-#: proxmox-backup/www/window/SyncJobEdit.js:37
+#: proxmox-backup/www/window/SyncJobEdit.js:38
 #: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:363
 msgid "Target Remote"
 msgstr "Ziel-Remote"
@@ -15593,7 +15953,7 @@ msgstr "Task Liste"
 msgid "Task Result"
 msgstr "Ergebnis des Tasks"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:624
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:653
 msgid "Task Summaries"
 msgstr "Task-Übersicht"
 
@@ -15603,7 +15963,7 @@ msgstr "Task-Übersicht"
 msgid "Task Summary"
 msgstr "Task-Übersicht"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:632
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:661
 msgid "Task Summary Sorted by Failed Tasks"
 msgstr "Task-Übersicht nach fehlgeschlagenen Tasks sortiert"
 
@@ -15616,7 +15976,7 @@ msgstr ""
 msgid "Task Summary Time Range (last hours)"
 msgstr "Task Zusammenfassung Zeitspanne (letzte Stunden)"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:626
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:655
 msgid "Task Summary by Category"
 msgstr "Task-Übersicht nach Kategorie"
 
@@ -15748,7 +16108,7 @@ msgstr ""
 "konfiguriert ist. Zum Beispiel, in der Verwendung mit dem Proxmox Offline "
 "Mirror."
 
-#: proxmox-backup/www/window/SyncJobEdit.js:444
+#: proxmox-backup/www/window/SyncJobEdit.js:447
 msgid "The maximum amount of snapshots to be transferred (per group)"
 msgstr "Die maximale Anzahl der zu übertragenden Snapshots (pro Gruppe)"
 
@@ -15941,6 +16301,18 @@ msgstr "Die für die zstd-Komprimierung verwendeten Threads (nicht für PBS)."
 msgid "Threshold"
 msgstr "Schwellwert"
 
+#: proxmox-backup/www/Utils.js:450
+#, fuzzy
+msgid "Threshold Reset"
+msgstr "Schwellwert"
+
+#: proxmox-backup/www/datastore/OptionView.js:379
+#: proxmox-backup/www/window/ThresholdResetScheduleEdit.js:9
+#: proxmox-backup/www/window/ThresholdResetScheduleEdit.js:24
+#, fuzzy
+msgid "Threshold Reset Schedule"
+msgstr "Garbage Collection Zeitplan"
+
 #: proxmox-backup/www/window/TrafficControlEdit.js:396
 #: proxmox-yew-widget-toolkit/src/widget/form/date_field/date_panel.rs:238
 msgid "Thu"
@@ -16030,6 +16402,14 @@ msgstr "An"
 msgid "To Slot"
 msgstr "Zu Slot"
 
+#: proxmox-backup/www/window/SyncJobEdit.js:624
+msgid ""
+"To prevent premature removal, associated keys hold a reference to a key "
+"until you explicitly unlink it. When you change your active encryption key, "
+"the system automatically associates the old key to protect it from "
+"accidental deletion, ensuring you can still decrypt older contents."
+msgstr ""
+
 #: pve-manager/www/manager6/form/SpiceEnhancementSelector.js:33
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_spice_enhancement_property.rs:33
 msgid ""
@@ -16046,6 +16426,11 @@ msgstr "An:"
 #: proxmox-yew-widget-toolkit/src/widget/form/date_field/date_panel.rs:621
 msgid "Today"
 msgstr "Heute"
+
+#: proxmox-backup/www/config/EncryptionKeysView.js:249
+#, fuzzy
+msgid "Toggle Archived"
+msgstr "Theme umschalten"
 
 #: pmg-gui/js/AttachmentQuarantine.js:116 pmg-gui/js/SpamQuarantine.js:226
 #: pmg-gui/js/VirusQuarantine.js:129
@@ -16138,7 +16523,7 @@ msgstr "Top Empfänger"
 #: proxmox-backup/www/ServerStatus.js:231
 #: proxmox-backup/www/ServerStatus.js:240
 #: proxmox-backup/www/ServerStatus.js:255
-#: proxmox-backup/www/datastore/Summary.js:347
+#: proxmox-backup/www/datastore/Summary.js:411
 #: proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:140
 #: proxmox-datacenter-manager/ui/src/pve/lxc/overview.rs:179
 #: proxmox-datacenter-manager/ui/src/pve/qemu/overview.rs:175
@@ -16206,11 +16591,11 @@ msgid "Transfer"
 msgstr "Umladen"
 
 #: proxmox-backup/www/config/SyncView.js:382
-#: proxmox-backup/www/window/SyncJobEdit.js:439
+#: proxmox-backup/www/window/SyncJobEdit.js:442
 msgid "Transfer Last"
 msgstr "Neueste Übertragen"
 
-#: proxmox-backup/www/datastore/Summary.js:351
+#: proxmox-backup/www/datastore/Summary.js:415
 msgid "Transfer Rate (bytes/second)"
 msgstr "Transferrate (Bytes/Sekunde)"
 
@@ -16248,8 +16633,8 @@ msgstr "Vertrauenswürdiges Netzwerk"
 msgid "Tue"
 msgstr "Di."
 
-#: proxmox-backup/www/datastore/OptionView.js:235
-#: proxmox-backup/www/datastore/OptionView.js:239
+#: proxmox-backup/www/datastore/OptionView.js:264
+#: proxmox-backup/www/datastore/OptionView.js:268
 msgid "Tuning Options"
 msgstr "Tuning-Optionen"
 
@@ -16308,13 +16693,14 @@ msgstr "Zwei-Faktor-Authentifizierung"
 #: pve-manager/www/manager6/sdn/DnsView.js:109
 #: pve-manager/www/manager6/sdn/FabricsContentView.js:65
 #: pve-manager/www/manager6/sdn/IpamView.js:108
-#: pve-manager/www/manager6/sdn/StatusView.js:88
+#: pve-manager/www/manager6/sdn/StatusView.js:96
 #: pve-manager/www/manager6/sdn/ZoneView.js:127
 #: pve-manager/www/manager6/sdn/fabrics/InterfacePanel.js:54
 #: pve-manager/www/manager6/storage/StatusView.js:45
 #: pve-manager/www/manager6/storage/TemplateView.js:71
 #: pve-manager/www/manager6/window/BulkAction.js:393
 #: proxmox-backup/www/Subscription.js:98
+#: proxmox-backup/www/config/EncryptionKeysView.js:301
 #: proxmox-backup/www/config/MetricServerView.js:61
 #: proxmox-backup/www/form/AuthidSelector.js:72
 #: proxmox-backup/www/form/GroupFilter.js:520
@@ -16530,10 +16916,11 @@ msgstr "Unbekannte Subskription"
 msgid "Unknown warning"
 msgstr "Unbekannte Warnung"
 
+#: proxmox-backup/www/window/NamespaceMove.js:100
 #: proxmox-backup/www/window/S3ClientEdit.js:128
 #: proxmox-backup/www/window/S3ClientEdit.js:135
-#: proxmox-backup/www/window/SyncJobEdit.js:220
-#: proxmox-backup/www/window/SyncJobEdit.js:229
+#: proxmox-backup/www/window/SyncJobEdit.js:223
+#: proxmox-backup/www/window/SyncJobEdit.js:232
 #: proxmox-backup/www/window/TrafficControlEdit.js:242
 #: proxmox-backup/www/window/TrafficControlEdit.js:249
 msgid "Unlimited"
@@ -16543,12 +16930,12 @@ msgstr "Unbegrenzt"
 msgid "Unload"
 msgstr "Entladen"
 
-#: proxmox-backup/www/Utils.js:462
+#: proxmox-backup/www/Utils.js:464
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:297
 msgid "Unload Media"
 msgstr "Medium entladen"
 
-#: proxmox-backup/www/Utils.js:743
+#: proxmox-backup/www/Utils.js:746
 msgid "Unloading"
 msgstr "Entladen"
 
@@ -16563,25 +16950,25 @@ msgid "Unlock TFA authentication for {0}"
 msgstr "2FA für {0} entsperren"
 
 #: pve-manager/www/manager6/Utils.js:2200
-#: proxmox-backup/www/datastore/Summary.js:261
+#: proxmox-backup/www/datastore/Summary.js:271
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:211
 msgid "Unmount"
 msgstr "Unmount"
 
-#: proxmox-backup/www/Utils.js:463
+#: proxmox-backup/www/Utils.js:465
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:298
 msgid "Unmount Device"
 msgstr "Gerät entfernen"
 
-#: proxmox-backup/www/window/SyncJobEdit.js:524
+#: proxmox-backup/www/window/SyncJobEdit.js:538
 msgid "Unmount relevant removable datastore once sync job finishes."
 msgstr "Relevante entfernbare Datastore etfernen wenn ein Sync-Job fertig ist."
 
-#: proxmox-backup/www/window/SyncJobEdit.js:520
+#: proxmox-backup/www/window/SyncJobEdit.js:534
 msgid "Unmount when done"
 msgstr "Gerät entfernen wenn abgeschlossen"
 
-#: proxmox-backup/www/Utils.js:850
+#: proxmox-backup/www/Utils.js:853
 #: proxmox-backup/www/window/MaintenanceOptions.js:96
 msgid "Unmounting"
 msgstr "Entfernen"
@@ -16694,7 +17081,7 @@ msgstr "Update {0}-Konto"
 msgid "Updates"
 msgstr "Updates"
 
-#: proxmox-backup/www/Utils.js:753
+#: proxmox-backup/www/Utils.js:756
 msgid "Updating Microcode"
 msgstr "Microcode wird upgedatet"
 
@@ -16719,6 +17106,9 @@ msgstr "Pakete beim Booten aktualisieren"
 #: pve-manager/www/manager6/storage/ContentView.js:70
 #: pve-manager/www/manager6/window/UploadToStorage.js:9
 #: pve-manager/www/manager6/window/UploadToStorage.js:298
+#: proxmox-backup/www/datastore/Summary.js:392
+#: proxmox-backup/www/datastore/Summary.js:401
+#: proxmox-backup/www/window/NotificationThresholds.js:96
 #: proxmox-yew-comp/src/acme/certificate_list.rs:240
 msgid "Upload"
 msgstr "Hochladen"
@@ -16733,6 +17123,11 @@ msgstr "Hochladen"
 msgid "Upload Custom Certificate"
 msgstr "Benutzerdefniertes Zertifikat hochladen"
 
+#: proxmox-backup/www/window/EncryptionKeysEdit.js:316
+#, fuzzy
+msgid "Upload From File"
+msgstr "Von Datei"
+
 #: pmg-gui/js/Subscription.js:4 pmg-gui/js/Subscription.js:154
 #: pve-manager/www/manager6/node/Subscription.js:4
 #: pve-manager/www/manager6/node/Subscription.js:156
@@ -16744,6 +17139,11 @@ msgstr "Subskription-Key hochladen"
 
 #: pve-manager/www/manager6/storage/PBSEdit.js:333
 msgid "Upload an existing client encryption key"
+msgstr "Einen bestehenden Schlüssel hochladen"
+
+#: proxmox-backup/www/window/EncryptionKeysEdit.js:285
+#, fuzzy
+msgid "Upload an existing encryption key"
 msgstr "Einen bestehenden Schlüssel hochladen"
 
 #: pve-manager/www/manager6/window/UploadToStorage.js:263
@@ -16776,7 +17176,7 @@ msgstr "Betriebszeit"
 #: pve-manager/www/manager6/node/LVMThin.js:116
 #: pve-manager/www/manager6/storage/StatusView.js:56
 #: pve-manager/www/manager6/storage/Summary.js:51
-#: proxmox-backup/www/datastore/Summary.js:158
+#: proxmox-backup/www/datastore/Summary.js:69
 #: proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:139
 #: proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:232
 #: proxmox-datacenter-manager/ui/src/pve/remote_overview.rs:210
@@ -16914,7 +17314,7 @@ msgid "Use global notification settings"
 msgstr "Globale Benachrichtigungseinstellungen verwenden"
 
 #: pve-manager/www/manager6/window/Backup.js:43
-#: proxmox-backup/www/datastore/OptionView.js:195
+#: proxmox-backup/www/datastore/OptionView.js:202
 #: proxmox-backup/www/tape/window/TapeBackup.js:100
 msgid "Use global settings"
 msgstr "Globale Einstellungen verwenden"
@@ -16951,7 +17351,7 @@ msgid "Use sendmail (legacy)"
 msgstr "Sendmail verwenden (veraltet)"
 
 #: pve-manager/www/manager6/panel/BackupNotificationOptions.js:73
-#: proxmox-backup/www/datastore/OptionView.js:197
+#: proxmox-backup/www/datastore/OptionView.js:204
 #: proxmox-backup/www/tape/window/TapeBackupJob.js:268
 #: proxmox-backup/www/window/NotifyOptions.js:100
 msgid "Use sendmail to send an email (legacy)"
@@ -17132,7 +17532,7 @@ msgstr "Benutzerklassen"
 #: pve-manager/www/manager6/storage/CephFSEdit.js:62
 #: pve-manager/www/manager6/storage/RBDEdit.js:184
 #: pve-manager/www/manager6/window/LoginWindow.js:372
-#: proxmox-backup/www/LoginView.js:294
+#: proxmox-backup/www/LoginView.js:301
 #: proxmox-backup/www/config/UserView.js:216
 #: proxmox-backup/www/window/UserEdit.js:66
 #: proxmox-datacenter-manager/ui/src/remotes/tasks.rs:66
@@ -17272,7 +17672,7 @@ msgid "VLANs"
 msgstr "VLANs"
 
 #: pve-manager/www/manager6/window/BulkAction.js:400
-#: proxmox-backup/www/datastore/Summary.js:194
+#: proxmox-backup/www/datastore/Summary.js:105
 #: proxmox-backup/www/form/GroupFilter.js:533
 msgid "VM"
 msgstr "VM"
@@ -17405,8 +17805,8 @@ msgstr "Verzögerung der Validierung"
 #: pve-manager/www/manager6/qemu/CreateWizard.js:260
 #: pve-manager/www/manager6/window/GuestImport.js:969
 #: pve-manager/www/manager6/window/Snapshot.js:132
-#: proxmox-backup/www/Utils.js:602 proxmox-backup/www/Utils.js:639
-#: proxmox-backup/www/Utils.js:684 proxmox-backup/www/Utils.js:729
+#: proxmox-backup/www/Utils.js:605 proxmox-backup/www/Utils.js:642
+#: proxmox-backup/www/Utils.js:687 proxmox-backup/www/Utils.js:732
 #: proxmox-datacenter-manager/ui/src/widget/view_filter_selector.rs:285
 #: proxmox-yew-comp/src/configuration/pve/lxc_resources_panel/desktop.rs:611
 #: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/desktop.rs:808
@@ -17455,8 +17855,8 @@ msgid "Verbose"
 msgstr "Ausführlich"
 
 #: pve-manager/www/manager6/window/LoginWindow.js:205
-#: proxmox-backup/www/Utils.js:465 proxmox-backup/www/Utils.js:466
-#: proxmox-backup/www/Utils.js:467
+#: proxmox-backup/www/Utils.js:467 proxmox-backup/www/Utils.js:468
+#: proxmox-backup/www/Utils.js:469
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:303
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:304
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:305
@@ -17471,26 +17871,26 @@ msgstr "Verifizierungs-Job"
 msgid "Verification Jobs"
 msgstr "Verifizierungs-Jobs"
 
-#: proxmox-backup/www/Utils.js:486
+#: proxmox-backup/www/Utils.js:489
 msgid "Verification job"
 msgstr "Verifizierungs-Job"
 
-#: proxmox-backup/www/window/SyncJobEdit.js:483
+#: proxmox-backup/www/window/SyncJobEdit.js:497
 msgid "Verified Only"
 msgstr "Nur Verifizierte"
 
 #: proxmox-backup/www/dashboard/TaskSummary.js:28
-#: proxmox-backup/www/datastore/Content.js:1422
-#: proxmox-backup/www/datastore/Content.js:1487
+#: proxmox-backup/www/datastore/Content.js:1531
+#: proxmox-backup/www/datastore/Content.js:1606
 #: proxmox-backup/www/window/VerifyAll.js:44
 msgid "Verify"
 msgstr "Verifizieren"
 
-#: proxmox-backup/www/datastore/Content.js:1049
+#: proxmox-backup/www/datastore/Content.js:1134
 msgid "Verify '{0}'"
 msgstr "'{0}' verifizieren"
 
-#: proxmox-backup/www/datastore/Content.js:1342
+#: proxmox-backup/www/datastore/Content.js:1450
 msgid "Verify All"
 msgstr "Alle verifizieren"
 
@@ -17507,7 +17907,7 @@ msgstr "Zertifikat verifizieren"
 msgid "Verify Code"
 msgstr "Verifizierungs-Code"
 
-#: proxmox-backup/www/Utils.js:464
+#: proxmox-backup/www/Utils.js:466
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:301
 msgid "Verify Job"
 msgstr "Job verifizieren"
@@ -17516,11 +17916,11 @@ msgstr "Job verifizieren"
 msgid "Verify Jobs"
 msgstr "Verifizierungs-Jobs"
 
-#: proxmox-backup/www/datastore/OptionView.js:211
+#: proxmox-backup/www/datastore/OptionView.js:218
 msgid "Verify New"
 msgstr "Neue verifizieren"
 
-#: proxmox-backup/www/datastore/OptionView.js:206
+#: proxmox-backup/www/datastore/OptionView.js:213
 msgid "Verify New Snapshots"
 msgstr "Neue Snapshots verifizieren"
 
@@ -17542,7 +17942,7 @@ msgstr "SSL Verifizieren"
 #. TRANSLATORS: The state of the verification task
 #: pve-manager/www/manager6/grid/BackupView.js:380
 #: pve-manager/www/manager6/storage/BackupView.js:217
-#: proxmox-backup/www/datastore/Content.js:1207
+#: proxmox-backup/www/datastore/Content.js:1315
 #: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:136
 msgid "Verify State"
 msgstr "Zustand verifizieren"
@@ -17563,7 +17963,7 @@ msgid "Verify connection parameters and bind credentials on save"
 msgstr ""
 "Teste beim Hinzufügen die Verbindungsparameter samt BIND-Informationen."
 
-#: proxmox-backup/www/datastore/OptionView.js:216
+#: proxmox-backup/www/datastore/OptionView.js:223
 msgid "Verify new backups immediately after completion"
 msgstr "Backups direkt nach Fertigstellung verifizieren"
 
@@ -17658,6 +18058,11 @@ msgstr "Virtiofs Dateisystem Durchreichen"
 msgid "Virtual"
 msgstr "Virtuell"
 
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:679
+#, fuzzy
+msgid "Virtual Environment"
+msgstr "Virtual Environment Knoten"
+
 #: proxmox-datacenter-manager/ui/src/dashboard/node_status_panel.rs:165
 msgid "Virtual Environment Nodes"
 msgstr "Virtual Environment Knoten"
@@ -17690,7 +18095,7 @@ msgstr "Virtuelle Maschine {0} auf Knoten '{1}'"
 
 #: pve-manager/www/manager6/dc/Guests.js:38
 #: proxmox-datacenter-manager/ui/src/dashboard/guest_panel.rs:224
-#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:574
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:603
 #: pve-yew-mobile-gui/src/pages/page_dashboard.rs:287
 msgid "Virtual Machines"
 msgstr "Virtuelle Maschinen"
@@ -17756,7 +18161,7 @@ msgstr "Volumen-Aktion"
 msgid "Volume Details for {0}"
 msgstr "Volumen-Details für {0}"
 
-#: proxmox-backup/www/Utils.js:665 proxmox-backup/www/tape/ChangerStatus.js:934
+#: proxmox-backup/www/Utils.js:668 proxmox-backup/www/tape/ChangerStatus.js:934
 #: proxmox-backup/www/tape/DriveStatus.js:269
 msgid "Volume Statistics"
 msgstr "Volumen-Statistik"
@@ -17866,6 +18271,7 @@ msgid "Warnings"
 msgstr "Warnungen"
 
 #: pve-manager/www/manager6/storage/PBSEdit.js:48
+#: proxmox-backup/www/window/EncryptionKeysEdit.js:57
 msgid "We recommend the following safe-keeping strategy:"
 msgstr "Wir empfehlen die folgende Strategie:"
 
@@ -17960,6 +18366,21 @@ msgstr ""
 "Bei der Auswahl von mehreren Geräten wird das erste verfügbare beim Gast-"
 "Start verwendet."
 
+#: proxmox-backup/www/window/SyncJobEdit.js:636
+msgid ""
+"When pulling, the system uses the configured decryption keys to decrypt "
+"source snapshots with a matching key fingerprint and stores them unencrypted "
+"locally. Snapshots without a matching key are stored as received; pull never "
+"encrypts snapshots."
+msgstr ""
+
+#: proxmox-backup/www/window/SyncJobEdit.js:612
+msgid ""
+"When pushing, the system uses the active encryption key to encrypt "
+"unencrypted sources snapshots. It leaves existing encrypted content as-is, "
+"and skips partially encrypted content."
+msgstr ""
+
 #: pmg-gui/js/NavigationTree.js:28 pmg-gui/js/Utils.js:54
 msgid "Who Objects"
 msgstr "Wer Objekte"
@@ -17973,7 +18394,7 @@ msgid "Whole year"
 msgstr "Ganzes Jahr"
 
 #: proxmox-widget-toolkit/src/panel/DiskList.js:425
-#: pve-manager/www/manager6/Utils.js:2179 proxmox-backup/www/Utils.js:468
+#: pve-manager/www/manager6/Utils.js:2179 proxmox-backup/www/Utils.js:470
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:188
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:306
 msgid "Wipe Disk"
@@ -18045,8 +18466,8 @@ msgstr "Möchten Sie es jetzt installieren?"
 
 #: proxmox-backup/www/ServerStatus.js:262
 #: proxmox-backup/www/ServerStatus.js:269
-#: proxmox-backup/www/datastore/Summary.js:353
-#: proxmox-backup/www/datastore/Summary.js:359
+#: proxmox-backup/www/datastore/Summary.js:417
+#: proxmox-backup/www/datastore/Summary.js:423
 msgid "Write"
 msgstr "Schreiben"
 
@@ -18074,11 +18495,11 @@ msgstr "Write max burst"
 msgid "Writes"
 msgstr "Schreib-Vorgänge"
 
-#: proxmox-backup/www/Utils.js:746
+#: proxmox-backup/www/Utils.js:749
 msgid "Writing data"
 msgstr "Daten werden geschrieben"
 
-#: proxmox-backup/www/Utils.js:755
+#: proxmox-backup/www/Utils.js:758
 msgid "Writing encrypted data"
 msgstr "Verschlüsselte Daten werden geschrieben"
 
@@ -18274,7 +18695,7 @@ msgstr "ZFS ARC"
 msgid "ZFS Pool"
 msgstr "ZFS Pool"
 
-#: pve-manager/www/manager6/Utils.js:2201 proxmox-backup/www/Utils.js:469
+#: pve-manager/www/manager6/Utils.js:2201 proxmox-backup/www/Utils.js:471
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:212
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:307
 msgid "ZFS Storage"
@@ -18315,7 +18736,7 @@ msgid "a min_size of 1 is not recommended and can lead to data loss"
 msgstr ""
 "Eine min_size von 1 ist nicht empfohlen und kann zu Datenverlust führen"
 
-#: proxmox-backup/www/window/SyncJobEdit.js:440
+#: proxmox-backup/www/window/SyncJobEdit.js:443
 msgid "all"
 msgstr "Alle"
 
@@ -18366,6 +18787,10 @@ msgstr "eine HA Ressource {0} am Zielknoten blockiert"
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/add_zone.rs:206
 msgid "can only create the zone once per remote!"
 msgstr "kann die Zone nur einmal pro Remote erstellen!"
+
+#: proxmox-backup/www/config/EncryptionKeysView.js:51
+msgid "cannot archive tape key"
+msgstr ""
 
 #: proxmox-yew-widget-toolkit/src/widget/form/number.rs:53
 msgid "cannot represent number as f64"
@@ -18510,7 +18935,7 @@ msgstr "falschen Datentyp erhalten"
 msgid "got wrong data type."
 msgstr "falschen Datentyp erhalten."
 
-#: proxmox-backup/www/datastore/Content.js:1378
+#: proxmox-backup/www/datastore/Content.js:1486
 msgid "group, date or owner"
 msgstr "Gruppe, Datum oder Besitzer"
 
@@ -18663,7 +19088,14 @@ msgstr "noVNC-Einstellungen"
 #: pve-manager/www/manager6/window/UploadToStorage.js:256
 #: proxmox-backup/www/window/DataStoreEdit.js:149
 #: proxmox-backup/www/window/DataStoreEdit.js:160
-#: proxmox-backup/www/window/SyncJobEdit.js:210
+#: proxmox-backup/www/window/NotificationThresholds.js:44
+#: proxmox-backup/www/window/NotificationThresholds.js:53
+#: proxmox-backup/www/window/NotificationThresholds.js:62
+#: proxmox-backup/www/window/NotificationThresholds.js:71
+#: proxmox-backup/www/window/NotificationThresholds.js:80
+#: proxmox-backup/www/window/NotificationThresholds.js:100
+#: proxmox-backup/www/window/NotificationThresholds.js:109
+#: proxmox-backup/www/window/SyncJobEdit.js:213
 #: proxmox-datacenter-manager/ui/src/pve/lxc/overview.rs:275
 #: proxmox-datacenter-manager/ui/src/pve/lxc/overview.rs:283
 #: proxmox-datacenter-manager/ui/src/pve/qemu/overview.rs:284
@@ -18677,6 +19109,7 @@ msgstr "keine"
 
 #: proxmox-backup/www/tape/window/TapeBackupJob.js:119
 #: proxmox-backup/www/window/GCJobEdit.js:26
+#: proxmox-backup/www/window/ThresholdResetScheduleEdit.js:25
 #: proxmox-backup/www/window/VerifyJobEdit.js:131
 msgid "none (disabled)"
 msgstr "Keine (deaktiviert)"
@@ -18752,7 +19185,7 @@ msgstr "bevorzugter_username"
 msgid "privileged only"
 msgstr "nur privilegiert"
 
-#: proxmox-backup/www/datastore/Content.js:976
+#: proxmox-backup/www/datastore/Content.js:1061
 msgid "protected"
 msgstr "geschützt"
 
@@ -19006,7 +19439,7 @@ msgstr "{0} Einträge"
 msgid "{0} OK"
 msgstr "{0} O.K."
 
-#: proxmox-backup/www/Utils.js:829
+#: proxmox-backup/www/Utils.js:832
 msgid "{0} conflicting tasks still active."
 msgstr "{0} im Konflikt stehende Tasks sind noch aktiv."
 
@@ -19071,8 +19504,20 @@ msgstr "{0} einer unbekannten Anzahl an Knoten online"
 #: pve-manager/www/manager6/dc/Summary.js:223 proxmox-backup/www/Utils.js:328
 #: proxmox-backup/www/datastore/DataStoreListSummary.js:78
 #: proxmox-backup/www/datastore/DataStoreListSummary.js:83
+#: proxmox-datacenter-manager/ui/src/dashboard/gauge_panel.rs:187
+#: proxmox-datacenter-manager/ui/src/dashboard/gauge_panel.rs:199
 msgid "{0} of {1}"
 msgstr "{0} von {1}"
+
+#: proxmox-datacenter-manager/ui/src/dashboard/gauge_panel.rs:170
+#, fuzzy
+msgid "{0} of {1} cores"
+msgstr "{0} von {1}"
+
+#: proxmox-datacenter-manager/ui/src/dashboard/gauge_panel.rs:162
+#, fuzzy
+msgid "{0} of {1} cores ({2} allocated)"
+msgstr "{0} von {1} Knoten sind offline"
 
 #: proxmox-datacenter-manager/ui/src/dashboard/node_status_panel.rs:125
 msgid "{0} of {1} nodes are offline"
@@ -19368,9 +19813,6 @@ msgstr "{0}, Gruppe: {1}"
 #~ "Gewährleistung der Konsistenz. Veraltet zugunsten der generelleren "
 #~ "Einstellungen."
 
-#~ msgid "GPT"
-#~ msgstr "GPT"
-
 #, fuzzy
 #~ msgid "GUI will be restarted with new certificates, please reload!"
 #~ msgstr ""
@@ -19414,6 +19856,9 @@ msgstr "{0}, Gruppe: {1}"
 
 #~ msgid "Latency (ms)"
 #~ msgstr "Latenz (ms)"
+
+#~ msgid "Local Cache Usage"
+#~ msgstr "Lokale Cache-Nutzung"
 
 #~ msgid "Local Time"
 #~ msgstr "Lokale Zeit"
@@ -19753,9 +20198,6 @@ msgstr "{0}, Gruppe: {1}"
 #~ msgstr ""
 #~ "Um ein U2F-Gerät zu registrieren, verbinden Sie das Gerät, drücken auf "
 #~ "\"U2F-Gerät registrieren\" und folgen Sie den Instruktionen."
-
-#~ msgid "Toggle Theme"
-#~ msgstr "Theme umschalten"
 
 #~ msgid "U2F Device successfully connected."
 #~ msgstr "U2F-Device erfolgreich verbunden."

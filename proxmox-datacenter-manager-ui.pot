@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: proxmox-datacenter-manager-ui 5c7214a3f111f2077477a1aa0d938ad6fcebacc2\n"
+"Project-Id-Version: proxmox-datacenter-manager-ui d4c689f9d6ab87115004ffa447f06050e3e9f78f\n"
 "Report-Msgid-Bugs-To: <support@proxmox.com>\n"
-"POT-Creation-Date: 2026-04-08 22:11+0000\n"
+"POT-Creation-Date: 2026-04-23 23:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -138,7 +138,7 @@ msgstr ""
 msgid "# Included"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/configuration/views.rs:142 ./proxmox-datacenter-manager/ui/src/remotes/tasks.rs:165 ./proxmox-datacenter-manager/ui/src/dashboard/guest_panel.rs:152 ./proxmox-datacenter-manager/ui/src/dashboard/pbs_datastores_panel.rs:128
+#: ./proxmox-datacenter-manager/ui/src/configuration/views.rs:142 ./proxmox-datacenter-manager/ui/src/remotes/tasks.rs:165 ./proxmox-datacenter-manager/ui/src/dashboard/guest_panel.rs:152 ./proxmox-datacenter-manager/ui/src/dashboard/pbs_datastores_panel.rs:128 ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:677
 msgid "All"
 msgstr ""
 
@@ -839,6 +839,46 @@ msgid_plural "Failed to reach {n} of {0} remotes."
 msgstr[0] ""
 msgstr[1] ""
 
+#: ./proxmox-datacenter-manager/ui/src/dashboard/gauge_panel.rs:33 ./proxmox-datacenter-manager/ui/src/pbs/node/overview.rs:234 ./proxmox-datacenter-manager/ui/src/pve/lxc/overview.rs:340 ./proxmox-datacenter-manager/ui/src/pve/node/overview.rs:238 ./proxmox-datacenter-manager/ui/src/pve/qemu/overview.rs:349
+msgid "CPU Usage"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/dashboard/gauge_panel.rs:41 ./proxmox-datacenter-manager/ui/src/widget/pve_node_selector.rs:157 ./proxmox-datacenter-manager/ui/src/pbs/node/overview.rs:258 ./proxmox-datacenter-manager/ui/src/pve/node/overview.rs:262
+msgid "Memory Usage"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/dashboard/gauge_panel.rs:49
+msgid "Storage Usage"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/dashboard/gauge_panel.rs:57 ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:675
+msgid "Resource Usage"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/dashboard/gauge_panel.rs:162
+msgid "{0} of {1} cores ({2} allocated)"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/dashboard/gauge_panel.rs:170
+msgid "{0} of {1} cores"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/dashboard/gauge_panel.rs:176 ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:552 ./proxmox-datacenter-manager/ui/src/pbs/node/overview.rs:146 ./proxmox-datacenter-manager/ui/src/pve/node/overview.rs:151
+msgid "CPU"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/dashboard/gauge_panel.rs:186 ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:558
+msgid "Memory"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/dashboard/gauge_panel.rs:187 ./proxmox-datacenter-manager/ui/src/dashboard/gauge_panel.rs:199
+msgid "{0} of {1}"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/dashboard/gauge_panel.rs:198 ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:564 ./proxmox-datacenter-manager/ui/src/widget/pve_migrate_mapping.rs:42
+msgid "Storage"
+msgstr ""
+
 #: ./proxmox-datacenter-manager/ui/src/dashboard/guest_panel.rs:123
 msgid "running"
 msgstr ""
@@ -855,11 +895,11 @@ msgstr ""
 msgid "Unknown"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/dashboard/guest_panel.rs:224 ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:574
+#: ./proxmox-datacenter-manager/ui/src/dashboard/guest_panel.rs:224 ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:603
 msgid "Virtual Machines"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/dashboard/guest_panel.rs:225 ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:581
+#: ./proxmox-datacenter-manager/ui/src/dashboard/guest_panel.rs:225 ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:610
 msgid "Linux Container"
 msgstr ""
 
@@ -1008,76 +1048,88 @@ msgstr ""
 msgid "Add Row"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:544
+#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:545
+msgid "All Resources"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:573
 msgid "Remote Panel"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:548
+#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:577
 msgid "Node Panels"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:551
+#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:580
 msgid "All Nodes"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:554
+#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:583
 msgid "PBS Nodes"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:559
+#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:588
 msgid "PVE Nodes"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:567
+#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:596
 msgid "Guest Panels"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:570
+#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:599
 msgid "All Guests"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:590
+#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:619
 msgid "Subscription Panel"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:594
+#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:623
 msgid "PBS Datastores"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:598
+#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:627
 msgid "Leaderboards"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:601
+#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:630
 msgid "Guests with Highest CPU Usage"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:608
+#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:637
 msgid "Nodes with Highest CPU Usage"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:615
+#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:644
 msgid "Nodes with Highest Memory Usage"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:624
+#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:653
 msgid "Task Summaries"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:626
+#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:655
 msgid "Task Summary by Category"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:632
+#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:661
 msgid "Task Summary Sorted by Failed Tasks"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:640
+#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:669
 msgid "SDN Panel"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:642
+#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:671
 msgid "Resource Tree"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:679
+msgid "Virtual Environment"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:683
+msgid "Backup Server"
 msgstr ""
 
 #: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_element.rs:88
@@ -1192,10 +1244,6 @@ msgstr ""
 msgid "Migrate"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/widget/pve_node_selector.rs:157 ./proxmox-datacenter-manager/ui/src/pbs/node/overview.rs:258 ./proxmox-datacenter-manager/ui/src/pve/node/overview.rs:262
-msgid "Memory Usage"
-msgstr ""
-
 #: ./proxmox-datacenter-manager/ui/src/widget/pve_network_selector.rs:160
 msgid "Bridge"
 msgstr ""
@@ -1210,10 +1258,6 @@ msgstr ""
 
 #: ./proxmox-datacenter-manager/ui/src/widget/pve_storage_selector.rs:217
 msgid "Capacity"
-msgstr ""
-
-#: ./proxmox-datacenter-manager/ui/src/widget/pve_migrate_mapping.rs:42
-msgid "Storage"
 msgstr ""
 
 #: ./proxmox-datacenter-manager/ui/src/widget/pve_migrate_mapping.rs:43 ./proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:135
@@ -1340,10 +1384,6 @@ msgstr ""
 msgid "Not available if the datastore is in maintenance mode \"offline\"."
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/pbs/node/overview.rs:146 ./proxmox-datacenter-manager/ui/src/pve/node/overview.rs:151
-msgid "CPU"
-msgstr ""
-
 #: ./proxmox-datacenter-manager/ui/src/pbs/node/overview.rs:147 ./proxmox-datacenter-manager/ui/src/pbs/node/overview.rs:246 ./proxmox-datacenter-manager/ui/src/pve/node/overview.rs:152 ./proxmox-datacenter-manager/ui/src/pve/node/overview.rs:250
 msgid "Server Load"
 msgstr ""
@@ -1354,10 +1394,6 @@ msgstr ""
 
 #: ./proxmox-datacenter-manager/ui/src/pbs/node/overview.rs:149 ./proxmox-datacenter-manager/ui/src/pve/node/overview.rs:154
 msgid "Total Memory"
-msgstr ""
-
-#: ./proxmox-datacenter-manager/ui/src/pbs/node/overview.rs:234 ./proxmox-datacenter-manager/ui/src/pve/lxc/overview.rs:340 ./proxmox-datacenter-manager/ui/src/pve/node/overview.rs:238 ./proxmox-datacenter-manager/ui/src/pve/qemu/overview.rs:349
-msgid "CPU Usage"
 msgstr ""
 
 #: ./proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:100
