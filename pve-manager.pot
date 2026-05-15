@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: pve-manager 3e0b6409de49d3e1e06d5ac5c9017d4e7407370c\n"
+"Project-Id-Version: pve-manager c4d6f2e2ed8df9a4ce04fd8dc68794899f215c40\n"
 "Report-Msgid-Bugs-To: <support@proxmox.com>\n"
-"POT-Creation-Date: 2026-04-27 16:00+0200\n"
+"POT-Creation-Date: 2026-05-15 07:29+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,6 +20,10 @@ msgstr ""
 
 #: pve-manager/www/manager6/qemu/Options.js:105
 msgid "(No boot device selected)"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:605
+msgid "(exit)"
 msgstr ""
 
 #: pve-manager/www/manager6/dc/AuthEditOpenId.js:98
@@ -35,6 +39,20 @@ msgstr ""
 #: pve-manager/www/manager6/ceph/Services.js:200
 msgid ""
 "A newer version was installed but old version still running, please restart"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:129
+msgid ""
+"A number, \"rtt\", \"igp\" or \"aigp\"; numbers and rtt may be prefixed with "
+"+ or -."
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:103
+msgid "A number, or the literal \"untagged\"."
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:86
+msgid "A number; prefix with + or - to add or subtract from the current value."
 msgstr ""
 
 #: pve-manager/www/manager6/window/PCIMapEdit.js:202
@@ -131,7 +149,12 @@ msgstr ""
 
 #: pve-manager/www/manager6/grid/FirewallRules.js:240
 #: pve-manager/www/manager6/grid/FirewallRules.js:925
-#: pve-manager/www/manager6/sdn/FabricsView.js:100
+#: pve-manager/www/manager6/sdn/FabricsView.js:105
+#: pve-manager/www/manager6/sdn/PrefixListPanel.js:68
+#: pve-manager/www/manager6/sdn/PrefixListPanel.js:215
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:767
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:972
+#: pve-manager/www/manager6/sdn/fabrics/RedistributionGrid.js:111
 msgid "Action"
 msgstr ""
 
@@ -149,18 +172,18 @@ msgstr ""
 msgid "Active"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:737
+#: pve-manager/www/manager6/Utils.js:741
 msgid "Active Directory Server"
 msgstr ""
 
 #: pve-manager/www/manager6/dc/ACLView.js:198
 #: pve-manager/www/manager6/dc/AuthView.js:108
-#: pve-manager/www/manager6/dc/Backup.js:717
+#: pve-manager/www/manager6/dc/Backup.js:847
 #: pve-manager/www/manager6/dc/CorosyncLinkEdit.js:308
 #: pve-manager/www/manager6/dc/MetricServerView.js:99
 #: pve-manager/www/manager6/dc/RealmSyncJob.js:144
 #: pve-manager/www/manager6/dc/StorageView.js:96
-#: pve-manager/www/manager6/dc/TokenView.js:80
+#: pve-manager/www/manager6/dc/TokenView.js:100
 #: pve-manager/www/manager6/dc/UserView.js:148
 #: pve-manager/www/manager6/form/ListField.js:146
 #: pve-manager/www/manager6/form/TagColorGrid.js:278
@@ -170,6 +193,7 @@ msgstr ""
 #: pve-manager/www/manager6/grid/Replication.js:240
 #: pve-manager/www/manager6/ha/Resources.js:58
 #: pve-manager/www/manager6/ha/Rules.js:95
+#: pve-manager/www/manager6/lxc/IdMapField.js:197
 #: pve-manager/www/manager6/lxc/Network.js:481
 #: pve-manager/www/manager6/lxc/Resources.js:379
 #: pve-manager/www/manager6/node/ACME.js:620
@@ -179,9 +203,15 @@ msgstr ""
 #: pve-manager/www/manager6/sdn/ControllerView.js:94
 #: pve-manager/www/manager6/sdn/DnsView.js:93
 #: pve-manager/www/manager6/sdn/IpamView.js:92
+#: pve-manager/www/manager6/sdn/PrefixListPanel.js:133
+#: pve-manager/www/manager6/sdn/PrefixListPanel.js:238
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:306
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:557
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:927
 #: pve-manager/www/manager6/sdn/SubnetEdit.js:229
 #: pve-manager/www/manager6/sdn/VnetACLView.js:222
 #: pve-manager/www/manager6/sdn/ZoneView.js:109
+#: pve-manager/www/manager6/sdn/fabrics/RedistributionGrid.js:26
 #: pve-manager/www/manager6/tree/DhcpTree.js:250
 #: pve-manager/www/manager6/tree/ResourceMapTree.js:325
 msgid "Add"
@@ -199,13 +229,17 @@ msgstr ""
 msgid "Add EFI Disk"
 msgstr ""
 
-#: pve-manager/www/manager6/sdn/FabricsView.js:187
+#: pve-manager/www/manager6/sdn/FabricsView.js:192
 msgid "Add Fabric"
 msgstr ""
 
-#: pve-manager/www/manager6/sdn/FabricsView.js:107
-#: pve-manager/www/manager6/sdn/FabricsView.js:168
-#: pve-manager/www/manager6/sdn/fabrics/NodeEdit.js:188
+#: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:255
+msgid "Add Interface"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/FabricsView.js:112
+#: pve-manager/www/manager6/sdn/FabricsView.js:173
+#: pve-manager/www/manager6/sdn/fabrics/NodeEdit.js:243
 msgid "Add Node"
 msgstr ""
 
@@ -232,7 +266,7 @@ msgstr ""
 msgid "Add Variable"
 msgstr ""
 
-#: pve-manager/www/manager6/qemu/OSPanel.js:140
+#: pve-manager/www/manager6/qemu/OSPanel.js:150
 msgid "Add additional drive for VirtIO drivers"
 msgstr ""
 
@@ -263,6 +297,10 @@ msgstr ""
 msgid "Add to HA"
 msgstr ""
 
+#: pve-manager/www/manager6/sdn/zones/EvpnEdit.js:96
+msgid "Additional Controllers"
+msgstr ""
+
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:568
 msgid ""
 "Additional monitors are recommended. They can be created at any time in the "
@@ -278,7 +316,7 @@ msgstr ""
 msgid "Addresses and ports used by the OSD service"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Backup.js:420
+#: pve-manager/www/manager6/dc/Backup.js:550
 #: pve-manager/www/manager6/window/GuestImport.js:656
 #: pve-manager/www/manager6/window/Wizard.js:163
 msgid "Advanced"
@@ -301,7 +339,7 @@ msgstr ""
 msgid "Affinity Rules"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Config.js:357
+#: pve-manager/www/manager6/dc/Config.js:369
 #: pve-manager/www/manager6/form/SDNVnetSelector.js:34
 #: pve-manager/www/manager6/grid/FirewallAliases.js:47
 #: pve-manager/www/manager6/grid/FirewallAliases.js:84
@@ -314,12 +352,12 @@ msgstr ""
 msgid "Alias"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:381
-#: pve-manager/www/manager6/dc/Backup.js:231
-#: pve-manager/www/manager6/dc/Backup.js:259
-#: pve-manager/www/manager6/dc/Backup.js:439
-#: pve-manager/www/manager6/dc/BackupJobDetail.js:183
-#: pve-manager/www/manager6/dc/BackupJobDetail.js:408
+#: pve-manager/www/manager6/Utils.js:385
+#: pve-manager/www/manager6/dc/Backup.js:312
+#: pve-manager/www/manager6/dc/Backup.js:340
+#: pve-manager/www/manager6/dc/Backup.js:569
+#: pve-manager/www/manager6/dc/BackupJobDetail.js:163
+#: pve-manager/www/manager6/dc/BackupJobDetail.js:388
 #: pve-manager/www/manager6/form/StorageSelector.js:54
 #: pve-manager/www/manager6/sdn/VnetACLView.js:63
 #: pve-manager/www/manager6/sdn/zones/Base.js:45
@@ -342,11 +380,11 @@ msgstr ""
 msgid "All Functions"
 msgstr ""
 
-#: pve-manager/www/manager6/sdn/fabrics/NodeEdit.js:189
+#: pve-manager/www/manager6/sdn/fabrics/NodeEdit.js:244
 msgid "All available nodes are already part of the fabric"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:380
+#: pve-manager/www/manager6/Utils.js:384
 msgid "All except {0}"
 msgstr ""
 
@@ -403,7 +441,7 @@ msgstr ""
 msgid "Always"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/BackupJobDetail.js:221
+#: pve-manager/www/manager6/dc/BackupJobDetail.js:201
 msgid "Always send email"
 msgstr ""
 
@@ -436,9 +474,17 @@ msgstr ""
 msgid "Architecture"
 msgstr ""
 
+#: pve-manager/www/manager6/ha/Status.js:61
+msgid "Are you sure you want to arm HA?"
+msgstr ""
+
 #: pve-manager/www/manager6/lxc/Resources.js:246
 #: pve-manager/www/manager6/qemu/HardwareView.js:622
 msgid "Are you sure you want to detach entry {0}"
+msgstr ""
+
+#: pve-manager/www/manager6/ha/Status.js:25
+msgid "Are you sure you want to disarm HA with resource mode '{0}'?"
 msgstr ""
 
 #: pve-manager/www/manager6/tree/ResourceMapTree.js:109
@@ -457,6 +503,10 @@ msgstr ""
 msgid "Are you sure you want to remove DHCP mapping {0}"
 msgstr ""
 
+#: pve-manager/www/manager6/sdn/PrefixListPanel.js:255
+msgid "Are you sure you want to remove entry with sequence {0}"
+msgstr ""
+
 #: pve-manager/www/manager6/grid/BackupView.js:205
 #: pve-manager/www/manager6/grid/PoolMembers.js:257
 #: pve-manager/www/manager6/lxc/Network.js:507
@@ -467,11 +517,11 @@ msgstr ""
 msgid "Are you sure you want to remove entry {0}"
 msgstr ""
 
-#: pve-manager/www/manager6/sdn/FabricsView.js:438
+#: pve-manager/www/manager6/sdn/FabricsView.js:454
 msgid "Are you sure you want to remove the fabric \"{0}\"?"
 msgstr ""
 
-#: pve-manager/www/manager6/sdn/FabricsView.js:448
+#: pve-manager/www/manager6/sdn/FabricsView.js:464
 msgid ""
 "Are you sure you want to remove the node \"{0}\" from the fabric \"{1}\"?"
 msgstr ""
@@ -485,8 +535,12 @@ msgstr ""
 msgid "Are you sure you want to remove this entry"
 msgstr ""
 
-#: pve-manager/www/manager6/sdn/fabrics/ospf/FabricEdit.js:14
+#: pve-manager/www/manager6/sdn/fabrics/ospf/FabricEdit.js:16
 msgid "Area"
+msgstr ""
+
+#: pve-manager/www/manager6/ha/Status.js:83
+msgid "Arm HA"
 msgstr ""
 
 #: pve-manager/www/manager6/node/LVM.js:113
@@ -542,6 +596,7 @@ msgstr ""
 #: pve-manager/www/manager6/ceph/OSD.js:148
 #: pve-manager/www/manager6/form/TagColorGrid.js:55
 #: pve-manager/www/manager6/qemu/Options.js:352
+#: pve-manager/www/manager6/sdn/controllers/EvpnEdit.js:104
 msgid "Automatic"
 msgstr ""
 
@@ -549,11 +604,15 @@ msgstr ""
 msgid "Automatic (Storage used by the VM, or 'local')"
 msgstr ""
 
-#: pve-manager/www/manager6/form/CRSOptions.js:58
+#: pve-manager/www/manager6/sdn/zones/SimpleEdit.js:29
+msgid "Automatic DHCP"
+msgstr ""
+
+#: pve-manager/www/manager6/form/CRSOptions.js:71
 msgid "Automatic Rebalance"
 msgstr ""
 
-#: pve-manager/www/manager6/form/CRSOptions.js:59
+#: pve-manager/www/manager6/form/CRSOptions.js:72
 msgid "Automatically rebalance HA resources"
 msgstr ""
 
@@ -572,6 +631,14 @@ msgstr ""
 msgid "Available"
 msgstr ""
 
+#: pve-manager/www/manager6/sdn/fabrics/ospf/FabricEdit.js:42
+msgid "BGP"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/controllers/EvpnEdit.js:105
+msgid "BGP Mode"
+msgstr ""
+
 #: pve-manager/www/manager6/window/Wizard.js:176
 msgid "Back"
 msgstr ""
@@ -588,7 +655,7 @@ msgstr ""
 msgid "Background"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:705 pve-manager/www/manager6/Utils.js:2195
+#: pve-manager/www/manager6/Utils.js:709 pve-manager/www/manager6/Utils.js:2199
 #: pve-manager/www/manager6/dc/Config.js:140
 #: pve-manager/www/manager6/lxc/Config.js:307
 #: pve-manager/www/manager6/lxc/MPEdit.js:262
@@ -599,17 +666,17 @@ msgstr ""
 msgid "Backup"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Backup.js:496
+#: pve-manager/www/manager6/dc/Backup.js:626
 msgid "Backup Details"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2195
+#: pve-manager/www/manager6/Utils.js:2199
 #: pve-manager/www/manager6/dc/Backup.js:9
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:52
 msgid "Backup Job"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Backup.js:390
+#: pve-manager/www/manager6/dc/Backup.js:520
 msgid "Backup Notes"
 msgstr ""
 
@@ -629,7 +696,7 @@ msgstr ""
 msgid "Backup content type not available for this storage."
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2219
+#: pve-manager/www/manager6/Utils.js:2223
 msgid "Backup notifications"
 msgstr ""
 
@@ -682,7 +749,7 @@ msgstr ""
 msgid "Basic"
 msgstr ""
 
-#: pve-manager/www/manager6/form/CRSOptions.js:40
+#: pve-manager/www/manager6/form/CRSOptions.js:51
 msgid "Basic (Resource Count)"
 msgstr ""
 
@@ -792,19 +859,19 @@ msgstr ""
 msgid "Bulk Suspend"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2122
-#: pve-manager/www/manager6/Utils.js:2155
+#: pve-manager/www/manager6/Utils.js:2126
+#: pve-manager/www/manager6/Utils.js:2159
 msgid "Bulk migrate VMs and Containers"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2124
-#: pve-manager/www/manager6/Utils.js:2125
-#: pve-manager/www/manager6/Utils.js:2184
+#: pve-manager/www/manager6/Utils.js:2128
+#: pve-manager/www/manager6/Utils.js:2129
+#: pve-manager/www/manager6/Utils.js:2188
 msgid "Bulk shutdown VMs and Containers"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2123
-#: pve-manager/www/manager6/Utils.js:2183
+#: pve-manager/www/manager6/Utils.js:2127
+#: pve-manager/www/manager6/Utils.js:2187
 msgid "Bulk start VMs and Containers"
 msgstr ""
 
@@ -847,7 +914,7 @@ msgstr ""
 msgid "CIDR"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:454
+#: pve-manager/www/manager6/Utils.js:458
 #: pve-manager/www/manager6/dc/Summary.js:37
 #: pve-manager/www/manager6/form/HotplugFeatureSelector.js:33
 #: pve-manager/www/manager6/lxc/CreateWizard.js:240
@@ -905,7 +972,7 @@ msgstr ""
 
 #. TRANSLATORS: Stands for Complete Sequence Number Packet, see
 #. https://datatracker.ietf.org/doc/html/draft-ietf-lsr-distoptflood#name-flooding-failures
-#: pve-manager/www/manager6/sdn/fabrics/openfabric/FabricEdit.js:61
+#: pve-manager/www/manager6/sdn/fabrics/openfabric/FabricEdit.js:29
 msgid "CSNP Interval"
 msgstr ""
 
@@ -924,6 +991,11 @@ msgstr ""
 #: pve-manager/www/manager6/qemu/HDEdit.js:312
 #: pve-manager/www/manager6/qemu/VirtiofsEdit.js:51
 msgid "Cache"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:797
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:1014
+msgid "Call"
 msgstr ""
 
 #: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:136
@@ -954,7 +1026,7 @@ msgstr ""
 msgid "Cannot migrate VM with local resources: {0}"
 msgstr ""
 
-#: pve-manager/www/manager6/window/Migrate.js:445
+#: pve-manager/www/manager6/window/Migrate.js:450
 msgid "Cannot migrate VM, because {0}."
 msgstr ""
 
@@ -968,7 +1040,7 @@ msgid ""
 "network connections might get dropped."
 msgstr ""
 
-#: pve-manager/www/manager6/window/Migrate.js:535
+#: pve-manager/www/manager6/window/Migrate.js:545
 msgid "Cannot migrate container, because {0}."
 msgstr ""
 
@@ -1051,7 +1123,7 @@ msgstr ""
 msgid "Change Protection"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2139
+#: pve-manager/www/manager6/Utils.js:2143
 msgid "Change global Ceph flags"
 msgstr ""
 
@@ -1116,6 +1188,10 @@ msgstr ""
 msgid "Cleanup Storage Configuration"
 msgstr ""
 
+#: pve-manager/www/manager6/lxc/IdMapField.js:205
+msgid "Clear"
+msgstr ""
+
 #: pve-manager/www/manager6/window/BulkAction.js:496
 msgid "Clear Filters"
 msgstr ""
@@ -1132,8 +1208,8 @@ msgstr ""
 msgid "Clipboard"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2160
-#: pve-manager/www/manager6/Utils.js:2190
+#: pve-manager/www/manager6/Utils.js:2164
+#: pve-manager/www/manager6/Utils.js:2194
 #: pve-manager/www/manager6/dc/OptionView.js:344
 #: pve-manager/www/manager6/lxc/CmdMenu.js:95
 #: pve-manager/www/manager6/lxc/Config.js:121
@@ -1194,6 +1270,7 @@ msgid "Cluster Nodes"
 msgstr ""
 
 #: pve-manager/www/manager6/dc/OptionView.js:186
+#: pve-manager/www/manager6/form/CRSOptions.js:6
 msgid "Cluster Resource Scheduling"
 msgstr ""
 
@@ -1225,7 +1302,7 @@ msgstr ""
 msgid "Color Overrides"
 msgstr ""
 
-#: pve-manager/www/manager6/Workspace.js:444
+#: pve-manager/www/manager6/Workspace.js:429
 msgid "Color Theme"
 msgstr ""
 
@@ -1235,8 +1312,8 @@ msgstr ""
 
 #: pve-manager/www/manager6/dc/AuthEditBase.js:67
 #: pve-manager/www/manager6/dc/AuthView.js:35
-#: pve-manager/www/manager6/dc/Backup.js:796
-#: pve-manager/www/manager6/dc/BackupJobDetail.js:279
+#: pve-manager/www/manager6/dc/Backup.js:926
+#: pve-manager/www/manager6/dc/BackupJobDetail.js:259
 #: pve-manager/www/manager6/dc/DirMapView.js:30
 #: pve-manager/www/manager6/dc/GroupEdit.js:35
 #: pve-manager/www/manager6/dc/GroupView.js:86
@@ -1247,7 +1324,7 @@ msgstr ""
 #: pve-manager/www/manager6/dc/SecurityGroups.js:37
 #: pve-manager/www/manager6/dc/SecurityGroups.js:169
 #: pve-manager/www/manager6/dc/TokenEdit.js:76
-#: pve-manager/www/manager6/dc/TokenView.js:154
+#: pve-manager/www/manager6/dc/TokenView.js:191
 #: pve-manager/www/manager6/dc/USBMapView.js:92
 #: pve-manager/www/manager6/dc/UserEdit.js:127
 #: pve-manager/www/manager6/dc/UserView.js:227
@@ -1286,8 +1363,8 @@ msgstr ""
 msgid "Community"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Backup.js:293
-#: pve-manager/www/manager6/dc/BackupJobDetail.js:246
+#: pve-manager/www/manager6/dc/Backup.js:374
+#: pve-manager/www/manager6/dc/BackupJobDetail.js:226
 #: pve-manager/www/manager6/dc/MetricServerView.js:662
 #: pve-manager/www/manager6/node/ZFS.js:91
 #: pve-manager/www/manager6/window/Backup.js:24
@@ -1319,7 +1396,7 @@ msgstr ""
 msgid "Configuration for {0} not correct ('{1}' != '{2}')"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2161
+#: pve-manager/www/manager6/Utils.js:2165
 msgid "Configure"
 msgstr ""
 
@@ -1327,13 +1404,15 @@ msgstr ""
 msgid "Configure Ceph"
 msgstr ""
 
-#: pve-manager/www/manager6/sdn/fabrics/InterfacePanel.js:36
+#: pve-manager/www/manager6/sdn/fabrics/InterfacePanel.js:38
 msgid "Configure the IP in the fabric, instead of /etc/network/interfaces"
 msgstr ""
 
 #: pve-manager/www/manager6/button/Split.js:43
 #: pve-manager/www/manager6/ceph/OSD.js:452
-#: pve-manager/www/manager6/dc/Backup.js:632
+#: pve-manager/www/manager6/dc/Backup.js:762
+#: pve-manager/www/manager6/ha/Status.js:34
+#: pve-manager/www/manager6/ha/Status.js:60
 #: pve-manager/www/manager6/lxc/CmdMenu.js:26
 #: pve-manager/www/manager6/lxc/CmdMenu.js:124
 #: pve-manager/www/manager6/lxc/CreateWizard.js:263
@@ -1342,8 +1421,10 @@ msgstr ""
 #: pve-manager/www/manager6/qemu/CmdMenu.js:159
 #: pve-manager/www/manager6/qemu/CreateWizard.js:267
 #: pve-manager/www/manager6/qemu/HardwareView.js:589
-#: pve-manager/www/manager6/sdn/FabricsView.js:410
+#: pve-manager/www/manager6/sdn/FabricsView.js:426
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:879
 #: pve-manager/www/manager6/sdn/StatusView.js:49
+#: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:214
 #: pve-manager/www/manager6/tree/DhcpTree.js:99
 #: pve-manager/www/manager6/tree/ResourceMapTree.js:124
 #: pve-manager/www/manager6/window/GuestStop.js:72
@@ -1356,7 +1437,11 @@ msgstr ""
 msgid "Confirm password"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:688 pve-manager/www/manager6/Utils.js:1841
+#: pve-manager/www/manager6/sdn/fabrics/ospf/FabricEdit.js:43
+msgid "Connected"
+msgstr ""
+
+#: pve-manager/www/manager6/Utils.js:692 pve-manager/www/manager6/Utils.js:1845
 msgid "Connection error"
 msgstr ""
 
@@ -1365,7 +1450,7 @@ msgid "Connection failure. Network error or Proxmox VE services not running?"
 msgstr ""
 
 #. TRANSLATORS: See https://www.kernel.org/doc/html/next/networking/netlink_spec/conntrack.html
-#: pve-manager/www/manager6/window/Migrate.js:649
+#: pve-manager/www/manager6/window/Migrate.js:659
 msgid "Conntrack state"
 msgstr ""
 
@@ -1379,8 +1464,8 @@ msgstr ""
 msgid "Consent Text"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2181
-#: pve-manager/www/manager6/Utils.js:2188
+#: pve-manager/www/manager6/Utils.js:2185
+#: pve-manager/www/manager6/Utils.js:2192
 #: pve-manager/www/manager6/button/ConsoleButton.js:20
 #: pve-manager/www/manager6/lxc/CmdMenu.js:172
 #: pve-manager/www/manager6/lxc/Config.js:255
@@ -1399,12 +1484,17 @@ msgstr ""
 msgid "Console mode"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:708
+#: pve-manager/www/manager6/Utils.js:712
 #: pve-manager/www/manager6/ha/ResourceEdit.js:196
 msgid "Container"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:706
+#: pve-manager/www/manager6/lxc/IdMapField.js:139
+#: pve-manager/www/manager6/lxc/IdMapField.js:145
+msgid "Container ID"
+msgstr ""
+
+#: pve-manager/www/manager6/Utils.js:710
 msgid "Container template"
 msgstr ""
 
@@ -1430,8 +1520,11 @@ msgstr ""
 msgid "Content"
 msgstr ""
 
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:608
+msgid "Continue"
+msgstr ""
+
 #: pve-manager/www/manager6/form/SDNControllerSelector.js:28
-#: pve-manager/www/manager6/sdn/zones/EvpnEdit.js:22
 msgid "Controller"
 msgstr ""
 
@@ -1439,8 +1532,8 @@ msgstr ""
 msgid "Controllers"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2178
-#: pve-manager/www/manager6/Utils.js:2207
+#: pve-manager/www/manager6/Utils.js:2182
+#: pve-manager/www/manager6/Utils.js:2211
 #: pve-manager/www/manager6/lxc/CmdMenu.js:116
 #: pve-manager/www/manager6/lxc/Config.js:129
 #: pve-manager/www/manager6/qemu/CmdMenu.js:150
@@ -1465,7 +1558,7 @@ msgstr ""
 msgid "Copy Secret Value"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2149
+#: pve-manager/www/manager6/Utils.js:2153
 msgid "Copy data"
 msgstr ""
 
@@ -1490,18 +1583,18 @@ msgstr ""
 msgid "Could not detect a ceph installation in the cluster"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2126
-#: pve-manager/www/manager6/Utils.js:2127
-#: pve-manager/www/manager6/Utils.js:2128
-#: pve-manager/www/manager6/Utils.js:2129
 #: pve-manager/www/manager6/Utils.js:2130
-#: pve-manager/www/manager6/Utils.js:2137
-#: pve-manager/www/manager6/Utils.js:2142
-#: pve-manager/www/manager6/Utils.js:2151
-#: pve-manager/www/manager6/Utils.js:2153
-#: pve-manager/www/manager6/Utils.js:2162
-#: pve-manager/www/manager6/Utils.js:2191
-#: pve-manager/www/manager6/Utils.js:2209
+#: pve-manager/www/manager6/Utils.js:2131
+#: pve-manager/www/manager6/Utils.js:2132
+#: pve-manager/www/manager6/Utils.js:2133
+#: pve-manager/www/manager6/Utils.js:2134
+#: pve-manager/www/manager6/Utils.js:2141
+#: pve-manager/www/manager6/Utils.js:2146
+#: pve-manager/www/manager6/Utils.js:2155
+#: pve-manager/www/manager6/Utils.js:2157
+#: pve-manager/www/manager6/Utils.js:2166
+#: pve-manager/www/manager6/Utils.js:2195
+#: pve-manager/www/manager6/Utils.js:2213
 #: pve-manager/www/manager6/ceph/Pool.js:474
 #: pve-manager/www/manager6/ceph/Pool.js:497
 #: pve-manager/www/manager6/ceph/ServiceList.js:347
@@ -1519,7 +1612,11 @@ msgstr ""
 msgid "Create"
 msgstr ""
 
-#: pve-manager/www/manager6/Workspace.js:310
+#: pve-manager/www/manager6/sdn/fabrics/NodeEdit.js:85
+msgid "Create Another"
+msgstr ""
+
+#: pve-manager/www/manager6/Workspace.js:295
 #: pve-manager/www/manager6/node/CmdMenu.js:20
 msgid "Create CT"
 msgstr ""
@@ -1528,7 +1625,7 @@ msgstr ""
 msgid "Create CephFS"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2140
+#: pve-manager/www/manager6/Utils.js:2144
 #: pve-manager/www/manager6/dc/Cluster.js:155
 #: pve-manager/www/manager6/dc/ClusterEdit.js:5
 msgid "Create Cluster"
@@ -1538,13 +1635,9 @@ msgstr ""
 msgid "Create Device Nodes"
 msgstr ""
 
-#: pve-manager/www/manager6/Workspace.js:297
+#: pve-manager/www/manager6/Workspace.js:282
 #: pve-manager/www/manager6/node/CmdMenu.js:9
 msgid "Create VM"
-msgstr ""
-
-#: pve-manager/www/manager6/sdn/fabrics/NodeEdit.js:64
-msgid "Create another"
 msgstr ""
 
 #: pve-manager/www/manager6/ceph/OSD.js:872
@@ -1563,7 +1656,7 @@ msgstr ""
 msgid "Current Pool"
 msgstr ""
 
-#: pve-manager/www/manager6/window/Migrate.js:621
+#: pve-manager/www/manager6/window/Migrate.js:631
 msgid "Current layout"
 msgstr ""
 
@@ -1671,7 +1764,7 @@ msgstr ""
 msgid "Date"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2113
+#: pve-manager/www/manager6/Utils.js:2117
 msgid "Deactivate"
 msgstr ""
 
@@ -1733,7 +1826,10 @@ msgstr ""
 msgid "Defaults to target storage restore limit"
 msgstr ""
 
-#: pve-manager/www/manager6/sdn/FabricsView.js:131
+#: pve-manager/www/manager6/sdn/FabricsView.js:136
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:248
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:498
+#: pve-manager/www/manager6/sdn/fabrics/RedistributionGrid.js:116
 #: pve-manager/www/manager6/tree/DhcpTree.js:272
 msgid "Delete"
 msgstr ""
@@ -1742,8 +1838,8 @@ msgstr ""
 msgid "Delete Custom Certificate"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2163
-#: pve-manager/www/manager6/Utils.js:2192
+#: pve-manager/www/manager6/Utils.js:2167
+#: pve-manager/www/manager6/Utils.js:2196
 msgid "Delete Snapshot"
 msgstr ""
 
@@ -1769,6 +1865,11 @@ msgstr ""
 msgid "Dense"
 msgstr ""
 
+#: pve-manager/www/manager6/sdn/PrefixListPanel.js:72
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:771
+msgid "Deny"
+msgstr ""
+
 #: pve-manager/www/manager6/data/ResourceStore.js:115
 #: pve-manager/www/manager6/dc/Tasks.js:116
 #: pve-manager/www/manager6/form/GlobalSearchField.js:79
@@ -1784,7 +1885,7 @@ msgstr ""
 msgid "Description"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Backup.js:330
+#: pve-manager/www/manager6/dc/Backup.js:411
 #: pve-manager/www/manager6/dc/RealmSyncJob.js:397
 msgid "Description of the job"
 msgstr ""
@@ -1798,14 +1899,14 @@ msgstr ""
 msgid "Destination"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2131
-#: pve-manager/www/manager6/Utils.js:2132
-#: pve-manager/www/manager6/Utils.js:2133
-#: pve-manager/www/manager6/Utils.js:2134
 #: pve-manager/www/manager6/Utils.js:2135
 #: pve-manager/www/manager6/Utils.js:2136
-#: pve-manager/www/manager6/Utils.js:2164
-#: pve-manager/www/manager6/Utils.js:2193
+#: pve-manager/www/manager6/Utils.js:2137
+#: pve-manager/www/manager6/Utils.js:2138
+#: pve-manager/www/manager6/Utils.js:2139
+#: pve-manager/www/manager6/Utils.js:2140
+#: pve-manager/www/manager6/Utils.js:2168
+#: pve-manager/www/manager6/Utils.js:2197
 #: pve-manager/www/manager6/ceph/OSD.js:213
 #: pve-manager/www/manager6/ceph/OSD.js:983
 #: pve-manager/www/manager6/ceph/Pool.js:521
@@ -1825,7 +1926,7 @@ msgstr ""
 msgid "Destroy MON"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2186
+#: pve-manager/www/manager6/Utils.js:2190
 msgid "Destroy image from unknown guest"
 msgstr ""
 
@@ -1891,7 +1992,7 @@ msgstr ""
 msgid "Direction"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2143
+#: pve-manager/www/manager6/Utils.js:2147
 #: pve-manager/www/manager6/node/Directory.js:147
 #: pve-manager/www/manager6/node/Directory.js:172
 #: pve-manager/www/manager6/storage/DirEdit.js:14
@@ -1903,7 +2004,7 @@ msgstr ""
 msgid "Directory ID"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Config.js:424
+#: pve-manager/www/manager6/dc/Config.js:436
 msgid "Directory Mappings"
 msgstr ""
 
@@ -1912,7 +2013,7 @@ msgid ""
 "Directory Mappings can be managed under Datacenter -> Directory Mappings"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2142
+#: pve-manager/www/manager6/Utils.js:2146
 msgid "Directory Storage"
 msgstr ""
 
@@ -1920,8 +2021,8 @@ msgstr ""
 msgid "Disable ARP-nd Suppression"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:401 pve-manager/www/manager6/Utils.js:403
-#: pve-manager/www/manager6/Utils.js:437
+#: pve-manager/www/manager6/Utils.js:405 pve-manager/www/manager6/Utils.js:407
+#: pve-manager/www/manager6/Utils.js:441
 msgid "Disabled"
 msgstr ""
 
@@ -1929,6 +2030,10 @@ msgstr ""
 msgid ""
 "Disabling the limiter can potentially allow a guest to overload the host. "
 "Proceed with caution."
+msgstr ""
+
+#: pve-manager/www/manager6/ha/Status.js:91
+msgid "Disarm HA"
 msgstr ""
 
 #: pve-manager/www/manager6/qemu/HDEdit.js:316
@@ -1944,7 +2049,7 @@ msgstr ""
 msgid "Disconnected"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:446
+#: pve-manager/www/manager6/Utils.js:450
 #: pve-manager/www/manager6/ceph/OSD.js:63
 #: pve-manager/www/manager6/form/HotplugFeatureSelector.js:14
 #: pve-manager/www/manager6/lxc/MPResize.js:43
@@ -1970,7 +2075,7 @@ msgstr ""
 msgid "Disk Move"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:704
+#: pve-manager/www/manager6/Utils.js:708
 #: pve-manager/www/manager6/form/DiskStorageSelector.js:154
 #: pve-manager/www/manager6/lxc/MPEdit.js:237
 #: pve-manager/www/manager6/qemu/HDEdit.js:228
@@ -2009,7 +2114,7 @@ msgstr ""
 msgid "Do not use any media"
 msgstr ""
 
-#: pve-manager/www/manager6/Workspace.js:390
+#: pve-manager/www/manager6/Workspace.js:375
 msgid "Documentation"
 msgstr ""
 
@@ -2038,7 +2143,7 @@ msgstr ""
 msgid "Down"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2144
+#: pve-manager/www/manager6/Utils.js:2148
 #: pve-manager/www/manager6/node/Subscription.js:65
 #: pve-manager/www/manager6/storage/PBSEdit.js:87
 #: pve-manager/www/manager6/storage/TemplateView.js:140
@@ -2081,7 +2186,7 @@ msgstr ""
 msgid "Duration"
 msgstr ""
 
-#: pve-manager/www/manager6/form/CRSOptions.js:42
+#: pve-manager/www/manager6/form/CRSOptions.js:53
 msgid "Dynamic Load"
 msgstr ""
 
@@ -2109,7 +2214,7 @@ msgstr ""
 msgid "EFI Disk"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:405
+#: pve-manager/www/manager6/Utils.js:409
 msgid "EFI Disk without OVMF BIOS"
 msgstr ""
 
@@ -2123,11 +2228,11 @@ msgid ""
 "(see {0})"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2138
+#: pve-manager/www/manager6/Utils.js:2142
 #: pve-manager/www/manager6/ceph/Pool.js:456
 #: pve-manager/www/manager6/ceph/Pool.js:514
 #: pve-manager/www/manager6/dc/AuthView.js:115
-#: pve-manager/www/manager6/dc/Backup.js:615
+#: pve-manager/www/manager6/dc/Backup.js:745
 #: pve-manager/www/manager6/dc/GroupView.js:50
 #: pve-manager/www/manager6/dc/MetricServerView.js:119
 #: pve-manager/www/manager6/dc/OptionView.js:576
@@ -2136,7 +2241,7 @@ msgstr ""
 #: pve-manager/www/manager6/dc/RoleView.js:99
 #: pve-manager/www/manager6/dc/SecurityGroups.js:134
 #: pve-manager/www/manager6/dc/StorageView.js:58
-#: pve-manager/www/manager6/dc/TokenView.js:93
+#: pve-manager/www/manager6/dc/TokenView.js:113
 #: pve-manager/www/manager6/dc/UserView.js:49
 #: pve-manager/www/manager6/grid/FirewallAliases.js:139
 #: pve-manager/www/manager6/grid/FirewallOptions.js:181
@@ -2158,8 +2263,10 @@ msgstr ""
 #: pve-manager/www/manager6/qemu/Options.js:411
 #: pve-manager/www/manager6/sdn/ControllerView.js:55
 #: pve-manager/www/manager6/sdn/DnsView.js:54
-#: pve-manager/www/manager6/sdn/FabricsView.js:118
+#: pve-manager/www/manager6/sdn/FabricsView.js:123
 #: pve-manager/www/manager6/sdn/IpamView.js:53
+#: pve-manager/www/manager6/sdn/PrefixListPanel.js:246
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:932
 #: pve-manager/www/manager6/sdn/SubnetView.js:71
 #: pve-manager/www/manager6/sdn/VnetView.js:44
 #: pve-manager/www/manager6/sdn/ZoneView.js:61
@@ -2199,7 +2306,7 @@ msgid "Email from address"
 msgstr ""
 
 #: pve-manager/www/manager6/ceph/OSD.js:272
-#: pve-manager/www/manager6/dc/Backup.js:313
+#: pve-manager/www/manager6/dc/Backup.js:394
 #: pve-manager/www/manager6/grid/FirewallRules.js:329
 #: pve-manager/www/manager6/grid/FirewallRules.js:584
 #: pve-manager/www/manager6/ha/RuleEdit.js:73
@@ -2260,10 +2367,10 @@ msgstr ""
 msgid "Enable support for extended attributes."
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:400 pve-manager/www/manager6/Utils.js:402
-#: pve-manager/www/manager6/Utils.js:566
-#: pve-manager/www/manager6/dc/Backup.js:754
-#: pve-manager/www/manager6/dc/BackupJobDetail.js:264
+#: pve-manager/www/manager6/Utils.js:404 pve-manager/www/manager6/Utils.js:406
+#: pve-manager/www/manager6/Utils.js:570
+#: pve-manager/www/manager6/dc/Backup.js:884
+#: pve-manager/www/manager6/dc/BackupJobDetail.js:244
 #: pve-manager/www/manager6/dc/MetricServerView.js:80
 #: pve-manager/www/manager6/dc/MetricServerView.js:296
 #: pve-manager/www/manager6/dc/MetricServerView.js:445
@@ -2285,11 +2392,11 @@ msgstr ""
 msgid "Enabled"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:465
+#: pve-manager/www/manager6/Utils.js:469
 msgid "Enabled for Windows"
 msgstr ""
 
-#: pve-manager/www/manager6/window/Migrate.js:653
+#: pve-manager/www/manager6/window/Migrate.js:663
 msgid "Enables live migration of conntrack entries for this VM."
 msgstr ""
 
@@ -2297,7 +2404,7 @@ msgstr ""
 msgid "Encrypt OSD"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:286
+#: pve-manager/www/manager6/Utils.js:290
 #: pve-manager/www/manager6/grid/BackupView.js:374
 #: pve-manager/www/manager6/storage/BackupView.js:207
 msgid "Encrypted"
@@ -2317,6 +2424,10 @@ msgstr ""
 
 #: pve-manager/www/manager6/dc/Tasks.js:81
 msgid "End Time"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:52
+msgid "Endpoint"
 msgstr ""
 
 #: pve-manager/www/manager6/qemu/HardwareView.js:582
@@ -2360,12 +2471,12 @@ msgstr ""
 msgid "Environment"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2150
+#: pve-manager/www/manager6/Utils.js:2154
 msgid "Erase data"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:1648
-#: pve-manager/www/manager6/Utils.js:1661
+#: pve-manager/www/manager6/Utils.js:1652
+#: pve-manager/www/manager6/Utils.js:1665
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:133
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:637
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:642
@@ -2390,6 +2501,7 @@ msgstr ""
 #: pve-manager/www/manager6/dc/Support.js:65
 #: pve-manager/www/manager6/dc/SyncWindow.js:59
 #: pve-manager/www/manager6/dc/SyncWindow.js:197
+#: pve-manager/www/manager6/dc/TokenView.js:94
 #: pve-manager/www/manager6/dc/UserView.js:131
 #: pve-manager/www/manager6/form/PrivilegesSelector.js:25
 #: pve-manager/www/manager6/grid/FirewallRules.js:685
@@ -2399,9 +2511,11 @@ msgstr ""
 #: pve-manager/www/manager6/grid/Replication.js:351
 #: pve-manager/www/manager6/ha/ResourceEdit.js:46
 #: pve-manager/www/manager6/ha/RuleEdit.js:15
+#: pve-manager/www/manager6/ha/Status.js:49
+#: pve-manager/www/manager6/ha/Status.js:74
 #: pve-manager/www/manager6/lxc/CmdMenu.js:21
 #: pve-manager/www/manager6/lxc/CreateWizard.js:352
-#: pve-manager/www/manager6/lxc/MPEdit.js:409
+#: pve-manager/www/manager6/lxc/MPEdit.js:415
 #: pve-manager/www/manager6/lxc/MPResize.js:16
 #: pve-manager/www/manager6/lxc/Network.js:425
 #: pve-manager/www/manager6/lxc/Network.js:521
@@ -2449,6 +2563,14 @@ msgstr ""
 msgid "Error"
 msgstr ""
 
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:363
+msgid "Ethernet Auto-Discovery (Type 1)"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:366
+msgid "Ethernet Segment (Type 4)"
+msgstr ""
+
 #: pve-manager/www/manager6/form/CalendarEvent.js:21
 #: pve-manager/www/manager6/form/CalendarEvent.js:22
 msgid "Every day"
@@ -2479,8 +2601,8 @@ msgstr ""
 msgid "Exclude Tags"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Backup.js:260
-#: pve-manager/www/manager6/dc/BackupJobDetail.js:411
+#: pve-manager/www/manager6/dc/Backup.js:341
+#: pve-manager/www/manager6/dc/BackupJobDetail.js:391
 msgid "Exclude selected VMs"
 msgstr ""
 
@@ -2496,6 +2618,12 @@ msgstr ""
 msgid "Exit Nodes Local Routing"
 msgstr ""
 
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:600
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:804
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:1022
+msgid "Exit Policy"
+msgstr ""
+
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:16
 msgid "Expand All"
 msgstr ""
@@ -2505,7 +2633,7 @@ msgstr ""
 msgid "Experimental"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/TokenView.js:147
+#: pve-manager/www/manager6/dc/TokenView.js:184
 #: pve-manager/www/manager6/dc/UserView.js:195
 msgid "Expire"
 msgstr ""
@@ -2513,6 +2641,10 @@ msgstr ""
 #: pve-manager/www/manager6/node/Certificates.js:85
 #: pve-manager/www/manager6/node/Certificates.js:345
 msgid "Expires"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/fabrics/wireguard/NodeEdit.js:185
+msgid "External peer"
 msgstr ""
 
 #: pve-manager/www/manager6/sdn/SdnDiffView.js:69
@@ -2526,11 +2658,12 @@ msgstr ""
 
 #. TRANSLATORS: As in "Network Fabric": https://en.wikipedia.org/wiki/Switched_fabric
 #: pve-manager/www/manager6/sdn/controllers/EvpnEdit.js:44
+#: pve-manager/www/manager6/sdn/fabrics/FabricEdit.js:105
 #: pve-manager/www/manager6/sdn/zones/VxlanEdit.js:66
 msgid "Fabric"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Config.js:310
+#: pve-manager/www/manager6/dc/Config.js:307
 msgid "Fabrics"
 msgstr ""
 
@@ -2539,7 +2672,7 @@ msgstr ""
 msgid "Failback"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:295
+#: pve-manager/www/manager6/Utils.js:299
 msgid "Failed"
 msgstr ""
 
@@ -2554,7 +2687,7 @@ msgstr ""
 msgid "Fallback Server"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Backup.js:809
+#: pve-manager/www/manager6/dc/Backup.js:939
 msgid "Fallback from storage config"
 msgstr ""
 
@@ -2571,11 +2704,16 @@ msgstr ""
 msgid "Fencing"
 msgstr ""
 
+#: pve-manager/www/manager6/sdn/fabrics/NodeEdit.js:181
+#: pve-manager/www/manager6/sdn/fabrics/wireguard/NodeEdit.js:130
+msgid "Fetching Node Information"
+msgstr ""
+
 #: pve-manager/www/manager6/sdn/SdnDiffView.js:32
 msgid "Fetching diff..."
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2144
+#: pve-manager/www/manager6/Utils.js:2148
 #: pve-manager/www/manager6/node/Certificates.js:312
 #: pve-manager/www/manager6/window/UploadToStorage.js:202
 msgid "File"
@@ -2588,7 +2726,7 @@ msgstr ""
 msgid "File Restore"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2157
+#: pve-manager/www/manager6/Utils.js:2161
 msgid "File Restore Download"
 msgstr ""
 
@@ -2641,7 +2779,7 @@ msgstr ""
 msgid "Finish Edit"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Config.js:330
+#: pve-manager/www/manager6/dc/Config.js:342
 #: pve-manager/www/manager6/grid/FirewallOptions.js:66
 #: pve-manager/www/manager6/grid/FirewallOptions.js:93
 #: pve-manager/www/manager6/grid/FirewallOptions.js:108
@@ -2715,7 +2853,7 @@ msgstr ""
 msgid "For the PAM realm, this applies only to the connected node."
 msgstr ""
 
-#: pve-manager/www/manager6/window/Migrate.js:629
+#: pve-manager/www/manager6/window/Migrate.js:639
 msgid "Force"
 msgstr ""
 
@@ -2727,7 +2865,7 @@ msgstr ""
 msgid "Force stop guest if shutdown times out."
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:685
+#: pve-manager/www/manager6/Utils.js:689
 msgid "Form fields may not be submitted with invalid values"
 msgstr ""
 
@@ -2759,6 +2897,10 @@ msgstr ""
 #: pve-manager/www/manager6/node/LVM.js:131
 #: pve-manager/www/manager6/node/ZFS.js:240
 msgid "Free"
+msgstr ""
+
+#: pve-manager/www/manager6/ha/Status.js:98
+msgid "Freeze"
 msgstr ""
 
 #: pve-manager/www/manager6/qemu/Options.js:229
@@ -2828,7 +2970,7 @@ msgstr ""
 
 #: pve-manager/www/manager6/ceph/OSDDetails.js:135
 #: pve-manager/www/manager6/dc/AuthEditBase.js:118
-#: pve-manager/www/manager6/dc/Backup.js:220
+#: pve-manager/www/manager6/dc/Backup.js:301
 #: pve-manager/www/manager6/lxc/CreateWizard.js:30
 #: pve-manager/www/manager6/qemu/CreateWizard.js:86
 #: pve-manager/www/manager6/sdn/SubnetEdit.js:266
@@ -2947,9 +3089,17 @@ msgstr ""
 msgid "Guests"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Backup.js:665
-#: pve-manager/www/manager6/dc/Backup.js:677
+#: pve-manager/www/manager6/dc/Backup.js:795
+#: pve-manager/www/manager6/dc/Backup.js:807
 msgid "Guests Without Backup Job"
+msgstr ""
+
+#: pve-manager/www/manager6/dc/Backup.js:286
+msgid "Guests to Exclude"
+msgstr ""
+
+#: pve-manager/www/manager6/dc/Backup.js:284
+msgid "Guests to Include"
 msgstr ""
 
 #: pve-manager/www/manager6/ha/rules/NodeAffinityRules.js:6
@@ -2982,10 +3132,6 @@ msgstr ""
 msgid "HA Rule is OK."
 msgstr ""
 
-#: pve-manager/www/manager6/form/CRSOptions.js:35
-msgid "HA Scheduling"
-msgstr ""
-
 #: pve-manager/www/manager6/dc/OptionView.js:160
 msgid "HA Settings"
 msgstr ""
@@ -3000,22 +3146,27 @@ msgstr ""
 msgid "HA State: {0}"
 msgstr ""
 
+#: pve-manager/www/manager6/window/Migrate.js:437
+#: pve-manager/www/manager6/window/Migrate.js:532
+msgid "HA resource {0} is not allowed on the selected target node"
+msgstr ""
+
 #: pve-manager/www/manager6/window/Migrate.js:431
 msgid "HA resource {0} with negative affinity to VM on selected target node"
 msgstr ""
 
-#: pve-manager/www/manager6/window/Migrate.js:521
+#: pve-manager/www/manager6/window/Migrate.js:526
 msgid ""
 "HA resource {0} with negative affinity to container on selected target node"
 msgstr ""
 
-#: pve-manager/www/manager6/window/Migrate.js:457
+#: pve-manager/www/manager6/window/Migrate.js:462
 msgid ""
 "HA resource {0} with positive affinity to VM is also migrated to selected "
 "target node."
 msgstr ""
 
-#: pve-manager/www/manager6/window/Migrate.js:547
+#: pve-manager/www/manager6/window/Migrate.js:557
 msgid ""
 "HA resource {0} with positive affinity to container is also migrated to "
 "selected target node."
@@ -3057,7 +3208,7 @@ msgstr ""
 msgid "Hash algorithm"
 msgstr ""
 
-#: pve-manager/www/manager6/Workspace.js:343
+#: pve-manager/www/manager6/Workspace.js:328
 msgid "Header"
 msgstr ""
 
@@ -3076,15 +3227,15 @@ msgid "Heartbeat Front Address"
 msgstr ""
 
 #. TRANSLATORS: See https://en.wikipedia.org/wiki/IS-IS#Packet_types
-#: pve-manager/www/manager6/sdn/fabrics/openfabric/FabricEdit.js:47
+#: pve-manager/www/manager6/sdn/fabrics/openfabric/FabricEdit.js:15
 msgid "Hello Interval"
 msgstr ""
 
-#: pve-manager/www/manager6/sdn/fabrics/openfabric/InterfacePanel.js:19
+#: pve-manager/www/manager6/sdn/fabrics/openfabric/InterfacePanel.js:6
 msgid "Hello Multiplier"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2177
+#: pve-manager/www/manager6/Utils.js:2181
 #: pve-manager/www/manager6/qemu/CmdMenu.js:75
 #: pve-manager/www/manager6/qemu/Config.js:190
 msgid "Hibernate"
@@ -3098,7 +3249,7 @@ msgstr ""
 msgid "Hint"
 msgstr ""
 
-#: pve-manager/www/manager6/form/CRSOptions.js:93
+#: pve-manager/www/manager6/form/CRSOptions.js:108
 msgid "Hold Duration"
 msgstr ""
 
@@ -3119,6 +3270,11 @@ msgstr ""
 
 #: pve-manager/www/manager6/data/ResourceStore.js:322
 msgid "Host CPU usage"
+msgstr ""
+
+#: pve-manager/www/manager6/lxc/IdMapField.js:152
+#: pve-manager/www/manager6/lxc/IdMapField.js:158
+msgid "Host ID"
 msgstr ""
 
 #: pve-manager/www/manager6/panel/GuestSummary.js:45
@@ -3171,12 +3327,20 @@ msgstr ""
 msgid "ICMP type"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Backup.js:762
+#: pve-manager/www/manager6/dc/Backup.js:892
 #: pve-manager/www/manager6/dc/Cluster.js:289
 #: pve-manager/www/manager6/form/PCIMapSelector.js:35
 #: pve-manager/www/manager6/ha/Rules.js:114
 #: pve-manager/www/manager6/window/GuestImport.js:889
 msgid "ID"
+msgstr ""
+
+#: pve-manager/www/manager6/lxc/IdMapField.js:103
+msgid "ID Mapping"
+msgstr ""
+
+#: pve-manager/www/manager6/lxc/IdMapField.js:124
+msgid "ID Type"
 msgstr ""
 
 #: pve-manager/www/manager6/ceph/ServiceList.js:53
@@ -3221,7 +3385,7 @@ msgid "IOMMU-Group"
 msgstr ""
 
 #: pve-manager/www/manager6/sdn/EvpnZoneMacVrfPanel.js:63
-#: pve-manager/www/manager6/sdn/fabrics/InterfacePanel.js:59
+#: pve-manager/www/manager6/sdn/fabrics/InterfacePanel.js:61
 msgid "IP"
 msgstr ""
 
@@ -3233,6 +3397,15 @@ msgstr ""
 
 #: pve-manager/www/manager6/qemu/CloudInit.js:306
 msgid "IP Config"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:367
+msgid "IP Prefix (Type 5)"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/fabrics/openfabric/FabricEdit.js:44
+#: pve-manager/www/manager6/sdn/fabrics/ospf/FabricEdit.js:27
+msgid "IP Prefixes"
 msgstr ""
 
 #: pve-manager/www/manager6/lxc/Network.js:567
@@ -3268,7 +3441,7 @@ msgstr ""
 msgid "IP/CIDR"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Config.js:294
+#: pve-manager/www/manager6/dc/Config.js:291
 #: pve-manager/www/manager6/sdn/zones/Base.js:51
 msgid "IPAM"
 msgstr ""
@@ -3280,13 +3453,38 @@ msgstr ""
 
 #: pve-manager/www/manager6/qemu/IPConfigEdit.js:79
 #: pve-manager/www/manager6/qemu/IPConfigEdit.js:119
-#: pve-manager/www/manager6/sdn/FabricsView.js:56
-#: pve-manager/www/manager6/sdn/fabrics/NodeEdit.js:27
+#: pve-manager/www/manager6/sdn/FabricsView.js:57
+#: pve-manager/www/manager6/sdn/fabrics/NodeEdit.js:51
 msgid "IPv4"
 msgstr ""
 
-#: pve-manager/www/manager6/sdn/fabrics/FabricEdit.js:29
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:436
+msgid "IPv4 (prefix-list)"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:299
+msgid "IPv4 Address"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/fabrics/FabricEdit.js:58
 msgid "IPv4 Prefix"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:182
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:440
+msgid "IPv4 next-hop"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:438
+msgid "IPv4 next-hop (prefix-list)"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:183
+msgid "IPv4 next-hop to peer address"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:184
+msgid "IPv4 next-hop unchanged"
 msgstr ""
 
 #: pve-manager/www/manager6/qemu/IPConfigEdit.js:111
@@ -3295,14 +3493,39 @@ msgstr ""
 
 #: pve-manager/www/manager6/qemu/IPConfigEdit.js:137
 #: pve-manager/www/manager6/qemu/IPConfigEdit.js:185
-#: pve-manager/www/manager6/sdn/FabricsView.js:68
-#: pve-manager/www/manager6/sdn/fabrics/openfabric/InterfacePanel.js:6
-#: pve-manager/www/manager6/sdn/fabrics/openfabric/NodeEdit.js:12
+#: pve-manager/www/manager6/sdn/FabricsView.js:69
+#: pve-manager/www/manager6/sdn/fabrics/InterfacePanel.js:113
+#: pve-manager/www/manager6/sdn/fabrics/NodeEdit.js:65
 msgid "IPv6"
 msgstr ""
 
-#: pve-manager/www/manager6/sdn/fabrics/openfabric/FabricEdit.js:28
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:437
+msgid "IPv6 (prefix-list)"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:306
+msgid "IPv6 Address"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/fabrics/FabricEdit.js:82
 msgid "IPv6 Prefix"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:185
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:441
+msgid "IPv6 next-hop"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:439
+msgid "IPv6 next-hop (prefix-list)"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:187
+msgid "IPv6 next-hop to global address"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:186
+msgid "IPv6 next-hop to peer address"
 msgstr ""
 
 #: pve-manager/www/manager6/qemu/IPConfigEdit.js:177
@@ -3317,7 +3540,7 @@ msgstr ""
 msgid "ISO Images"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:707
+#: pve-manager/www/manager6/Utils.js:711
 #: pve-manager/www/manager6/form/IsoSelector.js:98
 msgid "ISO image"
 msgstr ""
@@ -3328,7 +3551,11 @@ msgid ""
 "clipboard."
 msgstr ""
 
-#: pve-manager/www/manager6/form/CRSOptions.js:66
+#: pve-manager/www/manager6/ha/Status.js:107
+msgid "Ignore"
+msgstr ""
+
+#: pve-manager/www/manager6/form/CRSOptions.js:81
 msgid "Imbalance Threshold"
 msgstr ""
 
@@ -3336,7 +3563,7 @@ msgstr ""
 msgid "Implies xattr support."
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:710
+#: pve-manager/www/manager6/Utils.js:714
 #: pve-manager/www/manager6/panel/MultiDiskEdit.js:285
 #: pve-manager/www/manager6/storage/Browser.js:160
 #: pve-manager/www/manager6/storage/Browser.js:178
@@ -3387,8 +3614,8 @@ msgstr ""
 msgid "Include Tags"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Backup.js:258
-#: pve-manager/www/manager6/dc/BackupJobDetail.js:405
+#: pve-manager/www/manager6/dc/Backup.js:339
+#: pve-manager/www/manager6/dc/BackupJobDetail.js:385
 msgid "Include selected VMs"
 msgstr ""
 
@@ -3397,13 +3624,22 @@ msgstr ""
 msgid "Include volume in backup job"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Backup.js:514
+#: pve-manager/www/manager6/dc/Backup.js:644
 msgid "Included disks"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:365
+msgid "Inclusive Multicast (Type 3)"
 msgstr ""
 
 #: pve-manager/www/manager6/node/Summary.js:264
 #: pve-manager/www/manager6/panel/GuestSummary.js:124
 msgid "Incoming"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/controllers/BgpEdit.js:79
+#: pve-manager/www/manager6/sdn/controllers/EvpnEdit.js:70
+msgid "Incoming Route Map"
 msgstr ""
 
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:240
@@ -3447,18 +3683,19 @@ msgstr ""
 #: pve-manager/www/manager6/grid/FirewallRules.js:284
 #: pve-manager/www/manager6/grid/FirewallRules.js:571
 #: pve-manager/www/manager6/grid/FirewallRules.js:947
+#: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:42
 msgid "Interface"
 msgstr ""
 
-#: pve-manager/www/manager6/sdn/fabrics/InterfacePanel.js:32
+#: pve-manager/www/manager6/sdn/fabrics/InterfacePanel.js:34
 msgid "Interface already has an address configured in /etc/network/interfaces"
 msgstr ""
 
-#: pve-manager/www/manager6/sdn/fabrics/InterfacePanel.js:26
+#: pve-manager/www/manager6/sdn/fabrics/InterfacePanel.js:28
 msgid "Interface does not exist on node"
 msgstr ""
 
-#: pve-manager/www/manager6/sdn/FabricsView.js:80
+#: pve-manager/www/manager6/sdn/FabricsView.js:81
 #: pve-manager/www/manager6/sdn/NetworkBrowser.js:78
 #: pve-manager/www/manager6/sdn/controllers/IsisEdit.js:46
 msgid "Interfaces"
@@ -3466,6 +3703,10 @@ msgstr ""
 
 #: pve-manager/www/manager6/sdn/SdnDiffView.js:88
 msgid "Interfaces Config"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/fabrics/wireguard/NodeEdit.js:184
+msgid "Internal (cluster member)"
 msgstr ""
 
 #: pve-manager/www/manager6/dc/MetricServerView.js:697
@@ -3485,11 +3726,11 @@ msgstr ""
 msgid "Invalid characters in pool name"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:1649
+#: pve-manager/www/manager6/Utils.js:1653
 msgid "Invalid file size"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:1661
+#: pve-manager/www/manager6/Utils.js:1665
 msgid "Invalid file size: "
 msgstr ""
 
@@ -3534,16 +3775,16 @@ msgstr ""
 msgid "Job"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Backup.js:324
+#: pve-manager/www/manager6/dc/Backup.js:405
 #: pve-manager/www/manager6/dc/RealmSyncJob.js:391
 msgid "Job Comment"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Backup.js:655
+#: pve-manager/www/manager6/dc/Backup.js:785
 msgid "Job Detail"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2214
+#: pve-manager/www/manager6/Utils.js:2218
 #: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:125
 msgid "Job ID"
 msgstr ""
@@ -3556,7 +3797,7 @@ msgstr ""
 msgid "Join"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2141
+#: pve-manager/www/manager6/Utils.js:2145
 #: pve-manager/www/manager6/dc/Cluster.js:171
 msgid "Join Cluster"
 msgstr ""
@@ -3583,7 +3824,7 @@ msgstr ""
 msgid "KVM hardware virtualization"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/BackupJobDetail.js:305
+#: pve-manager/www/manager6/dc/BackupJobDetail.js:285
 msgid "Keep All"
 msgstr ""
 
@@ -3591,22 +3832,22 @@ msgstr ""
 msgid "Keep Attributes"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/BackupJobDetail.js:331
+#: pve-manager/www/manager6/dc/BackupJobDetail.js:311
 #: pve-manager/www/manager6/window/Backup.js:93
 msgid "Keep Daily"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/BackupJobDetail.js:314
+#: pve-manager/www/manager6/dc/BackupJobDetail.js:294
 #: pve-manager/www/manager6/window/Backup.js:92
 msgid "Keep Hourly"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/BackupJobDetail.js:313
+#: pve-manager/www/manager6/dc/BackupJobDetail.js:293
 #: pve-manager/www/manager6/window/Backup.js:91
 msgid "Keep Last"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/BackupJobDetail.js:348
+#: pve-manager/www/manager6/dc/BackupJobDetail.js:328
 #: pve-manager/www/manager6/window/Backup.js:95
 msgid "Keep Monthly"
 msgstr ""
@@ -3623,12 +3864,12 @@ msgstr ""
 msgid "Keep Together"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/BackupJobDetail.js:332
+#: pve-manager/www/manager6/dc/BackupJobDetail.js:312
 #: pve-manager/www/manager6/window/Backup.js:94
 msgid "Keep Weekly"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/BackupJobDetail.js:349
+#: pve-manager/www/manager6/dc/BackupJobDetail.js:329
 #: pve-manager/www/manager6/window/Backup.js:96
 msgid "Keep Yearly"
 msgstr ""
@@ -3644,6 +3885,10 @@ msgstr ""
 #: pve-manager/www/manager6/storage/PBSEdit.js:45
 msgid ""
 "Keep your encryption key safe, but easily accessible for disaster recovery."
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/fabrics/ospf/FabricEdit.js:45
+msgid "Kernel"
 msgstr ""
 
 #: pve-manager/www/manager6/node/StatusView.js:103
@@ -3669,7 +3914,7 @@ msgstr ""
 msgid "Keyboard Layout"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:745
+#: pve-manager/www/manager6/Utils.js:749
 msgid "LDAP Server"
 msgstr ""
 
@@ -3685,11 +3930,11 @@ msgstr ""
 msgid "LV UUID"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2151
+#: pve-manager/www/manager6/Utils.js:2155
 msgid "LVM Storage"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2153
+#: pve-manager/www/manager6/Utils.js:2157
 msgid "LVM-Thin Storage"
 msgstr ""
 
@@ -3703,7 +3948,7 @@ msgstr ""
 msgid "LXC Container"
 msgstr ""
 
-#: pve-manager/www/manager6/Workspace.js:451
+#: pve-manager/www/manager6/Workspace.js:436
 #: pve-manager/www/manager6/window/LoginWindow.js:401
 msgid "Language"
 msgstr ""
@@ -3760,6 +4005,10 @@ msgstr ""
 msgid "Linked Clone"
 msgstr ""
 
+#: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:292
+msgid "Listen Port"
+msgstr ""
+
 #: pve-manager/www/manager6/window/GuestImport.js:616
 msgid "Live Import"
 msgstr ""
@@ -3795,11 +4044,16 @@ msgstr ""
 msgid "Loading..."
 msgstr ""
 
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:188
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:443
+msgid "Local Preference"
+msgstr ""
+
 #: pve-manager/www/manager6/data/ResourceStore.js:315
 msgid "Lock"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:1391
+#: pve-manager/www/manager6/Utils.js:1395
 msgid "Locked"
 msgstr ""
 
@@ -3821,7 +4075,7 @@ msgstr ""
 msgid "Log burst limit"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:1869
+#: pve-manager/www/manager6/Utils.js:1873
 msgid "Log in as root to install."
 msgstr ""
 
@@ -3852,11 +4106,11 @@ msgstr ""
 msgid "Login failed:"
 msgstr ""
 
-#: pve-manager/www/manager6/Workspace.js:459
+#: pve-manager/www/manager6/Workspace.js:444
 msgid "Logout"
 msgstr ""
 
-#: pve-manager/www/manager6/Workspace.js:543
+#: pve-manager/www/manager6/Workspace.js:528
 msgid "Logs"
 msgstr ""
 
@@ -3900,6 +4154,10 @@ msgstr ""
 #: pve-manager/www/manager6/sdn/Browser.js:65
 #: pve-manager/www/manager6/sdn/NetworkBrowser.js:139
 msgid "MAC-VRFs"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:364
+msgid "MAC/IP Advertisement (Type 2)"
 msgstr ""
 
 #: pve-manager/www/manager6/ceph/ServiceList.js:50
@@ -4016,6 +4274,11 @@ msgid ""
 "quicker switch to VirtIO-SCSI attached disks"
 msgstr ""
 
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:777
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:980
+msgid "Match"
+msgstr ""
+
 #: pve-manager/www/manager6/dc/MetricServerView.js:654
 msgid "Max Body Size (bytes)"
 msgstr ""
@@ -4047,7 +4310,7 @@ msgstr ""
 msgid "Members"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:452
+#: pve-manager/www/manager6/Utils.js:456
 #: pve-manager/www/manager6/dc/Summary.js:41
 #: pve-manager/www/manager6/form/HotplugFeatureSelector.js:29
 #: pve-manager/www/manager6/lxc/CreateWizard.js:245
@@ -4118,16 +4381,18 @@ msgid "Metadata Used"
 msgstr ""
 
 #: pve-manager/www/manager6/sdn/EvpnZoneIpVrfPanel.js:41
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:191
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:442
 msgid "Metric"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Config.js:374
+#: pve-manager/www/manager6/dc/Config.js:386
 msgid "Metric Server"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2145
-#: pve-manager/www/manager6/Utils.js:2165
-#: pve-manager/www/manager6/Utils.js:2196
+#: pve-manager/www/manager6/Utils.js:2149
+#: pve-manager/www/manager6/Utils.js:2169
+#: pve-manager/www/manager6/Utils.js:2200
 #: pve-manager/www/manager6/dc/CmdMenu.js:68
 #: pve-manager/www/manager6/dc/Config.js:76
 #: pve-manager/www/manager6/lxc/CmdMenu.js:102
@@ -4138,7 +4403,7 @@ msgstr ""
 #: pve-manager/www/manager6/qemu/CmdMenu.js:129
 #: pve-manager/www/manager6/qemu/Config.js:68
 #: pve-manager/www/manager6/window/Migrate.js:105
-#: pve-manager/www/manager6/window/Migrate.js:723
+#: pve-manager/www/manager6/window/Migrate.js:733
 msgid "Migrate"
 msgstr ""
 
@@ -4169,7 +4434,7 @@ msgstr ""
 msgid "Min. Size"
 msgstr ""
 
-#: pve-manager/www/manager6/form/CRSOptions.js:104
+#: pve-manager/www/manager6/form/CRSOptions.js:119
 msgid "Minimum Imbalance Improvement"
 msgstr ""
 
@@ -4183,12 +4448,12 @@ msgstr ""
 
 #: pve-manager/www/manager6/dc/AuthEditAD.js:54
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:54
-#: pve-manager/www/manager6/dc/Backup.js:307
-#: pve-manager/www/manager6/dc/BackupJobDetail.js:251
+#: pve-manager/www/manager6/dc/Backup.js:388
+#: pve-manager/www/manager6/dc/BackupJobDetail.js:231
 #: pve-manager/www/manager6/dc/UserTagAccessEdit.js:52
 #: pve-manager/www/manager6/window/Backup.js:28
 #: pve-manager/www/manager6/window/Clone.js:215
-#: pve-manager/www/manager6/window/Migrate.js:590
+#: pve-manager/www/manager6/window/Migrate.js:600
 msgid "Mode"
 msgstr ""
 
@@ -4246,12 +4511,12 @@ msgstr ""
 msgid "More"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2197
+#: pve-manager/www/manager6/Utils.js:2201
 msgid "Mount"
 msgstr ""
 
-#: pve-manager/www/manager6/lxc/MPEdit.js:388
-#: pve-manager/www/manager6/lxc/MPEdit.js:390
+#: pve-manager/www/manager6/lxc/MPEdit.js:394
+#: pve-manager/www/manager6/lxc/MPEdit.js:396
 #: pve-manager/www/manager6/lxc/Resources.js:123
 #: pve-manager/www/manager6/lxc/Resources.js:383
 #: pve-manager/www/manager6/qemu/HDMove.js:68
@@ -4276,12 +4541,12 @@ msgstr ""
 msgid "Move Storage"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2156
+#: pve-manager/www/manager6/Utils.js:2160
 #: pve-manager/www/manager6/qemu/HDMove.js:28
 msgid "Move Volume"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2166
+#: pve-manager/www/manager6/Utils.js:2170
 #: pve-manager/www/manager6/qemu/HDMove.js:28
 msgid "Move disk"
 msgstr ""
@@ -4303,7 +4568,7 @@ msgstr ""
 msgid "Must choose at least one device"
 msgstr ""
 
-#: pve-manager/www/manager6/Workspace.js:410
+#: pve-manager/www/manager6/Workspace.js:395
 #: pve-manager/www/manager6/window/Settings.js:5
 msgid "My Settings"
 msgstr ""
@@ -4338,7 +4603,7 @@ msgstr ""
 #: pve-manager/www/manager6/ceph/Pool.js:310
 #: pve-manager/www/manager6/ceph/ServiceList.js:426
 #: pve-manager/www/manager6/data/ResourceStore.js:150
-#: pve-manager/www/manager6/dc/BackupJobDetail.js:460
+#: pve-manager/www/manager6/dc/BackupJobDetail.js:440
 #: pve-manager/www/manager6/dc/GroupEdit.js:28
 #: pve-manager/www/manager6/dc/GroupView.js:80
 #: pve-manager/www/manager6/dc/MetricServerView.js:69
@@ -4388,10 +4653,19 @@ msgstr ""
 #: pve-manager/www/manager6/qemu/Options.js:38
 #: pve-manager/www/manager6/sdn/FabricsContentView.js:59
 #: pve-manager/www/manager6/sdn/FabricsView.js:16
+#: pve-manager/www/manager6/sdn/PrefixListPanel.js:27
+#: pve-manager/www/manager6/sdn/PrefixListPanel.js:163
+#: pve-manager/www/manager6/sdn/PrefixListSelector.js:23
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:956
+#: pve-manager/www/manager6/sdn/RouteMapSelector.js:32
 #: pve-manager/www/manager6/sdn/VnetEdit.js:32
 #: pve-manager/www/manager6/sdn/ZoneBridgesPanel.js:67
-#: pve-manager/www/manager6/sdn/fabrics/FabricEdit.js:19
-#: pve-manager/www/manager6/sdn/fabrics/InterfacePanel.js:49
+#: pve-manager/www/manager6/sdn/fabrics/FabricEdit.js:29
+#: pve-manager/www/manager6/sdn/fabrics/InterfacePanel.js:51
+#: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:37
+#: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:194
+#: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:269
+#: pve-manager/www/manager6/sdn/fabrics/wireguard/NodeEdit.js:26
 #: pve-manager/www/manager6/storage/ContentView.js:152
 #: pve-manager/www/manager6/tree/SnapshotTree.js:340
 #: pve-manager/www/manager6/window/BulkAction.js:351
@@ -4423,6 +4697,12 @@ msgstr ""
 msgid "Name, Node, VMID"
 msgstr ""
 
+#: pve-manager/www/manager6/dc/Backup.js:450
+#: pve-manager/www/manager6/dc/BackupJobDetail.js:116
+#: pve-manager/www/manager6/dc/BackupJobDetail.js:463
+msgid "Name, VMID, Type"
+msgstr ""
+
 #: pve-manager/www/manager6/storage/PBSEdit.js:582
 #: pve-manager/www/manager6/storage/RBDEdit.js:241
 msgid "Namespace"
@@ -4445,7 +4725,7 @@ msgstr ""
 msgid "Nesting"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:448
+#: pve-manager/www/manager6/Utils.js:452
 #: pve-manager/www/manager6/ceph/OSDDetails.js:178
 #: pve-manager/www/manager6/dc/OptionView.js:120
 #: pve-manager/www/manager6/dc/OptionView.js:148
@@ -4483,6 +4763,14 @@ msgstr ""
 msgid "Network Traffic"
 msgstr ""
 
+#: pve-manager/www/manager6/sdn/fabrics/ospf/InterfacePanel.js:41
+msgid "Network Type"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/fabrics/ospf/InterfacePanel.js:13
+msgid "NetworkType"
+msgstr ""
+
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:125
 msgid "Newest ceph version in cluster is {0}"
 msgstr ""
@@ -4497,8 +4785,8 @@ msgstr ""
 msgid "Next Free VMID Range"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Backup.js:784
-#: pve-manager/www/manager6/dc/BackupJobDetail.js:198
+#: pve-manager/www/manager6/dc/Backup.js:914
+#: pve-manager/www/manager6/dc/BackupJobDetail.js:178
 #: pve-manager/www/manager6/dc/RealmSyncJob.js:128
 msgid "Next Run"
 msgstr ""
@@ -4516,8 +4804,8 @@ msgstr ""
 msgid "Nexthop"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:277 pve-manager/www/manager6/Utils.js:323
-#: pve-manager/www/manager6/dc/BackupJobDetail.js:266
+#: pve-manager/www/manager6/Utils.js:281 pve-manager/www/manager6/Utils.js:327
+#: pve-manager/www/manager6/dc/BackupJobDetail.js:246
 #: pve-manager/www/manager6/node/Subscription.js:147
 #: pve-manager/www/manager6/sdn/ZoneBridgeView.js:33
 #: pve-manager/www/manager6/window/TreeSettingsEdit.js:39
@@ -4561,6 +4849,10 @@ msgstr ""
 
 #: pve-manager/www/manager6/panel/IPView.js:213
 msgid "No Guest Agent configured"
+msgstr ""
+
+#: pve-manager/www/manager6/lxc/IdMapField.js:116
+msgid "No ID maps configured"
 msgstr ""
 
 #: pve-manager/www/manager6/window/PCIMapEdit.js:179
@@ -4639,6 +4931,10 @@ msgstr ""
 msgid "No firewall rule configured here."
 msgstr ""
 
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:452
+msgid "No match actions configured."
+msgstr ""
+
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:134
 msgid "No network device"
 msgstr ""
@@ -4649,13 +4945,30 @@ msgstr ""
 msgid "No network information"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/BackupJobDetail.js:237
+#: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:16
+msgid "No peers available"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/PrefixListPanel.js:129
+#: pve-manager/www/manager6/sdn/PrefixListPanel.js:282
+msgid "No prefix list configured"
+msgstr ""
+
+#: pve-manager/www/manager6/dc/BackupJobDetail.js:217
 msgid "No recipients configured"
 msgstr ""
 
 #: pve-manager/www/manager6/sdn/zones/Base.js:45
 #: pve-manager/www/manager6/storage/Base.js:42
 msgid "No restrictions"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:814
+msgid "No route maps configured."
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:200
+msgid "No set actions configured."
 msgstr ""
 
 #: pve-manager/www/manager6/window/ScheduleSimulator.js:12
@@ -4678,7 +4991,7 @@ msgstr ""
 msgid "No {0} configured."
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:408
+#: pve-manager/www/manager6/Utils.js:412
 msgid "No {0} found"
 msgstr ""
 
@@ -4698,9 +5011,9 @@ msgid "No-Subscription"
 msgstr ""
 
 #: pve-manager/www/manager6/data/ResourceStore.js:280
-#: pve-manager/www/manager6/dc/Backup.js:227
-#: pve-manager/www/manager6/dc/Backup.js:767
-#: pve-manager/www/manager6/dc/BackupJobDetail.js:182
+#: pve-manager/www/manager6/dc/Backup.js:308
+#: pve-manager/www/manager6/dc/Backup.js:897
+#: pve-manager/www/manager6/dc/BackupJobDetail.js:162
 #: pve-manager/www/manager6/dc/Log.js:52
 #: pve-manager/www/manager6/dc/Tasks.js:105
 #: pve-manager/www/manager6/form/GlobalSearchField.js:89
@@ -4723,18 +5036,18 @@ msgstr ""
 #: pve-manager/www/manager6/sdn/controllers/BgpEdit.js:26
 #: pve-manager/www/manager6/sdn/controllers/IsisEdit.js:26
 #: pve-manager/www/manager6/sdn/fabrics/NodeEdit.js:6
-#: pve-manager/www/manager6/sdn/fabrics/NodeEdit.js:145
-#: pve-manager/www/manager6/sdn/fabrics/NodeEdit.js:164
+#: pve-manager/www/manager6/sdn/fabrics/NodeEdit.js:200
+#: pve-manager/www/manager6/sdn/fabrics/NodeEdit.js:219
 #: pve-manager/www/manager6/window/DirMapEdit.js:149
 #: pve-manager/www/manager6/window/Settings.js:197
 msgid "Node"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2221
+#: pve-manager/www/manager6/Utils.js:2225
 msgid "Node fencing notifications"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Backup.js:567
+#: pve-manager/www/manager6/dc/Backup.js:697
 msgid "Node is offline"
 msgstr ""
 
@@ -4752,13 +5065,14 @@ msgstr ""
 #: pve-manager/www/manager6/form/StorageSelector.js:51
 #: pve-manager/www/manager6/ha/rules/NodeAffinityRules.js:25
 #: pve-manager/www/manager6/sdn/ZoneView.js:175
+#: pve-manager/www/manager6/sdn/controllers/EvpnEdit.js:92
 #: pve-manager/www/manager6/sdn/zones/Base.js:44
 #: pve-manager/www/manager6/storage/Base.js:41
 #: pve-manager/www/manager6/tree/ResourceTree.js:14
 msgid "Nodes"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:292
+#: pve-manager/www/manager6/Utils.js:296
 #: pve-manager/www/manager6/dc/MetricServerView.js:665
 #: pve-manager/www/manager6/dc/OptionView.js:64
 #: pve-manager/www/manager6/storage/CIFSEdit.js:179
@@ -4772,7 +5086,7 @@ msgstr ""
 msgid "Not a valid color."
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:404
+#: pve-manager/www/manager6/Utils.js:408
 msgid "Not a volume"
 msgstr ""
 
@@ -4788,7 +5102,7 @@ msgstr ""
 msgid "Note"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Backup.js:372
+#: pve-manager/www/manager6/dc/Backup.js:502
 msgid "Note Template"
 msgstr ""
 
@@ -4835,13 +5149,13 @@ msgstr ""
 msgid "Nothing found"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/BackupJobDetail.js:211
+#: pve-manager/www/manager6/dc/BackupJobDetail.js:191
 #: pve-manager/www/manager6/window/Backup.js:47
 msgid "Notification"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Backup.js:352
-#: pve-manager/www/manager6/dc/Config.js:437
+#: pve-manager/www/manager6/dc/Backup.js:482
+#: pve-manager/www/manager6/dc/Config.js:449
 msgid "Notifications"
 msgstr ""
 
@@ -4857,7 +5171,7 @@ msgstr ""
 msgid "Number of Nodes"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:298
+#: pve-manager/www/manager6/Utils.js:302
 #: pve-manager/www/manager6/grid/Replication.js:358
 msgid "OK"
 msgstr ""
@@ -4909,6 +5223,14 @@ msgstr ""
 msgid "On failure only"
 msgstr ""
 
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:607
+msgid "On match goto"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:606
+msgid "On match next"
+msgstr ""
+
 #: pve-manager/www/manager6/data/ResourceStore.js:105
 #: pve-manager/www/manager6/dc/Health.js:108
 #: pve-manager/www/manager6/dc/NodeView.js:25
@@ -4924,7 +5246,7 @@ msgstr ""
 msgid "Open editor on double-click"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:753
+#: pve-manager/www/manager6/Utils.js:757
 msgid "OpenID Connect Server"
 msgstr ""
 
@@ -4953,8 +5275,8 @@ msgid "Option"
 msgstr ""
 
 #: pve-manager/www/manager6/dc/Config.js:119
-#: pve-manager/www/manager6/dc/Config.js:286
-#: pve-manager/www/manager6/dc/Config.js:340
+#: pve-manager/www/manager6/dc/Config.js:283
+#: pve-manager/www/manager6/dc/Config.js:352
 #: pve-manager/www/manager6/lxc/Config.js:287
 #: pve-manager/www/manager6/lxc/Config.js:351
 #: pve-manager/www/manager6/node/Config.js:229
@@ -4966,7 +5288,12 @@ msgstr ""
 msgid "Options"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2114
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:760
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:964
+msgid "Order"
+msgstr ""
+
+#: pve-manager/www/manager6/Utils.js:2118
 msgid "Order Certificate"
 msgstr ""
 
@@ -5015,6 +5342,11 @@ msgstr ""
 msgid "Outgoing"
 msgstr ""
 
+#: pve-manager/www/manager6/sdn/controllers/BgpEdit.js:86
+#: pve-manager/www/manager6/sdn/controllers/EvpnEdit.js:77
+msgid "Outgoing Route Map"
+msgstr ""
+
 #: pve-manager/www/manager6/grid/FirewallOptions.js:142
 #: pve-manager/www/manager6/grid/FirewallOptions.js:147
 #: pve-manager/www/manager6/grid/FirewallOptions.js:152
@@ -5037,7 +5369,7 @@ msgstr ""
 msgid "Overwrite Groups"
 msgstr ""
 
-#: pve-manager/www/manager6/window/Migrate.js:632
+#: pve-manager/www/manager6/window/Migrate.js:642
 msgid "Overwrite local resources unavailable check"
 msgstr ""
 
@@ -5052,7 +5384,7 @@ msgstr ""
 msgid "PCI Device"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Config.js:406
+#: pve-manager/www/manager6/dc/Config.js:418
 msgid "PCI Devices"
 msgstr ""
 
@@ -5076,7 +5408,7 @@ msgstr ""
 msgid "Package"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2218
+#: pve-manager/www/manager6/Utils.js:2222
 msgid "Package updates are available"
 msgstr ""
 
@@ -5094,6 +5426,10 @@ msgstr ""
 msgid "Pass through all functions as one device"
 msgstr ""
 
+#: pve-manager/www/manager6/lxc/IdMapField.js:104
+msgid "Passthrough"
+msgstr ""
+
 #: pve-manager/www/manager6/form/USBSelector.js:69
 msgid "Passthrough a full port"
 msgstr ""
@@ -5102,7 +5438,7 @@ msgstr ""
 msgid "Passthrough a specific device"
 msgstr ""
 
-#: pve-manager/www/manager6/Workspace.js:417
+#: pve-manager/www/manager6/Workspace.js:402
 #: pve-manager/www/manager6/dc/ClusterEdit.js:372
 #: pve-manager/www/manager6/dc/UserEdit.js:38
 #: pve-manager/www/manager6/dc/UserView.js:58
@@ -5144,7 +5480,7 @@ msgstr ""
 msgid "Path has to start with /dev/"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2167
+#: pve-manager/www/manager6/Utils.js:2171
 #: pve-manager/www/manager6/qemu/CmdMenu.js:68
 #: pve-manager/www/manager6/qemu/Config.js:181
 msgid "Pause"
@@ -5155,12 +5491,20 @@ msgstr ""
 msgid "Paused"
 msgstr ""
 
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:444
+msgid "Peer"
+msgstr ""
+
 #: pve-manager/www/manager6/dc/ClusterEdit.js:358
 msgid "Peer Address"
 msgstr ""
 
 #: pve-manager/www/manager6/sdn/zones/VxlanEdit.js:44
 msgid "Peer Address List"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/controllers/EvpnEdit.js:84
+msgid "Peer Group Name"
 msgstr ""
 
 #: pve-manager/www/manager6/dc/ClusterEdit.js:371
@@ -5172,7 +5516,7 @@ msgstr ""
 msgid "Peers"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:217
+#: pve-manager/www/manager6/Utils.js:221
 msgid "Pending Changes"
 msgstr ""
 
@@ -5201,6 +5545,16 @@ msgstr ""
 #: pve-manager/www/manager6/sdn/NetworkBrowser.js:109
 #: pve-manager/www/manager6/storage/Browser.js:197
 msgid "Permissions"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/PrefixListPanel.js:71
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:770
+msgid "Permit"
+msgstr ""
+
+#. TRANSLATORS: 's' is the SI abbreviation for seconds, the unit of the value
+#: pve-manager/www/manager6/sdn/fabrics/wireguard/FabricEdit.js:19
+msgid "Persistent Keepalive"
 msgstr ""
 
 #: pve-manager/www/manager6/ceph/OSDDetails.js:226
@@ -5233,7 +5587,7 @@ msgstr ""
 msgid "Please try again"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Backup.js:576
+#: pve-manager/www/manager6/dc/Backup.js:706
 #: pve-manager/www/manager6/window/Backup.js:393
 #: pve-manager/www/manager6/window/LoginWindow.js:76
 #: pve-manager/www/manager6/window/LoginWindow.js:228
@@ -5268,13 +5622,13 @@ msgstr ""
 msgid "Pool View"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Backup.js:261
-#: pve-manager/www/manager6/dc/BackupJobDetail.js:414
+#: pve-manager/www/manager6/dc/Backup.js:342
+#: pve-manager/www/manager6/dc/BackupJobDetail.js:394
 msgid "Pool based"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Backup.js:276
-#: pve-manager/www/manager6/dc/BackupJobDetail.js:271
+#: pve-manager/www/manager6/dc/Backup.js:357
+#: pve-manager/www/manager6/dc/BackupJobDetail.js:251
 msgid "Pool to backup"
 msgstr ""
 
@@ -5298,7 +5652,7 @@ msgstr ""
 msgid "Portal"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Backup.js:408
+#: pve-manager/www/manager6/dc/Backup.js:538
 #: pve-manager/www/manager6/window/Backup.js:268
 msgid "Possible template variables are: {0}"
 msgstr ""
@@ -5325,6 +5679,38 @@ msgid ""
 "provisioning or sparse files."
 msgstr ""
 
+#: pve-manager/www/manager6/sdn/PrefixListPanel.js:78
+#: pve-manager/www/manager6/sdn/PrefixListPanel.js:220
+msgid "Prefix"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/PrefixListPanel.js:85
+#: pve-manager/www/manager6/sdn/PrefixListPanel.js:225
+msgid "Prefix <="
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/PrefixListPanel.js:95
+#: pve-manager/www/manager6/sdn/PrefixListPanel.js:230
+msgid "Prefix >="
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/PrefixListPanel.js:14
+msgid "Prefix List"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/PrefixListPanel.js:45
+msgid "Prefix List Entry"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/PrefixListPanel.js:191
+#: pve-manager/www/manager6/sdn/PrefixListPanel.js:290
+msgid "Prefix List has no entries configured."
+msgstr ""
+
+#: pve-manager/www/manager6/dc/Config.js:323
+msgid "Prefix Lists"
+msgstr ""
+
 #: pve-manager/www/manager6/Utils.js:32
 msgid "Premium"
 msgstr ""
@@ -5340,6 +5726,10 @@ msgstr ""
 #: pve-manager/www/manager6/dc/OptionView.js:472
 #: pve-manager/www/manager6/dc/SyncWindow.js:174
 msgid "Preview"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/zones/EvpnEdit.js:22
+msgid "Primary Controller"
 msgstr ""
 
 #: pve-manager/www/manager6/sdn/zones/EvpnEdit.js:54
@@ -5375,7 +5765,7 @@ msgid "Privilege Level"
 msgstr ""
 
 #: pve-manager/www/manager6/dc/TokenEdit.js:65
-#: pve-manager/www/manager6/dc/TokenView.js:160
+#: pve-manager/www/manager6/dc/TokenView.js:197
 msgid "Privilege Separation"
 msgstr ""
 
@@ -5417,6 +5807,11 @@ msgstr ""
 #: pve-manager/www/manager6/dc/RealmSyncJob.js:381
 #: pve-manager/www/manager6/dc/SyncWindow.js:144
 msgid "Properties"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:210
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:462
+msgid "Property"
 msgstr ""
 
 #: pve-manager/www/manager6/grid/BackupView.js:345
@@ -5468,6 +5863,11 @@ msgstr ""
 msgid "Prune older backups afterwards"
 msgstr ""
 
+#: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:279
+#: pve-manager/www/manager6/sdn/fabrics/wireguard/NodeEdit.js:39
+msgid "Public Key"
+msgstr ""
+
 #: pve-manager/www/manager6/node/Certificates.js:327
 msgid "Public Key Algorithm"
 msgstr ""
@@ -5481,7 +5881,7 @@ msgstr ""
 msgid "Public Key Type"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2158
+#: pve-manager/www/manager6/Utils.js:2162
 msgid "Pull file"
 msgstr ""
 
@@ -5498,7 +5898,7 @@ msgstr ""
 msgid "Purge resource from referenced HA rules"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2159
+#: pve-manager/www/manager6/Utils.js:2163
 msgid "Push file"
 msgstr ""
 
@@ -5562,6 +5962,11 @@ msgstr ""
 msgid "RTC start date"
 msgstr ""
 
+#: pve-manager/www/manager6/lxc/IdMapField.js:165
+#: pve-manager/www/manager6/lxc/IdMapField.js:171
+msgid "Range Size"
+msgstr ""
+
 #: pve-manager/www/manager6/grid/Replication.js:42
 #: pve-manager/www/manager6/grid/Replication.js:411
 #: pve-manager/www/manager6/lxc/Network.js:297
@@ -5606,8 +6011,8 @@ msgstr ""
 msgid "Reads"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2120
-#: pve-manager/www/manager6/Utils.js:2121
+#: pve-manager/www/manager6/Utils.js:2124
+#: pve-manager/www/manager6/Utils.js:2125
 #: pve-manager/www/manager6/dc/AuthEditBase.js:43
 #: pve-manager/www/manager6/dc/AuthView.js:17
 #: pve-manager/www/manager6/dc/RealmSyncJob.js:118
@@ -5659,16 +6064,16 @@ msgstr ""
 msgid "Rebalance"
 msgstr ""
 
-#: pve-manager/www/manager6/form/CRSOptions.js:49
+#: pve-manager/www/manager6/form/CRSOptions.js:62
 msgid "Rebalance on Start"
 msgstr ""
 
-#: pve-manager/www/manager6/form/CRSOptions.js:77
+#: pve-manager/www/manager6/form/CRSOptions.js:92
 msgid "Rebalancing Method"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2168
-#: pve-manager/www/manager6/Utils.js:2198
+#: pve-manager/www/manager6/Utils.js:2172
+#: pve-manager/www/manager6/Utils.js:2202
 #: pve-manager/www/manager6/lxc/CmdMenu.js:81
 #: pve-manager/www/manager6/lxc/Config.js:69
 #: pve-manager/www/manager6/node/Config.js:102
@@ -5687,7 +6092,7 @@ msgstr ""
 msgid "Reboot {0}"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/BackupJobDetail.js:230
+#: pve-manager/www/manager6/dc/BackupJobDetail.js:210
 #: pve-manager/www/manager6/panel/BackupNotificationOptions.js:79
 msgid "Recipients"
 msgstr ""
@@ -5704,7 +6109,7 @@ msgstr ""
 msgid "Referenced disks will always be destroyed."
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2115
+#: pve-manager/www/manager6/Utils.js:2119
 msgid "Refresh"
 msgstr ""
 
@@ -5712,7 +6117,17 @@ msgstr ""
 msgid "Regenerate Image"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2116
+#: pve-manager/www/manager6/dc/TokenView.js:129
+msgid "Regenerate Secret"
+msgstr ""
+
+#: pve-manager/www/manager6/dc/TokenView.js:137
+msgid ""
+"Regenerate the secret of the API token '{0}'? All users of the previous "
+"token secret will lose access!"
+msgstr ""
+
+#: pve-manager/www/manager6/Utils.js:2120
 #: pve-manager/www/manager6/node/ACME.js:9
 msgid "Register"
 msgstr ""
@@ -5732,12 +6147,14 @@ msgstr ""
 #: pve-manager/www/manager6/node/LVM.js:142
 #: pve-manager/www/manager6/node/LVMThin.js:171
 #: pve-manager/www/manager6/node/ZFS.js:276
-#: pve-manager/www/manager6/sdn/FabricsView.js:202
+#: pve-manager/www/manager6/sdn/FabricsView.js:211
+#: pve-manager/www/manager6/sdn/PrefixListPanel.js:146
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:948
 #: pve-manager/www/manager6/tree/DhcpTree.js:191
 msgid "Reload"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2180
+#: pve-manager/www/manager6/Utils.js:2184
 msgid "Reload network configuration on all nodes"
 msgstr ""
 
@@ -5746,10 +6163,10 @@ msgstr ""
 msgid "Removal Scheduled"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2143
-#: pve-manager/www/manager6/Utils.js:2152
-#: pve-manager/www/manager6/Utils.js:2154
-#: pve-manager/www/manager6/Utils.js:2210
+#: pve-manager/www/manager6/Utils.js:2147
+#: pve-manager/www/manager6/Utils.js:2156
+#: pve-manager/www/manager6/Utils.js:2158
+#: pve-manager/www/manager6/Utils.js:2214
 #: pve-manager/www/manager6/dc/ACLView.js:160
 #: pve-manager/www/manager6/form/TagColorGrid.js:283
 #: pve-manager/www/manager6/grid/PoolMembers.js:252
@@ -5762,7 +6179,11 @@ msgstr ""
 #: pve-manager/www/manager6/qemu/Config.js:130
 #: pve-manager/www/manager6/qemu/HardwareView.js:612
 #: pve-manager/www/manager6/qemu/HardwareView.js:613
+#: pve-manager/www/manager6/sdn/PrefixListPanel.js:138
+#: pve-manager/www/manager6/sdn/PrefixListPanel.js:252
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:940
 #: pve-manager/www/manager6/sdn/VnetACLView.js:184
+#: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:204
 #: pve-manager/www/manager6/storage/ImageView.js:33
 #: pve-manager/www/manager6/tree/SnapshotTree.js:294
 msgid "Remove"
@@ -5792,12 +6213,21 @@ msgstr ""
 msgid "Remove from replication, HA and backup jobs"
 msgstr ""
 
+#: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:218
+msgid ""
+"Remove interface '{0}'? Any generated private key will be discarded on save."
+msgstr ""
+
 #: pve-manager/www/manager6/tree/ResourceMapTree.js:375
 msgid "Remove mapping '{0}'"
 msgstr ""
 
 #: pve-manager/www/manager6/tree/ResourceMapTree.js:374
 msgid "Remove mapping for '{0}'"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:881
+msgid "Remove route map entry?"
 msgstr ""
 
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:348
@@ -5812,7 +6242,7 @@ msgstr ""
 msgid "Remove vanished user and group entries."
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2117
+#: pve-manager/www/manager6/Utils.js:2121
 msgid "Renew Certificate"
 msgstr ""
 
@@ -5839,7 +6269,7 @@ msgstr ""
 msgid "Replication Settings"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2220
+#: pve-manager/www/manager6/Utils.js:2224
 msgid "Replication job notifications"
 msgstr ""
 
@@ -5869,7 +6299,7 @@ msgstr ""
 msgid "Requires '{0}' Privileges"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2169
+#: pve-manager/www/manager6/Utils.js:2173
 #: pve-manager/www/manager6/qemu/CmdMenu.js:115
 #: pve-manager/www/manager6/qemu/Config.js:217
 #: pve-manager/www/manager6/window/Settings.js:235
@@ -5890,7 +6320,7 @@ msgstr ""
 msgid "Reset {0} immediately"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2179
+#: pve-manager/www/manager6/Utils.js:2183
 #: pve-manager/www/manager6/lxc/Resources.js:291
 #: pve-manager/www/manager6/qemu/HardwareView.js:539
 msgid "Resize"
@@ -5911,7 +6341,7 @@ msgstr ""
 msgid "Resource Attributes (JSON)"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Config.js:391
+#: pve-manager/www/manager6/dc/Config.js:403
 msgid "Resource Mappings"
 msgstr ""
 
@@ -5924,7 +6354,7 @@ msgid "Resource Pool"
 msgstr ""
 
 #: pve-manager/www/manager6/dc/Summary.js:26
-#: pve-manager/www/manager6/ha/Status.js:38
+#: pve-manager/www/manager6/ha/Status.js:163
 #: pve-manager/www/manager6/lxc/Config.js:268
 #: pve-manager/www/manager6/lxc/DNS.js:71
 msgid "Resources"
@@ -5939,8 +6369,8 @@ msgstr ""
 msgid "Restart Mode"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2170
-#: pve-manager/www/manager6/Utils.js:2199
+#: pve-manager/www/manager6/Utils.js:2174
+#: pve-manager/www/manager6/Utils.js:2203
 #: pve-manager/www/manager6/grid/BackupView.js:177
 #: pve-manager/www/manager6/storage/BackupView.js:84
 #: pve-manager/www/manager6/window/Restore.js:383
@@ -5952,19 +6382,19 @@ msgstr ""
 msgid "Resulting Config"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2171
-#: pve-manager/www/manager6/Utils.js:2200
+#: pve-manager/www/manager6/Utils.js:2175
+#: pve-manager/www/manager6/Utils.js:2204
 #: pve-manager/www/manager6/qemu/CmdMenu.js:83
 #: pve-manager/www/manager6/qemu/Config.js:48
 msgid "Resume"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Backup.js:359
-#: pve-manager/www/manager6/dc/Backup.js:804
+#: pve-manager/www/manager6/dc/Backup.js:489
+#: pve-manager/www/manager6/dc/Backup.js:934
 msgid "Retention"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/BackupJobDetail.js:284
+#: pve-manager/www/manager6/dc/BackupJobDetail.js:264
 msgid "Retention Configuration"
 msgstr ""
 
@@ -5980,7 +6410,11 @@ msgstr ""
 msgid "Revert"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2118
+#: pve-manager/www/manager6/dc/Backup.js:466
+msgid "Review"
+msgstr ""
+
+#: pve-manager/www/manager6/Utils.js:2122
 msgid "Revoke Certificate"
 msgstr ""
 
@@ -5989,6 +6423,7 @@ msgstr ""
 #: pve-manager/www/manager6/dc/RoleEdit.js:24
 #: pve-manager/www/manager6/sdn/VnetACLView.js:53
 #: pve-manager/www/manager6/sdn/VnetACLView.js:167
+#: pve-manager/www/manager6/sdn/fabrics/wireguard/NodeEdit.js:178
 msgid "Role"
 msgstr ""
 
@@ -5996,8 +6431,8 @@ msgstr ""
 msgid "Roles"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2172
-#: pve-manager/www/manager6/Utils.js:2201
+#: pve-manager/www/manager6/Utils.js:2176
+#: pve-manager/www/manager6/Utils.js:2205
 #: pve-manager/www/manager6/tree/SnapshotTree.js:263
 msgid "Rollback"
 msgstr ""
@@ -6014,8 +6449,37 @@ msgstr ""
 msgid "Route"
 msgstr ""
 
+#: pve-manager/www/manager6/sdn/fabrics/openfabric/FabricEdit.js:42
+#: pve-manager/www/manager6/sdn/fabrics/ospf/FabricEdit.js:25
+msgid "Route Filter"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/fabrics/RedistributionGrid.js:100
+msgid "Route Map"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:700
+msgid "Route Map Entry"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:750
+msgid "Route Map ID"
+msgstr ""
+
+#: pve-manager/www/manager6/dc/Config.js:315
+msgid "Route Maps"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/fabrics/ospf/FabricEdit.js:36
+msgid "Route Redistribution"
+msgstr ""
+
 #: pve-manager/www/manager6/sdn/zones/EvpnEdit.js:87
 msgid "Route Target Import"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:434
+msgid "Route Type"
 msgstr ""
 
 #: pve-manager/www/manager6/grid/FirewallOptions.js:102
@@ -6050,7 +6514,7 @@ msgid ""
 "example, due to the node being offline."
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Backup.js:622
+#: pve-manager/www/manager6/dc/Backup.js:752
 msgid "Run now"
 msgstr ""
 
@@ -6074,7 +6538,7 @@ msgstr ""
 msgid "SCSI Controller Type"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Config.js:261
+#: pve-manager/www/manager6/dc/Config.js:258
 #: pve-manager/www/manager6/form/IPRefSelector.js:73
 #: pve-manager/www/manager6/tree/ResourceTree.js:26
 msgid "SDN"
@@ -6164,9 +6628,9 @@ msgstr ""
 msgid "Scanning..."
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Backup.js:250
-#: pve-manager/www/manager6/dc/Backup.js:779
-#: pve-manager/www/manager6/dc/BackupJobDetail.js:193
+#: pve-manager/www/manager6/dc/Backup.js:331
+#: pve-manager/www/manager6/dc/Backup.js:909
+#: pve-manager/www/manager6/dc/BackupJobDetail.js:173
 #: pve-manager/www/manager6/dc/RealmSyncJob.js:123
 #: pve-manager/www/manager6/dc/RealmSyncJob.js:310
 #: pve-manager/www/manager6/grid/Replication.js:36
@@ -6175,12 +6639,16 @@ msgstr ""
 msgid "Schedule"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Backup.js:736
+#: pve-manager/www/manager6/dc/Backup.js:866
 msgid "Schedule Simulator"
 msgstr ""
 
 #: pve-manager/www/manager6/grid/Replication.js:267
 msgid "Schedule now"
+msgstr ""
+
+#: pve-manager/www/manager6/form/CRSOptions.js:47
+msgid "Scheduling Mode"
 msgstr ""
 
 #: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:157
@@ -6208,8 +6676,9 @@ msgstr ""
 msgid "Scrub OSD.{0}"
 msgstr ""
 
+#: pve-manager/www/manager6/dc/Backup.js:445
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:113
-#: pve-manager/www/manager6/dc/BackupJobDetail.js:479
+#: pve-manager/www/manager6/dc/BackupJobDetail.js:459
 #: pve-manager/www/manager6/form/GlobalSearchField.js:11
 #: pve-manager/www/manager6/grid/BackupView.js:128
 #: pve-manager/www/manager6/grid/ResourceGrid.js:108
@@ -6243,7 +6712,7 @@ msgstr ""
 msgid "Section"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Config.js:350
+#: pve-manager/www/manager6/dc/Config.js:362
 #: pve-manager/www/manager6/dc/SecurityGroups.js:42
 #: pve-manager/www/manager6/dc/SecurityGroups.js:44
 #: pve-manager/www/manager6/form/SecurityGroupSelector.js:29
@@ -6266,6 +6735,11 @@ msgid ""
 "information, deselect for manual entering"
 msgstr ""
 
+#: pve-manager/www/manager6/dc/Backup.js:228
+#: pve-manager/www/manager6/dc/Backup.js:461
+msgid "Selected ({0})"
+msgstr ""
+
 #: pve-manager/www/manager6/qemu/HDEdit.js:251
 msgid "Selected Image"
 msgstr ""
@@ -6275,21 +6749,26 @@ msgid ""
 "Selected guests who are already part of a pool will be removed from it first."
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Backup.js:813
+#: pve-manager/www/manager6/dc/Backup.js:943
 msgid "Selection"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Backup.js:263
-#: pve-manager/www/manager6/dc/BackupJobDetail.js:204
+#: pve-manager/www/manager6/dc/Backup.js:344
+#: pve-manager/www/manager6/dc/BackupJobDetail.js:184
 msgid "Selection mode"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/BackupJobDetail.js:223
+#: pve-manager/www/manager6/dc/BackupJobDetail.js:203
 msgid "Send email on failure"
 msgstr ""
 
 #: pve-manager/www/manager6/window/Backup.js:34
 msgid "Send email to"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/PrefixListPanel.js:59
+#: pve-manager/www/manager6/sdn/PrefixListPanel.js:210
+msgid "Sequence Nr."
 msgstr ""
 
 #: pve-manager/www/manager6/qemu/Smbios1Edit.js:63
@@ -6311,8 +6790,8 @@ msgstr ""
 msgid "Serial socket '{0}' will be mapped to a socket"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:621 pve-manager/www/manager6/Utils.js:622
-#: pve-manager/www/manager6/Utils.js:623 pve-manager/www/manager6/Utils.js:624
+#: pve-manager/www/manager6/Utils.js:625 pve-manager/www/manager6/Utils.js:626
+#: pve-manager/www/manager6/Utils.js:627 pve-manager/www/manager6/Utils.js:628
 msgid "Serial terminal"
 msgstr ""
 
@@ -6361,6 +6840,11 @@ msgstr ""
 msgid "Services"
 msgstr ""
 
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:787
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:997
+msgid "Set"
+msgstr ""
+
 #: pve-manager/www/manager6/window/Snapshot.js:110
 msgid "Settings"
 msgstr ""
@@ -6389,15 +6873,15 @@ msgstr ""
 msgid "Shares"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2182
-#: pve-manager/www/manager6/Utils.js:2189
+#: pve-manager/www/manager6/Utils.js:2186
+#: pve-manager/www/manager6/Utils.js:2193
 #: pve-manager/www/manager6/node/CmdMenu.js:89
 #: pve-manager/www/manager6/node/Config.js:125
 #: pve-manager/www/manager6/node/Config.js:161
 msgid "Shell"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Backup.js:665
+#: pve-manager/www/manager6/dc/Backup.js:795
 msgid "Show"
 msgstr ""
 
@@ -6406,7 +6890,7 @@ msgstr ""
 msgid "Show Configuration"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/TokenView.js:109
+#: pve-manager/www/manager6/dc/TokenView.js:146
 msgid "Show Permissions"
 msgstr ""
 
@@ -6414,14 +6898,14 @@ msgstr ""
 msgid "Show by default"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Backup.js:658
+#: pve-manager/www/manager6/dc/Backup.js:788
 msgid ""
 "Show job details and which guests and volumes are affected by the backup job"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2146
-#: pve-manager/www/manager6/Utils.js:2173
-#: pve-manager/www/manager6/Utils.js:2202
+#: pve-manager/www/manager6/Utils.js:2150
+#: pve-manager/www/manager6/Utils.js:2177
+#: pve-manager/www/manager6/Utils.js:2206
 #: pve-manager/www/manager6/dc/CmdMenu.js:36
 #: pve-manager/www/manager6/dc/Config.js:47
 #: pve-manager/www/manager6/lxc/CmdMenu.js:62
@@ -6485,6 +6969,10 @@ msgstr ""
 msgid "Skip Certificate Verification"
 msgstr ""
 
+#: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:72
+msgid "Skip Route Generation"
+msgstr ""
+
 #: pve-manager/www/manager6/lxc/MPEdit.js:340
 #: pve-manager/www/manager6/qemu/HDEdit.js:375
 msgid "Skip replication"
@@ -6494,9 +6982,9 @@ msgstr ""
 msgid "Slot"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2174
-#: pve-manager/www/manager6/Utils.js:2203
-#: pve-manager/www/manager6/dc/BackupJobDetail.js:254
+#: pve-manager/www/manager6/Utils.js:2178
+#: pve-manager/www/manager6/Utils.js:2207
+#: pve-manager/www/manager6/dc/BackupJobDetail.js:234
 #: pve-manager/www/manager6/form/BackupModeSelector.js:5
 #: pve-manager/www/manager6/form/SnapshotSelector.js:63
 #: pve-manager/www/manager6/window/Clone.js:233
@@ -6514,7 +7002,7 @@ msgstr ""
 msgid "Snapshots as Volume-Chain are a technology preview."
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:709
+#: pve-manager/www/manager6/Utils.js:713
 #: pve-manager/www/manager6/storage/Browser.js:125
 msgid "Snippets"
 msgstr ""
@@ -6526,7 +7014,7 @@ msgstr ""
 msgid "Sockets"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Backup.js:666
+#: pve-manager/www/manager6/dc/Backup.js:796
 msgid "Some guests are not covered by any backup job."
 msgstr ""
 
@@ -6536,6 +7024,8 @@ msgstr ""
 
 #: pve-manager/www/manager6/grid/FirewallRules.js:307
 #: pve-manager/www/manager6/grid/FirewallRules.js:967
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:192
+#: pve-manager/www/manager6/sdn/fabrics/RedistributionGrid.js:89
 #: pve-manager/www/manager6/window/GuestDiskReassign.js:127
 #: pve-manager/www/manager6/window/GuestImport.js:700
 #: pve-manager/www/manager6/window/Restore.js:191
@@ -6546,7 +7036,7 @@ msgstr ""
 msgid "Source Storage"
 msgstr ""
 
-#: pve-manager/www/manager6/window/Migrate.js:582
+#: pve-manager/www/manager6/window/Migrate.js:592
 msgid "Source node"
 msgstr ""
 
@@ -6580,13 +7070,13 @@ msgstr ""
 msgid "Standard"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:615
+#: pve-manager/www/manager6/Utils.js:619
 msgid "Standard VGA"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2147
-#: pve-manager/www/manager6/Utils.js:2175
-#: pve-manager/www/manager6/Utils.js:2204
+#: pve-manager/www/manager6/Utils.js:2151
+#: pve-manager/www/manager6/Utils.js:2179
+#: pve-manager/www/manager6/Utils.js:2208
 #: pve-manager/www/manager6/ceph/OSD.js:908
 #: pve-manager/www/manager6/ceph/ServiceList.js:320
 #: pve-manager/www/manager6/dc/CmdMenu.js:20
@@ -6631,7 +7121,7 @@ msgstr ""
 msgid "Start on boot delay"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Backup.js:634
+#: pve-manager/www/manager6/dc/Backup.js:764
 msgid "Start the selected backup job now?"
 msgstr ""
 
@@ -6667,7 +7157,9 @@ msgstr ""
 #: pve-manager/www/manager6/ha/Rules.js:129
 #: pve-manager/www/manager6/sdn/ControllerView.js:131
 #: pve-manager/www/manager6/sdn/FabricsContentView.js:71
-#: pve-manager/www/manager6/sdn/FabricsView.js:146
+#: pve-manager/www/manager6/sdn/FabricsView.js:151
+#: pve-manager/www/manager6/sdn/PrefixListPanel.js:171
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:1035
 #: pve-manager/www/manager6/sdn/SubnetView.js:134
 #: pve-manager/www/manager6/sdn/VnetView.js:129
 #: pve-manager/www/manager6/sdn/ZoneView.js:183
@@ -6678,10 +7170,11 @@ msgstr ""
 #: pve-manager/www/manager6/lxc/Network.js:223
 #: pve-manager/www/manager6/qemu/IPConfigEdit.js:83
 #: pve-manager/www/manager6/qemu/IPConfigEdit.js:141
+#: pve-manager/www/manager6/sdn/fabrics/ospf/FabricEdit.js:44
 msgid "Static"
 msgstr ""
 
-#: pve-manager/www/manager6/form/CRSOptions.js:41
+#: pve-manager/www/manager6/form/CRSOptions.js:52
 msgid "Static Load"
 msgstr ""
 
@@ -6705,8 +7198,8 @@ msgstr ""
 #: pve-manager/www/manager6/form/VMSelector.js:363
 #: pve-manager/www/manager6/grid/PoolMembers.js:135
 #: pve-manager/www/manager6/grid/Replication.js:327
-#: pve-manager/www/manager6/ha/Status.js:28
-#: pve-manager/www/manager6/ha/StatusView.js:58
+#: pve-manager/www/manager6/ha/Status.js:136
+#: pve-manager/www/manager6/ha/StatusView.js:74
 #: pve-manager/www/manager6/node/Subscription.js:123
 #: pve-manager/www/manager6/panel/GuestStatusView.js:55
 #: pve-manager/www/manager6/pool/StatusView.js:6
@@ -6714,7 +7207,7 @@ msgstr ""
 #: pve-manager/www/manager6/sdn/Status.js:29
 #: pve-manager/www/manager6/sdn/StatusView.js:101
 #: pve-manager/www/manager6/sdn/ZoneContentView.js:36
-#: pve-manager/www/manager6/sdn/fabrics/InterfacePanel.js:16
+#: pve-manager/www/manager6/sdn/fabrics/InterfacePanel.js:18
 #: pve-manager/www/manager6/storage/StatusView.js:6
 #: pve-manager/www/manager6/tree/SnapshotTree.js:359
 #: pve-manager/www/manager6/window/BulkAction.js:358
@@ -6725,12 +7218,12 @@ msgstr ""
 msgid "Status: {0}"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2148
-#: pve-manager/www/manager6/Utils.js:2176
-#: pve-manager/www/manager6/Utils.js:2205
+#: pve-manager/www/manager6/Utils.js:2152
+#: pve-manager/www/manager6/Utils.js:2180
+#: pve-manager/www/manager6/Utils.js:2209
 #: pve-manager/www/manager6/ceph/OSD.js:918
 #: pve-manager/www/manager6/ceph/ServiceList.js:329
-#: pve-manager/www/manager6/dc/BackupJobDetail.js:255
+#: pve-manager/www/manager6/dc/BackupJobDetail.js:235
 #: pve-manager/www/manager6/form/BackupModeSelector.js:7
 #: pve-manager/www/manager6/lxc/CmdMenu.js:68
 #: pve-manager/www/manager6/lxc/Config.js:83
@@ -6765,9 +7258,9 @@ msgid "Stopped"
 msgstr ""
 
 #: pve-manager/www/manager6/data/ResourceStore.js:287
-#: pve-manager/www/manager6/dc/Backup.js:239
-#: pve-manager/www/manager6/dc/Backup.js:790
-#: pve-manager/www/manager6/dc/BackupJobDetail.js:188
+#: pve-manager/www/manager6/dc/Backup.js:320
+#: pve-manager/www/manager6/dc/Backup.js:920
+#: pve-manager/www/manager6/dc/BackupJobDetail.js:168
 #: pve-manager/www/manager6/dc/Config.js:129
 #: pve-manager/www/manager6/dc/Summary.js:47
 #: pve-manager/www/manager6/form/DiskStorageSelector.js:11
@@ -6875,13 +7368,13 @@ msgstr ""
 msgid "Sunday"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Config.js:447
+#: pve-manager/www/manager6/dc/Config.js:459
 #: pve-manager/www/manager6/dc/NodeView.js:35
 msgid "Support"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2206
-#: pve-manager/www/manager6/dc/BackupJobDetail.js:256
+#: pve-manager/www/manager6/Utils.js:2210
+#: pve-manager/www/manager6/dc/BackupJobDetail.js:236
 #: pve-manager/www/manager6/dc/CmdMenu.js:52
 #: pve-manager/www/manager6/dc/Config.js:61
 #: pve-manager/www/manager6/form/BackupModeSelector.js:6
@@ -6890,7 +7383,7 @@ msgstr ""
 msgid "Suspend"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2185
+#: pve-manager/www/manager6/Utils.js:2189
 msgid "Suspend all VMs"
 msgstr ""
 
@@ -6905,7 +7398,7 @@ msgstr ""
 msgid "Swap"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2120
+#: pve-manager/www/manager6/Utils.js:2124
 #: pve-manager/www/manager6/dc/AuthView.js:128
 #: pve-manager/www/manager6/dc/SyncWindow.js:178
 msgid "Sync"
@@ -6915,7 +7408,7 @@ msgstr ""
 msgid "Sync Options"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2121
+#: pve-manager/www/manager6/Utils.js:2125
 msgid "Sync Preview"
 msgstr ""
 
@@ -6950,7 +7443,7 @@ msgstr ""
 msgid "TFA"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:1396
+#: pve-manager/www/manager6/Utils.js:1400
 msgid "TOTP Locked"
 msgstr ""
 
@@ -6973,6 +7466,7 @@ msgstr ""
 #: pve-manager/www/manager6/dc/CmdMenu.js:118
 #: pve-manager/www/manager6/dc/UserTagAccessEdit.js:73
 #: pve-manager/www/manager6/form/SDNVnetSelector.js:39
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:189
 #: pve-manager/www/manager6/sdn/VnetEdit.js:68
 #: pve-manager/www/manager6/sdn/VnetView.js:113
 #: pve-manager/www/manager6/storage/TemplateView.js:314
@@ -7053,15 +7547,23 @@ msgstr ""
 
 #: pve-manager/www/manager6/window/BulkAction.js:82
 #: pve-manager/www/manager6/window/Clone.js:171
-#: pve-manager/www/manager6/window/Migrate.js:605
+#: pve-manager/www/manager6/window/Migrate.js:615
 msgid "Target node"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:617
+msgid "Target order"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:655
+msgid "Target order is required"
 msgstr ""
 
 #: pve-manager/www/manager6/storage/ZFSEdit.js:127
 msgid "Target portal group"
 msgstr ""
 
-#: pve-manager/www/manager6/window/Migrate.js:617
+#: pve-manager/www/manager6/window/Migrate.js:627
 msgid "Target storage"
 msgstr ""
 
@@ -7104,6 +7606,12 @@ msgstr ""
 msgid "The HA rule has the following errors:"
 msgstr ""
 
+#: pve-manager/www/manager6/ha/Status.js:109
+msgid ""
+"The HA stack will be completely bypassed when the operational state of a "
+"service changes."
+msgstr ""
+
 #: pve-manager/www/manager6/ceph/Pool.js:215
 msgid ""
 "The amount of data eventually stored in this pool. Used for auto-scaling."
@@ -7139,7 +7647,7 @@ msgid ""
 "config schema is used to determine fallback values."
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Backup.js:405
+#: pve-manager/www/manager6/dc/Backup.js:535
 msgid "The notes are added to each backup created by this job."
 msgstr ""
 
@@ -7186,6 +7694,11 @@ msgstr ""
 
 #: pve-manager/www/manager6/qemu/DisplayEdit.js:126
 msgid "This option depends on your display type."
+msgstr ""
+
+#: pve-manager/www/manager6/ha/Status.js:100
+msgid ""
+"This will freeze all services allowing no change to their operational state."
 msgstr ""
 
 #: pve-manager/www/manager6/grid/BackupView.js:208
@@ -7252,7 +7765,7 @@ msgstr ""
 msgid "Token ID"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/TokenView.js:141
+#: pve-manager/www/manager6/dc/TokenView.js:178
 msgid "Token Name"
 msgstr ""
 
@@ -7320,7 +7833,7 @@ msgstr ""
 #: pve-manager/www/manager6/data/ResourceStore.js:90
 #: pve-manager/www/manager6/dc/AuthView.js:23
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:47
-#: pve-manager/www/manager6/dc/BackupJobDetail.js:447
+#: pve-manager/www/manager6/dc/BackupJobDetail.js:427
 #: pve-manager/www/manager6/dc/MetricServerView.js:74
 #: pve-manager/www/manager6/dc/OptionView.js:113
 #: pve-manager/www/manager6/dc/OptionView.js:141
@@ -7335,11 +7848,11 @@ msgstr ""
 #: pve-manager/www/manager6/grid/FirewallRules.js:63
 #: pve-manager/www/manager6/grid/FirewallRules.js:915
 #: pve-manager/www/manager6/grid/PoolMembers.js:145
-#: pve-manager/www/manager6/ha/StatusView.js:53
+#: pve-manager/www/manager6/ha/StatusView.js:69
 #: pve-manager/www/manager6/node/ACME.js:772
 #: pve-manager/www/manager6/node/Directory.js:119
 #: pve-manager/www/manager6/node/Subscription.js:117
-#: pve-manager/www/manager6/qemu/OSTypeEdit.js:59
+#: pve-manager/www/manager6/qemu/OSTypeEdit.js:48
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:152
 #: pve-manager/www/manager6/qemu/ScsiHwEdit.js:13
 #: pve-manager/www/manager6/sdn/ControllerView.js:113
@@ -7348,7 +7861,8 @@ msgstr ""
 #: pve-manager/www/manager6/sdn/IpamView.js:108
 #: pve-manager/www/manager6/sdn/StatusView.js:96
 #: pve-manager/www/manager6/sdn/ZoneView.js:127
-#: pve-manager/www/manager6/sdn/fabrics/InterfacePanel.js:54
+#: pve-manager/www/manager6/sdn/fabrics/InterfacePanel.js:56
+#: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:47
 #: pve-manager/www/manager6/storage/StatusView.js:45
 #: pve-manager/www/manager6/storage/TemplateView.js:71
 #: pve-manager/www/manager6/window/BulkAction.js:393
@@ -7385,7 +7899,7 @@ msgstr ""
 msgid "USB Device"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Config.js:416
+#: pve-manager/www/manager6/dc/Config.js:428
 msgid "USB Devices"
 msgstr ""
 
@@ -7415,7 +7929,7 @@ msgid "Unit File"
 msgstr ""
 
 #: pve-manager/www/manager6/ceph/StatusDetail.js:181
-#: pve-manager/www/manager6/dc/BackupJobDetail.js:258
+#: pve-manager/www/manager6/dc/BackupJobDetail.js:238
 #: pve-manager/www/manager6/form/USBSelector.js:150
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:101
 #: pve-manager/www/manager6/window/DownloadUrlToStorage.js:102
@@ -7439,7 +7953,7 @@ msgstr ""
 msgid "Unlock TFA authentication for {0}"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2208
+#: pve-manager/www/manager6/Utils.js:2212
 msgid "Unmount"
 msgstr ""
 
@@ -7461,7 +7975,7 @@ msgstr ""
 msgid "Unused"
 msgstr ""
 
-#: pve-manager/www/manager6/lxc/MPEdit.js:386
+#: pve-manager/www/manager6/lxc/MPEdit.js:392
 #: pve-manager/www/manager6/lxc/Resources.js:125
 #: pve-manager/www/manager6/qemu/HDEdit.js:546
 #: pve-manager/www/manager6/qemu/HardwareView.js:354
@@ -7472,7 +7986,7 @@ msgstr ""
 msgid "Up"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2119
+#: pve-manager/www/manager6/Utils.js:2123
 msgid "Update"
 msgstr ""
 
@@ -7557,8 +8071,8 @@ msgstr ""
 msgid "Use CD/DVD disc image file (iso)"
 msgstr ""
 
-#: pve-manager/www/manager6/form/CRSOptions.js:51
-msgid "Use CRS to select the least loaded node when starting an HA service"
+#: pve-manager/www/manager6/form/CRSOptions.js:64
+msgid "Use CRS to select the least loaded node when starting an HA resource"
 msgstr ""
 
 #: pve-manager/www/manager6/qemu/HDEfi.js:77
@@ -7597,7 +8111,7 @@ msgstr ""
 msgid "Use USB3"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/BackupJobDetail.js:219
+#: pve-manager/www/manager6/dc/BackupJobDetail.js:199
 #: pve-manager/www/manager6/panel/BackupNotificationOptions.js:64
 msgid "Use global notification settings"
 msgstr ""
@@ -7700,7 +8214,7 @@ msgstr ""
 
 #: pve-manager/www/manager6/dc/Log.js:67
 #: pve-manager/www/manager6/dc/Tasks.js:110
-#: pve-manager/www/manager6/dc/TokenView.js:130
+#: pve-manager/www/manager6/dc/TokenView.js:167
 #: pve-manager/www/manager6/dc/UserEdit.js:50
 #: pve-manager/www/manager6/dc/UserView.js:174
 #: pve-manager/www/manager6/storage/CephFSEdit.js:62
@@ -7786,7 +8300,7 @@ msgstr ""
 msgid "VMID"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:616
+#: pve-manager/www/manager6/Utils.js:620
 msgid "VMware compatible"
 msgstr ""
 
@@ -7798,13 +8312,17 @@ msgstr ""
 msgid "VNC clipboard requires spice-tools installed in the Guest-VM."
 msgstr ""
 
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:435
+msgid "VNI"
+msgstr ""
+
 #: pve-manager/www/manager6/form/SDNVnetSelector.js:28
 #: pve-manager/www/manager6/sdn/VnetEdit.js:123
 #: pve-manager/www/manager6/sdn/ZoneContentView.js:24
 msgid "VNet"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Config.js:302
+#: pve-manager/www/manager6/dc/Config.js:299
 msgid "VNet Firewall"
 msgstr ""
 
@@ -7834,6 +8352,8 @@ msgstr ""
 #: pve-manager/www/manager6/lxc/EnvEdit.js:75
 #: pve-manager/www/manager6/lxc/EnvEdit.js:139
 #: pve-manager/www/manager6/qemu/CreateWizard.js:284
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:230
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:482
 #: pve-manager/www/manager6/window/GuestImport.js:969
 #: pve-manager/www/manager6/window/Snapshot.js:132
 msgid "Value"
@@ -7897,7 +8417,7 @@ msgstr ""
 #: pve-manager/www/manager6/ceph/Services.js:188
 #: pve-manager/www/manager6/qemu/HDTPM.js:63
 #: pve-manager/www/manager6/qemu/MachineEdit.js:152
-#: pve-manager/www/manager6/qemu/OSTypeEdit.js:69
+#: pve-manager/www/manager6/qemu/OSTypeEdit.js:58
 #: pve-manager/www/manager6/qemu/Smbios1Edit.js:54
 #: pve-manager/www/manager6/storage/TemplateView.js:81
 #: pve-manager/www/manager6/window/GuestImport.js:572
@@ -8062,6 +8582,10 @@ msgstr ""
 msgid "Webinterface Settings"
 msgstr ""
 
+#: pve-manager/www/manager6/sdn/RouteMapPanel.js:190
+msgid "Weight"
+msgstr ""
+
 #: pve-manager/www/manager6/panel/BackupNotificationOptions.js:90
 msgid "When"
 msgstr ""
@@ -8072,7 +8596,13 @@ msgid ""
 "guest start."
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2187
+#: pve-manager/www/manager6/ha/Status.js:30
+msgid ""
+"While disarmed, HA does not protect your services. Failures during this "
+"period are not automatically recovered."
+msgstr ""
+
+#: pve-manager/www/manager6/Utils.js:2191
 msgid "Wipe Disk"
 msgstr ""
 
@@ -8082,6 +8612,10 @@ msgstr ""
 
 #: pve-manager/www/manager6/window/SafeDestroyStorage.js:19
 msgid "Wipe labels and other left-overs"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:411
+msgid "WireGuard"
 msgstr ""
 
 #: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:175
@@ -8098,7 +8632,7 @@ msgid ""
 "fallback for backup jobs"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Backup.js:366
+#: pve-manager/www/manager6/dc/Backup.js:496
 msgid ""
 "Without any keep option, the storage's configuration or node's vzdump.conf "
 "is used as fallback"
@@ -8132,8 +8666,8 @@ msgstr ""
 msgid "Wrong file extension"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:318
-#: pve-manager/www/manager6/dc/BackupJobDetail.js:266
+#: pve-manager/www/manager6/Utils.js:322
+#: pve-manager/www/manager6/dc/BackupJobDetail.js:246
 #: pve-manager/www/manager6/node/Subscription.js:147
 #: pve-manager/www/manager6/sdn/ZoneBridgeView.js:33
 #: pve-manager/www/manager6/window/TreeSettingsEdit.js:37
@@ -8195,7 +8729,7 @@ msgstr ""
 msgid "ZFS Pool"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2209
+#: pve-manager/www/manager6/Utils.js:2213
 msgid "ZFS Storage"
 msgstr ""
 
@@ -8210,7 +8744,7 @@ msgstr ""
 msgid "Zone {0} on node {1}"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Config.js:270
+#: pve-manager/www/manager6/dc/Config.js:267
 msgid "Zones"
 msgstr ""
 
@@ -8242,12 +8776,16 @@ msgstr ""
 msgid "auto detect"
 msgstr ""
 
-#: pve-manager/www/manager6/sdn/zones/SimpleEdit.js:29
-msgid "automatic DHCP"
+#: pve-manager/www/manager6/sdn/PrefixListPanel.js:60
+msgid "autogenerated"
 msgstr ""
 
-#: pve-manager/www/manager6/window/Migrate.js:437
-#: pve-manager/www/manager6/window/Migrate.js:527
+#: pve-manager/www/manager6/sdn/fabrics/wireguard/NodeEdit.js:42
+msgid "base64-encoded WireGuard public key"
+msgstr ""
+
+#: pve-manager/www/manager6/window/Migrate.js:442
+#: pve-manager/www/manager6/window/Migrate.js:537
 msgid "blocking HA resource {0} on selected target node"
 msgstr ""
 
@@ -8274,6 +8812,14 @@ msgstr ""
 msgid "dns"
 msgstr ""
 
+#: pve-manager/www/manager6/sdn/controllers/EvpnEdit.js:104
+msgid "eBGP"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/controllers/EvpnEdit.js:114
+msgid "eBGP Multihop"
+msgstr ""
+
 #: pve-manager/www/manager6/form/BackupCompressionSelector.js:6
 msgid "fast"
 msgstr ""
@@ -8291,12 +8837,20 @@ msgstr ""
 msgid "for example 'latest'"
 msgstr ""
 
+#: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:285
+msgid "generated on save"
+msgstr ""
+
 #: pve-manager/www/manager6/form/BackupCompressionSelector.js:7
 msgid "good"
 msgstr ""
 
 #: pve-manager/www/manager6/form/CalendarEvent.js:26
 msgid "hourly"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/controllers/EvpnEdit.js:104
+msgid "iBGP"
 msgstr ""
 
 #: pve-manager/www/manager6/storage/ZFSEdit.js:93
@@ -8348,6 +8902,10 @@ msgstr ""
 msgid "nftables (tech preview)"
 msgstr ""
 
+#: pve-manager/www/manager6/sdn/PrefixListPanel.js:291
+msgid "no Prefix List selected"
+msgstr ""
+
 #: pve-manager/www/manager6/form/VLanField.js:7
 msgid "no VLAN"
 msgstr ""
@@ -8364,6 +8922,10 @@ msgstr ""
 
 #: pve-manager/www/manager6/dc/Summary.js:212
 msgid "of {0} CPU(s)"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/fabrics/wireguard/FabricEdit.js:20
+msgid "off"
 msgstr ""
 
 #: pve-manager/www/manager6/node/ACME.js:23
@@ -8383,7 +8945,7 @@ msgstr ""
 msgid "peer's link address: {0}"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:1139
+#: pve-manager/www/manager6/Utils.js:1143
 #: pve-manager/www/manager6/grid/Replication.js:396
 msgid "pending"
 msgstr ""
@@ -8506,7 +9068,7 @@ msgstr ""
 msgid "{0} in CT"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:1867
+#: pve-manager/www/manager6/Utils.js:1871
 msgid "{0} not installed."
 msgstr ""
 
@@ -8514,6 +9076,12 @@ msgstr ""
 #: pve-manager/www/manager6/dc/Summary.js:216
 #: pve-manager/www/manager6/dc/Summary.js:223
 msgid "{0} of {1}"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:414
+msgid ""
+"{0} peer entry(ies) reference an interface that no longer exists on this "
+"node and were dropped from the form. Saving will not include them."
 msgstr ""
 
 #: pve-manager/www/manager6/ceph/Pool.js:222
