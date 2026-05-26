@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: proxmox translations\n"
 "Report-Msgid-Bugs-To: <support@proxmox.com>\n"
-"POT-Creation-Date: 2026-05-22 16:42+0200\n"
+"POT-Creation-Date: 2026-05-26 04:37+0200\n"
 "PO-Revision-Date: 2026-04-21 14:49+0900\n"
 "Last-Translator: angrystar170 <angrystar170@gmail.com>\n"
 "Language-Team: Korean <support@proxmox.com>\n"
@@ -50,6 +50,13 @@ msgstr "작업자 스레드 수"
 msgid "% of one threads"
 msgid_plural "% of {n} threads"
 msgstr[0] "{n} 스레드의 비율"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1218
+msgid ""
+"'Apply Pending' will remove the subscription from the node so the key can be "
+"reassigned elsewhere; 'Discard Pending' undoes the queueing without touching "
+"the remote."
+msgstr ""
 
 #: pmg-gui/js/SystemOptions.js:88
 msgid "'From:' for Admin Mail"
@@ -100,6 +107,12 @@ msgid "1 Core"
 msgid_plural "{n} Cores"
 msgstr[0] "{n} 코어"
 
+#: proxmox-datacenter-manager/ui/src/dashboard/map.rs:255
+#, fuzzy
+msgid "1 Node"
+msgid_plural "{0} Nodes"
+msgstr[0] "노드"
+
 #: pve-yew-mobile-gui/src/pages/page_node_status/dashboard_panel.rs:80
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_processor_property.rs:30
 #: proxmox-yew-comp/src/node_info.rs:242
@@ -130,6 +143,14 @@ msgstr "쉼표로 구분된 (공유) 제한을 적용할 네트워크 목록입�
 #: proxmox-widget-toolkit/src/window/AddYubico.js:101
 msgid "A currently valid Yubico OTP value"
 msgstr "현재 유효한 Yubico OTP 값"
+
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:542
+msgid ""
+"A fingerprint is still pinned. You can clear it to rely on the system trust "
+"store instead. Note that the trusted certificate may differ from the one you "
+"pinned, so clearing will trust any certificate the system store accepts for "
+"this host."
+msgstr ""
 
 #: pve-manager/www/manager6/ceph/Services.js:200
 msgid ""
@@ -260,7 +281,7 @@ msgstr "API 경로 접두어"
 #: proxmox-backup/www/form/TokenSelector.js:64
 #: proxmox-backup/www/panel/AccessControl.js:30
 #: proxmox-backup/www/window/ACLEdit.js:46
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:84
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:87
 #: proxmox-yew-comp/src/acl/acl_edit.rs:61
 msgid "API Token"
 msgstr "API 토큰"
@@ -309,7 +330,7 @@ msgstr "API 토큰"
 msgid "APT Repositories"
 msgstr "APT 리포지토리"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:592
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:600
 msgid "ARC Maximum Size (MiB)"
 msgstr ""
 
@@ -348,9 +369,19 @@ msgstr "손상된 MIME 구조 허용"
 msgid "Accept TOS"
 msgstr "서비스 약관 수락"
 
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:676
+#, fuzzy
+msgid "Accept new fingerprint"
+msgstr "암호화 지문"
+
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:625
+#, fuzzy
+msgid "Accepted"
+msgstr "수락"
+
 #: proxmox-backup/www/NavigationTree.js:48
 #: proxmox-backup/www/panel/AccessControl.js:6
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:255
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:257
 msgid "Access Control"
 msgstr "액세스 제어"
 
@@ -398,6 +429,7 @@ msgstr "계정"
 #: pve-manager/www/manager6/sdn/PrefixListPanel.js:229
 #: pve-manager/www/manager6/sdn/RouteMapPanel.js:788
 #: pve-manager/www/manager6/sdn/RouteMapPanel.js:1000
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:650
 #: proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:273
 #: proxmox-yew-comp/src/configuration/pve/firewall/firewall_rules_panel.rs:326
 #: proxmox-yew-comp/src/running_tasks.rs:109
@@ -430,7 +462,10 @@ msgstr "작업 오브젝트"
 #: proxmox-backup/www/tape/ChangerStatus.js:760
 #: proxmox-backup/www/tape/ChangerStatus.js:914
 #: proxmox-backup/www/tape/ChangerStatus.js:989
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:634
+#: proxmox-datacenter-manager/ui/src/guests.rs:880
+#: proxmox-datacenter-manager/ui/src/guests.rs:952
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:725
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:643
 #: proxmox-datacenter-manager/ui/src/sdn/zone_tree.rs:193
 msgid "Actions"
 msgstr "동작"
@@ -447,6 +482,7 @@ msgstr "하드웨어 가속을 위해 AES 명령어셋을 활성화합니다."
 #: pve-manager/www/manager6/storage/PBSEdit.js:232
 #: pve-manager/www/manager6/storage/PBSEdit.js:235
 #: pve-manager/www/manager6/storage/StatusView.js:31
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:69
 #: proxmox-datacenter-manager/ui/src/pve/storage.rs:254
 #: proxmox-yew-comp/src/form/pve/pve_network_selector.rs:174
 #: proxmox-yew-comp/src/configuration/pve/firewall/firewall_rules_panel.rs:312
@@ -466,6 +502,7 @@ msgid "Active Encryption Key"
 msgstr "함호화 키"
 
 #: proxmox-backup/www/tape/ChangerStatus.js:876
+#: proxmox-datacenter-manager/ui/src/ceph/clusters.rs:350
 msgid "Activity"
 msgstr "활동"
 
@@ -540,10 +577,11 @@ msgstr "활동"
 #: proxmox-backup/www/tape/DriveConfig.js:127
 #: proxmox-backup/www/tape/EncryptionKeys.js:102
 #: proxmox-backup/www/tape/PoolConfig.js:95
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:284
 #: proxmox-datacenter-manager/ui/src/configuration/views.rs:170
 #: proxmox-datacenter-manager/ui/src/configuration/views.rs:267
 #: proxmox-datacenter-manager/ui/src/remotes/node_url_list.rs:209
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:188
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:190
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answers_panel.rs:162
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/token_panel.rs:156
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/token_panel.rs:215
@@ -633,7 +671,7 @@ msgstr "네트워크 카드 추가"
 msgid "Add Node"
 msgstr "노드 추가"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:146
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:148
 #, fuzzy
 msgid "Add Prepared Answer"
 msgstr "헤더 추가"
@@ -669,6 +707,11 @@ msgstr "구분 기호 추가"
 #: pve-manager/www/manager6/node/ZFS.js:64
 msgid "Add Storage"
 msgstr "스토리지 추가"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:180
+#, fuzzy
+msgid "Add Subscription Keys"
+msgstr "구독 키"
 
 #: proxmox-backup/www/config/EncryptionKeysView.js:233
 #, fuzzy
@@ -719,6 +762,11 @@ msgstr "위젯 추가"
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/add_zone.rs:69
 msgid "Add Zone"
 msgstr "영역 추가"
+
+#: proxmox-datacenter-manager/ui/src/guests.rs:490
+msgid ""
+"Add a Proxmox VE remote on the Configuration tab to see its guests here."
+msgstr ""
 
 #: proxmox-widget-toolkit/src/window/AddTotp.js:11
 #: proxmox-yew-comp/src/tfa/tfa_add_totp.rs:165
@@ -771,6 +819,11 @@ msgstr "포함 항목 추가"
 msgid "Add new host mapping for '{0}'"
 msgstr "'{0}'에 대한 새 호스트 매핑 추가"
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:289
+msgid ""
+"Add one or more subscription keys to the pool; the Assign step happens later."
+msgstr ""
+
 #: pve-manager/www/manager6/ceph/FS.js:53
 msgid "Add the new CephFS to the cluster storage configuration."
 msgstr "클러스터 스토리지 구성에 새 CephFS를 추가합니다."
@@ -803,6 +856,8 @@ msgstr "추가 모니터를 권장합니다. 모니터 탭에서 언제든지 �
 #: pmg-gui/js/UserBlockWelcomeList.js:33 pmg-gui/js/UserBlockWelcomeList.js:195
 #: pve-manager/www/manager6/ceph/ServiceList.js:451
 #: pve-manager/www/manager6/ceph/Services.js:169
+#: proxmox-datacenter-manager/ui/src/ceph/managers.rs:179
+#: proxmox-datacenter-manager/ui/src/ceph/monitors.rs:135
 msgid "Address"
 msgstr "주소"
 
@@ -815,7 +870,7 @@ msgid "Addresses and ports used by the OSD service"
 msgstr "OSD 서비스에서 사용하는 주소 및 포트"
 
 #: pmg-gui/js/NavigationTree.js:104 proxmox-backup/www/NavigationTree.js:98
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:310
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:321
 msgid "Administration"
 msgstr "관리"
 
@@ -831,6 +886,34 @@ msgstr "관리자 이메일"
 #, fuzzy
 msgid "Administrator Email Address"
 msgstr "관리자 이메일"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1398
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1831
+msgid "Adopt"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1411
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1844
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1851
+msgid "Adopt All"
+msgstr ""
+
+#. No per-item icons: the menu button already carries the adopt glyph, and
+#. both scopes would otherwise share the same icon to no effect.
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1165
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1186
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1406
+#, fuzzy
+msgid "Adopt Key"
+msgstr "키 정렬"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1147
+msgid "Adopt {key} from {remote}/{node} into the pool?"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:155
+msgid "Adopted"
+msgstr ""
 
 #: proxmox-widget-toolkit/src/window/Edit.js:374
 #: pve-manager/www/manager6/dc/Backup.js:550
@@ -898,11 +981,12 @@ msgstr "별칭 (Alias)"
 #: proxmox-backup/www/ServerAdministration.js:83
 #: proxmox-backup/www/config/SyncView.js:381
 #: proxmox-backup/www/tape/BackupJobs.js:252
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1492
 #: proxmox-datacenter-manager/ui/src/configuration/views.rs:142
 #: proxmox-datacenter-manager/ui/src/remotes/tasks.rs:165
 #: proxmox-datacenter-manager/ui/src/dashboard/guest_panel.rs:152
 #: proxmox-datacenter-manager/ui/src/dashboard/pbs_datastores_panel.rs:128
-#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:677
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:678
 #: proxmox-yew-comp/src/task_status_selector.rs:134
 msgid "All"
 msgstr "모두"
@@ -959,6 +1043,10 @@ msgstr "사용 가능한 모든 노드는 이미 패브릭의 일부입니다"
 #: proxmox-backup/www/datastore/OptionView.js:18
 msgid "All backup snapshots and their data will be permanently destroyed!"
 msgstr "모든 백업 스냅샷과 해당 데이터는 영구적으로 제거됩니다!"
+
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:268
+msgid "All data fully redundant"
+msgstr ""
 
 #: proxmox-widget-toolkit/src/panel/DiskList.js:435
 msgid "All data on the device will be lost!"
@@ -1151,6 +1239,7 @@ msgid "Any rule matches"
 msgstr "임의 규칙 일치"
 
 #: pve-manager/www/manager6/ceph/Pool.js:325
+#: proxmox-datacenter-manager/ui/src/ceph/pools.rs:175
 msgid "Application"
 msgstr "애플리케이션"
 
@@ -1190,6 +1279,22 @@ msgstr "구성 적용"
 #: pmg-gui/js/SpamDetectorCustom.js:89 pmg-gui/js/SpamDetectorCustom.js:302
 msgid "Apply Custom Scores"
 msgstr "사용자 지정 스코프 적용"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:878
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1417
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:505
+#, fuzzy
+msgid "Apply Pending"
+msgstr "보류"
+
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:507
+msgid "Apply Pending ({0})"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1098
+#, fuzzy
+msgid "Apply Pending Changes"
+msgstr "보류 중인 변경 사항"
 
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:180
 msgid "Apply SDN configuration"
@@ -1247,6 +1352,11 @@ msgstr "구독 키를 제거할까요?"
 #, fuzzy
 msgid "Are you sure you want to arm HA?"
 msgstr "{0} 항목을 지울까요?"
+
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:598
+#, fuzzy
+msgid "Are you sure you want to delete snapshot '{0}'?"
+msgstr "스냅샷 {0}을(를) 제거할까요?"
 
 #: proxmox-yew-comp/src/configuration/pve/guest.rs:25
 msgid "Are you sure you want to delete volume {0}."
@@ -1403,10 +1513,25 @@ msgstr "{0} 항목을 제거할까요?"
 msgid "Are you sure you want to restore the archived key to be active again?"
 msgstr "{0}에 대한 일정을 제거할까요?"
 
+#: proxmox-datacenter-manager/ui/src/guests.rs:546
+#, fuzzy
+msgid "Are you sure you want to resume guest '{0}'?"
+msgstr "'{0}'을 제거할까요?"
+
+#: proxmox-datacenter-manager/ui/src/guests.rs:544
+#, fuzzy
+msgid "Are you sure you want to shut down guest '{0}'?"
+msgstr "노드를 종료할까요?"
+
 #: proxmox-datacenter-manager/ui/src/administration/node_status.rs:452
 #: proxmox-yew-comp/src/node_status_panel.rs:253
 msgid "Are you sure you want to shut down the node?"
 msgstr "노드를 종료할까요?"
+
+#: proxmox-datacenter-manager/ui/src/guests.rs:542
+#, fuzzy
+msgid "Are you sure you want to start guest '{0}'?"
+msgstr "테이프 '{0}'을(를) 포맷할까요?"
 
 #: proxmox-widget-toolkit/src/panel/DiskList.js:432
 msgid "Are you sure you want to wipe {0}?"
@@ -1420,8 +1545,34 @@ msgstr "구역"
 msgid "Arm HA"
 msgstr ""
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_assign.rs:282
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:296
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1351
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1744
+msgid "Assign"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:196
+#, fuzzy
+msgid "Assign Key to Remote"
+msgstr "LV에 할당됨"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_assign.rs:305
+msgid "Assign Key to {remote}/{node}"
+msgstr ""
+
 #: pve-manager/www/manager6/node/LVM.js:113
 msgid "Assigned to LVs"
+msgstr "LV에 할당됨"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_assign.rs:324
+#, fuzzy
+msgid "Assigning..."
+msgstr "처리 중..."
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:158
+#, fuzzy
+msgid "Assignment"
 msgstr "LV에 할당됨"
 
 #: pve-manager/www/manager6/dc/ClusterEdit.js:320
@@ -1536,7 +1687,7 @@ msgstr "인증 ID"
 msgid "Auth-Provider Default"
 msgstr "인증-공급자 기본값"
 
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:354
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:372
 msgid "AuthId"
 msgstr "인증ID"
 
@@ -1544,7 +1695,7 @@ msgstr "인증ID"
 msgid "Authenticate"
 msgstr "인증"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_edit_window.rs:213
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_edit_window.rs:214
 #, fuzzy
 msgid "Authentication"
 msgstr "인증 모드"
@@ -1563,9 +1714,22 @@ msgstr "인증 모드"
 msgid "Author"
 msgstr "작성자"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:827
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:835
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answers_panel.rs:306
 msgid "Authorized Tokens"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:322
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:814
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:820
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:860
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1065
+#, fuzzy
+msgid "Auto-Assign"
+msgstr "자동 완성"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1767
+msgid "Auto-Assign Proposal"
 msgstr ""
 
 #: pve-manager/www/manager6/ha/ResourceEdit.js:130
@@ -1615,7 +1779,7 @@ msgstr "자동 생성"
 msgid "Autogenerate unique properties, e.g., MAC addresses"
 msgstr "고유 속성(properties) 자동 생성(예: MAC 주소)"
 
-#: proxmox-datacenter-manager/ui/src/remotes/mod.rs:85
+#: proxmox-datacenter-manager/ui/src/remotes/mod.rs:97
 #, fuzzy
 msgid "Automated Installations"
 msgstr "설치"
@@ -1625,7 +1789,7 @@ msgstr "설치"
 #: pve-manager/www/manager6/form/TagColorGrid.js:55
 #: pve-manager/www/manager6/qemu/Options.js:352
 #: pve-manager/www/manager6/sdn/controllers/EvpnEdit.js:111
-#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:392
+#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:417
 #: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:348
 msgid "Automatic"
 msgstr "자동"
@@ -1647,6 +1811,11 @@ msgstr "자동 균형 재조정"
 #: pve-manager/www/manager6/form/CRSOptions.js:72
 msgid "Automatically rebalance HA resources"
 msgstr "HA 리소스 자동 균형 재조정"
+
+#: proxmox-datacenter-manager/ui/src/ceph/pools.rs:154
+#, fuzzy
+msgid "Autoscale"
+msgstr "자동 확장 모드"
 
 #: pve-manager/www/manager6/ceph/Pool.js:396
 msgid "Autoscaler Mode"
@@ -1672,6 +1841,7 @@ msgstr "가용성"
 #: pve-manager/www/manager6/node/Summary.js:242
 #: pve-manager/www/manager6/node/Summary.js:253
 #: proxmox-backup/www/dashboard/DataStoreStatistics.js:101
+#: proxmox-datacenter-manager/ui/src/ceph/clusters.rs:307
 msgid "Available"
 msgstr "사용 가능"
 
@@ -1755,7 +1925,7 @@ msgstr "Backscatter 점수"
 #: pve-manager/www/manager6/window/Backup.js:380
 #: proxmox-backup/www/Utils.js:427
 #: proxmox-backup/www/tape/window/TapeBackup.js:5
-#: proxmox-datacenter-manager/ui/src/pve/utils.rs:290
+#: proxmox-datacenter-manager/ui/src/pve/utils.rs:309
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/mod.rs:134
 #: proxmox-yew-comp/src/form/pve/lxc_property/lxc_mount_point_property.rs:224
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_disk_property.rs:266
@@ -1813,7 +1983,7 @@ msgid "Backup Retention"
 msgstr "백업 보존 기간"
 
 #: pmg-gui/js/PBSRemoteEdit.js:18
-#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:683
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:684
 msgid "Backup Server"
 msgstr "서버 백업"
 
@@ -1926,7 +2096,7 @@ msgstr "기본 도메인 이름"
 msgid "Base Model"
 msgstr "본드 모드"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:856
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:864
 msgid "Base URL this PDM instance is reachable from the target host"
 msgstr ""
 
@@ -1976,6 +2146,12 @@ msgstr "비밀번호 바인드"
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:234
 msgid "Bind User"
 msgstr "사용자 바인드"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1357
+msgid ""
+"Bind a pool key to the selected node. Available for a node with no active "
+"subscription and no pool assignment yet."
+msgstr ""
 
 #: proxmox-widget-toolkit/src/Schema.js:90
 msgid "Block Device"
@@ -2069,7 +2245,7 @@ msgstr "브릿지"
 msgid "Browse"
 msgstr "탐색"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:475
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:483
 msgid ""
 "Btrfs integration is a technology preview and only available for Proxmox "
 "Virtual Environment installations."
@@ -2338,6 +2514,8 @@ msgstr "CPU 단위"
 #: proxmox-datacenter-manager/ui/src/administration/node_status.rs:356
 #: proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:346
 #: proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:354
+#: proxmox-datacenter-manager/ui/src/guests.rs:861
+#: proxmox-datacenter-manager/ui/src/guests.rs:931
 #: proxmox-datacenter-manager/ui/src/pve/lxc/overview.rs:177
 #: proxmox-datacenter-manager/ui/src/pve/lxc/overview.rs:293
 #: proxmox-datacenter-manager/ui/src/pve/qemu/overview.rs:173
@@ -2361,6 +2539,10 @@ msgstr "CRM 상태"
 msgid "CRS Settings"
 msgstr "설정"
 
+#: proxmox-datacenter-manager/ui/src/ceph/pools.rs:167
+msgid "CRUSH rule"
+msgstr ""
+
 #. TRANSLATORS: Stands for Complete Sequence Number Packet, see
 #. https://datatracker.ietf.org/doc/html/draft-ietf-lsr-distoptflood#name-flooding-failures
 #: pve-manager/www/manager6/sdn/fabrics/openfabric/FabricEdit.js:29
@@ -2381,7 +2563,7 @@ msgstr "CT 템플릿"
 msgid "CT Volumes"
 msgstr "CT 볼륨"
 
-#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:66
+#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:68
 msgid "CT {0}"
 msgstr "CT {0}"
 
@@ -2412,6 +2594,9 @@ msgstr "이 작업을 일치시키기 위해 통지 매처에서 사용할 수 �
 msgid "Can only create the VNet once per remote!"
 msgstr "리모트당 VNet을 한 번만 만들 수 있습니다!"
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_assign.rs:273
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1740
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1828
 #: proxmox-yew-widget-toolkit/src/touch/fab_menu.rs:264
 #: proxmox-yew-widget-toolkit/src/widget/message_box.rs:128
 msgid "Cancel"
@@ -2476,7 +2661,7 @@ msgstr "{0}으로 인해 컨테이너를 마이그레이션할 수 없습니다.
 msgid "Cannot migrate running VM with mapped resources: {0}"
 msgstr "매핑된 리소스가 있는 실행 중인 VM을 마이그레이션할 수 없습니다: {0}"
 
-#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:343
+#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:368
 msgid "Cannot migrate with local resource: {0}"
 msgstr "로컬 리소스로 마이그레이션할 수 없습니다: {0}"
 
@@ -2494,6 +2679,8 @@ msgstr "예약된 풀 이름 사용 불가"
 
 #: pve-manager/www/manager6/form/StorageSelector.js:42
 #: proxmox-datacenter-manager/ui/src/widget/pve_storage_selector.rs:224
+#: proxmox-datacenter-manager/ui/src/ceph/clusters.rs:294
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:121
 #: proxmox-yew-comp/src/form/pve/pve_storage_selector.rs:280
 msgid "Capacity"
 msgstr "용량"
@@ -2532,6 +2719,21 @@ msgstr ""
 "주의: '어떤 개체'는 각 메일 부분과 개별적으로 일치하므로 '임의의 일치 항목' "
 "외의 임의의 옵션을 사용할 때는 주의하세요."
 
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:356
+#, fuzzy
+msgid "Ceph"
+msgstr "CephFS"
+
+#: proxmox-datacenter-manager/ui/src/ceph/cluster.rs:84
+#, fuzzy
+msgid "Ceph Cluster '{0}'"
+msgstr "'{0}' 파기"
+
+#: proxmox-datacenter-manager/ui/src/ceph/view.rs:66
+#, fuzzy
+msgid "Ceph Clusters"
+msgstr "클러스터 생성"
+
 #: pve-manager/www/manager6/ceph/Pool.js:269
 msgid "Ceph Pool"
 msgstr "Ceph 풀"
@@ -2560,11 +2762,17 @@ msgstr "이 노드에 Ceph가 설치되어 있지 않습니다."
 msgid "Ceph related Tasks"
 msgstr "Ceph 관련 태스크"
 
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:159
+#, fuzzy
+msgid "Ceph version"
+msgstr "Ceph 버전"
+
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:27
 msgid "Ceph version to install"
 msgstr "설치할 Ceph 버전"
 
 #: pve-manager/www/manager6/ceph/FS.js:78
+#: proxmox-datacenter-manager/ui/src/ceph/cluster.rs:180
 msgid "CephFS"
 msgstr "CephFS"
 
@@ -2582,13 +2790,27 @@ msgstr "인증서"
 msgid "Certificate Chain"
 msgstr "인증서 체인"
 
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:520
+#, fuzzy
+msgid "Certificate Check - {0}"
+msgstr "인증서 체인"
+
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:71
+msgid "Certificate is trusted by the system certificate store."
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:69
+#, fuzzy
+msgid "Certificate matches the stored fingerprint."
+msgstr "인증서 검증 건너뛰기"
+
 #: pmg-gui/js/Certificates.js:5 pmg-gui/js/Certificates.js:30
 #: pmg-gui/js/NavigationTree.js:96 pve-manager/www/manager6/node/Config.js:203
 #: proxmox-backup/www/NavigationTree.js:72
 #: proxmox-backup/www/config/CertificateView.js:5
 #: proxmox-backup/www/config/CertificateView.js:26
 #: proxmox-datacenter-manager/ui/src/certificates.rs:21
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:264
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:266
 msgid "Certificates"
 msgstr "인증서"
 
@@ -2637,6 +2859,11 @@ msgstr "'{0}'의 소유자 변경"
 msgid "Change protection of '{0}'"
 msgstr "'{0}'의 보호 변경"
 
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:61
+#, fuzzy
+msgid "Changed"
+msgstr "Changer"
+
 #: proxmox-widget-toolkit/src/node/APT.js:140
 #: proxmox-widget-toolkit/src/node/APT.js:168
 #: proxmox-yew-comp/src/apt_package_manager.rs:296
@@ -2678,21 +2905,44 @@ msgstr "문자 디바이스"
 #: pve-manager/www/manager6/node/Subscription.js:167
 #: proxmox-backup/www/Subscription.js:157
 #: proxmox-datacenter-manager/ui/src/configuration/subscription_panel.rs:103
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1382
 #: proxmox-yew-comp/src/subscription_panel.rs:96
 msgid "Check"
 msgstr "확인"
+
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:220
+#: proxmox-datacenter-manager/ui/src/pbs/mod.rs:197
+#: proxmox-datacenter-manager/ui/src/pve/mod.rs:291
+#, fuzzy
+msgid "Check Certificate"
+msgstr "인증서 철회"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:974
+#, fuzzy
+msgid "Check Subscription"
+msgstr "구독"
 
 #: pve-manager/www/manager6/dc/AuthEditAD.js:93
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:93
 msgid "Check connection"
 msgstr "연결 확인"
 
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:58
+#, fuzzy
+msgid "Checking"
+msgstr "확인"
+
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:68
+#, fuzzy
+msgid "Checking certificate..."
+msgstr "연결 인증서"
+
 #: pve-manager/www/manager6/window/DownloadUrlToStorage.js:208
 #: pve-manager/www/manager6/window/UploadToStorage.js:253
 msgid "Checksum"
 msgstr "체크섬"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:604
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:612
 #, fuzzy
 msgid "Checksumming Algorithm"
 msgstr "압축 해제 알고리즘"
@@ -2744,6 +2994,8 @@ msgid "ClamAV update"
 msgstr "ClamAV 업데이트"
 
 #: pve-manager/www/manager6/ceph/OSD.js:764
+#: proxmox-datacenter-manager/ui/src/ceph/osds.rs:438
+#: proxmox-datacenter-manager/ui/src/ceph/osds.rs:504
 msgid "Class"
 msgstr "클래스"
 
@@ -2769,6 +3021,7 @@ msgid "Cleanup Storage Configuration"
 msgstr "스토리지 구성 정리"
 
 #: pve-manager/www/manager6/lxc/IdMapField.js:205
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1371
 #: proxmox-datacenter-manager/ui/src/remotes/node_url_list.rs:291
 msgid "Clear"
 msgstr "지우기"
@@ -2786,6 +3039,12 @@ msgstr "필터 지우기 ({})"
 msgid "Clear Filters"
 msgstr "필터 지우기"
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1227
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1247
+#, fuzzy
+msgid "Clear Key"
+msgstr "클라이언트 키"
+
 #: proxmox-backup/www/tape/TapeInventory.js:156
 #: proxmox-backup/www/tape/TapeInventory.js:158
 msgid "Clear Status"
@@ -2794,6 +3053,18 @@ msgstr "상태 지우기"
 #: proxmox-yew-widget-toolkit/src/widget/form/selector.rs:462
 msgid "Clear Value"
 msgstr "값 지우기"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1530
+#: proxmox-datacenter-manager/ui/src/guests.rs:441
+#: proxmox-datacenter-manager/ui/src/guests.rs:442
+#, fuzzy
+msgid "Clear filter"
+msgstr "필터 지우기"
+
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:683
+#, fuzzy
+msgid "Clear stored fingerprint"
+msgstr "암호화 지문"
 
 #: proxmox-yew-comp/src/tfa/webauthn.rs:255
 msgid "Click the button to start the authentication"
@@ -2828,6 +3099,26 @@ msgstr "클라이언트 키"
 #: pmg-gui/js/MailProxyOptions.js:80
 msgid "Client Message Rate Limit"
 msgstr "클라이언트 메시지 전송률 제한"
+
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:398
+#, fuzzy
+msgid "Client read"
+msgstr "클라이언트 키"
+
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:409
+#, fuzzy
+msgid "Client read ops"
+msgstr "클라이언트 키"
+
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:404
+#, fuzzy
+msgid "Client write"
+msgstr "클라이언트 키"
+
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:412
+#, fuzzy
+msgid "Client write ops"
+msgstr "그룹 덮어쓰기"
 
 #: pve-manager/www/manager6/qemu/DisplayEdit.js:86
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_display_property.rs:161
@@ -2972,7 +3263,7 @@ msgstr "열"
 msgid "Command"
 msgstr "명령"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:925
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:933
 #, fuzzy
 msgid "Command Line"
 msgstr "명령이 실패함"
@@ -3128,14 +3419,18 @@ msgstr "컴포넌트"
 msgid "Compression"
 msgstr "압축"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:626
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:664
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:634
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:672
 #, fuzzy
 msgid "Compression Algorithm"
 msgstr "압축 해제 알고리즘"
 
-#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:112
-#: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:111
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1074
+msgid "Computing proposal..."
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:114
+#: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:113
 msgid "Config"
 msgstr "구성"
 
@@ -3158,8 +3453,8 @@ msgstr "구성 잠김 ({0})"
 #: pve-manager/www/manager6/window/BackupConfig.js:3
 #: proxmox-backup/www/NavigationTree.js:42
 #: proxmox-backup/www/SystemConfiguration.js:5
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:288
-#: proxmox-datacenter-manager/ui/src/remotes/mod.rs:57
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:290
+#: proxmox-datacenter-manager/ui/src/remotes/mod.rs:62
 #: pve-yew-mobile-gui/src/widgets/storage_content_panel.rs:258
 #: pve-yew-mobile-gui/src/widgets/main_navigation.rs:90
 msgid "Configuration"
@@ -3169,7 +3464,7 @@ msgstr "환경 설정"
 msgid "Configuration Database"
 msgstr "데이터베이스 구성"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:957
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:965
 #, fuzzy
 msgid "Configuration ID"
 msgstr "환경 설정"
@@ -3236,7 +3531,8 @@ msgstr "구성됨"
 #: pve-manager/www/manager6/window/Restore.js:105
 #: proxmox-backup/www/datastore/Content.js:756
 #: proxmox-datacenter-manager/ui/src/configuration/views.rs:318
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:534
+#: proxmox-datacenter-manager/ui/src/guests.rs:551
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:543
 #: proxmox-yew-comp/src/safe_confirm_dialog.rs:176
 #: proxmox-yew-comp/src/tfa/tfa_confirm_remove.rs:97
 #: proxmox-yew-widget-toolkit/src/widget/confirm_dialog.rs:66
@@ -3391,7 +3687,7 @@ msgstr "연락처"
 #: pve-manager/www/manager6/Utils.js:740
 #: pve-manager/www/manager6/ha/ResourceEdit.js:210
 #: proxmox-datacenter-manager/ui/src/widget/view_filter_selector.rs:324
-#: proxmox-datacenter-manager/ui/src/pve/utils.rs:294
+#: proxmox-datacenter-manager/ui/src/pve/utils.rs:313
 msgid "Container"
 msgstr "컨테이너"
 
@@ -3406,7 +3702,7 @@ msgid "Container related Tasks"
 msgstr "컨테이너 관련 태스크"
 
 #: pve-manager/www/manager6/Utils.js:738
-#: proxmox-datacenter-manager/ui/src/pve/utils.rs:296
+#: proxmox-datacenter-manager/ui/src/pve/utils.rs:315
 msgid "Container template"
 msgstr "컨테이너 템플릿"
 
@@ -3479,7 +3775,7 @@ msgstr "컨트롤러"
 msgid "Convert to template"
 msgstr "템플릿으로 변환"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:648
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:656
 msgid "Copies"
 msgstr ""
 
@@ -3516,12 +3812,12 @@ msgstr "복구 키 복사"
 msgid "Copy Secret Value"
 msgstr "비밀 구문 값 복사"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:911
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:919
 #, fuzzy
 msgid "Copy answer token to clipboard."
 msgstr "클립보드에 토큰 비밀 구문 복사"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:947
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:955
 #, fuzzy
 msgid "Copy command line to clipboard."
 msgstr "클립보드에 이름 복사"
@@ -3570,6 +3866,16 @@ msgstr "클립보드에 토큰 비밀 구문 복사"
 msgid "Cores"
 msgstr "코어"
 
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:497
+#, fuzzy
+msgid "Could not apply changes: {0}"
+msgstr "변경 사항을 적용할 수 없습니다"
+
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:74
+#, fuzzy
+msgid "Could not check certificate: {0}"
+msgstr "업데이트 상태를 가져올 수 없음: {0}"
+
 #: proxmox-datacenter-manager/ui/src/configuration/views.rs:237
 msgid "Could not delete '{0}': '{1}'"
 msgstr "'{0}'을(를) 제거할 수 없습니다: '{1}'"
@@ -3591,13 +3897,28 @@ msgstr "EVPN 영역 {}에 대한 컨트롤러를 찾을 수 없음"
 msgid "Could not load status"
 msgstr "상태를 로드할 수 없습니다"
 
+#: proxmox-datacenter-manager/ui/src/guests.rs:636
+#, fuzzy
+msgid "Could not query some remotes: {0}"
+msgstr "리모트에 연결할 수 없습니다"
+
 #: pmg-gui/js/DKIMSettings.js:41
 msgid "Could not read private key - please create a selector first!"
 msgstr "개인 키를 읽을 수 없습니다 - 먼저 선택기를 만들어 주세요!"
 
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:573
+#, fuzzy
+msgid "Could not read the presented certificate's fingerprint."
+msgstr "인증서를 신뢰하고 지문을 저장할까요?"
+
 #: proxmox-datacenter-manager/ui/src/remotes/updates.rs:434
 msgid "Could not refresh update status."
 msgstr "업데이트 상태를 새로 고칠 수 없습니다."
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:247
+#, fuzzy
+msgid "Could not remove {id}: {err}"
+msgstr "'{0}'을(를) 제거할 수 없습니다: '{1}'"
 
 #: proxmox-datacenter-manager/ui/src/dashboard/remote_panel.rs:82
 msgid "Could reach all remotes."
@@ -3612,7 +3933,7 @@ msgstr "모든 리모트에 접근할 수 있습니다."
 msgid "Count"
 msgstr "개수"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:786
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:794
 msgid "Counters are automatically incremented each time an answer is served."
 msgstr ""
 
@@ -3769,13 +4090,13 @@ msgstr "현재 풀"
 msgid "Current User"
 msgstr "현재 사용자"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:798
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:806
 #, fuzzy
 msgid "Current Value"
 msgstr "현재 레이아웃"
 
 #: pve-manager/www/manager6/window/Migrate.js:631
-#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:472
+#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:497
 msgid "Current layout"
 msgstr "현재 레이아웃"
 
@@ -3861,8 +4182,8 @@ msgstr "DKIM"
 #: pve-manager/www/manager6/node/Config.js:211
 #: pve-manager/www/manager6/sdn/ZoneView.js:159
 #: proxmox-backup/www/SystemConfiguration.js:35
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:160
-#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:144
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:163
+#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:146
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/dashboard_panel.rs:354
 msgid "DNS"
 msgstr "DNS"
@@ -3881,7 +4202,7 @@ msgstr "DNS 접두사"
 msgid "DNS Server"
 msgstr "DNS 서버"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:308
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:316
 #, fuzzy
 msgid "DNS Server Address"
 msgstr "서버 주소"
@@ -3966,8 +4287,9 @@ msgstr "다크 모드 필터"
 
 #: pmg-gui/js/Dashboard.js:339 pmg-gui/js/NavigationTree.js:10
 #: proxmox-backup/www/Dashboard.js:224 proxmox-backup/www/NavigationTree.js:30
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:171
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:173
 #: proxmox-datacenter-manager/ui/src/widget/view_selector.rs:47
+#: proxmox-datacenter-manager/ui/src/ceph/cluster.rs:130
 #: pve-yew-mobile-gui/src/widgets/main_navigation.rs:67
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/mod.rs:114
 #: pve-yew-mobile-gui/src/pages/page_node_status/mod.rs:138
@@ -3994,6 +4316,11 @@ msgstr "Data Devs"
 msgid "Data Pool"
 msgstr "Data 풀"
 
+#: proxmox-datacenter-manager/ui/src/ceph/cephfs.rs:124
+#, fuzzy
+msgid "Data Pools"
+msgstr "Data 풀"
+
 #: proxmox-backup/www/datastore/OptionView.js:300
 msgid "Data Sync Level"
 msgstr "데이터 동기화 레벨"
@@ -4017,7 +4344,7 @@ msgstr "데이터베이스 미러"
 #: pve-manager/www/manager6/form/IPRefSelector.js:71
 #: pve-manager/www/manager6/tree/ResourceTree.js:326
 #: pve-manager/www/manager6/tree/ResourceTree.js:385
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:609
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:618
 msgid "Datacenter"
 msgstr "데이터센터"
 
@@ -4110,6 +4437,7 @@ msgstr "데이터스토어"
 #: pve-manager/www/manager6/storage/ContentView.js:145
 #: pve-manager/www/manager6/tree/SnapshotTree.js:359
 #: pve-manager/www/manager6/window/ScheduleSimulator.js:127
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:694
 msgid "Date"
 msgstr "날짜"
 
@@ -4258,7 +4586,7 @@ msgstr "기본값 (항상)"
 msgid "Default (Errors)"
 msgstr "기본값 (오류)"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:719
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:727
 #, fuzzy
 msgid "Default Answer"
 msgstr "기본값 (임의)"
@@ -4357,6 +4685,11 @@ msgstr ""
 "Proxmox 데이터센터 관리자가 클러스터 또는 단일 노드에 접속하는 데 사용할 수 "
 "있는 주소 집합을 정의합니다. 지문은 신뢰할 수 없는 인증서에만 필요합니다."
 
+#: proxmox-datacenter-manager/ui/src/ceph/clusters.rs:116
+#, fuzzy
+msgid "Degraded"
+msgstr "업그레이드"
+
 #: pmg-gui/js/PBSSnapshotView.js:182
 msgid "Delay"
 msgstr "지연"
@@ -4373,6 +4706,8 @@ msgstr "지연 경고 시간(hours)"
 #: pve-manager/www/manager6/sdn/RouteMapPanel.js:508
 #: pve-manager/www/manager6/sdn/fabrics/RedistributionGrid.js:122
 #: pve-manager/www/manager6/tree/DhcpTree.js:272
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:784
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:795
 #: pmg-yew-quarantine-gui/src/spam_list.rs:294
 #: pmg-yew-quarantine-gui/src/page_mail_view.rs:130
 msgid "Delete"
@@ -4386,13 +4721,14 @@ msgstr "사용자 지정 인증서 제거"
 
 #: pve-manager/www/manager6/Utils.js:2195
 #: pve-manager/www/manager6/Utils.js:2224
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:597
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:164
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:193
 msgid "Delete Snapshot"
 msgstr "스냅샷 제거"
 
 #: proxmox-backup/www/window/NamespaceMove.js:130
-#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:432
+#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:457
 msgid "Delete Source"
 msgstr "원본 제거"
 
@@ -4506,6 +4842,10 @@ msgstr ""
 #: pve-manager/www/manager6/window/Snapshot.js:95
 #: proxmox-backup/www/window/MaintenanceOptions.js:73
 #: proxmox-datacenter-manager/ui/src/remotes/tasks.rs:87
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:267
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:575
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:802
+#: proxmox-datacenter-manager/ui/src/ceph/flags.rs:131
 #: proxmox-yew-comp/src/apt_package_manager.rs:446
 #: proxmox-yew-comp/src/apt_repositories.rs:765
 #: proxmox-yew-comp/src/form/pve/qemu_disk_format_selector.rs:167
@@ -4600,7 +4940,7 @@ msgstr "분리"
 msgid "Detail"
 msgstr "세부 사항"
 
-#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:453
+#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:478
 msgid "Detailed Mapping"
 msgstr "자세한 매핑"
 
@@ -4611,6 +4951,11 @@ msgstr "자세한 매핑"
 #: proxmox-datacenter-manager/ui/src/dashboard/subscription_info.rs:172
 msgid "Details"
 msgstr "세부 정보"
+
+#: proxmox-datacenter-manager/ui/src/ceph/renderer.rs:73
+#, fuzzy
+msgid "Detected"
+msgstr "보호됨"
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:497
 #: proxmox-yew-comp/src/apt_repositories.rs:228
@@ -4690,7 +5035,7 @@ msgstr "위치"
 #: pve-manager/www/manager6/node/Directory.js:172
 #: pve-manager/www/manager6/storage/DirEdit.js:14
 #: proxmox-backup/www/DirectoryList.js:94 proxmox-backup/www/Utils.js:434
-#: proxmox-datacenter-manager/ui/src/pve/utils.rs:266
+#: proxmox-datacenter-manager/ui/src/pve/utils.rs:285
 #: proxmox-yew-comp/src/acme/acme_register_account.rs:113
 #: proxmox-yew-comp/src/acme/acme_accounts.rs:237
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:144
@@ -4762,9 +5107,30 @@ msgstr ""
 msgid "Discard"
 msgstr "버리기"
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:895
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1430
+#, fuzzy
+msgid "Discard Pending"
+msgstr "버리기"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1118
+#, fuzzy
+msgid "Discard Pending Changes"
+msgstr "보류 중인 변경 사항"
+
 #: pmg-gui/js/PostfixQShape.js:108
 msgid "Discard address verification database"
 msgstr "주소 검증 데이터베이스 버리기"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1119
+msgid ""
+"Discard all queued assignments and cancel all queued Clear Key actions? The "
+"remote nodes are not touched."
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1439
+msgid "Discard queued assignments without touching the remote nodes."
+msgstr ""
 
 #: pmg-gui/js/Utils.js:691 pmg-gui/js/Utils.js:710
 msgid "Disclaimer"
@@ -4817,7 +5183,7 @@ msgstr "디스크 I/O"
 msgid "Disk IO"
 msgstr "디스크 IO"
 
-#: proxmox-datacenter-manager/ui/src/pve/utils.rs:291
+#: proxmox-datacenter-manager/ui/src/pve/utils.rs:310
 msgid "Disk Image"
 msgstr "디스크 이미지"
 
@@ -4825,7 +5191,7 @@ msgstr "디스크 이미지"
 msgid "Disk Move"
 msgstr "디스크 이동"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:420
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:428
 #, fuzzy
 msgid "Disk Names"
 msgstr "디스크 이미지"
@@ -4836,13 +5202,13 @@ msgstr "디스크 이미지"
 msgid "Disk Read"
 msgstr "디스크 읽기"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:405
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:413
 #, fuzzy
 msgid "Disk Selection Mode"
 msgstr "선택 모드"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:180
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_edit_window.rs:201
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:182
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_edit_window.rs:202
 #, fuzzy
 msgid "Disk Setup"
 msgstr "설정"
@@ -4871,12 +5237,12 @@ msgstr "디스크 이미지"
 msgid "Disk size"
 msgstr "디스크 크기"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:431
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:439
 #, fuzzy
 msgid "Disk udev Filter Mode"
 msgstr "다크 모드 필터"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:450
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:458
 #, fuzzy
 msgid "Disk udev Filters"
 msgstr "다크 모드 필터"
@@ -5098,6 +5464,12 @@ msgstr "드라이브"
 msgid "Drop"
 msgstr "버리기"
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1367
+msgid ""
+"Drop the pending pool change on the selected node. Available when the node "
+"has a queued assignment or clear."
+msgstr ""
+
 #: proxmox-backup/www/panel/PrunePanel.js:65
 msgid "Dry Run"
 msgstr "모의 실행"
@@ -5147,7 +5519,7 @@ msgstr "동적"
 msgid "Dynamic Load"
 msgstr "동적 로드"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:413
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:421
 #, fuzzy
 msgid "Dynamically by udev Filter"
 msgstr "다크 모드 필터"
@@ -5188,15 +5560,15 @@ msgstr "'{0}'의 이메일 주소"
 msgid "E-Mail attribute"
 msgstr "이메일 속성"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:302
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:310
 msgid "E.g. 192.168.0.1"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:293
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:301
 msgid "E.g. 192.168.0.100/24"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:311
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:319
 msgid "E.g. 192.168.0.254"
 msgstr ""
 
@@ -5250,7 +5622,7 @@ msgstr "이메일 '보낸 사람:'"
 msgid "EMail attribute name(s)"
 msgstr "이메일 속성 이름"
 
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:326
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:337
 msgid "EVPN"
 msgstr "EVPN"
 
@@ -5374,7 +5746,7 @@ msgstr "EVPN 영역 {}에 정의된 컨트롤러가 없습니다!"
 #: proxmox-datacenter-manager/ui/src/configuration/views.rs:184
 #: proxmox-datacenter-manager/ui/src/configuration/views.rs:271
 #: proxmox-datacenter-manager/ui/src/remotes/edit_remote.rs:62
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:208
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:210
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answers_panel.rs:171
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/token_panel.rs:161
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/token_panel.rs:245
@@ -5405,6 +5777,13 @@ msgstr "EVPN 영역 {}에 정의된 컨트롤러가 없습니다!"
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:137
 msgid "Edit"
 msgstr "수정"
+
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:555
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:748
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:761
+#, fuzzy
+msgid "Edit Description"
+msgstr "설명"
 
 #: pve-manager/www/manager6/tree/ResourceMapTree.js:357
 msgid "Edit Mapping '{0}'"
@@ -5998,14 +6377,21 @@ msgstr "제거 중"
 #: proxmox-backup/www/tape/ChangerStatus.js:227
 #: proxmox-backup/www/tape/ChangerStatus.js:285
 #: proxmox-backup/www/tape/window/TapeRestore.js:165
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:246
 #: proxmox-datacenter-manager/ui/src/configuration/subscription_panel.rs:76
 #: proxmox-datacenter-manager/ui/src/configuration/views.rs:236
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:62
 #: proxmox-datacenter-manager/ui/src/remotes/updates.rs:726
 #: proxmox-datacenter-manager/ui/src/remotes/firewall/tree.rs:612
+#: proxmox-datacenter-manager/ui/src/dashboard/map.rs:247
 #: proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:194
 #: proxmox-datacenter-manager/ui/src/dashboard/tasks.rs:156
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:360
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:379
+#: proxmox-datacenter-manager/ui/src/guests.rs:375
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:470
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:483
+#: proxmox-datacenter-manager/ui/src/ceph/renderer.rs:53
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:364
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:388
 #: proxmox-yew-comp/src/acme/acme_accounts.rs:151
 #: proxmox-yew-comp/src/acme/acme_domains.rs:220
 #: proxmox-yew-comp/src/acme/acme_plugins.rs:258
@@ -6178,11 +6564,17 @@ msgstr "실험적"
 msgid "Expire"
 msgstr "만료"
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:73
+#, fuzzy
+msgid "Expired"
+msgstr "만료"
+
 #: proxmox-widget-toolkit/src/panel/Certificates.js:46
 #: proxmox-widget-toolkit/src/window/Certificates.js:52
 #: pve-manager/www/manager6/node/Certificates.js:85
 #: pve-manager/www/manager6/node/Certificates.js:345
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:317
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:731
 #: proxmox-yew-comp/src/acme/certificate_list.rs:362
 #: proxmox-yew-comp/src/acme/certificate_list.rs:413
 msgid "Expires"
@@ -6228,7 +6620,7 @@ msgstr "추가 CPU 플래그"
 msgid "Extract Text from Attachments"
 msgstr "첨부 파일에서 텍스트 추출"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:317
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:325
 msgid "FQDN from DHCP"
 msgstr ""
 
@@ -6271,7 +6663,7 @@ msgstr "페일백"
 msgid "Failed"
 msgstr "실패"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:162
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:164
 #, fuzzy
 msgid "Failed to create installation configuration"
 msgstr "네트워크 구성을 파싱할 수 없음"
@@ -6419,6 +6811,11 @@ msgstr "파일 복원"
 msgid "File Restore Download"
 msgstr "파일 복원 다운로드"
 
+#: proxmox-datacenter-manager/ui/src/ceph/managers.rs:227
+#, fuzzy
+msgid "File System"
+msgstr "파일 시스템"
+
 #: pve-manager/www/manager6/storage/TemplateView.js:311
 #: pve-manager/www/manager6/window/DownloadUrlToStorage.js:166
 #: pve-manager/www/manager6/window/UploadToStorage.js:214
@@ -6448,7 +6845,7 @@ msgstr "파일명"
 #: proxmox-backup/www/Utils.js:886
 #: proxmox-backup/www/form/PartitionSelector.js:59
 #: proxmox-backup/www/window/CreateDirectory.js:30
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:385
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:393
 msgid "Filesystem"
 msgstr "파일 시스템"
 
@@ -6461,8 +6858,9 @@ msgstr "파일 유형"
 #: pmg-gui/js/PostfixMailQueue.js:157 pmg-gui/js/form/FilterField.js:14
 #: pve-manager/www/manager6/grid/PoolMembers.js:66
 #: proxmox-datacenter-manager/ui/src/remotes/firewall/tree.rs:291
+#: proxmox-datacenter-manager/ui/src/guests.rs:446
 #: proxmox-datacenter-manager/ui/src/pbs/tree.rs:254
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:509
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:518
 #: proxmox-yew-comp/src/tasks.rs:409
 msgid "Filter"
 msgstr "필터"
@@ -6478,6 +6876,23 @@ msgstr "VMID로 필터링"
 #: proxmox-backup/www/form/GroupFilter.js:470
 msgid "Filter Value"
 msgstr "값 필터"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1521
+msgid "Filter by remote or node"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/guests.rs:434
+#, fuzzy
+msgid "Filter guests"
+msgstr "값 필터"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1522
+msgid "Filter nodes by remote or node name"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1458
+msgid "Filter the node list by status or by remote and node name."
+msgstr ""
 
 #: pve-manager/www/manager6/window/BulkAction.js:294
 #: pve-manager/www/manager6/window/BulkAction.js:332
@@ -6516,6 +6931,7 @@ msgstr "필터가 첨가형임"
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_nodes.rs:277
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_summary.rs:168
 #: proxmox-datacenter-manager/ui/src/remotes/node_url_list.rs:271
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:725
 #: proxmox-yew-comp/src/acme/certificate_list.rs:356
 #: proxmox-yew-comp/src/acme/certificate_list.rs:426
 #: proxmox-yew-comp/src/node_status_panel.rs:113
@@ -6555,7 +6971,7 @@ msgstr "종결됨"
 #: pve-manager/www/manager6/window/FirewallEnableEdit.js:6
 #: pve-manager/www/manager6/window/FirewallEnableEdit.js:22
 #: proxmox-datacenter-manager/ui/src/remotes/firewall/ui_helpers.rs:125
-#: proxmox-datacenter-manager/ui/src/remotes/mod.rs:78
+#: proxmox-datacenter-manager/ui/src/remotes/mod.rs:90
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/mod.rs:144
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/mod.rs:140
 #: pve-yew-mobile-gui/src/pages/page_node_status/mod.rs:168
@@ -6602,7 +7018,7 @@ msgstr "이름"
 msgid "Fixed"
 msgstr "고정됨"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:412
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:420
 msgid "Fixed List of Disk Names"
 msgstr ""
 
@@ -6615,14 +7031,20 @@ msgid "Fixed role for all auto-created users"
 msgstr "자동 생성된 모든 사용자에 대한 고정 역할"
 
 #: pve-manager/www/manager6/form/VMCPUFlagSelector.js:284
+#: proxmox-datacenter-manager/ui/src/ceph/flags.rs:108
 #, fuzzy
 msgid "Flag"
 msgstr "플래그"
 
 #: proxmox-widget-toolkit/src/window/DiskSmart.js:66
 #: pve-manager/www/manager6/dc/CPUTypeView.js:100
+#: proxmox-datacenter-manager/ui/src/ceph/cluster.rs:190
 msgid "Flags"
 msgstr "플래그"
+
+#: proxmox-datacenter-manager/ui/src/ceph/osds.rs:331
+msgid "Flat view"
+msgstr ""
 
 #: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:210
 msgid "Fleecing"
@@ -6726,6 +7148,10 @@ msgstr "종료 시간이 초과되면 게스트를 강제로 중지합니다."
 #: pmg-gui/js/PBSSnapshotView.js:212
 msgid "Forget Snapshot"
 msgstr "스냅샷 제거"
+
+#: proxmox-datacenter-manager/ui/src/ceph/renderer.rs:76
+msgid "Forgotten"
+msgstr ""
 
 #: pve-manager/www/manager6/Utils.js:717
 msgid "Form fields may not be submitted with invalid values"
@@ -6909,7 +7335,12 @@ msgstr "가득 참"
 msgid "Full Clone"
 msgstr "완전한 복제"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:321
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:359
+#, fuzzy
+msgid "Fullest pool"
+msgstr "네스트 풀"
+
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:329
 msgid "Fully-Qualified Domain Name (FQDN)"
 msgstr ""
 
@@ -7006,7 +7437,7 @@ msgstr "가비지 컬렉션"
 msgid "Gateway"
 msgstr "게이트웨이"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:299
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:307
 #, fuzzy
 msgid "Gateway Address"
 msgstr "하트비트 백 어드레스"
@@ -7053,8 +7484,8 @@ msgstr "고스트 OSD"
 msgid "GiB"
 msgstr "GiB"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:172
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_edit_window.rs:193
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:174
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_edit_window.rs:194
 #, fuzzy
 msgid "Global Options"
 msgstr "마운트 옵션"
@@ -7062,6 +7493,19 @@ msgstr "마운트 옵션"
 #: pve-manager/www/manager6/ceph/OSD.js:190
 msgid "Global flags limiting the self healing of Ceph are enabled."
 msgstr "Ceph의 자동 복구를 제한하는 전역 플래그가 활성화되었습니다."
+
+#: pve-manager/www/manager6/storage/ImageView.js:99
+#, fuzzy
+msgid "Go to Guest"
+msgstr "게스트 가져오기"
+
+#: proxmox-datacenter-manager/ui/src/ceph/renderer.rs:75
+msgid "Gone"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/dashboard/map.rs:245
+msgid "Good"
+msgstr ""
 
 #: proxmox-yew-comp/src/bandwidth_selector.rs:87
 #: proxmox-yew-comp/src/bandwidth_selector.rs:89
@@ -7163,6 +7607,7 @@ msgstr "'{0}' 그룹"
 
 #: pve-manager/www/manager6/form/IPRefSelector.js:72
 #: pve-manager/www/manager6/grid/Replication.js:298
+#: pve-manager/www/manager6/storage/ImageView.js:78
 msgid "Guest"
 msgstr "게스트"
 
@@ -7204,6 +7649,7 @@ msgid "Guest user"
 msgstr "게스트 사용자"
 
 #: pve-manager/www/manager6/dc/Guests.js:5
+#: proxmox-datacenter-manager/ui/src/remotes/mod.rs:69
 #: proxmox-datacenter-manager/ui/src/dashboard/guest_panel.rs:226
 #: proxmox-datacenter-manager/ui/src/pve/remote_overview.rs:195
 msgid "Guests"
@@ -7359,7 +7805,7 @@ msgstr "HTTP 프록시"
 msgid "Hard Disk"
 msgstr "하드 디스크"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:511
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:519
 msgid "Harddisk Size To Use (GB)"
 msgstr ""
 
@@ -7368,7 +7814,7 @@ msgid "Hardlink"
 msgstr "하드링크"
 
 #: pve-manager/www/manager6/qemu/Config.js:319
-#: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:125
+#: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:127
 #: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/mobile.rs:815
 msgid "Hardware"
 msgstr "하드웨어"
@@ -7402,11 +7848,15 @@ msgstr "헤더 속성"
 msgid "Headers"
 msgstr "헤더"
 
+#. Health: humanized state, a plain-language data-at-risk line, then the active checks (the
+#. things actually needing attention).
 #: proxmox-widget-toolkit/src/window/ZFSDetail.js:82
 #: proxmox-widget-toolkit/src/window/ZFSDetail.js:136
 #: pve-manager/www/manager6/ceph/Status.js:26
 #: pve-manager/www/manager6/dc/Health.js:5
 #: pve-manager/www/manager6/node/ZFS.js:257 proxmox-backup/www/ZFSList.js:93
+#: proxmox-datacenter-manager/ui/src/ceph/clusters.rs:260
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:109
 msgid "Health"
 msgstr "상태"
 
@@ -7520,6 +7970,10 @@ msgstr "후크스크립트"
 #: proxmox-backup/www/form/RemoteSelector.js:26
 #: proxmox-backup/www/window/InfluxDbEdit.js:153
 #: proxmox-backup/www/window/RemoteEdit.js:49
+#: proxmox-datacenter-manager/ui/src/ceph/managers.rs:160
+#: proxmox-datacenter-manager/ui/src/ceph/managers.rs:197
+#: proxmox-datacenter-manager/ui/src/ceph/monitors.rs:113
+#: proxmox-datacenter-manager/ui/src/ceph/osds.rs:494
 msgid "Host"
 msgstr "호스트"
 
@@ -7589,7 +8043,7 @@ msgstr "호스트/IP 주소 또는 옵션 포트가 잘못됨"
 msgid "Hostname"
 msgstr "호스트명"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:328
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:336
 msgid ""
 "Hostname and domain to set for the target installation. Allows templating."
 msgstr ""
@@ -7659,6 +8113,8 @@ msgstr "ICMP 유형"
 #: proxmox-datacenter-manager/ui/src/configuration/webauthn.rs:43
 #: proxmox-datacenter-manager/ui/src/configuration/webauthn.rs:121
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answers_panel.rs:269
+#: proxmox-datacenter-manager/ui/src/guests.rs:835
+#: proxmox-datacenter-manager/ui/src/guests.rs:903
 #: proxmox-datacenter-manager/ui/src/widget/resource_tree.rs:367
 #: proxmox-yew-comp/src/configuration/pve/lxc_network_panel.rs:417
 msgid "ID"
@@ -7758,7 +8214,7 @@ msgstr "IP"
 msgid "IP Address"
 msgstr "IP 주소"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:290
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:298
 #, fuzzy
 msgid "IP Address (CIDR)"
 msgstr "IP 주소"
@@ -7937,7 +8393,7 @@ msgstr "ISO 이미지"
 
 #: pve-manager/www/manager6/Utils.js:739
 #: pve-manager/www/manager6/form/IsoSelector.js:98
-#: proxmox-datacenter-manager/ui/src/pve/utils.rs:293
+#: proxmox-datacenter-manager/ui/src/pve/utils.rs:312
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_disk_property.rs:575
 msgid "ISO image"
 msgstr "ISO 이미지"
@@ -7966,7 +8422,7 @@ msgstr ""
 "리모트에서 보낸 응답이 '최대 연식'보다 오래된 경우, 다음 새로 고침 시 업데이"
 "트됩니다."
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:723
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:731
 msgid "If selected, this configuration will be used if no other matches."
 msgstr ""
 
@@ -8003,7 +8459,7 @@ msgstr "xattr 지원을 의미합니다."
 #: pve-manager/www/manager6/window/GuestImport.js:19
 #: proxmox-backup/www/tape/ChangerStatus.js:69
 #: proxmox-backup/www/tape/ChangerStatus.js:995
-#: proxmox-datacenter-manager/ui/src/pve/utils.rs:292
+#: proxmox-datacenter-manager/ui/src/pve/utils.rs:311
 msgid "Import"
 msgstr "가져오기"
 
@@ -8105,6 +8561,7 @@ msgid "Include Greylist"
 msgstr "그레이리스트 포함"
 
 #: pve-manager/www/manager6/window/Snapshot.js:88
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:270
 msgid "Include RAM"
 msgstr "RAM 포함"
 
@@ -8323,6 +8780,11 @@ msgstr "내부 SMTP 포트"
 msgid "Interval"
 msgstr "간격"
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:72
+#, fuzzy
+msgid "Invalid"
+msgstr "유효하지 않은 값"
+
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:222
 msgid "Invalid (default) email address"
 msgstr ""
@@ -8399,6 +8861,7 @@ msgstr "격리 포트"
 #: pve-manager/www/manager6/node/Certificates.js:317
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:312
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_nodes.rs:278
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:726
 #: proxmox-yew-comp/src/acme/certificate_list.rs:357
 #: proxmox-yew-comp/src/acme/certificate_list.rs:387
 msgid "Issuer"
@@ -8447,7 +8910,7 @@ msgstr "항목"
 msgid "Iterations"
 msgstr "반복"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:738
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:746
 #, fuzzy
 msgid "JSON Pointer"
 msgstr "S3 엔드포인트"
@@ -8673,6 +9136,12 @@ msgstr "커널 스케쥴러 설정"
 #: pve-manager/www/manager6/window/Snapshot.js:127
 #: proxmox-backup/www/Utils.js:454
 #: proxmox-backup/www/window/EncryptionKeysEdit.js:42
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_assign.rs:83
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:129
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:559
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:531
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:624
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:679
 #: proxmox-yew-comp/src/configuration/pve/lxc_resources_panel/desktop.rs:600
 #: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/desktop.rs:797
 #: proxmox-yew-comp/src/property_view/property_grid.rs:245
@@ -8689,6 +9158,11 @@ msgstr "키 ID"
 #: pmg-gui/js/UserEdit.js:187 pve-manager/www/manager6/dc/UserEdit.js:134
 msgid "Key IDs"
 msgstr "키 ID"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1289
+#, fuzzy
+msgid "Key Pool"
+msgstr "Ceph 풀"
 
 #: pmg-gui/js/DKIMSettings.js:68 pmg-gui/js/DKIMSettings.js:171
 msgid "Key Size"
@@ -8864,6 +9338,11 @@ msgstr "최근 검증"
 msgid "Last checked"
 msgstr "최근 확인"
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:112
+#, fuzzy
+msgid "Last checked: {when}"
+msgstr "최근 확인"
+
 #: proxmox-yew-comp/src/user_panel.rs:563
 #: proxmox-yew-comp/src/user_panel.rs:589
 msgid "Last name"
@@ -8880,6 +9359,12 @@ msgstr "30일 전 최근 확인 작업: {0}"
 #: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:456
 msgid "Last verify task started on {0}"
 msgstr "최근 확인 작업이 {0}에서 시작됨"
+
+#: proxmox-datacenter-manager/ui/src/ceph/osds.rs:468
+#: proxmox-datacenter-manager/ui/src/ceph/osds.rs:520
+#, fuzzy
+msgid "Latency"
+msgstr "최신만"
 
 #: pve-manager/www/manager6/qemu/MachineEdit.js:153
 #: pve-manager/www/manager6/qemu/MachineEdit.js:172
@@ -8924,6 +9409,9 @@ msgid "Letter Spacing"
 msgstr "자간"
 
 #: pmg-gui/js/Utils.js:342
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_assign.rs:91
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:142
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:521
 msgid "Level"
 msgstr "레벨"
 
@@ -8995,6 +9483,11 @@ msgstr "리눅스 컨테이너"
 #: proxmox-yew-comp/src/configuration/mod.rs:33
 msgid "Linux VLAN"
 msgstr "리눅스 VLAN"
+
+#: proxmox-datacenter-manager/ui/src/guests.rs:412
+#, fuzzy
+msgid "List"
+msgstr "태스크 목록"
 
 #: proxmox-yew-widget-toolkit/src/widget/form/selector.rs:428
 msgid "List does not contain any items."
@@ -9078,7 +9571,8 @@ msgstr "SSH 키 파일 불러오기"
 msgid "Load average"
 msgstr "부하 평균"
 
-#: proxmox-datacenter-manager/ui/src/pve/mod.rs:186
+#: proxmox-datacenter-manager/ui/src/pbs/mod.rs:121
+#: proxmox-datacenter-manager/ui/src/pve/mod.rs:193
 #: proxmox-yew-comp/src/loadable_component.rs:487
 msgid "Load failed"
 msgstr "로드 실패"
@@ -9092,6 +9586,11 @@ msgstr "로딩"
 #: proxmox-yew-comp/src/acme/acme_register_account.rs:145
 msgid "Loading TOS failed: {0}"
 msgstr "TOS 로드 실패: {0}"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1052
+#, fuzzy
+msgid "Loading subscription status..."
+msgstr "구독 상태를 로드할 수 없음"
 
 #: proxmox-datacenter-manager/ui/src/remotes/firewall/columns.rs:40
 msgid "Loading {}..."
@@ -9479,10 +9978,14 @@ msgid "Manager Version"
 msgstr "매니저 버전"
 
 #: pve-manager/www/manager6/ceph/Services.js:29
+#: proxmox-datacenter-manager/ui/src/ceph/cluster.rs:150
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:141
+#: proxmox-datacenter-manager/ui/src/ceph/managers.rs:130
 msgid "Managers"
 msgstr "매니저"
 
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:360
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:154
 msgid "Manual"
 msgstr "수동"
 
@@ -9491,6 +9994,11 @@ msgstr "수동"
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_smbios1_property.rs:43
 msgid "Manufacturer"
 msgstr "제조사"
+
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:670
+#, fuzzy
+msgid "Map"
+msgstr "5월"
 
 #: pve-manager/www/manager6/qemu/PCIEdit.js:189
 msgid "Mapped Device"
@@ -9535,12 +10043,12 @@ msgstr "3월"
 msgid "Match"
 msgstr "일치"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:442
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:450
 #, fuzzy
 msgid "Match All Filters"
 msgstr "일치하는 날짜"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:441
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:449
 #, fuzzy
 msgid "Match Any Filter"
 msgstr "일치하는 날짜"
@@ -9600,6 +10108,11 @@ msgstr "일치자 이름"
 #: proxmox-widget-toolkit/src/window/NotificationMatcherEdit.js:14
 msgid "Matcher Name"
 msgstr "일치자 이름"
+
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:59
+#, fuzzy
+msgid "Matches"
+msgstr "일치"
 
 #: proxmox-datacenter-manager/ui/src/dashboard/refresh_config_edit.rs:86
 msgid "Max Age (seconds)"
@@ -9676,11 +10189,11 @@ msgstr "최대 보호"
 msgid "Maximum characters"
 msgstr "최대 글자수"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:550
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:558
 msgid "Maximum data Volume Size (GB)"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:537
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:545
 msgid "Maximum root Volume Size (GB)"
 msgstr ""
 
@@ -9731,6 +10244,7 @@ msgstr ""
 "감"
 
 #: pve-manager/www/manager6/pool/Config.js:26
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:167
 msgid "Members"
 msgstr "멤버"
 
@@ -9773,7 +10287,7 @@ msgstr "메모리 압력 정지"
 #: pve-manager/www/manager6/panel/GuestSummary.js:104
 #: proxmox-datacenter-manager/ui/src/administration/node_status.rs:505
 #: proxmox-datacenter-manager/ui/src/dashboard/gauge_panel.rs:41
-#: proxmox-datacenter-manager/ui/src/widget/pve_node_selector.rs:157
+#: proxmox-datacenter-manager/ui/src/widget/pve_node_selector.rs:202
 #: proxmox-datacenter-manager/ui/src/pbs/node/overview.rs:248
 #: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:252
 msgid "Memory Usage"
@@ -9797,6 +10311,8 @@ msgstr "메모리 크기"
 #: pve-manager/www/manager6/panel/GuestStatusView.js:113
 #: proxmox-backup/www/ServerStatus.js:229
 #: proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:362
+#: proxmox-datacenter-manager/ui/src/guests.rs:870
+#: proxmox-datacenter-manager/ui/src/guests.rs:938
 #: proxmox-datacenter-manager/ui/src/pve/lxc/overview.rs:346
 #: proxmox-datacenter-manager/ui/src/pve/qemu/overview.rs:355
 #: proxmox-datacenter-manager/ui/src/renderer.rs:73
@@ -9833,11 +10349,13 @@ msgid "Message Size (bytes)"
 msgstr "메시지 크기 (bytes)"
 
 #: pve-manager/www/manager6/ceph/FS.js:171
+#: proxmox-datacenter-manager/ui/src/ceph/cephfs.rs:128
 msgid "Metadata Pool"
 msgstr "메타데이터 풀"
 
 #: pve-manager/www/manager6/ceph/FS.js:183
 #: pve-manager/www/manager6/ceph/Services.js:35
+#: proxmox-datacenter-manager/ui/src/ceph/managers.rs:134
 msgid "Metadata Servers"
 msgstr "메타데이터 서버"
 
@@ -9887,9 +10405,11 @@ msgstr "MiB"
 #: pve-manager/www/manager6/qemu/Config.js:68
 #: pve-manager/www/manager6/window/Migrate.js:105
 #: pve-manager/www/manager6/window/Migrate.js:733
-#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:583
-#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:585
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:726
+#: proxmox-datacenter-manager/ui/src/guests.rs:797
+#: proxmox-datacenter-manager/ui/src/guests.rs:805
+#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:633
+#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:635
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:744
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:146
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:166
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:199
@@ -9909,11 +10429,11 @@ msgid "Migration"
 msgstr "마이그레이션"
 
 #: pve-manager/www/manager6/dc/OptionView.js:104
-#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:422
+#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:447
 msgid "Migration Settings"
 msgstr "마이그레이션 설정"
 
-#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:329
+#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:354
 msgid "Migration with local disk might take long: {0} ({1})"
 msgstr ""
 "로컬 디스크를 사용한 마이그레이션은 시간이 오래 걸릴 수 있습니다: {0} ({1})"
@@ -9932,7 +10452,7 @@ msgstr "최소 PG 수"
 msgid "Min. Size"
 msgstr "최소 크기"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:563
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:571
 msgid "Minimum Free Space in LVM Volume Group (GB)"
 msgstr ""
 
@@ -9951,6 +10471,11 @@ msgstr "최소 글자수"
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_memory_property.rs:50
 msgid "Minimum memory"
 msgstr "최소 메모리"
+
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:422
+#, fuzzy
+msgid "Misplaced"
+msgstr "디스플레이"
 
 #: proxmox-backup/www/Utils.js:24
 msgid "Mixed"
@@ -9972,7 +10497,7 @@ msgstr "혼합된 구독"
 #: pve-manager/www/manager6/window/Backup.js:28
 #: pve-manager/www/manager6/window/Clone.js:215
 #: pve-manager/www/manager6/window/Migrate.js:600
-#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:372
+#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:397
 #: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:88
 #: proxmox-yew-comp/src/auth_edit_ldap.rs:340
 #: proxmox-yew-comp/src/configuration/network_edit.rs:233
@@ -10057,6 +10582,9 @@ msgid "Monitor node"
 msgstr "모니터 모드"
 
 #: pve-manager/www/manager6/ceph/Services.js:23
+#: proxmox-datacenter-manager/ui/src/ceph/cluster.rs:140
+#: proxmox-datacenter-manager/ui/src/ceph/clusters.rs:340
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:134
 msgid "Monitors"
 msgstr "모니터"
 
@@ -10264,6 +10792,7 @@ msgid "NOTE: The following tags are also defined in the user allow list."
 msgstr "참고: 다음 태그도 사용자 허용 목록에 정의되어 있습니다."
 
 #: pve-manager/www/manager6/tree/SnapshotTree.js:343
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:688
 msgid "NOW"
 msgstr "지금"
 
@@ -10394,12 +10923,24 @@ msgstr "현재 NVMe 디스크는 지원되지 않으며, '{0}'은(는) SCSI로 �
 #: proxmox-backup/www/window/InfluxDbEdit.js:143
 #: proxmox-backup/www/window/TrafficControlEdit.js:230
 #: proxmox-backup/www/window/ZFSCreate.js:26
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:432
 #: proxmox-datacenter-manager/ui/src/configuration/views.rs:347
 #: proxmox-datacenter-manager/ui/src/configuration/views.rs:361
 #: proxmox-datacenter-manager/ui/src/remotes/updates.rs:155
 #: proxmox-datacenter-manager/ui/src/remotes/firewall/columns.rs:34
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/token_panel.rs:267
+#: proxmox-datacenter-manager/ui/src/guests.rs:830
+#: proxmox-datacenter-manager/ui/src/guests.rs:892
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:240
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:680
 #: proxmox-datacenter-manager/ui/src/widget/pve_storage_selector.rs:210
+#: proxmox-datacenter-manager/ui/src/ceph/cephfs.rs:119
+#: proxmox-datacenter-manager/ui/src/ceph/clusters.rs:284
+#: proxmox-datacenter-manager/ui/src/ceph/managers.rs:155
+#: proxmox-datacenter-manager/ui/src/ceph/managers.rs:192
+#: proxmox-datacenter-manager/ui/src/ceph/monitors.rs:108
+#: proxmox-datacenter-manager/ui/src/ceph/osds.rs:486
+#: proxmox-datacenter-manager/ui/src/ceph/pools.rs:121
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/remote_tree.rs:354
 #: proxmox-datacenter-manager/ui/src/sdn/zone_tree.rs:141
 #: proxmox-yew-comp/src/acme/acme_plugin_selector.rs:62
@@ -10426,9 +10967,18 @@ msgstr "현재 NVMe 디스크는 지원되지 않으며, '{0}'은(는) SCSI로 �
 msgid "Name"
 msgstr "이름"
 
+#: proxmox-datacenter-manager/ui/src/ceph/osds.rs:406
+#, fuzzy
+msgid "Name / Host"
+msgstr "이름 / VMID"
+
 #: pve-manager/www/manager6/tree/DhcpTree.js:199
 msgid "Name / VMID"
 msgstr "이름 / VMID"
+
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:252
+msgid "Name must be at most 40 characters long."
+msgstr ""
 
 #: pve-manager/www/manager6/storage/ContentView.js:112
 msgid "Name, Format"
@@ -10485,6 +11035,10 @@ msgstr "네임스페이스 이름"
 #: pmg-gui/js/QuarantineView.js:240
 msgid "Narrow viewport detected"
 msgstr "좁은 뷰포트 감지됨"
+
+#: proxmox-datacenter-manager/ui/src/ceph/clusters.rs:114
+msgid "Near full"
+msgstr ""
 
 #: proxmox-backup/www/tape/window/TapeRestore.js:630
 msgid "Need at least one mapping"
@@ -10543,7 +11097,7 @@ msgstr "그레이리스팅용 넷마스크 IPv6"
 #: pve-manager/www/manager6/qemu/CreateWizard.js:263
 #: pve-manager/www/manager6/tree/ResourceTree.js:30
 #: proxmox-datacenter-manager/ui/src/widget/pve_migrate_mapping.rs:43
-#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:135
+#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:137
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/dashboard_panel.rs:347
 #: proxmox-yew-comp/src/form/pve/hotplug_feature_selector.rs:55
 #: proxmox-yew-comp/src/form/pve/hotplug_feature_selector.rs:69
@@ -10571,7 +11125,7 @@ msgstr "네트워크 설정"
 msgid "Network Device"
 msgstr "네트워크 디바이스"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:341
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:349
 #, fuzzy
 msgid "Network Device Filters"
 msgstr "네트워크 디바이스"
@@ -10582,12 +11136,12 @@ msgstr "네트워크 정보"
 
 #: pve-manager/www/manager6/window/GuestImport.js:856
 #: proxmox-backup/www/SystemConfiguration.js:40
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:167
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:170
 msgid "Network Interfaces"
 msgstr "네트워크 인터페이스"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:176
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_edit_window.rs:197
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:178
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_edit_window.rs:198
 #, fuzzy
 msgid "Network Options"
 msgstr "네트워크 정보"
@@ -10620,7 +11174,7 @@ msgstr "네트워크"
 #. TRANSLATORS: As in "Network and Time system configuration"
 #: pmg-gui/js/SystemConfiguration.js:11
 #: proxmox-backup/www/SystemConfiguration.js:12
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:32
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:35
 msgid "Network/Time"
 msgstr "네트워크/시간"
 
@@ -10641,7 +11195,12 @@ msgstr "네트워크"
 msgid "Never"
 msgstr "안함"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:965
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:70
+#, fuzzy
+msgid "New"
+msgstr "신규"
+
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:973
 #, fuzzy
 msgid "New Answer Token"
 msgstr "사용자/토큰"
@@ -10667,6 +11226,10 @@ msgstr "새 비밀번호"
 #: proxmox-widget-toolkit/src/window/PasswordEdit.js:41
 msgid "New Password"
 msgstr "새 비밀번호"
+
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:626
+msgid "New fingerprint will be stored on Apply."
+msgstr ""
 
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:124
 msgid "Newest ceph version in cluster is {0}"
@@ -10712,6 +11275,11 @@ msgstr "다음 동기화"
 #: proxmox-backup/www/Subscription.js:125
 #: proxmox-yew-comp/src/subscription_panel.rs:214
 msgid "Next due date"
+msgstr "다음 마감일"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:116
+#, fuzzy
+msgid "Next due: {date}"
 msgstr "다음 마감일"
 
 #: pve-manager/www/manager6/sdn/EvpnZoneIpVrfPanel.js:24
@@ -11011,7 +11579,7 @@ msgstr "리모트가 구성되지 않음"
 msgid "No entry selected"
 msgstr "선택된 항목이 없음"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:844
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:852
 msgid ""
 "No existing authorization token selected. A new one will be automatically "
 "created."
@@ -11021,9 +11589,18 @@ msgstr ""
 msgid "No firewall rule configured here."
 msgstr "여기에는 방화벽 규칙이 구성되어 있지 않습니다."
 
+#: proxmox-datacenter-manager/ui/src/guests.rs:502
+msgid "No guest matches the current filter."
+msgstr ""
+
 #: proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:347
 msgid "No guests available"
 msgstr "사용 가능한 게스트 없음"
+
+#: proxmox-datacenter-manager/ui/src/guests.rs:495
+#, fuzzy
+msgid "No guests found"
+msgstr "디스크를 찾을 수 없음"
 
 #: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:218
 #, fuzzy
@@ -11049,6 +11626,16 @@ msgstr "일치하는 항목 없음"
 msgid "No matching answer found"
 msgstr "일치하는 항목 없음"
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_assign.rs:257
+msgid ""
+"No matching free keys in the pool. Add one via the Key Pool panel first."
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/guests.rs:501
+#, fuzzy
+msgid "No matching guests"
+msgstr "일치하는 항목 없음"
+
 #: proxmox-widget-toolkit/src/window/TfaWindow.js:421
 msgid "No more recovery keys left! Please generate a new set!"
 msgstr "복구 키가 더 이상 남지 않았습니다! 새 세트를 생성해 주세요!"
@@ -11070,6 +11657,11 @@ msgstr "네트워크 정보 없음"
 #: proxmox-datacenter-manager/ui/src/remotes/updates.rs:599
 msgid "No node selected"
 msgstr "선택한 노드 없음"
+
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:488
+#, fuzzy
+msgid "No nodes are configured for this remote."
+msgstr "여기에는 방화벽 규칙이 구성되어 있지 않습니다."
 
 #: proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:355
 #: proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:363
@@ -11114,9 +11706,19 @@ msgstr "구성된 제품 저장소가 없음"
 msgid "No recipients configured"
 msgstr "구성된 수신자가 없습니다"
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1543
+#, fuzzy
+msgid "No remote nodes available yet."
+msgstr "사용 가능한 노드 없음"
+
 #: proxmox-datacenter-manager/ui/src/dashboard/subscription_info.rs:78
 msgid "No remotes configured or could not fetch status."
 msgstr "리모트가 구성되지 않았거나 상태를 가져올 수 없습니다."
+
+#: proxmox-datacenter-manager/ui/src/guests.rs:489
+#, fuzzy
+msgid "No remotes configured yet"
+msgstr "리모트가 구성되지 않았습니다."
 
 #: proxmox-datacenter-manager/ui/src/dashboard/remote_panel.rs:77
 msgid "No remotes configured."
@@ -11162,9 +11764,27 @@ msgstr "구성된 도메인 없음"
 msgid "No simulation done"
 msgstr "시뮬레이션이 수행되지 않음"
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:71
+#, fuzzy
+msgid "No subscription"
+msgstr "구독 없음"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1393
+msgid ""
+"No subscription installed on the selected node; assign or adopt one first."
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:359
+msgid "No subscription keys in the pool yet."
+msgstr ""
+
 #: pve-manager/www/manager6/ceph/ServiceList.js:305
 msgid "No such service configured."
 msgstr "해당 서비스가 구성되어 있지 않습니다."
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:815
+msgid "No suitable unassigned keys for the remaining nodes."
+msgstr ""
 
 #: proxmox-widget-toolkit/src/window/NotificationMatcherEdit.js:277
 msgid "No target selected"
@@ -11182,7 +11802,7 @@ msgstr "사용 가능한 업데이트가 없습니다."
 msgid "No valid subscription"
 msgstr "유효한 구독 없음"
 
-#: proxmox-datacenter-manager/ui/src/lib.rs:292
+#: proxmox-datacenter-manager/ui/src/lib.rs:296
 msgid "No valid subscriptions"
 msgstr "유효한 구독 없음"
 
@@ -11260,8 +11880,14 @@ msgstr "구독없음"
 #: pve-manager/www/manager6/sdn/fabrics/NodeEdit.js:224
 #: pve-manager/www/manager6/window/DirMapEdit.js:149
 #: pve-manager/www/manager6/window/Settings.js:197
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:616
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:634
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:647
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:593
 #: proxmox-datacenter-manager/ui/src/remotes/tasks.rs:81
-#: proxmox-datacenter-manager/ui/src/widget/pve_node_selector.rs:153
+#: proxmox-datacenter-manager/ui/src/guests.rs:853
+#: proxmox-datacenter-manager/ui/src/guests.rs:917
+#: proxmox-datacenter-manager/ui/src/widget/pve_node_selector.rs:196
 #: proxmox-datacenter-manager/ui/src/widget/resource_tree.rs:417
 #: proxmox-datacenter-manager/ui/src/widget/view_filter_selector.rs:322
 #: proxmox-datacenter-manager/ui/src/pbs/node/mod.rs:63
@@ -11291,6 +11917,11 @@ msgstr "노드 패널"
 msgid "Node Status"
 msgstr "노드 상태"
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1553
+#, fuzzy
+msgid "Node Subscription Status"
+msgstr "구독 상태"
+
 #: pve-manager/www/manager6/Utils.js:2253
 msgid "Node fencing notifications"
 msgstr "노드 Fencing 통지"
@@ -11298,6 +11929,11 @@ msgstr "노드 Fencing 통지"
 #: pve-manager/www/manager6/dc/Backup.js:697
 msgid "Node is offline"
 msgstr "노드가 오프라인 상태임"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_assign.rs:248
+#, fuzzy
+msgid "Node sockets:"
+msgstr "소켓"
 
 #: pve-manager/www/manager6/form/ComboBoxSetStoreNode.js:79
 #: pve-manager/www/manager6/storage/LVMEdit.js:130
@@ -11323,7 +11959,7 @@ msgstr "노드명"
 #: pve-manager/www/manager6/sdn/zones/Base.js:44
 #: pve-manager/www/manager6/storage/Base.js:41
 #: pve-manager/www/manager6/tree/ResourceTree.js:14
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:363
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:381
 #: proxmox-datacenter-manager/ui/src/dashboard/node_status_panel.rs:167
 #: proxmox-datacenter-manager/ui/src/pve/remote_overview.rs:190
 #: pve-yew-mobile-gui/src/pages/page_dashboard.rs:231
@@ -11372,10 +12008,10 @@ msgstr "비 Production-ready 리포지토리가 활성화됨"
 #: proxmox-backup/www/form/EncryptionKeySelector.js:10
 #: proxmox-backup/www/window/MaintenanceOptions.js:6
 #: proxmox-datacenter-manager/ui/src/configuration/views.rs:356
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:367
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:385
 #: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:407
 #: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:466
-#: proxmox-datacenter-manager/ui/src/pve/utils.rs:297
+#: proxmox-datacenter-manager/ui/src/pve/utils.rs:316
 #: proxmox-yew-comp/src/form/pve/lxc_property/lxc_features_property.rs:132
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_machine_property.rs:152
 msgid "None"
@@ -11388,6 +12024,10 @@ msgstr "없음(안전하지 않음)"
 #: pmg-gui/js/form/MatchModeSelector.js:9
 msgid "None matches"
 msgstr "일치하는 항목 없음"
+
+#: proxmox-datacenter-manager/ui/src/guests.rs:496
+msgid "None of the connected remotes have any virtual machines or containers."
+msgstr ""
 
 #: proxmox-widget-toolkit/src/window/DiskSmart.js:48
 msgid "Normalized"
@@ -11450,7 +12090,11 @@ msgstr "데이터가 충분하지 않음"
 msgid "Not found"
 msgstr "찾을 수 없음"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:712
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:742
+msgid "Not in pool - Adopt Key imports this live subscription."
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:720
 msgid ""
 "Not marked as default answer and target filter are empty, answer will never "
 "be matched."
@@ -11523,7 +12167,7 @@ msgstr "참고: SEV-SNP에는 호스트 커널 버전 6.11 이상이 필요합�
 #: pve-manager/www/manager6/window/Settings.js:295
 #: proxmox-backup/www/NavigationTree.js:36
 #: proxmox-backup/www/window/NotesEdit.js:5
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:225
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:227
 #: proxmox-datacenter-manager/ui/src/pve/node/mod.rs:88
 #: proxmox-datacenter-manager/ui/src/pve/remote/mod.rs:69
 #: proxmox-yew-comp/src/notes_view.rs:200
@@ -11620,7 +12264,7 @@ msgstr "LV의 수"
 msgid "Number of Nodes"
 msgstr "노드 수"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:778
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:786
 msgid ""
 "Numerical template counters can be used to provide unique values across "
 "installations."
@@ -11639,6 +12283,8 @@ msgstr ""
 #: proxmox-backup/www/tape/window/LabelMedia.js:9
 #: proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:192
 #: proxmox-datacenter-manager/ui/src/dashboard/tasks.rs:150
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:557
+#: proxmox-datacenter-manager/ui/src/ceph/renderer.rs:51
 #: pve-yew-mobile-gui/src/pages/page_login.rs:90
 #: pmg-yew-quarantine-gui/src/page_spam_list.rs:232
 #: proxmox-yew-comp/src/node_status_panel.rs:142
@@ -11664,6 +12310,12 @@ msgstr "OSD 데이터 경로"
 #: pve-manager/www/manager6/ceph/OSDDetails.js:158
 msgid "OSD object store"
 msgstr "OSD 오브젝트 저장"
+
+#: proxmox-datacenter-manager/ui/src/ceph/cluster.rs:160
+#: proxmox-datacenter-manager/ui/src/ceph/clusters.rs:330
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:143
+msgid "OSDs"
+msgstr ""
 
 #: pve-manager/www/manager6/ceph/StatusDetail.js:78
 msgid "OSDs with no metadata, possibly left over from removal"
@@ -11703,8 +12355,8 @@ msgstr "끔"
 #: pve-manager/www/manager6/window/Migrate.js:45
 #: proxmox-backup/www/Utils.js:850 proxmox-backup/www/tape/TapeInventory.js:308
 #: proxmox-backup/www/window/MaintenanceOptions.js:8
-#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:124
-#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:136
+#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:132
+#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:144
 msgid "Offline"
 msgstr "오프라인"
 
@@ -11759,6 +12411,12 @@ msgid "One item"
 msgid_plural "{n} items"
 msgstr[0] "{}개의 항목"
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:432
+msgid ""
+"One key per line, or comma-separated. Only Proxmox VE and Proxmox Backup "
+"Server keys are accepted."
+msgstr ""
+
 #: proxmox-datacenter-manager/ui/src/dashboard/node_status_panel.rs:146
 msgid "One of {0} nodes online"
 msgid_plural "{n} of {0} nodes online"
@@ -11790,7 +12448,7 @@ msgstr[0] "{n} 업데이트 보류 중"
 #: pve-manager/www/manager6/window/Migrate.js:40
 #: proxmox-backup/www/tape/TapeInventory.js:311
 #: proxmox-datacenter-manager/ui/src/dashboard/pbs_datastores_panel.rs:107
-#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:123
+#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:131
 msgid "Online"
 msgstr "온라인"
 
@@ -11808,6 +12466,12 @@ msgstr "영숫자, '_' 및 '-'(시작 부분이 아닌 경우)만 허용됩니�
 msgid "Only show flags supported by at least one node"
 msgstr ""
 
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:577
+msgid ""
+"Only the fingerprint is stored, so PDM cannot confirm this is a legitimate "
+"renewal. Verify the new fingerprint out-of-band before trusting it."
+msgstr ""
+
 #: pmg-gui/js/Utils.js:389
 msgid "Only top level headers"
 msgstr "최상위 헤더만"
@@ -11816,7 +12480,7 @@ msgstr "최상위 헤더만"
 msgid "Open Repositories Panel"
 msgstr "리포지토리 패널 열기"
 
-#: proxmox-datacenter-manager/ui/src/pbs/mod.rs:160
+#: proxmox-datacenter-manager/ui/src/pbs/mod.rs:175
 msgid "Open Shell"
 msgstr "셸 열기"
 
@@ -11826,10 +12490,11 @@ msgid "Open Task"
 msgstr "작업 열기"
 
 #: proxmox-datacenter-manager/ui/src/remotes/firewall/tree.rs:366
-#: proxmox-datacenter-manager/ui/src/pbs/mod.rs:145
-#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:75
-#: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:74
-#: proxmox-datacenter-manager/ui/src/pve/mod.rs:257
+#: proxmox-datacenter-manager/ui/src/ceph/cluster.rs:93
+#: proxmox-datacenter-manager/ui/src/pbs/mod.rs:160
+#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:77
+#: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:76
+#: proxmox-datacenter-manager/ui/src/pve/mod.rs:265
 msgid "Open Web UI"
 msgstr "웹 UI 열기"
 
@@ -11841,7 +12506,9 @@ msgstr "더블클릭 시 편집기 열기"
 msgid "Open in PBS UI"
 msgstr "PBS UI에서 열기"
 
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:741
+#: proxmox-datacenter-manager/ui/src/guests.rs:810
+#: proxmox-datacenter-manager/ui/src/guests.rs:821
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:759
 msgid "Open in PVE UI"
 msgstr "PVE UI에서 열기"
 
@@ -11853,13 +12520,13 @@ msgstr "{0}에 대한 복원 마법사 열기"
 msgid "Open the Beta documentation in a new tab."
 msgstr "베타 문서를 새 탭에서 엽니다."
 
-#: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:76
-#: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:92
+#: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:78
+#: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:94
 msgid "Open the web UI of VM {0}."
 msgstr "가상 머신 {0}의 웹 UI를 엽니다."
 
-#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:77
-#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:93
+#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:79
+#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:95
 msgid "Open the web UI of container {0}."
 msgstr "컨테이너 {0}의 웹 UI를 엽니다."
 
@@ -11921,11 +12588,15 @@ msgstr "옵션"
 msgid "Optional"
 msgstr "선택 사항"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:865
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:873
 msgid "Optional certificate fingerprint"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:874
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:265
+msgid "Optional, e.g. pve1c-0123456789"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:882
 msgid "Optional. If provided, status reporting will be enabled."
 msgstr ""
 
@@ -11949,8 +12620,8 @@ msgstr ""
 #: proxmox-backup/www/datastore/Panel.js:87
 #: proxmox-backup/www/tape/window/TapeBackupJob.js:55
 #: proxmox-datacenter-manager/ui/src/remotes/firewall/tree.rs:401
-#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:153
-#: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:133
+#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:155
+#: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:135
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/firewall_panel.rs:126
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/mod.rs:124
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/firewall_panel.rs:126
@@ -12106,9 +12777,9 @@ msgstr "종료 태스크의 활성 상태 무시"
 
 #: proxmox-datacenter-manager/ui/src/pbs/datastore.rs:62
 #: proxmox-datacenter-manager/ui/src/pbs/node/mod.rs:74
-#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:98
+#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:100
 #: proxmox-datacenter-manager/ui/src/pve/node/mod.rs:77
-#: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:97
+#: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:99
 msgid "Overview"
 msgstr "개요"
 
@@ -12169,6 +12840,11 @@ msgstr "PCI 디바이스"
 msgid "PCI mapping"
 msgstr "PCI 매핑"
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:574
+msgid ""
+"PDM cannot manage {product} remotes yet; this key is parked in the pool."
+msgstr ""
+
 #: proxmox-widget-toolkit/src/panel/Certificates.js:63
 #: pve-manager/www/manager6/node/Certificates.js:362
 msgid "PEM"
@@ -12177,6 +12853,15 @@ msgstr "PEM"
 #: pve-manager/www/manager6/ceph/Pool.js:93
 msgid "PG Autoscaler Mode"
 msgstr "자동 확장 모드"
+
+#: proxmox-datacenter-manager/ui/src/ceph/pools.rs:141
+msgid "PG num"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/ceph/osds.rs:459
+#: proxmox-datacenter-manager/ui/src/ceph/osds.rs:514
+msgid "PGs"
+msgstr ""
 
 #: pve-manager/www/manager6/qemu/VirtiofsEdit.js:71
 msgid "POSIX ACLs"
@@ -12327,7 +13012,7 @@ msgstr "인코딩된 클러스터 정보를 여기에 붙여넣기"
 #: proxmox-backup/www/tape/window/ChangerEdit.js:34
 #: proxmox-backup/www/tape/window/DriveEdit.js:69
 #: proxmox-backup/www/window/ACLEdit.js:26
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:49
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:52
 #: proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:199
 #: proxmox-yew-comp/src/acl/acl_view.rs:113
 #: proxmox-yew-comp/src/form/pve/lxc_property/lxc_mount_point_property.rs:218
@@ -12357,6 +13042,7 @@ msgstr "일시 중지"
 
 #: pve-manager/www/manager6/dc/Guests.js:50
 #: pve-manager/www/manager6/dc/Guests.js:95
+#: proxmox-datacenter-manager/ui/src/pve/utils.rs:157
 msgid "Paused"
 msgstr "일시 중지됨"
 
@@ -12391,6 +13077,11 @@ msgstr "피어"
 msgid "Pending Changes"
 msgstr "보류 중인 변경 사항"
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:705
+msgid ""
+"Pending Clear - 'Apply Pending' will remove this subscription from the node."
+msgstr ""
+
 #: proxmox-backup/www/config/GCView.js:225
 msgid "Pending Data"
 msgstr "보류 중인 데이터"
@@ -12418,6 +13109,7 @@ msgid "Percentage"
 msgstr "백분율"
 
 #: pve-manager/www/manager6/ceph/Status.js:259
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:175
 msgid "Performance"
 msgstr "설능"
 
@@ -12449,7 +13141,7 @@ msgstr "권한"
 #: pve-manager/www/manager6/storage/Browser.js:197
 #: proxmox-backup/www/config/ACLView.js:27
 #: proxmox-backup/www/panel/AccessControl.js:36
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:110
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:113
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/mod.rs:154
 msgid "Permissions"
 msgstr "권한"
@@ -12491,14 +13183,25 @@ msgstr "OSD에서 사용하는 물리적 디바이스"
 msgid "PiB"
 msgstr "PiB"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:334
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:342
 #, fuzzy
 msgid "Pin Network Interfaces"
 msgstr "네트워크 인터페이스"
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:302
+msgid ""
+"Pin the selected key to a remote node; Apply Pending pushes the assignment "
+"to the remote."
+msgstr ""
+
 #: proxmox-widget-toolkit/src/Schema.js:96
 msgid "Pipe/Fifo"
 msgstr "Pipe/Fifo"
+
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:152
+#, fuzzy
+msgid "Placement groups"
+msgstr "대상 그룹"
 
 #: pve-manager/www/manager6/window/DownloadUrlToStorage.js:167
 msgid "Please (re-)query URL to get meta information"
@@ -12559,7 +13262,7 @@ msgstr "API 토큰 비밀 구문를 기록해 주세요 - 지금만 표시됩니
 msgid "Please record the API token secret - it will only be displayed now."
 msgstr "API 토큰 비밀 구문을 기록해 주세요 - 지금만 표시됩니다."
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:973
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:981
 #, fuzzy
 msgid ""
 "Please record the configuration token or ISO preparation command line - it "
@@ -12691,6 +13394,8 @@ msgstr "풀/미디어-셋/스냅샷"
 
 #: pve-manager/www/manager6/dc/Config.js:196
 #: pve-manager/www/manager6/node/Config.js:395
+#: proxmox-datacenter-manager/ui/src/ceph/cluster.rs:170
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:151
 msgid "Pools"
 msgstr "풀"
 
@@ -12740,7 +13445,7 @@ msgstr "위치"
 msgid "Possible template variables are: {0}"
 msgstr "가능한 템플릿 변수는 다음과 같습니다: {0}"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:192
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:194
 msgid "Post Hook"
 msgstr ""
 
@@ -12960,6 +13665,8 @@ msgstr "프로세서"
 
 #: pve-manager/www/manager6/form/USBSelector.js:92
 #: pve-manager/www/manager6/qemu/Smbios1Edit.js:45
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_assign.rs:87
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:135
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/installations_panel.rs:268
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_smbios1_property.rs:49
 msgid "Product"
@@ -13019,11 +13726,17 @@ msgstr "속성 (Property)"
 msgid "Property"
 msgstr "속성(Property)"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:350
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:459
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:358
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:467
 #, fuzzy
 msgid "Property Name"
 msgstr "속성(Property)"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:327
+msgid ""
+"Propose a one-key-per-node assignment for nodes that have no active "
+"subscription, then queue it pending Apply."
+msgstr ""
 
 #: pve-manager/www/manager6/grid/BackupView.js:345
 #: pve-manager/www/manager6/grid/BackupView.js:348
@@ -13078,7 +13791,7 @@ msgstr "Proxmox 백업 서버 로그인"
 msgid "Proxmox Datacenter Manager"
 msgstr "Proxmox 데이터센터 관리자"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:852
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:860
 #, fuzzy
 msgid "Proxmox Datacenter Manager Base URL"
 msgstr "Proxmox 데이터센터 관리자"
@@ -13177,6 +13890,7 @@ msgstr "공개 키 크기"
 #: proxmox-widget-toolkit/src/panel/Certificates.js:28
 #: pve-manager/www/manager6/node/Certificates.js:327
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:314
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:728
 #: proxmox-yew-comp/src/acme/certificate_list.rs:359
 #: proxmox-yew-comp/src/acme/certificate_list.rs:395
 msgid "Public Key Algorithm"
@@ -13187,6 +13901,7 @@ msgstr "공개 키 알고리즘"
 #: pve-manager/www/manager6/node/Certificates.js:72
 #: pve-manager/www/manager6/node/Certificates.js:333
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:315
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:729
 #: proxmox-yew-comp/src/acme/certificate_list.rs:360
 #: proxmox-yew-comp/src/acme/certificate_list.rs:399
 msgid "Public Key Size"
@@ -13227,10 +13942,26 @@ msgstr "참조된 HA 규칙에서 리소스 제거"
 msgid "Push"
 msgstr "푸시하기(push)"
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1426
+msgid ""
+"Push every queued assignment to its remote node and remove the subscription "
+"from nodes pending clear."
+msgstr ""
+
 #: pve-manager/www/manager6/Utils.js:2191
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:160
 msgid "Push file"
 msgstr "파일 푸시하기(push)"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1084
+msgid "Push {n} queued assignment(s) to the remote nodes?"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1092
+msgid ""
+"Push {p} queued assignment(s) and remove {c} live subscription(s) on the "
+"remote nodes?"
+msgstr ""
 
 #: proxmox-backup/www/config/SyncView.js:371
 msgid "Push: The local user used for access control."
@@ -13286,13 +14017,28 @@ msgid "Query userinfo endpoint"
 msgstr "사용자 정보 엔드포인트 쿼리"
 
 #: proxmox-datacenter-manager/ui/src/pbs/tree.rs:287
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:605
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:614
 msgid "Querying Remote..."
 msgstr "리모트 쿼리 중..."
 
 #: pmg-gui/js/QueueAdministration.js:5
 msgid "Queue Administration"
 msgstr "대기열 관리"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1203
+msgid "Queue a clear of {key} on {remote}/{node}?"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1209
+msgid "Queue a clear on {remote}/{node}?"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1377
+msgid ""
+"Queue the selected node's live subscription for removal at the next Apply "
+"Pending, freeing the key for reassignment. Available for a pool-managed "
+"node; for a foreign subscription, adopt it first."
+msgstr ""
 
 #: pmg-gui/js/NavigationTree.js:146
 msgid "Queues"
@@ -13303,6 +14049,7 @@ msgid "Quorate"
 msgstr "인용문"
 
 #: pve-manager/www/manager6/ceph/Monitor.js:27
+#: proxmox-datacenter-manager/ui/src/ceph/monitors.rs:117
 msgid "Quorum"
 msgstr "정족 수"
 
@@ -13312,6 +14059,7 @@ msgid "RAID Level"
 msgstr "RAID 레벨"
 
 #: pve-manager/www/manager6/tree/SnapshotTree.js:346
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:709
 msgid "RAM"
 msgstr "RAM"
 
@@ -13357,6 +14105,10 @@ msgstr "무작위화"
 #, fuzzy
 msgid "Range Size"
 msgstr "대상 크기"
+
+#: proxmox-datacenter-manager/ui/src/ceph/managers.rs:201
+msgid "Rank"
+msgstr ""
 
 #: proxmox-backup/www/config/TrafficControlView.js:134
 #: proxmox-backup/www/window/S3ClientEdit.js:127
@@ -13420,6 +14172,11 @@ msgstr "손상된 스냅샷 재동기화"
 #: proxmox-backup/www/window/SyncJobEdit.js:471
 msgid "Re-sync snapshots, whose verification failed."
 msgstr "검증에 실패한 스냅샷을 다시 동기화합니다."
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1391
+msgid ""
+"Re-verify the live subscription against the shop, refreshing its status."
+msgstr ""
 
 #: proxmox-backup/www/ServerStatus.js:262
 #: proxmox-backup/www/ServerStatus.js:269
@@ -13522,7 +14279,7 @@ msgstr "영역 동기화 작업"
 
 #: pmg-gui/js/UserManagement.js:38 pve-manager/www/manager6/dc/Config.js:209
 #: proxmox-backup/www/panel/AccessControl.js:43
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:135
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:138
 msgid "Realms"
 msgstr "영역"
 
@@ -13567,6 +14324,11 @@ msgstr "시작 시 재조정"
 
 #: pve-manager/www/manager6/form/CRSOptions.js:93
 msgid "Rebalancing Method"
+msgstr "균형 재조정 매서드"
+
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:305
+#, fuzzy
+msgid "Rebalancing: {0}"
 msgstr "균형 재조정 매서드"
 
 #: pve-manager/www/manager6/Utils.js:2200
@@ -13649,7 +14411,13 @@ msgstr "수신자"
 msgid "Recipients"
 msgstr "수신자"
 
+#: proxmox-datacenter-manager/ui/src/ceph/clusters.rs:118
+#, fuzzy
+msgid "Recovering"
+msgstr "복구"
+
 #: pve-manager/www/manager6/ceph/Status.js:289
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:416
 msgid "Recovery"
 msgstr "복구"
 
@@ -13670,6 +14438,10 @@ msgstr "사용자 '{}'에 대한 복구 키"
 #: proxmox-backup/www/panel/PrunePanel.js:100
 msgid "Recursive"
 msgstr "재귀적"
+
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:279
+msgid "Redundancy: {0}"
+msgstr ""
 
 #: pve-manager/www/manager6/storage/TemplateView.js:264
 msgid "Reference"
@@ -13855,12 +14627,15 @@ msgstr "신뢰 주체"
 
 #: pmg-gui/js/PBSConfig.js:144 pmg-gui/js/PBSSnapshotView.js:112
 #: proxmox-backup/www/window/RemoteEdit.js:10
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:602
 #: proxmox-datacenter-manager/ui/src/remotes/edit_remote.rs:62
 #: proxmox-datacenter-manager/ui/src/remotes/tasks.rs:72
 #: proxmox-datacenter-manager/ui/src/remotes/tasks.rs:164
 #: proxmox-datacenter-manager/ui/src/dashboard/subscriptions_list.rs:162
 #: proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:221
+#: proxmox-datacenter-manager/ui/src/guests.rs:844
 #: proxmox-datacenter-manager/ui/src/widget/view_filter_selector.rs:284
+#: proxmox-datacenter-manager/ui/src/ceph/clusters.rs:288
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/remote_tree.rs:377
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/vrf_tree.rs:322
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/add_vnet.rs:291
@@ -13868,11 +14643,17 @@ msgstr "신뢰 주체"
 msgid "Remote"
 msgstr "리모트"
 
-#: proxmox-datacenter-manager/ui/src/pbs/mod.rs:128
+#: proxmox-datacenter-manager/ui/src/pbs/mod.rs:143
 #: proxmox-datacenter-manager/ui/src/pve/remote/mod.rs:48
-#: proxmox-datacenter-manager/ui/src/pve/mod.rs:242
+#: proxmox-datacenter-manager/ui/src/pve/mod.rs:249
 msgid "Remote '{0}'"
 msgstr "'{0}' 리모트"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:618
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:673
+#, fuzzy
+msgid "Remote / Node"
+msgstr "리모트 스토리지"
 
 #: proxmox-backup/www/config/RemoteView.js:129
 #: proxmox-backup/www/config/SyncView.js:343
@@ -13881,11 +14662,11 @@ msgstr "'{0}' 리모트"
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_summary.rs:97
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:296
 #: proxmox-datacenter-manager/ui/src/remotes/edit_remote.rs:97
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:335
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:353
 msgid "Remote ID"
 msgstr "리모트 ID"
 
-#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:424
+#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:449
 msgid "Remote Migration Settings"
 msgstr "리모트 마이그레이션 설정"
 
@@ -13917,7 +14698,7 @@ msgstr "리모트 시스템 업데이트"
 
 #: proxmox-backup/www/NavigationTree.js:54
 #: proxmox-backup/www/config/RemoteView.js:39
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:364
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:384
 #: proxmox-datacenter-manager/ui/src/dashboard/remote_panel.rs:152
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/evpn_panel.rs:224
 msgid "Remotes"
@@ -13978,7 +14759,7 @@ msgstr "제거 예정"
 #: proxmox-backup/www/datastore/Content.js:1632
 #: proxmox-backup/www/tape/TapeInventory.js:237
 #: proxmox-datacenter-manager/ui/src/configuration/views.rs:276
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:213
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:215
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/installations_panel.rs:159
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answers_panel.rs:176
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/token_panel.rs:166
@@ -14042,6 +14823,8 @@ msgid "Remove Group"
 msgstr "그룹 제거"
 
 #: proxmox-backup/www/Utils.js:454
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:308
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:392
 #, fuzzy
 msgid "Remove Key"
 msgstr "복구 키"
@@ -14146,6 +14929,12 @@ msgid ""
 "Uncheck to keep the namespace structure."
 msgstr ""
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:314
+msgid ""
+"Remove the selected key from the pool. Disabled while the key is live on a "
+"remote node."
+msgstr ""
+
 #: proxmox-yew-comp/src/auth_view.rs:463
 #: proxmox-yew-comp/src/auth_edit_ldap.rs:276
 msgid "Remove vanished properties"
@@ -14171,6 +14960,22 @@ msgstr "사라진 사용자 제거"
 #: pve-manager/www/manager6/dc/SyncWindow.js:140
 msgid "Remove vanished user and group entries."
 msgstr "사라진 사용자 및 그룹 항목 제거"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:382
+msgid ""
+"Remove {key} from the key pool? It is still assigned to {remote}/{node}; the "
+"assignment is released without removing any subscription on the remote. Use "
+"Clear Key on the Node Subscription Status panel first to release a live "
+"subscription on that node too."
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:388
+msgid "Remove {key} from the key pool? This does not revoke the subscription."
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1088
+msgid "Remove {n} live subscription(s) from the remote nodes?"
+msgstr ""
 
 #: proxmox-backup/www/config/GCView.js:217
 msgid "Removed Data"
@@ -14346,7 +15151,7 @@ msgstr "리소스 매핑"
 msgid "Resource Pool"
 msgstr "리소스 풀"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:671
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:672
 msgid "Resource Tree"
 msgstr "리소스 유형"
 
@@ -14355,7 +15160,7 @@ msgid "Resource Type"
 msgstr "리소스 유형"
 
 #: proxmox-datacenter-manager/ui/src/dashboard/gauge_panel.rs:57
-#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:675
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:676
 #, fuzzy
 msgid "Resource Usage"
 msgstr "리소스"
@@ -14365,8 +15170,8 @@ msgstr "리소스"
 #: pve-manager/www/manager6/lxc/Config.js:268
 #: pve-manager/www/manager6/lxc/DNS.js:71
 #: proxmox-datacenter-manager/ui/src/dashboard/resource_tree.rs:51
-#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:126
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:494
+#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:128
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:503
 #: pve-yew-mobile-gui/src/widgets/main_navigation.rs:80
 #: pve-yew-mobile-gui/src/pages/page_dashboard.rs:349
 #: proxmox-yew-comp/src/configuration/pve/lxc_resources_panel/mobile.rs:450
@@ -14378,7 +15183,7 @@ msgstr "리소스"
 #: pmg-gui/js/ServerStatus.js:66 pmg-gui/js/ServerStatus.js:68
 #: pve-manager/www/manager6/ceph/OSD.js:928
 #: pve-manager/www/manager6/ceph/ServiceList.js:338
-#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:135
+#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:143
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:97
 msgid "Restart"
 msgstr "재시작"
@@ -14441,6 +15246,9 @@ msgstr "결과 구성"
 #: pve-manager/www/manager6/Utils.js:2232
 #: pve-manager/www/manager6/qemu/CmdMenu.js:83
 #: pve-manager/www/manager6/qemu/Config.js:48
+#: proxmox-datacenter-manager/ui/src/guests.rs:758
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:121
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:716
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/dashboard_panel.rs:257
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:172
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:203
@@ -14482,12 +15290,19 @@ msgstr "역방향 DNS 서버"
 #: proxmox-widget-toolkit/src/node/NetworkView.js:251
 #: pmg-gui/js/SpamDetectorCustom.js:293
 #: pve-manager/www/manager6/button/Revert.js:5
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:925
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1361
 #: proxmox-yew-comp/src/configuration/pve/lxc_resources_panel/desktop.rs:211
 #: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/desktop.rs:215
 #: proxmox-yew-comp/src/configuration/network_view.rs:228
 #: proxmox-yew-comp/src/pending_property_view/pending_property_grid.rs:117
 msgid "Revert"
 msgstr "되돌리기"
+
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:668
+#, fuzzy
+msgid "Revert pending change"
+msgstr "보류 중인 변경 사항"
 
 #: pve-manager/www/manager6/dc/Backup.js:466
 #, fuzzy
@@ -14533,13 +15348,28 @@ msgstr "역할 클레임"
 msgid "Roles"
 msgstr "역할"
 
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:633
+msgid ""
+"Roll back to snapshot '{0}'? This reverts the guest's disk and configuration "
+"to that snapshot; changes made since are lost. A running guest is stopped "
+"during rollback (unless a QEMU snapshot includes its memory state)."
+msgstr ""
+
 #: pve-manager/www/manager6/Utils.js:2204
 #: pve-manager/www/manager6/Utils.js:2233
 #: pve-manager/www/manager6/tree/SnapshotTree.js:263
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:623
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:767
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:778
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:173
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:204
 msgid "Rollback"
 msgstr "롤백"
+
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:621
+#, fuzzy
+msgid "Rollback Snapshot"
+msgstr "스냅샷 생성"
 
 #: pmg-gui/js/PBSRemoteEdit.js:54
 #: pve-manager/www/manager6/storage/PBSEdit.js:581
@@ -14737,6 +15567,7 @@ msgstr "관련 이동식 데이터 스토리지가 마운트되면 이 작업을
 
 #: pve-manager/www/manager6/dc/Guests.js:42
 #: pve-manager/www/manager6/dc/Guests.js:87
+#: proxmox-datacenter-manager/ui/src/pve/utils.rs:155
 msgid "Running"
 msgstr "실행 중"
 
@@ -14832,7 +15663,7 @@ msgstr "SCSI 컨트롤러 유형"
 #: pve-manager/www/manager6/dc/Config.js:258
 #: pve-manager/www/manager6/form/IPRefSelector.js:73
 #: pve-manager/www/manager6/tree/ResourceTree.js:26
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:335
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:346
 msgid "SDN"
 msgstr "SDN"
 
@@ -14844,7 +15675,7 @@ msgstr "SDN 패널"
 msgid "SDN Zones"
 msgstr "SDN 영역"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:862
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:870
 #, fuzzy
 msgid "SHA256 Certificate Fingerprint"
 msgstr "인증서 검증 건너뛰기"
@@ -15182,6 +16013,11 @@ msgstr "기간 선택"
 msgid "Select Type first"
 msgstr "먼저 유형을 선택하세요"
 
+#: proxmox-datacenter-manager/ui/src/ceph/view.rs:117
+#, fuzzy
+msgid "Select a Ceph cluster to view its details."
+msgstr "자세한 내용을 보려면 영역이나 VNet을 선택하세요."
+
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/evpn_panel.rs:342
 msgid "Select a Zone or VNet for more details."
 msgstr "자세한 내용을 보려면 영역이나 VNet을 선택하세요."
@@ -15190,9 +16026,19 @@ msgstr "자세한 내용을 보려면 영역이나 VNet을 선택하세요."
 msgid "Select a firewall entry to show its rules."
 msgstr "규칙을 표시하려면 방화벽 항목을 선택하세요."
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_assign.rs:209
+#, fuzzy
+msgid "Select a key first."
+msgstr "먼저 유형을 선택하세요"
+
 #: proxmox-datacenter-manager/ui/src/remotes/updates.rs:600
 msgid "Select a node to show available updates."
 msgstr "사용 가능한 업데이트를 표시하려면 노드를 선택하세요."
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:620
+#, fuzzy
+msgid "Select a remote first."
+msgstr "먼저 유형을 선택하세요"
 
 #: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:310
 msgid "Select an interface to configure, or add a new one."
@@ -15441,6 +16287,7 @@ msgstr "서비스 VLAN 프로토콜"
 #: pmg-gui/js/ServerAdministration.js:27
 #: pve-manager/www/manager6/ceph/Status.js:239
 #: proxmox-backup/www/ServerAdministration.js:29
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:132
 #: pve-yew-mobile-gui/src/pages/page_node_status/mod.rs:148
 msgid "Services"
 msgstr "서비스"
@@ -15522,7 +16369,7 @@ msgstr "공유"
 #: pve-manager/www/manager6/node/Config.js:125
 #: pve-manager/www/manager6/node/Config.js:161
 #: proxmox-backup/www/NavigationTree.js:105
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:300
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:311
 #: proxmox-datacenter-manager/ui/src/pve/node/mod.rs:139
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:183
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:190
@@ -15631,6 +16478,11 @@ msgstr "설치된 서비스만 표시"
 msgid "Show tree panel"
 msgstr "트리 패널 표시"
 
+#: proxmox-yew-widget-toolkit/src/widget/charts/map/mod.rs:503
+#, fuzzy
+msgid "Show whole map"
+msgstr "로컬 태스크 표시"
+
 #: proxmox-datacenter-manager/ui/src/dashboard/tasks.rs:158
 msgid "Show: {0} - {1}"
 msgstr "표시: {0} - {1}"
@@ -15657,9 +16509,11 @@ msgstr ""
 #: pve-manager/www/manager6/qemu/CmdMenu.js:89
 #: pve-manager/www/manager6/qemu/Config.js:154
 #: proxmox-backup/www/ServerStatus.js:154
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:119
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:695
-#: proxmox-datacenter-manager/ui/src/pve/mod.rs:69
+#: proxmox-datacenter-manager/ui/src/guests.rs:740
+#: proxmox-datacenter-manager/ui/src/guests.rs:752
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:120
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:705
+#: proxmox-datacenter-manager/ui/src/pve/mod.rs:70
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/dashboard_panel.rs:242
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/dashboard_panel.rs:210
 #: pve-yew-mobile-gui/src/pages/page_node_status/dashboard_panel.rs:140
@@ -15790,6 +16644,11 @@ msgstr "크기"
 msgid "Size Increment"
 msgstr "크기 증분"
 
+#: proxmox-datacenter-manager/ui/src/ceph/pools.rs:137
+#, fuzzy
+msgid "Size/Min"
+msgstr "크기"
+
 #: pve-manager/www/manager6/storage/ESXIEdit.js:82
 msgid "Skip Certificate Verification"
 msgstr "인증서 검증 건너뛰기"
@@ -15862,7 +16721,16 @@ msgstr "스냅샷 선택"
 #: pve-manager/www/manager6/lxc/Config.js:326
 #: pve-manager/www/manager6/qemu/Config.js:379
 #: proxmox-backup/www/datastore/Summary.js:622
+#: proxmox-datacenter-manager/ui/src/guests.rs:783
+#: proxmox-datacenter-manager/ui/src/guests.rs:791
+#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:172
+#: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:152
 msgid "Snapshots"
+msgstr "스냅샷"
+
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:167
+#, fuzzy
+msgid "Snapshots - {0}"
 msgstr "스냅샷"
 
 #: pve-manager/www/manager6/storage/Base.js:106
@@ -15871,7 +16739,7 @@ msgstr "볼륨 체인으로서의 스냅샷은 기술 프리뷰입니다."
 
 #: pve-manager/www/manager6/Utils.js:741
 #: pve-manager/www/manager6/storage/Browser.js:125
-#: proxmox-datacenter-manager/ui/src/pve/utils.rs:295
+#: proxmox-datacenter-manager/ui/src/pve/utils.rs:314
 msgid "Snippets"
 msgstr "스니펫"
 
@@ -15885,10 +16753,16 @@ msgstr "소켓"
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:134
 #: pve-manager/www/manager6/window/GuestImport.js:488
 #: pve-manager/www/manager6/window/Restore.js:369
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_assign.rs:95
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:468
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_processor_property.rs:82
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_processor_property.rs:179
 msgid "Sockets"
 msgstr "소켓"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:652
+msgid "Sockets (node / key)"
+msgstr ""
 
 #: proxmox-widget-toolkit/src/Schema.js:95
 msgid "Softlink"
@@ -15934,6 +16808,7 @@ msgstr "키 정렬"
 #: pve-manager/www/manager6/window/GuestDiskReassign.js:127
 #: pve-manager/www/manager6/window/GuestImport.js:700
 #: pve-manager/www/manager6/window/Restore.js:191
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:147
 #: proxmox-datacenter-manager/ui/src/widget/pve_migrate_mapping.rs:357
 msgid "Source"
 msgstr "원본"
@@ -15949,7 +16824,7 @@ msgid "Source Namespace"
 msgstr "원본 네임스페이스"
 
 #: proxmox-backup/www/window/SyncJobEdit.js:53
-#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:357
+#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:382
 msgid "Source Remote"
 msgstr "리모트 원본"
 
@@ -16039,6 +16914,11 @@ msgstr "Spice 향상된 기능"
 msgid "Spice Port"
 msgstr "Spice 포트"
 
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:226
+#, fuzzy
+msgid "Standalone"
+msgstr "스탠다드"
+
 #: pve-manager/www/manager6/dc/Cluster.js:212
 #: pve-manager/www/manager6/dc/Health.js:33
 msgid "Standalone node - no cluster defined"
@@ -16069,9 +16949,10 @@ msgstr "스탠다드 VGA"
 #: pve-manager/www/manager6/node/Config.js:49
 #: pve-manager/www/manager6/qemu/CmdMenu.js:61
 #: pve-manager/www/manager6/qemu/Config.js:58
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:118
+#: proxmox-datacenter-manager/ui/src/guests.rs:760
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:119
 #: proxmox-datacenter-manager/ui/src/pve/tree.rs:718
-#: proxmox-datacenter-manager/ui/src/pve/mod.rs:68
+#: proxmox-datacenter-manager/ui/src/pve/mod.rs:69
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/dashboard_panel.rs:262
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/dashboard_panel.rs:223
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:95
@@ -16085,6 +16966,11 @@ msgstr "시작"
 #: pve-manager/www/manager6/sdn/SubnetEdit.js:192
 msgid "Start Address"
 msgstr "시작 주소"
+
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:643
+#, fuzzy
+msgid "Start After Rollback"
+msgstr "생성 후 시작"
 
 #: proxmox-yew-comp/src/auth_view.rs:473
 msgid "Start Sync"
@@ -16196,6 +17082,9 @@ msgstr "시작 지연"
 #: pve-manager/www/manager6/sdn/ZoneView.js:183
 #: proxmox-backup/www/tape/ChangerStatus.js:883
 #: proxmox-backup/www/tape/DriveStatus.js:481
+#: proxmox-datacenter-manager/ui/src/ceph/flags.rs:112
+#: proxmox-datacenter-manager/ui/src/ceph/managers.rs:164
+#: proxmox-datacenter-manager/ui/src/ceph/managers.rs:209
 msgid "State"
 msgstr "상태"
 
@@ -16288,10 +17177,16 @@ msgstr "지난 가비지 컬렉션 통계"
 #: proxmox-backup/www/tape/TapeInventory.js:153
 #: proxmox-backup/www/tape/TapeInventory.js:321
 #: proxmox-datacenter-manager/ui/src/configuration/subscription_panel.rs:152
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:480
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:615
 #: proxmox-datacenter-manager/ui/src/remotes/tasks.rs:93
 #: proxmox-datacenter-manager/ui/src/remotes/firewall/tree.rs:277
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/installations_panel.rs:281
 #: proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:261
+#: proxmox-datacenter-manager/ui/src/guests.rs:839
+#: proxmox-datacenter-manager/ui/src/guests.rs:910
+#: proxmox-datacenter-manager/ui/src/ceph/osds.rs:428
+#: proxmox-datacenter-manager/ui/src/ceph/osds.rs:499
 #: proxmox-datacenter-manager/ui/src/pve/lxc/overview.rs:264
 #: proxmox-datacenter-manager/ui/src/pve/qemu/overview.rs:270
 #: proxmox-datacenter-manager/ui/src/sdn/zone_tree.rs:167
@@ -16365,6 +17260,7 @@ msgstr "즉시 {0} 중지"
 #: pve-manager/www/manager6/ceph/Services.js:178
 #: pve-manager/www/manager6/dc/Guests.js:58
 #: pve-manager/www/manager6/dc/Guests.js:103
+#: proxmox-datacenter-manager/ui/src/pve/utils.rs:156
 msgid "Stopped"
 msgstr "중지됨"
 
@@ -16448,6 +17344,15 @@ msgstr ""
 "선택한 대상에서 스토리지({0})를 사용할 수 없습니다. 라이브 스토리지 마이그레"
 "이션을 사용하려면 VM을 시작하거나 다른 대상 노드를 선택하세요."
 
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:631
+msgid "Stored fingerprint will be cleared on Apply."
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:559
+#, fuzzy
+msgid "Stored fingerprint:"
+msgstr "지문 표시"
+
 #: pve-manager/www/manager6/ha/rules/NodeAffinityRuleEdit.js:129
 #: pve-manager/www/manager6/ha/rules/NodeAffinityRules.js:15
 msgid "Strict"
@@ -16474,6 +17379,7 @@ msgstr "서브디렉토리"
 #: pve-manager/www/manager6/node/Certificates.js:322
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:313
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_nodes.rs:279
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:727
 #: proxmox-yew-comp/src/acme/certificate_list.rs:358
 #: proxmox-yew-comp/src/acme/certificate_list.rs:391
 msgid "Subject"
@@ -16484,6 +17390,7 @@ msgstr "주체"
 #: pve-manager/www/manager6/node/Certificates.js:93
 #: pve-manager/www/manager6/node/Certificates.js:351
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:318
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:732
 #: proxmox-yew-comp/src/acme/certificate_list.rs:363
 #: proxmox-yew-comp/src/acme/certificate_list.rs:420
 msgid "Subject Alternative Names"
@@ -16516,9 +17423,9 @@ msgstr "서브넷"
 #: pve-manager/www/manager6/node/Config.js:452
 #: proxmox-backup/www/Dashboard.js:290 proxmox-backup/www/NavigationTree.js:90
 #: proxmox-backup/www/Subscription.js:24
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:273
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:279
-#: proxmox-datacenter-manager/ui/src/dashboard/subscriptions_list.rs:218
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:275
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:281
+#: proxmox-datacenter-manager/ui/src/dashboard/subscriptions_list.rs:207
 #: pve-yew-mobile-gui/src/pages/page_dashboard.rs:85
 msgid "Subscription"
 msgstr "구독"
@@ -16527,6 +17434,7 @@ msgstr "구독"
 #: pve-manager/www/manager6/node/Subscription.js:11
 #: pve-manager/www/manager6/node/Subscription.js:120
 #: proxmox-backup/www/Subscription.js:16 proxmox-backup/www/Subscription.js:101
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:262
 #: proxmox-yew-comp/src/subscription_panel.rs:197
 #: proxmox-yew-comp/src/subscription_panel.rs:251
 msgid "Subscription Key"
@@ -16540,6 +17448,11 @@ msgstr "구독 패널"
 msgid "Subscription Ratio (Basic or Higher): {0} ({1} {2})"
 msgstr "구독 비율(기본 이상): {0} ({1} {2})"
 
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:300
+#, fuzzy
+msgid "Subscription Registry"
+msgstr "구독 키"
+
 #: proxmox-datacenter-manager/ui/src/pve/remote_overview.rs:181
 msgid "Subscription Status"
 msgstr "구독 상태"
@@ -16547,6 +17460,11 @@ msgstr "구독 상태"
 #: proxmox-yew-comp/src/subscription_info.rs:24
 msgid "Subscription got (recently) suspended"
 msgstr "구독이 (최근) 중단되었습니다"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:498
+#, fuzzy
+msgid "Subscription key(s)"
+msgstr "구독 키"
 
 #: proxmox-yew-comp/src/subscription_info.rs:23
 msgid "Subscription set but expired for this server."
@@ -16649,6 +17567,12 @@ msgstr "모든 VM 일시 중단"
 msgid "Suspend to disk"
 msgstr "디스크 일시 중단"
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:74
+#: proxmox-datacenter-manager/ui/src/pve/utils.rs:158
+#, fuzzy
+msgid "Suspended"
+msgstr "일시 중단"
+
 #: pve-manager/www/manager6/lxc/ResourceEdit.js:152
 #: pve-manager/www/manager6/lxc/Resources.js:65
 #: pve-manager/www/manager6/panel/TemplateStatusView.js:53
@@ -16657,7 +17581,7 @@ msgstr "디스크 일시 중단"
 msgid "Swap"
 msgstr "스왑"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:524
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:532
 #, fuzzy
 msgid "Swap Size (GB)"
 msgstr "일괄 처리 크기 (b)"
@@ -16939,7 +17863,9 @@ msgstr "태그는 비어 있지 않아야 합니다."
 #: pve-manager/www/manager6/data/ResourceStore.js:340
 #: pve-manager/www/manager6/form/TagFieldSet.js:6
 #: pve-manager/www/manager6/form/VMSelector.js:86
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:626
+#: proxmox-datacenter-manager/ui/src/guests.rs:857
+#: proxmox-datacenter-manager/ui/src/guests.rs:924
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:635
 msgid "Tags"
 msgstr "태그"
 
@@ -16953,6 +17879,9 @@ msgstr "태그에 유효하지 않은 문자가 포함되어 있습니다."
 #: pve-manager/www/manager6/qemu/CmdMenu.js:185
 #: pve-manager/www/manager6/tree/SnapshotTree.js:60
 #: pve-manager/www/manager6/tree/SnapshotTree.js:253
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:497
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:529
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:531
 msgid "Take Snapshot"
 msgstr "스냅샷 생성"
 
@@ -17042,17 +17971,17 @@ msgstr "대상"
 msgid "Target Datastore"
 msgstr "대상 데이터스토어"
 
-#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:390
+#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:415
 msgid "Target Endpoint"
 msgstr "대상 엔드포인트"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:184
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_edit_window.rs:205
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:186
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_edit_window.rs:206
 #, fuzzy
 msgid "Target Filter"
 msgstr "대상 크기"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:729
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:737
 #, fuzzy
 msgid "Target Filters"
 msgstr "대상 크기"
@@ -17076,11 +18005,11 @@ msgstr "대상 이름"
 msgid "Target Namespace"
 msgstr "대상 네임스페이스"
 
-#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:478
+#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:503
 msgid "Target Network"
 msgstr "대상 네트워크"
 
-#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:379
+#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:404
 msgid "Target Node"
 msgstr "대상 노드"
 
@@ -17091,7 +18020,7 @@ msgid "Target Ratio"
 msgstr "대상 비율"
 
 #: proxmox-backup/www/window/SyncJobEdit.js:38
-#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:363
+#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:388
 msgid "Target Remote"
 msgstr "대상 리모트"
 
@@ -17107,11 +18036,11 @@ msgstr "대상 크기"
 #: pve-manager/www/manager6/qemu/HDEdit.js:289
 #: pve-manager/www/manager6/qemu/HDMove.js:75
 #: pve-manager/www/manager6/window/Clone.js:254
-#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:464
+#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:489
 msgid "Target Storage"
 msgstr "대상 스토리지"
 
-#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:442
+#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:467
 msgid "Target VMID"
 msgstr "대상 VMID"
 
@@ -17120,7 +18049,7 @@ msgstr "대상 VMID"
 msgid "Target filter"
 msgstr "대상 크기"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:760
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:768
 msgctxt "references RFC 6901"
 msgid "Target filter keys are JSON pointers according to"
 msgstr ""
@@ -17234,7 +18163,7 @@ msgstr "태스크 유형"
 #: proxmox-backup/www/ServerAdministration.js:76
 #: proxmox-backup/www/button/TaskButton.js:12
 #: proxmox-datacenter-manager/ui/src/administration/mod.rs:128
-#: proxmox-datacenter-manager/ui/src/remotes/mod.rs:64
+#: proxmox-datacenter-manager/ui/src/remotes/mod.rs:76
 #: proxmox-datacenter-manager/ui/src/pbs/node/mod.rs:84
 #: proxmox-datacenter-manager/ui/src/pve/remote/mod.rs:59
 #: proxmox-yew-comp/src/running_tasks_button.rs:172
@@ -17255,8 +18184,8 @@ msgstr "템플릿"
 msgid "Templates"
 msgstr "템플릿"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:188
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_edit_window.rs:209
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:190
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_edit_window.rs:210
 #, fuzzy
 msgid "Templating"
 msgstr "템플릿"
@@ -17312,6 +18241,11 @@ msgid ""
 msgstr ""
 "이 풀에 최종적으로 저장되는 데이터의 양입니다. 자동 스케일링에 사용됩니다."
 
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:73
+#, fuzzy
+msgid "The certificate has changed since it was last trusted."
+msgstr "리모트 서버의 인증서를 신뢰할 수 없습니다."
+
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:93
 msgid "The certificate of the remote server is not trusted."
 msgstr "리모트 서버의 인증서를 신뢰할 수 없습니다."
@@ -17329,6 +18263,12 @@ msgstr "엔터프라이즈 리포지토리가 사용 설정되어 있지만 활�
 msgid "The following certificates of remote servers are not trusted."
 msgstr "다음 리모트 서버의 인증서는 신뢰할 수 없습니다."
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1812
+msgid ""
+"The following {n} live subscription(s) will be imported into the pool; the "
+"remote is not contacted."
+msgstr ""
+
 #: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:342
 msgid ""
 "The layout is empty. To add widgets, enable editing by clicking the {0} icon "
@@ -17336,6 +18276,13 @@ msgid ""
 msgstr ""
 "레이아웃이 비어 있습니다. 위젯을 추가하려면 위의 {0} 아이콘을 클릭하여 편집"
 "을 활성화하세요."
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1156
+msgid ""
+"The live subscription is imported as a pool entry bound to this node; the "
+"remote is not contacted. After adoption the key participates in pool "
+"operations such as Clear Key and Auto-Assign."
+msgstr ""
 
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:188
 msgid ""
@@ -17574,7 +18521,7 @@ msgstr "TiB"
 #: pve-manager/www/manager6/node/Config.js:238
 #: pve-manager/www/manager6/window/ScheduleSimulator.js:133
 #: proxmox-backup/www/SystemConfiguration.js:29
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:155
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:158
 #: proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:272
 msgid "Time"
 msgstr "시간"
@@ -17698,7 +18645,7 @@ msgstr "스팸 정보 전환"
 #: pve-manager/www/manager6/sdn/ipams/PhpIpamEdit.js:33
 #: proxmox-backup/www/window/InfluxDbEdit.js:73
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:357
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:890
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:898
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/token_panel.rs:215
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/token_panel.rs:245
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/token_selector.rs:147
@@ -17723,7 +18670,7 @@ msgstr "토큰 ID"
 msgid "Token Name"
 msgstr "토큰 이름"
 
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:123
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:126
 msgid "Token Permission"
 msgstr "토큰 권한"
 
@@ -17747,7 +18694,7 @@ msgstr "너무 길면, IP 세트 사용을 고려하세요."
 msgid "Too many disks, could not map to SATA."
 msgstr "디스크가 너무 많아서 SATA에 매핑할 수 없습니다."
 
-#: proxmox-datacenter-manager/ui/src/lib.rs:288
+#: proxmox-datacenter-manager/ui/src/lib.rs:292
 msgid ""
 "Too many remote nodes without active basic or higher subscription. Please "
 "visit {0} for more details."
@@ -17878,6 +18825,10 @@ msgstr "전송"
 msgid "Transports"
 msgstr "전송"
 
+#: proxmox-datacenter-manager/ui/src/guests.rs:420
+msgid "Tree"
+msgstr ""
+
 #: pve-manager/www/manager6/window/TreeSettingsEdit.js:5
 msgid "Tree Settings"
 msgstr "트리 설정"
@@ -17889,6 +18840,16 @@ msgstr "트리 모양"
 #: pve-manager/www/manager6/dc/OptionView.js:396
 msgid "Tree Shape: {0}"
 msgstr "트리 모양: {0}"
+
+#: proxmox-datacenter-manager/ui/src/ceph/osds.rs:329
+#, fuzzy
+msgid "Tree view"
+msgstr "미리보기"
+
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:60
+#, fuzzy
+msgid "Trusted"
+msgstr "신뢰하는 네트워크"
 
 #: pmg-gui/js/MyNetworks.js:40 pmg-gui/js/MyNetworks.js:69
 #: pmg-gui/js/MyNetworks.js:120
@@ -17914,7 +18875,7 @@ msgid "Two Factor"
 msgstr "2단계 인증"
 
 #: proxmox-backup/www/panel/AccessControl.js:24
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:97
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:100
 msgid "Two Factor Authentication"
 msgstr "2단계 인증"
 
@@ -17977,10 +18938,11 @@ msgstr ""
 #: proxmox-backup/www/form/AuthidSelector.js:72
 #: proxmox-backup/www/form/GroupFilter.js:520
 #: proxmox-backup/www/tape/ChangerStatus.js:47
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:345
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:363
 #: proxmox-datacenter-manager/ui/src/widget/pve_storage_selector.rs:214
 #: proxmox-datacenter-manager/ui/src/widget/pve_migrate_mapping.rs:352
 #: proxmox-datacenter-manager/ui/src/widget/view_filter_selector.rs:225
+#: proxmox-datacenter-manager/ui/src/ceph/pools.rs:126
 #: proxmox-datacenter-manager/ui/src/pve/storage.rs:273
 #: proxmox-yew-comp/src/acme/acme_domains.rs:104
 #: proxmox-yew-comp/src/auth_view.rs:499
@@ -18079,7 +19041,7 @@ msgstr "변경 사항을 적용할 수 없습니다"
 msgid "Unable to delete entry"
 msgstr "사용자를 제거할 수 없습니다"
 
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:169
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:171
 #: proxmox-yew-comp/src/auth_view.rs:234
 #: proxmox-yew-comp/src/configuration/network_view.rs:158
 #: proxmox-yew-comp/src/tfa/tfa_view.rs:233
@@ -18163,7 +19125,9 @@ msgstr "유닛 파일"
 #: pve-manager/www/manager6/window/DownloadUrlToStorage.js:103
 #: proxmox-backup/www/Dashboard.js:325
 #: proxmox-datacenter-manager/ui/src/dashboard/guest_panel.rs:144
+#: proxmox-datacenter-manager/ui/src/dashboard/map.rs:248
 #: proxmox-datacenter-manager/ui/src/dashboard/pbs_datastores_panel.rs:125
+#: proxmox-datacenter-manager/ui/src/ceph/renderer.rs:55
 #: proxmox-yew-comp/src/configuration/mod.rs:35
 #: proxmox-yew-comp/src/task_status_selector.rs:170
 msgid "Unknown"
@@ -18181,12 +19145,12 @@ msgstr "알 수 없는 LDAP 주소"
 msgid "Unknown Node"
 msgstr "알 수 없는 노드"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/view.rs:684
+#: proxmox-datacenter-manager/ui/src/dashboard/view.rs:722
 #, fuzzy
 msgid "Unknown Widget"
 msgstr "알 수 없는 노드"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/view.rs:696
+#: proxmox-datacenter-manager/ui/src/dashboard/view.rs:734
 #, fuzzy
 msgid "Unknown Widget of type '{0}'"
 msgstr "알 수 없는 콘텐츠 유형({0})"
@@ -18279,6 +19243,10 @@ msgstr "권한 없음"
 msgid "Unprivileged container"
 msgstr "권한 없는 컨테이너"
 
+#: proxmox-datacenter-manager/ui/src/ceph/renderer.rs:74
+msgid "Unreachable"
+msgstr ""
+
 #: proxmox-widget-toolkit/src/node/Tasks.js:342
 #: proxmox-widget-toolkit/src/panel/JournalView.js:327
 #: proxmox-widget-toolkit/src/panel/LogView.js:343
@@ -18366,7 +19334,7 @@ msgstr "{0} 계정 업데이트"
 #: pve-manager/www/manager6/node/Config.js:261
 #: proxmox-backup/www/ServerAdministration.js:42
 #: proxmox-datacenter-manager/ui/src/administration/mod.rs:84
-#: proxmox-datacenter-manager/ui/src/remotes/mod.rs:71
+#: proxmox-datacenter-manager/ui/src/remotes/mod.rs:83
 #: proxmox-datacenter-manager/ui/src/pbs/node/mod.rs:94
 #: proxmox-datacenter-manager/ui/src/pve/node/mod.rs:106
 #: pve-yew-mobile-gui/src/pages/page_node_status/mod.rs:158
@@ -18456,6 +19424,8 @@ msgstr "Upper"
 #: pve-manager/www/manager6/panel/GuestStatusView.js:181
 #: pve-manager/www/manager6/sdn/FabricsContentView.js:45
 #: proxmox-backup/www/panel/NodeInfo.js:184
+#: proxmox-datacenter-manager/ui/src/guests.rs:875
+#: proxmox-datacenter-manager/ui/src/guests.rs:945
 msgid "Uptime"
 msgstr "업타임"
 
@@ -18468,6 +19438,8 @@ msgstr "업타임"
 #: pve-manager/www/manager6/storage/StatusView.js:56
 #: pve-manager/www/manager6/storage/Summary.js:51
 #: proxmox-backup/www/datastore/Summary.js:69
+#: proxmox-datacenter-manager/ui/src/ceph/clusters.rs:318
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:333
 #: proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:139
 #: proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:232
 #: proxmox-datacenter-manager/ui/src/pve/remote_overview.rs:210
@@ -18513,7 +19485,7 @@ msgstr "CD/DVD 디스크 이미지 파일(ISO) 사용"
 msgid "Use CRS to select the least loaded node when starting an HA resource"
 msgstr "HA 서비스를 시작할 때, 최소 부하 노드를 선택하기 위해 CRS를 사용"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:286
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:294
 #, fuzzy
 msgid "Use DHCP"
 msgstr "DHCP"
@@ -18628,6 +19600,10 @@ msgstr "매핑된 디바이스 사용"
 msgid "Use node proxy"
 msgstr "노드 프록시 사용"
 
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:261
+msgid "Use only letters, digits, '_' and '-', starting with a letter."
+msgstr ""
+
 #: proxmox-backup/www/window/S3ClientEdit.js:71
 msgid "Use path style over vhost style bucket addressing."
 msgstr "vhost 스타일 버킷 주소 지정 대신 경로 스타일을 사용합니다."
@@ -18693,6 +19669,9 @@ msgstr "무제한으로 {0} 사용"
 #: pve-manager/www/manager6/node/Summary.js:251
 #: pve-manager/www/manager6/panel/GuestSummary.js:38
 #: proxmox-backup/www/dashboard/DataStoreStatistics.js:94
+#: proxmox-datacenter-manager/ui/src/ceph/osds.rs:445
+#: proxmox-datacenter-manager/ui/src/ceph/osds.rs:508
+#: proxmox-datacenter-manager/ui/src/ceph/pools.rs:146
 msgid "Used"
 msgstr "사용 중"
 
@@ -18777,7 +19756,7 @@ msgstr "사용자 ID"
 
 #: pmg-gui/js/NavigationTree.js:72 pmg-gui/js/UserManagement.js:5
 #: proxmox-backup/www/panel/AccessControl.js:18
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:62
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:65
 msgid "User Management"
 msgstr "사용자 관리"
 
@@ -18787,7 +19766,7 @@ msgstr "사용자 관리"
 #: pve-manager/www/manager6/sdn/VnetACLView.js:241
 #: proxmox-backup/www/config/ACLView.js:161
 #: proxmox-backup/www/window/ACLEdit.js:34
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:118
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:121
 #: proxmox-yew-comp/src/acl/acl_edit.rs:66
 msgid "User Permission"
 msgstr "사용자 권한"
@@ -18977,7 +19956,7 @@ msgstr "VLAN"
 msgid "VM"
 msgstr "VM"
 
-#: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:65
+#: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:67
 msgid "VM '{0}'"
 msgstr "VM '{0}'"
 
@@ -19082,6 +20061,7 @@ msgstr "올바른 CIDR 범위"
 #: pve-manager/www/manager6/node/Certificates.js:79
 #: pve-manager/www/manager6/node/Certificates.js:339
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:316
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:730
 #: proxmox-yew-comp/src/acme/certificate_list.rs:361
 #: proxmox-yew-comp/src/acme/certificate_list.rs:406
 msgid "Valid Since"
@@ -19118,9 +20098,9 @@ msgstr "유효성 검사 지연"
 msgid "Value"
 msgstr "값"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:351
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:460
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:739
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:359
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:468
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:747
 #, fuzzy
 msgid "Value To Match"
 msgstr "값이 일치하지 않습니다!"
@@ -19293,6 +20273,9 @@ msgstr "완료 후 즉시 새 백업 검증"
 #: pve-manager/www/manager6/storage/TemplateView.js:68
 #: pve-manager/www/manager6/window/GuestImport.js:572
 #: proxmox-datacenter-manager/ui/src/remotes/updates.rs:180
+#: proxmox-datacenter-manager/ui/src/ceph/managers.rs:183
+#: proxmox-datacenter-manager/ui/src/ceph/managers.rs:231
+#: proxmox-datacenter-manager/ui/src/ceph/monitors.rs:139
 #: proxmox-yew-comp/src/apt_package_manager.rs:427
 #: proxmox-yew-comp/src/form/pve/qemu_machine_version_selector.rs:194
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_machine_property.rs:108
@@ -19344,7 +20327,12 @@ msgstr "태스크 보기"
 msgid "View images"
 msgstr "이미지 보기"
 
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:210
+#: proxmox-datacenter-manager/ui/src/guests.rs:410
+#, fuzzy
+msgid "View mode"
+msgstr "이미지 보기"
+
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:212
 msgid "Views"
 msgstr "보기"
 
@@ -19372,7 +20360,7 @@ msgstr "Virtiofs 파일시스템 패스스루"
 msgid "Virtual"
 msgstr "가상"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:679
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:680
 #, fuzzy
 msgid "Virtual Environment"
 msgstr "가상 환경 노드"
@@ -19539,8 +20527,10 @@ msgstr "Wake-on-LAN"
 #: pve-manager/www/manager6/ceph/ServiceList.js:392
 #: pve-manager/www/manager6/ceph/StatusDetail.js:195
 #: proxmox-backup/www/dashboard/TaskSummary.js:168
+#: proxmox-datacenter-manager/ui/src/dashboard/map.rs:246
 #: proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:193
 #: proxmox-datacenter-manager/ui/src/dashboard/tasks.rs:154
+#: proxmox-datacenter-manager/ui/src/ceph/renderer.rs:52
 #: proxmox-yew-comp/src/apt_repositories.rs:908
 msgid "Warning"
 msgid_plural "Warnings"
@@ -19600,7 +20590,7 @@ msgid "WebAuthn Settings"
 msgstr "WebAuthn 설정"
 
 #: proxmox-backup/www/SystemConfiguration.js:78
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:39
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:42
 msgid "WebAuthn TFA"
 msgstr "WebAuthn TFA"
 
@@ -19705,6 +20695,10 @@ msgstr "1달 내내"
 #: pmg-gui/js/StatTimeSelector.js:138
 msgid "Whole year"
 msgstr "1년 내내"
+
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:630
+msgid "Will clear"
+msgstr ""
 
 #: proxmox-widget-toolkit/src/panel/DiskList.js:425
 #: pve-manager/www/manager6/Utils.js:2219 proxmox-backup/www/Utils.js:470
@@ -20016,7 +21010,7 @@ msgstr "ZFS 풀"
 msgid "ZFS Storage"
 msgstr "ZFS 스토리지"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:472
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:480
 msgid ""
 "ZFS is not compatible with hardware RAID controllers, for details see the "
 "documentation."
@@ -20048,6 +21042,14 @@ msgstr "노드 {1}의 영역 {0}"
 msgid "Zones"
 msgstr "영역"
 
+#: proxmox-yew-widget-toolkit/src/widget/charts/map/mod.rs:521
+msgid "Zoom in"
+msgstr ""
+
+#: proxmox-yew-widget-toolkit/src/widget/charts/map/mod.rs:512
+msgid "Zoom out"
+msgstr ""
+
 #: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:166
 msgid "Zstd Threads"
 msgstr "Zstd 스레드"
@@ -20056,6 +21058,11 @@ msgstr "Zstd 스레드"
 msgid "a min_size of 1 is not recommended and can lead to data loss"
 msgstr ""
 "최소 크기는 1을 사용하지 않는 것이 좋으며 데이터 손실이 발생할 수 있습니다."
+
+#: proxmox-datacenter-manager/ui/src/ceph/managers.rs:34
+#, fuzzy
+msgid "active"
+msgstr "활성"
 
 #: proxmox-backup/www/window/SyncJobEdit.js:443
 msgid "all"
@@ -20149,6 +21156,11 @@ msgstr "dRAID 구성"
 msgid "daily"
 msgstr "일간"
 
+#: proxmox-datacenter-manager/ui/src/ceph/managers.rs:41
+#, fuzzy
+msgid "damaged"
+msgstr "손상됨"
+
 #: proxmox-widget-toolkit/src/Utils.js:55
 msgid "day"
 msgstr "일"
@@ -20199,6 +21211,11 @@ msgstr "비활성화 됨"
 msgid "dns"
 msgstr "dns"
 
+#: proxmox-datacenter-manager/ui/src/ceph/osds.rs:211
+#, fuzzy
+msgid "down"
+msgstr "종료"
+
 #: proxmox-backup/www/window/S3ClientEdit.js:48
 msgid "e.g. {{bucket}}.s3.{{region}}.amazonaws.com"
 msgstr "예: {{bucket}}.s3.{{region}}.amazonaws.com"
@@ -20219,6 +21236,10 @@ msgstr "이메일 프로파일"
 #: proxmox-yew-comp/src/apt_repositories.rs:689
 msgid "enabled"
 msgstr "활성화 됨"
+
+#: proxmox-datacenter-manager/ui/src/ceph/pools.rs:131
+msgid "erasure"
+msgstr ""
 
 #: proxmox-yew-comp/src/form/pve/lxc_property/lxc_features_property.rs:120
 msgid "experimental"
@@ -20261,7 +21282,7 @@ msgstr "Proxmox 백업 서버 로그인"
 msgid "generated on save"
 msgstr "이미지 재생성"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:984
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:992
 #, fuzzy
 msgid "glob to match"
 msgstr "모두 일치"
@@ -20309,6 +21330,12 @@ msgstr "iSCSI 공급자"
 #: pve-manager/www/manager6/storage/IScsiEdit.js:19
 msgid "iSCSI Target"
 msgstr "iSCSI 타겟"
+
+#: proxmox-datacenter-manager/ui/src/ceph/monitors.rs:126
+#: proxmox-datacenter-manager/ui/src/ceph/osds.rs:212
+#, fuzzy
+msgid "in"
+msgstr "힌트"
 
 #: proxmox-backup/www/Utils.js:316
 msgid "in {0}"
@@ -20376,6 +21403,10 @@ msgstr "연간 유지"
 msgid "keyctl"
 msgstr "keyctl"
 
+#: proxmox-datacenter-manager/ui/src/ceph/managers.rs:40
+msgid "laggy"
+msgstr ""
+
 #: proxmox-widget-toolkit/src/Toolkit.js:135
 msgid "letter"
 msgstr "문자"
@@ -20402,6 +21433,10 @@ msgstr ""
 #: proxmox-backup/www/Utils.js:8
 msgid "missing"
 msgstr "누락"
+
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:255
+msgid "monitor quorum {0}/{1}"
+msgstr ""
 
 #: proxmox-yew-comp/src/key_value_list.rs:212
 #, fuzzy
@@ -20439,6 +21474,11 @@ msgstr "VLAN 없음"
 msgid "no data loaded"
 msgstr "데이터가 로드되지 않았습니다"
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:474
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:530
+msgid "no keys provided"
+msgstr ""
+
 #: proxmox-yew-widget-toolkit/src/widget/form/combobox.rs:232
 msgid "no such item"
 msgstr "해당 항목 없음"
@@ -20461,6 +21501,8 @@ msgstr "noVNC 설정"
 #: proxmox-backup/www/window/NotificationThresholds.js:105
 #: proxmox-backup/www/window/NotificationThresholds.js:114
 #: proxmox-backup/www/window/SyncJobEdit.js:213
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:561
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:372
 #: proxmox-datacenter-manager/ui/src/pve/lxc/overview.rs:275
 #: proxmox-datacenter-manager/ui/src/pve/lxc/overview.rs:283
 #: proxmox-datacenter-manager/ui/src/pve/qemu/overview.rs:284
@@ -20479,6 +21521,11 @@ msgstr "없음"
 msgid "none (disabled)"
 msgstr "없음 (비활성화됨)"
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:481
+msgid "not a valid Proxmox VE or Proxmox Backup Server key: {0}"
+msgid_plural "not valid Proxmox VE or Proxmox Backup Server keys: {0}"
+msgstr[0] ""
+
 #: proxmox-widget-toolkit/src/node/NetworkEdit.js:92
 msgid "not a valid bridge VLAN ID entry: {0}"
 msgstr "유효한 브리지 VLAN ID 항목이 아님: {0}"
@@ -20486,6 +21533,10 @@ msgstr "유효한 브리지 VLAN ID 항목이 아님: {0}"
 #: proxmox-widget-toolkit/src/node/ServiceView.js:213
 msgid "not installed"
 msgstr "설치되지 않음"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:488
+msgid "not valid Proxmox VE or Proxmox Backup Server keys: {0} (and {1} more)"
+msgstr ""
 
 #: proxmox-yew-widget-toolkit/src/widget/form/number.rs:96
 #: proxmox-yew-widget-toolkit/src/widget/form/number.rs:124
@@ -20506,6 +21557,7 @@ msgid "of {0} CPU(s)"
 msgstr "/ {0}개의 CPU"
 
 #: pve-manager/www/manager6/sdn/fabrics/wireguard/FabricEdit.js:20
+#: proxmox-datacenter-manager/ui/src/ceph/pools.rs:160
 #, fuzzy
 msgid "off"
 msgstr "끔"
@@ -20513,6 +21565,11 @@ msgstr "끔"
 #: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:394
 msgid "old"
 msgstr "구형"
+
+#: proxmox-datacenter-manager/ui/src/ceph/pools.rs:158
+#, fuzzy
+msgid "on"
+msgstr "월"
 
 #: proxmox-widget-toolkit/src/Toolkit.js:79
 msgid "only unicast addresses are allowed"
@@ -20526,6 +21583,12 @@ msgstr "선택 사항"
 #: pve-manager/www/manager6/dc/MetricServerView.js:589
 msgid "otel-collector.example.com"
 msgstr "otel-collector.example.com"
+
+#: proxmox-datacenter-manager/ui/src/ceph/monitors.rs:126
+#: proxmox-datacenter-manager/ui/src/ceph/osds.rs:212
+#, fuzzy
+msgid "out"
+msgstr "개수"
 
 #: pmg-yew-quarantine-gui/src/page_not_found.rs:9
 msgid "page not found"
@@ -20568,6 +21631,11 @@ msgid ""
 "pveproxy will be restarted with new certificates, please reload the GUI!"
 msgstr "새 인증서로 pveproxy가 다시 시작됩니다, GUI를 다시 로드하세요!"
 
+#: proxmox-datacenter-manager/ui/src/ceph/pools.rs:130
+#, fuzzy
+msgid "replicated"
+msgstr "생성됨"
+
 #: pve-manager/www/manager6/node/ACME.js:23
 msgid "required"
 msgstr "필수"
@@ -20585,9 +21653,22 @@ msgstr "실행 중"
 msgid "running..."
 msgstr "실행 중..."
 
+#: proxmox-datacenter-manager/ui/src/ceph/flags.rs:122
+#, fuzzy
+msgid "set"
+msgstr "재설정"
+
 #: proxmox-datacenter-manager/ui/src/remotes/updates.rs:745
 msgid "small difference"
 msgstr "사소한 차이점"
+
+#: proxmox-datacenter-manager/ui/src/ceph/managers.rs:35
+msgid "standby"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/ceph/managers.rs:36
+msgid "standby-replay"
+msgstr ""
 
 #: proxmox-widget-toolkit/src/Utils.js:57
 #: proxmox-datacenter-manager/ui/src/dashboard/guest_panel.rs:130
@@ -20613,11 +21694,11 @@ msgstr "마운트에 의해 트리거되는 동기화 작업 핸들러"
 msgid "syncing"
 msgstr "동기화"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:461
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:469
 msgid "udev Property Name, e.g. ID_MODEL"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:352
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:360
 msgid "udev property name, e.g. ID_NET_DRIVER"
 msgstr ""
 
@@ -20645,7 +21726,7 @@ msgstr "변경되지 않음"
 msgid "unknown"
 msgstr "알 수 없음"
 
-#: proxmox-datacenter-manager/ui/src/pve/utils.rs:298
+#: proxmox-datacenter-manager/ui/src/pve/utils.rs:317
 msgid "unknown content type ({0})"
 msgstr "알 수 없는 콘텐츠 유형({0})"
 
@@ -20682,6 +21763,27 @@ msgstr "권한이 없는 사용자만"
 #: proxmox-yew-comp/src/form/pve/qemu_cache_type_selector.rs:51
 msgid "unsafe"
 msgstr "불안전"
+
+#: proxmox-datacenter-manager/ui/src/ceph/flags.rs:122
+msgid "unset"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/ceph/osds.rs:211
+msgid "up"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/ceph/managers.rs:37
+#, fuzzy
+msgid "up:active"
+msgstr "활성"
+
+#: proxmox-datacenter-manager/ui/src/ceph/managers.rs:38
+msgid "up:standby"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/ceph/managers.rs:39
+msgid "up:standby-replay"
+msgstr ""
 
 #: pve-manager/www/manager6/ceph/OSD.js:78
 msgid "use OSD disk"
@@ -20747,6 +21849,10 @@ msgstr "현재 비밀번호 확인"
 msgid "via"
 msgstr "다음을 통해"
 
+#: proxmox-datacenter-manager/ui/src/ceph/pools.rs:159
+msgid "warn"
+msgstr ""
+
 #: pve-manager/www/manager6/qemu/CloudInit.js:253
 msgid "with options"
 msgstr "옵션 사용"
@@ -20791,8 +21897,32 @@ msgstr ""
 "  \"region\": \"us-east-1\"\n"
 "}"
 
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:371
+#, fuzzy
+msgid "{0} (+{1} standby)"
+msgstr "{0} ({1} 소켓)"
+
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:384
+msgid "{0} (all active+clean)"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:155
+msgid "{0} (mixed versions)"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:387
+#, fuzzy
+msgid "{0} ({1} not active+clean)"
+msgstr "{0} ({1} 소켓)"
+
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:362
+#, fuzzy
+msgid "{0} ({1}%)"
+msgstr "{0} ({1})"
+
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:376
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:314
+#: proxmox-datacenter-manager/ui/src/ceph/clusters.rs:268
 msgid "{0} ({1})"
 msgstr "{0} ({1})"
 
@@ -20803,6 +21933,16 @@ msgstr "{0} ({1}/{2}) 성공"
 #: proxmox-datacenter-manager/ui/src/pve/remote_overview.rs:198
 msgid "{0} / {1} (running / total)"
 msgstr "{0} / {1} (실행 중/ 총계)"
+
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:136
+#, fuzzy
+msgid "{0} / {1} in quorum"
+msgstr "{0} / {1}"
+
+#: proxmox-datacenter-manager/ui/src/ceph/osds.rs:225
+#, fuzzy
+msgid "{0} / {1} ms"
+msgstr "{0} ({1})"
 
 #: pmg-gui/js/AttachmentGrid.js:75
 msgid "{0} Attachments"
@@ -20821,6 +21961,19 @@ msgstr "{0} 항목"
 #: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:417
 msgid "{0} OK"
 msgstr "{0} OK"
+
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:248
+msgid "{0} OSD(s) down"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:251
+msgid "{0} OSD(s) out"
+msgstr ""
+
+#: proxmox-yew-widget-toolkit/src/widget/charts/map/map_point.rs:63
+#, fuzzy
+msgid "{0} and {1} more"
+msgstr "{0} / {1}"
 
 #: proxmox-backup/www/Utils.js:832
 msgid "{0} conflicting tasks still active."
@@ -20889,6 +22042,7 @@ msgstr "알 수 없는 수의 노드 {0}개가 온라인 상태임"
 #: proxmox-backup/www/datastore/DataStoreListSummary.js:83
 #: proxmox-datacenter-manager/ui/src/dashboard/gauge_panel.rs:187
 #: proxmox-datacenter-manager/ui/src/dashboard/gauge_panel.rs:199
+#: proxmox-datacenter-manager/ui/src/guests.rs:704
 msgid "{0} of {1}"
 msgstr "{0} / {1}"
 
@@ -20906,6 +22060,11 @@ msgstr "{1}개 중 {0}개의 노드가 오프라인 상태임"
 msgid "{0} of {1} nodes are offline"
 msgstr "{1}개 중 {0}개의 노드가 오프라인 상태임"
 
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:472
+#, fuzzy
+msgid "{0} of {1} nodes need review"
+msgstr "{1}개 중 {0}개의 노드가 오프라인 상태임"
+
 #. TRANSLATORS: For example "resource on Remote 'HAL 9000'"
 #: proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:250
 msgid "{0} on Remote '{1}'"
@@ -20914,6 +22073,15 @@ msgstr "리모트 {1}의 {0}"
 #: pmg-gui/js/Utils.js:866
 msgid "{0} on behalf of {1}"
 msgstr "{1}의 대리로 {0}"
+
+#. reserve room for the widest (plural) count string at the total's
+#. magnitude so typing in the filter doesn't reflow the toolbar
+#: proxmox-datacenter-manager/ui/src/guests.rs:391
+#: proxmox-datacenter-manager/ui/src/guests.rs:399
+#, fuzzy
+msgid "{0} out of {1} Guest"
+msgid_plural "{0} out of {1} Guests"
+msgstr[0] "{0} / {1}"
 
 #: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:473
 msgid ""
@@ -20942,6 +22110,11 @@ msgstr "{0}이(가) 우선합니다."
 msgid "{0} to {1}"
 msgstr "{0}에서 {1}로"
 
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:145
+#, fuzzy
+msgid "{0} up, {1} in / {2} total"
+msgstr "{0} / {1} (실행 중/ 총계)"
+
 #: proxmox-widget-toolkit/src/Utils.js:1377
 msgid "{0} updates"
 msgstr "{0} 업데이트"
@@ -20969,6 +22142,24 @@ msgstr "{0}%"
 msgid "{0}% ({1} of {2})"
 msgstr "{0}% ({2} 중 {1})"
 
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:338
+#, fuzzy
+msgid "{0}% ({1} of {2}, {3} free)"
+msgstr "{0}% ({2} 중 {1})"
+
+#: proxmox-datacenter-manager/ui/src/ceph/pools.rs:151
+#, fuzzy
+msgid "{0}% ({1})"
+msgstr "{0} ({1})"
+
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:262
+msgid "{0}% degraded"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:294
+msgid "{0}% misplaced"
+msgstr ""
+
 #. TRANSLATORS: For example "5% of 24 CPUs"
 #: proxmox-widget-toolkit/src/Utils.js:1122
 #, fuzzy
@@ -20986,6 +22177,51 @@ msgstr "{1}의 CPU 중 {0}%"
 #: proxmox-datacenter-manager/ui/src/pve/qemu/overview.rs:290
 msgid "{0}, Group: {1}"
 msgstr "{0}, 그룹: {1}"
+
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:409
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:412
+msgid "{0}/s"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:297
+#, fuzzy
+msgid "{0}/s recovery"
+msgstr "복구"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:512
+msgid "{active} of {total} nodes subscribed"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/guests.rs:388
+#, fuzzy
+msgid "{n} Guest"
+msgid_plural "{n} Guests"
+msgstr[0] "게스트"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:153
+msgid ""
+"{n} live subscription(s) queued for removal; Apply Pending will free them."
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:150
+msgid "{n} pending clear(s)"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:135
+msgid "{n} pending push(es)"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:138
+msgid ""
+"{n} pool key(s) queued for push; Apply Pending will install them on the "
+"remote."
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1722
+msgid ""
+"{selected} of {total} assignments selected. Untick any node to skip it or "
+"pick a different key, then click Assign."
+msgstr ""
 
 #~ msgid "Add {0}"
 #~ msgstr "추가: {0}"
@@ -21016,9 +22252,6 @@ msgstr "{0}, 그룹: {1}"
 
 #~ msgid "Connection OK"
 #~ msgstr "연결 OK"
-
-#~ msgid "Could not connect to remote"
-#~ msgstr "리모트에 연결할 수 없습니다"
 
 #~ msgid "DNS Domain"
 #~ msgstr "DNS 도메인"
@@ -21306,9 +22539,6 @@ msgstr "{0}, 그룹: {1}"
 #~ msgid "{0} (Auto)"
 #~ msgstr "{0} (자동)"
 
-#~ msgid "{0} ({1} sockets)"
-#~ msgstr "{0} ({1} 소켓)"
-
 #~ msgid "{0} CPU(s)"
 #~ msgstr "{0}개의 CPU"
 
@@ -21319,10 +22549,6 @@ msgstr "{0}, 그룹: {1}"
 
 #~ msgid "{0} remotes failed"
 #~ msgstr "{0}개의 리모트가 실패함"
-
-#, fuzzy
-#~ msgid "{0} {1}"
-#~ msgstr "{0} ({1})"
 
 #~ msgid "{0}% of {1}"
 #~ msgstr "{0}% / {1}"

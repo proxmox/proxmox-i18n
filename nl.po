@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pve-manager e7dc4402223cffef6b5ae34e7fc00401198b98e1\n"
 "Report-Msgid-Bugs-To: <support@proxmox.com>\n"
-"POT-Creation-Date: 2026-05-22 16:42+0200\n"
+"POT-Creation-Date: 2026-05-26 04:37+0200\n"
 "PO-Revision-Date: 2022-08-19 14:00+0200\n"
 "Last-Translator: \n"
 "Language-Team: Dutch <support@proxmox.com>\n"
@@ -53,6 +53,13 @@ msgid "% of one threads"
 msgid_plural "% of {n} threads"
 msgstr[0] ""
 msgstr[1] ""
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1218
+msgid ""
+"'Apply Pending' will remove the subscription from the node so the key can be "
+"reassigned elsewhere; 'Discard Pending' undoes the queueing without touching "
+"the remote."
+msgstr ""
 
 #: pmg-gui/js/SystemOptions.js:88
 msgid "'From:' for Admin Mail"
@@ -107,6 +114,13 @@ msgid_plural "{n} Cores"
 msgstr[0] "Kernen"
 msgstr[1] "Kernen"
 
+#: proxmox-datacenter-manager/ui/src/dashboard/map.rs:255
+#, fuzzy
+msgid "1 Node"
+msgid_plural "{0} Nodes"
+msgstr[0] "Systeem"
+msgstr[1] "Systeem"
+
 #: pve-yew-mobile-gui/src/pages/page_node_status/dashboard_panel.rs:80
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_processor_property.rs:30
 #: proxmox-yew-comp/src/node_info.rs:242
@@ -142,6 +156,14 @@ msgstr ""
 #: proxmox-widget-toolkit/src/window/AddYubico.js:101
 msgid "A currently valid Yubico OTP value"
 msgstr "Een momenteel geldige Yubico OTP-waarde"
+
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:542
+msgid ""
+"A fingerprint is still pinned. You can clear it to rely on the system trust "
+"store instead. Note that the trusted certificate may differ from the one you "
+"pinned, so clearing will trust any certificate the system store accepts for "
+"this host."
+msgstr ""
 
 #: pve-manager/www/manager6/ceph/Services.js:200
 msgid ""
@@ -277,7 +299,7 @@ msgstr "API pad voorvoegsel"
 #: proxmox-backup/www/form/TokenSelector.js:64
 #: proxmox-backup/www/panel/AccessControl.js:30
 #: proxmox-backup/www/window/ACLEdit.js:46
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:84
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:87
 #: proxmox-yew-comp/src/acl/acl_edit.rs:61
 msgid "API Token"
 msgstr "API token"
@@ -328,7 +350,7 @@ msgstr "API token"
 msgid "APT Repositories"
 msgstr "APT archieven"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:592
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:600
 msgid "ARC Maximum Size (MiB)"
 msgstr ""
 
@@ -369,9 +391,19 @@ msgstr ""
 msgid "Accept TOS"
 msgstr "TOS accepteren"
 
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:676
+#, fuzzy
+msgid "Accept new fingerprint"
+msgstr "Versleuteling vingerafdruk"
+
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:625
+#, fuzzy
+msgid "Accepted"
+msgstr "TOS accepteren"
+
 #: proxmox-backup/www/NavigationTree.js:48
 #: proxmox-backup/www/panel/AccessControl.js:6
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:255
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:257
 msgid "Access Control"
 msgstr "Toegangscontrole"
 
@@ -420,6 +452,7 @@ msgstr "Accounts"
 #: pve-manager/www/manager6/sdn/PrefixListPanel.js:229
 #: pve-manager/www/manager6/sdn/RouteMapPanel.js:788
 #: pve-manager/www/manager6/sdn/RouteMapPanel.js:1000
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:650
 #: proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:273
 #: proxmox-yew-comp/src/configuration/pve/firewall/firewall_rules_panel.rs:326
 #: proxmox-yew-comp/src/running_tasks.rs:109
@@ -452,7 +485,10 @@ msgstr "Actie-objecten"
 #: proxmox-backup/www/tape/ChangerStatus.js:760
 #: proxmox-backup/www/tape/ChangerStatus.js:914
 #: proxmox-backup/www/tape/ChangerStatus.js:989
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:634
+#: proxmox-datacenter-manager/ui/src/guests.rs:880
+#: proxmox-datacenter-manager/ui/src/guests.rs:952
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:725
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:643
 #: proxmox-datacenter-manager/ui/src/sdn/zone_tree.rs:193
 msgid "Actions"
 msgstr "Acties"
@@ -469,6 +505,7 @@ msgstr ""
 #: pve-manager/www/manager6/storage/PBSEdit.js:232
 #: pve-manager/www/manager6/storage/PBSEdit.js:235
 #: pve-manager/www/manager6/storage/StatusView.js:31
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:69
 #: proxmox-datacenter-manager/ui/src/pve/storage.rs:254
 #: proxmox-yew-comp/src/form/pve/pve_network_selector.rs:174
 #: proxmox-yew-comp/src/configuration/pve/firewall/firewall_rules_panel.rs:312
@@ -488,6 +525,7 @@ msgid "Active Encryption Key"
 msgstr "Versleutelings sleutel"
 
 #: proxmox-backup/www/tape/ChangerStatus.js:876
+#: proxmox-datacenter-manager/ui/src/ceph/clusters.rs:350
 #, fuzzy
 msgid "Activity"
 msgstr "Actief"
@@ -563,10 +601,11 @@ msgstr "Actief"
 #: proxmox-backup/www/tape/DriveConfig.js:127
 #: proxmox-backup/www/tape/EncryptionKeys.js:102
 #: proxmox-backup/www/tape/PoolConfig.js:95
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:284
 #: proxmox-datacenter-manager/ui/src/configuration/views.rs:170
 #: proxmox-datacenter-manager/ui/src/configuration/views.rs:267
 #: proxmox-datacenter-manager/ui/src/remotes/node_url_list.rs:209
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:188
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:190
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answers_panel.rs:162
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/token_panel.rs:156
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/token_panel.rs:215
@@ -665,7 +704,7 @@ msgstr "IP-netwerk"
 msgid "Add Node"
 msgstr "Naamserver toevoegen"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:146
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:148
 #, fuzzy
 msgid "Add Prepared Answer"
 msgstr "Kop"
@@ -706,6 +745,11 @@ msgstr "Gegevensopslag toevoegen"
 #: pve-manager/www/manager6/node/ZFS.js:64
 msgid "Add Storage"
 msgstr "Opslag toevoegen"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:180
+#, fuzzy
+msgid "Add Subscription Keys"
+msgstr "Lidmaatschap sleutel"
 
 #: proxmox-backup/www/config/EncryptionKeysView.js:233
 #, fuzzy
@@ -763,6 +807,11 @@ msgstr "Naamserver toevoegen"
 msgid "Add Zone"
 msgstr "Naamserver toevoegen"
 
+#: proxmox-datacenter-manager/ui/src/guests.rs:490
+msgid ""
+"Add a Proxmox VE remote on the Configuration tab to see its guests here."
+msgstr ""
+
 #: proxmox-widget-toolkit/src/window/AddTotp.js:11
 #: proxmox-yew-comp/src/tfa/tfa_add_totp.rs:165
 msgid "Add a TOTP login factor"
@@ -816,6 +865,11 @@ msgstr ""
 msgid "Add new host mapping for '{0}'"
 msgstr ""
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:289
+msgid ""
+"Add one or more subscription keys to the pool; the Assign step happens later."
+msgstr ""
+
 #: pve-manager/www/manager6/ceph/FS.js:53
 msgid "Add the new CephFS to the cluster storage configuration."
 msgstr "Voeg het nieuwe CephFS toe aan de configuratie van de clusteropslag."
@@ -851,6 +905,8 @@ msgstr ""
 #: pmg-gui/js/UserBlockWelcomeList.js:33 pmg-gui/js/UserBlockWelcomeList.js:195
 #: pve-manager/www/manager6/ceph/ServiceList.js:451
 #: pve-manager/www/manager6/ceph/Services.js:169
+#: proxmox-datacenter-manager/ui/src/ceph/managers.rs:179
+#: proxmox-datacenter-manager/ui/src/ceph/monitors.rs:135
 msgid "Address"
 msgstr "Adres"
 
@@ -863,7 +919,7 @@ msgid "Addresses and ports used by the OSD service"
 msgstr ""
 
 #: pmg-gui/js/NavigationTree.js:104 proxmox-backup/www/NavigationTree.js:98
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:310
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:321
 msgid "Administration"
 msgstr "Beheer"
 
@@ -879,6 +935,34 @@ msgstr "E-mail beheerder"
 #, fuzzy
 msgid "Administrator Email Address"
 msgstr "E-mail beheerder"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1398
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1831
+msgid "Adopt"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1411
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1844
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1851
+msgid "Adopt All"
+msgstr ""
+
+#. No per-item icons: the menu button already carries the adopt glyph, and
+#. both scopes would otherwise share the same icon to no effect.
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1165
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1186
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1406
+#, fuzzy
+msgid "Adopt Key"
+msgstr "Geheim sleutel"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1147
+msgid "Adopt {key} from {remote}/{node} into the pool?"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:155
+msgid "Adopted"
+msgstr ""
 
 #: proxmox-widget-toolkit/src/window/Edit.js:374
 #: pve-manager/www/manager6/dc/Backup.js:550
@@ -950,11 +1034,12 @@ msgstr "Alias"
 #: proxmox-backup/www/ServerAdministration.js:83
 #: proxmox-backup/www/config/SyncView.js:381
 #: proxmox-backup/www/tape/BackupJobs.js:252
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1492
 #: proxmox-datacenter-manager/ui/src/configuration/views.rs:142
 #: proxmox-datacenter-manager/ui/src/remotes/tasks.rs:165
 #: proxmox-datacenter-manager/ui/src/dashboard/guest_panel.rs:152
 #: proxmox-datacenter-manager/ui/src/dashboard/pbs_datastores_panel.rs:128
-#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:677
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:678
 #: proxmox-yew-comp/src/task_status_selector.rs:134
 msgid "All"
 msgstr "Alle"
@@ -1013,6 +1098,10 @@ msgstr ""
 
 #: proxmox-backup/www/datastore/OptionView.js:18
 msgid "All backup snapshots and their data will be permanently destroyed!"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:268
+msgid "All data fully redundant"
 msgstr ""
 
 #: proxmox-widget-toolkit/src/panel/DiskList.js:435
@@ -1212,6 +1301,7 @@ msgid "Any rule matches"
 msgstr ""
 
 #: pve-manager/www/manager6/ceph/Pool.js:325
+#: proxmox-datacenter-manager/ui/src/ceph/pools.rs:175
 #, fuzzy
 msgid "Application"
 msgstr "Replicatie"
@@ -1251,6 +1341,22 @@ msgstr "Configuratie toepassen"
 #: pmg-gui/js/SpamDetectorCustom.js:89 pmg-gui/js/SpamDetectorCustom.js:302
 msgid "Apply Custom Scores"
 msgstr "Aangepaste scores toepassen"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:878
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1417
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:505
+#, fuzzy
+msgid "Apply Pending"
+msgstr "in afwachting"
+
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:507
+msgid "Apply Pending ({0})"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1098
+#, fuzzy
+msgid "Apply Pending Changes"
+msgstr "Wijzigingen in behandeling"
 
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:180
 #, fuzzy
@@ -1307,6 +1413,11 @@ msgstr "Weet u zeker dat u de lidmaatschapssleutel wilt verwijderen?"
 #, fuzzy
 msgid "Are you sure you want to arm HA?"
 msgstr "Weet u zeker dat u {0} wilt wissen?"
+
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:598
+#, fuzzy
+msgid "Are you sure you want to delete snapshot '{0}'?"
+msgstr "Weet u zeker dat u momentopname {0} wilt verwijderen"
 
 #: proxmox-yew-comp/src/configuration/pve/guest.rs:25
 #, fuzzy
@@ -1478,11 +1589,26 @@ msgstr "Weet u zeker dat u {0} items wilt verwijderen"
 msgid "Are you sure you want to restore the archived key to be active again?"
 msgstr "Weet u zeker dat u het rooster voor {0} wilt verwijderen"
 
+#: proxmox-datacenter-manager/ui/src/guests.rs:546
+#, fuzzy
+msgid "Are you sure you want to resume guest '{0}'?"
+msgstr "Weet u zeker dat u item {0} wilt verwijderen"
+
+#: proxmox-datacenter-manager/ui/src/guests.rs:544
+#, fuzzy
+msgid "Are you sure you want to shut down guest '{0}'?"
+msgstr "Weet u zeker dat u dit item wilt verwijderen"
+
 #: proxmox-datacenter-manager/ui/src/administration/node_status.rs:452
 #: proxmox-yew-comp/src/node_status_panel.rs:253
 #, fuzzy
 msgid "Are you sure you want to shut down the node?"
 msgstr "Weet u zeker dat u dit item wilt verwijderen"
+
+#: proxmox-datacenter-manager/ui/src/guests.rs:542
+#, fuzzy
+msgid "Are you sure you want to start guest '{0}'?"
+msgstr "Weet u zeker dat u tape {0} wilt formateren?"
 
 #: proxmox-widget-toolkit/src/panel/DiskList.js:432
 msgid "Are you sure you want to wipe {0}?"
@@ -1496,8 +1622,34 @@ msgstr ""
 msgid "Arm HA"
 msgstr ""
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_assign.rs:282
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:296
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1351
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1744
+msgid "Assign"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:196
+#, fuzzy
+msgid "Assign Key to Remote"
+msgstr "Toegewezen aan LVs"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_assign.rs:305
+msgid "Assign Key to {remote}/{node}"
+msgstr ""
+
 #: pve-manager/www/manager6/node/LVM.js:113
 msgid "Assigned to LVs"
+msgstr "Toegewezen aan LVs"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_assign.rs:324
+#, fuzzy
+msgid "Assigning..."
+msgstr "Verwerken..."
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:158
+#, fuzzy
+msgid "Assignment"
 msgstr "Toegewezen aan LVs"
 
 #: pve-manager/www/manager6/dc/ClusterEdit.js:320
@@ -1609,7 +1761,7 @@ msgstr "Auth ID"
 msgid "Auth-Provider Default"
 msgstr "Standaard Auth-Provider"
 
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:354
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:372
 #, fuzzy
 msgid "AuthId"
 msgstr "Auth ID"
@@ -1619,7 +1771,7 @@ msgstr "Auth ID"
 msgid "Authenticate"
 msgstr "Verificatie"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_edit_window.rs:213
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_edit_window.rs:214
 #, fuzzy
 msgid "Authentication"
 msgstr "Authenticatiemodus"
@@ -1639,9 +1791,22 @@ msgstr "Authenticatiemodus"
 msgid "Author"
 msgstr "Auth ID"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:827
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:835
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answers_panel.rs:306
 msgid "Authorized Tokens"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:322
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:814
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:820
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:860
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1065
+#, fuzzy
+msgid "Auto-Assign"
+msgstr "Auto aanvullen"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1767
+msgid "Auto-Assign Proposal"
 msgstr ""
 
 #: pve-manager/www/manager6/ha/ResourceEdit.js:130
@@ -1693,7 +1858,7 @@ msgstr "Automatisch aanmaken"
 msgid "Autogenerate unique properties, e.g., MAC addresses"
 msgstr "Unieke eigenschappen automatisch aanmaken, bijvoorbeeld MAC-adressen"
 
-#: proxmox-datacenter-manager/ui/src/remotes/mod.rs:85
+#: proxmox-datacenter-manager/ui/src/remotes/mod.rs:97
 #, fuzzy
 msgid "Automated Installations"
 msgstr "Installatie"
@@ -1703,7 +1868,7 @@ msgstr "Installatie"
 #: pve-manager/www/manager6/form/TagColorGrid.js:55
 #: pve-manager/www/manager6/qemu/Options.js:352
 #: pve-manager/www/manager6/sdn/controllers/EvpnEdit.js:111
-#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:392
+#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:417
 #: proxmox-yew-comp/src/form/pve/qemu_property/mod.rs:348
 msgid "Automatic"
 msgstr "Automatisch"
@@ -1726,6 +1891,11 @@ msgstr "Automatisch"
 #: pve-manager/www/manager6/form/CRSOptions.js:72
 msgid "Automatically rebalance HA resources"
 msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/ceph/pools.rs:154
+#, fuzzy
+msgid "Autoscale"
+msgstr "Automatisch schalen"
 
 #: pve-manager/www/manager6/ceph/Pool.js:396
 #, fuzzy
@@ -1752,6 +1922,7 @@ msgstr "Beschikbaar"
 #: pve-manager/www/manager6/node/Summary.js:242
 #: pve-manager/www/manager6/node/Summary.js:253
 #: proxmox-backup/www/dashboard/DataStoreStatistics.js:101
+#: proxmox-datacenter-manager/ui/src/ceph/clusters.rs:307
 msgid "Available"
 msgstr "Beschikbaar"
 
@@ -1839,7 +2010,7 @@ msgstr "Verstrooings score"
 #: pve-manager/www/manager6/window/Backup.js:380
 #: proxmox-backup/www/Utils.js:427
 #: proxmox-backup/www/tape/window/TapeBackup.js:5
-#: proxmox-datacenter-manager/ui/src/pve/utils.rs:290
+#: proxmox-datacenter-manager/ui/src/pve/utils.rs:309
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/mod.rs:134
 #: proxmox-yew-comp/src/form/pve/lxc_property/lxc_mount_point_property.rs:224
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_disk_property.rs:266
@@ -1898,7 +2069,7 @@ msgid "Backup Retention"
 msgstr "Back-up behoud"
 
 #: pmg-gui/js/PBSRemoteEdit.js:18
-#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:683
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:684
 msgid "Backup Server"
 msgstr "Back-up server"
 
@@ -2015,7 +2186,7 @@ msgstr "Basis domeinnaam"
 msgid "Base Model"
 msgstr "Bonding modus"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:856
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:864
 msgid "Base URL this PDM instance is reachable from the target host"
 msgstr ""
 
@@ -2067,6 +2238,12 @@ msgstr "Wachtwoord binden"
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:234
 msgid "Bind User"
 msgstr "Gebruiker binden"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1357
+msgid ""
+"Bind a pool key to the selected node. Available for a node with no active "
+"subscription and no pool assignment yet."
+msgstr ""
 
 #: proxmox-widget-toolkit/src/Schema.js:90
 msgid "Block Device"
@@ -2164,7 +2341,7 @@ msgstr "Brug"
 msgid "Browse"
 msgstr "Blader"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:475
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:483
 msgid ""
 "Btrfs integration is a technology preview and only available for Proxmox "
 "Virtual Environment installations."
@@ -2444,6 +2621,8 @@ msgstr "CPU eenheden"
 #: proxmox-datacenter-manager/ui/src/administration/node_status.rs:356
 #: proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:346
 #: proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:354
+#: proxmox-datacenter-manager/ui/src/guests.rs:861
+#: proxmox-datacenter-manager/ui/src/guests.rs:931
 #: proxmox-datacenter-manager/ui/src/pve/lxc/overview.rs:177
 #: proxmox-datacenter-manager/ui/src/pve/lxc/overview.rs:293
 #: proxmox-datacenter-manager/ui/src/pve/qemu/overview.rs:173
@@ -2467,6 +2646,10 @@ msgstr "CRM status"
 msgid "CRS Settings"
 msgstr "Instellingen"
 
+#: proxmox-datacenter-manager/ui/src/ceph/pools.rs:167
+msgid "CRUSH rule"
+msgstr ""
+
 #. TRANSLATORS: Stands for Complete Sequence Number Packet, see
 #. https://datatracker.ietf.org/doc/html/draft-ietf-lsr-distoptflood#name-flooding-failures
 #: pve-manager/www/manager6/sdn/fabrics/openfabric/FabricEdit.js:29
@@ -2488,7 +2671,7 @@ msgstr "CT sjablonen"
 msgid "CT Volumes"
 msgstr "CT volumes"
 
-#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:66
+#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:68
 #, fuzzy
 msgid "CT {0}"
 msgstr "in {0}"
@@ -2522,6 +2705,9 @@ msgstr ""
 msgid "Can only create the VNet once per remote!"
 msgstr ""
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_assign.rs:273
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1740
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1828
 #: proxmox-yew-widget-toolkit/src/touch/fab_menu.rs:264
 #: proxmox-yew-widget-toolkit/src/widget/message_box.rs:128
 #, fuzzy
@@ -2584,7 +2770,7 @@ msgstr ""
 msgid "Cannot migrate running VM with mapped resources: {0}"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:343
+#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:368
 msgid "Cannot migrate with local resource: {0}"
 msgstr ""
 
@@ -2602,6 +2788,8 @@ msgstr ""
 
 #: pve-manager/www/manager6/form/StorageSelector.js:42
 #: proxmox-datacenter-manager/ui/src/widget/pve_storage_selector.rs:224
+#: proxmox-datacenter-manager/ui/src/ceph/clusters.rs:294
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:121
 #: proxmox-yew-comp/src/form/pve/pve_storage_selector.rs:280
 msgid "Capacity"
 msgstr "Capaciteit"
@@ -2638,6 +2826,21 @@ msgid ""
 "any option besides 'Any matches'."
 msgstr ""
 
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:356
+#, fuzzy
+msgid "Ceph"
+msgstr "CephFS"
+
+#: proxmox-datacenter-manager/ui/src/ceph/cluster.rs:84
+#, fuzzy
+msgid "Ceph Cluster '{0}'"
+msgstr "Vernietig '{0}'"
+
+#: proxmox-datacenter-manager/ui/src/ceph/view.rs:66
+#, fuzzy
+msgid "Ceph Clusters"
+msgstr "Cluster aanmaken"
+
 #: pve-manager/www/manager6/ceph/Pool.js:269
 msgid "Ceph Pool"
 msgstr "Ceph pool"
@@ -2669,11 +2872,17 @@ msgstr "{0} is niet geïnstalleerd op dit systeem."
 msgid "Ceph related Tasks"
 msgstr "Alle taken weergeven"
 
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:159
+#, fuzzy
+msgid "Ceph version"
+msgstr "Ceph versie"
+
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:27
 msgid "Ceph version to install"
 msgstr "Ceph versie om te installeren"
 
 #: pve-manager/www/manager6/ceph/FS.js:78
+#: proxmox-datacenter-manager/ui/src/ceph/cluster.rs:180
 msgid "CephFS"
 msgstr "CephFS"
 
@@ -2691,13 +2900,27 @@ msgstr "Certificaat"
 msgid "Certificate Chain"
 msgstr "Certificaatketen"
 
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:520
+#, fuzzy
+msgid "Certificate Check - {0}"
+msgstr "Certificaatketen"
+
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:71
+msgid "Certificate is trusted by the system certificate store."
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:69
+#, fuzzy
+msgid "Certificate matches the stored fingerprint."
+msgstr "Laatste verificatie"
+
 #: pmg-gui/js/Certificates.js:5 pmg-gui/js/Certificates.js:30
 #: pmg-gui/js/NavigationTree.js:96 pve-manager/www/manager6/node/Config.js:203
 #: proxmox-backup/www/NavigationTree.js:72
 #: proxmox-backup/www/config/CertificateView.js:5
 #: proxmox-backup/www/config/CertificateView.js:26
 #: proxmox-datacenter-manager/ui/src/certificates.rs:21
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:264
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:266
 msgid "Certificates"
 msgstr "Certificaten"
 
@@ -2747,6 +2970,11 @@ msgstr "Wijzig eigenaar van '{0}'"
 msgid "Change protection of '{0}'"
 msgstr "Wijzig bescherming van '{0}'"
 
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:61
+#, fuzzy
+msgid "Changed"
+msgstr "Wisselaar"
+
 #: proxmox-widget-toolkit/src/node/APT.js:140
 #: proxmox-widget-toolkit/src/node/APT.js:168
 #: proxmox-yew-comp/src/apt_package_manager.rs:296
@@ -2793,9 +3021,22 @@ msgstr "Karakter apparaat"
 #: pve-manager/www/manager6/node/Subscription.js:167
 #: proxmox-backup/www/Subscription.js:157
 #: proxmox-datacenter-manager/ui/src/configuration/subscription_panel.rs:103
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1382
 #: proxmox-yew-comp/src/subscription_panel.rs:96
 msgid "Check"
 msgstr "Controleer"
+
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:220
+#: proxmox-datacenter-manager/ui/src/pbs/mod.rs:197
+#: proxmox-datacenter-manager/ui/src/pve/mod.rs:291
+#, fuzzy
+msgid "Check Certificate"
+msgstr "Certificaat intrekken"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:974
+#, fuzzy
+msgid "Check Subscription"
+msgstr "Lidmaatschap"
 
 #: pve-manager/www/manager6/dc/AuthEditAD.js:93
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:93
@@ -2803,12 +3044,22 @@ msgstr "Controleer"
 msgid "Check connection"
 msgstr "Bescherming wijzigen"
 
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:58
+#, fuzzy
+msgid "Checking"
+msgstr "Controleer"
+
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:68
+#, fuzzy
+msgid "Checking certificate..."
+msgstr "Vernieuw certificaat"
+
 #: pve-manager/www/manager6/window/DownloadUrlToStorage.js:208
 #: pve-manager/www/manager6/window/UploadToStorage.js:253
 msgid "Checksum"
 msgstr "Controlesom"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:604
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:612
 #, fuzzy
 msgid "Checksumming Algorithm"
 msgstr "Hash algoritme"
@@ -2862,6 +3113,8 @@ msgid "ClamAV update"
 msgstr "ClamAV bijwerken"
 
 #: pve-manager/www/manager6/ceph/OSD.js:764
+#: proxmox-datacenter-manager/ui/src/ceph/osds.rs:438
+#: proxmox-datacenter-manager/ui/src/ceph/osds.rs:504
 msgid "Class"
 msgstr "Klasse"
 
@@ -2888,6 +3141,7 @@ msgid "Cleanup Storage Configuration"
 msgstr "Opslagconfiguratie opschonen"
 
 #: pve-manager/www/manager6/lxc/IdMapField.js:205
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1371
 #: proxmox-datacenter-manager/ui/src/remotes/node_url_list.rs:291
 #, fuzzy
 msgid "Clear"
@@ -2908,6 +3162,12 @@ msgstr "Filter verwijderen"
 msgid "Clear Filters"
 msgstr "Filter verwijderen"
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1227
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1247
+#, fuzzy
+msgid "Clear Key"
+msgstr "Client sleutel"
+
 #: proxmox-backup/www/tape/TapeInventory.js:156
 #: proxmox-backup/www/tape/TapeInventory.js:158
 msgid "Clear Status"
@@ -2917,6 +3177,18 @@ msgstr "Status verwijderen"
 #, fuzzy
 msgid "Clear Value"
 msgstr "Filter waarde"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1530
+#: proxmox-datacenter-manager/ui/src/guests.rs:441
+#: proxmox-datacenter-manager/ui/src/guests.rs:442
+#, fuzzy
+msgid "Clear filter"
+msgstr "Filter verwijderen"
+
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:683
+#, fuzzy
+msgid "Clear stored fingerprint"
+msgstr "Versleuteling vingerafdruk"
 
 #: proxmox-yew-comp/src/tfa/webauthn.rs:255
 msgid "Click the button to start the authentication"
@@ -2951,6 +3223,26 @@ msgstr "Client sleutel"
 #: pmg-gui/js/MailProxyOptions.js:80
 msgid "Client Message Rate Limit"
 msgstr "Client berichten snelheids limiet"
+
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:398
+#, fuzzy
+msgid "Client read"
+msgstr "Client sleutel"
+
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:409
+#, fuzzy
+msgid "Client read ops"
+msgstr "Client sleutel"
+
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:404
+#, fuzzy
+msgid "Client write"
+msgstr "Client sleutel"
+
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:412
+#, fuzzy
+msgid "Client write ops"
+msgstr "Overschrijf"
 
 #: pve-manager/www/manager6/qemu/DisplayEdit.js:86
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_display_property.rs:161
@@ -3098,7 +3390,7 @@ msgstr "CT volumes"
 msgid "Command"
 msgstr "Commando"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:925
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:933
 #, fuzzy
 msgid "Command Line"
 msgstr "Alle mislukt"
@@ -3255,14 +3547,18 @@ msgstr "Onderdelen"
 msgid "Compression"
 msgstr "Compressie"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:626
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:664
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:634
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:672
 #, fuzzy
 msgid "Compression Algorithm"
 msgstr "Compressie"
 
-#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:112
-#: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:111
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1074
+msgid "Computing proposal..."
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:114
+#: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:113
 #, fuzzy
 msgid "Config"
 msgstr "Configureren"
@@ -3286,8 +3582,8 @@ msgstr "Configuratie vergrendeld ({0})"
 #: pve-manager/www/manager6/window/BackupConfig.js:3
 #: proxmox-backup/www/NavigationTree.js:42
 #: proxmox-backup/www/SystemConfiguration.js:5
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:288
-#: proxmox-datacenter-manager/ui/src/remotes/mod.rs:57
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:290
+#: proxmox-datacenter-manager/ui/src/remotes/mod.rs:62
 #: pve-yew-mobile-gui/src/widgets/storage_content_panel.rs:258
 #: pve-yew-mobile-gui/src/widgets/main_navigation.rs:90
 msgid "Configuration"
@@ -3297,7 +3593,7 @@ msgstr "Configuratie"
 msgid "Configuration Database"
 msgstr "Configuratie database"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:957
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:965
 #, fuzzy
 msgid "Configuration ID"
 msgstr "Configuratie"
@@ -3364,7 +3660,8 @@ msgstr "Geconfigureerd"
 #: pve-manager/www/manager6/window/Restore.js:105
 #: proxmox-backup/www/datastore/Content.js:756
 #: proxmox-datacenter-manager/ui/src/configuration/views.rs:318
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:534
+#: proxmox-datacenter-manager/ui/src/guests.rs:551
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:543
 #: proxmox-yew-comp/src/safe_confirm_dialog.rs:176
 #: proxmox-yew-comp/src/tfa/tfa_confirm_remove.rs:97
 #: proxmox-yew-widget-toolkit/src/widget/confirm_dialog.rs:66
@@ -3527,7 +3824,7 @@ msgstr "Contact"
 #: pve-manager/www/manager6/Utils.js:740
 #: pve-manager/www/manager6/ha/ResourceEdit.js:210
 #: proxmox-datacenter-manager/ui/src/widget/view_filter_selector.rs:324
-#: proxmox-datacenter-manager/ui/src/pve/utils.rs:294
+#: proxmox-datacenter-manager/ui/src/pve/utils.rs:313
 msgid "Container"
 msgstr "Container"
 
@@ -3543,7 +3840,7 @@ msgid "Container related Tasks"
 msgstr "Container sjabloon"
 
 #: pve-manager/www/manager6/Utils.js:738
-#: proxmox-datacenter-manager/ui/src/pve/utils.rs:296
+#: proxmox-datacenter-manager/ui/src/pve/utils.rs:315
 msgid "Container template"
 msgstr "Container sjabloon"
 
@@ -3616,7 +3913,7 @@ msgstr "Controllers"
 msgid "Convert to template"
 msgstr "Converteren naar sjabloon"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:648
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:656
 msgid "Copies"
 msgstr ""
 
@@ -3653,11 +3950,11 @@ msgstr "Herstelsleutel kopiëren"
 msgid "Copy Secret Value"
 msgstr "Geheime waarde kopiëren"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:911
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:919
 msgid "Copy answer token to clipboard."
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:947
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:955
 msgid "Copy command line to clipboard."
 msgstr ""
 
@@ -3707,6 +4004,14 @@ msgstr ""
 msgid "Cores"
 msgstr "Kernen"
 
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:497
+msgid "Could not apply changes: {0}"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:74
+msgid "Could not check certificate: {0}"
+msgstr ""
+
 #: proxmox-datacenter-manager/ui/src/configuration/views.rs:237
 msgid "Could not delete '{0}': '{1}'"
 msgstr ""
@@ -3728,12 +4033,26 @@ msgstr ""
 msgid "Could not load status"
 msgstr ""
 
+#: proxmox-datacenter-manager/ui/src/guests.rs:636
+msgid "Could not query some remotes: {0}"
+msgstr ""
+
 #: pmg-gui/js/DKIMSettings.js:41
 msgid "Could not read private key - please create a selector first!"
 msgstr ""
 
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:573
+#, fuzzy
+msgid "Could not read the presented certificate's fingerprint."
+msgstr ""
+"Weet u zeker dat u het certificaat in gebruik voor {0} wilt verwijderen"
+
 #: proxmox-datacenter-manager/ui/src/remotes/updates.rs:434
 msgid "Could not refresh update status."
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:247
+msgid "Could not remove {id}: {err}"
 msgstr ""
 
 #: proxmox-datacenter-manager/ui/src/dashboard/remote_panel.rs:82
@@ -3749,7 +4068,7 @@ msgstr ""
 msgid "Count"
 msgstr "Aantal"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:786
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:794
 msgid "Counters are automatically incremented each time an answer is served."
 msgstr ""
 
@@ -3913,13 +4232,13 @@ msgstr "Huidige indeling"
 msgid "Current User"
 msgstr "Huidige gebruiker"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:798
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:806
 #, fuzzy
 msgid "Current Value"
 msgstr "Huidige indeling"
 
 #: pve-manager/www/manager6/window/Migrate.js:631
-#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:472
+#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:497
 msgid "Current layout"
 msgstr "Huidige indeling"
 
@@ -4008,8 +4327,8 @@ msgstr "DKIM"
 #: pve-manager/www/manager6/node/Config.js:211
 #: pve-manager/www/manager6/sdn/ZoneView.js:159
 #: proxmox-backup/www/SystemConfiguration.js:35
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:160
-#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:144
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:163
+#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:146
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/dashboard_panel.rs:354
 msgid "DNS"
 msgstr "DNS"
@@ -4030,7 +4349,7 @@ msgstr "DNS domein voorvoegsel"
 msgid "DNS Server"
 msgstr "DNS server"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:308
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:316
 #, fuzzy
 msgid "DNS Server Address"
 msgstr "Serveradres"
@@ -4121,8 +4440,9 @@ msgstr ""
 
 #: pmg-gui/js/Dashboard.js:339 pmg-gui/js/NavigationTree.js:10
 #: proxmox-backup/www/Dashboard.js:224 proxmox-backup/www/NavigationTree.js:30
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:171
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:173
 #: proxmox-datacenter-manager/ui/src/widget/view_selector.rs:47
+#: proxmox-datacenter-manager/ui/src/ceph/cluster.rs:130
 #: pve-yew-mobile-gui/src/widgets/main_navigation.rs:67
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/mod.rs:114
 #: pve-yew-mobile-gui/src/pages/page_node_status/mod.rs:138
@@ -4152,6 +4472,11 @@ msgstr "Gegevensopslag"
 msgid "Data Pool"
 msgstr "Media pool"
 
+#: proxmox-datacenter-manager/ui/src/ceph/cephfs.rs:124
+#, fuzzy
+msgid "Data Pools"
+msgstr "Media pool"
+
 #: proxmox-backup/www/datastore/OptionView.js:300
 #, fuzzy
 msgid "Data Sync Level"
@@ -4175,7 +4500,7 @@ msgstr "Database duplicaat"
 #: pve-manager/www/manager6/form/IPRefSelector.js:71
 #: pve-manager/www/manager6/tree/ResourceTree.js:326
 #: pve-manager/www/manager6/tree/ResourceTree.js:385
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:609
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:618
 msgid "Datacenter"
 msgstr "Datacenter"
 
@@ -4272,6 +4597,7 @@ msgstr "Gegevensopslag"
 #: pve-manager/www/manager6/storage/ContentView.js:145
 #: pve-manager/www/manager6/tree/SnapshotTree.js:359
 #: pve-manager/www/manager6/window/ScheduleSimulator.js:127
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:694
 msgid "Date"
 msgstr "Datum"
 
@@ -4427,7 +4753,7 @@ msgstr "Standaard (altijd)"
 msgid "Default (Errors)"
 msgstr "Standaard (altijd)"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:719
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:727
 #, fuzzy
 msgid "Default Answer"
 msgstr "Standaard (altijd)"
@@ -4532,6 +4858,11 @@ msgid ""
 "certificates."
 msgstr ""
 
+#: proxmox-datacenter-manager/ui/src/ceph/clusters.rs:116
+#, fuzzy
+msgid "Degraded"
+msgstr "Upgrade"
+
 #: pmg-gui/js/PBSSnapshotView.js:182
 msgid "Delay"
 msgstr "Vertraging"
@@ -4548,6 +4879,8 @@ msgstr "Vertragings waarschuwingstijd (uren)"
 #: pve-manager/www/manager6/sdn/RouteMapPanel.js:508
 #: pve-manager/www/manager6/sdn/fabrics/RedistributionGrid.js:122
 #: pve-manager/www/manager6/tree/DhcpTree.js:272
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:784
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:795
 #: pmg-yew-quarantine-gui/src/spam_list.rs:294
 #: pmg-yew-quarantine-gui/src/page_mail_view.rs:130
 msgid "Delete"
@@ -4561,13 +4894,14 @@ msgstr "Aangepast certificaat verwijderen"
 
 #: pve-manager/www/manager6/Utils.js:2195
 #: pve-manager/www/manager6/Utils.js:2224
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:597
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:164
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:193
 msgid "Delete Snapshot"
 msgstr "Momentopname verwijderen"
 
 #: proxmox-backup/www/window/NamespaceMove.js:130
-#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:432
+#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:457
 #, fuzzy
 msgid "Delete Source"
 msgstr "Bron verwijderen"
@@ -4691,6 +5025,10 @@ msgstr ""
 #: pve-manager/www/manager6/window/Snapshot.js:95
 #: proxmox-backup/www/window/MaintenanceOptions.js:73
 #: proxmox-datacenter-manager/ui/src/remotes/tasks.rs:87
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:267
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:575
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:802
+#: proxmox-datacenter-manager/ui/src/ceph/flags.rs:131
 #: proxmox-yew-comp/src/apt_package_manager.rs:446
 #: proxmox-yew-comp/src/apt_repositories.rs:765
 #: proxmox-yew-comp/src/form/pve/qemu_disk_format_selector.rs:167
@@ -4786,7 +5124,7 @@ msgstr "Ontkoppelen"
 msgid "Detail"
 msgstr "Detail"
 
-#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:453
+#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:478
 #, fuzzy
 msgid "Detailed Mapping"
 msgstr "Gegevensopslag toewijzing"
@@ -4798,6 +5136,11 @@ msgstr "Gegevensopslag toewijzing"
 #: proxmox-datacenter-manager/ui/src/dashboard/subscription_info.rs:172
 msgid "Details"
 msgstr "Details"
+
+#: proxmox-datacenter-manager/ui/src/ceph/renderer.rs:73
+#, fuzzy
+msgid "Detected"
+msgstr "Beschermd"
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:497
 #: proxmox-yew-comp/src/apt_repositories.rs:228
@@ -4882,7 +5225,7 @@ msgstr "Richting"
 #: pve-manager/www/manager6/node/Directory.js:172
 #: pve-manager/www/manager6/storage/DirEdit.js:14
 #: proxmox-backup/www/DirectoryList.js:94 proxmox-backup/www/Utils.js:434
-#: proxmox-datacenter-manager/ui/src/pve/utils.rs:266
+#: proxmox-datacenter-manager/ui/src/pve/utils.rs:285
 #: proxmox-yew-comp/src/acme/acme_register_account.rs:113
 #: proxmox-yew-comp/src/acme/acme_accounts.rs:237
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:144
@@ -4957,9 +5300,30 @@ msgstr ""
 msgid "Discard"
 msgstr "Vernietig"
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:895
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1430
+#, fuzzy
+msgid "Discard Pending"
+msgstr "Vernietig"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1118
+#, fuzzy
+msgid "Discard Pending Changes"
+msgstr "Wijzigingen in behandeling"
+
 #: pmg-gui/js/PostfixQShape.js:108
 msgid "Discard address verification database"
 msgstr "Vernietig de database voor adresverificatie"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1119
+msgid ""
+"Discard all queued assignments and cancel all queued Clear Key actions? The "
+"remote nodes are not touched."
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1439
+msgid "Discard queued assignments without touching the remote nodes."
+msgstr ""
 
 #: pmg-gui/js/Utils.js:691 pmg-gui/js/Utils.js:710
 msgid "Disclaimer"
@@ -5014,7 +5378,7 @@ msgstr "Schijf IO"
 msgid "Disk IO"
 msgstr "Schijf IO"
 
-#: proxmox-datacenter-manager/ui/src/pve/utils.rs:291
+#: proxmox-datacenter-manager/ui/src/pve/utils.rs:310
 #, fuzzy
 msgid "Disk Image"
 msgstr "Schijf kopie"
@@ -5023,7 +5387,7 @@ msgstr "Schijf kopie"
 msgid "Disk Move"
 msgstr "Schijf verplaatsen"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:420
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:428
 #, fuzzy
 msgid "Disk Names"
 msgstr "Schijf kopie"
@@ -5035,13 +5399,13 @@ msgstr "Schijf kopie"
 msgid "Disk Read"
 msgstr "Schijf leestotaal"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:405
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:413
 #, fuzzy
 msgid "Disk Selection Mode"
 msgstr "Selectiemodus"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:180
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_edit_window.rs:201
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:182
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_edit_window.rs:202
 #, fuzzy
 msgid "Disk Setup"
 msgstr "Instellen"
@@ -5071,12 +5435,12 @@ msgstr "Schijf kopie"
 msgid "Disk size"
 msgstr "Schijf grootte"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:431
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:439
 #, fuzzy
 msgid "Disk udev Filter Mode"
 msgstr "Selectiemodus"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:450
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:458
 #, fuzzy
 msgid "Disk udev Filters"
 msgstr "Gebruiker filter"
@@ -5296,6 +5660,12 @@ msgstr "Schijven"
 msgid "Drop"
 msgstr ""
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1367
+msgid ""
+"Drop the pending pool change on the selected node. Available when the node "
+"has a queued assignment or clear."
+msgstr ""
+
 #: proxmox-backup/www/panel/PrunePanel.js:65
 msgid "Dry Run"
 msgstr "Simulatie"
@@ -5346,7 +5716,7 @@ msgstr "Dynamisch"
 msgid "Dynamic Load"
 msgstr "Dynamisch"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:413
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:421
 #, fuzzy
 msgid "Dynamically by udev Filter"
 msgstr "Gebruiker filter"
@@ -5387,15 +5757,15 @@ msgstr "E-mail adressen van '{0}'"
 msgid "E-Mail attribute"
 msgstr "E-mail kenmerk"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:302
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:310
 msgid "E.g. 192.168.0.1"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:293
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:301
 msgid "E.g. 192.168.0.100/24"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:311
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:319
 msgid "E.g. 192.168.0.254"
 msgstr ""
 
@@ -5451,7 +5821,7 @@ msgstr "E-mail 'Van:'"
 msgid "EMail attribute name(s)"
 msgstr "E-mail kenmerknaam"
 
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:326
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:337
 msgid "EVPN"
 msgstr ""
 
@@ -5575,7 +5945,7 @@ msgstr ""
 #: proxmox-datacenter-manager/ui/src/configuration/views.rs:184
 #: proxmox-datacenter-manager/ui/src/configuration/views.rs:271
 #: proxmox-datacenter-manager/ui/src/remotes/edit_remote.rs:62
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:208
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:210
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answers_panel.rs:171
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/token_panel.rs:161
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/token_panel.rs:245
@@ -5606,6 +5976,13 @@ msgstr ""
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:137
 msgid "Edit"
 msgstr "Bewerk"
+
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:555
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:748
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:761
+#, fuzzy
+msgid "Edit Description"
+msgstr "Omschrijving"
 
 #: pve-manager/www/manager6/tree/ResourceMapTree.js:357
 msgid "Edit Mapping '{0}'"
@@ -6221,14 +6598,21 @@ msgstr ""
 #: proxmox-backup/www/tape/ChangerStatus.js:227
 #: proxmox-backup/www/tape/ChangerStatus.js:285
 #: proxmox-backup/www/tape/window/TapeRestore.js:165
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:246
 #: proxmox-datacenter-manager/ui/src/configuration/subscription_panel.rs:76
 #: proxmox-datacenter-manager/ui/src/configuration/views.rs:236
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:62
 #: proxmox-datacenter-manager/ui/src/remotes/updates.rs:726
 #: proxmox-datacenter-manager/ui/src/remotes/firewall/tree.rs:612
+#: proxmox-datacenter-manager/ui/src/dashboard/map.rs:247
 #: proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:194
 #: proxmox-datacenter-manager/ui/src/dashboard/tasks.rs:156
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:360
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:379
+#: proxmox-datacenter-manager/ui/src/guests.rs:375
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:470
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:483
+#: proxmox-datacenter-manager/ui/src/ceph/renderer.rs:53
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:364
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:388
 #: proxmox-yew-comp/src/acme/acme_accounts.rs:151
 #: proxmox-yew-comp/src/acme/acme_domains.rs:220
 #: proxmox-yew-comp/src/acme/acme_plugins.rs:258
@@ -6404,11 +6788,17 @@ msgstr "Experimenteel"
 msgid "Expire"
 msgstr "Verloopt"
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:73
+#, fuzzy
+msgid "Expired"
+msgstr "Verloopt"
+
 #: proxmox-widget-toolkit/src/panel/Certificates.js:46
 #: proxmox-widget-toolkit/src/window/Certificates.js:52
 #: pve-manager/www/manager6/node/Certificates.js:85
 #: pve-manager/www/manager6/node/Certificates.js:345
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:317
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:731
 #: proxmox-yew-comp/src/acme/certificate_list.rs:362
 #: proxmox-yew-comp/src/acme/certificate_list.rs:413
 msgid "Expires"
@@ -6457,7 +6847,7 @@ msgstr "CPU gebruik"
 msgid "Extract Text from Attachments"
 msgstr "Geen bijlagen"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:317
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:325
 msgid "FQDN from DHCP"
 msgstr ""
 
@@ -6501,7 +6891,7 @@ msgstr "Terugdraaien"
 msgid "Failed"
 msgstr "Mislukt"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:162
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:164
 #, fuzzy
 msgid "Failed to create installation configuration"
 msgstr "Kan netwerkconfiguratie niet verwerken"
@@ -6650,6 +7040,11 @@ msgstr "Bestand herstel"
 msgid "File Restore Download"
 msgstr "Bestand herstel download"
 
+#: proxmox-datacenter-manager/ui/src/ceph/managers.rs:227
+#, fuzzy
+msgid "File System"
+msgstr "Bestandssysteem"
+
 #: pve-manager/www/manager6/storage/TemplateView.js:311
 #: pve-manager/www/manager6/window/DownloadUrlToStorage.js:166
 #: pve-manager/www/manager6/window/UploadToStorage.js:214
@@ -6679,7 +7074,7 @@ msgstr "Bestandsnaam"
 #: proxmox-backup/www/Utils.js:886
 #: proxmox-backup/www/form/PartitionSelector.js:59
 #: proxmox-backup/www/window/CreateDirectory.js:30
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:385
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:393
 msgid "Filesystem"
 msgstr "Bestandssysteem"
 
@@ -6692,8 +7087,9 @@ msgstr "Bestandstype"
 #: pmg-gui/js/PostfixMailQueue.js:157 pmg-gui/js/form/FilterField.js:14
 #: pve-manager/www/manager6/grid/PoolMembers.js:66
 #: proxmox-datacenter-manager/ui/src/remotes/firewall/tree.rs:291
+#: proxmox-datacenter-manager/ui/src/guests.rs:446
 #: proxmox-datacenter-manager/ui/src/pbs/tree.rs:254
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:509
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:518
 #: proxmox-yew-comp/src/tasks.rs:409
 msgid "Filter"
 msgstr "Filter"
@@ -6709,6 +7105,23 @@ msgstr "Filter VMID"
 #: proxmox-backup/www/form/GroupFilter.js:470
 msgid "Filter Value"
 msgstr "Filter waarde"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1521
+msgid "Filter by remote or node"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/guests.rs:434
+#, fuzzy
+msgid "Filter guests"
+msgstr "Filter waarde"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1522
+msgid "Filter nodes by remote or node name"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1458
+msgid "Filter the node list by status or by remote and node name."
+msgstr ""
 
 #: pve-manager/www/manager6/window/BulkAction.js:294
 #: pve-manager/www/manager6/window/BulkAction.js:332
@@ -6750,6 +7163,7 @@ msgstr "Filters zijn additief (OF-achtig)"
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_nodes.rs:277
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_summary.rs:168
 #: proxmox-datacenter-manager/ui/src/remotes/node_url_list.rs:271
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:725
 #: proxmox-yew-comp/src/acme/certificate_list.rs:356
 #: proxmox-yew-comp/src/acme/certificate_list.rs:426
 #: proxmox-yew-comp/src/node_status_panel.rs:113
@@ -6792,7 +7206,7 @@ msgstr "Voltooi"
 #: pve-manager/www/manager6/window/FirewallEnableEdit.js:6
 #: pve-manager/www/manager6/window/FirewallEnableEdit.js:22
 #: proxmox-datacenter-manager/ui/src/remotes/firewall/ui_helpers.rs:125
-#: proxmox-datacenter-manager/ui/src/remotes/mod.rs:78
+#: proxmox-datacenter-manager/ui/src/remotes/mod.rs:90
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/mod.rs:144
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/mod.rs:140
 #: pve-yew-mobile-gui/src/pages/page_node_status/mod.rs:168
@@ -6841,7 +7255,7 @@ msgstr "Voornaam"
 msgid "Fixed"
 msgstr "Opgelost"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:412
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:420
 msgid "Fixed List of Disk Names"
 msgstr ""
 
@@ -6855,14 +7269,20 @@ msgid "Fixed role for all auto-created users"
 msgstr ""
 
 #: pve-manager/www/manager6/form/VMCPUFlagSelector.js:284
+#: proxmox-datacenter-manager/ui/src/ceph/flags.rs:108
 #, fuzzy
 msgid "Flag"
 msgstr "Vlaggen"
 
 #: proxmox-widget-toolkit/src/window/DiskSmart.js:66
 #: pve-manager/www/manager6/dc/CPUTypeView.js:100
+#: proxmox-datacenter-manager/ui/src/ceph/cluster.rs:190
 msgid "Flags"
 msgstr "Vlaggen"
+
+#: proxmox-datacenter-manager/ui/src/ceph/osds.rs:331
+msgid "Flat view"
+msgstr ""
 
 #: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:210
 #, fuzzy
@@ -6971,6 +7391,10 @@ msgstr ""
 #: pmg-gui/js/PBSSnapshotView.js:212
 msgid "Forget Snapshot"
 msgstr "Momentopname vergeten"
+
+#: proxmox-datacenter-manager/ui/src/ceph/renderer.rs:76
+msgid "Forgotten"
+msgstr ""
 
 #: pve-manager/www/manager6/Utils.js:717
 msgid "Form fields may not be submitted with invalid values"
@@ -7158,7 +7582,12 @@ msgstr "Volledig"
 msgid "Full Clone"
 msgstr "Volledige kloon"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:321
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:359
+#, fuzzy
+msgid "Fullest pool"
+msgstr "Media pools"
+
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:329
 msgid "Fully-Qualified Domain Name (FQDN)"
 msgstr ""
 
@@ -7259,7 +7688,7 @@ msgstr "Vuilnis verzamelingen"
 msgid "Gateway"
 msgstr "Gateway"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:299
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:307
 #, fuzzy
 msgid "Gateway Address"
 msgstr "Gateway systemen"
@@ -7306,14 +7735,27 @@ msgstr "Gast OSDs"
 msgid "GiB"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:172
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_edit_window.rs:193
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:174
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_edit_window.rs:194
 #, fuzzy
 msgid "Global Options"
 msgstr "Koppelpunt opties"
 
 #: pve-manager/www/manager6/ceph/OSD.js:190
 msgid "Global flags limiting the self healing of Ceph are enabled."
+msgstr ""
+
+#: pve-manager/www/manager6/storage/ImageView.js:99
+#, fuzzy
+msgid "Go to Guest"
+msgstr "Doel gast"
+
+#: proxmox-datacenter-manager/ui/src/ceph/renderer.rs:75
+msgid "Gone"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/dashboard/map.rs:245
+msgid "Good"
 msgstr ""
 
 #: proxmox-yew-comp/src/bandwidth_selector.rs:87
@@ -7419,6 +7861,7 @@ msgstr "Groepen van '{0}'"
 
 #: pve-manager/www/manager6/form/IPRefSelector.js:72
 #: pve-manager/www/manager6/grid/Replication.js:298
+#: pve-manager/www/manager6/storage/ImageView.js:78
 msgid "Guest"
 msgstr "Gast"
 
@@ -7463,6 +7906,7 @@ msgid "Guest user"
 msgstr "Gast gebruiker"
 
 #: pve-manager/www/manager6/dc/Guests.js:5
+#: proxmox-datacenter-manager/ui/src/remotes/mod.rs:69
 #: proxmox-datacenter-manager/ui/src/dashboard/guest_panel.rs:226
 #: proxmox-datacenter-manager/ui/src/pve/remote_overview.rs:195
 msgid "Guests"
@@ -7620,7 +8064,7 @@ msgstr "HTTP-proxy"
 msgid "Hard Disk"
 msgstr "Harde schijf"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:511
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:519
 msgid "Harddisk Size To Use (GB)"
 msgstr ""
 
@@ -7629,7 +8073,7 @@ msgid "Hardlink"
 msgstr "Harde link"
 
 #: pve-manager/www/manager6/qemu/Config.js:319
-#: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:125
+#: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:127
 #: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/mobile.rs:815
 msgid "Hardware"
 msgstr "Hardware"
@@ -7663,11 +8107,15 @@ msgstr "Kop kenmerk"
 msgid "Headers"
 msgstr "Koppen"
 
+#. Health: humanized state, a plain-language data-at-risk line, then the active checks (the
+#. things actually needing attention).
 #: proxmox-widget-toolkit/src/window/ZFSDetail.js:82
 #: proxmox-widget-toolkit/src/window/ZFSDetail.js:136
 #: pve-manager/www/manager6/ceph/Status.js:26
 #: pve-manager/www/manager6/dc/Health.js:5
 #: pve-manager/www/manager6/node/ZFS.js:257 proxmox-backup/www/ZFSList.js:93
+#: proxmox-datacenter-manager/ui/src/ceph/clusters.rs:260
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:109
 msgid "Health"
 msgstr "Gezondheid"
 
@@ -7787,6 +8235,10 @@ msgstr "Haakscript"
 #: proxmox-backup/www/form/RemoteSelector.js:26
 #: proxmox-backup/www/window/InfluxDbEdit.js:153
 #: proxmox-backup/www/window/RemoteEdit.js:49
+#: proxmox-datacenter-manager/ui/src/ceph/managers.rs:160
+#: proxmox-datacenter-manager/ui/src/ceph/managers.rs:197
+#: proxmox-datacenter-manager/ui/src/ceph/monitors.rs:113
+#: proxmox-datacenter-manager/ui/src/ceph/osds.rs:494
 msgid "Host"
 msgstr "Host"
 
@@ -7862,7 +8314,7 @@ msgstr "Host/IP-adres of optionele poort is ongeldig"
 msgid "Hostname"
 msgstr "Hostnaam"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:328
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:336
 msgid ""
 "Hostname and domain to set for the target installation. Allows templating."
 msgstr ""
@@ -7934,6 +8386,8 @@ msgstr "ICMP type"
 #: proxmox-datacenter-manager/ui/src/configuration/webauthn.rs:43
 #: proxmox-datacenter-manager/ui/src/configuration/webauthn.rs:121
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answers_panel.rs:269
+#: proxmox-datacenter-manager/ui/src/guests.rs:835
+#: proxmox-datacenter-manager/ui/src/guests.rs:903
 #: proxmox-datacenter-manager/ui/src/widget/resource_tree.rs:367
 #: proxmox-yew-comp/src/configuration/pve/lxc_network_panel.rs:417
 msgid "ID"
@@ -8034,7 +8488,7 @@ msgstr "IP"
 msgid "IP Address"
 msgstr "IP-adres"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:290
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:298
 #, fuzzy
 msgid "IP Address (CIDR)"
 msgstr "IP-adres"
@@ -8216,7 +8670,7 @@ msgstr "ISO-schijfkopieen"
 
 #: pve-manager/www/manager6/Utils.js:739
 #: pve-manager/www/manager6/form/IsoSelector.js:98
-#: proxmox-datacenter-manager/ui/src/pve/utils.rs:293
+#: proxmox-datacenter-manager/ui/src/pve/utils.rs:312
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_disk_property.rs:575
 msgid "ISO image"
 msgstr "ISO-schijfkopie"
@@ -8244,7 +8698,7 @@ msgid ""
 "the next refresh."
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:723
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:731
 msgid "If selected, this configuration will be used if no other matches."
 msgstr ""
 
@@ -8280,7 +8734,7 @@ msgstr ""
 #: pve-manager/www/manager6/window/GuestImport.js:19
 #: proxmox-backup/www/tape/ChangerStatus.js:69
 #: proxmox-backup/www/tape/ChangerStatus.js:995
-#: proxmox-datacenter-manager/ui/src/pve/utils.rs:292
+#: proxmox-datacenter-manager/ui/src/pve/utils.rs:311
 msgid "Import"
 msgstr "Importeer"
 
@@ -8384,6 +8838,7 @@ msgid "Include Greylist"
 msgstr "Grijze lijst opnemen"
 
 #: pve-manager/www/manager6/window/Snapshot.js:88
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:270
 msgid "Include RAM"
 msgstr "RAM opnemen"
 
@@ -8608,6 +9063,11 @@ msgstr "Interne SMTP poort"
 msgid "Interval"
 msgstr "Interval"
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:72
+#, fuzzy
+msgid "Invalid"
+msgstr "Ongeldige waarde"
+
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:222
 msgid "Invalid (default) email address"
 msgstr ""
@@ -8686,6 +9146,7 @@ msgstr "Relay poort"
 #: pve-manager/www/manager6/node/Certificates.js:317
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:312
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_nodes.rs:278
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:726
 #: proxmox-yew-comp/src/acme/certificate_list.rs:357
 #: proxmox-yew-comp/src/acme/certificate_list.rs:387
 msgid "Issuer"
@@ -8738,7 +9199,7 @@ msgstr "{0} item"
 msgid "Iterations"
 msgstr "Herhalingen"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:738
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:746
 #, fuzzy
 msgid "JSON Pointer"
 msgstr "Basis domeinnaam"
@@ -8969,6 +9430,12 @@ msgstr "Kernel versie"
 #: pve-manager/www/manager6/window/Snapshot.js:127
 #: proxmox-backup/www/Utils.js:454
 #: proxmox-backup/www/window/EncryptionKeysEdit.js:42
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_assign.rs:83
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:129
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:559
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:531
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:624
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:679
 #: proxmox-yew-comp/src/configuration/pve/lxc_resources_panel/desktop.rs:600
 #: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/desktop.rs:797
 #: proxmox-yew-comp/src/property_view/property_grid.rs:245
@@ -8985,6 +9452,11 @@ msgstr "Sleutel IDs"
 #: pmg-gui/js/UserEdit.js:187 pve-manager/www/manager6/dc/UserEdit.js:134
 msgid "Key IDs"
 msgstr "Sleutel IDs"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1289
+#, fuzzy
+msgid "Key Pool"
+msgstr "Ceph pool"
 
 #: pmg-gui/js/DKIMSettings.js:68 pmg-gui/js/DKIMSettings.js:171
 msgid "Key Size"
@@ -9166,6 +9638,11 @@ msgstr "Laatste verificatie"
 msgid "Last checked"
 msgstr "Laatste controle"
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:112
+#, fuzzy
+msgid "Last checked: {when}"
+msgstr "Laatste controle"
+
 #: proxmox-yew-comp/src/user_panel.rs:563
 #: proxmox-yew-comp/src/user_panel.rs:589
 #, fuzzy
@@ -9183,6 +9660,12 @@ msgstr ""
 #: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:456
 msgid "Last verify task started on {0}"
 msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/ceph/osds.rs:468
+#: proxmox-datacenter-manager/ui/src/ceph/osds.rs:520
+#, fuzzy
+msgid "Latency"
+msgstr "Alleen laatste"
 
 #: pve-manager/www/manager6/qemu/MachineEdit.js:153
 #: pve-manager/www/manager6/qemu/MachineEdit.js:172
@@ -9229,6 +9712,9 @@ msgid "Letter Spacing"
 msgstr "Letterspatiëring"
 
 #: pmg-gui/js/Utils.js:342
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_assign.rs:91
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:142
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:521
 msgid "Level"
 msgstr "Niveau"
 
@@ -9299,6 +9785,11 @@ msgstr "LXC container"
 #: proxmox-yew-comp/src/configuration/mod.rs:33
 msgid "Linux VLAN"
 msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/guests.rs:412
+#, fuzzy
+msgid "List"
+msgstr "Taak geschiedenis"
 
 #: proxmox-yew-widget-toolkit/src/widget/form/selector.rs:428
 msgid "List does not contain any items."
@@ -9382,7 +9873,8 @@ msgstr "SSH-sleutelbestand laden"
 msgid "Load average"
 msgstr "Gemiddelde belasting"
 
-#: proxmox-datacenter-manager/ui/src/pve/mod.rs:186
+#: proxmox-datacenter-manager/ui/src/pbs/mod.rs:121
+#: proxmox-datacenter-manager/ui/src/pve/mod.rs:193
 #: proxmox-yew-comp/src/loadable_component.rs:487
 #, fuzzy
 msgid "Load failed"
@@ -9398,6 +9890,11 @@ msgstr "Bezig met laden..."
 #, fuzzy
 msgid "Loading TOS failed: {0}"
 msgstr "Alle mislukt"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1052
+#, fuzzy
+msgid "Loading subscription status..."
+msgstr "Kan abonnementsstatus niet laden"
 
 #: proxmox-datacenter-manager/ui/src/remotes/firewall/columns.rs:40
 #, fuzzy
@@ -9803,10 +10300,14 @@ msgid "Manager Version"
 msgstr "PVE-manager versie"
 
 #: pve-manager/www/manager6/ceph/Services.js:29
+#: proxmox-datacenter-manager/ui/src/ceph/cluster.rs:150
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:141
+#: proxmox-datacenter-manager/ui/src/ceph/managers.rs:130
 msgid "Managers"
 msgstr "Managers"
 
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:360
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:154
 msgid "Manual"
 msgstr ""
 
@@ -9815,6 +10316,11 @@ msgstr ""
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_smbios1_property.rs:43
 msgid "Manufacturer"
 msgstr "Fabrikant"
+
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:670
+#, fuzzy
+msgid "Map"
+msgstr "dag"
 
 #: pve-manager/www/manager6/qemu/PCIEdit.js:189
 #, fuzzy
@@ -9860,12 +10366,12 @@ msgstr "Zoek"
 msgid "Match"
 msgstr "Match"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:442
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:450
 #, fuzzy
 msgid "Match All Filters"
 msgstr "Match bestandsnaam"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:441
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:449
 #, fuzzy
 msgid "Match Any Filter"
 msgstr "Match bestandsnaam"
@@ -9933,6 +10439,11 @@ msgstr "Cluster naam"
 #, fuzzy
 msgid "Matcher Name"
 msgstr "Cluster naam"
+
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:59
+#, fuzzy
+msgid "Matches"
+msgstr "Match"
 
 #: proxmox-datacenter-manager/ui/src/dashboard/refresh_config_edit.rs:86
 msgid "Max Age (seconds)"
@@ -10011,11 +10522,11 @@ msgstr "Maximale bescherming"
 msgid "Maximum characters"
 msgstr "Maximale karakters"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:550
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:558
 msgid "Maximum data Volume Size (GB)"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:537
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:545
 msgid "Maximum root Volume Size (GB)"
 msgstr ""
 
@@ -10065,6 +10576,7 @@ msgid ""
 msgstr ""
 
 #: pve-manager/www/manager6/pool/Config.js:26
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:167
 msgid "Members"
 msgstr "Leden"
 
@@ -10107,7 +10619,7 @@ msgstr ""
 #: pve-manager/www/manager6/panel/GuestSummary.js:104
 #: proxmox-datacenter-manager/ui/src/administration/node_status.rs:505
 #: proxmox-datacenter-manager/ui/src/dashboard/gauge_panel.rs:41
-#: proxmox-datacenter-manager/ui/src/widget/pve_node_selector.rs:157
+#: proxmox-datacenter-manager/ui/src/widget/pve_node_selector.rs:202
 #: proxmox-datacenter-manager/ui/src/pbs/node/overview.rs:248
 #: proxmox-datacenter-manager/ui/src/pve/node/overview.rs:252
 #, fuzzy
@@ -10133,6 +10645,8 @@ msgstr "Geheugen grootte"
 #: pve-manager/www/manager6/panel/GuestStatusView.js:113
 #: proxmox-backup/www/ServerStatus.js:229
 #: proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:362
+#: proxmox-datacenter-manager/ui/src/guests.rs:870
+#: proxmox-datacenter-manager/ui/src/guests.rs:938
 #: proxmox-datacenter-manager/ui/src/pve/lxc/overview.rs:346
 #: proxmox-datacenter-manager/ui/src/pve/qemu/overview.rs:355
 #: proxmox-datacenter-manager/ui/src/renderer.rs:73
@@ -10170,12 +10684,14 @@ msgid "Message Size (bytes)"
 msgstr "Bericht grootte (bytes)"
 
 #: pve-manager/www/manager6/ceph/FS.js:171
+#: proxmox-datacenter-manager/ui/src/ceph/cephfs.rs:128
 #, fuzzy
 msgid "Metadata Pool"
 msgstr "Media pool"
 
 #: pve-manager/www/manager6/ceph/FS.js:183
 #: pve-manager/www/manager6/ceph/Services.js:35
+#: proxmox-datacenter-manager/ui/src/ceph/managers.rs:134
 msgid "Metadata Servers"
 msgstr "Meta-gegevensservers"
 
@@ -10226,9 +10742,11 @@ msgstr ""
 #: pve-manager/www/manager6/qemu/Config.js:68
 #: pve-manager/www/manager6/window/Migrate.js:105
 #: pve-manager/www/manager6/window/Migrate.js:733
-#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:583
-#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:585
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:726
+#: proxmox-datacenter-manager/ui/src/guests.rs:797
+#: proxmox-datacenter-manager/ui/src/guests.rs:805
+#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:633
+#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:635
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:744
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:146
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:166
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:199
@@ -10246,11 +10764,11 @@ msgid "Migration"
 msgstr "Migratie"
 
 #: pve-manager/www/manager6/dc/OptionView.js:104
-#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:422
+#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:447
 msgid "Migration Settings"
 msgstr "Migratie instellingen"
 
-#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:329
+#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:354
 msgid "Migration with local disk might take long: {0} ({1})"
 msgstr ""
 
@@ -10267,7 +10785,7 @@ msgstr "Min # van PGs"
 msgid "Min. Size"
 msgstr "Min grootte"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:563
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:571
 msgid "Minimum Free Space in LVM Volume Group (GB)"
 msgstr ""
 
@@ -10285,6 +10803,11 @@ msgstr "Minimaal karakters"
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_memory_property.rs:50
 msgid "Minimum memory"
 msgstr "Minimaal geheugen"
+
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:422
+#, fuzzy
+msgid "Misplaced"
+msgstr "Weergave"
 
 #: proxmox-backup/www/Utils.js:24
 msgid "Mixed"
@@ -10306,7 +10829,7 @@ msgstr "Gemengde lidmaatschappen"
 #: pve-manager/www/manager6/window/Backup.js:28
 #: pve-manager/www/manager6/window/Clone.js:215
 #: pve-manager/www/manager6/window/Migrate.js:600
-#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:372
+#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:397
 #: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:88
 #: proxmox-yew-comp/src/auth_edit_ldap.rs:340
 #: proxmox-yew-comp/src/configuration/network_edit.rs:233
@@ -10389,6 +10912,9 @@ msgid "Monitor node"
 msgstr "Monitorsysteem"
 
 #: pve-manager/www/manager6/ceph/Services.js:23
+#: proxmox-datacenter-manager/ui/src/ceph/cluster.rs:140
+#: proxmox-datacenter-manager/ui/src/ceph/clusters.rs:340
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:134
 msgid "Monitors"
 msgstr "Monitoren"
 
@@ -10601,6 +11127,7 @@ msgid "NOTE: The following tags are also defined in the user allow list."
 msgstr ""
 
 #: pve-manager/www/manager6/tree/SnapshotTree.js:343
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:688
 msgid "NOW"
 msgstr "NU"
 
@@ -10731,12 +11258,24 @@ msgstr ""
 #: proxmox-backup/www/window/InfluxDbEdit.js:143
 #: proxmox-backup/www/window/TrafficControlEdit.js:230
 #: proxmox-backup/www/window/ZFSCreate.js:26
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:432
 #: proxmox-datacenter-manager/ui/src/configuration/views.rs:347
 #: proxmox-datacenter-manager/ui/src/configuration/views.rs:361
 #: proxmox-datacenter-manager/ui/src/remotes/updates.rs:155
 #: proxmox-datacenter-manager/ui/src/remotes/firewall/columns.rs:34
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/token_panel.rs:267
+#: proxmox-datacenter-manager/ui/src/guests.rs:830
+#: proxmox-datacenter-manager/ui/src/guests.rs:892
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:240
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:680
 #: proxmox-datacenter-manager/ui/src/widget/pve_storage_selector.rs:210
+#: proxmox-datacenter-manager/ui/src/ceph/cephfs.rs:119
+#: proxmox-datacenter-manager/ui/src/ceph/clusters.rs:284
+#: proxmox-datacenter-manager/ui/src/ceph/managers.rs:155
+#: proxmox-datacenter-manager/ui/src/ceph/managers.rs:192
+#: proxmox-datacenter-manager/ui/src/ceph/monitors.rs:108
+#: proxmox-datacenter-manager/ui/src/ceph/osds.rs:486
+#: proxmox-datacenter-manager/ui/src/ceph/pools.rs:121
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/remote_tree.rs:354
 #: proxmox-datacenter-manager/ui/src/sdn/zone_tree.rs:141
 #: proxmox-yew-comp/src/acme/acme_plugin_selector.rs:62
@@ -10763,8 +11302,17 @@ msgstr ""
 msgid "Name"
 msgstr "Naam"
 
+#: proxmox-datacenter-manager/ui/src/ceph/osds.rs:406
+#, fuzzy
+msgid "Name / Host"
+msgstr "Naam, Formaat"
+
 #: pve-manager/www/manager6/tree/DhcpTree.js:199
 msgid "Name / VMID"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:252
+msgid "Name must be at most 40 characters long."
 msgstr ""
 
 #: pve-manager/www/manager6/storage/ContentView.js:112
@@ -10822,6 +11370,10 @@ msgstr "Naamruimte naam"
 #, fuzzy
 msgid "Narrow viewport detected"
 msgstr "Geen schijf geselecteerd"
+
+#: proxmox-datacenter-manager/ui/src/ceph/clusters.rs:114
+msgid "Near full"
+msgstr ""
 
 #: proxmox-backup/www/tape/window/TapeRestore.js:630
 msgid "Need at least one mapping"
@@ -10882,7 +11434,7 @@ msgstr "Netmasker voor grijze lijst IPv6"
 #: pve-manager/www/manager6/qemu/CreateWizard.js:263
 #: pve-manager/www/manager6/tree/ResourceTree.js:30
 #: proxmox-datacenter-manager/ui/src/widget/pve_migrate_mapping.rs:43
-#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:135
+#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:137
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/dashboard_panel.rs:347
 #: proxmox-yew-comp/src/form/pve/hotplug_feature_selector.rs:55
 #: proxmox-yew-comp/src/form/pve/hotplug_feature_selector.rs:69
@@ -10911,7 +11463,7 @@ msgstr "Netwerk configuratie"
 msgid "Network Device"
 msgstr "Netwerk apparaat"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:341
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:349
 #, fuzzy
 msgid "Network Device Filters"
 msgstr "Netwerk apparaat"
@@ -10923,12 +11475,12 @@ msgstr "Geen netwerkinformatie"
 
 #: pve-manager/www/manager6/window/GuestImport.js:856
 #: proxmox-backup/www/SystemConfiguration.js:40
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:167
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:170
 msgid "Network Interfaces"
 msgstr "Netwerk interfaces"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:176
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_edit_window.rs:197
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:178
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_edit_window.rs:198
 #, fuzzy
 msgid "Network Options"
 msgstr "Geen netwerkinformatie"
@@ -10963,7 +11515,7 @@ msgstr "Netwerk(en)"
 #. TRANSLATORS: As in "Network and Time system configuration"
 #: pmg-gui/js/SystemConfiguration.js:11
 #: proxmox-backup/www/SystemConfiguration.js:12
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:32
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:35
 msgid "Network/Time"
 msgstr "Netwerk/Tijd"
 
@@ -10984,7 +11536,12 @@ msgstr "Netwerken"
 msgid "Never"
 msgstr "Nooit"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:965
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:70
+#, fuzzy
+msgid "New"
+msgstr "nieuw"
+
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:973
 #, fuzzy
 msgid "New Answer Token"
 msgstr "Gebruiker/Groep/API token"
@@ -11011,6 +11568,10 @@ msgstr "Gebruiker wachtwoord"
 #, fuzzy
 msgid "New Password"
 msgstr "Gebruiker wachtwoord"
+
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:626
+msgid "New fingerprint will be stored on Apply."
+msgstr ""
 
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:124
 msgid "Newest ceph version in cluster is {0}"
@@ -11056,6 +11617,11 @@ msgstr "Volgende synchronisatie"
 #: proxmox-backup/www/Subscription.js:125
 #: proxmox-yew-comp/src/subscription_panel.rs:214
 msgid "Next due date"
+msgstr "Volgende vervaldatum"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:116
+#, fuzzy
+msgid "Next due: {date}"
 msgstr "Volgende vervaldatum"
 
 #: pve-manager/www/manager6/sdn/EvpnZoneIpVrfPanel.js:24
@@ -11368,7 +11934,7 @@ msgstr "Nog niet geconfigureerd."
 msgid "No entry selected"
 msgstr "Geen bestand geselecteerd"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:844
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:852
 msgid ""
 "No existing authorization token selected. A new one will be automatically "
 "created."
@@ -11379,10 +11945,19 @@ msgstr ""
 msgid "No firewall rule configured here."
 msgstr "Nog niet geconfigureerd."
 
+#: proxmox-datacenter-manager/ui/src/guests.rs:502
+msgid "No guest matches the current filter."
+msgstr ""
+
 #: proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:347
 #, fuzzy
 msgid "No guests available"
 msgstr "Geen updates beschikbaar"
+
+#: proxmox-datacenter-manager/ui/src/guests.rs:495
+#, fuzzy
+msgid "No guests found"
+msgstr "Geen schijven gevonden"
 
 #: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:218
 #, fuzzy
@@ -11406,6 +11981,16 @@ msgstr "Geen match gevonden"
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/installations_panel.rs:286
 #, fuzzy
 msgid "No matching answer found"
+msgstr "Geen match gevonden"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_assign.rs:257
+msgid ""
+"No matching free keys in the pool. Add one via the Key Pool panel first."
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/guests.rs:501
+#, fuzzy
+msgid "No matching guests"
 msgstr "Geen match gevonden"
 
 #: proxmox-widget-toolkit/src/window/TfaWindow.js:421
@@ -11434,6 +12019,11 @@ msgstr "Geen netwerkinformatie"
 #, fuzzy
 msgid "No node selected"
 msgstr "Geen VM geselecteerd"
+
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:488
+#, fuzzy
+msgid "No nodes are configured for this remote."
+msgstr "Nog niet geconfigureerd."
 
 #: proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:355
 #: proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:363
@@ -11483,9 +12073,19 @@ msgstr "Nog niet geconfigureerd."
 msgid "No recipients configured"
 msgstr "Geen accounts geconfigureerd"
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1543
+#, fuzzy
+msgid "No remote nodes available yet."
+msgstr "Geen updates beschikbaar"
+
 #: proxmox-datacenter-manager/ui/src/dashboard/subscription_info.rs:78
 msgid "No remotes configured or could not fetch status."
 msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/guests.rs:489
+#, fuzzy
+msgid "No remotes configured yet"
+msgstr "Nog niet geconfigureerd."
 
 #: proxmox-datacenter-manager/ui/src/dashboard/remote_panel.rs:77
 #, fuzzy
@@ -11532,9 +12132,27 @@ msgstr "Geen domeinen geconfigureerd"
 msgid "No simulation done"
 msgstr ""
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:71
+#, fuzzy
+msgid "No subscription"
+msgstr "Geen lidmaatschap"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1393
+msgid ""
+"No subscription installed on the selected node; assign or adopt one first."
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:359
+msgid "No subscription keys in the pool yet."
+msgstr ""
+
 #: pve-manager/www/manager6/ceph/ServiceList.js:305
 msgid "No such service configured."
 msgstr "Geen dergelijke service geconfigureerd."
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:815
+msgid "No suitable unassigned keys for the remaining nodes."
+msgstr ""
 
 #: proxmox-widget-toolkit/src/window/NotificationMatcherEdit.js:277
 #, fuzzy
@@ -11553,7 +12171,7 @@ msgstr "Geen updates beschikbaar"
 msgid "No valid subscription"
 msgstr "Geen geldig lidmaatschap"
 
-#: proxmox-datacenter-manager/ui/src/lib.rs:292
+#: proxmox-datacenter-manager/ui/src/lib.rs:296
 #, fuzzy
 msgid "No valid subscriptions"
 msgstr "Geen geldig lidmaatschap"
@@ -11637,8 +12255,14 @@ msgstr "Geen lidmaatschap"
 #: pve-manager/www/manager6/sdn/fabrics/NodeEdit.js:224
 #: pve-manager/www/manager6/window/DirMapEdit.js:149
 #: pve-manager/www/manager6/window/Settings.js:197
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:616
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:634
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:647
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:593
 #: proxmox-datacenter-manager/ui/src/remotes/tasks.rs:81
-#: proxmox-datacenter-manager/ui/src/widget/pve_node_selector.rs:153
+#: proxmox-datacenter-manager/ui/src/guests.rs:853
+#: proxmox-datacenter-manager/ui/src/guests.rs:917
+#: proxmox-datacenter-manager/ui/src/widget/pve_node_selector.rs:196
 #: proxmox-datacenter-manager/ui/src/widget/resource_tree.rs:417
 #: proxmox-datacenter-manager/ui/src/widget/view_filter_selector.rs:322
 #: proxmox-datacenter-manager/ui/src/pbs/node/mod.rs:63
@@ -11672,6 +12296,11 @@ msgstr "Status instellen"
 msgid "Node Status"
 msgstr "Status instellen"
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1553
+#, fuzzy
+msgid "Node Subscription Status"
+msgstr "Lidmaatschappen"
+
 #: pve-manager/www/manager6/Utils.js:2253
 #, fuzzy
 msgid "Node fencing notifications"
@@ -11680,6 +12309,11 @@ msgstr "E-mail melding"
 #: pve-manager/www/manager6/dc/Backup.js:697
 msgid "Node is offline"
 msgstr "Systeem is offline"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_assign.rs:248
+#, fuzzy
+msgid "Node sockets:"
+msgstr "Systeem bronnen"
 
 #: pve-manager/www/manager6/form/ComboBoxSetStoreNode.js:79
 #: pve-manager/www/manager6/storage/LVMEdit.js:130
@@ -11706,7 +12340,7 @@ msgstr "Systeemnaam"
 #: pve-manager/www/manager6/sdn/zones/Base.js:44
 #: pve-manager/www/manager6/storage/Base.js:41
 #: pve-manager/www/manager6/tree/ResourceTree.js:14
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:363
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:381
 #: proxmox-datacenter-manager/ui/src/dashboard/node_status_panel.rs:167
 #: proxmox-datacenter-manager/ui/src/pve/remote_overview.rs:190
 #: pve-yew-mobile-gui/src/pages/page_dashboard.rs:231
@@ -11757,10 +12391,10 @@ msgstr "Niet productieklaar archief ingeschakeld!"
 #: proxmox-backup/www/form/EncryptionKeySelector.js:10
 #: proxmox-backup/www/window/MaintenanceOptions.js:6
 #: proxmox-datacenter-manager/ui/src/configuration/views.rs:356
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:367
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:385
 #: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:407
 #: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:466
-#: proxmox-datacenter-manager/ui/src/pve/utils.rs:297
+#: proxmox-datacenter-manager/ui/src/pve/utils.rs:316
 #: proxmox-yew-comp/src/form/pve/lxc_property/lxc_features_property.rs:132
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_machine_property.rs:152
 msgid "None"
@@ -11775,6 +12409,10 @@ msgstr "geen (uitgeschakeld)"
 #, fuzzy
 msgid "None matches"
 msgstr "Geen match gevonden"
+
+#: proxmox-datacenter-manager/ui/src/guests.rs:496
+msgid "None of the connected remotes have any virtual machines or containers."
+msgstr ""
 
 #: proxmox-widget-toolkit/src/window/DiskSmart.js:48
 msgid "Normalized"
@@ -11838,7 +12476,11 @@ msgstr "Niet genoeg gegevens"
 msgid "Not found"
 msgstr "Geen dunne pools gevonden"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:712
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:742
+msgid "Not in pool - Adopt Key imports this live subscription."
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:720
 msgid ""
 "Not marked as default answer and target filter are empty, answer will never "
 "be matched."
@@ -11910,7 +12552,7 @@ msgstr ""
 #: pve-manager/www/manager6/window/Settings.js:295
 #: proxmox-backup/www/NavigationTree.js:36
 #: proxmox-backup/www/window/NotesEdit.js:5
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:225
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:227
 #: proxmox-datacenter-manager/ui/src/pve/node/mod.rs:88
 #: proxmox-datacenter-manager/ui/src/pve/remote/mod.rs:69
 #: proxmox-yew-comp/src/notes_view.rs:200
@@ -12019,7 +12661,7 @@ msgstr "Aantal LVs"
 msgid "Number of Nodes"
 msgstr "Aantal systemen"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:778
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:786
 msgid ""
 "Numerical template counters can be used to provide unique values across "
 "installations."
@@ -12038,6 +12680,8 @@ msgstr ""
 #: proxmox-backup/www/tape/window/LabelMedia.js:9
 #: proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:192
 #: proxmox-datacenter-manager/ui/src/dashboard/tasks.rs:150
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:557
+#: proxmox-datacenter-manager/ui/src/ceph/renderer.rs:51
 #: pve-yew-mobile-gui/src/pages/page_login.rs:90
 #: pmg-yew-quarantine-gui/src/page_spam_list.rs:232
 #: proxmox-yew-comp/src/node_status_panel.rs:142
@@ -12062,6 +12706,12 @@ msgstr ""
 
 #: pve-manager/www/manager6/ceph/OSDDetails.js:158
 msgid "OSD object store"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/ceph/cluster.rs:160
+#: proxmox-datacenter-manager/ui/src/ceph/clusters.rs:330
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:143
+msgid "OSDs"
 msgstr ""
 
 #: pve-manager/www/manager6/ceph/StatusDetail.js:78
@@ -12099,8 +12749,8 @@ msgstr "Offline"
 #: pve-manager/www/manager6/window/Migrate.js:45
 #: proxmox-backup/www/Utils.js:850 proxmox-backup/www/tape/TapeInventory.js:308
 #: proxmox-backup/www/window/MaintenanceOptions.js:8
-#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:124
-#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:136
+#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:132
+#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:144
 msgid "Offline"
 msgstr "Offline"
 
@@ -12157,6 +12807,12 @@ msgid_plural "{n} items"
 msgstr[0] ""
 msgstr[1] ""
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:432
+msgid ""
+"One key per line, or comma-separated. Only Proxmox VE and Proxmox Backup "
+"Server keys are accepted."
+msgstr ""
+
 #: proxmox-datacenter-manager/ui/src/dashboard/node_status_panel.rs:146
 #, fuzzy
 msgid "One of {0} nodes online"
@@ -12193,7 +12849,7 @@ msgstr[1] ""
 #: pve-manager/www/manager6/window/Migrate.js:40
 #: proxmox-backup/www/tape/TapeInventory.js:311
 #: proxmox-datacenter-manager/ui/src/dashboard/pbs_datastores_panel.rs:107
-#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:123
+#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:131
 msgid "Online"
 msgstr "Online"
 
@@ -12213,6 +12869,12 @@ msgstr ""
 msgid "Only show flags supported by at least one node"
 msgstr ""
 
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:577
+msgid ""
+"Only the fingerprint is stored, so PDM cannot confirm this is a legitimate "
+"renewal. Verify the new fingerprint out-of-band before trusting it."
+msgstr ""
+
 #: pmg-gui/js/Utils.js:389
 msgid "Only top level headers"
 msgstr ""
@@ -12221,7 +12883,7 @@ msgstr ""
 msgid "Open Repositories Panel"
 msgstr "Open archief paneel"
 
-#: proxmox-datacenter-manager/ui/src/pbs/mod.rs:160
+#: proxmox-datacenter-manager/ui/src/pbs/mod.rs:175
 #, fuzzy
 msgid "Open Shell"
 msgstr "Shell"
@@ -12232,10 +12894,11 @@ msgid "Open Task"
 msgstr "Open taak"
 
 #: proxmox-datacenter-manager/ui/src/remotes/firewall/tree.rs:366
-#: proxmox-datacenter-manager/ui/src/pbs/mod.rs:145
-#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:75
-#: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:74
-#: proxmox-datacenter-manager/ui/src/pve/mod.rs:257
+#: proxmox-datacenter-manager/ui/src/ceph/cluster.rs:93
+#: proxmox-datacenter-manager/ui/src/pbs/mod.rs:160
+#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:77
+#: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:76
+#: proxmox-datacenter-manager/ui/src/pve/mod.rs:265
 msgid "Open Web UI"
 msgstr ""
 
@@ -12247,7 +12910,9 @@ msgstr ""
 msgid "Open in PBS UI"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:741
+#: proxmox-datacenter-manager/ui/src/guests.rs:810
+#: proxmox-datacenter-manager/ui/src/guests.rs:821
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:759
 msgid "Open in PVE UI"
 msgstr ""
 
@@ -12259,13 +12924,13 @@ msgstr "Open herstelwizard voor {0}"
 msgid "Open the Beta documentation in a new tab."
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:76
-#: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:92
+#: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:78
+#: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:94
 msgid "Open the web UI of VM {0}."
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:77
-#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:93
+#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:79
+#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:95
 msgid "Open the web UI of container {0}."
 msgstr ""
 
@@ -12333,11 +12998,15 @@ msgstr "Opties"
 msgid "Optional"
 msgstr "Opties"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:865
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:873
 msgid "Optional certificate fingerprint"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:874
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:265
+msgid "Optional, e.g. pve1c-0123456789"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:882
 msgid "Optional. If provided, status reporting will be enabled."
 msgstr ""
 
@@ -12361,8 +13030,8 @@ msgstr ""
 #: proxmox-backup/www/datastore/Panel.js:87
 #: proxmox-backup/www/tape/window/TapeBackupJob.js:55
 #: proxmox-datacenter-manager/ui/src/remotes/firewall/tree.rs:401
-#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:153
-#: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:133
+#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:155
+#: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:135
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/firewall_panel.rs:126
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/mod.rs:124
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/firewall_panel.rs:126
@@ -12520,9 +13189,9 @@ msgstr ""
 
 #: proxmox-datacenter-manager/ui/src/pbs/datastore.rs:62
 #: proxmox-datacenter-manager/ui/src/pbs/node/mod.rs:74
-#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:98
+#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:100
 #: proxmox-datacenter-manager/ui/src/pve/node/mod.rs:77
-#: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:97
+#: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:99
 #, fuzzy
 msgid "Overview"
 msgstr "Overschrijf"
@@ -12590,6 +13259,11 @@ msgstr "PCI-apparaat"
 msgid "PCI mapping"
 msgstr ""
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:574
+msgid ""
+"PDM cannot manage {product} remotes yet; this key is parked in the pool."
+msgstr ""
+
 #: proxmox-widget-toolkit/src/panel/Certificates.js:63
 #: pve-manager/www/manager6/node/Certificates.js:362
 msgid "PEM"
@@ -12599,6 +13273,15 @@ msgstr "PEM"
 #, fuzzy
 msgid "PG Autoscaler Mode"
 msgstr "Automatisch schalen"
+
+#: proxmox-datacenter-manager/ui/src/ceph/pools.rs:141
+msgid "PG num"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/ceph/osds.rs:459
+#: proxmox-datacenter-manager/ui/src/ceph/osds.rs:514
+msgid "PGs"
+msgstr ""
 
 #: pve-manager/www/manager6/qemu/VirtiofsEdit.js:71
 #, fuzzy
@@ -12756,7 +13439,7 @@ msgstr "Gecodeerde clustergegevens hier invoegen"
 #: proxmox-backup/www/tape/window/ChangerEdit.js:34
 #: proxmox-backup/www/tape/window/DriveEdit.js:69
 #: proxmox-backup/www/window/ACLEdit.js:26
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:49
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:52
 #: proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:199
 #: proxmox-yew-comp/src/acl/acl_view.rs:113
 #: proxmox-yew-comp/src/form/pve/lxc_property/lxc_mount_point_property.rs:218
@@ -12788,6 +13471,7 @@ msgstr "Pauzeer"
 
 #: pve-manager/www/manager6/dc/Guests.js:50
 #: pve-manager/www/manager6/dc/Guests.js:95
+#: proxmox-datacenter-manager/ui/src/pve/utils.rs:157
 msgid "Paused"
 msgstr "Gepauzeerd"
 
@@ -12822,6 +13506,11 @@ msgstr "Peers"
 msgid "Pending Changes"
 msgstr "Wijzigingen in behandeling"
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:705
+msgid ""
+"Pending Clear - 'Apply Pending' will remove this subscription from the node."
+msgstr ""
+
 #: proxmox-backup/www/config/GCView.js:225
 #, fuzzy
 msgid "Pending Data"
@@ -12850,6 +13539,7 @@ msgid "Percentage"
 msgstr "Percentage"
 
 #: pve-manager/www/manager6/ceph/Status.js:259
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:175
 msgid "Performance"
 msgstr "Prestaties"
 
@@ -12881,7 +13571,7 @@ msgstr "Machtiging"
 #: pve-manager/www/manager6/storage/Browser.js:197
 #: proxmox-backup/www/config/ACLView.js:27
 #: proxmox-backup/www/panel/AccessControl.js:36
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:110
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:113
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/mod.rs:154
 msgid "Permissions"
 msgstr "Machtigingen"
@@ -12924,14 +13614,25 @@ msgstr ""
 msgid "PiB"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:334
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:342
 #, fuzzy
 msgid "Pin Network Interfaces"
 msgstr "Netwerk interfaces"
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:302
+msgid ""
+"Pin the selected key to a remote node; Apply Pending pushes the assignment "
+"to the remote."
+msgstr ""
+
 #: proxmox-widget-toolkit/src/Schema.js:96
 msgid "Pipe/Fifo"
 msgstr "Pipe/Fifo"
+
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:152
+#, fuzzy
+msgid "Placement groups"
+msgstr "Doel groep"
 
 #: pve-manager/www/manager6/window/DownloadUrlToStorage.js:167
 msgid "Please (re-)query URL to get meta information"
@@ -12995,7 +13696,7 @@ msgstr "Sla het API-tokengeheim op - het wordt nu eenmalig weergegeven"
 msgid "Please record the API token secret - it will only be displayed now."
 msgstr "Sla het API-tokengeheim op - het wordt nu eenmalig weergegeven"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:973
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:981
 #, fuzzy
 msgid ""
 "Please record the configuration token or ISO preparation command line - it "
@@ -13131,6 +13832,8 @@ msgstr "Pool/Media-reeks/Momentopname"
 
 #: pve-manager/www/manager6/dc/Config.js:196
 #: pve-manager/www/manager6/node/Config.js:395
+#: proxmox-datacenter-manager/ui/src/ceph/cluster.rs:170
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:151
 msgid "Pools"
 msgstr "Pools"
 
@@ -13181,7 +13884,7 @@ msgstr "Tape positie"
 msgid "Possible template variables are: {0}"
 msgstr "Mogelijke sjabloonvariabelen zijn: {0}"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:192
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:194
 msgid "Post Hook"
 msgstr ""
 
@@ -13404,6 +14107,8 @@ msgstr "Processoren"
 
 #: pve-manager/www/manager6/form/USBSelector.js:92
 #: pve-manager/www/manager6/qemu/Smbios1Edit.js:45
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_assign.rs:87
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:135
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/installations_panel.rs:268
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_smbios1_property.rs:49
 msgid "Product"
@@ -13464,11 +14169,17 @@ msgstr "Eigenschappen"
 msgid "Property"
 msgstr "Eigenschap"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:350
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:459
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:358
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:467
 #, fuzzy
 msgid "Property Name"
 msgstr "Eigenschap"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:327
+msgid ""
+"Propose a one-key-per-node assignment for nodes that have no active "
+"subscription, then queue it pending Apply."
+msgstr ""
 
 #: pve-manager/www/manager6/grid/BackupView.js:345
 #: pve-manager/www/manager6/grid/BackupView.js:348
@@ -13524,7 +14235,7 @@ msgstr "Proxmox Backup Server Login"
 msgid "Proxmox Datacenter Manager"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:852
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:860
 #, fuzzy
 msgid "Proxmox Datacenter Manager Base URL"
 msgstr "Proxmox Backup Server Login"
@@ -13629,6 +14340,7 @@ msgstr "Publieke sleutel grootte"
 #: proxmox-widget-toolkit/src/panel/Certificates.js:28
 #: pve-manager/www/manager6/node/Certificates.js:327
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:314
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:728
 #: proxmox-yew-comp/src/acme/certificate_list.rs:359
 #: proxmox-yew-comp/src/acme/certificate_list.rs:395
 #, fuzzy
@@ -13640,6 +14352,7 @@ msgstr "Publieke sleutel algoritme"
 #: pve-manager/www/manager6/node/Certificates.js:72
 #: pve-manager/www/manager6/node/Certificates.js:333
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:315
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:729
 #: proxmox-yew-comp/src/acme/certificate_list.rs:360
 #: proxmox-yew-comp/src/acme/certificate_list.rs:399
 msgid "Public Key Size"
@@ -13682,10 +14395,26 @@ msgstr ""
 msgid "Push"
 msgstr "Duw bestand"
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1426
+msgid ""
+"Push every queued assignment to its remote node and remove the subscription "
+"from nodes pending clear."
+msgstr ""
+
 #: pve-manager/www/manager6/Utils.js:2191
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:160
 msgid "Push file"
 msgstr "Duw bestand"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1084
+msgid "Push {n} queued assignment(s) to the remote nodes?"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1092
+msgid ""
+"Push {p} queued assignment(s) and remove {c} live subscription(s) on the "
+"remote nodes?"
+msgstr ""
 
 #: proxmox-backup/www/config/SyncView.js:371
 msgid "Push: The local user used for access control."
@@ -13743,13 +14472,28 @@ msgid "Query userinfo endpoint"
 msgstr ""
 
 #: proxmox-datacenter-manager/ui/src/pbs/tree.rs:287
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:605
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:614
 msgid "Querying Remote..."
 msgstr ""
 
 #: pmg-gui/js/QueueAdministration.js:5
 msgid "Queue Administration"
 msgstr "Wachtrij beheer"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1203
+msgid "Queue a clear of {key} on {remote}/{node}?"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1209
+msgid "Queue a clear on {remote}/{node}?"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1377
+msgid ""
+"Queue the selected node's live subscription for removal at the next Apply "
+"Pending, freeing the key for reassignment. Available for a pool-managed "
+"node; for a foreign subscription, adopt it first."
+msgstr ""
 
 #: pmg-gui/js/NavigationTree.js:146
 msgid "Queues"
@@ -13760,6 +14504,7 @@ msgid "Quorate"
 msgstr "Quorate"
 
 #: pve-manager/www/manager6/ceph/Monitor.js:27
+#: proxmox-datacenter-manager/ui/src/ceph/monitors.rs:117
 msgid "Quorum"
 msgstr "Quorum"
 
@@ -13769,6 +14514,7 @@ msgid "RAID Level"
 msgstr "RAID-niveau"
 
 #: pve-manager/www/manager6/tree/SnapshotTree.js:346
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:709
 msgid "RAM"
 msgstr "RAM"
 
@@ -13815,6 +14561,10 @@ msgstr "Gebruik willekeur"
 #, fuzzy
 msgid "Range Size"
 msgstr "Doel grootte"
+
+#: proxmox-datacenter-manager/ui/src/ceph/managers.rs:201
+msgid "Rank"
+msgstr ""
 
 #: proxmox-backup/www/config/TrafficControlView.js:134
 #: proxmox-backup/www/window/S3ClientEdit.js:127
@@ -13880,6 +14630,11 @@ msgstr "Herstel momentopname"
 
 #: proxmox-backup/www/window/SyncJobEdit.js:471
 msgid "Re-sync snapshots, whose verification failed."
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1391
+msgid ""
+"Re-verify the live subscription against the shop, refreshing its status."
 msgstr ""
 
 #: proxmox-backup/www/ServerStatus.js:262
@@ -13986,7 +14741,7 @@ msgstr "Gebied synchronisatie"
 
 #: pmg-gui/js/UserManagement.js:38 pve-manager/www/manager6/dc/Config.js:209
 #: proxmox-backup/www/panel/AccessControl.js:43
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:135
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:138
 msgid "Realms"
 msgstr "Gebieden"
 
@@ -14033,6 +14788,11 @@ msgstr "Opnieuw balanceren"
 #: pve-manager/www/manager6/form/CRSOptions.js:93
 #, fuzzy
 msgid "Rebalancing Method"
+msgstr "Opnieuw balanceren"
+
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:305
+#, fuzzy
+msgid "Rebalancing: {0}"
 msgstr "Opnieuw balanceren"
 
 #: pve-manager/www/manager6/Utils.js:2200
@@ -14117,7 +14877,13 @@ msgstr ""
 msgid "Recipients"
 msgstr ""
 
+#: proxmox-datacenter-manager/ui/src/ceph/clusters.rs:118
+#, fuzzy
+msgid "Recovering"
+msgstr "Herstel"
+
 #: pve-manager/www/manager6/ceph/Status.js:289
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:416
 msgid "Recovery"
 msgstr "Herstel"
 
@@ -14140,6 +14906,10 @@ msgstr "Herstelsleutels"
 #, fuzzy
 msgid "Recursive"
 msgstr "Max recursie"
+
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:279
+msgid "Redundancy: {0}"
+msgstr ""
 
 #: pve-manager/www/manager6/storage/TemplateView.js:264
 msgid "Reference"
@@ -14331,12 +15101,15 @@ msgstr "Relying partij"
 
 #: pmg-gui/js/PBSConfig.js:144 pmg-gui/js/PBSSnapshotView.js:112
 #: proxmox-backup/www/window/RemoteEdit.js:10
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:602
 #: proxmox-datacenter-manager/ui/src/remotes/edit_remote.rs:62
 #: proxmox-datacenter-manager/ui/src/remotes/tasks.rs:72
 #: proxmox-datacenter-manager/ui/src/remotes/tasks.rs:164
 #: proxmox-datacenter-manager/ui/src/dashboard/subscriptions_list.rs:162
 #: proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:221
+#: proxmox-datacenter-manager/ui/src/guests.rs:844
 #: proxmox-datacenter-manager/ui/src/widget/view_filter_selector.rs:284
+#: proxmox-datacenter-manager/ui/src/ceph/clusters.rs:288
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/remote_tree.rs:377
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/vrf_tree.rs:322
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/add_vnet.rs:291
@@ -14344,12 +15117,18 @@ msgstr "Relying partij"
 msgid "Remote"
 msgstr "Afstand"
 
-#: proxmox-datacenter-manager/ui/src/pbs/mod.rs:128
+#: proxmox-datacenter-manager/ui/src/pbs/mod.rs:143
 #: proxmox-datacenter-manager/ui/src/pve/remote/mod.rs:48
-#: proxmox-datacenter-manager/ui/src/pve/mod.rs:242
+#: proxmox-datacenter-manager/ui/src/pve/mod.rs:249
 #, fuzzy
 msgid "Remote '{0}'"
 msgstr "Verwijder naamruimte '{0}'"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:618
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:673
+#, fuzzy
+msgid "Remote / Node"
+msgstr "Afstand opslag"
 
 #: proxmox-backup/www/config/RemoteView.js:129
 #: proxmox-backup/www/config/SyncView.js:343
@@ -14358,11 +15137,11 @@ msgstr "Verwijder naamruimte '{0}'"
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_summary.rs:97
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:296
 #: proxmox-datacenter-manager/ui/src/remotes/edit_remote.rs:97
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:335
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:353
 msgid "Remote ID"
 msgstr "Afstand ID"
 
-#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:424
+#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:449
 #, fuzzy
 msgid "Remote Migration Settings"
 msgstr "Migratie instellingen"
@@ -14398,7 +15177,7 @@ msgstr "Afstand opslag"
 
 #: proxmox-backup/www/NavigationTree.js:54
 #: proxmox-backup/www/config/RemoteView.js:39
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:364
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:384
 #: proxmox-datacenter-manager/ui/src/dashboard/remote_panel.rs:152
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/evpn_panel.rs:224
 msgid "Remotes"
@@ -14462,7 +15241,7 @@ msgstr "Verwijdering gepland"
 #: proxmox-backup/www/datastore/Content.js:1632
 #: proxmox-backup/www/tape/TapeInventory.js:237
 #: proxmox-datacenter-manager/ui/src/configuration/views.rs:276
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:213
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:215
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/installations_panel.rs:159
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answers_panel.rs:176
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/token_panel.rs:166
@@ -14530,6 +15309,8 @@ msgid "Remove Group"
 msgstr "Verwijder groep"
 
 #: proxmox-backup/www/Utils.js:454
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:308
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:392
 #, fuzzy
 msgid "Remove Key"
 msgstr "Herstelsleutel"
@@ -14640,6 +15421,12 @@ msgid ""
 "Uncheck to keep the namespace structure."
 msgstr ""
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:314
+msgid ""
+"Remove the selected key from the pool. Disabled while the key is live on a "
+"remote node."
+msgstr ""
+
 #: proxmox-yew-comp/src/auth_view.rs:463
 #: proxmox-yew-comp/src/auth_edit_ldap.rs:276
 #, fuzzy
@@ -14667,6 +15454,22 @@ msgstr "Verwijder verdwenen"
 #: pve-manager/www/manager6/dc/SyncWindow.js:140
 msgid "Remove vanished user and group entries."
 msgstr "Verwijder verdwenen gebruik en groep invoeren."
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:382
+msgid ""
+"Remove {key} from the key pool? It is still assigned to {remote}/{node}; the "
+"assignment is released without removing any subscription on the remote. Use "
+"Clear Key on the Node Subscription Status panel first to release a live "
+"subscription on that node too."
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:388
+msgid "Remove {key} from the key pool? This does not revoke the subscription."
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1088
+msgid "Remove {n} live subscription(s) from the remote nodes?"
+msgstr ""
 
 #: proxmox-backup/www/config/GCView.js:217
 #, fuzzy
@@ -14849,7 +15652,7 @@ msgstr "Gegevensopslag toewijzing"
 msgid "Resource Pool"
 msgstr "Bron pool"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:671
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:672
 #, fuzzy
 msgid "Resource Tree"
 msgstr "Bron"
@@ -14860,7 +15663,7 @@ msgid "Resource Type"
 msgstr "Bron"
 
 #: proxmox-datacenter-manager/ui/src/dashboard/gauge_panel.rs:57
-#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:675
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:676
 #, fuzzy
 msgid "Resource Usage"
 msgstr "Bronnen"
@@ -14870,8 +15673,8 @@ msgstr "Bronnen"
 #: pve-manager/www/manager6/lxc/Config.js:268
 #: pve-manager/www/manager6/lxc/DNS.js:71
 #: proxmox-datacenter-manager/ui/src/dashboard/resource_tree.rs:51
-#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:126
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:494
+#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:128
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:503
 #: pve-yew-mobile-gui/src/widgets/main_navigation.rs:80
 #: pve-yew-mobile-gui/src/pages/page_dashboard.rs:349
 #: proxmox-yew-comp/src/configuration/pve/lxc_resources_panel/mobile.rs:450
@@ -14883,7 +15686,7 @@ msgstr "Bronnen"
 #: pmg-gui/js/ServerStatus.js:66 pmg-gui/js/ServerStatus.js:68
 #: pve-manager/www/manager6/ceph/OSD.js:928
 #: pve-manager/www/manager6/ceph/ServiceList.js:338
-#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:135
+#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:143
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:97
 msgid "Restart"
 msgstr "Herstart"
@@ -14949,6 +15752,9 @@ msgstr "Retentie configuratie"
 #: pve-manager/www/manager6/Utils.js:2232
 #: pve-manager/www/manager6/qemu/CmdMenu.js:83
 #: pve-manager/www/manager6/qemu/Config.js:48
+#: proxmox-datacenter-manager/ui/src/guests.rs:758
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:121
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:716
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/dashboard_panel.rs:257
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:172
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:203
@@ -14993,12 +15799,19 @@ msgstr "Reverse DNS server"
 #: proxmox-widget-toolkit/src/node/NetworkView.js:251
 #: pmg-gui/js/SpamDetectorCustom.js:293
 #: pve-manager/www/manager6/button/Revert.js:5
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:925
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1361
 #: proxmox-yew-comp/src/configuration/pve/lxc_resources_panel/desktop.rs:211
 #: proxmox-yew-comp/src/configuration/pve/qemu_hardware_panel/desktop.rs:215
 #: proxmox-yew-comp/src/configuration/network_view.rs:228
 #: proxmox-yew-comp/src/pending_property_view/pending_property_grid.rs:117
 msgid "Revert"
 msgstr "Terugzetten"
+
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:668
+#, fuzzy
+msgid "Revert pending change"
+msgstr "Wijzigingen in behandeling"
 
 #: pve-manager/www/manager6/dc/Backup.js:466
 #, fuzzy
@@ -15046,13 +15859,28 @@ msgstr "Groepsdeelnemer"
 msgid "Roles"
 msgstr "Rollen"
 
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:633
+msgid ""
+"Roll back to snapshot '{0}'? This reverts the guest's disk and configuration "
+"to that snapshot; changes made since are lost. A running guest is stopped "
+"during rollback (unless a QEMU snapshot includes its memory state)."
+msgstr ""
+
 #: pve-manager/www/manager6/Utils.js:2204
 #: pve-manager/www/manager6/Utils.js:2233
 #: pve-manager/www/manager6/tree/SnapshotTree.js:263
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:623
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:767
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:778
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:173
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:204
 msgid "Rollback"
 msgstr "Terugdraaien"
+
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:621
+#, fuzzy
+msgid "Rollback Snapshot"
+msgstr "Momentopname maken"
 
 #: pmg-gui/js/PBSRemoteEdit.js:54
 #: pve-manager/www/manager6/storage/PBSEdit.js:581
@@ -15253,6 +16081,7 @@ msgstr "Verwijder gegevensopslag"
 
 #: pve-manager/www/manager6/dc/Guests.js:42
 #: pve-manager/www/manager6/dc/Guests.js:87
+#: proxmox-datacenter-manager/ui/src/pve/utils.rs:155
 msgid "Running"
 msgstr "Actief"
 
@@ -15353,7 +16182,7 @@ msgstr "SCSI-controllertype"
 #: pve-manager/www/manager6/dc/Config.js:258
 #: pve-manager/www/manager6/form/IPRefSelector.js:73
 #: pve-manager/www/manager6/tree/ResourceTree.js:26
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:335
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:346
 msgid "SDN"
 msgstr "SDN"
 
@@ -15367,7 +16196,7 @@ msgstr "DNS domein"
 msgid "SDN Zones"
 msgstr "DNS domein"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:862
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:870
 #, fuzzy
 msgid "SHA256 Certificate Fingerprint"
 msgstr "Laatste verificatie"
@@ -15718,6 +16547,10 @@ msgstr "Selecteer tijdstempel"
 msgid "Select Type first"
 msgstr "Selecteer tijdstempel"
 
+#: proxmox-datacenter-manager/ui/src/ceph/view.rs:117
+msgid "Select a Ceph cluster to view its details."
+msgstr ""
+
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/evpn_panel.rs:342
 msgid "Select a Zone or VNet for more details."
 msgstr ""
@@ -15726,9 +16559,19 @@ msgstr ""
 msgid "Select a firewall entry to show its rules."
 msgstr ""
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_assign.rs:209
+#, fuzzy
+msgid "Select a key first."
+msgstr "Selecteer tijdstempel"
+
 #: proxmox-datacenter-manager/ui/src/remotes/updates.rs:600
 msgid "Select a node to show available updates."
 msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:620
+#, fuzzy
+msgid "Select a remote first."
+msgstr "Selecteer tijdstempel"
 
 #: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:310
 msgid "Select an interface to configure, or add a new one."
@@ -15990,6 +16833,7 @@ msgstr "Service-VLAN-protocol"
 #: pmg-gui/js/ServerAdministration.js:27
 #: pve-manager/www/manager6/ceph/Status.js:239
 #: proxmox-backup/www/ServerAdministration.js:29
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:132
 #: pve-yew-mobile-gui/src/pages/page_node_status/mod.rs:148
 msgid "Services"
 msgstr "Services"
@@ -16071,7 +16915,7 @@ msgstr "Delingen"
 #: pve-manager/www/manager6/node/Config.js:125
 #: pve-manager/www/manager6/node/Config.js:161
 #: proxmox-backup/www/NavigationTree.js:105
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:300
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:311
 #: proxmox-datacenter-manager/ui/src/pve/node/mod.rs:139
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:183
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:190
@@ -16189,6 +17033,11 @@ msgstr ""
 msgid "Show tree panel"
 msgstr ""
 
+#: proxmox-yew-widget-toolkit/src/widget/charts/map/mod.rs:503
+#, fuzzy
+msgid "Show whole map"
+msgstr "Alle taken weergeven"
+
 #: proxmox-datacenter-manager/ui/src/dashboard/tasks.rs:158
 #, fuzzy
 msgid "Show: {0} - {1}"
@@ -16216,9 +17065,11 @@ msgstr ""
 #: pve-manager/www/manager6/qemu/CmdMenu.js:89
 #: pve-manager/www/manager6/qemu/Config.js:154
 #: proxmox-backup/www/ServerStatus.js:154
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:119
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:695
-#: proxmox-datacenter-manager/ui/src/pve/mod.rs:69
+#: proxmox-datacenter-manager/ui/src/guests.rs:740
+#: proxmox-datacenter-manager/ui/src/guests.rs:752
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:120
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:705
+#: proxmox-datacenter-manager/ui/src/pve/mod.rs:70
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/dashboard_panel.rs:242
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/dashboard_panel.rs:210
 #: pve-yew-mobile-gui/src/pages/page_node_status/dashboard_panel.rs:140
@@ -16353,6 +17204,11 @@ msgstr "Grootte"
 msgid "Size Increment"
 msgstr "Grootte-toename"
 
+#: proxmox-datacenter-manager/ui/src/ceph/pools.rs:137
+#, fuzzy
+msgid "Size/Min"
+msgstr "Grootte"
+
 #: pve-manager/www/manager6/storage/ESXIEdit.js:82
 #, fuzzy
 msgid "Skip Certificate Verification"
@@ -16427,7 +17283,16 @@ msgstr "Momentopname selecteren"
 #: pve-manager/www/manager6/lxc/Config.js:326
 #: pve-manager/www/manager6/qemu/Config.js:379
 #: proxmox-backup/www/datastore/Summary.js:622
+#: proxmox-datacenter-manager/ui/src/guests.rs:783
+#: proxmox-datacenter-manager/ui/src/guests.rs:791
+#: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:172
+#: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:152
 msgid "Snapshots"
+msgstr "Momentopnamen"
+
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:167
+#, fuzzy
+msgid "Snapshots - {0}"
 msgstr "Momentopnamen"
 
 #: pve-manager/www/manager6/storage/Base.js:106
@@ -16437,7 +17302,7 @@ msgstr "Geen momentopnamen gevonden"
 
 #: pve-manager/www/manager6/Utils.js:741
 #: pve-manager/www/manager6/storage/Browser.js:125
-#: proxmox-datacenter-manager/ui/src/pve/utils.rs:295
+#: proxmox-datacenter-manager/ui/src/pve/utils.rs:314
 msgid "Snippets"
 msgstr "Fragmenten"
 
@@ -16451,10 +17316,16 @@ msgstr "Socket"
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:134
 #: pve-manager/www/manager6/window/GuestImport.js:488
 #: pve-manager/www/manager6/window/Restore.js:369
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_assign.rs:95
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:468
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_processor_property.rs:82
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_processor_property.rs:179
 msgid "Sockets"
 msgstr "Sockets"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:652
+msgid "Sockets (node / key)"
+msgstr ""
 
 #: proxmox-widget-toolkit/src/Schema.js:95
 msgid "Softlink"
@@ -16501,6 +17372,7 @@ msgstr "Geheim sleutel"
 #: pve-manager/www/manager6/window/GuestDiskReassign.js:127
 #: pve-manager/www/manager6/window/GuestImport.js:700
 #: pve-manager/www/manager6/window/Restore.js:191
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:147
 #: proxmox-datacenter-manager/ui/src/widget/pve_migrate_mapping.rs:357
 msgid "Source"
 msgstr "Bron"
@@ -16516,7 +17388,7 @@ msgid "Source Namespace"
 msgstr "Bron naamruimte"
 
 #: proxmox-backup/www/window/SyncJobEdit.js:53
-#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:357
+#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:382
 msgid "Source Remote"
 msgstr "Bron afstand"
 
@@ -16608,6 +17480,11 @@ msgstr "Spice verbeteringen"
 msgid "Spice Port"
 msgstr "Spice poort"
 
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:226
+#, fuzzy
+msgid "Standalone"
+msgstr "Standaard"
+
 #: pve-manager/www/manager6/dc/Cluster.js:212
 #: pve-manager/www/manager6/dc/Health.js:33
 msgid "Standalone node - no cluster defined"
@@ -16638,9 +17515,10 @@ msgstr "Standaard VGA"
 #: pve-manager/www/manager6/node/Config.js:49
 #: pve-manager/www/manager6/qemu/CmdMenu.js:61
 #: pve-manager/www/manager6/qemu/Config.js:58
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:118
+#: proxmox-datacenter-manager/ui/src/guests.rs:760
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:119
 #: proxmox-datacenter-manager/ui/src/pve/tree.rs:718
-#: proxmox-datacenter-manager/ui/src/pve/mod.rs:68
+#: proxmox-datacenter-manager/ui/src/pve/mod.rs:69
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/dashboard_panel.rs:262
 #: pve-yew-mobile-gui/src/pages/page_lxc_status/dashboard_panel.rs:223
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:95
@@ -16655,6 +17533,11 @@ msgstr "Start"
 #, fuzzy
 msgid "Start Address"
 msgstr "Peer-adres"
+
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:643
+#, fuzzy
+msgid "Start After Rollback"
+msgstr "Start na aanmaak"
 
 #: proxmox-yew-comp/src/auth_view.rs:473
 #, fuzzy
@@ -16767,6 +17650,9 @@ msgstr "Opstartvertraging"
 #: pve-manager/www/manager6/sdn/ZoneView.js:183
 #: proxmox-backup/www/tape/ChangerStatus.js:883
 #: proxmox-backup/www/tape/DriveStatus.js:481
+#: proxmox-datacenter-manager/ui/src/ceph/flags.rs:112
+#: proxmox-datacenter-manager/ui/src/ceph/managers.rs:164
+#: proxmox-datacenter-manager/ui/src/ceph/managers.rs:209
 msgid "State"
 msgstr "Status"
 
@@ -16860,10 +17746,16 @@ msgstr "Statistieken van laatste vuilnis ophaling"
 #: proxmox-backup/www/tape/TapeInventory.js:153
 #: proxmox-backup/www/tape/TapeInventory.js:321
 #: proxmox-datacenter-manager/ui/src/configuration/subscription_panel.rs:152
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:480
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:615
 #: proxmox-datacenter-manager/ui/src/remotes/tasks.rs:93
 #: proxmox-datacenter-manager/ui/src/remotes/firewall/tree.rs:277
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/installations_panel.rs:281
 #: proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:261
+#: proxmox-datacenter-manager/ui/src/guests.rs:839
+#: proxmox-datacenter-manager/ui/src/guests.rs:910
+#: proxmox-datacenter-manager/ui/src/ceph/osds.rs:428
+#: proxmox-datacenter-manager/ui/src/ceph/osds.rs:499
 #: proxmox-datacenter-manager/ui/src/pve/lxc/overview.rs:264
 #: proxmox-datacenter-manager/ui/src/pve/qemu/overview.rs:270
 #: proxmox-datacenter-manager/ui/src/sdn/zone_tree.rs:167
@@ -16941,6 +17833,7 @@ msgstr "Stop {0} onmiddellijk"
 #: pve-manager/www/manager6/ceph/Services.js:178
 #: pve-manager/www/manager6/dc/Guests.js:58
 #: pve-manager/www/manager6/dc/Guests.js:103
+#: proxmox-datacenter-manager/ui/src/pve/utils.rs:156
 msgid "Stopped"
 msgstr "Gestopt"
 
@@ -17025,6 +17918,15 @@ msgid ""
 "storage migration or select other target node."
 msgstr ""
 
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:631
+msgid "Stored fingerprint will be cleared on Apply."
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:559
+#, fuzzy
+msgid "Stored fingerprint:"
+msgstr "Vingerafdruk weergeven"
+
 #: pve-manager/www/manager6/ha/rules/NodeAffinityRuleEdit.js:129
 #: pve-manager/www/manager6/ha/rules/NodeAffinityRules.js:15
 msgid "Strict"
@@ -17054,6 +17956,7 @@ msgstr "map"
 #: pve-manager/www/manager6/node/Certificates.js:322
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:313
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_nodes.rs:279
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:727
 #: proxmox-yew-comp/src/acme/certificate_list.rs:358
 #: proxmox-yew-comp/src/acme/certificate_list.rs:391
 msgid "Subject"
@@ -17064,6 +17967,7 @@ msgstr "Onderwerp"
 #: pve-manager/www/manager6/node/Certificates.js:93
 #: pve-manager/www/manager6/node/Certificates.js:351
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:318
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:732
 #: proxmox-yew-comp/src/acme/certificate_list.rs:363
 #: proxmox-yew-comp/src/acme/certificate_list.rs:420
 msgid "Subject Alternative Names"
@@ -17096,9 +18000,9 @@ msgstr "Subnets"
 #: pve-manager/www/manager6/node/Config.js:452
 #: proxmox-backup/www/Dashboard.js:290 proxmox-backup/www/NavigationTree.js:90
 #: proxmox-backup/www/Subscription.js:24
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:273
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:279
-#: proxmox-datacenter-manager/ui/src/dashboard/subscriptions_list.rs:218
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:275
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:281
+#: proxmox-datacenter-manager/ui/src/dashboard/subscriptions_list.rs:207
 #: pve-yew-mobile-gui/src/pages/page_dashboard.rs:85
 msgid "Subscription"
 msgstr "Lidmaatschap"
@@ -17107,6 +18011,7 @@ msgstr "Lidmaatschap"
 #: pve-manager/www/manager6/node/Subscription.js:11
 #: pve-manager/www/manager6/node/Subscription.js:120
 #: proxmox-backup/www/Subscription.js:16 proxmox-backup/www/Subscription.js:101
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:262
 #: proxmox-yew-comp/src/subscription_panel.rs:197
 #: proxmox-yew-comp/src/subscription_panel.rs:251
 msgid "Subscription Key"
@@ -17121,6 +18026,11 @@ msgstr "Lidmaatschap sleutel"
 msgid "Subscription Ratio (Basic or Higher): {0} ({1} {2})"
 msgstr ""
 
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:300
+#, fuzzy
+msgid "Subscription Registry"
+msgstr "Lidmaatschap sleutel"
+
 #: proxmox-datacenter-manager/ui/src/pve/remote_overview.rs:181
 #, fuzzy
 msgid "Subscription Status"
@@ -17129,6 +18039,11 @@ msgstr "Lidmaatschappen"
 #: proxmox-yew-comp/src/subscription_info.rs:24
 msgid "Subscription got (recently) suspended"
 msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:498
+#, fuzzy
+msgid "Subscription key(s)"
+msgstr "Lidmaatschap sleutel"
 
 #: proxmox-yew-comp/src/subscription_info.rs:23
 msgid "Subscription set but expired for this server."
@@ -17233,6 +18148,12 @@ msgstr "Pauzeren op schijf"
 msgid "Suspend to disk"
 msgstr "Pauzeren op schijf"
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:74
+#: proxmox-datacenter-manager/ui/src/pve/utils.rs:158
+#, fuzzy
+msgid "Suspended"
+msgstr "Pauzeer"
+
 #: pve-manager/www/manager6/lxc/ResourceEdit.js:152
 #: pve-manager/www/manager6/lxc/Resources.js:65
 #: pve-manager/www/manager6/panel/TemplateStatusView.js:53
@@ -17241,7 +18162,7 @@ msgstr "Pauzeren op schijf"
 msgid "Swap"
 msgstr "Wisselbestand"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:524
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:532
 #, fuzzy
 msgid "Swap Size (GB)"
 msgstr "Batch grootte (b)"
@@ -17532,7 +18453,9 @@ msgstr ""
 #: pve-manager/www/manager6/data/ResourceStore.js:340
 #: pve-manager/www/manager6/form/TagFieldSet.js:6
 #: pve-manager/www/manager6/form/VMSelector.js:86
-#: proxmox-datacenter-manager/ui/src/pve/tree.rs:626
+#: proxmox-datacenter-manager/ui/src/guests.rs:857
+#: proxmox-datacenter-manager/ui/src/guests.rs:924
+#: proxmox-datacenter-manager/ui/src/pve/tree.rs:635
 msgid "Tags"
 msgstr ""
 
@@ -17546,6 +18469,9 @@ msgstr ""
 #: pve-manager/www/manager6/qemu/CmdMenu.js:185
 #: pve-manager/www/manager6/tree/SnapshotTree.js:60
 #: pve-manager/www/manager6/tree/SnapshotTree.js:253
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:497
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:529
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:531
 msgid "Take Snapshot"
 msgstr "Momentopname maken"
 
@@ -17636,18 +18562,18 @@ msgstr "Doel"
 msgid "Target Datastore"
 msgstr "Doel gegevensopslag"
 
-#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:390
+#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:415
 #, fuzzy
 msgid "Target Endpoint"
 msgstr "Basis domeinnaam"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:184
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_edit_window.rs:205
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:186
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_edit_window.rs:206
 #, fuzzy
 msgid "Target Filter"
 msgstr "Doel grootte"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:729
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:737
 #, fuzzy
 msgid "Target Filters"
 msgstr "Doel grootte"
@@ -17672,12 +18598,12 @@ msgstr "Doel naamruimte"
 msgid "Target Namespace"
 msgstr "Doel naamruimte"
 
-#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:478
+#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:503
 #, fuzzy
 msgid "Target Network"
 msgstr "Vertrouwde netwerken"
 
-#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:379
+#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:404
 #, fuzzy
 msgid "Target Node"
 msgstr "Doel systeem"
@@ -17689,7 +18615,7 @@ msgid "Target Ratio"
 msgstr "Doel ratio"
 
 #: proxmox-backup/www/window/SyncJobEdit.js:38
-#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:363
+#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:388
 #, fuzzy
 msgid "Target Remote"
 msgstr "Doel naamruimte"
@@ -17707,11 +18633,11 @@ msgstr "Doel grootte"
 #: pve-manager/www/manager6/qemu/HDEdit.js:289
 #: pve-manager/www/manager6/qemu/HDMove.js:75
 #: pve-manager/www/manager6/window/Clone.js:254
-#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:464
+#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:489
 msgid "Target Storage"
 msgstr "Doel opslag"
 
-#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:442
+#: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:467
 #, fuzzy
 msgid "Target VMID"
 msgstr "Doel"
@@ -17721,7 +18647,7 @@ msgstr "Doel"
 msgid "Target filter"
 msgstr "Doel grootte"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:760
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:768
 msgctxt "references RFC 6901"
 msgid "Target filter keys are JSON pointers according to"
 msgstr ""
@@ -17840,7 +18766,7 @@ msgstr "Taak type"
 #: proxmox-backup/www/ServerAdministration.js:76
 #: proxmox-backup/www/button/TaskButton.js:12
 #: proxmox-datacenter-manager/ui/src/administration/mod.rs:128
-#: proxmox-datacenter-manager/ui/src/remotes/mod.rs:64
+#: proxmox-datacenter-manager/ui/src/remotes/mod.rs:76
 #: proxmox-datacenter-manager/ui/src/pbs/node/mod.rs:84
 #: proxmox-datacenter-manager/ui/src/pve/remote/mod.rs:59
 #: proxmox-yew-comp/src/running_tasks_button.rs:172
@@ -17861,8 +18787,8 @@ msgstr "Sjabloon"
 msgid "Templates"
 msgstr "Sjablonen"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:188
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_edit_window.rs:209
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:190
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_edit_window.rs:210
 #, fuzzy
 msgid "Templating"
 msgstr "Sjabloon"
@@ -17921,6 +18847,11 @@ msgstr ""
 "De hoeveelheid gegevens die uiteindelijk in deze pool wordt opgeslagen. "
 "Wordt gebruikt voor auto-scaling."
 
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:73
+#, fuzzy
+msgid "The certificate has changed since it was last trusted."
+msgstr "SSL certificaat van deze server verifiëren"
+
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:93
 #, fuzzy
 msgid "The certificate of the remote server is not trusted."
@@ -17942,10 +18873,23 @@ msgstr ""
 msgid "The following certificates of remote servers are not trusted."
 msgstr ""
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1812
+msgid ""
+"The following {n} live subscription(s) will be imported into the pool; the "
+"remote is not contacted."
+msgstr ""
+
 #: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:342
 msgid ""
 "The layout is empty. To add widgets, enable editing by clicking the {0} icon "
 "above."
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1156
+msgid ""
+"The live subscription is imported as a pool entry bound to this node; the "
+"remote is not contacted. After adoption the key participates in pool "
+"operations such as Clear Key and Auto-Assign."
 msgstr ""
 
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:188
@@ -18186,7 +19130,7 @@ msgstr ""
 #: pve-manager/www/manager6/node/Config.js:238
 #: pve-manager/www/manager6/window/ScheduleSimulator.js:133
 #: proxmox-backup/www/SystemConfiguration.js:29
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:155
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:158
 #: proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:272
 msgid "Time"
 msgstr "Tijd"
@@ -18311,7 +19255,7 @@ msgstr "Schakel Spam info"
 #: pve-manager/www/manager6/sdn/ipams/PhpIpamEdit.js:33
 #: proxmox-backup/www/window/InfluxDbEdit.js:73
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:357
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:890
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:898
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/token_panel.rs:215
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/token_panel.rs:245
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/token_selector.rs:147
@@ -18336,7 +19280,7 @@ msgstr "Token ID"
 msgid "Token Name"
 msgstr "Tokennaam"
 
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:123
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:126
 #, fuzzy
 msgid "Token Permission"
 msgstr "API tokenmachtiging"
@@ -18361,7 +19305,7 @@ msgstr "Te lang, overweeg IP sets te gebruiken."
 msgid "Too many disks, could not map to SATA."
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/lib.rs:288
+#: proxmox-datacenter-manager/ui/src/lib.rs:292
 msgid ""
 "Too many remote nodes without active basic or higher subscription. Please "
 "visit {0} for more details."
@@ -18491,6 +19435,10 @@ msgstr "Transport"
 msgid "Transports"
 msgstr "Transporten"
 
+#: proxmox-datacenter-manager/ui/src/guests.rs:420
+msgid "Tree"
+msgstr ""
+
 #: pve-manager/www/manager6/window/TreeSettingsEdit.js:5
 #, fuzzy
 msgid "Tree Settings"
@@ -18503,6 +19451,16 @@ msgstr ""
 #: pve-manager/www/manager6/dc/OptionView.js:396
 msgid "Tree Shape: {0}"
 msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/ceph/osds.rs:329
+#, fuzzy
+msgid "Tree view"
+msgstr "Voorbeeld"
+
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:60
+#, fuzzy
+msgid "Trusted"
+msgstr "Vertrouwde netwerken"
 
 #: pmg-gui/js/MyNetworks.js:40 pmg-gui/js/MyNetworks.js:69
 #: pmg-gui/js/MyNetworks.js:120
@@ -18529,7 +19487,7 @@ msgid "Two Factor"
 msgstr "Twee-factor"
 
 #: proxmox-backup/www/panel/AccessControl.js:24
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:97
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:100
 msgid "Two Factor Authentication"
 msgstr "Twee-factor authenticatie"
 
@@ -18592,10 +19550,11 @@ msgstr ""
 #: proxmox-backup/www/form/AuthidSelector.js:72
 #: proxmox-backup/www/form/GroupFilter.js:520
 #: proxmox-backup/www/tape/ChangerStatus.js:47
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:345
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:363
 #: proxmox-datacenter-manager/ui/src/widget/pve_storage_selector.rs:214
 #: proxmox-datacenter-manager/ui/src/widget/pve_migrate_mapping.rs:352
 #: proxmox-datacenter-manager/ui/src/widget/view_filter_selector.rs:225
+#: proxmox-datacenter-manager/ui/src/ceph/pools.rs:126
 #: proxmox-datacenter-manager/ui/src/pve/storage.rs:273
 #: proxmox-yew-comp/src/acme/acme_domains.rs:104
 #: proxmox-yew-comp/src/auth_view.rs:499
@@ -18698,7 +19657,7 @@ msgstr ""
 msgid "Unable to delete entry"
 msgstr "Nieuwe gebruikers inschakelen"
 
-#: proxmox-datacenter-manager/ui/src/remotes/config.rs:169
+#: proxmox-datacenter-manager/ui/src/remotes/config.rs:171
 #: proxmox-yew-comp/src/auth_view.rs:234
 #: proxmox-yew-comp/src/configuration/network_view.rs:158
 #: proxmox-yew-comp/src/tfa/tfa_view.rs:233
@@ -18786,7 +19745,9 @@ msgstr "Eenheidsbestand"
 #: pve-manager/www/manager6/window/DownloadUrlToStorage.js:103
 #: proxmox-backup/www/Dashboard.js:325
 #: proxmox-datacenter-manager/ui/src/dashboard/guest_panel.rs:144
+#: proxmox-datacenter-manager/ui/src/dashboard/map.rs:248
 #: proxmox-datacenter-manager/ui/src/dashboard/pbs_datastores_panel.rs:125
+#: proxmox-datacenter-manager/ui/src/ceph/renderer.rs:55
 #: proxmox-yew-comp/src/configuration/mod.rs:35
 #: proxmox-yew-comp/src/task_status_selector.rs:170
 msgid "Unknown"
@@ -18806,12 +19767,12 @@ msgstr "Onbekend LDAP adres"
 msgid "Unknown Node"
 msgstr "Onbekend"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/view.rs:684
+#: proxmox-datacenter-manager/ui/src/dashboard/view.rs:722
 #, fuzzy
 msgid "Unknown Widget"
 msgstr "Onbekend"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/view.rs:696
+#: proxmox-datacenter-manager/ui/src/dashboard/view.rs:734
 msgid "Unknown Widget of type '{0}'"
 msgstr ""
 
@@ -18911,6 +19872,10 @@ msgstr "Niet-bevoorrecht"
 msgid "Unprivileged container"
 msgstr "Niet-bevoorrechte container"
 
+#: proxmox-datacenter-manager/ui/src/ceph/renderer.rs:74
+msgid "Unreachable"
+msgstr ""
+
 #: proxmox-widget-toolkit/src/node/Tasks.js:342
 #: proxmox-widget-toolkit/src/panel/JournalView.js:327
 #: proxmox-widget-toolkit/src/panel/LogView.js:343
@@ -19005,7 +19970,7 @@ msgstr "Update {0} account"
 #: pve-manager/www/manager6/node/Config.js:261
 #: proxmox-backup/www/ServerAdministration.js:42
 #: proxmox-datacenter-manager/ui/src/administration/mod.rs:84
-#: proxmox-datacenter-manager/ui/src/remotes/mod.rs:71
+#: proxmox-datacenter-manager/ui/src/remotes/mod.rs:83
 #: proxmox-datacenter-manager/ui/src/pbs/node/mod.rs:94
 #: proxmox-datacenter-manager/ui/src/pve/node/mod.rs:106
 #: pve-yew-mobile-gui/src/pages/page_node_status/mod.rs:158
@@ -19095,6 +20060,8 @@ msgstr "Hoger"
 #: pve-manager/www/manager6/panel/GuestStatusView.js:181
 #: pve-manager/www/manager6/sdn/FabricsContentView.js:45
 #: proxmox-backup/www/panel/NodeInfo.js:184
+#: proxmox-datacenter-manager/ui/src/guests.rs:875
+#: proxmox-datacenter-manager/ui/src/guests.rs:945
 msgid "Uptime"
 msgstr "Bedrijfstijd"
 
@@ -19107,6 +20074,8 @@ msgstr "Bedrijfstijd"
 #: pve-manager/www/manager6/storage/StatusView.js:56
 #: pve-manager/www/manager6/storage/Summary.js:51
 #: proxmox-backup/www/datastore/Summary.js:69
+#: proxmox-datacenter-manager/ui/src/ceph/clusters.rs:318
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:333
 #: proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:139
 #: proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:232
 #: proxmox-datacenter-manager/ui/src/pve/remote_overview.rs:210
@@ -19153,7 +20122,7 @@ msgstr "CD/DVD-schijfkopiëenbestand (iso) gebruiken"
 msgid "Use CRS to select the least loaded node when starting an HA resource"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:286
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:294
 #, fuzzy
 msgid "Use DHCP"
 msgstr "DHCP"
@@ -19275,6 +20244,10 @@ msgstr "Bemiddelde apparaten"
 msgid "Use node proxy"
 msgstr ""
 
+#: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:261
+msgid "Use only letters, digits, '_' and '-', starting with a letter."
+msgstr ""
+
 #: proxmox-backup/www/window/S3ClientEdit.js:71
 msgid "Use path style over vhost style bucket addressing."
 msgstr ""
@@ -19342,6 +20315,9 @@ msgstr "Gebruik {0} voor ongelimiteerd"
 #: pve-manager/www/manager6/node/Summary.js:251
 #: pve-manager/www/manager6/panel/GuestSummary.js:38
 #: proxmox-backup/www/dashboard/DataStoreStatistics.js:94
+#: proxmox-datacenter-manager/ui/src/ceph/osds.rs:445
+#: proxmox-datacenter-manager/ui/src/ceph/osds.rs:508
+#: proxmox-datacenter-manager/ui/src/ceph/pools.rs:146
 msgid "Used"
 msgstr "Gebruikt"
 
@@ -19428,7 +20404,7 @@ msgstr "Gebruiker ID"
 
 #: pmg-gui/js/NavigationTree.js:72 pmg-gui/js/UserManagement.js:5
 #: proxmox-backup/www/panel/AccessControl.js:18
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:62
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:65
 msgid "User Management"
 msgstr "Gebruiker management"
 
@@ -19438,7 +20414,7 @@ msgstr "Gebruiker management"
 #: pve-manager/www/manager6/sdn/VnetACLView.js:241
 #: proxmox-backup/www/config/ACLView.js:161
 #: proxmox-backup/www/window/ACLEdit.js:34
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:118
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:121
 #: proxmox-yew-comp/src/acl/acl_edit.rs:66
 msgid "User Permission"
 msgstr "Gebruiker machtiging"
@@ -19636,7 +20612,7 @@ msgstr "VLAN-ID"
 msgid "VM"
 msgstr "VM"
 
-#: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:65
+#: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:67
 #, fuzzy
 msgid "VM '{0}'"
 msgstr "'{0}' verifiëren"
@@ -19749,6 +20725,7 @@ msgstr "Geldig CIDR bereik"
 #: pve-manager/www/manager6/node/Certificates.js:79
 #: pve-manager/www/manager6/node/Certificates.js:339
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:316
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:730
 #: proxmox-yew-comp/src/acme/certificate_list.rs:361
 #: proxmox-yew-comp/src/acme/certificate_list.rs:406
 msgid "Valid Since"
@@ -19785,9 +20762,9 @@ msgstr "Validatievertraging"
 msgid "Value"
 msgstr "Waarde"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:351
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:460
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:739
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:359
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:468
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:747
 #, fuzzy
 msgid "Value To Match"
 msgstr "Wachtwoorden komen niet overeen"
@@ -19967,6 +20944,9 @@ msgstr "Nieuwe back-ups direct na voltooing verifiëren"
 #: pve-manager/www/manager6/storage/TemplateView.js:68
 #: pve-manager/www/manager6/window/GuestImport.js:572
 #: proxmox-datacenter-manager/ui/src/remotes/updates.rs:180
+#: proxmox-datacenter-manager/ui/src/ceph/managers.rs:183
+#: proxmox-datacenter-manager/ui/src/ceph/managers.rs:231
+#: proxmox-datacenter-manager/ui/src/ceph/monitors.rs:139
 #: proxmox-yew-comp/src/apt_package_manager.rs:427
 #: proxmox-yew-comp/src/form/pve/qemu_machine_version_selector.rs:194
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_machine_property.rs:108
@@ -20021,7 +21001,12 @@ msgstr "Schijfkopie bekijken"
 msgid "View images"
 msgstr "Schijfkopie bekijken"
 
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:210
+#: proxmox-datacenter-manager/ui/src/guests.rs:410
+#, fuzzy
+msgid "View mode"
+msgstr "Schijfkopie bekijken"
+
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:212
 #, fuzzy
 msgid "Views"
 msgstr "Bekijk"
@@ -20051,7 +21036,7 @@ msgstr ""
 msgid "Virtual"
 msgstr "Virtueel"
 
-#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:679
+#: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:680
 #, fuzzy
 msgid "Virtual Environment"
 msgstr "Virtuele machine"
@@ -20220,8 +21205,10 @@ msgstr "Wake-on-LAN"
 #: pve-manager/www/manager6/ceph/ServiceList.js:392
 #: pve-manager/www/manager6/ceph/StatusDetail.js:195
 #: proxmox-backup/www/dashboard/TaskSummary.js:168
+#: proxmox-datacenter-manager/ui/src/dashboard/map.rs:246
 #: proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:193
 #: proxmox-datacenter-manager/ui/src/dashboard/tasks.rs:154
+#: proxmox-datacenter-manager/ui/src/ceph/renderer.rs:52
 #: proxmox-yew-comp/src/apt_repositories.rs:908
 #, fuzzy
 msgid "Warning"
@@ -20286,7 +21273,7 @@ msgid "WebAuthn Settings"
 msgstr "WebAuthn-instellingen"
 
 #: proxmox-backup/www/SystemConfiguration.js:78
-#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:39
+#: proxmox-datacenter-manager/ui/src/configuration/mod.rs:42
 msgid "WebAuthn TFA"
 msgstr "WebAuthn TFA"
 
@@ -20393,6 +21380,10 @@ msgstr "Hele maand"
 #: pmg-gui/js/StatTimeSelector.js:138
 msgid "Whole year"
 msgstr "Hele jaar"
+
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:630
+msgid "Will clear"
+msgstr ""
 
 #: proxmox-widget-toolkit/src/panel/DiskList.js:425
 #: pve-manager/www/manager6/Utils.js:2219 proxmox-backup/www/Utils.js:470
@@ -20708,7 +21699,7 @@ msgstr "ZFS pool"
 msgid "ZFS Storage"
 msgstr "ZFS opslag"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:472
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:480
 msgid ""
 "ZFS is not compatible with hardware RAID controllers, for details see the "
 "documentation."
@@ -20741,6 +21732,14 @@ msgstr "Zone {0} op systeem {1}"
 msgid "Zones"
 msgstr "Zones"
 
+#: proxmox-yew-widget-toolkit/src/widget/charts/map/mod.rs:521
+msgid "Zoom in"
+msgstr ""
+
+#: proxmox-yew-widget-toolkit/src/widget/charts/map/mod.rs:512
+msgid "Zoom out"
+msgstr ""
+
 #: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:166
 #, fuzzy
 msgid "Zstd Threads"
@@ -20749,6 +21748,11 @@ msgstr "{0} uren"
 #: pve-manager/www/manager6/ceph/Pool.js:159
 msgid "a min_size of 1 is not recommended and can lead to data loss"
 msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/ceph/managers.rs:34
+#, fuzzy
+msgid "active"
+msgstr "Actief"
 
 #: proxmox-backup/www/window/SyncJobEdit.js:443
 #, fuzzy
@@ -20845,6 +21849,11 @@ msgstr "IP-configuratie"
 msgid "daily"
 msgstr "dagelijks"
 
+#: proxmox-datacenter-manager/ui/src/ceph/managers.rs:41
+#, fuzzy
+msgid "damaged"
+msgstr "Beschadigd"
+
 #: proxmox-widget-toolkit/src/Utils.js:55
 msgid "day"
 msgstr "dag"
@@ -20898,6 +21907,11 @@ msgstr "uitgeschakeld"
 msgid "dns"
 msgstr "DNS"
 
+#: proxmox-datacenter-manager/ui/src/ceph/osds.rs:211
+#, fuzzy
+msgid "down"
+msgstr "Uitschakelen"
+
 #: proxmox-backup/www/window/S3ClientEdit.js:48
 msgid "e.g. {{bucket}}.s3.{{region}}.amazonaws.com"
 msgstr ""
@@ -20919,6 +21933,10 @@ msgstr "E-mail sturen aan"
 #: proxmox-yew-comp/src/apt_repositories.rs:689
 msgid "enabled"
 msgstr "ingeschakeld"
+
+#: proxmox-datacenter-manager/ui/src/ceph/pools.rs:131
+msgid "erasure"
+msgstr ""
 
 #: proxmox-yew-comp/src/form/pve/lxc_property/lxc_features_property.rs:120
 #, fuzzy
@@ -20963,7 +21981,7 @@ msgstr "Gegevensopslag opties"
 msgid "generated on save"
 msgstr "Schijfkopie regenereren"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:984
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:992
 msgid "glob to match"
 msgstr ""
 
@@ -21012,6 +22030,12 @@ msgstr "iSCSI-provider"
 #, fuzzy
 msgid "iSCSI Target"
 msgstr "Doel"
+
+#: proxmox-datacenter-manager/ui/src/ceph/monitors.rs:126
+#: proxmox-datacenter-manager/ui/src/ceph/osds.rs:212
+#, fuzzy
+msgid "in"
+msgstr "Hint"
 
 #: proxmox-backup/www/Utils.js:316
 msgid "in {0}"
@@ -21083,6 +22107,10 @@ msgstr "bewaar-jaarlijks"
 msgid "keyctl"
 msgstr "keyctl"
 
+#: proxmox-datacenter-manager/ui/src/ceph/managers.rs:40
+msgid "laggy"
+msgstr ""
+
 #: proxmox-widget-toolkit/src/Toolkit.js:135
 msgid "letter"
 msgstr "letter"
@@ -21109,6 +22137,10 @@ msgstr ""
 #: proxmox-backup/www/Utils.js:8
 msgid "missing"
 msgstr "missend"
+
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:255
+msgid "monitor quorum {0}/{1}"
+msgstr ""
 
 #: proxmox-yew-comp/src/key_value_list.rs:212
 msgid "name must not be empty!"
@@ -21145,6 +22177,11 @@ msgstr ""
 msgid "no data loaded"
 msgstr ""
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:474
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:530
+msgid "no keys provided"
+msgstr ""
+
 #: proxmox-yew-widget-toolkit/src/widget/form/combobox.rs:232
 msgid "no such item"
 msgstr ""
@@ -21167,6 +22204,8 @@ msgstr "noVNC-instellingen"
 #: proxmox-backup/www/window/NotificationThresholds.js:105
 #: proxmox-backup/www/window/NotificationThresholds.js:114
 #: proxmox-backup/www/window/SyncJobEdit.js:213
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:561
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:372
 #: proxmox-datacenter-manager/ui/src/pve/lxc/overview.rs:275
 #: proxmox-datacenter-manager/ui/src/pve/lxc/overview.rs:283
 #: proxmox-datacenter-manager/ui/src/pve/qemu/overview.rs:284
@@ -21185,6 +22224,12 @@ msgstr "geen"
 msgid "none (disabled)"
 msgstr "geen (uitgeschakeld)"
 
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:481
+msgid "not a valid Proxmox VE or Proxmox Backup Server key: {0}"
+msgid_plural "not valid Proxmox VE or Proxmox Backup Server keys: {0}"
+msgstr[0] ""
+msgstr[1] ""
+
 #: proxmox-widget-toolkit/src/node/NetworkEdit.js:92
 msgid "not a valid bridge VLAN ID entry: {0}"
 msgstr ""
@@ -21192,6 +22237,10 @@ msgstr ""
 #: proxmox-widget-toolkit/src/node/ServiceView.js:213
 msgid "not installed"
 msgstr "niet geïnstalleerd."
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:488
+msgid "not valid Proxmox VE or Proxmox Backup Server keys: {0} (and {1} more)"
+msgstr ""
 
 #: proxmox-yew-widget-toolkit/src/widget/form/number.rs:96
 #: proxmox-yew-widget-toolkit/src/widget/form/number.rs:124
@@ -21212,6 +22261,7 @@ msgid "of {0} CPU(s)"
 msgstr "van {0} CPU(s)"
 
 #: pve-manager/www/manager6/sdn/fabrics/wireguard/FabricEdit.js:20
+#: proxmox-datacenter-manager/ui/src/ceph/pools.rs:160
 #, fuzzy
 msgid "off"
 msgstr "Offline"
@@ -21219,6 +22269,11 @@ msgstr "Offline"
 #: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:394
 msgid "old"
 msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/ceph/pools.rs:158
+#, fuzzy
+msgid "on"
+msgstr "Maandag"
 
 #: proxmox-widget-toolkit/src/Toolkit.js:79
 msgid "only unicast addresses are allowed"
@@ -21233,6 +22288,12 @@ msgstr "Opties"
 #: pve-manager/www/manager6/dc/MetricServerView.js:589
 msgid "otel-collector.example.com"
 msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/ceph/monitors.rs:126
+#: proxmox-datacenter-manager/ui/src/ceph/osds.rs:212
+#, fuzzy
+msgid "out"
+msgstr "Aantal"
 
 #: pmg-yew-quarantine-gui/src/page_not_found.rs:9
 msgid "page not found"
@@ -21278,6 +22339,11 @@ msgstr ""
 "pveproxy zal opnieuw worden opgestart met nieuwe certificaten, herlaad de "
 "GUI!"
 
+#: proxmox-datacenter-manager/ui/src/ceph/pools.rs:130
+#, fuzzy
+msgid "replicated"
+msgstr "Aangemaakt"
+
 #: pve-manager/www/manager6/node/ACME.js:23
 #, fuzzy
 msgid "required"
@@ -21297,8 +22363,21 @@ msgstr "actief"
 msgid "running..."
 msgstr "actief"
 
+#: proxmox-datacenter-manager/ui/src/ceph/flags.rs:122
+#, fuzzy
+msgid "set"
+msgstr "Herstel"
+
 #: proxmox-datacenter-manager/ui/src/remotes/updates.rs:745
 msgid "small difference"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/ceph/managers.rs:35
+msgid "standby"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/ceph/managers.rs:36
+msgid "standby-replay"
 msgstr ""
 
 #: proxmox-widget-toolkit/src/Utils.js:57
@@ -21326,11 +22405,11 @@ msgstr ""
 msgid "syncing"
 msgstr "synchroniseren"
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:461
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:469
 msgid "udev Property Name, e.g. ID_MODEL"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:352
+#: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:360
 msgid "udev property name, e.g. ID_NET_DRIVER"
 msgstr ""
 
@@ -21361,7 +22440,7 @@ msgstr "ongewijzigd"
 msgid "unknown"
 msgstr "Onbekend"
 
-#: proxmox-datacenter-manager/ui/src/pve/utils.rs:298
+#: proxmox-datacenter-manager/ui/src/pve/utils.rs:317
 msgid "unknown content type ({0})"
 msgstr ""
 
@@ -21398,6 +22477,27 @@ msgstr "alleen niet-bevoorrecht"
 #: proxmox-yew-comp/src/form/pve/qemu_cache_type_selector.rs:51
 msgid "unsafe"
 msgstr "onveilig"
+
+#: proxmox-datacenter-manager/ui/src/ceph/flags.rs:122
+msgid "unset"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/ceph/osds.rs:211
+msgid "up"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/ceph/managers.rs:37
+#, fuzzy
+msgid "up:active"
+msgstr "Actief"
+
+#: proxmox-datacenter-manager/ui/src/ceph/managers.rs:38
+msgid "up:standby"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/ceph/managers.rs:39
+msgid "up:standby-replay"
+msgstr ""
 
 #: pve-manager/www/manager6/ceph/OSD.js:78
 #, fuzzy
@@ -21467,6 +22567,10 @@ msgstr "huidig wachtwoord verifiëren"
 msgid "via"
 msgstr "Virtueel"
 
+#: proxmox-datacenter-manager/ui/src/ceph/pools.rs:159
+msgid "warn"
+msgstr ""
+
 #: pve-manager/www/manager6/qemu/CloudInit.js:253
 msgid "with options"
 msgstr "met opties"
@@ -21503,8 +22607,32 @@ msgid ""
 "}"
 msgstr ""
 
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:371
+#, fuzzy
+msgid "{0} (+{1} standby)"
+msgstr "{0} ({1})"
+
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:384
+msgid "{0} (all active+clean)"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:155
+msgid "{0} (mixed versions)"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:387
+#, fuzzy
+msgid "{0} ({1} not active+clean)"
+msgstr "{0} ({1})"
+
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:362
+#, fuzzy
+msgid "{0} ({1}%)"
+msgstr "{0} ({1})"
+
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:376
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:314
+#: proxmox-datacenter-manager/ui/src/ceph/clusters.rs:268
 msgid "{0} ({1})"
 msgstr "{0} ({1})"
 
@@ -21515,6 +22643,16 @@ msgstr "{0} ({1}/{2}) succesvol"
 #: proxmox-datacenter-manager/ui/src/pve/remote_overview.rs:198
 msgid "{0} / {1} (running / total)"
 msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:136
+#, fuzzy
+msgid "{0} / {1} in quorum"
+msgstr "{0} van {1}"
+
+#: proxmox-datacenter-manager/ui/src/ceph/osds.rs:225
+#, fuzzy
+msgid "{0} / {1} ms"
+msgstr "{0} ({1})"
 
 #: pmg-gui/js/AttachmentGrid.js:75
 #, fuzzy
@@ -21535,6 +22673,19 @@ msgstr "{0} items"
 #, fuzzy
 msgid "{0} OK"
 msgstr "{0} ID"
+
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:248
+msgid "{0} OSD(s) down"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:251
+msgid "{0} OSD(s) out"
+msgstr ""
+
+#: proxmox-yew-widget-toolkit/src/widget/charts/map/map_point.rs:63
+#, fuzzy
+msgid "{0} and {1} more"
+msgstr "{0} van {1}"
 
 #: proxmox-backup/www/Utils.js:832
 msgid "{0} conflicting tasks still active."
@@ -21606,6 +22757,7 @@ msgstr ""
 #: proxmox-backup/www/datastore/DataStoreListSummary.js:83
 #: proxmox-datacenter-manager/ui/src/dashboard/gauge_panel.rs:187
 #: proxmox-datacenter-manager/ui/src/dashboard/gauge_panel.rs:199
+#: proxmox-datacenter-manager/ui/src/guests.rs:704
 msgid "{0} of {1}"
 msgstr "{0} van {1}"
 
@@ -21622,6 +22774,11 @@ msgstr ""
 msgid "{0} of {1} nodes are offline"
 msgstr ""
 
+#: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:472
+#, fuzzy
+msgid "{0} of {1} nodes need review"
+msgstr "{0} van {1}"
+
 #. TRANSLATORS: For example "resource on Remote 'HAL 9000'"
 #: proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:250
 #, fuzzy
@@ -21631,6 +22788,16 @@ msgstr "Zone {0} op systeem {1}"
 #: pmg-gui/js/Utils.js:866
 msgid "{0} on behalf of {1}"
 msgstr "{0} van {1}"
+
+#. reserve room for the widest (plural) count string at the total's
+#. magnitude so typing in the filter doesn't reflow the toolbar
+#: proxmox-datacenter-manager/ui/src/guests.rs:391
+#: proxmox-datacenter-manager/ui/src/guests.rs:399
+#, fuzzy
+msgid "{0} out of {1} Guest"
+msgid_plural "{0} out of {1} Guests"
+msgstr[0] "{0} van {1}"
+msgstr[1] "{0} van {1}"
 
 #: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:473
 msgid ""
@@ -21658,6 +22825,11 @@ msgstr "{0} taken voorgaand."
 #: pve-manager/www/manager6/form/CalendarEvent.js:33
 msgid "{0} to {1}"
 msgstr "{0} van {1}"
+
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:145
+#, fuzzy
+msgid "{0} up, {1} in / {2} total"
+msgstr "{0}% van {1}"
 
 #: proxmox-widget-toolkit/src/Utils.js:1377
 msgid "{0} updates"
@@ -21688,6 +22860,24 @@ msgstr ""
 msgid "{0}% ({1} of {2})"
 msgstr "{0}% van {1}"
 
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:338
+#, fuzzy
+msgid "{0}% ({1} of {2}, {3} free)"
+msgstr "{0}% van {1}"
+
+#: proxmox-datacenter-manager/ui/src/ceph/pools.rs:151
+#, fuzzy
+msgid "{0}% ({1})"
+msgstr "{0} ({1})"
+
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:262
+msgid "{0}% degraded"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:294
+msgid "{0}% misplaced"
+msgstr ""
+
 #. TRANSLATORS: For example "5% of 24 CPUs"
 #: proxmox-widget-toolkit/src/Utils.js:1122
 #, fuzzy
@@ -21708,6 +22898,52 @@ msgstr "van {0} CPU(s)"
 #, fuzzy
 msgid "{0}, Group: {1}"
 msgstr "{0} van {1}"
+
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:409
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:412
+msgid "{0}/s"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:297
+#, fuzzy
+msgid "{0}/s recovery"
+msgstr "Herstel"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:512
+msgid "{active} of {total} nodes subscribed"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/guests.rs:388
+#, fuzzy
+msgid "{n} Guest"
+msgid_plural "{n} Guests"
+msgstr[0] "Gast"
+msgstr[1] "Gast"
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:153
+msgid ""
+"{n} live subscription(s) queued for removal; Apply Pending will free them."
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:150
+msgid "{n} pending clear(s)"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:135
+msgid "{n} pending push(es)"
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:138
+msgid ""
+"{n} pool key(s) queued for push; Apply Pending will install them on the "
+"remote."
+msgstr ""
+
+#: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1722
+msgid ""
+"{selected} of {total} assignments selected. Untick any node to skip it or "
+"pick a different key, then click Assign."
+msgstr ""
 
 #~ msgid " Network/Time"
 #~ msgstr "Netwerk/Tijd"
@@ -21957,9 +23193,6 @@ msgstr "{0} van {1}"
 #, fuzzy
 #~ msgid "Node Fencing"
 #~ msgstr "Omheining"
-
-#~ msgid "Node Resources"
-#~ msgstr "Systeem bronnen"
 
 #, fuzzy
 #~ msgid "Node/Error"
@@ -22240,10 +23473,6 @@ msgstr "{0} van {1}"
 #~ msgstr "{0} ({1})"
 
 #, fuzzy
-#~ msgid "{0} ({1} sockets)"
-#~ msgstr "{0} ({1})"
-
-#, fuzzy
 #~ msgid "{0} CPU(s)"
 #~ msgstr "van {0} CPU(s)"
 
@@ -22255,10 +23484,6 @@ msgstr "{0} van {1}"
 #, fuzzy
 #~ msgid "{0} remotes failed"
 #~ msgstr "Alle mislukt"
-
-#, fuzzy
-#~ msgid "{0} {1}"
-#~ msgstr "{0} ({1})"
 
 #, fuzzy
 #~ msgid "{0}% of {1}"

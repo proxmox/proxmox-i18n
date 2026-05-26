@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: proxmox-datacenter-manager-ui f881f930baf9e5043640ea3a2585660bdec2a1fb\n"
+"Project-Id-Version: proxmox-datacenter-manager-ui 273ff66fcd7c7dbf8bac9ce22de72457743046ea\n"
 "Report-Msgid-Bugs-To: <support@proxmox.com>\n"
-"POT-Creation-Date: 2026-05-22 14:42+0000\n"
+"POT-Creation-Date: 2026-05-26 02:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgstr ""
 msgid "Package Versions"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/administration/node_status.rs:356 ./proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:346 ./proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:354 ./proxmox-datacenter-manager/ui/src/pve/lxc/overview.rs:177 ./proxmox-datacenter-manager/ui/src/pve/lxc/overview.rs:293 ./proxmox-datacenter-manager/ui/src/pve/qemu/overview.rs:173 ./proxmox-datacenter-manager/ui/src/pve/qemu/overview.rs:302
+#: ./proxmox-datacenter-manager/ui/src/administration/node_status.rs:356 ./proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:346 ./proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:354 ./proxmox-datacenter-manager/ui/src/guests.rs:861 ./proxmox-datacenter-manager/ui/src/guests.rs:931 ./proxmox-datacenter-manager/ui/src/pve/lxc/overview.rs:177 ./proxmox-datacenter-manager/ui/src/pve/lxc/overview.rs:293 ./proxmox-datacenter-manager/ui/src/pve/qemu/overview.rs:173 ./proxmox-datacenter-manager/ui/src/pve/qemu/overview.rs:302
 msgid "CPU usage"
 msgstr ""
 
@@ -113,7 +113,7 @@ msgstr ""
 msgid "CPU Usage"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/administration/node_status.rs:505 ./proxmox-datacenter-manager/ui/src/dashboard/gauge_panel.rs:41 ./proxmox-datacenter-manager/ui/src/widget/pve_node_selector.rs:157 ./proxmox-datacenter-manager/ui/src/pbs/node/overview.rs:248 ./proxmox-datacenter-manager/ui/src/pve/node/overview.rs:252
+#: ./proxmox-datacenter-manager/ui/src/administration/node_status.rs:505 ./proxmox-datacenter-manager/ui/src/dashboard/gauge_panel.rs:41 ./proxmox-datacenter-manager/ui/src/widget/pve_node_selector.rs:202 ./proxmox-datacenter-manager/ui/src/pbs/node/overview.rs:248 ./proxmox-datacenter-manager/ui/src/pve/node/overview.rs:252
 msgid "Memory Usage"
 msgstr ""
 
@@ -153,7 +153,7 @@ msgstr ""
 msgid "Node Status"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/administration/mod.rs:84 ./proxmox-datacenter-manager/ui/src/remotes/mod.rs:71 ./proxmox-datacenter-manager/ui/src/pbs/node/mod.rs:94 ./proxmox-datacenter-manager/ui/src/pve/node/mod.rs:106
+#: ./proxmox-datacenter-manager/ui/src/administration/mod.rs:84 ./proxmox-datacenter-manager/ui/src/remotes/mod.rs:83 ./proxmox-datacenter-manager/ui/src/pbs/node/mod.rs:94 ./proxmox-datacenter-manager/ui/src/pve/node/mod.rs:106
 msgid "Updates"
 msgstr ""
 
@@ -165,11 +165,11 @@ msgstr ""
 msgid "Syslog"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/administration/mod.rs:128 ./proxmox-datacenter-manager/ui/src/remotes/mod.rs:64 ./proxmox-datacenter-manager/ui/src/pbs/node/mod.rs:84 ./proxmox-datacenter-manager/ui/src/pve/remote/mod.rs:59
+#: ./proxmox-datacenter-manager/ui/src/administration/mod.rs:128 ./proxmox-datacenter-manager/ui/src/remotes/mod.rs:76 ./proxmox-datacenter-manager/ui/src/pbs/node/mod.rs:84 ./proxmox-datacenter-manager/ui/src/pve/remote/mod.rs:59
 msgid "Tasks"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/certificates.rs:21 ./proxmox-datacenter-manager/ui/src/main_menu.rs:264
+#: ./proxmox-datacenter-manager/ui/src/certificates.rs:21 ./proxmox-datacenter-manager/ui/src/main_menu.rs:266
 msgid "Certificates"
 msgstr ""
 
@@ -198,7 +198,7 @@ msgstr ""
 msgid "Origin"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/configuration/webauthn.rs:43 ./proxmox-datacenter-manager/ui/src/configuration/webauthn.rs:121 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answers_panel.rs:269 ./proxmox-datacenter-manager/ui/src/widget/resource_tree.rs:367
+#: ./proxmox-datacenter-manager/ui/src/configuration/webauthn.rs:43 ./proxmox-datacenter-manager/ui/src/configuration/webauthn.rs:121 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answers_panel.rs:269 ./proxmox-datacenter-manager/ui/src/guests.rs:835 ./proxmox-datacenter-manager/ui/src/guests.rs:903 ./proxmox-datacenter-manager/ui/src/widget/resource_tree.rs:367
 msgid "ID"
 msgstr ""
 
@@ -206,15 +206,165 @@ msgstr ""
 msgid "Auto-fill"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_panel.rs:76 ./proxmox-datacenter-manager/ui/src/configuration/views.rs:236 ./proxmox-datacenter-manager/ui/src/remotes/updates.rs:726 ./proxmox-datacenter-manager/ui/src/remotes/firewall/tree.rs:612 ./proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:194 ./proxmox-datacenter-manager/ui/src/dashboard/tasks.rs:156 ./proxmox-datacenter-manager/ui/src/pve/tree.rs:360 ./proxmox-datacenter-manager/ui/src/pve/tree.rs:379
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_assign.rs:83 ./proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:129 ./proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:559 ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:531 ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:624 ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:679
+msgid "Key"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_assign.rs:87 ./proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:135 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/installations_panel.rs:268
+msgid "Product"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_assign.rs:91 ./proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:142 ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:521
+msgid "Level"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_assign.rs:95 ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:468
+msgid "Sockets"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_assign.rs:209
+msgid "Select a key first."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_assign.rs:248
+msgid "Node sockets:"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_assign.rs:257
+msgid "No matching free keys in the pool. Add one via the Key Pool panel first."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_assign.rs:273 ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1740 ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1828
+msgid "Cancel"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_assign.rs:282 ./proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:296 ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1351 ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1744
+msgid "Assign"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_assign.rs:305
+msgid "Assign Key to {remote}/{node}"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_assign.rs:324
+msgid "Assigning..."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:147 ./proxmox-datacenter-manager/ui/src/widget/pve_migrate_mapping.rs:357
+msgid "Source"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:154
+msgid "Manual"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:155
+msgid "Adopted"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:158
+msgid "Assignment"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:180
+msgid "Add Subscription Keys"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:196
+msgid "Assign Key to Remote"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:246 ./proxmox-datacenter-manager/ui/src/configuration/subscription_panel.rs:76 ./proxmox-datacenter-manager/ui/src/configuration/views.rs:236 ./proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:62 ./proxmox-datacenter-manager/ui/src/remotes/updates.rs:726 ./proxmox-datacenter-manager/ui/src/remotes/firewall/tree.rs:612 ./proxmox-datacenter-manager/ui/src/dashboard/map.rs:247 ./proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:194 ./proxmox-datacenter-manager/ui/src/dashboard/tasks.rs:156 ./proxmox-datacenter-manager/ui/src/guests.rs:375 ./proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:470 ./proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:483 ./proxmox-datacenter-manager/ui/src/ceph/renderer.rs:53 ./proxmox-datacenter-manager/ui/src/pve/tree.rs:364 ./proxmox-datacenter-manager/ui/src/pve/tree.rs:388
 msgid "Error"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_panel.rs:103
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:247
+msgid "Could not remove {id}: {err}"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:284 ./proxmox-datacenter-manager/ui/src/configuration/views.rs:170 ./proxmox-datacenter-manager/ui/src/configuration/views.rs:267 ./proxmox-datacenter-manager/ui/src/remotes/node_url_list.rs:209 ./proxmox-datacenter-manager/ui/src/remotes/config.rs:190 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answers_panel.rs:162 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/token_panel.rs:156 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/token_panel.rs:215 ./proxmox-datacenter-manager/ui/src/dashboard/remote_panel.rs:171 ./proxmox-datacenter-manager/ui/src/widget/view_filter_selector.rs:203 ./proxmox-datacenter-manager/ui/src/sdn/evpn/evpn_panel.rs:140
+msgid "Add"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:289
+msgid "Add one or more subscription keys to the pool; the Assign step happens later."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:302
+msgid "Pin the selected key to a remote node; Apply Pending pushes the assignment to the remote."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:308 ./proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:392
+msgid "Remove Key"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:314
+msgid "Remove the selected key from the pool. Disabled while the key is live on a remote node."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:322 ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:814 ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:820 ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:860 ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1065
+msgid "Auto-Assign"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:327
+msgid "Propose a one-key-per-node assignment for nodes that have no active subscription, then queue it pending Apply."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:359
+msgid "No subscription keys in the pool yet."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:382
+msgid "Remove {key} from the key pool? It is still assigned to {remote}/{node}; the assignment is released without removing any subscription on the remote. Use Clear Key on the Node Subscription Status panel first to release a live subscription on that node too."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:388
+msgid "Remove {key} from the key pool? This does not revoke the subscription."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:432
+msgid "One key per line, or comma-separated. Only Proxmox VE and Proxmox Backup Server keys are accepted."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:474 ./proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:530
+msgid "no keys provided"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:481
+msgid "not a valid Proxmox VE or Proxmox Backup Server key: {0}"
+msgid_plural "not valid Proxmox VE or Proxmox Backup Server keys: {0}"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:488
+msgid "not valid Proxmox VE or Proxmox Backup Server keys: {0} (and {1} more)"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:498
+msgid "Subscription key(s)"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:574
+msgid "PDM cannot manage {product} remotes yet; this key is parked in the pool."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:602 ./proxmox-datacenter-manager/ui/src/remotes/edit_remote.rs:62 ./proxmox-datacenter-manager/ui/src/remotes/tasks.rs:72 ./proxmox-datacenter-manager/ui/src/remotes/tasks.rs:164 ./proxmox-datacenter-manager/ui/src/dashboard/subscriptions_list.rs:162 ./proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:221 ./proxmox-datacenter-manager/ui/src/guests.rs:844 ./proxmox-datacenter-manager/ui/src/widget/view_filter_selector.rs:284 ./proxmox-datacenter-manager/ui/src/ceph/clusters.rs:288 ./proxmox-datacenter-manager/ui/src/sdn/evpn/remote_tree.rs:377 ./proxmox-datacenter-manager/ui/src/sdn/evpn/vrf_tree.rs:322 ./proxmox-datacenter-manager/ui/src/sdn/evpn/add_vnet.rs:291 ./proxmox-datacenter-manager/ui/src/sdn/evpn/add_zone.rs:302
+msgid "Remote"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:616 ./proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:634 ./proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:647 ./proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:593 ./proxmox-datacenter-manager/ui/src/remotes/tasks.rs:81 ./proxmox-datacenter-manager/ui/src/guests.rs:853 ./proxmox-datacenter-manager/ui/src/guests.rs:917 ./proxmox-datacenter-manager/ui/src/widget/pve_node_selector.rs:196 ./proxmox-datacenter-manager/ui/src/widget/resource_tree.rs:417 ./proxmox-datacenter-manager/ui/src/widget/view_filter_selector.rs:322 ./proxmox-datacenter-manager/ui/src/pbs/node/mod.rs:63 ./proxmox-datacenter-manager/ui/src/sdn/evpn/zone_status.rs:222 ./proxmox-datacenter-manager/ui/src/sdn/evpn/vnet_status.rs:214
+msgid "Node"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:620
+msgid "Select a remote first."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_panel.rs:103 ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1382
 msgid "Check"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_panel.rs:152 ./proxmox-datacenter-manager/ui/src/remotes/tasks.rs:93 ./proxmox-datacenter-manager/ui/src/remotes/firewall/tree.rs:277 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/installations_panel.rs:281 ./proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:261 ./proxmox-datacenter-manager/ui/src/pve/lxc/overview.rs:264 ./proxmox-datacenter-manager/ui/src/pve/qemu/overview.rs:270 ./proxmox-datacenter-manager/ui/src/sdn/zone_tree.rs:167
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_panel.rs:152 ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:480 ./proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:615 ./proxmox-datacenter-manager/ui/src/remotes/tasks.rs:93 ./proxmox-datacenter-manager/ui/src/remotes/firewall/tree.rs:277 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/installations_panel.rs:281 ./proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:261 ./proxmox-datacenter-manager/ui/src/guests.rs:839 ./proxmox-datacenter-manager/ui/src/guests.rs:910 ./proxmox-datacenter-manager/ui/src/ceph/osds.rs:428 ./proxmox-datacenter-manager/ui/src/ceph/osds.rs:499 ./proxmox-datacenter-manager/ui/src/pve/lxc/overview.rs:264 ./proxmox-datacenter-manager/ui/src/pve/qemu/overview.rs:270 ./proxmox-datacenter-manager/ui/src/sdn/zone_tree.rs:167
 msgid "Status"
 msgstr ""
 
@@ -234,12 +384,246 @@ msgstr ""
 msgid "Info URL"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/configuration/views.rs:125
-msgid "# Included"
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:69 ./proxmox-datacenter-manager/ui/src/pve/storage.rs:254
+msgid "Active"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/configuration/views.rs:142 ./proxmox-datacenter-manager/ui/src/remotes/tasks.rs:165 ./proxmox-datacenter-manager/ui/src/dashboard/guest_panel.rs:152 ./proxmox-datacenter-manager/ui/src/dashboard/pbs_datastores_panel.rs:128 ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:677
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:70
+msgid "New"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:71
+msgid "No subscription"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:72
+msgid "Invalid"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:73
+msgid "Expired"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:74 ./proxmox-datacenter-manager/ui/src/pve/utils.rs:158
+msgid "Suspended"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:112
+msgid "Last checked: {when}"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:116
+msgid "Next due: {date}"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:135
+msgid "{n} pending push(es)"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:138
+msgid "{n} pool key(s) queued for push; Apply Pending will install them on the remote."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:150
+msgid "{n} pending clear(s)"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:153
+msgid "{n} live subscription(s) queued for removal; Apply Pending will free them."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:432 ./proxmox-datacenter-manager/ui/src/configuration/views.rs:347 ./proxmox-datacenter-manager/ui/src/configuration/views.rs:361 ./proxmox-datacenter-manager/ui/src/remotes/updates.rs:155 ./proxmox-datacenter-manager/ui/src/remotes/firewall/columns.rs:34 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/token_panel.rs:267 ./proxmox-datacenter-manager/ui/src/guests.rs:830 ./proxmox-datacenter-manager/ui/src/guests.rs:892 ./proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:240 ./proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:680 ./proxmox-datacenter-manager/ui/src/widget/pve_storage_selector.rs:210 ./proxmox-datacenter-manager/ui/src/ceph/cephfs.rs:119 ./proxmox-datacenter-manager/ui/src/ceph/clusters.rs:284 ./proxmox-datacenter-manager/ui/src/ceph/managers.rs:155 ./proxmox-datacenter-manager/ui/src/ceph/managers.rs:192 ./proxmox-datacenter-manager/ui/src/ceph/monitors.rs:108 ./proxmox-datacenter-manager/ui/src/ceph/osds.rs:486 ./proxmox-datacenter-manager/ui/src/ceph/pools.rs:121 ./proxmox-datacenter-manager/ui/src/sdn/evpn/remote_tree.rs:354 ./proxmox-datacenter-manager/ui/src/sdn/zone_tree.rs:141
+msgid "Name"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:512
+msgid "{active} of {total} nodes subscribed"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:618 ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:673
+msgid "Remote / Node"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:652
+msgid "Sockets (node / key)"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:705
+msgid "Pending Clear - 'Apply Pending' will remove this subscription from the node."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:742
+msgid "Not in pool - Adopt Key imports this live subscription."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:815
+msgid "No suitable unassigned keys for the remaining nodes."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:878 ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1417 ./proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:505
+msgid "Apply Pending"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:895 ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1430
+msgid "Discard Pending"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:925 ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1361
+msgid "Revert"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:974
+msgid "Check Subscription"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1052
+msgid "Loading subscription status..."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1074
+msgid "Computing proposal..."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1084
+msgid "Push {n} queued assignment(s) to the remote nodes?"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1088
+msgid "Remove {n} live subscription(s) from the remote nodes?"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1092
+msgid "Push {p} queued assignment(s) and remove {c} live subscription(s) on the remote nodes?"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1098
+msgid "Apply Pending Changes"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1118
+msgid "Discard Pending Changes"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1119
+msgid "Discard all queued assignments and cancel all queued Clear Key actions? The remote nodes are not touched."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1147
+msgid "Adopt {key} from {remote}/{node} into the pool?"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1156
+msgid "The live subscription is imported as a pool entry bound to this node; the remote is not contacted. After adoption the key participates in pool operations such as Clear Key and Auto-Assign."
+msgstr ""
+
+#. No per-item icons: the menu button already carries the adopt glyph, and
+#. both scopes would otherwise share the same icon to no effect.
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1165 ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1186 ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1406
+msgid "Adopt Key"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1203
+msgid "Queue a clear of {key} on {remote}/{node}?"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1209
+msgid "Queue a clear on {remote}/{node}?"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1218
+msgid "'Apply Pending' will remove the subscription from the node so the key can be reassigned elsewhere; 'Discard Pending' undoes the queueing without touching the remote."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1227 ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1247
+msgid "Clear Key"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1289
+msgid "Key Pool"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1357
+msgid "Bind a pool key to the selected node. Available for a node with no active subscription and no pool assignment yet."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1367
+msgid "Drop the pending pool change on the selected node. Available when the node has a queued assignment or clear."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1371 ./proxmox-datacenter-manager/ui/src/remotes/node_url_list.rs:291
+msgid "Clear"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1377
+msgid "Queue the selected node's live subscription for removal at the next Apply Pending, freeing the key for reassignment. Available for a pool-managed node; for a foreign subscription, adopt it first."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1391
+msgid "Re-verify the live subscription against the shop, refreshing its status."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1393
+msgid "No subscription installed on the selected node; assign or adopt one first."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1398 ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1831
+msgid "Adopt"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1411 ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1844 ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1851
+msgid "Adopt All"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1426
+msgid "Push every queued assignment to its remote node and remove the subscription from nodes pending clear."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1439
+msgid "Discard queued assignments without touching the remote nodes."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1458
+msgid "Filter the node list by status or by remote and node name."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1492 ./proxmox-datacenter-manager/ui/src/configuration/views.rs:142 ./proxmox-datacenter-manager/ui/src/remotes/tasks.rs:165 ./proxmox-datacenter-manager/ui/src/dashboard/guest_panel.rs:152 ./proxmox-datacenter-manager/ui/src/dashboard/pbs_datastores_panel.rs:128 ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:678
 msgid "All"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1521
+msgid "Filter by remote or node"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1522
+msgid "Filter nodes by remote or node name"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1530 ./proxmox-datacenter-manager/ui/src/guests.rs:441 ./proxmox-datacenter-manager/ui/src/guests.rs:442
+msgid "Clear filter"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1543
+msgid "No remote nodes available yet."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1553
+msgid "Node Subscription Status"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1722
+msgid "{selected} of {total} assignments selected. Untick any node to skip it or pick a different key, then click Assign."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1767
+msgid "Auto-Assign Proposal"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1812
+msgid "The following {n} live subscription(s) will be imported into the pool; the remote is not contacted."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/configuration/views.rs:125
+msgid "# Included"
 msgstr ""
 
 #: ./proxmox-datacenter-manager/ui/src/configuration/views.rs:148
@@ -258,15 +642,11 @@ msgstr ""
 msgid "Yes"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/configuration/views.rs:170 ./proxmox-datacenter-manager/ui/src/configuration/views.rs:267 ./proxmox-datacenter-manager/ui/src/remotes/node_url_list.rs:209 ./proxmox-datacenter-manager/ui/src/remotes/config.rs:188 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answers_panel.rs:162 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/token_panel.rs:156 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/token_panel.rs:215 ./proxmox-datacenter-manager/ui/src/dashboard/remote_panel.rs:171 ./proxmox-datacenter-manager/ui/src/widget/view_filter_selector.rs:203 ./proxmox-datacenter-manager/ui/src/sdn/evpn/evpn_panel.rs:140
-msgid "Add"
-msgstr ""
-
 #: ./proxmox-datacenter-manager/ui/src/configuration/views.rs:170 ./proxmox-datacenter-manager/ui/src/configuration/views.rs:184
 msgid "View"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/configuration/views.rs:184 ./proxmox-datacenter-manager/ui/src/configuration/views.rs:271 ./proxmox-datacenter-manager/ui/src/remotes/edit_remote.rs:62 ./proxmox-datacenter-manager/ui/src/remotes/config.rs:208 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answers_panel.rs:171 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/token_panel.rs:161 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/token_panel.rs:245 ./proxmox-datacenter-manager/ui/src/dashboard/status_row.rs:201
+#: ./proxmox-datacenter-manager/ui/src/configuration/views.rs:184 ./proxmox-datacenter-manager/ui/src/configuration/views.rs:271 ./proxmox-datacenter-manager/ui/src/remotes/edit_remote.rs:62 ./proxmox-datacenter-manager/ui/src/remotes/config.rs:210 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answers_panel.rs:171 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/token_panel.rs:161 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/token_panel.rs:245 ./proxmox-datacenter-manager/ui/src/dashboard/status_row.rs:201
 msgid "Edit"
 msgstr ""
 
@@ -274,11 +654,11 @@ msgstr ""
 msgid "Could not delete '{0}': '{1}'"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/configuration/views.rs:276 ./proxmox-datacenter-manager/ui/src/remotes/config.rs:213 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/installations_panel.rs:159 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answers_panel.rs:176 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/token_panel.rs:166
+#: ./proxmox-datacenter-manager/ui/src/configuration/views.rs:276 ./proxmox-datacenter-manager/ui/src/remotes/config.rs:215 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/installations_panel.rs:159 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answers_panel.rs:176 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/token_panel.rs:166
 msgid "Remove"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/configuration/views.rs:318 ./proxmox-datacenter-manager/ui/src/pve/tree.rs:534
+#: ./proxmox-datacenter-manager/ui/src/configuration/views.rs:318 ./proxmox-datacenter-manager/ui/src/guests.rs:551 ./proxmox-datacenter-manager/ui/src/pve/tree.rs:543
 msgid "Confirm"
 msgstr ""
 
@@ -286,15 +666,11 @@ msgstr ""
 msgid "Are you sure you want to remove '{0}'"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/configuration/views.rs:347 ./proxmox-datacenter-manager/ui/src/configuration/views.rs:361 ./proxmox-datacenter-manager/ui/src/remotes/updates.rs:155 ./proxmox-datacenter-manager/ui/src/remotes/firewall/columns.rs:34 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/token_panel.rs:267 ./proxmox-datacenter-manager/ui/src/widget/pve_storage_selector.rs:210 ./proxmox-datacenter-manager/ui/src/sdn/evpn/remote_tree.rs:354 ./proxmox-datacenter-manager/ui/src/sdn/zone_tree.rs:141
-msgid "Name"
-msgstr ""
-
 #: ./proxmox-datacenter-manager/ui/src/configuration/views.rs:354
 msgid "Copy Layout from"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/configuration/views.rs:356 ./proxmox-datacenter-manager/ui/src/remotes/config.rs:367 ./proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:407 ./proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:466 ./proxmox-datacenter-manager/ui/src/pve/utils.rs:297
+#: ./proxmox-datacenter-manager/ui/src/configuration/views.rs:356 ./proxmox-datacenter-manager/ui/src/remotes/config.rs:385 ./proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:407 ./proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:466 ./proxmox-datacenter-manager/ui/src/pve/utils.rs:316
 msgid "None"
 msgstr ""
 
@@ -315,99 +691,107 @@ msgid "Exclude"
 msgstr ""
 
 #. TRANSLATORS: As in "Network and Time system configuration"
-#: ./proxmox-datacenter-manager/ui/src/configuration/mod.rs:32
+#: ./proxmox-datacenter-manager/ui/src/configuration/mod.rs:35
 msgid "Network/Time"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/configuration/mod.rs:39
+#: ./proxmox-datacenter-manager/ui/src/configuration/mod.rs:42
 msgid "WebAuthn TFA"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/configuration/mod.rs:49 ./proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:199
+#: ./proxmox-datacenter-manager/ui/src/configuration/mod.rs:52 ./proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:199
 msgid "Path"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/configuration/mod.rs:62
+#: ./proxmox-datacenter-manager/ui/src/configuration/mod.rs:65
 msgid "User Management"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/configuration/mod.rs:84
+#: ./proxmox-datacenter-manager/ui/src/configuration/mod.rs:87
 msgid "API Token"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/configuration/mod.rs:97
+#: ./proxmox-datacenter-manager/ui/src/configuration/mod.rs:100
 msgid "Two Factor Authentication"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/configuration/mod.rs:110
+#: ./proxmox-datacenter-manager/ui/src/configuration/mod.rs:113
 msgid "Permissions"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/configuration/mod.rs:118
+#: ./proxmox-datacenter-manager/ui/src/configuration/mod.rs:121
 msgid "User Permission"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/configuration/mod.rs:123
+#: ./proxmox-datacenter-manager/ui/src/configuration/mod.rs:126
 msgid "Token Permission"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/configuration/mod.rs:135
+#: ./proxmox-datacenter-manager/ui/src/configuration/mod.rs:138
 msgid "Realms"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/configuration/mod.rs:155 ./proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:272
+#: ./proxmox-datacenter-manager/ui/src/configuration/mod.rs:158 ./proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:272
 msgid "Time"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/configuration/mod.rs:160 ./proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:144
+#: ./proxmox-datacenter-manager/ui/src/configuration/mod.rs:163 ./proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:146
 msgid "DNS"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/configuration/mod.rs:167
+#: ./proxmox-datacenter-manager/ui/src/configuration/mod.rs:170
 msgid "Network Interfaces"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/main_menu.rs:171 ./proxmox-datacenter-manager/ui/src/widget/view_selector.rs:47
+#: ./proxmox-datacenter-manager/ui/src/main_menu.rs:173 ./proxmox-datacenter-manager/ui/src/widget/view_selector.rs:47 ./proxmox-datacenter-manager/ui/src/ceph/cluster.rs:130
 msgid "Dashboard"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/main_menu.rs:210
+#: ./proxmox-datacenter-manager/ui/src/main_menu.rs:212
 msgid "Views"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/main_menu.rs:225 ./proxmox-datacenter-manager/ui/src/pve/node/mod.rs:88 ./proxmox-datacenter-manager/ui/src/pve/remote/mod.rs:69
+#: ./proxmox-datacenter-manager/ui/src/main_menu.rs:227 ./proxmox-datacenter-manager/ui/src/pve/node/mod.rs:88 ./proxmox-datacenter-manager/ui/src/pve/remote/mod.rs:69
 msgid "Notes"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/main_menu.rs:255
+#: ./proxmox-datacenter-manager/ui/src/main_menu.rs:257
 msgid "Access Control"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/main_menu.rs:273 ./proxmox-datacenter-manager/ui/src/main_menu.rs:279 ./proxmox-datacenter-manager/ui/src/dashboard/subscriptions_list.rs:218
+#: ./proxmox-datacenter-manager/ui/src/main_menu.rs:275 ./proxmox-datacenter-manager/ui/src/main_menu.rs:281 ./proxmox-datacenter-manager/ui/src/dashboard/subscriptions_list.rs:207
 msgid "Subscription"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/main_menu.rs:288 ./proxmox-datacenter-manager/ui/src/remotes/mod.rs:57
+#: ./proxmox-datacenter-manager/ui/src/main_menu.rs:290 ./proxmox-datacenter-manager/ui/src/remotes/mod.rs:62
 msgid "Configuration"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/main_menu.rs:300 ./proxmox-datacenter-manager/ui/src/pve/node/mod.rs:139
+#: ./proxmox-datacenter-manager/ui/src/main_menu.rs:300
+msgid "Subscription Registry"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/main_menu.rs:311 ./proxmox-datacenter-manager/ui/src/pve/node/mod.rs:139
 msgid "Shell"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/main_menu.rs:310
+#: ./proxmox-datacenter-manager/ui/src/main_menu.rs:321
 msgid "Administration"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/main_menu.rs:326
+#: ./proxmox-datacenter-manager/ui/src/main_menu.rs:337
 msgid "EVPN"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/main_menu.rs:335
+#: ./proxmox-datacenter-manager/ui/src/main_menu.rs:346
 msgid "SDN"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/main_menu.rs:364 ./proxmox-datacenter-manager/ui/src/dashboard/remote_panel.rs:152 ./proxmox-datacenter-manager/ui/src/sdn/evpn/evpn_panel.rs:224
+#: ./proxmox-datacenter-manager/ui/src/main_menu.rs:356
+msgid "Ceph"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/main_menu.rs:384 ./proxmox-datacenter-manager/ui/src/dashboard/remote_panel.rs:152 ./proxmox-datacenter-manager/ui/src/sdn/evpn/evpn_panel.rs:224
 msgid "Remotes"
 msgstr ""
 
@@ -431,7 +815,7 @@ msgstr ""
 msgid "<IP/Hostname>:Port"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:248 ./proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:311 ./proxmox-datacenter-manager/ui/src/remotes/wizard_page_nodes.rs:277 ./proxmox-datacenter-manager/ui/src/remotes/wizard_page_summary.rs:168 ./proxmox-datacenter-manager/ui/src/remotes/node_url_list.rs:271
+#: ./proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:248 ./proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:311 ./proxmox-datacenter-manager/ui/src/remotes/wizard_page_nodes.rs:277 ./proxmox-datacenter-manager/ui/src/remotes/wizard_page_summary.rs:168 ./proxmox-datacenter-manager/ui/src/remotes/node_url_list.rs:271 ./proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:725
 msgid "Fingerprint"
 msgstr ""
 
@@ -439,31 +823,31 @@ msgstr ""
 msgid "Server certificate SHA-256 fingerprint, required for self-signed certificates"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:312 ./proxmox-datacenter-manager/ui/src/remotes/wizard_page_nodes.rs:278
+#: ./proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:312 ./proxmox-datacenter-manager/ui/src/remotes/wizard_page_nodes.rs:278 ./proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:726
 msgid "Issuer"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:313 ./proxmox-datacenter-manager/ui/src/remotes/wizard_page_nodes.rs:279
+#: ./proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:313 ./proxmox-datacenter-manager/ui/src/remotes/wizard_page_nodes.rs:279 ./proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:727
 msgid "Subject"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:314
+#: ./proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:314 ./proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:728
 msgid "Public Key Algorithm"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:315
+#: ./proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:315 ./proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:729
 msgid "Public Key Size"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:316
+#: ./proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:316 ./proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:730
 msgid "Valid Since"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:317
+#: ./proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:317 ./proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:731
 msgid "Expires"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:318
+#: ./proxmox-datacenter-manager/ui/src/remotes/wizard_page_connect.rs:318 ./proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:732
 msgid "Subject Alternative Names"
 msgstr ""
 
@@ -479,7 +863,7 @@ msgstr ""
 msgid "Define a set of addresses that Proxmox Datacenter Manager can use to reach the cluster or single node. Fingerprints are only required for untrusted certificates."
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/wizard_page_summary.rs:97 ./proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:296 ./proxmox-datacenter-manager/ui/src/remotes/edit_remote.rs:97 ./proxmox-datacenter-manager/ui/src/remotes/config.rs:335
+#: ./proxmox-datacenter-manager/ui/src/remotes/wizard_page_summary.rs:97 ./proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:296 ./proxmox-datacenter-manager/ui/src/remotes/edit_remote.rs:97 ./proxmox-datacenter-manager/ui/src/remotes/config.rs:353
 msgid "Remote ID"
 msgstr ""
 
@@ -531,7 +915,7 @@ msgstr ""
 msgid "Use existing Token"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:357 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:890 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/token_panel.rs:215 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/token_panel.rs:245 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/token_selector.rs:147
+#: ./proxmox-datacenter-manager/ui/src/remotes/wizard_page_info.rs:357 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:898 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/token_panel.rs:215 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/token_panel.rs:245 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/token_selector.rs:147
 msgid "Token"
 msgstr ""
 
@@ -568,14 +952,6 @@ msgstr ""
 msgid "Hostname/IP"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/node_url_list.rs:291
-msgid "Clear"
-msgstr ""
-
-#: ./proxmox-datacenter-manager/ui/src/remotes/edit_remote.rs:62 ./proxmox-datacenter-manager/ui/src/remotes/tasks.rs:72 ./proxmox-datacenter-manager/ui/src/remotes/tasks.rs:164 ./proxmox-datacenter-manager/ui/src/dashboard/subscriptions_list.rs:162 ./proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:221 ./proxmox-datacenter-manager/ui/src/widget/view_filter_selector.rs:284 ./proxmox-datacenter-manager/ui/src/sdn/evpn/remote_tree.rs:377 ./proxmox-datacenter-manager/ui/src/sdn/evpn/vrf_tree.rs:322 ./proxmox-datacenter-manager/ui/src/sdn/evpn/add_vnet.rs:291 ./proxmox-datacenter-manager/ui/src/sdn/evpn/add_zone.rs:302
-msgid "Remote"
-msgstr ""
-
 #: ./proxmox-datacenter-manager/ui/src/remotes/edit_remote.rs:103
 msgid "User/Token"
 msgstr ""
@@ -596,19 +972,131 @@ msgstr ""
 msgid "Use first endpoint."
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/config.rs:169
+#: ./proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:58
+msgid "Checking"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:59
+msgid "Matches"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:60
+msgid "Trusted"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:61
+msgid "Changed"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:68
+msgid "Checking certificate..."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:69
+msgid "Certificate matches the stored fingerprint."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:71
+msgid "Certificate is trusted by the system certificate store."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:73
+msgid "The certificate has changed since it was last trusted."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:74
+msgid "Could not check certificate: {0}"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:472
+msgid "{0} of {1} nodes need review"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:488
+msgid "No nodes are configured for this remote."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:497
+msgid "Could not apply changes: {0}"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:507
+msgid "Apply Pending ({0})"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:520
+msgid "Certificate Check - {0}"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:542
+msgid "A fingerprint is still pinned. You can clear it to rely on the system trust store instead. Note that the trusted certificate may differ from the one you pinned, so clearing will trust any certificate the system store accepts for this host."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:559
+msgid "Stored fingerprint:"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:561 ./proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:372 ./proxmox-datacenter-manager/ui/src/pve/lxc/overview.rs:275 ./proxmox-datacenter-manager/ui/src/pve/lxc/overview.rs:283 ./proxmox-datacenter-manager/ui/src/pve/qemu/overview.rs:284 ./proxmox-datacenter-manager/ui/src/pve/qemu/overview.rs:292
+msgid "none"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:573
+msgid "Could not read the presented certificate's fingerprint."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:577
+msgid "Only the fingerprint is stored, so PDM cannot confirm this is a legitimate renewal. Verify the new fingerprint out-of-band before trusting it."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:625
+msgid "Accepted"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:626
+msgid "New fingerprint will be stored on Apply."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:630
+msgid "Will clear"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:631
+msgid "Stored fingerprint will be cleared on Apply."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:650 ./proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:273
+msgid "Action"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:668
+msgid "Revert pending change"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:676
+msgid "Accept new fingerprint"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:683
+msgid "Clear stored fingerprint"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/remotes/config.rs:171
 msgid "Unable to delete item"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/config.rs:345 ./proxmox-datacenter-manager/ui/src/widget/pve_storage_selector.rs:214 ./proxmox-datacenter-manager/ui/src/widget/pve_migrate_mapping.rs:352 ./proxmox-datacenter-manager/ui/src/widget/view_filter_selector.rs:225 ./proxmox-datacenter-manager/ui/src/pve/storage.rs:273
+#: ./proxmox-datacenter-manager/ui/src/remotes/config.rs:220 ./proxmox-datacenter-manager/ui/src/pbs/mod.rs:197 ./proxmox-datacenter-manager/ui/src/pve/mod.rs:291
+msgid "Check Certificate"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/remotes/config.rs:363 ./proxmox-datacenter-manager/ui/src/widget/pve_storage_selector.rs:214 ./proxmox-datacenter-manager/ui/src/widget/pve_migrate_mapping.rs:352 ./proxmox-datacenter-manager/ui/src/widget/view_filter_selector.rs:225 ./proxmox-datacenter-manager/ui/src/ceph/pools.rs:126 ./proxmox-datacenter-manager/ui/src/pve/storage.rs:273
 msgid "Type"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/config.rs:354
+#: ./proxmox-datacenter-manager/ui/src/remotes/config.rs:372
 msgid "AuthId"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/config.rs:363 ./proxmox-datacenter-manager/ui/src/dashboard/node_status_panel.rs:167 ./proxmox-datacenter-manager/ui/src/pve/remote_overview.rs:190
+#: ./proxmox-datacenter-manager/ui/src/remotes/config.rs:381 ./proxmox-datacenter-manager/ui/src/dashboard/node_status_panel.rs:167 ./proxmox-datacenter-manager/ui/src/pve/remote_overview.rs:190
 msgid "Nodes"
 msgstr ""
 
@@ -624,15 +1112,11 @@ msgstr ""
 msgid "User name"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/tasks.rs:81 ./proxmox-datacenter-manager/ui/src/widget/pve_node_selector.rs:153 ./proxmox-datacenter-manager/ui/src/widget/resource_tree.rs:417 ./proxmox-datacenter-manager/ui/src/widget/view_filter_selector.rs:322 ./proxmox-datacenter-manager/ui/src/pbs/node/mod.rs:63 ./proxmox-datacenter-manager/ui/src/sdn/evpn/zone_status.rs:222 ./proxmox-datacenter-manager/ui/src/sdn/evpn/vnet_status.rs:214
-msgid "Node"
-msgstr ""
-
-#: ./proxmox-datacenter-manager/ui/src/remotes/tasks.rs:87
+#: ./proxmox-datacenter-manager/ui/src/remotes/tasks.rs:87 ./proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:267 ./proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:575 ./proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:802 ./proxmox-datacenter-manager/ui/src/ceph/flags.rs:131
 msgid "Description"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/updates.rs:180
+#: ./proxmox-datacenter-manager/ui/src/remotes/updates.rs:180 ./proxmox-datacenter-manager/ui/src/ceph/managers.rs:183 ./proxmox-datacenter-manager/ui/src/ceph/managers.rs:231 ./proxmox-datacenter-manager/ui/src/ceph/monitors.rs:139
 msgid "Version"
 msgstr ""
 
@@ -748,7 +1232,7 @@ msgstr ""
 msgid "Rules"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/firewall/tree.rs:291 ./proxmox-datacenter-manager/ui/src/pbs/tree.rs:254 ./proxmox-datacenter-manager/ui/src/pve/tree.rs:509
+#: ./proxmox-datacenter-manager/ui/src/remotes/firewall/tree.rs:291 ./proxmox-datacenter-manager/ui/src/guests.rs:446 ./proxmox-datacenter-manager/ui/src/pbs/tree.rs:254 ./proxmox-datacenter-manager/ui/src/pve/tree.rs:518
 msgid "Filter"
 msgstr ""
 
@@ -760,11 +1244,11 @@ msgstr ""
 msgid "Show tree panel"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/firewall/tree.rs:366 ./proxmox-datacenter-manager/ui/src/pbs/mod.rs:145 ./proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:75 ./proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:74 ./proxmox-datacenter-manager/ui/src/pve/mod.rs:257
+#: ./proxmox-datacenter-manager/ui/src/remotes/firewall/tree.rs:366 ./proxmox-datacenter-manager/ui/src/ceph/cluster.rs:93 ./proxmox-datacenter-manager/ui/src/pbs/mod.rs:160 ./proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:77 ./proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:76 ./proxmox-datacenter-manager/ui/src/pve/mod.rs:265
 msgid "Open Web UI"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/firewall/tree.rs:401 ./proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:153 ./proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:133
+#: ./proxmox-datacenter-manager/ui/src/remotes/firewall/tree.rs:401 ./proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:155 ./proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:135
 msgid "Options"
 msgstr ""
 
@@ -804,7 +1288,7 @@ msgstr ""
 msgid "Select a firewall entry to show its rules."
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/firewall/ui_helpers.rs:125 ./proxmox-datacenter-manager/ui/src/remotes/mod.rs:78
+#: ./proxmox-datacenter-manager/ui/src/remotes/firewall/ui_helpers.rs:125 ./proxmox-datacenter-manager/ui/src/remotes/mod.rs:90
 msgid "Firewall"
 msgstr ""
 
@@ -828,10 +1312,6 @@ msgstr ""
 msgid "Received"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/installations_panel.rs:268
-msgid "Product"
-msgstr ""
-
 #: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/installations_panel.rs:285
 msgid "Answer sent"
 msgstr ""
@@ -852,35 +1332,35 @@ msgstr ""
 msgid "Matched Answer"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:146
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:148
 msgid "Add Prepared Answer"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:162
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:164
 msgid "Failed to create installation configuration"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:172 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_edit_window.rs:193
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:174 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_edit_window.rs:194
 msgid "Global Options"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:176 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_edit_window.rs:197
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:178 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_edit_window.rs:198
 msgid "Network Options"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:180 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_edit_window.rs:201
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:182 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_edit_window.rs:202
 msgid "Disk Setup"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:184 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_edit_window.rs:205
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:186 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_edit_window.rs:206
 msgid "Target Filter"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:188 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_edit_window.rs:209
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:190 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_edit_window.rs:210
 msgid "Templating"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:192
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_add_wizard.rs:194
 msgid "Post Hook"
 msgstr ""
 
@@ -892,7 +1372,7 @@ msgstr ""
 msgid "Failed to update installation configuration"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_edit_window.rs:213
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_edit_window.rs:214
 msgid "Authentication"
 msgstr ""
 
@@ -960,240 +1440,248 @@ msgstr ""
 msgid "Power off"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:286
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:262
+msgid "Subscription Key"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:265
+msgid "Optional, e.g. pve1c-0123456789"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:294
 msgid "Use DHCP"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:290
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:298
 msgid "IP Address (CIDR)"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:293
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:301
 msgid "E.g. 192.168.0.100/24"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:299
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:307
 msgid "Gateway Address"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:302
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:310
 msgid "E.g. 192.168.0.1"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:308
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:316
 msgid "DNS Server Address"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:311
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:319
 msgid "E.g. 192.168.0.254"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:317
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:325
 msgid "FQDN from DHCP"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:321
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:329
 msgid "Fully-Qualified Domain Name (FQDN)"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:328
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:336
 msgid "Hostname and domain to set for the target installation. Allows templating."
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:334
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:342
 msgid "Pin Network Interfaces"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:341
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:349
 msgid "Network Device Filters"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:350 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:459
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:358 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:467
 msgid "Property Name"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:351 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:460 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:739
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:359 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:468 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:747
 msgid "Value To Match"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:352
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:360
 msgid "udev property name, e.g. ID_NET_DRIVER"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:385
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:393
 msgid "Filesystem"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:405
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:413
 msgid "Disk Selection Mode"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:412
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:420
 msgid "Fixed List of Disk Names"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:413
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:421
 msgid "Dynamically by udev Filter"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:420
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:428
 msgid "Disk Names"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:431
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:439
 msgid "Disk udev Filter Mode"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:441
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:449
 msgid "Match Any Filter"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:442
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:450
 msgid "Match All Filters"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:450
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:458
 msgid "Disk udev Filters"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:461
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:469
 msgid "udev Property Name, e.g. ID_MODEL"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:472
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:480
 msgid "ZFS is not compatible with hardware RAID controllers, for details see the documentation."
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:475
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:483
 msgid "Btrfs integration is a technology preview and only available for Proxmox Virtual Environment installations."
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:511
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:519
 msgid "Harddisk Size To Use (GB)"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:524
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:532
 msgid "Swap Size (GB)"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:537
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:545
 msgid "Maximum root Volume Size (GB)"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:550
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:558
 msgid "Maximum data Volume Size (GB)"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:563
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:571
 msgid "Minimum Free Space in LVM Volume Group (GB)"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:592
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:600
 msgid "ARC Maximum Size (MiB)"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:604
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:612
 msgid "Checksumming Algorithm"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:626 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:664
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:634 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:672
 msgid "Compression Algorithm"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:648
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:656
 msgid "Copies"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:712
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:720
 msgid "Not marked as default answer and target filter are empty, answer will never be matched."
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:719
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:727
 msgid "Default Answer"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:723
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:731
 msgid "If selected, this configuration will be used if no other matches."
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:729
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:737
 msgid "Target Filters"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:738
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:746
 msgid "JSON Pointer"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:760
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:768
 msgctxt "references RFC 6901"
 msgid "Target filter keys are JSON pointers according to"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:778
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:786
 msgid "Numerical template counters can be used to provide unique values across installations."
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:786
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:794
 msgid "Counters are automatically incremented each time an answer is served."
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:798
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:806
 msgid "Current Value"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:827 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answers_panel.rs:306
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:835 ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answers_panel.rs:306
 msgid "Authorized Tokens"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:844
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:852
 msgid "No existing authorization token selected. A new one will be automatically created."
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:852
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:860
 msgid "Proxmox Datacenter Manager Base URL"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:856
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:864
 msgid "Base URL this PDM instance is reachable from the target host"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:862
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:870
 msgid "SHA256 Certificate Fingerprint"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:865
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:873
 msgid "Optional certificate fingerprint"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:874
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:882
 msgid "Optional. If provided, status reporting will be enabled."
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:911
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:919
 msgid "Copy answer token to clipboard."
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:925
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:933
 msgid "Command Line"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:947
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:955
 msgid "Copy command line to clipboard."
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:957
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:965
 msgid "Configuration ID"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:965
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:973
 msgid "New Answer Token"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:973
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:981
 msgid "Please record the configuration token or ISO preparation command line - it will only be displayed once."
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:984
+#: ./proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:992
 msgid "glob to match"
 msgstr ""
 
@@ -1261,7 +1749,11 @@ msgstr ""
 msgid "Authentication Tokens"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/remotes/mod.rs:85
+#: ./proxmox-datacenter-manager/ui/src/remotes/mod.rs:69 ./proxmox-datacenter-manager/ui/src/dashboard/guest_panel.rs:226 ./proxmox-datacenter-manager/ui/src/pve/remote_overview.rs:195
+msgid "Guests"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/remotes/mod.rs:97
 msgid "Automated Installations"
 msgstr ""
 
@@ -1322,7 +1814,7 @@ msgstr ""
 msgid "Nodes With the Highest Memory Usage"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:362 ./proxmox-datacenter-manager/ui/src/pve/lxc/overview.rs:346 ./proxmox-datacenter-manager/ui/src/pve/qemu/overview.rs:355 ./proxmox-datacenter-manager/ui/src/renderer.rs:73
+#: ./proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:362 ./proxmox-datacenter-manager/ui/src/guests.rs:870 ./proxmox-datacenter-manager/ui/src/guests.rs:938 ./proxmox-datacenter-manager/ui/src/pve/lxc/overview.rs:346 ./proxmox-datacenter-manager/ui/src/pve/qemu/overview.rs:355 ./proxmox-datacenter-manager/ui/src/renderer.rs:73
 msgid "Memory usage"
 msgstr ""
 
@@ -1396,7 +1888,7 @@ msgstr[1] ""
 msgid "Storage Usage"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/dashboard/gauge_panel.rs:57 ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:675
+#: ./proxmox-datacenter-manager/ui/src/dashboard/gauge_panel.rs:57 ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:676
 msgid "Resource Usage"
 msgstr ""
 
@@ -1416,7 +1908,7 @@ msgstr ""
 msgid "Memory"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/dashboard/gauge_panel.rs:187 ./proxmox-datacenter-manager/ui/src/dashboard/gauge_panel.rs:199
+#: ./proxmox-datacenter-manager/ui/src/dashboard/gauge_panel.rs:187 ./proxmox-datacenter-manager/ui/src/dashboard/gauge_panel.rs:199 ./proxmox-datacenter-manager/ui/src/guests.rs:704
 msgid "{0} of {1}"
 msgstr ""
 
@@ -1436,7 +1928,7 @@ msgstr ""
 msgid "Template"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/dashboard/guest_panel.rs:144 ./proxmox-datacenter-manager/ui/src/dashboard/pbs_datastores_panel.rs:125
+#: ./proxmox-datacenter-manager/ui/src/dashboard/guest_panel.rs:144 ./proxmox-datacenter-manager/ui/src/dashboard/map.rs:248 ./proxmox-datacenter-manager/ui/src/dashboard/pbs_datastores_panel.rs:125 ./proxmox-datacenter-manager/ui/src/ceph/renderer.rs:55
 msgid "Unknown"
 msgstr ""
 
@@ -1448,9 +1940,21 @@ msgstr ""
 msgid "Linux Container"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/dashboard/guest_panel.rs:226 ./proxmox-datacenter-manager/ui/src/pve/remote_overview.rs:195
-msgid "Guests"
+#: ./proxmox-datacenter-manager/ui/src/dashboard/map.rs:245
+msgid "Good"
 msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/dashboard/map.rs:246 ./proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:193 ./proxmox-datacenter-manager/ui/src/dashboard/tasks.rs:154 ./proxmox-datacenter-manager/ui/src/ceph/renderer.rs:52
+msgid "Warning"
+msgid_plural "Warnings"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ./proxmox-datacenter-manager/ui/src/dashboard/map.rs:255
+msgid "1 Node"
+msgid_plural "{0} Nodes"
+msgstr[0] ""
+msgstr[1] ""
 
 #: ./proxmox-datacenter-manager/ui/src/dashboard/node_status_panel.rs:125
 msgid "{0} of {1} nodes are offline"
@@ -1515,15 +2019,9 @@ msgstr ""
 msgid "Too many remote nodes without basic or higher subscriptions! No access to Enterprise-Repository or Enterprise Support."
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:192 ./proxmox-datacenter-manager/ui/src/dashboard/tasks.rs:150
+#: ./proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:192 ./proxmox-datacenter-manager/ui/src/dashboard/tasks.rs:150 ./proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:557 ./proxmox-datacenter-manager/ui/src/ceph/renderer.rs:51
 msgid "OK"
 msgstr ""
-
-#: ./proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:193 ./proxmox-datacenter-manager/ui/src/dashboard/tasks.rs:154
-msgid "Warning"
-msgid_plural "Warnings"
-msgstr[0] ""
-msgstr[1] ""
 
 #: ./proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:230
 msgid "Task"
@@ -1533,15 +2031,11 @@ msgstr ""
 msgid "Duration"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:273
-msgid "Action"
-msgstr ""
-
 #: ./proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:286
 msgid "Open Task"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/dashboard/pbs_datastores_panel.rs:107 ./proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:123
+#: ./proxmox-datacenter-manager/ui/src/dashboard/pbs_datastores_panel.rs:107 ./proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:131
 msgid "Online"
 msgstr ""
 
@@ -1665,15 +2159,19 @@ msgstr ""
 msgid "SDN Panel"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:671
+#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:670
+msgid "Map"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:672
 msgid "Resource Tree"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:679
+#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:680
 msgid "Virtual Environment"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:683
+#: ./proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:684
 msgid "Backup Server"
 msgstr ""
 
@@ -1681,11 +2179,11 @@ msgstr ""
 msgid "Flex"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/dashboard/view.rs:684
+#: ./proxmox-datacenter-manager/ui/src/dashboard/view.rs:722
 msgid "Unknown Widget"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/dashboard/view.rs:696
+#: ./proxmox-datacenter-manager/ui/src/dashboard/view.rs:734
 msgid "Unknown Widget of type '{0}'"
 msgstr ""
 
@@ -1717,84 +2215,250 @@ msgstr ""
 msgid "Search"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/dashboard/resource_tree.rs:51 ./proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:126 ./proxmox-datacenter-manager/ui/src/pve/tree.rs:494
+#: ./proxmox-datacenter-manager/ui/src/dashboard/resource_tree.rs:51 ./proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:128 ./proxmox-datacenter-manager/ui/src/pve/tree.rs:503
 msgid "Resources"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:124 ./proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:136
+#: ./proxmox-datacenter-manager/ui/src/guests.rs:388
+msgid "{n} Guest"
+msgid_plural "{n} Guests"
+msgstr[0] ""
+msgstr[1] ""
+
+#. reserve room for the widest (plural) count string at the total's
+#. magnitude so typing in the filter doesn't reflow the toolbar
+#: ./proxmox-datacenter-manager/ui/src/guests.rs:391 ./proxmox-datacenter-manager/ui/src/guests.rs:399
+msgid "{0} out of {1} Guest"
+msgid_plural "{0} out of {1} Guests"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ./proxmox-datacenter-manager/ui/src/guests.rs:410
+msgid "View mode"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/guests.rs:412
+msgid "List"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/guests.rs:420
+msgid "Tree"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/guests.rs:434
+msgid "Filter guests"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/guests.rs:489
+msgid "No remotes configured yet"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/guests.rs:490
+msgid "Add a Proxmox VE remote on the Configuration tab to see its guests here."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/guests.rs:495
+msgid "No guests found"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/guests.rs:496
+msgid "None of the connected remotes have any virtual machines or containers."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/guests.rs:501
+msgid "No matching guests"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/guests.rs:502
+msgid "No guest matches the current filter."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/guests.rs:542
+msgid "Are you sure you want to start guest '{0}'?"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/guests.rs:544
+msgid "Are you sure you want to shut down guest '{0}'?"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/guests.rs:546
+msgid "Are you sure you want to resume guest '{0}'?"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/guests.rs:636
+msgid "Could not query some remotes: {0}"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/guests.rs:740 ./proxmox-datacenter-manager/ui/src/guests.rs:752 ./proxmox-datacenter-manager/ui/src/pve/tree.rs:120 ./proxmox-datacenter-manager/ui/src/pve/tree.rs:705 ./proxmox-datacenter-manager/ui/src/pve/mod.rs:70
+msgid "Shutdown"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/guests.rs:758 ./proxmox-datacenter-manager/ui/src/pve/tree.rs:121 ./proxmox-datacenter-manager/ui/src/pve/tree.rs:716
+msgid "Resume"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/guests.rs:760 ./proxmox-datacenter-manager/ui/src/pve/tree.rs:119 ./proxmox-datacenter-manager/ui/src/pve/tree.rs:718 ./proxmox-datacenter-manager/ui/src/pve/mod.rs:69
+msgid "Start"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/guests.rs:783 ./proxmox-datacenter-manager/ui/src/guests.rs:791 ./proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:172 ./proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:152
+msgid "Snapshots"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/guests.rs:797 ./proxmox-datacenter-manager/ui/src/guests.rs:805 ./proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:633 ./proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:635 ./proxmox-datacenter-manager/ui/src/pve/tree.rs:744
+msgid "Migrate"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/guests.rs:810 ./proxmox-datacenter-manager/ui/src/guests.rs:821 ./proxmox-datacenter-manager/ui/src/pve/tree.rs:759
+msgid "Open in PVE UI"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/guests.rs:857 ./proxmox-datacenter-manager/ui/src/guests.rs:924 ./proxmox-datacenter-manager/ui/src/pve/tree.rs:635
+msgid "Tags"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/guests.rs:875 ./proxmox-datacenter-manager/ui/src/guests.rs:945
+msgid "Uptime"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/guests.rs:880 ./proxmox-datacenter-manager/ui/src/guests.rs:952 ./proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:725 ./proxmox-datacenter-manager/ui/src/pve/tree.rs:643 ./proxmox-datacenter-manager/ui/src/sdn/zone_tree.rs:193
+msgid "Actions"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:132 ./proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:144
 msgid "Offline"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:135
+#: ./proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:143
 msgid "Restart"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:329
+#: ./proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:354
 msgid "Migration with local disk might take long: {0} ({1})"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:343
+#: ./proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:368
 msgid "Cannot migrate with local resource: {0}"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:357
+#: ./proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:382
 msgid "Source Remote"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:363
+#: ./proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:388
 msgid "Target Remote"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:372
+#: ./proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:397
 msgid "Mode"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:379
+#: ./proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:404
 msgid "Target Node"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:390
+#: ./proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:415
 msgid "Target Endpoint"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:392
+#: ./proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:417
 msgid "Automatic"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:422
+#: ./proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:447
 msgid "Migration Settings"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:424
+#: ./proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:449
 msgid "Remote Migration Settings"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:432
+#: ./proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:457
 msgid "Delete Source"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:442
+#: ./proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:467
 msgid "Target VMID"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:453
+#: ./proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:478
 msgid "Detailed Mapping"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:464
+#: ./proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:489
 msgid "Target Storage"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:472
+#: ./proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:497
 msgid "Current layout"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:478
+#: ./proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:503
 msgid "Target Network"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:583 ./proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:585 ./proxmox-datacenter-manager/ui/src/pve/tree.rs:726
-msgid "Migrate"
+#: ./proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:167
+msgid "Snapshots - {0}"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:252
+msgid "Name must be at most 40 characters long."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:261
+msgid "Use only letters, digits, '_' and '-', starting with a letter."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:270
+msgid "Include RAM"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:497 ./proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:529 ./proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:531
+msgid "Take Snapshot"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:555 ./proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:748 ./proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:761
+msgid "Edit Description"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:597
+msgid "Delete Snapshot"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:598
+msgid "Are you sure you want to delete snapshot '{0}'?"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:621
+msgid "Rollback Snapshot"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:623 ./proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:767 ./proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:778
+msgid "Rollback"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:633
+msgid "Roll back to snapshot '{0}'? This reverts the guest's disk and configuration to that snapshot; changes made since are lost. A running guest is stopped during rollback (unless a QEMU snapshot includes its memory state)."
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:643
+msgid "Start After Rollback"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:688
+msgid "NOW"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:694
+msgid "Date"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:709
+msgid "RAM"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:784 ./proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:795
+msgid "Delete"
 msgstr ""
 
 #: ./proxmox-datacenter-manager/ui/src/widget/pve_network_selector.rs:160
@@ -1805,16 +2469,12 @@ msgstr ""
 msgid "Avail"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/widget/pve_storage_selector.rs:224
+#: ./proxmox-datacenter-manager/ui/src/widget/pve_storage_selector.rs:224 ./proxmox-datacenter-manager/ui/src/ceph/clusters.rs:294 ./proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:121
 msgid "Capacity"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/widget/pve_migrate_mapping.rs:43 ./proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:135
+#: ./proxmox-datacenter-manager/ui/src/widget/pve_migrate_mapping.rs:43 ./proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:137
 msgid "Network"
-msgstr ""
-
-#: ./proxmox-datacenter-manager/ui/src/widget/pve_migrate_mapping.rs:357
-msgid "Source"
 msgstr ""
 
 #: ./proxmox-datacenter-manager/ui/src/widget/pve_migrate_mapping.rs:362
@@ -1861,7 +2521,7 @@ msgstr ""
 msgid "Virtual Machine"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/widget/view_filter_selector.rs:324 ./proxmox-datacenter-manager/ui/src/pve/utils.rs:294
+#: ./proxmox-datacenter-manager/ui/src/widget/view_filter_selector.rs:324 ./proxmox-datacenter-manager/ui/src/pve/utils.rs:313
 msgid "Container"
 msgstr ""
 
@@ -1881,20 +2541,398 @@ msgstr ""
 msgid "Select Type first"
 msgstr ""
 
+#: ./proxmox-datacenter-manager/ui/src/ceph/cephfs.rs:124
+msgid "Data Pools"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/cephfs.rs:128
+msgid "Metadata Pool"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/cluster.rs:84
+msgid "Ceph Cluster '{0}'"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/cluster.rs:140 ./proxmox-datacenter-manager/ui/src/ceph/clusters.rs:340 ./proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:134
+msgid "Monitors"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/cluster.rs:150 ./proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:141 ./proxmox-datacenter-manager/ui/src/ceph/managers.rs:130
+msgid "Managers"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/cluster.rs:160 ./proxmox-datacenter-manager/ui/src/ceph/clusters.rs:330 ./proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:143
+msgid "OSDs"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/cluster.rs:170 ./proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:151
+msgid "Pools"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/cluster.rs:180
+msgid "CephFS"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/cluster.rs:190
+msgid "Flags"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/clusters.rs:114
+msgid "Near full"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/clusters.rs:116
+msgid "Degraded"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/clusters.rs:118
+msgid "Recovering"
+msgstr ""
+
+#. Health: humanized state, a plain-language data-at-risk line, then the active checks (the
+#. things actually needing attention).
+#: ./proxmox-datacenter-manager/ui/src/ceph/clusters.rs:260 ./proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:109
+msgid "Health"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/clusters.rs:268
+msgid "{0} ({1})"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/clusters.rs:307
+msgid "Available"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/clusters.rs:318 ./proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:333 ./proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:139 ./proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:232 ./proxmox-datacenter-manager/ui/src/pve/remote_overview.rs:210 ./proxmox-datacenter-manager/ui/src/pve/storage.rs:190 ./proxmox-datacenter-manager/ui/src/pve/storage.rs:285 ./proxmox-datacenter-manager/ui/src/pve/storage.rs:323
+msgid "Usage"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/clusters.rs:350
+msgid "Activity"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:132
+msgid "Services"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:136
+msgid "{0} / {1} in quorum"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:145
+msgid "{0} up, {1} in / {2} total"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:152
+msgid "Placement groups"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:155
+msgid "{0} (mixed versions)"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:159
+msgid "Ceph version"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:167
+msgid "Members"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:175
+msgid "Performance"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:226
+msgid "Standalone"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:248
+msgid "{0} OSD(s) down"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:251
+msgid "{0} OSD(s) out"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:255
+msgid "monitor quorum {0}/{1}"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:262
+msgid "{0}% degraded"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:268
+msgid "All data fully redundant"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:279
+msgid "Redundancy: {0}"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:294
+msgid "{0}% misplaced"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:297
+msgid "{0}/s recovery"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:305
+msgid "Rebalancing: {0}"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:338
+msgid "{0}% ({1} of {2}, {3} free)"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:359
+msgid "Fullest pool"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:362
+msgid "{0} ({1}%)"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:371
+msgid "{0} (+{1} standby)"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:384
+msgid "{0} (all active+clean)"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:387
+msgid "{0} ({1} not active+clean)"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:398
+msgid "Client read"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:404
+msgid "Client write"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:409
+msgid "Client read ops"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:409 ./proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:412
+msgid "{0}/s"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:412
+msgid "Client write ops"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:416
+msgid "Recovery"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:422
+msgid "Misplaced"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/flags.rs:108
+msgid "Flag"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/flags.rs:112 ./proxmox-datacenter-manager/ui/src/ceph/managers.rs:164 ./proxmox-datacenter-manager/ui/src/ceph/managers.rs:209
+msgid "State"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/flags.rs:122
+msgid "set"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/flags.rs:122
+msgid "unset"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/managers.rs:34
+msgid "active"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/managers.rs:35
+msgid "standby"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/managers.rs:36
+msgid "standby-replay"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/managers.rs:37
+msgid "up:active"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/managers.rs:38
+msgid "up:standby"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/managers.rs:39
+msgid "up:standby-replay"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/managers.rs:40
+msgid "laggy"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/managers.rs:41
+msgid "damaged"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/managers.rs:134
+msgid "Metadata Servers"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/managers.rs:160 ./proxmox-datacenter-manager/ui/src/ceph/managers.rs:197 ./proxmox-datacenter-manager/ui/src/ceph/monitors.rs:113 ./proxmox-datacenter-manager/ui/src/ceph/osds.rs:494
+msgid "Host"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/managers.rs:179 ./proxmox-datacenter-manager/ui/src/ceph/monitors.rs:135
+msgid "Address"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/managers.rs:201
+msgid "Rank"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/managers.rs:227
+msgid "File System"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/monitors.rs:117
+msgid "Quorum"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/monitors.rs:126 ./proxmox-datacenter-manager/ui/src/ceph/osds.rs:212
+msgid "in"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/monitors.rs:126 ./proxmox-datacenter-manager/ui/src/ceph/osds.rs:212
+msgid "out"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/osds.rs:211
+msgid "up"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/osds.rs:211
+msgid "down"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/osds.rs:225
+msgid "{0} / {1} ms"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/osds.rs:329
+msgid "Tree view"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/osds.rs:331
+msgid "Flat view"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/osds.rs:406
+msgid "Name / Host"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/osds.rs:438 ./proxmox-datacenter-manager/ui/src/ceph/osds.rs:504
+msgid "Class"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/osds.rs:445 ./proxmox-datacenter-manager/ui/src/ceph/osds.rs:508 ./proxmox-datacenter-manager/ui/src/ceph/pools.rs:146
+msgid "Used"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/osds.rs:459 ./proxmox-datacenter-manager/ui/src/ceph/osds.rs:514
+msgid "PGs"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/osds.rs:468 ./proxmox-datacenter-manager/ui/src/ceph/osds.rs:520
+msgid "Latency"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/pools.rs:130
+msgid "replicated"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/pools.rs:131
+msgid "erasure"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/pools.rs:137
+msgid "Size/Min"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/pools.rs:141
+msgid "PG num"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/pools.rs:151
+msgid "{0}% ({1})"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/pools.rs:154
+msgid "Autoscale"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/pools.rs:158
+msgid "on"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/pools.rs:159
+msgid "warn"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/pools.rs:160
+msgid "off"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/pools.rs:167
+msgid "CRUSH rule"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/pools.rs:175
+msgid "Application"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/renderer.rs:73
+msgid "Detected"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/renderer.rs:74
+msgid "Unreachable"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/renderer.rs:75
+msgid "Gone"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/renderer.rs:76
+msgid "Forgotten"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/view.rs:66
+msgid "Ceph Clusters"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/ceph/view.rs:117
+msgid "Select a Ceph cluster to view its details."
+msgstr ""
+
 #: ./proxmox-datacenter-manager/ui/src/pbs/tree.rs:239
 msgid "Datastores"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/pbs/tree.rs:287 ./proxmox-datacenter-manager/ui/src/pve/tree.rs:605
+#: ./proxmox-datacenter-manager/ui/src/pbs/tree.rs:287 ./proxmox-datacenter-manager/ui/src/pve/tree.rs:614
 msgid "Querying Remote..."
 msgstr ""
 
 #: ./proxmox-datacenter-manager/ui/src/pbs/tree.rs:319
 msgid "Open in PBS UI"
-msgstr ""
-
-#: ./proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:139 ./proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:232 ./proxmox-datacenter-manager/ui/src/pve/remote_overview.rs:210 ./proxmox-datacenter-manager/ui/src/pve/storage.rs:190 ./proxmox-datacenter-manager/ui/src/pve/storage.rs:285 ./proxmox-datacenter-manager/ui/src/pve/storage.rs:323
-msgid "Usage"
 msgstr ""
 
 #: ./proxmox-datacenter-manager/ui/src/pbs/datastore/overview.rs:140 ./proxmox-datacenter-manager/ui/src/pve/lxc/overview.rs:179 ./proxmox-datacenter-manager/ui/src/pve/qemu/overview.rs:175 ./proxmox-datacenter-manager/ui/src/pve/storage.rs:191
@@ -1921,7 +2959,7 @@ msgstr ""
 msgid "Datastore {0}"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/pbs/datastore.rs:62 ./proxmox-datacenter-manager/ui/src/pbs/node/mod.rs:74 ./proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:98 ./proxmox-datacenter-manager/ui/src/pve/node/mod.rs:77 ./proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:97
+#: ./proxmox-datacenter-manager/ui/src/pbs/datastore.rs:62 ./proxmox-datacenter-manager/ui/src/pbs/node/mod.rs:74 ./proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:100 ./proxmox-datacenter-manager/ui/src/pve/node/mod.rs:77 ./proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:99
 msgid "Overview"
 msgstr ""
 
@@ -2009,11 +3047,15 @@ msgstr ""
 msgid "Last verify task started on {0}"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/pbs/mod.rs:128 ./proxmox-datacenter-manager/ui/src/pve/remote/mod.rs:48 ./proxmox-datacenter-manager/ui/src/pve/mod.rs:242
+#: ./proxmox-datacenter-manager/ui/src/pbs/mod.rs:121 ./proxmox-datacenter-manager/ui/src/pve/mod.rs:193
+msgid "Load failed"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/pbs/mod.rs:143 ./proxmox-datacenter-manager/ui/src/pve/remote/mod.rs:48 ./proxmox-datacenter-manager/ui/src/pve/mod.rs:249
 msgid "Remote '{0}'"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/pbs/mod.rs:160
+#: ./proxmox-datacenter-manager/ui/src/pbs/mod.rs:175
 msgid "Open Shell"
 msgstr ""
 
@@ -2029,10 +3071,6 @@ msgstr ""
 #. TRANSLATORS: As in amount of outgoing network traffic
 #: ./proxmox-datacenter-manager/ui/src/pve/lxc/overview.rs:181 ./proxmox-datacenter-manager/ui/src/pve/qemu/overview.rs:179
 msgid "Net Out"
-msgstr ""
-
-#: ./proxmox-datacenter-manager/ui/src/pve/lxc/overview.rs:275 ./proxmox-datacenter-manager/ui/src/pve/lxc/overview.rs:283 ./proxmox-datacenter-manager/ui/src/pve/qemu/overview.rs:284 ./proxmox-datacenter-manager/ui/src/pve/qemu/overview.rs:292
-msgid "none"
 msgstr ""
 
 #: ./proxmox-datacenter-manager/ui/src/pve/lxc/overview.rs:281 ./proxmox-datacenter-manager/ui/src/pve/qemu/overview.rs:290
@@ -2051,15 +3089,15 @@ msgstr ""
 msgid "Bootdisk size"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:66
+#: ./proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:68
 msgid "CT {0}"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:77 ./proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:93
+#: ./proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:79 ./proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:95
 msgid "Open the web UI of container {0}."
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:112 ./proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:111
+#: ./proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:114 ./proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:113
 msgid "Config"
 msgstr ""
 
@@ -2071,15 +3109,15 @@ msgstr ""
 msgid "pve-manager version too old"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:65
+#: ./proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:67
 msgid "VM '{0}'"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:76 ./proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:92
+#: ./proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:78 ./proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:94
 msgid "Open the web UI of VM {0}."
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:125
+#: ./proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:127
 msgid "Hardware"
 msgstr ""
 
@@ -2127,68 +3165,52 @@ msgstr ""
 msgid "Storage '{0}'"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/pve/storage.rs:254
-msgid "Active"
+#: ./proxmox-datacenter-manager/ui/src/pve/utils.rs:155
+msgid "Running"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/pve/utils.rs:266
+#: ./proxmox-datacenter-manager/ui/src/pve/utils.rs:156
+msgid "Stopped"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/pve/utils.rs:157
+msgid "Paused"
+msgstr ""
+
+#: ./proxmox-datacenter-manager/ui/src/pve/utils.rs:285
 msgid "Directory"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/pve/utils.rs:290
+#: ./proxmox-datacenter-manager/ui/src/pve/utils.rs:309
 msgid "Backup"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/pve/utils.rs:291
+#: ./proxmox-datacenter-manager/ui/src/pve/utils.rs:310
 msgid "Disk Image"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/pve/utils.rs:292
+#: ./proxmox-datacenter-manager/ui/src/pve/utils.rs:311
 msgid "Import"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/pve/utils.rs:293
+#: ./proxmox-datacenter-manager/ui/src/pve/utils.rs:312
 msgid "ISO image"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/pve/utils.rs:295
+#: ./proxmox-datacenter-manager/ui/src/pve/utils.rs:314
 msgid "Snippets"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/pve/utils.rs:296
+#: ./proxmox-datacenter-manager/ui/src/pve/utils.rs:315
 msgid "Container template"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/pve/utils.rs:298
+#: ./proxmox-datacenter-manager/ui/src/pve/utils.rs:317
 msgid "unknown content type ({0})"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/pve/tree.rs:118 ./proxmox-datacenter-manager/ui/src/pve/tree.rs:718 ./proxmox-datacenter-manager/ui/src/pve/mod.rs:68
-msgid "Start"
-msgstr ""
-
-#: ./proxmox-datacenter-manager/ui/src/pve/tree.rs:119 ./proxmox-datacenter-manager/ui/src/pve/tree.rs:695 ./proxmox-datacenter-manager/ui/src/pve/mod.rs:69
-msgid "Shutdown"
-msgstr ""
-
-#: ./proxmox-datacenter-manager/ui/src/pve/tree.rs:609
+#: ./proxmox-datacenter-manager/ui/src/pve/tree.rs:618
 msgid "Datacenter"
-msgstr ""
-
-#: ./proxmox-datacenter-manager/ui/src/pve/tree.rs:626
-msgid "Tags"
-msgstr ""
-
-#: ./proxmox-datacenter-manager/ui/src/pve/tree.rs:634 ./proxmox-datacenter-manager/ui/src/sdn/zone_tree.rs:193
-msgid "Actions"
-msgstr ""
-
-#: ./proxmox-datacenter-manager/ui/src/pve/tree.rs:741
-msgid "Open in PVE UI"
-msgstr ""
-
-#: ./proxmox-datacenter-manager/ui/src/pve/mod.rs:186
-msgid "Load failed"
 msgstr ""
 
 #: ./proxmox-datacenter-manager/ui/src/sdn/evpn/evpn_panel.rs:126 ./proxmox-datacenter-manager/ui/src/sdn/evpn/vrf_tree.rs:316 ./proxmox-datacenter-manager/ui/src/sdn/evpn/add_vnet.rs:296
@@ -2395,10 +3417,10 @@ msgstr ""
 msgid "Backups and Backup Jobs"
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/lib.rs:288
+#: ./proxmox-datacenter-manager/ui/src/lib.rs:292
 msgid "Too many remote nodes without active basic or higher subscription. Please visit {0} for more details."
 msgstr ""
 
-#: ./proxmox-datacenter-manager/ui/src/lib.rs:292
+#: ./proxmox-datacenter-manager/ui/src/lib.rs:296
 msgid "No valid subscriptions"
 msgstr ""
