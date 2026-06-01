@@ -7,6 +7,7 @@ LINGUAS ?= \
 	cs \
 	da \
 	de \
+	el_GR \
 	es \
 	eu \
 	fa \
