@@ -12,6 +12,7 @@ LINGUAS ?= \
 	eu \
 	fa \
 	fr \
+	ga \
 	gl \
 	he \
 	hr \
