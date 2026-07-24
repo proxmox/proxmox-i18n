@@ -21,6 +21,7 @@ LINGUAS ?= \
 	ja \
 	ka \
 	ko \
+	lo \
 	nb \
 	nl \
 	nn \
