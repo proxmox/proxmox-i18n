@@ -1,40 +1,6 @@
 include /usr/share/dpkg/pkg-info.mk
 
-LINGUAS ?= \
-	ar \
-	bg \
-	bn \
-	ca \
-	cs \
-	da \
-	de \
-	el_GR \
-	es \
-	eu \
-	fa \
-	fr \
-	ga \
-	gl \
-	he \
-	hr \
-	hu \
-	it \
-	ja \
-	ka \
-	ko \
-	lo \
-	nb \
-	nl \
-	nn \
-	pl \
-	pt_BR \
-	ru \
-	sl \
-	sv \
-	tr \
-	ukr \
-	zh_CN \
-	zh_TW \
+LINGUAS ?= $(shell xargs --arg-file LINGUAS)
 
 BUILDDIR ?= $(DEB_SOURCE)-$(DEB_VERSION)
 
