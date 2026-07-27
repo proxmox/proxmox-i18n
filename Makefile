@@ -202,5 +202,10 @@ upload: upload-pve upload-pmg upload-pbs upload-pdm
 check-%: %.po
 	msgfmt --check $*.po
 
+# LINGUAS must list every PO file exactly once, sorted in C locale order
+.PHONY: check-linguas
+check-linguas:
+	printf '%s\n' $(sort $(basename $(wildcard *.po))) | diff -u - LINGUAS
+
 .PHONY: check
-check: $(addprefix check-, $(LINGUAS))
+check: $(addprefix check-, $(LINGUAS)) check-linguas
