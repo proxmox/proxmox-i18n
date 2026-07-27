@@ -191,7 +191,7 @@ update_pot: submodule
 do_update:
 	$(MAKE) update_pot
 	$(MAKE) messages.pot
-	for i in $(LINGUAS); do echo -n "$$i: "; msgmerge -s -v $$i.po messages.pot >$$i.po.tmp && mv $$i.po.tmp $$i.po; done;
+	for i in $(LINGUAS); do echo -n "$$i: "; msgmerge --sort-output --verbose $$i.po messages.pot >$$i.po.tmp && mv $$i.po.tmp $$i.po; done;
 
 update:
 	git submodule foreach 'git pull --ff-only origin master'
@@ -201,7 +201,7 @@ stats:
 	@for i in $(LINGUAS); do echo -n "$$i: "; msgfmt --statistics -o /dev/null $$i.po; done
 
 init-%.po: messages.pot
-	msginit -i $^ -l $^ -o $*.po --no-translator
+	msginit --input $^ --locale $^ --output-file $*.po --no-translator
 
 .INTERMEDIATE: messages.pot
 messages.pot: proxmox-widget-toolkit.pot proxmox-mailgateway.pot pve-manager.pot proxmox-backup.pot proxmox-datacenter-manager-ui.pot pve-yew-mobile-gui.pot pmg-yew-quarantine-gui.pot proxmox-yew-comp.pot proxmox-yew-widget-toolkit.pot
