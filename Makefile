@@ -191,7 +191,7 @@ update_pot: submodule
 do_update:
 	$(MAKE) update_pot
 	$(MAKE) messages.pot
-	for i in $(LINGUAS); do echo -n "$$i: "; msgmerge --sort-output --verbose $$i.po messages.pot >$$i.po.tmp && mv $$i.po.tmp $$i.po; done;
+	for i in $(LINGUAS); do echo -n "$$i: "; msgmerge --sort-output --verbose --update --backup=none $$i.po messages.pot; done;
 
 update:
 	git submodule foreach 'git pull --ff-only origin master'
@@ -217,7 +217,7 @@ distclean: clean
 
 .PHONY: clean
 clean:
-	rm -rf $(DEB_SOURCE)-[0-9]*/ *.po.tmp *.js.tmp *.deb *.dsc *.tar.* *.build *.buildinfo *.changes *.js messages.pot *.mo
+	rm -rf $(DEB_SOURCE)-[0-9]*/ *.js.tmp *.deb *.dsc *.tar.* *.build *.buildinfo *.changes *.js messages.pot *.mo
 
 .PHONY: upload-pve upload-pmg upload-pbs upload-pdm upload
 upload-%: UPLOAD_DIST ?= $(DEB_DISTRIBUTION)
