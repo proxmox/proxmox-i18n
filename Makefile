@@ -153,11 +153,13 @@ update_pot: submodule
 	$(call xtrpotupdate,proxmox-yew-widget-toolkit,proxmox-yew-widget-toolkit/src/lib.rs)
 	for i in $(EXCLUDED_PWT_FILES); do mv -f proxmox-yew-widget-toolkit/src/$$i.org proxmox-yew-widget-toolkit/src/$$i; done
 
+update-%.po: %.po messages.pot
+	msgmerge --sort-output --verbose --update --backup=none --previous $*.po messages.pot
 
 do_update:
 	$(MAKE) update_pot
 	$(MAKE) messages.pot
-	for i in $(LINGUAS); do echo -n "$$i: "; msgmerge --sort-output --verbose --update --backup=none --previous $$i.po messages.pot; done;
+	$(MAKE) $(patsubst %, update-%.po, $(LINGUAS))
 
 update:
 	git submodule foreach 'git pull --ff-only origin master'
