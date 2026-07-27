@@ -191,7 +191,7 @@ update_pot: submodule
 do_update:
 	$(MAKE) update_pot
 	$(MAKE) messages.pot
-	for i in $(LINGUAS); do echo -n "$$i: "; msgmerge --sort-output --verbose --update --backup=none $$i.po messages.pot; done;
+	for i in $(LINGUAS); do echo -n "$$i: "; msgmerge --sort-output --verbose --update --backup=none --previous $$i.po messages.pot; done;
 
 update:
 	git submodule foreach 'git pull --ff-only origin master'
