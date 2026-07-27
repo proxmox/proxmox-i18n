@@ -217,7 +217,7 @@ distclean: clean
 
 .PHONY: clean
 clean:
-	rm -rf $(DEB_SOURCE)-[0-9]*/ *.po.tmp *.js.tmp *.deb *.dsc *.tar.* *.build *.buildinfo *.changes *.js messages.pot
+	rm -rf $(DEB_SOURCE)-[0-9]*/ *.po.tmp *.js.tmp *.deb *.dsc *.tar.* *.build *.buildinfo *.changes *.js messages.pot *.mo
 
 .PHONY: upload-pve upload-pmg upload-pbs upload-pdm upload
 upload-%: UPLOAD_DIST ?= $(DEB_DISTRIBUTION)
