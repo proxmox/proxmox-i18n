@@ -128,7 +128,7 @@ pbs-lang-%.js: %.po
 	./po2js.pl -t pbs -v "$(DEB_VERSION)" -o pbs-lang-$*.js $?
 
 catalog-%.mo: %.po
-	msgmerge $^ | msgattrib --no-fuzzy --no-obsolete | msgfmt --verbose --output-file $@ $<;
+	msgfmt --verbose --output-file $@ $<
 
 .INTERMEDIATE: pve-yew-mobile-all.pot
 pve-yew-mobile-all.pot: pve-yew-mobile-gui.pot proxmox-yew-comp.pot proxmox-yew-widget-toolkit.pot
