@@ -168,6 +168,7 @@ stats:
 
 init-%.po: messages.pot
 	msginit --input $^ --locale $* --output-file $*.po --no-translator
+	echo $* | LC_ALL=C sort --unique --output LINGUAS LINGUAS -
 
 .INTERMEDIATE: messages.pot
 messages.pot: proxmox-widget-toolkit.pot proxmox-mailgateway.pot pve-manager.pot proxmox-backup.pot proxmox-datacenter-manager-ui.pot pve-yew-mobile-gui.pot pmg-yew-quarantine-gui.pot proxmox-yew-comp.pot proxmox-yew-widget-toolkit.pot
