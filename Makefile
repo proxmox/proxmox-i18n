@@ -135,14 +135,14 @@ pve-yew-mobile-all.pot: pve-yew-mobile-gui.pot proxmox-yew-comp.pot proxmox-yew-
 	xgettext $^ --output $@
 
 pve-yew-mobile-catalog-%.mo: %.po pve-yew-mobile-all.pot
-	msgmerge $< pve-yew-mobile-all.pot --for-msgfmt | msgfmt --verbose --output-file $@ -
+	set -o pipefail; msgmerge $< pve-yew-mobile-all.pot --for-msgfmt | msgfmt --verbose --output-file $@ -
 
 .INTERMEDIATE: pmg-yew-quarantine-all.pot
 pmg-yew-quarantine-all.pot: pmg-yew-quarantine-gui.pot proxmox-yew-comp.pot proxmox-yew-widget-toolkit.pot
 	xgettext $^ --output $@
 
 pmg-yew-quarantine-catalog-%.mo: %.po pmg-yew-quarantine-all.pot
-	msgmerge $< pmg-yew-quarantine-all.pot --for-msgfmt | msgfmt --verbose --output-file $@ -
+	set -o pipefail; msgmerge $< pmg-yew-quarantine-all.pot --for-msgfmt | msgfmt --verbose --output-file $@ -
 
 # parameter 1 is the name
 # parameter 2 is the directory
