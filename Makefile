@@ -167,7 +167,7 @@ stats:
 	@for i in $(LINGUAS); do echo -n "$$i: "; msgfmt --statistics -o /dev/null $$i.po; done
 
 init-%.po: messages.pot
-	msginit --input $^ --locale $^ --output-file $*.po --no-translator
+	msginit --input $^ --locale $* --output-file $*.po --no-translator
 
 .INTERMEDIATE: messages.pot
 messages.pot: proxmox-widget-toolkit.pot proxmox-mailgateway.pot pve-manager.pot proxmox-backup.pot proxmox-datacenter-manager-ui.pot pve-yew-mobile-gui.pot pmg-yew-quarantine-gui.pot proxmox-yew-comp.pot proxmox-yew-widget-toolkit.pot
