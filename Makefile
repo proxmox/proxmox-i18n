@@ -131,7 +131,7 @@ endef
 define xtrpotupdate
 	LC_COLLATE=C xtr "./$(2)" $(addprefix ./,$(3)) \
 	  --package-name "$(1)" \
-	  --package-version="$(shell cd $(2);git rev-parse HEAD)" \
+	  --package-version="$(shell cd $(dir $(2)) && git rev-parse HEAD)" \
 	  --msgid-bugs-address="<support@proxmox.com>" \
 	  --copyright-holder="Copyright (C) Proxmox Server Solutions GmbH <support@proxmox.com> & the translation contributors." \
 	  --output "$(1)".pot
