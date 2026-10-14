@@ -126,8 +126,10 @@ endef
 
 # parameter 1 is the name
 # parameter 2 is the directory
+# parameter 3 is optional and lists further entry files, like a binary's main.rs next to lib.rs,
+# as xtr only follows the module tree of the files passed to it
 define xtrpotupdate
-	LC_COLLATE=C xtr "./$(2)" \
+	LC_COLLATE=C xtr "./$(2)" $(addprefix ./,$(3)) \
 	  --package-name "$(1)" \
 	  --package-version="$(shell cd $(2);git rev-parse HEAD)" \
 	  --msgid-bugs-address="<support@proxmox.com>" \
@@ -144,7 +146,7 @@ update_pot: submodule
 	$(call potupdate,pve-manager,pve-manager/www/manager6/)
 	$(call potupdate,proxmox-mailgateway,pmg-gui/js/)
 	$(call potupdate,proxmox-backup,proxmox-backup/www/)
-	$(call xtrpotupdate,proxmox-datacenter-manager-ui,proxmox-datacenter-manager/ui/src/lib.rs)
+	$(call xtrpotupdate,proxmox-datacenter-manager-ui,proxmox-datacenter-manager/ui/src/lib.rs,proxmox-datacenter-manager/ui/src/main.rs)
 	$(call xtrpotupdate,pve-yew-mobile-gui,pve-yew-mobile-gui/src/main.rs)
 	$(call xtrpotupdate,pmg-yew-quarantine-gui,pmg-yew-quarantine-gui/src/main.rs)
 	$(call xtrpotupdate,proxmox-yew-comp,proxmox-yew-comp/src/lib.rs)
