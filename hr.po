@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: proxmox translations\n"
 "Report-Msgid-Bugs-To: <support@proxmox.com>\n"
-"POT-Creation-Date: 2026-11-18 19:27+0100\n"
+"POT-Creation-Date: 2026-11-20 11:07+0100\n"
 "PO-Revision-Date: Tue Jun 27 17:20:49 2023\n"
 "Last-Translator: STIPE TABAK <EMAIL@ADDRESS>\n"
 "Language-Team: Croatian <support@proxmox.com>\n"
@@ -197,6 +197,12 @@ msgstr "5 Minuta"
 msgid "<IP/Hostname>:Port"
 msgstr "Naziv glavnog računala"
 
+#: pve-manager/www/manager6/storage/wizard/LunSelect.js:92
+msgid ""
+"A LUN that is in use cannot be selected. A LUN with data that is no longer "
+"needed has to be wiped under Node > SAN first."
+msgstr ""
+
 #: proxmox-widget-toolkit/src/panel/NotificationMatchExpressionEditPanel.js:206
 msgid "A calendar rule's start time cannot be after the end time."
 msgstr ""
@@ -223,6 +229,12 @@ msgid ""
 msgstr ""
 "Novija inačica je instalirana, ali starija je još uvijek pokrenuta, molim "
 "ponovno pokrenite."
+
+#: pve-manager/www/manager6/dc/MultipathWwidEdit.js:74
+msgid ""
+"A node with fewer paths than expected shows the LUN as degraded, even after "
+"the kernel has removed a lost path."
+msgstr ""
 
 #: pve-manager/www/manager6/sdn/RouteMapPanel.js:129
 msgid ""
@@ -379,7 +391,7 @@ msgstr "Dozvola API tokena"
 msgid "API Token Policy"
 msgstr "API Token"
 
-#: pve-manager/www/manager6/dc/Config.js:171
+#: pve-manager/www/manager6/dc/Config.js:182
 #: proxmox-backup/www/config/TokenView.js:40
 #: proxmox-datacenter-manager/ui/src/configuration/mod.rs:87
 msgid "API Tokens"
@@ -478,8 +490,9 @@ msgstr "Kontrola Pristupa"
 msgid "Access Key"
 msgstr "Tajni ključ"
 
-#: pve-manager/www/manager6/node/Config.js:262
+#: pve-manager/www/manager6/node/Config.js:275
 #: proxmox-backup/www/ServerAdministration.js:103
+#: proxmox-datacenter-manager/ui/src/administration/mod.rs:151
 #, fuzzy
 msgid "Access Log"
 msgstr "Tajni ključ"
@@ -566,7 +579,7 @@ msgstr "Objekti Akcije"
 #: proxmox-widget-toolkit/src/node/Tasks.js:479
 #: pve-manager/www/manager6/ceph/Status.js:302
 #: pve-manager/www/manager6/dc/Tasks.js:139
-#: pve-manager/www/manager6/tree/DhcpTree.js:226
+#: pve-manager/www/manager6/tree/DhcpTree.js:228
 #: pve-manager/www/manager6/tree/ResourceMapTree.js:343
 #: proxmox-backup/www/datastore/Content.js:1131
 #: proxmox-backup/www/tape/ChangerStatus.js:768
@@ -585,7 +598,7 @@ msgid "Activate AES instruction set for HW acceleration."
 msgstr ""
 
 #: proxmox-widget-toolkit/src/form/NetworkSelector.js:112
-#: proxmox-widget-toolkit/src/node/NetworkView.js:310
+#: proxmox-widget-toolkit/src/node/NetworkView.js:311
 #: proxmox-widget-toolkit/src/node/ServiceView.js:233
 #: pmg-gui/js/PBSRemoteEdit.js:232 pmg-gui/js/PBSRemoteEdit.js:235
 #: pmg-gui/js/RuleEditor.js:46 pmg-gui/js/RuleInfo.js:301
@@ -611,6 +624,20 @@ msgstr "Active Directory Server"
 #, fuzzy
 msgid "Active Encryption Key"
 msgstr "Ključ šifriranja"
+
+#: pve-manager/www/manager6/window/SANLunState.js:100
+#, fuzzy
+#| msgid "Active"
+msgid "Active Paths"
+msgstr "Aktivno"
+
+#: pve-manager/www/manager6/storage/IScsiEdit.js:199
+msgid ""
+"Active logical volumes and guests using individual paths do not switch to "
+"the multipath map. Check their device dependencies before relying on path "
+"redundancy (<a href=\"{0}\" target=\"_blank\" rel=\"noopener "
+"noreferrer\">documentation</a>)."
+msgstr ""
 
 #: proxmox-backup/www/tape/ChangerStatus.js:884
 #: proxmox-datacenter-manager/ui/src/ceph/clusters.rs:352
@@ -641,6 +668,7 @@ msgstr "Aktivno"
 #: pve-manager/www/manager6/dc/CorosyncLinkEdit.js:308
 #: pve-manager/www/manager6/dc/MetricServerView.js:99
 #: pve-manager/www/manager6/dc/RealmSyncJob.js:144
+#: pve-manager/www/manager6/dc/SAN.js:229
 #: pve-manager/www/manager6/dc/StorageView.js:216
 #: pve-manager/www/manager6/dc/TokenView.js:112
 #: pve-manager/www/manager6/dc/UserView.js:148
@@ -648,7 +676,7 @@ msgstr "Aktivno"
 #: pve-manager/www/manager6/form/TagColorGrid.js:278
 #: pve-manager/www/manager6/grid/FirewallAliases.js:147
 #: pve-manager/www/manager6/grid/FirewallRules.js:781
-#: pve-manager/www/manager6/grid/PoolMembers.js:250
+#: pve-manager/www/manager6/grid/PoolMembers.js:373
 #: pve-manager/www/manager6/grid/Replication.js:240
 #: pve-manager/www/manager6/ha/Resources.js:58
 #: pve-manager/www/manager6/ha/Rules.js:95
@@ -667,11 +695,12 @@ msgstr "Aktivno"
 #: pve-manager/www/manager6/sdn/RouteMapPanel.js:306
 #: pve-manager/www/manager6/sdn/RouteMapPanel.js:566
 #: pve-manager/www/manager6/sdn/RouteMapPanel.js:955
-#: pve-manager/www/manager6/sdn/SubnetEdit.js:229
+#: pve-manager/www/manager6/sdn/StaticRoutes.js:194
+#: pve-manager/www/manager6/sdn/SubnetEdit.js:244
 #: pve-manager/www/manager6/sdn/VnetACLView.js:222
 #: pve-manager/www/manager6/sdn/ZoneView.js:109
 #: pve-manager/www/manager6/sdn/fabrics/RedistributionGrid.js:23
-#: pve-manager/www/manager6/tree/DhcpTree.js:250
+#: pve-manager/www/manager6/tree/DhcpTree.js:252
 #: pve-manager/www/manager6/tree/ResourceMapTree.js:325
 #: proxmox-backup/www/config/ACLView.js:156
 #: proxmox-backup/www/config/EncryptionKeysView.js:230
@@ -976,7 +1005,7 @@ msgstr "Dodaj novi skup konfiguraciji pohrane klastera."
 
 #: pve-manager/www/manager6/lxc/CreateWizard.js:90
 #: pve-manager/www/manager6/qemu/CreateWizard.js:130
-#: pve-manager/www/manager6/window/Restore.js:251
+#: pve-manager/www/manager6/window/Restore.js:285
 #, fuzzy
 msgid "Add to HA"
 msgstr "Dodaj pohranu"
@@ -1001,6 +1030,7 @@ msgstr ""
 #: pmg-gui/js/UserBlockWelcomeList.js:33 pmg-gui/js/UserBlockWelcomeList.js:195
 #: pve-manager/www/manager6/ceph/ServiceList.js:683
 #: pve-manager/www/manager6/ceph/Services.js:174
+#: pve-manager/www/manager6/node/SANLuns.js:25
 #: proxmox-datacenter-manager/ui/src/ceph/managers.rs:188
 #: proxmox-datacenter-manager/ui/src/ceph/monitors.rs:139
 msgid "Address"
@@ -1015,7 +1045,7 @@ msgid "Addresses and ports used by the OSD service"
 msgstr "Adrese i portovi koje koristi OSD servis"
 
 #: pmg-gui/js/NavigationTree.js:104 proxmox-backup/www/NavigationTree.js:98
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:322
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:325
 msgid "Administration"
 msgstr "Administracija"
 
@@ -1093,10 +1123,17 @@ msgstr "Zaštićeno"
 msgid "Affinity"
 msgstr "CPU afinitet"
 
-#: pve-manager/www/manager6/dc/Config.js:241
+#: pve-manager/www/manager6/dc/Config.js:252
 #, fuzzy
 msgid "Affinity Rules"
 msgstr "CPU afinitet"
+
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:245
+msgid ""
+"After mapping a new LUN on the array, rescan the Fibre Channel hosts of each "
+"node (<a href=\"{0}\" target=\"_blank\" rel=\"noopener "
+"noreferrer\">documentation</a>)."
+msgstr ""
 
 #: pve-manager/www/manager6/dc/TokenEdit.js:123
 msgid ""
@@ -1113,7 +1150,8 @@ msgstr "Zastavice upozorenja"
 msgid "Alert Flags"
 msgstr "Zastavice upozorenja"
 
-#: pve-manager/www/manager6/dc/Config.js:375
+#: pve-manager/www/manager6/dc/Config.js:386
+#: pve-manager/www/manager6/dc/MultipathWwidEdit.js:36
 #: pve-manager/www/manager6/form/SDNVnetSelector.js:34
 #: pve-manager/www/manager6/grid/FirewallAliases.js:47
 #: pve-manager/www/manager6/grid/FirewallAliases.js:84
@@ -1175,6 +1213,13 @@ msgstr "Alias"
 #: proxmox-yew-comp/src/task_status_selector.rs:134
 msgid "All"
 msgstr "Sve"
+
+#: pve-manager/www/manager6/dc/MultipathWwidEdit.js:44
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:173
+#, fuzzy
+#| msgid "No restrictions"
+msgid "All (No restrictions)"
+msgstr "Nema ograničenja"
 
 #: proxmox-widget-toolkit/src/node/APT.js:186
 #: proxmox-yew-comp/src/apt_package_manager.rs:320
@@ -1354,6 +1399,7 @@ msgstr "Dopusti HREF-ove"
 
 #. TRANSLATORS: As in "a chain of volumes, each referencing the next one".
 #: pve-manager/www/manager6/storage/Base.js:49
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:175
 msgid "Allow Snapshots as Volume-Chain"
 msgstr ""
 
@@ -1371,11 +1417,16 @@ msgstr ""
 msgid "Allow local disk migration"
 msgstr "Dopusti migraciju lokalnog diska"
 
+#: pve-manager/www/manager6/window/Restore.js:294
+msgid "Allow restoring a backup of another guest"
+msgstr ""
+
 #: pve-manager/www/manager6/qemu/MemoryEdit.js:164
 msgid ""
 "Allow the Kernel Samepage Merging daemon to merge memory pages of this VM."
 msgstr ""
 
+#: pve-manager/www/manager6/sdn/FabricsContentView.js:73
 #: pve-manager/www/manager6/sdn/fabrics/wireguard/NodeEdit.js:99
 #, fuzzy
 msgid "Allowed IPs"
@@ -1400,7 +1451,7 @@ msgstr ""
 msgid "Alphabetical"
 msgstr "Abecedno"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:43
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:49
 msgid "Alphanumeric string starting with a character."
 msgstr ""
 
@@ -1415,8 +1466,8 @@ msgid ""
 "resources in it"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:377
-#: proxmox-widget-toolkit/src/node/NetworkView.js:287
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:412
+#: proxmox-widget-toolkit/src/node/NetworkView.js:288
 #, fuzzy
 msgid "Alternative Names"
 msgstr "Alternativni Naslovi"
@@ -1614,7 +1665,7 @@ msgstr ""
 msgid "Are you sure to remove the subscription key?"
 msgstr "Jeste li sigurni da želite ukloniti ključ pretplate?"
 
-#: pve-manager/www/manager6/ha/Status.js:68
+#: pve-manager/www/manager6/ha/Status.js:147
 #, fuzzy
 msgid "Are you sure you want to arm HA?"
 msgstr "Jeste li sigurni da želite obrisati {0}?"
@@ -1635,10 +1686,21 @@ msgstr "Jeste li sigurni da želite odvojiti unos {0}"
 msgid "Are you sure you want to detach entry {0}"
 msgstr "Jeste li sigurni da želite odvojiti unos {0}"
 
-#: pve-manager/www/manager6/ha/Status.js:25
+#: pve-manager/www/manager6/ha/Status.js:91
+#, fuzzy
+msgid "Are you sure you want to disable maintenance mode for node '{0}'?"
+msgstr "Jeste li sigurni da želite ukloniti '{0}'"
+
+#: pve-manager/www/manager6/ha/Status.js:39
 #, fuzzy
 msgid "Are you sure you want to disarm HA with resource mode '{0}'?"
 msgstr "Jeste li sigurni da želite ukloniti '{0}'"
+
+#: pve-manager/www/manager6/ha/Status.js:106
+#, fuzzy
+#| msgid "Are you sure you want to remove the schedule for {0}"
+msgid "Are you sure you want to enable maintenance mode for node '{0}'?"
+msgstr "Jeste li sigurni da želite ukloniti raspored za {0}"
 
 #: pmg-gui/js/PBSSnapshotView.js:284
 msgid "Are you sure you want to forget snapshot {0}"
@@ -1672,7 +1734,7 @@ msgstr "Jeste li sigurni da želite ukloniti '{0}' unose za '{1}'"
 msgid "Are you sure you want to remove '{0}' on '{1}' for '{2}'"
 msgstr "Jeste li sigurni da želite ukloniti '{0}' na '{1}' za '{2}'"
 
-#: pve-manager/www/manager6/tree/DhcpTree.js:102
+#: pve-manager/www/manager6/tree/DhcpTree.js:104
 #, fuzzy
 msgid "Are you sure you want to remove DHCP mapping {0}"
 msgstr "Jeste li sigurni da želite ukloniti unos {0}"
@@ -1685,7 +1747,7 @@ msgstr "Jeste li sigurni da želite ukloniti unos {0}"
 #: proxmox-widget-toolkit/src/button/Button.js:141 pmg-gui/js/RuleInfo.js:41
 #: pmg-gui/js/UserBlockWelcomeList.js:181
 #: pve-manager/www/manager6/grid/BackupView.js:205
-#: pve-manager/www/manager6/grid/PoolMembers.js:212
+#: pve-manager/www/manager6/grid/PoolMembers.js:330
 #: pve-manager/www/manager6/lxc/Network.js:507
 #: pve-manager/www/manager6/lxc/Resources.js:246
 #: pve-manager/www/manager6/qemu/CloudInit.js:14
@@ -1838,7 +1900,7 @@ msgstr "Jeste li sigurni da želite obrisati {0}?"
 msgid "Area"
 msgstr ""
 
-#: pve-manager/www/manager6/ha/Status.js:90
+#: pve-manager/www/manager6/ha/Status.js:169
 msgid "Arm HA"
 msgstr ""
 
@@ -1858,7 +1920,7 @@ msgstr "Dodijeljeno LV-ovima"
 msgid "Assign Key to {remote}/{node}"
 msgstr ""
 
-#: pve-manager/www/manager6/node/LVM.js:113
+#: pve-manager/www/manager6/node/LVM.js:118
 msgid "Assigned to LVs"
 msgstr "Dodijeljeno LV-ovima"
 
@@ -2099,7 +2161,7 @@ msgstr "Automatsko Stvaranje Korisnika"
 msgid "Autogenerate"
 msgstr "Automatski generiraj"
 
-#: pve-manager/www/manager6/window/Restore.js:232
+#: pve-manager/www/manager6/window/Restore.js:266
 msgid "Autogenerate unique properties, e.g., MAC addresses"
 msgstr "Automatski generiraj jedinstvena svojstva, npr. MAC adrese"
 
@@ -2125,7 +2187,7 @@ msgstr "Automatski"
 msgid "Automatic (Storage used by the VM, or 'local')"
 msgstr "Automatski (pohrana koju koristi VM ili 'lokalno')"
 
-#: pve-manager/www/manager6/sdn/zones/SimpleEdit.js:29
+#: pve-manager/www/manager6/sdn/zones/SimpleEdit.js:60
 #, fuzzy
 msgid "Automatic DHCP"
 msgstr "Automatski"
@@ -2149,8 +2211,8 @@ msgstr "Način automatskog skaliranja"
 msgid "Autoscaler Mode"
 msgstr "Način automatskog skaliranja"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:60
-#: proxmox-widget-toolkit/src/node/NetworkView.js:320
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:66
+#: proxmox-widget-toolkit/src/node/NetworkView.js:321
 #: proxmox-yew-comp/src/configuration/network_view.rs:441
 #: proxmox-yew-comp/src/configuration/network_edit.rs:141
 #: proxmox-yew-comp/src/configuration/network_edit.rs:215
@@ -2249,8 +2311,8 @@ msgstr "Backscatter Rezultat"
 #: pmg-gui/js/BackupConfiguration.js:5 pmg-gui/js/BackupRestore.js:77
 #: pmg-gui/js/BackupRestore.js:80 pmg-gui/js/BackupRestore.js:100
 #: pmg-gui/js/Utils.js:906 pve-manager/www/manager6/Utils.js:758
-#: pve-manager/www/manager6/Utils.js:2284
-#: pve-manager/www/manager6/dc/Config.js:140
+#: pve-manager/www/manager6/Utils.js:2304
+#: pve-manager/www/manager6/dc/Config.js:151
 #: pve-manager/www/manager6/lxc/Config.js:307
 #: pve-manager/www/manager6/lxc/MPEdit.js:262
 #: pve-manager/www/manager6/qemu/Config.js:360
@@ -2291,7 +2353,7 @@ msgstr "Sigurnosna grupa"
 msgid "Backup Groups"
 msgstr "Sigurnosne grupe"
 
-#: pve-manager/www/manager6/Utils.js:2284
+#: pve-manager/www/manager6/Utils.js:2304
 #: pve-manager/www/manager6/dc/Backup.js:9
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:52
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:197
@@ -2314,7 +2376,7 @@ msgstr "Sada napravi sigurnosnu kopiju"
 msgid "Backup Restore"
 msgstr "Vraćanje Sigurnosne Kopije"
 
-#: pve-manager/www/manager6/storage/Base.js:196
+#: pve-manager/www/manager6/storage/Base.js:201
 msgid "Backup Retention"
 msgstr "Zadržavanje Sigurnosne Kopije"
 
@@ -2343,7 +2405,7 @@ msgstr "Vrijeme Sigurnosne Kopije"
 msgid "Backup content type not available for this storage."
 msgstr "Vrsta sadržaja sigurnosne kopije nije dostupna za ovu pohranu."
 
-#: pve-manager/www/manager6/Utils.js:2308
+#: pve-manager/www/manager6/Utils.js:2328
 #, fuzzy
 msgid "Backup notifications"
 msgstr "Iz konfiguracije sigurnosne kopije"
@@ -2398,7 +2460,7 @@ msgstr "Pojasna širina"
 
 #: pve-manager/www/manager6/dc/StorageView.js:268
 #: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:144
-#: pve-manager/www/manager6/window/Restore.js:213
+#: pve-manager/www/manager6/window/Restore.js:247
 msgid "Bandwidth Limit"
 msgstr "Ograničenje propusnosti"
 
@@ -2440,11 +2502,11 @@ msgstr "Način Veze"
 msgid "Base URL this PDM instance is reachable from the target host"
 msgstr ""
 
-#: pve-manager/www/manager6/storage/LVMEdit.js:192
+#: pve-manager/www/manager6/storage/LVMEdit.js:195
 msgid "Base storage"
 msgstr "Osnovna pohrana"
 
-#: pve-manager/www/manager6/storage/LVMEdit.js:220
+#: pve-manager/www/manager6/storage/LVMEdit.js:226
 msgid "Base volume"
 msgstr "Osnovni volumen"
 
@@ -2542,7 +2604,7 @@ msgstr "Filter tamnog načina"
 msgid "Bond Members udev Filters"
 msgstr "Filter tamnog načina"
 
-#: proxmox-widget-toolkit/src/node/NetworkView.js:355
+#: proxmox-widget-toolkit/src/node/NetworkView.js:356
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:532
 #: proxmox-yew-comp/src/configuration/network_view.rs:481
 msgid "Bond Mode"
@@ -2566,8 +2628,8 @@ msgstr "Način Veze"
 msgid "Boot Order"
 msgstr "Redoslijed pokretanja"
 
-#: pve-manager/www/manager6/panel/GuestStatusView.js:147
-#: pve-manager/www/manager6/panel/TemplateStatusView.js:60
+#: pve-manager/www/manager6/panel/GuestStatusView.js:150
+#: pve-manager/www/manager6/panel/TemplateStatusView.js:63
 #: proxmox-datacenter-manager/ui/src/pve/lxc/overview.rs:301
 #: proxmox-datacenter-manager/ui/src/pve/qemu/overview.rs:310
 msgid "Bootdisk size"
@@ -2599,13 +2661,13 @@ msgstr "Most"
 msgid "Bridge Ports"
 msgstr "Priključci Premosnika"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:137
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:152
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:143
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:158
 #: proxmox-yew-comp/src/configuration/network_edit.rs:154
 msgid "Bridge ports"
 msgstr "Priključci Premosnika"
 
-#: pve-manager/www/manager6/sdn/NetworkBrowser.js:120
+#: pve-manager/www/manager6/sdn/NetworkBrowser.js:122
 #: pve-manager/www/manager6/sdn/ZoneBridgesPanel.js:5
 #, fuzzy
 msgid "Bridges"
@@ -2707,23 +2769,23 @@ msgstr "Skupno pokretanje"
 msgid "Bulk Suspend"
 msgstr "Obustavi"
 
-#: pve-manager/www/manager6/Utils.js:2211
-#: pve-manager/www/manager6/Utils.js:2244
+#: pve-manager/www/manager6/Utils.js:2231
+#: pve-manager/www/manager6/Utils.js:2264
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:156
 #, fuzzy
 msgid "Bulk migrate VMs and Containers"
 msgstr "Migracija svih VM-ova i kontejnera"
 
-#: pve-manager/www/manager6/Utils.js:2213
-#: pve-manager/www/manager6/Utils.js:2214
-#: pve-manager/www/manager6/Utils.js:2273
+#: pve-manager/www/manager6/Utils.js:2233
+#: pve-manager/www/manager6/Utils.js:2234
+#: pve-manager/www/manager6/Utils.js:2293
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:185
 #, fuzzy
 msgid "Bulk shutdown VMs and Containers"
 msgstr "Zaustavi sve VM-ove i kontejnere"
 
-#: pve-manager/www/manager6/Utils.js:2212
-#: pve-manager/www/manager6/Utils.js:2272
+#: pve-manager/www/manager6/Utils.js:2232
+#: pve-manager/www/manager6/Utils.js:2292
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:184
 #, fuzzy
 msgid "Bulk start VMs and Containers"
@@ -2771,6 +2833,16 @@ msgstr ""
 msgid "Bytes Used"
 msgstr "Iskorišteno dolaznog prometa"
 
+#: pve-manager/www/manager6/sdn/FabricsContentView.js:99
+#, fuzzy
+msgid "Bytes received"
+msgstr "Iskorišteno dolaznog prometa"
+
+#: pve-manager/www/manager6/sdn/FabricsContentView.js:92
+#, fuzzy
+msgid "Bytes transmitted"
+msgstr "Iskorišteno dolaznog prometa"
+
 #: pve-manager/www/manager6/window/GuestImport.js:1032
 msgid ""
 "CD-ROM images cannot get imported, if required you can reconfigure the '{0}' "
@@ -2800,7 +2872,7 @@ msgid "CID"
 msgstr "CIDR"
 
 #: proxmox-widget-toolkit/src/form/NetworkSelector.js:96
-#: proxmox-widget-toolkit/src/node/NetworkView.js:381
+#: proxmox-widget-toolkit/src/node/NetworkView.js:382
 #: pmg-gui/js/MyNetworks.js:45 pmg-gui/js/MyNetworks.js:74
 #: pve-manager/www/manager6/sdn/EvpnZoneIpVrfPanel.js:18
 #: pve-manager/www/manager6/sdn/controllers/EvpnEdit.js:49
@@ -2898,7 +2970,7 @@ msgstr "CPU jedinice"
 #: pve-manager/www/manager6/ha/NodePrioritySelector.js:53
 #: pve-manager/www/manager6/node/StatusView.js:27
 #: pve-manager/www/manager6/node/Summary.js:166
-#: pve-manager/www/manager6/panel/GuestStatusView.js:102
+#: pve-manager/www/manager6/panel/GuestStatusView.js:105
 #: pve-manager/www/manager6/panel/GuestSummary.js:98
 #: proxmox-backup/www/ServerStatus.js:215
 #: proxmox-backup/www/ServerStatus.js:217
@@ -2924,7 +2996,7 @@ msgstr "CPU(i)"
 msgid "CRM State"
 msgstr "CRM Stanje"
 
-#: pve-manager/www/manager6/ha/Status.js:126
+#: pve-manager/www/manager6/ha/Status.js:233
 #, fuzzy
 msgid "CRS Settings"
 msgstr "Postavke"
@@ -3044,33 +3116,33 @@ msgstr ""
 msgid "Cannot load the storage plugin information for type '{0}': {1}"
 msgstr ""
 
-#: pve-manager/www/manager6/window/Migrate.js:377
+#: pve-manager/www/manager6/window/Migrate.js:404
 msgid "Cannot migrate VM with local CD/DVD"
 msgstr ""
 
-#: pve-manager/www/manager6/window/Migrate.js:322
+#: pve-manager/www/manager6/window/Migrate.js:349
 msgid "Cannot migrate VM with local resources: {0}"
 msgstr ""
 
-#: pve-manager/www/manager6/window/Migrate.js:458
+#: pve-manager/www/manager6/window/Migrate.js:485
 msgid "Cannot migrate VM, because {0}."
 msgstr ""
 
-#: pve-manager/www/manager6/window/Migrate.js:405
+#: pve-manager/www/manager6/window/Migrate.js:432
 msgid "Cannot migrate conntrack state, source node is lacking support."
 msgstr ""
 
-#: pve-manager/www/manager6/window/Migrate.js:414
+#: pve-manager/www/manager6/window/Migrate.js:441
 msgid ""
 "Cannot migrate conntrack state, target node is lacking support. Active "
 "network connections might get dropped."
 msgstr ""
 
-#: pve-manager/www/manager6/window/Migrate.js:560
+#: pve-manager/www/manager6/window/Migrate.js:589
 msgid "Cannot migrate container, because {0}."
 msgstr ""
 
-#: pve-manager/www/manager6/window/Migrate.js:352
+#: pve-manager/www/manager6/window/Migrate.js:379
 msgid "Cannot migrate running VM with mapped resources: {0}"
 msgstr ""
 
@@ -3130,7 +3202,7 @@ msgid ""
 "any option besides 'Any matches'."
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:357
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:361
 #, fuzzy
 msgid "Ceph"
 msgstr "CephFS"
@@ -3230,7 +3302,7 @@ msgid "Certificate matches the stored fingerprint."
 msgstr "Posljednja potvrda"
 
 #: pmg-gui/js/Certificates.js:5 pmg-gui/js/Certificates.js:30
-#: pmg-gui/js/NavigationTree.js:96 pve-manager/www/manager6/node/Config.js:204
+#: pmg-gui/js/NavigationTree.js:96 pve-manager/www/manager6/node/Config.js:217
 #: proxmox-backup/www/NavigationTree.js:72
 #: proxmox-backup/www/config/CertificateView.js:5
 #: proxmox-backup/www/config/CertificateView.js:26
@@ -3267,7 +3339,7 @@ msgstr "Promijeni lozinku"
 msgid "Change Protection"
 msgstr "Zaštita od promjena"
 
-#: pve-manager/www/manager6/Utils.js:2228
+#: pve-manager/www/manager6/Utils.js:2248
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:138
 msgid "Change global Ceph flags"
 msgstr "Promijeni globalne Ceph zastavice"
@@ -3379,7 +3451,7 @@ msgstr "Pretplata"
 msgid "Check connection"
 msgstr "Zaštita od promjena"
 
-#: pve-manager/www/manager6/window/Migrate.js:634
+#: pve-manager/www/manager6/window/Migrate.js:663
 msgid "Check that the target node can parse the guest configuration."
 msgstr ""
 
@@ -3390,6 +3462,12 @@ msgid_plural "Checked {0} of {n} endpoints"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
+
+#: pve-manager/www/manager6/node/SANLuns.js:21
+#, fuzzy
+#| msgid "Check"
+msgid "Checker"
+msgstr "Provjeri"
 
 #: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:58
 #, fuzzy
@@ -3435,7 +3513,7 @@ msgstr "Odaberi Uređaj"
 msgid "Choose Port"
 msgstr "Odaberi Priključak"
 
-#: pve-manager/www/manager6/window/Restore.js:272
+#: pve-manager/www/manager6/window/Restore.js:338
 msgid ""
 "Choose if you want to keep or override the privilege level of the restored "
 "Container."
@@ -3629,8 +3707,8 @@ msgstr "Prebriši"
 msgid "Clipboard"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2249
-#: pve-manager/www/manager6/Utils.js:2279
+#: pve-manager/www/manager6/Utils.js:2269
+#: pve-manager/www/manager6/Utils.js:2299
 #: pve-manager/www/manager6/dc/OptionView.js:344
 #: pve-manager/www/manager6/lxc/CmdMenu.js:95
 #: pve-manager/www/manager6/lxc/Config.js:121
@@ -3669,7 +3747,7 @@ msgstr "CloudInit Disk"
 #: pmg-gui/js/NavigationTree.js:78
 #: pve-manager/www/manager6/dc/ClusterEdit.js:12
 #: pve-manager/www/manager6/dc/Config.js:106
-#: pve-manager/www/manager6/dc/Health.js:44
+#: pve-manager/www/manager6/dc/Health.js:45
 #: pve-yew-mobile-gui/src/pages/page_tasks.rs:89
 msgid "Cluster"
 msgstr "Klaster"
@@ -3689,6 +3767,12 @@ msgstr "Omogući Novo"
 #, fuzzy
 msgid "Cluster Firewall - {}"
 msgstr "Omogući Novo"
+
+#: pve-manager/www/manager6/dc/Health.js:55
+#, fuzzy
+#| msgid "Cluster"
+msgid "Cluster ID"
+msgstr "Klaster"
 
 #: pve-manager/www/manager6/dc/Cluster.js:53
 msgid "Cluster Information"
@@ -3723,7 +3807,7 @@ msgstr "Čvorovi Klastera"
 msgid "Cluster Resource Scheduling"
 msgstr "Raspoređivanje Resursa Klastera"
 
-#: pve-manager/www/manager6/ha/Status.js:128
+#: pve-manager/www/manager6/ha/Status.js:235
 msgid "Cluster Resource Scheduling, configured under Datacenter > Options"
 msgstr ""
 
@@ -3801,6 +3885,12 @@ msgstr "Boja Teme"
 msgid "Columns"
 msgstr "CT Volumeni"
 
+#: pve-manager/www/manager6/storage/IScsiEdit.js:181
+msgid ""
+"Combine the paths of each LUN into one device on every node using the "
+"storage."
+msgstr ""
+
 #: pve-manager/www/manager6/ha/Fencing.js:33
 msgid "Command"
 msgstr "Naredba"
@@ -3821,8 +3911,8 @@ msgstr "Sve neuspješno"
 #: proxmox-widget-toolkit/src/form/UserSelector.js:41
 #: proxmox-widget-toolkit/src/node/APTHistory.js:285
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:363
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:304
-#: proxmox-widget-toolkit/src/node/NetworkView.js:413
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:339
+#: proxmox-widget-toolkit/src/node/NetworkView.js:414
 #: proxmox-widget-toolkit/src/panel/AuthView.js:43
 #: proxmox-widget-toolkit/src/panel/EmailRecipientPanel.js:64
 #: proxmox-widget-toolkit/src/panel/GotifyEditPanel.js:46
@@ -3945,7 +4035,7 @@ msgstr "Sve neuspješno"
 msgid "Comment"
 msgstr "Komentar"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:30
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:36
 #: proxmox-yew-comp/src/configuration/network_edit.rs:134
 msgid ""
 "Commonly: vmbr[N] (e.g., vmbr0, vmbr1). Must start with a character, max 10 "
@@ -3996,7 +4086,7 @@ msgstr ""
 msgid "Config"
 msgstr "Konfiguriraj"
 
-#: pve-manager/www/manager6/window/Migrate.js:630
+#: pve-manager/www/manager6/window/Migrate.js:659
 #, fuzzy
 #| msgid "Configure Ceph"
 msgid "Config Check"
@@ -4017,7 +4107,7 @@ msgstr "Konfiguracija zaključana ({0})"
 #: pve-manager/www/manager6/UIOptions.js:110
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:517
 #: pve-manager/www/manager6/ceph/Config.js:143
-#: pve-manager/www/manager6/node/Config.js:393
+#: pve-manager/www/manager6/node/Config.js:430
 #: pve-manager/www/manager6/window/BackupConfig.js:3
 #: proxmox-backup/www/NavigationTree.js:42
 #: proxmox-backup/www/SystemConfiguration.js:5
@@ -4051,7 +4141,7 @@ msgstr "Samo promjena konfiguracije, nikakvi podaci neće biti izbrisani."
 msgid "Configuration for {0} not correct ('{1}' != '{2}')"
 msgstr "Konfiguracija za {0} nije ispravna ('{1}' != '{2}')"
 
-#: pve-manager/www/manager6/Utils.js:2250
+#: pve-manager/www/manager6/Utils.js:2270
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:162
 msgid "Configure"
 msgstr "Konfiguriraj"
@@ -4081,8 +4171,9 @@ msgstr "Konfigurirano"
 #: pve-manager/www/manager6/ceph/OSD.js:856
 #: pve-manager/www/manager6/ceph/Status.js:85
 #: pve-manager/www/manager6/dc/Backup.js:762
-#: pve-manager/www/manager6/ha/Status.js:34
-#: pve-manager/www/manager6/ha/Status.js:67
+#: pve-manager/www/manager6/ha/Status.js:48
+#: pve-manager/www/manager6/ha/Status.js:116
+#: pve-manager/www/manager6/ha/Status.js:146
 #: pve-manager/www/manager6/lxc/CmdMenu.js:26
 #: pve-manager/www/manager6/lxc/CmdMenu.js:124
 #: pve-manager/www/manager6/lxc/CreateWizard.js:267
@@ -4095,10 +4186,11 @@ msgstr "Konfigurirano"
 #: pve-manager/www/manager6/sdn/RouteMapPanel.js:904
 #: pve-manager/www/manager6/sdn/StatusView.js:49
 #: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:260
-#: pve-manager/www/manager6/tree/DhcpTree.js:99
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:252
+#: pve-manager/www/manager6/tree/DhcpTree.js:101
 #: pve-manager/www/manager6/tree/ResourceMapTree.js:124
 #: pve-manager/www/manager6/window/GuestStop.js:72
-#: pve-manager/www/manager6/window/Restore.js:105
+#: pve-manager/www/manager6/window/Restore.js:108
 #: proxmox-backup/www/datastore/Content.js:756
 #: proxmox-datacenter-manager/ui/src/configuration/views.rs:318
 #: proxmox-datacenter-manager/ui/src/guests.rs:553
@@ -4139,6 +4231,10 @@ msgstr "Potvrdi Uklanjanje TFA"
 msgid "Confirm password"
 msgstr "Potvrdi lozinku"
 
+#: pve-manager/www/manager6/window/SANLunWipe.js:50
+msgid "Confirm that no other host uses the LUN."
+msgstr ""
+
 #. A message that conveys what will be confirmed.
 #: proxmox-yew-widget-toolkit/src/widget/confirm_dialog.rs:27
 #, fuzzy
@@ -4158,6 +4254,7 @@ msgstr "Potvrdite svoju ({0}) lozinku"
 msgid "Confirm your ({}) password"
 msgstr "Potvrdite svoju ({0}) lozinku"
 
+#: pve-manager/www/manager6/SANUtils.js:141
 #: pve-manager/www/manager6/sdn/fabrics/bgp/FabricEdit.js:74
 #: pve-manager/www/manager6/sdn/fabrics/ospf/FabricEdit.js:43
 #, fuzzy
@@ -4180,7 +4277,15 @@ msgstr "Obnovi certifikat"
 msgid "Connection Information"
 msgstr "Informacije o pridruživanju"
 
-#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:181
+#: pve-manager/www/manager6/node/ISCSITargets.js:29
+#: pve-manager/www/manager6/storage/wizard/IScsi.js:223
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:180
+#, fuzzy
+#| msgid "Connection error"
+msgid "Connection Storage"
+msgstr "Greška veze"
+
+#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:180
 #, fuzzy
 msgid "Connection Tracking Max"
 msgstr "Informacije o pridruživanju"
@@ -4190,7 +4295,7 @@ msgstr "Informacije o pridruživanju"
 #: proxmox-widget-toolkit/src/Utils.js:564
 #: proxmox-widget-toolkit/src/Utils.js:566
 #: proxmox-widget-toolkit/src/Utils.js:569
-#: pve-manager/www/manager6/Utils.js:741 pve-manager/www/manager6/Utils.js:1930
+#: pve-manager/www/manager6/Utils.js:741 pve-manager/www/manager6/Utils.js:1950
 msgid "Connection error"
 msgstr "Greška veze"
 
@@ -4199,17 +4304,23 @@ msgid "Connection failure. Network error or Proxmox VE services not running?"
 msgstr ""
 "Povezivanje neuspješno. Mrežna pogreška ili Proxmox VE servisi ne rade?"
 
+#: pve-manager/www/manager6/storage/wizard/IScsi.js:113
+msgid ""
+"Connection storage \"{0}\" is not available on node \"{1}\". Open the web UI "
+"on one of its nodes."
+msgstr ""
+
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_summary.rs:132
 #, fuzzy
 msgid "Connections"
 msgstr "Greška veze"
 
 #. TRANSLATORS: See https://www.kernel.org/doc/html/next/networking/netlink_spec/conntrack.html
-#: pve-manager/www/manager6/window/Migrate.js:702
+#: pve-manager/www/manager6/window/Migrate.js:731
 msgid "Conntrack state"
 msgstr ""
 
-#: pve-manager/www/manager6/window/Migrate.js:423
+#: pve-manager/www/manager6/window/Migrate.js:450
 msgid ""
 "Conntrack state migration disabled. Active network connections might get "
 "dropped."
@@ -4229,8 +4340,8 @@ msgid "Consent Text"
 msgstr "Vrsta Sadržaja"
 
 #: proxmox-widget-toolkit/src/Utils.js:773 pmg-gui/js/ServerStatus.js:60
-#: pve-manager/www/manager6/Utils.js:2270
-#: pve-manager/www/manager6/Utils.js:2277
+#: pve-manager/www/manager6/Utils.js:2290
+#: pve-manager/www/manager6/Utils.js:2297
 #: pve-manager/www/manager6/button/ConsoleButton.js:20
 #: pve-manager/www/manager6/lxc/CmdMenu.js:172
 #: pve-manager/www/manager6/lxc/Config.js:255
@@ -4309,14 +4420,14 @@ msgstr "Kontejner"
 
 #: pve-manager/www/manager6/dc/StorageView.js:238
 #: pve-manager/www/manager6/sdn/Browser.js:36
-#: pve-manager/www/manager6/sdn/NetworkBrowser.js:101
-#: pve-manager/www/manager6/sdn/NetworkBrowser.js:147
+#: pve-manager/www/manager6/sdn/NetworkBrowser.js:103
+#: pve-manager/www/manager6/sdn/NetworkBrowser.js:149
 #: pve-manager/www/manager6/storage/BTRFSEdit.js:22
 #: pve-manager/www/manager6/storage/CIFSEdit.js:213
 #: pve-manager/www/manager6/storage/CephFSEdit.js:99
 #: pve-manager/www/manager6/storage/CustomEdit.js:29
 #: pve-manager/www/manager6/storage/DirEdit.js:22
-#: pve-manager/www/manager6/storage/LVMEdit.js:256
+#: pve-manager/www/manager6/storage/LVMEdit.js:262
 #: pve-manager/www/manager6/storage/LvmThinEdit.js:179
 #: pve-manager/www/manager6/storage/NFSEdit.js:172
 #: pve-manager/www/manager6/storage/PBSEdit.js:570
@@ -4362,8 +4473,8 @@ msgstr ""
 msgid "Controllers"
 msgstr "Kontroleri"
 
-#: pve-manager/www/manager6/Utils.js:2267
-#: pve-manager/www/manager6/Utils.js:2296
+#: pve-manager/www/manager6/Utils.js:2287
+#: pve-manager/www/manager6/Utils.js:2316
 #: pve-manager/www/manager6/lxc/CmdMenu.js:116
 #: pve-manager/www/manager6/lxc/Config.js:129
 #: pve-manager/www/manager6/qemu/CmdMenu.js:150
@@ -4391,6 +4502,11 @@ msgstr "Kopiraj"
 #: pve-manager/www/manager6/dc/ClusterEdit.js:124
 msgid "Copy Information"
 msgstr "Kopiraj informacije"
+
+#: pve-manager/www/manager6/dc/SAN.js:139
+#: pve-manager/www/manager6/storage/wizard/NodeIdentities.js:76
+msgid "Copy Initiator Names"
+msgstr ""
 
 #: pmg-gui/js/PBSRemoteEdit.js:60
 #: pve-manager/www/manager6/storage/PBSEdit.js:61
@@ -4425,7 +4541,7 @@ msgstr "Kopiraj tajnu vrijednost"
 msgid "Copy answer token to clipboard."
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2238
+#: pve-manager/www/manager6/Utils.js:2258
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:150
 msgid "Copy data"
 msgstr "Kopiraj podatke"
@@ -4453,6 +4569,7 @@ msgstr ""
 "želite dodati."
 
 #: pve-manager/www/manager6/ceph/Status.js:306
+#: pve-manager/www/manager6/node/ISCSITargets.js:135
 msgid "Copy to Clipboard"
 msgstr ""
 
@@ -4466,11 +4583,15 @@ msgstr ""
 msgid "Copy token secret to clipboard."
 msgstr ""
 
+#: pve-manager/www/manager6/Utils.js:1139
+msgid "Copying to the clipboard failed: {0}"
+msgstr ""
+
 #: pve-manager/www/manager6/lxc/ResourceEdit.js:113
 #: pve-manager/www/manager6/lxc/Resources.js:75
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:146
 #: pve-manager/www/manager6/window/GuestImport.js:505
-#: pve-manager/www/manager6/window/Restore.js:348
+#: pve-manager/www/manager6/window/Restore.js:414
 #: proxmox-yew-comp/src/form/pve/lxc_property/lxc_cores_property.rs:39
 #: proxmox-yew-comp/src/form/pve/lxc_property/lxc_cores_property.rs:84
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_processor_property.rs:85
@@ -4495,8 +4616,8 @@ msgstr ""
 msgid "Could not detect a ceph installation in the cluster"
 msgstr "Nije moguće otkriti ceph instalaciju u klasteru"
 
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:586
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:608
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:592
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:638
 msgid "Could not fetch update status: {0}"
 msgstr ""
 
@@ -4531,6 +4652,14 @@ msgstr ""
 msgid "Could not read the presented certificate's fingerprint."
 msgstr "Jeste li sigurni da želite ukloniti certifikat koji se koristi za {0}"
 
+#: pve-manager/www/manager6/storage/wizard/FibreChannel.js:46
+msgid ""
+"Could not read the task status. The volume group creation task may still be "
+"running. Check its log under Node > Task History. If it succeeds, add volume "
+"group \"{0}\" as storage \"{1}\" under Datacenter > Storage > Add > LVM with "
+"Shared enabled and the same nodes and snapshot setting as in the setup."
+msgstr ""
+
 #: proxmox-datacenter-manager/ui/src/remotes/updates.rs:436
 msgid "Could not refresh update status."
 msgstr ""
@@ -4563,25 +4692,25 @@ msgid "Country"
 msgstr "Broj"
 
 #: proxmox-widget-toolkit/src/Utils.js:712
-#: proxmox-widget-toolkit/src/node/NetworkView.js:243
+#: proxmox-widget-toolkit/src/node/NetworkView.js:244
 #: proxmox-widget-toolkit/src/window/Edit.js:314
 #: pmg-gui/js/ClusterAdministration.js:453 pmg-gui/js/LDAPConfig.js:551
 #: pmg-gui/js/MailProxyTLSDestinations.js:120
 #: pmg-gui/js/MailProxyTLSInboundDomains.js:67 pmg-gui/js/MyNetworks.js:61
 #: pmg-gui/js/ObjectGroupList.js:99 pmg-gui/js/RelayDomains.js:71
 #: pmg-gui/js/SpamDetectorCustom.js:225 pmg-gui/js/Transport.js:56
-#: pve-manager/www/manager6/Utils.js:2215
-#: pve-manager/www/manager6/Utils.js:2216
-#: pve-manager/www/manager6/Utils.js:2217
-#: pve-manager/www/manager6/Utils.js:2218
-#: pve-manager/www/manager6/Utils.js:2219
-#: pve-manager/www/manager6/Utils.js:2226
-#: pve-manager/www/manager6/Utils.js:2231
-#: pve-manager/www/manager6/Utils.js:2240
-#: pve-manager/www/manager6/Utils.js:2242
+#: pve-manager/www/manager6/Utils.js:2235
+#: pve-manager/www/manager6/Utils.js:2236
+#: pve-manager/www/manager6/Utils.js:2237
+#: pve-manager/www/manager6/Utils.js:2238
+#: pve-manager/www/manager6/Utils.js:2239
+#: pve-manager/www/manager6/Utils.js:2246
 #: pve-manager/www/manager6/Utils.js:2251
-#: pve-manager/www/manager6/Utils.js:2280
-#: pve-manager/www/manager6/Utils.js:2298
+#: pve-manager/www/manager6/Utils.js:2260
+#: pve-manager/www/manager6/Utils.js:2262
+#: pve-manager/www/manager6/Utils.js:2271
+#: pve-manager/www/manager6/Utils.js:2300
+#: pve-manager/www/manager6/Utils.js:2318
 #: pve-manager/www/manager6/ceph/Pool.js:479
 #: pve-manager/www/manager6/ceph/Pool.js:502
 #: pve-manager/www/manager6/ceph/ServiceList.js:579
@@ -4590,7 +4719,7 @@ msgstr "Broj"
 #: pve-manager/www/manager6/dc/RoleView.js:87
 #: pve-manager/www/manager6/dc/SecurityGroups.js:141
 #: pve-manager/www/manager6/node/Directory.js:147
-#: pve-manager/www/manager6/node/LVM.js:149
+#: pve-manager/www/manager6/node/LVM.js:154
 #: pve-manager/www/manager6/node/LVMThin.js:178
 #: pve-manager/www/manager6/node/ZFS.js:284
 #: pve-manager/www/manager6/panel/IPSet.js:109
@@ -4631,7 +4760,7 @@ msgstr "Stvori CT"
 msgid "Create CephFS"
 msgstr "Stvori CephFS"
 
-#: pmg-gui/js/Utils.js:907 pve-manager/www/manager6/Utils.js:2229
+#: pmg-gui/js/Utils.js:907 pve-manager/www/manager6/Utils.js:2249
 #: pve-manager/www/manager6/dc/Cluster.js:155
 #: pve-manager/www/manager6/dc/ClusterEdit.js:5
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:139
@@ -4677,6 +4806,7 @@ msgstr "Stvori"
 #: proxmox-widget-toolkit/src/panel/TfaView.js:238
 #: proxmox-widget-toolkit/src/window/ACMEAccount.js:161
 #: proxmox-widget-toolkit/src/window/TfaEdit.js:192
+#: pve-manager/www/manager6/panel/GuestIdentity.js:44
 #: proxmox-backup/www/config/EncryptionKeysView.js:327
 #: proxmox-backup/www/form/EncryptionKeySelector.js:22
 #: proxmox-backup/www/tape/EncryptionKeys.js:133
@@ -4690,6 +4820,18 @@ msgstr "Stvoreno"
 #, fuzzy
 msgid "Created By"
 msgstr "Stvoreno"
+
+#: pve-manager/www/manager6/panel/GuestIdentity.js:50
+#, fuzzy
+#| msgid "Create VM"
+msgid "Created with QEMU"
+msgstr "Stvori VM"
+
+#: pve-manager/www/manager6/storage/wizard/FibreChannel.js:50
+#, fuzzy
+#| msgid "Existing volume groups"
+msgid "Creating the volume group..."
+msgstr "Postojeće grupe volumena"
 
 #: pve-manager/www/manager6/ceph/OSDDetails.js:275
 msgid "Creation time"
@@ -4728,7 +4870,7 @@ msgstr "Trenutni raspored"
 msgid "Current Version"
 msgstr "Ceph Inačica"
 
-#: pve-manager/www/manager6/window/Migrate.js:673
+#: pve-manager/www/manager6/window/Migrate.js:702
 #: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:519
 msgid "Current layout"
 msgstr "Trenutni raspored"
@@ -4746,7 +4888,7 @@ msgstr "Trenutno stanje će biti izgubljeno."
 msgid "Custom"
 msgstr "Prilagođeno"
 
-#: pve-manager/www/manager6/dc/Config.js:448
+#: pve-manager/www/manager6/dc/Config.js:459
 #, fuzzy
 msgid "Custom CPU Models"
 msgstr "Prilagođeni Rezultati"
@@ -4797,12 +4939,16 @@ msgstr ""
 msgid "DHCP"
 msgstr "DHCP"
 
+#: pve-manager/www/manager6/sdn/SubnetEdit.js:64
+msgid "DHCP DNS Resolver"
+msgstr ""
+
 #: pve-manager/www/manager6/sdn/IpamEdit.js:49
 #, fuzzy
 msgid "DHCP Mapping"
 msgstr "PCI mapiranje"
 
-#: pve-manager/www/manager6/sdn/SubnetEdit.js:271
+#: pve-manager/www/manager6/sdn/SubnetEdit.js:286
 #, fuzzy
 msgid "DHCP Ranges"
 msgstr "Izmjenjivači"
@@ -4815,7 +4961,7 @@ msgstr "DKIM"
 #: pmg-gui/js/SystemConfiguration.js:33
 #: pve-manager/www/manager6/lxc/Config.js:281
 #: pve-manager/www/manager6/lxc/CreateWizard.js:263
-#: pve-manager/www/manager6/node/Config.js:212
+#: pve-manager/www/manager6/node/Config.js:225
 #: pve-manager/www/manager6/sdn/ZoneView.js:159
 #: proxmox-backup/www/SystemConfiguration.js:35
 #: proxmox-datacenter-manager/ui/src/configuration/mod.rs:163
@@ -4835,7 +4981,7 @@ msgstr "DNS API"
 msgid "DNS Prefix"
 msgstr "Prefiks DNS zone"
 
-#: pve-manager/www/manager6/sdn/zones/Base.js:63
+#: pve-manager/www/manager6/sdn/zones/Base.js:65
 #, fuzzy
 msgid "DNS Server"
 msgstr "DNS poslužitelj"
@@ -4849,7 +4995,7 @@ msgstr "Adresa poslužitelja"
 msgid "DNS TXT Record"
 msgstr "DNS TXT Zapis"
 
-#: pve-manager/www/manager6/sdn/zones/Base.js:79
+#: pve-manager/www/manager6/sdn/zones/Base.js:81
 #, fuzzy
 msgid "DNS Zone"
 msgstr "DNS zona"
@@ -4895,6 +5041,10 @@ msgstr "DNS poslužitelj"
 #, fuzzy
 msgid "DNS server 3"
 msgstr "DNS poslužitelj"
+
+#: pve-manager/www/manager6/sdn/SubnetEdit.js:68
+msgid "DNS server advertised to guests via DHCP."
+msgstr ""
 
 #: pve-manager/www/manager6/lxc/DNS.js:43
 #: pve-manager/www/manager6/qemu/CloudInit.js:230
@@ -4989,6 +5139,7 @@ msgstr ""
 msgid "Database Mirror"
 msgstr "Kopija Baze Podataka"
 
+#: pve-manager/www/manager6/SANUtils.js:193
 #: pve-manager/www/manager6/dc/CmdMenu.js:80
 #: pve-manager/www/manager6/dc/Config.js:86
 #: pve-manager/www/manager6/form/IPRefSelector.js:75
@@ -5095,16 +5246,16 @@ msgstr "Pohrane podataka"
 msgid "Date"
 msgstr "Datum"
 
-#: proxmox-yew-widget-toolkit/src/widget/form/date_field/date_field.rs:195
+#: proxmox-yew-widget-toolkit/src/widget/form/date_field/date_field.rs:205
 msgid "Date is after maximum allowed date"
 msgstr ""
 
-#: proxmox-yew-widget-toolkit/src/widget/form/date_field/date_field.rs:189
+#: proxmox-yew-widget-toolkit/src/widget/form/date_field/date_field.rs:199
 msgid "Date is before minimum allowed date"
 msgstr ""
 
-#: proxmox-yew-widget-toolkit/src/widget/form/date_field/date_field.rs:199
-#: proxmox-yew-widget-toolkit/src/widget/form/date_field/date_field.rs:203
+#: proxmox-yew-widget-toolkit/src/widget/form/date_field/date_field.rs:209
+#: proxmox-yew-widget-toolkit/src/widget/form/date_field/date_field.rs:213
 #, fuzzy
 msgid "Date is disabled"
 msgstr "ništa (onemogućeno)"
@@ -5122,7 +5273,7 @@ msgstr "Dani"
 msgid "Days to show"
 msgstr "Dani za prikaz"
 
-#: pve-manager/www/manager6/Utils.js:2202
+#: pve-manager/www/manager6/Utils.js:2222
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:116
 msgid "Deactivate"
 msgstr "Deaktiviraj"
@@ -5157,6 +5308,11 @@ msgstr ""
 #, fuzzy
 msgid "Decryption Keys"
 msgstr "Ključevi šifriranja"
+
+#: pve-manager/www/manager6/sdn/zones/SimpleEdit.js:43
+#, fuzzy
+msgid "Dedicated VRF"
+msgstr "Stvoreno"
 
 #: pve-manager/www/manager6/node/ZFS.js:263 proxmox-backup/www/ZFSList.js:98
 msgid "Deduplication"
@@ -5215,10 +5371,10 @@ msgstr "Duboko Ribanje OSD.{0}"
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_agent_property.rs:102
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_bios_property.rs:55
 #: proxmox-yew-comp/src/form/pve/firewall_property/log_ratelimit_property.rs:55
-#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:185
-#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:190
-#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:211
-#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:216
+#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:184
+#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:189
+#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:210
+#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:215
 #: proxmox-yew-comp/src/editable_property.rs:176
 #: proxmox-yew-widget-toolkit/src/widget/form/tristate_boolean.rs:144
 msgid "Default"
@@ -5301,6 +5457,12 @@ msgstr "Zadana pohrana podataka"
 msgid "Default Sync Options"
 msgstr "Zadane Opcije Sinkronizacije"
 
+#: pve-manager/www/manager6/sdn/fabrics/FabricEdit.js:48
+#, fuzzy
+#| msgid "Default"
+msgid "Default VRF"
+msgstr "Zadano"
+
 #: pve-manager/www/manager6/form/PhysBitsSelector.js:106
 #, fuzzy
 msgid "Default from QEMU"
@@ -5352,7 +5514,7 @@ msgstr "Zadati na izvornik"
 msgid "Defaults to requesting host URI"
 msgstr "Zadati na URI zahtjev računala"
 
-#: pve-manager/www/manager6/window/Restore.js:214
+#: pve-manager/www/manager6/window/Restore.js:248
 msgid "Defaults to target storage restore limit"
 msgstr "Zadati na vrijednost ograničenja vraćanja ciljne pohrane "
 
@@ -5367,6 +5529,7 @@ msgid ""
 "certificates."
 msgstr ""
 
+#: pve-manager/www/manager6/SANUtils.js:135
 #: proxmox-datacenter-manager/ui/src/ceph/clusters.rs:117
 #, fuzzy
 msgid "Degraded"
@@ -5387,7 +5550,7 @@ msgstr "Vrijeme upozorenja na kašnjenje (sati)"
 #: pve-manager/www/manager6/sdn/RouteMapPanel.js:249
 #: pve-manager/www/manager6/sdn/RouteMapPanel.js:508
 #: pve-manager/www/manager6/sdn/fabrics/RedistributionGrid.js:122
-#: pve-manager/www/manager6/tree/DhcpTree.js:272
+#: pve-manager/www/manager6/tree/DhcpTree.js:274
 #: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:784
 #: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:795
 #: pmg-yew-quarantine-gui/src/spam_list.rs:338
@@ -5401,8 +5564,8 @@ msgstr "Izbriši"
 msgid "Delete Custom Certificate"
 msgstr "Izbriši Prilagođeni Certifikat"
 
-#: pve-manager/www/manager6/Utils.js:2252
-#: pve-manager/www/manager6/Utils.js:2281
+#: pve-manager/www/manager6/Utils.js:2272
+#: pve-manager/www/manager6/Utils.js:2301
 #: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:598
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:164
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:193
@@ -5572,20 +5735,26 @@ msgstr "Odredište"
 msgid "Destination CIDRs that route to this node, comma-separated"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2220
-#: pve-manager/www/manager6/Utils.js:2221
-#: pve-manager/www/manager6/Utils.js:2222
-#: pve-manager/www/manager6/Utils.js:2223
-#: pve-manager/www/manager6/Utils.js:2224
-#: pve-manager/www/manager6/Utils.js:2225
-#: pve-manager/www/manager6/Utils.js:2253
-#: pve-manager/www/manager6/Utils.js:2282
+#: pve-manager/www/manager6/sdn/StaticRoutes.js:17
+#, fuzzy
+#| msgid "Destination"
+msgid "Destination Prefix"
+msgstr "Odredište"
+
+#: pve-manager/www/manager6/Utils.js:2240
+#: pve-manager/www/manager6/Utils.js:2241
+#: pve-manager/www/manager6/Utils.js:2242
+#: pve-manager/www/manager6/Utils.js:2243
+#: pve-manager/www/manager6/Utils.js:2244
+#: pve-manager/www/manager6/Utils.js:2245
+#: pve-manager/www/manager6/Utils.js:2273
+#: pve-manager/www/manager6/Utils.js:2302
 #: pve-manager/www/manager6/ceph/OSD.js:214
 #: pve-manager/www/manager6/ceph/OSD.js:1444
 #: pve-manager/www/manager6/ceph/Pool.js:526
 #: pve-manager/www/manager6/ceph/ServiceList.js:584
 #: pve-manager/www/manager6/node/Directory.js:187
-#: pve-manager/www/manager6/node/LVM.js:187
+#: pve-manager/www/manager6/node/LVM.js:192
 #: pve-manager/www/manager6/node/LVMThin.js:222
 #: pve-manager/www/manager6/node/ZFS.js:336
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:130
@@ -5615,13 +5784,13 @@ msgstr "Uništi imenski prostor '{0}'"
 msgid "Destroy all data (dangerous!)"
 msgstr "Uništi sve podatke (opasno!)"
 
-#: pve-manager/www/manager6/Utils.js:2239
+#: pve-manager/www/manager6/Utils.js:2259
 #, fuzzy
 #| msgid "Destroy"
 msgid "Destroy image"
 msgstr "Uništi"
 
-#: pve-manager/www/manager6/Utils.js:2275
+#: pve-manager/www/manager6/Utils.js:2295
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:187
 msgid "Destroy image from unknown guest"
 msgstr "Uništi sliku nepoznatog gosta"
@@ -5652,6 +5821,8 @@ msgstr "Mapiranje pohrane podataka"
 #: proxmox-widget-toolkit/src/window/TaskViewer.js:65
 #: pve-manager/www/manager6/ceph/OSD.js:1360
 #: pve-manager/www/manager6/ceph/OSDDetails.js:17
+#: pve-manager/www/manager6/panel/GuestIdentity.js:87
+#: pve-manager/www/manager6/panel/GuestIdentity.js:88
 #: pve-manager/www/manager6/sdn/ZoneContentView.js:42
 #: proxmox-datacenter-manager/ui/src/dashboard/subscription_info.rs:173
 #: proxmox-yew-comp/src/task_progress.rs:174
@@ -5679,9 +5850,11 @@ msgstr "Otkrivena mješovita izdanja spremišta prije nadogradnje"
 #: pve-manager/www/manager6/lxc/DeviceEdit.js:132
 #: pve-manager/www/manager6/lxc/Resources.js:146
 #: pve-manager/www/manager6/node/Directory.js:114
+#: pve-manager/www/manager6/node/SANLuns.js:81
 #: pve-manager/www/manager6/qemu/BootOrderEdit.js:198
 #: pve-manager/www/manager6/qemu/PCIEdit.js:196
 #: pve-manager/www/manager6/qemu/PCIEdit.js:218
+#: pve-manager/www/manager6/storage/wizard/LunSelect.js:158
 #: pve-manager/www/manager6/window/PCIMapEdit.js:277
 #: proxmox-backup/www/DirectoryList.js:142
 #: proxmox-backup/www/window/DataStoreEdit.js:168
@@ -5740,7 +5913,7 @@ msgstr "Smjer"
 #: proxmox-widget-toolkit/src/Schema.js:102
 #: proxmox-widget-toolkit/src/Utils.js:61
 #: proxmox-widget-toolkit/src/window/ACMEAccount.js:171
-#: pve-manager/www/manager6/Utils.js:2232
+#: pve-manager/www/manager6/Utils.js:2252
 #: pve-manager/www/manager6/node/Directory.js:147
 #: pve-manager/www/manager6/node/Directory.js:172
 #: pve-manager/www/manager6/storage/DirEdit.js:14
@@ -5758,7 +5931,7 @@ msgstr "Imenik"
 msgid "Directory ID"
 msgstr "Imenik"
 
-#: pve-manager/www/manager6/dc/Config.js:442
+#: pve-manager/www/manager6/dc/Config.js:453
 #, fuzzy
 msgid "Directory Mappings"
 msgstr "Direktorij Pohrane"
@@ -5768,7 +5941,7 @@ msgid ""
 "Directory Mappings can be managed under Datacenter -> Directory Mappings"
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2231 proxmox-backup/www/Utils.js:466
+#: pve-manager/www/manager6/Utils.js:2251 proxmox-backup/www/Utils.js:466
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:143
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:253
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:254
@@ -5777,6 +5950,7 @@ msgstr "Direktorij Pohrane"
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:198
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:578
+#: pve-manager/www/manager6/ha/Status.js:221
 #: proxmox-yew-comp/src/apt_repositories.rs:585
 msgid "Disable"
 msgstr "Onemogući"
@@ -5829,7 +6003,7 @@ msgctxt "package action"
 msgid "Disappear"
 msgstr "Onemogući"
 
-#: pve-manager/www/manager6/ha/Status.js:98
+#: pve-manager/www/manager6/ha/Status.js:177
 msgid "Disarm HA"
 msgstr ""
 
@@ -5849,7 +6023,7 @@ msgstr "Odbaci"
 msgid "Discard Pending Changes"
 msgstr "Promjene na čekanju"
 
-#: pve-manager/www/manager6/storage/LVMEdit.js:285
+#: pve-manager/www/manager6/storage/LVMEdit.js:291
 #, fuzzy
 msgid "Discard Removed Volumes"
 msgstr "Premjesti volumen"
@@ -5995,7 +6169,7 @@ msgid "Disk usage"
 msgstr "Upotreba diska"
 
 #: pve-manager/www/manager6/lxc/CreateWizard.js:233
-#: pve-manager/www/manager6/node/Config.js:345
+#: pve-manager/www/manager6/node/Config.js:358
 #: pve-manager/www/manager6/qemu/CreateWizard.js:243
 #: pve-manager/www/manager6/window/GuestImport.js:676
 #: proxmox-backup/www/panel/StorageAndDisks.js:18
@@ -6122,7 +6296,7 @@ msgstr "Nadogradnja"
 #: pmg-gui/js/AttachmentGrid.js:128 pmg-gui/js/AttachmentQuarantine.js:141
 #: pmg-gui/js/BackupRestore.js:188 pmg-gui/js/PBSRemoteEdit.js:86
 #: pmg-gui/js/SpamQuarantine.js:422 pmg-gui/js/Subscription.js:60
-#: pmg-gui/js/VirusQuarantine.js:164 pve-manager/www/manager6/Utils.js:2233
+#: pmg-gui/js/VirusQuarantine.js:164 pve-manager/www/manager6/Utils.js:2253
 #: pve-manager/www/manager6/node/Subscription.js:87
 #: pve-manager/www/manager6/storage/PBSEdit.js:87
 #: pve-manager/www/manager6/storage/TemplateView.js:185
@@ -6395,7 +6569,7 @@ msgstr "E-pošta 'Od:'"
 msgid "EMail attribute name(s)"
 msgstr "Imena atributa e-pošte"
 
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:338
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:342
 msgid "EVPN"
 msgstr ""
 
@@ -6452,7 +6626,7 @@ msgstr ""
 #: pmg-gui/js/Transport.js:71 pmg-gui/js/UserView.js:141
 #: pmg-gui/js/VirusDetectorOptions.js:52
 #: pmg-gui/js/VirusQuarantineOptions.js:42
-#: pve-manager/www/manager6/Utils.js:2227
+#: pve-manager/www/manager6/Utils.js:2247
 #: pve-manager/www/manager6/ceph/Pool.js:461
 #: pve-manager/www/manager6/ceph/Pool.js:519
 #: pve-manager/www/manager6/dc/AuthView.js:115
@@ -6464,6 +6638,7 @@ msgstr ""
 #: pve-manager/www/manager6/dc/PoolView.js:53
 #: pve-manager/www/manager6/dc/RealmSyncJob.js:148
 #: pve-manager/www/manager6/dc/RoleView.js:99
+#: pve-manager/www/manager6/dc/SAN.js:232
 #: pve-manager/www/manager6/dc/SecurityGroups.js:134
 #: pve-manager/www/manager6/dc/StorageView.js:174
 #: pve-manager/www/manager6/dc/TokenView.js:119
@@ -6494,10 +6669,11 @@ msgstr ""
 #: pve-manager/www/manager6/sdn/IpamView.js:53
 #: pve-manager/www/manager6/sdn/PrefixListPanel.js:260
 #: pve-manager/www/manager6/sdn/RouteMapPanel.js:960
+#: pve-manager/www/manager6/sdn/StaticRoutes.js:199
 #: pve-manager/www/manager6/sdn/SubnetView.js:71
 #: pve-manager/www/manager6/sdn/VnetView.js:44
 #: pve-manager/www/manager6/sdn/ZoneView.js:61
-#: pve-manager/www/manager6/tree/DhcpTree.js:261
+#: pve-manager/www/manager6/tree/DhcpTree.js:263
 #: pve-manager/www/manager6/tree/SnapshotTree.js:27
 #: pve-manager/www/manager6/tree/SnapshotTree.js:283
 #: proxmox-backup/www/config/GCView.js:148
@@ -6573,6 +6749,12 @@ msgstr "Uredi mapiranje '{0}' za '{1}'"
 msgid "Edit Notes"
 msgstr "Uredi bilješke"
 
+#: pve-manager/www/manager6/dc/SAN.js:261
+#, fuzzy
+#| msgid "No Overrides"
+msgid "Edit Overrides"
+msgstr "Nema premošćivanja"
+
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_edit_window.rs:106
 msgid "Edit Prepared Answer"
 msgstr ""
@@ -6618,9 +6800,13 @@ msgstr "Izlazak"
 msgid "EiB"
 msgstr "EiB"
 
-#: pve-manager/www/manager6/sdn/fabrics/FabricEdit.js:75
-#: pve-manager/www/manager6/sdn/fabrics/FabricEdit.js:110
+#: pve-manager/www/manager6/sdn/fabrics/FabricEdit.js:90
+#: pve-manager/www/manager6/sdn/fabrics/FabricEdit.js:125
 msgid "Either IPv4 Prefix or IPv6 Prefix is required"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/StaticRoutes.js:31
+msgid "Either a gateway or an interface is required."
 msgstr ""
 
 #: proxmox-widget-toolkit/src/panel/EmailRecipientPanel.js:12
@@ -6628,7 +6814,7 @@ msgstr ""
 msgid "Either mailto or mailto-user must be set"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/node/NetworkView.js:434
+#: proxmox-widget-toolkit/src/node/NetworkView.js:435
 msgid ""
 "Either reboot or use 'Apply Configuration' (needs ifupdown2) to activate"
 msgstr ""
@@ -6685,6 +6871,7 @@ msgstr ""
 #: pve-manager/www/manager6/grid/FirewallRules.js:329
 #: pve-manager/www/manager6/grid/FirewallRules.js:584
 #: pve-manager/www/manager6/ha/RuleEdit.js:73
+#: pve-manager/www/manager6/ha/Status.js:212
 #: pve-manager/www/manager6/storage/Base.js:32
 #: pve-manager/www/manager6/window/FirewallLograteEdit.js:16
 #: proxmox-yew-comp/src/apt_repositories.rs:587
@@ -6731,6 +6918,17 @@ msgstr "Omogući posao"
 msgid "Enable Kernel Hashes"
 msgstr "Omogući nove korisnike"
 
+#: pve-manager/www/manager6/node/SANLuns.js:158
+#, fuzzy
+#| msgid "Enable quota"
+msgid "Enable Multipath"
+msgstr "Omogući kvotu"
+
+#: pve-manager/www/manager6/storage/wizard/IScsi.js:144
+msgid ""
+"Enable Multipath in the edit dialog of storage \"{0}\" before using it here."
+msgstr ""
+
 #: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:67
 #, fuzzy
 msgid "Enable NDP"
@@ -6770,7 +6968,7 @@ msgstr ""
 msgid "Enable if the HA Resources must be restricted to the nodes."
 msgstr ""
 
-#: pve-manager/www/manager6/storage/LVMEdit.js:272
+#: pve-manager/www/manager6/storage/LVMEdit.js:278
 msgid "Enable if the LVM is located on a shared LUN."
 msgstr ""
 
@@ -6799,7 +6997,7 @@ msgstr "Omogući kvotu"
 msgid "Enable support for extended attributes."
 msgstr ""
 
-#: pve-manager/www/manager6/storage/LVMEdit.js:289
+#: pve-manager/www/manager6/storage/LVMEdit.js:295
 msgid ""
 "Enable to issue discard (TRIM) requests for logical volumes before removing "
 "them."
@@ -6863,7 +7061,7 @@ msgstr "Omogućeno"
 msgid "Enabled for Windows"
 msgstr "Omogućeno za Windows"
 
-#: pve-manager/www/manager6/window/Migrate.js:706
+#: pve-manager/www/manager6/window/Migrate.js:735
 msgid "Enables live migration of conntrack entries for this VM."
 msgstr ""
 
@@ -6921,7 +7119,7 @@ msgstr "Ključevi šifriranja"
 msgid "End"
 msgstr "Kraj"
 
-#: pve-manager/www/manager6/sdn/SubnetEdit.js:202
+#: pve-manager/www/manager6/sdn/SubnetEdit.js:217
 #, fuzzy
 msgid "End Address"
 msgstr "Adresa"
@@ -6995,7 +7193,7 @@ msgstr "Unesite URL za preuzimanje"
 msgid "Enterprise (recommended)"
 msgstr "Enterprise (preporučeno)"
 
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:778
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:808
 #, fuzzy
 msgid "Enterprise repository configured, but missing subscription"
 msgstr "Enterprise spremište treba valjanu pretplatu"
@@ -7060,9 +7258,9 @@ msgstr ""
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:226
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:460
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:655
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:462
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:529
 #: proxmox-widget-toolkit/src/node/NetworkView.js:150
-#: proxmox-widget-toolkit/src/node/NetworkView.js:262
+#: proxmox-widget-toolkit/src/node/NetworkView.js:263
 #: proxmox-widget-toolkit/src/node/ServiceView.js:104
 #: proxmox-widget-toolkit/src/panel/ACMEDomains.js:147
 #: proxmox-widget-toolkit/src/panel/ACMEDomains.js:186
@@ -7098,8 +7296,9 @@ msgstr ""
 #: pmg-gui/js/SpamQuarantine.js:127 pmg-gui/js/Subscription.js:93
 #: pmg-gui/js/Subscription.js:181 pmg-gui/js/UserBlockWelcomeList.js:91
 #: pmg-gui/js/UserView.js:115 pmg-gui/js/Utils.js:797
-#: pmg-gui/js/ViewMailHeaders.js:61 pve-manager/www/manager6/Utils.js:1712
-#: pve-manager/www/manager6/Utils.js:1725
+#: pmg-gui/js/ViewMailHeaders.js:61 pve-manager/www/manager6/Utils.js:1136
+#: pve-manager/www/manager6/Utils.js:1732
+#: pve-manager/www/manager6/Utils.js:1745
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:103
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:154
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:661
@@ -7126,6 +7325,7 @@ msgstr ""
 #: pve-manager/www/manager6/dc/ACLView.js:186
 #: pve-manager/www/manager6/dc/Guests.js:130
 #: pve-manager/www/manager6/dc/RealmSyncJob.js:70
+#: pve-manager/www/manager6/dc/SAN.js:255
 #: pve-manager/www/manager6/dc/StorageView.js:112
 #: pve-manager/www/manager6/dc/StorageView.js:123
 #: pve-manager/www/manager6/dc/Support.js:65
@@ -7136,13 +7336,14 @@ msgstr ""
 #: pve-manager/www/manager6/form/PrivilegesSelector.js:25
 #: pve-manager/www/manager6/grid/FirewallRules.js:685
 #: pve-manager/www/manager6/grid/FirewallRules.js:712
-#: pve-manager/www/manager6/grid/PoolMembers.js:239
+#: pve-manager/www/manager6/grid/PoolMembers.js:362
 #: pve-manager/www/manager6/grid/Replication.js:180
 #: pve-manager/www/manager6/grid/Replication.js:351
 #: pve-manager/www/manager6/ha/ResourceEdit.js:47
 #: pve-manager/www/manager6/ha/RuleEdit.js:15
-#: pve-manager/www/manager6/ha/Status.js:49
-#: pve-manager/www/manager6/ha/Status.js:81
+#: pve-manager/www/manager6/ha/Status.js:63
+#: pve-manager/www/manager6/ha/Status.js:129
+#: pve-manager/www/manager6/ha/Status.js:160
 #: pve-manager/www/manager6/lxc/CmdMenu.js:21
 #: pve-manager/www/manager6/lxc/CreateWizard.js:356
 #: pve-manager/www/manager6/lxc/MPEdit.js:415
@@ -7160,6 +7361,7 @@ msgstr ""
 #: pve-manager/www/manager6/node/Summary.js:60
 #: pve-manager/www/manager6/node/Summary.js:94
 #: pve-manager/www/manager6/node/Summary.js:102
+#: pve-manager/www/manager6/panel/GuestIdentity.js:118
 #: pve-manager/www/manager6/qemu/CmdMenu.js:21
 #: pve-manager/www/manager6/qemu/CreateWizard.js:362
 #: pve-manager/www/manager6/qemu/HDEdit.js:566
@@ -7172,7 +7374,10 @@ msgstr ""
 #: pve-manager/www/manager6/sdn/VnetACLView.js:210
 #: pve-manager/www/manager6/storage/TemplateView.js:197
 #: pve-manager/www/manager6/storage/TemplateView.js:295
-#: pve-manager/www/manager6/tree/DhcpTree.js:127
+#: pve-manager/www/manager6/storage/wizard/LunSelect.js:44
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:29
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:37
+#: pve-manager/www/manager6/tree/DhcpTree.js:129
 #: pve-manager/www/manager6/tree/ResourceMapTree.js:180
 #: pve-manager/www/manager6/tree/SnapshotTree.js:89
 #: pve-manager/www/manager6/window/Backup.js:232
@@ -7185,7 +7390,7 @@ msgstr ""
 #: pve-manager/www/manager6/window/LoginWindow.js:218
 #: pve-manager/www/manager6/window/LoginWindow.js:323
 #: pve-manager/www/manager6/window/Prune.js:106
-#: pve-manager/www/manager6/window/Restore.js:87
+#: pve-manager/www/manager6/window/Restore.js:90
 #: pve-manager/www/manager6/window/ScheduleSimulator.js:38
 #: pve-manager/www/manager6/window/UploadToStorage.js:116
 #: pve-manager/www/manager6/window/UploadToStorage.js:122
@@ -7221,7 +7426,7 @@ msgstr ""
 #: proxmox-datacenter-manager/ui/src/configuration/subscription_panel.rs:76
 #: proxmox-datacenter-manager/ui/src/configuration/views.rs:236
 #: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:62
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:787
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:817
 #: proxmox-datacenter-manager/ui/src/remotes/firewall/tree.rs:612
 #: proxmox-datacenter-manager/ui/src/dashboard/map.rs:248
 #: proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:194
@@ -7418,6 +7623,11 @@ msgstr "Proširi sve"
 msgid "Expand the navigation rail"
 msgstr ""
 
+#: pve-manager/www/manager6/dc/MultipathWwidEdit.js:67
+#, fuzzy
+msgid "Expected Paths"
+msgstr "Uređaj"
+
 #: pve-manager/www/manager6/window/PCIMapEdit.js:264
 msgid "Experimental"
 msgstr "Eksperimentalno"
@@ -7466,6 +7676,14 @@ msgstr "Istek"
 #: proxmox-yew-comp/src/acme/certificate_list.rs:414
 msgid "Expires"
 msgstr "Ističe"
+
+#: pve-manager/www/manager6/SANUtils.js:117
+msgid "Explicit entry"
+msgstr ""
+
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:159
+msgid "Explicit entry, added by this setup"
+msgstr ""
 
 #: proxmox-backup/www/tape/BackupJobs.js:237
 msgid "Export"
@@ -7529,18 +7747,23 @@ msgstr "FS naziv"
 
 #. TRANSLATORS: As in "Network Fabric": https://en.wikipedia.org/wiki/Switched_fabric
 #: pve-manager/www/manager6/sdn/controllers/EvpnEdit.js:44
-#: pve-manager/www/manager6/sdn/fabrics/FabricEdit.js:128
+#: pve-manager/www/manager6/sdn/fabrics/FabricEdit.js:143
 #: pve-manager/www/manager6/sdn/zones/VxlanEdit.js:66
 msgid "Fabric"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Config.js:307
+#: pve-manager/www/manager6/dc/Config.js:318
 msgid "Fabrics"
 msgstr ""
 
 #: pmg-gui/js/RuleConfiguration.js:180
 msgid "Factory Defaults"
 msgstr "Tvorničke postavke"
+
+#: pve-manager/www/manager6/dc/MultipathWwidEdit.js:61
+#, fuzzy
+msgid "Fail I/O"
+msgstr "IO Diska"
 
 #: pve-manager/www/manager6/ha/ResourceEdit.js:117
 #: pve-manager/www/manager6/ha/Resources.js:148
@@ -7549,6 +7772,7 @@ msgid "Failback"
 msgstr "Povratak"
 
 #: proxmox-widget-toolkit/src/node/APTHistory.js:422 pmg-gui/js/Utils.js:935
+#: pve-manager/www/manager6/SANUtils.js:136
 #: pve-manager/www/manager6/Utils.js:327
 #: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:440
 #: proxmox-yew-comp/src/apt_history.rs:352
@@ -7586,7 +7810,7 @@ msgstr ""
 msgid "Failed to regenerate secret"
 msgstr "Ponovo generiraj sliku"
 
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:706
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:736
 msgid "Failed to retrieve update status: {0}"
 msgstr ""
 
@@ -7637,7 +7861,7 @@ msgstr "Značajke"
 msgid "February"
 msgstr ""
 
-#: pve-manager/www/manager6/dc/Config.js:248
+#: pve-manager/www/manager6/dc/Config.js:259
 msgid "Fencing"
 msgstr "Čvor u kvaru je van mreže"
 
@@ -7659,6 +7883,12 @@ msgstr "Informacije o pridruživanju"
 msgid "Fetching diff..."
 msgstr ""
 
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:10
+#, fuzzy
+#| msgid "Channel"
+msgid "Fibre Channel"
+msgstr "Kanal"
+
 #: proxmox-widget-toolkit/src/node/Tasks.js:211
 #: proxmox-widget-toolkit/src/panel/AccessLogView.js:601
 #: proxmox-widget-toolkit/src/window/NotificationMatcherEdit.js:1639
@@ -7676,7 +7906,7 @@ msgstr "FS naziv"
 #: proxmox-yew-widget-toolkit/src/widget/form/field.rs:336
 #: proxmox-yew-widget-toolkit/src/widget/form/number.rs:464
 #: proxmox-yew-widget-toolkit/src/widget/form/textarea.rs:145
-#: proxmox-yew-widget-toolkit/src/widget/form/date_field/date_field.rs:177
+#: proxmox-yew-widget-toolkit/src/widget/form/date_field/date_field.rs:187
 #, fuzzy
 msgid "Field may not be empty."
 msgstr "Oznaka ne smije biti prazna."
@@ -7723,7 +7953,7 @@ msgstr "Polja"
 
 #: proxmox-widget-toolkit/src/Schema.js:103
 #: proxmox-widget-toolkit/src/panel/Certificates.js:13
-#: pve-manager/www/manager6/Utils.js:2233
+#: pve-manager/www/manager6/Utils.js:2253
 #: pve-manager/www/manager6/node/Certificates.js:312
 #: pve-manager/www/manager6/window/UploadToStorage.js:210
 #: proxmox-backup/www/Utils.js:921
@@ -7740,7 +7970,7 @@ msgstr "Datoteka"
 msgid "File Restore"
 msgstr "Vraćanje datoteke"
 
-#: pve-manager/www/manager6/Utils.js:2246
+#: pve-manager/www/manager6/Utils.js:2266
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:158
 msgid "File Restore Download"
 msgstr "Preuzimanje vraćanja datoteke"
@@ -7901,6 +8131,7 @@ msgid "Fingerprint"
 msgstr "Digitalni Otisak"
 
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:541
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:287
 #: pve-manager/www/manager6/window/Wizard.js:212
 #: proxmox-yew-comp/src/wizard.rs:683
 msgid "Finish"
@@ -7929,7 +8160,7 @@ msgstr "Završi"
 msgid "Finished: {0} ({1})"
 msgstr "{0} ({1})"
 
-#: pve-manager/www/manager6/dc/Config.js:348
+#: pve-manager/www/manager6/dc/Config.js:359
 #: pve-manager/www/manager6/grid/FirewallOptions.js:66
 #: pve-manager/www/manager6/grid/FirewallOptions.js:93
 #: pve-manager/www/manager6/grid/FirewallOptions.js:108
@@ -7937,7 +8168,7 @@ msgstr "{0} ({1})"
 #: pve-manager/www/manager6/lxc/Config.js:338
 #: pve-manager/www/manager6/lxc/Network.js:127
 #: pve-manager/www/manager6/lxc/Network.js:551
-#: pve-manager/www/manager6/node/Config.js:321
+#: pve-manager/www/manager6/node/Config.js:334
 #: pve-manager/www/manager6/qemu/Config.js:391
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:96
 #: pve-manager/www/manager6/window/FirewallEnableEdit.js:6
@@ -8093,7 +8324,7 @@ msgid "For the PAM realm, this applies only to the connected node."
 msgstr ""
 
 #: pve-manager/www/manager6/ceph/OSD.js:669
-#: pve-manager/www/manager6/window/Migrate.js:682
+#: pve-manager/www/manager6/window/Migrate.js:711
 #: proxmox-backup/www/tape/window/MediaRemoveWindow.js:63
 msgid "Force"
 msgstr "Prisilno"
@@ -8163,17 +8394,17 @@ msgstr "Formatiraj medij"
 msgid "Format/Erase"
 msgstr "Formatiraj/Izbriši"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:40
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:46
 #: proxmox-yew-comp/src/configuration/network_edit.rs:282
 msgid "Format: [interface].[vlan-id] (e.g., eno1.50, bond1.30)"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:34
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:40
 #: proxmox-yew-comp/src/configuration/network_edit.rs:209
 msgid "Format: bond[N] (e.g., bond0, bond1)"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:37
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:43
 msgid "Format: eth[N] (e.g., eth0, enp0s3, )"
 msgstr ""
 
@@ -8185,12 +8416,12 @@ msgstr "Format"
 #: pve-manager/www/manager6/grid/FirewallOptions.js:160
 #: pve-manager/www/manager6/grid/FirewallOptions.js:165
 #: pve-manager/www/manager6/grid/FirewallOptions.js:170
-#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:177
+#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:176
 #, fuzzy
 msgid "Forward Policy"
 msgstr "Hash Pravila"
 
-#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:130
+#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:129
 #, fuzzy
 msgid "Forward log level"
 msgstr "Hash Pravila"
@@ -8209,12 +8440,12 @@ msgstr ""
 msgid "Fragmentation"
 msgstr "Fragmentacija"
 
-#: pve-manager/www/manager6/node/LVM.js:131
+#: pve-manager/www/manager6/node/LVM.js:136
 #: pve-manager/www/manager6/node/ZFS.js:241 proxmox-backup/www/ZFSList.js:76
 msgid "Free"
 msgstr "Besplatno"
 
-#: pve-manager/www/manager6/ha/Status.js:105
+#: pve-manager/www/manager6/ha/Status.js:184
 #, fuzzy
 msgid "Freeze"
 msgstr "Besplatno"
@@ -8267,7 +8498,7 @@ msgstr "Francuski"
 #: proxmox-widget-toolkit/src/window/NotificationMatcherEdit.js:1308
 #: proxmox-backup/www/window/TrafficControlEdit.js:403
 #: proxmox-yew-widget-toolkit/src/widget/form/date_field/date_panel.rs:250
-#: proxmox-yew-widget-toolkit/src/widget/calendar_grid.rs:854
+#: proxmox-yew-widget-toolkit/src/widget/calendar_grid.rs:876
 msgid "Fri"
 msgstr "Pet"
 
@@ -8285,7 +8516,7 @@ msgstr "Od"
 msgid "From Address"
 msgstr "Prednja adresa"
 
-#: pve-manager/www/manager6/window/Restore.js:280
+#: pve-manager/www/manager6/window/Restore.js:346
 msgid "From Backup"
 msgstr "Iz sigurnosne kopije"
 
@@ -8316,7 +8547,7 @@ msgstr "Iz datoteke"
 msgid "From Slot"
 msgstr "Iz utora"
 
-#: pve-manager/www/manager6/window/Restore.js:183
+#: pve-manager/www/manager6/window/Restore.js:217
 msgid "From backup configuration"
 msgstr "Iz konfiguracije sigurnosne kopije"
 
@@ -8426,18 +8657,19 @@ msgstr "Skupljanja odpadaka"
 msgid "Garbage collections"
 msgstr "Skupljanja odpadaka"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:409
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:423
-#: proxmox-widget-toolkit/src/node/NetworkView.js:388
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:444
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:458
+#: proxmox-widget-toolkit/src/node/NetworkView.js:389
 #: pve-manager/www/manager6/lxc/Network.js:201
 #: pve-manager/www/manager6/lxc/Network.js:271
 #: pve-manager/www/manager6/lxc/Network.js:597
 #: pve-manager/www/manager6/qemu/IPConfigEdit.js:119
 #: pve-manager/www/manager6/qemu/IPConfigEdit.js:185
+#: pve-manager/www/manager6/sdn/StaticRoutes.js:24
 #: pve-manager/www/manager6/sdn/SubnetEdit.js:32
 #: pve-manager/www/manager6/sdn/SubnetView.js:110
-#: pve-manager/www/manager6/tree/DhcpTree.js:204
-#: pve-manager/www/manager6/tree/DhcpTree.js:221
+#: pve-manager/www/manager6/tree/DhcpTree.js:206
+#: pve-manager/www/manager6/tree/DhcpTree.js:223
 #: proxmox-yew-comp/src/form/pve/lxc_property/lxc_network_property.rs:159
 #: proxmox-yew-comp/src/form/pve/lxc_property/lxc_network_property.rs:173
 #: proxmox-yew-comp/src/configuration/pve/lxc_network_panel.rs:465
@@ -8463,8 +8695,9 @@ msgstr "Heartbeat stražnja adresa"
 #: pve-manager/www/manager6/dc/Backup.js:301
 #: pve-manager/www/manager6/lxc/CreateWizard.js:30
 #: pve-manager/www/manager6/qemu/CreateWizard.js:86
-#: pve-manager/www/manager6/sdn/SubnetEdit.js:266
-#: pve-manager/www/manager6/storage/Base.js:174
+#: pve-manager/www/manager6/sdn/SubnetEdit.js:281
+#: pve-manager/www/manager6/sdn/zones/Base.js:118
+#: pve-manager/www/manager6/storage/Base.js:179
 #: pve-manager/www/manager6/window/GuestImport.js:354
 #: proxmox-backup/www/SystemConfiguration.js:74
 #: proxmox-backup/www/window/DataStoreEdit.js:39
@@ -8518,6 +8751,11 @@ msgstr ""
 #: pve-manager/www/manager6/storage/ImageView.js:99
 #, fuzzy
 msgid "Go to Guest"
+msgstr "Ciljani gost"
+
+#: pve-manager/www/manager6/dc/SAN.js:203
+#, fuzzy
+msgid "Go to Node"
 msgstr "Ciljani gost"
 
 #: proxmox-datacenter-manager/ui/src/ceph/renderer.rs:75
@@ -8619,7 +8857,7 @@ msgid "Groupname attr."
 msgstr "Atributi naziva grupe."
 
 #: pmg-gui/js/LDAPConfig.js:634 pve-manager/www/manager6/dc/AuthEditLDAP.js:268
-#: pve-manager/www/manager6/dc/Config.js:189
+#: pve-manager/www/manager6/dc/Config.js:200
 #: pve-manager/www/manager6/dc/RealmSyncJob.js:340
 #: pve-manager/www/manager6/dc/SyncWindow.js:104
 #: pve-manager/www/manager6/dc/UserView.js:221
@@ -8650,6 +8888,12 @@ msgstr "Gost agent ne radi"
 #: proxmox-datacenter-manager/ui/src/remotes/firewall/ui_helpers.rs:100
 msgid "Guest Firewall - {0}/{1}/{2} {3}"
 msgstr ""
+
+#: pve-manager/www/manager6/panel/GuestIdentity.js:5
+#, fuzzy
+#| msgid "Guest Image"
+msgid "Guest Identity"
+msgstr "Slika Gosta"
 
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:29
 msgid "Guest Image"
@@ -8683,7 +8927,7 @@ msgid "Guest user"
 msgstr "Korisnik Gost"
 
 #: pve-manager/www/manager6/dc/Guests.js:5
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:366
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:370
 #: proxmox-datacenter-manager/ui/src/dashboard/guest_panel.rs:226
 #: proxmox-datacenter-manager/ui/src/pve/remote_overview.rs:195
 msgid "Guests"
@@ -8709,6 +8953,11 @@ msgstr ""
 #: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:633
 msgid "Guests with Highest CPU Usage"
 msgstr ""
+
+#: pve-manager/www/manager6/dc/SAN.js:122
+#, fuzzy
+msgid "Guided Setup"
+msgstr "Postavljanje"
 
 #: proxmox-datacenter-manager/ui/src/renderer.rs:30
 #, fuzzy
@@ -8767,30 +9016,38 @@ msgstr "HA stanje"
 msgid "HA related Tasks"
 msgstr "Apsolutna putanja"
 
-#: pve-manager/www/manager6/window/Migrate.js:445
-#: pve-manager/www/manager6/window/Migrate.js:547
+#: pve-manager/www/manager6/window/Migrate.js:472
+#: pve-manager/www/manager6/window/Migrate.js:576
 msgid "HA resource {0} is not allowed on the selected target node"
 msgstr ""
 
-#: pve-manager/www/manager6/window/Migrate.js:439
+#: pve-manager/www/manager6/window/Migrate.js:466
 msgid "HA resource {0} with negative affinity to VM on selected target node"
 msgstr ""
 
-#: pve-manager/www/manager6/window/Migrate.js:541
+#: pve-manager/www/manager6/window/Migrate.js:570
 msgid ""
 "HA resource {0} with negative affinity to container on selected target node"
 msgstr ""
 
-#: pve-manager/www/manager6/window/Migrate.js:470
+#: pve-manager/www/manager6/window/Migrate.js:497
 msgid ""
 "HA resource {0} with positive affinity to VM is also migrated to selected "
 "target node."
 msgstr ""
 
-#: pve-manager/www/manager6/window/Migrate.js:572
+#: pve-manager/www/manager6/window/Migrate.js:601
 msgid ""
 "HA resource {0} with positive affinity to container is also migrated to "
 "selected target node."
+msgstr ""
+
+#: pve-manager/www/manager6/ha/Status.js:111
+msgid "HA resources on the node will be migrated to other nodes."
+msgstr ""
+
+#: pve-manager/www/manager6/ha/Status.js:99
+msgid "HA resources will be migrated back to node '{0}' once HA is re-armed."
 msgstr ""
 
 #: pve-manager/www/manager6/ha/RuleErrorsModal.js:10
@@ -8870,7 +9127,7 @@ msgstr "Sklopovlje"
 msgid "Hardware-accelerated virtualization (fast, recommended)"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/node/NetworkView.js:360
+#: proxmox-widget-toolkit/src/node/NetworkView.js:361
 msgid "Hash Policy"
 msgstr "Hash Pravila"
 
@@ -8879,7 +9136,7 @@ msgstr "Hash Pravila"
 msgid "Hash algorithm"
 msgstr "Hash algoritam"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:238
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:244
 #: proxmox-yew-comp/src/configuration/network_view.rs:485
 #: proxmox-yew-comp/src/configuration/network_edit.rs:244
 msgid "Hash policy"
@@ -8957,7 +9214,7 @@ msgstr "Pomoć"
 msgid "Heuristic Score"
 msgstr "Heuristički Rezultat"
 
-#: pve-manager/www/manager6/Utils.js:2266
+#: pve-manager/www/manager6/Utils.js:2286
 #: pve-manager/www/manager6/qemu/CmdMenu.js:75
 #: pve-manager/www/manager6/qemu/Config.js:190
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/dashboard_panel.rs:219
@@ -9023,7 +9280,8 @@ msgstr "Upotreba diska"
 msgid "Hint"
 msgstr "Savjet"
 
-#: pve-manager/www/manager6/node/Config.js:306
+#: pve-manager/www/manager6/node/Config.js:319
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:611
 #, fuzzy
 #| msgid "Task History"
 msgid "History"
@@ -9101,11 +9359,16 @@ msgstr "Upotreba memorije glavnog računala"
 msgid "Host Storage used"
 msgstr "Popunjenost pohrane"
 
+#: pve-manager/www/manager6/node/SANLuns.js:23
+#, fuzzy
+msgid "Host WWPN"
+msgstr "Računalo"
+
 #: pve-manager/www/manager6/storage/ZFSEdit.js:98
 msgid "Host group"
 msgstr "Host grupa"
 
-#: pve-manager/www/manager6/panel/GuestStatusView.js:122
+#: pve-manager/www/manager6/panel/GuestStatusView.js:125
 #, fuzzy
 msgid "Host memory usage"
 msgstr "Upotreba memorije glavnog računala"
@@ -9132,7 +9395,7 @@ msgstr "Računalo/IP adresa ili opcijski priključak nije valjan"
 #: pve-manager/www/manager6/lxc/DNS.js:123
 #: pve-manager/www/manager6/lxc/DNS.js:127
 #: pve-manager/www/manager6/window/Clone.js:201
-#: pve-manager/www/manager6/window/Restore.js:340
+#: pve-manager/www/manager6/window/Restore.js:406
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_summary.rs:120
 #: proxmox-yew-comp/src/form/pve/lxc_property/mod.rs:193
 msgid "Hostname"
@@ -9154,7 +9417,7 @@ msgstr "Naziv glavnog računala"
 msgid "Hostname/IP"
 msgstr "Naziv glavnog računala"
 
-#: pve-manager/www/manager6/node/Config.js:221
+#: pve-manager/www/manager6/node/Config.js:234
 msgid "Hosts"
 msgstr "Glavna računala"
 
@@ -9304,7 +9567,7 @@ msgstr "IP"
 #: pmg-gui/js/ClusterAdministration.js:308 pmg-gui/js/Utils.js:284
 #: pmg-gui/js/Utils.js:290 pve-manager/www/manager6/dc/ClusterEdit.js:75
 #: pve-manager/www/manager6/sdn/IpamEdit.js:40
-#: pve-manager/www/manager6/tree/DhcpTree.js:211
+#: pve-manager/www/manager6/tree/DhcpTree.js:213
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/vnet_status.rs:88
 msgid "IP Address"
 msgstr "IP adresa"
@@ -9334,7 +9597,7 @@ msgstr "API prefiks putanje"
 msgid "IP Prefixes"
 msgstr "API prefiks putanje"
 
-#: proxmox-widget-toolkit/src/node/NetworkView.js:365
+#: proxmox-widget-toolkit/src/node/NetworkView.js:366
 #: pve-manager/www/manager6/lxc/Network.js:567
 #: pve-manager/www/manager6/panel/IPView.js:33
 msgid "IP address"
@@ -9360,7 +9623,7 @@ msgstr "IP dobiven prema nazivu čvora"
 
 #: pve-manager/www/manager6/sdn/Browser.js:56
 #: pve-manager/www/manager6/sdn/EvpnZoneIpVrfPanel.js:10
-#: pve-manager/www/manager6/sdn/NetworkBrowser.js:130
+#: pve-manager/www/manager6/sdn/NetworkBrowser.js:132
 #: pve-manager/www/manager6/sdn/ZoneBridgesPanel.js:59
 msgid "IP-VRF"
 msgstr ""
@@ -9378,8 +9641,8 @@ msgstr ""
 msgid "IP/CIDR"
 msgstr "IP/CIDR"
 
-#: pve-manager/www/manager6/dc/Config.js:291
-#: pve-manager/www/manager6/sdn/zones/Base.js:51
+#: pve-manager/www/manager6/dc/Config.js:302
+#: pve-manager/www/manager6/sdn/zones/Base.js:53
 msgid "IPAM"
 msgstr ""
 
@@ -9406,7 +9669,11 @@ msgstr "API prefiks putanje"
 msgid "IPv4 Address"
 msgstr "IP adresa"
 
-#: pve-manager/www/manager6/sdn/fabrics/FabricEdit.js:62
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:325
+msgid "IPv4 Forwarding"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/fabrics/FabricEdit.js:77
 #, fuzzy
 msgid "IPv4 Prefix"
 msgstr "API prefiks putanje"
@@ -9453,7 +9720,7 @@ msgstr "API prefiks putanje"
 msgid "IPv6 Address"
 msgstr "IP adresa"
 
-#: pve-manager/www/manager6/sdn/fabrics/FabricEdit.js:97
+#: pve-manager/www/manager6/sdn/fabrics/FabricEdit.js:112
 #, fuzzy
 msgid "IPv6 Prefix"
 msgstr "API prefiks putanje"
@@ -9542,7 +9809,7 @@ msgid ""
 "Please check your inbox."
 msgstr ""
 
-#: pve-manager/www/manager6/ha/Status.js:114
+#: pve-manager/www/manager6/ha/Status.js:193
 msgid "Ignore"
 msgstr ""
 
@@ -9701,6 +9968,10 @@ msgstr "Uključi u sigurnosnu kopiju"
 msgid "Include selected VMs"
 msgstr "Uključi odabrane VM-ove"
 
+#: pve-manager/www/manager6/grid/PoolMembers.js:265
+msgid "Include the VNet with all its VLAN tags"
+msgstr ""
+
 #: pve-manager/www/manager6/lxc/MPEdit.js:265
 #: pve-manager/www/manager6/qemu/HDEdit.js:366
 msgid "Include volume in backup job"
@@ -9794,6 +10065,12 @@ msgstr ""
 msgid "Initialize Disk with GPT"
 msgstr "Inicijaliziraj disk s GPT-om"
 
+#: pve-manager/www/manager6/node/ISCSITargets.js:131
+#: pve-manager/www/manager6/storage/wizard/NodeIdentities.js:22
+#, fuzzy
+msgid "Initiator Name"
+msgstr "Naziv klastera"
+
 #: proxmox-backup/www/Utils.js:914 proxmox-backup/www/Utils.js:916
 msgid "Inode"
 msgstr "Inode"
@@ -9801,7 +10078,7 @@ msgstr "Inode"
 #: pve-manager/www/manager6/grid/FirewallOptions.js:126
 #: pve-manager/www/manager6/grid/FirewallOptions.js:131
 #: pve-manager/www/manager6/grid/FirewallOptions.js:136
-#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:169
+#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:168
 msgid "Input Policy"
 msgstr "Pravila unosa"
 
@@ -9809,7 +10086,7 @@ msgstr "Pravila unosa"
 msgid "Input invalid: {}"
 msgstr ""
 
-#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:122
+#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:121
 #, fuzzy
 msgid "Input log level"
 msgstr "Razina dnevnika zapisa"
@@ -9882,6 +10159,7 @@ msgstr ""
 #: pve-manager/www/manager6/grid/FirewallRules.js:284
 #: pve-manager/www/manager6/grid/FirewallRules.js:571
 #: pve-manager/www/manager6/grid/FirewallRules.js:947
+#: pve-manager/www/manager6/sdn/FabricsContentView.js:55
 #: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:42
 msgid "Interface"
 msgstr "Sučelje"
@@ -9897,7 +10175,7 @@ msgstr "Uključi statistiku"
 
 #: pmg-gui/js/SystemConfiguration.js:40
 #: pve-manager/www/manager6/sdn/FabricsView.js:82
-#: pve-manager/www/manager6/sdn/NetworkBrowser.js:78
+#: pve-manager/www/manager6/sdn/NetworkBrowser.js:80
 #: pve-manager/www/manager6/sdn/controllers/IsisEdit.js:46
 msgid "Interfaces"
 msgstr "Sučelja"
@@ -9961,17 +10239,17 @@ msgstr "Nevažeća Vrijednost"
 msgid "Invalid characters in pool name"
 msgstr "Nevažeći znakovi u nazivu skupa"
 
-#: proxmox-yew-widget-toolkit/src/widget/form/date_field/date_field.rs:212
+#: proxmox-yew-widget-toolkit/src/widget/form/date_field/date_field.rs:222
 #, fuzzy
 msgid "Invalid date format"
 msgstr "Nevažeća veličina datoteke"
 
-#: pve-manager/www/manager6/Utils.js:1713
+#: pve-manager/www/manager6/Utils.js:1733
 msgid "Invalid file size"
 msgstr "Nevažeća veličina datoteke"
 
 #: proxmox-widget-toolkit/src/Utils.js:1198
-#: pve-manager/www/manager6/Utils.js:1725
+#: pve-manager/www/manager6/Utils.js:1745
 msgid "Invalid file size: "
 msgstr "Nevažeća veličina datoteke: "
 
@@ -10107,7 +10385,7 @@ msgstr "Komentar Posla"
 msgid "Job Detail"
 msgstr "Detalji o poslu"
 
-#: pve-manager/www/manager6/Utils.js:2303
+#: pve-manager/www/manager6/Utils.js:2323
 #: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:125
 #: proxmox-backup/www/Utils.js:509 proxmox-backup/www/config/PruneView.js:208
 #: proxmox-backup/www/config/SyncView.js:304
@@ -10130,7 +10408,7 @@ msgstr "Simulator rasporeda poslova"
 msgid "Join"
 msgstr "Pridruži se"
 
-#: pmg-gui/js/Utils.js:908 pve-manager/www/manager6/Utils.js:2230
+#: pmg-gui/js/Utils.js:908 pve-manager/www/manager6/Utils.js:2250
 #: pve-manager/www/manager6/dc/Cluster.js:171
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:140
 msgid "Join Cluster"
@@ -10425,6 +10703,10 @@ msgstr "LDAP filter"
 msgid "LTO Barcode Generator"
 msgstr ""
 
+#: pve-manager/www/manager6/dc/SAN.js:221
+msgid "LUNs"
+msgstr ""
+
 #: pve-manager/www/manager6/ceph/OSDDetails.js:278
 msgid "LV Name"
 msgstr "LV Naziv"
@@ -10437,12 +10719,21 @@ msgstr "LV putanja"
 msgid "LV UUID"
 msgstr "LV UUID"
 
-#: pve-manager/www/manager6/Utils.js:2240
+#: pve-manager/www/manager6/Utils.js:2260
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:152
 msgid "LVM Storage"
 msgstr "LVM Pohrana"
 
-#: pve-manager/www/manager6/Utils.js:2242
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:9
+#, fuzzy
+msgid "LVM on {0}"
+msgstr "ID {0}"
+
+#: pve-manager/www/manager6/SANUtils.js:177
+msgid "LVM physical volume"
+msgstr ""
+
+#: pve-manager/www/manager6/Utils.js:2262
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:154
 msgid "LVM-Thin Storage"
 msgstr "LVM-Thin Pohrana"
@@ -10536,6 +10827,12 @@ msgstr "Atribut Prezime"
 msgid "Last Prune"
 msgstr "Zadnje pročišćavanje"
 
+#: pve-manager/www/manager6/dc/SAN.js:191
+#, fuzzy
+#| msgid "System Report"
+msgid "Last Report"
+msgstr "Izvješće o sustavu"
+
 #: proxmox-widget-toolkit/src/window/AccessLogStats.js:202
 #: proxmox-yew-comp/src/access_log/statistics.rs:413
 #, fuzzy
@@ -10605,6 +10902,10 @@ msgstr "Samo najnovije"
 #: proxmox-yew-comp/src/form/pve/qemu_machine_version_selector.rs:174
 msgid "Latest"
 msgstr "Najnovije"
+
+#: pve-manager/www/manager6/sdn/FabricsContentView.js:79
+msgid "Latest Handshake"
+msgstr ""
 
 #: proxmox-backup/www/tape/BackupJobs.js:244
 #: proxmox-backup/www/tape/window/TapeBackupJob.js:154
@@ -10745,12 +11046,13 @@ msgstr ""
 msgid "List is empty."
 msgstr ""
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:78
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:84
 msgid ""
 "List of VLAN IDs and ranges, useful for NICs with restricted VLAN offloading "
 "support. For example: '2 4 100-200'"
 msgstr ""
 
+#: pve-manager/www/manager6/sdn/FabricsContentView.js:166
 #: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:351
 #, fuzzy
 msgid "Listen Port"
@@ -10778,11 +11080,11 @@ msgid ""
 "configured value."
 msgstr ""
 
-#: pve-manager/www/manager6/window/Restore.js:308
+#: pve-manager/www/manager6/window/Restore.js:374
 msgid "Live restore"
 msgstr "Vraćanjae sigurnosne kopije uživo"
 
-#: pve-manager/www/manager6/window/Migrate.js:361
+#: pve-manager/www/manager6/window/Migrate.js:388
 msgid "Live-migrating running VM with mapped resources (Experimental): {0}"
 msgstr ""
 
@@ -10963,7 +11265,7 @@ msgid "Lock"
 msgstr "Zaključaj"
 
 #: proxmox-widget-toolkit/src/panel/TfaView.js:166 pmg-gui/js/UserView.js:221
-#: pve-manager/www/manager6/Utils.js:1451
+#: pve-manager/www/manager6/Utils.js:1471
 #: proxmox-backup/www/config/UserView.js:260
 #: proxmox-yew-comp/src/tfa/tfa_view.rs:379
 msgid "Locked"
@@ -10980,8 +11282,8 @@ msgstr ""
 
 #: pve-manager/www/manager6/grid/Replication.js:260
 #: pve-manager/www/manager6/lxc/Config.js:378
-#: pve-manager/www/manager6/node/Config.js:440
-#: pve-manager/www/manager6/node/Config.js:451
+#: pve-manager/www/manager6/node/Config.js:477
+#: pve-manager/www/manager6/node/Config.js:488
 #: pve-manager/www/manager6/qemu/Config.js:431
 msgid "Log"
 msgstr "Dnevnik zapisa"
@@ -11011,7 +11313,7 @@ msgid ""
 "Log files named by date are not read: {0}. Older requests may be missing."
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:1958
+#: pve-manager/www/manager6/Utils.js:1978
 msgid "Log in as root to install."
 msgstr "Prijavite se kao root za instalaciju."
 
@@ -11156,7 +11458,7 @@ msgid "MAC-VRF"
 msgstr ""
 
 #: pve-manager/www/manager6/sdn/Browser.js:65
-#: pve-manager/www/manager6/sdn/NetworkBrowser.js:139
+#: pve-manager/www/manager6/sdn/NetworkBrowser.js:141
 msgid "MAC-VRFs"
 msgstr ""
 
@@ -11182,6 +11484,7 @@ msgid "MIME type"
 msgstr "MIME vrsta"
 
 #: pve-manager/www/manager6/lxc/Network.js:611
+#: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:372
 #: proxmox-yew-comp/src/form/pve/lxc_property/lxc_network_property.rs:210
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_network_property.rs:19
 #: proxmox-yew-comp/src/configuration/pve/lxc_network_panel.rs:471
@@ -11350,7 +11653,7 @@ msgstr "Dan"
 msgid "Mapped Device"
 msgstr "Mapirani Uređaj"
 
-#: pve-manager/www/manager6/window/Migrate.js:301
+#: pve-manager/www/manager6/window/Migrate.js:326
 msgid "Mapped Resources ({0}) not available on selected target."
 msgstr ""
 
@@ -11376,6 +11679,12 @@ msgstr "Mapiranje na čvoru"
 msgid ""
 "Maps SCSI disks to SATA and changes the SCSI Controller. Useful for a "
 "quicker switch to VirtIO-SCSI attached disks"
+msgstr ""
+
+#: pve-manager/www/manager6/dc/SAN.js:183
+msgid ""
+"Maps of the node that the LUN list leaves out. They can still be in use, for "
+"example by a storage plugin."
 msgstr ""
 
 #: proxmox-yew-widget-toolkit/src/widget/form/date_field/date_panel.rs:568
@@ -11658,14 +11967,14 @@ msgstr "Članovi"
 #: pve-manager/www/manager6/lxc/ResourceEdit.js:10
 #: pve-manager/www/manager6/lxc/ResourceEdit.js:142
 #: pve-manager/www/manager6/lxc/Resources.js:55
-#: pve-manager/www/manager6/panel/TemplateStatusView.js:46
+#: pve-manager/www/manager6/panel/TemplateStatusView.js:49
 #: pve-manager/www/manager6/qemu/CreateWizard.js:256
 #: pve-manager/www/manager6/qemu/DisplayEdit.js:68
 #: pve-manager/www/manager6/qemu/HardwareView.js:76
 #: pve-manager/www/manager6/qemu/MemoryEdit.js:82
 #: pve-manager/www/manager6/qemu/MemoryEdit.js:200
 #: pve-manager/www/manager6/window/GuestImport.js:518
-#: pve-manager/www/manager6/window/Restore.js:362
+#: pve-manager/www/manager6/window/Restore.js:428
 #: proxmox-datacenter-manager/ui/src/dashboard/gauge_panel.rs:188
 #: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:561
 #: pve-yew-mobile-gui/src/pages/page_dashboard.rs:187
@@ -11716,7 +12025,7 @@ msgstr "Veličina memorije"
 #: pve-manager/www/manager6/form/NodeSelector.js:46
 #: pve-manager/www/manager6/ha/NodePrioritySelector.js:46
 #: pve-manager/www/manager6/node/Summary.js:179
-#: pve-manager/www/manager6/panel/GuestStatusView.js:113
+#: pve-manager/www/manager6/panel/GuestStatusView.js:116
 #: proxmox-backup/www/ServerStatus.js:229
 #: proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:363
 #: proxmox-datacenter-manager/ui/src/pve/lxc/overview.rs:340
@@ -11747,7 +12056,7 @@ msgid ""
 msgstr ""
 
 #: proxmox-widget-toolkit/src/window/ZFSDetail.js:153
-#: pve-manager/www/manager6/dc/Log.js:79
+#: pve-manager/www/manager6/dc/Log.js:79 pve-manager/www/manager6/dc/SAN.js:165
 msgid "Message"
 msgstr "Poruka"
 
@@ -11800,7 +12109,7 @@ msgstr ""
 msgid "Metric"
 msgstr "Metrički poslužitelj"
 
-#: pve-manager/www/manager6/dc/Config.js:392
+#: pve-manager/www/manager6/dc/Config.js:403
 #: proxmox-backup/www/SystemConfiguration.js:51
 msgid "Metric Server"
 msgstr "Metrički poslužitelj"
@@ -11809,9 +12118,9 @@ msgstr "Metrički poslužitelj"
 msgid "MiB"
 msgstr "MiB"
 
-#: pve-manager/www/manager6/Utils.js:2234
 #: pve-manager/www/manager6/Utils.js:2254
-#: pve-manager/www/manager6/Utils.js:2285
+#: pve-manager/www/manager6/Utils.js:2274
+#: pve-manager/www/manager6/Utils.js:2305
 #: pve-manager/www/manager6/dc/CmdMenu.js:68
 #: pve-manager/www/manager6/dc/Config.js:76
 #: pve-manager/www/manager6/lxc/CmdMenu.js:102
@@ -11822,7 +12131,7 @@ msgstr "MiB"
 #: pve-manager/www/manager6/qemu/CmdMenu.js:129
 #: pve-manager/www/manager6/qemu/Config.js:68
 #: pve-manager/www/manager6/window/Migrate.js:106
-#: pve-manager/www/manager6/window/Migrate.js:776
+#: pve-manager/www/manager6/window/Migrate.js:805
 #: proxmox-datacenter-manager/ui/src/guests.rs:817
 #: proxmox-datacenter-manager/ui/src/guests.rs:829
 #: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:655
@@ -11835,7 +12144,7 @@ msgstr "MiB"
 msgid "Migrate"
 msgstr "Migracija"
 
-#: pve-manager/www/manager6/window/Migrate.js:331
+#: pve-manager/www/manager6/window/Migrate.js:358
 msgid ""
 "Migrating VM with local resources: {0}. This might fail if the resources are "
 "not available on the target node."
@@ -11854,7 +12163,7 @@ msgstr "Postavke migracije"
 msgid "Migration with local disk might take long: {0} ({1})"
 msgstr ""
 
-#: pve-manager/www/manager6/window/Migrate.js:386
+#: pve-manager/www/manager6/window/Migrate.js:413
 msgid "Migration with local disk might take long: {0} {1}"
 msgstr ""
 
@@ -11897,6 +12206,12 @@ msgstr "Minimalna memorija"
 msgid "Misplaced"
 msgstr "Prikaz"
 
+#: pve-manager/www/manager6/SANUtils.js:137
+#, fuzzy
+#| msgid "missing"
+msgid "Missing"
+msgstr "nedostaje"
+
 #: proxmox-backup/www/Utils.js:24
 msgid "Mixed"
 msgstr "Mješovito"
@@ -11906,8 +12221,8 @@ msgstr "Mješovito"
 msgid "Mixed Subscriptions"
 msgstr "Mješovite pretplate"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:254
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:385
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:260
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:420
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:194
 #: pve-manager/www/manager6/dc/AuthEditAD.js:54
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:54
@@ -11916,7 +12231,7 @@ msgstr "Mješovite pretplate"
 #: pve-manager/www/manager6/dc/UserTagAccessEdit.js:52
 #: pve-manager/www/manager6/window/Backup.js:28
 #: pve-manager/www/manager6/window/Clone.js:215
-#: pve-manager/www/manager6/window/Migrate.js:622
+#: pve-manager/www/manager6/window/Migrate.js:651
 #: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:416
 #: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:87
 #: proxmox-yew-comp/src/auth_edit_ldap.rs:340
@@ -11944,7 +12259,9 @@ msgstr "Način: {0}"
 #: proxmox-widget-toolkit/src/form/MultiDiskSelector.js:102
 #: proxmox-widget-toolkit/src/panel/DiskList.js:337
 #: pve-manager/www/manager6/form/CPUModelSelector.js:61
+#: pve-manager/www/manager6/node/SANLuns.js:118
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:164
+#: pve-manager/www/manager6/storage/wizard/LunSelect.js:127
 #: pve-manager/www/manager6/window/GuestImport.js:912
 #: proxmox-backup/www/form/PartitionSelector.js:72
 #: proxmox-backup/www/tape/ChangerConfig.js:122
@@ -11976,7 +12293,7 @@ msgstr "Izmijeni opis TFA unosa"
 #: proxmox-widget-toolkit/src/window/NotificationMatcherEdit.js:1268
 #: proxmox-backup/www/window/TrafficControlEdit.js:363
 #: proxmox-yew-widget-toolkit/src/widget/form/date_field/date_panel.rs:246
-#: proxmox-yew-widget-toolkit/src/widget/calendar_grid.rs:850
+#: proxmox-yew-widget-toolkit/src/widget/calendar_grid.rs:872
 msgid "Mon"
 msgstr "Pon"
 
@@ -11995,7 +12312,7 @@ msgid "Mongolian"
 msgstr ""
 
 #: pve-manager/www/manager6/ceph/Monitor.js:36
-#: pve-manager/www/manager6/node/Config.js:400
+#: pve-manager/www/manager6/node/Config.js:437
 #: pve-manager/www/manager6/qemu/Config.js:350
 msgid "Monitor"
 msgstr "Monitor"
@@ -12023,7 +12340,7 @@ msgstr "Mjesečno"
 #: pve-manager/www/manager6/ceph/OSD.js:1421
 #: pve-manager/www/manager6/lxc/Config.js:117
 #: pve-manager/www/manager6/node/Directory.js:179
-#: pve-manager/www/manager6/node/LVM.js:179
+#: pve-manager/www/manager6/node/LVM.js:184
 #: pve-manager/www/manager6/node/LVMThin.js:214
 #: pve-manager/www/manager6/node/ZFS.js:328
 #: pve-manager/www/manager6/panel/IPView.js:101
@@ -12034,7 +12351,7 @@ msgstr "Mjesečno"
 msgid "More"
 msgstr "Više"
 
-#: pve-manager/www/manager6/Utils.js:2286
+#: pve-manager/www/manager6/Utils.js:2306
 #: proxmox-backup/www/datastore/Summary.js:319
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:200
 msgid "Mount"
@@ -12073,7 +12390,7 @@ msgstr "Opcije montiranja"
 msgid "Mount point is already in use."
 msgstr "Volumeni točke montiranja su također izbrisani."
 
-#: pve-manager/www/manager6/window/Restore.js:101
+#: pve-manager/www/manager6/window/Restore.js:104
 msgid "Mount point volumes are also erased."
 msgstr "Volumeni točke montiranja su također izbrisani."
 
@@ -12118,13 +12435,13 @@ msgstr "Premjesti volumen"
 msgid "Move Storage"
 msgstr "Premjesti pohranu"
 
-#: pve-manager/www/manager6/Utils.js:2245
+#: pve-manager/www/manager6/Utils.js:2265
 #: pve-manager/www/manager6/qemu/HDMove.js:28
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:157
 msgid "Move Volume"
 msgstr "Premjesti volumen"
 
-#: pve-manager/www/manager6/Utils.js:2255
+#: pve-manager/www/manager6/Utils.js:2275
 #: pve-manager/www/manager6/qemu/HDMove.js:28
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:167
 msgid "Move disk"
@@ -12147,6 +12464,31 @@ msgstr "Ukloni imenski prostor '{0}'"
 #: pve-manager/www/manager6/lxc/Resources.js:263
 msgid "Move volume to another storage"
 msgstr "Premjesti volumen u drugu pohranu"
+
+#: pve-manager/www/manager6/dc/SAN.js:355
+#: pve-manager/www/manager6/node/SANLuns.js:69
+#: pve-manager/www/manager6/storage/IScsiEdit.js:174
+#: pve-manager/www/manager6/storage/wizard/LunSelect.js:140
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:171
+msgid "Multipath"
+msgstr ""
+
+#: pve-manager/www/manager6/dc/MultipathWwidEdit.js:3
+#, fuzzy
+msgid "Multipath Entry"
+msgstr "Ukloniti unos?"
+
+#: pve-manager/www/manager6/dc/SAN.js:25
+#, fuzzy
+#| msgid "Color Overrides"
+msgid "Multipath Overrides"
+msgstr "Premošćivanje boje"
+
+#: pve-manager/www/manager6/SANUtils.js:139
+#, fuzzy
+#| msgid "No updates available."
+msgid "Multipath unavailable"
+msgstr "Nema dostupnih ažuriranja."
 
 #: pmg-gui/js/controller/QuarantineController.js:59
 msgid "Multiple E-Mails selected"
@@ -12182,6 +12524,10 @@ msgstr "Morate odabrati barem jedan uređaj"
 #: proxmox-widget-toolkit/src/Toolkit.js:122
 msgid "Must end with"
 msgstr "Mora završiti s"
+
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:20
+msgid "Must include node \"{0}\", which sets up the volume group."
+msgstr ""
 
 #: proxmox-widget-toolkit/src/Toolkit.js:109
 #: proxmox-widget-toolkit/src/Toolkit.js:120
@@ -12252,8 +12598,8 @@ msgstr ""
 
 #: proxmox-widget-toolkit/src/form/UserSelector.js:33
 #: proxmox-widget-toolkit/src/grid/ObjectGrid.js:400
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:329
-#: proxmox-widget-toolkit/src/node/NetworkView.js:282
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:364
+#: proxmox-widget-toolkit/src/node/NetworkView.js:283
 #: proxmox-widget-toolkit/src/node/ServiceView.js:211
 #: proxmox-widget-toolkit/src/panel/ACMEAccount.js:65
 #: proxmox-widget-toolkit/src/window/ACMEAccount.js:54
@@ -12290,6 +12636,7 @@ msgstr ""
 #: pve-manager/www/manager6/dc/RealmSyncJob.js:112
 #: pve-manager/www/manager6/dc/RoleEdit.js:33
 #: pve-manager/www/manager6/dc/RoleView.js:58
+#: pve-manager/www/manager6/dc/SAN.js:282
 #: pve-manager/www/manager6/dc/SecurityGroups.js:30
 #: pve-manager/www/manager6/dc/UserView.js:202
 #: pve-manager/www/manager6/form/FileSelector.js:102
@@ -12312,9 +12659,10 @@ msgstr ""
 #: pve-manager/www/manager6/node/Certificates.js:45
 #: pve-manager/www/manager6/node/Directory.js:47
 #: pve-manager/www/manager6/node/LVM.js:36
-#: pve-manager/www/manager6/node/LVM.js:102
+#: pve-manager/www/manager6/node/LVM.js:107
 #: pve-manager/www/manager6/node/LVMThin.js:34
 #: pve-manager/www/manager6/node/LVMThin.js:106
+#: pve-manager/www/manager6/node/SANLuns.js:55
 #: pve-manager/www/manager6/node/ZFS.js:47
 #: pve-manager/www/manager6/node/ZFS.js:231
 #: pve-manager/www/manager6/panel/IPSet.js:85
@@ -12324,7 +12672,8 @@ msgstr ""
 #: pve-manager/www/manager6/qemu/Options.js:26
 #: pve-manager/www/manager6/qemu/Options.js:30
 #: pve-manager/www/manager6/qemu/Options.js:38
-#: pve-manager/www/manager6/sdn/FabricsContentView.js:59
+#: pve-manager/www/manager6/sdn/FabricsContentView.js:47
+#: pve-manager/www/manager6/sdn/FabricsContentView.js:138
 #: pve-manager/www/manager6/sdn/FabricsView.js:16
 #: pve-manager/www/manager6/sdn/PrefixListPanel.js:30
 #: pve-manager/www/manager6/sdn/PrefixListPanel.js:174
@@ -12341,13 +12690,14 @@ msgstr ""
 #: pve-manager/www/manager6/sdn/fabrics/wireguard/NodeEdit.js:35
 #: pve-manager/www/manager6/storage/ContentView.js:119
 #: pve-manager/www/manager6/storage/TemplateView.js:91
+#: pve-manager/www/manager6/storage/wizard/LunSelect.js:119
 #: pve-manager/www/manager6/tree/SnapshotTree.js:340
 #: pve-manager/www/manager6/window/BulkAction.js:351
 #: pve-manager/www/manager6/window/Clone.js:201
 #: pve-manager/www/manager6/window/DirMapEdit.js:137
 #: pve-manager/www/manager6/window/GuestImport.js:546
 #: pve-manager/www/manager6/window/PCIMapEdit.js:211
-#: pve-manager/www/manager6/window/Restore.js:340
+#: pve-manager/www/manager6/window/Restore.js:406
 #: pve-manager/www/manager6/window/Settings.js:192
 #: pve-manager/www/manager6/window/Snapshot.js:67
 #: pve-manager/www/manager6/window/TreeSettingsEdit.js:26
@@ -12423,7 +12773,7 @@ msgstr "Ime"
 msgid "Name / Host"
 msgstr "Ime, Format"
 
-#: pve-manager/www/manager6/tree/DhcpTree.js:199
+#: pve-manager/www/manager6/tree/DhcpTree.js:201
 msgid "Name / VMID"
 msgstr ""
 
@@ -12453,6 +12803,17 @@ msgstr ""
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:463
 msgid "Name, VMID, Type"
 msgstr ""
+
+#: pve-manager/www/manager6/storage/wizard/LunSelect.js:181
+msgid "Name, WWID, Path"
+msgstr ""
+
+#: pve-manager/www/manager6/dc/SAN.js:274
+#: pve-manager/www/manager6/node/SANLuns.js:197
+#, fuzzy
+#| msgid "Target Storage"
+msgid "Name, WWID, Storage"
+msgstr "Ciljna pohrana"
 
 #: proxmox-widget-toolkit/src/panel/WebhookEditPanel.js:256
 #, fuzzy
@@ -12493,6 +12854,11 @@ msgstr "Naziv imenskog prostora"
 msgid "Narrow viewport detected"
 msgstr "Nije odabran disk"
 
+#: pve-manager/www/manager6/SANUtils.js:120
+#, fuzzy
+msgid "Native"
+msgstr "Aktivno"
+
 #: proxmox-datacenter-manager/ui/src/ceph/clusters.rs:115
 msgid "Near full"
 msgstr ""
@@ -12505,11 +12871,11 @@ msgstr "Potrebno je barem jedno mapiranje"
 msgid "Need at least one snapshot"
 msgstr "Potrebna je barem jedna snimka"
 
-#: pve-manager/www/manager6/sdn/FabricsContentView.js:33
+#: pve-manager/www/manager6/sdn/FabricsContentView.js:38
 msgid "Neighbor"
 msgstr ""
 
-#: pve-manager/www/manager6/sdn/NetworkBrowser.js:56
+#: pve-manager/www/manager6/sdn/NetworkBrowser.js:58
 msgid "Neighbors"
 msgstr ""
 
@@ -12720,6 +13086,9 @@ msgstr ""
 
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:414
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:531
+#: pve-manager/www/manager6/storage/wizard/IScsi.js:235
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:287
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:291
 #: pve-manager/www/manager6/window/Wizard.js:193
 #: proxmox-backup/www/tape/window/TapeRestore.js:274
 #: proxmox-yew-comp/src/wizard.rs:685
@@ -12922,6 +13291,16 @@ msgstr ""
 msgid "No LDAP/AD Realm found"
 msgstr "Nije pronađen LDAP/AD izvor autentikacije"
 
+#: pve-manager/www/manager6/node/SANLuns.js:7
+#: pve-manager/www/manager6/storage/wizard/LunSelect.js:74
+msgid "No LUNs found. Check connections and array access."
+msgstr ""
+
+#: pve-manager/www/manager6/node/SANLuns.js:220
+#: pve-manager/www/manager6/storage/wizard/LunSelect.js:189
+msgid "No LUNs match the search."
+msgstr ""
+
 #: pve-manager/www/manager6/tree/ResourceMapTree.js:8
 msgid "No Mapping found"
 msgstr "Mapiranje nije pronađeno"
@@ -13003,6 +13382,12 @@ msgstr "Nema zadataka"
 msgid "No Tasks found"
 msgstr "Nisu pronađeni zadaci"
 
+#: pve-manager/www/manager6/grid/PoolMembers.js:256
+#, fuzzy
+#| msgid "VLAN Tag"
+msgid "No VLAN tag"
+msgstr "VLAN Oznaka"
+
 #: pve-manager/www/manager6/form/VMSelector.js:201
 msgid "No VM selected"
 msgstr "Nije odabran VM"
@@ -13075,11 +13460,17 @@ msgid "No changelog installed"
 msgstr "nije instalirano"
 
 #: proxmox-widget-toolkit/src/node/NetworkView.js:83
-#: proxmox-widget-toolkit/src/node/NetworkView.js:441
+#: proxmox-widget-toolkit/src/node/NetworkView.js:442
 #: pve-manager/www/manager6/sdn/SdnDiffView.js:42
 #: pve-manager/www/manager6/sdn/SdnDiffView.js:45
 msgid "No changes"
 msgstr "Nema promjena"
+
+#: pve-manager/www/manager6/SANUtils.js:140
+#, fuzzy
+#| msgid "Source port"
+msgid "No current report"
+msgstr "Izvorni priključak"
 
 #: proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:266
 #: proxmox-datacenter-manager/ui/src/widget/resource_tree.rs:345
@@ -13159,6 +13550,11 @@ msgstr "Nema dostupnih ažuriranja."
 msgid "No guests found"
 msgstr "Nisu pronađeni diskovi"
 
+#: pve-manager/www/manager6/node/ISCSITargets.js:6
+#, fuzzy
+msgid "No iSCSI targets found"
+msgstr "Nisu pronađeni diskovi"
+
 #: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:218
 #, fuzzy
 msgid "No interfaces configured"
@@ -13223,8 +13619,13 @@ msgstr "Nema mrežnog uređaja"
 msgid "No network information"
 msgstr "Nema informacija o mreži"
 
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:620
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:635
+#: pve-manager/www/manager6/window/SANLunState.js:74
+#, fuzzy
+msgid "No node reported this LUN yet."
+msgstr "Još nije konfigurirano"
+
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:650
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:665
 #, fuzzy
 msgid "No node selected"
 msgstr "Nije odabran VM"
@@ -13254,6 +13655,16 @@ msgstr "Nema konfiguriranih domena"
 #, fuzzy
 msgid "No notification targets configured"
 msgstr "Nema konfiguriranih skladišta podataka"
+
+#: pve-manager/www/manager6/window/SANLunWipe.js:45
+msgid "No other host uses the LUN"
+msgstr ""
+
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:313
+#, fuzzy
+#| msgid "No Overrides"
+msgid "No override"
+msgstr "Nema premošćivanja"
 
 #: proxmox-widget-toolkit/src/node/APTHistory.js:348
 msgid "No package changes recorded."
@@ -13286,7 +13697,7 @@ msgstr "Nijedan račun nije konfiguriran"
 msgid "No prefix list selected"
 msgstr "Nije odabran VM"
 
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:774
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:804
 #, fuzzy
 msgid "No product repository configured"
 msgstr "Još nije konfigurirano"
@@ -13470,7 +13881,7 @@ msgid "No {0} rules configured."
 msgstr "Nijedan {0} konfiguriran."
 
 #: pve-manager/www/manager6/node/Directory.js:174
-#: pve-manager/www/manager6/node/LVM.js:174
+#: pve-manager/www/manager6/node/LVM.js:179
 #: pve-manager/www/manager6/node/LVMThin.js:209
 #: pve-manager/www/manager6/node/ZFS.js:323
 #: proxmox-backup/www/DirectoryList.js:96
@@ -13488,7 +13899,7 @@ msgstr "Bez pretplate"
 #: pve-manager/www/manager6/dc/Backup.js:308
 #: pve-manager/www/manager6/dc/Backup.js:897
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:162
-#: pve-manager/www/manager6/dc/Log.js:52
+#: pve-manager/www/manager6/dc/Log.js:52 pve-manager/www/manager6/dc/SAN.js:153
 #: pve-manager/www/manager6/dc/Tasks.js:105
 #: pve-manager/www/manager6/form/GlobalSearchField.js:89
 #: pve-manager/www/manager6/form/NodeSelector.js:39
@@ -13512,7 +13923,9 @@ msgstr "Bez pretplate"
 #: pve-manager/www/manager6/sdn/fabrics/NodeEdit.js:6
 #: pve-manager/www/manager6/sdn/fabrics/NodeEdit.js:205
 #: pve-manager/www/manager6/sdn/fabrics/NodeEdit.js:224
+#: pve-manager/www/manager6/storage/wizard/NodeIdentities.js:14
 #: pve-manager/www/manager6/window/DirMapEdit.js:150
+#: pve-manager/www/manager6/window/SANLunState.js:77
 #: pve-manager/www/manager6/window/Settings.js:197
 #: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:616
 #: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:634
@@ -13552,12 +13965,17 @@ msgstr[2] "Ukloni '{0}'"
 msgid "Node Firewall - {0}/{1}"
 msgstr "Vatrozid"
 
+#: pve-manager/www/manager6/ha/Status.js:205
+#, fuzzy
+msgid "Node Maintenance"
+msgstr "Održavanje"
+
 #: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:580
 #, fuzzy
 msgid "Node Panels"
 msgstr "Postavi Status"
 
-#: proxmox-datacenter-manager/ui/src/administration/mod.rs:77
+#: proxmox-datacenter-manager/ui/src/administration/mod.rs:86
 #: proxmox-yew-comp/src/node_status_panel.rs:239
 #, fuzzy
 msgid "Node Status"
@@ -13568,7 +13986,7 @@ msgstr "Postavi Status"
 msgid "Node Subscription Status"
 msgstr "Pretplate"
 
-#: pve-manager/www/manager6/Utils.js:2310
+#: pve-manager/www/manager6/Utils.js:2330
 #, fuzzy
 msgid "Node fencing notifications"
 msgstr "Iz konfiguracije sigurnosne kopije"
@@ -13602,8 +14020,10 @@ msgid "Nodename"
 msgstr "Naziv čvora"
 
 #: pmg-gui/js/ClusterAdministration.js:378
-#: pve-manager/www/manager6/dc/Health.js:104
+#: pve-manager/www/manager6/dc/Health.js:110
+#: pve-manager/www/manager6/dc/MultipathWwidEdit.js:43
 #: pve-manager/www/manager6/dc/NodeView.js:7
+#: pve-manager/www/manager6/dc/SAN.js:133
 #: pve-manager/www/manager6/form/StorageSelector.js:51
 #: pve-manager/www/manager6/form/VMCPUFlagSelector.js:317
 #: pve-manager/www/manager6/ha/rules/NodeAffinityRules.js:30
@@ -13611,6 +14031,7 @@ msgstr "Naziv čvora"
 #: pve-manager/www/manager6/sdn/controllers/EvpnEdit.js:98
 #: pve-manager/www/manager6/sdn/zones/Base.js:44
 #: pve-manager/www/manager6/storage/Base.js:22
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:173
 #: pve-manager/www/manager6/tree/ResourceTree.js:14
 #: proxmox-datacenter-manager/ui/src/remotes/config.rs:381
 #: proxmox-datacenter-manager/ui/src/dashboard/node_status_panel.rs:167
@@ -13641,7 +14062,7 @@ msgstr "Upotreba memorije glavnog računala"
 msgid "Non production-ready repository enabled!"
 msgstr "Omogućeno spremište koje nije za produkciju!"
 
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:783
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:813
 #, fuzzy
 msgid "Non-production-ready repositories enabled"
 msgstr "Omogućeno spremište koje nije za produkciju!"
@@ -13748,6 +14169,17 @@ msgstr "Nema dostupnih ažuriranja."
 msgid "Not configured"
 msgstr "Nije konfigurirano"
 
+#: pve-manager/www/manager6/SANUtils.js:143
+#, fuzzy
+msgid "Not connected"
+msgstr "Isključeno"
+
+#: pve-manager/www/manager6/SANUtils.js:115
+#, fuzzy
+#| msgid "Not Labeled"
+msgid "Not enabled"
+msgstr "Nije označeno"
+
 #: proxmox-backup/www/Utils.js:305
 msgid "Not enough data"
 msgstr "Nema dovoljno podataka"
@@ -13767,8 +14199,12 @@ msgid ""
 "be matched."
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:614
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:644
 msgid "Not polled yet"
+msgstr ""
+
+#: pve-manager/www/manager6/window/SANLunState.js:89
+msgid "Not reported by the node yet; the SAN view shows that as \"Missing\"."
 msgstr ""
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:44
@@ -13793,8 +14229,11 @@ msgstr "Napomena"
 msgid "Note Template"
 msgstr "Predložak bilješke"
 
-#: pmg-gui/js/TFAView.js:74 pve-manager/www/manager6/dc/OptionView.js:222
+#: pmg-gui/js/TFAView.js:74 pve-manager/www/manager6/SANUtils.js:199
+#: pve-manager/www/manager6/dc/OptionView.js:222
 #: pve-manager/www/manager6/dc/OptionView.js:299
+#: pve-manager/www/manager6/storage/wizard/IScsi.js:229
+#: pve-manager/www/manager6/storage/wizard/LunSelect.js:100
 #: proxmox-backup/www/config/WebauthnView.js:129
 msgid "Note:"
 msgstr "Napomena:"
@@ -13809,7 +14248,7 @@ msgstr ""
 "Ako nešto pođe krivo tijekom vraćanja sigurnosne kopije uživo, novi podaci "
 "zapisani sa VM-om mogu biti izgubljeni."
 
-#: pve-manager/www/manager6/window/Restore.js:317
+#: pve-manager/www/manager6/window/Restore.js:383
 msgid ""
 "Note: If anything goes wrong during the live-restore, new data written by "
 "the VM may be lost."
@@ -13923,7 +14362,7 @@ msgid "Notification system"
 msgstr "Obavijest"
 
 #: pve-manager/www/manager6/dc/Backup.js:482
-#: pve-manager/www/manager6/dc/Config.js:453
+#: pve-manager/www/manager6/dc/Config.js:464
 #: proxmox-backup/www/NavigationTree.js:84
 #: proxmox-backup/www/datastore/OptionView.js:198
 #: proxmox-backup/www/tape/window/TapeBackupJob.js:223
@@ -13958,7 +14397,7 @@ msgstr "Osvježi"
 msgid "Number"
 msgstr "Broj"
 
-#: pve-manager/www/manager6/node/LVM.js:107
+#: pve-manager/www/manager6/node/LVM.js:112
 msgid "Number of LVs"
 msgstr "Broj LV-ova"
 
@@ -13978,6 +14417,7 @@ msgstr ""
 #: proxmox-widget-toolkit/src/window/ConsentModal.js:33
 #: proxmox-widget-toolkit/src/window/Edit.js:317 pmg-gui/js/LoginView.js:190
 #: pmg-gui/js/RegexTester.js:49 pmg-gui/js/Utils.js:938
+#: pve-manager/www/manager6/SANUtils.js:132
 #: pve-manager/www/manager6/Utils.js:330
 #: pve-manager/www/manager6/grid/Replication.js:358
 #: proxmox-backup/www/Utils.js:234
@@ -13998,6 +14438,14 @@ msgstr ""
 #: proxmox-yew-comp/src/node_status_panel.rs:142
 msgid "OK"
 msgstr "U redu"
+
+#: pve-manager/www/manager6/dc/SAN.js:346
+msgid "OK (1 path on {0})"
+msgstr ""
+
+#: pve-manager/www/manager6/SANUtils.js:134
+msgid "OK (1 path)"
+msgstr ""
 
 #: pve-manager/www/manager6/qemu/CreateWizard.js:227
 msgid "OS"
@@ -14045,9 +14493,9 @@ msgstr ""
 msgid "OVMF is built without LSI drivers, scsi hardware was set to '{1}'"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:163
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:183
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:297
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:169
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:189
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:303
 msgid "OVS options"
 msgstr "OVS opcije"
 
@@ -14068,7 +14516,7 @@ msgstr ""
 msgid "Off"
 msgstr "Izvan mreže"
 
-#: pve-manager/www/manager6/dc/Health.js:114
+#: pve-manager/www/manager6/dc/Health.js:120
 #: pve-manager/www/manager6/window/Migrate.js:46
 #: proxmox-backup/www/Utils.js:886 proxmox-backup/www/tape/TapeInventory.js:315
 #: proxmox-backup/www/window/MaintenanceOptions.js:8
@@ -14112,6 +14560,12 @@ msgstr ""
 msgid "On"
 msgstr "Uključeno"
 
+#: pve-manager/www/manager6/node/LVM.js:47
+msgid ""
+"On a SAN LUN, Add Storage creates a shared storage for all nodes. For "
+"multipath or a node restriction, use Guided Setup in {0}."
+msgstr ""
+
 #: pve-manager/www/manager6/form/NotificationPolicySelector.js:6
 msgid "On failure only"
 msgstr "Samo pri neuspjehu"
@@ -14124,6 +14578,12 @@ msgstr ""
 #, fuzzy
 msgid "On match next"
 msgstr "Nije pronađeno podudaranje"
+
+#: pve-manager/www/manager6/storage/wizard/NodeIdentities.js:71
+msgid ""
+"On the array, allow the initiator names of the nodes that will use the "
+"target."
+msgstr ""
 
 #: proxmox-backup/www/tape/TapeInventory.js:116
 #: proxmox-backup/www/tape/TapeInventory.js:315
@@ -14169,7 +14629,7 @@ msgstr[0] "Spremište"
 msgstr[1] "Spremište"
 msgstr[2] "Spremište"
 
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:713
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:743
 msgid "One update pending"
 msgid_plural "{n} updates pending"
 msgstr[0] ""
@@ -14177,7 +14637,7 @@ msgstr[1] ""
 msgstr[2] ""
 
 #: pve-manager/www/manager6/data/ResourceStore.js:105
-#: pve-manager/www/manager6/dc/Health.js:108
+#: pve-manager/www/manager6/dc/Health.js:114
 #: pve-manager/www/manager6/dc/NodeView.js:25
 #: pve-manager/www/manager6/window/Migrate.js:41
 #: proxmox-backup/www/tape/TapeInventory.js:318
@@ -14334,6 +14794,11 @@ msgstr "OpenID Poslužitelj"
 msgid "OpenTelemetry Server"
 msgstr "OpenID Poslužitelj"
 
+#: pve-manager/www/manager6/SANUtils.js:133
+#, fuzzy
+msgid "Optimal"
+msgstr "Opcija"
+
 #: pve-manager/www/manager6/ceph/Pool.js:352
 msgid "Optimal # of PGs"
 msgstr "Optimalan broj PG-ova"
@@ -14372,12 +14837,12 @@ msgstr ""
 #: pmg-gui/js/SystemConfiguration.js:51
 #: pmg-gui/js/VirusDetectorConfiguration.js:12
 #: pve-manager/www/manager6/dc/Config.js:119
-#: pve-manager/www/manager6/dc/Config.js:283
-#: pve-manager/www/manager6/dc/Config.js:358
+#: pve-manager/www/manager6/dc/Config.js:294
+#: pve-manager/www/manager6/dc/Config.js:369
 #: pve-manager/www/manager6/lxc/Config.js:287
 #: pve-manager/www/manager6/lxc/Config.js:351
-#: pve-manager/www/manager6/node/Config.js:230
-#: pve-manager/www/manager6/node/Config.js:330
+#: pve-manager/www/manager6/node/Config.js:243
+#: pve-manager/www/manager6/node/Config.js:343
 #: pve-manager/www/manager6/node/Directory.js:124
 #: pve-manager/www/manager6/qemu/Config.js:331
 #: pve-manager/www/manager6/qemu/Config.js:404
@@ -14401,7 +14866,7 @@ msgstr "Opcije"
 msgid "Order"
 msgstr "Narudžba"
 
-#: pve-manager/www/manager6/Utils.js:2203 proxmox-backup/www/Utils.js:457
+#: pve-manager/www/manager6/Utils.js:2223 proxmox-backup/www/Utils.js:457
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:117
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:230
 msgid "Order Certificate"
@@ -14445,6 +14910,7 @@ msgid "Origin"
 msgstr "Porijeklo"
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:350
+#: pve-manager/www/manager6/SANUtils.js:178
 #: proxmox-backup/www/SystemConfiguration.js:58
 msgid "Other"
 msgstr "Ostalo"
@@ -14460,6 +14926,12 @@ msgstr ""
 #: proxmox-widget-toolkit/src/Utils.js:1440
 msgid "Other Error"
 msgstr "Druga pogreška"
+
+#: pve-manager/www/manager6/dc/SAN.js:181
+#, fuzzy
+#| msgid "Filter Value"
+msgid "Other Maps"
+msgstr "Vrijednost filtra"
 
 #: pve-manager/www/manager6/ceph/Services.js:217
 msgid ""
@@ -14503,6 +14975,12 @@ msgstr "Zastarjeli OSD-ovi"
 msgid "Outgoing"
 msgstr "Odlazni"
 
+#: pve-manager/www/manager6/sdn/StaticRoutes.js:42
+#, fuzzy
+#| msgid "Network Interfaces"
+msgid "Outgoing Interface"
+msgstr "Mrežna sučelja"
+
 #: pmg-gui/js/GeneralMailStatistics.js:129
 msgid "Outgoing Mail Traffic"
 msgstr "Promet odlazne pošte"
@@ -14535,18 +15013,24 @@ msgstr "Izlaz"
 #: pve-manager/www/manager6/grid/FirewallOptions.js:142
 #: pve-manager/www/manager6/grid/FirewallOptions.js:147
 #: pve-manager/www/manager6/grid/FirewallOptions.js:152
-#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:173
+#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:172
 msgid "Output Policy"
 msgstr "Politika izlaza"
 
-#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:126
+#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:125
 #, fuzzy
 msgid "Output log level"
 msgstr "Razina dnevnika zapisa"
 
-#: pve-manager/www/manager6/window/Restore.js:327
+#: pve-manager/www/manager6/window/Restore.js:393
 msgid "Override Settings"
 msgstr "Postavke premošćivanja"
+
+#: pve-manager/www/manager6/dc/SAN.js:35
+#, fuzzy
+#| msgid "No Overrides"
+msgid "Overrides"
+msgstr "Nema premošćivanja"
 
 #: pve-manager/www/manager6/window/GuestStop.js:44
 msgid "Overrule active shutdown tasks"
@@ -14561,7 +15045,7 @@ msgstr ""
 msgid "Overview"
 msgstr "Prebriši"
 
-#: pve-manager/www/manager6/window/Restore.js:390
+#: pve-manager/www/manager6/window/Restore.js:456
 #: proxmox-backup/www/tape/form/RetentionSelector.js:7
 msgid "Overwrite"
 msgstr "Prebriši"
@@ -14580,7 +15064,7 @@ msgstr "Prepiši postojeću datoteku"
 msgid "Overwrite in-use marker"
 msgstr "Prebriši"
 
-#: pve-manager/www/manager6/window/Migrate.js:685
+#: pve-manager/www/manager6/window/Migrate.js:714
 msgid "Overwrite local resources unavailable check"
 msgstr ""
 
@@ -14615,7 +15099,7 @@ msgstr "Način odabira"
 msgid "PCI Device"
 msgstr "PCI uređaj"
 
-#: pve-manager/www/manager6/dc/Config.js:424
+#: pve-manager/www/manager6/dc/Config.js:435
 msgid "PCI Devices"
 msgstr "PCI uređaji"
 
@@ -14701,7 +15185,7 @@ msgstr "Inačice paketa"
 msgid "Package names"
 msgstr "Ažuriranja paketa"
 
-#: pve-manager/www/manager6/Utils.js:2307 proxmox-backup/www/Utils.js:516
+#: pve-manager/www/manager6/Utils.js:2327 proxmox-backup/www/Utils.js:516
 #, fuzzy
 msgid "Package updates are available"
 msgstr "Nema dostupnih ažuriranja."
@@ -14821,6 +15305,7 @@ msgstr "Ovdje zalijepi kodirane podatke o klasteru"
 #: pve-manager/www/manager6/dc/USBMapView.js:82
 #: pve-manager/www/manager6/lxc/MPEdit.js:253
 #: pve-manager/www/manager6/node/Directory.js:109
+#: pve-manager/www/manager6/node/SANLuns.js:19
 #: pve-manager/www/manager6/sdn/VnetACLView.js:20
 #: pve-manager/www/manager6/storage/BTRFSEdit.js:14
 #: pve-manager/www/manager6/window/DirMapEdit.js:181
@@ -14877,7 +15362,7 @@ msgstr "Mora početi s"
 msgid "Path on Device"
 msgstr "S uređaja"
 
-#: pve-manager/www/manager6/Utils.js:2256
+#: pve-manager/www/manager6/Utils.js:2276
 #: pve-manager/www/manager6/qemu/CmdMenu.js:68
 #: pve-manager/www/manager6/qemu/Config.js:181
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/dashboard_panel.rs:213
@@ -14920,6 +15405,13 @@ msgstr "Peer root lozinka"
 msgid "Peers"
 msgstr "Peer-ovi"
 
+#: pve-manager/www/manager6/SANUtils.js:116
+#: pve-manager/www/manager6/window/SANLunState.js:92
+#, fuzzy
+#| msgid "pending"
+msgid "Pending"
+msgstr "na čekanju"
+
 #: pve-manager/www/manager6/Utils.js:221
 msgid "Pending Changes"
 msgstr "Promjene na čekanju"
@@ -14939,7 +15431,7 @@ msgstr "Promjene na čekanju"
 msgid "Pending SDN configuration changes"
 msgstr "Primijeni Konfiguraciju"
 
-#: proxmox-widget-toolkit/src/node/NetworkView.js:431
+#: proxmox-widget-toolkit/src/node/NetworkView.js:432
 #: pmg-gui/js/SpamDetectorCustom.js:310
 msgid "Pending changes"
 msgstr "Promjene na čekanju"
@@ -14985,13 +15477,13 @@ msgstr "Trajno zaboravi snimku '{0}'"
 msgid "Permission"
 msgstr "Dozvola"
 
-#: pve-manager/www/manager6/dc/Config.js:151
+#: pve-manager/www/manager6/dc/Config.js:162
 #: pve-manager/www/manager6/dc/UserView.js:92
 #: pve-manager/www/manager6/lxc/Config.js:393
 #: pve-manager/www/manager6/pool/Config.js:34
 #: pve-manager/www/manager6/qemu/Config.js:446
 #: pve-manager/www/manager6/sdn/Browser.js:44
-#: pve-manager/www/manager6/sdn/NetworkBrowser.js:109
+#: pve-manager/www/manager6/sdn/NetworkBrowser.js:111
 #: pve-manager/www/manager6/storage/Browser.js:197
 #: proxmox-backup/www/config/ACLView.js:27
 #: proxmox-backup/www/panel/AccessControl.js:36
@@ -15075,6 +15567,7 @@ msgid "Please enter one of your single-use recovery keys"
 msgstr "Molimo unesite jedan od svojih jednokratnih ključeva za oporavak"
 
 #: proxmox-widget-toolkit/src/window/ConfirmRemoveDialog.js:169
+#: pve-manager/www/manager6/window/SANLunWipe.js:55
 msgid "Please enter the ID to confirm"
 msgstr "Molimo unesite ID za potvrdu"
 
@@ -15252,8 +15745,8 @@ msgstr "Skup za sigurnosno kopiranje"
 msgid "Pool/Media-Set/Snapshot"
 msgstr "Skup/Media-Set/Snimak"
 
-#: pve-manager/www/manager6/dc/Config.js:196
-#: pve-manager/www/manager6/node/Config.js:422
+#: pve-manager/www/manager6/dc/Config.js:207
+#: pve-manager/www/manager6/node/Config.js:459
 #: proxmox-datacenter-manager/ui/src/ceph/cluster.rs:181
 #: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:179
 msgid "Pools"
@@ -15281,14 +15774,21 @@ msgid "Port"
 msgstr "Priključak"
 
 #: pve-manager/www/manager6/storage/ZFSEdit.js:45
+#: pve-manager/www/manager6/storage/wizard/IScsi.js:177
 msgid "Portal"
+msgstr "Portal"
+
+#: pve-manager/www/manager6/storage/wizard/IScsi.js:212
+#, fuzzy
+#| msgid "Portal"
+msgid "Portals"
 msgstr "Portal"
 
 #: pmg-gui/js/MailProxyConfiguration.js:23
 msgid "Ports"
 msgstr "Priključci"
 
-#: proxmox-widget-toolkit/src/node/NetworkView.js:339
+#: proxmox-widget-toolkit/src/node/NetworkView.js:340
 #: proxmox-yew-comp/src/configuration/network_view.rs:477
 msgid "Ports/Slaves"
 msgstr "Priključci/Slaves"
@@ -15394,7 +15894,7 @@ msgstr ""
 #. TRANSLATORS: Refers to an FRR prefix list, some
 #. languages may prefer to keep "prefix list" as-is:
 #. https://docs.frrouting.org/en/latest/filter.html#ip-prefix-list
-#: pve-manager/www/manager6/dc/Config.js:329
+#: pve-manager/www/manager6/dc/Config.js:340
 msgid "Prefix Lists"
 msgstr ""
 
@@ -15424,6 +15924,13 @@ msgstr ""
 
 #: pve-manager/www/manager6/lxc/MPEdit.js:349
 msgid "Preserve ownership and permissions of mount point directory"
+msgstr ""
+
+#. TRANSLATORS: {0} is the label of the Next button.
+#: pve-manager/www/manager6/storage/wizard/IScsi.js:233
+msgid ""
+"Pressing {0} creates or reuses the connection storage before you select a "
+"LUN."
 msgstr ""
 
 #: proxmox-widget-toolkit/src/window/SyncWindow.js:146
@@ -15489,7 +15996,7 @@ msgstr "Prioritet"
 msgid "Private Key (Optional)"
 msgstr "Privatni Ključ (Opcionalno)"
 
-#: pve-manager/www/manager6/window/Restore.js:262
+#: pve-manager/www/manager6/window/Restore.js:328
 msgid "Privilege Level"
 msgstr "Razina privilegije"
 
@@ -15498,7 +16005,7 @@ msgstr "Razina privilegije"
 msgid "Privilege Separation"
 msgstr "Razdvajanje privilegija"
 
-#: pve-manager/www/manager6/window/Restore.js:295
+#: pve-manager/www/manager6/window/Restore.js:361
 msgid "Privileged"
 msgstr "Privilegirani"
 
@@ -15521,6 +16028,12 @@ msgstr "Daljinski izvor"
 msgid "Process ID"
 msgstr "ID Procesa"
 
+#: pve-manager/www/manager6/SANUtils.js:172
+#, fuzzy
+#| msgid "Process ID"
+msgid "Process {0}"
+msgstr "ID Procesa"
+
 #: pmg-gui/js/controller/QuarantineController.js:137
 msgid "Processing..."
 msgstr "Obrada..."
@@ -15530,7 +16043,7 @@ msgstr "Obrada..."
 msgid "Processor"
 msgstr "Procesori"
 
-#: pve-manager/www/manager6/panel/TemplateStatusView.js:40
+#: pve-manager/www/manager6/panel/TemplateStatusView.js:43
 #: pve-manager/www/manager6/qemu/HardwareView.js:111
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:291
 msgid "Processors"
@@ -15550,7 +16063,7 @@ msgstr "Proizvod"
 msgid "Production-ready Enterprise repository enabled"
 msgstr "Enterprise spremište omogućeno za produkciju"
 
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:770
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:800
 #, fuzzy
 msgid "Production-ready enterprise repository enabled"
 msgstr "Enterprise spremište omogućeno za produkciju"
@@ -15575,6 +16088,7 @@ msgstr "Upit"
 #: pve-manager/www/manager6/dc/ACLView.js:63
 #: pve-manager/www/manager6/dc/ACLView.js:150
 #: pve-manager/www/manager6/dc/PermissionView.js:33
+#: pve-manager/www/manager6/grid/PoolMembers.js:264
 #: proxmox-backup/www/config/ACLView.js:203
 #: proxmox-backup/www/window/ACLEdit.js:59
 #: proxmox-yew-comp/src/acl/acl_edit.rs:89
@@ -15772,6 +16286,8 @@ msgstr "Naknadno obrišite starije sigurnosne kopije"
 msgid "Prunes"
 msgstr "Pročišćavanja"
 
+#: pve-manager/www/manager6/sdn/FabricsContentView.js:67
+#: pve-manager/www/manager6/sdn/FabricsContentView.js:160
 #: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:338
 #: pve-manager/www/manager6/sdn/fabrics/wireguard/NodeEdit.js:47
 #, fuzzy
@@ -15809,7 +16325,7 @@ msgstr "Vrsta Javnog Ključa"
 msgid "Pull"
 msgstr "Izvuci datoteku"
 
-#: pve-manager/www/manager6/Utils.js:2247
+#: pve-manager/www/manager6/Utils.js:2267
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:159
 msgid "Pull file"
 msgstr "Izvuci datoteku"
@@ -15851,7 +16367,7 @@ msgid ""
 "from nodes pending clear."
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2248
+#: pve-manager/www/manager6/Utils.js:2268
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:160
 msgid "Push file"
 msgstr "Push datoteka"
@@ -15939,6 +16455,12 @@ msgstr ""
 msgid "Queue Administration"
 msgstr "Administracija reda čekanja"
 
+#: pve-manager/www/manager6/dc/MultipathWwidEdit.js:60
+#, fuzzy
+#| msgid "Queues"
+msgid "Queue I/O"
+msgstr "Redovi"
+
 #: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1224
 msgid "Queue a clear of {key} on {remote}/{node}?"
 msgstr ""
@@ -15958,7 +16480,7 @@ msgstr ""
 msgid "Queues"
 msgstr "Redovi"
 
-#: pve-manager/www/manager6/dc/Health.js:44
+#: pve-manager/www/manager6/dc/Health.js:45
 msgid "Quorate"
 msgstr "Kvorum postignut"
 
@@ -16156,8 +16678,8 @@ msgstr "Čita"
 #: proxmox-widget-toolkit/src/window/AuthEditOpenId.js:37
 #: proxmox-widget-toolkit/src/window/AuthEditSimple.js:15
 #: pmg-gui/js/AuthEditOIDC.js:85 pmg-gui/js/UserView.js:178
-#: pve-manager/www/manager6/Utils.js:2209
-#: pve-manager/www/manager6/Utils.js:2210
+#: pve-manager/www/manager6/Utils.js:2229
+#: pve-manager/www/manager6/Utils.js:2230
 #: pve-manager/www/manager6/dc/AuthEditBase.js:43
 #: pve-manager/www/manager6/dc/AuthView.js:17
 #: pve-manager/www/manager6/dc/RealmSyncJob.js:118
@@ -16190,11 +16712,11 @@ msgstr "Sinkroniziraj izvor Autentikacije"
 msgid "Realm Sync Job"
 msgstr "Posao sinkronizacije izvora autentikacije"
 
-#: pve-manager/www/manager6/dc/Config.js:225
+#: pve-manager/www/manager6/dc/Config.js:236
 msgid "Realm Sync Jobs"
 msgstr "Poslovi sinkronizacije izvora autentikacije"
 
-#: pmg-gui/js/UserManagement.js:38 pve-manager/www/manager6/dc/Config.js:209
+#: pmg-gui/js/UserManagement.js:38 pve-manager/www/manager6/dc/Config.js:220
 #: proxmox-backup/www/panel/AccessControl.js:43
 #: proxmox-datacenter-manager/ui/src/configuration/mod.rs:138
 msgid "Realms"
@@ -16249,8 +16771,8 @@ msgstr "Rebalans"
 msgid "Rebalancing: {0}"
 msgstr "Rebalans"
 
-#: pve-manager/www/manager6/Utils.js:2257
-#: pve-manager/www/manager6/Utils.js:2287
+#: pve-manager/www/manager6/Utils.js:2277
+#: pve-manager/www/manager6/Utils.js:2307
 #: pve-manager/www/manager6/lxc/CmdMenu.js:81
 #: pve-manager/www/manager6/lxc/Config.js:69
 #: pve-manager/www/manager6/node/Config.js:102
@@ -16336,6 +16858,11 @@ msgstr ""
 msgid "Recipients"
 msgstr ""
 
+#: pve-manager/www/manager6/SANUtils.js:142
+#, fuzzy
+msgid "Reconnecting"
+msgstr "Greška veze"
+
 #: proxmox-backup/www/window/ZFSCreate.js:78
 #, fuzzy
 msgid "Record Size"
@@ -16383,9 +16910,10 @@ msgid "Referenced disks will always be destroyed."
 msgstr "Referentni diskovi će uvijek biti uništeni."
 
 #: proxmox-widget-toolkit/src/node/APT.js:126
-#: pve-manager/www/manager6/Utils.js:2204
+#: pve-manager/www/manager6/Utils.js:2224
 #: proxmox-yew-comp/src/apt_package_manager.rs:284
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:118
+#: proxmox-yew-widget-toolkit/src/widget/button.rs:137
 msgid "Refresh"
 msgstr "Osvježi"
 
@@ -16450,7 +16978,7 @@ msgid "Region"
 msgstr ""
 
 #: proxmox-widget-toolkit/src/window/ACMEAccount.js:12
-#: pve-manager/www/manager6/Utils.js:2205
+#: pve-manager/www/manager6/Utils.js:2225
 #: pve-manager/www/manager6/node/ACME.js:9
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:119
 msgid "Register"
@@ -16475,6 +17003,12 @@ msgstr "Registrirajte Webauthn Uređaj"
 #: proxmox-backup/www/Utils.js:453
 msgid "Register {0} Account"
 msgstr "Registrirajte {0} račun"
+
+#: pve-manager/www/manager6/panel/GuestIdentity.js:38
+#, fuzzy
+#| msgid "Register"
+msgid "Registered"
+msgstr "Registracija"
 
 #: pve-manager/www/manager6/dc/OptionView.js:767
 #: pve-manager/www/manager6/dc/RegisteredTagsEdit.js:5
@@ -16559,13 +17093,16 @@ msgstr ""
 #: pmg-gui/js/PBSSnapshotView.js:292 pve-manager/www/manager6/ceph/OSD.js:1322
 #: pve-manager/www/manager6/ceph/OSDDetails.js:114
 #: pve-manager/www/manager6/node/Directory.js:140
-#: pve-manager/www/manager6/node/LVM.js:142
+#: pve-manager/www/manager6/node/ISCSITargets.js:126
+#: pve-manager/www/manager6/node/LVM.js:147
 #: pve-manager/www/manager6/node/LVMThin.js:171
+#: pve-manager/www/manager6/node/SANLuns.js:155
 #: pve-manager/www/manager6/node/ZFS.js:277
 #: pve-manager/www/manager6/sdn/FabricsView.js:217
 #: pve-manager/www/manager6/sdn/PrefixListPanel.js:157
 #: pve-manager/www/manager6/sdn/RouteMapPanel.js:976
-#: pve-manager/www/manager6/tree/DhcpTree.js:191
+#: pve-manager/www/manager6/storage/wizard/LunSelect.js:167
+#: pve-manager/www/manager6/tree/DhcpTree.js:193
 #: proxmox-backup/www/DirectoryList.js:73 proxmox-backup/www/ZFSList.js:112
 #: proxmox-backup/www/datastore/Content.js:1445
 #: proxmox-backup/www/tape/BackupOverview.js:305
@@ -16583,7 +17120,7 @@ msgstr "Ponovo učitaj"
 msgid "Reload Realms"
 msgstr "Izvori autentikacije"
 
-#: pve-manager/www/manager6/Utils.js:2269
+#: pve-manager/www/manager6/Utils.js:2289
 #, fuzzy
 msgid "Reload network configuration on all nodes"
 msgstr "Nije moguće analizirati konfiguraciju mreže"
@@ -16679,7 +17216,7 @@ msgstr "Udaljena pohrana"
 
 #: proxmox-backup/www/NavigationTree.js:54
 #: proxmox-backup/www/config/RemoteView.js:39
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:394
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:398
 #: proxmox-datacenter-manager/ui/src/dashboard/remote_panel.rs:152
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/evpn_panel.rs:224
 msgid "Remotes"
@@ -16715,13 +17252,14 @@ msgstr "Zakazano uklanjanje"
 #: pmg-gui/js/DNSBLSitesField.js:141 pmg-gui/js/PostfixMailQueue.js:152
 #: pmg-gui/js/RuleConfiguration.js:167 pmg-gui/js/RuleInfo.js:377
 #: pmg-gui/js/UserBlockWelcomeList.js:167
-#: pve-manager/www/manager6/Utils.js:2232
-#: pve-manager/www/manager6/Utils.js:2241
-#: pve-manager/www/manager6/Utils.js:2243
-#: pve-manager/www/manager6/Utils.js:2299
+#: pve-manager/www/manager6/Utils.js:2252
+#: pve-manager/www/manager6/Utils.js:2261
+#: pve-manager/www/manager6/Utils.js:2263
+#: pve-manager/www/manager6/Utils.js:2319
 #: pve-manager/www/manager6/dc/ACLView.js:160
+#: pve-manager/www/manager6/dc/SAN.js:239
 #: pve-manager/www/manager6/form/TagColorGrid.js:283
-#: pve-manager/www/manager6/grid/PoolMembers.js:207
+#: pve-manager/www/manager6/grid/PoolMembers.js:325
 #: pve-manager/www/manager6/ha/Resources.js:78
 #: pve-manager/www/manager6/lxc/Config.js:164
 #: pve-manager/www/manager6/lxc/Network.js:499
@@ -16734,6 +17272,7 @@ msgstr "Zakazano uklanjanje"
 #: pve-manager/www/manager6/sdn/PrefixListPanel.js:149
 #: pve-manager/www/manager6/sdn/PrefixListPanel.js:266
 #: pve-manager/www/manager6/sdn/RouteMapPanel.js:968
+#: pve-manager/www/manager6/sdn/StaticRoutes.js:206
 #: pve-manager/www/manager6/sdn/VnetACLView.js:184
 #: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:233
 #: pve-manager/www/manager6/storage/ImageView.js:33
@@ -16937,6 +17476,11 @@ msgid ""
 "Uncheck to keep the namespace structure."
 msgstr ""
 
+#: pve-manager/www/manager6/dc/SAN.js:245
+msgid ""
+"Remove the multipath entry for {0}? Existing multipath maps are not removed."
+msgstr ""
+
 #: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:314
 msgid ""
 "Remove the selected key from the pool. Disabled while the key is live on a "
@@ -16997,7 +17541,7 @@ msgstr ""
 msgid "Removed Data"
 msgstr "Ukloni pohranu podataka"
 
-#: pve-manager/www/manager6/Utils.js:2206 proxmox-backup/www/Utils.js:458
+#: pve-manager/www/manager6/Utils.js:2226 proxmox-backup/www/Utils.js:458
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:120
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:231
 msgid "Renew Certificate"
@@ -17007,9 +17551,9 @@ msgstr "Obnovi certifikat"
 msgid "Repeat missed"
 msgstr "Ponavljanje propušteno"
 
-#: pve-manager/www/manager6/dc/Config.js:146
+#: pve-manager/www/manager6/dc/Config.js:157
 #: pve-manager/www/manager6/lxc/Config.js:313
-#: pve-manager/www/manager6/node/Config.js:430
+#: pve-manager/www/manager6/node/Config.js:467
 #: pve-manager/www/manager6/qemu/Config.js:366
 msgid "Replication"
 msgstr "Replikacija"
@@ -17027,7 +17571,7 @@ msgstr "Dnevnik replikacije"
 msgid "Replication Settings"
 msgstr "Postavke migracije"
 
-#: pve-manager/www/manager6/Utils.js:2309
+#: pve-manager/www/manager6/Utils.js:2329
 #, fuzzy
 msgid "Replication job notifications"
 msgstr "Posao replikacije"
@@ -17037,9 +17581,9 @@ msgid "Replication needs at least two nodes"
 msgstr "Replikaciji su potrebna najmanje dva čvora"
 
 #: pmg-gui/js/ServerAdministration.js:56
-#: pve-manager/www/manager6/node/Config.js:293
+#: pve-manager/www/manager6/node/Config.js:306
 #: proxmox-backup/www/ServerAdministration.js:75
-#: proxmox-datacenter-manager/ui/src/administration/mod.rs:102
+#: proxmox-datacenter-manager/ui/src/administration/mod.rs:112
 msgid "Repositories"
 msgstr "Spremišta"
 
@@ -17061,7 +17605,7 @@ msgstr "Status Spremišta"
 msgid "Repository for CLI and API"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:759
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:789
 msgid "Repository status unknown, could not fetch update data"
 msgstr ""
 
@@ -17143,10 +17687,14 @@ msgstr ""
 msgid "Requires '{0}' Privileges"
 msgstr "Zahtijeva '{0}' privilegije"
 
+#: pve-manager/www/manager6/sdn/zones/SimpleEdit.js:17
+msgid "Requires a dedicated VRF"
+msgstr ""
+
 #: proxmox-widget-toolkit/src/panel/JournalView.js:636
 #: proxmox-widget-toolkit/src/panel/NotificationConfigView.js:11
 #: pmg-gui/js/Settings.js:160 pmg-gui/js/Settings.js:181
-#: pmg-gui/js/Settings.js:282 pve-manager/www/manager6/Utils.js:2258
+#: pmg-gui/js/Settings.js:282 pve-manager/www/manager6/Utils.js:2278
 #: pve-manager/www/manager6/qemu/CmdMenu.js:115
 #: pve-manager/www/manager6/qemu/Config.js:217
 #: pve-manager/www/manager6/window/Settings.js:235
@@ -17184,7 +17732,7 @@ msgstr "Koristi {0}"
 msgid "Reset {0} immediately"
 msgstr "Resetiraj {0} odmah"
 
-#: pve-manager/www/manager6/Utils.js:2268
+#: pve-manager/www/manager6/Utils.js:2288
 #: pve-manager/www/manager6/lxc/Resources.js:278
 #: pve-manager/www/manager6/qemu/HardwareView.js:565
 #: proxmox-yew-comp/src/configuration/pve/lxc_resources_panel/desktop.rs:278
@@ -17221,7 +17769,7 @@ msgstr "Ime Korisničkog Atributa"
 msgid "Resource ID"
 msgstr "Resurs"
 
-#: pve-manager/www/manager6/dc/Config.js:409
+#: pve-manager/www/manager6/dc/Config.js:420
 msgid "Resource Mappings"
 msgstr "Mapiranje resursa"
 
@@ -17252,7 +17800,7 @@ msgid "Resource Usage"
 msgstr "Resursi"
 
 #: pve-manager/www/manager6/dc/Summary.js:26
-#: pve-manager/www/manager6/ha/Status.js:177
+#: pve-manager/www/manager6/ha/Status.js:287
 #: pve-manager/www/manager6/lxc/Config.js:268
 #: pve-manager/www/manager6/lxc/DNS.js:71
 #: proxmox-datacenter-manager/ui/src/dashboard/resource_tree.rs:51
@@ -17293,12 +17841,12 @@ msgstr "Molimo ponovno pokrenite pmg-smtp-filter da aktivirate promjene"
 #: pmg-gui/js/BackupRestore.js:21 pmg-gui/js/BackupRestore.js:24
 #: pmg-gui/js/BackupRestore.js:100 pmg-gui/js/BackupRestore.js:140
 #: pmg-gui/js/PBSSnapshotView.js:260 pmg-gui/js/Utils.js:909
-#: pve-manager/www/manager6/Utils.js:2259
-#: pve-manager/www/manager6/Utils.js:2288
+#: pve-manager/www/manager6/Utils.js:2279
+#: pve-manager/www/manager6/Utils.js:2308
 #: pve-manager/www/manager6/grid/BackupView.js:177
 #: pve-manager/www/manager6/storage/BackupView.js:84
-#: pve-manager/www/manager6/window/Restore.js:384
-#: pve-manager/www/manager6/window/Restore.js:409
+#: pve-manager/www/manager6/window/Restore.js:450
+#: pve-manager/www/manager6/window/Restore.js:475
 #: proxmox-backup/www/config/EncryptionKeysView.js:119
 #: proxmox-backup/www/tape/BackupOverview.js:317
 #: proxmox-backup/www/tape/BackupOverview.js:354
@@ -17342,8 +17890,8 @@ msgstr "Ograničenje prometa"
 msgid "Resulting Config"
 msgstr "Konfiguracija zadržavanja"
 
-#: pve-manager/www/manager6/Utils.js:2260
-#: pve-manager/www/manager6/Utils.js:2289
+#: pve-manager/www/manager6/Utils.js:2280
+#: pve-manager/www/manager6/Utils.js:2309
 #: pve-manager/www/manager6/qemu/CmdMenu.js:83
 #: pve-manager/www/manager6/qemu/Config.js:48
 #: proxmox-datacenter-manager/ui/src/guests.rs:772
@@ -17388,13 +17936,13 @@ msgstr "Ukloni pohranu podataka"
 msgid "Reverse DNS"
 msgstr "Reverzni DNS poslužitelj"
 
-#: pve-manager/www/manager6/sdn/zones/Base.js:70
+#: pve-manager/www/manager6/sdn/zones/Base.js:72
 #, fuzzy
 msgid "Reverse DNS Server"
 msgstr "Reverzni DNS poslužitelj"
 
 #: proxmox-widget-toolkit/src/node/HostsView.js:35
-#: proxmox-widget-toolkit/src/node/NetworkView.js:251
+#: proxmox-widget-toolkit/src/node/NetworkView.js:252
 #: pmg-gui/js/SpamDetectorCustom.js:293
 #: pve-manager/www/manager6/button/Revert.js:5
 #: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:937
@@ -17416,7 +17964,7 @@ msgstr "Promjene na čekanju"
 msgid "Review"
 msgstr "Pregled"
 
-#: pve-manager/www/manager6/Utils.js:2207 proxmox-backup/www/Utils.js:459
+#: pve-manager/www/manager6/Utils.js:2227 proxmox-backup/www/Utils.js:459
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:121
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:232
 msgid "Revoke Certificate"
@@ -17453,7 +18001,7 @@ msgstr "Uloga"
 msgid "Role Claim"
 msgstr "Član grupe"
 
-#: pve-manager/www/manager6/dc/Config.js:203
+#: pve-manager/www/manager6/dc/Config.js:214
 msgid "Roles"
 msgstr "Uloge"
 
@@ -17464,8 +18012,8 @@ msgid ""
 "during rollback (unless a QEMU snapshot includes its memory state)."
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:2261
-#: pve-manager/www/manager6/Utils.js:2290
+#: pve-manager/www/manager6/Utils.js:2281
+#: pve-manager/www/manager6/Utils.js:2310
 #: pve-manager/www/manager6/tree/SnapshotTree.js:263
 #: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:624
 #: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:767
@@ -17585,7 +18133,7 @@ msgstr ""
 #. TRANSLATORS: "Route map" refers to an FRR route map, some
 #. languages may prefer to keep it as-is:
 #. https://docs.frrouting.org/en/latest/routemap.html
-#: pve-manager/www/manager6/dc/Config.js:318
+#: pve-manager/www/manager6/dc/Config.js:329
 #, fuzzy
 msgid "Route Maps"
 msgstr "Mapiranje resursa"
@@ -17611,7 +18159,7 @@ msgstr "Resurs"
 msgid "Router Advertisement"
 msgstr "Oglašavanje usmjerivača"
 
-#: pve-manager/www/manager6/sdn/NetworkBrowser.js:34
+#: pve-manager/www/manager6/sdn/NetworkBrowser.js:35
 msgid "Routes"
 msgstr ""
 
@@ -17793,10 +18341,10 @@ msgstr "SCSI kontroler"
 msgid "SCSI Controller Type"
 msgstr "Vrsta SCSI kontrolera"
 
-#: pve-manager/www/manager6/dc/Config.js:258
+#: pve-manager/www/manager6/dc/Config.js:269
 #: pve-manager/www/manager6/form/IPRefSelector.js:77
 #: pve-manager/www/manager6/tree/ResourceTree.js:26
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:347
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:351
 msgid "SDN"
 msgstr "SDN"
 
@@ -17833,7 +18381,7 @@ msgstr "SMTP HELO provjere"
 msgid "SMTPD Banner"
 msgstr "SMTPD Natpis"
 
-#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:138
+#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:137
 #, fuzzy
 msgid "SMURF Log Level"
 msgstr "Razina dnevnika zapisa"
@@ -17867,7 +18415,7 @@ msgstr "SSH javni ključ"
 
 #: pmg-gui/js/dashboard/NodeInfo.js:67
 #: pve-manager/www/manager6/node/StatusView.js:82
-#: pve-manager/www/manager6/panel/GuestStatusView.js:136
+#: pve-manager/www/manager6/panel/GuestStatusView.js:139
 #: proxmox-backup/www/panel/NodeInfo.js:122
 #: proxmox-yew-comp/src/node_info.rs:228
 msgid "SWAP usage"
@@ -17897,7 +18445,7 @@ msgstr "Isto kao izvor"
 #: proxmox-widget-toolkit/src/window/NotificationMatcherEdit.js:1318
 #: proxmox-backup/www/window/TrafficControlEdit.js:413
 #: proxmox-yew-widget-toolkit/src/widget/form/date_field/date_panel.rs:251
-#: proxmox-yew-widget-toolkit/src/widget/calendar_grid.rs:855
+#: proxmox-yew-widget-toolkit/src/widget/calendar_grid.rs:877
 msgid "Sat"
 msgstr "Sub"
 
@@ -17948,6 +18496,7 @@ msgid "Scan for available storages on the selected node"
 msgstr "Skeniraj dostupne pohrane na odabranom čvoru"
 
 #: pve-manager/www/manager6/form/StorageScanNodeSelector.js:7
+#: pve-manager/www/manager6/storage/wizard/LunSelect.js:174
 msgid "Scan node"
 msgstr "Skeniraj čvor"
 
@@ -18049,12 +18598,16 @@ msgstr "Očisti OSD.{0}"
 #: pmg-gui/js/QuarantineList.js:380 pve-manager/www/manager6/dc/Backup.js:445
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:113
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:459
+#: pve-manager/www/manager6/dc/SAN.js:270
 #: pve-manager/www/manager6/form/GlobalSearchField.js:11
 #: pve-manager/www/manager6/grid/BackupView.js:128
 #: pve-manager/www/manager6/grid/ResourceGrid.js:108
+#: pve-manager/www/manager6/node/ISCSITargets.js:139
+#: pve-manager/www/manager6/node/SANLuns.js:193
 #: pve-manager/www/manager6/panel/ConfigPanel.js:218
 #: pve-manager/www/manager6/storage/ContentView.js:109
 #: pve-manager/www/manager6/storage/TemplateView.js:59
+#: pve-manager/www/manager6/storage/wizard/LunSelect.js:177
 #: proxmox-backup/www/config/SyncView.js:271
 #: proxmox-backup/www/datastore/Content.js:1496
 #: proxmox-datacenter-manager/ui/src/dashboard/resource_tree.rs:26
@@ -18138,7 +18691,7 @@ msgstr "Tajna"
 msgid "Section"
 msgstr "Odjeljak"
 
-#: pve-manager/www/manager6/dc/Config.js:368
+#: pve-manager/www/manager6/dc/Config.js:379
 #: pve-manager/www/manager6/dc/SecurityGroups.js:42
 #: pve-manager/www/manager6/dc/SecurityGroups.js:44
 #: pve-manager/www/manager6/form/SecurityGroupSelector.js:29
@@ -18213,8 +18766,8 @@ msgstr "Odaberi Vremenski Raspon"
 msgid "Select a node to check its subscription."
 msgstr "Imate najmanje jedan čvor bez pretplate."
 
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:621
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:636
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:651
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:666
 msgid "Select a node to show available updates."
 msgstr ""
 
@@ -18344,6 +18897,7 @@ msgstr "Slij. Br."
 #: proxmox-widget-toolkit/src/form/MultiDiskSelector.js:107
 #: proxmox-widget-toolkit/src/panel/DiskList.js:344
 #: proxmox-widget-toolkit/src/panel/DiskList.js:455
+#: pve-manager/www/manager6/node/SANLuns.js:125
 #: pve-manager/www/manager6/qemu/Smbios1Edit.js:63
 #: proxmox-backup/www/tape/ChangerConfig.js:127
 #: proxmox-backup/www/tape/ChangerStatus.js:913
@@ -18508,6 +19062,12 @@ msgstr "Service-VLAN Protolol"
 msgid "Services"
 msgstr "Usluge"
 
+#: pve-manager/www/manager6/node/ISCSITargets.js:26
+#, fuzzy
+#| msgid "Permission"
+msgid "Session ID"
+msgstr "Dozvola"
+
 #: pmg-gui/js/PBSConfig.js:8 pve-manager/www/manager6/sdn/RouteMapPanel.js:808
 #: pve-manager/www/manager6/sdn/RouteMapPanel.js:1025
 msgid "Set"
@@ -18539,6 +19099,12 @@ msgstr "Postavi Status"
 #: pmg-gui/js/AuthEditOIDC.js:98
 msgid "Set realm as default for login"
 msgstr ""
+
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:261
+#, fuzzy
+#| msgid "Settings"
+msgid "Setting"
+msgstr "Postavke"
 
 #: pmg-gui/js/MailProxyDKIMPanel.js:30 pmg-gui/js/MailProxyTLSPanel.js:21
 #: pve-manager/www/manager6/window/Snapshot.js:110
@@ -18596,7 +19162,7 @@ msgstr "Oblik stabla: {0}"
 #: pve-manager/www/manager6/dc/StorageView.js:254
 #: pve-manager/www/manager6/form/StorageSelector.js:60
 #: pve-manager/www/manager6/storage/DirEdit.js:32
-#: pve-manager/www/manager6/storage/LVMEdit.js:269
+#: pve-manager/www/manager6/storage/LVMEdit.js:275
 msgid "Shared"
 msgstr "Dijeljeno"
 
@@ -18607,15 +19173,15 @@ msgstr "Dijeli"
 
 #: proxmox-widget-toolkit/src/Utils.js:768
 #: proxmox-widget-toolkit/src/Utils.js:774
-#: pve-manager/www/manager6/Utils.js:2271
-#: pve-manager/www/manager6/Utils.js:2278
+#: pve-manager/www/manager6/Utils.js:2291
+#: pve-manager/www/manager6/Utils.js:2298
 #: pve-manager/www/manager6/node/CmdMenu.js:89
 #: pve-manager/www/manager6/node/Config.js:125
 #: pve-manager/www/manager6/node/Config.js:161
 #: proxmox-backup/www/NavigationTree.js:105
 #: proxmox-datacenter-manager/ui/src/main_menu.rs:312
 #: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:192
-#: proxmox-datacenter-manager/ui/src/pve/node/mod.rs:146
+#: proxmox-datacenter-manager/ui/src/pve/node/mod.rs:163
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:183
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:190
 msgid "Shell"
@@ -18790,9 +19356,9 @@ msgid "Showing flags for {0}"
 msgstr ""
 
 #: pmg-gui/js/ServerStatus.js:74 pmg-gui/js/ServerStatus.js:76
-#: pve-manager/www/manager6/Utils.js:2235
-#: pve-manager/www/manager6/Utils.js:2262
-#: pve-manager/www/manager6/Utils.js:2291
+#: pve-manager/www/manager6/Utils.js:2255
+#: pve-manager/www/manager6/Utils.js:2282
+#: pve-manager/www/manager6/Utils.js:2311
 #: pve-manager/www/manager6/dc/CmdMenu.js:36
 #: pve-manager/www/manager6/dc/Config.js:47
 #: pve-manager/www/manager6/lxc/CmdMenu.js:62
@@ -18901,6 +19467,12 @@ msgstr "Od"
 msgid "Single Disk"
 msgstr "Jedan disk"
 
+#: pve-manager/www/manager6/SANUtils.js:111
+#, fuzzy
+#| msgid "Single Disk"
+msgid "Single path"
+msgstr "Jedan disk"
+
 #: pmg-gui/js/DNSBLSitesField.js:149
 msgid "Site"
 msgstr ""
@@ -18927,13 +19499,18 @@ msgstr "Oznaka ne smije biti prazna."
 #: pve-manager/www/manager6/ceph/OSDDetails.js:239
 #: pve-manager/www/manager6/ceph/Pool.js:74
 #: pve-manager/www/manager6/ceph/Pool.js:337
+#: pve-manager/www/manager6/dc/SAN.js:375
 #: pve-manager/www/manager6/form/FileSelector.js:113
 #: pve-manager/www/manager6/grid/BackupView.js:363
-#: pve-manager/www/manager6/node/LVM.js:123
+#: pve-manager/www/manager6/node/LVM.js:128
 #: pve-manager/www/manager6/node/LVMThin.js:126
+#: pve-manager/www/manager6/node/SANLuns.js:88
 #: pve-manager/www/manager6/node/ZFS.js:236
 #: pve-manager/www/manager6/storage/ContentView.js:155
+#: pve-manager/www/manager6/storage/wizard/LunSelect.js:152
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:172
 #: pve-manager/www/manager6/window/GuestImport.js:719
+#: pve-manager/www/manager6/window/SANLunWipe.js:38
 #: proxmox-backup/www/ZFSList.js:71
 #: proxmox-backup/www/dashboard/DataStoreStatistics.js:87
 #: proxmox-backup/www/datastore/Content.js:1268
@@ -19002,8 +19579,8 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:233
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:393
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:239
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:428
 #: proxmox-yew-comp/src/configuration/network_edit.rs:223
 msgid "Slaves"
 msgstr "Robovi"
@@ -19026,8 +19603,8 @@ msgstr "Slovenski"
 msgid "Smarthost"
 msgstr "Smarthost"
 
-#: pve-manager/www/manager6/Utils.js:2263
-#: pve-manager/www/manager6/Utils.js:2292
+#: pve-manager/www/manager6/Utils.js:2283
+#: pve-manager/www/manager6/Utils.js:2312
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:234
 #: pve-manager/www/manager6/form/BackupModeSelector.js:5
 #: pve-manager/www/manager6/form/SnapshotSelector.js:63
@@ -19081,7 +19658,7 @@ msgstr "Spojna točka"
 #: pve-manager/www/manager6/node/Subscription.js:158
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:134
 #: pve-manager/www/manager6/window/GuestImport.js:492
-#: pve-manager/www/manager6/window/Restore.js:370
+#: pve-manager/www/manager6/window/Restore.js:436
 #: proxmox-datacenter-manager/ui/src/configuration/subscription_assign.rs:95
 #: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:471
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_processor_property.rs:82
@@ -19140,7 +19717,7 @@ msgstr "Ključ sortiranja"
 #: pve-manager/www/manager6/sdn/fabrics/RedistributionGrid.js:93
 #: pve-manager/www/manager6/window/GuestDiskReassign.js:127
 #: pve-manager/www/manager6/window/GuestImport.js:711
-#: pve-manager/www/manager6/window/Restore.js:192
+#: pve-manager/www/manager6/window/Restore.js:226
 #: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:147
 #: proxmox-datacenter-manager/ui/src/widget/pve_migrate_mapping.rs:357
 msgid "Source"
@@ -19174,7 +19751,7 @@ msgstr "Premjesti pohranu"
 msgid "Source for Role Assignment"
 msgstr ""
 
-#: pve-manager/www/manager6/window/Migrate.js:614
+#: pve-manager/www/manager6/window/Migrate.js:643
 msgid "Source node"
 msgstr "Izvorni čvor"
 
@@ -19182,8 +19759,8 @@ msgstr "Izvorni čvor"
 msgid "Source port"
 msgstr "Izvorni priključak"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:142
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:157
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:148
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:163
 #: proxmox-yew-comp/src/configuration/network_edit.rs:156
 #: proxmox-yew-comp/src/configuration/network_edit.rs:225
 msgid "Space-separated list of interfaces, for example: enp0s0 enp1s0"
@@ -19279,9 +19856,9 @@ msgstr "Standardni VGA"
 #: proxmox-widget-toolkit/src/Utils.js:771
 #: proxmox-widget-toolkit/src/node/ServiceView.js:118
 #: pmg-gui/js/MailTracker.js:113 pmg-gui/js/Utils.js:720
-#: pve-manager/www/manager6/Utils.js:2236
-#: pve-manager/www/manager6/Utils.js:2264
-#: pve-manager/www/manager6/Utils.js:2293
+#: pve-manager/www/manager6/Utils.js:2256
+#: pve-manager/www/manager6/Utils.js:2284
+#: pve-manager/www/manager6/Utils.js:2313
 #: pve-manager/www/manager6/ceph/OSD.js:1369
 #: pve-manager/www/manager6/ceph/ServiceList.js:548
 #: pve-manager/www/manager6/dc/CmdMenu.js:20
@@ -19306,7 +19883,7 @@ msgstr "Standardni VGA"
 msgid "Start"
 msgstr "Pokreni"
 
-#: pve-manager/www/manager6/sdn/SubnetEdit.js:192
+#: pve-manager/www/manager6/sdn/SubnetEdit.js:207
 #, fuzzy
 msgid "Start Address"
 msgstr "Prednja adresa"
@@ -19347,7 +19924,7 @@ msgstr "Pokreni WebAuthn izazov"
 msgid "Start after created"
 msgstr "Pokreni nakon kreiranja"
 
-#: pve-manager/www/manager6/window/Restore.js:242
+#: pve-manager/www/manager6/window/Restore.js:276
 msgid "Start after restore"
 msgstr "Pokreni nakon povrata"
 
@@ -19431,16 +20008,24 @@ msgstr "Odgoda pokretanja"
 
 #: proxmox-widget-toolkit/src/Utils.js:62
 #: pmg-gui/js/ClusterAdministration.js:499
+#: pve-manager/www/manager6/dc/SAN.js:159
+#: pve-manager/www/manager6/dc/SAN.js:297
 #: pve-manager/www/manager6/ha/Resources.js:101
 #: pve-manager/www/manager6/ha/Rules.js:129
+#: pve-manager/www/manager6/node/ISCSITargets.js:21
+#: pve-manager/www/manager6/node/SANLuns.js:20
+#: pve-manager/www/manager6/node/SANLuns.js:63
 #: pve-manager/www/manager6/sdn/ControllerView.js:131
-#: pve-manager/www/manager6/sdn/FabricsContentView.js:71
+#: pve-manager/www/manager6/sdn/FabricsContentView.js:150
 #: pve-manager/www/manager6/sdn/FabricsView.js:152
 #: pve-manager/www/manager6/sdn/PrefixListPanel.js:182
 #: pve-manager/www/manager6/sdn/RouteMapPanel.js:1063
 #: pve-manager/www/manager6/sdn/SubnetView.js:134
 #: pve-manager/www/manager6/sdn/VnetView.js:129
 #: pve-manager/www/manager6/sdn/ZoneView.js:183
+#: pve-manager/www/manager6/storage/wizard/LunSelect.js:134
+#: pve-manager/www/manager6/storage/wizard/NodeIdentities.js:16
+#: pve-manager/www/manager6/window/SANLunState.js:83
 #: proxmox-backup/www/tape/ChangerStatus.js:891
 #: proxmox-backup/www/tape/DriveStatus.js:481
 #: proxmox-datacenter-manager/ui/src/ceph/flags.rs:116
@@ -19461,6 +20046,16 @@ msgstr "Statično"
 #: pve-manager/www/manager6/form/CRSOptions.js:52
 #, fuzzy
 msgid "Static Load"
+msgstr "Statično"
+
+#: pve-manager/www/manager6/sdn/StaticRoutes.js:4
+#, fuzzy
+msgid "Static Route"
+msgstr "Statično"
+
+#: pve-manager/www/manager6/sdn/zones/SimpleEdit.js:10
+#, fuzzy
+msgid "Static Routes"
 msgstr "Statično"
 
 #: pmg-gui/js/BackupRestore.js:53
@@ -19516,7 +20111,7 @@ msgstr "Statistika zadnjeg sakupljanja odpadaka"
 #: pve-manager/www/manager6/ceph/Status.js:151
 #: pve-manager/www/manager6/ceph/Status.js:388
 #: pve-manager/www/manager6/data/ResourceStore.js:308
-#: pve-manager/www/manager6/dc/Health.js:95
+#: pve-manager/www/manager6/dc/Health.js:101
 #: pve-manager/www/manager6/dc/PCIMapView.js:99
 #: pve-manager/www/manager6/dc/Tasks.js:122
 #: pve-manager/www/manager6/dc/USBMapView.js:86
@@ -19528,12 +20123,13 @@ msgstr "Statistika zadnjeg sakupljanja odpadaka"
 #: pve-manager/www/manager6/form/VMSelector.js:365
 #: pve-manager/www/manager6/grid/PoolMembers.js:90
 #: pve-manager/www/manager6/grid/Replication.js:327
-#: pve-manager/www/manager6/ha/Status.js:150
-#: pve-manager/www/manager6/ha/StatusView.js:74
+#: pve-manager/www/manager6/ha/Status.js:257
+#: pve-manager/www/manager6/ha/StatusView.js:109
 #: pve-manager/www/manager6/node/Subscription.js:145
 #: pve-manager/www/manager6/panel/GuestStatusView.js:55
 #: pve-manager/www/manager6/pool/StatusView.js:6
-#: pve-manager/www/manager6/sdn/FabricsContentView.js:39
+#: pve-manager/www/manager6/sdn/FabricsContentView.js:61
+#: pve-manager/www/manager6/sdn/FabricsContentView.js:109
 #: pve-manager/www/manager6/sdn/Status.js:29
 #: pve-manager/www/manager6/sdn/StatusView.js:101
 #: pve-manager/www/manager6/sdn/ZoneContentView.js:36
@@ -19607,9 +20203,9 @@ msgstr ""
 #: proxmox-widget-toolkit/src/node/ServiceView.js:123
 #: proxmox-widget-toolkit/src/window/TaskViewer.js:214
 #: proxmox-widget-toolkit/src/window/TaskViewer.js:220
-#: pve-manager/www/manager6/Utils.js:2237
-#: pve-manager/www/manager6/Utils.js:2265
-#: pve-manager/www/manager6/Utils.js:2294
+#: pve-manager/www/manager6/Utils.js:2257
+#: pve-manager/www/manager6/Utils.js:2285
+#: pve-manager/www/manager6/Utils.js:2314
 #: pve-manager/www/manager6/ceph/OSD.js:1379
 #: pve-manager/www/manager6/ceph/ServiceList.js:557
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:235
@@ -19656,25 +20252,26 @@ msgstr "Odmah zaustavi {0}"
 msgid "Stopped"
 msgstr "Zaustavljeno"
 
-#: pmg-gui/js/Dashboard.js:584
+#: pmg-gui/js/Dashboard.js:584 pve-manager/www/manager6/SANUtils.js:118
+#: pve-manager/www/manager6/SANUtils.js:193
 #: pve-manager/www/manager6/data/ResourceStore.js:287
 #: pve-manager/www/manager6/dc/Backup.js:320
 #: pve-manager/www/manager6/dc/Backup.js:920
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:168
-#: pve-manager/www/manager6/dc/Config.js:129
+#: pve-manager/www/manager6/dc/Config.js:130
 #: pve-manager/www/manager6/dc/Summary.js:47
 #: pve-manager/www/manager6/form/DiskStorageSelector.js:11
 #: pve-manager/www/manager6/form/IsoSelector.js:73
 #: pve-manager/www/manager6/grid/BackupView.js:101
 #: pve-manager/www/manager6/grid/PoolMembers.js:143
 #: pve-manager/www/manager6/grid/PoolMembers.js:152
-#: pve-manager/www/manager6/grid/PoolMembers.js:263
+#: pve-manager/www/manager6/grid/PoolMembers.js:386
 #: pve-manager/www/manager6/lxc/CreateWizard.js:208
 #: pve-manager/www/manager6/tree/ResourceTree.js:22
 #: pve-manager/www/manager6/window/Backup.js:129
 #: pve-manager/www/manager6/window/GuestImport.js:729
 #: pve-manager/www/manager6/window/GuestImport.js:836
-#: pve-manager/www/manager6/window/Restore.js:178
+#: pve-manager/www/manager6/window/Restore.js:212
 #: proxmox-datacenter-manager/ui/src/dashboard/gauge_panel.rs:200
 #: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:567
 #: proxmox-datacenter-manager/ui/src/widget/pve_migrate_mapping.rs:42
@@ -19690,6 +20287,42 @@ msgstr "Zaustavljeno"
 msgid "Storage"
 msgstr "Skladištenje"
 
+#: pve-manager/www/manager6/SANUtils.js:108
+#, fuzzy
+msgid "Storage \"{0}\""
+msgstr "Skladištenje"
+
+#: pve-manager/www/manager6/storage/wizard/IScsi.js:99
+msgid ""
+"Storage \"{0}\" connects to this target, but it is disabled. Enable that "
+"storage first."
+msgstr ""
+
+#: pve-manager/www/manager6/storage/wizard/IScsi.js:85
+msgid ""
+"Storage \"{0}\" uses the LUNs of this target directly. If no guest uses "
+"them, clear Use LUNs directly in its edit dialog, otherwise use another "
+"target."
+msgstr ""
+
+#: pve-manager/www/manager6/storage/wizard/IScsi.js:78
+msgid ""
+"Storage \"{0}\" uses this target. The setup can only reuse an iSCSI storage."
+msgstr ""
+
+#: pve-manager/www/manager6/window/SANLunState.js:60
+msgid ""
+"Storage \"{0}\" was added. Guests on this storage cannot run on a node that "
+"stays on \"Missing\": check its access to the LUN on the array and rescan "
+"its Fibre Channel hosts."
+msgstr ""
+
+#: pve-manager/www/manager6/window/SANLunState.js:63
+msgid ""
+"Storage \"{0}\" was added. Guests on this storage cannot run on a node that "
+"stays on \"Missing\": check its access to the LUN on the array."
+msgstr ""
+
 #: proxmox-datacenter-manager/ui/src/pve/storage.rs:234
 #, fuzzy
 msgid "Storage '{0}'"
@@ -19704,6 +20337,17 @@ msgstr "Prijava na Proxmox VE"
 #: proxmox-backup/www/panel/StorageAndDisks.js:6
 msgid "Storage / Disks"
 msgstr "Skladište / Diskovi"
+
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:168
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:209
+#, fuzzy
+#| msgid "Storage"
+msgid "Storage ID"
+msgstr "Skladištenje"
+
+#: pve-manager/www/manager6/storage/wizard/FibreChannel.js:185
+msgid "Storage ID \"{0}\" is already in use. Choose another ID."
+msgstr ""
 
 #: pve-manager/www/manager6/window/Backup.js:276
 msgid "Storage Retention Configuration"
@@ -19737,10 +20381,21 @@ msgstr "Skladištenje"
 msgid "Storage {0} on node {1}"
 msgstr "Pohrana {0} na čvoru {1}"
 
-#: pve-manager/www/manager6/window/Migrate.js:287
+#: pve-manager/www/manager6/window/SANLunState.js:22
+#, fuzzy
+msgid "Storage {0}: LUN State"
+msgstr "Skladištenje"
+
+#: pve-manager/www/manager6/window/Migrate.js:312
 msgid ""
 "Storage(s) ({0}) not available on selected target. Start VM to use live "
 "storage migration or select other target node."
+msgstr ""
+
+#: pve-manager/www/manager6/storage/wizard/IScsi.js:71
+msgid ""
+"Storages {0} use this target. The setup can only reuse a target that one "
+"storage uses."
 msgstr ""
 
 #: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:666
@@ -19806,12 +20461,12 @@ msgid "Submit"
 msgstr ""
 
 #: pve-manager/www/manager6/sdn/SubnetEdit.js:26
-#: pve-manager/www/manager6/sdn/SubnetEdit.js:241
+#: pve-manager/www/manager6/sdn/SubnetEdit.js:256
 #: pve-manager/www/manager6/sdn/SubnetView.js:102
 msgid "Subnet"
 msgstr "Podmreža"
 
-#: proxmox-widget-toolkit/src/node/NetworkView.js:373
+#: proxmox-widget-toolkit/src/node/NetworkView.js:374
 msgid "Subnet mask"
 msgstr "Maska podmreže"
 
@@ -19821,7 +20476,7 @@ msgstr "Podmreže"
 
 #: pmg-gui/js/ClusterAdministration.js:522 pmg-gui/js/Dashboard.js:455
 #: pmg-gui/js/NavigationTree.js:84 pmg-gui/js/Subscription.js:23
-#: pve-manager/www/manager6/node/Config.js:479
+#: pve-manager/www/manager6/node/Config.js:516
 #: proxmox-backup/www/Dashboard.js:290 proxmox-backup/www/NavigationTree.js:90
 #: proxmox-backup/www/Subscription.js:24
 #: proxmox-datacenter-manager/ui/src/main_menu.rs:276
@@ -19927,7 +20582,7 @@ msgstr "Stupci Sažetka/Nadzorne ploče"
 #: proxmox-widget-toolkit/src/window/NotificationMatcherEdit.js:1328
 #: proxmox-backup/www/window/TrafficControlEdit.js:423
 #: proxmox-yew-widget-toolkit/src/widget/form/date_field/date_panel.rs:245
-#: proxmox-yew-widget-toolkit/src/widget/calendar_grid.rs:856
+#: proxmox-yew-widget-toolkit/src/widget/calendar_grid.rs:878
 msgid "Sun"
 msgstr "Ned"
 
@@ -19939,7 +20594,7 @@ msgstr "Nedjelja"
 msgid "Superuser"
 msgstr "Superkorisnik"
 
-#: pve-manager/www/manager6/dc/Config.js:464
+#: pve-manager/www/manager6/dc/Config.js:475
 #: pve-manager/www/manager6/dc/NodeView.js:35
 msgid "Support"
 msgstr "Podrška"
@@ -19953,7 +20608,7 @@ msgstr "Podrška za {0} {1} završava {2}"
 msgid "Supported On"
 msgstr "Podrška"
 
-#: pve-manager/www/manager6/Utils.js:2295
+#: pve-manager/www/manager6/Utils.js:2315
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:236
 #: pve-manager/www/manager6/dc/CmdMenu.js:52
 #: pve-manager/www/manager6/dc/Config.js:61
@@ -19964,7 +20619,7 @@ msgstr "Podrška"
 msgid "Suspend"
 msgstr "Obustavi"
 
-#: pve-manager/www/manager6/Utils.js:2274
+#: pve-manager/www/manager6/Utils.js:2294
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:186
 #, fuzzy
 msgid "Suspend all VMs"
@@ -19983,7 +20638,7 @@ msgstr "Obustavi"
 
 #: pve-manager/www/manager6/lxc/ResourceEdit.js:152
 #: pve-manager/www/manager6/lxc/Resources.js:65
-#: pve-manager/www/manager6/panel/TemplateStatusView.js:53
+#: pve-manager/www/manager6/panel/TemplateStatusView.js:56
 #: proxmox-yew-comp/src/form/pve/lxc_property/lxc_memory_swap_property.rs:41
 #: proxmox-yew-comp/src/form/pve/lxc_property/lxc_memory_swap_property.rs:75
 msgid "Swap"
@@ -20022,7 +20677,7 @@ msgstr ""
 
 #: proxmox-widget-toolkit/src/panel/AuthView.js:160
 #: proxmox-widget-toolkit/src/window/SyncWindow.js:150
-#: pve-manager/www/manager6/Utils.js:2209
+#: pve-manager/www/manager6/Utils.js:2229
 #: pve-manager/www/manager6/dc/AuthView.js:128
 #: pve-manager/www/manager6/dc/SyncWindow.js:178
 #: proxmox-backup/www/config/EncryptionKeysView.js:304
@@ -20065,7 +20720,7 @@ msgstr "Razina sinkronizacije"
 msgid "Sync Options"
 msgstr "Opcije Sinkronizacije"
 
-#: pve-manager/www/manager6/Utils.js:2210
+#: pve-manager/www/manager6/Utils.js:2230
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:124
 msgid "Sync Preview"
 msgstr "Pregled sinkronizacije"
@@ -20124,8 +20779,8 @@ msgid "System Information"
 msgstr "Konfiguracija sustava"
 
 #: proxmox-widget-toolkit/src/node/ServiceView.js:86
-#: pve-manager/www/manager6/node/Config.js:251
-#: proxmox-datacenter-manager/ui/src/administration/mod.rs:115
+#: pve-manager/www/manager6/node/Config.js:264
+#: proxmox-datacenter-manager/ui/src/administration/mod.rs:138
 #, fuzzy
 msgid "System Log"
 msgstr "Sustav"
@@ -20150,7 +20805,7 @@ msgstr "Sustav"
 msgid "TB"
 msgstr "TB"
 
-#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:134
+#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:133
 msgid "TCP Flags Log Level"
 msgstr ""
 
@@ -20158,7 +20813,7 @@ msgstr ""
 msgid "TCP Timeout"
 msgstr "TCP istek vremena"
 
-#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:208
+#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:207
 #, fuzzy
 msgid "TCP Timeout Established"
 msgstr "TCP istek vremena"
@@ -20220,7 +20875,7 @@ msgstr "TOTP"
 msgid "TOTP App"
 msgstr "TOTP Aplikacija"
 
-#: pmg-gui/js/UserView.js:226 pve-manager/www/manager6/Utils.js:1456
+#: pmg-gui/js/UserView.js:226 pve-manager/www/manager6/Utils.js:1476
 #: proxmox-backup/www/config/UserView.js:265
 msgid "TOTP Locked"
 msgstr "TOTP zaključan"
@@ -20284,7 +20939,7 @@ msgstr "Pogledaj"
 msgid "Tag must not be empty."
 msgstr "Oznaka ne smije biti prazna."
 
-#: pve-manager/www/manager6/data/ResourceStore.js:340
+#: pve-manager/www/manager6/data/ResourceStore.js:347
 #: pve-manager/www/manager6/form/TagFieldSet.js:6
 #: pve-manager/www/manager6/form/VMSelector.js:86
 #: proxmox-datacenter-manager/ui/src/guests.rs:881
@@ -20382,8 +21037,12 @@ msgstr "Trake"
 #: pve-manager/www/manager6/form/NotificationTargetSelector.js:32
 #: pve-manager/www/manager6/grid/Replication.js:32
 #: pve-manager/www/manager6/grid/Replication.js:308
-#: pve-manager/www/manager6/storage/IScsiEdit.js:141
+#: pve-manager/www/manager6/node/ISCSITargets.js:15
+#: pve-manager/www/manager6/storage/IScsiEdit.js:153
 #: pve-manager/www/manager6/storage/ZFSEdit.js:66
+#: pve-manager/www/manager6/storage/wizard/IScsi.js:195
+#: pve-manager/www/manager6/storage/wizard/IScsi.js:206
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:230
 #: proxmox-backup/www/tape/window/TapeRestore.js:370
 #: proxmox-datacenter-manager/ui/src/widget/pve_migrate_mapping.rs:362
 msgid "Target"
@@ -20474,6 +21133,11 @@ msgstr "Ciljna pohrana"
 msgid "Target VMID"
 msgstr "Cilj"
 
+#: pve-manager/www/manager6/node/SANLuns.js:24
+#, fuzzy
+msgid "Target WWPN"
+msgstr "Ciljni Imenik Prostor"
+
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answers_panel.rs:340
 #, fuzzy
 msgid "Target filter"
@@ -20490,7 +21154,7 @@ msgstr "Ciljna skupina"
 
 #: pve-manager/www/manager6/window/BulkAction.js:82
 #: pve-manager/www/manager6/window/Clone.js:171
-#: pve-manager/www/manager6/window/Migrate.js:657
+#: pve-manager/www/manager6/window/Migrate.js:686
 msgid "Target node"
 msgstr "Ciljni čvor"
 
@@ -20507,9 +21171,22 @@ msgstr ""
 msgid "Target portal group"
 msgstr "Ciljna portal grupa"
 
-#: pve-manager/www/manager6/window/Migrate.js:669
+#: pve-manager/www/manager6/window/Migrate.js:698
 msgid "Target storage"
 msgstr "Ciljna pohrana"
+
+#: pve-manager/www/manager6/node/ISCSITargets.js:143
+#, fuzzy
+#| msgid "Target Storage"
+msgid "Target, Portal, Storage"
+msgstr "Ciljna pohrana"
+
+#. TRANSLATORS: The iSCSI target or the NVMe subsystem of a LUN.
+#: pve-manager/www/manager6/node/SANLuns.js:102
+#, fuzzy
+#| msgid "Target Guest"
+msgid "Target/Subsystem"
+msgstr "Ciljani gost"
 
 #: proxmox-widget-toolkit/src/window/NotificationMatcherEdit.js:131
 #, fuzzy
@@ -20526,7 +21203,7 @@ msgid "Task"
 msgstr "Zadatak"
 
 #: pve-manager/www/manager6/lxc/Config.js:293
-#: pve-manager/www/manager6/node/Config.js:464
+#: pve-manager/www/manager6/node/Config.js:501
 #: pve-manager/www/manager6/qemu/Config.js:337
 msgid "Task History"
 msgstr "Povijest zadataka"
@@ -20623,7 +21300,7 @@ msgstr "Status"
 #: pve-manager/www/manager6/panel/StatusPanel.js:33
 #: proxmox-backup/www/ServerAdministration.js:110
 #: proxmox-backup/www/button/TaskButton.js:12
-#: proxmox-datacenter-manager/ui/src/administration/mod.rs:128
+#: proxmox-datacenter-manager/ui/src/administration/mod.rs:164
 #: proxmox-datacenter-manager/ui/src/remotes/mod.rs:69
 #: proxmox-datacenter-manager/ui/src/pbs/node/mod.rs:84
 #: proxmox-datacenter-manager/ui/src/pve/remote/mod.rs:59
@@ -20709,16 +21386,34 @@ msgstr ""
 msgid "The HA rule has the following errors:"
 msgstr ""
 
-#: pve-manager/www/manager6/ha/Status.js:116
+#: pve-manager/www/manager6/ha/Status.js:195
 msgid ""
 "The HA stack will be completely bypassed when the operational state of a "
 "service changes."
 msgstr ""
 
+#: pve-manager/www/manager6/window/SANLunWipe.js:59
+#, fuzzy
+msgid "The ID does not match."
+msgstr "Lozinke se ne podudaraju"
+
 #: pve-manager/www/manager6/ceph/Pool.js:215
 msgid ""
 "The amount of data eventually stored in this pool. Used for auto-scaling."
 msgstr "Količina podataka u ovom skupu. Korišteno za automatsko skaliranje."
+
+#: pve-manager/www/manager6/window/Restore.js:315
+msgid ""
+"The backup and the existing guest have different Unique IDs. Restoring the "
+"backup requires '{0}'."
+msgstr ""
+
+#: pve-manager/www/manager6/window/Restore.js:306
+msgid ""
+"The backup can be from another guest, for example from an earlier one with "
+"the same VMID. The restore replaces the data and configuration, but the "
+"guest keeps its current Unique ID and does not get the one of the backup."
+msgstr ""
 
 #: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:73
 #, fuzzy
@@ -20756,6 +21451,12 @@ msgid ""
 "privilege. The restart itself is allowed, and if a health check blocks it "
 "the task log names the check."
 msgstr ""
+
+#: pve-manager/www/manager6/storage/wizard/IScsi.js:129
+#, fuzzy
+#| msgid "Scan for available storages on the selected node"
+msgid "The connection storage is not available on all selected nodes."
+msgstr "Skeniraj dostupne pohrane na odabranom čvoru"
 
 #: pve-manager/www/manager6/tree/SnapshotTree.js:312
 msgid "The current guest configuration does not support taking new snapshots"
@@ -20806,6 +21507,12 @@ msgstr ""
 msgid "The maximum amount of snapshots to be transferred (per group)"
 msgstr "Maksimalna količina snimaka za prijenos (po grupi)"
 
+#: pve-manager/www/manager6/storage/wizard/FibreChannel.js:99
+msgid ""
+"The multipath map or its name under /dev/disk/by-id did not appear within 90 "
+"seconds. Check Node > SAN, then reload the LUN list."
+msgstr ""
+
 #: pve-manager/www/manager6/ceph/Status.js:161
 msgid "The newest version installed in the Cluster."
 msgstr "Najnovija inačica instalirana u klasteru."
@@ -20848,11 +21555,28 @@ msgstr ""
 msgid "The saved VM state will be permanently lost."
 msgstr "Spremljeno VM stanje bit će trajno izgubljeno."
 
+#: pve-manager/www/manager6/storage/wizard/IScsi.js:297
+msgid ""
+"The selected LUN has no multipath volume yet. Check Node > SAN, then retry."
+msgstr ""
+
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:299
 msgid ""
 "The selected release is currently considered a Technology Preview. Although "
 "we are not aware of any major issues, there may be some bugs and the "
 "Enterprise Repository is not yet available."
+msgstr ""
+
+#: pve-manager/www/manager6/window/Migrate.js:239
+msgid ""
+"The selected target node does not report its Proxmox VE version, so support "
+"for guest identities cannot be verified."
+msgstr ""
+
+#: pve-manager/www/manager6/window/Migrate.js:232
+msgid ""
+"The selected target node runs Proxmox VE {0}, but keeping the guest identity "
+"requires {1} or newer. Upgrade the target node first."
 msgstr ""
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:309
@@ -20868,7 +21592,7 @@ msgstr ""
 "Testno spremište bi se trebalo koristiti samo za testne okoline ili nakon "
 "konzultiranja sa službenom Proxmox podrškom!"
 
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:615
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:645
 msgid "The update status for this remote has not been fetched yet."
 msgstr ""
 
@@ -20996,7 +21720,7 @@ msgid ""
 "aes256k service tickets."
 msgstr ""
 
-#: pve-manager/www/manager6/ha/Status.js:107
+#: pve-manager/www/manager6/ha/Status.js:186
 msgid ""
 "This will freeze all services allowing no change to their operational state."
 msgstr ""
@@ -21008,12 +21732,12 @@ msgstr ""
 msgid "This will permanently erase all data."
 msgstr "Ovo će trajno izbrisati sve podatke."
 
-#: pve-manager/www/manager6/window/Restore.js:100
+#: pve-manager/www/manager6/window/Restore.js:103
 #, fuzzy
 msgid "This will permanently erase current CT data."
 msgstr "Ovo će trajno izbrisati aktualne {0} podatke."
 
-#: pve-manager/www/manager6/window/Restore.js:103
+#: pve-manager/www/manager6/window/Restore.js:106
 #, fuzzy
 msgid "This will permanently erase current VM data."
 msgstr "Ovo će trajno izbrisati aktualne {0} podatke."
@@ -21073,7 +21797,7 @@ msgstr "Raspored skupljanja odpadaka"
 #: proxmox-widget-toolkit/src/window/NotificationMatcherEdit.js:1298
 #: proxmox-backup/www/window/TrafficControlEdit.js:393
 #: proxmox-yew-widget-toolkit/src/widget/form/date_field/date_panel.rs:249
-#: proxmox-yew-widget-toolkit/src/widget/calendar_grid.rs:853
+#: proxmox-yew-widget-toolkit/src/widget/calendar_grid.rs:875
 msgid "Thu"
 msgstr "Čet"
 
@@ -21089,7 +21813,7 @@ msgstr "TiB"
 #: pmg-gui/js/ReceiverStatistics.js:84 pmg-gui/js/SenderStatistics.js:84
 #: pmg-gui/js/SpamQuarantine.js:357 pmg-gui/js/SystemConfiguration.js:28
 #: pmg-gui/js/VirusQuarantine.js:101 pve-manager/www/manager6/dc/Log.js:44
-#: pve-manager/www/manager6/node/Config.js:239
+#: pve-manager/www/manager6/node/Config.js:252
 #: pve-manager/www/manager6/window/ScheduleSimulator.js:133
 #: proxmox-backup/www/SystemConfiguration.js:29
 #: proxmox-datacenter-manager/ui/src/configuration/mod.rs:158
@@ -21187,6 +21911,16 @@ msgid ""
 "until you explicitly unlink it. When you change your active encryption key, "
 "the system automatically associates the old key to protect it from "
 "accidental deletion, ensuring you can still decrypt older contents."
+msgstr ""
+
+#. TRANSLATORS: "Guided Setup" is a button of the SAN view, {0} the menu path of that view.
+#: pve-manager/www/manager6/storage/LVMEdit.js:152
+msgid "To set up shared LVM on a SAN LUN, use Guided Setup in {0}."
+msgstr ""
+
+#. TRANSLATORS: "Guided Setup" is a button of the SAN view, {0} the menu path of that view.
+#: pve-manager/www/manager6/storage/IScsiEdit.js:81
+msgid "To set up shared LVM with multipath on a LUN, use Guided Setup in {0}."
 msgstr ""
 
 #: pve-manager/www/manager6/form/SpiceEnhancementSelector.js:33
@@ -21407,7 +22141,7 @@ msgstr "Brzina prijenosa (okteta/sekundi)"
 msgid "Translated"
 msgstr "Prijenos"
 
-#: pmg-gui/js/Transport.js:154
+#: pmg-gui/js/Transport.js:154 pve-manager/www/manager6/node/SANLuns.js:94
 msgid "Transport"
 msgstr "Prijevoz"
 
@@ -21441,7 +22175,7 @@ msgstr "Pouzdana mreža"
 #: proxmox-widget-toolkit/src/window/NotificationMatcherEdit.js:1278
 #: proxmox-backup/www/window/TrafficControlEdit.js:373
 #: proxmox-yew-widget-toolkit/src/widget/form/date_field/date_panel.rs:247
-#: proxmox-yew-widget-toolkit/src/widget/calendar_grid.rs:851
+#: proxmox-yew-widget-toolkit/src/widget/calendar_grid.rs:873
 msgid "Tue"
 msgstr "Uto"
 
@@ -21454,7 +22188,7 @@ msgstr "Opcije podešavanja"
 msgid "Turkish"
 msgstr "Turski"
 
-#: pve-manager/www/manager6/dc/Config.js:177
+#: pve-manager/www/manager6/dc/Config.js:188
 msgid "Two Factor"
 msgstr "Dva faktora"
 
@@ -21468,7 +22202,7 @@ msgid "Two-letter country code, e.g. at"
 msgstr ""
 
 #: proxmox-widget-toolkit/src/form/NetworkSelector.js:118
-#: proxmox-widget-toolkit/src/node/NetworkView.js:302
+#: proxmox-widget-toolkit/src/node/NetworkView.js:303
 #: proxmox-widget-toolkit/src/panel/ACMEDomains.js:411
 #: proxmox-widget-toolkit/src/panel/AuthView.js:26
 #: proxmox-widget-toolkit/src/panel/DiskList.js:294
@@ -21498,7 +22232,7 @@ msgstr ""
 #: pve-manager/www/manager6/grid/FirewallRules.js:63
 #: pve-manager/www/manager6/grid/FirewallRules.js:915
 #: pve-manager/www/manager6/grid/PoolMembers.js:100
-#: pve-manager/www/manager6/ha/StatusView.js:69
+#: pve-manager/www/manager6/ha/StatusView.js:104
 #: pve-manager/www/manager6/node/ACME.js:772
 #: pve-manager/www/manager6/node/Directory.js:119
 #: pve-manager/www/manager6/node/Subscription.js:139
@@ -21507,7 +22241,7 @@ msgstr ""
 #: pve-manager/www/manager6/qemu/ScsiHwEdit.js:13
 #: pve-manager/www/manager6/sdn/ControllerView.js:113
 #: pve-manager/www/manager6/sdn/DnsView.js:109
-#: pve-manager/www/manager6/sdn/FabricsContentView.js:65
+#: pve-manager/www/manager6/sdn/FabricsContentView.js:144
 #: pve-manager/www/manager6/sdn/IpamView.js:108
 #: pve-manager/www/manager6/sdn/StatusView.js:96
 #: pve-manager/www/manager6/sdn/ZoneView.js:127
@@ -21606,7 +22340,7 @@ msgstr "URL"
 msgid "USB Device"
 msgstr "USB uređaj"
 
-#: pve-manager/www/manager6/dc/Config.js:434
+#: pve-manager/www/manager6/dc/Config.js:445
 msgid "USB Devices"
 msgstr "USB uređaji"
 
@@ -21688,8 +22422,16 @@ msgid "Undo Zoom"
 msgstr "Poništi Zumiranje"
 
 #: pve-manager/www/manager6/dc/OptionView.js:388
-#: pve-manager/www/manager6/window/Restore.js:227
+#: pve-manager/www/manager6/window/Restore.js:261
 msgid "Unique"
+msgstr "Jedinstveno"
+
+#: pve-manager/www/manager6/data/ResourceStore.js:340
+#: pve-manager/www/manager6/panel/GuestIdentity.js:31
+#: pve-manager/www/manager6/panel/GuestIdentity.js:75
+#, fuzzy
+#| msgid "Unique"
+msgid "Unique ID"
 msgstr "Jedinstveno"
 
 #: pve-manager/www/manager6/window/GuestImport.js:956
@@ -21720,6 +22462,7 @@ msgstr "Datoteka jedinice"
 #: proxmox-widget-toolkit/src/window/AccessLogStats.js:182
 #: proxmox-widget-toolkit/src/window/NotificationMatcherEdit.js:1417
 #: pmg-gui/js/dashboard/SubscriptionInfo.js:7
+#: pve-manager/www/manager6/SANUtils.js:138
 #: pve-manager/www/manager6/ceph/StatusDetail.js:181
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:238
 #: pve-manager/www/manager6/form/USBSelector.js:150
@@ -21765,7 +22508,7 @@ msgstr ""
 #: proxmox-widget-toolkit/src/Utils.js:481
 #: proxmox-backup/www/config/EncryptionKeysView.js:171
 #: proxmox-backup/www/config/EncryptionKeysView.js:184
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:708
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:738
 msgid "Unknown error"
 msgstr "Nepoznata greška"
 
@@ -21816,7 +22559,13 @@ msgstr "Otključaj TFA"
 msgid "Unlock TFA authentication for {0}"
 msgstr "Otključaj TFA autentifikaciju za {0}"
 
-#: pve-manager/www/manager6/Utils.js:2297
+#: pve-manager/www/manager6/SANUtils.js:119
+#, fuzzy
+#| msgid "Manager"
+msgid "Unmanaged"
+msgstr "Upravitelj"
+
+#: pve-manager/www/manager6/Utils.js:2317
 #: proxmox-backup/www/datastore/Summary.js:294
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:211
 msgid "Unmount"
@@ -21857,7 +22606,7 @@ msgid "Unplugged"
 msgstr "Odkopčano"
 
 #: pve-manager/www/manager6/panel/GuestStatusView.js:89
-#: pve-manager/www/manager6/window/Restore.js:288
+#: pve-manager/www/manager6/window/Restore.js:354
 msgid "Unprivileged"
 msgstr "Neprivilegirano"
 
@@ -21888,6 +22637,7 @@ msgstr "Do"
 msgid "Until:"
 msgstr "Do"
 
+#: pve-manager/www/manager6/SANUtils.js:176
 #: pve-manager/www/manager6/window/GuestDiskReassign.js:206
 msgid "Unused"
 msgstr "Nekorišteno"
@@ -21909,14 +22659,14 @@ msgstr "Premjesti volumen"
 msgid "Up"
 msgstr "Gore"
 
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:716
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:746
 #, fuzzy
 msgid "Up-to-date"
 msgstr "Ažuriraj"
 
 #: proxmox-widget-toolkit/src/panel/AccessLogView.js:775
 #: proxmox-widget-toolkit/src/panel/JournalView.js:511
-#: pmg-gui/js/DKIMSettings.js:154 pve-manager/www/manager6/Utils.js:2208
+#: pmg-gui/js/DKIMSettings.js:154 pve-manager/www/manager6/Utils.js:2228
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/token_panel.rs:302
 #: proxmox-yew-comp/src/access_log/mod.rs:477
 #: proxmox-yew-comp/src/edit_window.rs:373
@@ -21935,27 +22685,23 @@ msgid "Update Available"
 msgstr "Dostupno ažuriranje"
 
 #: proxmox-backup/www/ServerAdministration.js:84
+#: proxmox-datacenter-manager/ui/src/administration/mod.rs:125
+#: proxmox-datacenter-manager/ui/src/pbs/node/mod.rs:130
+#: proxmox-datacenter-manager/ui/src/pve/node/mod.rs:147
 #, fuzzy
 #| msgid "Usage History"
 msgid "Update History"
 msgstr "Povijest Korištenja"
 
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:631
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:661
 #, fuzzy
 msgid "Update List"
 msgstr "Ažuriranja"
 
 #. TRANSLATORS: The parameter is the name of the remote.
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:599
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:629
 #, fuzzy
 msgid "Update List - {0}"
-msgstr "Ažuriranja"
-
-#. TRANSLATORS: The first parameter is the name of the remote, the second one
-#. the name of the node.
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:525
-#, fuzzy
-msgid "Update List - {0} ({1})"
 msgstr "Ažuriranja"
 
 #: pmg-gui/js/SpamDetectorStatus.js:65
@@ -21981,9 +22727,10 @@ msgid "Update {0} Account"
 msgstr "Ažuriraj {0} Račun"
 
 #: pmg-gui/js/ServerAdministration.js:40
-#: pve-manager/www/manager6/node/Config.js:274
+#: pve-manager/www/manager6/node/Config.js:287
 #: proxmox-backup/www/ServerAdministration.js:59
-#: proxmox-datacenter-manager/ui/src/administration/mod.rs:84
+#: proxmox-datacenter-manager/ui/src/administration/mod.rs:93
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:604
 #: proxmox-datacenter-manager/ui/src/remotes/mod.rs:76
 #: proxmox-datacenter-manager/ui/src/pbs/node/mod.rs:94
 #: proxmox-datacenter-manager/ui/src/pve/node/mod.rs:113
@@ -21997,7 +22744,7 @@ msgstr ""
 
 #: proxmox-widget-toolkit/src/node/APTUtils.js:31
 #: pmg-gui/js/ServerAdministration.js:46
-#: pve-manager/www/manager6/node/Config.js:285
+#: pve-manager/www/manager6/node/Config.js:298
 #: proxmox-backup/www/ServerAdministration.js:65
 #: proxmox-yew-comp/src/apt_package_manager.rs:299
 msgid "Upgrade"
@@ -22079,8 +22826,8 @@ msgstr "Gornji"
 #: pve-manager/www/manager6/data/ResourceStore.js:273
 #: pve-manager/www/manager6/dc/NodeView.js:72
 #: pve-manager/www/manager6/node/StatusView.js:146
-#: pve-manager/www/manager6/panel/GuestStatusView.js:181
-#: pve-manager/www/manager6/sdn/FabricsContentView.js:45
+#: pve-manager/www/manager6/panel/GuestStatusView.js:184
+#: pve-manager/www/manager6/sdn/FabricsContentView.js:115
 #: proxmox-backup/www/panel/NodeInfo.js:184
 #: proxmox-datacenter-manager/ui/src/guests.rs:895
 #: proxmox-datacenter-manager/ui/src/guests.rs:973
@@ -22134,7 +22881,7 @@ msgstr "Upotreba %"
 msgid "Use"
 msgstr "Korišteno"
 
-#: pve-manager/www/manager6/window/Restore.js:217
+#: pve-manager/www/manager6/window/Restore.js:251
 msgid "Use '0' to disable all bandwidth limits."
 msgstr "Koristite '0' da onemogućite sva ograničenja propusnosti."
 
@@ -22175,7 +22922,7 @@ msgstr "Koristi sivu listu za IPv4"
 msgid "Use Greylisting for IPv6"
 msgstr "Koristi sivu listu za IPv6"
 
-#: pve-manager/www/manager6/storage/IScsiEdit.js:157
+#: pve-manager/www/manager6/storage/IScsiEdit.js:169
 msgid "Use LUNs directly"
 msgstr "Koristi LUN-ove izravno"
 
@@ -22370,6 +23117,15 @@ msgstr "Koristite {0} za neograničeno"
 #: proxmox-datacenter-manager/ui/src/ceph/osds.rs:515
 #: proxmox-datacenter-manager/ui/src/ceph/pools.rs:150
 msgid "Used"
+msgstr "Korišteno"
+
+#: pve-manager/www/manager6/dc/SAN.js:365
+#: pve-manager/www/manager6/node/SANLuns.js:75
+#: pve-manager/www/manager6/storage/wizard/LunSelect.js:146
+#: pve-manager/www/manager6/window/SANLunWipe.js:33
+#, fuzzy
+#| msgid "Used"
+msgid "Used By"
 msgstr "Korišteno"
 
 #: proxmox-datacenter-manager/ui/src/administration/node_status.rs:377
@@ -22584,7 +23340,7 @@ msgid "Username Claim"
 msgstr "Zahtjev za korisničkim imenom"
 
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:267
-#: pve-manager/www/manager6/dc/Config.js:163
+#: pve-manager/www/manager6/dc/Config.js:174
 #: pve-manager/www/manager6/dc/GroupView.js:93
 #: pve-manager/www/manager6/dc/RealmSyncJob.js:339
 #: pve-manager/www/manager6/dc/SyncWindow.js:103
@@ -22620,15 +23376,15 @@ msgstr "VCPU-ovi"
 msgid "VG Name"
 msgstr "VG Naziv"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:103
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:109
 msgid "VID range includes not-a-number: {0}"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:108
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:114
 msgid "VID range must go from lower to higher tag: {0}"
 msgstr ""
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:114
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:120
 msgid "VID range outside of allowed 2 and 4094 limit: {0}"
 msgstr ""
 
@@ -22641,17 +23397,18 @@ msgstr "VLAN"
 msgid "VLAN Aware"
 msgstr "Svjestan VLAN-a"
 
-#: proxmox-widget-toolkit/src/node/NetworkView.js:395
+#: proxmox-widget-toolkit/src/node/NetworkView.js:396
 msgid "VLAN ID"
 msgstr "VLAN ID"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:71
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:77
 #, fuzzy
 msgid "VLAN IDs"
 msgstr "VLAN ID"
 
 #: proxmox-widget-toolkit/src/form/VlanField.js:9
 #: pve-manager/www/manager6/form/VLanField.js:9
+#: pve-manager/www/manager6/grid/PoolMembers.js:252
 #: pve-manager/www/manager6/lxc/Network.js:557
 #: pve-manager/www/manager6/window/GuestImport.js:939
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:478
@@ -22661,14 +23418,14 @@ msgstr "VLAN ID"
 msgid "VLAN Tag"
 msgstr "VLAN Oznaka"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:124
-#: proxmox-widget-toolkit/src/node/NetworkView.js:330
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:130
+#: proxmox-widget-toolkit/src/node/NetworkView.js:331
 #: proxmox-yew-comp/src/configuration/network_view.rs:458
 #: proxmox-yew-comp/src/configuration/network_edit.rs:148
 msgid "VLAN aware"
 msgstr "Svjestan VLAN-a"
 
-#: proxmox-widget-toolkit/src/node/NetworkView.js:401
+#: proxmox-widget-toolkit/src/node/NetworkView.js:402
 msgid "VLAN raw device"
 msgstr "VLAN raw uređaj"
 
@@ -22748,13 +23505,16 @@ msgid "VNI"
 msgstr "VLAN ID"
 
 #: pve-manager/www/manager6/form/SDNVnetSelector.js:28
+#: pve-manager/www/manager6/grid/PoolMembers.js:185
+#: pve-manager/www/manager6/grid/PoolMembers.js:228
+#: pve-manager/www/manager6/grid/PoolMembers.js:395
 #: pve-manager/www/manager6/sdn/VnetEdit.js:158
 #: pve-manager/www/manager6/sdn/ZoneContentView.js:24
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/evpn_panel.rs:131
 msgid "VNet"
 msgstr "VNet"
 
-#: pve-manager/www/manager6/dc/Config.js:299
+#: pve-manager/www/manager6/dc/Config.js:310
 #, fuzzy
 msgid "VNet Firewall"
 msgstr "Vatrozid"
@@ -22794,6 +23554,10 @@ msgstr ""
 msgid "VNets"
 msgstr "VNet"
 
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:312
+msgid "VRF"
+msgstr ""
+
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/add_vnet.rs:301
 msgid "VRF VNI"
 msgstr ""
@@ -22802,6 +23566,12 @@ msgstr ""
 #, fuzzy
 msgid "VRF VXLAN VNI"
 msgstr "VLAN ID"
+
+#: pve-manager/www/manager6/sdn/fabrics/FabricEdit.js:42
+#, fuzzy
+#| msgid "Zone"
+msgid "VRF Zone"
+msgstr "Zona"
 
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/add_vnet.rs:83
 #, fuzzy
@@ -22843,6 +23613,7 @@ msgstr "Odgoda provjere valjanosti"
 #: pve-manager/www/manager6/qemu/CreateWizard.js:284
 #: pve-manager/www/manager6/sdn/RouteMapPanel.js:230
 #: pve-manager/www/manager6/sdn/RouteMapPanel.js:491
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:267
 #: pve-manager/www/manager6/window/GuestImport.js:988
 #: pve-manager/www/manager6/window/Snapshot.js:132
 #: proxmox-backup/www/Utils.js:641 proxmox-backup/www/Utils.js:678
@@ -22885,6 +23656,7 @@ msgstr "Trezor"
 #: pve-manager/www/manager6/form/CPUModelSelector.js:68
 #: pve-manager/www/manager6/form/MultiPCISelector.js:246
 #: pve-manager/www/manager6/form/PCISelector.js:40
+#: pve-manager/www/manager6/node/SANLuns.js:111
 #: proxmox-backup/www/tape/ChangerConfig.js:117
 #: proxmox-backup/www/tape/ChangerStatus.js:897
 #: proxmox-backup/www/tape/DriveConfig.js:157
@@ -23153,7 +23925,7 @@ msgstr "Virtualni strojevi"
 #: pve-manager/www/manager6/form/VMSelector.js:344
 #: pve-manager/www/manager6/form/VMSelector.js:355
 #: pve-manager/www/manager6/grid/PoolMembers.js:107
-#: pve-manager/www/manager6/grid/PoolMembers.js:254
+#: pve-manager/www/manager6/grid/PoolMembers.js:377
 #: pve-manager/www/manager6/ha/ResourceEdit.js:212
 #: pve-manager/www/manager6/qemu/CreateWizard.js:28
 #: pve-manager/www/manager6/tree/ResourceTree.js:34
@@ -23221,7 +23993,7 @@ msgstr "Karantena Virusa"
 msgid "Virus info"
 msgstr "Informacije o virusu"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:211
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:217
 msgid "Vlan raw device"
 msgstr "Vlan raw uređaj"
 
@@ -23237,16 +24009,31 @@ msgstr "Akcija za volumen"
 msgid "Volume Details for {0}"
 msgstr "Detalji volumena za {0}"
 
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:169
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:206
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:213
+#, fuzzy
+#| msgid "Volume group"
+msgid "Volume Group"
+msgstr "Grupa volumena"
+
 #: proxmox-backup/www/Utils.js:704 proxmox-backup/www/tape/ChangerStatus.js:942
 #: proxmox-backup/www/tape/DriveStatus.js:269
 msgid "Volume Statistics"
 msgstr "Statistika volumena"
 
-#: pve-manager/www/manager6/storage/LVMEdit.js:228
-#: pve-manager/www/manager6/storage/LVMEdit.js:243
+#: pve-manager/www/manager6/storage/LVMEdit.js:234
+#: pve-manager/www/manager6/storage/LVMEdit.js:249
 #: pve-manager/www/manager6/storage/LvmThinEdit.js:139
 msgid "Volume group"
 msgstr "Grupa volumena"
+
+#: pve-manager/www/manager6/storage/wizard/FibreChannel.js:35
+msgid ""
+"Volume group \"{0}\" was created, but adding storage \"{1}\" failed. Add it "
+"under Datacenter > Storage > Add > LVM with Shared enabled and the same "
+"nodes and snapshot setting as in the setup."
+msgstr ""
 
 #: pve-manager/www/manager6/dc/Cluster.js:297
 msgid "Votes"
@@ -23282,6 +24069,10 @@ msgstr ""
 #: proxmox-widget-toolkit/src/window/TfaWindow.js:483
 msgid "Waiting for second factor."
 msgstr "Čekam drugi faktor."
+
+#: pve-manager/www/manager6/storage/wizard/FibreChannel.js:115
+msgid "Waiting for the multipath map..."
+msgstr ""
 
 #: pve-manager/www/manager6/node/CmdMenu.js:114
 msgid "Wake on LAN packet send for '{0}': '{1}'"
@@ -23406,7 +24197,7 @@ msgstr "Postavke web Sučelja"
 #: proxmox-widget-toolkit/src/window/NotificationMatcherEdit.js:1288
 #: proxmox-backup/www/window/TrafficControlEdit.js:383
 #: proxmox-yew-widget-toolkit/src/widget/form/date_field/date_panel.rs:248
-#: proxmox-yew-widget-toolkit/src/widget/calendar_grid.rs:852
+#: proxmox-yew-widget-toolkit/src/widget/calendar_grid.rs:874
 msgid "Wed"
 msgstr "Sri"
 
@@ -23446,6 +24237,12 @@ msgstr "Koji Objekti"
 msgid "When"
 msgstr "Kada"
 
+#: pve-manager/www/manager6/dc/MultipathWwidEdit.js:54
+#, fuzzy
+#| msgid "Show All Parts"
+msgid "When All Paths Fail"
+msgstr "Prikaži Sve Dijelove"
+
 #: pmg-gui/js/NavigationTree.js:40 pmg-gui/js/Utils.js:56
 msgid "When Objects"
 msgstr "Kada Objekti"
@@ -23473,7 +24270,7 @@ msgid ""
 "and skips partially encrypted content."
 msgstr ""
 
-#: pve-manager/www/manager6/ha/Status.js:30
+#: pve-manager/www/manager6/ha/Status.js:44
 msgid ""
 "While disarmed, HA does not protect your services. Failures during this "
 "period are not automatically recovered."
@@ -23495,14 +24292,31 @@ msgstr "Cijela godina"
 msgid "Will clear"
 msgstr ""
 
+#: pve-manager/www/manager6/node/SANLuns.js:176
+#: pve-manager/www/manager6/window/SANLunWipe.js:8
+#, fuzzy
+#| msgid "Wipe Disk"
+msgid "Wipe"
+msgstr "Obriši disk"
+
 #: proxmox-widget-toolkit/src/panel/DiskList.js:425
-#: pve-manager/www/manager6/Utils.js:2276 proxmox-backup/www/Utils.js:503
+#: pve-manager/www/manager6/Utils.js:2296 proxmox-backup/www/Utils.js:503
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:188
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:306
 msgid "Wipe Disk"
 msgstr "Obriši disk"
 
-#: pve-manager/www/manager6/storage/LVMEdit.js:279
+#: pve-manager/www/manager6/window/SANLunWipe.js:3
+msgid "Wipe LUN"
+msgstr ""
+
+#: pve-manager/www/manager6/window/SANLunWipe.js:24
+msgid ""
+"Wipe LUN {0} using node \"{1}\"? All data on the LUN will be lost, for every "
+"host that accesses it!"
+msgstr ""
+
+#: pve-manager/www/manager6/storage/LVMEdit.js:285
 #, fuzzy
 msgid "Wipe Removed Volumes"
 msgstr "Premjesti volumen"
@@ -23511,7 +24325,7 @@ msgstr "Premjesti volumen"
 msgid "Wipe labels and other left-overs"
 msgstr "Obrišite labele i druge ostatke"
 
-#: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:470
+#: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:479
 msgid "WireGuard"
 msgstr ""
 
@@ -23550,7 +24364,7 @@ msgid ""
 "duration combines amount and unit, for example 12h, 3d or 1d12h."
 msgstr ""
 
-#: pve-manager/www/manager6/storage/Base.js:205
+#: pve-manager/www/manager6/storage/Base.js:210
 #, fuzzy
 msgid ""
 "Without any keep option, the node's vzdump.conf or `keep-all` is used as "
@@ -23568,13 +24382,13 @@ msgstr ""
 "Bez ijedne opcije čuvanja, konfiguracija pohrane ili vzdump.conf čvoraće se "
 "koristiti kao pričuva"
 
-#: pve-manager/www/manager6/window/Migrate.js:481
+#: pve-manager/www/manager6/window/Migrate.js:508
 msgid ""
 "Without the config check, an outdated target node might drop configuration "
 "settings it cannot parse."
 msgstr ""
 
-#: pve-manager/www/manager6/window/Migrate.js:583
+#: pve-manager/www/manager6/window/Migrate.js:612
 msgid ""
 "Without the config check, an outdated target node might drop or ignore "
 "configuration settings it cannot parse."
@@ -23822,7 +24636,7 @@ msgstr ""
 msgid "ZFS Pool"
 msgstr "ZFS Skup"
 
-#: pve-manager/www/manager6/Utils.js:2298 proxmox-backup/www/Utils.js:504
+#: pve-manager/www/manager6/Utils.js:2318 proxmox-backup/www/Utils.js:504
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:212
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:307
 msgid "ZFS Storage"
@@ -23838,7 +24652,8 @@ msgstr ""
 msgid "ZiB"
 msgstr "ZiB"
 
-#: pve-manager/www/manager6/form/SDNZoneSelector.js:28
+#: pve-manager/www/manager6/form/SDNZoneSelector.js:59
+#: pve-manager/www/manager6/grid/PoolMembers.js:211
 #: pve-manager/www/manager6/sdn/FirewallVnetView.js:55
 #: pve-manager/www/manager6/sdn/VnetEdit.js:77
 #: pve-manager/www/manager6/sdn/VnetView.js:105
@@ -23857,7 +24672,7 @@ msgstr "Zona"
 msgid "Zone {0} on node {1}"
 msgstr "Zona {0} na čvoru {1}"
 
-#: pve-manager/www/manager6/dc/Config.js:267
+#: pve-manager/www/manager6/dc/Config.js:278
 msgid "Zones"
 msgstr "Zone"
 
@@ -23944,8 +24759,8 @@ msgstr "Automatski generiraj"
 msgid "base64-encoded WireGuard public key"
 msgstr ""
 
-#: pve-manager/www/manager6/window/Migrate.js:450
-#: pve-manager/www/manager6/window/Migrate.js:552
+#: pve-manager/www/manager6/window/Migrate.js:477
+#: pve-manager/www/manager6/window/Migrate.js:581
 msgid "blocking HA resource {0} on selected target node"
 msgstr ""
 
@@ -24172,11 +24987,16 @@ msgstr "svaki sat"
 msgid "iBGP"
 msgstr ""
 
+#: pve-manager/www/manager6/dc/SAN.js:175
+msgid "iSCSI Initiator Name"
+msgstr ""
+
 #: pve-manager/www/manager6/storage/ZFSEdit.js:77
 msgid "iSCSI Provider"
 msgstr "iSCSI Davatelj"
 
 #: pve-manager/www/manager6/storage/IScsiEdit.js:19
+#: pve-manager/www/manager6/storage/wizard/IScsi.js:203
 msgid "iSCSI Target"
 msgstr "iSCSI Cilj"
 
@@ -24281,7 +25101,7 @@ msgstr "pismo"
 msgid "mail.example.com"
 msgstr ""
 
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:802
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:832
 msgid "major difference"
 msgstr ""
 
@@ -24302,6 +25122,12 @@ msgstr "nedostaje"
 
 #: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:283
 msgid "monitor quorum {0}/{1}"
+msgstr ""
+
+#: pve-manager/www/manager6/dc/SAN.js:37
+msgid ""
+"multipath.conf sections for all nodes, for example a devices section with "
+"array settings"
 msgstr ""
 
 #: proxmox-yew-comp/src/key_value_list.rs:225
@@ -24331,11 +25157,6 @@ msgstr "novo"
 #, fuzzy
 msgid "new: {0}"
 msgstr "u {0}"
-
-#: pve-manager/www/manager6/grid/FirewallOptions.js:88
-#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:91
-msgid "nftables (tech preview)"
-msgstr ""
 
 #: proxmox-widget-toolkit/src/form/VlanField.js:7
 #: pve-manager/www/manager6/form/VLanField.js:7
@@ -24404,7 +25225,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:94
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:100
 msgid "not a valid bridge VLAN ID entry: {0}"
 msgstr ""
 
@@ -24473,6 +25294,11 @@ msgstr "Zastarjeli OSD-ovi"
 msgid "only unicast addresses are allowed"
 msgstr "dopuštene su samo jednoodredišne adrese"
 
+#: pve-manager/www/manager6/node/ISCSITargets.js:52
+#, fuzzy
+msgid "open-iscsi is not installed on this node."
+msgstr "{0} nije instaliran na ovom čvoru."
+
 #: pve-manager/www/manager6/node/ACME.js:23
 #, fuzzy
 msgid "optional"
@@ -24502,7 +25328,7 @@ msgstr "paravirtualizirano"
 msgid "peer's link address: {0}"
 msgstr "adresa peer-a: {0}"
 
-#: pve-manager/www/manager6/Utils.js:1204
+#: pve-manager/www/manager6/Utils.js:1223
 #: pve-manager/www/manager6/grid/Replication.js:396
 #: proxmox-backup/www/Utils.js:249
 msgid "pending"
@@ -24526,7 +25352,7 @@ msgid "protected"
 msgstr "zaštićeno"
 
 #: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:217
-#: proxmox-datacenter-manager/ui/src/pve/node/mod.rs:168
+#: proxmox-datacenter-manager/ui/src/pve/node/mod.rs:185
 #: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:198
 #: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:232
 #, fuzzy
@@ -24570,7 +25396,7 @@ msgstr "radi..."
 msgid "set"
 msgstr "Poništi"
 
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:806
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:836
 msgid "small difference"
 msgstr ""
 
@@ -24594,7 +25420,7 @@ msgstr "zaustavljeno"
 msgid "sub (subject)"
 msgstr "Naslov"
 
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:804
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:834
 msgid "substantial difference"
 msgstr ""
 
@@ -24607,7 +25433,7 @@ msgstr ""
 msgid "syncing"
 msgstr "sinkronizacija"
 
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:605
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:635
 msgid "the remote could not be reached"
 msgstr ""
 
@@ -25036,7 +25862,7 @@ msgstr ""
 msgid "{0} nodes online"
 msgstr "Čvor nije na mreži"
 
-#: pve-manager/www/manager6/Utils.js:1956
+#: pve-manager/www/manager6/Utils.js:1976
 msgid "{0} not installed."
 msgstr "{0} nije instaliran."
 
@@ -25108,7 +25934,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:473
+#: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:482
 msgid ""
 "{0} peer entry(ies) reference an interface that no longer exists on this "
 "node and were dropped from the form. Saving will not include them."
@@ -25209,7 +26035,7 @@ msgstr "{0} tjedana"
 msgid "{0} years"
 msgstr "{0} godina"
 
-#: pve-manager/www/manager6/sdn/NetworkBrowser.js:157
+#: pve-manager/www/manager6/sdn/NetworkBrowser.js:159
 #, fuzzy
 msgid "{0} {1} on node {2}"
 msgstr "{0}% od {1}"
@@ -25269,6 +26095,13 @@ msgstr ""
 #, fuzzy
 msgid "{0}/s recovery"
 msgstr "Oporavak"
+
+#. TRANSLATORS: The first parameter is the name of the remote, the second
+#. one the name of the node.
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:526
+#, fuzzy
+msgid "{1} on {0}"
+msgstr "ID {0}"
 
 #: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:515
 msgid "{active} of {total} nodes subscribed"
@@ -25694,6 +26527,10 @@ msgstr ""
 #~ msgstr "Neprivilegirano"
 
 #, fuzzy
+#~ msgid "Update List - {0} ({1})"
+#~ msgstr "Ažuriranja"
+
+#, fuzzy
 #~ msgid "Update status unknown"
 #~ msgstr "Ažuriraj sada"
 
@@ -25817,7 +26654,3 @@ msgstr ""
 #, fuzzy
 #~ msgid "{0}, Group: {1}"
 #~ msgstr "{0} od {1}"
-
-#, fuzzy
-#~ msgid "{1} {0}"
-#~ msgstr "ID {0}"

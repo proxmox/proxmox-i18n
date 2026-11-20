@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: proxmox translations\n"
 "Report-Msgid-Bugs-To: <support@proxmox.com>\n"
-"POT-Creation-Date: 2026-11-18 19:27+0100\n"
+"POT-Creation-Date: 2026-11-20 11:07+0100\n"
 "PO-Revision-Date: 2026-09-26 21:23+0900\n"
 "Last-Translator: angrystar170@gmail.com\n"
 "Language-Team: Korean <support@proxmox.com>\n"
@@ -175,6 +175,12 @@ msgstr "5분"
 msgid "<IP/Hostname>:Port"
 msgstr "<IP/호스트명>:포트"
 
+#: pve-manager/www/manager6/storage/wizard/LunSelect.js:92
+msgid ""
+"A LUN that is in use cannot be selected. A LUN with data that is no longer "
+"needed has to be wiped under Node > SAN first."
+msgstr ""
+
 #: proxmox-widget-toolkit/src/panel/NotificationMatchExpressionEditPanel.js:206
 msgid "A calendar rule's start time cannot be after the end time."
 msgstr ""
@@ -204,6 +210,12 @@ msgid ""
 "A newer version was installed but old version still running, please restart"
 msgstr ""
 "최신 버전이 설치되었지만, 이전 버전이 계속 실행 중입니다. 다시 시작하세요"
+
+#: pve-manager/www/manager6/dc/MultipathWwidEdit.js:74
+msgid ""
+"A node with fewer paths than expected shows the LUN as degraded, even after "
+"the kernel has removed a lost path."
+msgstr ""
 
 #: pve-manager/www/manager6/sdn/RouteMapPanel.js:129
 msgid ""
@@ -355,7 +367,7 @@ msgstr "API 토큰 권한"
 msgid "API Token Policy"
 msgstr "API 토큰"
 
-#: pve-manager/www/manager6/dc/Config.js:171
+#: pve-manager/www/manager6/dc/Config.js:182
 #: proxmox-backup/www/config/TokenView.js:40
 #: proxmox-datacenter-manager/ui/src/configuration/mod.rs:87
 msgid "API Tokens"
@@ -447,8 +459,9 @@ msgstr "액세스 제어"
 msgid "Access Key"
 msgstr "액세스 키"
 
-#: pve-manager/www/manager6/node/Config.js:262
+#: pve-manager/www/manager6/node/Config.js:275
 #: proxmox-backup/www/ServerAdministration.js:103
+#: proxmox-datacenter-manager/ui/src/administration/mod.rs:151
 #, fuzzy
 #| msgid "Access Key"
 msgid "Access Log"
@@ -536,7 +549,7 @@ msgstr "작업 오브젝트"
 #: proxmox-widget-toolkit/src/node/Tasks.js:479
 #: pve-manager/www/manager6/ceph/Status.js:302
 #: pve-manager/www/manager6/dc/Tasks.js:139
-#: pve-manager/www/manager6/tree/DhcpTree.js:226
+#: pve-manager/www/manager6/tree/DhcpTree.js:228
 #: pve-manager/www/manager6/tree/ResourceMapTree.js:343
 #: proxmox-backup/www/datastore/Content.js:1131
 #: proxmox-backup/www/tape/ChangerStatus.js:768
@@ -555,7 +568,7 @@ msgid "Activate AES instruction set for HW acceleration."
 msgstr "하드웨어 가속을 위해 AES 명령어셋을 활성화합니다."
 
 #: proxmox-widget-toolkit/src/form/NetworkSelector.js:112
-#: proxmox-widget-toolkit/src/node/NetworkView.js:310
+#: proxmox-widget-toolkit/src/node/NetworkView.js:311
 #: proxmox-widget-toolkit/src/node/ServiceView.js:233
 #: pmg-gui/js/PBSRemoteEdit.js:232 pmg-gui/js/PBSRemoteEdit.js:235
 #: pmg-gui/js/RuleEditor.js:46 pmg-gui/js/RuleInfo.js:301
@@ -580,6 +593,20 @@ msgstr "Active Directory 서버"
 #: proxmox-backup/www/window/SyncJobEdit.js:581
 msgid "Active Encryption Key"
 msgstr "암호화 키 활성화"
+
+#: pve-manager/www/manager6/window/SANLunState.js:100
+#, fuzzy
+#| msgid "Active"
+msgid "Active Paths"
+msgstr "활성"
+
+#: pve-manager/www/manager6/storage/IScsiEdit.js:199
+msgid ""
+"Active logical volumes and guests using individual paths do not switch to "
+"the multipath map. Check their device dependencies before relying on path "
+"redundancy (<a href=\"{0}\" target=\"_blank\" rel=\"noopener "
+"noreferrer\">documentation</a>)."
+msgstr ""
 
 #: proxmox-backup/www/tape/ChangerStatus.js:884
 #: proxmox-datacenter-manager/ui/src/ceph/clusters.rs:352
@@ -609,6 +636,7 @@ msgstr "활동"
 #: pve-manager/www/manager6/dc/CorosyncLinkEdit.js:308
 #: pve-manager/www/manager6/dc/MetricServerView.js:99
 #: pve-manager/www/manager6/dc/RealmSyncJob.js:144
+#: pve-manager/www/manager6/dc/SAN.js:229
 #: pve-manager/www/manager6/dc/StorageView.js:216
 #: pve-manager/www/manager6/dc/TokenView.js:112
 #: pve-manager/www/manager6/dc/UserView.js:148
@@ -616,7 +644,7 @@ msgstr "활동"
 #: pve-manager/www/manager6/form/TagColorGrid.js:278
 #: pve-manager/www/manager6/grid/FirewallAliases.js:147
 #: pve-manager/www/manager6/grid/FirewallRules.js:781
-#: pve-manager/www/manager6/grid/PoolMembers.js:250
+#: pve-manager/www/manager6/grid/PoolMembers.js:373
 #: pve-manager/www/manager6/grid/Replication.js:240
 #: pve-manager/www/manager6/ha/Resources.js:58
 #: pve-manager/www/manager6/ha/Rules.js:95
@@ -635,11 +663,12 @@ msgstr "활동"
 #: pve-manager/www/manager6/sdn/RouteMapPanel.js:306
 #: pve-manager/www/manager6/sdn/RouteMapPanel.js:566
 #: pve-manager/www/manager6/sdn/RouteMapPanel.js:955
-#: pve-manager/www/manager6/sdn/SubnetEdit.js:229
+#: pve-manager/www/manager6/sdn/StaticRoutes.js:194
+#: pve-manager/www/manager6/sdn/SubnetEdit.js:244
 #: pve-manager/www/manager6/sdn/VnetACLView.js:222
 #: pve-manager/www/manager6/sdn/ZoneView.js:109
 #: pve-manager/www/manager6/sdn/fabrics/RedistributionGrid.js:23
-#: pve-manager/www/manager6/tree/DhcpTree.js:250
+#: pve-manager/www/manager6/tree/DhcpTree.js:252
 #: pve-manager/www/manager6/tree/ResourceMapTree.js:325
 #: proxmox-backup/www/config/ACLView.js:156
 #: proxmox-backup/www/config/EncryptionKeysView.js:230
@@ -920,7 +949,7 @@ msgstr "클러스터 스토리지 구성에 새 풀을 추가합니다."
 
 #: pve-manager/www/manager6/lxc/CreateWizard.js:90
 #: pve-manager/www/manager6/qemu/CreateWizard.js:130
-#: pve-manager/www/manager6/window/Restore.js:251
+#: pve-manager/www/manager6/window/Restore.js:285
 msgid "Add to HA"
 msgstr "HA에 추가"
 
@@ -941,6 +970,7 @@ msgstr "추가 모니터를 권장합니다. 모니터 탭에서 언제든지 �
 #: pmg-gui/js/UserBlockWelcomeList.js:33 pmg-gui/js/UserBlockWelcomeList.js:195
 #: pve-manager/www/manager6/ceph/ServiceList.js:683
 #: pve-manager/www/manager6/ceph/Services.js:174
+#: pve-manager/www/manager6/node/SANLuns.js:25
 #: proxmox-datacenter-manager/ui/src/ceph/managers.rs:188
 #: proxmox-datacenter-manager/ui/src/ceph/monitors.rs:139
 msgid "Address"
@@ -955,7 +985,7 @@ msgid "Addresses and ports used by the OSD service"
 msgstr "OSD 서비스에서 사용하는 주소 및 포트"
 
 #: pmg-gui/js/NavigationTree.js:104 proxmox-backup/www/NavigationTree.js:98
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:322
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:325
 msgid "Administration"
 msgstr "관리"
 
@@ -1027,9 +1057,16 @@ msgstr "영향을 받음"
 msgid "Affinity"
 msgstr "유연성"
 
-#: pve-manager/www/manager6/dc/Config.js:241
+#: pve-manager/www/manager6/dc/Config.js:252
 msgid "Affinity Rules"
 msgstr "유연성 규칙"
+
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:245
+msgid ""
+"After mapping a new LUN on the array, rescan the Fibre Channel hosts of each "
+"node (<a href=\"{0}\" target=\"_blank\" rel=\"noopener "
+"noreferrer\">documentation</a>)."
+msgstr ""
 
 #: pve-manager/www/manager6/dc/TokenEdit.js:123
 msgid ""
@@ -1045,7 +1082,8 @@ msgstr "경고"
 msgid "Alert Flags"
 msgstr "경고 플래그"
 
-#: pve-manager/www/manager6/dc/Config.js:375
+#: pve-manager/www/manager6/dc/Config.js:386
+#: pve-manager/www/manager6/dc/MultipathWwidEdit.js:36
 #: pve-manager/www/manager6/form/SDNVnetSelector.js:34
 #: pve-manager/www/manager6/grid/FirewallAliases.js:47
 #: pve-manager/www/manager6/grid/FirewallAliases.js:84
@@ -1107,6 +1145,13 @@ msgstr "별칭 (Alias)"
 #: proxmox-yew-comp/src/task_status_selector.rs:134
 msgid "All"
 msgstr "모두"
+
+#: pve-manager/www/manager6/dc/MultipathWwidEdit.js:44
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:173
+#, fuzzy
+#| msgid "No restrictions"
+msgid "All (No restrictions)"
+msgstr "제한 사항 없음"
 
 #: proxmox-widget-toolkit/src/node/APT.js:186
 #: proxmox-yew-comp/src/apt_package_manager.rs:320
@@ -1278,6 +1323,7 @@ msgstr "SMT 허용"
 
 #. TRANSLATORS: As in "a chain of volumes, each referencing the next one".
 #: pve-manager/www/manager6/storage/Base.js:49
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:175
 msgid "Allow Snapshots as Volume-Chain"
 msgstr "볼륨 체인으로 스냅샷 허용"
 
@@ -1296,6 +1342,10 @@ msgstr ""
 msgid "Allow local disk migration"
 msgstr "로컬 디스크 마이그레이션 허용"
 
+#: pve-manager/www/manager6/window/Restore.js:294
+msgid "Allow restoring a backup of another guest"
+msgstr ""
+
 #: pve-manager/www/manager6/qemu/MemoryEdit.js:164
 msgid ""
 "Allow the Kernel Samepage Merging daemon to merge memory pages of this VM."
@@ -1303,6 +1353,7 @@ msgstr ""
 "Kernel Samepage Merging 데몬이 이 가상 머신의 메모리 페이지를 병합하도록 허용"
 "합니다."
 
+#: pve-manager/www/manager6/sdn/FabricsContentView.js:73
 #: pve-manager/www/manager6/sdn/fabrics/wireguard/NodeEdit.js:99
 msgid "Allowed IPs"
 msgstr "IP 허용"
@@ -1326,7 +1377,7 @@ msgstr "Intel CPU로 향상된 Spectre 완화 허용"
 msgid "Alphabetical"
 msgstr "알파벳순"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:43
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:49
 msgid "Alphanumeric string starting with a character."
 msgstr "문자로 시작하는 영숫자 문자열입니다."
 
@@ -1342,8 +1393,8 @@ msgstr ""
 "또한 HA 규칙에서 리소스를 제거하고 해당 규칙에 다른 리소스가 없는 경우 규칙"
 "을 제거합니다."
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:377
-#: proxmox-widget-toolkit/src/node/NetworkView.js:287
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:412
+#: proxmox-widget-toolkit/src/node/NetworkView.js:288
 msgid "Alternative Names"
 msgstr "대체 이름"
 
@@ -1541,7 +1592,7 @@ msgstr ""
 msgid "Are you sure to remove the subscription key?"
 msgstr "구독 키를 제거할까요?"
 
-#: pve-manager/www/manager6/ha/Status.js:68
+#: pve-manager/www/manager6/ha/Status.js:147
 msgid "Are you sure you want to arm HA?"
 msgstr "HA를 무장할까요?"
 
@@ -1559,9 +1610,21 @@ msgstr "볼륨 {0}을(를) 제거할까요?"
 msgid "Are you sure you want to detach entry {0}"
 msgstr "항목 {0}을(를) 분리할까요?"
 
-#: pve-manager/www/manager6/ha/Status.js:25
+#: pve-manager/www/manager6/ha/Status.js:91
+#, fuzzy
+#| msgid "Are you sure you want to disarm HA with resource mode '{0}'?"
+msgid "Are you sure you want to disable maintenance mode for node '{0}'?"
+msgstr "리소스 모드 '{0}'으로 HA를 비활성화할까요?"
+
+#: pve-manager/www/manager6/ha/Status.js:39
 msgid "Are you sure you want to disarm HA with resource mode '{0}'?"
 msgstr "리소스 모드 '{0}'으로 HA를 비활성화할까요?"
+
+#: pve-manager/www/manager6/ha/Status.js:106
+#, fuzzy
+#| msgid "Are you sure you want to remove the schedule for {0}"
+msgid "Are you sure you want to enable maintenance mode for node '{0}'?"
+msgstr "{0}에 대한 일정을 제거할까요?"
 
 #: pmg-gui/js/PBSSnapshotView.js:284
 msgid "Are you sure you want to forget snapshot {0}"
@@ -1594,7 +1657,7 @@ msgstr "'{1}'에 대한 '{0}' 항목을 제거할까요?"
 msgid "Are you sure you want to remove '{0}' on '{1}' for '{2}'"
 msgstr "'{2}'에 대한 '{1}'에서 '{0}'을(를) 제거할까요?"
 
-#: pve-manager/www/manager6/tree/DhcpTree.js:102
+#: pve-manager/www/manager6/tree/DhcpTree.js:104
 msgid "Are you sure you want to remove DHCP mapping {0}"
 msgstr "DHCP 매핑 {0}을(를) 제거할까요?"
 
@@ -1605,7 +1668,7 @@ msgstr "순서 번호가 {0}인 항목을 제거할까요?"
 #: proxmox-widget-toolkit/src/button/Button.js:141 pmg-gui/js/RuleInfo.js:41
 #: pmg-gui/js/UserBlockWelcomeList.js:181
 #: pve-manager/www/manager6/grid/BackupView.js:205
-#: pve-manager/www/manager6/grid/PoolMembers.js:212
+#: pve-manager/www/manager6/grid/PoolMembers.js:330
 #: pve-manager/www/manager6/lxc/Network.js:507
 #: pve-manager/www/manager6/lxc/Resources.js:246
 #: pve-manager/www/manager6/qemu/CloudInit.js:14
@@ -1745,7 +1808,7 @@ msgstr "{0} 항목을 지울까요?"
 msgid "Area"
 msgstr "구역"
 
-#: pve-manager/www/manager6/ha/Status.js:90
+#: pve-manager/www/manager6/ha/Status.js:169
 msgid "Arm HA"
 msgstr "HA 무장"
 
@@ -1764,7 +1827,7 @@ msgstr "리모트에 키 할당"
 msgid "Assign Key to {remote}/{node}"
 msgstr "{remote}/{node}에 키 할당하기"
 
-#: pve-manager/www/manager6/node/LVM.js:113
+#: pve-manager/www/manager6/node/LVM.js:118
 msgid "Assigned to LVs"
 msgstr "LV에 할당됨"
 
@@ -1997,7 +2060,7 @@ msgstr "사용자 자동 생성"
 msgid "Autogenerate"
 msgstr "자동 생성"
 
-#: pve-manager/www/manager6/window/Restore.js:232
+#: pve-manager/www/manager6/window/Restore.js:266
 msgid "Autogenerate unique properties, e.g., MAC addresses"
 msgstr "고유 속성(properties) 자동 생성(예: MAC 주소)"
 
@@ -2022,7 +2085,7 @@ msgstr "자동"
 msgid "Automatic (Storage used by the VM, or 'local')"
 msgstr "자동 (가상 머신에서 사용하는 스토리지 또는 '로컬')"
 
-#: pve-manager/www/manager6/sdn/zones/SimpleEdit.js:29
+#: pve-manager/www/manager6/sdn/zones/SimpleEdit.js:60
 msgid "Automatic DHCP"
 msgstr "자동 DHCP"
 
@@ -2042,8 +2105,8 @@ msgstr "자동 크기 조정"
 msgid "Autoscaler Mode"
 msgstr "자동 확장 모드"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:60
-#: proxmox-widget-toolkit/src/node/NetworkView.js:320
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:66
+#: proxmox-widget-toolkit/src/node/NetworkView.js:321
 #: proxmox-yew-comp/src/configuration/network_view.rs:441
 #: proxmox-yew-comp/src/configuration/network_edit.rs:141
 #: proxmox-yew-comp/src/configuration/network_edit.rs:215
@@ -2139,8 +2202,8 @@ msgstr "Backscatter 점수"
 #: pmg-gui/js/BackupConfiguration.js:5 pmg-gui/js/BackupRestore.js:77
 #: pmg-gui/js/BackupRestore.js:80 pmg-gui/js/BackupRestore.js:100
 #: pmg-gui/js/Utils.js:906 pve-manager/www/manager6/Utils.js:758
-#: pve-manager/www/manager6/Utils.js:2284
-#: pve-manager/www/manager6/dc/Config.js:140
+#: pve-manager/www/manager6/Utils.js:2304
+#: pve-manager/www/manager6/dc/Config.js:151
 #: pve-manager/www/manager6/lxc/Config.js:307
 #: pve-manager/www/manager6/lxc/MPEdit.js:262
 #: pve-manager/www/manager6/qemu/Config.js:360
@@ -2180,7 +2243,7 @@ msgstr "그룹 백업"
 msgid "Backup Groups"
 msgstr "그룹 백업"
 
-#: pve-manager/www/manager6/Utils.js:2284
+#: pve-manager/www/manager6/Utils.js:2304
 #: pve-manager/www/manager6/dc/Backup.js:9
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:52
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:197
@@ -2203,7 +2266,7 @@ msgstr "지금 백업"
 msgid "Backup Restore"
 msgstr "백업 복원"
 
-#: pve-manager/www/manager6/storage/Base.js:196
+#: pve-manager/www/manager6/storage/Base.js:201
 msgid "Backup Retention"
 msgstr "백업 보존 기간"
 
@@ -2230,7 +2293,7 @@ msgstr "백업 시간"
 msgid "Backup content type not available for this storage."
 msgstr "이 스토리지에 사용할 수 없는 백업 콘텐츠 유형입니다."
 
-#: pve-manager/www/manager6/Utils.js:2308
+#: pve-manager/www/manager6/Utils.js:2328
 msgid "Backup notifications"
 msgstr "백업 통지"
 
@@ -2283,7 +2346,7 @@ msgstr "대역폭"
 
 #: pve-manager/www/manager6/dc/StorageView.js:268
 #: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:144
-#: pve-manager/www/manager6/window/Restore.js:213
+#: pve-manager/www/manager6/window/Restore.js:247
 msgid "Bandwidth Limit"
 msgstr "대역폭 제한"
 
@@ -2324,11 +2387,11 @@ msgstr "기본 모델"
 msgid "Base URL this PDM instance is reachable from the target host"
 msgstr "이 PDM 인스턴스의 기본 URL은 대상 호스트에서 접근 가능합니다."
 
-#: pve-manager/www/manager6/storage/LVMEdit.js:192
+#: pve-manager/www/manager6/storage/LVMEdit.js:195
 msgid "Base storage"
 msgstr "기본 스토리지"
 
-#: pve-manager/www/manager6/storage/LVMEdit.js:220
+#: pve-manager/www/manager6/storage/LVMEdit.js:226
 msgid "Base volume"
 msgstr "기본 볼륨"
 
@@ -2428,7 +2491,7 @@ msgstr "디스크 udev 필터 모드"
 msgid "Bond Members udev Filters"
 msgstr "디스크 udev 필터"
 
-#: proxmox-widget-toolkit/src/node/NetworkView.js:355
+#: proxmox-widget-toolkit/src/node/NetworkView.js:356
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:532
 #: proxmox-yew-comp/src/configuration/network_view.rs:481
 msgid "Bond Mode"
@@ -2451,8 +2514,8 @@ msgstr "부팅 모드"
 msgid "Boot Order"
 msgstr "부팅 순서"
 
-#: pve-manager/www/manager6/panel/GuestStatusView.js:147
-#: pve-manager/www/manager6/panel/TemplateStatusView.js:60
+#: pve-manager/www/manager6/panel/GuestStatusView.js:150
+#: pve-manager/www/manager6/panel/TemplateStatusView.js:63
 #: proxmox-datacenter-manager/ui/src/pve/lxc/overview.rs:301
 #: proxmox-datacenter-manager/ui/src/pve/qemu/overview.rs:310
 msgid "Bootdisk size"
@@ -2483,13 +2546,13 @@ msgstr "브릿지"
 msgid "Bridge Ports"
 msgstr "브릿지 포트"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:137
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:152
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:143
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:158
 #: proxmox-yew-comp/src/configuration/network_edit.rs:154
 msgid "Bridge ports"
 msgstr "브릿지 포트"
 
-#: pve-manager/www/manager6/sdn/NetworkBrowser.js:120
+#: pve-manager/www/manager6/sdn/NetworkBrowser.js:122
 #: pve-manager/www/manager6/sdn/ZoneBridgesPanel.js:5
 msgid "Bridges"
 msgstr "브릿지"
@@ -2589,21 +2652,21 @@ msgstr "일괄 시작"
 msgid "Bulk Suspend"
 msgstr "일괄 일시중지"
 
-#: pve-manager/www/manager6/Utils.js:2211
-#: pve-manager/www/manager6/Utils.js:2244
+#: pve-manager/www/manager6/Utils.js:2231
+#: pve-manager/www/manager6/Utils.js:2264
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:156
 msgid "Bulk migrate VMs and Containers"
 msgstr "VM 및 컨테이너 일괄 마이그레이션"
 
-#: pve-manager/www/manager6/Utils.js:2213
-#: pve-manager/www/manager6/Utils.js:2214
-#: pve-manager/www/manager6/Utils.js:2273
+#: pve-manager/www/manager6/Utils.js:2233
+#: pve-manager/www/manager6/Utils.js:2234
+#: pve-manager/www/manager6/Utils.js:2293
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:185
 msgid "Bulk shutdown VMs and Containers"
 msgstr "VM 및 컨테이너 일괄 종료"
 
-#: pve-manager/www/manager6/Utils.js:2212
-#: pve-manager/www/manager6/Utils.js:2272
+#: pve-manager/www/manager6/Utils.js:2232
+#: pve-manager/www/manager6/Utils.js:2292
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:184
 msgid "Bulk start VMs and Containers"
 msgstr "VM 및 컨테이너 일괄 시작"
@@ -2647,6 +2710,18 @@ msgstr ""
 msgid "Bytes Used"
 msgstr "바이트 사용됨"
 
+#: pve-manager/www/manager6/sdn/FabricsContentView.js:99
+#, fuzzy
+#| msgid "Bytes Used"
+msgid "Bytes received"
+msgstr "바이트 사용됨"
+
+#: pve-manager/www/manager6/sdn/FabricsContentView.js:92
+#, fuzzy
+#| msgid "Bytes Used"
+msgid "Bytes transmitted"
+msgstr "바이트 사용됨"
+
 #: pve-manager/www/manager6/window/GuestImport.js:1032
 msgid ""
 "CD-ROM images cannot get imported, if required you can reconfigure the '{0}' "
@@ -2675,7 +2750,7 @@ msgid "CID"
 msgstr "CID"
 
 #: proxmox-widget-toolkit/src/form/NetworkSelector.js:96
-#: proxmox-widget-toolkit/src/node/NetworkView.js:381
+#: proxmox-widget-toolkit/src/node/NetworkView.js:382
 #: pmg-gui/js/MyNetworks.js:45 pmg-gui/js/MyNetworks.js:74
 #: pve-manager/www/manager6/sdn/EvpnZoneIpVrfPanel.js:18
 #: pve-manager/www/manager6/sdn/controllers/EvpnEdit.js:49
@@ -2770,7 +2845,7 @@ msgstr "CPU 단위"
 #: pve-manager/www/manager6/ha/NodePrioritySelector.js:53
 #: pve-manager/www/manager6/node/StatusView.js:27
 #: pve-manager/www/manager6/node/Summary.js:166
-#: pve-manager/www/manager6/panel/GuestStatusView.js:102
+#: pve-manager/www/manager6/panel/GuestStatusView.js:105
 #: pve-manager/www/manager6/panel/GuestSummary.js:98
 #: proxmox-backup/www/ServerStatus.js:215
 #: proxmox-backup/www/ServerStatus.js:217
@@ -2796,7 +2871,7 @@ msgstr "CPU"
 msgid "CRM State"
 msgstr "CRM 상태"
 
-#: pve-manager/www/manager6/ha/Status.js:126
+#: pve-manager/www/manager6/ha/Status.js:233
 msgid "CRS Settings"
 msgstr "CRS 설정"
 
@@ -2911,25 +2986,25 @@ msgstr "게스트 에이전트에서 정보를 가져올 수 없습니다.<br>�
 msgid "Cannot load the storage plugin information for type '{0}': {1}"
 msgstr ""
 
-#: pve-manager/www/manager6/window/Migrate.js:377
+#: pve-manager/www/manager6/window/Migrate.js:404
 msgid "Cannot migrate VM with local CD/DVD"
 msgstr "로컬 CD/DVD로 VM을 마이그레이션할 수 없습니다"
 
-#: pve-manager/www/manager6/window/Migrate.js:322
+#: pve-manager/www/manager6/window/Migrate.js:349
 msgid "Cannot migrate VM with local resources: {0}"
 msgstr "로컬 리소스가 있는 VM을 마이그레이션할 수 없습니다: {0}"
 
-#: pve-manager/www/manager6/window/Migrate.js:458
+#: pve-manager/www/manager6/window/Migrate.js:485
 msgid "Cannot migrate VM, because {0}."
 msgstr "{0}으로 인해 VM을 마이그레이션할 수 없습니다."
 
-#: pve-manager/www/manager6/window/Migrate.js:405
+#: pve-manager/www/manager6/window/Migrate.js:432
 msgid "Cannot migrate conntrack state, source node is lacking support."
 msgstr ""
 "conntrack 상태를 마이그레이션할 수 없습니다. 원본 노드에 대한 지원이 부족합니"
 "다."
 
-#: pve-manager/www/manager6/window/Migrate.js:414
+#: pve-manager/www/manager6/window/Migrate.js:441
 msgid ""
 "Cannot migrate conntrack state, target node is lacking support. Active "
 "network connections might get dropped."
@@ -2937,11 +3012,11 @@ msgstr ""
 "conntrack 상태를 마이그레이션할 수 없습니다. 대상 노드에 대한 지원이 부족합니"
 "다. 활성 네트워크 연결이 끊어질 수 있습니다."
 
-#: pve-manager/www/manager6/window/Migrate.js:560
+#: pve-manager/www/manager6/window/Migrate.js:589
 msgid "Cannot migrate container, because {0}."
 msgstr "{0}으로 인해 컨테이너를 마이그레이션할 수 없습니다."
 
-#: pve-manager/www/manager6/window/Migrate.js:352
+#: pve-manager/www/manager6/window/Migrate.js:379
 msgid "Cannot migrate running VM with mapped resources: {0}"
 msgstr "매핑된 리소스가 있는 실행 중인 VM을 마이그레이션할 수 없습니다: {0}"
 
@@ -3003,7 +3078,7 @@ msgstr ""
 "주의: '어떤 개체'는 각 메일 부분과 개별적으로 일치하므로 '임의의 일치 항목' "
 "외의 임의의 옵션을 사용할 때는 주의하세요."
 
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:357
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:361
 msgid "Ceph"
 msgstr "Ceph"
 
@@ -3096,7 +3171,7 @@ msgid "Certificate matches the stored fingerprint."
 msgstr "인증서가 저장된 지문과 일치합니다."
 
 #: pmg-gui/js/Certificates.js:5 pmg-gui/js/Certificates.js:30
-#: pmg-gui/js/NavigationTree.js:96 pve-manager/www/manager6/node/Config.js:204
+#: pmg-gui/js/NavigationTree.js:96 pve-manager/www/manager6/node/Config.js:217
 #: proxmox-backup/www/NavigationTree.js:72
 #: proxmox-backup/www/config/CertificateView.js:5
 #: proxmox-backup/www/config/CertificateView.js:26
@@ -3133,7 +3208,7 @@ msgstr "암호 변경"
 msgid "Change Protection"
 msgstr "변경 보호"
 
-#: pve-manager/www/manager6/Utils.js:2228
+#: pve-manager/www/manager6/Utils.js:2248
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:138
 msgid "Change global Ceph flags"
 msgstr "글로벌 Ceph 플래그 변경"
@@ -3240,7 +3315,7 @@ msgstr "구독 확인"
 msgid "Check connection"
 msgstr "연결 확인"
 
-#: pve-manager/www/manager6/window/Migrate.js:634
+#: pve-manager/www/manager6/window/Migrate.js:663
 msgid "Check that the target node can parse the guest configuration."
 msgstr ""
 
@@ -3249,6 +3324,12 @@ msgstr ""
 msgid "Checked {0} of {n} endpoint"
 msgid_plural "Checked {0} of {n} endpoints"
 msgstr[0] ""
+
+#: pve-manager/www/manager6/node/SANLuns.js:21
+#, fuzzy
+#| msgid "Check"
+msgid "Checker"
+msgstr "확인"
 
 #: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:58
 msgid "Checking"
@@ -3292,7 +3373,7 @@ msgstr "디바이스 선택"
 msgid "Choose Port"
 msgstr "포트 선택"
 
-#: pve-manager/www/manager6/window/Restore.js:272
+#: pve-manager/www/manager6/window/Restore.js:338
 msgid ""
 "Choose if you want to keep or override the privilege level of the restored "
 "Container."
@@ -3472,8 +3553,8 @@ msgstr "클라이언트 쓰기 작업"
 msgid "Clipboard"
 msgstr "클립보드"
 
-#: pve-manager/www/manager6/Utils.js:2249
-#: pve-manager/www/manager6/Utils.js:2279
+#: pve-manager/www/manager6/Utils.js:2269
+#: pve-manager/www/manager6/Utils.js:2299
 #: pve-manager/www/manager6/dc/OptionView.js:344
 #: pve-manager/www/manager6/lxc/CmdMenu.js:95
 #: pve-manager/www/manager6/lxc/Config.js:121
@@ -3512,7 +3593,7 @@ msgstr "CloudInit 드라이브"
 #: pmg-gui/js/NavigationTree.js:78
 #: pve-manager/www/manager6/dc/ClusterEdit.js:12
 #: pve-manager/www/manager6/dc/Config.js:106
-#: pve-manager/www/manager6/dc/Health.js:44
+#: pve-manager/www/manager6/dc/Health.js:45
 #: pve-yew-mobile-gui/src/pages/page_tasks.rs:89
 msgid "Cluster"
 msgstr "클러스터"
@@ -3530,6 +3611,12 @@ msgstr "클러스터 방화벽"
 #: proxmox-datacenter-manager/ui/src/remotes/firewall/ui_helpers.rs:73
 msgid "Cluster Firewall - {}"
 msgstr "클러스터 방화벽 - {}"
+
+#: pve-manager/www/manager6/dc/Health.js:55
+#, fuzzy
+#| msgid "Cluster"
+msgid "Cluster ID"
+msgstr "클러스터"
 
 #: pve-manager/www/manager6/dc/Cluster.js:53
 msgid "Cluster Information"
@@ -3564,7 +3651,7 @@ msgstr "클러스터 노드"
 msgid "Cluster Resource Scheduling"
 msgstr "클러스터 리소스 예약"
 
-#: pve-manager/www/manager6/ha/Status.js:128
+#: pve-manager/www/manager6/ha/Status.js:235
 msgid "Cluster Resource Scheduling, configured under Datacenter > Options"
 msgstr "클러스터 리소스 스케줄링은 데이터센터 > 옵션에서 구성됩니다."
 
@@ -3638,6 +3725,12 @@ msgstr "색상 테마"
 msgid "Columns"
 msgstr "열"
 
+#: pve-manager/www/manager6/storage/IScsiEdit.js:181
+msgid ""
+"Combine the paths of each LUN into one device on every node using the "
+"storage."
+msgstr ""
+
 #: pve-manager/www/manager6/ha/Fencing.js:33
 msgid "Command"
 msgstr "명령"
@@ -3656,8 +3749,8 @@ msgstr "명령이 실패함"
 #: proxmox-widget-toolkit/src/form/UserSelector.js:41
 #: proxmox-widget-toolkit/src/node/APTHistory.js:285
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:363
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:304
-#: proxmox-widget-toolkit/src/node/NetworkView.js:413
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:339
+#: proxmox-widget-toolkit/src/node/NetworkView.js:414
 #: proxmox-widget-toolkit/src/panel/AuthView.js:43
 #: proxmox-widget-toolkit/src/panel/EmailRecipientPanel.js:64
 #: proxmox-widget-toolkit/src/panel/GotifyEditPanel.js:46
@@ -3780,7 +3873,7 @@ msgstr "명령이 실패함"
 msgid "Comment"
 msgstr "설명"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:30
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:36
 #: proxmox-yew-comp/src/configuration/network_edit.rs:134
 msgid ""
 "Commonly: vmbr[N] (e.g., vmbr0, vmbr1). Must start with a character, max 10 "
@@ -3834,7 +3927,7 @@ msgstr "제안 계산 중..."
 msgid "Config"
 msgstr "구성"
 
-#: pve-manager/www/manager6/window/Migrate.js:630
+#: pve-manager/www/manager6/window/Migrate.js:659
 #, fuzzy
 #| msgid "Configure Ceph"
 msgid "Config Check"
@@ -3855,7 +3948,7 @@ msgstr "구성 잠김 ({0})"
 #: pve-manager/www/manager6/UIOptions.js:110
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:517
 #: pve-manager/www/manager6/ceph/Config.js:143
-#: pve-manager/www/manager6/node/Config.js:393
+#: pve-manager/www/manager6/node/Config.js:430
 #: pve-manager/www/manager6/window/BackupConfig.js:3
 #: proxmox-backup/www/NavigationTree.js:42
 #: proxmox-backup/www/SystemConfiguration.js:5
@@ -3888,7 +3981,7 @@ msgstr "구성 변경만 가능하며 데이터는 제거되지 않습니다."
 msgid "Configuration for {0} not correct ('{1}' != '{2}')"
 msgstr "{0}에 대한 구성이 올바르지 않음('{1}' != '{2}')"
 
-#: pve-manager/www/manager6/Utils.js:2250
+#: pve-manager/www/manager6/Utils.js:2270
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:162
 msgid "Configure"
 msgstr "구성"
@@ -3918,8 +4011,9 @@ msgstr "구성됨"
 #: pve-manager/www/manager6/ceph/OSD.js:856
 #: pve-manager/www/manager6/ceph/Status.js:85
 #: pve-manager/www/manager6/dc/Backup.js:762
-#: pve-manager/www/manager6/ha/Status.js:34
-#: pve-manager/www/manager6/ha/Status.js:67
+#: pve-manager/www/manager6/ha/Status.js:48
+#: pve-manager/www/manager6/ha/Status.js:116
+#: pve-manager/www/manager6/ha/Status.js:146
 #: pve-manager/www/manager6/lxc/CmdMenu.js:26
 #: pve-manager/www/manager6/lxc/CmdMenu.js:124
 #: pve-manager/www/manager6/lxc/CreateWizard.js:267
@@ -3932,10 +4026,11 @@ msgstr "구성됨"
 #: pve-manager/www/manager6/sdn/RouteMapPanel.js:904
 #: pve-manager/www/manager6/sdn/StatusView.js:49
 #: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:260
-#: pve-manager/www/manager6/tree/DhcpTree.js:99
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:252
+#: pve-manager/www/manager6/tree/DhcpTree.js:101
 #: pve-manager/www/manager6/tree/ResourceMapTree.js:124
 #: pve-manager/www/manager6/window/GuestStop.js:72
-#: pve-manager/www/manager6/window/Restore.js:105
+#: pve-manager/www/manager6/window/Restore.js:108
 #: proxmox-backup/www/datastore/Content.js:756
 #: proxmox-datacenter-manager/ui/src/configuration/views.rs:318
 #: proxmox-datacenter-manager/ui/src/guests.rs:553
@@ -3975,6 +4070,10 @@ msgstr "TFA 제거 확인"
 msgid "Confirm password"
 msgstr "암호 확인"
 
+#: pve-manager/www/manager6/window/SANLunWipe.js:50
+msgid "Confirm that no other host uses the LUN."
+msgstr ""
+
 #. A message that conveys what will be confirmed.
 #: proxmox-yew-widget-toolkit/src/widget/confirm_dialog.rs:27
 msgid "Confirm this action?"
@@ -3992,6 +4091,7 @@ msgstr "({0}) 비밀번호를 확인하세요."
 msgid "Confirm your ({}) password"
 msgstr "({}) 비밀번호를 확인하세요."
 
+#: pve-manager/www/manager6/SANUtils.js:141
 #: pve-manager/www/manager6/sdn/fabrics/bgp/FabricEdit.js:74
 #: pve-manager/www/manager6/sdn/fabrics/ospf/FabricEdit.js:43
 msgid "Connected"
@@ -4010,7 +4110,15 @@ msgstr "연결 인증서"
 msgid "Connection Information"
 msgstr "연결 정보"
 
-#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:181
+#: pve-manager/www/manager6/node/ISCSITargets.js:29
+#: pve-manager/www/manager6/storage/wizard/IScsi.js:223
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:180
+#, fuzzy
+#| msgid "Connection error"
+msgid "Connection Storage"
+msgstr "연결 오류"
+
+#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:180
 msgid "Connection Tracking Max"
 msgstr "연결 추적 최대치"
 
@@ -4019,7 +4127,7 @@ msgstr "연결 추적 최대치"
 #: proxmox-widget-toolkit/src/Utils.js:564
 #: proxmox-widget-toolkit/src/Utils.js:566
 #: proxmox-widget-toolkit/src/Utils.js:569
-#: pve-manager/www/manager6/Utils.js:741 pve-manager/www/manager6/Utils.js:1930
+#: pve-manager/www/manager6/Utils.js:741 pve-manager/www/manager6/Utils.js:1950
 msgid "Connection error"
 msgstr "연결 오류"
 
@@ -4029,16 +4137,22 @@ msgstr ""
 "연결 실패. 네트워크 오류 또는 Proxmox VE 서비스가 실행되지 않았을 수 있습니"
 "다."
 
+#: pve-manager/www/manager6/storage/wizard/IScsi.js:113
+msgid ""
+"Connection storage \"{0}\" is not available on node \"{1}\". Open the web UI "
+"on one of its nodes."
+msgstr ""
+
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_summary.rs:132
 msgid "Connections"
 msgstr "연결"
 
 #. TRANSLATORS: See https://www.kernel.org/doc/html/next/networking/netlink_spec/conntrack.html
-#: pve-manager/www/manager6/window/Migrate.js:702
+#: pve-manager/www/manager6/window/Migrate.js:731
 msgid "Conntrack state"
 msgstr "Conntrack 상태"
 
-#: pve-manager/www/manager6/window/Migrate.js:423
+#: pve-manager/www/manager6/window/Migrate.js:450
 msgid ""
 "Conntrack state migration disabled. Active network connections might get "
 "dropped."
@@ -4058,8 +4172,8 @@ msgid "Consent Text"
 msgstr "동의서 텍스트"
 
 #: proxmox-widget-toolkit/src/Utils.js:773 pmg-gui/js/ServerStatus.js:60
-#: pve-manager/www/manager6/Utils.js:2270
-#: pve-manager/www/manager6/Utils.js:2277
+#: pve-manager/www/manager6/Utils.js:2290
+#: pve-manager/www/manager6/Utils.js:2297
 #: pve-manager/www/manager6/button/ConsoleButton.js:20
 #: pve-manager/www/manager6/lxc/CmdMenu.js:172
 #: pve-manager/www/manager6/lxc/Config.js:255
@@ -4135,14 +4249,14 @@ msgstr "컨테이너"
 
 #: pve-manager/www/manager6/dc/StorageView.js:238
 #: pve-manager/www/manager6/sdn/Browser.js:36
-#: pve-manager/www/manager6/sdn/NetworkBrowser.js:101
-#: pve-manager/www/manager6/sdn/NetworkBrowser.js:147
+#: pve-manager/www/manager6/sdn/NetworkBrowser.js:103
+#: pve-manager/www/manager6/sdn/NetworkBrowser.js:149
 #: pve-manager/www/manager6/storage/BTRFSEdit.js:22
 #: pve-manager/www/manager6/storage/CIFSEdit.js:213
 #: pve-manager/www/manager6/storage/CephFSEdit.js:99
 #: pve-manager/www/manager6/storage/CustomEdit.js:29
 #: pve-manager/www/manager6/storage/DirEdit.js:22
-#: pve-manager/www/manager6/storage/LVMEdit.js:256
+#: pve-manager/www/manager6/storage/LVMEdit.js:262
 #: pve-manager/www/manager6/storage/LvmThinEdit.js:179
 #: pve-manager/www/manager6/storage/NFSEdit.js:172
 #: pve-manager/www/manager6/storage/PBSEdit.js:570
@@ -4188,8 +4302,8 @@ msgstr "EVPN 영역 {}의 컨트롤러가 존재하지 않음"
 msgid "Controllers"
 msgstr "컨트롤러"
 
-#: pve-manager/www/manager6/Utils.js:2267
-#: pve-manager/www/manager6/Utils.js:2296
+#: pve-manager/www/manager6/Utils.js:2287
+#: pve-manager/www/manager6/Utils.js:2316
 #: pve-manager/www/manager6/lxc/CmdMenu.js:116
 #: pve-manager/www/manager6/lxc/Config.js:129
 #: pve-manager/www/manager6/qemu/CmdMenu.js:150
@@ -4217,6 +4331,11 @@ msgstr "복사"
 #: pve-manager/www/manager6/dc/ClusterEdit.js:124
 msgid "Copy Information"
 msgstr "정보 복사"
+
+#: pve-manager/www/manager6/dc/SAN.js:139
+#: pve-manager/www/manager6/storage/wizard/NodeIdentities.js:76
+msgid "Copy Initiator Names"
+msgstr ""
 
 #: pmg-gui/js/PBSRemoteEdit.js:60
 #: pve-manager/www/manager6/storage/PBSEdit.js:61
@@ -4250,7 +4369,7 @@ msgstr "비밀 구문 값 복사"
 msgid "Copy answer token to clipboard."
 msgstr "클립보드에 답변 토큰 복사"
 
-#: pve-manager/www/manager6/Utils.js:2238
+#: pve-manager/www/manager6/Utils.js:2258
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:150
 msgid "Copy data"
 msgstr "데이터 복사"
@@ -4277,6 +4396,7 @@ msgid "Copy the Join Information here and use it on the node you want to add."
 msgstr "여기에서 가입 정보를 복사하여 추가하려는 노드에서 사용합니다."
 
 #: pve-manager/www/manager6/ceph/Status.js:306
+#: pve-manager/www/manager6/node/ISCSITargets.js:135
 msgid "Copy to Clipboard"
 msgstr "클립보드에 복사"
 
@@ -4290,11 +4410,17 @@ msgstr "클립보드에 복사"
 msgid "Copy token secret to clipboard."
 msgstr "클립보드에 토큰 비밀 구문 복사"
 
+#: pve-manager/www/manager6/Utils.js:1139
+#, fuzzy
+#| msgid "Copy to clipboard"
+msgid "Copying to the clipboard failed: {0}"
+msgstr "클립보드에 복사"
+
 #: pve-manager/www/manager6/lxc/ResourceEdit.js:113
 #: pve-manager/www/manager6/lxc/Resources.js:75
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:146
 #: pve-manager/www/manager6/window/GuestImport.js:505
-#: pve-manager/www/manager6/window/Restore.js:348
+#: pve-manager/www/manager6/window/Restore.js:414
 #: proxmox-yew-comp/src/form/pve/lxc_property/lxc_cores_property.rs:39
 #: proxmox-yew-comp/src/form/pve/lxc_property/lxc_cores_property.rs:84
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_processor_property.rs:85
@@ -4319,8 +4445,8 @@ msgstr "'{0}'을(를) 제거할 수 없습니다: '{1}'"
 msgid "Could not detect a ceph installation in the cluster"
 msgstr "클러스터에서 ceph 설치를 감지할 수 없음"
 
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:586
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:608
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:592
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:638
 msgid "Could not fetch update status: {0}"
 msgstr "업데이트 상태를 가져올 수 없음: {0}"
 
@@ -4356,6 +4482,14 @@ msgstr "개인 키를 읽을 수 없습니다 - 먼저 선택기를 만들어 �
 msgid "Could not read the presented certificate's fingerprint."
 msgstr "제출된 인증서의 지문을 읽을 수 없습니다."
 
+#: pve-manager/www/manager6/storage/wizard/FibreChannel.js:46
+msgid ""
+"Could not read the task status. The volume group creation task may still be "
+"running. Check its log under Node > Task History. If it succeeds, add volume "
+"group \"{0}\" as storage \"{1}\" under Datacenter > Storage > Add > LVM with "
+"Shared enabled and the same nodes and snapshot setting as in the setup."
+msgstr ""
+
 #: proxmox-datacenter-manager/ui/src/remotes/updates.rs:436
 msgid "Could not refresh update status."
 msgstr "업데이트 상태를 새로 고칠 수 없습니다."
@@ -4387,25 +4521,25 @@ msgid "Country"
 msgstr "국가"
 
 #: proxmox-widget-toolkit/src/Utils.js:712
-#: proxmox-widget-toolkit/src/node/NetworkView.js:243
+#: proxmox-widget-toolkit/src/node/NetworkView.js:244
 #: proxmox-widget-toolkit/src/window/Edit.js:314
 #: pmg-gui/js/ClusterAdministration.js:453 pmg-gui/js/LDAPConfig.js:551
 #: pmg-gui/js/MailProxyTLSDestinations.js:120
 #: pmg-gui/js/MailProxyTLSInboundDomains.js:67 pmg-gui/js/MyNetworks.js:61
 #: pmg-gui/js/ObjectGroupList.js:99 pmg-gui/js/RelayDomains.js:71
 #: pmg-gui/js/SpamDetectorCustom.js:225 pmg-gui/js/Transport.js:56
-#: pve-manager/www/manager6/Utils.js:2215
-#: pve-manager/www/manager6/Utils.js:2216
-#: pve-manager/www/manager6/Utils.js:2217
-#: pve-manager/www/manager6/Utils.js:2218
-#: pve-manager/www/manager6/Utils.js:2219
-#: pve-manager/www/manager6/Utils.js:2226
-#: pve-manager/www/manager6/Utils.js:2231
-#: pve-manager/www/manager6/Utils.js:2240
-#: pve-manager/www/manager6/Utils.js:2242
+#: pve-manager/www/manager6/Utils.js:2235
+#: pve-manager/www/manager6/Utils.js:2236
+#: pve-manager/www/manager6/Utils.js:2237
+#: pve-manager/www/manager6/Utils.js:2238
+#: pve-manager/www/manager6/Utils.js:2239
+#: pve-manager/www/manager6/Utils.js:2246
 #: pve-manager/www/manager6/Utils.js:2251
-#: pve-manager/www/manager6/Utils.js:2280
-#: pve-manager/www/manager6/Utils.js:2298
+#: pve-manager/www/manager6/Utils.js:2260
+#: pve-manager/www/manager6/Utils.js:2262
+#: pve-manager/www/manager6/Utils.js:2271
+#: pve-manager/www/manager6/Utils.js:2300
+#: pve-manager/www/manager6/Utils.js:2318
 #: pve-manager/www/manager6/ceph/Pool.js:479
 #: pve-manager/www/manager6/ceph/Pool.js:502
 #: pve-manager/www/manager6/ceph/ServiceList.js:579
@@ -4414,7 +4548,7 @@ msgstr "국가"
 #: pve-manager/www/manager6/dc/RoleView.js:87
 #: pve-manager/www/manager6/dc/SecurityGroups.js:141
 #: pve-manager/www/manager6/node/Directory.js:147
-#: pve-manager/www/manager6/node/LVM.js:149
+#: pve-manager/www/manager6/node/LVM.js:154
 #: pve-manager/www/manager6/node/LVMThin.js:178
 #: pve-manager/www/manager6/node/ZFS.js:284
 #: pve-manager/www/manager6/panel/IPSet.js:109
@@ -4454,7 +4588,7 @@ msgstr "CT 생성"
 msgid "Create CephFS"
 msgstr "CephFS 생성"
 
-#: pmg-gui/js/Utils.js:907 pve-manager/www/manager6/Utils.js:2229
+#: pmg-gui/js/Utils.js:907 pve-manager/www/manager6/Utils.js:2249
 #: pve-manager/www/manager6/dc/Cluster.js:155
 #: pve-manager/www/manager6/dc/ClusterEdit.js:5
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:139
@@ -4495,6 +4629,7 @@ msgstr "생성: OSD"
 #: proxmox-widget-toolkit/src/panel/TfaView.js:238
 #: proxmox-widget-toolkit/src/window/ACMEAccount.js:161
 #: proxmox-widget-toolkit/src/window/TfaEdit.js:192
+#: pve-manager/www/manager6/panel/GuestIdentity.js:44
 #: proxmox-backup/www/config/EncryptionKeysView.js:327
 #: proxmox-backup/www/form/EncryptionKeySelector.js:22
 #: proxmox-backup/www/tape/EncryptionKeys.js:133
@@ -4507,6 +4642,18 @@ msgstr "생성됨"
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/token_panel.rs:325
 msgid "Created By"
 msgstr "생성자"
+
+#: pve-manager/www/manager6/panel/GuestIdentity.js:50
+#, fuzzy
+#| msgid "Create VM"
+msgid "Created with QEMU"
+msgstr "VM 생성"
+
+#: pve-manager/www/manager6/storage/wizard/FibreChannel.js:50
+#, fuzzy
+#| msgid "Existing volume groups"
+msgid "Creating the volume group..."
+msgstr "기존 볼륨 그룹"
 
 #: pve-manager/www/manager6/ceph/OSDDetails.js:275
 msgid "Creation time"
@@ -4542,7 +4689,7 @@ msgstr "현재 값"
 msgid "Current Version"
 msgstr "현재 버전"
 
-#: pve-manager/www/manager6/window/Migrate.js:673
+#: pve-manager/www/manager6/window/Migrate.js:702
 #: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:519
 msgid "Current layout"
 msgstr "현재 레이아웃"
@@ -4560,7 +4707,7 @@ msgstr "현재 상태가 손실됩니다."
 msgid "Custom"
 msgstr "사용자 지정"
 
-#: pve-manager/www/manager6/dc/Config.js:448
+#: pve-manager/www/manager6/dc/Config.js:459
 msgid "Custom CPU Models"
 msgstr "사용자 지정 CPU 모델"
 
@@ -4608,11 +4755,15 @@ msgstr "DELETE"
 msgid "DHCP"
 msgstr "DHCP"
 
+#: pve-manager/www/manager6/sdn/SubnetEdit.js:64
+msgid "DHCP DNS Resolver"
+msgstr ""
+
 #: pve-manager/www/manager6/sdn/IpamEdit.js:49
 msgid "DHCP Mapping"
 msgstr "DHCP 매핑"
 
-#: pve-manager/www/manager6/sdn/SubnetEdit.js:271
+#: pve-manager/www/manager6/sdn/SubnetEdit.js:286
 msgid "DHCP Ranges"
 msgstr "DHCP 범위"
 
@@ -4624,7 +4775,7 @@ msgstr "DKIM"
 #: pmg-gui/js/SystemConfiguration.js:33
 #: pve-manager/www/manager6/lxc/Config.js:281
 #: pve-manager/www/manager6/lxc/CreateWizard.js:263
-#: pve-manager/www/manager6/node/Config.js:212
+#: pve-manager/www/manager6/node/Config.js:225
 #: pve-manager/www/manager6/sdn/ZoneView.js:159
 #: proxmox-backup/www/SystemConfiguration.js:35
 #: proxmox-datacenter-manager/ui/src/configuration/mod.rs:163
@@ -4643,7 +4794,7 @@ msgstr "DNS API"
 msgid "DNS Prefix"
 msgstr "DNS 접두사"
 
-#: pve-manager/www/manager6/sdn/zones/Base.js:63
+#: pve-manager/www/manager6/sdn/zones/Base.js:65
 msgid "DNS Server"
 msgstr "DNS 서버"
 
@@ -4655,7 +4806,7 @@ msgstr "DNS 서버 주소"
 msgid "DNS TXT Record"
 msgstr "DNS TXT 레코드"
 
-#: pve-manager/www/manager6/sdn/zones/Base.js:79
+#: pve-manager/www/manager6/sdn/zones/Base.js:81
 msgid "DNS Zone"
 msgstr "DNS 영역"
 
@@ -4696,6 +4847,10 @@ msgstr "DNS 서버 2"
 #: proxmox-yew-comp/src/configuration/dns.rs:68
 msgid "DNS server 3"
 msgstr "DNS 서버 3"
+
+#: pve-manager/www/manager6/sdn/SubnetEdit.js:68
+msgid "DNS server advertised to guests via DHCP."
+msgstr ""
 
 #: pve-manager/www/manager6/lxc/DNS.js:43
 #: pve-manager/www/manager6/qemu/CloudInit.js:230
@@ -4785,6 +4940,7 @@ msgstr "데이터 업로드됨"
 msgid "Database Mirror"
 msgstr "데이터베이스 미러"
 
+#: pve-manager/www/manager6/SANUtils.js:193
 #: pve-manager/www/manager6/dc/CmdMenu.js:80
 #: pve-manager/www/manager6/dc/Config.js:86
 #: pve-manager/www/manager6/form/IPRefSelector.js:75
@@ -4886,16 +5042,16 @@ msgstr "데이터스토어"
 msgid "Date"
 msgstr "날짜"
 
-#: proxmox-yew-widget-toolkit/src/widget/form/date_field/date_field.rs:195
+#: proxmox-yew-widget-toolkit/src/widget/form/date_field/date_field.rs:205
 msgid "Date is after maximum allowed date"
 msgstr "날짜가 허용된 최대 날짜 이후임"
 
-#: proxmox-yew-widget-toolkit/src/widget/form/date_field/date_field.rs:189
+#: proxmox-yew-widget-toolkit/src/widget/form/date_field/date_field.rs:199
 msgid "Date is before minimum allowed date"
 msgstr "날짜가 허용된 최소 날짜 이전임"
 
-#: proxmox-yew-widget-toolkit/src/widget/form/date_field/date_field.rs:199
-#: proxmox-yew-widget-toolkit/src/widget/form/date_field/date_field.rs:203
+#: proxmox-yew-widget-toolkit/src/widget/form/date_field/date_field.rs:209
+#: proxmox-yew-widget-toolkit/src/widget/form/date_field/date_field.rs:213
 msgid "Date is disabled"
 msgstr "날짜 기능이 비활성화됨"
 
@@ -4912,7 +5068,7 @@ msgstr "일"
 msgid "Days to show"
 msgstr "표시할 일수"
 
-#: pve-manager/www/manager6/Utils.js:2202
+#: pve-manager/www/manager6/Utils.js:2222
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:116
 msgid "Deactivate"
 msgstr "비활성화"
@@ -4944,6 +5100,12 @@ msgstr "압축 해제 알고리즘"
 #: proxmox-backup/www/window/SyncJobEdit.js:57
 msgid "Decryption Keys"
 msgstr "복호화 키"
+
+#: pve-manager/www/manager6/sdn/zones/SimpleEdit.js:43
+#, fuzzy
+#| msgid "replicated"
+msgid "Dedicated VRF"
+msgstr "복제됨"
 
 #: pve-manager/www/manager6/node/ZFS.js:263 proxmox-backup/www/ZFSList.js:98
 msgid "Deduplication"
@@ -5002,10 +5164,10 @@ msgstr "OSD.{0}에 대한 심층 검사"
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_agent_property.rs:102
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_bios_property.rs:55
 #: proxmox-yew-comp/src/form/pve/firewall_property/log_ratelimit_property.rs:55
-#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:185
-#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:190
-#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:211
-#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:216
+#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:184
+#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:189
+#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:210
+#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:215
 #: proxmox-yew-comp/src/editable_property.rs:176
 #: proxmox-yew-widget-toolkit/src/widget/form/tristate_boolean.rs:144
 msgid "Default"
@@ -5081,6 +5243,12 @@ msgstr "기본 스토리지"
 msgid "Default Sync Options"
 msgstr "기본 동기화 옵션"
 
+#: pve-manager/www/manager6/sdn/fabrics/FabricEdit.js:48
+#, fuzzy
+#| msgid "Default"
+msgid "Default VRF"
+msgstr "기본"
+
 #: pve-manager/www/manager6/form/PhysBitsSelector.js:106
 msgid "Default from QEMU"
 msgstr "QEMU의 기본값"
@@ -5126,7 +5294,7 @@ msgstr "오리진에 기본값 적용"
 msgid "Defaults to requesting host URI"
 msgstr "요청하는 host URI에 기본값 적용"
 
-#: pve-manager/www/manager6/window/Restore.js:214
+#: pve-manager/www/manager6/window/Restore.js:248
 msgid "Defaults to target storage restore limit"
 msgstr "대상 스토리지 복원 제한에 기본값 적용"
 
@@ -5143,6 +5311,7 @@ msgstr ""
 "Proxmox 데이터센터 관리자가 클러스터 또는 단일 노드에 접속하는 데 사용할 수 "
 "있는 주소 집합을 정의합니다. 지문은 신뢰할 수 없는 인증서에만 필요합니다."
 
+#: pve-manager/www/manager6/SANUtils.js:135
 #: proxmox-datacenter-manager/ui/src/ceph/clusters.rs:117
 msgid "Degraded"
 msgstr "저하됨"
@@ -5162,7 +5331,7 @@ msgstr "지연 경고 시간(hours)"
 #: pve-manager/www/manager6/sdn/RouteMapPanel.js:249
 #: pve-manager/www/manager6/sdn/RouteMapPanel.js:508
 #: pve-manager/www/manager6/sdn/fabrics/RedistributionGrid.js:122
-#: pve-manager/www/manager6/tree/DhcpTree.js:272
+#: pve-manager/www/manager6/tree/DhcpTree.js:274
 #: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:784
 #: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:795
 #: pmg-yew-quarantine-gui/src/spam_list.rs:338
@@ -5176,8 +5345,8 @@ msgstr "제거"
 msgid "Delete Custom Certificate"
 msgstr "사용자 지정 인증서 제거"
 
-#: pve-manager/www/manager6/Utils.js:2252
-#: pve-manager/www/manager6/Utils.js:2281
+#: pve-manager/www/manager6/Utils.js:2272
+#: pve-manager/www/manager6/Utils.js:2301
 #: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:598
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:164
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:193
@@ -5338,20 +5507,26 @@ msgstr "목적지"
 msgid "Destination CIDRs that route to this node, comma-separated"
 msgstr "이 노드로 라우팅되는 목적지 CIDR을 쉼표로 구분하여 입력하세요."
 
-#: pve-manager/www/manager6/Utils.js:2220
-#: pve-manager/www/manager6/Utils.js:2221
-#: pve-manager/www/manager6/Utils.js:2222
-#: pve-manager/www/manager6/Utils.js:2223
-#: pve-manager/www/manager6/Utils.js:2224
-#: pve-manager/www/manager6/Utils.js:2225
-#: pve-manager/www/manager6/Utils.js:2253
-#: pve-manager/www/manager6/Utils.js:2282
+#: pve-manager/www/manager6/sdn/StaticRoutes.js:17
+#, fuzzy
+#| msgid "Destination"
+msgid "Destination Prefix"
+msgstr "목적지"
+
+#: pve-manager/www/manager6/Utils.js:2240
+#: pve-manager/www/manager6/Utils.js:2241
+#: pve-manager/www/manager6/Utils.js:2242
+#: pve-manager/www/manager6/Utils.js:2243
+#: pve-manager/www/manager6/Utils.js:2244
+#: pve-manager/www/manager6/Utils.js:2245
+#: pve-manager/www/manager6/Utils.js:2273
+#: pve-manager/www/manager6/Utils.js:2302
 #: pve-manager/www/manager6/ceph/OSD.js:214
 #: pve-manager/www/manager6/ceph/OSD.js:1444
 #: pve-manager/www/manager6/ceph/Pool.js:526
 #: pve-manager/www/manager6/ceph/ServiceList.js:584
 #: pve-manager/www/manager6/node/Directory.js:187
-#: pve-manager/www/manager6/node/LVM.js:187
+#: pve-manager/www/manager6/node/LVM.js:192
 #: pve-manager/www/manager6/node/LVMThin.js:222
 #: pve-manager/www/manager6/node/ZFS.js:336
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:130
@@ -5381,13 +5556,13 @@ msgstr "네임스페이스 '{0}' 제거"
 msgid "Destroy all data (dangerous!)"
 msgstr "모든 데이터 파기(위험!)"
 
-#: pve-manager/www/manager6/Utils.js:2239
+#: pve-manager/www/manager6/Utils.js:2259
 #, fuzzy
 #| msgid "Destroy"
 msgid "Destroy image"
 msgstr "파기"
 
-#: pve-manager/www/manager6/Utils.js:2275
+#: pve-manager/www/manager6/Utils.js:2295
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:187
 msgid "Destroy image from unknown guest"
 msgstr "알 수 없는 게스트의 이미지 파기"
@@ -5417,6 +5592,8 @@ msgstr "자세한 매핑"
 #: proxmox-widget-toolkit/src/window/TaskViewer.js:65
 #: pve-manager/www/manager6/ceph/OSD.js:1360
 #: pve-manager/www/manager6/ceph/OSDDetails.js:17
+#: pve-manager/www/manager6/panel/GuestIdentity.js:87
+#: pve-manager/www/manager6/panel/GuestIdentity.js:88
 #: pve-manager/www/manager6/sdn/ZoneContentView.js:42
 #: proxmox-datacenter-manager/ui/src/dashboard/subscription_info.rs:173
 #: proxmox-yew-comp/src/task_progress.rs:174
@@ -5443,9 +5620,11 @@ msgstr "업그레이드 전 라이선스 제품군 혼합을 감지함"
 #: pve-manager/www/manager6/lxc/DeviceEdit.js:132
 #: pve-manager/www/manager6/lxc/Resources.js:146
 #: pve-manager/www/manager6/node/Directory.js:114
+#: pve-manager/www/manager6/node/SANLuns.js:81
 #: pve-manager/www/manager6/qemu/BootOrderEdit.js:198
 #: pve-manager/www/manager6/qemu/PCIEdit.js:196
 #: pve-manager/www/manager6/qemu/PCIEdit.js:218
+#: pve-manager/www/manager6/storage/wizard/LunSelect.js:158
 #: pve-manager/www/manager6/window/PCIMapEdit.js:277
 #: proxmox-backup/www/DirectoryList.js:142
 #: proxmox-backup/www/window/DataStoreEdit.js:168
@@ -5500,7 +5679,7 @@ msgstr "위치"
 #: proxmox-widget-toolkit/src/Schema.js:102
 #: proxmox-widget-toolkit/src/Utils.js:61
 #: proxmox-widget-toolkit/src/window/ACMEAccount.js:171
-#: pve-manager/www/manager6/Utils.js:2232
+#: pve-manager/www/manager6/Utils.js:2252
 #: pve-manager/www/manager6/node/Directory.js:147
 #: pve-manager/www/manager6/node/Directory.js:172
 #: pve-manager/www/manager6/storage/DirEdit.js:14
@@ -5517,7 +5696,7 @@ msgstr "디렉토리"
 msgid "Directory ID"
 msgstr "디렉토리 ID"
 
-#: pve-manager/www/manager6/dc/Config.js:442
+#: pve-manager/www/manager6/dc/Config.js:453
 msgid "Directory Mappings"
 msgstr "디렉토리 매핑"
 
@@ -5526,7 +5705,7 @@ msgid ""
 "Directory Mappings can be managed under Datacenter -> Directory Mappings"
 msgstr "디렉토리 매핑은 '데이터센터 -> 디렉토리 매핑'에서 관리할 수 있습니다"
 
-#: pve-manager/www/manager6/Utils.js:2231 proxmox-backup/www/Utils.js:466
+#: pve-manager/www/manager6/Utils.js:2251 proxmox-backup/www/Utils.js:466
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:143
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:253
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:254
@@ -5535,6 +5714,7 @@ msgstr "디렉토리 스토리지"
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:198
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:578
+#: pve-manager/www/manager6/ha/Status.js:221
 #: proxmox-yew-comp/src/apt_repositories.rs:585
 msgid "Disable"
 msgstr "비활성화"
@@ -5586,7 +5766,7 @@ msgctxt "package action"
 msgid "Disappear"
 msgstr "비활성화"
 
-#: pve-manager/www/manager6/ha/Status.js:98
+#: pve-manager/www/manager6/ha/Status.js:177
 msgid "Disarm HA"
 msgstr "HA 무장 해제"
 
@@ -5604,7 +5784,7 @@ msgstr "보류 중인 사항 버리기"
 msgid "Discard Pending Changes"
 msgstr "보류 중인 변경 사항 버리기"
 
-#: pve-manager/www/manager6/storage/LVMEdit.js:285
+#: pve-manager/www/manager6/storage/LVMEdit.js:291
 #, fuzzy
 #| msgid "Wipe Removed Volumes"
 msgid "Discard Removed Volumes"
@@ -5744,7 +5924,7 @@ msgid "Disk usage"
 msgstr "디스크 사용량"
 
 #: pve-manager/www/manager6/lxc/CreateWizard.js:233
-#: pve-manager/www/manager6/node/Config.js:345
+#: pve-manager/www/manager6/node/Config.js:358
 #: pve-manager/www/manager6/qemu/CreateWizard.js:243
 #: pve-manager/www/manager6/window/GuestImport.js:676
 #: proxmox-backup/www/panel/StorageAndDisks.js:18
@@ -5874,7 +6054,7 @@ msgstr "저하됨"
 #: pmg-gui/js/AttachmentGrid.js:128 pmg-gui/js/AttachmentQuarantine.js:141
 #: pmg-gui/js/BackupRestore.js:188 pmg-gui/js/PBSRemoteEdit.js:86
 #: pmg-gui/js/SpamQuarantine.js:422 pmg-gui/js/Subscription.js:60
-#: pmg-gui/js/VirusQuarantine.js:164 pve-manager/www/manager6/Utils.js:2233
+#: pmg-gui/js/VirusQuarantine.js:164 pve-manager/www/manager6/Utils.js:2253
 #: pve-manager/www/manager6/node/Subscription.js:87
 #: pve-manager/www/manager6/storage/PBSEdit.js:87
 #: pve-manager/www/manager6/storage/TemplateView.js:185
@@ -6144,7 +6324,7 @@ msgstr "이메일 '보낸 사람:'"
 msgid "EMail attribute name(s)"
 msgstr "이메일 속성 이름"
 
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:338
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:342
 msgid "EVPN"
 msgstr "EVPN"
 
@@ -6201,7 +6381,7 @@ msgstr "EVPN 영역 {}에 정의된 컨트롤러가 없습니다!"
 #: pmg-gui/js/Transport.js:71 pmg-gui/js/UserView.js:141
 #: pmg-gui/js/VirusDetectorOptions.js:52
 #: pmg-gui/js/VirusQuarantineOptions.js:42
-#: pve-manager/www/manager6/Utils.js:2227
+#: pve-manager/www/manager6/Utils.js:2247
 #: pve-manager/www/manager6/ceph/Pool.js:461
 #: pve-manager/www/manager6/ceph/Pool.js:519
 #: pve-manager/www/manager6/dc/AuthView.js:115
@@ -6213,6 +6393,7 @@ msgstr "EVPN 영역 {}에 정의된 컨트롤러가 없습니다!"
 #: pve-manager/www/manager6/dc/PoolView.js:53
 #: pve-manager/www/manager6/dc/RealmSyncJob.js:148
 #: pve-manager/www/manager6/dc/RoleView.js:99
+#: pve-manager/www/manager6/dc/SAN.js:232
 #: pve-manager/www/manager6/dc/SecurityGroups.js:134
 #: pve-manager/www/manager6/dc/StorageView.js:174
 #: pve-manager/www/manager6/dc/TokenView.js:119
@@ -6243,10 +6424,11 @@ msgstr "EVPN 영역 {}에 정의된 컨트롤러가 없습니다!"
 #: pve-manager/www/manager6/sdn/IpamView.js:53
 #: pve-manager/www/manager6/sdn/PrefixListPanel.js:260
 #: pve-manager/www/manager6/sdn/RouteMapPanel.js:960
+#: pve-manager/www/manager6/sdn/StaticRoutes.js:199
 #: pve-manager/www/manager6/sdn/SubnetView.js:71
 #: pve-manager/www/manager6/sdn/VnetView.js:44
 #: pve-manager/www/manager6/sdn/ZoneView.js:61
-#: pve-manager/www/manager6/tree/DhcpTree.js:261
+#: pve-manager/www/manager6/tree/DhcpTree.js:263
 #: pve-manager/www/manager6/tree/SnapshotTree.js:27
 #: pve-manager/www/manager6/tree/SnapshotTree.js:283
 #: proxmox-backup/www/config/GCView.js:148
@@ -6321,6 +6503,12 @@ msgstr "'{1}'에 대한 '{0}' 매핑 편집"
 msgid "Edit Notes"
 msgstr "메모 편집"
 
+#: pve-manager/www/manager6/dc/SAN.js:261
+#, fuzzy
+#| msgid "No Overrides"
+msgid "Edit Overrides"
+msgstr "재정의 안 함"
+
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_edit_window.rs:106
 msgid "Edit Prepared Answer"
 msgstr "준비된 답변 편집"
@@ -6364,9 +6552,15 @@ msgstr "이그레스"
 msgid "EiB"
 msgstr "EiB"
 
-#: pve-manager/www/manager6/sdn/fabrics/FabricEdit.js:75
-#: pve-manager/www/manager6/sdn/fabrics/FabricEdit.js:110
+#: pve-manager/www/manager6/sdn/fabrics/FabricEdit.js:90
+#: pve-manager/www/manager6/sdn/fabrics/FabricEdit.js:125
 msgid "Either IPv4 Prefix or IPv6 Prefix is required"
+msgstr "Pv4 접두사 또는 IPv6 접두사 중 하나가 필요함"
+
+#: pve-manager/www/manager6/sdn/StaticRoutes.js:31
+#, fuzzy
+#| msgid "Either IPv4 Prefix or IPv6 Prefix is required"
+msgid "Either a gateway or an interface is required."
 msgstr "Pv4 접두사 또는 IPv6 접두사 중 하나가 필요함"
 
 #: proxmox-widget-toolkit/src/panel/EmailRecipientPanel.js:12
@@ -6374,7 +6568,7 @@ msgstr "Pv4 접두사 또는 IPv6 접두사 중 하나가 필요함"
 msgid "Either mailto or mailto-user must be set"
 msgstr "메일 수신자 또는 메일 수신 사용자 중 하나를 설정해야 합니다."
 
-#: proxmox-widget-toolkit/src/node/NetworkView.js:434
+#: proxmox-widget-toolkit/src/node/NetworkView.js:435
 msgid ""
 "Either reboot or use 'Apply Configuration' (needs ifupdown2) to activate"
 msgstr "재부팅하거나 '구성 적용'(ifupdown2 필요)을 사용하여 활성화합니다."
@@ -6428,6 +6622,7 @@ msgstr "긴급"
 #: pve-manager/www/manager6/grid/FirewallRules.js:329
 #: pve-manager/www/manager6/grid/FirewallRules.js:584
 #: pve-manager/www/manager6/ha/RuleEdit.js:73
+#: pve-manager/www/manager6/ha/Status.js:212
 #: pve-manager/www/manager6/storage/Base.js:32
 #: pve-manager/www/manager6/window/FirewallLograteEdit.js:16
 #: proxmox-yew-comp/src/apt_repositories.rs:587
@@ -6470,6 +6665,17 @@ msgstr "작업 활성화"
 msgid "Enable Kernel Hashes"
 msgstr "커널 해시 활성화"
 
+#: pve-manager/www/manager6/node/SANLuns.js:158
+#, fuzzy
+#| msgid "Enable quota"
+msgid "Enable Multipath"
+msgstr "할당량 활성화"
+
+#: pve-manager/www/manager6/storage/wizard/IScsi.js:144
+msgid ""
+"Enable Multipath in the edit dialog of storage \"{0}\" before using it here."
+msgstr ""
+
 #: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:67
 msgid "Enable NDP"
 msgstr "NDP 활성화"
@@ -6510,7 +6716,7 @@ msgstr ""
 msgid "Enable if the HA Resources must be restricted to the nodes."
 msgstr "HA 리소스를 노드로 제한해야 하는 경우 활성화합니다."
 
-#: pve-manager/www/manager6/storage/LVMEdit.js:272
+#: pve-manager/www/manager6/storage/LVMEdit.js:278
 msgid "Enable if the LVM is located on a shared LUN."
 msgstr "LVM이 공유 LUN에 있는 경우 활성화합니다."
 
@@ -6539,7 +6745,7 @@ msgstr "할당량 활성화"
 msgid "Enable support for extended attributes."
 msgstr "확장된 속성에 대한 지원을 활성화합니다."
 
-#: pve-manager/www/manager6/storage/LVMEdit.js:289
+#: pve-manager/www/manager6/storage/LVMEdit.js:295
 msgid ""
 "Enable to issue discard (TRIM) requests for logical volumes before removing "
 "them."
@@ -6603,7 +6809,7 @@ msgstr "활성화됨"
 msgid "Enabled for Windows"
 msgstr "Windows용으로 활성화됨"
 
-#: pve-manager/www/manager6/window/Migrate.js:706
+#: pve-manager/www/manager6/window/Migrate.js:735
 msgid "Enables live migration of conntrack entries for this VM."
 msgstr "이 VM에 대한 conntrack 항목의 라이브 마이그레이션을 활성화합니다."
 
@@ -6659,7 +6865,7 @@ msgstr "암호화 키"
 msgid "End"
 msgstr "종료"
 
-#: pve-manager/www/manager6/sdn/SubnetEdit.js:202
+#: pve-manager/www/manager6/sdn/SubnetEdit.js:217
 msgid "End Address"
 msgstr "끝 주소"
 
@@ -6728,7 +6934,7 @@ msgstr "다운로드할 URL 입력"
 msgid "Enterprise (recommended)"
 msgstr "Enterprise(권장)"
 
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:778
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:808
 msgid "Enterprise repository configured, but missing subscription"
 msgstr "Enterprise 리포지토리가 구성되었지만 구독이 누락됨"
 
@@ -6790,9 +6996,9 @@ msgstr "제거 중"
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:226
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:460
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:655
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:462
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:529
 #: proxmox-widget-toolkit/src/node/NetworkView.js:150
-#: proxmox-widget-toolkit/src/node/NetworkView.js:262
+#: proxmox-widget-toolkit/src/node/NetworkView.js:263
 #: proxmox-widget-toolkit/src/node/ServiceView.js:104
 #: proxmox-widget-toolkit/src/panel/ACMEDomains.js:147
 #: proxmox-widget-toolkit/src/panel/ACMEDomains.js:186
@@ -6828,8 +7034,9 @@ msgstr "제거 중"
 #: pmg-gui/js/SpamQuarantine.js:127 pmg-gui/js/Subscription.js:93
 #: pmg-gui/js/Subscription.js:181 pmg-gui/js/UserBlockWelcomeList.js:91
 #: pmg-gui/js/UserView.js:115 pmg-gui/js/Utils.js:797
-#: pmg-gui/js/ViewMailHeaders.js:61 pve-manager/www/manager6/Utils.js:1712
-#: pve-manager/www/manager6/Utils.js:1725
+#: pmg-gui/js/ViewMailHeaders.js:61 pve-manager/www/manager6/Utils.js:1136
+#: pve-manager/www/manager6/Utils.js:1732
+#: pve-manager/www/manager6/Utils.js:1745
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:103
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:154
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:661
@@ -6856,6 +7063,7 @@ msgstr "제거 중"
 #: pve-manager/www/manager6/dc/ACLView.js:186
 #: pve-manager/www/manager6/dc/Guests.js:130
 #: pve-manager/www/manager6/dc/RealmSyncJob.js:70
+#: pve-manager/www/manager6/dc/SAN.js:255
 #: pve-manager/www/manager6/dc/StorageView.js:112
 #: pve-manager/www/manager6/dc/StorageView.js:123
 #: pve-manager/www/manager6/dc/Support.js:65
@@ -6866,13 +7074,14 @@ msgstr "제거 중"
 #: pve-manager/www/manager6/form/PrivilegesSelector.js:25
 #: pve-manager/www/manager6/grid/FirewallRules.js:685
 #: pve-manager/www/manager6/grid/FirewallRules.js:712
-#: pve-manager/www/manager6/grid/PoolMembers.js:239
+#: pve-manager/www/manager6/grid/PoolMembers.js:362
 #: pve-manager/www/manager6/grid/Replication.js:180
 #: pve-manager/www/manager6/grid/Replication.js:351
 #: pve-manager/www/manager6/ha/ResourceEdit.js:47
 #: pve-manager/www/manager6/ha/RuleEdit.js:15
-#: pve-manager/www/manager6/ha/Status.js:49
-#: pve-manager/www/manager6/ha/Status.js:81
+#: pve-manager/www/manager6/ha/Status.js:63
+#: pve-manager/www/manager6/ha/Status.js:129
+#: pve-manager/www/manager6/ha/Status.js:160
 #: pve-manager/www/manager6/lxc/CmdMenu.js:21
 #: pve-manager/www/manager6/lxc/CreateWizard.js:356
 #: pve-manager/www/manager6/lxc/MPEdit.js:415
@@ -6890,6 +7099,7 @@ msgstr "제거 중"
 #: pve-manager/www/manager6/node/Summary.js:60
 #: pve-manager/www/manager6/node/Summary.js:94
 #: pve-manager/www/manager6/node/Summary.js:102
+#: pve-manager/www/manager6/panel/GuestIdentity.js:118
 #: pve-manager/www/manager6/qemu/CmdMenu.js:21
 #: pve-manager/www/manager6/qemu/CreateWizard.js:362
 #: pve-manager/www/manager6/qemu/HDEdit.js:566
@@ -6902,7 +7112,10 @@ msgstr "제거 중"
 #: pve-manager/www/manager6/sdn/VnetACLView.js:210
 #: pve-manager/www/manager6/storage/TemplateView.js:197
 #: pve-manager/www/manager6/storage/TemplateView.js:295
-#: pve-manager/www/manager6/tree/DhcpTree.js:127
+#: pve-manager/www/manager6/storage/wizard/LunSelect.js:44
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:29
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:37
+#: pve-manager/www/manager6/tree/DhcpTree.js:129
 #: pve-manager/www/manager6/tree/ResourceMapTree.js:180
 #: pve-manager/www/manager6/tree/SnapshotTree.js:89
 #: pve-manager/www/manager6/window/Backup.js:232
@@ -6915,7 +7128,7 @@ msgstr "제거 중"
 #: pve-manager/www/manager6/window/LoginWindow.js:218
 #: pve-manager/www/manager6/window/LoginWindow.js:323
 #: pve-manager/www/manager6/window/Prune.js:106
-#: pve-manager/www/manager6/window/Restore.js:87
+#: pve-manager/www/manager6/window/Restore.js:90
 #: pve-manager/www/manager6/window/ScheduleSimulator.js:38
 #: pve-manager/www/manager6/window/UploadToStorage.js:116
 #: pve-manager/www/manager6/window/UploadToStorage.js:122
@@ -6951,7 +7164,7 @@ msgstr "제거 중"
 #: proxmox-datacenter-manager/ui/src/configuration/subscription_panel.rs:76
 #: proxmox-datacenter-manager/ui/src/configuration/views.rs:236
 #: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:62
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:787
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:817
 #: proxmox-datacenter-manager/ui/src/remotes/firewall/tree.rs:612
 #: proxmox-datacenter-manager/ui/src/dashboard/map.rs:248
 #: proxmox-datacenter-manager/ui/src/dashboard/filtered_tasks.rs:194
@@ -7148,6 +7361,12 @@ msgstr "모두 펼치기"
 msgid "Expand the navigation rail"
 msgstr "내비게이션 레일 펼치기"
 
+#: pve-manager/www/manager6/dc/MultipathWwidEdit.js:67
+#, fuzzy
+#| msgid "Device Path"
+msgid "Expected Paths"
+msgstr "디바이스 경로"
+
 #: pve-manager/www/manager6/window/PCIMapEdit.js:264
 msgid "Experimental"
 msgstr "실험적"
@@ -7193,6 +7412,14 @@ msgstr "만료"
 #: proxmox-yew-comp/src/acme/certificate_list.rs:414
 msgid "Expires"
 msgstr "만료"
+
+#: pve-manager/www/manager6/SANUtils.js:117
+msgid "Explicit entry"
+msgstr ""
+
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:159
+msgid "Explicit entry, added by this setup"
+msgstr ""
 
 #: proxmox-backup/www/tape/BackupJobs.js:237
 msgid "Export"
@@ -7250,12 +7477,12 @@ msgstr "FS 이름"
 
 #. TRANSLATORS: As in "Network Fabric": https://en.wikipedia.org/wiki/Switched_fabric
 #: pve-manager/www/manager6/sdn/controllers/EvpnEdit.js:44
-#: pve-manager/www/manager6/sdn/fabrics/FabricEdit.js:128
+#: pve-manager/www/manager6/sdn/fabrics/FabricEdit.js:143
 #: pve-manager/www/manager6/sdn/zones/VxlanEdit.js:66
 msgid "Fabric"
 msgstr "패브릭"
 
-#: pve-manager/www/manager6/dc/Config.js:307
+#: pve-manager/www/manager6/dc/Config.js:318
 msgid "Fabrics"
 msgstr "패브릭"
 
@@ -7263,12 +7490,19 @@ msgstr "패브릭"
 msgid "Factory Defaults"
 msgstr "공장 기본값"
 
+#: pve-manager/www/manager6/dc/MultipathWwidEdit.js:61
+#, fuzzy
+#| msgid "Disk I/O"
+msgid "Fail I/O"
+msgstr "디스크 I/O"
+
 #: pve-manager/www/manager6/ha/ResourceEdit.js:117
 #: pve-manager/www/manager6/ha/Resources.js:148
 msgid "Failback"
 msgstr "페일백"
 
 #: proxmox-widget-toolkit/src/node/APTHistory.js:422 pmg-gui/js/Utils.js:935
+#: pve-manager/www/manager6/SANUtils.js:136
 #: pve-manager/www/manager6/Utils.js:327
 #: proxmox-datacenter-manager/ui/src/pbs/snapshot_list.rs:440
 #: proxmox-yew-comp/src/apt_history.rs:352
@@ -7301,7 +7535,7 @@ msgstr "{1}개의 리모트 중 {0}개에 도달하지 못함"
 msgid "Failed to regenerate secret"
 msgstr "비밀 구문을 재생성할 수 없음"
 
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:706
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:736
 msgid "Failed to retrieve update status: {0}"
 msgstr "업데이트 상태 검색 실패: {}"
 
@@ -7352,7 +7586,7 @@ msgstr "기능"
 msgid "February"
 msgstr "2월"
 
-#: pve-manager/www/manager6/dc/Config.js:248
+#: pve-manager/www/manager6/dc/Config.js:259
 msgid "Fencing"
 msgstr "펜싱"
 
@@ -7373,6 +7607,12 @@ msgstr "노드 정보를 가져오는 중"
 msgid "Fetching diff..."
 msgstr "차이를 가져오는 중..."
 
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:10
+#, fuzzy
+#| msgid "Channel"
+msgid "Fibre Channel"
+msgstr "채널"
+
 #: proxmox-widget-toolkit/src/node/Tasks.js:211
 #: proxmox-widget-toolkit/src/panel/AccessLogView.js:601
 #: proxmox-widget-toolkit/src/window/NotificationMatcherEdit.js:1639
@@ -7389,7 +7629,7 @@ msgstr "필드 이름"
 #: proxmox-yew-widget-toolkit/src/widget/form/field.rs:336
 #: proxmox-yew-widget-toolkit/src/widget/form/number.rs:464
 #: proxmox-yew-widget-toolkit/src/widget/form/textarea.rs:145
-#: proxmox-yew-widget-toolkit/src/widget/form/date_field/date_field.rs:177
+#: proxmox-yew-widget-toolkit/src/widget/form/date_field/date_field.rs:187
 msgid "Field may not be empty."
 msgstr "필드는 비어 있지 않아야 합니다."
 
@@ -7440,7 +7680,7 @@ msgstr "필드"
 
 #: proxmox-widget-toolkit/src/Schema.js:103
 #: proxmox-widget-toolkit/src/panel/Certificates.js:13
-#: pve-manager/www/manager6/Utils.js:2233
+#: pve-manager/www/manager6/Utils.js:2253
 #: pve-manager/www/manager6/node/Certificates.js:312
 #: pve-manager/www/manager6/window/UploadToStorage.js:210
 #: proxmox-backup/www/Utils.js:921
@@ -7457,7 +7697,7 @@ msgstr "파일"
 msgid "File Restore"
 msgstr "파일 복원"
 
-#: pve-manager/www/manager6/Utils.js:2246
+#: pve-manager/www/manager6/Utils.js:2266
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:158
 msgid "File Restore Download"
 msgstr "파일 복원 다운로드"
@@ -7616,6 +7856,7 @@ msgid "Fingerprint"
 msgstr "지문"
 
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:541
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:287
 #: pve-manager/www/manager6/window/Wizard.js:212
 #: proxmox-yew-comp/src/wizard.rs:683
 msgid "Finish"
@@ -7643,7 +7884,7 @@ msgstr "종결됨"
 msgid "Finished: {0} ({1})"
 msgstr "종결됨: {0} ({1})"
 
-#: pve-manager/www/manager6/dc/Config.js:348
+#: pve-manager/www/manager6/dc/Config.js:359
 #: pve-manager/www/manager6/grid/FirewallOptions.js:66
 #: pve-manager/www/manager6/grid/FirewallOptions.js:93
 #: pve-manager/www/manager6/grid/FirewallOptions.js:108
@@ -7651,7 +7892,7 @@ msgstr "종결됨: {0} ({1})"
 #: pve-manager/www/manager6/lxc/Config.js:338
 #: pve-manager/www/manager6/lxc/Network.js:127
 #: pve-manager/www/manager6/lxc/Network.js:551
-#: pve-manager/www/manager6/node/Config.js:321
+#: pve-manager/www/manager6/node/Config.js:334
 #: pve-manager/www/manager6/qemu/Config.js:391
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:96
 #: pve-manager/www/manager6/window/FirewallEnableEdit.js:6
@@ -7802,7 +8043,7 @@ msgid "For the PAM realm, this applies only to the connected node."
 msgstr "PAM 영역의 경우, 이는 연결된 노드에만 적용됩니다."
 
 #: pve-manager/www/manager6/ceph/OSD.js:669
-#: pve-manager/www/manager6/window/Migrate.js:682
+#: pve-manager/www/manager6/window/Migrate.js:711
 #: proxmox-backup/www/tape/window/MediaRemoveWindow.js:63
 msgid "Force"
 msgstr "강제"
@@ -7871,17 +8112,17 @@ msgstr "미디어 포맷"
 msgid "Format/Erase"
 msgstr "포맷/지우기"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:40
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:46
 #: proxmox-yew-comp/src/configuration/network_edit.rs:282
 msgid "Format: [interface].[vlan-id] (e.g., eno1.50, bond1.30)"
 msgstr "형식: [인터페이스].[vlan-id] (예: eno1.50, bond1.30)"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:34
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:40
 #: proxmox-yew-comp/src/configuration/network_edit.rs:209
 msgid "Format: bond[N] (e.g., bond0, bond1)"
 msgstr "형식: bond[번호] (예: bond0, bond1)"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:37
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:43
 msgid "Format: eth[N] (e.g., eth0, enp0s3, )"
 msgstr "Format: eth[번호] (예: eth0, enp0s3,...)"
 
@@ -7892,11 +8133,11 @@ msgstr "포맷 중"
 #: pve-manager/www/manager6/grid/FirewallOptions.js:160
 #: pve-manager/www/manager6/grid/FirewallOptions.js:165
 #: pve-manager/www/manager6/grid/FirewallOptions.js:170
-#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:177
+#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:176
 msgid "Forward Policy"
 msgstr "포워딩 정책"
 
-#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:130
+#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:129
 msgid "Forward log level"
 msgstr "포워딩 로그 레벨"
 
@@ -7915,12 +8156,12 @@ msgstr "로컬 루트 사용자에게 메일을 전달했습니다"
 msgid "Fragmentation"
 msgstr "파편화"
 
-#: pve-manager/www/manager6/node/LVM.js:131
+#: pve-manager/www/manager6/node/LVM.js:136
 #: pve-manager/www/manager6/node/ZFS.js:241 proxmox-backup/www/ZFSList.js:76
 msgid "Free"
 msgstr "남음"
 
-#: pve-manager/www/manager6/ha/Status.js:105
+#: pve-manager/www/manager6/ha/Status.js:184
 msgid "Freeze"
 msgstr "동결"
 
@@ -7965,7 +8206,7 @@ msgstr "프랑스어"
 #: proxmox-widget-toolkit/src/window/NotificationMatcherEdit.js:1308
 #: proxmox-backup/www/window/TrafficControlEdit.js:403
 #: proxmox-yew-widget-toolkit/src/widget/form/date_field/date_panel.rs:250
-#: proxmox-yew-widget-toolkit/src/widget/calendar_grid.rs:854
+#: proxmox-yew-widget-toolkit/src/widget/calendar_grid.rs:876
 msgid "Fri"
 msgstr "금"
 
@@ -7982,7 +8223,7 @@ msgstr "발신"
 msgid "From Address"
 msgstr "발신 주소"
 
-#: pve-manager/www/manager6/window/Restore.js:280
+#: pve-manager/www/manager6/window/Restore.js:346
 msgid "From Backup"
 msgstr "백업에서"
 
@@ -8012,7 +8253,7 @@ msgstr "파일에서"
 msgid "From Slot"
 msgstr "슬롯에서"
 
-#: pve-manager/www/manager6/window/Restore.js:183
+#: pve-manager/www/manager6/window/Restore.js:217
 msgid "From backup configuration"
 msgstr "백업 구성에서"
 
@@ -8115,18 +8356,19 @@ msgstr "가비지 컬렉션"
 msgid "Garbage collections"
 msgstr "가비지 컬렉션"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:409
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:423
-#: proxmox-widget-toolkit/src/node/NetworkView.js:388
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:444
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:458
+#: proxmox-widget-toolkit/src/node/NetworkView.js:389
 #: pve-manager/www/manager6/lxc/Network.js:201
 #: pve-manager/www/manager6/lxc/Network.js:271
 #: pve-manager/www/manager6/lxc/Network.js:597
 #: pve-manager/www/manager6/qemu/IPConfigEdit.js:119
 #: pve-manager/www/manager6/qemu/IPConfigEdit.js:185
+#: pve-manager/www/manager6/sdn/StaticRoutes.js:24
 #: pve-manager/www/manager6/sdn/SubnetEdit.js:32
 #: pve-manager/www/manager6/sdn/SubnetView.js:110
-#: pve-manager/www/manager6/tree/DhcpTree.js:204
-#: pve-manager/www/manager6/tree/DhcpTree.js:221
+#: pve-manager/www/manager6/tree/DhcpTree.js:206
+#: pve-manager/www/manager6/tree/DhcpTree.js:223
 #: proxmox-yew-comp/src/form/pve/lxc_property/lxc_network_property.rs:159
 #: proxmox-yew-comp/src/form/pve/lxc_property/lxc_network_property.rs:173
 #: proxmox-yew-comp/src/configuration/pve/lxc_network_panel.rs:465
@@ -8151,8 +8393,9 @@ msgstr "게이트웨이 주소"
 #: pve-manager/www/manager6/dc/Backup.js:301
 #: pve-manager/www/manager6/lxc/CreateWizard.js:30
 #: pve-manager/www/manager6/qemu/CreateWizard.js:86
-#: pve-manager/www/manager6/sdn/SubnetEdit.js:266
-#: pve-manager/www/manager6/storage/Base.js:174
+#: pve-manager/www/manager6/sdn/SubnetEdit.js:281
+#: pve-manager/www/manager6/sdn/zones/Base.js:118
+#: pve-manager/www/manager6/storage/Base.js:179
 #: pve-manager/www/manager6/window/GuestImport.js:354
 #: proxmox-backup/www/SystemConfiguration.js:74
 #: proxmox-backup/www/window/DataStoreEdit.js:39
@@ -8203,6 +8446,12 @@ msgstr "Ceph의 자동 복구를 제한하는 전역 플래그가 활성화되�
 
 #: pve-manager/www/manager6/storage/ImageView.js:99
 msgid "Go to Guest"
+msgstr "게스트로 가기"
+
+#: pve-manager/www/manager6/dc/SAN.js:203
+#, fuzzy
+#| msgid "Go to Guest"
+msgid "Go to Node"
 msgstr "게스트로 가기"
 
 #: proxmox-datacenter-manager/ui/src/ceph/renderer.rs:75
@@ -8303,7 +8552,7 @@ msgid "Groupname attr."
 msgstr "그룹명 속성"
 
 #: pmg-gui/js/LDAPConfig.js:634 pve-manager/www/manager6/dc/AuthEditLDAP.js:268
-#: pve-manager/www/manager6/dc/Config.js:189
+#: pve-manager/www/manager6/dc/Config.js:200
 #: pve-manager/www/manager6/dc/RealmSyncJob.js:340
 #: pve-manager/www/manager6/dc/SyncWindow.js:104
 #: pve-manager/www/manager6/dc/UserView.js:221
@@ -8334,6 +8583,12 @@ msgstr "게스트 에이전트가 실행중이 아님"
 msgid "Guest Firewall - {0}/{1}/{2} {3}"
 msgstr "게스트 방화벽 - {0}/{1}/{2} {3}"
 
+#: pve-manager/www/manager6/panel/GuestIdentity.js:5
+#, fuzzy
+#| msgid "Guest Image"
+msgid "Guest Identity"
+msgstr "게스트 이미지"
+
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:29
 msgid "Guest Image"
 msgstr "게스트 이미지"
@@ -8363,7 +8618,7 @@ msgid "Guest user"
 msgstr "게스트 사용자"
 
 #: pve-manager/www/manager6/dc/Guests.js:5
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:366
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:370
 #: proxmox-datacenter-manager/ui/src/dashboard/guest_panel.rs:226
 #: proxmox-datacenter-manager/ui/src/pve/remote_overview.rs:195
 msgid "Guests"
@@ -8389,6 +8644,12 @@ msgstr "포함할 게스트"
 #: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:633
 msgid "Guests with Highest CPU Usage"
 msgstr "CPU 사용량이 가장 높은 게스트"
+
+#: pve-manager/www/manager6/dc/SAN.js:122
+#, fuzzy
+#| msgid "Disk Setup"
+msgid "Guided Setup"
+msgstr "디스크 설정"
 
 #: proxmox-datacenter-manager/ui/src/renderer.rs:30
 #, fuzzy
@@ -8444,22 +8705,22 @@ msgstr "HA 상태: {0}"
 msgid "HA related Tasks"
 msgstr "HA 관련 태스크"
 
-#: pve-manager/www/manager6/window/Migrate.js:445
-#: pve-manager/www/manager6/window/Migrate.js:547
+#: pve-manager/www/manager6/window/Migrate.js:472
+#: pve-manager/www/manager6/window/Migrate.js:576
 msgid "HA resource {0} is not allowed on the selected target node"
 msgstr "선택한 대상 노드에서 HA 리소스 {0}을 사용할 수 없음"
 
-#: pve-manager/www/manager6/window/Migrate.js:439
+#: pve-manager/www/manager6/window/Migrate.js:466
 msgid "HA resource {0} with negative affinity to VM on selected target node"
 msgstr "선택한 대상 노드의 VM에 대해 부정적인 유연성을 가진 HA 리소스 {0}"
 
-#: pve-manager/www/manager6/window/Migrate.js:541
+#: pve-manager/www/manager6/window/Migrate.js:570
 msgid ""
 "HA resource {0} with negative affinity to container on selected target node"
 msgstr ""
 "선택한 대상 노드의 컨테이너에 대해 부정적인 유연성을 가진 HA 리소스 {0}"
 
-#: pve-manager/www/manager6/window/Migrate.js:470
+#: pve-manager/www/manager6/window/Migrate.js:497
 msgid ""
 "HA resource {0} with positive affinity to VM is also migrated to selected "
 "target node."
@@ -8467,13 +8728,27 @@ msgstr ""
 "VM에 대해 긍정적인 유연성을 가진 HA 리소스 {0}도 선택된 대상 노드로 마이그레"
 "이션됩니다."
 
-#: pve-manager/www/manager6/window/Migrate.js:572
+#: pve-manager/www/manager6/window/Migrate.js:601
 msgid ""
 "HA resource {0} with positive affinity to container is also migrated to "
 "selected target node."
 msgstr ""
 "컨테이너에 대해 긍정적인 유연성을 가진 HA 리소스 {0}도 선택된 대상 노드로 마"
 "이그레이션됩니다."
+
+#: pve-manager/www/manager6/ha/Status.js:111
+#, fuzzy
+#| msgid ""
+#| "HA resource {0} with positive affinity to VM is also migrated to selected "
+#| "target node."
+msgid "HA resources on the node will be migrated to other nodes."
+msgstr ""
+"VM에 대해 긍정적인 유연성을 가진 HA 리소스 {0}도 선택된 대상 노드로 마이그레"
+"이션됩니다."
+
+#: pve-manager/www/manager6/ha/Status.js:99
+msgid "HA resources will be migrated back to node '{0}' once HA is re-armed."
+msgstr ""
 
 #: pve-manager/www/manager6/ha/RuleErrorsModal.js:10
 msgid "HA rule errors"
@@ -8549,7 +8824,7 @@ msgstr "하드웨어"
 msgid "Hardware-accelerated virtualization (fast, recommended)"
 msgstr "하드웨어 가속 가상화(빠르고 권장됨)"
 
-#: proxmox-widget-toolkit/src/node/NetworkView.js:360
+#: proxmox-widget-toolkit/src/node/NetworkView.js:361
 msgid "Hash Policy"
 msgstr "해시 정책"
 
@@ -8558,7 +8833,7 @@ msgstr "해시 정책"
 msgid "Hash algorithm"
 msgstr "해시 알고리즘"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:238
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:244
 #: proxmox-yew-comp/src/configuration/network_view.rs:485
 #: proxmox-yew-comp/src/configuration/network_edit.rs:244
 msgid "Hash policy"
@@ -8633,7 +8908,7 @@ msgstr "헬프 데스크"
 msgid "Heuristic Score"
 msgstr "휴리스틱 점수"
 
-#: pve-manager/www/manager6/Utils.js:2266
+#: pve-manager/www/manager6/Utils.js:2286
 #: pve-manager/www/manager6/qemu/CmdMenu.js:75
 #: pve-manager/www/manager6/qemu/Config.js:190
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/dashboard_panel.rs:219
@@ -8699,7 +8974,8 @@ msgstr "높은 사용량"
 msgid "Hint"
 msgstr "힌트"
 
-#: pve-manager/www/manager6/node/Config.js:306
+#: pve-manager/www/manager6/node/Config.js:319
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:611
 #, fuzzy
 #| msgid "Task History"
 msgid "History"
@@ -8770,11 +9046,17 @@ msgstr "호스트 메모리 사용 중"
 msgid "Host Storage used"
 msgstr "호스트 스토리지 사용 중"
 
+#: pve-manager/www/manager6/node/SANLuns.js:23
+#, fuzzy
+#| msgid "Host ID"
+msgid "Host WWPN"
+msgstr "호스트 ID"
+
 #: pve-manager/www/manager6/storage/ZFSEdit.js:98
 msgid "Host group"
 msgstr "호스트 그룹"
 
-#: pve-manager/www/manager6/panel/GuestStatusView.js:122
+#: pve-manager/www/manager6/panel/GuestStatusView.js:125
 msgid "Host memory usage"
 msgstr "호스트 메모리 사용량"
 
@@ -8799,7 +9081,7 @@ msgstr "호스트/IP 주소 또는 옵션 포트가 잘못됨"
 #: pve-manager/www/manager6/lxc/DNS.js:123
 #: pve-manager/www/manager6/lxc/DNS.js:127
 #: pve-manager/www/manager6/window/Clone.js:201
-#: pve-manager/www/manager6/window/Restore.js:340
+#: pve-manager/www/manager6/window/Restore.js:406
 #: proxmox-datacenter-manager/ui/src/remotes/wizard_page_summary.rs:120
 #: proxmox-yew-comp/src/form/pve/lxc_property/mod.rs:193
 msgid "Hostname"
@@ -8821,7 +9103,7 @@ msgstr "호스트명/주소"
 msgid "Hostname/IP"
 msgstr "호스트명/IP"
 
-#: pve-manager/www/manager6/node/Config.js:221
+#: pve-manager/www/manager6/node/Config.js:234
 msgid "Hosts"
 msgstr "호스트"
 
@@ -8969,7 +9251,7 @@ msgstr "IP"
 #: pmg-gui/js/ClusterAdministration.js:308 pmg-gui/js/Utils.js:284
 #: pmg-gui/js/Utils.js:290 pve-manager/www/manager6/dc/ClusterEdit.js:75
 #: pve-manager/www/manager6/sdn/IpamEdit.js:40
-#: pve-manager/www/manager6/tree/DhcpTree.js:211
+#: pve-manager/www/manager6/tree/DhcpTree.js:213
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/vnet_status.rs:88
 msgid "IP Address"
 msgstr "IP 주소"
@@ -8996,7 +9278,7 @@ msgstr "IP 접두어(유형 5)"
 msgid "IP Prefixes"
 msgstr "IP 접두어"
 
-#: proxmox-widget-toolkit/src/node/NetworkView.js:365
+#: proxmox-widget-toolkit/src/node/NetworkView.js:366
 #: pve-manager/www/manager6/lxc/Network.js:567
 #: pve-manager/www/manager6/panel/IPView.js:33
 msgid "IP address"
@@ -9021,7 +9303,7 @@ msgstr "노드의 호스트 이름을 통해 확인된 IP"
 
 #: pve-manager/www/manager6/sdn/Browser.js:56
 #: pve-manager/www/manager6/sdn/EvpnZoneIpVrfPanel.js:10
-#: pve-manager/www/manager6/sdn/NetworkBrowser.js:130
+#: pve-manager/www/manager6/sdn/NetworkBrowser.js:132
 #: pve-manager/www/manager6/sdn/ZoneBridgesPanel.js:59
 msgid "IP-VRF"
 msgstr "IP-VRF"
@@ -9039,8 +9321,8 @@ msgstr "IP-VRF"
 msgid "IP/CIDR"
 msgstr "IP/CIDR"
 
-#: pve-manager/www/manager6/dc/Config.js:291
-#: pve-manager/www/manager6/sdn/zones/Base.js:51
+#: pve-manager/www/manager6/dc/Config.js:302
+#: pve-manager/www/manager6/sdn/zones/Base.js:53
 msgid "IPAM"
 msgstr "IPAM"
 
@@ -9065,7 +9347,11 @@ msgstr "IPv4(접두어-목록)"
 msgid "IPv4 Address"
 msgstr "IPv4 주소"
 
-#: pve-manager/www/manager6/sdn/fabrics/FabricEdit.js:62
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:325
+msgid "IPv4 Forwarding"
+msgstr ""
+
+#: pve-manager/www/manager6/sdn/fabrics/FabricEdit.js:77
 msgid "IPv4 Prefix"
 msgstr "IPv4 접두어"
 
@@ -9109,7 +9395,7 @@ msgstr "IPv6(접두어-목록)"
 msgid "IPv6 Address"
 msgstr "IPv6 주소"
 
-#: pve-manager/www/manager6/sdn/fabrics/FabricEdit.js:97
+#: pve-manager/www/manager6/sdn/fabrics/FabricEdit.js:112
 msgid "IPv6 Prefix"
 msgstr "IPv6 접두어"
 
@@ -9205,7 +9491,7 @@ msgstr ""
 "이메일 주소가 유효한다면, 해당 주소로 격리 링크가 전송되었을 것입니다. 받은 "
 "편지함을 확인해 주세요."
 
-#: pve-manager/www/manager6/ha/Status.js:114
+#: pve-manager/www/manager6/ha/Status.js:193
 msgid "Ignore"
 msgstr "무시"
 
@@ -9358,6 +9644,10 @@ msgstr "백업에 포함"
 msgid "Include selected VMs"
 msgstr "선택한 가상 머신 포함"
 
+#: pve-manager/www/manager6/grid/PoolMembers.js:265
+msgid "Include the VNet with all its VLAN tags"
+msgstr ""
+
 #: pve-manager/www/manager6/lxc/MPEdit.js:265
 #: pve-manager/www/manager6/qemu/HDEdit.js:366
 msgid "Include volume in backup job"
@@ -9447,6 +9737,13 @@ msgstr "호스트 CPU로부터 상속받음"
 msgid "Initialize Disk with GPT"
 msgstr "GPT로 디스크 초기화"
 
+#: pve-manager/www/manager6/node/ISCSITargets.js:131
+#: pve-manager/www/manager6/storage/wizard/NodeIdentities.js:22
+#, fuzzy
+#| msgid "Matcher Name"
+msgid "Initiator Name"
+msgstr "일치자 이름"
+
 #: proxmox-backup/www/Utils.js:914 proxmox-backup/www/Utils.js:916
 msgid "Inode"
 msgstr "Inode"
@@ -9454,7 +9751,7 @@ msgstr "Inode"
 #: pve-manager/www/manager6/grid/FirewallOptions.js:126
 #: pve-manager/www/manager6/grid/FirewallOptions.js:131
 #: pve-manager/www/manager6/grid/FirewallOptions.js:136
-#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:169
+#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:168
 msgid "Input Policy"
 msgstr "정책 입력"
 
@@ -9462,7 +9759,7 @@ msgstr "정책 입력"
 msgid "Input invalid: {}"
 msgstr "입력이 잘못됨: {}"
 
-#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:122
+#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:121
 msgid "Input log level"
 msgstr "입력 로그 레벨"
 
@@ -9531,6 +9828,7 @@ msgstr "Intel Trust Domain Extension (TDX)"
 #: pve-manager/www/manager6/grid/FirewallRules.js:284
 #: pve-manager/www/manager6/grid/FirewallRules.js:571
 #: pve-manager/www/manager6/grid/FirewallRules.js:947
+#: pve-manager/www/manager6/sdn/FabricsContentView.js:55
 #: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:42
 msgid "Interface"
 msgstr "인터페이스"
@@ -9545,7 +9843,7 @@ msgstr "노드에 인터페이스가 존재하지 않습니다"
 
 #: pmg-gui/js/SystemConfiguration.js:40
 #: pve-manager/www/manager6/sdn/FabricsView.js:82
-#: pve-manager/www/manager6/sdn/NetworkBrowser.js:78
+#: pve-manager/www/manager6/sdn/NetworkBrowser.js:80
 #: pve-manager/www/manager6/sdn/controllers/IsisEdit.js:46
 msgid "Interfaces"
 msgstr "인터페이스"
@@ -9607,16 +9905,16 @@ msgstr "유효하지 않은 값"
 msgid "Invalid characters in pool name"
 msgstr "풀 이름에 잘못된 문자가 있습니다"
 
-#: proxmox-yew-widget-toolkit/src/widget/form/date_field/date_field.rs:212
+#: proxmox-yew-widget-toolkit/src/widget/form/date_field/date_field.rs:222
 msgid "Invalid date format"
 msgstr "날짜 형식이 잘못됨"
 
-#: pve-manager/www/manager6/Utils.js:1713
+#: pve-manager/www/manager6/Utils.js:1733
 msgid "Invalid file size"
 msgstr "파일 크기가 잘못되었습니다."
 
 #: proxmox-widget-toolkit/src/Utils.js:1198
-#: pve-manager/www/manager6/Utils.js:1725
+#: pve-manager/www/manager6/Utils.js:1745
 msgid "Invalid file size: "
 msgstr "잘못된 파일 크기: "
 
@@ -9750,7 +10048,7 @@ msgstr "작업 코멘트"
 msgid "Job Detail"
 msgstr "작업 세부 정보"
 
-#: pve-manager/www/manager6/Utils.js:2303
+#: pve-manager/www/manager6/Utils.js:2323
 #: pve-manager/www/manager6/panel/BackupAdvancedOptions.js:125
 #: proxmox-backup/www/Utils.js:509 proxmox-backup/www/config/PruneView.js:208
 #: proxmox-backup/www/config/SyncView.js:304
@@ -9773,7 +10071,7 @@ msgstr "작업 일정 시뮬레이터"
 msgid "Join"
 msgstr "가입"
 
-#: pmg-gui/js/Utils.js:908 pve-manager/www/manager6/Utils.js:2230
+#: pmg-gui/js/Utils.js:908 pve-manager/www/manager6/Utils.js:2250
 #: pve-manager/www/manager6/dc/Cluster.js:171
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:140
 msgid "Join Cluster"
@@ -10064,6 +10362,10 @@ msgstr "LDAP 필터"
 msgid "LTO Barcode Generator"
 msgstr ""
 
+#: pve-manager/www/manager6/dc/SAN.js:221
+msgid "LUNs"
+msgstr ""
+
 #: pve-manager/www/manager6/ceph/OSDDetails.js:278
 msgid "LV Name"
 msgstr "LV 이름"
@@ -10076,12 +10378,22 @@ msgstr "LV 경로"
 msgid "LV UUID"
 msgstr "LV UUID"
 
-#: pve-manager/www/manager6/Utils.js:2240
+#: pve-manager/www/manager6/Utils.js:2260
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:152
 msgid "LVM Storage"
 msgstr "LVM 스토리지"
 
-#: pve-manager/www/manager6/Utils.js:2242
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:9
+#, fuzzy
+#| msgid "VM {0}"
+msgid "LVM on {0}"
+msgstr "VM {0}"
+
+#: pve-manager/www/manager6/SANUtils.js:177
+msgid "LVM physical volume"
+msgstr ""
+
+#: pve-manager/www/manager6/Utils.js:2262
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:154
 msgid "LVM-Thin Storage"
 msgstr "LVM-Thin 스토리지"
@@ -10173,6 +10485,12 @@ msgstr "성(Last Name) 속성"
 msgid "Last Prune"
 msgstr "최근 정리"
 
+#: pve-manager/www/manager6/dc/SAN.js:191
+#, fuzzy
+#| msgid "System Report"
+msgid "Last Report"
+msgstr "시스템 보고서"
+
 #: proxmox-widget-toolkit/src/window/AccessLogStats.js:202
 #: proxmox-yew-comp/src/access_log/statistics.rs:413
 #, fuzzy
@@ -10238,6 +10556,10 @@ msgstr "지연 시간"
 #: proxmox-yew-comp/src/form/pve/qemu_machine_version_selector.rs:174
 msgid "Latest"
 msgstr "최신"
+
+#: pve-manager/www/manager6/sdn/FabricsContentView.js:79
+msgid "Latest Handshake"
+msgstr ""
 
 #: proxmox-backup/www/tape/BackupJobs.js:244
 #: proxmox-backup/www/tape/window/TapeBackupJob.js:154
@@ -10376,7 +10698,7 @@ msgstr "목록에 항목이 없습니다."
 msgid "List is empty."
 msgstr "목록이 비었습니다."
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:78
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:84
 msgid ""
 "List of VLAN IDs and ranges, useful for NICs with restricted VLAN offloading "
 "support. For example: '2 4 100-200'"
@@ -10384,6 +10706,7 @@ msgstr ""
 "VLAN 오프로드 지원이 제한된 NIC에 유용한 VLAN ID 및 범위 목록입니다.예: '2 4 "
 "100-200'"
 
+#: pve-manager/www/manager6/sdn/FabricsContentView.js:166
 #: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:351
 msgid "Listen Port"
 msgstr "리스닝 포트"
@@ -10411,11 +10734,11 @@ msgstr ""
 "설정된 값보다 CPU 지원 비트 수가 적은 호스트에서는 라이브 마이그레이션이 실패"
 "됩니다."
 
-#: pve-manager/www/manager6/window/Restore.js:308
+#: pve-manager/www/manager6/window/Restore.js:374
 msgid "Live restore"
 msgstr "라이브 복원"
 
-#: pve-manager/www/manager6/window/Migrate.js:361
+#: pve-manager/www/manager6/window/Migrate.js:388
 msgid "Live-migrating running VM with mapped resources (Experimental): {0}"
 msgstr "매핑된 리소스로 실행 중인 VM 라이브 마이그레이션(실험적): {0}"
 
@@ -10584,7 +10907,7 @@ msgid "Lock"
 msgstr "잠금"
 
 #: proxmox-widget-toolkit/src/panel/TfaView.js:166 pmg-gui/js/UserView.js:221
-#: pve-manager/www/manager6/Utils.js:1451
+#: pve-manager/www/manager6/Utils.js:1471
 #: proxmox-backup/www/config/UserView.js:260
 #: proxmox-yew-comp/src/tfa/tfa_view.rs:379
 msgid "Locked"
@@ -10601,8 +10924,8 @@ msgstr ""
 
 #: pve-manager/www/manager6/grid/Replication.js:260
 #: pve-manager/www/manager6/lxc/Config.js:378
-#: pve-manager/www/manager6/node/Config.js:440
-#: pve-manager/www/manager6/node/Config.js:451
+#: pve-manager/www/manager6/node/Config.js:477
+#: pve-manager/www/manager6/node/Config.js:488
 #: pve-manager/www/manager6/qemu/Config.js:431
 msgid "Log"
 msgstr "로그"
@@ -10631,7 +10954,7 @@ msgid ""
 "Log files named by date are not read: {0}. Older requests may be missing."
 msgstr ""
 
-#: pve-manager/www/manager6/Utils.js:1958
+#: pve-manager/www/manager6/Utils.js:1978
 msgid "Log in as root to install."
 msgstr "설치하려면 root로 로그인하세요."
 
@@ -10768,7 +11091,7 @@ msgid "MAC-VRF"
 msgstr "MAC-VRF"
 
 #: pve-manager/www/manager6/sdn/Browser.js:65
-#: pve-manager/www/manager6/sdn/NetworkBrowser.js:139
+#: pve-manager/www/manager6/sdn/NetworkBrowser.js:141
 msgid "MAC-VRFs"
 msgstr "MAC-VRF"
 
@@ -10794,6 +11117,7 @@ msgid "MIME type"
 msgstr "MIME 유형"
 
 #: pve-manager/www/manager6/lxc/Network.js:611
+#: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:372
 #: proxmox-yew-comp/src/form/pve/lxc_property/lxc_network_property.rs:210
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_network_property.rs:19
 #: proxmox-yew-comp/src/configuration/pve/lxc_network_panel.rs:471
@@ -10957,7 +11281,7 @@ msgstr "맵"
 msgid "Mapped Device"
 msgstr "매핑한 디바이스"
 
-#: pve-manager/www/manager6/window/Migrate.js:301
+#: pve-manager/www/manager6/window/Migrate.js:326
 msgid "Mapped Resources ({0}) not available on selected target."
 msgstr "선택한 대상에서 매핑된 리소스({0})를 사용할 수 없습니다."
 
@@ -10985,6 +11309,12 @@ msgid ""
 msgstr ""
 "SCSI 디스크를 SATA에 매핑하고 SCSI 컨트롤러를 변경합니다. VirtIO-SCSI 연결 디"
 "스크로 더 빠르게 전환하는 데 유용합니다."
+
+#: pve-manager/www/manager6/dc/SAN.js:183
+msgid ""
+"Maps of the node that the LUN list leaves out. They can still be in use, for "
+"example by a storage plugin."
+msgstr ""
 
 #: proxmox-yew-widget-toolkit/src/widget/form/date_field/date_panel.rs:568
 msgid "March"
@@ -11252,14 +11582,14 @@ msgstr "멤버"
 #: pve-manager/www/manager6/lxc/ResourceEdit.js:10
 #: pve-manager/www/manager6/lxc/ResourceEdit.js:142
 #: pve-manager/www/manager6/lxc/Resources.js:55
-#: pve-manager/www/manager6/panel/TemplateStatusView.js:46
+#: pve-manager/www/manager6/panel/TemplateStatusView.js:49
 #: pve-manager/www/manager6/qemu/CreateWizard.js:256
 #: pve-manager/www/manager6/qemu/DisplayEdit.js:68
 #: pve-manager/www/manager6/qemu/HardwareView.js:76
 #: pve-manager/www/manager6/qemu/MemoryEdit.js:82
 #: pve-manager/www/manager6/qemu/MemoryEdit.js:200
 #: pve-manager/www/manager6/window/GuestImport.js:518
-#: pve-manager/www/manager6/window/Restore.js:362
+#: pve-manager/www/manager6/window/Restore.js:428
 #: proxmox-datacenter-manager/ui/src/dashboard/gauge_panel.rs:188
 #: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:561
 #: pve-yew-mobile-gui/src/pages/page_dashboard.rs:187
@@ -11308,7 +11638,7 @@ msgstr "메모리 크기"
 #: pve-manager/www/manager6/form/NodeSelector.js:46
 #: pve-manager/www/manager6/ha/NodePrioritySelector.js:46
 #: pve-manager/www/manager6/node/Summary.js:179
-#: pve-manager/www/manager6/panel/GuestStatusView.js:113
+#: pve-manager/www/manager6/panel/GuestStatusView.js:116
 #: proxmox-backup/www/ServerStatus.js:229
 #: proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:363
 #: proxmox-datacenter-manager/ui/src/pve/lxc/overview.rs:340
@@ -11338,7 +11668,7 @@ msgstr ""
 "유권이 일치하고 스냅샷 시간이 겹치지 않아야 합니다."
 
 #: proxmox-widget-toolkit/src/window/ZFSDetail.js:153
-#: pve-manager/www/manager6/dc/Log.js:79
+#: pve-manager/www/manager6/dc/Log.js:79 pve-manager/www/manager6/dc/SAN.js:165
 msgid "Message"
 msgstr "메시지"
 
@@ -11392,7 +11722,7 @@ msgstr "매서드/URL"
 msgid "Metric"
 msgstr "메트릭"
 
-#: pve-manager/www/manager6/dc/Config.js:392
+#: pve-manager/www/manager6/dc/Config.js:403
 #: proxmox-backup/www/SystemConfiguration.js:51
 msgid "Metric Server"
 msgstr "메트릭 서버"
@@ -11401,9 +11731,9 @@ msgstr "메트릭 서버"
 msgid "MiB"
 msgstr "MiB"
 
-#: pve-manager/www/manager6/Utils.js:2234
 #: pve-manager/www/manager6/Utils.js:2254
-#: pve-manager/www/manager6/Utils.js:2285
+#: pve-manager/www/manager6/Utils.js:2274
+#: pve-manager/www/manager6/Utils.js:2305
 #: pve-manager/www/manager6/dc/CmdMenu.js:68
 #: pve-manager/www/manager6/dc/Config.js:76
 #: pve-manager/www/manager6/lxc/CmdMenu.js:102
@@ -11414,7 +11744,7 @@ msgstr "MiB"
 #: pve-manager/www/manager6/qemu/CmdMenu.js:129
 #: pve-manager/www/manager6/qemu/Config.js:68
 #: pve-manager/www/manager6/window/Migrate.js:106
-#: pve-manager/www/manager6/window/Migrate.js:776
+#: pve-manager/www/manager6/window/Migrate.js:805
 #: proxmox-datacenter-manager/ui/src/guests.rs:817
 #: proxmox-datacenter-manager/ui/src/guests.rs:829
 #: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:655
@@ -11427,7 +11757,7 @@ msgstr "MiB"
 msgid "Migrate"
 msgstr "마이그레이션"
 
-#: pve-manager/www/manager6/window/Migrate.js:331
+#: pve-manager/www/manager6/window/Migrate.js:358
 msgid ""
 "Migrating VM with local resources: {0}. This might fail if the resources are "
 "not available on the target node."
@@ -11449,7 +11779,7 @@ msgid "Migration with local disk might take long: {0} ({1})"
 msgstr ""
 "로컬 디스크를 사용한 마이그레이션은 시간이 오래 걸릴 수 있습니다: {0} ({1})"
 
-#: pve-manager/www/manager6/window/Migrate.js:386
+#: pve-manager/www/manager6/window/Migrate.js:413
 msgid "Migration with local disk might take long: {0} {1}"
 msgstr ""
 "로컬 디스크를 사용한 마이그레이션은 시간이 오래 걸릴 수 있습니다: {0} {1}"
@@ -11491,6 +11821,12 @@ msgstr "최소 메모리"
 msgid "Misplaced"
 msgstr "위치가 잘못됨"
 
+#: pve-manager/www/manager6/SANUtils.js:137
+#, fuzzy
+#| msgid "missing"
+msgid "Missing"
+msgstr "누락"
+
 #: proxmox-backup/www/Utils.js:24
 msgid "Mixed"
 msgstr "혼합"
@@ -11500,8 +11836,8 @@ msgstr "혼합"
 msgid "Mixed Subscriptions"
 msgstr "혼합된 구독"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:254
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:385
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:260
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:420
 #: proxmox-widget-toolkit/src/window/AuthEditLDAP.js:194
 #: pve-manager/www/manager6/dc/AuthEditAD.js:54
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:54
@@ -11510,7 +11846,7 @@ msgstr "혼합된 구독"
 #: pve-manager/www/manager6/dc/UserTagAccessEdit.js:52
 #: pve-manager/www/manager6/window/Backup.js:28
 #: pve-manager/www/manager6/window/Clone.js:215
-#: pve-manager/www/manager6/window/Migrate.js:622
+#: pve-manager/www/manager6/window/Migrate.js:651
 #: proxmox-datacenter-manager/ui/src/widget/migrate_window.rs:416
 #: pve-yew-mobile-gui/src/widgets/guest_backup_panel.rs:87
 #: proxmox-yew-comp/src/auth_edit_ldap.rs:340
@@ -11542,7 +11878,9 @@ msgstr "모드: {0}"
 #: proxmox-widget-toolkit/src/form/MultiDiskSelector.js:102
 #: proxmox-widget-toolkit/src/panel/DiskList.js:337
 #: pve-manager/www/manager6/form/CPUModelSelector.js:61
+#: pve-manager/www/manager6/node/SANLuns.js:118
 #: pve-manager/www/manager6/qemu/NetworkEdit.js:164
+#: pve-manager/www/manager6/storage/wizard/LunSelect.js:127
 #: pve-manager/www/manager6/window/GuestImport.js:912
 #: proxmox-backup/www/form/PartitionSelector.js:72
 #: proxmox-backup/www/tape/ChangerConfig.js:122
@@ -11573,7 +11911,7 @@ msgstr "TFA 항목의 설명 수정"
 #: proxmox-widget-toolkit/src/window/NotificationMatcherEdit.js:1268
 #: proxmox-backup/www/window/TrafficControlEdit.js:363
 #: proxmox-yew-widget-toolkit/src/widget/form/date_field/date_panel.rs:246
-#: proxmox-yew-widget-toolkit/src/widget/calendar_grid.rs:850
+#: proxmox-yew-widget-toolkit/src/widget/calendar_grid.rs:872
 msgid "Mon"
 msgstr "월"
 
@@ -11592,7 +11930,7 @@ msgid "Mongolian"
 msgstr ""
 
 #: pve-manager/www/manager6/ceph/Monitor.js:36
-#: pve-manager/www/manager6/node/Config.js:400
+#: pve-manager/www/manager6/node/Config.js:437
 #: pve-manager/www/manager6/qemu/Config.js:350
 msgid "Monitor"
 msgstr "모니터"
@@ -11620,7 +11958,7 @@ msgstr "월간"
 #: pve-manager/www/manager6/ceph/OSD.js:1421
 #: pve-manager/www/manager6/lxc/Config.js:117
 #: pve-manager/www/manager6/node/Directory.js:179
-#: pve-manager/www/manager6/node/LVM.js:179
+#: pve-manager/www/manager6/node/LVM.js:184
 #: pve-manager/www/manager6/node/LVMThin.js:214
 #: pve-manager/www/manager6/node/ZFS.js:328
 #: pve-manager/www/manager6/panel/IPView.js:101
@@ -11631,7 +11969,7 @@ msgstr "월간"
 msgid "More"
 msgstr "더 보기"
 
-#: pve-manager/www/manager6/Utils.js:2286
+#: pve-manager/www/manager6/Utils.js:2306
 #: proxmox-backup/www/datastore/Summary.js:319
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:200
 msgid "Mount"
@@ -11668,7 +12006,7 @@ msgstr "마운트 옵션"
 msgid "Mount point is already in use."
 msgstr "마운트 포인트가 이미 사용 중입니다."
 
-#: pve-manager/www/manager6/window/Restore.js:101
+#: pve-manager/www/manager6/window/Restore.js:104
 msgid "Mount point volumes are also erased."
 msgstr "마운트 지점 볼륨도 지워집니다."
 
@@ -11708,13 +12046,13 @@ msgstr "행을 위로 이동"
 msgid "Move Storage"
 msgstr "스토리지 이동"
 
-#: pve-manager/www/manager6/Utils.js:2245
+#: pve-manager/www/manager6/Utils.js:2265
 #: pve-manager/www/manager6/qemu/HDMove.js:28
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:157
 msgid "Move Volume"
 msgstr "볼륨 이동"
 
-#: pve-manager/www/manager6/Utils.js:2255
+#: pve-manager/www/manager6/Utils.js:2275
 #: pve-manager/www/manager6/qemu/HDMove.js:28
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:167
 msgid "Move disk"
@@ -11735,6 +12073,32 @@ msgstr "'{0}' 네임스페이스 이동"
 #: pve-manager/www/manager6/lxc/Resources.js:263
 msgid "Move volume to another storage"
 msgstr "볼륨을 다른 스토리지로 이동"
+
+#: pve-manager/www/manager6/dc/SAN.js:355
+#: pve-manager/www/manager6/node/SANLuns.js:69
+#: pve-manager/www/manager6/storage/IScsiEdit.js:174
+#: pve-manager/www/manager6/storage/wizard/LunSelect.js:140
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:171
+msgid "Multipath"
+msgstr ""
+
+#: pve-manager/www/manager6/dc/MultipathWwidEdit.js:3
+#, fuzzy
+#| msgid "Route Map Entry"
+msgid "Multipath Entry"
+msgstr "라우트 맵 항목"
+
+#: pve-manager/www/manager6/dc/SAN.js:25
+#, fuzzy
+#| msgid "Color Overrides"
+msgid "Multipath Overrides"
+msgstr "색상 오버라이드"
+
+#: pve-manager/www/manager6/SANUtils.js:139
+#, fuzzy
+#| msgid "No updates available."
+msgid "Multipath unavailable"
+msgstr "사용 가능한 업데이트가 없습니다."
 
 #: pmg-gui/js/controller/QuarantineController.js:59
 msgid "Multiple E-Mails selected"
@@ -11770,6 +12134,10 @@ msgstr "하나 이상의 디바이스를 선택해야 함"
 #: proxmox-widget-toolkit/src/Toolkit.js:122
 msgid "Must end with"
 msgstr "다음으로 끝나는"
+
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:20
+msgid "Must include node \"{0}\", which sets up the volume group."
+msgstr ""
 
 #: proxmox-widget-toolkit/src/Toolkit.js:109
 #: proxmox-widget-toolkit/src/Toolkit.js:120
@@ -11837,8 +12205,8 @@ msgstr "현재 NVMe 디스크는 지원되지 않으며, '{0}'은(는) SCSI로 �
 
 #: proxmox-widget-toolkit/src/form/UserSelector.js:33
 #: proxmox-widget-toolkit/src/grid/ObjectGrid.js:400
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:329
-#: proxmox-widget-toolkit/src/node/NetworkView.js:282
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:364
+#: proxmox-widget-toolkit/src/node/NetworkView.js:283
 #: proxmox-widget-toolkit/src/node/ServiceView.js:211
 #: proxmox-widget-toolkit/src/panel/ACMEAccount.js:65
 #: proxmox-widget-toolkit/src/window/ACMEAccount.js:54
@@ -11875,6 +12243,7 @@ msgstr "현재 NVMe 디스크는 지원되지 않으며, '{0}'은(는) SCSI로 �
 #: pve-manager/www/manager6/dc/RealmSyncJob.js:112
 #: pve-manager/www/manager6/dc/RoleEdit.js:33
 #: pve-manager/www/manager6/dc/RoleView.js:58
+#: pve-manager/www/manager6/dc/SAN.js:282
 #: pve-manager/www/manager6/dc/SecurityGroups.js:30
 #: pve-manager/www/manager6/dc/UserView.js:202
 #: pve-manager/www/manager6/form/FileSelector.js:102
@@ -11897,9 +12266,10 @@ msgstr "현재 NVMe 디스크는 지원되지 않으며, '{0}'은(는) SCSI로 �
 #: pve-manager/www/manager6/node/Certificates.js:45
 #: pve-manager/www/manager6/node/Directory.js:47
 #: pve-manager/www/manager6/node/LVM.js:36
-#: pve-manager/www/manager6/node/LVM.js:102
+#: pve-manager/www/manager6/node/LVM.js:107
 #: pve-manager/www/manager6/node/LVMThin.js:34
 #: pve-manager/www/manager6/node/LVMThin.js:106
+#: pve-manager/www/manager6/node/SANLuns.js:55
 #: pve-manager/www/manager6/node/ZFS.js:47
 #: pve-manager/www/manager6/node/ZFS.js:231
 #: pve-manager/www/manager6/panel/IPSet.js:85
@@ -11909,7 +12279,8 @@ msgstr "현재 NVMe 디스크는 지원되지 않으며, '{0}'은(는) SCSI로 �
 #: pve-manager/www/manager6/qemu/Options.js:26
 #: pve-manager/www/manager6/qemu/Options.js:30
 #: pve-manager/www/manager6/qemu/Options.js:38
-#: pve-manager/www/manager6/sdn/FabricsContentView.js:59
+#: pve-manager/www/manager6/sdn/FabricsContentView.js:47
+#: pve-manager/www/manager6/sdn/FabricsContentView.js:138
 #: pve-manager/www/manager6/sdn/FabricsView.js:16
 #: pve-manager/www/manager6/sdn/PrefixListPanel.js:30
 #: pve-manager/www/manager6/sdn/PrefixListPanel.js:174
@@ -11926,13 +12297,14 @@ msgstr "현재 NVMe 디스크는 지원되지 않으며, '{0}'은(는) SCSI로 �
 #: pve-manager/www/manager6/sdn/fabrics/wireguard/NodeEdit.js:35
 #: pve-manager/www/manager6/storage/ContentView.js:119
 #: pve-manager/www/manager6/storage/TemplateView.js:91
+#: pve-manager/www/manager6/storage/wizard/LunSelect.js:119
 #: pve-manager/www/manager6/tree/SnapshotTree.js:340
 #: pve-manager/www/manager6/window/BulkAction.js:351
 #: pve-manager/www/manager6/window/Clone.js:201
 #: pve-manager/www/manager6/window/DirMapEdit.js:137
 #: pve-manager/www/manager6/window/GuestImport.js:546
 #: pve-manager/www/manager6/window/PCIMapEdit.js:211
-#: pve-manager/www/manager6/window/Restore.js:340
+#: pve-manager/www/manager6/window/Restore.js:406
 #: pve-manager/www/manager6/window/Settings.js:192
 #: pve-manager/www/manager6/window/Snapshot.js:67
 #: pve-manager/www/manager6/window/TreeSettingsEdit.js:26
@@ -12007,7 +12379,7 @@ msgstr "이름"
 msgid "Name / Host"
 msgstr "이름 / 호스트"
 
-#: pve-manager/www/manager6/tree/DhcpTree.js:199
+#: pve-manager/www/manager6/tree/DhcpTree.js:201
 msgid "Name / VMID"
 msgstr "이름 / VMID"
 
@@ -12035,6 +12407,19 @@ msgstr "이름, 노드, VMID"
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:116
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:463
 msgid "Name, VMID, Type"
+msgstr "이름, VMID, 유형"
+
+#: pve-manager/www/manager6/storage/wizard/LunSelect.js:181
+#, fuzzy
+#| msgid "Name, VMID, Type"
+msgid "Name, WWID, Path"
+msgstr "이름, VMID, 유형"
+
+#: pve-manager/www/manager6/dc/SAN.js:274
+#: pve-manager/www/manager6/node/SANLuns.js:197
+#, fuzzy
+#| msgid "Name, VMID, Type"
+msgid "Name, WWID, Storage"
 msgstr "이름, VMID, 유형"
 
 #: proxmox-widget-toolkit/src/panel/WebhookEditPanel.js:256
@@ -12074,6 +12459,12 @@ msgstr "네임스페이스 이름"
 msgid "Narrow viewport detected"
 msgstr "좁은 뷰포트 감지됨"
 
+#: pve-manager/www/manager6/SANUtils.js:120
+#, fuzzy
+#| msgid "active"
+msgid "Native"
+msgstr "활성"
+
 #: proxmox-datacenter-manager/ui/src/ceph/clusters.rs:115
 msgid "Near full"
 msgstr "거의 가득 참"
@@ -12086,11 +12477,11 @@ msgstr "하나 이상의 매핑이 필요함"
 msgid "Need at least one snapshot"
 msgstr "하나 이상의 스냅샷이 필요함"
 
-#: pve-manager/www/manager6/sdn/FabricsContentView.js:33
+#: pve-manager/www/manager6/sdn/FabricsContentView.js:38
 msgid "Neighbor"
 msgstr "이웃"
 
-#: pve-manager/www/manager6/sdn/NetworkBrowser.js:56
+#: pve-manager/www/manager6/sdn/NetworkBrowser.js:58
 msgid "Neighbors"
 msgstr "이웃"
 
@@ -12286,6 +12677,9 @@ msgstr "새로 설정된 구독, 아직 확인되지 않음"
 
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:414
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:531
+#: pve-manager/www/manager6/storage/wizard/IScsi.js:235
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:287
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:291
 #: pve-manager/www/manager6/window/Wizard.js:193
 #: proxmox-backup/www/tape/window/TapeRestore.js:274
 #: proxmox-yew-comp/src/wizard.rs:685
@@ -12482,6 +12876,18 @@ msgstr ""
 msgid "No LDAP/AD Realm found"
 msgstr "LDAP/AD 영역을 찾을 수 없음"
 
+#: pve-manager/www/manager6/node/SANLuns.js:7
+#: pve-manager/www/manager6/storage/wizard/LunSelect.js:74
+msgid "No LUNs found. Check connections and array access."
+msgstr ""
+
+#: pve-manager/www/manager6/node/SANLuns.js:220
+#: pve-manager/www/manager6/storage/wizard/LunSelect.js:189
+#, fuzzy
+#| msgid "No guest matches the current filter."
+msgid "No LUNs match the search."
+msgstr "현재 필터 조건에 맞는 게스트가 없습니다."
+
 #: pve-manager/www/manager6/tree/ResourceMapTree.js:8
 msgid "No Mapping found"
 msgstr "매핑을 찾을 수 없음"
@@ -12560,6 +12966,12 @@ msgstr "태스크 없음"
 msgid "No Tasks found"
 msgstr "태스크를 찾을 수 없음"
 
+#: pve-manager/www/manager6/grid/PoolMembers.js:256
+#, fuzzy
+#| msgid "VLAN Tag"
+msgid "No VLAN tag"
+msgstr "VLAN 태그"
+
 #: pve-manager/www/manager6/form/VMSelector.js:201
 msgid "No VM selected"
 msgstr "선택한 가상 머신 없음"
@@ -12629,11 +13041,17 @@ msgid "No changelog installed"
 msgstr "설치되지 않음"
 
 #: proxmox-widget-toolkit/src/node/NetworkView.js:83
-#: proxmox-widget-toolkit/src/node/NetworkView.js:441
+#: proxmox-widget-toolkit/src/node/NetworkView.js:442
 #: pve-manager/www/manager6/sdn/SdnDiffView.js:42
 #: pve-manager/www/manager6/sdn/SdnDiffView.js:45
 msgid "No changes"
 msgstr "변경 사항 없음"
+
+#: pve-manager/www/manager6/SANUtils.js:140
+#, fuzzy
+#| msgid "Source port"
+msgid "No current report"
+msgstr "원본 포트"
 
 #: proxmox-datacenter-manager/ui/src/dashboard/top_entities.rs:266
 #: proxmox-datacenter-manager/ui/src/widget/resource_tree.rs:345
@@ -12708,6 +13126,12 @@ msgstr "사용 가능한 게스트 없음"
 msgid "No guests found"
 msgstr "게스트를 찾을 수 없음"
 
+#: pve-manager/www/manager6/node/ISCSITargets.js:6
+#, fuzzy
+#| msgid "No guests found"
+msgid "No iSCSI targets found"
+msgstr "게스트를 찾을 수 없음"
+
 #: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:218
 msgid "No interfaces configured"
 msgstr "구성된 인터페이스 없음"
@@ -12769,8 +13193,14 @@ msgstr "네트워크 디바이스 없음"
 msgid "No network information"
 msgstr "네트워크 정보 없음"
 
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:620
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:635
+#: pve-manager/www/manager6/window/SANLunState.js:74
+#, fuzzy
+#| msgid "No nodes are configured for this remote."
+msgid "No node reported this LUN yet."
+msgstr "이 리모트에 대해 구성된 노드가 없습니다."
+
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:650
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:665
 msgid "No node selected"
 msgstr "선택한 노드 없음"
 
@@ -12794,6 +13224,16 @@ msgstr "구성된 통지 일치 조건이 없습니다."
 #: proxmox-widget-toolkit/src/panel/NotificationConfigView.js:155
 msgid "No notification targets configured"
 msgstr "구성된 통지 대상 없음"
+
+#: pve-manager/www/manager6/window/SANLunWipe.js:45
+msgid "No other host uses the LUN"
+msgstr ""
+
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:313
+#, fuzzy
+#| msgid "No Overrides"
+msgid "No override"
+msgstr "재정의 안 함"
 
 #: proxmox-widget-toolkit/src/node/APTHistory.js:348
 msgid "No package changes recorded."
@@ -12823,7 +13263,7 @@ msgstr "구성된 접두사 목록 없음"
 msgid "No prefix list selected"
 msgstr "선택한 접두사 목록 없음"
 
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:774
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:804
 msgid "No product repository configured"
 msgstr "구성된 제품 저장소가 없음"
 
@@ -12998,7 +13438,7 @@ msgid "No {0} rules configured."
 msgstr "{0} 규칙이 구성되지 않았습니다."
 
 #: pve-manager/www/manager6/node/Directory.js:174
-#: pve-manager/www/manager6/node/LVM.js:174
+#: pve-manager/www/manager6/node/LVM.js:179
 #: pve-manager/www/manager6/node/LVMThin.js:209
 #: pve-manager/www/manager6/node/ZFS.js:323
 #: proxmox-backup/www/DirectoryList.js:96
@@ -13016,7 +13456,7 @@ msgstr "구독없음"
 #: pve-manager/www/manager6/dc/Backup.js:308
 #: pve-manager/www/manager6/dc/Backup.js:897
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:162
-#: pve-manager/www/manager6/dc/Log.js:52
+#: pve-manager/www/manager6/dc/Log.js:52 pve-manager/www/manager6/dc/SAN.js:153
 #: pve-manager/www/manager6/dc/Tasks.js:105
 #: pve-manager/www/manager6/form/GlobalSearchField.js:89
 #: pve-manager/www/manager6/form/NodeSelector.js:39
@@ -13040,7 +13480,9 @@ msgstr "구독없음"
 #: pve-manager/www/manager6/sdn/fabrics/NodeEdit.js:6
 #: pve-manager/www/manager6/sdn/fabrics/NodeEdit.js:205
 #: pve-manager/www/manager6/sdn/fabrics/NodeEdit.js:224
+#: pve-manager/www/manager6/storage/wizard/NodeIdentities.js:14
 #: pve-manager/www/manager6/window/DirMapEdit.js:150
+#: pve-manager/www/manager6/window/SANLunState.js:77
 #: pve-manager/www/manager6/window/Settings.js:197
 #: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:616
 #: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:634
@@ -13075,11 +13517,17 @@ msgstr[0] "노드 '{0}' ({1} OSD)"
 msgid "Node Firewall - {0}/{1}"
 msgstr "노드 방화벽 - {0}/{1}"
 
+#: pve-manager/www/manager6/ha/Status.js:205
+#, fuzzy
+#| msgid "Under Maintenance"
+msgid "Node Maintenance"
+msgstr "유지보수 중"
+
 #: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:580
 msgid "Node Panels"
 msgstr "노드 패널"
 
-#: proxmox-datacenter-manager/ui/src/administration/mod.rs:77
+#: proxmox-datacenter-manager/ui/src/administration/mod.rs:86
 #: proxmox-yew-comp/src/node_status_panel.rs:239
 msgid "Node Status"
 msgstr "노드 상태"
@@ -13088,7 +13536,7 @@ msgstr "노드 상태"
 msgid "Node Subscription Status"
 msgstr "노드 구독 상태"
 
-#: pve-manager/www/manager6/Utils.js:2310
+#: pve-manager/www/manager6/Utils.js:2330
 msgid "Node fencing notifications"
 msgstr "노드 Fencing 통지"
 
@@ -13118,8 +13566,10 @@ msgid "Nodename"
 msgstr "노드명"
 
 #: pmg-gui/js/ClusterAdministration.js:378
-#: pve-manager/www/manager6/dc/Health.js:104
+#: pve-manager/www/manager6/dc/Health.js:110
+#: pve-manager/www/manager6/dc/MultipathWwidEdit.js:43
 #: pve-manager/www/manager6/dc/NodeView.js:7
+#: pve-manager/www/manager6/dc/SAN.js:133
 #: pve-manager/www/manager6/form/StorageSelector.js:51
 #: pve-manager/www/manager6/form/VMCPUFlagSelector.js:317
 #: pve-manager/www/manager6/ha/rules/NodeAffinityRules.js:30
@@ -13127,6 +13577,7 @@ msgstr "노드명"
 #: pve-manager/www/manager6/sdn/controllers/EvpnEdit.js:98
 #: pve-manager/www/manager6/sdn/zones/Base.js:44
 #: pve-manager/www/manager6/storage/Base.js:22
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:173
 #: pve-manager/www/manager6/tree/ResourceTree.js:14
 #: proxmox-datacenter-manager/ui/src/remotes/config.rs:381
 #: proxmox-datacenter-manager/ui/src/dashboard/node_status_panel.rs:167
@@ -13156,7 +13607,7 @@ msgstr "메모리 사용량이 가장 높은 노드"
 msgid "Non production-ready repository enabled!"
 msgstr "production-ready 리포지토리가 활성화되지 않았습니다!"
 
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:783
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:813
 msgid "Non-production-ready repositories enabled"
 msgstr "비 Production-ready 리포지토리가 활성화됨"
 
@@ -13260,6 +13711,18 @@ msgstr "사용 가능한 게스트 없음"
 msgid "Not configured"
 msgstr "구성되지 않음"
 
+#: pve-manager/www/manager6/SANUtils.js:143
+#, fuzzy
+#| msgid "Connected"
+msgid "Not connected"
+msgstr "연결됨"
+
+#: pve-manager/www/manager6/SANUtils.js:115
+#, fuzzy
+#| msgid "Not Labeled"
+msgid "Not enabled"
+msgstr "라벨 없음"
+
 #: proxmox-backup/www/Utils.js:305
 msgid "Not enough data"
 msgstr "데이터가 충분하지 않음"
@@ -13280,9 +13743,13 @@ msgstr ""
 "기본 답변으로 표시되지 않았고 대상 필터가 비어 있는 경우, 답변은 절대 일치하"
 "지 않습니다."
 
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:614
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:644
 msgid "Not polled yet"
 msgstr "아직 폴링되지 않음"
+
+#: pve-manager/www/manager6/window/SANLunState.js:89
+msgid "Not reported by the node yet; the SAN view shows that as \"Missing\"."
+msgstr ""
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:44
 #: proxmox-yew-comp/src/apt_repositories.rs:676
@@ -13308,8 +13775,11 @@ msgstr "메모"
 msgid "Note Template"
 msgstr "메모 탬플릿"
 
-#: pmg-gui/js/TFAView.js:74 pve-manager/www/manager6/dc/OptionView.js:222
+#: pmg-gui/js/TFAView.js:74 pve-manager/www/manager6/SANUtils.js:199
+#: pve-manager/www/manager6/dc/OptionView.js:222
 #: pve-manager/www/manager6/dc/OptionView.js:299
+#: pve-manager/www/manager6/storage/wizard/IScsi.js:229
+#: pve-manager/www/manager6/storage/wizard/LunSelect.js:100
 #: proxmox-backup/www/config/WebauthnView.js:129
 msgid "Note:"
 msgstr "참고:"
@@ -13323,7 +13793,7 @@ msgstr ""
 "참고: 라이브 가져오기 중에 문제가 발생하면 가상 머신에서 새로 작성한 데이터"
 "가 손실될 수 있습니다."
 
-#: pve-manager/www/manager6/window/Restore.js:317
+#: pve-manager/www/manager6/window/Restore.js:383
 msgid ""
 "Note: If anything goes wrong during the live-restore, new data written by "
 "the VM may be lost."
@@ -13433,7 +13903,7 @@ msgid "Notification system"
 msgstr "통지 시스템"
 
 #: pve-manager/www/manager6/dc/Backup.js:482
-#: pve-manager/www/manager6/dc/Config.js:453
+#: pve-manager/www/manager6/dc/Config.js:464
 #: proxmox-backup/www/NavigationTree.js:84
 #: proxmox-backup/www/datastore/OptionView.js:198
 #: proxmox-backup/www/tape/window/TapeBackupJob.js:223
@@ -13465,7 +13935,7 @@ msgstr "지금 새로 고침 중"
 msgid "Number"
 msgstr "번호"
 
-#: pve-manager/www/manager6/node/LVM.js:107
+#: pve-manager/www/manager6/node/LVM.js:112
 msgid "Number of LVs"
 msgstr "LV의 수"
 
@@ -13487,6 +13957,7 @@ msgstr ""
 #: proxmox-widget-toolkit/src/window/ConsentModal.js:33
 #: proxmox-widget-toolkit/src/window/Edit.js:317 pmg-gui/js/LoginView.js:190
 #: pmg-gui/js/RegexTester.js:49 pmg-gui/js/Utils.js:938
+#: pve-manager/www/manager6/SANUtils.js:132
 #: pve-manager/www/manager6/Utils.js:330
 #: pve-manager/www/manager6/grid/Replication.js:358
 #: proxmox-backup/www/Utils.js:234
@@ -13507,6 +13978,14 @@ msgstr ""
 #: proxmox-yew-comp/src/node_status_panel.rs:142
 msgid "OK"
 msgstr "OK"
+
+#: pve-manager/www/manager6/dc/SAN.js:346
+msgid "OK (1 path on {0})"
+msgstr ""
+
+#: pve-manager/www/manager6/SANUtils.js:134
+msgid "OK (1 path)"
+msgstr ""
 
 #: pve-manager/www/manager6/qemu/CreateWizard.js:227
 msgid "OS"
@@ -13560,9 +14039,9 @@ msgstr ""
 "OVMF는 LSI 드라이버 없이 빌드되었으며, SCSI 하드웨어가 '{1}'로 설정되었습니"
 "다."
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:163
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:183
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:297
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:169
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:189
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:303
 msgid "OVS options"
 msgstr "OVS 옵션"
 
@@ -13582,7 +14061,7 @@ msgstr "10월"
 msgid "Off"
 msgstr "끔"
 
-#: pve-manager/www/manager6/dc/Health.js:114
+#: pve-manager/www/manager6/dc/Health.js:120
 #: pve-manager/www/manager6/window/Migrate.js:46
 #: proxmox-backup/www/Utils.js:886 proxmox-backup/www/tape/TapeInventory.js:315
 #: proxmox-backup/www/window/MaintenanceOptions.js:8
@@ -13625,6 +14104,12 @@ msgstr ""
 msgid "On"
 msgstr "켬"
 
+#: pve-manager/www/manager6/node/LVM.js:47
+msgid ""
+"On a SAN LUN, Add Storage creates a shared storage for all nodes. For "
+"multipath or a node restriction, use Guided Setup in {0}."
+msgstr ""
+
 #: pve-manager/www/manager6/form/NotificationPolicySelector.js:6
 msgid "On failure only"
 msgstr "실패 시에만"
@@ -13636,6 +14121,12 @@ msgstr "일치할 경우 다음으로 이동:"
 #: pve-manager/www/manager6/sdn/RouteMapPanel.js:617
 msgid "On match next"
 msgstr "다음 일치하는 데이터"
+
+#: pve-manager/www/manager6/storage/wizard/NodeIdentities.js:71
+msgid ""
+"On the array, allow the initiator names of the nodes that will use the "
+"target."
+msgstr ""
 
 #: proxmox-backup/www/tape/TapeInventory.js:116
 #: proxmox-backup/www/tape/TapeInventory.js:315
@@ -13677,13 +14168,13 @@ msgid "One repository"
 msgid_plural "{n} repositories"
 msgstr[0] "{n}개의 리포지토리"
 
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:713
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:743
 msgid "One update pending"
 msgid_plural "{n} updates pending"
 msgstr[0] "{n} 업데이트 보류 중"
 
 #: pve-manager/www/manager6/data/ResourceStore.js:105
-#: pve-manager/www/manager6/dc/Health.js:108
+#: pve-manager/www/manager6/dc/Health.js:114
 #: pve-manager/www/manager6/dc/NodeView.js:25
 #: pve-manager/www/manager6/window/Migrate.js:41
 #: proxmox-backup/www/tape/TapeInventory.js:318
@@ -13836,6 +14327,12 @@ msgstr "OpenID 커넥트 서버"
 msgid "OpenTelemetry Server"
 msgstr "OpenTelemetry 서버"
 
+#: pve-manager/www/manager6/SANUtils.js:133
+#, fuzzy
+#| msgid "Optional"
+msgid "Optimal"
+msgstr "선택 사항"
+
 #: pve-manager/www/manager6/ceph/Pool.js:352
 msgid "Optimal # of PGs"
 msgstr "최적의 PG 수"
@@ -13876,12 +14373,12 @@ msgstr ""
 #: pmg-gui/js/SystemConfiguration.js:51
 #: pmg-gui/js/VirusDetectorConfiguration.js:12
 #: pve-manager/www/manager6/dc/Config.js:119
-#: pve-manager/www/manager6/dc/Config.js:283
-#: pve-manager/www/manager6/dc/Config.js:358
+#: pve-manager/www/manager6/dc/Config.js:294
+#: pve-manager/www/manager6/dc/Config.js:369
 #: pve-manager/www/manager6/lxc/Config.js:287
 #: pve-manager/www/manager6/lxc/Config.js:351
-#: pve-manager/www/manager6/node/Config.js:230
-#: pve-manager/www/manager6/node/Config.js:330
+#: pve-manager/www/manager6/node/Config.js:243
+#: pve-manager/www/manager6/node/Config.js:343
 #: pve-manager/www/manager6/node/Directory.js:124
 #: pve-manager/www/manager6/qemu/Config.js:331
 #: pve-manager/www/manager6/qemu/Config.js:404
@@ -13905,7 +14402,7 @@ msgstr "옵션"
 msgid "Order"
 msgstr "순서"
 
-#: pve-manager/www/manager6/Utils.js:2203 proxmox-backup/www/Utils.js:457
+#: pve-manager/www/manager6/Utils.js:2223 proxmox-backup/www/Utils.js:457
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:117
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:230
 msgid "Order Certificate"
@@ -13948,6 +14445,7 @@ msgid "Origin"
 msgstr "오리진"
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:350
+#: pve-manager/www/manager6/SANUtils.js:178
 #: proxmox-backup/www/SystemConfiguration.js:58
 msgid "Other"
 msgstr "기타"
@@ -13963,6 +14461,12 @@ msgstr "기타 DT 활동"
 #: proxmox-widget-toolkit/src/Utils.js:1440
 msgid "Other Error"
 msgstr "기타 오류"
+
+#: pve-manager/www/manager6/dc/SAN.js:181
+#, fuzzy
+#| msgid "Filter Value"
+msgid "Other Maps"
+msgstr "값 필터"
 
 #: pve-manager/www/manager6/ceph/Services.js:217
 msgid ""
@@ -14008,6 +14512,12 @@ msgstr "오래된 OSD"
 msgid "Outgoing"
 msgstr "발신"
 
+#: pve-manager/www/manager6/sdn/StaticRoutes.js:42
+#, fuzzy
+#| msgid "Network Interfaces"
+msgid "Outgoing Interface"
+msgstr "네트워크 인터페이스"
+
 #: pmg-gui/js/GeneralMailStatistics.js:129
 msgid "Outgoing Mail Traffic"
 msgstr "발신 메일 트래픽"
@@ -14039,17 +14549,23 @@ msgstr "출력"
 #: pve-manager/www/manager6/grid/FirewallOptions.js:142
 #: pve-manager/www/manager6/grid/FirewallOptions.js:147
 #: pve-manager/www/manager6/grid/FirewallOptions.js:152
-#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:173
+#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:172
 msgid "Output Policy"
 msgstr "출력 정책"
 
-#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:126
+#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:125
 msgid "Output log level"
 msgstr "출력 로그 레벨"
 
-#: pve-manager/www/manager6/window/Restore.js:327
+#: pve-manager/www/manager6/window/Restore.js:393
 msgid "Override Settings"
 msgstr "덮어쓰기 설정"
+
+#: pve-manager/www/manager6/dc/SAN.js:35
+#, fuzzy
+#| msgid "No Overrides"
+msgid "Overrides"
+msgstr "재정의 안 함"
 
 #: pve-manager/www/manager6/window/GuestStop.js:44
 msgid "Overrule active shutdown tasks"
@@ -14063,7 +14579,7 @@ msgstr "종료 태스크의 활성 상태 무시"
 msgid "Overview"
 msgstr "개요"
 
-#: pve-manager/www/manager6/window/Restore.js:390
+#: pve-manager/www/manager6/window/Restore.js:456
 #: proxmox-backup/www/tape/form/RetentionSelector.js:7
 msgid "Overwrite"
 msgstr "덮어쓰기"
@@ -14080,7 +14596,7 @@ msgstr "기존 파일 덮어쓰기"
 msgid "Overwrite in-use marker"
 msgstr "사용 중인 마커 덮어쓰기"
 
-#: pve-manager/www/manager6/window/Migrate.js:685
+#: pve-manager/www/manager6/window/Migrate.js:714
 msgid "Overwrite local resources unavailable check"
 msgstr "로컬 리소스 덮어쓰기 사용 불가 확인"
 
@@ -14112,7 +14628,7 @@ msgstr "PBS 변경 감지 모드"
 msgid "PCI Device"
 msgstr "PCI 디바이스"
 
-#: pve-manager/www/manager6/dc/Config.js:424
+#: pve-manager/www/manager6/dc/Config.js:435
 msgid "PCI Devices"
 msgstr "PCI 디바이스"
 
@@ -14195,7 +14711,7 @@ msgstr "패키지 버전"
 msgid "Package names"
 msgstr "패키지"
 
-#: pve-manager/www/manager6/Utils.js:2307 proxmox-backup/www/Utils.js:516
+#: pve-manager/www/manager6/Utils.js:2327 proxmox-backup/www/Utils.js:516
 msgid "Package updates are available"
 msgstr "패키지 업데이트가 가능합니다"
 
@@ -14310,6 +14826,7 @@ msgstr "인코딩된 클러스터 정보를 여기에 붙여넣기"
 #: pve-manager/www/manager6/dc/USBMapView.js:82
 #: pve-manager/www/manager6/lxc/MPEdit.js:253
 #: pve-manager/www/manager6/node/Directory.js:109
+#: pve-manager/www/manager6/node/SANLuns.js:19
 #: pve-manager/www/manager6/sdn/VnetACLView.js:20
 #: pve-manager/www/manager6/storage/BTRFSEdit.js:14
 #: pve-manager/www/manager6/window/DirMapEdit.js:181
@@ -14364,7 +14881,7 @@ msgstr "경로는 /dev/로 시작해야 합니다"
 msgid "Path on Device"
 msgstr "디바이스의 경로"
 
-#: pve-manager/www/manager6/Utils.js:2256
+#: pve-manager/www/manager6/Utils.js:2276
 #: pve-manager/www/manager6/qemu/CmdMenu.js:68
 #: pve-manager/www/manager6/qemu/Config.js:181
 #: pve-yew-mobile-gui/src/pages/page_qemu_status/dashboard_panel.rs:213
@@ -14405,6 +14922,13 @@ msgstr "피어의 루트 암호"
 msgid "Peers"
 msgstr "피어"
 
+#: pve-manager/www/manager6/SANUtils.js:116
+#: pve-manager/www/manager6/window/SANLunState.js:92
+#, fuzzy
+#| msgid "pending"
+msgid "Pending"
+msgstr "보류"
+
 #: pve-manager/www/manager6/Utils.js:221
 msgid "Pending Changes"
 msgstr "보류 중인 변경 사항"
@@ -14424,7 +14948,7 @@ msgstr "보류 중인 데이터"
 msgid "Pending SDN configuration changes"
 msgstr "보류 중인 SDN 구성 변경 사항"
 
-#: proxmox-widget-toolkit/src/node/NetworkView.js:431
+#: proxmox-widget-toolkit/src/node/NetworkView.js:432
 #: pmg-gui/js/SpamDetectorCustom.js:310
 msgid "Pending changes"
 msgstr "보류 중인 변경 사항"
@@ -14469,13 +14993,13 @@ msgstr "스냅샷 '{0}' 영구 제거"
 msgid "Permission"
 msgstr "권한"
 
-#: pve-manager/www/manager6/dc/Config.js:151
+#: pve-manager/www/manager6/dc/Config.js:162
 #: pve-manager/www/manager6/dc/UserView.js:92
 #: pve-manager/www/manager6/lxc/Config.js:393
 #: pve-manager/www/manager6/pool/Config.js:34
 #: pve-manager/www/manager6/qemu/Config.js:446
 #: pve-manager/www/manager6/sdn/Browser.js:44
-#: pve-manager/www/manager6/sdn/NetworkBrowser.js:109
+#: pve-manager/www/manager6/sdn/NetworkBrowser.js:111
 #: pve-manager/www/manager6/storage/Browser.js:197
 #: proxmox-backup/www/config/ACLView.js:27
 #: proxmox-backup/www/panel/AccessControl.js:36
@@ -14556,6 +15080,7 @@ msgid "Please enter one of your single-use recovery keys"
 msgstr "일회용 복구 키 중 하나를 입력하세요"
 
 #: proxmox-widget-toolkit/src/window/ConfirmRemoveDialog.js:169
+#: pve-manager/www/manager6/window/SANLunWipe.js:55
 msgid "Please enter the ID to confirm"
 msgstr "확인을 위해 ID를 입력하세요"
 
@@ -14727,8 +15252,8 @@ msgstr "백업할 풀"
 msgid "Pool/Media-Set/Snapshot"
 msgstr "풀/미디어-셋/스냅샷"
 
-#: pve-manager/www/manager6/dc/Config.js:196
-#: pve-manager/www/manager6/node/Config.js:422
+#: pve-manager/www/manager6/dc/Config.js:207
+#: pve-manager/www/manager6/node/Config.js:459
 #: proxmox-datacenter-manager/ui/src/ceph/cluster.rs:181
 #: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:179
 msgid "Pools"
@@ -14756,14 +15281,21 @@ msgid "Port"
 msgstr "포트"
 
 #: pve-manager/www/manager6/storage/ZFSEdit.js:45
+#: pve-manager/www/manager6/storage/wizard/IScsi.js:177
 msgid "Portal"
+msgstr "포털"
+
+#: pve-manager/www/manager6/storage/wizard/IScsi.js:212
+#, fuzzy
+#| msgid "Portal"
+msgid "Portals"
 msgstr "포털"
 
 #: pmg-gui/js/MailProxyConfiguration.js:23
 msgid "Ports"
 msgstr "포트"
 
-#: proxmox-widget-toolkit/src/node/NetworkView.js:339
+#: proxmox-widget-toolkit/src/node/NetworkView.js:340
 #: proxmox-yew-comp/src/configuration/network_view.rs:477
 msgid "Ports/Slaves"
 msgstr "포트/슬레이브"
@@ -14864,7 +15396,7 @@ msgstr "접두사 목록 항목"
 #. TRANSLATORS: Refers to an FRR prefix list, some
 #. languages may prefer to keep "prefix list" as-is:
 #. https://docs.frrouting.org/en/latest/filter.html#ip-prefix-list
-#: pve-manager/www/manager6/dc/Config.js:329
+#: pve-manager/www/manager6/dc/Config.js:340
 msgid "Prefix Lists"
 msgstr "접두사 목록"
 
@@ -14894,6 +15426,13 @@ msgstr "준비된 답변"
 #: pve-manager/www/manager6/lxc/MPEdit.js:349
 msgid "Preserve ownership and permissions of mount point directory"
 msgstr "마운트 지점 디렉터리의 소유권 및 권한을 유지함"
+
+#. TRANSLATORS: {0} is the label of the Next button.
+#: pve-manager/www/manager6/storage/wizard/IScsi.js:233
+msgid ""
+"Pressing {0} creates or reuses the connection storage before you select a "
+"LUN."
+msgstr ""
 
 #: proxmox-widget-toolkit/src/window/SyncWindow.js:146
 #: pve-manager/www/manager6/dc/OptionView.js:682
@@ -14955,7 +15494,7 @@ msgstr "우선순위"
 msgid "Private Key (Optional)"
 msgstr "개인 키 (선택사항)"
 
-#: pve-manager/www/manager6/window/Restore.js:262
+#: pve-manager/www/manager6/window/Restore.js:328
 msgid "Privilege Level"
 msgstr "권한 레벨"
 
@@ -14964,7 +15503,7 @@ msgstr "권한 레벨"
 msgid "Privilege Separation"
 msgstr "권한 구분"
 
-#: pve-manager/www/manager6/window/Restore.js:295
+#: pve-manager/www/manager6/window/Restore.js:361
 msgid "Privileged"
 msgstr "권한 있음"
 
@@ -14986,6 +15525,12 @@ msgstr "리모트 프로브"
 msgid "Process ID"
 msgstr "프로세스 ID"
 
+#: pve-manager/www/manager6/SANUtils.js:172
+#, fuzzy
+#| msgid "Process ID"
+msgid "Process {0}"
+msgstr "프로세스 ID"
+
 #: pmg-gui/js/controller/QuarantineController.js:137
 msgid "Processing..."
 msgstr "처리 중..."
@@ -14994,7 +15539,7 @@ msgstr "처리 중..."
 msgid "Processor"
 msgstr "프로세서"
 
-#: pve-manager/www/manager6/panel/TemplateStatusView.js:40
+#: pve-manager/www/manager6/panel/TemplateStatusView.js:43
 #: pve-manager/www/manager6/qemu/HardwareView.js:111
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:291
 msgid "Processors"
@@ -15014,7 +15559,7 @@ msgstr "제품"
 msgid "Production-ready Enterprise repository enabled"
 msgstr "Production-ready Enterprise 리포지토리가 활성화됨"
 
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:770
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:800
 msgid "Production-ready enterprise repository enabled"
 msgstr "Production-ready Enterprise 리포지토리가 활성화됨"
 
@@ -15038,6 +15583,7 @@ msgstr "프롬포트"
 #: pve-manager/www/manager6/dc/ACLView.js:63
 #: pve-manager/www/manager6/dc/ACLView.js:150
 #: pve-manager/www/manager6/dc/PermissionView.js:33
+#: pve-manager/www/manager6/grid/PoolMembers.js:264
 #: proxmox-backup/www/config/ACLView.js:203
 #: proxmox-backup/www/window/ACLEdit.js:59
 #: proxmox-yew-comp/src/acl/acl_edit.rs:89
@@ -15231,6 +15777,8 @@ msgstr "나중에 이전 백업 정리"
 msgid "Prunes"
 msgstr "정리"
 
+#: pve-manager/www/manager6/sdn/FabricsContentView.js:67
+#: pve-manager/www/manager6/sdn/FabricsContentView.js:160
 #: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:338
 #: pve-manager/www/manager6/sdn/fabrics/wireguard/NodeEdit.js:47
 msgid "Public Key"
@@ -15265,7 +15813,7 @@ msgstr "공개 키 유형"
 msgid "Pull"
 msgstr "풀하기(pull)"
 
-#: pve-manager/www/manager6/Utils.js:2247
+#: pve-manager/www/manager6/Utils.js:2267
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:159
 msgid "Pull file"
 msgstr "파일 풀하기(pull)"
@@ -15308,7 +15856,7 @@ msgstr ""
 "대기 중인 모든 할당을 리모트 노드로 푸시하고, 정리 대기 중인 노드에서 구독을 "
 "제거합니다."
 
-#: pve-manager/www/manager6/Utils.js:2248
+#: pve-manager/www/manager6/Utils.js:2268
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:160
 msgid "Push file"
 msgstr "파일 푸시하기(push)"
@@ -15395,6 +15943,12 @@ msgstr "리모트 쿼리 중..."
 msgid "Queue Administration"
 msgstr "대기열 관리"
 
+#: pve-manager/www/manager6/dc/MultipathWwidEdit.js:60
+#, fuzzy
+#| msgid "Queues"
+msgid "Queue I/O"
+msgstr "대기열"
+
 #: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:1224
 msgid "Queue a clear of {key} on {remote}/{node}?"
 msgstr "{remote}/{node}에서 {key}를 지우는 작업을 대기열에 추가할까요?"
@@ -15417,7 +15971,7 @@ msgstr ""
 msgid "Queues"
 msgstr "대기열"
 
-#: pve-manager/www/manager6/dc/Health.js:44
+#: pve-manager/www/manager6/dc/Health.js:45
 msgid "Quorate"
 msgstr "인용문"
 
@@ -15611,8 +16165,8 @@ msgstr "읽기"
 #: proxmox-widget-toolkit/src/window/AuthEditOpenId.js:37
 #: proxmox-widget-toolkit/src/window/AuthEditSimple.js:15
 #: pmg-gui/js/AuthEditOIDC.js:85 pmg-gui/js/UserView.js:178
-#: pve-manager/www/manager6/Utils.js:2209
-#: pve-manager/www/manager6/Utils.js:2210
+#: pve-manager/www/manager6/Utils.js:2229
+#: pve-manager/www/manager6/Utils.js:2230
 #: pve-manager/www/manager6/dc/AuthEditBase.js:43
 #: pve-manager/www/manager6/dc/AuthView.js:17
 #: pve-manager/www/manager6/dc/RealmSyncJob.js:118
@@ -15645,11 +16199,11 @@ msgstr "영역 동기화"
 msgid "Realm Sync Job"
 msgstr "영역 동기화 작업"
 
-#: pve-manager/www/manager6/dc/Config.js:225
+#: pve-manager/www/manager6/dc/Config.js:236
 msgid "Realm Sync Jobs"
 msgstr "영역 동기화 작업"
 
-#: pmg-gui/js/UserManagement.js:38 pve-manager/www/manager6/dc/Config.js:209
+#: pmg-gui/js/UserManagement.js:38 pve-manager/www/manager6/dc/Config.js:220
 #: proxmox-backup/www/panel/AccessControl.js:43
 #: proxmox-datacenter-manager/ui/src/configuration/mod.rs:138
 msgid "Realms"
@@ -15702,8 +16256,8 @@ msgstr "균형 재조정 매서드"
 msgid "Rebalancing: {0}"
 msgstr "균형 재조정 중: {0}"
 
-#: pve-manager/www/manager6/Utils.js:2257
-#: pve-manager/www/manager6/Utils.js:2287
+#: pve-manager/www/manager6/Utils.js:2277
+#: pve-manager/www/manager6/Utils.js:2307
 #: pve-manager/www/manager6/lxc/CmdMenu.js:81
 #: pve-manager/www/manager6/lxc/Config.js:69
 #: pve-manager/www/manager6/node/Config.js:102
@@ -15784,6 +16338,12 @@ msgstr "수신자"
 msgid "Recipients"
 msgstr "수신자"
 
+#: pve-manager/www/manager6/SANUtils.js:142
+#, fuzzy
+#| msgid "Connection"
+msgid "Reconnecting"
+msgstr "연결"
+
 #: proxmox-backup/www/window/ZFSCreate.js:78
 #, fuzzy
 #| msgid "Range Size"
@@ -15830,9 +16390,10 @@ msgid "Referenced disks will always be destroyed."
 msgstr "참조된 디스크는 항상 파기됩니다."
 
 #: proxmox-widget-toolkit/src/node/APT.js:126
-#: pve-manager/www/manager6/Utils.js:2204
+#: pve-manager/www/manager6/Utils.js:2224
 #: proxmox-yew-comp/src/apt_package_manager.rs:284
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:118
+#: proxmox-yew-widget-toolkit/src/widget/button.rs:137
 msgid "Refresh"
 msgstr "새로 고침"
 
@@ -15895,7 +16456,7 @@ msgid "Region"
 msgstr "지역"
 
 #: proxmox-widget-toolkit/src/window/ACMEAccount.js:12
-#: pve-manager/www/manager6/Utils.js:2205
+#: pve-manager/www/manager6/Utils.js:2225
 #: pve-manager/www/manager6/node/ACME.js:9
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:119
 msgid "Register"
@@ -15919,6 +16480,12 @@ msgstr "Webauthn 디바이스 등록"
 #: proxmox-backup/www/Utils.js:453
 msgid "Register {0} Account"
 msgstr "계정 {0} 등록"
+
+#: pve-manager/www/manager6/panel/GuestIdentity.js:38
+#, fuzzy
+#| msgid "Register"
+msgid "Registered"
+msgstr "등록"
 
 #: pve-manager/www/manager6/dc/OptionView.js:767
 #: pve-manager/www/manager6/dc/RegisteredTagsEdit.js:5
@@ -16002,13 +16569,16 @@ msgstr "이 메일을 수신자에게 전달하기"
 #: pmg-gui/js/PBSSnapshotView.js:292 pve-manager/www/manager6/ceph/OSD.js:1322
 #: pve-manager/www/manager6/ceph/OSDDetails.js:114
 #: pve-manager/www/manager6/node/Directory.js:140
-#: pve-manager/www/manager6/node/LVM.js:142
+#: pve-manager/www/manager6/node/ISCSITargets.js:126
+#: pve-manager/www/manager6/node/LVM.js:147
 #: pve-manager/www/manager6/node/LVMThin.js:171
+#: pve-manager/www/manager6/node/SANLuns.js:155
 #: pve-manager/www/manager6/node/ZFS.js:277
 #: pve-manager/www/manager6/sdn/FabricsView.js:217
 #: pve-manager/www/manager6/sdn/PrefixListPanel.js:157
 #: pve-manager/www/manager6/sdn/RouteMapPanel.js:976
-#: pve-manager/www/manager6/tree/DhcpTree.js:191
+#: pve-manager/www/manager6/storage/wizard/LunSelect.js:167
+#: pve-manager/www/manager6/tree/DhcpTree.js:193
 #: proxmox-backup/www/DirectoryList.js:73 proxmox-backup/www/ZFSList.js:112
 #: proxmox-backup/www/datastore/Content.js:1445
 #: proxmox-backup/www/tape/BackupOverview.js:305
@@ -16026,7 +16596,7 @@ msgstr "다시 로드"
 msgid "Reload Realms"
 msgstr "영역"
 
-#: pve-manager/www/manager6/Utils.js:2269
+#: pve-manager/www/manager6/Utils.js:2289
 msgid "Reload network configuration on all nodes"
 msgstr "모든 노드에서 네트워크 구성 다시 로드"
 
@@ -16115,7 +16685,7 @@ msgstr "리모트 시스템 업데이트"
 
 #: proxmox-backup/www/NavigationTree.js:54
 #: proxmox-backup/www/config/RemoteView.js:39
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:394
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:398
 #: proxmox-datacenter-manager/ui/src/dashboard/remote_panel.rs:152
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/evpn_panel.rs:224
 msgid "Remotes"
@@ -16148,13 +16718,14 @@ msgstr "제거 예정"
 #: pmg-gui/js/DNSBLSitesField.js:141 pmg-gui/js/PostfixMailQueue.js:152
 #: pmg-gui/js/RuleConfiguration.js:167 pmg-gui/js/RuleInfo.js:377
 #: pmg-gui/js/UserBlockWelcomeList.js:167
-#: pve-manager/www/manager6/Utils.js:2232
-#: pve-manager/www/manager6/Utils.js:2241
-#: pve-manager/www/manager6/Utils.js:2243
-#: pve-manager/www/manager6/Utils.js:2299
+#: pve-manager/www/manager6/Utils.js:2252
+#: pve-manager/www/manager6/Utils.js:2261
+#: pve-manager/www/manager6/Utils.js:2263
+#: pve-manager/www/manager6/Utils.js:2319
 #: pve-manager/www/manager6/dc/ACLView.js:160
+#: pve-manager/www/manager6/dc/SAN.js:239
 #: pve-manager/www/manager6/form/TagColorGrid.js:283
-#: pve-manager/www/manager6/grid/PoolMembers.js:207
+#: pve-manager/www/manager6/grid/PoolMembers.js:325
 #: pve-manager/www/manager6/ha/Resources.js:78
 #: pve-manager/www/manager6/lxc/Config.js:164
 #: pve-manager/www/manager6/lxc/Network.js:499
@@ -16167,6 +16738,7 @@ msgstr "제거 예정"
 #: pve-manager/www/manager6/sdn/PrefixListPanel.js:149
 #: pve-manager/www/manager6/sdn/PrefixListPanel.js:266
 #: pve-manager/www/manager6/sdn/RouteMapPanel.js:968
+#: pve-manager/www/manager6/sdn/StaticRoutes.js:206
 #: pve-manager/www/manager6/sdn/VnetACLView.js:184
 #: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:233
 #: pve-manager/www/manager6/storage/ImageView.js:33
@@ -16365,6 +16937,11 @@ msgstr ""
 "모든 그룹을 이동한 후 비어 있는 원본 네임스페이스 디렉터리를 제거합니다. 네임"
 "스페이스 구조를 유지하려면 이 옵션을 선택 해제하세요."
 
+#: pve-manager/www/manager6/dc/SAN.js:245
+msgid ""
+"Remove the multipath entry for {0}? Existing multipath maps are not removed."
+msgstr ""
+
 #: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:314
 msgid ""
 "Remove the selected key from the pool. Disabled while the key is live on a "
@@ -16430,7 +17007,7 @@ msgstr "리모트 노드에서 활성 구독 {n}개를 제거할까요?"
 msgid "Removed Data"
 msgstr "데이터 제거됨"
 
-#: pve-manager/www/manager6/Utils.js:2206 proxmox-backup/www/Utils.js:458
+#: pve-manager/www/manager6/Utils.js:2226 proxmox-backup/www/Utils.js:458
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:120
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:231
 msgid "Renew Certificate"
@@ -16440,9 +17017,9 @@ msgstr "인증서 갱신"
 msgid "Repeat missed"
 msgstr "누락 반복"
 
-#: pve-manager/www/manager6/dc/Config.js:146
+#: pve-manager/www/manager6/dc/Config.js:157
 #: pve-manager/www/manager6/lxc/Config.js:313
-#: pve-manager/www/manager6/node/Config.js:430
+#: pve-manager/www/manager6/node/Config.js:467
 #: pve-manager/www/manager6/qemu/Config.js:366
 msgid "Replication"
 msgstr "복제"
@@ -16459,7 +17036,7 @@ msgstr "복제 로그"
 msgid "Replication Settings"
 msgstr "복제 설정"
 
-#: pve-manager/www/manager6/Utils.js:2309
+#: pve-manager/www/manager6/Utils.js:2329
 msgid "Replication job notifications"
 msgstr "복제 작업 통지"
 
@@ -16468,9 +17045,9 @@ msgid "Replication needs at least two nodes"
 msgstr "복제는 최소 두 개의 노드가 필요합니다."
 
 #: pmg-gui/js/ServerAdministration.js:56
-#: pve-manager/www/manager6/node/Config.js:293
+#: pve-manager/www/manager6/node/Config.js:306
 #: proxmox-backup/www/ServerAdministration.js:75
-#: proxmox-datacenter-manager/ui/src/administration/mod.rs:102
+#: proxmox-datacenter-manager/ui/src/administration/mod.rs:112
 msgid "Repositories"
 msgstr "리포지토리"
 
@@ -16492,7 +17069,7 @@ msgstr "리포지토리 상태"
 msgid "Repository for CLI and API"
 msgstr "CLI 및 API용 리포지토리"
 
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:759
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:789
 msgid "Repository status unknown, could not fetch update data"
 msgstr "리포지토리 상태를 알 수 없거나 업데이트 데이터를 가져올 수 없음"
 
@@ -16577,10 +17154,14 @@ msgstr ""
 msgid "Requires '{0}' Privileges"
 msgstr "'{0}' 권한 필요"
 
+#: pve-manager/www/manager6/sdn/zones/SimpleEdit.js:17
+msgid "Requires a dedicated VRF"
+msgstr ""
+
 #: proxmox-widget-toolkit/src/panel/JournalView.js:636
 #: proxmox-widget-toolkit/src/panel/NotificationConfigView.js:11
 #: pmg-gui/js/Settings.js:160 pmg-gui/js/Settings.js:181
-#: pmg-gui/js/Settings.js:282 pve-manager/www/manager6/Utils.js:2258
+#: pmg-gui/js/Settings.js:282 pve-manager/www/manager6/Utils.js:2278
 #: pve-manager/www/manager6/qemu/CmdMenu.js:115
 #: pve-manager/www/manager6/qemu/Config.js:217
 #: pve-manager/www/manager6/window/Settings.js:235
@@ -16617,7 +17198,7 @@ msgstr "{0} 재설정"
 msgid "Reset {0} immediately"
 msgstr "즉시 {0} 재설정"
 
-#: pve-manager/www/manager6/Utils.js:2268
+#: pve-manager/www/manager6/Utils.js:2288
 #: pve-manager/www/manager6/lxc/Resources.js:278
 #: pve-manager/www/manager6/qemu/HardwareView.js:565
 #: proxmox-yew-comp/src/configuration/pve/lxc_resources_panel/desktop.rs:278
@@ -16651,7 +17232,7 @@ msgstr "리소스 속성 (JSON)"
 msgid "Resource ID"
 msgstr "리소스 ID"
 
-#: pve-manager/www/manager6/dc/Config.js:409
+#: pve-manager/www/manager6/dc/Config.js:420
 msgid "Resource Mappings"
 msgstr "리소스 매핑"
 
@@ -16679,7 +17260,7 @@ msgid "Resource Usage"
 msgstr "리소스 사용량"
 
 #: pve-manager/www/manager6/dc/Summary.js:26
-#: pve-manager/www/manager6/ha/Status.js:177
+#: pve-manager/www/manager6/ha/Status.js:287
 #: pve-manager/www/manager6/lxc/Config.js:268
 #: pve-manager/www/manager6/lxc/DNS.js:71
 #: proxmox-datacenter-manager/ui/src/dashboard/resource_tree.rs:51
@@ -16721,12 +17302,12 @@ msgstr "변경 사항을 활성화하려면 pmg-smtp-filter를 재시작하세�
 #: pmg-gui/js/BackupRestore.js:21 pmg-gui/js/BackupRestore.js:24
 #: pmg-gui/js/BackupRestore.js:100 pmg-gui/js/BackupRestore.js:140
 #: pmg-gui/js/PBSSnapshotView.js:260 pmg-gui/js/Utils.js:909
-#: pve-manager/www/manager6/Utils.js:2259
-#: pve-manager/www/manager6/Utils.js:2288
+#: pve-manager/www/manager6/Utils.js:2279
+#: pve-manager/www/manager6/Utils.js:2308
 #: pve-manager/www/manager6/grid/BackupView.js:177
 #: pve-manager/www/manager6/storage/BackupView.js:84
-#: pve-manager/www/manager6/window/Restore.js:384
-#: pve-manager/www/manager6/window/Restore.js:409
+#: pve-manager/www/manager6/window/Restore.js:450
+#: pve-manager/www/manager6/window/Restore.js:475
 #: proxmox-backup/www/config/EncryptionKeysView.js:119
 #: proxmox-backup/www/tape/BackupOverview.js:317
 #: proxmox-backup/www/tape/BackupOverview.js:354
@@ -16767,8 +17348,8 @@ msgstr "결과 제한"
 msgid "Resulting Config"
 msgstr "결과 구성"
 
-#: pve-manager/www/manager6/Utils.js:2260
-#: pve-manager/www/manager6/Utils.js:2289
+#: pve-manager/www/manager6/Utils.js:2280
+#: pve-manager/www/manager6/Utils.js:2309
 #: pve-manager/www/manager6/qemu/CmdMenu.js:83
 #: pve-manager/www/manager6/qemu/Config.js:48
 #: proxmox-datacenter-manager/ui/src/guests.rs:772
@@ -16811,12 +17392,12 @@ msgstr "기존 데이터스토어 재사용"
 msgid "Reverse DNS"
 msgstr "역방향 DNS"
 
-#: pve-manager/www/manager6/sdn/zones/Base.js:70
+#: pve-manager/www/manager6/sdn/zones/Base.js:72
 msgid "Reverse DNS Server"
 msgstr "역방향 DNS 서버"
 
 #: proxmox-widget-toolkit/src/node/HostsView.js:35
-#: proxmox-widget-toolkit/src/node/NetworkView.js:251
+#: proxmox-widget-toolkit/src/node/NetworkView.js:252
 #: pmg-gui/js/SpamDetectorCustom.js:293
 #: pve-manager/www/manager6/button/Revert.js:5
 #: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:937
@@ -16836,7 +17417,7 @@ msgstr "보류 중인 변경 사항 되돌리기"
 msgid "Review"
 msgstr "리뷰"
 
-#: pve-manager/www/manager6/Utils.js:2207 proxmox-backup/www/Utils.js:459
+#: pve-manager/www/manager6/Utils.js:2227 proxmox-backup/www/Utils.js:459
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:121
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:232
 msgid "Revoke Certificate"
@@ -16871,7 +17452,7 @@ msgstr "역할"
 msgid "Role Claim"
 msgstr "역할 클레임"
 
-#: pve-manager/www/manager6/dc/Config.js:203
+#: pve-manager/www/manager6/dc/Config.js:214
 msgid "Roles"
 msgstr "역할"
 
@@ -16885,8 +17466,8 @@ msgstr ""
 "로 되돌리며, 이후에 변경된 내용은 모두 손실됩니다. 실행 중인 게스트는 롤백 중"
 "에 중지됩니다(단, QEMU 스냅샷에 메모리 상태가 포함된 경우는 제외)."
 
-#: pve-manager/www/manager6/Utils.js:2261
-#: pve-manager/www/manager6/Utils.js:2290
+#: pve-manager/www/manager6/Utils.js:2281
+#: pve-manager/www/manager6/Utils.js:2310
 #: pve-manager/www/manager6/tree/SnapshotTree.js:263
 #: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:624
 #: proxmox-datacenter-manager/ui/src/widget/snapshot_window.rs:767
@@ -16996,7 +17577,7 @@ msgstr "라우트 맵 ID"
 #. TRANSLATORS: "Route map" refers to an FRR route map, some
 #. languages may prefer to keep it as-is:
 #. https://docs.frrouting.org/en/latest/routemap.html
-#: pve-manager/www/manager6/dc/Config.js:318
+#: pve-manager/www/manager6/dc/Config.js:329
 msgid "Route Maps"
 msgstr "라우트 맵"
 
@@ -17018,7 +17599,7 @@ msgstr "라우트 유형"
 msgid "Router Advertisement"
 msgstr "라우터 광고"
 
-#: pve-manager/www/manager6/sdn/NetworkBrowser.js:34
+#: pve-manager/www/manager6/sdn/NetworkBrowser.js:35
 msgid "Routes"
 msgstr "라우트"
 
@@ -17193,10 +17774,10 @@ msgstr "SCSI 컨트롤러"
 msgid "SCSI Controller Type"
 msgstr "SCSI 컨트롤러 유형"
 
-#: pve-manager/www/manager6/dc/Config.js:258
+#: pve-manager/www/manager6/dc/Config.js:269
 #: pve-manager/www/manager6/form/IPRefSelector.js:77
 #: pve-manager/www/manager6/tree/ResourceTree.js:26
-#: proxmox-datacenter-manager/ui/src/main_menu.rs:347
+#: proxmox-datacenter-manager/ui/src/main_menu.rs:351
 msgid "SDN"
 msgstr "SDN"
 
@@ -17230,7 +17811,7 @@ msgstr "SMTP HELO 점검"
 msgid "SMTPD Banner"
 msgstr "SMTPD 배너"
 
-#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:138
+#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:137
 msgid "SMURF Log Level"
 msgstr "SMURF 로그 레벨"
 
@@ -17262,7 +17843,7 @@ msgstr "SSH 공개 키"
 
 #: pmg-gui/js/dashboard/NodeInfo.js:67
 #: pve-manager/www/manager6/node/StatusView.js:82
-#: pve-manager/www/manager6/panel/GuestStatusView.js:136
+#: pve-manager/www/manager6/panel/GuestStatusView.js:139
 #: proxmox-backup/www/panel/NodeInfo.js:122
 #: proxmox-yew-comp/src/node_info.rs:228
 msgid "SWAP usage"
@@ -17292,7 +17873,7 @@ msgstr "소스와 동일"
 #: proxmox-widget-toolkit/src/window/NotificationMatcherEdit.js:1318
 #: proxmox-backup/www/window/TrafficControlEdit.js:413
 #: proxmox-yew-widget-toolkit/src/widget/form/date_field/date_panel.rs:251
-#: proxmox-yew-widget-toolkit/src/widget/calendar_grid.rs:855
+#: proxmox-yew-widget-toolkit/src/widget/calendar_grid.rs:877
 msgid "Sat"
 msgstr "토"
 
@@ -17343,6 +17924,7 @@ msgid "Scan for available storages on the selected node"
 msgstr "선택한 노드에서 사용 가능한 스토리지를 검색합니다."
 
 #: pve-manager/www/manager6/form/StorageScanNodeSelector.js:7
+#: pve-manager/www/manager6/storage/wizard/LunSelect.js:174
 msgid "Scan node"
 msgstr "노드 스캔"
 
@@ -17441,12 +18023,16 @@ msgstr "OSD.{0} 스크럽 실행"
 #: pmg-gui/js/QuarantineList.js:380 pve-manager/www/manager6/dc/Backup.js:445
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:113
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:459
+#: pve-manager/www/manager6/dc/SAN.js:270
 #: pve-manager/www/manager6/form/GlobalSearchField.js:11
 #: pve-manager/www/manager6/grid/BackupView.js:128
 #: pve-manager/www/manager6/grid/ResourceGrid.js:108
+#: pve-manager/www/manager6/node/ISCSITargets.js:139
+#: pve-manager/www/manager6/node/SANLuns.js:193
 #: pve-manager/www/manager6/panel/ConfigPanel.js:218
 #: pve-manager/www/manager6/storage/ContentView.js:109
 #: pve-manager/www/manager6/storage/TemplateView.js:59
+#: pve-manager/www/manager6/storage/wizard/LunSelect.js:177
 #: proxmox-backup/www/config/SyncView.js:271
 #: proxmox-backup/www/datastore/Content.js:1496
 #: proxmox-datacenter-manager/ui/src/dashboard/resource_tree.rs:26
@@ -17529,7 +18115,7 @@ msgstr "비밀 구문"
 msgid "Section"
 msgstr "섹션"
 
-#: pve-manager/www/manager6/dc/Config.js:368
+#: pve-manager/www/manager6/dc/Config.js:379
 #: pve-manager/www/manager6/dc/SecurityGroups.js:42
 #: pve-manager/www/manager6/dc/SecurityGroups.js:44
 #: pve-manager/www/manager6/form/SecurityGroupSelector.js:29
@@ -17597,8 +18183,8 @@ msgstr "먼저 키를 선택하세요."
 msgid "Select a node to check its subscription."
 msgstr "구독 여부를 확인할 노드를 선택하세요."
 
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:621
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:636
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:651
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:666
 msgid "Select a node to show available updates."
 msgstr "사용 가능한 업데이트를 표시하려면 노드를 선택하세요."
 
@@ -17722,6 +18308,7 @@ msgstr "시퀀스 Nr."
 #: proxmox-widget-toolkit/src/form/MultiDiskSelector.js:107
 #: proxmox-widget-toolkit/src/panel/DiskList.js:344
 #: proxmox-widget-toolkit/src/panel/DiskList.js:455
+#: pve-manager/www/manager6/node/SANLuns.js:125
 #: pve-manager/www/manager6/qemu/Smbios1Edit.js:63
 #: proxmox-backup/www/tape/ChangerConfig.js:127
 #: proxmox-backup/www/tape/ChangerStatus.js:913
@@ -17878,6 +18465,12 @@ msgstr "서비스 VLAN 프로토콜"
 msgid "Services"
 msgstr "서비스"
 
+#: pve-manager/www/manager6/node/ISCSITargets.js:26
+#, fuzzy
+#| msgid "Permission"
+msgid "Session ID"
+msgstr "권한"
+
 #: pmg-gui/js/PBSConfig.js:8 pve-manager/www/manager6/sdn/RouteMapPanel.js:808
 #: pve-manager/www/manager6/sdn/RouteMapPanel.js:1025
 msgid "Set"
@@ -17909,6 +18502,12 @@ msgstr "상태 설정"
 #: pmg-gui/js/AuthEditOIDC.js:98
 msgid "Set realm as default for login"
 msgstr "로그인을 위한 기본 영역 설정"
+
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:261
+#, fuzzy
+#| msgid "Settings"
+msgid "Setting"
+msgstr "설정"
 
 #: pmg-gui/js/MailProxyDKIMPanel.js:30 pmg-gui/js/MailProxyTLSPanel.js:21
 #: pve-manager/www/manager6/window/Snapshot.js:110
@@ -17966,7 +18565,7 @@ msgstr "모양: {0}"
 #: pve-manager/www/manager6/dc/StorageView.js:254
 #: pve-manager/www/manager6/form/StorageSelector.js:60
 #: pve-manager/www/manager6/storage/DirEdit.js:32
-#: pve-manager/www/manager6/storage/LVMEdit.js:269
+#: pve-manager/www/manager6/storage/LVMEdit.js:275
 msgid "Shared"
 msgstr "공유됨"
 
@@ -17977,15 +18576,15 @@ msgstr "공유"
 
 #: proxmox-widget-toolkit/src/Utils.js:768
 #: proxmox-widget-toolkit/src/Utils.js:774
-#: pve-manager/www/manager6/Utils.js:2271
-#: pve-manager/www/manager6/Utils.js:2278
+#: pve-manager/www/manager6/Utils.js:2291
+#: pve-manager/www/manager6/Utils.js:2298
 #: pve-manager/www/manager6/node/CmdMenu.js:89
 #: pve-manager/www/manager6/node/Config.js:125
 #: pve-manager/www/manager6/node/Config.js:161
 #: proxmox-backup/www/NavigationTree.js:105
 #: proxmox-datacenter-manager/ui/src/main_menu.rs:312
 #: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:192
-#: proxmox-datacenter-manager/ui/src/pve/node/mod.rs:146
+#: proxmox-datacenter-manager/ui/src/pve/node/mod.rs:163
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:183
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:190
 msgid "Shell"
@@ -18147,9 +18746,9 @@ msgid "Showing flags for {0}"
 msgstr "{0}에 대한 플래그를 표시함"
 
 #: pmg-gui/js/ServerStatus.js:74 pmg-gui/js/ServerStatus.js:76
-#: pve-manager/www/manager6/Utils.js:2235
-#: pve-manager/www/manager6/Utils.js:2262
-#: pve-manager/www/manager6/Utils.js:2291
+#: pve-manager/www/manager6/Utils.js:2255
+#: pve-manager/www/manager6/Utils.js:2282
+#: pve-manager/www/manager6/Utils.js:2311
 #: pve-manager/www/manager6/dc/CmdMenu.js:36
 #: pve-manager/www/manager6/dc/Config.js:47
 #: pve-manager/www/manager6/lxc/CmdMenu.js:62
@@ -18256,6 +18855,12 @@ msgstr "시작 시간"
 msgid "Single Disk"
 msgstr "단일 디스크"
 
+#: pve-manager/www/manager6/SANUtils.js:111
+#, fuzzy
+#| msgid "Single Disk"
+msgid "Single path"
+msgstr "단일 디스크"
+
 #: pmg-gui/js/DNSBLSitesField.js:149
 msgid "Site"
 msgstr "사이트"
@@ -18281,13 +18886,18 @@ msgstr "사이트는 비어 있지 않아야 합니다."
 #: pve-manager/www/manager6/ceph/OSDDetails.js:239
 #: pve-manager/www/manager6/ceph/Pool.js:74
 #: pve-manager/www/manager6/ceph/Pool.js:337
+#: pve-manager/www/manager6/dc/SAN.js:375
 #: pve-manager/www/manager6/form/FileSelector.js:113
 #: pve-manager/www/manager6/grid/BackupView.js:363
-#: pve-manager/www/manager6/node/LVM.js:123
+#: pve-manager/www/manager6/node/LVM.js:128
 #: pve-manager/www/manager6/node/LVMThin.js:126
+#: pve-manager/www/manager6/node/SANLuns.js:88
 #: pve-manager/www/manager6/node/ZFS.js:236
 #: pve-manager/www/manager6/storage/ContentView.js:155
+#: pve-manager/www/manager6/storage/wizard/LunSelect.js:152
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:172
 #: pve-manager/www/manager6/window/GuestImport.js:719
+#: pve-manager/www/manager6/window/SANLunWipe.js:38
 #: proxmox-backup/www/ZFSList.js:71
 #: proxmox-backup/www/dashboard/DataStoreStatistics.js:87
 #: proxmox-backup/www/datastore/Content.js:1268
@@ -18349,8 +18959,8 @@ msgid "Skipped {0} invalid line."
 msgid_plural "Skipped {0} invalid lines."
 msgstr[0] ""
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:233
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:393
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:239
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:428
 #: proxmox-yew-comp/src/configuration/network_edit.rs:223
 msgid "Slaves"
 msgstr "슬레이브"
@@ -18372,8 +18982,8 @@ msgstr "슬로베니아어"
 msgid "Smarthost"
 msgstr "스마트호스트"
 
-#: pve-manager/www/manager6/Utils.js:2263
-#: pve-manager/www/manager6/Utils.js:2292
+#: pve-manager/www/manager6/Utils.js:2283
+#: pve-manager/www/manager6/Utils.js:2312
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:234
 #: pve-manager/www/manager6/form/BackupModeSelector.js:5
 #: pve-manager/www/manager6/form/SnapshotSelector.js:63
@@ -18425,7 +19035,7 @@ msgstr "소켓"
 #: pve-manager/www/manager6/node/Subscription.js:158
 #: pve-manager/www/manager6/qemu/ProcessorEdit.js:134
 #: pve-manager/www/manager6/window/GuestImport.js:492
-#: pve-manager/www/manager6/window/Restore.js:370
+#: pve-manager/www/manager6/window/Restore.js:436
 #: proxmox-datacenter-manager/ui/src/configuration/subscription_assign.rs:95
 #: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:471
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_processor_property.rs:82
@@ -18487,7 +19097,7 @@ msgstr "키 정렬"
 #: pve-manager/www/manager6/sdn/fabrics/RedistributionGrid.js:93
 #: pve-manager/www/manager6/window/GuestDiskReassign.js:127
 #: pve-manager/www/manager6/window/GuestImport.js:711
-#: pve-manager/www/manager6/window/Restore.js:192
+#: pve-manager/www/manager6/window/Restore.js:226
 #: proxmox-datacenter-manager/ui/src/configuration/subscription_keys.rs:147
 #: proxmox-datacenter-manager/ui/src/widget/pve_migrate_mapping.rs:357
 msgid "Source"
@@ -18520,7 +19130,7 @@ msgstr "원본 스토리지"
 msgid "Source for Role Assignment"
 msgstr "역할 할당을 위한 원본"
 
-#: pve-manager/www/manager6/window/Migrate.js:614
+#: pve-manager/www/manager6/window/Migrate.js:643
 msgid "Source node"
 msgstr "원본 노드"
 
@@ -18528,8 +19138,8 @@ msgstr "원본 노드"
 msgid "Source port"
 msgstr "원본 포트"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:142
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:157
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:148
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:163
 #: proxmox-yew-comp/src/configuration/network_edit.rs:156
 #: proxmox-yew-comp/src/configuration/network_edit.rs:225
 msgid "Space-separated list of interfaces, for example: enp0s0 enp1s0"
@@ -18623,9 +19233,9 @@ msgstr "스탠다드 VGA"
 #: proxmox-widget-toolkit/src/Utils.js:771
 #: proxmox-widget-toolkit/src/node/ServiceView.js:118
 #: pmg-gui/js/MailTracker.js:113 pmg-gui/js/Utils.js:720
-#: pve-manager/www/manager6/Utils.js:2236
-#: pve-manager/www/manager6/Utils.js:2264
-#: pve-manager/www/manager6/Utils.js:2293
+#: pve-manager/www/manager6/Utils.js:2256
+#: pve-manager/www/manager6/Utils.js:2284
+#: pve-manager/www/manager6/Utils.js:2313
 #: pve-manager/www/manager6/ceph/OSD.js:1369
 #: pve-manager/www/manager6/ceph/ServiceList.js:548
 #: pve-manager/www/manager6/dc/CmdMenu.js:20
@@ -18650,7 +19260,7 @@ msgstr "스탠다드 VGA"
 msgid "Start"
 msgstr "시작"
 
-#: pve-manager/www/manager6/sdn/SubnetEdit.js:192
+#: pve-manager/www/manager6/sdn/SubnetEdit.js:207
 msgid "Start Address"
 msgstr "시작 주소"
 
@@ -18688,7 +19298,7 @@ msgstr "WebAuthn 챌린지 시작"
 msgid "Start after created"
 msgstr "생성 후 시작"
 
-#: pve-manager/www/manager6/window/Restore.js:242
+#: pve-manager/www/manager6/window/Restore.js:276
 msgid "Start after restore"
 msgstr "복원 후 시작"
 
@@ -18768,16 +19378,24 @@ msgstr "시작 지연"
 
 #: proxmox-widget-toolkit/src/Utils.js:62
 #: pmg-gui/js/ClusterAdministration.js:499
+#: pve-manager/www/manager6/dc/SAN.js:159
+#: pve-manager/www/manager6/dc/SAN.js:297
 #: pve-manager/www/manager6/ha/Resources.js:101
 #: pve-manager/www/manager6/ha/Rules.js:129
+#: pve-manager/www/manager6/node/ISCSITargets.js:21
+#: pve-manager/www/manager6/node/SANLuns.js:20
+#: pve-manager/www/manager6/node/SANLuns.js:63
 #: pve-manager/www/manager6/sdn/ControllerView.js:131
-#: pve-manager/www/manager6/sdn/FabricsContentView.js:71
+#: pve-manager/www/manager6/sdn/FabricsContentView.js:150
 #: pve-manager/www/manager6/sdn/FabricsView.js:152
 #: pve-manager/www/manager6/sdn/PrefixListPanel.js:182
 #: pve-manager/www/manager6/sdn/RouteMapPanel.js:1063
 #: pve-manager/www/manager6/sdn/SubnetView.js:134
 #: pve-manager/www/manager6/sdn/VnetView.js:129
 #: pve-manager/www/manager6/sdn/ZoneView.js:183
+#: pve-manager/www/manager6/storage/wizard/LunSelect.js:134
+#: pve-manager/www/manager6/storage/wizard/NodeIdentities.js:16
+#: pve-manager/www/manager6/window/SANLunState.js:83
 #: proxmox-backup/www/tape/ChangerStatus.js:891
 #: proxmox-backup/www/tape/DriveStatus.js:481
 #: proxmox-datacenter-manager/ui/src/ceph/flags.rs:116
@@ -18797,6 +19415,18 @@ msgstr "고정"
 
 #: pve-manager/www/manager6/form/CRSOptions.js:52
 msgid "Static Load"
+msgstr "고정 로드"
+
+#: pve-manager/www/manager6/sdn/StaticRoutes.js:4
+#, fuzzy
+#| msgid "Static Load"
+msgid "Static Route"
+msgstr "고정 로드"
+
+#: pve-manager/www/manager6/sdn/zones/SimpleEdit.js:10
+#, fuzzy
+#| msgid "Static Load"
+msgid "Static Routes"
 msgstr "고정 로드"
 
 #: pmg-gui/js/BackupRestore.js:53
@@ -18852,7 +19482,7 @@ msgstr "지난 가비지 컬렉션 통계"
 #: pve-manager/www/manager6/ceph/Status.js:151
 #: pve-manager/www/manager6/ceph/Status.js:388
 #: pve-manager/www/manager6/data/ResourceStore.js:308
-#: pve-manager/www/manager6/dc/Health.js:95
+#: pve-manager/www/manager6/dc/Health.js:101
 #: pve-manager/www/manager6/dc/PCIMapView.js:99
 #: pve-manager/www/manager6/dc/Tasks.js:122
 #: pve-manager/www/manager6/dc/USBMapView.js:86
@@ -18864,12 +19494,13 @@ msgstr "지난 가비지 컬렉션 통계"
 #: pve-manager/www/manager6/form/VMSelector.js:365
 #: pve-manager/www/manager6/grid/PoolMembers.js:90
 #: pve-manager/www/manager6/grid/Replication.js:327
-#: pve-manager/www/manager6/ha/Status.js:150
-#: pve-manager/www/manager6/ha/StatusView.js:74
+#: pve-manager/www/manager6/ha/Status.js:257
+#: pve-manager/www/manager6/ha/StatusView.js:109
 #: pve-manager/www/manager6/node/Subscription.js:145
 #: pve-manager/www/manager6/panel/GuestStatusView.js:55
 #: pve-manager/www/manager6/pool/StatusView.js:6
-#: pve-manager/www/manager6/sdn/FabricsContentView.js:39
+#: pve-manager/www/manager6/sdn/FabricsContentView.js:61
+#: pve-manager/www/manager6/sdn/FabricsContentView.js:109
 #: pve-manager/www/manager6/sdn/Status.js:29
 #: pve-manager/www/manager6/sdn/StatusView.js:101
 #: pve-manager/www/manager6/sdn/ZoneContentView.js:36
@@ -18942,9 +19573,9 @@ msgstr "더 많은 항목에 영향을 미치더라도 음소거 상태를 유�
 #: proxmox-widget-toolkit/src/node/ServiceView.js:123
 #: proxmox-widget-toolkit/src/window/TaskViewer.js:214
 #: proxmox-widget-toolkit/src/window/TaskViewer.js:220
-#: pve-manager/www/manager6/Utils.js:2237
-#: pve-manager/www/manager6/Utils.js:2265
-#: pve-manager/www/manager6/Utils.js:2294
+#: pve-manager/www/manager6/Utils.js:2257
+#: pve-manager/www/manager6/Utils.js:2285
+#: pve-manager/www/manager6/Utils.js:2314
 #: pve-manager/www/manager6/ceph/OSD.js:1379
 #: pve-manager/www/manager6/ceph/ServiceList.js:557
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:235
@@ -18991,25 +19622,26 @@ msgstr "즉시 {0} 중지"
 msgid "Stopped"
 msgstr "중지됨"
 
-#: pmg-gui/js/Dashboard.js:584
+#: pmg-gui/js/Dashboard.js:584 pve-manager/www/manager6/SANUtils.js:118
+#: pve-manager/www/manager6/SANUtils.js:193
 #: pve-manager/www/manager6/data/ResourceStore.js:287
 #: pve-manager/www/manager6/dc/Backup.js:320
 #: pve-manager/www/manager6/dc/Backup.js:920
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:168
-#: pve-manager/www/manager6/dc/Config.js:129
+#: pve-manager/www/manager6/dc/Config.js:130
 #: pve-manager/www/manager6/dc/Summary.js:47
 #: pve-manager/www/manager6/form/DiskStorageSelector.js:11
 #: pve-manager/www/manager6/form/IsoSelector.js:73
 #: pve-manager/www/manager6/grid/BackupView.js:101
 #: pve-manager/www/manager6/grid/PoolMembers.js:143
 #: pve-manager/www/manager6/grid/PoolMembers.js:152
-#: pve-manager/www/manager6/grid/PoolMembers.js:263
+#: pve-manager/www/manager6/grid/PoolMembers.js:386
 #: pve-manager/www/manager6/lxc/CreateWizard.js:208
 #: pve-manager/www/manager6/tree/ResourceTree.js:22
 #: pve-manager/www/manager6/window/Backup.js:129
 #: pve-manager/www/manager6/window/GuestImport.js:729
 #: pve-manager/www/manager6/window/GuestImport.js:836
-#: pve-manager/www/manager6/window/Restore.js:178
+#: pve-manager/www/manager6/window/Restore.js:212
 #: proxmox-datacenter-manager/ui/src/dashboard/gauge_panel.rs:200
 #: proxmox-datacenter-manager/ui/src/dashboard/view/row_view.rs:567
 #: proxmox-datacenter-manager/ui/src/widget/pve_migrate_mapping.rs:42
@@ -19025,6 +19657,43 @@ msgstr "중지됨"
 msgid "Storage"
 msgstr "스토리지"
 
+#: pve-manager/www/manager6/SANUtils.js:108
+#, fuzzy
+#| msgid "Storage {0}"
+msgid "Storage \"{0}\""
+msgstr "스토리지 {0}"
+
+#: pve-manager/www/manager6/storage/wizard/IScsi.js:99
+msgid ""
+"Storage \"{0}\" connects to this target, but it is disabled. Enable that "
+"storage first."
+msgstr ""
+
+#: pve-manager/www/manager6/storage/wizard/IScsi.js:85
+msgid ""
+"Storage \"{0}\" uses the LUNs of this target directly. If no guest uses "
+"them, clear Use LUNs directly in its edit dialog, otherwise use another "
+"target."
+msgstr ""
+
+#: pve-manager/www/manager6/storage/wizard/IScsi.js:78
+msgid ""
+"Storage \"{0}\" uses this target. The setup can only reuse an iSCSI storage."
+msgstr ""
+
+#: pve-manager/www/manager6/window/SANLunState.js:60
+msgid ""
+"Storage \"{0}\" was added. Guests on this storage cannot run on a node that "
+"stays on \"Missing\": check its access to the LUN on the array and rescan "
+"its Fibre Channel hosts."
+msgstr ""
+
+#: pve-manager/www/manager6/window/SANLunState.js:63
+msgid ""
+"Storage \"{0}\" was added. Guests on this storage cannot run on a node that "
+"stays on \"Missing\": check its access to the LUN on the array."
+msgstr ""
+
 #: proxmox-datacenter-manager/ui/src/pve/storage.rs:234
 msgid "Storage '{0}'"
 msgstr "스토리지 '{0}'"
@@ -19037,6 +19706,17 @@ msgstr "스토리지(Proxmox VE)"
 #: proxmox-backup/www/panel/StorageAndDisks.js:6
 msgid "Storage / Disks"
 msgstr "스토리지 / 디스크"
+
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:168
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:209
+#, fuzzy
+#| msgid "Storage"
+msgid "Storage ID"
+msgstr "스토리지"
+
+#: pve-manager/www/manager6/storage/wizard/FibreChannel.js:185
+msgid "Storage ID \"{0}\" is already in use. Choose another ID."
+msgstr ""
 
 #: pve-manager/www/manager6/window/Backup.js:276
 msgid "Storage Retention Configuration"
@@ -19067,13 +19747,25 @@ msgstr "스토리지 {0}"
 msgid "Storage {0} on node {1}"
 msgstr "노드 {1}의 스토리지 {0}"
 
-#: pve-manager/www/manager6/window/Migrate.js:287
+#: pve-manager/www/manager6/window/SANLunState.js:22
+#, fuzzy
+#| msgid "Storage {0}"
+msgid "Storage {0}: LUN State"
+msgstr "스토리지 {0}"
+
+#: pve-manager/www/manager6/window/Migrate.js:312
 msgid ""
 "Storage(s) ({0}) not available on selected target. Start VM to use live "
 "storage migration or select other target node."
 msgstr ""
 "선택한 대상에서 스토리지({0})를 사용할 수 없습니다. 라이브 스토리지 마이그레"
 "이션을 사용하려면 VM을 시작하거나 다른 대상 노드를 선택하세요."
+
+#: pve-manager/www/manager6/storage/wizard/IScsi.js:71
+msgid ""
+"Storages {0} use this target. The setup can only reuse a target that one "
+"storage uses."
+msgstr ""
 
 #: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:666
 msgid "Stored fingerprint will be cleared on Apply."
@@ -19135,12 +19827,12 @@ msgid "Submit"
 msgstr "제출"
 
 #: pve-manager/www/manager6/sdn/SubnetEdit.js:26
-#: pve-manager/www/manager6/sdn/SubnetEdit.js:241
+#: pve-manager/www/manager6/sdn/SubnetEdit.js:256
 #: pve-manager/www/manager6/sdn/SubnetView.js:102
 msgid "Subnet"
 msgstr "서브넷"
 
-#: proxmox-widget-toolkit/src/node/NetworkView.js:373
+#: proxmox-widget-toolkit/src/node/NetworkView.js:374
 msgid "Subnet mask"
 msgstr "서브넷 마스크"
 
@@ -19150,7 +19842,7 @@ msgstr "서브넷"
 
 #: pmg-gui/js/ClusterAdministration.js:522 pmg-gui/js/Dashboard.js:455
 #: pmg-gui/js/NavigationTree.js:84 pmg-gui/js/Subscription.js:23
-#: pve-manager/www/manager6/node/Config.js:479
+#: pve-manager/www/manager6/node/Config.js:516
 #: proxmox-backup/www/Dashboard.js:290 proxmox-backup/www/NavigationTree.js:90
 #: proxmox-backup/www/Subscription.js:24
 #: proxmox-datacenter-manager/ui/src/main_menu.rs:276
@@ -19252,7 +19944,7 @@ msgstr "요약/대시보드 열"
 #: proxmox-widget-toolkit/src/window/NotificationMatcherEdit.js:1328
 #: proxmox-backup/www/window/TrafficControlEdit.js:423
 #: proxmox-yew-widget-toolkit/src/widget/form/date_field/date_panel.rs:245
-#: proxmox-yew-widget-toolkit/src/widget/calendar_grid.rs:856
+#: proxmox-yew-widget-toolkit/src/widget/calendar_grid.rs:878
 msgid "Sun"
 msgstr "일"
 
@@ -19264,7 +19956,7 @@ msgstr "일요일"
 msgid "Superuser"
 msgstr "슈퍼유저"
 
-#: pve-manager/www/manager6/dc/Config.js:464
+#: pve-manager/www/manager6/dc/Config.js:475
 #: pve-manager/www/manager6/dc/NodeView.js:35
 msgid "Support"
 msgstr "지원"
@@ -19277,7 +19969,7 @@ msgstr "{0} {1}에 대한 지원은 {2}에 종료됩니다."
 msgid "Supported On"
 msgstr "지원 대상"
 
-#: pve-manager/www/manager6/Utils.js:2295
+#: pve-manager/www/manager6/Utils.js:2315
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:236
 #: pve-manager/www/manager6/dc/CmdMenu.js:52
 #: pve-manager/www/manager6/dc/Config.js:61
@@ -19288,7 +19980,7 @@ msgstr "지원 대상"
 msgid "Suspend"
 msgstr "일시 중단"
 
-#: pve-manager/www/manager6/Utils.js:2274
+#: pve-manager/www/manager6/Utils.js:2294
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:186
 msgid "Suspend all VMs"
 msgstr "모든 VM 일시 중단"
@@ -19305,7 +19997,7 @@ msgstr "일시 중지됨"
 
 #: pve-manager/www/manager6/lxc/ResourceEdit.js:152
 #: pve-manager/www/manager6/lxc/Resources.js:65
-#: pve-manager/www/manager6/panel/TemplateStatusView.js:53
+#: pve-manager/www/manager6/panel/TemplateStatusView.js:56
 #: proxmox-yew-comp/src/form/pve/lxc_property/lxc_memory_swap_property.rs:41
 #: proxmox-yew-comp/src/form/pve/lxc_property/lxc_memory_swap_property.rs:75
 msgid "Swap"
@@ -19342,7 +20034,7 @@ msgstr "모바일 보기로 전환"
 
 #: proxmox-widget-toolkit/src/panel/AuthView.js:160
 #: proxmox-widget-toolkit/src/window/SyncWindow.js:150
-#: pve-manager/www/manager6/Utils.js:2209
+#: pve-manager/www/manager6/Utils.js:2229
 #: pve-manager/www/manager6/dc/AuthView.js:128
 #: pve-manager/www/manager6/dc/SyncWindow.js:178
 #: proxmox-backup/www/config/EncryptionKeysView.js:304
@@ -19384,7 +20076,7 @@ msgstr "레벨 동기화"
 msgid "Sync Options"
 msgstr "동기화 옵션"
 
-#: pve-manager/www/manager6/Utils.js:2210
+#: pve-manager/www/manager6/Utils.js:2230
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:124
 msgid "Sync Preview"
 msgstr "동기화 미리보기"
@@ -19441,8 +20133,8 @@ msgid "System Information"
 msgstr "시스템 정보"
 
 #: proxmox-widget-toolkit/src/node/ServiceView.js:86
-#: pve-manager/www/manager6/node/Config.js:251
-#: proxmox-datacenter-manager/ui/src/administration/mod.rs:115
+#: pve-manager/www/manager6/node/Config.js:264
+#: proxmox-datacenter-manager/ui/src/administration/mod.rs:138
 msgid "System Log"
 msgstr "시스템 로그"
 
@@ -19465,7 +20157,7 @@ msgstr "시스템 테마"
 msgid "TB"
 msgstr "TB"
 
-#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:134
+#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:133
 msgid "TCP Flags Log Level"
 msgstr "TCP 플래그 로그 레벨"
 
@@ -19473,7 +20165,7 @@ msgstr "TCP 플래그 로그 레벨"
 msgid "TCP Timeout"
 msgstr "TCP 타임아웃"
 
-#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:208
+#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:207
 msgid "TCP Timeout Established"
 msgstr "TCP 타임아웃이 설정됨"
 
@@ -19533,7 +20225,7 @@ msgstr "TOTP"
 msgid "TOTP App"
 msgstr "TOTP 앱"
 
-#: pmg-gui/js/UserView.js:226 pve-manager/www/manager6/Utils.js:1456
+#: pmg-gui/js/UserView.js:226 pve-manager/www/manager6/Utils.js:1476
 #: proxmox-backup/www/config/UserView.js:265
 msgid "TOTP Locked"
 msgstr "TOTP 잠금"
@@ -19596,7 +20288,7 @@ msgstr "보기 태그"
 msgid "Tag must not be empty."
 msgstr "태그는 비어 있지 않아야 합니다."
 
-#: pve-manager/www/manager6/data/ResourceStore.js:340
+#: pve-manager/www/manager6/data/ResourceStore.js:347
 #: pve-manager/www/manager6/form/TagFieldSet.js:6
 #: pve-manager/www/manager6/form/VMSelector.js:86
 #: proxmox-datacenter-manager/ui/src/guests.rs:881
@@ -19692,8 +20384,12 @@ msgstr "테이프"
 #: pve-manager/www/manager6/form/NotificationTargetSelector.js:32
 #: pve-manager/www/manager6/grid/Replication.js:32
 #: pve-manager/www/manager6/grid/Replication.js:308
-#: pve-manager/www/manager6/storage/IScsiEdit.js:141
+#: pve-manager/www/manager6/node/ISCSITargets.js:15
+#: pve-manager/www/manager6/storage/IScsiEdit.js:153
 #: pve-manager/www/manager6/storage/ZFSEdit.js:66
+#: pve-manager/www/manager6/storage/wizard/IScsi.js:195
+#: pve-manager/www/manager6/storage/wizard/IScsi.js:206
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:230
 #: proxmox-backup/www/tape/window/TapeRestore.js:370
 #: proxmox-datacenter-manager/ui/src/widget/pve_migrate_mapping.rs:362
 msgid "Target"
@@ -19776,6 +20472,12 @@ msgstr "대상 스토리지"
 msgid "Target VMID"
 msgstr "대상 VMID"
 
+#: pve-manager/www/manager6/node/SANLuns.js:24
+#, fuzzy
+#| msgid "Target Name"
+msgid "Target WWPN"
+msgstr "대상 이름"
+
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answers_panel.rs:340
 msgid "Target filter"
 msgstr "대상 필터"
@@ -19791,7 +20493,7 @@ msgstr "대상 그룹"
 
 #: pve-manager/www/manager6/window/BulkAction.js:82
 #: pve-manager/www/manager6/window/Clone.js:171
-#: pve-manager/www/manager6/window/Migrate.js:657
+#: pve-manager/www/manager6/window/Migrate.js:686
 msgid "Target node"
 msgstr "대상 노드"
 
@@ -19807,9 +20509,22 @@ msgstr "대상 순서는 필수임"
 msgid "Target portal group"
 msgstr "대상 포털 그룹"
 
-#: pve-manager/www/manager6/window/Migrate.js:669
+#: pve-manager/www/manager6/window/Migrate.js:698
 msgid "Target storage"
 msgstr "대상 스토리지"
+
+#: pve-manager/www/manager6/node/ISCSITargets.js:143
+#, fuzzy
+#| msgid "Target Storage"
+msgid "Target, Portal, Storage"
+msgstr "대상 스토리지"
+
+#. TRANSLATORS: The iSCSI target or the NVMe subsystem of a LUN.
+#: pve-manager/www/manager6/node/SANLuns.js:102
+#, fuzzy
+#| msgid "Target Guest"
+msgid "Target/Subsystem"
+msgstr "대상 게스트"
 
 #: proxmox-widget-toolkit/src/window/NotificationMatcherEdit.js:131
 #, fuzzy
@@ -19827,7 +20542,7 @@ msgid "Task"
 msgstr "태스크"
 
 #: pve-manager/www/manager6/lxc/Config.js:293
-#: pve-manager/www/manager6/node/Config.js:464
+#: pve-manager/www/manager6/node/Config.js:501
 #: pve-manager/www/manager6/qemu/Config.js:337
 msgid "Task History"
 msgstr "태스크 기록"
@@ -19920,7 +20635,7 @@ msgstr "태스크: {0}"
 #: pve-manager/www/manager6/panel/StatusPanel.js:33
 #: proxmox-backup/www/ServerAdministration.js:110
 #: proxmox-backup/www/button/TaskButton.js:12
-#: proxmox-datacenter-manager/ui/src/administration/mod.rs:128
+#: proxmox-datacenter-manager/ui/src/administration/mod.rs:164
 #: proxmox-datacenter-manager/ui/src/remotes/mod.rs:69
 #: proxmox-datacenter-manager/ui/src/pbs/node/mod.rs:84
 #: proxmox-datacenter-manager/ui/src/pve/remote/mod.rs:59
@@ -20009,17 +20724,36 @@ msgstr "HA 규칙에는 오류가 없습니다."
 msgid "The HA rule has the following errors:"
 msgstr "HA 규칙에 다음과 같은 오류가 있습니다:"
 
-#: pve-manager/www/manager6/ha/Status.js:116
+#: pve-manager/www/manager6/ha/Status.js:195
 msgid ""
 "The HA stack will be completely bypassed when the operational state of a "
 "service changes."
 msgstr "서비스의 운영 상태가 변경되면 HA 스택은 완전히 우회됩니다."
+
+#: pve-manager/www/manager6/window/SANLunWipe.js:59
+#, fuzzy
+#| msgid "Value does not match!"
+msgid "The ID does not match."
+msgstr "값이 일치하지 않습니다!"
 
 #: pve-manager/www/manager6/ceph/Pool.js:215
 msgid ""
 "The amount of data eventually stored in this pool. Used for auto-scaling."
 msgstr ""
 "이 풀에 최종적으로 저장되는 데이터의 양입니다. 자동 스케일링에 사용됩니다."
+
+#: pve-manager/www/manager6/window/Restore.js:315
+msgid ""
+"The backup and the existing guest have different Unique IDs. Restoring the "
+"backup requires '{0}'."
+msgstr ""
+
+#: pve-manager/www/manager6/window/Restore.js:306
+msgid ""
+"The backup can be from another guest, for example from an earlier one with "
+"the same VMID. The restore replaces the data and configuration, but the "
+"guest keeps its current Unique ID and does not get the one of the backup."
+msgstr ""
 
 #: proxmox-datacenter-manager/ui/src/remotes/cert_check_window.rs:73
 msgid "The certificate has changed since it was last trusted."
@@ -20060,6 +20794,12 @@ msgstr ""
 "클러스터 헬스는 검사되지 않았습니다. 열람하려면 Sys.Audit 권한이 필요합니다. "
 "재시작 자체는 허용되며, 헬스 검사로 인해 재시작이 차단되는 경우 작업 로그에 "
 "해당 검사 항목이 기록됩니다."
+
+#: pve-manager/www/manager6/storage/wizard/IScsi.js:129
+#, fuzzy
+#| msgid "Mapped Resources ({0}) not available on selected target."
+msgid "The connection storage is not available on all selected nodes."
+msgstr "선택한 대상에서 매핑된 리소스({0})를 사용할 수 없습니다."
 
 #: pve-manager/www/manager6/tree/SnapshotTree.js:312
 msgid "The current guest configuration does not support taking new snapshots"
@@ -20119,6 +20859,12 @@ msgstr ""
 msgid "The maximum amount of snapshots to be transferred (per group)"
 msgstr "전송할 스냅샷의 최대 용량(그룹당)"
 
+#: pve-manager/www/manager6/storage/wizard/FibreChannel.js:99
+msgid ""
+"The multipath map or its name under /dev/disk/by-id did not appear within 90 "
+"seconds. Check Node > SAN, then reload the LUN list."
+msgstr ""
+
 #: pve-manager/www/manager6/ceph/Status.js:161
 msgid "The newest version installed in the Cluster."
 msgstr "클러스터에 설치된 최신 버전입니다."
@@ -20161,6 +20907,11 @@ msgstr ""
 msgid "The saved VM state will be permanently lost."
 msgstr "저장된 VM 상태는 영구적으로 손실됩니다."
 
+#: pve-manager/www/manager6/storage/wizard/IScsi.js:297
+msgid ""
+"The selected LUN has no multipath volume yet. Check Node > SAN, then retry."
+msgstr ""
+
 #: pve-manager/www/manager6/ceph/CephInstallWizard.js:299
 msgid ""
 "The selected release is currently considered a Technology Preview. Although "
@@ -20170,6 +20921,18 @@ msgstr ""
 "선택된 릴리스는 현재 기술 프리뷰(Technology Preview) 상태로 간주됩니다. 심각"
 "한 문제는 아직 파악되지 않았지만, 몇 가지 버그가 있을 수 있으며 enterprise 리"
 "포지토리는 아직 제공되지 않습니다."
+
+#: pve-manager/www/manager6/window/Migrate.js:239
+msgid ""
+"The selected target node does not report its Proxmox VE version, so support "
+"for guest identities cannot be verified."
+msgstr ""
+
+#: pve-manager/www/manager6/window/Migrate.js:232
+msgid ""
+"The selected target node runs Proxmox VE {0}, but keeping the guest identity "
+"requires {1} or newer. Upgrade the target node first."
+msgstr ""
 
 #: proxmox-widget-toolkit/src/node/APTRepositories.js:309
 #: proxmox-yew-comp/src/apt_repositories.rs:908
@@ -20184,7 +20947,7 @@ msgstr ""
 "test 리포지토리는 테스트 설정 또는 공식 Proxmox 지원팀에 문의한 후에만 사용해"
 "야 합니다!"
 
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:615
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:645
 msgid "The update status for this remote has not been fetched yet."
 msgstr "이 리모트의 업데이트 상태를 아직 가져오지 못했습니다."
 
@@ -20322,7 +21085,7 @@ msgstr ""
 "이 문제는 모니터링 시스템에서 AES256K 서비스 티켓을 발행하기 시작한 후 몇 시"
 "간 내에 해결되는 경우가 많습니다."
 
-#: pve-manager/www/manager6/ha/Status.js:107
+#: pve-manager/www/manager6/ha/Status.js:186
 msgid ""
 "This will freeze all services allowing no change to their operational state."
 msgstr "이렇게 하면 모든 서비스가 중단되어 운영 상태를 변경할 수 없게 됩니다."
@@ -20334,11 +21097,11 @@ msgstr "이렇게 하면 모든 서비스가 중단되어 운영 상태를 변�
 msgid "This will permanently erase all data."
 msgstr "모든 데이터가 영구적으로 제거됩니다."
 
-#: pve-manager/www/manager6/window/Restore.js:100
+#: pve-manager/www/manager6/window/Restore.js:103
 msgid "This will permanently erase current CT data."
 msgstr "현재 CT 데이터가 영구적으로 제거됩니다."
 
-#: pve-manager/www/manager6/window/Restore.js:103
+#: pve-manager/www/manager6/window/Restore.js:106
 msgid "This will permanently erase current VM data."
 msgstr "현재 VM 데이터가 영구적으로 제거됩니다."
 
@@ -20397,7 +21160,7 @@ msgstr "임계값 재설정 일정"
 #: proxmox-widget-toolkit/src/window/NotificationMatcherEdit.js:1298
 #: proxmox-backup/www/window/TrafficControlEdit.js:393
 #: proxmox-yew-widget-toolkit/src/widget/form/date_field/date_panel.rs:249
-#: proxmox-yew-widget-toolkit/src/widget/calendar_grid.rs:853
+#: proxmox-yew-widget-toolkit/src/widget/calendar_grid.rs:875
 msgid "Thu"
 msgstr "목"
 
@@ -20413,7 +21176,7 @@ msgstr "TiB"
 #: pmg-gui/js/ReceiverStatistics.js:84 pmg-gui/js/SenderStatistics.js:84
 #: pmg-gui/js/SpamQuarantine.js:357 pmg-gui/js/SystemConfiguration.js:28
 #: pmg-gui/js/VirusQuarantine.js:101 pve-manager/www/manager6/dc/Log.js:44
-#: pve-manager/www/manager6/node/Config.js:239
+#: pve-manager/www/manager6/node/Config.js:252
 #: pve-manager/www/manager6/window/ScheduleSimulator.js:133
 #: proxmox-backup/www/SystemConfiguration.js:29
 #: proxmox-datacenter-manager/ui/src/configuration/mod.rs:158
@@ -20518,6 +21281,16 @@ msgstr ""
 "을 해제할 때까지 해당 키에 대한 참조를 유지합니다. 활성 암호화 키를 변경하면 "
 "시스템은 이전 키를 자동으로 연결하여 실수로 삭제되는 것을 방지하고, 이전 콘텐"
 "츠를 계속해서 복호화할 수 있도록 합니다."
+
+#. TRANSLATORS: "Guided Setup" is a button of the SAN view, {0} the menu path of that view.
+#: pve-manager/www/manager6/storage/LVMEdit.js:152
+msgid "To set up shared LVM on a SAN LUN, use Guided Setup in {0}."
+msgstr ""
+
+#. TRANSLATORS: "Guided Setup" is a button of the SAN view, {0} the menu path of that view.
+#: pve-manager/www/manager6/storage/IScsiEdit.js:81
+msgid "To set up shared LVM with multipath on a LUN, use Guided Setup in {0}."
+msgstr ""
 
 #: pve-manager/www/manager6/form/SpiceEnhancementSelector.js:33
 #: proxmox-yew-comp/src/form/pve/qemu_property/qemu_spice_enhancement_property.rs:33
@@ -20734,7 +21507,7 @@ msgstr "전송 비율 (바이트/초)"
 msgid "Translated"
 msgstr "번역됨"
 
-#: pmg-gui/js/Transport.js:154
+#: pmg-gui/js/Transport.js:154 pve-manager/www/manager6/node/SANLuns.js:94
 msgid "Transport"
 msgstr "전송"
 
@@ -20766,7 +21539,7 @@ msgstr "신뢰하는 네트워크"
 #: proxmox-widget-toolkit/src/window/NotificationMatcherEdit.js:1278
 #: proxmox-backup/www/window/TrafficControlEdit.js:373
 #: proxmox-yew-widget-toolkit/src/widget/form/date_field/date_panel.rs:247
-#: proxmox-yew-widget-toolkit/src/widget/calendar_grid.rs:851
+#: proxmox-yew-widget-toolkit/src/widget/calendar_grid.rs:873
 msgid "Tue"
 msgstr "화"
 
@@ -20779,7 +21552,7 @@ msgstr "옵션 조정"
 msgid "Turkish"
 msgstr "터키어"
 
-#: pve-manager/www/manager6/dc/Config.js:177
+#: pve-manager/www/manager6/dc/Config.js:188
 msgid "Two Factor"
 msgstr "2단계 인증"
 
@@ -20793,7 +21566,7 @@ msgid "Two-letter country code, e.g. at"
 msgstr "두 영문자로 된 국가 코드(예: at)"
 
 #: proxmox-widget-toolkit/src/form/NetworkSelector.js:118
-#: proxmox-widget-toolkit/src/node/NetworkView.js:302
+#: proxmox-widget-toolkit/src/node/NetworkView.js:303
 #: proxmox-widget-toolkit/src/panel/ACMEDomains.js:411
 #: proxmox-widget-toolkit/src/panel/AuthView.js:26
 #: proxmox-widget-toolkit/src/panel/DiskList.js:294
@@ -20823,7 +21596,7 @@ msgstr "두 영문자로 된 국가 코드(예: at)"
 #: pve-manager/www/manager6/grid/FirewallRules.js:63
 #: pve-manager/www/manager6/grid/FirewallRules.js:915
 #: pve-manager/www/manager6/grid/PoolMembers.js:100
-#: pve-manager/www/manager6/ha/StatusView.js:69
+#: pve-manager/www/manager6/ha/StatusView.js:104
 #: pve-manager/www/manager6/node/ACME.js:772
 #: pve-manager/www/manager6/node/Directory.js:119
 #: pve-manager/www/manager6/node/Subscription.js:139
@@ -20832,7 +21605,7 @@ msgstr "두 영문자로 된 국가 코드(예: at)"
 #: pve-manager/www/manager6/qemu/ScsiHwEdit.js:13
 #: pve-manager/www/manager6/sdn/ControllerView.js:113
 #: pve-manager/www/manager6/sdn/DnsView.js:109
-#: pve-manager/www/manager6/sdn/FabricsContentView.js:65
+#: pve-manager/www/manager6/sdn/FabricsContentView.js:144
 #: pve-manager/www/manager6/sdn/IpamView.js:108
 #: pve-manager/www/manager6/sdn/StatusView.js:96
 #: pve-manager/www/manager6/sdn/ZoneView.js:127
@@ -20928,7 +21701,7 @@ msgstr "URL"
 msgid "USB Device"
 msgstr "USB 디바이스"
 
-#: pve-manager/www/manager6/dc/Config.js:434
+#: pve-manager/www/manager6/dc/Config.js:445
 msgid "USB Devices"
 msgstr "USB 디바이스"
 
@@ -21005,8 +21778,16 @@ msgid "Undo Zoom"
 msgstr "확대 취소"
 
 #: pve-manager/www/manager6/dc/OptionView.js:388
-#: pve-manager/www/manager6/window/Restore.js:227
+#: pve-manager/www/manager6/window/Restore.js:261
 msgid "Unique"
+msgstr "고유"
+
+#: pve-manager/www/manager6/data/ResourceStore.js:340
+#: pve-manager/www/manager6/panel/GuestIdentity.js:31
+#: pve-manager/www/manager6/panel/GuestIdentity.js:75
+#, fuzzy
+#| msgid "Unique"
+msgid "Unique ID"
 msgstr "고유"
 
 #: pve-manager/www/manager6/window/GuestImport.js:956
@@ -21036,6 +21817,7 @@ msgstr "유닛 파일"
 #: proxmox-widget-toolkit/src/window/AccessLogStats.js:182
 #: proxmox-widget-toolkit/src/window/NotificationMatcherEdit.js:1417
 #: pmg-gui/js/dashboard/SubscriptionInfo.js:7
+#: pve-manager/www/manager6/SANUtils.js:138
 #: pve-manager/www/manager6/ceph/StatusDetail.js:181
 #: pve-manager/www/manager6/dc/BackupJobDetail.js:238
 #: pve-manager/www/manager6/form/USBSelector.js:150
@@ -21079,7 +21861,7 @@ msgstr "'{0}' 유형의 알 수 없는 위젯"
 #: proxmox-widget-toolkit/src/Utils.js:481
 #: proxmox-backup/www/config/EncryptionKeysView.js:171
 #: proxmox-backup/www/config/EncryptionKeysView.js:184
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:708
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:738
 msgid "Unknown error"
 msgstr "알 수 없는 오류"
 
@@ -21127,7 +21909,13 @@ msgstr "TFA 잠금 해제"
 msgid "Unlock TFA authentication for {0}"
 msgstr "{0}에 대한 TFA 인증 잠금 해제"
 
-#: pve-manager/www/manager6/Utils.js:2297
+#: pve-manager/www/manager6/SANUtils.js:119
+#, fuzzy
+#| msgid "Manager"
+msgid "Unmanaged"
+msgstr "매니저"
+
+#: pve-manager/www/manager6/Utils.js:2317
 #: proxmox-backup/www/datastore/Summary.js:294
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:211
 msgid "Unmount"
@@ -21164,7 +21952,7 @@ msgid "Unplugged"
 msgstr "연결 해제됨"
 
 #: pve-manager/www/manager6/panel/GuestStatusView.js:89
-#: pve-manager/www/manager6/window/Restore.js:288
+#: pve-manager/www/manager6/window/Restore.js:354
 msgid "Unprivileged"
 msgstr "권한 없음"
 
@@ -21194,6 +21982,7 @@ msgstr "끝 시간"
 msgid "Until:"
 msgstr "끝 시간:"
 
+#: pve-manager/www/manager6/SANUtils.js:176
 #: pve-manager/www/manager6/window/GuestDiskReassign.js:206
 msgid "Unused"
 msgstr "사용하지 않음"
@@ -21214,13 +22003,13 @@ msgstr "사용하지 않는 볼륨"
 msgid "Up"
 msgstr "구동"
 
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:716
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:746
 msgid "Up-to-date"
 msgstr "업데이트됨"
 
 #: proxmox-widget-toolkit/src/panel/AccessLogView.js:775
 #: proxmox-widget-toolkit/src/panel/JournalView.js:511
-#: pmg-gui/js/DKIMSettings.js:154 pve-manager/www/manager6/Utils.js:2208
+#: pmg-gui/js/DKIMSettings.js:154 pve-manager/www/manager6/Utils.js:2228
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/token_panel.rs:302
 #: proxmox-yew-comp/src/access_log/mod.rs:477
 #: proxmox-yew-comp/src/edit_window.rs:373
@@ -21238,25 +22027,22 @@ msgid "Update Available"
 msgstr "업데이트 사용 가능"
 
 #: proxmox-backup/www/ServerAdministration.js:84
+#: proxmox-datacenter-manager/ui/src/administration/mod.rs:125
+#: proxmox-datacenter-manager/ui/src/pbs/node/mod.rs:130
+#: proxmox-datacenter-manager/ui/src/pve/node/mod.rs:147
 #, fuzzy
 #| msgid "Usage History"
 msgid "Update History"
 msgstr "사용 내역"
 
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:631
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:661
 msgid "Update List"
 msgstr "업데이트 목록"
 
 #. TRANSLATORS: The parameter is the name of the remote.
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:599
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:629
 msgid "Update List - {0}"
 msgstr "업데이트 목록 - {0}"
-
-#. TRANSLATORS: The first parameter is the name of the remote, the second one
-#. the name of the node.
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:525
-msgid "Update List - {0} ({1})"
-msgstr "업데이트 목록 - {0} ({1})"
 
 #: pmg-gui/js/SpamDetectorStatus.js:65
 msgid "Update Now"
@@ -21280,9 +22066,10 @@ msgid "Update {0} Account"
 msgstr "{0} 계정 업데이트"
 
 #: pmg-gui/js/ServerAdministration.js:40
-#: pve-manager/www/manager6/node/Config.js:274
+#: pve-manager/www/manager6/node/Config.js:287
 #: proxmox-backup/www/ServerAdministration.js:59
-#: proxmox-datacenter-manager/ui/src/administration/mod.rs:84
+#: proxmox-datacenter-manager/ui/src/administration/mod.rs:93
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:604
 #: proxmox-datacenter-manager/ui/src/remotes/mod.rs:76
 #: proxmox-datacenter-manager/ui/src/pbs/node/mod.rs:94
 #: proxmox-datacenter-manager/ui/src/pve/node/mod.rs:113
@@ -21296,7 +22083,7 @@ msgstr "마이크로코드 업데이트 중"
 
 #: proxmox-widget-toolkit/src/node/APTUtils.js:31
 #: pmg-gui/js/ServerAdministration.js:46
-#: pve-manager/www/manager6/node/Config.js:285
+#: pve-manager/www/manager6/node/Config.js:298
 #: proxmox-backup/www/ServerAdministration.js:65
 #: proxmox-yew-comp/src/apt_package_manager.rs:299
 msgid "Upgrade"
@@ -21377,8 +22164,8 @@ msgstr "Upper"
 #: pve-manager/www/manager6/data/ResourceStore.js:273
 #: pve-manager/www/manager6/dc/NodeView.js:72
 #: pve-manager/www/manager6/node/StatusView.js:146
-#: pve-manager/www/manager6/panel/GuestStatusView.js:181
-#: pve-manager/www/manager6/sdn/FabricsContentView.js:45
+#: pve-manager/www/manager6/panel/GuestStatusView.js:184
+#: pve-manager/www/manager6/sdn/FabricsContentView.js:115
 #: proxmox-backup/www/panel/NodeInfo.js:184
 #: proxmox-datacenter-manager/ui/src/guests.rs:895
 #: proxmox-datacenter-manager/ui/src/guests.rs:973
@@ -21428,7 +22215,7 @@ msgstr "사용량: {0}%"
 msgid "Use"
 msgstr "사용"
 
-#: pve-manager/www/manager6/window/Restore.js:217
+#: pve-manager/www/manager6/window/Restore.js:251
 msgid "Use '0' to disable all bandwidth limits."
 msgstr "모든 대역폭 제한을 비활성화하려면 '0'을 입력합니다."
 
@@ -21464,7 +22251,7 @@ msgstr "IPv4용 그레이리스트 사용"
 msgid "Use Greylisting for IPv6"
 msgstr "IPv6에 그레이리스트 사용"
 
-#: pve-manager/www/manager6/storage/IScsiEdit.js:157
+#: pve-manager/www/manager6/storage/IScsiEdit.js:169
 msgid "Use LUNs directly"
 msgstr "LUN 직접 사용"
 
@@ -21658,6 +22445,15 @@ msgstr "무제한으로 {0} 사용"
 #: proxmox-datacenter-manager/ui/src/ceph/osds.rs:515
 #: proxmox-datacenter-manager/ui/src/ceph/pools.rs:150
 msgid "Used"
+msgstr "사용 중"
+
+#: pve-manager/www/manager6/dc/SAN.js:365
+#: pve-manager/www/manager6/node/SANLuns.js:75
+#: pve-manager/www/manager6/storage/wizard/LunSelect.js:146
+#: pve-manager/www/manager6/window/SANLunWipe.js:33
+#, fuzzy
+#| msgid "Used"
+msgid "Used By"
 msgstr "사용 중"
 
 #: proxmox-datacenter-manager/ui/src/administration/node_status.rs:377
@@ -21866,7 +22662,7 @@ msgid "Username Claim"
 msgstr "사용자명 클레임"
 
 #: pve-manager/www/manager6/dc/AuthEditLDAP.js:267
-#: pve-manager/www/manager6/dc/Config.js:163
+#: pve-manager/www/manager6/dc/Config.js:174
 #: pve-manager/www/manager6/dc/GroupView.js:93
 #: pve-manager/www/manager6/dc/RealmSyncJob.js:339
 #: pve-manager/www/manager6/dc/SyncWindow.js:103
@@ -21902,15 +22698,15 @@ msgstr "VCPUs"
 msgid "VG Name"
 msgstr "VG 이름"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:103
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:109
 msgid "VID range includes not-a-number: {0}"
 msgstr "VID 범위에 '숫자가 아님(not-a-number)'이 포함됩니다: {0}"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:108
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:114
 msgid "VID range must go from lower to higher tag: {0}"
 msgstr "VID 범위는 낮은 태그에서 높은 태그로 이동해야 합니다: {0}"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:114
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:120
 msgid "VID range outside of allowed 2 and 4094 limit: {0}"
 msgstr "허용된 2 및 4094 제한을 벗어난 VID 범위: {0}"
 
@@ -21923,16 +22719,17 @@ msgstr "VLAN"
 msgid "VLAN Aware"
 msgstr "VLAN 감지"
 
-#: proxmox-widget-toolkit/src/node/NetworkView.js:395
+#: proxmox-widget-toolkit/src/node/NetworkView.js:396
 msgid "VLAN ID"
 msgstr "VLAN ID"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:71
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:77
 msgid "VLAN IDs"
 msgstr "VLAN ID"
 
 #: proxmox-widget-toolkit/src/form/VlanField.js:9
 #: pve-manager/www/manager6/form/VLanField.js:9
+#: pve-manager/www/manager6/grid/PoolMembers.js:252
 #: pve-manager/www/manager6/lxc/Network.js:557
 #: pve-manager/www/manager6/window/GuestImport.js:939
 #: proxmox-datacenter-manager/ui/src/remotes/auto_installer/prepared_answer_form.rs:478
@@ -21942,14 +22739,14 @@ msgstr "VLAN ID"
 msgid "VLAN Tag"
 msgstr "VLAN 태그"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:124
-#: proxmox-widget-toolkit/src/node/NetworkView.js:330
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:130
+#: proxmox-widget-toolkit/src/node/NetworkView.js:331
 #: proxmox-yew-comp/src/configuration/network_view.rs:458
 #: proxmox-yew-comp/src/configuration/network_edit.rs:148
 msgid "VLAN aware"
 msgstr "VLAN 감지"
 
-#: proxmox-widget-toolkit/src/node/NetworkView.js:401
+#: proxmox-widget-toolkit/src/node/NetworkView.js:402
 msgid "VLAN raw device"
 msgstr "VLAN raw 디바이스"
 
@@ -22025,13 +22822,16 @@ msgid "VNI"
 msgstr "VNI"
 
 #: pve-manager/www/manager6/form/SDNVnetSelector.js:28
+#: pve-manager/www/manager6/grid/PoolMembers.js:185
+#: pve-manager/www/manager6/grid/PoolMembers.js:228
+#: pve-manager/www/manager6/grid/PoolMembers.js:395
 #: pve-manager/www/manager6/sdn/VnetEdit.js:158
 #: pve-manager/www/manager6/sdn/ZoneContentView.js:24
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/evpn_panel.rs:131
 msgid "VNet"
 msgstr "VNet"
 
-#: pve-manager/www/manager6/dc/Config.js:299
+#: pve-manager/www/manager6/dc/Config.js:310
 msgid "VNet Firewall"
 msgstr "VNet 방화벽"
 
@@ -22067,6 +22867,12 @@ msgstr "VNet {}에 정의된 영역이 없습니다!"
 msgid "VNets"
 msgstr "VNet"
 
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:312
+#, fuzzy
+#| msgid "IP-VRF"
+msgid "VRF"
+msgstr "IP-VRF"
+
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/add_vnet.rs:301
 msgid "VRF VNI"
 msgstr "VRF VNI"
@@ -22074,6 +22880,12 @@ msgstr "VRF VNI"
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/add_zone.rs:83
 msgid "VRF VXLAN VNI"
 msgstr "VRF VXLAN VNI"
+
+#: pve-manager/www/manager6/sdn/fabrics/FabricEdit.js:42
+#, fuzzy
+#| msgid "Zone"
+msgid "VRF Zone"
+msgstr "영역"
 
 #: proxmox-datacenter-manager/ui/src/sdn/evpn/add_vnet.rs:83
 msgid "VXLAN VNI"
@@ -22114,6 +22926,7 @@ msgstr "유효성 검사 지연"
 #: pve-manager/www/manager6/qemu/CreateWizard.js:284
 #: pve-manager/www/manager6/sdn/RouteMapPanel.js:230
 #: pve-manager/www/manager6/sdn/RouteMapPanel.js:491
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:267
 #: pve-manager/www/manager6/window/GuestImport.js:988
 #: pve-manager/www/manager6/window/Snapshot.js:132
 #: proxmox-backup/www/Utils.js:641 proxmox-backup/www/Utils.js:678
@@ -22154,6 +22967,7 @@ msgstr "금고"
 #: pve-manager/www/manager6/form/CPUModelSelector.js:68
 #: pve-manager/www/manager6/form/MultiPCISelector.js:246
 #: pve-manager/www/manager6/form/PCISelector.js:40
+#: pve-manager/www/manager6/node/SANLuns.js:111
 #: proxmox-backup/www/tape/ChangerConfig.js:117
 #: proxmox-backup/www/tape/ChangerStatus.js:897
 #: proxmox-backup/www/tape/DriveConfig.js:157
@@ -22410,7 +23224,7 @@ msgstr "가상 게스트"
 #: pve-manager/www/manager6/form/VMSelector.js:344
 #: pve-manager/www/manager6/form/VMSelector.js:355
 #: pve-manager/www/manager6/grid/PoolMembers.js:107
-#: pve-manager/www/manager6/grid/PoolMembers.js:254
+#: pve-manager/www/manager6/grid/PoolMembers.js:377
 #: pve-manager/www/manager6/ha/ResourceEdit.js:212
 #: pve-manager/www/manager6/qemu/CreateWizard.js:28
 #: pve-manager/www/manager6/tree/ResourceTree.js:34
@@ -22479,7 +23293,7 @@ msgstr "바이러스 검역소"
 msgid "Virus info"
 msgstr "바이러스 정보"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:211
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:217
 msgid "Vlan raw device"
 msgstr "Vlan raw 디바이스"
 
@@ -22495,16 +23309,31 @@ msgstr "볼륨 동작"
 msgid "Volume Details for {0}"
 msgstr "{0}의 볼륨 세부 정보"
 
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:169
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:206
+#: pve-manager/www/manager6/storage/wizard/Wizard.js:213
+#, fuzzy
+#| msgid "Volume group"
+msgid "Volume Group"
+msgstr "볼륨 그룹"
+
 #: proxmox-backup/www/Utils.js:704 proxmox-backup/www/tape/ChangerStatus.js:942
 #: proxmox-backup/www/tape/DriveStatus.js:269
 msgid "Volume Statistics"
 msgstr "볼륨 통계"
 
-#: pve-manager/www/manager6/storage/LVMEdit.js:228
-#: pve-manager/www/manager6/storage/LVMEdit.js:243
+#: pve-manager/www/manager6/storage/LVMEdit.js:234
+#: pve-manager/www/manager6/storage/LVMEdit.js:249
 #: pve-manager/www/manager6/storage/LvmThinEdit.js:139
 msgid "Volume group"
 msgstr "볼륨 그룹"
+
+#: pve-manager/www/manager6/storage/wizard/FibreChannel.js:35
+msgid ""
+"Volume group \"{0}\" was created, but adding storage \"{1}\" failed. Add it "
+"under Datacenter > Storage > Add > LVM with Shared enabled and the same "
+"nodes and snapshot setting as in the setup."
+msgstr ""
 
 #: pve-manager/www/manager6/dc/Cluster.js:297
 msgid "Votes"
@@ -22540,6 +23369,10 @@ msgstr ""
 #: proxmox-widget-toolkit/src/window/TfaWindow.js:483
 msgid "Waiting for second factor."
 msgstr "두 번째 인증을 기다리는 중입니다."
+
+#: pve-manager/www/manager6/storage/wizard/FibreChannel.js:115
+msgid "Waiting for the multipath map..."
+msgstr ""
 
 #: pve-manager/www/manager6/node/CmdMenu.js:114
 msgid "Wake on LAN packet send for '{0}': '{1}'"
@@ -22658,7 +23491,7 @@ msgstr "웹인터페이스 설정"
 #: proxmox-widget-toolkit/src/window/NotificationMatcherEdit.js:1288
 #: proxmox-backup/www/window/TrafficControlEdit.js:383
 #: proxmox-yew-widget-toolkit/src/widget/form/date_field/date_panel.rs:248
-#: proxmox-yew-widget-toolkit/src/widget/calendar_grid.rs:852
+#: proxmox-yew-widget-toolkit/src/widget/calendar_grid.rs:874
 msgid "Wed"
 msgstr "수"
 
@@ -22697,6 +23530,12 @@ msgstr "What Objects"
 msgid "When"
 msgstr "When"
 
+#: pve-manager/www/manager6/dc/MultipathWwidEdit.js:54
+#, fuzzy
+#| msgid "Show All Parts"
+msgid "When All Paths Fail"
+msgstr "모든 파츠 표시"
+
 #: pmg-gui/js/NavigationTree.js:40 pmg-gui/js/Utils.js:56
 msgid "When Objects"
 msgstr "When Objects"
@@ -22730,7 +23569,7 @@ msgstr ""
 "호화합니다. 기존에 암호화된 콘텐츠는 그대로 두고, 부분적으로 암호화된 콘텐츠"
 "는 건너뜁니다."
 
-#: pve-manager/www/manager6/ha/Status.js:30
+#: pve-manager/www/manager6/ha/Status.js:44
 msgid ""
 "While disarmed, HA does not protect your services. Failures during this "
 "period are not automatically recovered."
@@ -22754,14 +23593,31 @@ msgstr "1년 내내"
 msgid "Will clear"
 msgstr "정리될 것입니다"
 
+#: pve-manager/www/manager6/node/SANLuns.js:176
+#: pve-manager/www/manager6/window/SANLunWipe.js:8
+#, fuzzy
+#| msgid "Wipe Disk"
+msgid "Wipe"
+msgstr "디스크 초기화"
+
 #: proxmox-widget-toolkit/src/panel/DiskList.js:425
-#: pve-manager/www/manager6/Utils.js:2276 proxmox-backup/www/Utils.js:503
+#: pve-manager/www/manager6/Utils.js:2296 proxmox-backup/www/Utils.js:503
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:188
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:306
 msgid "Wipe Disk"
 msgstr "디스크 초기화"
 
-#: pve-manager/www/manager6/storage/LVMEdit.js:279
+#: pve-manager/www/manager6/window/SANLunWipe.js:3
+msgid "Wipe LUN"
+msgstr ""
+
+#: pve-manager/www/manager6/window/SANLunWipe.js:24
+msgid ""
+"Wipe LUN {0} using node \"{1}\"? All data on the LUN will be lost, for every "
+"host that accesses it!"
+msgstr ""
+
+#: pve-manager/www/manager6/storage/LVMEdit.js:285
 msgid "Wipe Removed Volumes"
 msgstr "제거된 볼륨 청소"
 
@@ -22769,7 +23625,7 @@ msgstr "제거된 볼륨 청소"
 msgid "Wipe labels and other left-overs"
 msgstr "라벨 및 기타 남아 있는 데이터를 완전히 제거"
 
-#: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:470
+#: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:479
 msgid "WireGuard"
 msgstr "WireGuard"
 
@@ -22810,7 +23666,7 @@ msgstr ""
 "자 지정 지속 시간은 수량과 단위를 조합하여 지정할 수 있으며, 예를 들어 12h, "
 "3d 또는 1d12h와 같이 사용할 수 있습니다."
 
-#: pve-manager/www/manager6/storage/Base.js:205
+#: pve-manager/www/manager6/storage/Base.js:210
 msgid ""
 "Without any keep option, the node's vzdump.conf or `keep-all` is used as "
 "fallback for backup jobs"
@@ -22826,13 +23682,13 @@ msgstr ""
 "유지 옵션이 없으면 스토리지 구성이나 노드의 vzdump.conf가 대체 수단으로 사용"
 "됩니다"
 
-#: pve-manager/www/manager6/window/Migrate.js:481
+#: pve-manager/www/manager6/window/Migrate.js:508
 msgid ""
 "Without the config check, an outdated target node might drop configuration "
 "settings it cannot parse."
 msgstr ""
 
-#: pve-manager/www/manager6/window/Migrate.js:583
+#: pve-manager/www/manager6/window/Migrate.js:612
 msgid ""
 "Without the config check, an outdated target node might drop or ignore "
 "configuration settings it cannot parse."
@@ -23082,7 +23938,7 @@ msgstr "ZFS ARC"
 msgid "ZFS Pool"
 msgstr "ZFS 풀"
 
-#: pve-manager/www/manager6/Utils.js:2298 proxmox-backup/www/Utils.js:504
+#: pve-manager/www/manager6/Utils.js:2318 proxmox-backup/www/Utils.js:504
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:212
 #: proxmox-yew-comp/src/utils/task_descriptions.rs:307
 msgid "ZFS Storage"
@@ -23100,7 +23956,8 @@ msgstr ""
 msgid "ZiB"
 msgstr "ZiB"
 
-#: pve-manager/www/manager6/form/SDNZoneSelector.js:28
+#: pve-manager/www/manager6/form/SDNZoneSelector.js:59
+#: pve-manager/www/manager6/grid/PoolMembers.js:211
 #: pve-manager/www/manager6/sdn/FirewallVnetView.js:55
 #: pve-manager/www/manager6/sdn/VnetEdit.js:77
 #: pve-manager/www/manager6/sdn/VnetView.js:105
@@ -23118,7 +23975,7 @@ msgstr "영역 ID"
 msgid "Zone {0} on node {1}"
 msgstr "노드 {1}의 영역 {0}"
 
-#: pve-manager/www/manager6/dc/Config.js:267
+#: pve-manager/www/manager6/dc/Config.js:278
 msgid "Zones"
 msgstr "영역"
 
@@ -23202,8 +24059,8 @@ msgstr "자동 생성됨"
 msgid "base64-encoded WireGuard public key"
 msgstr "Base64로 인코딩된 WireGuard 공개 키"
 
-#: pve-manager/www/manager6/window/Migrate.js:450
-#: pve-manager/www/manager6/window/Migrate.js:552
+#: pve-manager/www/manager6/window/Migrate.js:477
+#: pve-manager/www/manager6/window/Migrate.js:581
 msgid "blocking HA resource {0} on selected target node"
 msgstr "선택한 대상 노드에서 HA 리소스 {0} 차단"
 
@@ -23417,11 +24274,16 @@ msgstr "매시간"
 msgid "iBGP"
 msgstr "iBGP"
 
+#: pve-manager/www/manager6/dc/SAN.js:175
+msgid "iSCSI Initiator Name"
+msgstr ""
+
 #: pve-manager/www/manager6/storage/ZFSEdit.js:77
 msgid "iSCSI Provider"
 msgstr "iSCSI 공급자"
 
 #: pve-manager/www/manager6/storage/IScsiEdit.js:19
+#: pve-manager/www/manager6/storage/wizard/IScsi.js:203
 msgid "iSCSI Target"
 msgstr "iSCSI 타겟"
 
@@ -23519,7 +24381,7 @@ msgstr "문자"
 msgid "mail.example.com"
 msgstr "mail.example.com"
 
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:802
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:832
 msgid "major difference"
 msgstr "주요 차이점"
 
@@ -23541,6 +24403,12 @@ msgstr "누락"
 #: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:283
 msgid "monitor quorum {0}/{1}"
 msgstr "모니터 정족수 {0}/{1}"
+
+#: pve-manager/www/manager6/dc/SAN.js:37
+msgid ""
+"multipath.conf sections for all nodes, for example a devices section with "
+"array settings"
+msgstr ""
 
 #: proxmox-yew-comp/src/key_value_list.rs:225
 msgid "name must not be empty!"
@@ -23567,11 +24435,6 @@ msgstr "신규"
 #: pve-yew-mobile-gui/src/pages/page_node_status/updates_panel.rs:50
 msgid "new: {0}"
 msgstr "신규: {0}"
-
-#: pve-manager/www/manager6/grid/FirewallOptions.js:88
-#: proxmox-yew-comp/src/form/pve/firewall_property/mod.rs:91
-msgid "nftables (tech preview)"
-msgstr "nftables (기술 프리뷰)"
 
 #: proxmox-widget-toolkit/src/form/VlanField.js:7
 #: pve-manager/www/manager6/form/VLanField.js:7
@@ -23637,7 +24500,7 @@ msgid "not a valid Proxmox VE or Proxmox Backup Server key: {0}"
 msgid_plural "not valid Proxmox VE or Proxmox Backup Server keys: {0}"
 msgstr[0] "유효하지 않은 Proxmox VE 또는 Proxmox Backup Server 키: {0}"
 
-#: proxmox-widget-toolkit/src/node/NetworkEdit.js:94
+#: proxmox-widget-toolkit/src/node/NetworkEdit.js:100
 msgid "not a valid bridge VLAN ID entry: {0}"
 msgstr "유효한 브리지 VLAN ID 항목이 아님: {0}"
 
@@ -23703,6 +24566,12 @@ msgstr "오래된 OSD 버전만"
 msgid "only unicast addresses are allowed"
 msgstr "유니캐스트 주소만 허용됨"
 
+#: pve-manager/www/manager6/node/ISCSITargets.js:52
+#, fuzzy
+#| msgid "Ceph is not installed on this node."
+msgid "open-iscsi is not installed on this node."
+msgstr "이 노드에 Ceph가 설치되어 있지 않습니다."
+
 #: pve-manager/www/manager6/node/ACME.js:23
 msgid "optional"
 msgstr "선택 사항"
@@ -23730,7 +24599,7 @@ msgstr "반가상화"
 msgid "peer's link address: {0}"
 msgstr "피어의 링크 주소: {0}"
 
-#: pve-manager/www/manager6/Utils.js:1204
+#: pve-manager/www/manager6/Utils.js:1223
 #: pve-manager/www/manager6/grid/Replication.js:396
 #: proxmox-backup/www/Utils.js:249
 msgid "pending"
@@ -23754,7 +24623,7 @@ msgid "protected"
 msgstr "보호됨"
 
 #: proxmox-datacenter-manager/ui/src/pve/lxc/mod.rs:217
-#: proxmox-datacenter-manager/ui/src/pve/node/mod.rs:168
+#: proxmox-datacenter-manager/ui/src/pve/node/mod.rs:185
 #: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:198
 #: proxmox-datacenter-manager/ui/src/pve/qemu/mod.rs:232
 msgid "pve-manager version too old"
@@ -23792,7 +24661,7 @@ msgstr "실행 중..."
 msgid "set"
 msgstr "설정"
 
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:806
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:836
 msgid "small difference"
 msgstr "사소한 차이점"
 
@@ -23815,7 +24684,7 @@ msgstr "멈춤"
 msgid "sub (subject)"
 msgstr "하위 (주체)"
 
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:804
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:834
 msgid "substantial difference"
 msgstr "상당한 차이점"
 
@@ -23828,7 +24697,7 @@ msgstr "마운트에 의해 트리거되는 동기화 작업 핸들러"
 msgid "syncing"
 msgstr "동기화"
 
-#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:605
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:635
 msgid "the remote could not be reached"
 msgstr "리모트에 연결할 수 없음"
 
@@ -24233,7 +25102,7 @@ msgstr "{0} 노드의 상태를 알 수 없음"
 msgid "{0} nodes online"
 msgstr "노드 {0}개가 온라인 상태임"
 
-#: pve-manager/www/manager6/Utils.js:1956
+#: pve-manager/www/manager6/Utils.js:1976
 msgid "{0} not installed."
 msgstr "{0}이(가) 설치되지 않았습니다."
 
@@ -24297,7 +25166,7 @@ msgid "{0} outdated OSD {1} (of {2} total)"
 msgid_plural "{0} outdated OSDs {1} (of {2} total)"
 msgstr[0] "{0}개의 오래된 OSD {1}(총 {2}개 중)"
 
-#: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:473
+#: pve-manager/www/manager6/sdn/fabrics/wireguard/InterfacePanel.js:482
 msgid ""
 "{0} peer entry(ies) reference an interface that no longer exists on this "
 "node and were dropped from the form. Saving will not include them."
@@ -24388,7 +25257,7 @@ msgstr "{0}주"
 msgid "{0} years"
 msgstr "{0}년"
 
-#: pve-manager/www/manager6/sdn/NetworkBrowser.js:157
+#: pve-manager/www/manager6/sdn/NetworkBrowser.js:159
 msgid "{0} {1} on node {2}"
 msgstr "{2} 노드의 {0} {1}"
 
@@ -24439,6 +25308,13 @@ msgstr "{0}/초"
 #: proxmox-datacenter-manager/ui/src/ceph/dashboard.rs:325
 msgid "{0}/s recovery"
 msgstr "{0}/초 복구"
+
+#. TRANSLATORS: The first parameter is the name of the remote, the second
+#. one the name of the node.
+#: proxmox-datacenter-manager/ui/src/remotes/updates.rs:526
+#, fuzzy
+msgid "{1} on {0}"
+msgstr "ID {0}"
 
 #: proxmox-datacenter-manager/ui/src/configuration/subscription_registry.rs:515
 msgid "{active} of {total} nodes subscribed"
@@ -24823,6 +25699,9 @@ msgstr ""
 #~ msgid "Unpriviledged"
 #~ msgstr "권한 없음"
 
+#~ msgid "Update List - {0} ({1})"
+#~ msgstr "업데이트 목록 - {0} ({1})"
+
 #~ msgid "Update status unknown"
 #~ msgstr "업데이트 상태를 알 수 없음"
 
@@ -24877,6 +25756,9 @@ msgstr ""
 #~ msgid "maximum"
 #~ msgstr "최대"
 
+#~ msgid "nftables (tech preview)"
+#~ msgstr "nftables (기술 프리뷰)"
+
 #, fuzzy
 #~ msgid "one"
 #~ msgid_plural "plural"
@@ -24924,7 +25806,3 @@ msgstr ""
 
 #~ msgid "{0}, Group: {1}"
 #~ msgstr "{0}, 그룹: {1}"
-
-#, fuzzy
-#~ msgid "{1} {0}"
-#~ msgstr "ID {0}"
